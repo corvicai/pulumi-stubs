@@ -86,12 +86,14 @@ class AppConnectionApplicationEndpointArgs:
     @pulumi.getter
     def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): ...
+    def host(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): ...
+    def port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AppConnectionGatewayArgsDict(TypedDict):
     app_gateway: pulumi.Input[_builtins.str]
@@ -113,22 +115,26 @@ class AppConnectionGatewayArgs:
     @pulumi.getter(name="appGateway")
     def app_gateway(self) -> pulumi.Input[_builtins.str]: ...
     @app_gateway.setter
-    def app_gateway(self, value: pulumi.Input[_builtins.str]): ...
+    def app_gateway(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingressPort")
     def ingress_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ingress_port.setter
-    def ingress_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ingress_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AppConnectorPrincipalInfoArgsDict(TypedDict):
     service_account: pulumi.Input[AppConnectorPrincipalInfoServiceAccountArgsDict]
@@ -148,7 +154,8 @@ class AppConnectorPrincipalInfoArgs:
     @service_account.setter
     def service_account(
         self, value: pulumi.Input[AppConnectorPrincipalInfoServiceAccountArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AppConnectorPrincipalInfoServiceAccountArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -160,7 +167,8 @@ class AppConnectorPrincipalInfoServiceAccountArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AppGatewayAllocatedConnectionArgsDict(TypedDict):
     ingress_port: NotRequired[pulumi.Input[_builtins.int]]
@@ -178,12 +186,14 @@ class AppGatewayAllocatedConnectionArgs:
     @pulumi.getter(name="ingressPort")
     def ingress_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ingress_port.setter
-    def ingress_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ingress_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pscUri")
     def psc_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @psc_uri.setter
-    def psc_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def psc_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayApplicationEndpointMatcherArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
@@ -201,12 +211,16 @@ class SecurityGatewayApplicationEndpointMatcherArgs:
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ports(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @ports.setter
-    def ports(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): ...
+    def ports(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    ):  # -> None:
+        ...
 
 class SecurityGatewayApplicationIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -226,17 +240,20 @@ class SecurityGatewayApplicationIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayApplicationIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -256,17 +273,20 @@ class SecurityGatewayApplicationIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamArgsDict(TypedDict):
     egress_policy: NotRequired[
@@ -311,7 +331,8 @@ class SecurityGatewayApplicationUpstreamArgs:
         value: Optional[
             pulumi.Input[SecurityGatewayApplicationUpstreamEgressPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def external(
@@ -321,7 +342,8 @@ class SecurityGatewayApplicationUpstreamArgs:
     def external(
         self,
         value: Optional[pulumi.Input[SecurityGatewayApplicationUpstreamExternalArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def network(
@@ -331,7 +353,8 @@ class SecurityGatewayApplicationUpstreamArgs:
     def network(
         self,
         value: Optional[pulumi.Input[SecurityGatewayApplicationUpstreamNetworkArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="proxyProtocol")
     def proxy_protocol(
@@ -345,7 +368,8 @@ class SecurityGatewayApplicationUpstreamArgs:
         value: Optional[
             pulumi.Input[SecurityGatewayApplicationUpstreamProxyProtocolArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamEgressPolicyArgsDict(TypedDict):
     regions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -359,7 +383,10 @@ class SecurityGatewayApplicationUpstreamEgressPolicyArgs:
     @pulumi.getter
     def regions(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @regions.setter
-    def regions(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def regions(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamExternalArgsDict(TypedDict):
     endpoints: pulumi.Input[
@@ -394,7 +421,8 @@ class SecurityGatewayApplicationUpstreamExternalArgs:
                 pulumi.Input[SecurityGatewayApplicationUpstreamExternalEndpointArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamExternalEndpointArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
@@ -412,12 +440,14 @@ class SecurityGatewayApplicationUpstreamExternalEndpointArgs:
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): ...
+    def port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamNetworkArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -429,7 +459,8 @@ class SecurityGatewayApplicationUpstreamNetworkArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamProxyProtocolArgsDict(TypedDict):
     allowed_client_headers: NotRequired[
@@ -473,12 +504,14 @@ class SecurityGatewayApplicationUpstreamProxyProtocolArgs:
     @allowed_client_headers.setter
     def allowed_client_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIp")
     def client_ip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_ip.setter
-    def client_ip(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_ip(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contextualHeaders")
     def contextual_headers(
@@ -496,12 +529,16 @@ class SecurityGatewayApplicationUpstreamProxyProtocolArgs:
                 SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayIdentity")
     def gateway_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gateway_identity.setter
-    def gateway_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gateway_identity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataHeaders")
     def metadata_headers(
@@ -510,7 +547,8 @@ class SecurityGatewayApplicationUpstreamProxyProtocolArgs:
     @metadata_headers.setter
     def metadata_headers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersArgsDict(
     TypedDict
@@ -571,7 +609,8 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersArgs:
                 SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersDeviceInfoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupInfo")
     def group_info(
@@ -589,12 +628,14 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersArgs:
                 SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersGroupInfoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userInfo")
     def user_info(
@@ -612,7 +653,8 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersArgs:
                 SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersUserInfoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersDeviceInfoArgsDict(
     TypedDict
@@ -628,7 +670,8 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersDeviceInfo
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersGroupInfoArgsDict(
     TypedDict
@@ -644,7 +687,8 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersGroupInfoA
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersUserInfoArgsDict(
     TypedDict
@@ -660,7 +704,8 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersUserInfoAr
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayHubArgsDict(TypedDict):
     region: pulumi.Input[_builtins.str]
@@ -682,7 +727,8 @@ class SecurityGatewayHubArgs:
     @pulumi.getter
     def region(self) -> pulumi.Input[_builtins.str]: ...
     @region.setter
-    def region(self, value: pulumi.Input[_builtins.str]): ...
+    def region(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internetGateway")
     def internet_gateway(
@@ -691,7 +737,8 @@ class SecurityGatewayHubArgs:
     @internet_gateway.setter
     def internet_gateway(
         self, value: Optional[pulumi.Input[SecurityGatewayHubInternetGatewayArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayHubInternetGatewayArgsDict(TypedDict):
     assigned_ips: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -713,7 +760,8 @@ class SecurityGatewayHubInternetGatewayArgs:
     @assigned_ips.setter
     def assigned_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -733,17 +781,20 @@ class SecurityGatewayIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -763,17 +814,20 @@ class SecurityGatewayIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayLoggingArgsDict(TypedDict): ...
 
@@ -819,12 +873,14 @@ class SecurityGatewayProxyProtocolConfigArgs:
     @allowed_client_headers.setter
     def allowed_client_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIp")
     def client_ip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_ip.setter
-    def client_ip(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_ip(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contextualHeaders")
     def contextual_headers(
@@ -838,12 +894,16 @@ class SecurityGatewayProxyProtocolConfigArgs:
         value: Optional[
             pulumi.Input[SecurityGatewayProxyProtocolConfigContextualHeadersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayIdentity")
     def gateway_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gateway_identity.setter
-    def gateway_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gateway_identity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataHeaders")
     def metadata_headers(
@@ -852,7 +912,8 @@ class SecurityGatewayProxyProtocolConfigArgs:
     @metadata_headers.setter
     def metadata_headers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayProxyProtocolConfigContextualHeadersArgsDict(TypedDict):
     device_info: NotRequired[
@@ -909,7 +970,8 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersArgs:
                 SecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupInfo")
     def group_info(
@@ -925,12 +987,14 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersArgs:
                 SecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userInfo")
     def user_info(
@@ -946,7 +1010,8 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersArgs:
                 SecurityGatewayProxyProtocolConfigContextualHeadersUserInfoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoArgsDict(TypedDict):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -960,7 +1025,8 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoArgs:
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoArgsDict(TypedDict):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -974,7 +1040,8 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoArgs:
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayProxyProtocolConfigContextualHeadersUserInfoArgsDict(TypedDict):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -988,7 +1055,8 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersUserInfoArgs:
     @pulumi.getter(name="outputType")
     def output_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_type.setter
-    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityGatewayServiceDiscoveryArgsDict(TypedDict):
     api_gateway: NotRequired[
@@ -1013,7 +1081,8 @@ class SecurityGatewayServiceDiscoveryArgs:
     def api_gateway(
         self,
         value: Optional[pulumi.Input[SecurityGatewayServiceDiscoveryApiGatewayArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayServiceDiscoveryApiGatewayArgsDict(TypedDict):
     resource_override: NotRequired[
@@ -1042,7 +1111,8 @@ class SecurityGatewayServiceDiscoveryApiGatewayArgs:
         value: Optional[
             pulumi.Input[SecurityGatewayServiceDiscoveryApiGatewayResourceOverrideArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityGatewayServiceDiscoveryApiGatewayResourceOverrideArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
@@ -1056,4 +1126,5 @@ class SecurityGatewayServiceDiscoveryApiGatewayResourceOverrideArgs:
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

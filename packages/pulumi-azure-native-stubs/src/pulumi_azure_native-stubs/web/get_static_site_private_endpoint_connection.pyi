@@ -60,7 +60,10 @@ class GetStaticSitePrivateEndpointConnectionResult:
 class AwaitableGetStaticSitePrivateEndpointConnectionResult(
     GetStaticSitePrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStaticSitePrivateEndpointConnectionResult]:
+        ...
 
 def get_static_site_private_endpoint_connection(
     name: Optional[_builtins.str] = ...,

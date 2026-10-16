@@ -52,7 +52,8 @@ class GetManagementLockByScopeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagementLockByScopeResult(GetManagementLockByScopeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagementLockByScopeResult]:
+        ...
 
 def get_management_lock_by_scope(
     lock_name: Optional[_builtins.str] = ...,

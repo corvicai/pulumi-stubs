@@ -39,7 +39,8 @@ class GetProtectionResult:
     def resource_arn(self) -> _builtins.str: ...
 
 class AwaitableGetProtectionResult(GetProtectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProtectionResult]:
+        ...
 
 def get_protection(
     protection_id: Optional[_builtins.str] = ...,

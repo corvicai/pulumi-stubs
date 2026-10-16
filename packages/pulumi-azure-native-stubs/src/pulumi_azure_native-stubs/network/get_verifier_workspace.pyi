@@ -52,7 +52,8 @@ class GetVerifierWorkspaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVerifierWorkspaceResult(GetVerifierWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVerifierWorkspaceResult]:
+        ...
 
 def get_verifier_workspace(
     network_manager_name: Optional[_builtins.str] = ...,

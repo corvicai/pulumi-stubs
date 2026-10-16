@@ -23,7 +23,10 @@ class GetVirtualNetworkGatewayLearnedRoutesResult:
 class AwaitableGetVirtualNetworkGatewayLearnedRoutesResult(
     GetVirtualNetworkGatewayLearnedRoutesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayLearnedRoutesResult]:
+        ...
 
 def get_virtual_network_gateway_learned_routes(
     resource_group_name: Optional[_builtins.str] = ...,

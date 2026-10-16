@@ -88,7 +88,8 @@ class GetSourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSourceResult(GetSourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSourceResult]:
+        ...
 
 def get_source(
     credit_name: Optional[_builtins.str] = ...,

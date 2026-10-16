@@ -20,7 +20,10 @@ class ListDelegationSettingSecretsResult:
     def validation_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListDelegationSettingSecretsResult(ListDelegationSettingSecretsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListDelegationSettingSecretsResult]:
+        ...
 
 def list_delegation_setting_secrets(
     resource_group_name: Optional[_builtins.str] = ...,

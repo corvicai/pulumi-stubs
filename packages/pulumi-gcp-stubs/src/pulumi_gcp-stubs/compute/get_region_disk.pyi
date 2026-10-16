@@ -168,7 +168,8 @@ class GetRegionDiskResult:
     def users(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetRegionDiskResult(GetRegionDiskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionDiskResult]:
+        ...
 
 def get_region_disk(
     name: Optional[_builtins.str] = ...,

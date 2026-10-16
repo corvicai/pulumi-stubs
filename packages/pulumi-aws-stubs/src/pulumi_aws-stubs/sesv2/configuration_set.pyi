@@ -38,7 +38,8 @@ class ConfigurationSetArgs:
     @pulumi.getter(name="configurationSetName")
     def configuration_set_name(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_set_name.setter
-    def configuration_set_name(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_set_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryOptions")
     def delivery_options(
@@ -47,12 +48,14 @@ class ConfigurationSetArgs:
     @delivery_options.setter
     def delivery_options(
         self, value: Optional[pulumi.Input[ConfigurationSetDeliveryOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reputationOptions")
     def reputation_options(
@@ -61,7 +64,8 @@ class ConfigurationSetArgs:
     @reputation_options.setter
     def reputation_options(
         self, value: Optional[pulumi.Input[ConfigurationSetReputationOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sendingOptions")
     def sending_options(
@@ -70,7 +74,8 @@ class ConfigurationSetArgs:
     @sending_options.setter
     def sending_options(
         self, value: Optional[pulumi.Input[ConfigurationSetSendingOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suppressionOptions")
     def suppression_options(
@@ -79,7 +84,8 @@ class ConfigurationSetArgs:
     @suppression_options.setter
     def suppression_options(
         self, value: Optional[pulumi.Input[ConfigurationSetSuppressionOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -88,7 +94,8 @@ class ConfigurationSetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trackingOptions")
     def tracking_options(
@@ -97,14 +104,16 @@ class ConfigurationSetArgs:
     @tracking_options.setter
     def tracking_options(
         self, value: Optional[pulumi.Input[ConfigurationSetTrackingOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vdmOptions")
     def vdm_options(self) -> Optional[pulumi.Input[ConfigurationSetVdmOptionsArgs]]: ...
     @vdm_options.setter
     def vdm_options(
         self, value: Optional[pulumi.Input[ConfigurationSetVdmOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConfigurationSetState:
@@ -139,12 +148,16 @@ class _ConfigurationSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationSetName")
     def configuration_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_set_name.setter
-    def configuration_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration_set_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryOptions")
     def delivery_options(
@@ -153,12 +166,14 @@ class _ConfigurationSetState:
     @delivery_options.setter
     def delivery_options(
         self, value: Optional[pulumi.Input[ConfigurationSetDeliveryOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reputationOptions")
     def reputation_options(
@@ -167,7 +182,8 @@ class _ConfigurationSetState:
     @reputation_options.setter
     def reputation_options(
         self, value: Optional[pulumi.Input[ConfigurationSetReputationOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sendingOptions")
     def sending_options(
@@ -176,7 +192,8 @@ class _ConfigurationSetState:
     @sending_options.setter
     def sending_options(
         self, value: Optional[pulumi.Input[ConfigurationSetSendingOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suppressionOptions")
     def suppression_options(
@@ -185,7 +202,8 @@ class _ConfigurationSetState:
     @suppression_options.setter
     def suppression_options(
         self, value: Optional[pulumi.Input[ConfigurationSetSuppressionOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -194,7 +212,8 @@ class _ConfigurationSetState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -203,7 +222,8 @@ class _ConfigurationSetState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trackingOptions")
     def tracking_options(
@@ -212,14 +232,16 @@ class _ConfigurationSetState:
     @tracking_options.setter
     def tracking_options(
         self, value: Optional[pulumi.Input[ConfigurationSetTrackingOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vdmOptions")
     def vdm_options(self) -> Optional[pulumi.Input[ConfigurationSetVdmOptionsArgs]]: ...
     @vdm_options.setter
     def vdm_options(
         self, value: Optional[pulumi.Input[ConfigurationSetVdmOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sesv2/configurationSet:ConfigurationSet")
 class ConfigurationSet(pulumi.CustomResource):

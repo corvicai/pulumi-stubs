@@ -76,7 +76,8 @@ class GetDedicatedHostGroupResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetDedicatedHostGroupResult(GetDedicatedHostGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDedicatedHostGroupResult]:
+        ...
 
 def get_dedicated_host_group(
     expand: Optional[_builtins.str] = ...,

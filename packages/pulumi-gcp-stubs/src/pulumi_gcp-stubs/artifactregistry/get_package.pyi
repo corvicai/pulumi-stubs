@@ -55,7 +55,8 @@ class GetPackageResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetPackageResult(GetPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPackageResult]:
+        ...
 
 def get_package(
     location: Optional[_builtins.str] = ...,

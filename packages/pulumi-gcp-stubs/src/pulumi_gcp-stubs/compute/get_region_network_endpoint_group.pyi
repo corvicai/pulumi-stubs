@@ -90,7 +90,10 @@ class GetRegionNetworkEndpointGroupResult:
     def subnetwork(self) -> _builtins.str: ...
 
 class AwaitableGetRegionNetworkEndpointGroupResult(GetRegionNetworkEndpointGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegionNetworkEndpointGroupResult]:
+        ...
 
 def get_region_network_endpoint_group(
     name: Optional[_builtins.str] = ...,

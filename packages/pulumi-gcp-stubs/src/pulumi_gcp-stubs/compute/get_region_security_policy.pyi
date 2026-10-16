@@ -82,7 +82,8 @@ class GetRegionSecurityPolicyResult:
     ) -> Sequence[outputs.GetRegionSecurityPolicyUserDefinedFieldResult]: ...
 
 class AwaitableGetRegionSecurityPolicyResult(GetRegionSecurityPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionSecurityPolicyResult]:
+        ...
 
 def get_region_security_policy(
     name: Optional[_builtins.str] = ...,

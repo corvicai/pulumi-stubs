@@ -34,7 +34,8 @@ class GetClientResult:
     def secret(self) -> _builtins.str: ...
 
 class AwaitableGetClientResult(GetClientResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClientResult]:
+        ...
 
 def get_client(
     brand: Optional[_builtins.str] = ...,

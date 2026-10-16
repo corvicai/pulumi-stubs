@@ -24,7 +24,8 @@ class ListMonitorApiKeysResult:
     def value(self) -> Optional[Sequence[outputs.DatadogApiKeyResponse]]: ...
 
 class AwaitableListMonitorApiKeysResult(ListMonitorApiKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListMonitorApiKeysResult]:
+        ...
 
 def list_monitor_api_keys(
     monitor_name: Optional[_builtins.str] = ...,

@@ -92,7 +92,8 @@ class GetCustomImageResult:
     def vhd_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetCustomImageResult(GetCustomImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomImageResult]:
+        ...
 
 def get_custom_image(
     custom_image_name: Optional[_builtins.str] = ...,

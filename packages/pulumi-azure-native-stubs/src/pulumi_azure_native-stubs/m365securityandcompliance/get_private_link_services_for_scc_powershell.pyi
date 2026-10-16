@@ -66,7 +66,10 @@ class GetPrivateLinkServicesForSCCPowershellResult:
 class AwaitableGetPrivateLinkServicesForSCCPowershellResult(
     GetPrivateLinkServicesForSCCPowershellResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateLinkServicesForSCCPowershellResult]:
+        ...
 
 def get_private_link_services_for_scc_powershell(
     resource_group_name: Optional[_builtins.str] = ...,

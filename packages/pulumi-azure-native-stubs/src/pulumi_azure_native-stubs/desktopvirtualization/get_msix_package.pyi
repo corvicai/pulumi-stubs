@@ -88,7 +88,8 @@ class GetMSIXPackageResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetMSIXPackageResult(GetMSIXPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMSIXPackageResult]:
+        ...
 
 def get_msix_package(
     host_pool_name: Optional[_builtins.str] = ...,

@@ -62,7 +62,10 @@ class GetVmwareCollectorsOperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetVmwareCollectorsOperationResult(GetVmwareCollectorsOperationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVmwareCollectorsOperationResult]:
+        ...
 
 def get_vmware_collectors_operation(
     project_name: Optional[_builtins.str] = ...,

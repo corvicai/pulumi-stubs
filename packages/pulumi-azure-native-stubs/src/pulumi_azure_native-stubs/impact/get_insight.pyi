@@ -44,7 +44,8 @@ class GetInsightResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInsightResult(GetInsightResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInsightResult]:
+        ...
 
 def get_insight(
     insight_name: Optional[_builtins.str] = ...,

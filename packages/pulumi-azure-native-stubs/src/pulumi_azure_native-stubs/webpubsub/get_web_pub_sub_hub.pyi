@@ -44,7 +44,8 @@ class GetWebPubSubHubResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebPubSubHubResult(GetWebPubSubHubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebPubSubHubResult]:
+        ...
 
 def get_web_pub_sub_hub(
     hub_name: Optional[_builtins.str] = ...,

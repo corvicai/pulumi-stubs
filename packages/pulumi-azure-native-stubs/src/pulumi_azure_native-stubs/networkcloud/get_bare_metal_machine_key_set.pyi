@@ -100,7 +100,8 @@ class GetBareMetalMachineKeySetResult:
     def user_list_status(self) -> Sequence[outputs.KeySetUserStatusResponse]: ...
 
 class AwaitableGetBareMetalMachineKeySetResult(GetBareMetalMachineKeySetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBareMetalMachineKeySetResult]:
+        ...
 
 def get_bare_metal_machine_key_set(
     bare_metal_machine_key_set_name: Optional[_builtins.str] = ...,

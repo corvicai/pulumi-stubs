@@ -76,7 +76,8 @@ class GetStandardAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStandardAssignmentResult(GetStandardAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStandardAssignmentResult]:
+        ...
 
 def get_standard_assignment(
     resource_id: Optional[_builtins.str] = ...,

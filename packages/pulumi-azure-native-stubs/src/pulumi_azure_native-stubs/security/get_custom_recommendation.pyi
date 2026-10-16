@@ -72,7 +72,8 @@ class GetCustomRecommendationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCustomRecommendationResult(GetCustomRecommendationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomRecommendationResult]:
+        ...
 
 def get_custom_recommendation(
     custom_recommendation_name: Optional[_builtins.str] = ...,

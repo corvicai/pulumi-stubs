@@ -48,7 +48,8 @@ class GetSyncGroupResult:
     def unique_id(self) -> _builtins.str: ...
 
 class AwaitableGetSyncGroupResult(GetSyncGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSyncGroupResult]:
+        ...
 
 def get_sync_group(
     resource_group_name: Optional[_builtins.str] = ...,

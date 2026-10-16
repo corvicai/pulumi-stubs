@@ -28,7 +28,10 @@ class GetSqlServerInstanceTelemetryResult:
     def rows(self) -> Sequence[Sequence[_builtins.str]]: ...
 
 class AwaitableGetSqlServerInstanceTelemetryResult(GetSqlServerInstanceTelemetryResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlServerInstanceTelemetryResult]:
+        ...
 
 def get_sql_server_instance_telemetry(
     aggregation_type: Optional[Union[_builtins.str, AggregationType]] = ...,

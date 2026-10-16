@@ -44,14 +44,16 @@ class LabArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def announcement(self) -> Optional[pulumi.Input[LabAnnouncementPropertiesArgs]]: ...
     @announcement.setter
     def announcement(
         self, value: Optional[pulumi.Input[LabAnnouncementPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentPermission")
     def environment_permission(
@@ -60,7 +62,8 @@ class LabArgs:
     @environment_permission.setter
     def environment_permission(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnvironmentPermission]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedProperties")
     def extended_properties(
@@ -69,7 +72,8 @@ class LabArgs:
     @extended_properties.setter
     def extended_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labStorageType")
     def lab_storage_type(
@@ -78,12 +82,14 @@ class LabArgs:
     @lab_storage_type.setter
     def lab_storage_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mandatoryArtifactsResourceIdsLinux")
     def mandatory_artifacts_resource_ids_linux(
@@ -92,7 +98,8 @@ class LabArgs:
     @mandatory_artifacts_resource_ids_linux.setter
     def mandatory_artifacts_resource_ids_linux(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mandatoryArtifactsResourceIdsWindows")
     def mandatory_artifacts_resource_ids_windows(
@@ -101,12 +108,14 @@ class LabArgs:
     @mandatory_artifacts_resource_ids_windows.setter
     def mandatory_artifacts_resource_ids_windows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="premiumDataDisks")
     def premium_data_disks(
@@ -115,12 +124,16 @@ class LabArgs:
     @premium_data_disks.setter
     def premium_data_disks(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PremiumDataDisk]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def support(self) -> Optional[pulumi.Input[LabSupportPropertiesArgs]]: ...
     @support.setter
-    def support(self, value: Optional[pulumi.Input[LabSupportPropertiesArgs]]): ...
+    def support(
+        self, value: Optional[pulumi.Input[LabSupportPropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -129,7 +142,8 @@ class LabArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:devtestlab:Lab")
 class Lab(pulumi.CustomResource):

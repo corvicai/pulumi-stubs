@@ -64,7 +64,8 @@ class GetTemplateArtifactResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTemplateArtifactResult(GetTemplateArtifactResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTemplateArtifactResult]:
+        ...
 
 def get_template_artifact(
     artifact_name: Optional[_builtins.str] = ...,

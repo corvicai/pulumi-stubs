@@ -37,7 +37,8 @@ class GameServerGroupArgs:
     @pulumi.getter(name="gameServerGroupName")
     def game_server_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @game_server_group_name.setter
-    def game_server_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def game_server_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceDefinitions")
     def instance_definitions(
@@ -51,29 +52,34 @@ class GameServerGroupArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[GameServerGroupInstanceDefinitionArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplate")
     def launch_template(self) -> pulumi.Input[GameServerGroupLaunchTemplateArgs]: ...
     @launch_template.setter
     def launch_template(
         self, value: pulumi.Input[GameServerGroupLaunchTemplateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxSize")
     def max_size(self) -> pulumi.Input[_builtins.int]: ...
     @max_size.setter
-    def max_size(self, value: pulumi.Input[_builtins.int]): ...
+    def max_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minSize")
     def min_size(self) -> pulumi.Input[_builtins.int]: ...
     @min_size.setter
-    def min_size(self, value: pulumi.Input[_builtins.int]): ...
+    def min_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingPolicy")
     def auto_scaling_policy(
@@ -82,12 +88,16 @@ class GameServerGroupArgs:
     @auto_scaling_policy.setter
     def auto_scaling_policy(
         self, value: Optional[pulumi.Input[GameServerGroupAutoScalingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="balancingStrategy")
     def balancing_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @balancing_strategy.setter
-    def balancing_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def balancing_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gameServerProtectionPolicy")
     def game_server_protection_policy(
@@ -96,12 +106,14 @@ class GameServerGroupArgs:
     @game_server_protection_policy.setter
     def game_server_protection_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -110,7 +122,8 @@ class GameServerGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcSubnets")
     def vpc_subnets(
@@ -119,7 +132,8 @@ class GameServerGroupArgs:
     @vpc_subnets.setter
     def vpc_subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GameServerGroupState:
@@ -156,12 +170,16 @@ class _GameServerGroupState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingGroupArn")
     def auto_scaling_group_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_scaling_group_arn.setter
-    def auto_scaling_group_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_scaling_group_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingPolicy")
     def auto_scaling_policy(
@@ -170,17 +188,24 @@ class _GameServerGroupState:
     @auto_scaling_policy.setter
     def auto_scaling_policy(
         self, value: Optional[pulumi.Input[GameServerGroupAutoScalingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="balancingStrategy")
     def balancing_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @balancing_strategy.setter
-    def balancing_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def balancing_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gameServerGroupName")
     def game_server_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @game_server_group_name.setter
-    def game_server_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def game_server_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gameServerProtectionPolicy")
     def game_server_protection_policy(
@@ -189,7 +214,8 @@ class _GameServerGroupState:
     @game_server_protection_policy.setter
     def game_server_protection_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceDefinitions")
     def instance_definitions(
@@ -203,7 +229,8 @@ class _GameServerGroupState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GameServerGroupInstanceDefinitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplate")
     def launch_template(
@@ -212,27 +239,32 @@ class _GameServerGroupState:
     @launch_template.setter
     def launch_template(
         self, value: Optional[pulumi.Input[GameServerGroupLaunchTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxSize")
     def max_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_size.setter
-    def max_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minSize")
     def min_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_size.setter
-    def min_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -241,7 +273,8 @@ class _GameServerGroupState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -250,7 +283,8 @@ class _GameServerGroupState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcSubnets")
     def vpc_subnets(
@@ -259,7 +293,8 @@ class _GameServerGroupState:
     @vpc_subnets.setter
     def vpc_subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:gamelift/gameServerGroup:GameServerGroup")
 class GameServerGroup(pulumi.CustomResource):

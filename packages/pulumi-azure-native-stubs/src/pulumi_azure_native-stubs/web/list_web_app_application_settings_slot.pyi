@@ -36,7 +36,10 @@ class ListWebAppApplicationSettingsSlotResult:
 class AwaitableListWebAppApplicationSettingsSlotResult(
     ListWebAppApplicationSettingsSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppApplicationSettingsSlotResult]:
+        ...
 
 def list_web_app_application_settings_slot(
     name: Optional[_builtins.str] = ...,

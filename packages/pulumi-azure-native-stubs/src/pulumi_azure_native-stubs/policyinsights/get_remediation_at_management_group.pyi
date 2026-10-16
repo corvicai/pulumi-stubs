@@ -96,7 +96,10 @@ class GetRemediationAtManagementGroupResult:
 class AwaitableGetRemediationAtManagementGroupResult(
     GetRemediationAtManagementGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRemediationAtManagementGroupResult]:
+        ...
 
 def get_remediation_at_management_group(
     management_group_id: Optional[_builtins.str] = ...,

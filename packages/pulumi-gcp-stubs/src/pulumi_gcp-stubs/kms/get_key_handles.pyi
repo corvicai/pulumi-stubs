@@ -40,7 +40,8 @@ class GetKeyHandlesResult:
     def resource_type_selector(self) -> _builtins.str: ...
 
 class AwaitableGetKeyHandlesResult(GetKeyHandlesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyHandlesResult]:
+        ...
 
 def get_key_handles(
     location: Optional[_builtins.str] = ...,

@@ -76,7 +76,8 @@ class GetPartnerDestinationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPartnerDestinationResult(GetPartnerDestinationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPartnerDestinationResult]:
+        ...
 
 def get_partner_destination(
     partner_destination_name: Optional[_builtins.str] = ...,

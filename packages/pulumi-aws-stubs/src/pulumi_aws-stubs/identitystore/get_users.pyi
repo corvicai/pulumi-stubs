@@ -27,7 +27,8 @@ class GetUsersResult:
     def users(self) -> Sequence[outputs.GetUsersUserResult]: ...
 
 class AwaitableGetUsersResult(GetUsersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUsersResult]:
+        ...
 
 def get_users(
     identity_store_id: Optional[_builtins.str] = ...,

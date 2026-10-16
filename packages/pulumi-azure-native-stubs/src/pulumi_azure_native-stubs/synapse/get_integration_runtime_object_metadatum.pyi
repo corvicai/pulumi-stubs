@@ -25,7 +25,10 @@ class GetIntegrationRuntimeObjectMetadatumResult:
 class AwaitableGetIntegrationRuntimeObjectMetadatumResult(
     GetIntegrationRuntimeObjectMetadatumResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationRuntimeObjectMetadatumResult]:
+        ...
 
 def get_integration_runtime_object_metadatum(
     integration_runtime_name: Optional[_builtins.str] = ...,

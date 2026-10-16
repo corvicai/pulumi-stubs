@@ -33,12 +33,14 @@ class TableBucketArgs:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[TableBucketEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceConfiguration")
     def maintenance_configuration(
@@ -47,17 +49,20 @@ class TableBucketArgs:
     @maintenance_configuration.setter
     def maintenance_configuration(
         self, value: Optional[pulumi.Input[TableBucketMaintenanceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -66,7 +71,8 @@ class TableBucketArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TableBucketState:
@@ -94,12 +100,14 @@ class _TableBucketState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
     def created_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_at.setter
-    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -108,12 +116,14 @@ class _TableBucketState:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[TableBucketEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceConfiguration")
     def maintenance_configuration(
@@ -122,22 +132,28 @@ class _TableBucketState:
     @maintenance_configuration.setter
     def maintenance_configuration(
         self, value: Optional[pulumi.Input[TableBucketMaintenanceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerAccountId")
     def owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_account_id.setter
-    def owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -146,7 +162,8 @@ class _TableBucketState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -155,7 +172,8 @@ class _TableBucketState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:s3tables/tableBucket:TableBucket")
 class TableBucket(pulumi.CustomResource):

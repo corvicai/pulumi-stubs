@@ -84,7 +84,8 @@ class GetSqlPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlPoolResult(GetSqlPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlPoolResult]:
+        ...
 
 def get_sql_pool(
     resource_group_name: Optional[_builtins.str] = ...,

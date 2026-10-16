@@ -64,7 +64,8 @@ class GetSharedCommitmentPlanResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSharedCommitmentPlanResult(GetSharedCommitmentPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSharedCommitmentPlanResult]:
+        ...
 
 def get_shared_commitment_plan(
     commitment_plan_name: Optional[_builtins.str] = ...,

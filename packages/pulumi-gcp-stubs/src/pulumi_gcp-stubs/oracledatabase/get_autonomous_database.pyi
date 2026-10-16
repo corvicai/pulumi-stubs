@@ -110,7 +110,8 @@ class GetAutonomousDatabaseResult:
     ) -> Sequence[outputs.GetAutonomousDatabaseSourceConfigResult]: ...
 
 class AwaitableGetAutonomousDatabaseResult(GetAutonomousDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAutonomousDatabaseResult]:
+        ...
 
 def get_autonomous_database(
     autonomous_database_id: Optional[_builtins.str] = ...,

@@ -111,7 +111,8 @@ class GetVpcIpamPoolResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVpcIpamPoolResult(GetVpcIpamPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcIpamPoolResult]:
+        ...
 
 def get_vpc_ipam_pool(
     allocation_resource_tags: Optional[Mapping[str, _builtins.str]] = ...,

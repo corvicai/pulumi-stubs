@@ -64,7 +64,8 @@ class GetVirtualNodeResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVirtualNodeResult(GetVirtualNodeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNodeResult]:
+        ...
 
 def get_virtual_node(
     mesh_name: Optional[_builtins.str] = ...,

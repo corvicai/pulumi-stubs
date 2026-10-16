@@ -83,14 +83,16 @@ class AccessKeyInfoBaseArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(
@@ -106,7 +108,8 @@ class AccessKeyInfoBaseArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, AccessKeyPermissions]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureKeyVaultPropertiesArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -124,7 +127,8 @@ class AzureKeyVaultPropertiesArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectAsKubernetesCsiDriver")
     def connect_as_kubernetes_csi_driver(
@@ -133,7 +137,8 @@ class AzureKeyVaultPropertiesArgs:
     @connect_as_kubernetes_csi_driver.setter
     def connect_as_kubernetes_csi_driver(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureResourceArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -153,12 +158,14 @@ class AzureResourceArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceProperties")
     def resource_properties(
@@ -167,7 +174,8 @@ class AzureResourceArgs:
     @resource_properties.setter
     def resource_properties(
         self, value: Optional[pulumi.Input[AzureKeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigurationInfoArgsDict(TypedDict):
     action: NotRequired[pulumi.Input[Union[_builtins.str, ActionType]]]
@@ -213,7 +221,8 @@ class ConfigurationInfoArgs:
     @action.setter
     def action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalConfigurations")
     def additional_configurations(
@@ -222,7 +231,8 @@ class ConfigurationInfoArgs:
     @additional_configurations.setter
     def additional_configurations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalConnectionStringProperties")
     def additional_connection_string_properties(
@@ -231,14 +241,16 @@ class ConfigurationInfoArgs:
     @additional_connection_string_properties.setter
     def additional_connection_string_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationStore")
     def configuration_store(self) -> Optional[pulumi.Input[ConfigurationStoreArgs]]: ...
     @configuration_store.setter
     def configuration_store(
         self, value: Optional[pulumi.Input[ConfigurationStoreArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customizedKeys")
     def customized_keys(
@@ -247,12 +259,16 @@ class ConfigurationInfoArgs:
     @customized_keys.setter
     def customized_keys(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daprProperties")
     def dapr_properties(self) -> Optional[pulumi.Input[DaprPropertiesArgs]]: ...
     @dapr_properties.setter
-    def dapr_properties(self, value: Optional[pulumi.Input[DaprPropertiesArgs]]): ...
+    def dapr_properties(
+        self, value: Optional[pulumi.Input[DaprPropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -262,7 +278,8 @@ class ConfigurationInfoArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigurationStoreArgsDict(TypedDict):
     app_configuration_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -276,7 +293,10 @@ class ConfigurationStoreArgs:
     @pulumi.getter(name="appConfigurationId")
     def app_configuration_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_configuration_id.setter
-    def app_configuration_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_configuration_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ConfluentBootstrapServerArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -294,12 +314,14 @@ class ConfluentBootstrapServerArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConfluentSchemaRegistryArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -317,12 +339,14 @@ class ConfluentSchemaRegistryArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CreateOrUpdateDryrunParametersArgsDict(TypedDict):
     action_name: pulumi.Input[_builtins.str]
@@ -400,7 +424,8 @@ class CreateOrUpdateDryrunParametersArgs:
     @pulumi.getter(name="actionName")
     def action_name(self) -> pulumi.Input[_builtins.str]: ...
     @action_name.setter
-    def action_name(self, value: pulumi.Input[_builtins.str]): ...
+    def action_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authInfo")
     def auth_info(
@@ -436,7 +461,8 @@ class CreateOrUpdateDryrunParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientType")
     def client_type(
@@ -445,14 +471,16 @@ class CreateOrUpdateDryrunParametersArgs:
     @client_type.setter
     def client_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ClientType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationInfo")
     def configuration_info(self) -> Optional[pulumi.Input[ConfigurationInfoArgs]]: ...
     @configuration_info.setter
     def configuration_info(
         self, value: Optional[pulumi.Input[ConfigurationInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkSolution")
     def public_network_solution(
@@ -461,17 +489,20 @@ class CreateOrUpdateDryrunParametersArgs:
     @public_network_solution.setter
     def public_network_solution(
         self, value: Optional[pulumi.Input[PublicNetworkSolutionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretStore")
     def secret_store(self) -> Optional[pulumi.Input[SecretStoreArgs]]: ...
     @secret_store.setter
-    def secret_store(self, value: Optional[pulumi.Input[SecretStoreArgs]]): ...
+    def secret_store(self, value: Optional[pulumi.Input[SecretStoreArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetService")
     def target_service(
@@ -499,12 +530,16 @@ class CreateOrUpdateDryrunParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vNetSolution")
     def v_net_solution(self) -> Optional[pulumi.Input[VNetSolutionArgs]]: ...
     @v_net_solution.setter
-    def v_net_solution(self, value: Optional[pulumi.Input[VNetSolutionArgs]]): ...
+    def v_net_solution(
+        self, value: Optional[pulumi.Input[VNetSolutionArgs]]
+    ):  # -> None:
+        ...
 
 class DaprMetadataArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -530,12 +565,14 @@ class DaprMetadataArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(
@@ -544,17 +581,20 @@ class DaprMetadataArgs:
     @required.setter
     def required(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DaprMetadataRequired]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
     def secret_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_ref.setter
-    def secret_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_ref(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DaprPropertiesArgsDict(TypedDict):
     component_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -580,7 +620,8 @@ class DaprPropertiesArgs:
     @pulumi.getter(name="componentType")
     def component_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @component_type.setter
-    def component_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def component_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -589,7 +630,8 @@ class DaprPropertiesArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DaprMetadataArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -598,17 +640,22 @@ class DaprPropertiesArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretStoreComponent")
     def secret_store_component(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_store_component.setter
-    def secret_store_component(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_store_component(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EasyAuthMicrosoftEntraIDAuthInfoArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -636,19 +683,22 @@ class EasyAuthMicrosoftEntraIDAuthInfoArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -658,12 +708,14 @@ class EasyAuthMicrosoftEntraIDAuthInfoArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret.setter
-    def secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FirewallRulesArgsDict(TypedDict):
     azure_services: NotRequired[pulumi.Input[Union[_builtins.str, AllowType]]]
@@ -687,7 +739,8 @@ class FirewallRulesArgs:
     @azure_services.setter
     def azure_services(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AllowType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callerClientIP")
     def caller_client_ip(
@@ -696,7 +749,8 @@ class FirewallRulesArgs:
     @caller_client_ip.setter
     def caller_client_ip(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AllowType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRanges")
     def ip_ranges(
@@ -705,7 +759,8 @@ class FirewallRulesArgs:
     @ip_ranges.setter
     def ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KeyVaultSecretReferenceSecretInfoArgsDict(TypedDict):
     secret_type: pulumi.Input[_builtins.str]
@@ -725,17 +780,20 @@ class KeyVaultSecretReferenceSecretInfoArgs:
     @pulumi.getter(name="secretType")
     def secret_type(self) -> pulumi.Input[_builtins.str]: ...
     @secret_type.setter
-    def secret_type(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class KeyVaultSecretUriSecretInfoArgsDict(TypedDict):
     secret_type: pulumi.Input[_builtins.str]
@@ -753,12 +811,14 @@ class KeyVaultSecretUriSecretInfoArgs:
     @pulumi.getter(name="secretType")
     def secret_type(self) -> pulumi.Input[_builtins.str]: ...
     @secret_type.setter
-    def secret_type(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PublicNetworkSolutionArgsDict(TypedDict):
     action: NotRequired[pulumi.Input[Union[_builtins.str, ActionType]]]
@@ -784,7 +844,8 @@ class PublicNetworkSolutionArgs:
     @action.setter
     def action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -794,12 +855,16 @@ class PublicNetworkSolutionArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallRules")
     def firewall_rules(self) -> Optional[pulumi.Input[FirewallRulesArgs]]: ...
     @firewall_rules.setter
-    def firewall_rules(self, value: Optional[pulumi.Input[FirewallRulesArgs]]): ...
+    def firewall_rules(
+        self, value: Optional[pulumi.Input[FirewallRulesArgs]]
+    ):  # -> None:
+        ...
 
 class SecretAuthInfoArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -837,19 +902,22 @@ class SecretAuthInfoArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretInfo")
     def secret_info(
@@ -875,7 +943,8 @@ class SecretAuthInfoArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecretStoreArgsDict(TypedDict):
     key_vault_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -893,12 +962,16 @@ class SecretStoreArgs:
     @pulumi.getter(name="keyVaultId")
     def key_vault_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_id.setter
-    def key_vault_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultSecretName")
     def key_vault_secret_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_secret_name.setter
-    def key_vault_secret_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_secret_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SelfHostedServerArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -916,12 +989,14 @@ class SelfHostedServerArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServicePrincipalCertificateAuthInfoArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -953,29 +1028,34 @@ class ServicePrincipalCertificateAuthInfoArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def certificate(self) -> pulumi.Input[_builtins.str]: ...
     @certificate.setter
-    def certificate(self, value: pulumi.Input[_builtins.str]): ...
+    def certificate(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalId")
     def principal_id(self) -> pulumi.Input[_builtins.str]: ...
     @principal_id.setter
-    def principal_id(self, value: pulumi.Input[_builtins.str]): ...
+    def principal_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -985,7 +1065,8 @@ class ServicePrincipalCertificateAuthInfoArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -994,7 +1075,8 @@ class ServicePrincipalCertificateAuthInfoArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServicePrincipalSecretAuthInfoArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -1028,29 +1110,34 @@ class ServicePrincipalSecretAuthInfoArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalId")
     def principal_id(self) -> pulumi.Input[_builtins.str]: ...
     @principal_id.setter
-    def principal_id(self, value: pulumi.Input[_builtins.str]): ...
+    def principal_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def secret(self) -> pulumi.Input[_builtins.str]: ...
     @secret.setter
-    def secret(self, value: pulumi.Input[_builtins.str]): ...
+    def secret(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -1060,7 +1147,8 @@ class ServicePrincipalSecretAuthInfoArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -1069,12 +1157,14 @@ class ServicePrincipalSecretAuthInfoArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SystemAssignedIdentityAuthInfoArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -1102,14 +1192,16 @@ class SystemAssignedIdentityAuthInfoArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -1119,7 +1211,8 @@ class SystemAssignedIdentityAuthInfoArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -1128,12 +1221,14 @@ class SystemAssignedIdentityAuthInfoArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UserAccountAuthInfoArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -1163,14 +1258,16 @@ class UserAccountAuthInfoArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -1180,12 +1277,14 @@ class UserAccountAuthInfoArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalId")
     def principal_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal_id.setter
-    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -1194,12 +1293,14 @@ class UserAccountAuthInfoArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UserAssignedIdentityAuthInfoArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -1231,19 +1332,22 @@ class UserAssignedIdentityAuthInfoArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authMode")
     def auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]: ...
     @auth_mode.setter
     def auth_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOrUpdateBehavior")
     def delete_or_update_behavior(
@@ -1253,7 +1357,8 @@ class UserAssignedIdentityAuthInfoArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -1262,17 +1367,20 @@ class UserAssignedIdentityAuthInfoArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscriptionId")
     def subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subscription_id.setter
-    def subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VNetSolutionArgsDict(TypedDict):
     delete_or_update_behavior: NotRequired[
@@ -1299,7 +1407,8 @@ class VNetSolutionArgs:
     def delete_or_update_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DeleteOrUpdateBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -1308,7 +1417,8 @@ class VNetSolutionArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, VNetSolutionType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ValueSecretInfoArgsDict(TypedDict):
     secret_type: pulumi.Input[_builtins.str]
@@ -1326,9 +1436,11 @@ class ValueSecretInfoArgs:
     @pulumi.getter(name="secretType")
     def secret_type(self) -> pulumi.Input[_builtins.str]: ...
     @secret_type.setter
-    def secret_type(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

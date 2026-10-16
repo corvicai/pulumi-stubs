@@ -62,7 +62,10 @@ class GetIotConnectorFhirDestinationResult:
 class AwaitableGetIotConnectorFhirDestinationResult(
     GetIotConnectorFhirDestinationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIotConnectorFhirDestinationResult]:
+        ...
 
 def get_iot_connector_fhir_destination(
     fhir_destination_name: Optional[_builtins.str] = ...,

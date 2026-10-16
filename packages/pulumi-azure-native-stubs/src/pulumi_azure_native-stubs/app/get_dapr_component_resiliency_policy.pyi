@@ -54,7 +54,10 @@ class GetDaprComponentResiliencyPolicyResult:
 class AwaitableGetDaprComponentResiliencyPolicyResult(
     GetDaprComponentResiliencyPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDaprComponentResiliencyPolicyResult]:
+        ...
 
 def get_dapr_component_resiliency_policy(
     component_name: Optional[_builtins.str] = ...,

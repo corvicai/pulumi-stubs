@@ -26,12 +26,14 @@ class LandingZoneConfigurationOperationArgs:
     @pulumi.getter(name="landingZoneAccountName")
     def landing_zone_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @landing_zone_account_name.setter
-    def landing_zone_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def landing_zone_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="landingZoneConfigurationName")
     def landing_zone_configuration_name(
@@ -40,7 +42,8 @@ class LandingZoneConfigurationOperationArgs:
     @landing_zone_configuration_name.setter
     def landing_zone_configuration_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -50,7 +53,8 @@ class LandingZoneConfigurationOperationArgs:
     def properties(
         self,
         value: Optional[pulumi.Input[LandingZoneConfigurationResourcePropertiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class LandingZoneConfigurationOperation(pulumi.CustomResource):

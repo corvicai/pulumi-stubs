@@ -63,7 +63,8 @@ class GetRegionalParameterVersionResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetRegionalParameterVersionResult(GetRegionalParameterVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionalParameterVersionResult]:
+        ...
 
 def get_regional_parameter_version(
     location: Optional[_builtins.str] = ...,

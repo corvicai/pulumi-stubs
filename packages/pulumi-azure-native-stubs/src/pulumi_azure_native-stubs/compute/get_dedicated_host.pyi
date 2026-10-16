@@ -88,7 +88,8 @@ class GetDedicatedHostResult:
     def virtual_machines(self) -> Sequence[outputs.SubResourceReadOnlyResponse]: ...
 
 class AwaitableGetDedicatedHostResult(GetDedicatedHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDedicatedHostResult]:
+        ...
 
 def get_dedicated_host(
     expand: Optional[_builtins.str] = ...,

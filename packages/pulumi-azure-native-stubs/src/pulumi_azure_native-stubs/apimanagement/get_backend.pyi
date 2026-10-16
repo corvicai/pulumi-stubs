@@ -80,7 +80,8 @@ class GetBackendResult:
     def url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetBackendResult(GetBackendResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackendResult]:
+        ...
 
 def get_backend(
     backend_id: Optional[_builtins.str] = ...,

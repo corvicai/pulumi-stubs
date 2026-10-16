@@ -102,7 +102,8 @@ class GetDscpConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDscpConfigurationResult(GetDscpConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDscpConfigurationResult]:
+        ...
 
 def get_dscp_configuration(
     dscp_configuration_name: Optional[_builtins.str] = ...,

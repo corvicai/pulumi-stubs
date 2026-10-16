@@ -71,7 +71,8 @@ class GetProjectResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetProjectResult(GetProjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectResult]:
+        ...
 
 def get_project(
     project_id: Optional[_builtins.str] = ...,

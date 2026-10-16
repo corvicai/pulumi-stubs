@@ -62,7 +62,8 @@ class GetReferenceDataSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReferenceDataSetResult(GetReferenceDataSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReferenceDataSetResult]:
+        ...
 
 def get_reference_data_set(
     environment_name: Optional[_builtins.str] = ...,

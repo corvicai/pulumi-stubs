@@ -24,7 +24,8 @@ class LogTransformerArgs:
     @pulumi.getter(name="logGroupArn")
     def log_group_arn(self) -> pulumi.Input[_builtins.str]: ...
     @log_group_arn.setter
-    def log_group_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transformerConfigs")
     def transformer_configs(
@@ -36,12 +37,14 @@ class LogTransformerArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[LogTransformerTransformerConfigArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LogTransformerState:
@@ -58,12 +61,14 @@ class _LogTransformerState:
     @pulumi.getter(name="logGroupArn")
     def log_group_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_group_arn.setter
-    def log_group_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_group_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transformerConfigs")
     def transformer_configs(
@@ -77,7 +82,8 @@ class _LogTransformerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LogTransformerTransformerConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cloudwatch/logTransformer:LogTransformer")
 class LogTransformer(pulumi.CustomResource):

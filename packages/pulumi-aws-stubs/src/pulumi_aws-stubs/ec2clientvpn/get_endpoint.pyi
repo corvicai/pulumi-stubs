@@ -135,7 +135,8 @@ class GetEndpointResult:
     def vpn_port(self) -> _builtins.int: ...
 
 class AwaitableGetEndpointResult(GetEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEndpointResult]:
+        ...
 
 def get_endpoint(
     client_vpn_endpoint_id: Optional[_builtins.str] = ...,

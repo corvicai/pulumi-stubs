@@ -51,7 +51,8 @@ class GetOrganizationSettingsResult:
     def storage_location(self) -> _builtins.str: ...
 
 class AwaitableGetOrganizationSettingsResult(GetOrganizationSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationSettingsResult]:
+        ...
 
 def get_organization_settings(
     organization: Optional[_builtins.str] = ...,

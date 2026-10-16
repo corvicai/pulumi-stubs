@@ -31,12 +31,14 @@ class EngineModelArgs:
     @default_version.setter
     def default_version(
         self, value: Optional[pulumi.Input[EngineModelDefaultVersionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -45,12 +47,14 @@ class EngineModelArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlinePredictionConsoleLogging")
     def online_prediction_console_logging(
@@ -59,24 +63,28 @@ class EngineModelArgs:
     @online_prediction_console_logging.setter
     def online_prediction_console_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlinePredictionLogging")
     def online_prediction_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @online_prediction_logging.setter
     def online_prediction_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @regions.setter
-    def regions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def regions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EngineModelState:
@@ -106,12 +114,14 @@ class _EngineModelState:
     @default_version.setter
     def default_version(
         self, value: Optional[pulumi.Input[EngineModelDefaultVersionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -120,7 +130,8 @@ class _EngineModelState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -129,12 +140,14 @@ class _EngineModelState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlinePredictionConsoleLogging")
     def online_prediction_console_logging(
@@ -143,19 +156,22 @@ class _EngineModelState:
     @online_prediction_console_logging.setter
     def online_prediction_console_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlinePredictionLogging")
     def online_prediction_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @online_prediction_logging.setter
     def online_prediction_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -164,12 +180,14 @@ class _EngineModelState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @regions.setter
-    def regions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def regions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:ml/engineModel:EngineModel")
 class EngineModel(pulumi.CustomResource):

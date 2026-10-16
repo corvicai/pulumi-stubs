@@ -34,7 +34,8 @@ class GetOriginAccessIdentitiesResult:
     def s3_canonical_user_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetOriginAccessIdentitiesResult(GetOriginAccessIdentitiesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOriginAccessIdentitiesResult]:
+        ...
 
 def get_origin_access_identities(
     comments: Optional[Sequence[_builtins.str]] = ...,

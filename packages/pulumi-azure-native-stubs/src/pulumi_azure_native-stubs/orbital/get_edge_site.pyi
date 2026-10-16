@@ -54,7 +54,8 @@ class GetEdgeSiteResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEdgeSiteResult(GetEdgeSiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEdgeSiteResult]:
+        ...
 
 def get_edge_site(
     edge_site_name: Optional[_builtins.str] = ...,

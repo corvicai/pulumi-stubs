@@ -52,7 +52,8 @@ class GetParameterGroupResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetParameterGroupResult(GetParameterGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetParameterGroupResult]:
+        ...
 
 def get_parameter_group(
     name: Optional[_builtins.str] = ...,

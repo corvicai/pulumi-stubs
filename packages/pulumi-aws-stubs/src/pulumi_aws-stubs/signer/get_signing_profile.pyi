@@ -82,7 +82,8 @@ class GetSigningProfileResult:
     def version_arn(self) -> _builtins.str: ...
 
 class AwaitableGetSigningProfileResult(GetSigningProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSigningProfileResult]:
+        ...
 
 def get_signing_profile(
     name: Optional[_builtins.str] = ...,

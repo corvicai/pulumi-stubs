@@ -33,7 +33,8 @@ class ResolverEndpointArgs:
     @pulumi.getter
     def direction(self) -> pulumi.Input[_builtins.str]: ...
     @direction.setter
-    def direction(self, value: pulumi.Input[_builtins.str]): ...
+    def direction(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddresses")
     def ip_addresses(
@@ -42,7 +43,8 @@ class ResolverEndpointArgs:
     @ip_addresses.setter
     def ip_addresses(
         self, value: pulumi.Input[Sequence[pulumi.Input[ResolverEndpointIpAddressArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -51,12 +53,14 @@ class ResolverEndpointArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocols(
@@ -65,17 +69,22 @@ class ResolverEndpointArgs:
     @protocols.setter
     def protocols(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resolverEndpointType")
     def resolver_endpoint_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resolver_endpoint_type.setter
-    def resolver_endpoint_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resolver_endpoint_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rniEnhancedMetricsEnabled")
     def rni_enhanced_metrics_enabled(
@@ -84,7 +93,8 @@ class ResolverEndpointArgs:
     @rni_enhanced_metrics_enabled.setter
     def rni_enhanced_metrics_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -93,7 +103,8 @@ class ResolverEndpointArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNameServerMetricsEnabled")
     def target_name_server_metrics_enabled(
@@ -102,7 +113,8 @@ class ResolverEndpointArgs:
     @target_name_server_metrics_enabled.setter
     def target_name_server_metrics_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ResolverEndpointState:
@@ -135,17 +147,20 @@ class _ResolverEndpointState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def direction(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @direction.setter
-    def direction(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def direction(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostVpcId")
     def host_vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_vpc_id.setter
-    def host_vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddresses")
     def ip_addresses(
@@ -159,12 +174,14 @@ class _ResolverEndpointState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ResolverEndpointIpAddressArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocols(
@@ -173,17 +190,22 @@ class _ResolverEndpointState:
     @protocols.setter
     def protocols(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resolverEndpointType")
     def resolver_endpoint_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resolver_endpoint_type.setter
-    def resolver_endpoint_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resolver_endpoint_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rniEnhancedMetricsEnabled")
     def rni_enhanced_metrics_enabled(
@@ -192,7 +214,8 @@ class _ResolverEndpointState:
     @rni_enhanced_metrics_enabled.setter
     def rni_enhanced_metrics_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -201,7 +224,8 @@ class _ResolverEndpointState:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -210,7 +234,8 @@ class _ResolverEndpointState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -219,7 +244,8 @@ class _ResolverEndpointState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNameServerMetricsEnabled")
     def target_name_server_metrics_enabled(
@@ -228,7 +254,8 @@ class _ResolverEndpointState:
     @target_name_server_metrics_enabled.setter
     def target_name_server_metrics_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:route53/resolverEndpoint:ResolverEndpoint")
 class ResolverEndpoint(pulumi.CustomResource):

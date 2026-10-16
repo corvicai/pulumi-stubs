@@ -118,7 +118,8 @@ class GetBrokerResult:
     def users(self) -> Sequence[outputs.GetBrokerUserResult]: ...
 
 class AwaitableGetBrokerResult(GetBrokerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBrokerResult]:
+        ...
 
 def get_broker(
     broker_id: Optional[_builtins.str] = ...,

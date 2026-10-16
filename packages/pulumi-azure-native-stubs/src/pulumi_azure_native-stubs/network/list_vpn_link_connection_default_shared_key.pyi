@@ -32,7 +32,10 @@ class ListVpnLinkConnectionDefaultSharedKeyResult:
 class AwaitableListVpnLinkConnectionDefaultSharedKeyResult(
     ListVpnLinkConnectionDefaultSharedKeyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListVpnLinkConnectionDefaultSharedKeyResult]:
+        ...
 
 def list_vpn_link_connection_default_shared_key(
     connection_name: Optional[_builtins.str] = ...,

@@ -36,7 +36,8 @@ class AiFeatureOnlineStoreFeatureviewArgs:
     @pulumi.getter(name="featureOnlineStore")
     def feature_online_store(self) -> pulumi.Input[_builtins.str]: ...
     @feature_online_store.setter
-    def feature_online_store(self, value: pulumi.Input[_builtins.str]): ...
+    def feature_online_store(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigQuerySource")
     def big_query_source(
@@ -48,7 +49,8 @@ class AiFeatureOnlineStoreFeatureviewArgs:
         value: Optional[
             pulumi.Input[AiFeatureOnlineStoreFeatureviewBigQuerySourceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureRegistrySource")
     def feature_registry_source(
@@ -62,7 +64,8 @@ class AiFeatureOnlineStoreFeatureviewArgs:
         value: Optional[
             pulumi.Input[AiFeatureOnlineStoreFeatureviewFeatureRegistrySourceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -71,22 +74,26 @@ class AiFeatureOnlineStoreFeatureviewArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncConfig")
     def sync_config(
@@ -96,7 +103,8 @@ class AiFeatureOnlineStoreFeatureviewArgs:
     def sync_config(
         self,
         value: Optional[pulumi.Input[AiFeatureOnlineStoreFeatureviewSyncConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorSearchConfig")
     def vector_search_config(
@@ -110,7 +118,8 @@ class AiFeatureOnlineStoreFeatureviewArgs:
         value: Optional[
             pulumi.Input[AiFeatureOnlineStoreFeatureviewVectorSearchConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AiFeatureOnlineStoreFeatureviewState:
@@ -154,12 +163,14 @@ class _AiFeatureOnlineStoreFeatureviewState:
         value: Optional[
             pulumi.Input[AiFeatureOnlineStoreFeatureviewBigQuerySourceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -168,12 +179,16 @@ class _AiFeatureOnlineStoreFeatureviewState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureOnlineStore")
     def feature_online_store(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @feature_online_store.setter
-    def feature_online_store(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def feature_online_store(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureRegistrySource")
     def feature_registry_source(
@@ -187,7 +202,8 @@ class _AiFeatureOnlineStoreFeatureviewState:
         value: Optional[
             pulumi.Input[AiFeatureOnlineStoreFeatureviewFeatureRegistrySourceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -196,17 +212,20 @@ class _AiFeatureOnlineStoreFeatureviewState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -215,12 +234,14 @@ class _AiFeatureOnlineStoreFeatureviewState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncConfig")
     def sync_config(
@@ -230,12 +251,14 @@ class _AiFeatureOnlineStoreFeatureviewState:
     def sync_config(
         self,
         value: Optional[pulumi.Input[AiFeatureOnlineStoreFeatureviewSyncConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorSearchConfig")
     def vector_search_config(
@@ -249,7 +272,8 @@ class _AiFeatureOnlineStoreFeatureviewState:
         value: Optional[
             pulumi.Input[AiFeatureOnlineStoreFeatureviewVectorSearchConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AiFeatureOnlineStoreFeatureview(pulumi.CustomResource):

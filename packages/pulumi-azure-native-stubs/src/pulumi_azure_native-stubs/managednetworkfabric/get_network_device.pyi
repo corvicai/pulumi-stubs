@@ -96,7 +96,8 @@ class GetNetworkDeviceResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkDeviceResult(GetNetworkDeviceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkDeviceResult]:
+        ...
 
 def get_network_device(
     network_device_name: Optional[_builtins.str] = ...,

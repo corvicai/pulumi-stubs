@@ -52,7 +52,8 @@ class GetAppSyncGraphqlApiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAppSyncGraphqlApiResult(GetAppSyncGraphqlApiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppSyncGraphqlApiResult]:
+        ...
 
 def get_app_sync_graphql_api(
     name: Optional[_builtins.str] = ...,

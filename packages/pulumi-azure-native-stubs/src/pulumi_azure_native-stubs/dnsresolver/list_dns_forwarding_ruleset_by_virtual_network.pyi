@@ -28,7 +28,10 @@ class ListDnsForwardingRulesetByVirtualNetworkResult:
 class AwaitableListDnsForwardingRulesetByVirtualNetworkResult(
     ListDnsForwardingRulesetByVirtualNetworkResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListDnsForwardingRulesetByVirtualNetworkResult]:
+        ...
 
 def list_dns_forwarding_ruleset_by_virtual_network(
     resource_group_name: Optional[_builtins.str] = ...,

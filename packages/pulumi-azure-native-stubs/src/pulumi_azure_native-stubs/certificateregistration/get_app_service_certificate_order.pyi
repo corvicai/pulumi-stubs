@@ -132,7 +132,10 @@ class GetAppServiceCertificateOrderResult:
     def validity_in_years(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetAppServiceCertificateOrderResult(GetAppServiceCertificateOrderResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppServiceCertificateOrderResult]:
+        ...
 
 def get_app_service_certificate_order(
     certificate_order_name: Optional[_builtins.str] = ...,

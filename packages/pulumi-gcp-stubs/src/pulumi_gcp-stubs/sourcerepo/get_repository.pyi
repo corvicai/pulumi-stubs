@@ -48,7 +48,8 @@ class GetRepositoryResult:
     def url(self) -> _builtins.str: ...
 
 class AwaitableGetRepositoryResult(GetRepositoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRepositoryResult]:
+        ...
 
 def get_repository(
     name: Optional[_builtins.str] = ...,

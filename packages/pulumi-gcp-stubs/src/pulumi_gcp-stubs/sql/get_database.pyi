@@ -51,7 +51,8 @@ class GetDatabaseResult:
     def self_link(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseResult(GetDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseResult]:
+        ...
 
 def get_database(
     instance: Optional[_builtins.str] = ...,

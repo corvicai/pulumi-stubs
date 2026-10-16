@@ -33,7 +33,8 @@ class PartnerDestinationArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activationState")
     def activation_state(
@@ -47,19 +48,24 @@ class PartnerDestinationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PartnerDestinationActivationState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointBaseUrl")
     def endpoint_base_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_base_url.setter
-    def endpoint_base_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_base_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointServiceContext")
     def endpoint_service_context(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_service_context.setter
     def endpoint_service_context(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirationTimeIfNotActivatedUtc")
     def expiration_time_if_not_activated_utc(
@@ -68,24 +74,30 @@ class PartnerDestinationArgs:
     @expiration_time_if_not_activated_utc.setter
     def expiration_time_if_not_activated_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageForActivation")
     def message_for_activation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_for_activation.setter
-    def message_for_activation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_for_activation(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerDestinationName")
     def partner_destination_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partner_destination_name.setter
     def partner_destination_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerRegistrationImmutableId")
     def partner_registration_immutable_id(
@@ -94,7 +106,8 @@ class PartnerDestinationArgs:
     @partner_registration_immutable_id.setter
     def partner_registration_immutable_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -103,7 +116,8 @@ class PartnerDestinationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:eventgrid:PartnerDestination")
 class PartnerDestination(pulumi.CustomResource):

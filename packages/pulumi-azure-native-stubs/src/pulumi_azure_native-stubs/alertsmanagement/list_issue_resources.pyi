@@ -24,7 +24,8 @@ class ListIssueResourcesResult:
     def value(self) -> Sequence[outputs.RelatedResourceResponse]: ...
 
 class AwaitableListIssueResourcesResult(ListIssueResourcesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListIssueResourcesResult]:
+        ...
 
 def list_issue_resources(
     filter: Optional[_builtins.str] = ...,

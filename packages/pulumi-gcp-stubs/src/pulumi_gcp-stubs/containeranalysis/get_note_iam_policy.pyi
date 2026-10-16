@@ -34,7 +34,8 @@ class GetNoteIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetNoteIamPolicyResult(GetNoteIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNoteIamPolicyResult]:
+        ...
 
 def get_note_iam_policy(
     note: Optional[_builtins.str] = ...,

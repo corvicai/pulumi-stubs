@@ -60,17 +60,24 @@ class ClusterClusterNodeArgs:
     @pulumi.getter(name="nodeRole")
     def node_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_role.setter
-    def node_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpAddress")
     def private_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip_address.setter
-    def private_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIpAddress")
     def public_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_ip_address.setter
-    def public_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class EndpointAccessVpcEndpointArgsDict(TypedDict):
     network_interfaces: NotRequired[
@@ -111,17 +118,20 @@ class EndpointAccessVpcEndpointArgs:
                 Sequence[pulumi.Input[EndpointAccessVpcEndpointNetworkInterfaceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcEndpointId")
     def vpc_endpoint_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_endpoint_id.setter
-    def vpc_endpoint_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_endpoint_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EndpointAccessVpcEndpointNetworkInterfaceArgsDict(TypedDict):
     availability_zone: NotRequired[pulumi.Input[_builtins.str]]
@@ -143,22 +153,32 @@ class EndpointAccessVpcEndpointNetworkInterfaceArgs:
     @pulumi.getter(name="availabilityZone")
     def availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_zone.setter
-    def availability_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_zone(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceId")
     def network_interface_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_interface_id.setter
-    def network_interface_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network_interface_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpAddress")
     def private_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip_address.setter
-    def private_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class IdcApplicationAuthorizedTokenIssuerArgsDict(TypedDict):
     authorized_audiences_lists: NotRequired[
@@ -184,14 +204,16 @@ class IdcApplicationAuthorizedTokenIssuerArgs:
     @authorized_audiences_lists.setter
     def authorized_audiences_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedTokenIssuerArn")
     def trusted_token_issuer_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trusted_token_issuer_arn.setter
     def trusted_token_issuer_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdcApplicationServiceIntegrationArgsDict(TypedDict):
     lake_formation: NotRequired[
@@ -230,7 +252,8 @@ class IdcApplicationServiceIntegrationArgs:
         value: Optional[
             pulumi.Input[IdcApplicationServiceIntegrationLakeFormationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def redshift(
@@ -240,7 +263,8 @@ class IdcApplicationServiceIntegrationArgs:
     def redshift(
         self,
         value: Optional[pulumi.Input[IdcApplicationServiceIntegrationRedshiftArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3AccessGrants")
     def s3_access_grants(
@@ -252,7 +276,8 @@ class IdcApplicationServiceIntegrationArgs:
         value: Optional[
             pulumi.Input[IdcApplicationServiceIntegrationS3AccessGrantsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdcApplicationServiceIntegrationLakeFormationArgsDict(TypedDict):
     lake_formation_query: NotRequired[
@@ -289,7 +314,8 @@ class IdcApplicationServiceIntegrationLakeFormationArgs:
                 IdcApplicationServiceIntegrationLakeFormationLakeFormationQueryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdcApplicationServiceIntegrationLakeFormationLakeFormationQueryArgsDict(
     TypedDict
@@ -303,7 +329,8 @@ class IdcApplicationServiceIntegrationLakeFormationLakeFormationQueryArgs:
     @pulumi.getter
     def authorization(self) -> pulumi.Input[_builtins.str]: ...
     @authorization.setter
-    def authorization(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class IdcApplicationServiceIntegrationRedshiftArgsDict(TypedDict):
     connect: NotRequired[
@@ -332,7 +359,8 @@ class IdcApplicationServiceIntegrationRedshiftArgs:
         value: Optional[
             pulumi.Input[IdcApplicationServiceIntegrationRedshiftConnectArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdcApplicationServiceIntegrationRedshiftConnectArgsDict(TypedDict):
     authorization: pulumi.Input[_builtins.str]
@@ -344,7 +372,8 @@ class IdcApplicationServiceIntegrationRedshiftConnectArgs:
     @pulumi.getter
     def authorization(self) -> pulumi.Input[_builtins.str]: ...
     @authorization.setter
-    def authorization(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class IdcApplicationServiceIntegrationS3AccessGrantsArgsDict(TypedDict):
     read_write_access: NotRequired[
@@ -379,7 +408,8 @@ class IdcApplicationServiceIntegrationS3AccessGrantsArgs:
                 IdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessArgsDict(TypedDict):
     authorization: pulumi.Input[_builtins.str]
@@ -391,7 +421,8 @@ class IdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessArgs:
     @pulumi.getter
     def authorization(self) -> pulumi.Input[_builtins.str]: ...
     @authorization.setter
-    def authorization(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class IntegrationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -411,17 +442,20 @@ class IntegrationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -439,12 +473,14 @@ class ParameterGroupParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ScheduledActionTargetActionArgsDict(TypedDict):
     pause_cluster: NotRequired[
@@ -480,7 +516,8 @@ class ScheduledActionTargetActionArgs:
     @pause_cluster.setter
     def pause_cluster(
         self, value: Optional[pulumi.Input[ScheduledActionTargetActionPauseClusterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resizeCluster")
     def resize_cluster(
@@ -490,7 +527,8 @@ class ScheduledActionTargetActionArgs:
     def resize_cluster(
         self,
         value: Optional[pulumi.Input[ScheduledActionTargetActionResizeClusterArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resumeCluster")
     def resume_cluster(
@@ -500,7 +538,8 @@ class ScheduledActionTargetActionArgs:
     def resume_cluster(
         self,
         value: Optional[pulumi.Input[ScheduledActionTargetActionResumeClusterArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduledActionTargetActionPauseClusterArgsDict(TypedDict):
     cluster_identifier: pulumi.Input[_builtins.str]
@@ -514,7 +553,8 @@ class ScheduledActionTargetActionPauseClusterArgs:
     @pulumi.getter(name="clusterIdentifier")
     def cluster_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_identifier.setter
-    def cluster_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ScheduledActionTargetActionResizeClusterArgsDict(TypedDict):
     cluster_identifier: pulumi.Input[_builtins.str]
@@ -538,27 +578,32 @@ class ScheduledActionTargetActionResizeClusterArgs:
     @pulumi.getter(name="clusterIdentifier")
     def cluster_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_identifier.setter
-    def cluster_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def classic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @classic.setter
-    def classic(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def classic(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterType")
     def cluster_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_type.setter
-    def cluster_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
     def node_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_type.setter
-    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberOfNodes")
     def number_of_nodes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_of_nodes.setter
-    def number_of_nodes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def number_of_nodes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ScheduledActionTargetActionResumeClusterArgsDict(TypedDict):
     cluster_identifier: pulumi.Input[_builtins.str]
@@ -572,4 +617,5 @@ class ScheduledActionTargetActionResumeClusterArgs:
     @pulumi.getter(name="clusterIdentifier")
     def cluster_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_identifier.setter
-    def cluster_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

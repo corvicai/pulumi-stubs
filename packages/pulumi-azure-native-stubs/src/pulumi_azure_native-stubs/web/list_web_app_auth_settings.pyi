@@ -189,7 +189,8 @@ class ListWebAppAuthSettingsResult:
     def validate_issuer(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableListWebAppAuthSettingsResult(ListWebAppAuthSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebAppAuthSettingsResult]:
+        ...
 
 def list_web_app_auth_settings(
     name: Optional[_builtins.str] = ...,

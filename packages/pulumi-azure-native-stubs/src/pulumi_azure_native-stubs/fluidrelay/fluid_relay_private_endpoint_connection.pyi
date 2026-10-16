@@ -29,7 +29,8 @@ class FluidRelayPrivateEndpointConnectionArgs:
     @pulumi.getter(name="fluidRelayServerName")
     def fluid_relay_server_name(self) -> pulumi.Input[_builtins.str]: ...
     @fluid_relay_server_name.setter
-    def fluid_relay_server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def fluid_relay_server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -38,12 +39,14 @@ class FluidRelayPrivateEndpointConnectionArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group.setter
-    def resource_group(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnectionName")
     def private_endpoint_connection_name(
@@ -52,7 +55,8 @@ class FluidRelayPrivateEndpointConnectionArgs:
     @private_endpoint_connection_name.setter
     def private_endpoint_connection_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class FluidRelayPrivateEndpointConnection(pulumi.CustomResource):

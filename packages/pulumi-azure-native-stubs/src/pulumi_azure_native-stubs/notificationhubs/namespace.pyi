@@ -45,27 +45,32 @@ class NamespaceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> pulumi.Input[SkuArgs]: ...
     @sku.setter
-    def sku(self, value: pulumi.Input[SkuArgs]): ...
+    def sku(self, value: pulumi.Input[SkuArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataCenter")
     def data_center(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_center.setter
-    def data_center(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_center(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace_name.setter
-    def namespace_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceType")
     def namespace_type(
@@ -74,17 +79,22 @@ class NamespaceArgs:
     @namespace_type.setter
     def namespace_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NamespaceType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkAcls")
     def network_acls(self) -> Optional[pulumi.Input[NetworkAclsArgs]]: ...
     @network_acls.setter
-    def network_acls(self, value: Optional[pulumi.Input[NetworkAclsArgs]]): ...
+    def network_acls(self, value: Optional[pulumi.Input[NetworkAclsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pnsCredentials")
     def pns_credentials(self) -> Optional[pulumi.Input[PnsCredentialsArgs]]: ...
     @pns_credentials.setter
-    def pns_credentials(self, value: Optional[pulumi.Input[PnsCredentialsArgs]]): ...
+    def pns_credentials(
+        self, value: Optional[pulumi.Input[PnsCredentialsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -94,7 +104,8 @@ class NamespaceArgs:
     def provisioning_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, OperationProvisioningState]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -103,7 +114,8 @@ class NamespaceArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationRegion")
     def replication_region(
@@ -112,12 +124,14 @@ class NamespaceArgs:
     @replication_region.setter
     def replication_region(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReplicationRegion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleUnit")
     def scale_unit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scale_unit.setter
-    def scale_unit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scale_unit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -126,7 +140,8 @@ class NamespaceArgs:
     @status.setter
     def status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NamespaceStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -135,7 +150,8 @@ class NamespaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneRedundancy")
     def zone_redundancy(
@@ -145,7 +161,8 @@ class NamespaceArgs:
     def zone_redundancy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ZoneRedundancyPreference]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:notificationhubs:Namespace")
 class Namespace(pulumi.CustomResource):

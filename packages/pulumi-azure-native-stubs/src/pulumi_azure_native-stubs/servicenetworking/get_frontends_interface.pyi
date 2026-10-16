@@ -56,7 +56,8 @@ class GetFrontendsInterfaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFrontendsInterfaceResult(GetFrontendsInterfaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFrontendsInterfaceResult]:
+        ...
 
 def get_frontends_interface(
     frontend_name: Optional[_builtins.str] = ...,

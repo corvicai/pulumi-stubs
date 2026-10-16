@@ -27,19 +27,22 @@ class BillingRoleAssignmentByEnrollmentAccountArgs:
     @pulumi.getter(name="billingAccountName")
     def billing_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @billing_account_name.setter
-    def billing_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def billing_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enrollmentAccountName")
     def enrollment_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @enrollment_account_name.setter
-    def enrollment_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def enrollment_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="billingRoleAssignmentName")
     def billing_role_assignment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @billing_role_assignment_name.setter
     def billing_role_assignment_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -48,7 +51,8 @@ class BillingRoleAssignmentByEnrollmentAccountArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[BillingRoleAssignmentPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -57,7 +61,8 @@ class BillingRoleAssignmentByEnrollmentAccountArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class BillingRoleAssignmentByEnrollmentAccount(pulumi.CustomResource):

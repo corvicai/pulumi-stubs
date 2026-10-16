@@ -77,7 +77,8 @@ class GetAttachmentResult:
     def transit_gateway_owner_id(self) -> _builtins.str: ...
 
 class AwaitableGetAttachmentResult(GetAttachmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAttachmentResult]:
+        ...
 
 def get_attachment(
     filters: Optional[

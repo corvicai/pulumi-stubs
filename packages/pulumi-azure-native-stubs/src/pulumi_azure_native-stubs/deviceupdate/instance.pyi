@@ -32,12 +32,14 @@ class InstanceArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diagnosticStorageProperties")
     def diagnostic_storage_properties(
@@ -46,17 +48,22 @@ class InstanceArgs:
     @diagnostic_storage_properties.setter
     def diagnostic_storage_properties(
         self, value: Optional[pulumi.Input[DiagnosticStoragePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDiagnostics")
     def enable_diagnostics(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_diagnostics.setter
-    def enable_diagnostics(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_diagnostics(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceName")
     def instance_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_name.setter
-    def instance_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iotHubs")
     def iot_hubs(
@@ -65,12 +72,14 @@ class InstanceArgs:
     @iot_hubs.setter
     def iot_hubs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IotHubSettingsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -79,7 +88,8 @@ class InstanceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:deviceupdate:Instance")
 class Instance(pulumi.CustomResource):

@@ -21,12 +21,16 @@ class AccountArgs:
     @pulumi.getter(name="cloudwatchRoleArn")
     def cloudwatch_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloudwatch_role_arn.setter
-    def cloudwatch_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cloudwatch_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccountState:
@@ -45,12 +49,16 @@ class _AccountState:
     @pulumi.getter(name="apiKeyVersion")
     def api_key_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_key_version.setter
-    def api_key_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_key_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchRoleArn")
     def cloudwatch_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloudwatch_role_arn.setter
-    def cloudwatch_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cloudwatch_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def features(
@@ -59,12 +67,14 @@ class _AccountState:
     @features.setter
     def features(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throttleSettings")
     def throttle_settings(
@@ -76,7 +86,8 @@ class _AccountState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccountThrottleSettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:apigateway/account:Account")
 class Account(pulumi.CustomResource):

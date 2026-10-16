@@ -68,7 +68,8 @@ class GetIoTAddonResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetIoTAddonResult(GetIoTAddonResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIoTAddonResult]:
+        ...
 
 def get_io_t_addon(
     addon_name: Optional[_builtins.str] = ...,

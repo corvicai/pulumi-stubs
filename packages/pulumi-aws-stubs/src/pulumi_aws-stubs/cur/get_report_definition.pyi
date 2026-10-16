@@ -71,7 +71,8 @@ class GetReportDefinitionResult:
     def time_unit(self) -> _builtins.str: ...
 
 class AwaitableGetReportDefinitionResult(GetReportDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReportDefinitionResult]:
+        ...
 
 def get_report_definition(
     report_name: Optional[_builtins.str] = ...,

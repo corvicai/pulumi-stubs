@@ -64,7 +64,8 @@ class GetPublicCloudConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPublicCloudConnectorResult(GetPublicCloudConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublicCloudConnectorResult]:
+        ...
 
 def get_public_cloud_connector(
     public_cloud_connector: Optional[_builtins.str] = ...,

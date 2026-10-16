@@ -72,12 +72,14 @@ class VirtualNetworkGatewayInitArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activeActive")
     def active_active(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @active_active.setter
-    def active_active(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def active_active(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminState")
     def admin_state(
@@ -86,21 +88,24 @@ class VirtualNetworkGatewayInitArgs:
     @admin_state.setter
     def admin_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AdminState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowRemoteVnetTraffic")
     def allow_remote_vnet_traffic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_remote_vnet_traffic.setter
     def allow_remote_vnet_traffic(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowVirtualWanTraffic")
     def allow_virtual_wan_traffic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_virtual_wan_traffic.setter
     def allow_virtual_wan_traffic(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScaleConfiguration")
     def auto_scale_configuration(
@@ -110,17 +115,22 @@ class VirtualNetworkGatewayInitArgs:
     def auto_scale_configuration(
         self,
         value: Optional[pulumi.Input[VirtualNetworkGatewayAutoScaleConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bgpSettings")
     def bgp_settings(self) -> Optional[pulumi.Input[BgpSettingsArgs]]: ...
     @bgp_settings.setter
-    def bgp_settings(self, value: Optional[pulumi.Input[BgpSettingsArgs]]): ...
+    def bgp_settings(self, value: Optional[pulumi.Input[BgpSettingsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customRoutes")
     def custom_routes(self) -> Optional[pulumi.Input[AddressSpaceArgs]]: ...
     @custom_routes.setter
-    def custom_routes(self, value: Optional[pulumi.Input[AddressSpaceArgs]]): ...
+    def custom_routes(
+        self, value: Optional[pulumi.Input[AddressSpaceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableIPSecReplayProtection")
     def disable_ip_sec_replay_protection(
@@ -129,12 +139,14 @@ class VirtualNetworkGatewayInitArgs:
     @disable_ip_sec_replay_protection.setter
     def disable_ip_sec_replay_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableBgp")
     def enable_bgp(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_bgp.setter
-    def enable_bgp(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_bgp(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableBgpRouteTranslationForNat")
     def enable_bgp_route_translation_for_nat(
@@ -143,31 +155,40 @@ class VirtualNetworkGatewayInitArgs:
     @enable_bgp_route_translation_for_nat.setter
     def enable_bgp_route_translation_for_nat(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDnsForwarding")
     def enable_dns_forwarding(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_dns_forwarding.setter
-    def enable_dns_forwarding(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_dns_forwarding(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePrivateIpAddress")
     def enable_private_ip_address(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_private_ip_address.setter
     def enable_private_ip_address(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayDefaultSite")
     def gateway_default_site(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @gateway_default_site.setter
-    def gateway_default_site(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def gateway_default_site(
+        self, value: Optional[pulumi.Input[SubResourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayType")
     def gateway_type(
@@ -177,17 +198,22 @@ class VirtualNetworkGatewayInitArgs:
     def gateway_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkGatewayType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipConfigurations")
     def ip_configurations(
@@ -203,12 +229,14 @@ class VirtualNetworkGatewayInitArgs:
                 Sequence[pulumi.Input[VirtualNetworkGatewayIPConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natRules")
     def nat_rules(
@@ -222,7 +250,8 @@ class VirtualNetworkGatewayInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VirtualNetworkGatewayNatRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resiliencyModel")
     def resiliency_model(
@@ -231,12 +260,16 @@ class VirtualNetworkGatewayInitArgs:
     @resiliency_model.setter
     def resiliency_model(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ResiliencyModel]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[VirtualNetworkGatewaySkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[VirtualNetworkGatewaySkuArgs]]): ...
+    def sku(
+        self, value: Optional[pulumi.Input[VirtualNetworkGatewaySkuArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -245,7 +278,8 @@ class VirtualNetworkGatewayInitArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vNetExtendedLocationResourceId")
     def v_net_extended_location_resource_id(
@@ -254,14 +288,16 @@ class VirtualNetworkGatewayInitArgs:
     @v_net_extended_location_resource_id.setter
     def v_net_extended_location_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkGatewayName")
     def virtual_network_gateway_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_network_gateway_name.setter
     def virtual_network_gateway_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkGatewayPolicyGroups")
     def virtual_network_gateway_policy_groups(
@@ -275,7 +311,8 @@ class VirtualNetworkGatewayInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VirtualNetworkGatewayPolicyGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnClientConfiguration")
     def vpn_client_configuration(
@@ -284,7 +321,8 @@ class VirtualNetworkGatewayInitArgs:
     @vpn_client_configuration.setter
     def vpn_client_configuration(
         self, value: Optional[pulumi.Input[VpnClientConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnGatewayGeneration")
     def vpn_gateway_generation(
@@ -293,14 +331,16 @@ class VirtualNetworkGatewayInitArgs:
     @vpn_gateway_generation.setter
     def vpn_gateway_generation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, VpnGatewayGeneration]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnType")
     def vpn_type(self) -> Optional[pulumi.Input[Union[_builtins.str, VpnType]]]: ...
     @vpn_type.setter
     def vpn_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, VpnType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:VirtualNetworkGateway")
 class VirtualNetworkGateway(pulumi.CustomResource):

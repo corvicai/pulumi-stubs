@@ -56,17 +56,20 @@ class ApplicationArgs:
     @pulumi.getter(name="releaseLabel")
     def release_label(self) -> pulumi.Input[_builtins.str]: ...
     @release_label.setter
-    def release_label(self, value: pulumi.Input[_builtins.str]): ...
+    def release_label(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def architecture(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @architecture.setter
-    def architecture(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def architecture(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoStartConfiguration")
     def auto_start_configuration(
@@ -75,7 +78,8 @@ class ApplicationArgs:
     @auto_start_configuration.setter
     def auto_start_configuration(
         self, value: Optional[pulumi.Input[ApplicationAutoStartConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoStopConfiguration")
     def auto_stop_configuration(
@@ -84,7 +88,8 @@ class ApplicationArgs:
     @auto_stop_configuration.setter
     def auto_stop_configuration(
         self, value: Optional[pulumi.Input[ApplicationAutoStopConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageConfiguration")
     def image_configuration(
@@ -93,7 +98,8 @@ class ApplicationArgs:
     @image_configuration.setter
     def image_configuration(
         self, value: Optional[pulumi.Input[ApplicationImageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialCapacities")
     def initial_capacities(
@@ -107,7 +113,8 @@ class ApplicationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationInitialCapacityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interactiveConfiguration")
     def interactive_configuration(
@@ -116,7 +123,8 @@ class ApplicationArgs:
     @interactive_configuration.setter
     def interactive_configuration(
         self, value: Optional[pulumi.Input[ApplicationInteractiveConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobLevelCostAllocationConfiguration")
     def job_level_cost_allocation_configuration(
@@ -128,7 +136,8 @@ class ApplicationArgs:
         value: Optional[
             pulumi.Input[ApplicationJobLevelCostAllocationConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumCapacity")
     def maximum_capacity(
@@ -137,7 +146,8 @@ class ApplicationArgs:
     @maximum_capacity.setter
     def maximum_capacity(
         self, value: Optional[pulumi.Input[ApplicationMaximumCapacityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringConfiguration")
     def monitoring_configuration(
@@ -146,12 +156,14 @@ class ApplicationArgs:
     @monitoring_configuration.setter
     def monitoring_configuration(
         self, value: Optional[pulumi.Input[ApplicationMonitoringConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -160,12 +172,14 @@ class ApplicationArgs:
     @network_configuration.setter
     def network_configuration(
         self, value: Optional[pulumi.Input[ApplicationNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfigurations")
     def runtime_configurations(
@@ -179,7 +193,8 @@ class ApplicationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationRuntimeConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulerConfiguration")
     def scheduler_configuration(
@@ -188,7 +203,8 @@ class ApplicationArgs:
     @scheduler_configuration.setter
     def scheduler_configuration(
         self, value: Optional[pulumi.Input[ApplicationSchedulerConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -197,7 +213,8 @@ class ApplicationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ApplicationState:
@@ -250,12 +267,14 @@ class _ApplicationState:
     @pulumi.getter
     def architecture(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @architecture.setter
-    def architecture(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def architecture(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoStartConfiguration")
     def auto_start_configuration(
@@ -264,7 +283,8 @@ class _ApplicationState:
     @auto_start_configuration.setter
     def auto_start_configuration(
         self, value: Optional[pulumi.Input[ApplicationAutoStartConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoStopConfiguration")
     def auto_stop_configuration(
@@ -273,7 +293,8 @@ class _ApplicationState:
     @auto_stop_configuration.setter
     def auto_stop_configuration(
         self, value: Optional[pulumi.Input[ApplicationAutoStopConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageConfiguration")
     def image_configuration(
@@ -282,7 +303,8 @@ class _ApplicationState:
     @image_configuration.setter
     def image_configuration(
         self, value: Optional[pulumi.Input[ApplicationImageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialCapacities")
     def initial_capacities(
@@ -296,7 +318,8 @@ class _ApplicationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationInitialCapacityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interactiveConfiguration")
     def interactive_configuration(
@@ -305,7 +328,8 @@ class _ApplicationState:
     @interactive_configuration.setter
     def interactive_configuration(
         self, value: Optional[pulumi.Input[ApplicationInteractiveConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobLevelCostAllocationConfiguration")
     def job_level_cost_allocation_configuration(
@@ -317,7 +341,8 @@ class _ApplicationState:
         value: Optional[
             pulumi.Input[ApplicationJobLevelCostAllocationConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumCapacity")
     def maximum_capacity(
@@ -326,7 +351,8 @@ class _ApplicationState:
     @maximum_capacity.setter
     def maximum_capacity(
         self, value: Optional[pulumi.Input[ApplicationMaximumCapacityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringConfiguration")
     def monitoring_configuration(
@@ -335,12 +361,14 @@ class _ApplicationState:
     @monitoring_configuration.setter
     def monitoring_configuration(
         self, value: Optional[pulumi.Input[ApplicationMonitoringConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -349,17 +377,20 @@ class _ApplicationState:
     @network_configuration.setter
     def network_configuration(
         self, value: Optional[pulumi.Input[ApplicationNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseLabel")
     def release_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @release_label.setter
-    def release_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def release_label(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfigurations")
     def runtime_configurations(
@@ -373,7 +404,8 @@ class _ApplicationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationRuntimeConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulerConfiguration")
     def scheduler_configuration(
@@ -382,7 +414,8 @@ class _ApplicationState:
     @scheduler_configuration.setter
     def scheduler_configuration(
         self, value: Optional[pulumi.Input[ApplicationSchedulerConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -391,7 +424,8 @@ class _ApplicationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -400,12 +434,14 @@ class _ApplicationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:emrserverless/application:Application")
 class Application(pulumi.CustomResource):

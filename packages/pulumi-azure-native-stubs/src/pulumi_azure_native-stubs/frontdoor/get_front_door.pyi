@@ -108,7 +108,8 @@ class GetFrontDoorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFrontDoorResult(GetFrontDoorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFrontDoorResult]:
+        ...
 
 def get_front_door(
     front_door_name: Optional[_builtins.str] = ...,

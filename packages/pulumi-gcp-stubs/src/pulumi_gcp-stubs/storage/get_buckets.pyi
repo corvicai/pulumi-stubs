@@ -30,7 +30,8 @@ class GetBucketsResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetBucketsResult(GetBucketsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBucketsResult]:
+        ...
 
 def get_buckets(
     prefix: Optional[_builtins.str] = ...,

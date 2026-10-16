@@ -48,7 +48,8 @@ class GetIdentityBindingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIdentityBindingResult(GetIdentityBindingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIdentityBindingResult]:
+        ...
 
 def get_identity_binding(
     identity_binding_name: Optional[_builtins.str] = ...,

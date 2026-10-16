@@ -52,7 +52,8 @@ class GetActionResult:
     def workflow_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetActionResult(GetActionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActionResult]:
+        ...
 
 def get_action(
     action_id: Optional[_builtins.str] = ...,

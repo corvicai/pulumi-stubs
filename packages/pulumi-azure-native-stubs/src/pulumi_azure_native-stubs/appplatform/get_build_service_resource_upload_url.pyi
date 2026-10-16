@@ -25,7 +25,10 @@ class GetBuildServiceResourceUploadUrlResult:
 class AwaitableGetBuildServiceResourceUploadUrlResult(
     GetBuildServiceResourceUploadUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBuildServiceResourceUploadUrlResult]:
+        ...
 
 def get_build_service_resource_upload_url(
     build_service_name: Optional[_builtins.str] = ...,

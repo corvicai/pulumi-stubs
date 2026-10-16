@@ -21,7 +21,8 @@ class GetRequiredAmlFSSubnetsSizeResult:
     def filesystem_subnet_size(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetRequiredAmlFSSubnetsSizeResult(GetRequiredAmlFSSubnetsSizeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRequiredAmlFSSubnetsSizeResult]:
+        ...
 
 def get_required_aml_fs_subnets_size(
     sku: Optional[Union[SkuName, SkuNameDict]] = ...,

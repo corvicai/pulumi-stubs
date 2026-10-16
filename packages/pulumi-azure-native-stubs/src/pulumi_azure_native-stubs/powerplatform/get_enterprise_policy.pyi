@@ -78,7 +78,8 @@ class GetEnterprisePolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnterprisePolicyResult(GetEnterprisePolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnterprisePolicyResult]:
+        ...
 
 def get_enterprise_policy(
     enterprise_policy_name: Optional[_builtins.str] = ...,

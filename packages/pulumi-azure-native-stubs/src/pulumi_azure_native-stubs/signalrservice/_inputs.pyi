@@ -69,12 +69,14 @@ class IPRuleArgs:
     @action.setter
     def action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ACLAction]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class LiveTraceCategoryArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.str]]
@@ -92,12 +94,14 @@ class LiveTraceCategoryArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class LiveTraceConfigurationArgsDict(TypedDict):
     categories: NotRequired[
@@ -124,12 +128,14 @@ class LiveTraceConfigurationArgs:
     def categories(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[LiveTraceCategoryArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedIdentitySettingsArgsDict(TypedDict):
     resource: NotRequired[pulumi.Input[_builtins.str]]
@@ -143,7 +149,8 @@ class ManagedIdentitySettingsArgs:
     @pulumi.getter
     def resource(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource.setter
-    def resource(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, ManagedIdentityType]]]
@@ -169,7 +176,8 @@ class ManagedIdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedIdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -178,7 +186,8 @@ class ManagedIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NetworkACLArgsDict(TypedDict):
     allow: NotRequired[
@@ -219,7 +228,8 @@ class NetworkACLArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, SignalRRequestType]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deny(
@@ -235,7 +245,8 @@ class NetworkACLArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, SignalRRequestType]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointACLArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -267,7 +278,8 @@ class PrivateEndpointACLArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def allow(
@@ -283,7 +295,8 @@ class PrivateEndpointACLArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, SignalRRequestType]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deny(
@@ -299,7 +312,8 @@ class PrivateEndpointACLArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, SignalRRequestType]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -313,7 +327,8 @@ class PrivateEndpointArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -337,12 +352,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -356,7 +375,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceLogCategoryArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.str]]
@@ -374,12 +394,14 @@ class ResourceLogCategoryArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ResourceLogConfigurationArgsDict(TypedDict):
     categories: NotRequired[
@@ -404,7 +426,8 @@ class ResourceLogConfigurationArgs:
     def categories(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceLogCategoryArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceReferenceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -418,7 +441,8 @@ class ResourceReferenceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ResourceSkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -438,19 +462,22 @@ class ResourceSkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[Union[_builtins.str, SignalRSkuTier]]]: ...
     @tier.setter
     def tier(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SignalRSkuTier]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServerlessSettingsArgsDict(TypedDict):
     connection_timeout_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -470,7 +497,8 @@ class ServerlessSettingsArgs:
     @connection_timeout_in_seconds.setter
     def connection_timeout_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServerlessUpstreamSettingsArgsDict(TypedDict):
     templates: NotRequired[
@@ -495,7 +523,8 @@ class ServerlessUpstreamSettingsArgs:
     def templates(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[UpstreamTemplateArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SignalRCorsSettingsArgsDict(TypedDict):
     allowed_origins: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -517,7 +546,8 @@ class SignalRCorsSettingsArgs:
     @allowed_origins.setter
     def allowed_origins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SignalRFeatureArgsDict(TypedDict):
     flag: pulumi.Input[Union[_builtins.str, FeatureFlags]]
@@ -539,12 +569,14 @@ class SignalRFeatureArgs:
     @pulumi.getter
     def flag(self) -> pulumi.Input[Union[_builtins.str, FeatureFlags]]: ...
     @flag.setter
-    def flag(self, value: pulumi.Input[Union[_builtins.str, FeatureFlags]]): ...
+    def flag(self, value: pulumi.Input[Union[_builtins.str, FeatureFlags]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -553,7 +585,8 @@ class SignalRFeatureArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SignalRNetworkACLsArgsDict(TypedDict):
     default_action: NotRequired[pulumi.Input[Union[_builtins.str, ACLAction]]]
@@ -583,7 +616,8 @@ class SignalRNetworkACLsArgs:
     @default_action.setter
     def default_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ACLAction]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRules")
     def ip_rules(
@@ -592,7 +626,8 @@ class SignalRNetworkACLsArgs:
     @ip_rules.setter
     def ip_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IPRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpoints")
     def private_endpoints(
@@ -602,12 +637,14 @@ class SignalRNetworkACLsArgs:
     def private_endpoints(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PrivateEndpointACLArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetwork")
     def public_network(self) -> Optional[pulumi.Input[NetworkACLArgs]]: ...
     @public_network.setter
-    def public_network(self, value: Optional[pulumi.Input[NetworkACLArgs]]): ...
+    def public_network(self, value: Optional[pulumi.Input[NetworkACLArgs]]):  # -> None:
+        ...
 
 class SignalRTlsSettingsArgsDict(TypedDict):
     client_cert_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -621,7 +658,10 @@ class SignalRTlsSettingsArgs:
     @pulumi.getter(name="clientCertEnabled")
     def client_cert_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_cert_enabled.setter
-    def client_cert_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_cert_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class UpstreamAuthSettingsArgsDict(TypedDict):
     managed_identity: NotRequired[pulumi.Input[ManagedIdentitySettingsArgsDict]]
@@ -643,7 +683,8 @@ class UpstreamAuthSettingsArgs:
     @managed_identity.setter
     def managed_identity(
         self, value: Optional[pulumi.Input[ManagedIdentitySettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -652,7 +693,8 @@ class UpstreamAuthSettingsArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, UpstreamAuthType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UpstreamTemplateArgsDict(TypedDict):
     url_template: pulumi.Input[_builtins.str]
@@ -676,24 +718,31 @@ class UpstreamTemplateArgs:
     @pulumi.getter(name="urlTemplate")
     def url_template(self) -> pulumi.Input[_builtins.str]: ...
     @url_template.setter
-    def url_template(self, value: pulumi.Input[_builtins.str]): ...
+    def url_template(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def auth(self) -> Optional[pulumi.Input[UpstreamAuthSettingsArgs]]: ...
     @auth.setter
-    def auth(self, value: Optional[pulumi.Input[UpstreamAuthSettingsArgs]]): ...
+    def auth(self, value: Optional[pulumi.Input[UpstreamAuthSettingsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="categoryPattern")
     def category_pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @category_pattern.setter
-    def category_pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def category_pattern(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventPattern")
     def event_pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_pattern.setter
-    def event_pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hubPattern")
     def hub_pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hub_pattern.setter
-    def hub_pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hub_pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

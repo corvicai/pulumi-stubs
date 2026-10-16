@@ -43,12 +43,14 @@ class GuardrailArgs:
     @pulumi.getter(name="blockedInputMessaging")
     def blocked_input_messaging(self) -> pulumi.Input[_builtins.str]: ...
     @blocked_input_messaging.setter
-    def blocked_input_messaging(self, value: pulumi.Input[_builtins.str]): ...
+    def blocked_input_messaging(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockedOutputsMessaging")
     def blocked_outputs_messaging(self) -> pulumi.Input[_builtins.str]: ...
     @blocked_outputs_messaging.setter
-    def blocked_outputs_messaging(self, value: pulumi.Input[_builtins.str]): ...
+    def blocked_outputs_messaging(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentPolicyConfig")
     def content_policy_config(
@@ -57,7 +59,8 @@ class GuardrailArgs:
     @content_policy_config.setter
     def content_policy_config(
         self, value: Optional[pulumi.Input[GuardrailContentPolicyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contextualGroundingPolicyConfig")
     def contextual_grounding_policy_config(
@@ -67,7 +70,8 @@ class GuardrailArgs:
     def contextual_grounding_policy_config(
         self,
         value: Optional[pulumi.Input[GuardrailContextualGroundingPolicyConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossRegionConfig")
     def cross_region_config(
@@ -76,27 +80,32 @@ class GuardrailArgs:
     @cross_region_config.setter
     def cross_region_config(
         self, value: Optional[pulumi.Input[GuardrailCrossRegionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitiveInformationPolicyConfig")
     def sensitive_information_policy_config(
@@ -106,7 +115,8 @@ class GuardrailArgs:
     def sensitive_information_policy_config(
         self,
         value: Optional[pulumi.Input[GuardrailSensitiveInformationPolicyConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -115,12 +125,16 @@ class GuardrailArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[GuardrailTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[GuardrailTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[GuardrailTimeoutsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicPolicyConfig")
     def topic_policy_config(
@@ -129,7 +143,8 @@ class GuardrailArgs:
     @topic_policy_config.setter
     def topic_policy_config(
         self, value: Optional[pulumi.Input[GuardrailTopicPolicyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordPolicyConfig")
     def word_policy_config(
@@ -138,7 +153,8 @@ class GuardrailArgs:
     @word_policy_config.setter
     def word_policy_config(
         self, value: Optional[pulumi.Input[GuardrailWordPolicyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GuardrailState:
@@ -182,14 +198,18 @@ class _GuardrailState:
     @pulumi.getter(name="blockedInputMessaging")
     def blocked_input_messaging(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @blocked_input_messaging.setter
-    def blocked_input_messaging(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def blocked_input_messaging(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockedOutputsMessaging")
     def blocked_outputs_messaging(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @blocked_outputs_messaging.setter
     def blocked_outputs_messaging(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentPolicyConfig")
     def content_policy_config(
@@ -198,7 +218,8 @@ class _GuardrailState:
     @content_policy_config.setter
     def content_policy_config(
         self, value: Optional[pulumi.Input[GuardrailContentPolicyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contextualGroundingPolicyConfig")
     def contextual_grounding_policy_config(
@@ -208,12 +229,14 @@ class _GuardrailState:
     def contextual_grounding_policy_config(
         self,
         value: Optional[pulumi.Input[GuardrailContextualGroundingPolicyConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
     def created_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_at.setter
-    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossRegionConfig")
     def cross_region_config(
@@ -222,37 +245,44 @@ class _GuardrailState:
     @cross_region_config.setter
     def cross_region_config(
         self, value: Optional[pulumi.Input[GuardrailCrossRegionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailArn")
     def guardrail_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @guardrail_arn.setter
-    def guardrail_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def guardrail_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailId")
     def guardrail_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @guardrail_id.setter
-    def guardrail_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def guardrail_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitiveInformationPolicyConfig")
     def sensitive_information_policy_config(
@@ -262,12 +292,14 @@ class _GuardrailState:
     def sensitive_information_policy_config(
         self,
         value: Optional[pulumi.Input[GuardrailSensitiveInformationPolicyConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -276,7 +308,8 @@ class _GuardrailState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -285,12 +318,16 @@ class _GuardrailState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[GuardrailTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[GuardrailTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[GuardrailTimeoutsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicPolicyConfig")
     def topic_policy_config(
@@ -299,12 +336,14 @@ class _GuardrailState:
     @topic_policy_config.setter
     def topic_policy_config(
         self, value: Optional[pulumi.Input[GuardrailTopicPolicyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordPolicyConfig")
     def word_policy_config(
@@ -313,7 +352,8 @@ class _GuardrailState:
     @word_policy_config.setter
     def word_policy_config(
         self, value: Optional[pulumi.Input[GuardrailWordPolicyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:bedrock/guardrail:Guardrail")
 class Guardrail(pulumi.CustomResource):

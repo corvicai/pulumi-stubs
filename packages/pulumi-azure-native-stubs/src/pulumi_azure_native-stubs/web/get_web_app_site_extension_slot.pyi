@@ -119,7 +119,8 @@ class GetWebAppSiteExtensionSlotResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebAppSiteExtensionSlotResult(GetWebAppSiteExtensionSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppSiteExtensionSlotResult]:
+        ...
 
 def get_web_app_site_extension_slot(
     name: Optional[_builtins.str] = ...,

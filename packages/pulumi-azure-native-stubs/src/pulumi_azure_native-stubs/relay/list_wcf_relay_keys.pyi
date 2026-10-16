@@ -39,7 +39,8 @@ class ListWCFRelayKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListWCFRelayKeysResult(ListWCFRelayKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWCFRelayKeysResult]:
+        ...
 
 def list_wcf_relay_keys(
     authorization_rule_name: Optional[_builtins.str] = ...,

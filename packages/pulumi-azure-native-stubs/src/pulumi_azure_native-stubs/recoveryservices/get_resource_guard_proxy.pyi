@@ -52,7 +52,8 @@ class GetResourceGuardProxyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetResourceGuardProxyResult(GetResourceGuardProxyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceGuardProxyResult]:
+        ...
 
 def get_resource_guard_proxy(
     resource_group_name: Optional[_builtins.str] = ...,

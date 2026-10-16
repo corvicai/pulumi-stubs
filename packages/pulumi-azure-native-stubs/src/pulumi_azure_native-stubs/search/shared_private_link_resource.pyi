@@ -26,12 +26,14 @@ class SharedPrivateLinkResourceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="searchServiceName")
     def search_service_name(self) -> pulumi.Input[_builtins.str]: ...
     @search_service_name.setter
-    def search_service_name(self, value: pulumi.Input[_builtins.str]): ...
+    def search_service_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -40,7 +42,8 @@ class SharedPrivateLinkResourceArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[SharedPrivateLinkResourcePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharedPrivateLinkResourceName")
     def shared_private_link_resource_name(
@@ -49,7 +52,8 @@ class SharedPrivateLinkResourceArgs:
     @shared_private_link_resource_name.setter
     def shared_private_link_resource_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:search:SharedPrivateLinkResource")
 class SharedPrivateLinkResource(pulumi.CustomResource):

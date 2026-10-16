@@ -38,7 +38,8 @@ class LabPlanArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedRegions")
     def allowed_regions(
@@ -47,7 +48,8 @@ class LabPlanArgs:
     @allowed_regions.setter
     def allowed_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultAutoShutdownProfile")
     def default_auto_shutdown_profile(
@@ -56,7 +58,8 @@ class LabPlanArgs:
     @default_auto_shutdown_profile.setter
     def default_auto_shutdown_profile(
         self, value: Optional[pulumi.Input[AutoShutdownProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultConnectionProfile")
     def default_connection_profile(
@@ -65,7 +68,8 @@ class LabPlanArgs:
     @default_connection_profile.setter
     def default_connection_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultNetworkProfile")
     def default_network_profile(
@@ -74,37 +78,48 @@ class LabPlanArgs:
     @default_network_profile.setter
     def default_network_profile(
         self, value: Optional[pulumi.Input[LabPlanNetworkProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labPlanName")
     def lab_plan_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lab_plan_name.setter
-    def lab_plan_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lab_plan_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedLmsInstance")
     def linked_lms_instance(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @linked_lms_instance.setter
-    def linked_lms_instance(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def linked_lms_instance(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharedGalleryId")
     def shared_gallery_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @shared_gallery_id.setter
-    def shared_gallery_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def shared_gallery_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportInfo")
     def support_info(self) -> Optional[pulumi.Input[SupportInfoArgs]]: ...
     @support_info.setter
-    def support_info(self, value: Optional[pulumi.Input[SupportInfoArgs]]): ...
+    def support_info(self, value: Optional[pulumi.Input[SupportInfoArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -113,7 +128,8 @@ class LabPlanArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:labservices:LabPlan")
 class LabPlan(pulumi.CustomResource):

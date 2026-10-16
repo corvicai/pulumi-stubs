@@ -49,7 +49,8 @@ class GetSpotPriceResult:
     def spot_price_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetSpotPriceResult(GetSpotPriceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSpotPriceResult]:
+        ...
 
 def get_spot_price(
     availability_zone: Optional[_builtins.str] = ...,

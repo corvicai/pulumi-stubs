@@ -60,7 +60,8 @@ class GetPrefixListLocalRulestackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrefixListLocalRulestackResult(GetPrefixListLocalRulestackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrefixListLocalRulestackResult]:
+        ...
 
 def get_prefix_list_local_rulestack(
     local_rulestack_name: Optional[_builtins.str] = ...,

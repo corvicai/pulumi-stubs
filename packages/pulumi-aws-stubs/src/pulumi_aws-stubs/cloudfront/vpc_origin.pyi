@@ -26,7 +26,8 @@ class VpcOriginArgs:
     @vpc_origin_endpoint_config.setter
     def vpc_origin_endpoint_config(
         self, value: pulumi.Input[VpcOriginVpcOriginEndpointConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -35,12 +36,16 @@ class VpcOriginArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[VpcOriginTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[VpcOriginTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[VpcOriginTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcOriginState:
@@ -62,12 +67,14 @@ class _VpcOriginState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -76,7 +83,8 @@ class _VpcOriginState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -85,12 +93,16 @@ class _VpcOriginState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[VpcOriginTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[VpcOriginTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[VpcOriginTimeoutsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcOriginEndpointConfig")
     def vpc_origin_endpoint_config(
@@ -99,7 +111,8 @@ class _VpcOriginState:
     @vpc_origin_endpoint_config.setter
     def vpc_origin_endpoint_config(
         self, value: Optional[pulumi.Input[VpcOriginVpcOriginEndpointConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cloudfront/vpcOrigin:VpcOrigin")
 class VpcOrigin(pulumi.CustomResource):

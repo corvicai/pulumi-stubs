@@ -60,7 +60,8 @@ class GetNamedValueResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNamedValueResult(GetNamedValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNamedValueResult]:
+        ...
 
 def get_named_value(
     named_value_id: Optional[_builtins.str] = ...,

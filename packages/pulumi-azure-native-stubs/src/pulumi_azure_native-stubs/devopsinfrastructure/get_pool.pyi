@@ -71,7 +71,8 @@ class GetPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPoolResult(GetPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPoolResult]:
+        ...
 
 def get_pool(
     pool_name: Optional[_builtins.str] = ...,

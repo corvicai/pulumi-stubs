@@ -56,7 +56,8 @@ class GetHybridIdentityMetadataResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHybridIdentityMetadataResult(GetHybridIdentityMetadataResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHybridIdentityMetadataResult]:
+        ...
 
 def get_hybrid_identity_metadata(
     metadata_name: Optional[_builtins.str] = ...,

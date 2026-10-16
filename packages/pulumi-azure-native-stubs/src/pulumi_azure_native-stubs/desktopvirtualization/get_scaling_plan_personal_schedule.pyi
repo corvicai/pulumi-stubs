@@ -146,7 +146,10 @@ class GetScalingPlanPersonalScheduleResult:
 class AwaitableGetScalingPlanPersonalScheduleResult(
     GetScalingPlanPersonalScheduleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetScalingPlanPersonalScheduleResult]:
+        ...
 
 def get_scaling_plan_personal_schedule(
     resource_group_name: Optional[_builtins.str] = ...,

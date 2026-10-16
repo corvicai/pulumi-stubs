@@ -84,7 +84,8 @@ class GetExternalAccessRuleResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetExternalAccessRuleResult(GetExternalAccessRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExternalAccessRuleResult]:
+        ...
 
 def get_external_access_rule(
     name: Optional[_builtins.str] = ...,

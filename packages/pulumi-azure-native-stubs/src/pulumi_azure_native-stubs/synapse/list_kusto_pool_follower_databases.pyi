@@ -25,7 +25,10 @@ class ListKustoPoolFollowerDatabasesResult:
 class AwaitableListKustoPoolFollowerDatabasesResult(
     ListKustoPoolFollowerDatabasesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListKustoPoolFollowerDatabasesResult]:
+        ...
 
 def list_kusto_pool_follower_databases(
     kusto_pool_name: Optional[_builtins.str] = ...,

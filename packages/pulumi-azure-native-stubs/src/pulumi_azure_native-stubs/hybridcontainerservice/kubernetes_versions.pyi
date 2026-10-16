@@ -22,14 +22,18 @@ class KubernetesVersionsArgs:
     @pulumi.getter(name="customLocationResourceUri")
     def custom_location_resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @custom_location_resource_uri.setter
-    def custom_location_resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def custom_location_resource_uri(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class KubernetesVersions(pulumi.CustomResource):

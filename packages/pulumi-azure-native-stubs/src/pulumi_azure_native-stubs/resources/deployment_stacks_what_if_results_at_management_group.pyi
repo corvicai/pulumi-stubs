@@ -32,7 +32,8 @@ class DeploymentStacksWhatIfResultsAtManagementGroupArgs:
     @pulumi.getter(name="managementGroupId")
     def management_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @management_group_id.setter
-    def management_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def management_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentStacksWhatIfResultName")
     def deployment_stacks_what_if_result_name(
@@ -41,12 +42,14 @@ class DeploymentStacksWhatIfResultsAtManagementGroupArgs:
     @deployment_stacks_what_if_result_name.setter
     def deployment_stacks_what_if_result_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -55,7 +58,8 @@ class DeploymentStacksWhatIfResultsAtManagementGroupArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[DeploymentStacksWhatIfResultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -64,7 +68,8 @@ class DeploymentStacksWhatIfResultsAtManagementGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DeploymentStacksWhatIfResultsAtManagementGroup(pulumi.CustomResource):

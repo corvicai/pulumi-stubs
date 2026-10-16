@@ -48,7 +48,8 @@ class GetFirewallRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFirewallRuleResult(GetFirewallRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirewallRuleResult]:
+        ...
 
 def get_firewall_rule(
     cache_name: Optional[_builtins.str] = ...,

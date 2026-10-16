@@ -47,7 +47,8 @@ class GetApiIssueCommentResult:
     def user_id(self) -> _builtins.str: ...
 
 class AwaitableGetApiIssueCommentResult(GetApiIssueCommentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiIssueCommentResult]:
+        ...
 
 def get_api_issue_comment(
     api_id: Optional[_builtins.str] = ...,

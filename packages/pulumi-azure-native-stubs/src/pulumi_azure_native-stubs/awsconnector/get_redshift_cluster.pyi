@@ -52,7 +52,8 @@ class GetRedshiftClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRedshiftClusterResult(GetRedshiftClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRedshiftClusterResult]:
+        ...
 
 def get_redshift_cluster(
     name: Optional[_builtins.str] = ...,

@@ -41,7 +41,10 @@ class GetDatabaseInstanceLatestRecoveryTimeResult:
 class AwaitableGetDatabaseInstanceLatestRecoveryTimeResult(
     GetDatabaseInstanceLatestRecoveryTimeResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseInstanceLatestRecoveryTimeResult]:
+        ...
 
 def get_database_instance_latest_recovery_time(
     instance: Optional[_builtins.str] = ...,

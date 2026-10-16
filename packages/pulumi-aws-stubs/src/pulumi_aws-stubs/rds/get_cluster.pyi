@@ -178,7 +178,8 @@ class GetClusterResult:
     def vpc_security_group_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetClusterResult(GetClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterResult]:
+        ...
 
 def get_cluster(
     cluster_identifier: Optional[_builtins.str] = ...,

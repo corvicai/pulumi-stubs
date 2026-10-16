@@ -58,7 +58,8 @@ class GetSecurityContactResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityContactResult(GetSecurityContactResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityContactResult]:
+        ...
 
 def get_security_contact(
     security_contact_name: Optional[_builtins.str] = ...,

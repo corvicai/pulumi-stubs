@@ -64,7 +64,8 @@ class GetVirtualServiceResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVirtualServiceResult(GetVirtualServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualServiceResult]:
+        ...
 
 def get_virtual_service(
     mesh_name: Optional[_builtins.str] = ...,

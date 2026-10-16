@@ -22,18 +22,23 @@ class AggregateAuthorizationArgs:
     @pulumi.getter(name="accountId")
     def account_id(self) -> pulumi.Input[_builtins.str]: ...
     @account_id.setter
-    def account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizedAwsRegion")
     def authorized_aws_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorized_aws_region.setter
-    def authorized_aws_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authorized_aws_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -42,7 +47,8 @@ class AggregateAuthorizationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AggregateAuthorizationState:
@@ -62,23 +68,29 @@ class _AggregateAuthorizationState:
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizedAwsRegion")
     def authorized_aws_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorized_aws_region.setter
-    def authorized_aws_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authorized_aws_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -87,7 +99,8 @@ class _AggregateAuthorizationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -96,7 +109,8 @@ class _AggregateAuthorizationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AggregateAuthorization(pulumi.CustomResource):

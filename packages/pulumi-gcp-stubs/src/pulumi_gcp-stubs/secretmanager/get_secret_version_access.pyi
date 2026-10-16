@@ -47,7 +47,8 @@ class GetSecretVersionAccessResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetSecretVersionAccessResult(GetSecretVersionAccessResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretVersionAccessResult]:
+        ...
 
 def get_secret_version_access(
     is_secret_data_base64: Optional[_builtins.bool] = ...,

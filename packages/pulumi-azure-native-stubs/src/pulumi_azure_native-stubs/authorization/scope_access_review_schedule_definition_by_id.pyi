@@ -61,7 +61,8 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoApplyDecisionsEnabled")
     def auto_apply_decisions_enabled(
@@ -70,7 +71,8 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     @auto_apply_decisions_enabled.setter
     def auto_apply_decisions_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupReviewers")
     def backup_reviewers(
@@ -80,7 +82,8 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     def backup_reviewers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AccessReviewReviewerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultDecision")
     def default_decision(
@@ -89,55 +92,70 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     @default_decision.setter
     def default_decision(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DefaultDecisionType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultDecisionEnabled")
     def default_decision_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @default_decision_enabled.setter
     def default_decision_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="descriptionForAdmins")
     def description_for_admins(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description_for_admins.setter
-    def description_for_admins(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description_for_admins(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="descriptionForReviewers")
     def description_for_reviewers(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description_for_reviewers.setter
     def description_for_reviewers(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeResourceId")
     def exclude_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @exclude_resource_id.setter
-    def exclude_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def exclude_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeRoleDefinitionId")
     def exclude_role_definition_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @exclude_role_definition_id.setter
     def exclude_role_definition_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expandNestedMemberships")
     def expand_nested_memberships(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @expand_nested_memberships.setter
     def expand_nested_memberships(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inactiveDuration")
     def inactive_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @inactive_duration.setter
-    def inactive_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def inactive_duration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeAccessBelowResource")
     def include_access_below_resource(
@@ -146,21 +164,24 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     @include_access_below_resource.setter
     def include_access_below_resource(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeInheritedAccess")
     def include_inherited_access(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_inherited_access.setter
     def include_inherited_access(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceDurationInDays")
     def instance_duration_in_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @instance_duration_in_days.setter
     def instance_duration_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instances(
@@ -170,12 +191,14 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     def instances(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AccessReviewInstanceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interval(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval.setter
-    def interval(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def interval(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="justificationRequiredOnApproval")
     def justification_required_on_approval(
@@ -184,19 +207,24 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     @justification_required_on_approval.setter
     def justification_required_on_approval(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mailNotificationsEnabled")
     def mail_notifications_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mail_notifications_enabled.setter
     def mail_notifications_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def range(self) -> Optional[pulumi.Input[AccessReviewRecurrenceRangeArgs]]: ...
     @range.setter
-    def range(self, value: Optional[pulumi.Input[AccessReviewRecurrenceRangeArgs]]): ...
+    def range(
+        self, value: Optional[pulumi.Input[AccessReviewRecurrenceRangeArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recommendationLookBackDuration")
     def recommendation_look_back_duration(
@@ -205,14 +233,16 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     @recommendation_look_back_duration.setter
     def recommendation_look_back_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recommendationsEnabled")
     def recommendations_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @recommendations_enabled.setter
     def recommendations_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reminderNotificationsEnabled")
     def reminder_notifications_enabled(
@@ -221,7 +251,8 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     @reminder_notifications_enabled.setter
     def reminder_notifications_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reviewers(
@@ -231,12 +262,16 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
     def reviewers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AccessReviewReviewerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleDefinitionId")
     def schedule_definition_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_definition_id.setter
-    def schedule_definition_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule_definition_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -250,7 +285,8 @@ class ScopeAccessReviewScheduleDefinitionByIdArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, AccessReviewRecurrencePatternType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ScopeAccessReviewScheduleDefinitionById(pulumi.CustomResource):

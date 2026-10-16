@@ -47,7 +47,8 @@ class GetEventConnectionResult:
     def secret_arn(self) -> _builtins.str: ...
 
 class AwaitableGetEventConnectionResult(GetEventConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventConnectionResult]:
+        ...
 
 def get_event_connection(
     name: Optional[_builtins.str] = ...,

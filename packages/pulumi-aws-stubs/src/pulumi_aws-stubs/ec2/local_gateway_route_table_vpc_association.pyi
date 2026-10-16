@@ -24,17 +24,22 @@ class LocalGatewayRouteTableVpcAssociationArgs:
     @pulumi.getter(name="localGatewayRouteTableId")
     def local_gateway_route_table_id(self) -> pulumi.Input[_builtins.str]: ...
     @local_gateway_route_table_id.setter
-    def local_gateway_route_table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def local_gateway_route_table_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_id.setter
-    def vpc_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -43,7 +48,8 @@ class LocalGatewayRouteTableVpcAssociationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LocalGatewayRouteTableVpcAssociationState:
@@ -63,19 +69,24 @@ class _LocalGatewayRouteTableVpcAssociationState:
     @pulumi.getter(name="localGatewayId")
     def local_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_gateway_id.setter
-    def local_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localGatewayRouteTableId")
     def local_gateway_route_table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_gateway_route_table_id.setter
     def local_gateway_route_table_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -84,7 +95,8 @@ class _LocalGatewayRouteTableVpcAssociationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -93,12 +105,14 @@ class _LocalGatewayRouteTableVpcAssociationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class LocalGatewayRouteTableVpcAssociation(pulumi.CustomResource):

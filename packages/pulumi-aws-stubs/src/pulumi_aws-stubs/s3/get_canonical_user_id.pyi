@@ -23,7 +23,8 @@ class GetCanonicalUserIdResult:
     def id(self) -> _builtins.str: ...
 
 class AwaitableGetCanonicalUserIdResult(GetCanonicalUserIdResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCanonicalUserIdResult]:
+        ...
 
 def get_canonical_user_id(
     opts: Optional[pulumi.InvokeOptions] = ...,

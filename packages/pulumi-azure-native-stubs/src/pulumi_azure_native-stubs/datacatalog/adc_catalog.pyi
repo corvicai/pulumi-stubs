@@ -30,7 +30,8 @@ class ADCCatalogArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def admins(
@@ -39,12 +40,14 @@ class ADCCatalogArgs:
     @admins.setter
     def admins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PrincipalsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogName")
     def catalog_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @catalog_name.setter
-    def catalog_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def catalog_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUnitAdjustment")
     def enable_automatic_unit_adjustment(
@@ -53,24 +56,30 @@ class ADCCatalogArgs:
     @enable_automatic_unit_adjustment.setter
     def enable_automatic_unit_adjustment(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuType]]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuType]]]): ...
+    def sku(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, SkuType]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successfullyProvisioned")
     def successfully_provisioned(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @successfully_provisioned.setter
     def successfully_provisioned(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -79,12 +88,14 @@ class ADCCatalogArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def units(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @units.setter
-    def units(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def units(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def users(
@@ -93,7 +104,8 @@ class ADCCatalogArgs:
     @users.setter
     def users(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PrincipalsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:datacatalog:ADCCatalog")
 class ADCCatalog(pulumi.CustomResource):

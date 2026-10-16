@@ -74,7 +74,8 @@ class GetRestApiResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetRestApiResult(GetRestApiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRestApiResult]:
+        ...
 
 def get_rest_api(
     name: Optional[_builtins.str] = ...,

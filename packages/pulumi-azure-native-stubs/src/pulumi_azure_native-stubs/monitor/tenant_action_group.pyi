@@ -40,17 +40,20 @@ class TenantActionGroupArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupShortName")
     def group_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_short_name.setter
-    def group_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementGroupId")
     def management_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @management_group_id.setter
-    def management_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def management_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureAppPushReceivers")
     def azure_app_push_receivers(
@@ -60,7 +63,8 @@ class TenantActionGroupArgs:
     def azure_app_push_receivers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AzureAppPushReceiverArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailReceivers")
     def email_receivers(
@@ -69,12 +73,14 @@ class TenantActionGroupArgs:
     @email_receivers.setter
     def email_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[EmailReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsReceivers")
     def sms_receivers(
@@ -83,7 +89,8 @@ class TenantActionGroupArgs:
     @sms_receivers.setter
     def sms_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SmsReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -92,14 +99,16 @@ class TenantActionGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantActionGroupName")
     def tenant_action_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenant_action_group_name.setter
     def tenant_action_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="voiceReceivers")
     def voice_receivers(
@@ -108,7 +117,8 @@ class TenantActionGroupArgs:
     @voice_receivers.setter
     def voice_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VoiceReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webhookReceivers")
     def webhook_receivers(
@@ -117,7 +127,8 @@ class TenantActionGroupArgs:
     @webhook_receivers.setter
     def webhook_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WebhookReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:monitor:TenantActionGroup")
 class TenantActionGroup(pulumi.CustomResource):

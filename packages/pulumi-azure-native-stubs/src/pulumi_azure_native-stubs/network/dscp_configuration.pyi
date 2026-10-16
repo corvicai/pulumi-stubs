@@ -42,7 +42,8 @@ class DscpConfigurationArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationIpRanges")
     def destination_ip_ranges(
@@ -51,7 +52,8 @@ class DscpConfigurationArgs:
     @destination_ip_ranges.setter
     def destination_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[QosIpRangeArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationPortRanges")
     def destination_port_ranges(
@@ -60,22 +62,28 @@ class DscpConfigurationArgs:
     @destination_port_ranges.setter
     def destination_port_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[QosPortRangeArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dscpConfigurationName")
     def dscp_configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dscp_configuration_name.setter
-    def dscp_configuration_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dscp_configuration_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def markings(
@@ -84,7 +92,8 @@ class DscpConfigurationArgs:
     @markings.setter
     def markings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(
@@ -93,7 +102,8 @@ class DscpConfigurationArgs:
     @protocol.setter
     def protocol(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtocolType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="qosDefinitionCollection")
     def qos_definition_collection(
@@ -102,7 +112,8 @@ class DscpConfigurationArgs:
     @qos_definition_collection.setter
     def qos_definition_collection(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[QosDefinitionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceIpRanges")
     def source_ip_ranges(
@@ -111,7 +122,8 @@ class DscpConfigurationArgs:
     @source_ip_ranges.setter
     def source_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[QosIpRangeArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourcePortRanges")
     def source_port_ranges(
@@ -120,7 +132,8 @@ class DscpConfigurationArgs:
     @source_port_ranges.setter
     def source_port_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[QosPortRangeArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -129,7 +142,8 @@ class DscpConfigurationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:DscpConfiguration")
 class DscpConfiguration(pulumi.CustomResource):

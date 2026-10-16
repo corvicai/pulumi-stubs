@@ -67,7 +67,8 @@ class GetAccessEntryResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetAccessEntryResult(GetAccessEntryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessEntryResult]:
+        ...
 
 def get_access_entry(
     cluster_name: Optional[_builtins.str] = ...,

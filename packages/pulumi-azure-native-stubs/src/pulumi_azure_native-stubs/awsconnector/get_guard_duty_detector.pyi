@@ -52,7 +52,8 @@ class GetGuardDutyDetectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGuardDutyDetectorResult(GetGuardDutyDetectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGuardDutyDetectorResult]:
+        ...
 
 def get_guard_duty_detector(
     name: Optional[_builtins.str] = ...,

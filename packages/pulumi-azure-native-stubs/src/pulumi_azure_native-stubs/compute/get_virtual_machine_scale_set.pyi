@@ -174,7 +174,8 @@ class GetVirtualMachineScaleSetResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetVirtualMachineScaleSetResult(GetVirtualMachineScaleSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualMachineScaleSetResult]:
+        ...
 
 def get_virtual_machine_scale_set(
     expand: Optional[_builtins.str] = ...,

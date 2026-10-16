@@ -52,7 +52,8 @@ class GetSshPublicKeyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSshPublicKeyResult(GetSshPublicKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSshPublicKeyResult]:
+        ...
 
 def get_ssh_public_key(
     resource_group_name: Optional[_builtins.str] = ...,

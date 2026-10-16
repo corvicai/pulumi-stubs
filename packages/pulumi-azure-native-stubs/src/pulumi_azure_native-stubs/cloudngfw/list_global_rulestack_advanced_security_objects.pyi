@@ -26,7 +26,10 @@ class ListGlobalRulestackAdvancedSecurityObjectsResult:
 class AwaitableListGlobalRulestackAdvancedSecurityObjectsResult(
     ListGlobalRulestackAdvancedSecurityObjectsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListGlobalRulestackAdvancedSecurityObjectsResult]:
+        ...
 
 def list_global_rulestack_advanced_security_objects(
     global_rulestack_name: Optional[_builtins.str] = ...,

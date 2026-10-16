@@ -35,7 +35,8 @@ class GetCostAllocationRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCostAllocationRuleResult(GetCostAllocationRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCostAllocationRuleResult]:
+        ...
 
 def get_cost_allocation_rule(
     billing_account_id: Optional[_builtins.str] = ...,

@@ -116,7 +116,8 @@ class GetBastionHostResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetBastionHostResult(GetBastionHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBastionHostResult]:
+        ...
 
 def get_bastion_host(
     bastion_host_name: Optional[_builtins.str] = ...,

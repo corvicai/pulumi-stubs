@@ -35,7 +35,8 @@ class GetSubscriptionTarDirectoryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSubscriptionTarDirectoryResult(GetSubscriptionTarDirectoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubscriptionTarDirectoryResult]:
+        ...
 
 def get_subscription_tar_directory(
     subscription_id: Optional[_builtins.str] = ...,

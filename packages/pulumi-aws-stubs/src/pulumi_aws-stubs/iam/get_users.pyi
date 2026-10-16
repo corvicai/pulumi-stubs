@@ -29,7 +29,8 @@ class GetUsersResult:
     def path_prefix(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetUsersResult(GetUsersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUsersResult]:
+        ...
 
 def get_users(
     name_regex: Optional[_builtins.str] = ...,

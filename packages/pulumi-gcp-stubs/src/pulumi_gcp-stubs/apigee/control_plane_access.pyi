@@ -28,12 +28,14 @@ class ControlPlaneAccessArgs:
     @analytics_publisher_identities.setter
     def analytics_publisher_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="synchronizerIdentities")
     def synchronizer_identities(
@@ -42,7 +44,8 @@ class ControlPlaneAccessArgs:
     @synchronizer_identities.setter
     def synchronizer_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ControlPlaneAccessState:
@@ -65,12 +68,14 @@ class _ControlPlaneAccessState:
     @analytics_publisher_identities.setter
     def analytics_publisher_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="synchronizerIdentities")
     def synchronizer_identities(
@@ -79,7 +84,8 @@ class _ControlPlaneAccessState:
     @synchronizer_identities.setter
     def synchronizer_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:apigee/controlPlaneAccess:ControlPlaneAccess")
 class ControlPlaneAccess(pulumi.CustomResource):

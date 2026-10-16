@@ -27,12 +27,16 @@ class CoreNetworkArgs:
     @pulumi.getter(name="globalNetworkId")
     def global_network_id(self) -> pulumi.Input[_builtins.str]: ...
     @global_network_id.setter
-    def global_network_id(self, value: pulumi.Input[_builtins.str]): ...
+    def global_network_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="basePolicyDocument")
     def base_policy_document(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @base_policy_document.setter
-    def base_policy_document(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def base_policy_document(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="basePolicyRegions")
     def base_policy_regions(
@@ -41,17 +45,22 @@ class CoreNetworkArgs:
     @base_policy_regions.setter
     def base_policy_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createBasePolicy")
     def create_base_policy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_base_policy.setter
-    def create_base_policy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def create_base_policy(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -60,7 +69,8 @@ class CoreNetworkArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CoreNetworkState:
@@ -92,12 +102,16 @@ class _CoreNetworkState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="basePolicyDocument")
     def base_policy_document(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @base_policy_document.setter
-    def base_policy_document(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def base_policy_document(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="basePolicyRegions")
     def base_policy_regions(
@@ -106,22 +120,28 @@ class _CoreNetworkState:
     @base_policy_regions.setter
     def base_policy_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createBasePolicy")
     def create_base_policy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_base_policy.setter
-    def create_base_policy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def create_base_policy(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
     def created_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_at.setter
-    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def edges(
@@ -130,12 +150,16 @@ class _CoreNetworkState:
     @edges.setter
     def edges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CoreNetworkEdgeArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="globalNetworkId")
     def global_network_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @global_network_id.setter
-    def global_network_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def global_network_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def segments(
@@ -145,12 +169,14 @@ class _CoreNetworkState:
     def segments(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CoreNetworkSegmentArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -159,7 +185,8 @@ class _CoreNetworkState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -168,7 +195,8 @@ class _CoreNetworkState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:networkmanager/coreNetwork:CoreNetwork")
 class CoreNetwork(pulumi.CustomResource):

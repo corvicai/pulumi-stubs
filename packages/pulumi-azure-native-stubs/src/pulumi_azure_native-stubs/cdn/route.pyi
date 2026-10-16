@@ -53,17 +53,20 @@ class RouteArgs:
     @pulumi.getter(name="endpointName")
     def endpoint_name(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint_name.setter
-    def endpoint_name(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profileName")
     def profile_name(self) -> pulumi.Input[_builtins.str]: ...
     @profile_name.setter
-    def profile_name(self, value: pulumi.Input[_builtins.str]): ...
+    def profile_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheConfiguration")
     def cache_configuration(
@@ -72,7 +75,8 @@ class RouteArgs:
     @cache_configuration.setter
     def cache_configuration(
         self, value: Optional[pulumi.Input[AfdRouteCacheConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customDomains")
     def custom_domains(
@@ -86,7 +90,8 @@ class RouteArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ActivatedResourceReferenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -95,7 +100,8 @@ class RouteArgs:
     @enabled_state.setter
     def enabled_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnabledState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardingProtocol")
     def forwarding_protocol(
@@ -104,7 +110,8 @@ class RouteArgs:
     @forwarding_protocol.setter
     def forwarding_protocol(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ForwardingProtocol]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsRedirect")
     def https_redirect(
@@ -113,7 +120,8 @@ class RouteArgs:
     @https_redirect.setter
     def https_redirect(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HttpsRedirect]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkToDefaultDomain")
     def link_to_default_domain(
@@ -122,17 +130,22 @@ class RouteArgs:
     @link_to_default_domain.setter
     def link_to_default_domain(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LinkToDefaultDomain]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originGroup")
     def origin_group(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]: ...
     @origin_group.setter
-    def origin_group(self, value: Optional[pulumi.Input[ResourceReferenceArgs]]): ...
+    def origin_group(
+        self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originPath")
     def origin_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_path.setter
-    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patternsToMatch")
     def patterns_to_match(
@@ -141,12 +154,14 @@ class RouteArgs:
     @patterns_to_match.setter
     def patterns_to_match(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeName")
     def route_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @route_name.setter
-    def route_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def route_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleSets")
     def rule_sets(
@@ -156,7 +171,8 @@ class RouteArgs:
     def rule_sets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceReferenceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedProtocols")
     def supported_protocols(
@@ -172,7 +188,8 @@ class RouteArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, AFDEndpointProtocols]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cdn:Route")
 class Route(pulumi.CustomResource):

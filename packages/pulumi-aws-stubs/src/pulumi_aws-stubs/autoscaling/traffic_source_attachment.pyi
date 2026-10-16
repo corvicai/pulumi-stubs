@@ -24,12 +24,14 @@ class TrafficSourceAttachmentArgs:
     @pulumi.getter(name="autoscalingGroupName")
     def autoscaling_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @autoscaling_group_name.setter
-    def autoscaling_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def autoscaling_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficSource")
     def traffic_source(
@@ -38,7 +40,8 @@ class TrafficSourceAttachmentArgs:
     @traffic_source.setter
     def traffic_source(
         self, value: Optional[pulumi.Input[TrafficSourceAttachmentTrafficSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TrafficSourceAttachmentState:
@@ -55,12 +58,16 @@ class _TrafficSourceAttachmentState:
     @pulumi.getter(name="autoscalingGroupName")
     def autoscaling_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @autoscaling_group_name.setter
-    def autoscaling_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def autoscaling_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficSource")
     def traffic_source(
@@ -69,7 +76,8 @@ class _TrafficSourceAttachmentState:
     @traffic_source.setter
     def traffic_source(
         self, value: Optional[pulumi.Input[TrafficSourceAttachmentTrafficSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class TrafficSourceAttachment(pulumi.CustomResource):

@@ -52,7 +52,8 @@ class GetConfigurationProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationProfileResult(GetConfigurationProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationProfileResult]:
+        ...
 
 def get_configuration_profile(
     profile_name: Optional[_builtins.str] = ...,

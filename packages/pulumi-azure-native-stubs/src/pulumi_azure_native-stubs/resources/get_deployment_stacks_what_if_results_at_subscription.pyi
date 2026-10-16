@@ -49,7 +49,10 @@ class GetDeploymentStacksWhatIfResultsAtSubscriptionResult:
 class AwaitableGetDeploymentStacksWhatIfResultsAtSubscriptionResult(
     GetDeploymentStacksWhatIfResultsAtSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeploymentStacksWhatIfResultsAtSubscriptionResult]:
+        ...
 
 def get_deployment_stacks_what_if_results_at_subscription(
     deployment_stacks_what_if_result_name: Optional[_builtins.str] = ...,

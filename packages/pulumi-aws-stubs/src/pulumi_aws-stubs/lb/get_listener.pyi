@@ -70,7 +70,8 @@ class GetListenerResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetListenerResult(GetListenerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetListenerResult]:
+        ...
 
 def get_listener(
     arn: Optional[_builtins.str] = ...,

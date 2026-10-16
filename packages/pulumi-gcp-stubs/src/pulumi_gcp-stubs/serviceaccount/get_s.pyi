@@ -30,7 +30,8 @@ class GetSResult:
     def regex(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSResult(GetSResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSResult]:
+        ...
 
 def get_s(
     prefix: Optional[_builtins.str] = ...,

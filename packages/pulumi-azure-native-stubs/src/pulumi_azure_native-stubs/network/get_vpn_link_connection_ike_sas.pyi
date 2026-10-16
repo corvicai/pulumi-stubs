@@ -20,7 +20,8 @@ class GetVpnLinkConnectionIkeSasResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVpnLinkConnectionIkeSasResult(GetVpnLinkConnectionIkeSasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnLinkConnectionIkeSasResult]:
+        ...
 
 def get_vpn_link_connection_ike_sas(
     connection_name: Optional[_builtins.str] = ...,

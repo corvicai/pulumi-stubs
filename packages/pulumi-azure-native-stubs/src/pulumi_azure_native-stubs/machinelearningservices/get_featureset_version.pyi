@@ -44,7 +44,8 @@ class GetFeaturesetVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFeaturesetVersionResult(GetFeaturesetVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFeaturesetVersionResult]:
+        ...
 
 def get_featureset_version(
     name: Optional[_builtins.str] = ...,

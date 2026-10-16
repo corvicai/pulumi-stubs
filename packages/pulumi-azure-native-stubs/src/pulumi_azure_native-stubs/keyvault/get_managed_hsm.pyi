@@ -60,7 +60,8 @@ class GetManagedHsmResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedHsmResult(GetManagedHsmResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedHsmResult]:
+        ...
 
 def get_managed_hsm(
     name: Optional[_builtins.str] = ...,

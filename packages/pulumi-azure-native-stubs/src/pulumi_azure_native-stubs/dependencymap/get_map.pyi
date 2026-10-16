@@ -47,7 +47,8 @@ class GetMapResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMapResult(GetMapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMapResult]:
+        ...
 
 def get_map(
     map_name: Optional[_builtins.str] = ...,

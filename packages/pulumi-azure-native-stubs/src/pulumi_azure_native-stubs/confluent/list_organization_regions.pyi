@@ -21,7 +21,8 @@ class ListOrganizationRegionsResult:
     def data(self) -> Optional[Sequence[outputs.RegionRecordResponse]]: ...
 
 class AwaitableListOrganizationRegionsResult(ListOrganizationRegionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListOrganizationRegionsResult]:
+        ...
 
 def list_organization_regions(
     organization_name: Optional[_builtins.str] = ...,

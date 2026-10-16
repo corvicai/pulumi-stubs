@@ -88,7 +88,8 @@ class GetConsoleResult:
     def virtual_machine_access_id(self) -> _builtins.str: ...
 
 class AwaitableGetConsoleResult(GetConsoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConsoleResult]:
+        ...
 
 def get_console(
     console_name: Optional[_builtins.str] = ...,

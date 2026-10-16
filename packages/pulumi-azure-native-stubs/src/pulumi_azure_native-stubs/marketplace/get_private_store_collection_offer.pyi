@@ -86,7 +86,10 @@ class GetPrivateStoreCollectionOfferResult:
 class AwaitableGetPrivateStoreCollectionOfferResult(
     GetPrivateStoreCollectionOfferResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateStoreCollectionOfferResult]:
+        ...
 
 def get_private_store_collection_offer(
     collection_id: Optional[_builtins.str] = ...,

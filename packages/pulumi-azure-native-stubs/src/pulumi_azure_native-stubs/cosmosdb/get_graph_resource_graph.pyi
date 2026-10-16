@@ -60,7 +60,8 @@ class GetGraphResourceGraphResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGraphResourceGraphResult(GetGraphResourceGraphResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGraphResourceGraphResult]:
+        ...
 
 def get_graph_resource_graph(
     account_name: Optional[_builtins.str] = ...,

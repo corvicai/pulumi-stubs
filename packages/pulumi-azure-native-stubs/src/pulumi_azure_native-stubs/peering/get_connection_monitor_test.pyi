@@ -63,7 +63,8 @@ class GetConnectionMonitorTestResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionMonitorTestResult(GetConnectionMonitorTestResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionMonitorTestResult]:
+        ...
 
 def get_connection_monitor_test(
     connection_monitor_test_name: Optional[_builtins.str] = ...,

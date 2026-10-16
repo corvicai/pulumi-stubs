@@ -82,7 +82,8 @@ class GetStandardResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStandardResult(GetStandardResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStandardResult]:
+        ...
 
 def get_standard(
     resource_group_name: Optional[_builtins.str] = ...,

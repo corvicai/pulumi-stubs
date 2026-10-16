@@ -45,7 +45,10 @@ class GetDatabaseAccountMongoDBDatabaseResult:
 class AwaitableGetDatabaseAccountMongoDBDatabaseResult(
     GetDatabaseAccountMongoDBDatabaseResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseAccountMongoDBDatabaseResult]:
+        ...
 
 def get_database_account_mongo_db_database(
     account_name: Optional[_builtins.str] = ...,

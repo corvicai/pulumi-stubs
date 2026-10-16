@@ -23,12 +23,16 @@ class ClusterIamRolesArgs:
     @pulumi.getter(name="clusterIdentifier")
     def cluster_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_identifier.setter
-    def cluster_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultIamRoleArn")
     def default_iam_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_iam_role_arn.setter
-    def default_iam_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_iam_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamRoleArns")
     def iam_role_arns(
@@ -37,12 +41,14 @@ class ClusterIamRolesArgs:
     @iam_role_arns.setter
     def iam_role_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClusterIamRolesState:
@@ -60,12 +66,18 @@ class _ClusterIamRolesState:
     @pulumi.getter(name="clusterIdentifier")
     def cluster_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_identifier.setter
-    def cluster_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultIamRoleArn")
     def default_iam_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_iam_role_arn.setter
-    def default_iam_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_iam_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamRoleArns")
     def iam_role_arns(
@@ -74,12 +86,14 @@ class _ClusterIamRolesState:
     @iam_role_arns.setter
     def iam_role_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:redshift/clusterIamRoles:ClusterIamRoles")
 class ClusterIamRoles(pulumi.CustomResource):

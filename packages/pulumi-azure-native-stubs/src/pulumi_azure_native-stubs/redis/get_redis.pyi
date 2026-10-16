@@ -147,7 +147,8 @@ class GetRedisResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetRedisResult(GetRedisResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRedisResult]:
+        ...
 
 def get_redis(
     name: Optional[_builtins.str] = ...,

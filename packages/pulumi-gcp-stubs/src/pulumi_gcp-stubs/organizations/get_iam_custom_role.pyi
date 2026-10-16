@@ -55,7 +55,8 @@ class GetIamCustomRoleResult:
     def title(self) -> _builtins.str: ...
 
 class AwaitableGetIamCustomRoleResult(GetIamCustomRoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamCustomRoleResult]:
+        ...
 
 def get_iam_custom_role(
     org_id: Optional[_builtins.str] = ...,

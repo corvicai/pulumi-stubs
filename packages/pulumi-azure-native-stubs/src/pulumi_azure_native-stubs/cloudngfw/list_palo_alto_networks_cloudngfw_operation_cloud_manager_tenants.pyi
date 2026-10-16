@@ -17,7 +17,10 @@ class ListPaloAltoNetworksCloudngfwOperationCloudManagerTenantsResult:
 class AwaitableListPaloAltoNetworksCloudngfwOperationCloudManagerTenantsResult(
     ListPaloAltoNetworksCloudngfwOperationCloudManagerTenantsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPaloAltoNetworksCloudngfwOperationCloudManagerTenantsResult]:
+        ...
 
 def list_palo_alto_networks_cloudngfw_operation_cloud_manager_tenants(
     opts: Optional[pulumi.InvokeOptions] = ...,

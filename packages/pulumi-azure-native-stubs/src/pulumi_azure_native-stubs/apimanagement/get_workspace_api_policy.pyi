@@ -43,7 +43,8 @@ class GetWorkspaceApiPolicyResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceApiPolicyResult(GetWorkspaceApiPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceApiPolicyResult]:
+        ...
 
 def get_workspace_api_policy(
     api_id: Optional[_builtins.str] = ...,

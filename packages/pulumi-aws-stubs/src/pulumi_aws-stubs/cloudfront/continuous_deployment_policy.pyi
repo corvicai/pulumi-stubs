@@ -26,7 +26,8 @@ class ContinuousDeploymentPolicyArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingDistributionDnsNames")
     def staging_distribution_dns_names(
@@ -36,7 +37,8 @@ class ContinuousDeploymentPolicyArgs:
     def staging_distribution_dns_names(
         self,
         value: pulumi.Input[ContinuousDeploymentPolicyStagingDistributionDnsNamesArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficConfig")
     def traffic_config(
@@ -45,7 +47,8 @@ class ContinuousDeploymentPolicyArgs:
     @traffic_config.setter
     def traffic_config(
         self, value: Optional[pulumi.Input[ContinuousDeploymentPolicyTrafficConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ContinuousDeploymentPolicyState:
@@ -67,22 +70,28 @@ class _ContinuousDeploymentPolicyState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedTime")
     def last_modified_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_time.setter
-    def last_modified_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingDistributionDnsNames")
     def staging_distribution_dns_names(
@@ -96,7 +105,8 @@ class _ContinuousDeploymentPolicyState:
         value: Optional[
             pulumi.Input[ContinuousDeploymentPolicyStagingDistributionDnsNamesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficConfig")
     def traffic_config(
@@ -105,7 +115,8 @@ class _ContinuousDeploymentPolicyState:
     @traffic_config.setter
     def traffic_config(
         self, value: Optional[pulumi.Input[ContinuousDeploymentPolicyTrafficConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ContinuousDeploymentPolicy(pulumi.CustomResource):

@@ -82,7 +82,8 @@ class GetCertificateAuthorityResult:
     def usage_mode(self) -> _builtins.str: ...
 
 class AwaitableGetCertificateAuthorityResult(GetCertificateAuthorityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateAuthorityResult]:
+        ...
 
 def get_certificate_authority(
     arn: Optional[_builtins.str] = ...,

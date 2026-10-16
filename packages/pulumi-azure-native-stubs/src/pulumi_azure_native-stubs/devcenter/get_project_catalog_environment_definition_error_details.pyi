@@ -18,7 +18,10 @@ class GetProjectCatalogEnvironmentDefinitionErrorDetailsResult:
 class AwaitableGetProjectCatalogEnvironmentDefinitionErrorDetailsResult(
     GetProjectCatalogEnvironmentDefinitionErrorDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProjectCatalogEnvironmentDefinitionErrorDetailsResult]:
+        ...
 
 def get_project_catalog_environment_definition_error_details(
     catalog_name: Optional[_builtins.str] = ...,

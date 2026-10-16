@@ -59,22 +59,26 @@ class CxAgentArgs:
     @pulumi.getter(name="defaultLanguageCode")
     def default_language_code(self) -> pulumi.Input[_builtins.str]: ...
     @default_language_code.setter
-    def default_language_code(self, value: pulumi.Input[_builtins.str]): ...
+    def default_language_code(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> pulumi.Input[_builtins.str]: ...
     @time_zone.setter
-    def time_zone(self, value: pulumi.Input[_builtins.str]): ...
+    def time_zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedSettings")
     def advanced_settings(
@@ -83,7 +87,8 @@ class CxAgentArgs:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[CxAgentAdvancedSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="answerFeedbackSettings")
     def answer_feedback_settings(
@@ -92,12 +97,14 @@ class CxAgentArgs:
     @answer_feedback_settings.setter
     def answer_feedback_settings(
         self, value: Optional[pulumi.Input[CxAgentAnswerFeedbackSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="avatarUri")
     def avatar_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @avatar_uri.setter
-    def avatar_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def avatar_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificateSettings")
     def client_certificate_settings(
@@ -106,7 +113,8 @@ class CxAgentArgs:
     @client_certificate_settings.setter
     def client_certificate_settings(
         self, value: Optional[pulumi.Input[CxAgentClientCertificateSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteChatEngineOnDestroy")
     def delete_chat_engine_on_destroy(
@@ -115,12 +123,14 @@ class CxAgentArgs:
     @delete_chat_engine_on_destroy.setter
     def delete_chat_engine_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMultiLanguageTraining")
     def enable_multi_language_training(
@@ -129,14 +139,16 @@ class CxAgentArgs:
     @enable_multi_language_training.setter
     def enable_multi_language_training(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableSpellCorrection")
     def enable_spell_correction(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_spell_correction.setter
     def enable_spell_correction(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableStackdriverLogging")
     @_utilities.deprecated(...)
@@ -144,7 +156,8 @@ class CxAgentArgs:
     @enable_stackdriver_logging.setter
     def enable_stackdriver_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="genAppBuilderSettings")
     def gen_app_builder_settings(
@@ -153,7 +166,8 @@ class CxAgentArgs:
     @gen_app_builder_settings.setter
     def gen_app_builder_settings(
         self, value: Optional[pulumi.Input[CxAgentGenAppBuilderSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gitIntegrationSettings")
     def git_integration_settings(
@@ -162,12 +176,14 @@ class CxAgentArgs:
     @git_integration_settings.setter
     def git_integration_settings(
         self, value: Optional[pulumi.Input[CxAgentGitIntegrationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locked(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @locked.setter
-    def locked(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def locked(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="personalizationSettings")
     def personalization_settings(
@@ -176,17 +192,22 @@ class CxAgentArgs:
     @personalization_settings.setter
     def personalization_settings(
         self, value: Optional[pulumi.Input[CxAgentPersonalizationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securitySettings")
     def security_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_settings.setter
-    def security_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speechToTextSettings")
     def speech_to_text_settings(
@@ -195,12 +216,14 @@ class CxAgentArgs:
     @speech_to_text_settings.setter
     def speech_to_text_settings(
         self, value: Optional[pulumi.Input[CxAgentSpeechToTextSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startPlaybook")
     def start_playbook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_playbook.setter
-    def start_playbook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_playbook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedLanguageCodes")
     def supported_language_codes(
@@ -209,7 +232,8 @@ class CxAgentArgs:
     @supported_language_codes.setter
     def supported_language_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textToSpeechSettings")
     def text_to_speech_settings(
@@ -218,7 +242,8 @@ class CxAgentArgs:
     @text_to_speech_settings.setter
     def text_to_speech_settings(
         self, value: Optional[pulumi.Input[CxAgentTextToSpeechSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CxAgentState:
@@ -277,7 +302,8 @@ class _CxAgentState:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[CxAgentAdvancedSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="answerFeedbackSettings")
     def answer_feedback_settings(
@@ -286,12 +312,14 @@ class _CxAgentState:
     @answer_feedback_settings.setter
     def answer_feedback_settings(
         self, value: Optional[pulumi.Input[CxAgentAnswerFeedbackSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="avatarUri")
     def avatar_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @avatar_uri.setter
-    def avatar_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def avatar_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificateSettings")
     def client_certificate_settings(
@@ -300,12 +328,16 @@ class _CxAgentState:
     @client_certificate_settings.setter
     def client_certificate_settings(
         self, value: Optional[pulumi.Input[CxAgentClientCertificateSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultLanguageCode")
     def default_language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_language_code.setter
-    def default_language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_language_code(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteChatEngineOnDestroy")
     def delete_chat_engine_on_destroy(
@@ -314,17 +346,20 @@ class _CxAgentState:
     @delete_chat_engine_on_destroy.setter
     def delete_chat_engine_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMultiLanguageTraining")
     def enable_multi_language_training(
@@ -333,14 +368,16 @@ class _CxAgentState:
     @enable_multi_language_training.setter
     def enable_multi_language_training(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableSpellCorrection")
     def enable_spell_correction(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_spell_correction.setter
     def enable_spell_correction(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableStackdriverLogging")
     @_utilities.deprecated(...)
@@ -348,7 +385,8 @@ class _CxAgentState:
     @enable_stackdriver_logging.setter
     def enable_stackdriver_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="genAppBuilderSettings")
     def gen_app_builder_settings(
@@ -357,7 +395,8 @@ class _CxAgentState:
     @gen_app_builder_settings.setter
     def gen_app_builder_settings(
         self, value: Optional[pulumi.Input[CxAgentGenAppBuilderSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gitIntegrationSettings")
     def git_integration_settings(
@@ -366,22 +405,26 @@ class _CxAgentState:
     @git_integration_settings.setter
     def git_integration_settings(
         self, value: Optional[pulumi.Input[CxAgentGitIntegrationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locked(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @locked.setter
-    def locked(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def locked(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="personalizationSettings")
     def personalization_settings(
@@ -390,27 +433,34 @@ class _CxAgentState:
     @personalization_settings.setter
     def personalization_settings(
         self, value: Optional[pulumi.Input[CxAgentPersonalizationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="satisfiesPzi")
     def satisfies_pzi(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @satisfies_pzi.setter
-    def satisfies_pzi(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def satisfies_pzi(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="satisfiesPzs")
     def satisfies_pzs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @satisfies_pzs.setter
-    def satisfies_pzs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def satisfies_pzs(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securitySettings")
     def security_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_settings.setter
-    def security_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speechToTextSettings")
     def speech_to_text_settings(
@@ -419,17 +469,20 @@ class _CxAgentState:
     @speech_to_text_settings.setter
     def speech_to_text_settings(
         self, value: Optional[pulumi.Input[CxAgentSpeechToTextSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startFlow")
     def start_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_flow.setter
-    def start_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startPlaybook")
     def start_playbook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_playbook.setter
-    def start_playbook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_playbook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedLanguageCodes")
     def supported_language_codes(
@@ -438,7 +491,8 @@ class _CxAgentState:
     @supported_language_codes.setter
     def supported_language_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textToSpeechSettings")
     def text_to_speech_settings(
@@ -447,12 +501,14 @@ class _CxAgentState:
     @text_to_speech_settings.setter
     def text_to_speech_settings(
         self, value: Optional[pulumi.Input[CxAgentTextToSpeechSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:diagflow/cxAgent:CxAgent")
 class CxAgent(pulumi.CustomResource):

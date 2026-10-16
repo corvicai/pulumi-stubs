@@ -64,7 +64,8 @@ class GetActivityLogAlertResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetActivityLogAlertResult(GetActivityLogAlertResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActivityLogAlertResult]:
+        ...
 
 def get_activity_log_alert(
     activity_log_alert_name: Optional[_builtins.str] = ...,

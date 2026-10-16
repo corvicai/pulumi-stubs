@@ -26,7 +26,10 @@ class GetApplicationBusinessProcessDevelopmentArtifactResult:
 class AwaitableGetApplicationBusinessProcessDevelopmentArtifactResult(
     GetApplicationBusinessProcessDevelopmentArtifactResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetApplicationBusinessProcessDevelopmentArtifactResult]:
+        ...
 
 def get_application_business_process_development_artifact(
     application_name: Optional[_builtins.str] = ...,

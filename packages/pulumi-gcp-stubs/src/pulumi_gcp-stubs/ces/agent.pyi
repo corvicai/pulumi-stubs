@@ -57,17 +57,20 @@ class AgentArgs:
     @pulumi.getter
     def app(self) -> pulumi.Input[_builtins.str]: ...
     @app.setter
-    def app(self, value: pulumi.Input[_builtins.str]): ...
+    def app(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="afterAgentCallbacks")
     def after_agent_callbacks(
@@ -81,7 +84,8 @@ class AgentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentAfterAgentCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="afterModelCallbacks")
     def after_model_callbacks(
@@ -95,7 +99,8 @@ class AgentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentAfterModelCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="afterToolCallbacks")
     def after_tool_callbacks(
@@ -107,12 +112,14 @@ class AgentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentAfterToolCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentId")
     def agent_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_id.setter
-    def agent_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beforeAgentCallbacks")
     def before_agent_callbacks(
@@ -126,7 +133,8 @@ class AgentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentBeforeAgentCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beforeModelCallbacks")
     def before_model_callbacks(
@@ -140,7 +148,8 @@ class AgentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentBeforeModelCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beforeToolCallbacks")
     def before_tool_callbacks(
@@ -154,7 +163,8 @@ class AgentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentBeforeToolCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="childAgents")
     def child_agents(
@@ -163,12 +173,14 @@ class AgentArgs:
     @child_agents.setter
     def child_agents(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def guardrails(
@@ -177,27 +189,34 @@ class AgentArgs:
     @guardrails.setter
     def guardrails(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instruction(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instruction.setter
-    def instruction(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instruction(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="llmAgent")
     def llm_agent(self) -> Optional[pulumi.Input[AgentLlmAgentArgs]]: ...
     @llm_agent.setter
-    def llm_agent(self, value: Optional[pulumi.Input[AgentLlmAgentArgs]]): ...
+    def llm_agent(self, value: Optional[pulumi.Input[AgentLlmAgentArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelSettings")
     def model_settings(self) -> Optional[pulumi.Input[AgentModelSettingsArgs]]: ...
     @model_settings.setter
-    def model_settings(self, value: Optional[pulumi.Input[AgentModelSettingsArgs]]): ...
+    def model_settings(
+        self, value: Optional[pulumi.Input[AgentModelSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteDialogflowAgent")
     def remote_dialogflow_agent(
@@ -206,7 +225,8 @@ class AgentArgs:
     @remote_dialogflow_agent.setter
     def remote_dialogflow_agent(
         self, value: Optional[pulumi.Input[AgentRemoteDialogflowAgentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tools(
@@ -215,7 +235,8 @@ class AgentArgs:
     @tools.setter
     def tools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def toolsets(
@@ -224,7 +245,8 @@ class AgentArgs:
     @toolsets.setter
     def toolsets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AgentToolsetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AgentState:
@@ -288,7 +310,8 @@ class _AgentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentAfterAgentCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="afterModelCallbacks")
     def after_model_callbacks(
@@ -302,7 +325,8 @@ class _AgentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentAfterModelCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="afterToolCallbacks")
     def after_tool_callbacks(
@@ -314,17 +338,20 @@ class _AgentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentAfterToolCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentId")
     def agent_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_id.setter
-    def agent_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def app(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app.setter
-    def app(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beforeAgentCallbacks")
     def before_agent_callbacks(
@@ -338,7 +365,8 @@ class _AgentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentBeforeAgentCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beforeModelCallbacks")
     def before_model_callbacks(
@@ -352,7 +380,8 @@ class _AgentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentBeforeModelCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beforeToolCallbacks")
     def before_tool_callbacks(
@@ -366,7 +395,8 @@ class _AgentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentBeforeToolCallbackArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="childAgents")
     def child_agents(
@@ -375,32 +405,40 @@ class _AgentState:
     @child_agents.setter
     def child_agents(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generatedSummary")
     def generated_summary(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generated_summary.setter
-    def generated_summary(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generated_summary(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def guardrails(
@@ -409,37 +447,46 @@ class _AgentState:
     @guardrails.setter
     def guardrails(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instruction(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instruction.setter
-    def instruction(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instruction(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="llmAgent")
     def llm_agent(self) -> Optional[pulumi.Input[AgentLlmAgentArgs]]: ...
     @llm_agent.setter
-    def llm_agent(self, value: Optional[pulumi.Input[AgentLlmAgentArgs]]): ...
+    def llm_agent(self, value: Optional[pulumi.Input[AgentLlmAgentArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelSettings")
     def model_settings(self) -> Optional[pulumi.Input[AgentModelSettingsArgs]]: ...
     @model_settings.setter
-    def model_settings(self, value: Optional[pulumi.Input[AgentModelSettingsArgs]]): ...
+    def model_settings(
+        self, value: Optional[pulumi.Input[AgentModelSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteDialogflowAgent")
     def remote_dialogflow_agent(
@@ -448,7 +495,8 @@ class _AgentState:
     @remote_dialogflow_agent.setter
     def remote_dialogflow_agent(
         self, value: Optional[pulumi.Input[AgentRemoteDialogflowAgentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tools(
@@ -457,7 +505,8 @@ class _AgentState:
     @tools.setter
     def tools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def toolsets(
@@ -466,12 +515,14 @@ class _AgentState:
     @toolsets.setter
     def toolsets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AgentToolsetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:ces/agent:Agent")
 class Agent(pulumi.CustomResource):

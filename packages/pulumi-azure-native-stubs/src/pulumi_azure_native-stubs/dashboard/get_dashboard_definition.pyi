@@ -44,7 +44,8 @@ class GetDashboardDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDashboardDefinitionResult(GetDashboardDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDashboardDefinitionResult]:
+        ...
 
 def get_dashboard_definition(
     dashboard_name: Optional[_builtins.str] = ...,

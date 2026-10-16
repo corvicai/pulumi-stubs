@@ -46,7 +46,10 @@ class GetImportSqlCollectorOperationResult:
 class AwaitableGetImportSqlCollectorOperationResult(
     GetImportSqlCollectorOperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetImportSqlCollectorOperationResult]:
+        ...
 
 def get_import_sql_collector_operation(
     import_sql_collectors_name: Optional[_builtins.str] = ...,

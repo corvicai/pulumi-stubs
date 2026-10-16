@@ -24,7 +24,8 @@ class GetActiveSessionsResult:
     def value(self) -> Optional[Sequence[outputs.BastionActiveSessionResponse]]: ...
 
 class AwaitableGetActiveSessionsResult(GetActiveSessionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActiveSessionsResult]:
+        ...
 
 def get_active_sessions(
     bastion_host_name: Optional[_builtins.str] = ...,

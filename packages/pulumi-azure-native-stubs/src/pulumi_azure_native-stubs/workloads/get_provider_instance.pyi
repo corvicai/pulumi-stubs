@@ -56,7 +56,8 @@ class GetProviderInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProviderInstanceResult(GetProviderInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProviderInstanceResult]:
+        ...
 
 def get_provider_instance(
     monitor_name: Optional[_builtins.str] = ...,

@@ -76,7 +76,8 @@ class GetNatRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNatRuleResult(GetNatRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNatRuleResult]:
+        ...
 
 def get_nat_rule(
     gateway_name: Optional[_builtins.str] = ...,

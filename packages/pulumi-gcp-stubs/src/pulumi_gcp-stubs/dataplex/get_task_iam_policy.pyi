@@ -47,7 +47,8 @@ class GetTaskIamPolicyResult:
     def task_id(self) -> _builtins.str: ...
 
 class AwaitableGetTaskIamPolicyResult(GetTaskIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTaskIamPolicyResult]:
+        ...
 
 def get_task_iam_policy(
     lake: Optional[_builtins.str] = ...,

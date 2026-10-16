@@ -57,7 +57,10 @@ class GetBlobContainerImmutabilityPolicyResult:
 class AwaitableGetBlobContainerImmutabilityPolicyResult(
     GetBlobContainerImmutabilityPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBlobContainerImmutabilityPolicyResult]:
+        ...
 
 def get_blob_container_immutability_policy(
     account_name: Optional[_builtins.str] = ...,

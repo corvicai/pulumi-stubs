@@ -56,7 +56,8 @@ class GetFrameworkResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetFrameworkResult(GetFrameworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFrameworkResult]:
+        ...
 
 def get_framework(
     framework_type: Optional[_builtins.str] = ...,

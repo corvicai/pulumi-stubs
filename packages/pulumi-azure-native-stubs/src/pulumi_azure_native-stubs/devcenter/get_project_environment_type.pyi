@@ -86,7 +86,8 @@ class GetProjectEnvironmentTypeResult:
     ) -> Optional[Mapping[str, outputs.UserRoleAssignmentResponse]]: ...
 
 class AwaitableGetProjectEnvironmentTypeResult(GetProjectEnvironmentTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectEnvironmentTypeResult]:
+        ...
 
 def get_project_environment_type(
     environment_type_name: Optional[_builtins.str] = ...,

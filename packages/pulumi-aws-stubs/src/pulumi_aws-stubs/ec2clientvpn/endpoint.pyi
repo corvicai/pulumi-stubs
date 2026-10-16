@@ -57,7 +57,8 @@ class EndpointArgs:
     def authentication_options(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[EndpointAuthenticationOptionArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionLogOptions")
     def connection_log_options(
@@ -66,17 +67,22 @@ class EndpointArgs:
     @connection_log_options.setter
     def connection_log_options(
         self, value: pulumi.Input[EndpointConnectionLogOptionsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverCertificateArn")
     def server_certificate_arn(self) -> pulumi.Input[_builtins.str]: ...
     @server_certificate_arn.setter
-    def server_certificate_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def server_certificate_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCidrBlock")
     def client_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_cidr_block.setter
-    def client_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_cidr_block(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientConnectOptions")
     def client_connect_options(
@@ -85,7 +91,8 @@ class EndpointArgs:
     @client_connect_options.setter
     def client_connect_options(
         self, value: Optional[pulumi.Input[EndpointClientConnectOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientLoginBannerOptions")
     def client_login_banner_options(
@@ -94,7 +101,8 @@ class EndpointArgs:
     @client_login_banner_options.setter
     def client_login_banner_options(
         self, value: Optional[pulumi.Input[EndpointClientLoginBannerOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientRouteEnforcementOptions")
     def client_route_enforcement_options(
@@ -103,12 +111,14 @@ class EndpointArgs:
     @client_route_enforcement_options.setter
     def client_route_enforcement_options(
         self, value: Optional[pulumi.Input[EndpointClientRouteEnforcementOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disconnectOnSessionTimeout")
     def disconnect_on_session_timeout(
@@ -117,7 +127,8 @@ class EndpointArgs:
     @disconnect_on_session_timeout.setter
     def disconnect_on_session_timeout(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsServers")
     def dns_servers(
@@ -126,19 +137,22 @@ class EndpointArgs:
     @dns_servers.setter
     def dns_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointIpAddressType")
     def endpoint_ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_ip_address_type.setter
     def endpoint_ip_address_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -147,22 +161,30 @@ class EndpointArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfServicePortal")
     def self_service_portal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_service_portal.setter
-    def self_service_portal(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_service_portal(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionTimeoutHours")
     def session_timeout_hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @session_timeout_hours.setter
-    def session_timeout_hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def session_timeout_hours(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="splitTunnel")
     def split_tunnel(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @split_tunnel.setter
-    def split_tunnel(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def split_tunnel(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -171,27 +193,36 @@ class EndpointArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficIpAddressType")
     def traffic_ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @traffic_ip_address_type.setter
-    def traffic_ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def traffic_ip_address_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transportProtocol")
     def transport_protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transport_protocol.setter
-    def transport_protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transport_protocol(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnPort")
     def vpn_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @vpn_port.setter
-    def vpn_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def vpn_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EndpointState:
@@ -244,7 +275,8 @@ class _EndpointState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authenticationOptions")
     def authentication_options(
@@ -258,12 +290,16 @@ class _EndpointState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EndpointAuthenticationOptionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCidrBlock")
     def client_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_cidr_block.setter
-    def client_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_cidr_block(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientConnectOptions")
     def client_connect_options(
@@ -272,7 +308,8 @@ class _EndpointState:
     @client_connect_options.setter
     def client_connect_options(
         self, value: Optional[pulumi.Input[EndpointClientConnectOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientLoginBannerOptions")
     def client_login_banner_options(
@@ -281,7 +318,8 @@ class _EndpointState:
     @client_login_banner_options.setter
     def client_login_banner_options(
         self, value: Optional[pulumi.Input[EndpointClientLoginBannerOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientRouteEnforcementOptions")
     def client_route_enforcement_options(
@@ -290,7 +328,8 @@ class _EndpointState:
     @client_route_enforcement_options.setter
     def client_route_enforcement_options(
         self, value: Optional[pulumi.Input[EndpointClientRouteEnforcementOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionLogOptions")
     def connection_log_options(
@@ -299,12 +338,14 @@ class _EndpointState:
     @connection_log_options.setter
     def connection_log_options(
         self, value: Optional[pulumi.Input[EndpointConnectionLogOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disconnectOnSessionTimeout")
     def disconnect_on_session_timeout(
@@ -313,12 +354,14 @@ class _EndpointState:
     @disconnect_on_session_timeout.setter
     def disconnect_on_session_timeout(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsServers")
     def dns_servers(
@@ -327,19 +370,22 @@ class _EndpointState:
     @dns_servers.setter
     def dns_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointIpAddressType")
     def endpoint_ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_ip_address_type.setter
     def endpoint_ip_address_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -348,32 +394,46 @@ class _EndpointState:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfServicePortal")
     def self_service_portal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_service_portal.setter
-    def self_service_portal(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_service_portal(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfServicePortalUrl")
     def self_service_portal_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_service_portal_url.setter
-    def self_service_portal_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_service_portal_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverCertificateArn")
     def server_certificate_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_certificate_arn.setter
-    def server_certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_certificate_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionTimeoutHours")
     def session_timeout_hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @session_timeout_hours.setter
-    def session_timeout_hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def session_timeout_hours(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="splitTunnel")
     def split_tunnel(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @split_tunnel.setter
-    def split_tunnel(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def split_tunnel(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -382,7 +442,8 @@ class _EndpointState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -391,27 +452,36 @@ class _EndpointState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficIpAddressType")
     def traffic_ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @traffic_ip_address_type.setter
-    def traffic_ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def traffic_ip_address_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transportProtocol")
     def transport_protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transport_protocol.setter
-    def transport_protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transport_protocol(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnPort")
     def vpn_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @vpn_port.setter
-    def vpn_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def vpn_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2clientvpn/endpoint:Endpoint")
 class Endpoint(pulumi.CustomResource):

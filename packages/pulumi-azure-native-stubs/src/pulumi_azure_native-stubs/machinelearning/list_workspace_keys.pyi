@@ -23,7 +23,8 @@ class ListWorkspaceKeysResult:
     def secondary_token(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListWorkspaceKeysResult(ListWorkspaceKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWorkspaceKeysResult]:
+        ...
 
 def list_workspace_keys(
     resource_group_name: Optional[_builtins.str] = ...,

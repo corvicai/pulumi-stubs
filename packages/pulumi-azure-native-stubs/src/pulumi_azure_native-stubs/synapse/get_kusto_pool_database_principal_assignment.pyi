@@ -74,7 +74,10 @@ class GetKustoPoolDatabasePrincipalAssignmentResult:
 class AwaitableGetKustoPoolDatabasePrincipalAssignmentResult(
     GetKustoPoolDatabasePrincipalAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetKustoPoolDatabasePrincipalAssignmentResult]:
+        ...
 
 def get_kusto_pool_database_principal_assignment(
     database_name: Optional[_builtins.str] = ...,

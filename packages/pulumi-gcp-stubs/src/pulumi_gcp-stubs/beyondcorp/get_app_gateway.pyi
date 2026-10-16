@@ -74,7 +74,8 @@ class GetAppGatewayResult:
     def uri(self) -> _builtins.str: ...
 
 class AwaitableGetAppGatewayResult(GetAppGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppGatewayResult]:
+        ...
 
 def get_app_gateway(
     name: Optional[_builtins.str] = ...,

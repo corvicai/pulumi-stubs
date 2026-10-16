@@ -51,7 +51,8 @@ class BareMetalAdminClusterArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -60,12 +61,16 @@ class BareMetalAdminClusterArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bareMetalVersion")
     def bare_metal_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bare_metal_version.setter
-    def bare_metal_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bare_metal_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterOperations")
     def cluster_operations(
@@ -74,7 +79,8 @@ class BareMetalAdminClusterArgs:
     @cluster_operations.setter
     def cluster_operations(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterClusterOperationsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="controlPlane")
     def control_plane(
@@ -83,12 +89,14 @@ class BareMetalAdminClusterArgs:
     @control_plane.setter
     def control_plane(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterControlPlaneArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancer")
     def load_balancer(
@@ -97,7 +105,8 @@ class BareMetalAdminClusterArgs:
     @load_balancer.setter
     def load_balancer(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterLoadBalancerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceConfig")
     def maintenance_config(
@@ -106,12 +115,14 @@ class BareMetalAdminClusterArgs:
     @maintenance_config.setter
     def maintenance_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterMaintenanceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -120,7 +131,8 @@ class BareMetalAdminClusterArgs:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeAccessConfig")
     def node_access_config(
@@ -129,7 +141,8 @@ class BareMetalAdminClusterArgs:
     @node_access_config.setter
     def node_access_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterNodeAccessConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeConfig")
     def node_config(
@@ -138,17 +151,22 @@ class BareMetalAdminClusterArgs:
     @node_config.setter
     def node_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterNodeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def proxy(self) -> Optional[pulumi.Input[BareMetalAdminClusterProxyArgs]]: ...
     @proxy.setter
-    def proxy(self, value: Optional[pulumi.Input[BareMetalAdminClusterProxyArgs]]): ...
+    def proxy(
+        self, value: Optional[pulumi.Input[BareMetalAdminClusterProxyArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConfig")
     def security_config(
@@ -157,14 +175,16 @@ class BareMetalAdminClusterArgs:
     @security_config.setter
     def security_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterSecurityConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def storage(self) -> Optional[pulumi.Input[BareMetalAdminClusterStorageArgs]]: ...
     @storage.setter
     def storage(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterStorageArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BareMetalAdminClusterState:
@@ -235,12 +255,16 @@ class _BareMetalAdminClusterState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bareMetalVersion")
     def bare_metal_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bare_metal_version.setter
-    def bare_metal_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bare_metal_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterOperations")
     def cluster_operations(
@@ -249,7 +273,8 @@ class _BareMetalAdminClusterState:
     @cluster_operations.setter
     def cluster_operations(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterClusterOperationsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="controlPlane")
     def control_plane(
@@ -258,22 +283,26 @@ class _BareMetalAdminClusterState:
     @control_plane.setter
     def control_plane(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterControlPlaneArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteTime")
     def delete_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete_time.setter
-    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -282,17 +311,20 @@ class _BareMetalAdminClusterState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fleets(
@@ -306,7 +338,8 @@ class _BareMetalAdminClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BareMetalAdminClusterFleetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancer")
     def load_balancer(
@@ -315,17 +348,20 @@ class _BareMetalAdminClusterState:
     @load_balancer.setter
     def load_balancer(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterLoadBalancerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localName")
     def local_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_name.setter
-    def local_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceConfig")
     def maintenance_config(
@@ -334,12 +370,14 @@ class _BareMetalAdminClusterState:
     @maintenance_config.setter
     def maintenance_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterMaintenanceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -348,7 +386,8 @@ class _BareMetalAdminClusterState:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeAccessConfig")
     def node_access_config(
@@ -357,7 +396,8 @@ class _BareMetalAdminClusterState:
     @node_access_config.setter
     def node_access_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterNodeAccessConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeConfig")
     def node_config(
@@ -366,22 +406,28 @@ class _BareMetalAdminClusterState:
     @node_config.setter
     def node_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterNodeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def proxy(self) -> Optional[pulumi.Input[BareMetalAdminClusterProxyArgs]]: ...
     @proxy.setter
-    def proxy(self, value: Optional[pulumi.Input[BareMetalAdminClusterProxyArgs]]): ...
+    def proxy(
+        self, value: Optional[pulumi.Input[BareMetalAdminClusterProxyArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConfig")
     def security_config(
@@ -390,12 +436,14 @@ class _BareMetalAdminClusterState:
     @security_config.setter
     def security_config(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterSecurityConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statuses(
@@ -409,24 +457,28 @@ class _BareMetalAdminClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BareMetalAdminClusterStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def storage(self) -> Optional[pulumi.Input[BareMetalAdminClusterStorageArgs]]: ...
     @storage.setter
     def storage(
         self, value: Optional[pulumi.Input[BareMetalAdminClusterStorageArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationChecks")
     def validation_checks(
@@ -442,7 +494,8 @@ class _BareMetalAdminClusterState:
                 Sequence[pulumi.Input[BareMetalAdminClusterValidationCheckArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class BareMetalAdminCluster(pulumi.CustomResource):

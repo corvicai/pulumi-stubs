@@ -71,7 +71,8 @@ class GetOutpostResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetOutpostResult(GetOutpostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOutpostResult]:
+        ...
 
 def get_outpost(
     arn: Optional[_builtins.str] = ...,

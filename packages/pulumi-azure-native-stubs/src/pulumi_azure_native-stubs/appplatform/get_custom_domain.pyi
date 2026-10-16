@@ -44,7 +44,8 @@ class GetCustomDomainResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCustomDomainResult(GetCustomDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomDomainResult]:
+        ...
 
 def get_custom_domain(
     app_name: Optional[_builtins.str] = ...,

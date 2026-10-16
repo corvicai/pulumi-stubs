@@ -216,7 +216,8 @@ class AuthorityAccessUrlArgs:
     @ca_certificate_access_url.setter
     def ca_certificate_access_url(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlAccessUrls")
     def crl_access_urls(
@@ -225,7 +226,8 @@ class AuthorityAccessUrlArgs:
     @crl_access_urls.setter
     def crl_access_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigArgsDict(TypedDict):
     subject_config: pulumi.Input[AuthorityConfigSubjectConfigArgsDict]
@@ -245,12 +247,18 @@ class AuthorityConfigArgs:
     @pulumi.getter(name="subjectConfig")
     def subject_config(self) -> pulumi.Input[AuthorityConfigSubjectConfigArgs]: ...
     @subject_config.setter
-    def subject_config(self, value: pulumi.Input[AuthorityConfigSubjectConfigArgs]): ...
+    def subject_config(
+        self, value: pulumi.Input[AuthorityConfigSubjectConfigArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="x509Config")
     def x509_config(self) -> pulumi.Input[AuthorityConfigX509ConfigArgs]: ...
     @x509_config.setter
-    def x509_config(self, value: pulumi.Input[AuthorityConfigX509ConfigArgs]): ...
+    def x509_config(
+        self, value: pulumi.Input[AuthorityConfigX509ConfigArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectKeyId")
     def subject_key_id(
@@ -259,7 +267,8 @@ class AuthorityConfigArgs:
     @subject_key_id.setter
     def subject_key_id(
         self, value: Optional[pulumi.Input[AuthorityConfigSubjectKeyIdArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigSubjectConfigArgsDict(TypedDict):
     subject: pulumi.Input[AuthorityConfigSubjectConfigSubjectArgsDict]
@@ -281,7 +290,10 @@ class AuthorityConfigSubjectConfigArgs:
     @pulumi.getter
     def subject(self) -> pulumi.Input[AuthorityConfigSubjectConfigSubjectArgs]: ...
     @subject.setter
-    def subject(self, value: pulumi.Input[AuthorityConfigSubjectConfigSubjectArgs]): ...
+    def subject(
+        self, value: pulumi.Input[AuthorityConfigSubjectConfigSubjectArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectAltName")
     def subject_alt_name(
@@ -291,7 +303,8 @@ class AuthorityConfigSubjectConfigArgs:
     def subject_alt_name(
         self,
         value: Optional[pulumi.Input[AuthorityConfigSubjectConfigSubjectAltNameArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigSubjectConfigSubjectArgsDict(TypedDict):
     common_name: pulumi.Input[_builtins.str]
@@ -321,42 +334,52 @@ class AuthorityConfigSubjectConfigSubjectArgs:
     @pulumi.getter(name="commonName")
     def common_name(self) -> pulumi.Input[_builtins.str]: ...
     @common_name.setter
-    def common_name(self, value: pulumi.Input[_builtins.str]): ...
+    def common_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="countryCode")
     def country_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @country_code.setter
-    def country_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def country_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locality(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @locality.setter
-    def locality(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def locality(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def organization(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization.setter
-    def organization(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organization(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationalUnit")
     def organizational_unit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organizational_unit.setter
-    def organizational_unit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organizational_unit(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postalCode")
     def postal_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @postal_code.setter
-    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def province(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @province.setter
-    def province(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def province(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streetAddress")
     def street_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @street_address.setter
-    def street_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def street_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AuthorityConfigSubjectConfigSubjectAltNameArgsDict(TypedDict):
     dns_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -386,7 +409,8 @@ class AuthorityConfigSubjectConfigSubjectAltNameArgs:
     @dns_names.setter
     def dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddresses")
     def email_addresses(
@@ -395,7 +419,8 @@ class AuthorityConfigSubjectConfigSubjectAltNameArgs:
     @email_addresses.setter
     def email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddresses")
     def ip_addresses(
@@ -404,14 +429,16 @@ class AuthorityConfigSubjectConfigSubjectAltNameArgs:
     @ip_addresses.setter
     def ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uris(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @uris.setter
     def uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigSubjectKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -425,7 +452,8 @@ class AuthorityConfigSubjectKeyIdArgs:
     @pulumi.getter(name="keyId")
     def key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_id.setter
-    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigArgsDict(TypedDict):
     ca_options: pulumi.Input[AuthorityConfigX509ConfigCaOptionsArgsDict]
@@ -471,12 +499,16 @@ class AuthorityConfigX509ConfigArgs:
     @ca_options.setter
     def ca_options(
         self, value: pulumi.Input[AuthorityConfigX509ConfigCaOptionsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyUsage")
     def key_usage(self) -> pulumi.Input[AuthorityConfigX509ConfigKeyUsageArgs]: ...
     @key_usage.setter
-    def key_usage(self, value: pulumi.Input[AuthorityConfigX509ConfigKeyUsageArgs]): ...
+    def key_usage(
+        self, value: pulumi.Input[AuthorityConfigX509ConfigKeyUsageArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalExtensions")
     def additional_extensions(
@@ -494,7 +526,8 @@ class AuthorityConfigX509ConfigArgs:
                 Sequence[pulumi.Input[AuthorityConfigX509ConfigAdditionalExtensionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aiaOcspServers")
     def aia_ocsp_servers(
@@ -503,7 +536,8 @@ class AuthorityConfigX509ConfigArgs:
     @aia_ocsp_servers.setter
     def aia_ocsp_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nameConstraints")
     def name_constraints(
@@ -513,7 +547,8 @@ class AuthorityConfigX509ConfigArgs:
     def name_constraints(
         self,
         value: Optional[pulumi.Input[AuthorityConfigX509ConfigNameConstraintsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyIds")
     def policy_ids(
@@ -527,7 +562,8 @@ class AuthorityConfigX509ConfigArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AuthorityConfigX509ConfigPolicyIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigAdditionalExtensionArgsDict(TypedDict):
     critical: pulumi.Input[_builtins.bool]
@@ -551,7 +587,8 @@ class AuthorityConfigX509ConfigAdditionalExtensionArgs:
     @pulumi.getter
     def critical(self) -> pulumi.Input[_builtins.bool]: ...
     @critical.setter
-    def critical(self, value: pulumi.Input[_builtins.bool]): ...
+    def critical(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectId")
     def object_id(
@@ -561,12 +598,14 @@ class AuthorityConfigX509ConfigAdditionalExtensionArgs:
     def object_id(
         self,
         value: pulumi.Input[AuthorityConfigX509ConfigAdditionalExtensionObjectIdArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -586,7 +625,8 @@ class AuthorityConfigX509ConfigAdditionalExtensionObjectIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigCaOptionsArgsDict(TypedDict):
     is_ca: pulumi.Input[_builtins.bool]
@@ -608,24 +648,30 @@ class AuthorityConfigX509ConfigCaOptionsArgs:
     @pulumi.getter(name="isCa")
     def is_ca(self) -> pulumi.Input[_builtins.bool]: ...
     @is_ca.setter
-    def is_ca(self, value: pulumi.Input[_builtins.bool]): ...
+    def is_ca(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxIssuerPathLength")
     def max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_issuer_path_length.setter
-    def max_issuer_path_length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_issuer_path_length(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nonCa")
     def non_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @non_ca.setter
-    def non_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def non_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zeroMaxIssuerPathLength")
     def zero_max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zero_max_issuer_path_length.setter
     def zero_max_issuer_path_length(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigKeyUsageArgsDict(TypedDict):
     base_key_usage: pulumi.Input[AuthorityConfigX509ConfigKeyUsageBaseKeyUsageArgsDict]
@@ -669,7 +715,8 @@ class AuthorityConfigX509ConfigKeyUsageArgs:
     @base_key_usage.setter
     def base_key_usage(
         self, value: pulumi.Input[AuthorityConfigX509ConfigKeyUsageBaseKeyUsageArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedKeyUsage")
     def extended_key_usage(
@@ -678,7 +725,8 @@ class AuthorityConfigX509ConfigKeyUsageArgs:
     @extended_key_usage.setter
     def extended_key_usage(
         self, value: pulumi.Input[AuthorityConfigX509ConfigKeyUsageExtendedKeyUsageArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unknownExtendedKeyUsages")
     def unknown_extended_key_usages(
@@ -704,7 +752,8 @@ class AuthorityConfigX509ConfigKeyUsageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigKeyUsageBaseKeyUsageArgsDict(TypedDict):
     cert_sign: NotRequired[pulumi.Input[_builtins.bool]]
@@ -736,47 +785,64 @@ class AuthorityConfigX509ConfigKeyUsageBaseKeyUsageArgs:
     @pulumi.getter(name="certSign")
     def cert_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @cert_sign.setter
-    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentCommitment")
     def content_commitment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @content_commitment.setter
-    def content_commitment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def content_commitment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlSign")
     def crl_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @crl_sign.setter
-    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataEncipherment")
     def data_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @data_encipherment.setter
-    def data_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def data_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="decipherOnly")
     def decipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @decipher_only.setter
-    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="digitalSignature")
     def digital_signature(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @digital_signature.setter
-    def digital_signature(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def digital_signature(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encipherOnly")
     def encipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encipher_only.setter
-    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyAgreement")
     def key_agreement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_agreement.setter
-    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncipherment")
     def key_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_encipherment.setter
-    def key_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigKeyUsageExtendedKeyUsageArgsDict(TypedDict):
     client_auth: NotRequired[pulumi.Input[_builtins.bool]]
@@ -802,32 +868,40 @@ class AuthorityConfigX509ConfigKeyUsageExtendedKeyUsageArgs:
     @pulumi.getter(name="clientAuth")
     def client_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_auth.setter
-    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeSigning")
     def code_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @code_signing.setter
-    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailProtection")
     def email_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @email_protection.setter
-    def email_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def email_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ocspSigning")
     def ocsp_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ocsp_signing.setter
-    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverAuth")
     def server_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @server_auth.setter
-    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeStamping")
     def time_stamping(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @time_stamping.setter
-    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -847,7 +921,8 @@ class AuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigNameConstraintsArgsDict(TypedDict):
     critical: pulumi.Input[_builtins.bool]
@@ -903,7 +978,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @pulumi.getter
     def critical(self) -> pulumi.Input[_builtins.bool]: ...
     @critical.setter
-    def critical(self, value: pulumi.Input[_builtins.bool]): ...
+    def critical(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedDnsNames")
     def excluded_dns_names(
@@ -912,7 +988,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @excluded_dns_names.setter
     def excluded_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedEmailAddresses")
     def excluded_email_addresses(
@@ -921,7 +998,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @excluded_email_addresses.setter
     def excluded_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedIpRanges")
     def excluded_ip_ranges(
@@ -930,7 +1008,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @excluded_ip_ranges.setter
     def excluded_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedUris")
     def excluded_uris(
@@ -939,7 +1018,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @excluded_uris.setter
     def excluded_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedDnsNames")
     def permitted_dns_names(
@@ -948,7 +1028,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @permitted_dns_names.setter
     def permitted_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedEmailAddresses")
     def permitted_email_addresses(
@@ -957,7 +1038,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @permitted_email_addresses.setter
     def permitted_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedIpRanges")
     def permitted_ip_ranges(
@@ -966,7 +1048,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @permitted_ip_ranges.setter
     def permitted_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedUris")
     def permitted_uris(
@@ -975,7 +1058,8 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
     @permitted_uris.setter
     def permitted_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityConfigX509ConfigPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -995,7 +1079,8 @@ class AuthorityConfigX509ConfigPolicyIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityKeySpecArgsDict(TypedDict):
     algorithm: NotRequired[pulumi.Input[_builtins.str]]
@@ -1013,12 +1098,16 @@ class AuthorityKeySpecArgs:
     @pulumi.getter
     def algorithm(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @algorithm.setter
-    def algorithm(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def algorithm(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudKmsKeyVersion")
     def cloud_kms_key_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloud_kms_key_version.setter
-    def cloud_kms_key_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cloud_kms_key_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AuthoritySubordinateConfigArgsDict(TypedDict):
     certificate_authority: NotRequired[pulumi.Input[_builtins.str]]
@@ -1040,7 +1129,10 @@ class AuthoritySubordinateConfigArgs:
     @pulumi.getter(name="certificateAuthority")
     def certificate_authority(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_authority.setter
-    def certificate_authority(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_authority(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pemIssuerChain")
     def pem_issuer_chain(
@@ -1050,7 +1142,8 @@ class AuthoritySubordinateConfigArgs:
     def pem_issuer_chain(
         self,
         value: Optional[pulumi.Input[AuthoritySubordinateConfigPemIssuerChainArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthoritySubordinateConfigPemIssuerChainArgsDict(TypedDict):
     pem_certificates: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1072,7 +1165,8 @@ class AuthoritySubordinateConfigPemIssuerChainArgs:
     @pem_certificates.setter
     def pem_certificates(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AuthorityUserDefinedAccessUrlsArgsDict(TypedDict):
     aia_issuing_certificate_urls: NotRequired[
@@ -1100,7 +1194,8 @@ class AuthorityUserDefinedAccessUrlsArgs:
     @aia_issuing_certificate_urls.setter
     def aia_issuing_certificate_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlAccessUrls")
     def crl_access_urls(
@@ -1109,7 +1204,8 @@ class AuthorityUserDefinedAccessUrlsArgs:
     @crl_access_urls.setter
     def crl_access_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolEncryptionSpecArgsDict(TypedDict):
     cloud_kms_key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1123,7 +1219,8 @@ class CaPoolEncryptionSpecArgs:
     @pulumi.getter(name="cloudKmsKey")
     def cloud_kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloud_kms_key.setter
-    def cloud_kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cloud_kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CaPoolIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -1143,17 +1240,20 @@ class CaPoolIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CaPoolIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -1173,17 +1273,20 @@ class CaPoolIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyArgsDict(TypedDict):
     allowed_issuance_modes: NotRequired[
@@ -1230,7 +1333,8 @@ class CaPoolIssuancePolicyArgs:
     def allowed_issuance_modes(
         self,
         value: Optional[pulumi.Input[CaPoolIssuancePolicyAllowedIssuanceModesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedKeyTypes")
     def allowed_key_types(
@@ -1244,12 +1348,16 @@ class CaPoolIssuancePolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CaPoolIssuancePolicyAllowedKeyTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backdateDuration")
     def backdate_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backdate_duration.setter
-    def backdate_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backdate_duration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="baselineValues")
     def baseline_values(
@@ -1258,7 +1366,8 @@ class CaPoolIssuancePolicyArgs:
     @baseline_values.setter
     def baseline_values(
         self, value: Optional[pulumi.Input[CaPoolIssuancePolicyBaselineValuesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityConstraints")
     def identity_constraints(
@@ -1267,12 +1376,16 @@ class CaPoolIssuancePolicyArgs:
     @identity_constraints.setter
     def identity_constraints(
         self, value: Optional[pulumi.Input[CaPoolIssuancePolicyIdentityConstraintsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumLifetime")
     def maximum_lifetime(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @maximum_lifetime.setter
-    def maximum_lifetime(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def maximum_lifetime(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyAllowedIssuanceModesArgsDict(TypedDict):
     allow_config_based_issuance: pulumi.Input[_builtins.bool]
@@ -1290,12 +1403,16 @@ class CaPoolIssuancePolicyAllowedIssuanceModesArgs:
     @pulumi.getter(name="allowConfigBasedIssuance")
     def allow_config_based_issuance(self) -> pulumi.Input[_builtins.bool]: ...
     @allow_config_based_issuance.setter
-    def allow_config_based_issuance(self, value: pulumi.Input[_builtins.bool]): ...
+    def allow_config_based_issuance(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowCsrBasedIssuance")
     def allow_csr_based_issuance(self) -> pulumi.Input[_builtins.bool]: ...
     @allow_csr_based_issuance.setter
-    def allow_csr_based_issuance(self, value: pulumi.Input[_builtins.bool]): ...
+    def allow_csr_based_issuance(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyAllowedKeyTypeArgsDict(TypedDict):
     elliptic_curve: NotRequired[
@@ -1326,7 +1443,8 @@ class CaPoolIssuancePolicyAllowedKeyTypeArgs:
         value: Optional[
             pulumi.Input[CaPoolIssuancePolicyAllowedKeyTypeEllipticCurveArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rsa(
@@ -1335,7 +1453,8 @@ class CaPoolIssuancePolicyAllowedKeyTypeArgs:
     @rsa.setter
     def rsa(
         self, value: Optional[pulumi.Input[CaPoolIssuancePolicyAllowedKeyTypeRsaArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyAllowedKeyTypeEllipticCurveArgsDict(TypedDict):
     signature_algorithm: pulumi.Input[_builtins.str]
@@ -1349,7 +1468,8 @@ class CaPoolIssuancePolicyAllowedKeyTypeEllipticCurveArgs:
     @pulumi.getter(name="signatureAlgorithm")
     def signature_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @signature_algorithm.setter
-    def signature_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def signature_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyAllowedKeyTypeRsaArgsDict(TypedDict):
     max_modulus_size: NotRequired[pulumi.Input[_builtins.str]]
@@ -1367,12 +1487,18 @@ class CaPoolIssuancePolicyAllowedKeyTypeRsaArgs:
     @pulumi.getter(name="maxModulusSize")
     def max_modulus_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_modulus_size.setter
-    def max_modulus_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_modulus_size(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minModulusSize")
     def min_modulus_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_modulus_size.setter
-    def min_modulus_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_modulus_size(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesArgsDict(TypedDict):
     ca_options: pulumi.Input[CaPoolIssuancePolicyBaselineValuesCaOptionsArgsDict]
@@ -1432,7 +1558,8 @@ class CaPoolIssuancePolicyBaselineValuesArgs:
     @ca_options.setter
     def ca_options(
         self, value: pulumi.Input[CaPoolIssuancePolicyBaselineValuesCaOptionsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyUsage")
     def key_usage(
@@ -1441,7 +1568,8 @@ class CaPoolIssuancePolicyBaselineValuesArgs:
     @key_usage.setter
     def key_usage(
         self, value: pulumi.Input[CaPoolIssuancePolicyBaselineValuesKeyUsageArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalExtensions")
     def additional_extensions(
@@ -1465,7 +1593,8 @@ class CaPoolIssuancePolicyBaselineValuesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aiaOcspServers")
     def aia_ocsp_servers(
@@ -1474,7 +1603,8 @@ class CaPoolIssuancePolicyBaselineValuesArgs:
     @aia_ocsp_servers.setter
     def aia_ocsp_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nameConstraints")
     def name_constraints(
@@ -1488,7 +1618,8 @@ class CaPoolIssuancePolicyBaselineValuesArgs:
         value: Optional[
             pulumi.Input[CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyIds")
     def policy_ids(
@@ -1506,7 +1637,8 @@ class CaPoolIssuancePolicyBaselineValuesArgs:
                 Sequence[pulumi.Input[CaPoolIssuancePolicyBaselineValuesPolicyIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionArgsDict(TypedDict):
     critical: pulumi.Input[_builtins.bool]
@@ -1530,7 +1662,8 @@ class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionArgs:
     @pulumi.getter
     def critical(self) -> pulumi.Input[_builtins.bool]: ...
     @critical.setter
-    def critical(self, value: pulumi.Input[_builtins.bool]): ...
+    def critical(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectId")
     def object_id(
@@ -1544,12 +1677,14 @@ class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionArgs:
         value: pulumi.Input[
             CaPoolIssuancePolicyBaselineValuesAdditionalExtensionObjectIdArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -1569,7 +1704,8 @@ class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionObjectIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesCaOptionsArgsDict(TypedDict):
     is_ca: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1591,24 +1727,30 @@ class CaPoolIssuancePolicyBaselineValuesCaOptionsArgs:
     @pulumi.getter(name="isCa")
     def is_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_ca.setter
-    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxIssuerPathLength")
     def max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_issuer_path_length.setter
-    def max_issuer_path_length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_issuer_path_length(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nonCa")
     def non_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @non_ca.setter
-    def non_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def non_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zeroMaxIssuerPathLength")
     def zero_max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zero_max_issuer_path_length.setter
     def zero_max_issuer_path_length(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesKeyUsageArgsDict(TypedDict):
     base_key_usage: pulumi.Input[
@@ -1657,7 +1799,8 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageArgs:
     def base_key_usage(
         self,
         value: pulumi.Input[CaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedKeyUsage")
     def extended_key_usage(
@@ -1671,7 +1814,8 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageArgs:
         value: pulumi.Input[
             CaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unknownExtendedKeyUsages")
     def unknown_extended_key_usages(
@@ -1697,7 +1841,8 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageArgsDict(TypedDict):
     cert_sign: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1729,47 +1874,64 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageArgs:
     @pulumi.getter(name="certSign")
     def cert_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @cert_sign.setter
-    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentCommitment")
     def content_commitment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @content_commitment.setter
-    def content_commitment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def content_commitment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlSign")
     def crl_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @crl_sign.setter
-    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataEncipherment")
     def data_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @data_encipherment.setter
-    def data_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def data_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="decipherOnly")
     def decipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @decipher_only.setter
-    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="digitalSignature")
     def digital_signature(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @digital_signature.setter
-    def digital_signature(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def digital_signature(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encipherOnly")
     def encipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encipher_only.setter
-    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyAgreement")
     def key_agreement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_agreement.setter
-    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncipherment")
     def key_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_encipherment.setter
-    def key_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageArgsDict(TypedDict):
     client_auth: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1795,32 +1957,40 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageArgs:
     @pulumi.getter(name="clientAuth")
     def client_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_auth.setter
-    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeSigning")
     def code_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @code_signing.setter
-    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailProtection")
     def email_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @email_protection.setter
-    def email_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def email_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ocspSigning")
     def ocsp_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ocsp_signing.setter
-    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverAuth")
     def server_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @server_auth.setter
-    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeStamping")
     def time_stamping(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @time_stamping.setter
-    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsageArgsDict(
     TypedDict
@@ -1842,7 +2012,8 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsageArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgsDict(TypedDict):
     critical: pulumi.Input[_builtins.bool]
@@ -1898,7 +2069,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @pulumi.getter
     def critical(self) -> pulumi.Input[_builtins.bool]: ...
     @critical.setter
-    def critical(self, value: pulumi.Input[_builtins.bool]): ...
+    def critical(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedDnsNames")
     def excluded_dns_names(
@@ -1907,7 +2079,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @excluded_dns_names.setter
     def excluded_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedEmailAddresses")
     def excluded_email_addresses(
@@ -1916,7 +2089,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @excluded_email_addresses.setter
     def excluded_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedIpRanges")
     def excluded_ip_ranges(
@@ -1925,7 +2099,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @excluded_ip_ranges.setter
     def excluded_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedUris")
     def excluded_uris(
@@ -1934,7 +2109,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @excluded_uris.setter
     def excluded_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedDnsNames")
     def permitted_dns_names(
@@ -1943,7 +2119,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @permitted_dns_names.setter
     def permitted_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedEmailAddresses")
     def permitted_email_addresses(
@@ -1952,7 +2129,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @permitted_email_addresses.setter
     def permitted_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedIpRanges")
     def permitted_ip_ranges(
@@ -1961,7 +2139,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @permitted_ip_ranges.setter
     def permitted_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedUris")
     def permitted_uris(
@@ -1970,7 +2149,8 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
     @permitted_uris.setter
     def permitted_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyBaselineValuesPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -1990,7 +2170,8 @@ class CaPoolIssuancePolicyBaselineValuesPolicyIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyIdentityConstraintsArgsDict(TypedDict):
     allow_subject_alt_names_passthrough: pulumi.Input[_builtins.bool]
@@ -2016,12 +2197,16 @@ class CaPoolIssuancePolicyIdentityConstraintsArgs:
     @allow_subject_alt_names_passthrough.setter
     def allow_subject_alt_names_passthrough(
         self, value: pulumi.Input[_builtins.bool]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowSubjectPassthrough")
     def allow_subject_passthrough(self) -> pulumi.Input[_builtins.bool]: ...
     @allow_subject_passthrough.setter
-    def allow_subject_passthrough(self, value: pulumi.Input[_builtins.bool]): ...
+    def allow_subject_passthrough(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="celExpression")
     def cel_expression(
@@ -2035,7 +2220,8 @@ class CaPoolIssuancePolicyIdentityConstraintsArgs:
         value: Optional[
             pulumi.Input[CaPoolIssuancePolicyIdentityConstraintsCelExpressionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CaPoolIssuancePolicyIdentityConstraintsCelExpressionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -2057,22 +2243,26 @@ class CaPoolIssuancePolicyIdentityConstraintsCelExpressionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @title.setter
-    def title(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def title(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CaPoolPublishingOptionsArgsDict(TypedDict):
     publish_ca_cert: pulumi.Input[_builtins.bool]
@@ -2092,17 +2282,20 @@ class CaPoolPublishingOptionsArgs:
     @pulumi.getter(name="publishCaCert")
     def publish_ca_cert(self) -> pulumi.Input[_builtins.bool]: ...
     @publish_ca_cert.setter
-    def publish_ca_cert(self, value: pulumi.Input[_builtins.bool]): ...
+    def publish_ca_cert(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishCrl")
     def publish_crl(self) -> pulumi.Input[_builtins.bool]: ...
     @publish_crl.setter
-    def publish_crl(self, value: pulumi.Input[_builtins.bool]): ...
+    def publish_crl(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encodingFormat")
     def encoding_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encoding_format.setter
-    def encoding_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encoding_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionArgsDict(TypedDict):
     aia_issuing_certificate_urls: NotRequired[
@@ -2216,7 +2409,8 @@ class CertificateCertificateDescriptionArgs:
     @aia_issuing_certificate_urls.setter
     def aia_issuing_certificate_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorityKeyIds")
     def authority_key_ids(
@@ -2236,7 +2430,8 @@ class CertificateCertificateDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certFingerprints")
     def cert_fingerprints(
@@ -2256,7 +2451,8 @@ class CertificateCertificateDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlDistributionPoints")
     def crl_distribution_points(
@@ -2265,7 +2461,8 @@ class CertificateCertificateDescriptionArgs:
     @crl_distribution_points.setter
     def crl_distribution_points(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicKeys")
     def public_keys(
@@ -2283,7 +2480,8 @@ class CertificateCertificateDescriptionArgs:
                 Sequence[pulumi.Input[CertificateCertificateDescriptionPublicKeyArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectDescriptions")
     def subject_descriptions(
@@ -2307,7 +2505,8 @@ class CertificateCertificateDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectKeyIds")
     def subject_key_ids(
@@ -2327,7 +2526,8 @@ class CertificateCertificateDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="x509Descriptions")
     def x509_descriptions(
@@ -2347,7 +2547,8 @@ class CertificateCertificateDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionAuthorityKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2361,7 +2562,8 @@ class CertificateCertificateDescriptionAuthorityKeyIdArgs:
     @pulumi.getter(name="keyId")
     def key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_id.setter
-    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionCertFingerprintArgsDict(TypedDict):
     sha256_hash: NotRequired[pulumi.Input[_builtins.str]]
@@ -2375,7 +2577,8 @@ class CertificateCertificateDescriptionCertFingerprintArgs:
     @pulumi.getter(name="sha256Hash")
     def sha256_hash(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_hash.setter
-    def sha256_hash(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_hash(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionPublicKeyArgsDict(TypedDict):
     format: NotRequired[pulumi.Input[_builtins.str]]
@@ -2393,12 +2596,14 @@ class CertificateCertificateDescriptionPublicKeyArgs:
     @pulumi.getter
     def format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @format.setter
-    def format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionSubjectDescriptionArgsDict(TypedDict):
     hex_serial_number: NotRequired[pulumi.Input[_builtins.str]]
@@ -2456,22 +2661,28 @@ class CertificateCertificateDescriptionSubjectDescriptionArgs:
     @pulumi.getter(name="hexSerialNumber")
     def hex_serial_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hex_serial_number.setter
-    def hex_serial_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hex_serial_number(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lifetime(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lifetime.setter
-    def lifetime(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lifetime(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notAfterTime")
     def not_after_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @not_after_time.setter
-    def not_after_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def not_after_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notBeforeTime")
     def not_before_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @not_before_time.setter
-    def not_before_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def not_before_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectAltNames")
     def subject_alt_names(
@@ -2497,7 +2708,8 @@ class CertificateCertificateDescriptionSubjectDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subjects(
@@ -2523,7 +2735,8 @@ class CertificateCertificateDescriptionSubjectDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionSubjectDescriptionSubjectArgsDict(TypedDict):
     common_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2553,42 +2766,52 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectArgs:
     @pulumi.getter(name="commonName")
     def common_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @common_name.setter
-    def common_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def common_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="countryCode")
     def country_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @country_code.setter
-    def country_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def country_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locality(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @locality.setter
-    def locality(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def locality(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def organization(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization.setter
-    def organization(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organization(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationalUnit")
     def organizational_unit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organizational_unit.setter
-    def organizational_unit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organizational_unit(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postalCode")
     def postal_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @postal_code.setter
-    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def province(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @province.setter
-    def province(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def province(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streetAddress")
     def street_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @street_address.setter
-    def street_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def street_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameArgsDict(
     TypedDict
@@ -2655,7 +2878,8 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsNames")
     def dns_names(
@@ -2664,7 +2888,8 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameArgs:
     @dns_names.setter
     def dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddresses")
     def email_addresses(
@@ -2673,7 +2898,8 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameArgs:
     @email_addresses.setter
     def email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddresses")
     def ip_addresses(
@@ -2682,14 +2908,16 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameArgs:
     @ip_addresses.setter
     def ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uris(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @uris.setter
     def uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSanArgsDict(
     TypedDict
@@ -2727,7 +2955,8 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSan
     @pulumi.getter
     def critical(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @critical.setter
-    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="obectIds")
     def obect_ids(
@@ -2753,12 +2982,14 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSan
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSanObectIdArgsDict(
     TypedDict
@@ -2782,7 +3013,8 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSan
     @object_id_paths.setter
     def object_id_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionSubjectKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2796,7 +3028,8 @@ class CertificateCertificateDescriptionSubjectKeyIdArgs:
     @pulumi.getter(name="keyId")
     def key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_id.setter
-    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionArgsDict(TypedDict):
     additional_extensions: NotRequired[
@@ -2925,7 +3158,8 @@ class CertificateCertificateDescriptionX509DescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aiaOcspServers")
     def aia_ocsp_servers(
@@ -2934,7 +3168,8 @@ class CertificateCertificateDescriptionX509DescriptionArgs:
     @aia_ocsp_servers.setter
     def aia_ocsp_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caOptions")
     def ca_options(
@@ -2960,7 +3195,8 @@ class CertificateCertificateDescriptionX509DescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyUsages")
     def key_usages(
@@ -2986,7 +3222,8 @@ class CertificateCertificateDescriptionX509DescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nameConstraints")
     def name_constraints(
@@ -3012,7 +3249,8 @@ class CertificateCertificateDescriptionX509DescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyIds")
     def policy_ids(
@@ -3038,7 +3276,8 @@ class CertificateCertificateDescriptionX509DescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionArgsDict(
     TypedDict
@@ -3076,7 +3315,8 @@ class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionArgs:
     @pulumi.getter
     def critical(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @critical.setter
-    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectIds")
     def object_ids(
@@ -3102,12 +3342,14 @@ class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionObjectIdArgsDict(
     TypedDict
@@ -3131,7 +3373,8 @@ class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionObjectI
     @object_id_paths.setter
     def object_id_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionCaOptionArgsDict(TypedDict):
     is_ca: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3149,12 +3392,16 @@ class CertificateCertificateDescriptionX509DescriptionCaOptionArgs:
     @pulumi.getter(name="isCa")
     def is_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_ca.setter
-    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxIssuerPathLength")
     def max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_issuer_path_length.setter
-    def max_issuer_path_length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_issuer_path_length(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionKeyUsageArgsDict(TypedDict):
     base_key_usages: NotRequired[
@@ -3243,7 +3490,8 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedKeyUsages")
     def extended_key_usages(
@@ -3269,7 +3517,8 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unknownExtendedKeyUsages")
     def unknown_extended_key_usages(
@@ -3295,7 +3544,8 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageArgsDict(
     TypedDict
@@ -3329,47 +3579,64 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageArgs:
     @pulumi.getter(name="certSign")
     def cert_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @cert_sign.setter
-    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentCommitment")
     def content_commitment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @content_commitment.setter
-    def content_commitment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def content_commitment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlSign")
     def crl_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @crl_sign.setter
-    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataEncipherment")
     def data_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @data_encipherment.setter
-    def data_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def data_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="decipherOnly")
     def decipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @decipher_only.setter
-    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="digitalSignature")
     def digital_signature(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @digital_signature.setter
-    def digital_signature(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def digital_signature(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encipherOnly")
     def encipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encipher_only.setter
-    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyAgreement")
     def key_agreement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_agreement.setter
-    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncipherment")
     def key_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_encipherment.setter
-    def key_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageArgsDict(
     TypedDict
@@ -3397,32 +3664,40 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageAr
     @pulumi.getter(name="clientAuth")
     def client_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_auth.setter
-    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeSigning")
     def code_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @code_signing.setter
-    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailProtection")
     def email_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @email_protection.setter
-    def email_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def email_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ocspSigning")
     def ocsp_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ocsp_signing.setter
-    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverAuth")
     def server_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @server_auth.setter
-    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeStamping")
     def time_stamping(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @time_stamping.setter
-    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsageArgsDict(
     TypedDict
@@ -3446,7 +3721,8 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKey
     @object_id_paths.setter
     def object_id_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionNameConstraintArgsDict(TypedDict):
     critical: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3502,7 +3778,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @pulumi.getter
     def critical(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @critical.setter
-    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedDnsNames")
     def excluded_dns_names(
@@ -3511,7 +3788,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @excluded_dns_names.setter
     def excluded_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedEmailAddresses")
     def excluded_email_addresses(
@@ -3520,7 +3798,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @excluded_email_addresses.setter
     def excluded_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedIpRanges")
     def excluded_ip_ranges(
@@ -3529,7 +3808,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @excluded_ip_ranges.setter
     def excluded_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedUris")
     def excluded_uris(
@@ -3538,7 +3818,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @excluded_uris.setter
     def excluded_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedDnsNames")
     def permitted_dns_names(
@@ -3547,7 +3828,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @permitted_dns_names.setter
     def permitted_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedEmailAddresses")
     def permitted_email_addresses(
@@ -3556,7 +3838,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @permitted_email_addresses.setter
     def permitted_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedIpRanges")
     def permitted_ip_ranges(
@@ -3565,7 +3848,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @permitted_ip_ranges.setter
     def permitted_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedUris")
     def permitted_uris(
@@ -3574,7 +3858,8 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
     @permitted_uris.setter
     def permitted_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateCertificateDescriptionX509DescriptionPolicyIdArgsDict(TypedDict):
     object_id_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
@@ -3596,7 +3881,8 @@ class CertificateCertificateDescriptionX509DescriptionPolicyIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigArgsDict(TypedDict):
     public_key: pulumi.Input[CertificateConfigPublicKeyArgsDict]
@@ -3618,19 +3904,26 @@ class CertificateConfigArgs:
     @pulumi.getter(name="publicKey")
     def public_key(self) -> pulumi.Input[CertificateConfigPublicKeyArgs]: ...
     @public_key.setter
-    def public_key(self, value: pulumi.Input[CertificateConfigPublicKeyArgs]): ...
+    def public_key(
+        self, value: pulumi.Input[CertificateConfigPublicKeyArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectConfig")
     def subject_config(self) -> pulumi.Input[CertificateConfigSubjectConfigArgs]: ...
     @subject_config.setter
     def subject_config(
         self, value: pulumi.Input[CertificateConfigSubjectConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="x509Config")
     def x509_config(self) -> pulumi.Input[CertificateConfigX509ConfigArgs]: ...
     @x509_config.setter
-    def x509_config(self, value: pulumi.Input[CertificateConfigX509ConfigArgs]): ...
+    def x509_config(
+        self, value: pulumi.Input[CertificateConfigX509ConfigArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectKeyId")
     def subject_key_id(
@@ -3639,7 +3932,8 @@ class CertificateConfigArgs:
     @subject_key_id.setter
     def subject_key_id(
         self, value: Optional[pulumi.Input[CertificateConfigSubjectKeyIdArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigPublicKeyArgsDict(TypedDict):
     format: pulumi.Input[_builtins.str]
@@ -3657,12 +3951,14 @@ class CertificateConfigPublicKeyArgs:
     @pulumi.getter
     def format(self) -> pulumi.Input[_builtins.str]: ...
     @format.setter
-    def format(self, value: pulumi.Input[_builtins.str]): ...
+    def format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateConfigSubjectConfigArgsDict(TypedDict):
     subject: pulumi.Input[CertificateConfigSubjectConfigSubjectArgsDict]
@@ -3686,7 +3982,8 @@ class CertificateConfigSubjectConfigArgs:
     @subject.setter
     def subject(
         self, value: pulumi.Input[CertificateConfigSubjectConfigSubjectArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectAltName")
     def subject_alt_name(
@@ -3696,7 +3993,8 @@ class CertificateConfigSubjectConfigArgs:
     def subject_alt_name(
         self,
         value: Optional[pulumi.Input[CertificateConfigSubjectConfigSubjectAltNameArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigSubjectConfigSubjectArgsDict(TypedDict):
     common_name: pulumi.Input[_builtins.str]
@@ -3726,42 +4024,52 @@ class CertificateConfigSubjectConfigSubjectArgs:
     @pulumi.getter(name="commonName")
     def common_name(self) -> pulumi.Input[_builtins.str]: ...
     @common_name.setter
-    def common_name(self, value: pulumi.Input[_builtins.str]): ...
+    def common_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def organization(self) -> pulumi.Input[_builtins.str]: ...
     @organization.setter
-    def organization(self, value: pulumi.Input[_builtins.str]): ...
+    def organization(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="countryCode")
     def country_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @country_code.setter
-    def country_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def country_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locality(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @locality.setter
-    def locality(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def locality(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationalUnit")
     def organizational_unit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organizational_unit.setter
-    def organizational_unit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organizational_unit(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postalCode")
     def postal_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @postal_code.setter
-    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def province(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @province.setter
-    def province(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def province(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streetAddress")
     def street_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @street_address.setter
-    def street_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def street_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateConfigSubjectConfigSubjectAltNameArgsDict(TypedDict):
     dns_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -3791,7 +4099,8 @@ class CertificateConfigSubjectConfigSubjectAltNameArgs:
     @dns_names.setter
     def dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddresses")
     def email_addresses(
@@ -3800,7 +4109,8 @@ class CertificateConfigSubjectConfigSubjectAltNameArgs:
     @email_addresses.setter
     def email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddresses")
     def ip_addresses(
@@ -3809,14 +4119,16 @@ class CertificateConfigSubjectConfigSubjectAltNameArgs:
     @ip_addresses.setter
     def ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uris(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @uris.setter
     def uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigSubjectKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -3830,7 +4142,8 @@ class CertificateConfigSubjectKeyIdArgs:
     @pulumi.getter(name="keyId")
     def key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_id.setter
-    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigArgsDict(TypedDict):
     key_usage: pulumi.Input[CertificateConfigX509ConfigKeyUsageArgsDict]
@@ -3886,7 +4199,8 @@ class CertificateConfigX509ConfigArgs:
     @key_usage.setter
     def key_usage(
         self, value: pulumi.Input[CertificateConfigX509ConfigKeyUsageArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalExtensions")
     def additional_extensions(
@@ -3906,7 +4220,8 @@ class CertificateConfigX509ConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aiaOcspServers")
     def aia_ocsp_servers(
@@ -3915,7 +4230,8 @@ class CertificateConfigX509ConfigArgs:
     @aia_ocsp_servers.setter
     def aia_ocsp_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caOptions")
     def ca_options(
@@ -3924,7 +4240,8 @@ class CertificateConfigX509ConfigArgs:
     @ca_options.setter
     def ca_options(
         self, value: Optional[pulumi.Input[CertificateConfigX509ConfigCaOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nameConstraints")
     def name_constraints(
@@ -3934,7 +4251,8 @@ class CertificateConfigX509ConfigArgs:
     def name_constraints(
         self,
         value: Optional[pulumi.Input[CertificateConfigX509ConfigNameConstraintsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyIds")
     def policy_ids(
@@ -3950,7 +4268,8 @@ class CertificateConfigX509ConfigArgs:
                 Sequence[pulumi.Input[CertificateConfigX509ConfigPolicyIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigAdditionalExtensionArgsDict(TypedDict):
     critical: pulumi.Input[_builtins.bool]
@@ -3974,7 +4293,8 @@ class CertificateConfigX509ConfigAdditionalExtensionArgs:
     @pulumi.getter
     def critical(self) -> pulumi.Input[_builtins.bool]: ...
     @critical.setter
-    def critical(self, value: pulumi.Input[_builtins.bool]): ...
+    def critical(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectId")
     def object_id(
@@ -3984,12 +4304,14 @@ class CertificateConfigX509ConfigAdditionalExtensionArgs:
     def object_id(
         self,
         value: pulumi.Input[CertificateConfigX509ConfigAdditionalExtensionObjectIdArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -4009,7 +4331,8 @@ class CertificateConfigX509ConfigAdditionalExtensionObjectIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigCaOptionsArgsDict(TypedDict):
     is_ca: NotRequired[pulumi.Input[_builtins.bool]]
@@ -4031,24 +4354,30 @@ class CertificateConfigX509ConfigCaOptionsArgs:
     @pulumi.getter(name="isCa")
     def is_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_ca.setter
-    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxIssuerPathLength")
     def max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_issuer_path_length.setter
-    def max_issuer_path_length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_issuer_path_length(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nonCa")
     def non_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @non_ca.setter
-    def non_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def non_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zeroMaxIssuerPathLength")
     def zero_max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zero_max_issuer_path_length.setter
     def zero_max_issuer_path_length(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigKeyUsageArgsDict(TypedDict):
     base_key_usage: pulumi.Input[
@@ -4096,7 +4425,8 @@ class CertificateConfigX509ConfigKeyUsageArgs:
     @base_key_usage.setter
     def base_key_usage(
         self, value: pulumi.Input[CertificateConfigX509ConfigKeyUsageBaseKeyUsageArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedKeyUsage")
     def extended_key_usage(
@@ -4106,7 +4436,8 @@ class CertificateConfigX509ConfigKeyUsageArgs:
     def extended_key_usage(
         self,
         value: pulumi.Input[CertificateConfigX509ConfigKeyUsageExtendedKeyUsageArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unknownExtendedKeyUsages")
     def unknown_extended_key_usages(
@@ -4132,7 +4463,8 @@ class CertificateConfigX509ConfigKeyUsageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigKeyUsageBaseKeyUsageArgsDict(TypedDict):
     cert_sign: NotRequired[pulumi.Input[_builtins.bool]]
@@ -4164,47 +4496,64 @@ class CertificateConfigX509ConfigKeyUsageBaseKeyUsageArgs:
     @pulumi.getter(name="certSign")
     def cert_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @cert_sign.setter
-    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentCommitment")
     def content_commitment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @content_commitment.setter
-    def content_commitment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def content_commitment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlSign")
     def crl_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @crl_sign.setter
-    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataEncipherment")
     def data_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @data_encipherment.setter
-    def data_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def data_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="decipherOnly")
     def decipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @decipher_only.setter
-    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="digitalSignature")
     def digital_signature(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @digital_signature.setter
-    def digital_signature(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def digital_signature(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encipherOnly")
     def encipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encipher_only.setter
-    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyAgreement")
     def key_agreement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_agreement.setter
-    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncipherment")
     def key_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_encipherment.setter
-    def key_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigKeyUsageExtendedKeyUsageArgsDict(TypedDict):
     client_auth: NotRequired[pulumi.Input[_builtins.bool]]
@@ -4230,32 +4579,40 @@ class CertificateConfigX509ConfigKeyUsageExtendedKeyUsageArgs:
     @pulumi.getter(name="clientAuth")
     def client_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_auth.setter
-    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeSigning")
     def code_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @code_signing.setter
-    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailProtection")
     def email_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @email_protection.setter
-    def email_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def email_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ocspSigning")
     def ocsp_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ocsp_signing.setter
-    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverAuth")
     def server_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @server_auth.setter
-    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeStamping")
     def time_stamping(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @time_stamping.setter
-    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -4275,7 +4632,8 @@ class CertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigNameConstraintsArgsDict(TypedDict):
     critical: pulumi.Input[_builtins.bool]
@@ -4331,7 +4689,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @pulumi.getter
     def critical(self) -> pulumi.Input[_builtins.bool]: ...
     @critical.setter
-    def critical(self, value: pulumi.Input[_builtins.bool]): ...
+    def critical(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedDnsNames")
     def excluded_dns_names(
@@ -4340,7 +4699,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @excluded_dns_names.setter
     def excluded_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedEmailAddresses")
     def excluded_email_addresses(
@@ -4349,7 +4709,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @excluded_email_addresses.setter
     def excluded_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedIpRanges")
     def excluded_ip_ranges(
@@ -4358,7 +4719,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @excluded_ip_ranges.setter
     def excluded_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedUris")
     def excluded_uris(
@@ -4367,7 +4729,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @excluded_uris.setter
     def excluded_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedDnsNames")
     def permitted_dns_names(
@@ -4376,7 +4739,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @permitted_dns_names.setter
     def permitted_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedEmailAddresses")
     def permitted_email_addresses(
@@ -4385,7 +4749,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @permitted_email_addresses.setter
     def permitted_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedIpRanges")
     def permitted_ip_ranges(
@@ -4394,7 +4759,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @permitted_ip_ranges.setter
     def permitted_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedUris")
     def permitted_uris(
@@ -4403,7 +4769,8 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
     @permitted_uris.setter
     def permitted_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateConfigX509ConfigPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -4423,7 +4790,8 @@ class CertificateConfigX509ConfigPolicyIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateRevocationDetailArgsDict(TypedDict):
     revocation_state: NotRequired[pulumi.Input[_builtins.str]]
@@ -4441,12 +4809,16 @@ class CertificateRevocationDetailArgs:
     @pulumi.getter(name="revocationState")
     def revocation_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revocation_state.setter
-    def revocation_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revocation_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revocationTime")
     def revocation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revocation_time.setter
-    def revocation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revocation_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateTemplateIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -4466,17 +4838,20 @@ class CertificateTemplateIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateTemplateIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -4496,17 +4871,20 @@ class CertificateTemplateIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateTemplateIdentityConstraintsArgsDict(TypedDict):
     allow_subject_alt_names_passthrough: pulumi.Input[_builtins.bool]
@@ -4532,12 +4910,16 @@ class CertificateTemplateIdentityConstraintsArgs:
     @allow_subject_alt_names_passthrough.setter
     def allow_subject_alt_names_passthrough(
         self, value: pulumi.Input[_builtins.bool]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowSubjectPassthrough")
     def allow_subject_passthrough(self) -> pulumi.Input[_builtins.bool]: ...
     @allow_subject_passthrough.setter
-    def allow_subject_passthrough(self, value: pulumi.Input[_builtins.bool]): ...
+    def allow_subject_passthrough(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="celExpression")
     def cel_expression(
@@ -4551,7 +4933,8 @@ class CertificateTemplateIdentityConstraintsArgs:
         value: Optional[
             pulumi.Input[CertificateTemplateIdentityConstraintsCelExpressionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplateIdentityConstraintsCelExpressionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -4573,22 +4956,26 @@ class CertificateTemplateIdentityConstraintsCelExpressionArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expression.setter
-    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expression(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @title.setter
-    def title(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def title(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CertificateTemplatePassthroughExtensionsArgsDict(TypedDict):
     additional_extensions: NotRequired[
@@ -4645,7 +5032,8 @@ class CertificateTemplatePassthroughExtensionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knownExtensions")
     def known_extensions(
@@ -4654,7 +5042,8 @@ class CertificateTemplatePassthroughExtensionsArgs:
     @known_extensions.setter
     def known_extensions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePassthroughExtensionsAdditionalExtensionArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -4674,7 +5063,8 @@ class CertificateTemplatePassthroughExtensionsAdditionalExtensionArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesArgsDict(TypedDict):
     additional_extensions: NotRequired[
@@ -4757,7 +5147,8 @@ class CertificateTemplatePredefinedValuesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aiaOcspServers")
     def aia_ocsp_servers(
@@ -4766,7 +5157,8 @@ class CertificateTemplatePredefinedValuesArgs:
     @aia_ocsp_servers.setter
     def aia_ocsp_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caOptions")
     def ca_options(
@@ -4776,7 +5168,8 @@ class CertificateTemplatePredefinedValuesArgs:
     def ca_options(
         self,
         value: Optional[pulumi.Input[CertificateTemplatePredefinedValuesCaOptionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyUsage")
     def key_usage(
@@ -4786,7 +5179,8 @@ class CertificateTemplatePredefinedValuesArgs:
     def key_usage(
         self,
         value: Optional[pulumi.Input[CertificateTemplatePredefinedValuesKeyUsageArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nameConstraints")
     def name_constraints(
@@ -4800,7 +5194,8 @@ class CertificateTemplatePredefinedValuesArgs:
         value: Optional[
             pulumi.Input[CertificateTemplatePredefinedValuesNameConstraintsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyIds")
     def policy_ids(
@@ -4818,7 +5213,8 @@ class CertificateTemplatePredefinedValuesArgs:
                 Sequence[pulumi.Input[CertificateTemplatePredefinedValuesPolicyIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesAdditionalExtensionArgsDict(TypedDict):
     object_id: pulumi.Input[
@@ -4851,17 +5247,20 @@ class CertificateTemplatePredefinedValuesAdditionalExtensionArgs:
         value: pulumi.Input[
             CertificateTemplatePredefinedValuesAdditionalExtensionObjectIdArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def critical(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @critical.setter
-    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def critical(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -4881,7 +5280,8 @@ class CertificateTemplatePredefinedValuesAdditionalExtensionObjectIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesCaOptionsArgsDict(TypedDict):
     is_ca: NotRequired[pulumi.Input[_builtins.bool]]
@@ -4903,24 +5303,30 @@ class CertificateTemplatePredefinedValuesCaOptionsArgs:
     @pulumi.getter(name="isCa")
     def is_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_ca.setter
-    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxIssuerPathLength")
     def max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_issuer_path_length.setter
-    def max_issuer_path_length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_issuer_path_length(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nullCa")
     def null_ca(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @null_ca.setter
-    def null_ca(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def null_ca(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zeroMaxIssuerPathLength")
     def zero_max_issuer_path_length(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zero_max_issuer_path_length.setter
     def zero_max_issuer_path_length(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesKeyUsageArgsDict(TypedDict):
     base_key_usage: NotRequired[
@@ -4977,7 +5383,8 @@ class CertificateTemplatePredefinedValuesKeyUsageArgs:
         value: Optional[
             pulumi.Input[CertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedKeyUsage")
     def extended_key_usage(
@@ -4993,7 +5400,8 @@ class CertificateTemplatePredefinedValuesKeyUsageArgs:
                 CertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unknownExtendedKeyUsages")
     def unknown_extended_key_usages(
@@ -5019,7 +5427,8 @@ class CertificateTemplatePredefinedValuesKeyUsageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageArgsDict(TypedDict):
     cert_sign: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5051,47 +5460,64 @@ class CertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageArgs:
     @pulumi.getter(name="certSign")
     def cert_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @cert_sign.setter
-    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def cert_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentCommitment")
     def content_commitment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @content_commitment.setter
-    def content_commitment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def content_commitment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crlSign")
     def crl_sign(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @crl_sign.setter
-    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def crl_sign(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataEncipherment")
     def data_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @data_encipherment.setter
-    def data_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def data_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="decipherOnly")
     def decipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @decipher_only.setter
-    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def decipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="digitalSignature")
     def digital_signature(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @digital_signature.setter
-    def digital_signature(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def digital_signature(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encipherOnly")
     def encipher_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encipher_only.setter
-    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encipher_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyAgreement")
     def key_agreement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_agreement.setter
-    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_agreement(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncipherment")
     def key_encipherment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @key_encipherment.setter
-    def key_encipherment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def key_encipherment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageArgsDict(TypedDict):
     client_auth: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5117,32 +5543,40 @@ class CertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageArgs:
     @pulumi.getter(name="clientAuth")
     def client_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_auth.setter
-    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeSigning")
     def code_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @code_signing.setter
-    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def code_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailProtection")
     def email_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @email_protection.setter
-    def email_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def email_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ocspSigning")
     def ocsp_signing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ocsp_signing.setter
-    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ocsp_signing(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverAuth")
     def server_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @server_auth.setter
-    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def server_auth(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeStamping")
     def time_stamping(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @time_stamping.setter
-    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def time_stamping(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsageArgsDict(
     TypedDict
@@ -5164,7 +5598,8 @@ class CertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsageArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesNameConstraintsArgsDict(TypedDict):
     critical: pulumi.Input[_builtins.bool]
@@ -5220,7 +5655,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @pulumi.getter
     def critical(self) -> pulumi.Input[_builtins.bool]: ...
     @critical.setter
-    def critical(self, value: pulumi.Input[_builtins.bool]): ...
+    def critical(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedDnsNames")
     def excluded_dns_names(
@@ -5229,7 +5665,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @excluded_dns_names.setter
     def excluded_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedEmailAddresses")
     def excluded_email_addresses(
@@ -5238,7 +5675,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @excluded_email_addresses.setter
     def excluded_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedIpRanges")
     def excluded_ip_ranges(
@@ -5247,7 +5685,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @excluded_ip_ranges.setter
     def excluded_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedUris")
     def excluded_uris(
@@ -5256,7 +5695,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @excluded_uris.setter
     def excluded_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedDnsNames")
     def permitted_dns_names(
@@ -5265,7 +5705,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @permitted_dns_names.setter
     def permitted_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedEmailAddresses")
     def permitted_email_addresses(
@@ -5274,7 +5715,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @permitted_email_addresses.setter
     def permitted_email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedIpRanges")
     def permitted_ip_ranges(
@@ -5283,7 +5725,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @permitted_ip_ranges.setter
     def permitted_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedUris")
     def permitted_uris(
@@ -5292,7 +5735,8 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
     @permitted_uris.setter
     def permitted_uris(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CertificateTemplatePredefinedValuesPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -5312,4 +5756,5 @@ class CertificateTemplatePredefinedValuesPolicyIdArgs:
     @object_id_paths.setter
     def object_id_paths(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...

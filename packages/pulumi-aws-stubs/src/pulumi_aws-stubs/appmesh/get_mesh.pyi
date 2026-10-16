@@ -55,7 +55,8 @@ class GetMeshResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetMeshResult(GetMeshResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMeshResult]:
+        ...
 
 def get_mesh(
     mesh_owner: Optional[_builtins.str] = ...,

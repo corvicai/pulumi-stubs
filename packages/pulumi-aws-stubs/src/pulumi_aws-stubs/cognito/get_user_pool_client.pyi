@@ -130,7 +130,8 @@ class GetUserPoolClientResult:
     def write_attributes(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetUserPoolClientResult(GetUserPoolClientResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserPoolClientResult]:
+        ...
 
 def get_user_pool_client(
     client_id: Optional[_builtins.str] = ...,

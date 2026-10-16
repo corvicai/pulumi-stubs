@@ -97,22 +97,26 @@ class NodeTypeArgs:
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_name.setter
-    def cluster_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isPrimary")
     def is_primary(self) -> pulumi.Input[_builtins.bool]: ...
     @is_primary.setter
-    def is_primary(self, value: pulumi.Input[_builtins.bool]): ...
+    def is_primary(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmInstanceCount")
     def vm_instance_count(self) -> pulumi.Input[_builtins.int]: ...
     @vm_instance_count.setter
-    def vm_instance_count(self, value: pulumi.Input[_builtins.int]): ...
+    def vm_instance_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalDataDisks")
     def additional_data_disks(
@@ -121,7 +125,8 @@ class NodeTypeArgs:
     @additional_data_disks.setter
     def additional_data_disks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VmssDataDiskArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalNetworkInterfaceConfigurations")
     def additional_network_interface_configurations(
@@ -139,7 +144,8 @@ class NodeTypeArgs:
                 Sequence[pulumi.Input[AdditionalNetworkInterfaceConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationPorts")
     def application_ports(
@@ -148,7 +154,8 @@ class NodeTypeArgs:
     @application_ports.setter
     def application_ports(
         self, value: Optional[pulumi.Input[EndpointRangeDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacities(
@@ -157,22 +164,32 @@ class NodeTypeArgs:
     @capacities.setter
     def capacities(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computerNamePrefix")
     def computer_name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @computer_name_prefix.setter
-    def computer_name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def computer_name_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataDiskLetter")
     def data_disk_letter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_disk_letter.setter
-    def data_disk_letter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_disk_letter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataDiskSizeGB")
     def data_disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @data_disk_size_gb.setter
-    def data_disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def data_disk_size_gb(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataDiskType")
     def data_disk_type(
@@ -181,12 +198,16 @@ class NodeTypeArgs:
     @data_disk_type.setter
     def data_disk_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dscpConfigurationId")
     def dscp_configuration_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dscp_configuration_id.setter
-    def dscp_configuration_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dscp_configuration_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAcceleratedNetworking")
     def enable_accelerated_networking(
@@ -195,33 +216,40 @@ class NodeTypeArgs:
     @enable_accelerated_networking.setter
     def enable_accelerated_networking(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEncryptionAtHost")
     def enable_encryption_at_host(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_encryption_at_host.setter
     def enable_encryption_at_host(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableNodePublicIP")
     def enable_node_public_ip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_node_public_ip.setter
-    def enable_node_public_ip(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_node_public_ip(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableNodePublicIPv6")
     def enable_node_public_i_pv6(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_node_public_i_pv6.setter
     def enable_node_public_i_pv6(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableOverProvisioning")
     def enable_over_provisioning(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_over_provisioning.setter
     def enable_over_provisioning(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ephemeralPorts")
     def ephemeral_ports(
@@ -230,7 +258,8 @@ class NodeTypeArgs:
     @ephemeral_ports.setter
     def ephemeral_ports(
         self, value: Optional[pulumi.Input[EndpointRangeDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evictionPolicy")
     def eviction_policy(
@@ -239,7 +268,8 @@ class NodeTypeArgs:
     @eviction_policy.setter
     def eviction_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EvictionPolicyType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frontendConfigurations")
     def frontend_configurations(
@@ -251,29 +281,34 @@ class NodeTypeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FrontendConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostGroupId")
     def host_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_group_id.setter
-    def host_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_group_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isSpotVM")
     def is_spot_vm(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_spot_vm.setter
-    def is_spot_vm(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_spot_vm(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isStateless")
     def is_stateless(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_stateless.setter
-    def is_stateless(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_stateless(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiplePlacementGroups")
     def multiple_placement_groups(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @multiple_placement_groups.setter
     def multiple_placement_groups(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natConfigurations")
     def nat_configurations(
@@ -283,12 +318,14 @@ class NodeTypeArgs:
     def nat_configurations(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[NodeTypeNatConfigArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natGatewayId")
     def nat_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @nat_gateway_id.setter
-    def nat_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def nat_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityRules")
     def network_security_rules(
@@ -298,12 +335,14 @@ class NodeTypeArgs:
     def network_security_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[NetworkSecurityRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeTypeName")
     def node_type_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_type_name.setter
-    def node_type_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_type_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementProperties")
     def placement_properties(
@@ -312,12 +351,16 @@ class NodeTypeArgs:
     @placement_properties.setter
     def placement_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secureBootEnabled")
     def secure_boot_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @secure_boot_enabled.setter
-    def secure_boot_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def secure_boot_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityType")
     def security_type(
@@ -326,7 +369,8 @@ class NodeTypeArgs:
     @security_type.setter
     def security_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceArtifactReferenceId")
     def service_artifact_reference_id(
@@ -335,22 +379,28 @@ class NodeTypeArgs:
     @service_artifact_reference_id.setter
     def service_artifact_reference_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[NodeTypeSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[NodeTypeSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[NodeTypeSkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotRestoreTimeout")
     def spot_restore_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spot_restore_timeout.setter
-    def spot_restore_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spot_restore_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -359,7 +409,8 @@ class NodeTypeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useDefaultPublicLoadBalancer")
     def use_default_public_load_balancer(
@@ -368,17 +419,24 @@ class NodeTypeArgs:
     @use_default_public_load_balancer.setter
     def use_default_public_load_balancer(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useEphemeralOSDisk")
     def use_ephemeral_os_disk(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_ephemeral_os_disk.setter
-    def use_ephemeral_os_disk(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_ephemeral_os_disk(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useTempDataDisk")
     def use_temp_data_disk(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_temp_data_disk.setter
-    def use_temp_data_disk(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_temp_data_disk(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmExtensions")
     def vm_extensions(
@@ -387,44 +445,58 @@ class NodeTypeArgs:
     @vm_extensions.setter
     def vm_extensions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VMSSExtensionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImageOffer")
     def vm_image_offer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_image_offer.setter
-    def vm_image_offer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_image_offer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImagePlan")
     def vm_image_plan(self) -> Optional[pulumi.Input[VmImagePlanArgs]]: ...
     @vm_image_plan.setter
-    def vm_image_plan(self, value: Optional[pulumi.Input[VmImagePlanArgs]]): ...
+    def vm_image_plan(self, value: Optional[pulumi.Input[VmImagePlanArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImagePublisher")
     def vm_image_publisher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_image_publisher.setter
-    def vm_image_publisher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_image_publisher(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImageResourceId")
     def vm_image_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_image_resource_id.setter
-    def vm_image_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_image_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImageSku")
     def vm_image_sku(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_image_sku.setter
-    def vm_image_sku(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_image_sku(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImageVersion")
     def vm_image_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_image_version.setter
-    def vm_image_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_image_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmManagedIdentity")
     def vm_managed_identity(self) -> Optional[pulumi.Input[VmManagedIdentityArgs]]: ...
     @vm_managed_identity.setter
     def vm_managed_identity(
         self, value: Optional[pulumi.Input[VmManagedIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSecrets")
     def vm_secrets(
@@ -434,7 +506,8 @@ class NodeTypeArgs:
     def vm_secrets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VaultSecretGroupArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSetupActions")
     def vm_setup_actions(
@@ -448,19 +521,22 @@ class NodeTypeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, VmSetupAction]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSharedGalleryImageId")
     def vm_shared_gallery_image_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_shared_gallery_image_id.setter
     def vm_shared_gallery_image_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSize")
     def vm_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_size.setter
-    def vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -469,7 +545,8 @@ class NodeTypeArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:servicefabric:NodeType")
 class NodeType(pulumi.CustomResource):

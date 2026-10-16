@@ -22,7 +22,10 @@ class ListBuildServiceBuilderDeploymentsResult:
 class AwaitableListBuildServiceBuilderDeploymentsResult(
     ListBuildServiceBuilderDeploymentsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListBuildServiceBuilderDeploymentsResult]:
+        ...
 
 def list_build_service_builder_deployments(
     build_service_name: Optional[_builtins.str] = ...,

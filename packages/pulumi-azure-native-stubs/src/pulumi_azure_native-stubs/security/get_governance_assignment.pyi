@@ -64,7 +64,8 @@ class GetGovernanceAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGovernanceAssignmentResult(GetGovernanceAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGovernanceAssignmentResult]:
+        ...
 
 def get_governance_assignment(
     assessment_name: Optional[_builtins.str] = ...,

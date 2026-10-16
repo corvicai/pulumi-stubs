@@ -41,12 +41,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -60,7 +64,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RetentionPolicyDetailsArgsDict(TypedDict):
     retention_period_in_days: pulumi.Input[_builtins.int]
@@ -82,7 +87,8 @@ class RetentionPolicyDetailsArgs:
     @pulumi.getter(name="retentionPeriodInDays")
     def retention_period_in_days(self) -> pulumi.Input[_builtins.int]: ...
     @retention_period_in_days.setter
-    def retention_period_in_days(self, value: pulumi.Input[_builtins.int]): ...
+    def retention_period_in_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orchestrationState")
     def orchestration_state(
@@ -94,7 +100,8 @@ class RetentionPolicyDetailsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PurgeableOrchestrationState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RetentionPolicyPropertiesArgsDict(TypedDict):
     retention_policies: NotRequired[
@@ -121,7 +128,8 @@ class RetentionPolicyPropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RetentionPolicyDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SchedulerPropertiesArgsDict(TypedDict):
     ip_allowlist: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -141,12 +149,14 @@ class SchedulerPropertiesArgs:
     @ip_allowlist.setter
     def ip_allowlist(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> pulumi.Input[SchedulerSkuArgs]: ...
     @sku.setter
-    def sku(self, value: pulumi.Input[SchedulerSkuArgs]): ...
+    def sku(self, value: pulumi.Input[SchedulerSkuArgs]):  # -> None:
+        ...
 
 class SchedulerSkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -164,9 +174,11 @@ class SchedulerSkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...

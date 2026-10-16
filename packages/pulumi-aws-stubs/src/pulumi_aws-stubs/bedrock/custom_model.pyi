@@ -35,12 +35,14 @@ class CustomModelArgs:
     @pulumi.getter(name="baseModelIdentifier")
     def base_model_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @base_model_identifier.setter
-    def base_model_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def base_model_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customModelName")
     def custom_model_name(self) -> pulumi.Input[_builtins.str]: ...
     @custom_model_name.setter
-    def custom_model_name(self, value: pulumi.Input[_builtins.str]): ...
+    def custom_model_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hyperparameters(
@@ -49,24 +51,28 @@ class CustomModelArgs:
     @hyperparameters.setter
     def hyperparameters(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobName")
     def job_name(self) -> pulumi.Input[_builtins.str]: ...
     @job_name.setter
-    def job_name(self, value: pulumi.Input[_builtins.str]): ...
+    def job_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputDataConfig")
     def output_data_config(self) -> pulumi.Input[CustomModelOutputDataConfigArgs]: ...
     @output_data_config.setter
     def output_data_config(
         self, value: pulumi.Input[CustomModelOutputDataConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trainingDataConfig")
     def training_data_config(
@@ -75,22 +81,30 @@ class CustomModelArgs:
     @training_data_config.setter
     def training_data_config(
         self, value: pulumi.Input[CustomModelTrainingDataConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customModelKmsKeyId")
     def custom_model_kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_model_kms_key_id.setter
-    def custom_model_kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_model_kms_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customizationType")
     def customization_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customization_type.setter
-    def customization_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customization_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -99,12 +113,16 @@ class CustomModelArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[CustomModelTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[CustomModelTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[CustomModelTimeoutsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationDataConfig")
     def validation_data_config(
@@ -113,12 +131,16 @@ class CustomModelArgs:
     @validation_data_config.setter
     def validation_data_config(
         self, value: Optional[pulumi.Input[CustomModelValidationDataConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(self) -> Optional[pulumi.Input[CustomModelVpcConfigArgs]]: ...
     @vpc_config.setter
-    def vpc_config(self, value: Optional[pulumi.Input[CustomModelVpcConfigArgs]]): ...
+    def vpc_config(
+        self, value: Optional[pulumi.Input[CustomModelVpcConfigArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CustomModelState:
@@ -164,27 +186,42 @@ class _CustomModelState:
     @pulumi.getter(name="baseModelIdentifier")
     def base_model_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @base_model_identifier.setter
-    def base_model_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def base_model_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customModelArn")
     def custom_model_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_model_arn.setter
-    def custom_model_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_model_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customModelKmsKeyId")
     def custom_model_kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_model_kms_key_id.setter
-    def custom_model_kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_model_kms_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customModelName")
     def custom_model_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_model_name.setter
-    def custom_model_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_model_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customizationType")
     def customization_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customization_type.setter
-    def customization_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customization_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hyperparameters(
@@ -193,22 +230,26 @@ class _CustomModelState:
     @hyperparameters.setter
     def hyperparameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobArn")
     def job_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_arn.setter
-    def job_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobName")
     def job_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_name.setter
-    def job_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobStatus")
     def job_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_status.setter
-    def job_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputDataConfig")
     def output_data_config(
@@ -217,17 +258,20 @@ class _CustomModelState:
     @output_data_config.setter
     def output_data_config(
         self, value: Optional[pulumi.Input[CustomModelOutputDataConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -236,7 +280,8 @@ class _CustomModelState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -245,12 +290,16 @@ class _CustomModelState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[CustomModelTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[CustomModelTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[CustomModelTimeoutsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trainingDataConfig")
     def training_data_config(
@@ -259,7 +308,8 @@ class _CustomModelState:
     @training_data_config.setter
     def training_data_config(
         self, value: Optional[pulumi.Input[CustomModelTrainingDataConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trainingMetrics")
     def training_metrics(
@@ -273,7 +323,8 @@ class _CustomModelState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomModelTrainingMetricArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationDataConfig")
     def validation_data_config(
@@ -282,7 +333,8 @@ class _CustomModelState:
     @validation_data_config.setter
     def validation_data_config(
         self, value: Optional[pulumi.Input[CustomModelValidationDataConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationMetrics")
     def validation_metrics(
@@ -296,12 +348,16 @@ class _CustomModelState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomModelValidationMetricArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(self) -> Optional[pulumi.Input[CustomModelVpcConfigArgs]]: ...
     @vpc_config.setter
-    def vpc_config(self, value: Optional[pulumi.Input[CustomModelVpcConfigArgs]]): ...
+    def vpc_config(
+        self, value: Optional[pulumi.Input[CustomModelVpcConfigArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:bedrock/customModel:CustomModel")
 class CustomModel(pulumi.CustomResource):

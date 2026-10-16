@@ -30,7 +30,8 @@ class GetRoutersResult:
     def routers(self) -> Sequence[outputs.GetRoutersRouterResult]: ...
 
 class AwaitableGetRoutersResult(GetRoutersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoutersResult]:
+        ...
 
 def get_routers(
     project: Optional[_builtins.str] = ...,

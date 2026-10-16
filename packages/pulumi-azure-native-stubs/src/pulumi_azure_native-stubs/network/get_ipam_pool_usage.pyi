@@ -56,7 +56,8 @@ class GetIpamPoolUsageResult:
     def total_number_of_ip_addresses(self) -> _builtins.str: ...
 
 class AwaitableGetIpamPoolUsageResult(GetIpamPoolUsageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpamPoolUsageResult]:
+        ...
 
 def get_ipam_pool_usage(
     network_manager_name: Optional[_builtins.str] = ...,

@@ -54,7 +54,8 @@ class GetFirewallPolicyResult:
     def update_token(self) -> _builtins.str: ...
 
 class AwaitableGetFirewallPolicyResult(GetFirewallPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirewallPolicyResult]:
+        ...
 
 def get_firewall_policy(
     arn: Optional[_builtins.str] = ...,

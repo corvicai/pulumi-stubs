@@ -26,22 +26,28 @@ class VpcConnectorArgs:
     @security_groups.setter
     def security_groups(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnets.setter
-    def subnets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def subnets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConnectorName")
     def vpc_connector_name(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_connector_name.setter
-    def vpc_connector_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_connector_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -50,7 +56,8 @@ class VpcConnectorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcConnectorState:
@@ -75,12 +82,14 @@ class _VpcConnectorState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -89,12 +98,14 @@ class _VpcConnectorState:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -103,7 +114,8 @@ class _VpcConnectorState:
     @subnets.setter
     def subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -112,7 +124,8 @@ class _VpcConnectorState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -121,17 +134,24 @@ class _VpcConnectorState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConnectorName")
     def vpc_connector_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_connector_name.setter
-    def vpc_connector_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_connector_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConnectorRevision")
     def vpc_connector_revision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @vpc_connector_revision.setter
-    def vpc_connector_revision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def vpc_connector_revision(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:apprunner/vpcConnector:VpcConnector")
 class VpcConnector(pulumi.CustomResource):

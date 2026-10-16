@@ -69,7 +69,10 @@ class GetDatabasePrincipalAssignmentResult:
 class AwaitableGetDatabasePrincipalAssignmentResult(
     GetDatabasePrincipalAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabasePrincipalAssignmentResult]:
+        ...
 
 def get_database_principal_assignment(
     cluster_name: Optional[_builtins.str] = ...,

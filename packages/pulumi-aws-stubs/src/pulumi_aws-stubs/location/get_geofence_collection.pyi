@@ -55,7 +55,8 @@ class GetGeofenceCollectionResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetGeofenceCollectionResult(GetGeofenceCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGeofenceCollectionResult]:
+        ...
 
 def get_geofence_collection(
     collection_name: Optional[_builtins.str] = ...,

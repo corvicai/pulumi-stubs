@@ -31,7 +31,8 @@ class AppImageConfigArgs:
     @pulumi.getter(name="appImageConfigName")
     def app_image_config_name(self) -> pulumi.Input[_builtins.str]: ...
     @app_image_config_name.setter
-    def app_image_config_name(self, value: pulumi.Input[_builtins.str]): ...
+    def app_image_config_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeEditorAppImageConfig")
     def code_editor_app_image_config(
@@ -40,7 +41,8 @@ class AppImageConfigArgs:
     @code_editor_app_image_config.setter
     def code_editor_app_image_config(
         self, value: Optional[pulumi.Input[AppImageConfigCodeEditorAppImageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jupyterLabImageConfig")
     def jupyter_lab_image_config(
@@ -49,7 +51,8 @@ class AppImageConfigArgs:
     @jupyter_lab_image_config.setter
     def jupyter_lab_image_config(
         self, value: Optional[pulumi.Input[AppImageConfigJupyterLabImageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kernelGatewayImageConfig")
     def kernel_gateway_image_config(
@@ -58,12 +61,14 @@ class AppImageConfigArgs:
     @kernel_gateway_image_config.setter
     def kernel_gateway_image_config(
         self, value: Optional[pulumi.Input[AppImageConfigKernelGatewayImageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -72,7 +77,8 @@ class AppImageConfigArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AppImageConfigState:
@@ -100,12 +106,16 @@ class _AppImageConfigState:
     @pulumi.getter(name="appImageConfigName")
     def app_image_config_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_image_config_name.setter
-    def app_image_config_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_image_config_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeEditorAppImageConfig")
     def code_editor_app_image_config(
@@ -114,7 +124,8 @@ class _AppImageConfigState:
     @code_editor_app_image_config.setter
     def code_editor_app_image_config(
         self, value: Optional[pulumi.Input[AppImageConfigCodeEditorAppImageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jupyterLabImageConfig")
     def jupyter_lab_image_config(
@@ -123,7 +134,8 @@ class _AppImageConfigState:
     @jupyter_lab_image_config.setter
     def jupyter_lab_image_config(
         self, value: Optional[pulumi.Input[AppImageConfigJupyterLabImageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kernelGatewayImageConfig")
     def kernel_gateway_image_config(
@@ -132,12 +144,14 @@ class _AppImageConfigState:
     @kernel_gateway_image_config.setter
     def kernel_gateway_image_config(
         self, value: Optional[pulumi.Input[AppImageConfigKernelGatewayImageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -146,7 +160,8 @@ class _AppImageConfigState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -155,7 +170,8 @@ class _AppImageConfigState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/appImageConfig:AppImageConfig")
 class AppImageConfig(pulumi.CustomResource):

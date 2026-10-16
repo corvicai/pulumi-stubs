@@ -190,7 +190,8 @@ class GetAmiResult:
     def virtualization_type(self) -> _builtins.str: ...
 
 class AwaitableGetAmiResult(GetAmiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAmiResult]:
+        ...
 
 def get_ami(
     allow_unsafe_filter: Optional[_builtins.bool] = ...,

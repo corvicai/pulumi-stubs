@@ -78,7 +78,8 @@ class GetHypervSitesControllerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHypervSitesControllerResult(GetHypervSitesControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHypervSitesControllerResult]:
+        ...
 
 def get_hyperv_sites_controller(
     resource_group_name: Optional[_builtins.str] = ...,

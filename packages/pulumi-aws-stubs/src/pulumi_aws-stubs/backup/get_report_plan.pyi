@@ -62,7 +62,8 @@ class GetReportPlanResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetReportPlanResult(GetReportPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReportPlanResult]:
+        ...
 
 def get_report_plan(
     name: Optional[_builtins.str] = ...,

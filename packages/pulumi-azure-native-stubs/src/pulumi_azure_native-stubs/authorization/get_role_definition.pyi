@@ -72,7 +72,8 @@ class GetRoleDefinitionResult:
     def updated_on(self) -> _builtins.str: ...
 
 class AwaitableGetRoleDefinitionResult(GetRoleDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoleDefinitionResult]:
+        ...
 
 def get_role_definition(
     role_definition_id: Optional[_builtins.str] = ...,

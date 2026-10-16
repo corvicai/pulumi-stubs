@@ -52,7 +52,8 @@ class GetDatabaseInstancesResult:
     def zone(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDatabaseInstancesResult(GetDatabaseInstancesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseInstancesResult]:
+        ...
 
 def get_database_instances(
     database_version: Optional[_builtins.str] = ...,

@@ -23,7 +23,8 @@ class XssMatchSetArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssMatchTuples")
     def xss_match_tuples(
@@ -37,7 +38,8 @@ class XssMatchSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[XssMatchSetXssMatchTupleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _XssMatchSetState:
@@ -54,12 +56,14 @@ class _XssMatchSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssMatchTuples")
     def xss_match_tuples(
@@ -73,7 +77,8 @@ class _XssMatchSetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[XssMatchSetXssMatchTupleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:waf/xssMatchSet:XssMatchSet")
 class XssMatchSet(pulumi.CustomResource):

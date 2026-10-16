@@ -23,7 +23,8 @@ class GetIntegrationRuntimeStatusResult:
     def properties(self) -> Any: ...
 
 class AwaitableGetIntegrationRuntimeStatusResult(GetIntegrationRuntimeStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIntegrationRuntimeStatusResult]:
+        ...
 
 def get_integration_runtime_status(
     integration_runtime_name: Optional[_builtins.str] = ...,

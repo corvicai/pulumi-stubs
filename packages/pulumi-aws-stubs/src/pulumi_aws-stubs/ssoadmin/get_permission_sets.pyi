@@ -29,7 +29,8 @@ class GetPermissionSetsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetPermissionSetsResult(GetPermissionSetsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPermissionSetsResult]:
+        ...
 
 def get_permission_sets(
     instance_arn: Optional[_builtins.str] = ...,

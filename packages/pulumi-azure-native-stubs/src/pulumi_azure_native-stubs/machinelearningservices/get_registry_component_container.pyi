@@ -44,7 +44,10 @@ class GetRegistryComponentContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryComponentContainerResult(GetRegistryComponentContainerResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegistryComponentContainerResult]:
+        ...
 
 def get_registry_component_container(
     component_name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetDeploymentAtScopeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeploymentAtScopeResult(GetDeploymentAtScopeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeploymentAtScopeResult]:
+        ...
 
 def get_deployment_at_scope(
     deployment_name: Optional[_builtins.str] = ...,

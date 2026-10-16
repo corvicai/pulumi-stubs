@@ -32,7 +32,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -41,4 +42,5 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

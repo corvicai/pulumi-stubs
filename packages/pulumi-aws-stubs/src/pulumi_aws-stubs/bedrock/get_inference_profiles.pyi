@@ -34,7 +34,8 @@ class GetInferenceProfilesResult:
     def type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetInferenceProfilesResult(GetInferenceProfilesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInferenceProfilesResult]:
+        ...
 
 def get_inference_profiles(
     region: Optional[_builtins.str] = ...,

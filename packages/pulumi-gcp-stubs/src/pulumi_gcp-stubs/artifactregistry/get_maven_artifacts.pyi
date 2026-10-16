@@ -42,7 +42,8 @@ class GetMavenArtifactsResult:
     def repository_id(self) -> _builtins.str: ...
 
 class AwaitableGetMavenArtifactsResult(GetMavenArtifactsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMavenArtifactsResult]:
+        ...
 
 def get_maven_artifacts(
     location: Optional[_builtins.str] = ...,

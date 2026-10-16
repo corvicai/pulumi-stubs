@@ -122,7 +122,8 @@ class GetAzurePowerShellScriptResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAzurePowerShellScriptResult(GetAzurePowerShellScriptResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzurePowerShellScriptResult]:
+        ...
 
 def get_azure_power_shell_script(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -22,12 +22,14 @@ class DomainSamlOptionsArgs:
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samlOptions")
     def saml_options(
@@ -36,7 +38,8 @@ class DomainSamlOptionsArgs:
     @saml_options.setter
     def saml_options(
         self, value: Optional[pulumi.Input[DomainSamlOptionsSamlOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DomainSamlOptionsState:
@@ -51,12 +54,14 @@ class _DomainSamlOptionsState:
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samlOptions")
     def saml_options(
@@ -65,7 +70,8 @@ class _DomainSamlOptionsState:
     @saml_options.setter
     def saml_options(
         self, value: Optional[pulumi.Input[DomainSamlOptionsSamlOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:opensearch/domainSamlOptions:DomainSamlOptions")
 class DomainSamlOptions(pulumi.CustomResource):

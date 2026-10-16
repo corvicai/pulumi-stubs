@@ -24,12 +24,16 @@ class WorkloadImpactArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[WorkloadImpactPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadImpactName")
     def workload_impact_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workload_impact_name.setter
-    def workload_impact_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workload_impact_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:impact:WorkloadImpact")
 class WorkloadImpact(pulumi.CustomResource):

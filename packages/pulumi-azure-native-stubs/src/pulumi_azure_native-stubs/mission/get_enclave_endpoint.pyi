@@ -62,7 +62,8 @@ class GetEnclaveEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnclaveEndpointResult(GetEnclaveEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnclaveEndpointResult]:
+        ...
 
 def get_enclave_endpoint(
     enclave_endpoint_name: Optional[_builtins.str] = ...,

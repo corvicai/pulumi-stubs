@@ -74,7 +74,10 @@ class GetSoftwareUpdateConfigurationByNameResult:
 class AwaitableGetSoftwareUpdateConfigurationByNameResult(
     GetSoftwareUpdateConfigurationByNameResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSoftwareUpdateConfigurationByNameResult]:
+        ...
 
 def get_software_update_configuration_by_name(
     automation_account_name: Optional[_builtins.str] = ...,

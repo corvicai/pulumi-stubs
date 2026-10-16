@@ -62,7 +62,10 @@ class GetMongoDBResourceMongoUserDefinitionResult:
 class AwaitableGetMongoDBResourceMongoUserDefinitionResult(
     GetMongoDBResourceMongoUserDefinitionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMongoDBResourceMongoUserDefinitionResult]:
+        ...
 
 def get_mongo_db_resource_mongo_user_definition(
     account_name: Optional[_builtins.str] = ...,

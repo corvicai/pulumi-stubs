@@ -80,7 +80,8 @@ class DetectorDatasourcesArgs:
     @kubernetes.setter
     def kubernetes(
         self, value: Optional[pulumi.Input[DetectorDatasourcesKubernetesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="malwareProtection")
     def malware_protection(
@@ -89,12 +90,16 @@ class DetectorDatasourcesArgs:
     @malware_protection.setter
     def malware_protection(
         self, value: Optional[pulumi.Input[DetectorDatasourcesMalwareProtectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Logs")
     def s3_logs(self) -> Optional[pulumi.Input[DetectorDatasourcesS3LogsArgs]]: ...
     @s3_logs.setter
-    def s3_logs(self, value: Optional[pulumi.Input[DetectorDatasourcesS3LogsArgs]]): ...
+    def s3_logs(
+        self, value: Optional[pulumi.Input[DetectorDatasourcesS3LogsArgs]]
+    ):  # -> None:
+        ...
 
 class DetectorDatasourcesKubernetesArgsDict(TypedDict):
     audit_logs: pulumi.Input[DetectorDatasourcesKubernetesAuditLogsArgsDict]
@@ -114,7 +119,8 @@ class DetectorDatasourcesKubernetesArgs:
     @audit_logs.setter
     def audit_logs(
         self, value: pulumi.Input[DetectorDatasourcesKubernetesAuditLogsArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DetectorDatasourcesKubernetesAuditLogsArgsDict(TypedDict):
     enable: pulumi.Input[_builtins.bool]
@@ -126,7 +132,8 @@ class DetectorDatasourcesKubernetesAuditLogsArgs:
     @pulumi.getter
     def enable(self) -> pulumi.Input[_builtins.bool]: ...
     @enable.setter
-    def enable(self, value: pulumi.Input[_builtins.bool]): ...
+    def enable(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class DetectorDatasourcesMalwareProtectionArgsDict(TypedDict):
     scan_ec2_instance_with_findings: pulumi.Input[
@@ -155,7 +162,8 @@ class DetectorDatasourcesMalwareProtectionArgs:
         value: pulumi.Input[
             DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgsDict(
     TypedDict
@@ -186,7 +194,8 @@ class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgs:
         value: pulumi.Input[
             DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgsDict(
     TypedDict
@@ -200,7 +209,8 @@ class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesA
     @pulumi.getter
     def enable(self) -> pulumi.Input[_builtins.bool]: ...
     @enable.setter
-    def enable(self, value: pulumi.Input[_builtins.bool]): ...
+    def enable(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class DetectorDatasourcesS3LogsArgsDict(TypedDict):
     enable: pulumi.Input[_builtins.bool]
@@ -212,7 +222,8 @@ class DetectorDatasourcesS3LogsArgs:
     @pulumi.getter
     def enable(self) -> pulumi.Input[_builtins.bool]: ...
     @enable.setter
-    def enable(self, value: pulumi.Input[_builtins.bool]): ...
+    def enable(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class DetectorFeatureAdditionalConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -230,12 +241,14 @@ class DetectorFeatureAdditionalConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFindingCriteriaArgsDict(TypedDict):
     criterions: pulumi.Input[
@@ -260,7 +273,8 @@ class FilterFindingCriteriaArgs:
     def criterions(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[FilterFindingCriteriaCriterionArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FilterFindingCriteriaCriterionArgsDict(TypedDict):
     field: pulumi.Input[_builtins.str]
@@ -294,7 +308,8 @@ class FilterFindingCriteriaCriterionArgs:
     @pulumi.getter
     def field(self) -> pulumi.Input[_builtins.str]: ...
     @field.setter
-    def field(self, value: pulumi.Input[_builtins.str]): ...
+    def field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def equals(
@@ -303,27 +318,36 @@ class FilterFindingCriteriaCriterionArgs:
     @equals.setter
     def equals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="greaterThan")
     def greater_than(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @greater_than.setter
-    def greater_than(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def greater_than(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="greaterThanOrEqual")
     def greater_than_or_equal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @greater_than_or_equal.setter
-    def greater_than_or_equal(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def greater_than_or_equal(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lessThan")
     def less_than(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @less_than.setter
-    def less_than(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def less_than(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lessThanOrEqual")
     def less_than_or_equal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @less_than_or_equal.setter
-    def less_than_or_equal(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def less_than_or_equal(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def matches(
@@ -332,7 +356,8 @@ class FilterFindingCriteriaCriterionArgs:
     @matches.setter
     def matches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notEquals")
     def not_equals(
@@ -341,7 +366,8 @@ class FilterFindingCriteriaCriterionArgs:
     @not_equals.setter
     def not_equals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notMatches")
     def not_matches(
@@ -350,7 +376,8 @@ class FilterFindingCriteriaCriterionArgs:
     @not_matches.setter
     def not_matches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MalwareProtectionPlanActionArgsDict(TypedDict):
     taggings: pulumi.Input[
@@ -379,7 +406,8 @@ class MalwareProtectionPlanActionArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MalwareProtectionPlanActionTaggingArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MalwareProtectionPlanActionTaggingArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -391,7 +419,8 @@ class MalwareProtectionPlanActionTaggingArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MalwareProtectionPlanProtectedResourceArgsDict(TypedDict):
     s3_bucket: pulumi.Input[MalwareProtectionPlanProtectedResourceS3BucketArgsDict]
@@ -411,7 +440,8 @@ class MalwareProtectionPlanProtectedResourceArgs:
     @s3_bucket.setter
     def s3_bucket(
         self, value: pulumi.Input[MalwareProtectionPlanProtectedResourceS3BucketArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MalwareProtectionPlanProtectedResourceS3BucketArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -431,7 +461,8 @@ class MalwareProtectionPlanProtectedResourceS3BucketArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectPrefixes")
     def object_prefixes(
@@ -440,7 +471,8 @@ class MalwareProtectionPlanProtectedResourceS3BucketArgs:
     @object_prefixes.setter
     def object_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MemberDetectorFeatureAdditionalConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -458,12 +490,14 @@ class MemberDetectorFeatureAdditionalConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OrganizationConfigurationDatasourcesArgsDict(TypedDict):
     kubernetes: NotRequired[
@@ -502,7 +536,8 @@ class OrganizationConfigurationDatasourcesArgs:
         value: Optional[
             pulumi.Input[OrganizationConfigurationDatasourcesKubernetesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="malwareProtection")
     def malware_protection(
@@ -516,7 +551,8 @@ class OrganizationConfigurationDatasourcesArgs:
         value: Optional[
             pulumi.Input[OrganizationConfigurationDatasourcesMalwareProtectionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Logs")
     def s3_logs(
@@ -526,7 +562,8 @@ class OrganizationConfigurationDatasourcesArgs:
     def s3_logs(
         self,
         value: Optional[pulumi.Input[OrganizationConfigurationDatasourcesS3LogsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OrganizationConfigurationDatasourcesKubernetesArgsDict(TypedDict):
     audit_logs: pulumi.Input[
@@ -553,7 +590,8 @@ class OrganizationConfigurationDatasourcesKubernetesArgs:
         value: pulumi.Input[
             OrganizationConfigurationDatasourcesKubernetesAuditLogsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OrganizationConfigurationDatasourcesKubernetesAuditLogsArgsDict(TypedDict):
     enable: pulumi.Input[_builtins.bool]
@@ -565,7 +603,8 @@ class OrganizationConfigurationDatasourcesKubernetesAuditLogsArgs:
     @pulumi.getter
     def enable(self) -> pulumi.Input[_builtins.bool]: ...
     @enable.setter
-    def enable(self, value: pulumi.Input[_builtins.bool]): ...
+    def enable(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class OrganizationConfigurationDatasourcesMalwareProtectionArgsDict(TypedDict):
     scan_ec2_instance_with_findings: pulumi.Input[
@@ -594,7 +633,8 @@ class OrganizationConfigurationDatasourcesMalwareProtectionArgs:
         value: pulumi.Input[
             OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgsDict(
     TypedDict
@@ -625,7 +665,8 @@ class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFi
         value: pulumi.Input[
             OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgsDict(
     TypedDict
@@ -639,7 +680,8 @@ class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFi
     @pulumi.getter(name="autoEnable")
     def auto_enable(self) -> pulumi.Input[_builtins.bool]: ...
     @auto_enable.setter
-    def auto_enable(self, value: pulumi.Input[_builtins.bool]): ...
+    def auto_enable(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class OrganizationConfigurationDatasourcesS3LogsArgsDict(TypedDict):
     auto_enable: pulumi.Input[_builtins.bool]
@@ -651,7 +693,8 @@ class OrganizationConfigurationDatasourcesS3LogsArgs:
     @pulumi.getter(name="autoEnable")
     def auto_enable(self) -> pulumi.Input[_builtins.bool]: ...
     @auto_enable.setter
-    def auto_enable(self, value: pulumi.Input[_builtins.bool]): ...
+    def auto_enable(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class OrganizationConfigurationFeatureAdditionalConfigurationArgsDict(TypedDict):
     auto_enable: pulumi.Input[_builtins.str]
@@ -669,9 +712,11 @@ class OrganizationConfigurationFeatureAdditionalConfigurationArgs:
     @pulumi.getter(name="autoEnable")
     def auto_enable(self) -> pulumi.Input[_builtins.str]: ...
     @auto_enable.setter
-    def auto_enable(self, value: pulumi.Input[_builtins.str]): ...
+    def auto_enable(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

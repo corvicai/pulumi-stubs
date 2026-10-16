@@ -101,7 +101,8 @@ class GetElasticIpResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetElasticIpResult(GetElasticIpResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetElasticIpResult]:
+        ...
 
 def get_elastic_ip(
     filters: Optional[

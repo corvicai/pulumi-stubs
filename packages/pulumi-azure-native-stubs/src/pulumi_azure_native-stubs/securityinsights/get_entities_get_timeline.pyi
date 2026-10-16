@@ -25,7 +25,8 @@ class GetEntitiesGetTimelineResult:
     def value(self) -> Optional[Sequence[Any]]: ...
 
 class AwaitableGetEntitiesGetTimelineResult(GetEntitiesGetTimelineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntitiesGetTimelineResult]:
+        ...
 
 def get_entities_get_timeline(
     end_time: Optional[_builtins.str] = ...,

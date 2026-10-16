@@ -25,7 +25,10 @@ class ListDatabaseAccountConnectionStringsResult:
 class AwaitableListDatabaseAccountConnectionStringsResult(
     ListDatabaseAccountConnectionStringsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListDatabaseAccountConnectionStringsResult]:
+        ...
 
 def list_database_account_connection_strings(
     account_name: Optional[_builtins.str] = ...,

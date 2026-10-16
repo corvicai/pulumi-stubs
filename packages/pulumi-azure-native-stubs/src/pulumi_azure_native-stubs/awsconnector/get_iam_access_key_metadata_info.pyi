@@ -52,7 +52,8 @@ class GetIamAccessKeyMetadataInfoResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamAccessKeyMetadataInfoResult(GetIamAccessKeyMetadataInfoResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamAccessKeyMetadataInfoResult]:
+        ...
 
 def get_iam_access_key_metadata_info(
     name: Optional[_builtins.str] = ...,

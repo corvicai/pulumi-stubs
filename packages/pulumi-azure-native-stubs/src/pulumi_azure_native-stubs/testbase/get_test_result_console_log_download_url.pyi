@@ -25,7 +25,10 @@ class GetTestResultConsoleLogDownloadURLResult:
 class AwaitableGetTestResultConsoleLogDownloadURLResult(
     GetTestResultConsoleLogDownloadURLResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTestResultConsoleLogDownloadURLResult]:
+        ...
 
 def get_test_result_console_log_download_url(
     log_file_name: Optional[_builtins.str] = ...,

@@ -32,7 +32,8 @@ class GetDbNodesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetDbNodesResult(GetDbNodesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDbNodesResult]:
+        ...
 
 def get_db_nodes(
     cloud_vm_cluster_id: Optional[_builtins.str] = ...,

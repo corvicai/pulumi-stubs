@@ -30,19 +30,22 @@ class IotConnectorArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceMapping")
     def device_mapping(self) -> Optional[pulumi.Input[IotMappingPropertiesArgs]]: ...
     @device_mapping.setter
     def device_mapping(
         self, value: Optional[pulumi.Input[IotMappingPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(
@@ -51,7 +54,8 @@ class IotConnectorArgs:
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[ServiceManagedIdentityIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingestionEndpointConfiguration")
     def ingestion_endpoint_configuration(
@@ -61,17 +65,22 @@ class IotConnectorArgs:
     def ingestion_endpoint_configuration(
         self,
         value: Optional[pulumi.Input[IotEventHubIngestionEndpointConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iotConnectorName")
     def iot_connector_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iot_connector_name.setter
-    def iot_connector_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iot_connector_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -80,7 +89,8 @@ class IotConnectorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:healthcareapis:IotConnector")
 class IotConnector(pulumi.CustomResource):

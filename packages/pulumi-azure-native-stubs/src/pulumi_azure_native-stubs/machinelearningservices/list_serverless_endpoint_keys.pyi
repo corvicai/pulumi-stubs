@@ -23,7 +23,8 @@ class ListServerlessEndpointKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListServerlessEndpointKeysResult(ListServerlessEndpointKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListServerlessEndpointKeysResult]:
+        ...
 
 def list_serverless_endpoint_keys(
     name: Optional[_builtins.str] = ...,

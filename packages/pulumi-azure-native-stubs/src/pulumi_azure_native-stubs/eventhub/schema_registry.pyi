@@ -29,12 +29,14 @@ class SchemaRegistryArgs:
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> pulumi.Input[_builtins.str]: ...
     @namespace_name.setter
-    def namespace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupProperties")
     def group_properties(
@@ -43,7 +45,8 @@ class SchemaRegistryArgs:
     @group_properties.setter
     def group_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaCompatibility")
     def schema_compatibility(
@@ -52,12 +55,16 @@ class SchemaRegistryArgs:
     @schema_compatibility.setter
     def schema_compatibility(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SchemaCompatibility]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaGroupName")
     def schema_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_group_name.setter
-    def schema_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaType")
     def schema_type(
@@ -66,7 +73,8 @@ class SchemaRegistryArgs:
     @schema_type.setter
     def schema_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SchemaType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:eventhub:SchemaRegistry")
 class SchemaRegistry(pulumi.CustomResource):

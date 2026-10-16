@@ -110,7 +110,8 @@ class GetAuthorizationServerResult:
     def use_in_test_console(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetAuthorizationServerResult(GetAuthorizationServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthorizationServerResult]:
+        ...
 
 def get_authorization_server(
     authsid: Optional[_builtins.str] = ...,

@@ -72,7 +72,8 @@ class ConnectorCapacityArgs:
     @autoscaling.setter
     def autoscaling(
         self, value: Optional[pulumi.Input[ConnectorCapacityAutoscalingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedCapacity")
     def provisioned_capacity(
@@ -81,7 +82,8 @@ class ConnectorCapacityArgs:
     @provisioned_capacity.setter
     def provisioned_capacity(
         self, value: Optional[pulumi.Input[ConnectorCapacityProvisionedCapacityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorCapacityAutoscalingArgsDict(TypedDict):
     max_worker_count: pulumi.Input[_builtins.int]
@@ -113,17 +115,20 @@ class ConnectorCapacityAutoscalingArgs:
     @pulumi.getter(name="maxWorkerCount")
     def max_worker_count(self) -> pulumi.Input[_builtins.int]: ...
     @max_worker_count.setter
-    def max_worker_count(self, value: pulumi.Input[_builtins.int]): ...
+    def max_worker_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minWorkerCount")
     def min_worker_count(self) -> pulumi.Input[_builtins.int]: ...
     @min_worker_count.setter
-    def min_worker_count(self, value: pulumi.Input[_builtins.int]): ...
+    def min_worker_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mcuCount")
     def mcu_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @mcu_count.setter
-    def mcu_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def mcu_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleInPolicy")
     def scale_in_policy(
@@ -133,7 +138,8 @@ class ConnectorCapacityAutoscalingArgs:
     def scale_in_policy(
         self,
         value: Optional[pulumi.Input[ConnectorCapacityAutoscalingScaleInPolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleOutPolicy")
     def scale_out_policy(
@@ -143,7 +149,8 @@ class ConnectorCapacityAutoscalingArgs:
     def scale_out_policy(
         self,
         value: Optional[pulumi.Input[ConnectorCapacityAutoscalingScaleOutPolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorCapacityAutoscalingScaleInPolicyArgsDict(TypedDict):
     cpu_utilization_percentage: NotRequired[pulumi.Input[_builtins.int]]
@@ -161,7 +168,8 @@ class ConnectorCapacityAutoscalingScaleInPolicyArgs:
     @cpu_utilization_percentage.setter
     def cpu_utilization_percentage(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorCapacityAutoscalingScaleOutPolicyArgsDict(TypedDict):
     cpu_utilization_percentage: NotRequired[pulumi.Input[_builtins.int]]
@@ -179,7 +187,8 @@ class ConnectorCapacityAutoscalingScaleOutPolicyArgs:
     @cpu_utilization_percentage.setter
     def cpu_utilization_percentage(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorCapacityProvisionedCapacityArgsDict(TypedDict):
     worker_count: pulumi.Input[_builtins.int]
@@ -197,12 +206,14 @@ class ConnectorCapacityProvisionedCapacityArgs:
     @pulumi.getter(name="workerCount")
     def worker_count(self) -> pulumi.Input[_builtins.int]: ...
     @worker_count.setter
-    def worker_count(self, value: pulumi.Input[_builtins.int]): ...
+    def worker_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mcuCount")
     def mcu_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @mcu_count.setter
-    def mcu_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def mcu_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ConnectorKafkaClusterArgsDict(TypedDict):
     apache_kafka_cluster: pulumi.Input[ConnectorKafkaClusterApacheKafkaClusterArgsDict]
@@ -222,7 +233,8 @@ class ConnectorKafkaClusterArgs:
     @apache_kafka_cluster.setter
     def apache_kafka_cluster(
         self, value: pulumi.Input[ConnectorKafkaClusterApacheKafkaClusterArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorKafkaClusterApacheKafkaClusterArgsDict(TypedDict):
     bootstrap_servers: pulumi.Input[_builtins.str]
@@ -240,14 +252,16 @@ class ConnectorKafkaClusterApacheKafkaClusterArgs:
     @pulumi.getter(name="bootstrapServers")
     def bootstrap_servers(self) -> pulumi.Input[_builtins.str]: ...
     @bootstrap_servers.setter
-    def bootstrap_servers(self, value: pulumi.Input[_builtins.str]): ...
+    def bootstrap_servers(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vpc(self) -> pulumi.Input[ConnectorKafkaClusterApacheKafkaClusterVpcArgs]: ...
     @vpc.setter
     def vpc(
         self, value: pulumi.Input[ConnectorKafkaClusterApacheKafkaClusterVpcArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorKafkaClusterApacheKafkaClusterVpcArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -269,12 +283,16 @@ class ConnectorKafkaClusterApacheKafkaClusterVpcArgs:
     @security_groups.setter
     def security_groups(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnets.setter
-    def subnets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def subnets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ConnectorKafkaClusterClientAuthenticationArgsDict(TypedDict):
     authentication_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -288,7 +306,10 @@ class ConnectorKafkaClusterClientAuthenticationArgs:
     @pulumi.getter(name="authenticationType")
     def authentication_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authentication_type.setter
-    def authentication_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authentication_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ConnectorKafkaClusterEncryptionInTransitArgsDict(TypedDict):
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -302,7 +323,8 @@ class ConnectorKafkaClusterEncryptionInTransitArgs:
     @pulumi.getter(name="encryptionType")
     def encryption_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_type.setter
-    def encryption_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorLogDeliveryArgsDict(TypedDict):
     worker_log_delivery: pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryArgsDict]
@@ -322,7 +344,8 @@ class ConnectorLogDeliveryArgs:
     @worker_log_delivery.setter
     def worker_log_delivery(
         self, value: pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorLogDeliveryWorkerLogDeliveryArgsDict(TypedDict):
     cloudwatch_logs: NotRequired[
@@ -359,7 +382,8 @@ class ConnectorLogDeliveryWorkerLogDeliveryArgs:
         value: Optional[
             pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def firehose(
@@ -371,7 +395,8 @@ class ConnectorLogDeliveryWorkerLogDeliveryArgs:
         value: Optional[
             pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryFirehoseArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(
@@ -380,7 +405,8 @@ class ConnectorLogDeliveryWorkerLogDeliveryArgs:
     @s3.setter
     def s3(
         self, value: Optional[pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryS3Args]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -398,12 +424,14 @@ class ConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logGroup")
     def log_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_group.setter
-    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorLogDeliveryWorkerLogDeliveryFirehoseArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -421,12 +449,14 @@ class ConnectorLogDeliveryWorkerLogDeliveryFirehoseArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryStream")
     def delivery_stream(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delivery_stream.setter
-    def delivery_stream(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delivery_stream(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorLogDeliveryWorkerLogDeliveryS3ArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -446,17 +476,20 @@ class ConnectorLogDeliveryWorkerLogDeliveryS3Args:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorPluginArgsDict(TypedDict):
     custom_plugin: pulumi.Input[ConnectorPluginCustomPluginArgsDict]
@@ -470,7 +503,10 @@ class ConnectorPluginArgs:
     @pulumi.getter(name="customPlugin")
     def custom_plugin(self) -> pulumi.Input[ConnectorPluginCustomPluginArgs]: ...
     @custom_plugin.setter
-    def custom_plugin(self, value: pulumi.Input[ConnectorPluginCustomPluginArgs]): ...
+    def custom_plugin(
+        self, value: pulumi.Input[ConnectorPluginCustomPluginArgs]
+    ):  # -> None:
+        ...
 
 class ConnectorPluginCustomPluginArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -488,12 +524,14 @@ class ConnectorPluginCustomPluginArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def revision(self) -> pulumi.Input[_builtins.int]: ...
     @revision.setter
-    def revision(self, value: pulumi.Input[_builtins.int]): ...
+    def revision(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class ConnectorWorkerConfigurationArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -511,12 +549,14 @@ class ConnectorWorkerConfigurationArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def revision(self) -> pulumi.Input[_builtins.int]: ...
     @revision.setter
-    def revision(self, value: pulumi.Input[_builtins.int]): ...
+    def revision(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class CustomPluginLocationArgsDict(TypedDict):
     s3: pulumi.Input[CustomPluginLocationS3ArgsDict]
@@ -528,7 +568,8 @@ class CustomPluginLocationArgs:
     @pulumi.getter
     def s3(self) -> pulumi.Input[CustomPluginLocationS3Args]: ...
     @s3.setter
-    def s3(self, value: pulumi.Input[CustomPluginLocationS3Args]): ...
+    def s3(self, value: pulumi.Input[CustomPluginLocationS3Args]):  # -> None:
+        ...
 
 class CustomPluginLocationS3ArgsDict(TypedDict):
     bucket_arn: pulumi.Input[_builtins.str]
@@ -548,14 +589,17 @@ class CustomPluginLocationS3Args:
     @pulumi.getter(name="bucketArn")
     def bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_arn.setter
-    def bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileKey")
     def file_key(self) -> pulumi.Input[_builtins.str]: ...
     @file_key.setter
-    def file_key(self, value: pulumi.Input[_builtins.str]): ...
+    def file_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectVersion")
     def object_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_version.setter
-    def object_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

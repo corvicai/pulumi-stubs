@@ -94,7 +94,8 @@ class GetFileSystemResult:
     def throughput_mode(self) -> _builtins.str: ...
 
 class AwaitableGetFileSystemResult(GetFileSystemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileSystemResult]:
+        ...
 
 def get_file_system(
     creation_token: Optional[_builtins.str] = ...,

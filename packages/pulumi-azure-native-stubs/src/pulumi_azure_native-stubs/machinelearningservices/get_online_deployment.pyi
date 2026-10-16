@@ -64,7 +64,8 @@ class GetOnlineDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOnlineDeploymentResult(GetOnlineDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOnlineDeploymentResult]:
+        ...
 
 def get_online_deployment(
     deployment_name: Optional[_builtins.str] = ...,

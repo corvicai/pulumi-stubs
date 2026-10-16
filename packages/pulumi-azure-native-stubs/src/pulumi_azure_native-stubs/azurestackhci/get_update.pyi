@@ -118,7 +118,8 @@ class GetUpdateResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetUpdateResult(GetUpdateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUpdateResult]:
+        ...
 
 def get_update(
     cluster_name: Optional[_builtins.str] = ...,

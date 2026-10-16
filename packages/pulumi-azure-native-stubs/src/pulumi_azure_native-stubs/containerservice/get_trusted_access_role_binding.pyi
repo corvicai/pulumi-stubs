@@ -52,7 +52,8 @@ class GetTrustedAccessRoleBindingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTrustedAccessRoleBindingResult(GetTrustedAccessRoleBindingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTrustedAccessRoleBindingResult]:
+        ...
 
 def get_trusted_access_role_binding(
     resource_group_name: Optional[_builtins.str] = ...,

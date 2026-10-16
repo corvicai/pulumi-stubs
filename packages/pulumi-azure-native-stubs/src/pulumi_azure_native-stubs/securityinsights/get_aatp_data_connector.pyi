@@ -56,7 +56,8 @@ class GetAATPDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAATPDataConnectorResult(GetAATPDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAATPDataConnectorResult]:
+        ...
 
 def get_aatp_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

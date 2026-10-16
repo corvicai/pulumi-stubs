@@ -58,7 +58,8 @@ class GetVirtualNetworkRetrieveResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualNetworkRetrieveResult(GetVirtualNetworkRetrieveResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkRetrieveResult]:
+        ...
 
 def get_virtual_network_retrieve(
     resource_group_name: Optional[_builtins.str] = ...,

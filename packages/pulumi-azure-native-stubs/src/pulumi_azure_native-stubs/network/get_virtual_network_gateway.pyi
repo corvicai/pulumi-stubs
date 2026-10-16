@@ -170,7 +170,8 @@ class GetVirtualNetworkGatewayResult:
     def vpn_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVirtualNetworkGatewayResult(GetVirtualNetworkGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkGatewayResult]:
+        ...
 
 def get_virtual_network_gateway(
     resource_group_name: Optional[_builtins.str] = ...,

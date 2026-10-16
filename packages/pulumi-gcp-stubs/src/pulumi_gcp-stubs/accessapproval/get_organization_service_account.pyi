@@ -31,7 +31,10 @@ class GetOrganizationServiceAccountResult:
     def organization_id(self) -> _builtins.str: ...
 
 class AwaitableGetOrganizationServiceAccountResult(GetOrganizationServiceAccountResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOrganizationServiceAccountResult]:
+        ...
 
 def get_organization_service_account(
     organization_id: Optional[_builtins.str] = ...,

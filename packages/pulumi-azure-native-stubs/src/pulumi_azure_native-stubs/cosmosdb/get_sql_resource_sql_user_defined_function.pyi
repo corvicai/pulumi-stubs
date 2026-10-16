@@ -52,7 +52,10 @@ class GetSqlResourceSqlUserDefinedFunctionResult:
 class AwaitableGetSqlResourceSqlUserDefinedFunctionResult(
     GetSqlResourceSqlUserDefinedFunctionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlResourceSqlUserDefinedFunctionResult]:
+        ...
 
 def get_sql_resource_sql_user_defined_function(
     account_name: Optional[_builtins.str] = ...,

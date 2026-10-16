@@ -34,7 +34,8 @@ class GetWorkspaceTagResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceTagResult(GetWorkspaceTagResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceTagResult]:
+        ...
 
 def get_workspace_tag(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -70,7 +70,8 @@ class GetWebAppSourceControlSlotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppSourceControlSlotResult(GetWebAppSourceControlSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppSourceControlSlotResult]:
+        ...
 
 def get_web_app_source_control_slot(
     name: Optional[_builtins.str] = ...,

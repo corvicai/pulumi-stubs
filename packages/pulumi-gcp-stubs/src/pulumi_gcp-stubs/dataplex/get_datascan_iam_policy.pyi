@@ -43,7 +43,8 @@ class GetDatascanIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetDatascanIamPolicyResult(GetDatascanIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatascanIamPolicyResult]:
+        ...
 
 def get_datascan_iam_policy(
     data_scan_id: Optional[_builtins.str] = ...,

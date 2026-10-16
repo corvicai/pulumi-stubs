@@ -23,7 +23,8 @@ class FolderKajPolicyConfigArgs:
     @pulumi.getter
     def folder(self) -> pulumi.Input[_builtins.str]: ...
     @folder.setter
-    def folder(self, value: pulumi.Input[_builtins.str]): ...
+    def folder(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultKeyAccessJustificationPolicy")
     def default_key_access_justification_policy(
@@ -37,7 +38,8 @@ class FolderKajPolicyConfigArgs:
         value: Optional[
             pulumi.Input[FolderKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FolderKajPolicyConfigState:
@@ -62,12 +64,14 @@ class _FolderKajPolicyConfigState:
         value: Optional[
             pulumi.Input[FolderKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def folder(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @folder.setter
-    def folder(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def folder(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class FolderKajPolicyConfig(pulumi.CustomResource):

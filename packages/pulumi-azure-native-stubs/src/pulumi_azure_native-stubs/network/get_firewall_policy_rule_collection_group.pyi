@@ -57,7 +57,10 @@ class GetFirewallPolicyRuleCollectionGroupResult:
 class AwaitableGetFirewallPolicyRuleCollectionGroupResult(
     GetFirewallPolicyRuleCollectionGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFirewallPolicyRuleCollectionGroupResult]:
+        ...
 
 def get_firewall_policy_rule_collection_group(
     firewall_policy_name: Optional[_builtins.str] = ...,

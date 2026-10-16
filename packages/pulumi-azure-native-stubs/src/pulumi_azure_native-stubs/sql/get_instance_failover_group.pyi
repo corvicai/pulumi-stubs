@@ -70,7 +70,8 @@ class GetInstanceFailoverGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceFailoverGroupResult(GetInstanceFailoverGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceFailoverGroupResult]:
+        ...
 
 def get_instance_failover_group(
     failover_group_name: Optional[_builtins.str] = ...,

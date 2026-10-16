@@ -63,7 +63,8 @@ class GetPeeringAttachmentResult:
     def transit_gateway_id(self) -> _builtins.str: ...
 
 class AwaitableGetPeeringAttachmentResult(GetPeeringAttachmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPeeringAttachmentResult]:
+        ...
 
 def get_peering_attachment(
     filters: Optional[

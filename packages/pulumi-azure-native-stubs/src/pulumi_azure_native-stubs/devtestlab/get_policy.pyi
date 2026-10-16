@@ -84,7 +84,8 @@ class GetPolicyResult:
     def unique_identifier(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyResult(GetPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyResult]:
+        ...
 
 def get_policy(
     expand: Optional[_builtins.str] = ...,

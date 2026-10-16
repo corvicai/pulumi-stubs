@@ -109,7 +109,8 @@ class GetSnapshotResult:
     def volume_size(self) -> _builtins.int: ...
 
 class AwaitableGetSnapshotResult(GetSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotResult]:
+        ...
 
 def get_snapshot(
     filters: Optional[

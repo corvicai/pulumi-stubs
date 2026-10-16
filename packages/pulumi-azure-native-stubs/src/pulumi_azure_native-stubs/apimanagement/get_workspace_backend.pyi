@@ -80,7 +80,8 @@ class GetWorkspaceBackendResult:
     def url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWorkspaceBackendResult(GetWorkspaceBackendResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceBackendResult]:
+        ...
 
 def get_workspace_backend(
     backend_id: Optional[_builtins.str] = ...,

@@ -35,7 +35,8 @@ class GetDataQualityRulesResult:
     def rules(self) -> Sequence[outputs.GetDataQualityRulesRuleResult]: ...
 
 class AwaitableGetDataQualityRulesResult(GetDataQualityRulesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataQualityRulesResult]:
+        ...
 
 def get_data_quality_rules(
     data_scan_id: Optional[_builtins.str] = ...,

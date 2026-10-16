@@ -92,7 +92,10 @@ class GetWebApplicationFirewallPolicyResult:
 class AwaitableGetWebApplicationFirewallPolicyResult(
     GetWebApplicationFirewallPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebApplicationFirewallPolicyResult]:
+        ...
 
 def get_web_application_firewall_policy(
     policy_name: Optional[_builtins.str] = ...,

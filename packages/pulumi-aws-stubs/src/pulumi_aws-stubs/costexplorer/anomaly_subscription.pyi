@@ -30,7 +30,8 @@ class AnomalySubscriptionArgs:
     @pulumi.getter
     def frequency(self) -> pulumi.Input[_builtins.str]: ...
     @frequency.setter
-    def frequency(self, value: pulumi.Input[_builtins.str]): ...
+    def frequency(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitorArnLists")
     def monitor_arn_lists(
@@ -39,7 +40,8 @@ class AnomalySubscriptionArgs:
     @monitor_arn_lists.setter
     def monitor_arn_lists(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subscribers(
@@ -49,17 +51,20 @@ class AnomalySubscriptionArgs:
     def subscribers(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[AnomalySubscriptionSubscriberArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -68,7 +73,8 @@ class AnomalySubscriptionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdExpression")
     def threshold_expression(
@@ -77,7 +83,8 @@ class AnomalySubscriptionArgs:
     @threshold_expression.setter
     def threshold_expression(
         self, value: Optional[pulumi.Input[AnomalySubscriptionThresholdExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AnomalySubscriptionState:
@@ -106,17 +113,20 @@ class _AnomalySubscriptionState:
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @frequency.setter
-    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitorArnLists")
     def monitor_arn_lists(
@@ -125,12 +135,14 @@ class _AnomalySubscriptionState:
     @monitor_arn_lists.setter
     def monitor_arn_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subscribers(
@@ -144,7 +156,8 @@ class _AnomalySubscriptionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AnomalySubscriptionSubscriberArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -153,7 +166,8 @@ class _AnomalySubscriptionState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -162,7 +176,8 @@ class _AnomalySubscriptionState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdExpression")
     def threshold_expression(
@@ -171,7 +186,8 @@ class _AnomalySubscriptionState:
     @threshold_expression.setter
     def threshold_expression(
         self, value: Optional[pulumi.Input[AnomalySubscriptionThresholdExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AnomalySubscription(pulumi.CustomResource):

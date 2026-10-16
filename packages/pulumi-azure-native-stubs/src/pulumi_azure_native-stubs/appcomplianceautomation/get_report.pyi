@@ -96,7 +96,8 @@ class GetReportResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReportResult(GetReportResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReportResult]:
+        ...
 
 def get_report(
     report_name: Optional[_builtins.str] = ...,

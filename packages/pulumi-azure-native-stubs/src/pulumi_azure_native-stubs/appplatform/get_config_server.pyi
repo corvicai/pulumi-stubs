@@ -44,7 +44,8 @@ class GetConfigServerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigServerResult(GetConfigServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigServerResult]:
+        ...
 
 def get_config_server(
     resource_group_name: Optional[_builtins.str] = ...,

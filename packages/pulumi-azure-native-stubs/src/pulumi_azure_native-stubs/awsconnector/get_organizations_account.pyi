@@ -52,7 +52,8 @@ class GetOrganizationsAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOrganizationsAccountResult(GetOrganizationsAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationsAccountResult]:
+        ...
 
 def get_organizations_account(
     name: Optional[_builtins.str] = ...,

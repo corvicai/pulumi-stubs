@@ -46,7 +46,8 @@ class GetAliasResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetAliasResult(GetAliasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAliasResult]:
+        ...
 
 def get_alias(
     function_name: Optional[_builtins.str] = ...,

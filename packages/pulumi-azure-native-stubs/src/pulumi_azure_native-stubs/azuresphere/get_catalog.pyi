@@ -56,7 +56,8 @@ class GetCatalogResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCatalogResult(GetCatalogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCatalogResult]:
+        ...
 
 def get_catalog(
     catalog_name: Optional[_builtins.str] = ...,

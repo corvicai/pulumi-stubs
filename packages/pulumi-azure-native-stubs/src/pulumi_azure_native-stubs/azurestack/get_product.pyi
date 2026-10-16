@@ -108,7 +108,8 @@ class GetProductResult:
     def vm_extension_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetProductResult(GetProductResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProductResult]:
+        ...
 
 def get_product(
     product_name: Optional[_builtins.str] = ...,

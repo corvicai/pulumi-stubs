@@ -31,7 +31,8 @@ class GetVpcsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVpcsResult(GetVpcsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcsResult]:
+        ...
 
 def get_vpcs(
     filters: Optional[Sequence[Union[GetVpcsFilterArgs, GetVpcsFilterArgsDict]]] = ...,

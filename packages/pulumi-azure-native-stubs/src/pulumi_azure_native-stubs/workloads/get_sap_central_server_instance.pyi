@@ -112,7 +112,8 @@ class GetSapCentralServerInstanceResult:
     def vm_details(self) -> Sequence[outputs.CentralServerVmDetailsResponse]: ...
 
 class AwaitableGetSapCentralServerInstanceResult(GetSapCentralServerInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSapCentralServerInstanceResult]:
+        ...
 
 def get_sap_central_server_instance(
     central_instance_name: Optional[_builtins.str] = ...,

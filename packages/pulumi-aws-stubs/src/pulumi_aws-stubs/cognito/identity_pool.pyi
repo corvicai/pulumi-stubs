@@ -39,12 +39,16 @@ class IdentityPoolArgs:
     @pulumi.getter(name="identityPoolName")
     def identity_pool_name(self) -> pulumi.Input[_builtins.str]: ...
     @identity_pool_name.setter
-    def identity_pool_name(self, value: pulumi.Input[_builtins.str]): ...
+    def identity_pool_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowClassicFlow")
     def allow_classic_flow(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_classic_flow.setter
-    def allow_classic_flow(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_classic_flow(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowUnauthenticatedIdentities")
     def allow_unauthenticated_identities(
@@ -53,7 +57,8 @@ class IdentityPoolArgs:
     @allow_unauthenticated_identities.setter
     def allow_unauthenticated_identities(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cognitoIdentityProviders")
     def cognito_identity_providers(
@@ -69,12 +74,16 @@ class IdentityPoolArgs:
                 Sequence[pulumi.Input[IdentityPoolCognitoIdentityProviderArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="developerProviderName")
     def developer_provider_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @developer_provider_name.setter
-    def developer_provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def developer_provider_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openidConnectProviderArns")
     def openid_connect_provider_arns(
@@ -83,12 +92,14 @@ class IdentityPoolArgs:
     @openid_connect_provider_arns.setter
     def openid_connect_provider_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samlProviderArns")
     def saml_provider_arns(
@@ -97,7 +108,8 @@ class IdentityPoolArgs:
     @saml_provider_arns.setter
     def saml_provider_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedLoginProviders")
     def supported_login_providers(
@@ -106,7 +118,8 @@ class IdentityPoolArgs:
     @supported_login_providers.setter
     def supported_login_providers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -115,7 +128,8 @@ class IdentityPoolArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IdentityPoolState:
@@ -151,7 +165,10 @@ class _IdentityPoolState:
     @pulumi.getter(name="allowClassicFlow")
     def allow_classic_flow(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_classic_flow.setter
-    def allow_classic_flow(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_classic_flow(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowUnauthenticatedIdentities")
     def allow_unauthenticated_identities(
@@ -160,12 +177,14 @@ class _IdentityPoolState:
     @allow_unauthenticated_identities.setter
     def allow_unauthenticated_identities(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cognitoIdentityProviders")
     def cognito_identity_providers(
@@ -181,17 +200,24 @@ class _IdentityPoolState:
                 Sequence[pulumi.Input[IdentityPoolCognitoIdentityProviderArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="developerProviderName")
     def developer_provider_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @developer_provider_name.setter
-    def developer_provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def developer_provider_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityPoolName")
     def identity_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_pool_name.setter
-    def identity_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_pool_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openidConnectProviderArns")
     def openid_connect_provider_arns(
@@ -200,12 +226,14 @@ class _IdentityPoolState:
     @openid_connect_provider_arns.setter
     def openid_connect_provider_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samlProviderArns")
     def saml_provider_arns(
@@ -214,7 +242,8 @@ class _IdentityPoolState:
     @saml_provider_arns.setter
     def saml_provider_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedLoginProviders")
     def supported_login_providers(
@@ -223,7 +252,8 @@ class _IdentityPoolState:
     @supported_login_providers.setter
     def supported_login_providers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -232,7 +262,8 @@ class _IdentityPoolState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -241,7 +272,8 @@ class _IdentityPoolState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cognito/identityPool:IdentityPool")
 class IdentityPool(pulumi.CustomResource):

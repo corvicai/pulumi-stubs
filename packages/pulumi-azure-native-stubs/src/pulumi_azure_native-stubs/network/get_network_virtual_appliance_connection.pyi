@@ -36,7 +36,10 @@ class GetNetworkVirtualApplianceConnectionResult:
 class AwaitableGetNetworkVirtualApplianceConnectionResult(
     GetNetworkVirtualApplianceConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkVirtualApplianceConnectionResult]:
+        ...
 
 def get_network_virtual_appliance_connection(
     connection_name: Optional[_builtins.str] = ...,

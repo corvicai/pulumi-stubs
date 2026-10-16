@@ -24,7 +24,8 @@ class ListRegistryCredentialsResult:
     def username(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListRegistryCredentialsResult(ListRegistryCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListRegistryCredentialsResult]:
+        ...
 
 def list_registry_credentials(
     registry_name: Optional[_builtins.str] = ...,

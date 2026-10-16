@@ -23,7 +23,8 @@ class ReplicationConfigurationArgs:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationConfiguration")
     def replication_configuration(
@@ -37,7 +38,8 @@ class ReplicationConfigurationArgs:
         value: Optional[
             pulumi.Input[ReplicationConfigurationReplicationConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ReplicationConfigurationState:
@@ -54,12 +56,14 @@ class _ReplicationConfigurationState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registryId")
     def registry_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registry_id.setter
-    def registry_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registry_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationConfiguration")
     def replication_configuration(
@@ -73,7 +77,8 @@ class _ReplicationConfigurationState:
         value: Optional[
             pulumi.Input[ReplicationConfigurationReplicationConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ReplicationConfiguration(pulumi.CustomResource):

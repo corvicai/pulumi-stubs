@@ -65,32 +65,40 @@ class ClusterArgs:
     @aggregator_or_single_rack_definition.setter
     def aggregator_or_single_rack_definition(
         self, value: pulumi.Input[RackDefinitionArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterType")
     def cluster_type(self) -> pulumi.Input[Union[_builtins.str, ClusterType]]: ...
     @cluster_type.setter
-    def cluster_type(self, value: pulumi.Input[Union[_builtins.str, ClusterType]]): ...
+    def cluster_type(
+        self, value: pulumi.Input[Union[_builtins.str, ClusterType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterVersion")
     def cluster_version(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_version.setter
-    def cluster_version(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]: ...
     @extended_location.setter
-    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): ...
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkFabricId")
     def network_fabric_id(self) -> pulumi.Input[_builtins.str]: ...
     @network_fabric_id.setter
-    def network_fabric_id(self, value: pulumi.Input[_builtins.str]): ...
+    def network_fabric_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="analyticsOutputSettings")
     def analytics_output_settings(
@@ -99,22 +107,30 @@ class ClusterArgs:
     @analytics_output_settings.setter
     def analytics_output_settings(
         self, value: Optional[pulumi.Input[AnalyticsOutputSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="analyticsWorkspaceId")
     def analytics_workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @analytics_workspace_id.setter
-    def analytics_workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def analytics_workspace_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterLocation")
     def cluster_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_location.setter
-    def cluster_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterServicePrincipal")
     def cluster_service_principal(
@@ -123,7 +139,8 @@ class ClusterArgs:
     @cluster_service_principal.setter
     def cluster_service_principal(
         self, value: Optional[pulumi.Input[ServicePrincipalInformationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commandOutputSettings")
     def command_output_settings(
@@ -132,7 +149,8 @@ class ClusterArgs:
     @command_output_settings.setter
     def command_output_settings(
         self, value: Optional[pulumi.Input[CommandOutputSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeDeploymentThreshold")
     def compute_deployment_threshold(
@@ -141,7 +159,8 @@ class ClusterArgs:
     @compute_deployment_threshold.setter
     def compute_deployment_threshold(
         self, value: Optional[pulumi.Input[ValidationThresholdArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeRackDefinitions")
     def compute_rack_definitions(
@@ -150,17 +169,22 @@ class ClusterArgs:
     @compute_rack_definitions.setter
     def compute_rack_definitions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RackDefinitionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedResourceGroupConfiguration")
     def managed_resource_group_configuration(
@@ -169,7 +193,8 @@ class ClusterArgs:
     @managed_resource_group_configuration.setter
     def managed_resource_group_configuration(
         self, value: Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeProtectionConfiguration")
     def runtime_protection_configuration(
@@ -178,14 +203,16 @@ class ClusterArgs:
     @runtime_protection_configuration.setter
     def runtime_protection_configuration(
         self, value: Optional[pulumi.Input[RuntimeProtectionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretArchive")
     def secret_archive(self) -> Optional[pulumi.Input[ClusterSecretArchiveArgs]]: ...
     @secret_archive.setter
     def secret_archive(
         self, value: Optional[pulumi.Input[ClusterSecretArchiveArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretArchiveSettings")
     def secret_archive_settings(
@@ -194,7 +221,8 @@ class ClusterArgs:
     @secret_archive_settings.setter
     def secret_archive_settings(
         self, value: Optional[pulumi.Input[SecretArchiveSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -203,14 +231,16 @@ class ClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateStrategy")
     def update_strategy(self) -> Optional[pulumi.Input[ClusterUpdateStrategyArgs]]: ...
     @update_strategy.setter
     def update_strategy(
         self, value: Optional[pulumi.Input[ClusterUpdateStrategyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vulnerabilityScanningSettings")
     def vulnerability_scanning_settings(
@@ -219,7 +249,8 @@ class ClusterArgs:
     @vulnerability_scanning_settings.setter
     def vulnerability_scanning_settings(
         self, value: Optional[pulumi.Input[VulnerabilityScanningSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:networkcloud:Cluster")
 class Cluster(pulumi.CustomResource):

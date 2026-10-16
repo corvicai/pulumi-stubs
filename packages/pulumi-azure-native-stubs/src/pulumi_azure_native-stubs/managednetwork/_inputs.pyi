@@ -35,12 +35,14 @@ class ManagedNetworkPeeringPolicyPropertiesArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, Type]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, Type]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, Type]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hub(self) -> Optional[pulumi.Input[ResourceIdArgs]]: ...
     @hub.setter
-    def hub(self, value: Optional[pulumi.Input[ResourceIdArgs]]): ...
+    def hub(self, value: Optional[pulumi.Input[ResourceIdArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mesh(
@@ -49,7 +51,8 @@ class ManagedNetworkPeeringPolicyPropertiesArgs:
     @mesh.setter
     def mesh(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def spokes(
@@ -58,7 +61,8 @@ class ManagedNetworkPeeringPolicyPropertiesArgs:
     @spokes.setter
     def spokes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceIdArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -72,7 +76,8 @@ class ResourceIdArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ScopeArgsDict(TypedDict):
     management_groups: NotRequired[
@@ -108,7 +113,8 @@ class ScopeArgs:
     @management_groups.setter
     def management_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -117,7 +123,8 @@ class ScopeArgs:
     @subnets.setter
     def subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subscriptions(
@@ -126,7 +133,8 @@ class ScopeArgs:
     @subscriptions.setter
     def subscriptions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworks")
     def virtual_networks(
@@ -135,4 +143,5 @@ class ScopeArgs:
     @virtual_networks.setter
     def virtual_networks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...

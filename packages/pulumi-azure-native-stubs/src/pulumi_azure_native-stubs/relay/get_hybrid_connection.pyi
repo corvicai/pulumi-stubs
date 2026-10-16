@@ -64,7 +64,8 @@ class GetHybridConnectionResult:
     def user_metadata(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetHybridConnectionResult(GetHybridConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHybridConnectionResult]:
+        ...
 
 def get_hybrid_connection(
     hybrid_connection_name: Optional[_builtins.str] = ...,

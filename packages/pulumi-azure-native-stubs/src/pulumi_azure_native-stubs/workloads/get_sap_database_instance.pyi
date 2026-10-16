@@ -84,7 +84,8 @@ class GetSapDatabaseInstanceResult:
     def vm_details(self) -> Sequence[outputs.DatabaseVmDetailsResponse]: ...
 
 class AwaitableGetSapDatabaseInstanceResult(GetSapDatabaseInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSapDatabaseInstanceResult]:
+        ...
 
 def get_sap_database_instance(
     database_instance_name: Optional[_builtins.str] = ...,

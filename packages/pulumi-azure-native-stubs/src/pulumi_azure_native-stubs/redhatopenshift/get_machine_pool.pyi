@@ -44,7 +44,8 @@ class GetMachinePoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMachinePoolResult(GetMachinePoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMachinePoolResult]:
+        ...
 
 def get_machine_pool(
     child_resource_name: Optional[_builtins.str] = ...,

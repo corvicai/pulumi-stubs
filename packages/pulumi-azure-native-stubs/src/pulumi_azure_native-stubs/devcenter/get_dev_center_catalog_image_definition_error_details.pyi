@@ -18,7 +18,10 @@ class GetDevCenterCatalogImageDefinitionErrorDetailsResult:
 class AwaitableGetDevCenterCatalogImageDefinitionErrorDetailsResult(
     GetDevCenterCatalogImageDefinitionErrorDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDevCenterCatalogImageDefinitionErrorDetailsResult]:
+        ...
 
 def get_dev_center_catalog_image_definition_error_details(
     catalog_name: Optional[_builtins.str] = ...,

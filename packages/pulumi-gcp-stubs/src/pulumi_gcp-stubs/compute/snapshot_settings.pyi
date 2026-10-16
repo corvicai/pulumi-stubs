@@ -23,12 +23,14 @@ class SnapshotSettingsArgs:
     @storage_location.setter
     def storage_location(
         self, value: pulumi.Input[SnapshotSettingsStorageLocationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SnapshotSettingsState:
@@ -44,7 +46,8 @@ class _SnapshotSettingsState:
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageLocation")
     def storage_location(
@@ -53,7 +56,8 @@ class _SnapshotSettingsState:
     @storage_location.setter
     def storage_location(
         self, value: Optional[pulumi.Input[SnapshotSettingsStorageLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/snapshotSettings:SnapshotSettings")
 class SnapshotSettings(pulumi.CustomResource):

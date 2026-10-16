@@ -44,7 +44,10 @@ class GetFeaturestoreEntityVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFeaturestoreEntityVersionResult(GetFeaturestoreEntityVersionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFeaturestoreEntityVersionResult]:
+        ...
 
 def get_featurestore_entity_version(
     name: Optional[_builtins.str] = ...,

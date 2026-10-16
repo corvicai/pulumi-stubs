@@ -54,7 +54,10 @@ class GetConnectedEnvironmentsCertificateResult:
 class AwaitableGetConnectedEnvironmentsCertificateResult(
     GetConnectedEnvironmentsCertificateResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConnectedEnvironmentsCertificateResult]:
+        ...
 
 def get_connected_environments_certificate(
     certificate_name: Optional[_builtins.str] = ...,

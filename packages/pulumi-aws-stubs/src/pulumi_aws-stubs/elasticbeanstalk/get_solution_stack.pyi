@@ -34,7 +34,8 @@ class GetSolutionStackResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetSolutionStackResult(GetSolutionStackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSolutionStackResult]:
+        ...
 
 def get_solution_stack(
     most_recent: Optional[_builtins.bool] = ...,

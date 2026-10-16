@@ -42,7 +42,8 @@ class GetSinkResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetSinkResult(GetSinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSinkResult]:
+        ...
 
 def get_sink(
     region: Optional[_builtins.str] = ...,

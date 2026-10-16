@@ -44,7 +44,8 @@ class GetRegistryModelContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryModelContainerResult(GetRegistryModelContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryModelContainerResult]:
+        ...
 
 def get_registry_model_container(
     model_name: Optional[_builtins.str] = ...,

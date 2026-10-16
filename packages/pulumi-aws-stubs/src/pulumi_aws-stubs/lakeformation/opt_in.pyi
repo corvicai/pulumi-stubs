@@ -33,7 +33,8 @@ class OptInArgs:
     @conditions.setter
     def conditions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[OptInConditionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principals(
@@ -42,12 +43,14 @@ class OptInArgs:
     @principals.setter
     def principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[OptInPrincipalArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceDatas")
     def resource_datas(
@@ -57,7 +60,8 @@ class OptInArgs:
     def resource_datas(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[OptInResourceDataArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OptInState:
@@ -85,17 +89,20 @@ class _OptInState:
     @conditions.setter
     def conditions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[OptInConditionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModified")
     def last_modified(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified.setter
-    def last_modified(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedBy")
     def last_updated_by(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_by.setter
-    def last_updated_by(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_by(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principals(
@@ -104,12 +111,14 @@ class _OptInState:
     @principals.setter
     def principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[OptInPrincipalArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceDatas")
     def resource_datas(
@@ -119,7 +128,8 @@ class _OptInState:
     def resource_datas(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[OptInResourceDataArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:lakeformation/optIn:OptIn")
 class OptIn(pulumi.CustomResource):

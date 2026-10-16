@@ -21,7 +21,10 @@ class ListClusterLanguageExtensionsResult:
     def value(self) -> Optional[Sequence[outputs.LanguageExtensionResponse]]: ...
 
 class AwaitableListClusterLanguageExtensionsResult(ListClusterLanguageExtensionsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListClusterLanguageExtensionsResult]:
+        ...
 
 def list_cluster_language_extensions(
     cluster_name: Optional[_builtins.str] = ...,

@@ -30,12 +30,16 @@ class RegionPerInstanceConfigArgs:
     @pulumi.getter(name="regionInstanceGroupManager")
     def region_instance_group_manager(self) -> pulumi.Input[_builtins.str]: ...
     @region_instance_group_manager.setter
-    def region_instance_group_manager(self, value: pulumi.Input[_builtins.str]): ...
+    def region_instance_group_manager(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimalAction")
     def minimal_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @minimal_action.setter
-    def minimal_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def minimal_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mostDisruptiveAllowedAction")
     def most_disruptive_allowed_action(
@@ -44,12 +48,14 @@ class RegionPerInstanceConfigArgs:
     @most_disruptive_allowed_action.setter
     def most_disruptive_allowed_action(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preservedState")
     def preserved_state(
@@ -58,24 +64,28 @@ class RegionPerInstanceConfigArgs:
     @preserved_state.setter
     def preserved_state(
         self, value: Optional[pulumi.Input[RegionPerInstanceConfigPreservedStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="removeInstanceOnDestroy")
     def remove_instance_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @remove_instance_on_destroy.setter
     def remove_instance_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="removeInstanceStateOnDestroy")
     def remove_instance_state_on_destroy(
@@ -84,7 +94,8 @@ class RegionPerInstanceConfigArgs:
     @remove_instance_state_on_destroy.setter
     def remove_instance_state_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegionPerInstanceConfigState:
@@ -107,7 +118,8 @@ class _RegionPerInstanceConfigState:
     @pulumi.getter(name="minimalAction")
     def minimal_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @minimal_action.setter
-    def minimal_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def minimal_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mostDisruptiveAllowedAction")
     def most_disruptive_allowed_action(
@@ -116,12 +128,14 @@ class _RegionPerInstanceConfigState:
     @most_disruptive_allowed_action.setter
     def most_disruptive_allowed_action(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preservedState")
     def preserved_state(
@@ -130,17 +144,20 @@ class _RegionPerInstanceConfigState:
     @preserved_state.setter
     def preserved_state(
         self, value: Optional[pulumi.Input[RegionPerInstanceConfigPreservedStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionInstanceGroupManager")
     def region_instance_group_manager(
@@ -149,14 +166,16 @@ class _RegionPerInstanceConfigState:
     @region_instance_group_manager.setter
     def region_instance_group_manager(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="removeInstanceOnDestroy")
     def remove_instance_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @remove_instance_on_destroy.setter
     def remove_instance_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="removeInstanceStateOnDestroy")
     def remove_instance_state_on_destroy(
@@ -165,7 +184,8 @@ class _RegionPerInstanceConfigState:
     @remove_instance_state_on_destroy.setter
     def remove_instance_state_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RegionPerInstanceConfig(pulumi.CustomResource):

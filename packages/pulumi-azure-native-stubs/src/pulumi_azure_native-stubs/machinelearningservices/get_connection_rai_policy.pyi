@@ -44,7 +44,8 @@ class GetConnectionRaiPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionRaiPolicyResult(GetConnectionRaiPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionRaiPolicyResult]:
+        ...
 
 def get_connection_rai_policy(
     connection_name: Optional[_builtins.str] = ...,

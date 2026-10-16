@@ -58,7 +58,8 @@ class GetPublicIpv4PoolResult:
     def total_available_address_count(self) -> _builtins.int: ...
 
 class AwaitableGetPublicIpv4PoolResult(GetPublicIpv4PoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublicIpv4PoolResult]:
+        ...
 
 def get_public_ipv4_pool(
     pool_id: Optional[_builtins.str] = ...,

@@ -35,7 +35,10 @@ class GetP2sVpnServerConfigurationResult:
     def properties(self) -> outputs.P2SVpnServerConfigurationPropertiesResponse: ...
 
 class AwaitableGetP2sVpnServerConfigurationResult(GetP2sVpnServerConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetP2sVpnServerConfigurationResult]:
+        ...
 
 def get_p2s_vpn_server_configuration(
     p2_s_vpn_server_configuration_name: Optional[_builtins.str] = ...,

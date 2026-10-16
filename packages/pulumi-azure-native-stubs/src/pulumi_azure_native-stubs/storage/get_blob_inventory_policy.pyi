@@ -48,7 +48,8 @@ class GetBlobInventoryPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBlobInventoryPolicyResult(GetBlobInventoryPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBlobInventoryPolicyResult]:
+        ...
 
 def get_blob_inventory_policy(
     account_name: Optional[_builtins.str] = ...,

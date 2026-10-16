@@ -21,7 +21,8 @@ class ListJobExecutionEnvSecretsResult:
     def value(self) -> Sequence[outputs.SecretResponse]: ...
 
 class AwaitableListJobExecutionEnvSecretsResult(ListJobExecutionEnvSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListJobExecutionEnvSecretsResult]:
+        ...
 
 def list_job_execution_env_secrets(
     job_execution_name: Optional[_builtins.str] = ...,

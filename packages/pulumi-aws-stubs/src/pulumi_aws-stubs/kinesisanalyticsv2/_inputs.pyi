@@ -181,7 +181,8 @@ class ApplicationApplicationConfigurationArgs:
         value: pulumi.Input[
             ApplicationApplicationConfigurationApplicationCodeConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationEncryptionConfiguration")
     def application_encryption_configuration(
@@ -199,7 +200,8 @@ class ApplicationApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationApplicationEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSnapshotConfiguration")
     def application_snapshot_configuration(
@@ -217,7 +219,8 @@ class ApplicationApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationApplicationSnapshotConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentProperties")
     def environment_properties(
@@ -231,7 +234,8 @@ class ApplicationApplicationConfigurationArgs:
         value: Optional[
             pulumi.Input[ApplicationApplicationConfigurationEnvironmentPropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="flinkApplicationConfiguration")
     def flink_application_configuration(
@@ -249,7 +253,8 @@ class ApplicationApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationFlinkApplicationConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runConfiguration")
     def run_configuration(
@@ -263,7 +268,8 @@ class ApplicationApplicationConfigurationArgs:
         value: Optional[
             pulumi.Input[ApplicationApplicationConfigurationRunConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlApplicationConfiguration")
     def sql_application_configuration(
@@ -279,7 +285,8 @@ class ApplicationApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfiguration")
     def vpc_configuration(
@@ -293,7 +300,8 @@ class ApplicationApplicationConfigurationArgs:
         value: Optional[
             pulumi.Input[ApplicationApplicationConfigurationVpcConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationApplicationCodeConfigurationArgsDict(
     TypedDict
@@ -321,7 +329,8 @@ class ApplicationApplicationConfigurationApplicationCodeConfigurationArgs:
     @pulumi.getter(name="codeContentType")
     def code_content_type(self) -> pulumi.Input[_builtins.str]: ...
     @code_content_type.setter
-    def code_content_type(self, value: pulumi.Input[_builtins.str]): ...
+    def code_content_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeContent")
     def code_content(
@@ -339,7 +348,8 @@ class ApplicationApplicationConfigurationApplicationCodeConfigurationArgs:
                 ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentArgsDict(
     TypedDict
@@ -380,12 +390,14 @@ class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent
                 ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textContent")
     def text_content(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text_content.setter
-    def text_content(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text_content(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationArgsDict(
     TypedDict
@@ -407,17 +419,20 @@ class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent
     @pulumi.getter(name="bucketArn")
     def bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_arn.setter
-    def bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileKey")
     def file_key(self) -> pulumi.Input[_builtins.str]: ...
     @file_key.setter
-    def file_key(self, value: pulumi.Input[_builtins.str]): ...
+    def file_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectVersion")
     def object_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_version.setter
-    def object_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationApplicationEncryptionConfigurationArgsDict(
     TypedDict
@@ -437,12 +452,14 @@ class ApplicationApplicationConfigurationApplicationEncryptionConfigurationArgs:
     @pulumi.getter(name="keyType")
     def key_type(self) -> pulumi.Input[_builtins.str]: ...
     @key_type.setter
-    def key_type(self, value: pulumi.Input[_builtins.str]): ...
+    def key_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyId")
     def key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_id.setter
-    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationApplicationSnapshotConfigurationArgsDict(
     TypedDict
@@ -458,7 +475,8 @@ class ApplicationApplicationConfigurationApplicationSnapshotConfigurationArgs:
     @pulumi.getter(name="snapshotsEnabled")
     def snapshots_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @snapshots_enabled.setter
-    def snapshots_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def snapshots_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationEnvironmentPropertiesArgsDict(TypedDict):
     property_groups: pulumi.Input[
@@ -503,7 +521,8 @@ class ApplicationApplicationConfigurationEnvironmentPropertiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupArgsDict(
     TypedDict
@@ -523,7 +542,8 @@ class ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupArgs:
     @pulumi.getter(name="propertyGroupId")
     def property_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @property_group_id.setter
-    def property_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def property_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertyMap")
     def property_map(
@@ -532,7 +552,8 @@ class ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupArgs:
     @property_map.setter
     def property_map(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationArgsDict(
     TypedDict
@@ -591,7 +612,8 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringConfiguration")
     def monitoring_configuration(
@@ -609,7 +631,8 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelismConfiguration")
     def parallelism_configuration(
@@ -627,7 +650,8 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationArgsDict(
     TypedDict
@@ -651,17 +675,24 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpoint
     @pulumi.getter(name="configurationType")
     def configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_type.setter
-    def configuration_type(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="checkpointInterval")
     def checkpoint_interval(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @checkpoint_interval.setter
-    def checkpoint_interval(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def checkpoint_interval(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="checkpointingEnabled")
     def checkpointing_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @checkpointing_enabled.setter
-    def checkpointing_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def checkpointing_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minPauseBetweenCheckpoints")
     def min_pause_between_checkpoints(
@@ -670,7 +701,8 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpoint
     @min_pause_between_checkpoints.setter
     def min_pause_between_checkpoints(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationArgsDict(
     TypedDict
@@ -692,17 +724,20 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoring
     @pulumi.getter(name="configurationType")
     def configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_type.setter
-    def configuration_type(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLevel")
     def log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_level.setter
-    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricsLevel")
     def metrics_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metrics_level.setter
-    def metrics_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metrics_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationArgsDict(
     TypedDict
@@ -726,22 +761,30 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelis
     @pulumi.getter(name="configurationType")
     def configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_type.setter
-    def configuration_type(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingEnabled")
     def auto_scaling_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @auto_scaling_enabled.setter
-    def auto_scaling_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def auto_scaling_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parallelism(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @parallelism.setter
-    def parallelism(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def parallelism(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelismPerKpu")
     def parallelism_per_kpu(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @parallelism_per_kpu.setter
-    def parallelism_per_kpu(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def parallelism_per_kpu(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationRunConfigurationArgsDict(TypedDict):
     application_restore_configuration: NotRequired[
@@ -788,7 +831,8 @@ class ApplicationApplicationConfigurationRunConfigurationArgs:
                 ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="flinkRunConfiguration")
     def flink_run_configuration(
@@ -806,7 +850,8 @@ class ApplicationApplicationConfigurationRunConfigurationArgs:
                 ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationArgsDict(
     TypedDict
@@ -828,12 +873,14 @@ class ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfi
     @application_restore_type.setter
     def application_restore_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotName")
     def snapshot_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @snapshot_name.setter
-    def snapshot_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def snapshot_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationArgsDict(
     TypedDict
@@ -853,7 +900,8 @@ class ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationAr
     @allow_non_restored_state.setter
     def allow_non_restored_state(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationArgsDict(TypedDict):
     input: NotRequired[
@@ -918,7 +966,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def outputs(
@@ -944,7 +993,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="referenceDataSource")
     def reference_data_source(
@@ -962,7 +1012,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgsDict(
     TypedDict
@@ -1061,12 +1112,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> pulumi.Input[_builtins.str]: ...
     @name_prefix.setter
-    def name_prefix(self, value: pulumi.Input[_builtins.str]): ...
+    def name_prefix(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inAppStreamNames")
     def in_app_stream_names(
@@ -1075,12 +1128,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
     @in_app_stream_names.setter
     def in_app_stream_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputId")
     def input_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_id.setter
-    def input_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputParallelism")
     def input_parallelism(
@@ -1098,7 +1153,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputProcessingConfiguration")
     def input_processing_configuration(
@@ -1116,7 +1172,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputStartingPositionConfigurations")
     def input_starting_position_configurations(
@@ -1142,7 +1199,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisFirehoseInput")
     def kinesis_firehose_input(
@@ -1160,7 +1218,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisStreamsInput")
     def kinesis_streams_input(
@@ -1178,7 +1237,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismArgsDict(
     TypedDict
@@ -1194,7 +1254,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPa
     @pulumi.getter
     def count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @count.setter
-    def count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationArgsDict(
     TypedDict
@@ -1225,7 +1286,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPr
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorArgsDict(
     TypedDict
@@ -1239,7 +1301,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPr
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaArgsDict(
     TypedDict
@@ -1294,7 +1357,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordFormat")
     def record_format(
@@ -1308,12 +1372,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordEncoding")
     def record_encoding(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @record_encoding.setter
-    def record_encoding(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def record_encoding(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumnArgsDict(
     TypedDict
@@ -1335,17 +1401,20 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlType")
     def sql_type(self) -> pulumi.Input[_builtins.str]: ...
     @sql_type.setter
-    def sql_type(self, value: pulumi.Input[_builtins.str]): ...
+    def sql_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mapping(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mapping.setter
-    def mapping(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mapping(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatArgsDict(
     TypedDict
@@ -1378,12 +1447,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordFormatType")
     def record_format_type(self) -> pulumi.Input[_builtins.str]: ...
     @record_format_type.setter
-    def record_format_type(self, value: pulumi.Input[_builtins.str]): ...
+    def record_format_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersArgsDict(
     TypedDict
@@ -1432,7 +1503,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
                 ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonMappingParameters")
     def json_mapping_parameters(
@@ -1450,7 +1522,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
                 ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersArgsDict(
     TypedDict
@@ -1470,12 +1543,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     @pulumi.getter(name="recordColumnDelimiter")
     def record_column_delimiter(self) -> pulumi.Input[_builtins.str]: ...
     @record_column_delimiter.setter
-    def record_column_delimiter(self, value: pulumi.Input[_builtins.str]): ...
+    def record_column_delimiter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordRowDelimiter")
     def record_row_delimiter(self) -> pulumi.Input[_builtins.str]: ...
     @record_row_delimiter.setter
-    def record_row_delimiter(self, value: pulumi.Input[_builtins.str]): ...
+    def record_row_delimiter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersArgsDict(
     TypedDict
@@ -1489,7 +1564,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     @pulumi.getter(name="recordRowPath")
     def record_row_path(self) -> pulumi.Input[_builtins.str]: ...
     @record_row_path.setter
-    def record_row_path(self, value: pulumi.Input[_builtins.str]): ...
+    def record_row_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationArgsDict(
     TypedDict
@@ -1507,7 +1583,10 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSt
     @pulumi.getter(name="inputStartingPosition")
     def input_starting_position(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_starting_position.setter
-    def input_starting_position(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_starting_position(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputArgsDict(
     TypedDict
@@ -1521,7 +1600,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesis
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputArgsDict(
     TypedDict
@@ -1535,7 +1615,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesis
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputArgsDict(
     TypedDict
@@ -1600,12 +1681,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputArgs:
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisFirehoseOutput")
     def kinesis_firehose_output(
@@ -1623,7 +1706,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisStreamsOutput")
     def kinesis_streams_output(
@@ -1641,7 +1725,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaOutput")
     def lambda_output(
@@ -1659,12 +1744,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputArgs:
                 ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputId")
     def output_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_id.setter
-    def output_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaArgsDict(
     TypedDict
@@ -1680,7 +1767,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestin
     @pulumi.getter(name="recordFormatType")
     def record_format_type(self) -> pulumi.Input[_builtins.str]: ...
     @record_format_type.setter
-    def record_format_type(self, value: pulumi.Input[_builtins.str]): ...
+    def record_format_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputArgsDict(
     TypedDict
@@ -1694,7 +1782,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesi
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputArgsDict(
     TypedDict
@@ -1708,7 +1797,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesi
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputArgsDict(
     TypedDict
@@ -1722,7 +1812,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambda
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceArgsDict(
     TypedDict
@@ -1763,7 +1854,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3ReferenceDataSource")
     def s3_reference_data_source(
@@ -1777,17 +1869,20 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> pulumi.Input[_builtins.str]: ...
     @table_name.setter
-    def table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="referenceId")
     def reference_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reference_id.setter
-    def reference_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reference_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaArgsDict(
     TypedDict
@@ -1842,7 +1937,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordFormat")
     def record_format(
@@ -1856,12 +1952,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordEncoding")
     def record_encoding(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @record_encoding.setter
-    def record_encoding(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def record_encoding(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumnArgsDict(
     TypedDict
@@ -1883,17 +1981,20 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlType")
     def sql_type(self) -> pulumi.Input[_builtins.str]: ...
     @sql_type.setter
-    def sql_type(self, value: pulumi.Input[_builtins.str]): ...
+    def sql_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mapping(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mapping.setter
-    def mapping(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mapping(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatArgsDict(
     TypedDict
@@ -1926,12 +2027,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
         value: pulumi.Input[
             ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordFormatType")
     def record_format_type(self) -> pulumi.Input[_builtins.str]: ...
     @record_format_type.setter
-    def record_format_type(self, value: pulumi.Input[_builtins.str]): ...
+    def record_format_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersArgsDict(
     TypedDict
@@ -1980,7 +2083,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
                 ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonMappingParameters")
     def json_mapping_parameters(
@@ -1998,7 +2102,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
                 ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersArgsDict(
     TypedDict
@@ -2018,12 +2123,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
     @pulumi.getter(name="recordColumnDelimiter")
     def record_column_delimiter(self) -> pulumi.Input[_builtins.str]: ...
     @record_column_delimiter.setter
-    def record_column_delimiter(self, value: pulumi.Input[_builtins.str]): ...
+    def record_column_delimiter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordRowDelimiter")
     def record_row_delimiter(self) -> pulumi.Input[_builtins.str]: ...
     @record_row_delimiter.setter
-    def record_row_delimiter(self, value: pulumi.Input[_builtins.str]): ...
+    def record_row_delimiter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersArgsDict(
     TypedDict
@@ -2037,7 +2144,8 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
     @pulumi.getter(name="recordRowPath")
     def record_row_path(self) -> pulumi.Input[_builtins.str]: ...
     @record_row_path.setter
-    def record_row_path(self, value: pulumi.Input[_builtins.str]): ...
+    def record_row_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceArgsDict(
     TypedDict
@@ -2057,12 +2165,14 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
     @pulumi.getter(name="bucketArn")
     def bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_arn.setter
-    def bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileKey")
     def file_key(self) -> pulumi.Input[_builtins.str]: ...
     @file_key.setter
-    def file_key(self, value: pulumi.Input[_builtins.str]): ...
+    def file_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationApplicationConfigurationVpcConfigurationArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -2088,24 +2198,30 @@ class ApplicationApplicationConfigurationVpcConfigurationArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfigurationId")
     def vpc_configuration_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_configuration_id.setter
-    def vpc_configuration_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_configuration_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationCloudwatchLoggingOptionsArgsDict(TypedDict):
     log_stream_arn: pulumi.Input[_builtins.str]
@@ -2123,11 +2239,13 @@ class ApplicationCloudwatchLoggingOptionsArgs:
     @pulumi.getter(name="logStreamArn")
     def log_stream_arn(self) -> pulumi.Input[_builtins.str]: ...
     @log_stream_arn.setter
-    def log_stream_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def log_stream_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchLoggingOptionId")
     def cloudwatch_logging_option_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloudwatch_logging_option_id.setter
     def cloudwatch_logging_option_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...

@@ -76,12 +76,14 @@ class DeploymentConfigMinimumHealthyHostsArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeploymentConfigTrafficRoutingConfigArgsDict(TypedDict):
     time_based_canary: NotRequired[
@@ -118,7 +120,8 @@ class DeploymentConfigTrafficRoutingConfigArgs:
         value: Optional[
             pulumi.Input[DeploymentConfigTrafficRoutingConfigTimeBasedCanaryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeBasedLinear")
     def time_based_linear(
@@ -132,12 +135,14 @@ class DeploymentConfigTrafficRoutingConfigArgs:
         value: Optional[
             pulumi.Input[DeploymentConfigTrafficRoutingConfigTimeBasedLinearArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentConfigTrafficRoutingConfigTimeBasedCanaryArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.int]]
@@ -155,12 +160,14 @@ class DeploymentConfigTrafficRoutingConfigTimeBasedCanaryArgs:
     @pulumi.getter
     def interval(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval.setter
-    def interval(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def interval(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentage(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @percentage.setter
-    def percentage(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def percentage(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeploymentConfigTrafficRoutingConfigTimeBasedLinearArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.int]]
@@ -178,12 +185,14 @@ class DeploymentConfigTrafficRoutingConfigTimeBasedLinearArgs:
     @pulumi.getter
     def interval(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval.setter
-    def interval(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def interval(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentage(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @percentage.setter
-    def percentage(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def percentage(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeploymentConfigZonalConfigArgsDict(TypedDict):
     first_zone_monitor_duration_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -213,7 +222,8 @@ class DeploymentConfigZonalConfigArgs:
     @first_zone_monitor_duration_in_seconds.setter
     def first_zone_monitor_duration_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumHealthyHostsPerZone")
     def minimum_healthy_hosts_per_zone(
@@ -227,14 +237,16 @@ class DeploymentConfigZonalConfigArgs:
         value: Optional[
             pulumi.Input[DeploymentConfigZonalConfigMinimumHealthyHostsPerZoneArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitorDurationInSeconds")
     def monitor_duration_in_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @monitor_duration_in_seconds.setter
     def monitor_duration_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentConfigZonalConfigMinimumHealthyHostsPerZoneArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -252,12 +264,14 @@ class DeploymentConfigZonalConfigMinimumHealthyHostsPerZoneArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeploymentGroupAlarmConfigurationArgsDict(TypedDict):
     alarms: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -281,19 +295,22 @@ class DeploymentGroupAlarmConfigurationArgs:
     @alarms.setter
     def alarms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ignorePollAlarmFailure")
     def ignore_poll_alarm_failure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ignore_poll_alarm_failure.setter
     def ignore_poll_alarm_failure(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupAutoRollbackConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -311,7 +328,8 @@ class DeploymentGroupAutoRollbackConfigurationArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def events(
@@ -320,7 +338,8 @@ class DeploymentGroupAutoRollbackConfigurationArgs:
     @events.setter
     def events(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupBlueGreenDeploymentConfigArgsDict(TypedDict):
     deployment_ready_option: NotRequired[
@@ -375,7 +394,8 @@ class DeploymentGroupBlueGreenDeploymentConfigArgs:
                 DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="greenFleetProvisioningOption")
     def green_fleet_provisioning_option(
@@ -393,7 +413,8 @@ class DeploymentGroupBlueGreenDeploymentConfigArgs:
                 DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateBlueInstancesOnDeploymentSuccess")
     def terminate_blue_instances_on_deployment_success(
@@ -411,7 +432,8 @@ class DeploymentGroupBlueGreenDeploymentConfigArgs:
                 DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionArgsDict(TypedDict):
     action_on_timeout: NotRequired[pulumi.Input[_builtins.str]]
@@ -429,12 +451,18 @@ class DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionArgs:
     @pulumi.getter(name="actionOnTimeout")
     def action_on_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @action_on_timeout.setter
-    def action_on_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def action_on_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitTimeInMinutes")
     def wait_time_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @wait_time_in_minutes.setter
-    def wait_time_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def wait_time_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionArgsDict(
     TypedDict
@@ -450,7 +478,8 @@ class DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionArgs:
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessArgsDict(
     TypedDict
@@ -470,7 +499,8 @@ class DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeployment
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationWaitTimeInMinutes")
     def termination_wait_time_in_minutes(
@@ -479,7 +509,8 @@ class DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeployment
     @termination_wait_time_in_minutes.setter
     def termination_wait_time_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupDeploymentStyleArgsDict(TypedDict):
     deployment_option: NotRequired[pulumi.Input[_builtins.str]]
@@ -497,12 +528,16 @@ class DeploymentGroupDeploymentStyleArgs:
     @pulumi.getter(name="deploymentOption")
     def deployment_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_option.setter
-    def deployment_option(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_option(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_type.setter
-    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentGroupEc2TagFilterArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -522,17 +557,20 @@ class DeploymentGroupEc2TagFilterArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentGroupEc2TagSetArgsDict(TypedDict):
     ec2_tag_filters: NotRequired[
@@ -567,7 +605,8 @@ class DeploymentGroupEc2TagSetArgs:
                 Sequence[pulumi.Input[DeploymentGroupEc2TagSetEc2TagFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupEc2TagSetEc2TagFilterArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -587,17 +626,20 @@ class DeploymentGroupEc2TagSetEc2TagFilterArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentGroupEcsServiceArgsDict(TypedDict):
     cluster_name: pulumi.Input[_builtins.str]
@@ -615,12 +657,14 @@ class DeploymentGroupEcsServiceArgs:
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_name.setter
-    def cluster_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
     def service_name(self) -> pulumi.Input[_builtins.str]: ...
     @service_name.setter
-    def service_name(self, value: pulumi.Input[_builtins.str]): ...
+    def service_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DeploymentGroupLoadBalancerInfoArgsDict(TypedDict):
     elb_infos: NotRequired[
@@ -675,7 +719,8 @@ class DeploymentGroupLoadBalancerInfoArgs:
                 Sequence[pulumi.Input[DeploymentGroupLoadBalancerInfoElbInfoArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroupInfos")
     def target_group_infos(
@@ -695,7 +740,8 @@ class DeploymentGroupLoadBalancerInfoArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroupPairInfo")
     def target_group_pair_info(
@@ -709,7 +755,8 @@ class DeploymentGroupLoadBalancerInfoArgs:
         value: Optional[
             pulumi.Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupLoadBalancerInfoElbInfoArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -723,7 +770,8 @@ class DeploymentGroupLoadBalancerInfoElbInfoArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentGroupLoadBalancerInfoTargetGroupInfoArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -737,7 +785,8 @@ class DeploymentGroupLoadBalancerInfoTargetGroupInfoArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgsDict(TypedDict):
     prod_traffic_route: pulumi.Input[
@@ -790,7 +839,8 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgs:
         value: pulumi.Input[
             DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroups")
     def target_groups(
@@ -812,7 +862,8 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testTrafficRoute")
     def test_traffic_route(
@@ -830,7 +881,8 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgs:
                 DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteArgsDict(
     TypedDict
@@ -848,7 +900,8 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteArgs:
     @listener_arns.setter
     def listener_arns(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -860,7 +913,8 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteArgsDict(
     TypedDict
@@ -878,7 +932,8 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteArgs:
     @listener_arns.setter
     def listener_arns(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeploymentGroupOnPremisesInstanceTagFilterArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -898,17 +953,20 @@ class DeploymentGroupOnPremisesInstanceTagFilterArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeploymentGroupTriggerConfigurationArgsDict(TypedDict):
     trigger_events: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -930,14 +988,17 @@ class DeploymentGroupTriggerConfigurationArgs:
     @trigger_events.setter
     def trigger_events(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerName")
     def trigger_name(self) -> pulumi.Input[_builtins.str]: ...
     @trigger_name.setter
-    def trigger_name(self, value: pulumi.Input[_builtins.str]): ...
+    def trigger_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerTargetArn")
     def trigger_target_arn(self) -> pulumi.Input[_builtins.str]: ...
     @trigger_target_arn.setter
-    def trigger_target_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def trigger_target_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

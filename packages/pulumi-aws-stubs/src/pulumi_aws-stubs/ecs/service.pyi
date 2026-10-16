@@ -78,7 +78,8 @@ class ServiceArgs:
     @pulumi.getter
     def alarms(self) -> Optional[pulumi.Input[ServiceAlarmsArgs]]: ...
     @alarms.setter
-    def alarms(self, value: Optional[pulumi.Input[ServiceAlarmsArgs]]): ...
+    def alarms(self, value: Optional[pulumi.Input[ServiceAlarmsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneRebalancing")
     def availability_zone_rebalancing(
@@ -87,7 +88,8 @@ class ServiceArgs:
     @availability_zone_rebalancing.setter
     def availability_zone_rebalancing(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityProviderStrategies")
     def capacity_provider_strategies(
@@ -101,12 +103,14 @@ class ServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceCapacityProviderStrategyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentCircuitBreaker")
     def deployment_circuit_breaker(
@@ -115,7 +119,8 @@ class ServiceArgs:
     @deployment_circuit_breaker.setter
     def deployment_circuit_breaker(
         self, value: Optional[pulumi.Input[ServiceDeploymentCircuitBreakerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfiguration")
     def deployment_configuration(
@@ -124,7 +129,8 @@ class ServiceArgs:
     @deployment_configuration.setter
     def deployment_configuration(
         self, value: Optional[pulumi.Input[ServiceDeploymentConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentController")
     def deployment_controller(
@@ -133,14 +139,16 @@ class ServiceArgs:
     @deployment_controller.setter
     def deployment_controller(
         self, value: Optional[pulumi.Input[ServiceDeploymentControllerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentMaximumPercent")
     def deployment_maximum_percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @deployment_maximum_percent.setter
     def deployment_maximum_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentMinimumHealthyPercent")
     def deployment_minimum_healthy_percent(
@@ -149,34 +157,44 @@ class ServiceArgs:
     @deployment_minimum_healthy_percent.setter
     def deployment_minimum_healthy_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredCount")
     def desired_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @desired_count.setter
-    def desired_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def desired_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEcsManagedTags")
     def enable_ecs_managed_tags(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_ecs_managed_tags.setter
     def enable_ecs_managed_tags(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableExecuteCommand")
     def enable_execute_command(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_execute_command.setter
-    def enable_execute_command(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_execute_command(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDelete")
     def force_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete.setter
-    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceNewDeployment")
     def force_new_deployment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_new_deployment.setter
-    def force_new_deployment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_new_deployment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckGracePeriodSeconds")
     def health_check_grace_period_seconds(
@@ -185,17 +203,20 @@ class ServiceArgs:
     @health_check_grace_period_seconds.setter
     def health_check_grace_period_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamRole")
     def iam_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_role.setter
-    def iam_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchType")
     def launch_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @launch_type.setter
-    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancers")
     def load_balancers(
@@ -205,12 +226,14 @@ class ServiceArgs:
     def load_balancers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ServiceLoadBalancerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -219,7 +242,8 @@ class ServiceArgs:
     @network_configuration.setter
     def network_configuration(
         self, value: Optional[pulumi.Input[ServiceNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orderedPlacementStrategies")
     def ordered_placement_strategies(
@@ -233,7 +257,8 @@ class ServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceOrderedPlacementStrategyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementConstraints")
     def placement_constraints(
@@ -247,27 +272,36 @@ class ServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServicePlacementConstraintArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformVersion")
     def platform_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_version.setter
-    def platform_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagateTags")
     def propagate_tags(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @propagate_tags.setter
-    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulingStrategy")
     def scheduling_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scheduling_strategy.setter
-    def scheduling_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scheduling_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceConnectConfiguration")
     def service_connect_configuration(
@@ -276,7 +310,8 @@ class ServiceArgs:
     @service_connect_configuration.setter
     def service_connect_configuration(
         self, value: Optional[pulumi.Input[ServiceServiceConnectConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRegistries")
     def service_registries(
@@ -285,12 +320,16 @@ class ServiceArgs:
     @service_registries.setter
     def service_registries(
         self, value: Optional[pulumi.Input[ServiceServiceRegistriesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sigintRollback")
     def sigint_rollback(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @sigint_rollback.setter
-    def sigint_rollback(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def sigint_rollback(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -299,12 +338,14 @@ class ServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskDefinition")
     def task_definition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_definition.setter
-    def task_definition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_definition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -313,7 +354,8 @@ class ServiceArgs:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeConfiguration")
     def volume_configuration(
@@ -322,7 +364,8 @@ class ServiceArgs:
     @volume_configuration.setter
     def volume_configuration(
         self, value: Optional[pulumi.Input[ServiceVolumeConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcLatticeConfigurations")
     def vpc_lattice_configurations(
@@ -336,12 +379,16 @@ class ServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceVpcLatticeConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForSteadyState")
     def wait_for_steady_state(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_steady_state.setter
-    def wait_for_steady_state(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_steady_state(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServiceState:
@@ -416,12 +463,14 @@ class _ServiceState:
     @pulumi.getter
     def alarms(self) -> Optional[pulumi.Input[ServiceAlarmsArgs]]: ...
     @alarms.setter
-    def alarms(self, value: Optional[pulumi.Input[ServiceAlarmsArgs]]): ...
+    def alarms(self, value: Optional[pulumi.Input[ServiceAlarmsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneRebalancing")
     def availability_zone_rebalancing(
@@ -430,7 +479,8 @@ class _ServiceState:
     @availability_zone_rebalancing.setter
     def availability_zone_rebalancing(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityProviderStrategies")
     def capacity_provider_strategies(
@@ -444,12 +494,14 @@ class _ServiceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceCapacityProviderStrategyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentCircuitBreaker")
     def deployment_circuit_breaker(
@@ -458,7 +510,8 @@ class _ServiceState:
     @deployment_circuit_breaker.setter
     def deployment_circuit_breaker(
         self, value: Optional[pulumi.Input[ServiceDeploymentCircuitBreakerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfiguration")
     def deployment_configuration(
@@ -467,7 +520,8 @@ class _ServiceState:
     @deployment_configuration.setter
     def deployment_configuration(
         self, value: Optional[pulumi.Input[ServiceDeploymentConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentController")
     def deployment_controller(
@@ -476,14 +530,16 @@ class _ServiceState:
     @deployment_controller.setter
     def deployment_controller(
         self, value: Optional[pulumi.Input[ServiceDeploymentControllerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentMaximumPercent")
     def deployment_maximum_percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @deployment_maximum_percent.setter
     def deployment_maximum_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentMinimumHealthyPercent")
     def deployment_minimum_healthy_percent(
@@ -492,34 +548,44 @@ class _ServiceState:
     @deployment_minimum_healthy_percent.setter
     def deployment_minimum_healthy_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredCount")
     def desired_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @desired_count.setter
-    def desired_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def desired_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEcsManagedTags")
     def enable_ecs_managed_tags(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_ecs_managed_tags.setter
     def enable_ecs_managed_tags(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableExecuteCommand")
     def enable_execute_command(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_execute_command.setter
-    def enable_execute_command(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_execute_command(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDelete")
     def force_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete.setter
-    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceNewDeployment")
     def force_new_deployment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_new_deployment.setter
-    def force_new_deployment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_new_deployment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckGracePeriodSeconds")
     def health_check_grace_period_seconds(
@@ -528,17 +594,20 @@ class _ServiceState:
     @health_check_grace_period_seconds.setter
     def health_check_grace_period_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamRole")
     def iam_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_role.setter
-    def iam_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchType")
     def launch_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @launch_type.setter
-    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancers")
     def load_balancers(
@@ -548,12 +617,14 @@ class _ServiceState:
     def load_balancers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ServiceLoadBalancerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -562,7 +633,8 @@ class _ServiceState:
     @network_configuration.setter
     def network_configuration(
         self, value: Optional[pulumi.Input[ServiceNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orderedPlacementStrategies")
     def ordered_placement_strategies(
@@ -576,7 +648,8 @@ class _ServiceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceOrderedPlacementStrategyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementConstraints")
     def placement_constraints(
@@ -590,27 +663,36 @@ class _ServiceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServicePlacementConstraintArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformVersion")
     def platform_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_version.setter
-    def platform_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagateTags")
     def propagate_tags(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @propagate_tags.setter
-    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulingStrategy")
     def scheduling_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scheduling_strategy.setter
-    def scheduling_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scheduling_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceConnectConfiguration")
     def service_connect_configuration(
@@ -619,7 +701,8 @@ class _ServiceState:
     @service_connect_configuration.setter
     def service_connect_configuration(
         self, value: Optional[pulumi.Input[ServiceServiceConnectConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRegistries")
     def service_registries(
@@ -628,12 +711,16 @@ class _ServiceState:
     @service_registries.setter
     def service_registries(
         self, value: Optional[pulumi.Input[ServiceServiceRegistriesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sigintRollback")
     def sigint_rollback(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @sigint_rollback.setter
-    def sigint_rollback(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def sigint_rollback(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -642,7 +729,8 @@ class _ServiceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -651,12 +739,14 @@ class _ServiceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskDefinition")
     def task_definition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_definition.setter
-    def task_definition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_definition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -665,7 +755,8 @@ class _ServiceState:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeConfiguration")
     def volume_configuration(
@@ -674,7 +765,8 @@ class _ServiceState:
     @volume_configuration.setter
     def volume_configuration(
         self, value: Optional[pulumi.Input[ServiceVolumeConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcLatticeConfigurations")
     def vpc_lattice_configurations(
@@ -688,12 +780,16 @@ class _ServiceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceVpcLatticeConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForSteadyState")
     def wait_for_steady_state(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_steady_state.setter
-    def wait_for_steady_state(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_steady_state(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ecs/service:Service")
 class Service(pulumi.CustomResource):

@@ -86,7 +86,8 @@ class GetVpnGatewayResult:
     def vpn_gateway_scale_unit(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetVpnGatewayResult(GetVpnGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnGatewayResult]:
+        ...
 
 def get_vpn_gateway(
     gateway_name: Optional[_builtins.str] = ...,

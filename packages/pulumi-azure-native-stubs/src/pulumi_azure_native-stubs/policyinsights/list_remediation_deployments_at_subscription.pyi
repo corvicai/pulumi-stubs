@@ -26,7 +26,10 @@ class ListRemediationDeploymentsAtSubscriptionResult:
 class AwaitableListRemediationDeploymentsAtSubscriptionResult(
     ListRemediationDeploymentsAtSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListRemediationDeploymentsAtSubscriptionResult]:
+        ...
 
 def list_remediation_deployments_at_subscription(
     remediation_name: Optional[_builtins.str] = ...,

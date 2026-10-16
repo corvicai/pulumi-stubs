@@ -88,7 +88,8 @@ class GetFactoryResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetFactoryResult(GetFactoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFactoryResult]:
+        ...
 
 def get_factory(
     factory_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,10 @@ class GetLambdaFunctionCodeLocationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLambdaFunctionCodeLocationResult(GetLambdaFunctionCodeLocationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLambdaFunctionCodeLocationResult]:
+        ...
 
 def get_lambda_function_code_location(
     name: Optional[_builtins.str] = ...,

@@ -59,7 +59,8 @@ class GetRegistrationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistrationResult(GetRegistrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistrationResult]:
+        ...
 
 def get_registration(
     registration_name: Optional[_builtins.str] = ...,

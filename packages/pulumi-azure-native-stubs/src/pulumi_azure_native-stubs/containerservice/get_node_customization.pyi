@@ -56,7 +56,8 @@ class GetNodeCustomizationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNodeCustomizationResult(GetNodeCustomizationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNodeCustomizationResult]:
+        ...
 
 def get_node_customization(
     node_customization_name: Optional[_builtins.str] = ...,

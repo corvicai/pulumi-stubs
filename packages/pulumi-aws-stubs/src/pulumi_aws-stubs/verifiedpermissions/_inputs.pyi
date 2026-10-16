@@ -71,7 +71,8 @@ class IdentitySourceConfigurationArgs:
         value: Optional[
             pulumi.Input[IdentitySourceConfigurationCognitoUserPoolConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openIdConnectConfiguration")
     def open_id_connect_configuration(
@@ -85,7 +86,8 @@ class IdentitySourceConfigurationArgs:
         value: Optional[
             pulumi.Input[IdentitySourceConfigurationOpenIdConnectConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentitySourceConfigurationCognitoUserPoolConfigurationArgsDict(TypedDict):
     user_pool_arn: pulumi.Input[_builtins.str]
@@ -113,7 +115,8 @@ class IdentitySourceConfigurationCognitoUserPoolConfigurationArgs:
     @pulumi.getter(name="userPoolArn")
     def user_pool_arn(self) -> pulumi.Input[_builtins.str]: ...
     @user_pool_arn.setter
-    def user_pool_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def user_pool_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIds")
     def client_ids(
@@ -122,7 +125,8 @@ class IdentitySourceConfigurationCognitoUserPoolConfigurationArgs:
     @client_ids.setter
     def client_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupConfiguration")
     def group_configuration(
@@ -140,7 +144,8 @@ class IdentitySourceConfigurationCognitoUserPoolConfigurationArgs:
                 IdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationArgsDict(
     TypedDict
@@ -156,7 +161,8 @@ class IdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationA
     @pulumi.getter(name="groupEntityType")
     def group_entity_type(self) -> pulumi.Input[_builtins.str]: ...
     @group_entity_type.setter
-    def group_entity_type(self, value: pulumi.Input[_builtins.str]): ...
+    def group_entity_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class IdentitySourceConfigurationOpenIdConnectConfigurationArgsDict(TypedDict):
     issuer: pulumi.Input[_builtins.str]
@@ -190,7 +196,8 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationArgs:
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenSelection")
     def token_selection(
@@ -204,12 +211,16 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationArgs:
         value: pulumi.Input[
             IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityIdPrefix")
     def entity_id_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @entity_id_prefix.setter
-    def entity_id_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def entity_id_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupConfiguration")
     def group_configuration(
@@ -227,7 +238,8 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationArgs:
                 IdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationArgsDict(
     TypedDict
@@ -247,12 +259,14 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationArg
     @pulumi.getter(name="groupClaim")
     def group_claim(self) -> pulumi.Input[_builtins.str]: ...
     @group_claim.setter
-    def group_claim(self, value: pulumi.Input[_builtins.str]): ...
+    def group_claim(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupEntityType")
     def group_entity_type(self) -> pulumi.Input[_builtins.str]: ...
     @group_entity_type.setter
-    def group_entity_type(self, value: pulumi.Input[_builtins.str]): ...
+    def group_entity_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionArgsDict(
     TypedDict
@@ -301,7 +315,8 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionArgs:
                 IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityTokenOnly")
     def identity_token_only(
@@ -319,7 +334,8 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionArgs:
                 IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyArgsDict(
     TypedDict
@@ -343,12 +359,16 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessT
     @audiences.setter
     def audiences(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalIdClaim")
     def principal_id_claim(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal_id_claim.setter
-    def principal_id_claim(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal_id_claim(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyArgsDict(
     TypedDict
@@ -372,12 +392,16 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentit
     @client_ids.setter
     def client_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalIdClaim")
     def principal_id_claim(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal_id_claim.setter
-    def principal_id_claim(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal_id_claim(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PolicyDefinitionArgsDict(TypedDict):
     static: NotRequired[pulumi.Input[PolicyDefinitionStaticArgsDict]]
@@ -397,7 +421,10 @@ class PolicyDefinitionArgs:
     @pulumi.getter
     def static(self) -> Optional[pulumi.Input[PolicyDefinitionStaticArgs]]: ...
     @static.setter
-    def static(self, value: Optional[pulumi.Input[PolicyDefinitionStaticArgs]]): ...
+    def static(
+        self, value: Optional[pulumi.Input[PolicyDefinitionStaticArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateLinked")
     def template_linked(
@@ -406,7 +433,8 @@ class PolicyDefinitionArgs:
     @template_linked.setter
     def template_linked(
         self, value: Optional[pulumi.Input[PolicyDefinitionTemplateLinkedArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicyDefinitionStaticArgsDict(TypedDict):
     statement: pulumi.Input[_builtins.str]
@@ -424,12 +452,14 @@ class PolicyDefinitionStaticArgs:
     @pulumi.getter
     def statement(self) -> pulumi.Input[_builtins.str]: ...
     @statement.setter
-    def statement(self, value: pulumi.Input[_builtins.str]): ...
+    def statement(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PolicyDefinitionTemplateLinkedArgsDict(TypedDict):
     policy_template_id: pulumi.Input[_builtins.str]
@@ -455,7 +485,8 @@ class PolicyDefinitionTemplateLinkedArgs:
     @pulumi.getter(name="policyTemplateId")
     def policy_template_id(self) -> pulumi.Input[_builtins.str]: ...
     @policy_template_id.setter
-    def policy_template_id(self, value: pulumi.Input[_builtins.str]): ...
+    def policy_template_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principal(
@@ -464,7 +495,8 @@ class PolicyDefinitionTemplateLinkedArgs:
     @principal.setter
     def principal(
         self, value: Optional[pulumi.Input[PolicyDefinitionTemplateLinkedPrincipalArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resource(
@@ -473,7 +505,8 @@ class PolicyDefinitionTemplateLinkedArgs:
     @resource.setter
     def resource(
         self, value: Optional[pulumi.Input[PolicyDefinitionTemplateLinkedResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicyDefinitionTemplateLinkedPrincipalArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
@@ -491,12 +524,14 @@ class PolicyDefinitionTemplateLinkedPrincipalArgs:
     @pulumi.getter(name="entityId")
     def entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @entity_id.setter
-    def entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityType")
     def entity_type(self) -> pulumi.Input[_builtins.str]: ...
     @entity_type.setter
-    def entity_type(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PolicyDefinitionTemplateLinkedResourceArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
@@ -514,12 +549,14 @@ class PolicyDefinitionTemplateLinkedResourceArgs:
     @pulumi.getter(name="entityId")
     def entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @entity_id.setter
-    def entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityType")
     def entity_type(self) -> pulumi.Input[_builtins.str]: ...
     @entity_type.setter
-    def entity_type(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PolicyStoreValidationSettingsArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
@@ -531,7 +568,8 @@ class PolicyStoreValidationSettingsArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SchemaDefinitionArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
@@ -543,4 +581,5 @@ class SchemaDefinitionArgs:
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

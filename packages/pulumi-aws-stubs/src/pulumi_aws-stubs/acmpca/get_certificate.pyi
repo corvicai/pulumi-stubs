@@ -43,7 +43,8 @@ class GetCertificateResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetCertificateResult(GetCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateResult]:
+        ...
 
 def get_certificate(
     arn: Optional[_builtins.str] = ...,

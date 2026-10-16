@@ -37,19 +37,24 @@ class BudgetComparisonExpressionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, BudgetOperatorType]]: ...
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, BudgetOperatorType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class BudgetFilterPropertiesArgsDict(TypedDict):
     dimensions: NotRequired[pulumi.Input[BudgetComparisonExpressionArgsDict]]
@@ -69,12 +74,16 @@ class BudgetFilterPropertiesArgs:
     @dimensions.setter
     def dimensions(
         self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[BudgetComparisonExpressionArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
+    ):  # -> None:
+        ...
 
 class BudgetFilterArgsDict(TypedDict):
     and_: NotRequired[
@@ -105,19 +114,24 @@ class BudgetFilterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BudgetFilterPropertiesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimensions(self) -> Optional[pulumi.Input[BudgetComparisonExpressionArgs]]: ...
     @dimensions.setter
     def dimensions(
         self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[BudgetComparisonExpressionArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
+    ):  # -> None:
+        ...
 
 class BudgetTimePeriodArgsDict(TypedDict):
     start_date: pulumi.Input[_builtins.str]
@@ -135,12 +149,14 @@ class BudgetTimePeriodArgs:
     @pulumi.getter(name="startDate")
     def start_date(self) -> pulumi.Input[_builtins.str]: ...
     @start_date.setter
-    def start_date(self, value: pulumi.Input[_builtins.str]): ...
+    def start_date(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endDate")
     def end_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_date.setter
-    def end_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class NotificationArgsDict(TypedDict):
     contact_emails: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -178,22 +194,28 @@ class NotificationArgs:
     @contact_emails.setter
     def contact_emails(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, OperatorType]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, OperatorType]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, OperatorType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def threshold(self) -> pulumi.Input[_builtins.float]: ...
     @threshold.setter
-    def threshold(self, value: pulumi.Input[_builtins.float]): ...
+    def threshold(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactGroups")
     def contact_groups(
@@ -202,7 +224,8 @@ class NotificationArgs:
     @contact_groups.setter
     def contact_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactRoles")
     def contact_roles(
@@ -211,14 +234,16 @@ class NotificationArgs:
     @contact_roles.setter
     def contact_roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locale(self) -> Optional[pulumi.Input[Union[_builtins.str, CultureCode]]]: ...
     @locale.setter
     def locale(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CultureCode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdType")
     def threshold_type(
@@ -227,4 +252,5 @@ class NotificationArgs:
     @threshold_type.setter
     def threshold_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ThresholdType]]]
-    ): ...
+    ):  # -> None:
+        ...

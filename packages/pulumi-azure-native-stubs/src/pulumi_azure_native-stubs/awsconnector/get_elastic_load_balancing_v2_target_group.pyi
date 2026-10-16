@@ -56,7 +56,10 @@ class GetElasticLoadBalancingV2TargetGroupResult:
 class AwaitableGetElasticLoadBalancingV2TargetGroupResult(
     GetElasticLoadBalancingV2TargetGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetElasticLoadBalancingV2TargetGroupResult]:
+        ...
 
 def get_elastic_load_balancing_v2_target_group(
     name: Optional[_builtins.str] = ...,

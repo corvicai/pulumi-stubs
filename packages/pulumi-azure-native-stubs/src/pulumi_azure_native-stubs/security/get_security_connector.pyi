@@ -76,7 +76,8 @@ class GetSecurityConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityConnectorResult(GetSecurityConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityConnectorResult]:
+        ...
 
 def get_security_connector(
     resource_group_name: Optional[_builtins.str] = ...,

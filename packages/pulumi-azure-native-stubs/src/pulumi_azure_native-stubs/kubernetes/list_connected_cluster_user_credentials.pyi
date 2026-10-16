@@ -27,7 +27,10 @@ class ListConnectedClusterUserCredentialsResult:
 class AwaitableListConnectedClusterUserCredentialsResult(
     ListConnectedClusterUserCredentialsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListConnectedClusterUserCredentialsResult]:
+        ...
 
 def list_connected_cluster_user_credentials(
     authentication_method: Optional[Union[_builtins.str, AuthenticationMethod]] = ...,

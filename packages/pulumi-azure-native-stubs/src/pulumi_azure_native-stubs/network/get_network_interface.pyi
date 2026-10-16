@@ -150,7 +150,8 @@ class GetNetworkInterfaceResult:
     def workload_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNetworkInterfaceResult(GetNetworkInterfaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkInterfaceResult]:
+        ...
 
 def get_network_interface(
     expand: Optional[_builtins.str] = ...,

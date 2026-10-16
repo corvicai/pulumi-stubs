@@ -39,7 +39,8 @@ class GetApmResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApmResult(GetApmResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApmResult]:
+        ...
 
 def get_apm(
     apm_name: Optional[_builtins.str] = ...,

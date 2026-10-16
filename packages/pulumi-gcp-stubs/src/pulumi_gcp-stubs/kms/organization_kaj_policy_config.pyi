@@ -25,7 +25,8 @@ class OrganizationKajPolicyConfigArgs:
     @pulumi.getter
     def organization(self) -> pulumi.Input[_builtins.str]: ...
     @organization.setter
-    def organization(self, value: pulumi.Input[_builtins.str]): ...
+    def organization(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultKeyAccessJustificationPolicy")
     def default_key_access_justification_policy(
@@ -41,7 +42,8 @@ class OrganizationKajPolicyConfigArgs:
                 OrganizationKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OrganizationKajPolicyConfigState:
@@ -70,12 +72,14 @@ class _OrganizationKajPolicyConfigState:
                 OrganizationKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def organization(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization.setter
-    def organization(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organization(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OrganizationKajPolicyConfig(pulumi.CustomResource):

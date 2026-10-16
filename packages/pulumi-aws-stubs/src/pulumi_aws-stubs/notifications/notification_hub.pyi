@@ -21,12 +21,16 @@ class NotificationHubArgs:
     @pulumi.getter(name="notificationHubRegion")
     def notification_hub_region(self) -> pulumi.Input[_builtins.str]: ...
     @notification_hub_region.setter
-    def notification_hub_region(self, value: pulumi.Input[_builtins.str]): ...
+    def notification_hub_region(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[NotificationHubTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[NotificationHubTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[NotificationHubTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _NotificationHubState:
@@ -40,12 +44,18 @@ class _NotificationHubState:
     @pulumi.getter(name="notificationHubRegion")
     def notification_hub_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @notification_hub_region.setter
-    def notification_hub_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def notification_hub_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[NotificationHubTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[NotificationHubTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[NotificationHubTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:notifications/notificationHub:NotificationHub")
 class NotificationHub(pulumi.CustomResource):

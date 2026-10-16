@@ -82,7 +82,8 @@ class GetEventHubResult:
     def user_metadata(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetEventHubResult(GetEventHubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventHubResult]:
+        ...
 
 def get_event_hub(
     event_hub_name: Optional[_builtins.str] = ...,

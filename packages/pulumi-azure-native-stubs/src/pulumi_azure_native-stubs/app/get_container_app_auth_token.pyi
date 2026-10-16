@@ -52,7 +52,8 @@ class GetContainerAppAuthTokenResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContainerAppAuthTokenResult(GetContainerAppAuthTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerAppAuthTokenResult]:
+        ...
 
 def get_container_app_auth_token(
     container_app_name: Optional[_builtins.str] = ...,

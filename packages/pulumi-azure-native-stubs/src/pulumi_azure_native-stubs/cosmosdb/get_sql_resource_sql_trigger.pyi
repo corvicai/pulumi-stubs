@@ -48,7 +48,8 @@ class GetSqlResourceSqlTriggerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlResourceSqlTriggerResult(GetSqlResourceSqlTriggerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlResourceSqlTriggerResult]:
+        ...
 
 def get_sql_resource_sql_trigger(
     account_name: Optional[_builtins.str] = ...,

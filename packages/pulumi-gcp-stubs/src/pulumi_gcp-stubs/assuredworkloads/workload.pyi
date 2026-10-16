@@ -38,39 +38,48 @@ class WorkloadArgs:
     @pulumi.getter(name="complianceRegime")
     def compliance_regime(self) -> pulumi.Input[_builtins.str]: ...
     @compliance_regime.setter
-    def compliance_regime(self, value: pulumi.Input[_builtins.str]): ...
+    def compliance_regime(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def organization(self) -> pulumi.Input[_builtins.str]: ...
     @organization.setter
-    def organization(self, value: pulumi.Input[_builtins.str]): ...
+    def organization(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="billingAccount")
     def billing_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @billing_account.setter
-    def billing_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def billing_account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableSovereignControls")
     def enable_sovereign_controls(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_sovereign_controls.setter
     def enable_sovereign_controls(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsSettings")
     def kms_settings(self) -> Optional[pulumi.Input[WorkloadKmsSettingsArgs]]: ...
     @kms_settings.setter
-    def kms_settings(self, value: Optional[pulumi.Input[WorkloadKmsSettingsArgs]]): ...
+    def kms_settings(
+        self, value: Optional[pulumi.Input[WorkloadKmsSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -79,12 +88,14 @@ class WorkloadArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def partner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partner.setter
-    def partner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def partner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerPermissions")
     def partner_permissions(
@@ -93,7 +104,8 @@ class WorkloadArgs:
     @partner_permissions.setter
     def partner_permissions(
         self, value: Optional[pulumi.Input[WorkloadPartnerPermissionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerServicesBillingAccount")
     def partner_services_billing_account(
@@ -102,14 +114,16 @@ class WorkloadArgs:
     @partner_services_billing_account.setter
     def partner_services_billing_account(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedResourcesParent")
     def provisioned_resources_parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioned_resources_parent.setter
     def provisioned_resources_parent(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSettings")
     def resource_settings(
@@ -123,7 +137,8 @@ class WorkloadArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadResourceSettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="violationNotificationsEnabled")
     def violation_notifications_enabled(
@@ -132,7 +147,8 @@ class WorkloadArgs:
     @violation_notifications_enabled.setter
     def violation_notifications_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadOptions")
     def workload_options(
@@ -141,7 +157,8 @@ class WorkloadArgs:
     @workload_options.setter
     def workload_options(
         self, value: Optional[pulumi.Input[WorkloadWorkloadOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WorkloadState:
@@ -196,12 +213,16 @@ class _WorkloadState:
     @pulumi.getter(name="billingAccount")
     def billing_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @billing_account.setter
-    def billing_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def billing_account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceRegime")
     def compliance_regime(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compliance_regime.setter
-    def compliance_regime(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compliance_regime(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceStatuses")
     def compliance_statuses(
@@ -215,7 +236,8 @@ class _WorkloadState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadComplianceStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="compliantButDisallowedServices")
     def compliant_but_disallowed_services(
@@ -224,17 +246,20 @@ class _WorkloadState:
     @compliant_but_disallowed_services.setter
     def compliant_but_disallowed_services(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -243,7 +268,8 @@ class _WorkloadState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ekmProvisioningResponses")
     def ekm_provisioning_responses(
@@ -257,24 +283,32 @@ class _WorkloadState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadEkmProvisioningResponseArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableSovereignControls")
     def enable_sovereign_controls(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_sovereign_controls.setter
     def enable_sovereign_controls(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kajEnrollmentState")
     def kaj_enrollment_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kaj_enrollment_state.setter
-    def kaj_enrollment_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kaj_enrollment_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsSettings")
     def kms_settings(self) -> Optional[pulumi.Input[WorkloadKmsSettingsArgs]]: ...
     @kms_settings.setter
-    def kms_settings(self, value: Optional[pulumi.Input[WorkloadKmsSettingsArgs]]): ...
+    def kms_settings(
+        self, value: Optional[pulumi.Input[WorkloadKmsSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -283,27 +317,32 @@ class _WorkloadState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def organization(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization.setter
-    def organization(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organization(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def partner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partner.setter
-    def partner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def partner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerPermissions")
     def partner_permissions(
@@ -312,7 +351,8 @@ class _WorkloadState:
     @partner_permissions.setter
     def partner_permissions(
         self, value: Optional[pulumi.Input[WorkloadPartnerPermissionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerServicesBillingAccount")
     def partner_services_billing_account(
@@ -321,14 +361,16 @@ class _WorkloadState:
     @partner_services_billing_account.setter
     def partner_services_billing_account(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedResourcesParent")
     def provisioned_resources_parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioned_resources_parent.setter
     def provisioned_resources_parent(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -337,7 +379,8 @@ class _WorkloadState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSettings")
     def resource_settings(
@@ -351,7 +394,8 @@ class _WorkloadState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadResourceSettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -361,7 +405,8 @@ class _WorkloadState:
     def resources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[WorkloadResourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="saaEnrollmentResponses")
     def saa_enrollment_responses(
@@ -375,7 +420,8 @@ class _WorkloadState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadSaaEnrollmentResponseArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="violationNotificationsEnabled")
     def violation_notifications_enabled(
@@ -384,7 +430,8 @@ class _WorkloadState:
     @violation_notifications_enabled.setter
     def violation_notifications_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadOptions")
     def workload_options(
@@ -393,7 +440,8 @@ class _WorkloadState:
     @workload_options.setter
     def workload_options(
         self, value: Optional[pulumi.Input[WorkloadWorkloadOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:assuredworkloads/workload:Workload")
 class Workload(pulumi.CustomResource):

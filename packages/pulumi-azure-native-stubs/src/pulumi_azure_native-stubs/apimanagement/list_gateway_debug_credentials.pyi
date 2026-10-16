@@ -21,7 +21,8 @@ class ListGatewayDebugCredentialsResult:
     def token(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListGatewayDebugCredentialsResult(ListGatewayDebugCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListGatewayDebugCredentialsResult]:
+        ...
 
 def list_gateway_debug_credentials(
     api_id: Optional[_builtins.str] = ...,

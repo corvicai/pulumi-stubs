@@ -35,7 +35,8 @@ class GetMachineTypesResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetMachineTypesResult(GetMachineTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMachineTypesResult]:
+        ...
 
 def get_machine_types(
     filter: Optional[_builtins.str] = ...,

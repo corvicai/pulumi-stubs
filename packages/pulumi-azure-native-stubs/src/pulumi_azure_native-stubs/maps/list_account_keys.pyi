@@ -35,7 +35,8 @@ class ListAccountKeysResult:
     def secondary_key_last_updated(self) -> _builtins.str: ...
 
 class AwaitableListAccountKeysResult(ListAccountKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccountKeysResult]:
+        ...
 
 def list_account_keys(
     account_name: Optional[_builtins.str] = ...,

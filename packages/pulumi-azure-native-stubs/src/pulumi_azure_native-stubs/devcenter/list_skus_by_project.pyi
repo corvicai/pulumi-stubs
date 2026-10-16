@@ -24,7 +24,8 @@ class ListSkusByProjectResult:
     def value(self) -> Sequence[outputs.DevCenterSkuResponse]: ...
 
 class AwaitableListSkusByProjectResult(ListSkusByProjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListSkusByProjectResult]:
+        ...
 
 def list_skus_by_project(
     project_name: Optional[_builtins.str] = ...,

@@ -92,7 +92,8 @@ class GetAccessControlListResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAccessControlListResult(GetAccessControlListResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessControlListResult]:
+        ...
 
 def get_access_control_list(
     access_control_list_name: Optional[_builtins.str] = ...,

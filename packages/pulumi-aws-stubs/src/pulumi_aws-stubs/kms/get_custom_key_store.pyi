@@ -51,7 +51,8 @@ class GetCustomKeyStoreResult:
     def trust_anchor_certificate(self) -> _builtins.str: ...
 
 class AwaitableGetCustomKeyStoreResult(GetCustomKeyStoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomKeyStoreResult]:
+        ...
 
 def get_custom_key_store(
     custom_key_store_id: Optional[_builtins.str] = ...,

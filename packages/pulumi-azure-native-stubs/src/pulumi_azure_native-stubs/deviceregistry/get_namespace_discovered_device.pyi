@@ -92,7 +92,10 @@ class GetNamespaceDiscoveredDeviceResult:
     def version(self) -> _builtins.float: ...
 
 class AwaitableGetNamespaceDiscoveredDeviceResult(GetNamespaceDiscoveredDeviceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNamespaceDiscoveredDeviceResult]:
+        ...
 
 def get_namespace_discovered_device(
     discovered_device_name: Optional[_builtins.str] = ...,

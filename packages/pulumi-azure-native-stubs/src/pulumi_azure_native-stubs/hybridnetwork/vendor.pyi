@@ -17,7 +17,8 @@ class VendorArgs:
     @pulumi.getter(name="vendorName")
     def vendor_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vendor_name.setter
-    def vendor_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vendor_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:hybridnetwork:Vendor")
 class Vendor(pulumi.CustomResource):

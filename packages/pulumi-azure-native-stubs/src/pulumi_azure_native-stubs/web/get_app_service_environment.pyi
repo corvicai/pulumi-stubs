@@ -132,7 +132,8 @@ class GetAppServiceEnvironmentResult:
     def zone_redundant(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetAppServiceEnvironmentResult(GetAppServiceEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppServiceEnvironmentResult]:
+        ...
 
 def get_app_service_environment(
     name: Optional[_builtins.str] = ...,

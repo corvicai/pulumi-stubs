@@ -44,7 +44,8 @@ class GetLabelingJobResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLabelingJobResult(GetLabelingJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLabelingJobResult]:
+        ...
 
 def get_labeling_job(
     id: Optional[_builtins.str] = ...,

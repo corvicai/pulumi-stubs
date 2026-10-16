@@ -33,12 +33,14 @@ class ServiceGatewayArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTargetAddress")
     def route_target_address(
@@ -47,7 +49,8 @@ class ServiceGatewayArgs:
     @route_target_address.setter
     def route_target_address(
         self, value: Optional[pulumi.Input[RouteTargetAddressPropertiesFormatArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTargetAddressV6")
     def route_target_address_v6(
@@ -56,17 +59,22 @@ class ServiceGatewayArgs:
     @route_target_address_v6.setter
     def route_target_address_v6(
         self, value: Optional[pulumi.Input[RouteTargetAddressPropertiesFormatArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceGatewayName")
     def service_gateway_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_gateway_name.setter
-    def service_gateway_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_gateway_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[ServiceGatewaySkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[ServiceGatewaySkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[ServiceGatewaySkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -75,12 +83,16 @@ class ServiceGatewayArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetwork")
     def virtual_network(self) -> Optional[pulumi.Input[VirtualNetworkArgs]]: ...
     @virtual_network.setter
-    def virtual_network(self, value: Optional[pulumi.Input[VirtualNetworkArgs]]): ...
+    def virtual_network(
+        self, value: Optional[pulumi.Input[VirtualNetworkArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -89,7 +101,8 @@ class ServiceGatewayArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:ServiceGateway")
 class ServiceGateway(pulumi.CustomResource):

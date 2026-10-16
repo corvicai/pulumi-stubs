@@ -25,12 +25,14 @@ class SubscriptionFeatureRegistrationArgs:
     @pulumi.getter(name="providerNamespace")
     def provider_namespace(self) -> pulumi.Input[_builtins.str]: ...
     @provider_namespace.setter
-    def provider_namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureName")
     def feature_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @feature_name.setter
-    def feature_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def feature_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -40,7 +42,8 @@ class SubscriptionFeatureRegistrationArgs:
     def properties(
         self,
         value: Optional[pulumi.Input[SubscriptionFeatureRegistrationPropertiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SubscriptionFeatureRegistration(pulumi.CustomResource):

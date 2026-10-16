@@ -35,7 +35,8 @@ class GetRegionalParametersResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetRegionalParametersResult(GetRegionalParametersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionalParametersResult]:
+        ...
 
 def get_regional_parameters(
     filter: Optional[_builtins.str] = ...,

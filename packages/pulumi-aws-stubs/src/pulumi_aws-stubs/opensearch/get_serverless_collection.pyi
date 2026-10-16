@@ -79,7 +79,8 @@ class GetServerlessCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerlessCollectionResult(GetServerlessCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerlessCollectionResult]:
+        ...
 
 def get_serverless_collection(
     id: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class DataPlaneProxyPropertiesArgs:
     @authentication_mode.setter
     def authentication_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthenticationMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkDelegation")
     def private_link_delegation(
@@ -60,7 +61,8 @@ class DataPlaneProxyPropertiesArgs:
     @private_link_delegation.setter
     def private_link_delegation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateLinkDelegation]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionPropertiesArgsDict(TypedDict):
     key_vault_properties: NotRequired[pulumi.Input[KeyVaultPropertiesArgsDict]]
@@ -80,7 +82,8 @@ class EncryptionPropertiesArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[KeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KeyVaultPropertiesArgsDict(TypedDict):
     identity_client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -98,12 +101,16 @@ class KeyVaultPropertiesArgs:
     @pulumi.getter(name="identityClientId")
     def identity_client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_client_id.setter
-    def identity_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_client_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyIdentifier")
     def key_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_identifier.setter
-    def key_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_identifier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateEndpointArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -117,7 +124,8 @@ class PrivateEndpointArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -135,7 +143,8 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -144,7 +153,8 @@ class PrivateLinkServiceConnectionStateArgs:
     @status.setter
     def status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, IdentityType]]]
@@ -168,7 +178,8 @@ class ResourceIdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -177,7 +188,8 @@ class ResourceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -189,4 +201,5 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

@@ -66,7 +66,10 @@ class GetVirtualNetworkGatewayNatRuleResult:
 class AwaitableGetVirtualNetworkGatewayNatRuleResult(
     GetVirtualNetworkGatewayNatRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayNatRuleResult]:
+        ...
 
 def get_virtual_network_gateway_nat_rule(
     nat_rule_name: Optional[_builtins.str] = ...,

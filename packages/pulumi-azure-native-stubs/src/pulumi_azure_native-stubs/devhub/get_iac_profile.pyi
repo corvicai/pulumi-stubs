@@ -106,7 +106,8 @@ class GetIacProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIacProfileResult(GetIacProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIacProfileResult]:
+        ...
 
 def get_iac_profile(
     iac_profile_name: Optional[_builtins.str] = ...,

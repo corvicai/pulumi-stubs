@@ -462,7 +462,8 @@ class GetClusterResult:
     ) -> Sequence[outputs.GetClusterWorkloadIdentityConfigResult]: ...
 
 class AwaitableGetClusterResult(GetClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterResult]:
+        ...
 
 def get_cluster(
     location: Optional[_builtins.str] = ...,

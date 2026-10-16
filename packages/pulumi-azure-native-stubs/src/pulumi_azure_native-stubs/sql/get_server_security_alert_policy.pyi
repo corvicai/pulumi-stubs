@@ -72,7 +72,10 @@ class GetServerSecurityAlertPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerSecurityAlertPolicyResult(GetServerSecurityAlertPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServerSecurityAlertPolicyResult]:
+        ...
 
 def get_server_security_alert_policy(
     resource_group_name: Optional[_builtins.str] = ...,

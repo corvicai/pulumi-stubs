@@ -196,7 +196,8 @@ class GetManagedInstanceResult:
     def zone_redundant(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetManagedInstanceResult(GetManagedInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedInstanceResult]:
+        ...
 
 def get_managed_instance(
     expand: Optional[_builtins.str] = ...,

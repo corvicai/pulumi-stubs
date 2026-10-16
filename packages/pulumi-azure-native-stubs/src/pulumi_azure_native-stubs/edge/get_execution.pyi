@@ -54,7 +54,8 @@ class GetExecutionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetExecutionResult(GetExecutionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExecutionResult]:
+        ...
 
 def get_execution(
     context_name: Optional[_builtins.str] = ...,

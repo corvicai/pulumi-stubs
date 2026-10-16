@@ -59,7 +59,8 @@ class GetReservedInstanceOfferingResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetReservedInstanceOfferingResult(GetReservedInstanceOfferingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReservedInstanceOfferingResult]:
+        ...
 
 def get_reserved_instance_offering(
     db_instance_class: Optional[_builtins.str] = ...,

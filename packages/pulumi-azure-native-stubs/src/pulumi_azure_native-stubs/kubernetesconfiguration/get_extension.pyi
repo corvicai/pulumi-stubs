@@ -112,7 +112,8 @@ class GetExtensionResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetExtensionResult(GetExtensionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExtensionResult]:
+        ...
 
 def get_extension(
     cluster_name: Optional[_builtins.str] = ...,

@@ -79,7 +79,8 @@ class GetSensitivityLabelResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSensitivityLabelResult(GetSensitivityLabelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSensitivityLabelResult]:
+        ...
 
 def get_sensitivity_label(
     column_name: Optional[_builtins.str] = ...,

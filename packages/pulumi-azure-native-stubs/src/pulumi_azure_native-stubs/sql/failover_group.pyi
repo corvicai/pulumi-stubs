@@ -37,7 +37,8 @@ class FailoverGroupArgs:
     @partner_servers.setter
     def partner_servers(
         self, value: pulumi.Input[Sequence[pulumi.Input[PartnerInfoArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readWriteEndpoint")
     def read_write_endpoint(
@@ -46,17 +47,20 @@ class FailoverGroupArgs:
     @read_write_endpoint.setter
     def read_write_endpoint(
         self, value: pulumi.Input[FailoverGroupReadWriteEndpointArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> pulumi.Input[_builtins.str]: ...
     @server_name.setter
-    def server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def databases(
@@ -65,12 +69,16 @@ class FailoverGroupArgs:
     @databases.setter
     def databases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverGroupName")
     def failover_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failover_group_name.setter
-    def failover_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failover_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readOnlyEndpoint")
     def read_only_endpoint(
@@ -79,7 +87,8 @@ class FailoverGroupArgs:
     @read_only_endpoint.setter
     def read_only_endpoint(
         self, value: Optional[pulumi.Input[FailoverGroupReadOnlyEndpointArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryType")
     def secondary_type(
@@ -93,7 +102,8 @@ class FailoverGroupArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, FailoverGroupDatabasesSecondaryType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -102,7 +112,8 @@ class FailoverGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:sql:FailoverGroup")
 class FailoverGroup(pulumi.CustomResource):

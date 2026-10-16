@@ -51,7 +51,8 @@ class GetGeoBackupPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGeoBackupPolicyResult(GetGeoBackupPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGeoBackupPolicyResult]:
+        ...
 
 def get_geo_backup_policy(
     database_name: Optional[_builtins.str] = ...,

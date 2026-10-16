@@ -53,7 +53,10 @@ class GetRegionalSecretVersionAccessResult:
 class AwaitableGetRegionalSecretVersionAccessResult(
     GetRegionalSecretVersionAccessResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegionalSecretVersionAccessResult]:
+        ...
 
 def get_regional_secret_version_access(
     is_secret_data_base64: Optional[_builtins.bool] = ...,

@@ -124,7 +124,8 @@ class GetSnapshotResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetSnapshotResult(GetSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotResult]:
+        ...
 
 def get_snapshot(
     filter: Optional[_builtins.str] = ...,

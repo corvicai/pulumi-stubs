@@ -140,7 +140,8 @@ class GetServiceResult:
     def upgrade_available(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetServiceResult(GetServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceResult]:
+        ...
 
 def get_service(
     resource_group_name: Optional[_builtins.str] = ...,

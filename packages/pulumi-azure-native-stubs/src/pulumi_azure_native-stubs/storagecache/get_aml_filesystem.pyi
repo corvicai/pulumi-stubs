@@ -104,7 +104,8 @@ class GetAmlFilesystemResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetAmlFilesystemResult(GetAmlFilesystemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAmlFilesystemResult]:
+        ...
 
 def get_aml_filesystem(
     aml_filesystem_name: Optional[_builtins.str] = ...,

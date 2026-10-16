@@ -14,7 +14,8 @@ class AccountAliasArgs:
     @pulumi.getter(name="accountAlias")
     def account_alias(self) -> pulumi.Input[_builtins.str]: ...
     @account_alias.setter
-    def account_alias(self, value: pulumi.Input[_builtins.str]): ...
+    def account_alias(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccountAliasState:
@@ -25,7 +26,8 @@ class _AccountAliasState:
     @pulumi.getter(name="accountAlias")
     def account_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_alias.setter
-    def account_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_alias(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:iam/accountAlias:AccountAlias")
 class AccountAlias(pulumi.CustomResource):

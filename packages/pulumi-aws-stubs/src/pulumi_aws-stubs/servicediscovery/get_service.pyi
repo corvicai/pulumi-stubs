@@ -64,7 +64,8 @@ class GetServiceResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetServiceResult(GetServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceResult]:
+        ...
 
 def get_service(
     name: Optional[_builtins.str] = ...,

@@ -25,12 +25,14 @@ class VariableArgs:
     @columns.setter
     def columns(
         self, value: pulumi.Input[Sequence[pulumi.Input[PolicyVariableColumnArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="variableName")
     def variable_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @variable_name.setter
-    def variable_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def variable_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:authorization:Variable")
 class Variable(pulumi.CustomResource):

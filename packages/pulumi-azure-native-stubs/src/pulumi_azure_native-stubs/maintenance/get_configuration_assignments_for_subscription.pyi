@@ -60,7 +60,10 @@ class GetConfigurationAssignmentsForSubscriptionResult:
 class AwaitableGetConfigurationAssignmentsForSubscriptionResult(
     GetConfigurationAssignmentsForSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigurationAssignmentsForSubscriptionResult]:
+        ...
 
 def get_configuration_assignments_for_subscription(
     configuration_assignment_name: Optional[_builtins.str] = ...,

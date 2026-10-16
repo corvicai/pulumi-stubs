@@ -56,7 +56,8 @@ class GetPublisherResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPublisherResult(GetPublisherResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublisherResult]:
+        ...
 
 def get_publisher(
     publisher_name: Optional[_builtins.str] = ...,

@@ -29,12 +29,14 @@ class AccountConnectorArgs:
     @pulumi.getter(name="accountConnectorId")
     def account_connector_id(self) -> pulumi.Input[_builtins.str]: ...
     @account_connector_id.setter
-    def account_connector_id(self, value: pulumi.Input[_builtins.str]): ...
+    def account_connector_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -43,7 +45,8 @@ class AccountConnectorArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -52,12 +55,14 @@ class AccountConnectorArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerOauthConfig")
     def provider_oauth_config(
@@ -66,7 +71,8 @@ class AccountConnectorArgs:
     @provider_oauth_config.setter
     def provider_oauth_config(
         self, value: Optional[pulumi.Input[AccountConnectorProviderOauthConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccountConnectorState:
@@ -101,7 +107,10 @@ class _AccountConnectorState:
     @pulumi.getter(name="accountConnectorId")
     def account_connector_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_connector_id.setter
-    def account_connector_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_connector_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -110,12 +119,14 @@ class _AccountConnectorState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -124,7 +135,8 @@ class _AccountConnectorState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -133,7 +145,8 @@ class _AccountConnectorState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -142,27 +155,32 @@ class _AccountConnectorState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthStartUri")
     def oauth_start_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oauth_start_uri.setter
-    def oauth_start_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oauth_start_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerOauthConfig")
     def provider_oauth_config(
@@ -171,7 +189,8 @@ class _AccountConnectorState:
     @provider_oauth_config.setter
     def provider_oauth_config(
         self, value: Optional[pulumi.Input[AccountConnectorProviderOauthConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -180,12 +199,14 @@ class _AccountConnectorState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AccountConnector(pulumi.CustomResource):

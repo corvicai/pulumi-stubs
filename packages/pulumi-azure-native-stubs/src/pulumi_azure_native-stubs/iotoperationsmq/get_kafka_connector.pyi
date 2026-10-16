@@ -86,7 +86,8 @@ class GetKafkaConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKafkaConnectorResult(GetKafkaConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKafkaConnectorResult]:
+        ...
 
 def get_kafka_connector(
     kafka_connector_name: Optional[_builtins.str] = ...,

@@ -24,12 +24,14 @@ class DependencyOfRelationshipArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -38,7 +40,8 @@ class DependencyOfRelationshipArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[DependencyOfRelationshipPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DependencyOfRelationship(pulumi.CustomResource):

@@ -80,7 +80,8 @@ class GetContactProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContactProfileResult(GetContactProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContactProfileResult]:
+        ...
 
 def get_contact_profile(
     contact_profile_name: Optional[_builtins.str] = ...,

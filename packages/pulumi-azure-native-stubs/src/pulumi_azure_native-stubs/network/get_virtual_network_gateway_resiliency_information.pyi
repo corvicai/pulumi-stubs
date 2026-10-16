@@ -47,7 +47,10 @@ class GetVirtualNetworkGatewayResiliencyInformationResult:
 class AwaitableGetVirtualNetworkGatewayResiliencyInformationResult(
     GetVirtualNetworkGatewayResiliencyInformationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayResiliencyInformationResult]:
+        ...
 
 def get_virtual_network_gateway_resiliency_information(
     attempt_refresh: Optional[_builtins.bool] = ...,

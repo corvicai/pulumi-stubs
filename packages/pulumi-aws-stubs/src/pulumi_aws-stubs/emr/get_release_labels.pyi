@@ -33,7 +33,8 @@ class GetReleaseLabelsResult:
     def release_labels(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetReleaseLabelsResult(GetReleaseLabelsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReleaseLabelsResult]:
+        ...
 
 def get_release_labels(
     filters: Optional[

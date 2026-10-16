@@ -43,7 +43,10 @@ class GetAutoscalingPolicyIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetAutoscalingPolicyIamPolicyResult(GetAutoscalingPolicyIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAutoscalingPolicyIamPolicyResult]:
+        ...
 
 def get_autoscaling_policy_iam_policy(
     location: Optional[_builtins.str] = ...,

@@ -23,7 +23,10 @@ class GetCatalogDevBoxDefinitionErrorDetailsResult:
 class AwaitableGetCatalogDevBoxDefinitionErrorDetailsResult(
     GetCatalogDevBoxDefinitionErrorDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCatalogDevBoxDefinitionErrorDetailsResult]:
+        ...
 
 def get_catalog_dev_box_definition_error_details(
     catalog_name: Optional[_builtins.str] = ...,

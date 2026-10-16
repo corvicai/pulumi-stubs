@@ -20,12 +20,16 @@ class PeeringAttachmentAccepterArgs:
     @pulumi.getter(name="transitGatewayAttachmentId")
     def transit_gateway_attachment_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_attachment_id.setter
-    def transit_gateway_attachment_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_attachment_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -34,7 +38,8 @@ class PeeringAttachmentAccepterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PeeringAttachmentAccepterState:
@@ -56,22 +61,28 @@ class _PeeringAttachmentAccepterState:
     @pulumi.getter(name="peerAccountId")
     def peer_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @peer_account_id.setter
-    def peer_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def peer_account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peerRegion")
     def peer_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @peer_region.setter
-    def peer_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def peer_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peerTransitGatewayId")
     def peer_transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @peer_transit_gateway_id.setter
-    def peer_transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def peer_transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -80,7 +91,8 @@ class _PeeringAttachmentAccepterState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -89,7 +101,8 @@ class _PeeringAttachmentAccepterState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayAttachmentId")
     def transit_gateway_attachment_id(
@@ -98,12 +111,16 @@ class _PeeringAttachmentAccepterState:
     @transit_gateway_attachment_id.setter
     def transit_gateway_attachment_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PeeringAttachmentAccepter(pulumi.CustomResource):

@@ -45,7 +45,8 @@ class GetImagesResult:
     def repository_name(self) -> _builtins.str: ...
 
 class AwaitableGetImagesResult(GetImagesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImagesResult]:
+        ...
 
 def get_images(
     image_ids: Optional[

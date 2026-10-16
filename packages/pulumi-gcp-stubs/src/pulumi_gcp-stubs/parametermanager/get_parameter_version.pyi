@@ -59,7 +59,8 @@ class GetParameterVersionResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetParameterVersionResult(GetParameterVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetParameterVersionResult]:
+        ...
 
 def get_parameter_version(
     parameter: Optional[_builtins.str] = ...,

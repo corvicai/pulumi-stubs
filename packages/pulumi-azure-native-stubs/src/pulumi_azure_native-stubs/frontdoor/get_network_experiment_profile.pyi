@@ -55,7 +55,8 @@ class GetNetworkExperimentProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkExperimentProfileResult(GetNetworkExperimentProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkExperimentProfileResult]:
+        ...
 
 def get_network_experiment_profile(
     profile_name: Optional[_builtins.str] = ...,

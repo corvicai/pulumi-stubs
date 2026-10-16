@@ -72,7 +72,8 @@ class GetOrderItemResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOrderItemResult(GetOrderItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrderItemResult]:
+        ...
 
 def get_order_item(
     expand: Optional[_builtins.str] = ...,

@@ -35,14 +35,16 @@ class EventDestinationArgs:
     @pulumi.getter(name="configurationSetName")
     def configuration_set_name(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_set_name.setter
-    def configuration_set_name(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_set_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchingTypes")
     def matching_types(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @matching_types.setter
     def matching_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchDestinations")
     def cloudwatch_destinations(
@@ -58,12 +60,14 @@ class EventDestinationArgs:
                 Sequence[pulumi.Input[EventDestinationCloudwatchDestinationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisDestination")
     def kinesis_destination(
@@ -72,17 +76,20 @@ class EventDestinationArgs:
     @kinesis_destination.setter
     def kinesis_destination(
         self, value: Optional[pulumi.Input[EventDestinationKinesisDestinationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snsDestination")
     def sns_destination(
@@ -91,7 +98,8 @@ class EventDestinationArgs:
     @sns_destination.setter
     def sns_destination(
         self, value: Optional[pulumi.Input[EventDestinationSnsDestinationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EventDestinationState:
@@ -122,7 +130,8 @@ class _EventDestinationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchDestinations")
     def cloudwatch_destinations(
@@ -138,17 +147,22 @@ class _EventDestinationState:
                 Sequence[pulumi.Input[EventDestinationCloudwatchDestinationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationSetName")
     def configuration_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_set_name.setter
-    def configuration_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration_set_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisDestination")
     def kinesis_destination(
@@ -157,7 +171,8 @@ class _EventDestinationState:
     @kinesis_destination.setter
     def kinesis_destination(
         self, value: Optional[pulumi.Input[EventDestinationKinesisDestinationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchingTypes")
     def matching_types(
@@ -166,17 +181,20 @@ class _EventDestinationState:
     @matching_types.setter
     def matching_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snsDestination")
     def sns_destination(
@@ -185,7 +203,8 @@ class _EventDestinationState:
     @sns_destination.setter
     def sns_destination(
         self, value: Optional[pulumi.Input[EventDestinationSnsDestinationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ses/eventDestination:EventDestination")
 class EventDestination(pulumi.CustomResource):

@@ -60,7 +60,10 @@ class GetWebAppPrivateEndpointConnectionSlotResult:
 class AwaitableGetWebAppPrivateEndpointConnectionSlotResult(
     GetWebAppPrivateEndpointConnectionSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppPrivateEndpointConnectionSlotResult]:
+        ...
 
 def get_web_app_private_endpoint_connection_slot(
     name: Optional[_builtins.str] = ...,

@@ -43,7 +43,8 @@ class GetGraphQLApiResolverPolicyResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableGetGraphQLApiResolverPolicyResult(GetGraphQLApiResolverPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGraphQLApiResolverPolicyResult]:
+        ...
 
 def get_graph_ql_api_resolver_policy(
     api_id: Optional[_builtins.str] = ...,

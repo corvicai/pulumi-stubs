@@ -72,7 +72,8 @@ class GetHybridRunbookWorkerResult:
     def worker_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetHybridRunbookWorkerResult(GetHybridRunbookWorkerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHybridRunbookWorkerResult]:
+        ...
 
 def get_hybrid_runbook_worker(
     automation_account_name: Optional[_builtins.str] = ...,

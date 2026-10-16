@@ -73,7 +73,8 @@ class GetConnectPeerResult:
     def transit_gateway_connect_peer_id(self) -> _builtins.str: ...
 
 class AwaitableGetConnectPeerResult(GetConnectPeerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectPeerResult]:
+        ...
 
 def get_connect_peer(
     filters: Optional[

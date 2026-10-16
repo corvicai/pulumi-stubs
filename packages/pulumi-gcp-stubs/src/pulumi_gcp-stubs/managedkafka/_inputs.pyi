@@ -59,22 +59,26 @@ class AclAclEntryArgs:
     @pulumi.getter
     def operation(self) -> pulumi.Input[_builtins.str]: ...
     @operation.setter
-    def operation(self, value: pulumi.Input[_builtins.str]): ...
+    def operation(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principal(self) -> pulumi.Input[_builtins.str]: ...
     @principal.setter
-    def principal(self, value: pulumi.Input[_builtins.str]): ...
+    def principal(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permissionType")
     def permission_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permission_type.setter
-    def permission_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permission_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterBrokerCapacityConfigArgsDict(TypedDict):
     disk_size_gib: NotRequired[pulumi.Input[_builtins.str]]
@@ -88,7 +92,8 @@ class ClusterBrokerCapacityConfigArgs:
     @pulumi.getter(name="diskSizeGib")
     def disk_size_gib(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_size_gib.setter
-    def disk_size_gib(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_size_gib(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterCapacityConfigArgsDict(TypedDict):
     memory_bytes: pulumi.Input[_builtins.str]
@@ -106,12 +111,14 @@ class ClusterCapacityConfigArgs:
     @pulumi.getter(name="memoryBytes")
     def memory_bytes(self) -> pulumi.Input[_builtins.str]: ...
     @memory_bytes.setter
-    def memory_bytes(self, value: pulumi.Input[_builtins.str]): ...
+    def memory_bytes(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vcpuCount")
     def vcpu_count(self) -> pulumi.Input[_builtins.str]: ...
     @vcpu_count.setter
-    def vcpu_count(self, value: pulumi.Input[_builtins.str]): ...
+    def vcpu_count(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterGcpConfigArgsDict(TypedDict):
     access_config: pulumi.Input[ClusterGcpConfigAccessConfigArgsDict]
@@ -129,12 +136,16 @@ class ClusterGcpConfigArgs:
     @pulumi.getter(name="accessConfig")
     def access_config(self) -> pulumi.Input[ClusterGcpConfigAccessConfigArgs]: ...
     @access_config.setter
-    def access_config(self, value: pulumi.Input[ClusterGcpConfigAccessConfigArgs]): ...
+    def access_config(
+        self, value: pulumi.Input[ClusterGcpConfigAccessConfigArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterGcpConfigAccessConfigArgsDict(TypedDict):
     network_configs: pulumi.Input[
@@ -163,7 +174,8 @@ class ClusterGcpConfigAccessConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ClusterGcpConfigAccessConfigNetworkConfigArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterGcpConfigAccessConfigNetworkConfigArgsDict(TypedDict):
     subnet: pulumi.Input[_builtins.str]
@@ -175,7 +187,8 @@ class ClusterGcpConfigAccessConfigNetworkConfigArgs:
     @pulumi.getter
     def subnet(self) -> pulumi.Input[_builtins.str]: ...
     @subnet.setter
-    def subnet(self, value: pulumi.Input[_builtins.str]): ...
+    def subnet(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterRebalanceConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
@@ -189,7 +202,8 @@ class ClusterRebalanceConfigArgs:
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterTlsConfigArgsDict(TypedDict):
     ssl_principal_mapping_rules: NotRequired[pulumi.Input[_builtins.str]]
@@ -209,7 +223,8 @@ class ClusterTlsConfigArgs:
     @ssl_principal_mapping_rules.setter
     def ssl_principal_mapping_rules(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustConfig")
     def trust_config(
@@ -218,7 +233,8 @@ class ClusterTlsConfigArgs:
     @trust_config.setter
     def trust_config(
         self, value: Optional[pulumi.Input[ClusterTlsConfigTrustConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterTlsConfigTrustConfigArgsDict(TypedDict):
     cas_configs: NotRequired[
@@ -253,7 +269,8 @@ class ClusterTlsConfigTrustConfigArgs:
                 Sequence[pulumi.Input[ClusterTlsConfigTrustConfigCasConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterTlsConfigTrustConfigCasConfigArgsDict(TypedDict):
     ca_pool: pulumi.Input[_builtins.str]
@@ -265,7 +282,8 @@ class ClusterTlsConfigTrustConfigCasConfigArgs:
     @pulumi.getter(name="caPool")
     def ca_pool(self) -> pulumi.Input[_builtins.str]: ...
     @ca_pool.setter
-    def ca_pool(self, value: pulumi.Input[_builtins.str]): ...
+    def ca_pool(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectClusterCapacityConfigArgsDict(TypedDict):
     memory_bytes: pulumi.Input[_builtins.str]
@@ -283,12 +301,14 @@ class ConnectClusterCapacityConfigArgs:
     @pulumi.getter(name="memoryBytes")
     def memory_bytes(self) -> pulumi.Input[_builtins.str]: ...
     @memory_bytes.setter
-    def memory_bytes(self, value: pulumi.Input[_builtins.str]): ...
+    def memory_bytes(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vcpuCount")
     def vcpu_count(self) -> pulumi.Input[_builtins.str]: ...
     @vcpu_count.setter
-    def vcpu_count(self, value: pulumi.Input[_builtins.str]): ...
+    def vcpu_count(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectClusterGcpConfigArgsDict(TypedDict):
     access_config: pulumi.Input[ConnectClusterGcpConfigAccessConfigArgsDict]
@@ -308,7 +328,8 @@ class ConnectClusterGcpConfigArgs:
     @access_config.setter
     def access_config(
         self, value: pulumi.Input[ConnectClusterGcpConfigAccessConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectClusterGcpConfigAccessConfigArgsDict(TypedDict):
     network_configs: pulumi.Input[
@@ -337,7 +358,8 @@ class ConnectClusterGcpConfigAccessConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ConnectClusterGcpConfigAccessConfigNetworkConfigArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectClusterGcpConfigAccessConfigNetworkConfigArgsDict(TypedDict):
     primary_subnet: pulumi.Input[_builtins.str]
@@ -361,7 +383,8 @@ class ConnectClusterGcpConfigAccessConfigNetworkConfigArgs:
     @pulumi.getter(name="primarySubnet")
     def primary_subnet(self) -> pulumi.Input[_builtins.str]: ...
     @primary_subnet.setter
-    def primary_subnet(self, value: pulumi.Input[_builtins.str]): ...
+    def primary_subnet(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalSubnets")
     @_utilities.deprecated(...)
@@ -371,7 +394,8 @@ class ConnectClusterGcpConfigAccessConfigNetworkConfigArgs:
     @additional_subnets.setter
     def additional_subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsDomainNames")
     def dns_domain_names(
@@ -380,7 +404,8 @@ class ConnectClusterGcpConfigAccessConfigNetworkConfigArgs:
     @dns_domain_names.setter
     def dns_domain_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorTaskRestartPolicyArgsDict(TypedDict):
     maximum_backoff: NotRequired[pulumi.Input[_builtins.str]]
@@ -398,9 +423,11 @@ class ConnectorTaskRestartPolicyArgs:
     @pulumi.getter(name="maximumBackoff")
     def maximum_backoff(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @maximum_backoff.setter
-    def maximum_backoff(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def maximum_backoff(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumBackoff")
     def minimum_backoff(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @minimum_backoff.setter
-    def minimum_backoff(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def minimum_backoff(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

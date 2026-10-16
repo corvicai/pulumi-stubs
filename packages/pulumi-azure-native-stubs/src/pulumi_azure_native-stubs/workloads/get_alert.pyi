@@ -65,7 +65,8 @@ class GetAlertResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAlertResult(GetAlertResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAlertResult]:
+        ...
 
 def get_alert(
     alert_name: Optional[_builtins.str] = ...,

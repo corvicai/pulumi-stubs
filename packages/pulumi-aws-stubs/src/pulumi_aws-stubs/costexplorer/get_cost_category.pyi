@@ -62,7 +62,8 @@ class GetCostCategoryResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetCostCategoryResult(GetCostCategoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCostCategoryResult]:
+        ...
 
 def get_cost_category(
     cost_category_arn: Optional[_builtins.str] = ...,

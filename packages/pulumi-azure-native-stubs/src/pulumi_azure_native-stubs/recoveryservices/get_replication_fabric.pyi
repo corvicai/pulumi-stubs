@@ -44,7 +44,8 @@ class GetReplicationFabricResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationFabricResult(GetReplicationFabricResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationFabricResult]:
+        ...
 
 def get_replication_fabric(
     fabric_name: Optional[_builtins.str] = ...,

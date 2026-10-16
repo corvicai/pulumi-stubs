@@ -30,7 +30,8 @@ class PipelineDefinitionArgs:
     @pulumi.getter(name="pipelineId")
     def pipeline_id(self) -> pulumi.Input[_builtins.str]: ...
     @pipeline_id.setter
-    def pipeline_id(self, value: pulumi.Input[_builtins.str]): ...
+    def pipeline_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineObjects")
     def pipeline_objects(
@@ -42,7 +43,8 @@ class PipelineDefinitionArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PipelineDefinitionPipelineObjectArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterObjects")
     def parameter_objects(
@@ -56,7 +58,8 @@ class PipelineDefinitionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PipelineDefinitionParameterObjectArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValues")
     def parameter_values(
@@ -70,12 +73,14 @@ class PipelineDefinitionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PipelineDefinitionParameterValueArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PipelineDefinitionState:
@@ -107,7 +112,8 @@ class _PipelineDefinitionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PipelineDefinitionParameterObjectArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValues")
     def parameter_values(
@@ -121,12 +127,14 @@ class _PipelineDefinitionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PipelineDefinitionParameterValueArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineId")
     def pipeline_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_id.setter
-    def pipeline_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineObjects")
     def pipeline_objects(
@@ -140,12 +148,14 @@ class _PipelineDefinitionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PipelineDefinitionPipelineObjectArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PipelineDefinition(pulumi.CustomResource):

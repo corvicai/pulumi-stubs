@@ -64,7 +64,8 @@ class GetTemplateSpecResult:
     def versions(self) -> Mapping[str, outputs.TemplateSpecVersionInfoResponse]: ...
 
 class AwaitableGetTemplateSpecResult(GetTemplateSpecResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTemplateSpecResult]:
+        ...
 
 def get_template_spec(
     expand: Optional[_builtins.str] = ...,

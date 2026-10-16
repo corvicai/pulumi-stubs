@@ -52,7 +52,8 @@ class GetLabelByWorkspaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLabelByWorkspaceResult(GetLabelByWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLabelByWorkspaceResult]:
+        ...
 
 def get_label_by_workspace(
     label_name: Optional[_builtins.str] = ...,

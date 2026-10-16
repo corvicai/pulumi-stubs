@@ -114,7 +114,10 @@ class GetPimRoleEligibilityScheduleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPimRoleEligibilityScheduleResult(GetPimRoleEligibilityScheduleResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPimRoleEligibilityScheduleResult]:
+        ...
 
 def get_pim_role_eligibility_schedule(
     role_eligibility_schedule_request_name: Optional[_builtins.str] = ...,

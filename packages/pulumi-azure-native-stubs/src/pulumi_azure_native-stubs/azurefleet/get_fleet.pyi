@@ -97,7 +97,8 @@ class GetFleetResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetFleetResult(GetFleetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetResult]:
+        ...
 
 def get_fleet(
     fleet_name: Optional[_builtins.str] = ...,

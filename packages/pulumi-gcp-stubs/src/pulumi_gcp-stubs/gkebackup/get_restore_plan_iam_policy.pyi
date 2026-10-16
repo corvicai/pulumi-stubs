@@ -37,7 +37,8 @@ class GetRestorePlanIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetRestorePlanIamPolicyResult(GetRestorePlanIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRestorePlanIamPolicyResult]:
+        ...
 
 def get_restore_plan_iam_policy(
     location: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetBrokerListenerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBrokerListenerResult(GetBrokerListenerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBrokerListenerResult]:
+        ...
 
 def get_broker_listener(
     broker_name: Optional[_builtins.str] = ...,

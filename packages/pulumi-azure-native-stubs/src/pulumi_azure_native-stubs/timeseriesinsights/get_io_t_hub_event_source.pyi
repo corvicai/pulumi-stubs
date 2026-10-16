@@ -84,7 +84,8 @@ class GetIoTHubEventSourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIoTHubEventSourceResult(GetIoTHubEventSourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIoTHubEventSourceResult]:
+        ...
 
 def get_io_t_hub_event_source(
     environment_name: Optional[_builtins.str] = ...,

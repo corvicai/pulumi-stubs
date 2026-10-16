@@ -43,17 +43,24 @@ class ImagePipelineArgs:
     @pulumi.getter(name="infrastructureConfigurationArn")
     def infrastructure_configuration_arn(self) -> pulumi.Input[_builtins.str]: ...
     @infrastructure_configuration_arn.setter
-    def infrastructure_configuration_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def infrastructure_configuration_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerRecipeArn")
     def container_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_recipe_arn.setter
-    def container_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="distributionConfigurationArn")
     def distribution_configuration_arn(
@@ -62,7 +69,8 @@ class ImagePipelineArgs:
     @distribution_configuration_arn.setter
     def distribution_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedImageMetadataEnabled")
     def enhanced_image_metadata_enabled(
@@ -71,17 +79,22 @@ class ImagePipelineArgs:
     @enhanced_image_metadata_enabled.setter
     def enhanced_image_metadata_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageRecipeArn")
     def image_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_recipe_arn.setter
-    def image_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageScanningConfiguration")
     def image_scanning_configuration(
@@ -90,7 +103,8 @@ class ImagePipelineArgs:
     @image_scanning_configuration.setter
     def image_scanning_configuration(
         self, value: Optional[pulumi.Input[ImagePipelineImageScanningConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTestsConfiguration")
     def image_tests_configuration(
@@ -99,7 +113,8 @@ class ImagePipelineArgs:
     @image_tests_configuration.setter
     def image_tests_configuration(
         self, value: Optional[pulumi.Input[ImagePipelineImageTestsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfiguration")
     def logging_configuration(
@@ -108,27 +123,34 @@ class ImagePipelineArgs:
     @logging_configuration.setter
     def logging_configuration(
         self, value: Optional[pulumi.Input[ImagePipelineLoggingConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> Optional[pulumi.Input[ImagePipelineScheduleArgs]]: ...
     @schedule.setter
-    def schedule(self, value: Optional[pulumi.Input[ImagePipelineScheduleArgs]]): ...
+    def schedule(
+        self, value: Optional[pulumi.Input[ImagePipelineScheduleArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -137,7 +159,8 @@ class ImagePipelineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def workflows(
@@ -149,7 +172,8 @@ class ImagePipelineArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ImagePipelineWorkflowArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ImagePipelineState:
@@ -194,37 +218,46 @@ class _ImagePipelineState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerRecipeArn")
     def container_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_recipe_arn.setter
-    def container_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateCreated")
     def date_created(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_created.setter
-    def date_created(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_created(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateLastRun")
     def date_last_run(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_last_run.setter
-    def date_last_run(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_last_run(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateNextRun")
     def date_next_run(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_next_run.setter
-    def date_next_run(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_next_run(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateUpdated")
     def date_updated(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_updated.setter
-    def date_updated(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_updated(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="distributionConfigurationArn")
     def distribution_configuration_arn(
@@ -233,7 +266,8 @@ class _ImagePipelineState:
     @distribution_configuration_arn.setter
     def distribution_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedImageMetadataEnabled")
     def enhanced_image_metadata_enabled(
@@ -242,17 +276,22 @@ class _ImagePipelineState:
     @enhanced_image_metadata_enabled.setter
     def enhanced_image_metadata_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageRecipeArn")
     def image_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_recipe_arn.setter
-    def image_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageScanningConfiguration")
     def image_scanning_configuration(
@@ -261,7 +300,8 @@ class _ImagePipelineState:
     @image_scanning_configuration.setter
     def image_scanning_configuration(
         self, value: Optional[pulumi.Input[ImagePipelineImageScanningConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTestsConfiguration")
     def image_tests_configuration(
@@ -270,7 +310,8 @@ class _ImagePipelineState:
     @image_tests_configuration.setter
     def image_tests_configuration(
         self, value: Optional[pulumi.Input[ImagePipelineImageTestsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infrastructureConfigurationArn")
     def infrastructure_configuration_arn(
@@ -279,7 +320,8 @@ class _ImagePipelineState:
     @infrastructure_configuration_arn.setter
     def infrastructure_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfiguration")
     def logging_configuration(
@@ -288,32 +330,40 @@ class _ImagePipelineState:
     @logging_configuration.setter
     def logging_configuration(
         self, value: Optional[pulumi.Input[ImagePipelineLoggingConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform.setter
-    def platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> Optional[pulumi.Input[ImagePipelineScheduleArgs]]: ...
     @schedule.setter
-    def schedule(self, value: Optional[pulumi.Input[ImagePipelineScheduleArgs]]): ...
+    def schedule(
+        self, value: Optional[pulumi.Input[ImagePipelineScheduleArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -322,7 +372,8 @@ class _ImagePipelineState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -331,7 +382,8 @@ class _ImagePipelineState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def workflows(
@@ -343,7 +395,8 @@ class _ImagePipelineState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ImagePipelineWorkflowArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:imagebuilder/imagePipeline:ImagePipeline")
 class ImagePipeline(pulumi.CustomResource):

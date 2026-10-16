@@ -79,7 +79,8 @@ class GetShareResult:
     ) -> Optional[Sequence[outputs.UserAccessRightResponse]]: ...
 
 class AwaitableGetShareResult(GetShareResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetShareResult]:
+        ...
 
 def get_share(
     device_name: Optional[_builtins.str] = ...,

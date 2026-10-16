@@ -31,7 +31,8 @@ class GetKeyRingIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetKeyRingIamPolicyResult(GetKeyRingIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyRingIamPolicyResult]:
+        ...
 
 def get_key_ring_iam_policy(
     key_ring_id: Optional[_builtins.str] = ...,

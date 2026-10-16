@@ -46,7 +46,10 @@ class GetBookshelfPrivateEndpointConnectionResult:
 class AwaitableGetBookshelfPrivateEndpointConnectionResult(
     GetBookshelfPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBookshelfPrivateEndpointConnectionResult]:
+        ...
 
 def get_bookshelf_private_endpoint_connection(
     bookshelf_name: Optional[_builtins.str] = ...,

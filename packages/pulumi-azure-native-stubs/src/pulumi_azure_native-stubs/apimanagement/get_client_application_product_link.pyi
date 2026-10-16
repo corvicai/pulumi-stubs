@@ -36,7 +36,10 @@ class GetClientApplicationProductLinkResult:
 class AwaitableGetClientApplicationProductLinkResult(
     GetClientApplicationProductLinkResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetClientApplicationProductLinkResult]:
+        ...
 
 def get_client_application_product_link(
     client_application_id: Optional[_builtins.str] = ...,

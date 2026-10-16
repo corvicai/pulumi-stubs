@@ -22,22 +22,32 @@ class StudioLifecycleConfigArgs:
     @pulumi.getter(name="studioLifecycleConfigAppType")
     def studio_lifecycle_config_app_type(self) -> pulumi.Input[_builtins.str]: ...
     @studio_lifecycle_config_app_type.setter
-    def studio_lifecycle_config_app_type(self, value: pulumi.Input[_builtins.str]): ...
+    def studio_lifecycle_config_app_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="studioLifecycleConfigContent")
     def studio_lifecycle_config_content(self) -> pulumi.Input[_builtins.str]: ...
     @studio_lifecycle_config_content.setter
-    def studio_lifecycle_config_content(self, value: pulumi.Input[_builtins.str]): ...
+    def studio_lifecycle_config_content(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="studioLifecycleConfigName")
     def studio_lifecycle_config_name(self) -> pulumi.Input[_builtins.str]: ...
     @studio_lifecycle_config_name.setter
-    def studio_lifecycle_config_name(self, value: pulumi.Input[_builtins.str]): ...
+    def studio_lifecycle_config_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -46,7 +56,8 @@ class StudioLifecycleConfigArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _StudioLifecycleConfigState:
@@ -67,12 +78,14 @@ class _StudioLifecycleConfigState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="studioLifecycleConfigAppType")
     def studio_lifecycle_config_app_type(
@@ -81,7 +94,8 @@ class _StudioLifecycleConfigState:
     @studio_lifecycle_config_app_type.setter
     def studio_lifecycle_config_app_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="studioLifecycleConfigContent")
     def studio_lifecycle_config_content(
@@ -90,14 +104,16 @@ class _StudioLifecycleConfigState:
     @studio_lifecycle_config_content.setter
     def studio_lifecycle_config_content(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="studioLifecycleConfigName")
     def studio_lifecycle_config_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @studio_lifecycle_config_name.setter
     def studio_lifecycle_config_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -106,7 +122,8 @@ class _StudioLifecycleConfigState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -115,7 +132,8 @@ class _StudioLifecycleConfigState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class StudioLifecycleConfig(pulumi.CustomResource):

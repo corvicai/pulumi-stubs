@@ -61,23 +61,29 @@ class BucketV2Args:
     @_utilities.deprecated(...)
     def acceleration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acceleration_status.setter
-    def acceleration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acceleration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def acl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acl.setter
-    def acl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="corsRules")
     @_utilities.deprecated(...)
@@ -88,12 +94,14 @@ class BucketV2Args:
     def cors_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2CorsRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -103,7 +111,8 @@ class BucketV2Args:
     @grants.setter
     def grants(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2GrantArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lifecycleRules")
     @_utilities.deprecated(...)
@@ -116,7 +125,8 @@ class BucketV2Args:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketV2LifecycleRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -126,7 +136,8 @@ class BucketV2Args:
     @loggings.setter
     def loggings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2LoggingArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectLockConfiguration")
     @_utilities.deprecated(...)
@@ -136,23 +147,29 @@ class BucketV2Args:
     @object_lock_configuration.setter
     def object_lock_configuration(
         self, value: Optional[pulumi.Input[BucketV2ObjectLockConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectLockEnabled")
     def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @object_lock_enabled.setter
-    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def object_lock_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy.setter
-    def policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationConfigurations")
     @_utilities.deprecated(...)
@@ -167,13 +184,15 @@ class BucketV2Args:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketV2ReplicationConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestPayer")
     @_utilities.deprecated(...)
     def request_payer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_payer.setter
-    def request_payer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_payer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverSideEncryptionConfigurations")
     @_utilities.deprecated(...)
@@ -192,7 +211,8 @@ class BucketV2Args:
                 Sequence[pulumi.Input[BucketV2ServerSideEncryptionConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -201,7 +221,8 @@ class BucketV2Args:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -210,7 +231,8 @@ class BucketV2Args:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -221,7 +243,8 @@ class BucketV2Args:
     def versionings(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2VersioningArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -231,7 +254,8 @@ class BucketV2Args:
     @websites.setter
     def websites(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2WebsiteArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BucketV2State:
@@ -291,45 +315,57 @@ class _BucketV2State:
     @_utilities.deprecated(...)
     def acceleration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acceleration_status.setter
-    def acceleration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acceleration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def acl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acl.setter
-    def acl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketDomainName")
     def bucket_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_domain_name.setter
-    def bucket_domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_domain_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketRegion")
     def bucket_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_region.setter
-    def bucket_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketRegionalDomainName")
     def bucket_regional_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_regional_domain_name.setter
     def bucket_regional_domain_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="corsRules")
     @_utilities.deprecated(...)
@@ -340,12 +376,14 @@ class _BucketV2State:
     def cors_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2CorsRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -355,12 +393,14 @@ class _BucketV2State:
     @grants.setter
     def grants(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2GrantArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostedZoneId")
     def hosted_zone_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hosted_zone_id.setter
-    def hosted_zone_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hosted_zone_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lifecycleRules")
     @_utilities.deprecated(...)
@@ -373,7 +413,8 @@ class _BucketV2State:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketV2LifecycleRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -383,7 +424,8 @@ class _BucketV2State:
     @loggings.setter
     def loggings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2LoggingArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectLockConfiguration")
     @_utilities.deprecated(...)
@@ -393,23 +435,29 @@ class _BucketV2State:
     @object_lock_configuration.setter
     def object_lock_configuration(
         self, value: Optional[pulumi.Input[BucketV2ObjectLockConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectLockEnabled")
     def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @object_lock_enabled.setter
-    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def object_lock_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy.setter
-    def policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationConfigurations")
     @_utilities.deprecated(...)
@@ -424,13 +472,15 @@ class _BucketV2State:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketV2ReplicationConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestPayer")
     @_utilities.deprecated(...)
     def request_payer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_payer.setter
-    def request_payer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_payer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverSideEncryptionConfigurations")
     @_utilities.deprecated(...)
@@ -449,7 +499,8 @@ class _BucketV2State:
                 Sequence[pulumi.Input[BucketV2ServerSideEncryptionConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -458,7 +509,8 @@ class _BucketV2State:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -467,7 +519,8 @@ class _BucketV2State:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -478,19 +531,24 @@ class _BucketV2State:
     def versionings(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2VersioningArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="websiteDomain")
     @_utilities.deprecated(...)
     def website_domain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @website_domain.setter
-    def website_domain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def website_domain(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="websiteEndpoint")
     @_utilities.deprecated(...)
     def website_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @website_endpoint.setter
-    def website_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def website_endpoint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -500,7 +558,8 @@ class _BucketV2State:
     @websites.setter
     def websites(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketV2WebsiteArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:s3/bucketV2:BucketV2")
 class BucketV2(pulumi.CustomResource):

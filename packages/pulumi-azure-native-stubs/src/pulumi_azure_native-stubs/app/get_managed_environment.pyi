@@ -176,7 +176,8 @@ class GetManagedEnvironmentResult:
     def zone_redundant(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetManagedEnvironmentResult(GetManagedEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedEnvironmentResult]:
+        ...
 
 def get_managed_environment(
     environment_name: Optional[_builtins.str] = ...,

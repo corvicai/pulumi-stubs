@@ -26,7 +26,10 @@ class GetTestBaseAccountFileUploadUrlResult:
 class AwaitableGetTestBaseAccountFileUploadUrlResult(
     GetTestBaseAccountFileUploadUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTestBaseAccountFileUploadUrlResult]:
+        ...
 
 def get_test_base_account_file_upload_url(
     blob_name: Optional[_builtins.str] = ...,

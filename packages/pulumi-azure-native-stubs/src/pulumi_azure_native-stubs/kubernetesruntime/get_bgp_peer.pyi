@@ -56,7 +56,8 @@ class GetBgpPeerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBgpPeerResult(GetBgpPeerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBgpPeerResult]:
+        ...
 
 def get_bgp_peer(
     bgp_peer_name: Optional[_builtins.str] = ...,

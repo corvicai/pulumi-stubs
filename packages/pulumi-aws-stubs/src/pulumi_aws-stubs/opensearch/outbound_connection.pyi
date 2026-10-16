@@ -28,7 +28,8 @@ class OutboundConnectionArgs:
     @pulumi.getter(name="connectionAlias")
     def connection_alias(self) -> pulumi.Input[_builtins.str]: ...
     @connection_alias.setter
-    def connection_alias(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_alias(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localDomainInfo")
     def local_domain_info(
@@ -37,7 +38,8 @@ class OutboundConnectionArgs:
     @local_domain_info.setter
     def local_domain_info(
         self, value: pulumi.Input[OutboundConnectionLocalDomainInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteDomainInfo")
     def remote_domain_info(
@@ -46,17 +48,22 @@ class OutboundConnectionArgs:
     @remote_domain_info.setter
     def remote_domain_info(
         self, value: pulumi.Input[OutboundConnectionRemoteDomainInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="acceptConnection")
     def accept_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @accept_connection.setter
-    def accept_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def accept_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionMode")
     def connection_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_mode.setter
-    def connection_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionProperties")
     def connection_properties(
@@ -65,12 +72,14 @@ class OutboundConnectionArgs:
     @connection_properties.setter
     def connection_properties(
         self, value: Optional[pulumi.Input[OutboundConnectionConnectionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OutboundConnectionState:
@@ -96,17 +105,24 @@ class _OutboundConnectionState:
     @pulumi.getter(name="acceptConnection")
     def accept_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @accept_connection.setter
-    def accept_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def accept_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionAlias")
     def connection_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_alias.setter
-    def connection_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_alias(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionMode")
     def connection_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_mode.setter
-    def connection_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionProperties")
     def connection_properties(
@@ -115,12 +131,16 @@ class _OutboundConnectionState:
     @connection_properties.setter
     def connection_properties(
         self, value: Optional[pulumi.Input[OutboundConnectionConnectionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionStatus")
     def connection_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_status.setter
-    def connection_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localDomainInfo")
     def local_domain_info(
@@ -129,12 +149,14 @@ class _OutboundConnectionState:
     @local_domain_info.setter
     def local_domain_info(
         self, value: Optional[pulumi.Input[OutboundConnectionLocalDomainInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteDomainInfo")
     def remote_domain_info(
@@ -143,7 +165,8 @@ class _OutboundConnectionState:
     @remote_domain_info.setter
     def remote_domain_info(
         self, value: Optional[pulumi.Input[OutboundConnectionRemoteDomainInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OutboundConnection(pulumi.CustomResource):

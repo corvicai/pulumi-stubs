@@ -25,7 +25,10 @@ class ListPartnerNamespaceSharedAccessKeysResult:
 class AwaitableListPartnerNamespaceSharedAccessKeysResult(
     ListPartnerNamespaceSharedAccessKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPartnerNamespaceSharedAccessKeysResult]:
+        ...
 
 def list_partner_namespace_shared_access_keys(
     partner_namespace_name: Optional[_builtins.str] = ...,

@@ -88,7 +88,8 @@ class GetPowerShell72ModuleResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPowerShell72ModuleResult(GetPowerShell72ModuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPowerShell72ModuleResult]:
+        ...
 
 def get_power_shell72_module(
     automation_account_name: Optional[_builtins.str] = ...,

@@ -33,12 +33,14 @@ class PipelineJobArgs:
     @pulumi.getter
     def dataset(self) -> pulumi.Input[_builtins.str]: ...
     @dataset.setter
-    def dataset(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backfillPipelineJob")
     def backfill_pipeline_job(
@@ -47,12 +49,16 @@ class PipelineJobArgs:
     @backfill_pipeline_job.setter
     def backfill_pipeline_job(
         self, value: Optional[pulumi.Input[PipelineJobBackfillPipelineJobArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableLineage")
     def disable_lineage(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_lineage.setter
-    def disable_lineage(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_lineage(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -61,7 +67,8 @@ class PipelineJobArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mappingPipelineJob")
     def mapping_pipeline_job(
@@ -70,12 +77,14 @@ class PipelineJobArgs:
     @mapping_pipeline_job.setter
     def mapping_pipeline_job(
         self, value: Optional[pulumi.Input[PipelineJobMappingPipelineJobArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reconciliationPipelineJob")
     def reconciliation_pipeline_job(
@@ -84,7 +93,8 @@ class PipelineJobArgs:
     @reconciliation_pipeline_job.setter
     def reconciliation_pipeline_job(
         self, value: Optional[pulumi.Input[PipelineJobReconciliationPipelineJobArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PipelineJobState:
@@ -121,17 +131,22 @@ class _PipelineJobState:
     @backfill_pipeline_job.setter
     def backfill_pipeline_job(
         self, value: Optional[pulumi.Input[PipelineJobBackfillPipelineJobArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dataset(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset.setter
-    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableLineage")
     def disable_lineage(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_lineage.setter
-    def disable_lineage(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_lineage(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -140,7 +155,8 @@ class _PipelineJobState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -149,12 +165,14 @@ class _PipelineJobState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mappingPipelineJob")
     def mapping_pipeline_job(
@@ -163,12 +181,14 @@ class _PipelineJobState:
     @mapping_pipeline_job.setter
     def mapping_pipeline_job(
         self, value: Optional[pulumi.Input[PipelineJobMappingPipelineJobArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -177,7 +197,8 @@ class _PipelineJobState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reconciliationPipelineJob")
     def reconciliation_pipeline_job(
@@ -186,12 +207,14 @@ class _PipelineJobState:
     @reconciliation_pipeline_job.setter
     def reconciliation_pipeline_job(
         self, value: Optional[pulumi.Input[PipelineJobReconciliationPipelineJobArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:healthcare/pipelineJob:PipelineJob")
 class PipelineJob(pulumi.CustomResource):

@@ -43,7 +43,8 @@ class GetAspectTypeIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetAspectTypeIamPolicyResult(GetAspectTypeIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAspectTypeIamPolicyResult]:
+        ...
 
 def get_aspect_type_iam_policy(
     aspect_type_id: Optional[_builtins.str] = ...,

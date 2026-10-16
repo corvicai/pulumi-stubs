@@ -76,7 +76,8 @@ class GetSourceControlResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSourceControlResult(GetSourceControlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSourceControlResult]:
+        ...
 
 def get_source_control(
     automation_account_name: Optional[_builtins.str] = ...,

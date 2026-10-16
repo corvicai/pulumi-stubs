@@ -24,7 +24,8 @@ class ListQueryKeyBySearchServiceResult:
     def value(self) -> Sequence[outputs.QueryKeyResponse]: ...
 
 class AwaitableListQueryKeyBySearchServiceResult(ListQueryKeyBySearchServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListQueryKeyBySearchServiceResult]:
+        ...
 
 def list_query_key_by_search_service(
     resource_group_name: Optional[_builtins.str] = ...,

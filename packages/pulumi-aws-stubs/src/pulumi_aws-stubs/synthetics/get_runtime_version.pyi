@@ -55,7 +55,8 @@ class GetRuntimeVersionResult:
     def version_name(self) -> _builtins.str: ...
 
 class AwaitableGetRuntimeVersionResult(GetRuntimeVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRuntimeVersionResult]:
+        ...
 
 def get_runtime_version(
     latest: Optional[_builtins.bool] = ...,

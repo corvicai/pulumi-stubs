@@ -51,7 +51,8 @@ class GetRedisLinkedServerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRedisLinkedServerResult(GetRedisLinkedServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRedisLinkedServerResult]:
+        ...
 
 def get_redis_linked_server(
     linked_server_name: Optional[_builtins.str] = ...,

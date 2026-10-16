@@ -48,7 +48,8 @@ class GetMigrationEntityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMigrationEntityResult(GetMigrationEntityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMigrationEntityResult]:
+        ...
 
 def get_migration_entity(
     migration_entity_name: Optional[_builtins.str] = ...,

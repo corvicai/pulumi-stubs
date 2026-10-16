@@ -56,7 +56,8 @@ class GetHybridUseBenefitResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHybridUseBenefitResult(GetHybridUseBenefitResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHybridUseBenefitResult]:
+        ...
 
 def get_hybrid_use_benefit(
     plan_id: Optional[_builtins.str] = ...,

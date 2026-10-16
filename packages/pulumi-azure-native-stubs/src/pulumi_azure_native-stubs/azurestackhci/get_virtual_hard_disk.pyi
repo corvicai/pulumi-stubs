@@ -100,7 +100,8 @@ class GetVirtualHardDiskResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualHardDiskResult(GetVirtualHardDiskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualHardDiskResult]:
+        ...
 
 def get_virtual_hard_disk(
     resource_group_name: Optional[_builtins.str] = ...,

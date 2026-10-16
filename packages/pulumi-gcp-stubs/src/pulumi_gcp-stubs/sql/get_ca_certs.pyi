@@ -35,7 +35,8 @@ class GetCaCertsResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetCaCertsResult(GetCaCertsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCaCertsResult]:
+        ...
 
 def get_ca_certs(
     instance: Optional[_builtins.str] = ...,

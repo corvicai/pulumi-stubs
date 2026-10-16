@@ -75,7 +75,8 @@ class GetAddressResult:
     def users(self) -> _builtins.str: ...
 
 class AwaitableGetAddressResult(GetAddressResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAddressResult]:
+        ...
 
 def get_address(
     name: Optional[_builtins.str] = ...,

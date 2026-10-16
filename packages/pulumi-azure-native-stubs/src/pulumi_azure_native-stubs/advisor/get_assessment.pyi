@@ -76,7 +76,8 @@ class GetAssessmentResult:
     def workload_name(self) -> _builtins.str: ...
 
 class AwaitableGetAssessmentResult(GetAssessmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssessmentResult]:
+        ...
 
 def get_assessment(
     assessment_name: Optional[_builtins.str] = ...,

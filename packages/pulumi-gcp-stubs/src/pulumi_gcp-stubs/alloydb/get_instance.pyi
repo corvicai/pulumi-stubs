@@ -168,7 +168,8 @@ class GetInstanceResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceResult(GetInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceResult]:
+        ...
 
 def get_instance(
     cluster_id: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetContextResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContextResult(GetContextResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContextResult]:
+        ...
 
 def get_context(
     context_name: Optional[_builtins.str] = ...,

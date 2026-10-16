@@ -31,17 +31,20 @@ class NamespaceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace_name.setter
-    def namespace_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnections")
     def private_endpoint_connections(
@@ -55,7 +58,8 @@ class NamespaceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -64,12 +68,14 @@ class NamespaceArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[SkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -78,7 +84,8 @@ class NamespaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:relay:Namespace")
 class Namespace(pulumi.CustomResource):

@@ -46,7 +46,10 @@ class GetCompoundAssessmentOperationResult:
 class AwaitableGetCompoundAssessmentOperationResult(
     GetCompoundAssessmentOperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCompoundAssessmentOperationResult]:
+        ...
 
 def get_compound_assessment_operation(
     compound_assessment_name: Optional[_builtins.str] = ...,

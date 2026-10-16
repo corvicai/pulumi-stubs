@@ -52,7 +52,8 @@ class GetServiceGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceGroupResult(GetServiceGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceGroupResult]:
+        ...
 
 def get_service_group(
     service_group_name: Optional[_builtins.str] = ...,

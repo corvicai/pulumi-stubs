@@ -53,7 +53,10 @@ class GetManagedInstanceAdministratorResult:
 class AwaitableGetManagedInstanceAdministratorResult(
     GetManagedInstanceAdministratorResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedInstanceAdministratorResult]:
+        ...
 
 def get_managed_instance_administrator(
     administrator_name: Optional[_builtins.str] = ...,

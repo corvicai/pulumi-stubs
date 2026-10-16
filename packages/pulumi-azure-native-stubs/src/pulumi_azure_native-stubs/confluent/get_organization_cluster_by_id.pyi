@@ -56,7 +56,8 @@ class GetOrganizationClusterByIdResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOrganizationClusterByIdResult(GetOrganizationClusterByIdResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationClusterByIdResult]:
+        ...
 
 def get_organization_cluster_by_id(
     cluster_id: Optional[_builtins.str] = ...,

@@ -50,7 +50,8 @@ class GetRegexPatternSetResult:
     def scope(self) -> _builtins.str: ...
 
 class AwaitableGetRegexPatternSetResult(GetRegexPatternSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegexPatternSetResult]:
+        ...
 
 def get_regex_pattern_set(
     name: Optional[_builtins.str] = ...,

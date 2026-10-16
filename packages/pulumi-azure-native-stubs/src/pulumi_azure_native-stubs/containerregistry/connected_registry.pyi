@@ -37,22 +37,26 @@ class ConnectedRegistryArgs:
     @mode.setter
     def mode(
         self, value: pulumi.Input[Union[_builtins.str, ConnectedRegistryMode]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> pulumi.Input[ParentPropertiesArgs]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[ParentPropertiesArgs]): ...
+    def parent(self, value: pulumi.Input[ParentPropertiesArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registryName")
     def registry_name(self) -> pulumi.Input[_builtins.str]: ...
     @registry_name.setter
-    def registry_name(self, value: pulumi.Input[_builtins.str]): ...
+    def registry_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientTokenIds")
     def client_token_ids(
@@ -61,12 +65,16 @@ class ConnectedRegistryArgs:
     @client_token_ids.setter
     def client_token_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectedRegistryName")
     def connected_registry_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connected_registry_name.setter
-    def connected_registry_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connected_registry_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="garbageCollection")
     def garbage_collection(
@@ -75,12 +83,14 @@ class ConnectedRegistryArgs:
     @garbage_collection.setter
     def garbage_collection(
         self, value: Optional[pulumi.Input[GarbageCollectionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def logging(self) -> Optional[pulumi.Input[LoggingPropertiesArgs]]: ...
     @logging.setter
-    def logging(self, value: Optional[pulumi.Input[LoggingPropertiesArgs]]): ...
+    def logging(self, value: Optional[pulumi.Input[LoggingPropertiesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationsList")
     def notifications_list(
@@ -89,7 +99,8 @@ class ConnectedRegistryArgs:
     @notifications_list.setter
     def notifications_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:containerregistry:ConnectedRegistry")
 class ConnectedRegistry(pulumi.CustomResource):

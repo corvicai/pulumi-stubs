@@ -52,7 +52,8 @@ class GetEnergyServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnergyServiceResult(GetEnergyServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnergyServiceResult]:
+        ...
 
 def get_energy_service(
     resource_group_name: Optional[_builtins.str] = ...,

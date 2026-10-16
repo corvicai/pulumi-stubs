@@ -56,7 +56,10 @@ class GetAwsCloudTrailDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAwsCloudTrailDataConnectorResult(GetAwsCloudTrailDataConnectorResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAwsCloudTrailDataConnectorResult]:
+        ...
 
 def get_aws_cloud_trail_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

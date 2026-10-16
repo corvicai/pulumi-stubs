@@ -56,7 +56,8 @@ class GetVolumeSnapshotResult:
     def volume_name(self) -> _builtins.str: ...
 
 class AwaitableGetVolumeSnapshotResult(GetVolumeSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVolumeSnapshotResult]:
+        ...
 
 def get_volume_snapshot(
     elastic_san_name: Optional[_builtins.str] = ...,

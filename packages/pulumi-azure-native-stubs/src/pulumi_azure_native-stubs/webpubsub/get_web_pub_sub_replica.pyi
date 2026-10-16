@@ -64,7 +64,8 @@ class GetWebPubSubReplicaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebPubSubReplicaResult(GetWebPubSubReplicaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebPubSubReplicaResult]:
+        ...
 
 def get_web_pub_sub_replica(
     replica_name: Optional[_builtins.str] = ...,

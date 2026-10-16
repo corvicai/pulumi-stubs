@@ -40,7 +40,8 @@ class SecurityPolicyArgs:
     @adaptive_protection_config.setter
     def adaptive_protection_config(
         self, value: Optional[pulumi.Input[SecurityPolicyAdaptiveProtectionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedOptionsConfig")
     def advanced_options_config(
@@ -49,12 +50,14 @@ class SecurityPolicyArgs:
     @advanced_options_config.setter
     def advanced_options_config(
         self, value: Optional[pulumi.Input[SecurityPolicyAdvancedOptionsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -63,17 +66,20 @@ class SecurityPolicyArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recaptchaOptionsConfig")
     def recaptcha_options_config(
@@ -82,7 +88,8 @@ class SecurityPolicyArgs:
     @recaptcha_options_config.setter
     def recaptcha_options_config(
         self, value: Optional[pulumi.Input[SecurityPolicyRecaptchaOptionsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -92,12 +99,14 @@ class SecurityPolicyArgs:
     def rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SecurityPolicyRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SecurityPolicyState:
@@ -139,7 +148,8 @@ class _SecurityPolicyState:
     @adaptive_protection_config.setter
     def adaptive_protection_config(
         self, value: Optional[pulumi.Input[SecurityPolicyAdaptiveProtectionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedOptionsConfig")
     def advanced_options_config(
@@ -148,12 +158,14 @@ class _SecurityPolicyState:
     @advanced_options_config.setter
     def advanced_options_config(
         self, value: Optional[pulumi.Input[SecurityPolicyAdvancedOptionsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -162,17 +174,22 @@ class _SecurityPolicyState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fingerprint.setter
-    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelFingerprint")
     def label_fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @label_fingerprint.setter
-    def label_fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def label_fingerprint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -181,17 +198,20 @@ class _SecurityPolicyState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -200,7 +220,8 @@ class _SecurityPolicyState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recaptchaOptionsConfig")
     def recaptcha_options_config(
@@ -209,7 +230,8 @@ class _SecurityPolicyState:
     @recaptcha_options_config.setter
     def recaptcha_options_config(
         self, value: Optional[pulumi.Input[SecurityPolicyRecaptchaOptionsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -219,17 +241,20 @@ class _SecurityPolicyState:
     def rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SecurityPolicyRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/securityPolicy:SecurityPolicy")
 class SecurityPolicy(pulumi.CustomResource):

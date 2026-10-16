@@ -24,7 +24,8 @@ class InstanceDetailsArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def administration(
@@ -33,17 +34,20 @@ class InstanceDetailsArgs:
     @administration.setter
     def administration(
         self, value: Optional[pulumi.Input[DFPInstanceAdministratorsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceName")
     def instance_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_name.setter
-    def instance_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -52,7 +56,8 @@ class InstanceDetailsArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InstanceDetails(pulumi.CustomResource):

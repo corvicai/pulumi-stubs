@@ -212,7 +212,8 @@ class GetDatabaseResult:
     def zone_redundant(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetDatabaseResult(GetDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseResult]:
+        ...
 
 def get_database(
     database_name: Optional[_builtins.str] = ...,

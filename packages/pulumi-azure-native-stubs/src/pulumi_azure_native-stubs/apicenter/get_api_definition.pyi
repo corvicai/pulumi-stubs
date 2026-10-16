@@ -52,7 +52,8 @@ class GetApiDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiDefinitionResult(GetApiDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiDefinitionResult]:
+        ...
 
 def get_api_definition(
     api_name: Optional[_builtins.str] = ...,

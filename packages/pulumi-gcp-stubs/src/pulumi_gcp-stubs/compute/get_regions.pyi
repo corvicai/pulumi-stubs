@@ -29,7 +29,8 @@ class GetRegionsResult:
     def status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetRegionsResult(GetRegionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionsResult]:
+        ...
 
 def get_regions(
     project: Optional[_builtins.str] = ...,

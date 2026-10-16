@@ -76,7 +76,8 @@ class GetSqlVirtualMachineGroupResult:
     def wsfc_domain_profile(self) -> Optional[outputs.WsfcDomainProfileResponse]: ...
 
 class AwaitableGetSqlVirtualMachineGroupResult(GetSqlVirtualMachineGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlVirtualMachineGroupResult]:
+        ...
 
 def get_sql_virtual_machine_group(
     resource_group_name: Optional[_builtins.str] = ...,

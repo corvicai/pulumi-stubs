@@ -48,7 +48,8 @@ class GetProviderRegistrationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProviderRegistrationResult(GetProviderRegistrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProviderRegistrationResult]:
+        ...
 
 def get_provider_registration(
     provider_namespace: Optional[_builtins.str] = ...,

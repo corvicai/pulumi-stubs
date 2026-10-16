@@ -44,7 +44,8 @@ class GetTenantConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTenantConfigurationResult(GetTenantConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTenantConfigurationResult]:
+        ...
 
 def get_tenant_configuration(
     configuration_name: Optional[_builtins.str] = ...,

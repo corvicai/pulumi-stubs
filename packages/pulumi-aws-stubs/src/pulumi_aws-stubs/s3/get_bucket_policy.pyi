@@ -29,7 +29,8 @@ class GetBucketPolicyResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetBucketPolicyResult(GetBucketPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBucketPolicyResult]:
+        ...
 
 def get_bucket_policy(
     bucket: Optional[_builtins.str] = ...,

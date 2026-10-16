@@ -25,18 +25,25 @@ class GeminiGcpEnablementSettingArgs:
     @pulumi.getter(name="geminiGcpEnablementSettingId")
     def gemini_gcp_enablement_setting_id(self) -> pulumi.Input[_builtins.str]: ...
     @gemini_gcp_enablement_setting_id.setter
-    def gemini_gcp_enablement_setting_id(self, value: pulumi.Input[_builtins.str]): ...
+    def gemini_gcp_enablement_setting_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableWebGrounding")
     @_utilities.deprecated(...)
     def disable_web_grounding(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_web_grounding.setter
-    def disable_web_grounding(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_web_grounding(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableCustomerDataSharing")
     def enable_customer_data_sharing(
@@ -45,7 +52,8 @@ class GeminiGcpEnablementSettingArgs:
     @enable_customer_data_sharing.setter
     def enable_customer_data_sharing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -54,17 +62,22 @@ class GeminiGcpEnablementSettingArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webGroundingType")
     def web_grounding_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_grounding_type.setter
-    def web_grounding_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_grounding_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GeminiGcpEnablementSettingState:
@@ -92,13 +105,17 @@ class _GeminiGcpEnablementSettingState:
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableWebGrounding")
     @_utilities.deprecated(...)
     def disable_web_grounding(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_web_grounding.setter
-    def disable_web_grounding(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_web_grounding(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -107,7 +124,8 @@ class _GeminiGcpEnablementSettingState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableCustomerDataSharing")
     def enable_customer_data_sharing(
@@ -116,7 +134,8 @@ class _GeminiGcpEnablementSettingState:
     @enable_customer_data_sharing.setter
     def enable_customer_data_sharing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geminiGcpEnablementSettingId")
     def gemini_gcp_enablement_setting_id(
@@ -125,7 +144,8 @@ class _GeminiGcpEnablementSettingState:
     @gemini_gcp_enablement_setting_id.setter
     def gemini_gcp_enablement_setting_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -134,22 +154,26 @@ class _GeminiGcpEnablementSettingState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -158,17 +182,22 @@ class _GeminiGcpEnablementSettingState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webGroundingType")
     def web_grounding_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_grounding_type.setter
-    def web_grounding_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_grounding_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class GeminiGcpEnablementSetting(pulumi.CustomResource):

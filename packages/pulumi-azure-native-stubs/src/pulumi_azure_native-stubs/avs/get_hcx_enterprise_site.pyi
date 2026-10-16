@@ -52,7 +52,8 @@ class GetHcxEnterpriseSiteResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHcxEnterpriseSiteResult(GetHcxEnterpriseSiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHcxEnterpriseSiteResult]:
+        ...
 
 def get_hcx_enterprise_site(
     hcx_enterprise_site_name: Optional[_builtins.str] = ...,

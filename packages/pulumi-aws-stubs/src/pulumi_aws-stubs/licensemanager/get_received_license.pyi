@@ -94,7 +94,8 @@ class GetReceivedLicenseResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetReceivedLicenseResult(GetReceivedLicenseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReceivedLicenseResult]:
+        ...
 
 def get_received_license(
     license_arn: Optional[_builtins.str] = ...,

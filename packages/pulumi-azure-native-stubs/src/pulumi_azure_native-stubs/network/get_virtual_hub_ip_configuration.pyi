@@ -60,7 +60,10 @@ class GetVirtualHubIpConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualHubIpConfigurationResult(GetVirtualHubIpConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualHubIpConfigurationResult]:
+        ...
 
 def get_virtual_hub_ip_configuration(
     ip_config_name: Optional[_builtins.str] = ...,

@@ -38,7 +38,8 @@ class CxFlowArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedSettings")
     def advanced_settings(
@@ -47,12 +48,14 @@ class CxFlowArgs:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[CxFlowAdvancedSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHandlers")
     def event_handlers(
@@ -62,12 +65,16 @@ class CxFlowArgs:
     def event_handlers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CxFlowEventHandlerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDefaultStartFlow")
     def is_default_start_flow(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_default_start_flow.setter
-    def is_default_start_flow(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_default_start_flow(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeConnectorSettings")
     def knowledge_connector_settings(
@@ -76,22 +83,28 @@ class CxFlowArgs:
     @knowledge_connector_settings.setter
     def knowledge_connector_settings(
         self, value: Optional[pulumi.Input[CxFlowKnowledgeConnectorSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nluSettings")
     def nlu_settings(self) -> Optional[pulumi.Input[CxFlowNluSettingsArgs]]: ...
     @nlu_settings.setter
-    def nlu_settings(self, value: Optional[pulumi.Input[CxFlowNluSettingsArgs]]): ...
+    def nlu_settings(
+        self, value: Optional[pulumi.Input[CxFlowNluSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRouteGroups")
     def transition_route_groups(
@@ -100,7 +113,8 @@ class CxFlowArgs:
     @transition_route_groups.setter
     def transition_route_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRoutes")
     def transition_routes(
@@ -112,7 +126,8 @@ class CxFlowArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxFlowTransitionRouteArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CxFlowState:
@@ -148,17 +163,20 @@ class _CxFlowState:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[CxFlowAdvancedSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHandlers")
     def event_handlers(
@@ -168,12 +186,16 @@ class _CxFlowState:
     def event_handlers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CxFlowEventHandlerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDefaultStartFlow")
     def is_default_start_flow(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_default_start_flow.setter
-    def is_default_start_flow(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_default_start_flow(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeConnectorSettings")
     def knowledge_connector_settings(
@@ -182,27 +204,34 @@ class _CxFlowState:
     @knowledge_connector_settings.setter
     def knowledge_connector_settings(
         self, value: Optional[pulumi.Input[CxFlowKnowledgeConnectorSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nluSettings")
     def nlu_settings(self) -> Optional[pulumi.Input[CxFlowNluSettingsArgs]]: ...
     @nlu_settings.setter
-    def nlu_settings(self, value: Optional[pulumi.Input[CxFlowNluSettingsArgs]]): ...
+    def nlu_settings(
+        self, value: Optional[pulumi.Input[CxFlowNluSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRouteGroups")
     def transition_route_groups(
@@ -211,7 +240,8 @@ class _CxFlowState:
     @transition_route_groups.setter
     def transition_route_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRoutes")
     def transition_routes(
@@ -223,7 +253,8 @@ class _CxFlowState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxFlowTransitionRouteArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:diagflow/cxFlow:CxFlow")
 class CxFlow(pulumi.CustomResource):

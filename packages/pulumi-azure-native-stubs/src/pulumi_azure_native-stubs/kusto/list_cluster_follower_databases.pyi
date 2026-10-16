@@ -23,7 +23,10 @@ class ListClusterFollowerDatabasesResult:
     ) -> Optional[Sequence[outputs.FollowerDatabaseDefinitionResponse]]: ...
 
 class AwaitableListClusterFollowerDatabasesResult(ListClusterFollowerDatabasesResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListClusterFollowerDatabasesResult]:
+        ...
 
 def list_cluster_follower_databases(
     cluster_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetResourceResult:
     def type_version_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetResourceResult(GetResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceResult]:
+        ...
 
 def get_resource(
     identifier: Optional[_builtins.str] = ...,

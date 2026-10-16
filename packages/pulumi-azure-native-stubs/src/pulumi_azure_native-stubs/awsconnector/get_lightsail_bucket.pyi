@@ -52,7 +52,8 @@ class GetLightsailBucketResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLightsailBucketResult(GetLightsailBucketResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLightsailBucketResult]:
+        ...
 
 def get_lightsail_bucket(
     name: Optional[_builtins.str] = ...,

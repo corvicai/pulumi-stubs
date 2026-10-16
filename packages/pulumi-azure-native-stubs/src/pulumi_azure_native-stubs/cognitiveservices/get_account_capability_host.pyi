@@ -40,7 +40,8 @@ class GetAccountCapabilityHostResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAccountCapabilityHostResult(GetAccountCapabilityHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountCapabilityHostResult]:
+        ...
 
 def get_account_capability_host(
     account_name: Optional[_builtins.str] = ...,

@@ -23,12 +23,14 @@ class DevOpsConfigurationArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConnectorName")
     def security_connector_name(self) -> pulumi.Input[_builtins.str]: ...
     @security_connector_name.setter
-    def security_connector_name(self, value: pulumi.Input[_builtins.str]): ...
+    def security_connector_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -37,7 +39,8 @@ class DevOpsConfigurationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[DevOpsConfigurationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:security:DevOpsConfiguration")
 class DevOpsConfiguration(pulumi.CustomResource):

@@ -66,7 +66,8 @@ class GetPolicyDocumentResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPolicyDocumentResult(GetPolicyDocumentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyDocumentResult]:
+        ...
 
 def get_policy_document(
     override_json: Optional[_builtins.str] = ...,

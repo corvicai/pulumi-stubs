@@ -50,7 +50,8 @@ class ScalingPlanApplicationSourceArgs:
     @cloudformation_stack_arn.setter
     def cloudformation_stack_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagFilters")
     def tag_filters(
@@ -66,7 +67,8 @@ class ScalingPlanApplicationSourceArgs:
                 Sequence[pulumi.Input[ScalingPlanApplicationSourceTagFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScalingPlanApplicationSourceTagFilterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -84,7 +86,8 @@ class ScalingPlanApplicationSourceTagFilterArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -93,7 +96,8 @@ class ScalingPlanApplicationSourceTagFilterArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScalingPlanScalingInstructionArgsDict(TypedDict):
     max_capacity: pulumi.Input[_builtins.int]
@@ -167,27 +171,32 @@ class ScalingPlanScalingInstructionArgs:
     @pulumi.getter(name="maxCapacity")
     def max_capacity(self) -> pulumi.Input[_builtins.int]: ...
     @max_capacity.setter
-    def max_capacity(self, value: pulumi.Input[_builtins.int]): ...
+    def max_capacity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minCapacity")
     def min_capacity(self) -> pulumi.Input[_builtins.int]: ...
     @min_capacity.setter
-    def min_capacity(self, value: pulumi.Input[_builtins.int]): ...
+    def min_capacity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalableDimension")
     def scalable_dimension(self) -> pulumi.Input[_builtins.str]: ...
     @scalable_dimension.setter
-    def scalable_dimension(self, value: pulumi.Input[_builtins.str]): ...
+    def scalable_dimension(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNamespace")
     def service_namespace(self) -> pulumi.Input[_builtins.str]: ...
     @service_namespace.setter
-    def service_namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def service_namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetTrackingConfigurations")
     def target_tracking_configurations(
@@ -207,7 +216,8 @@ class ScalingPlanScalingInstructionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customizedLoadMetricSpecification")
     def customized_load_metric_specification(
@@ -223,14 +233,16 @@ class ScalingPlanScalingInstructionArgs:
                 ScalingPlanScalingInstructionCustomizedLoadMetricSpecificationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableDynamicScaling")
     def disable_dynamic_scaling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_dynamic_scaling.setter
     def disable_dynamic_scaling(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predefinedLoadMetricSpecification")
     def predefined_load_metric_specification(
@@ -246,7 +258,8 @@ class ScalingPlanScalingInstructionArgs:
                 ScalingPlanScalingInstructionPredefinedLoadMetricSpecificationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predictiveScalingMaxCapacityBehavior")
     def predictive_scaling_max_capacity_behavior(
@@ -255,7 +268,8 @@ class ScalingPlanScalingInstructionArgs:
     @predictive_scaling_max_capacity_behavior.setter
     def predictive_scaling_max_capacity_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predictiveScalingMaxCapacityBuffer")
     def predictive_scaling_max_capacity_buffer(
@@ -264,12 +278,16 @@ class ScalingPlanScalingInstructionArgs:
     @predictive_scaling_max_capacity_buffer.setter
     def predictive_scaling_max_capacity_buffer(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predictiveScalingMode")
     def predictive_scaling_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @predictive_scaling_mode.setter
-    def predictive_scaling_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def predictive_scaling_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPolicyUpdateBehavior")
     def scaling_policy_update_behavior(
@@ -278,14 +296,16 @@ class ScalingPlanScalingInstructionArgs:
     @scaling_policy_update_behavior.setter
     def scaling_policy_update_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduledActionBufferTime")
     def scheduled_action_buffer_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scheduled_action_buffer_time.setter
     def scheduled_action_buffer_time(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScalingPlanScalingInstructionCustomizedLoadMetricSpecificationArgsDict(TypedDict):
     metric_name: pulumi.Input[_builtins.str]
@@ -311,17 +331,20 @@ class ScalingPlanScalingInstructionCustomizedLoadMetricSpecificationArgs:
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespace(self) -> pulumi.Input[_builtins.str]: ...
     @namespace.setter
-    def namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statistic(self) -> pulumi.Input[_builtins.str]: ...
     @statistic.setter
-    def statistic(self, value: pulumi.Input[_builtins.str]): ...
+    def statistic(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimensions(
@@ -330,12 +353,14 @@ class ScalingPlanScalingInstructionCustomizedLoadMetricSpecificationArgs:
     @dimensions.setter
     def dimensions(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unit.setter
-    def unit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ScalingPlanScalingInstructionPredefinedLoadMetricSpecificationArgsDict(TypedDict):
     predefined_load_metric_type: pulumi.Input[_builtins.str]
@@ -353,12 +378,16 @@ class ScalingPlanScalingInstructionPredefinedLoadMetricSpecificationArgs:
     @pulumi.getter(name="predefinedLoadMetricType")
     def predefined_load_metric_type(self) -> pulumi.Input[_builtins.str]: ...
     @predefined_load_metric_type.setter
-    def predefined_load_metric_type(self, value: pulumi.Input[_builtins.str]): ...
+    def predefined_load_metric_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceLabel")
     def resource_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_label.setter
-    def resource_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_label(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ScalingPlanScalingInstructionTargetTrackingConfigurationArgsDict(TypedDict):
     target_value: pulumi.Input[_builtins.float]
@@ -402,7 +431,8 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationArgs:
     @pulumi.getter(name="targetValue")
     def target_value(self) -> pulumi.Input[_builtins.float]: ...
     @target_value.setter
-    def target_value(self, value: pulumi.Input[_builtins.float]): ...
+    def target_value(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customizedScalingMetricSpecification")
     def customized_scaling_metric_specification(
@@ -420,19 +450,24 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationArgs:
                 ScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableScaleIn")
     def disable_scale_in(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_scale_in.setter
-    def disable_scale_in(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_scale_in(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="estimatedInstanceWarmup")
     def estimated_instance_warmup(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @estimated_instance_warmup.setter
     def estimated_instance_warmup(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predefinedScalingMetricSpecification")
     def predefined_scaling_metric_specification(
@@ -450,17 +485,24 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationArgs:
                 ScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleInCooldown")
     def scale_in_cooldown(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale_in_cooldown.setter
-    def scale_in_cooldown(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale_in_cooldown(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleOutCooldown")
     def scale_out_cooldown(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale_out_cooldown.setter
-    def scale_out_cooldown(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale_out_cooldown(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationArgsDict(
     TypedDict
@@ -488,17 +530,20 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingM
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespace(self) -> pulumi.Input[_builtins.str]: ...
     @namespace.setter
-    def namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statistic(self) -> pulumi.Input[_builtins.str]: ...
     @statistic.setter
-    def statistic(self, value: pulumi.Input[_builtins.str]): ...
+    def statistic(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimensions(
@@ -507,12 +552,14 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingM
     @dimensions.setter
     def dimensions(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unit.setter
-    def unit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationArgsDict(
     TypedDict
@@ -532,9 +579,13 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingM
     @pulumi.getter(name="predefinedScalingMetricType")
     def predefined_scaling_metric_type(self) -> pulumi.Input[_builtins.str]: ...
     @predefined_scaling_metric_type.setter
-    def predefined_scaling_metric_type(self, value: pulumi.Input[_builtins.str]): ...
+    def predefined_scaling_metric_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceLabel")
     def resource_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_label.setter
-    def resource_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_label(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

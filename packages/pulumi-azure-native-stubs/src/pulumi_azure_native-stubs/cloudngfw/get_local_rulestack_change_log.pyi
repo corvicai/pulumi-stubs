@@ -28,7 +28,8 @@ class GetLocalRulestackChangeLogResult:
     def last_modified(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetLocalRulestackChangeLogResult(GetLocalRulestackChangeLogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalRulestackChangeLogResult]:
+        ...
 
 def get_local_rulestack_change_log(
     local_rulestack_name: Optional[_builtins.str] = ...,

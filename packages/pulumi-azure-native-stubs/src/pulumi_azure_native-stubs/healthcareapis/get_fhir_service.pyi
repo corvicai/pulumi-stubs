@@ -124,7 +124,8 @@ class GetFhirServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFhirServiceResult(GetFhirServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFhirServiceResult]:
+        ...
 
 def get_fhir_service(
     fhir_service_name: Optional[_builtins.str] = ...,

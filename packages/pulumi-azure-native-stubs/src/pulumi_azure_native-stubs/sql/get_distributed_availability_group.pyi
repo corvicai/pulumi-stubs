@@ -84,7 +84,10 @@ class GetDistributedAvailabilityGroupResult:
 class AwaitableGetDistributedAvailabilityGroupResult(
     GetDistributedAvailabilityGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDistributedAvailabilityGroupResult]:
+        ...
 
 def get_distributed_availability_group(
     distributed_availability_group_name: Optional[_builtins.str] = ...,

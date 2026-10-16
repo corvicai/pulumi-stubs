@@ -46,7 +46,10 @@ class GetReplicationRecoveryServicesProviderResult:
 class AwaitableGetReplicationRecoveryServicesProviderResult(
     GetReplicationRecoveryServicesProviderResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReplicationRecoveryServicesProviderResult]:
+        ...
 
 def get_replication_recovery_services_provider(
     fabric_name: Optional[_builtins.str] = ...,

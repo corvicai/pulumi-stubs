@@ -37,24 +37,28 @@ class AssessmentsMetadataSubscriptionArgs:
     @assessment_type.setter
     def assessment_type(
         self, value: pulumi.Input[Union[_builtins.str, AssessmentType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def severity(self) -> pulumi.Input[Union[_builtins.str, Severity]]: ...
     @severity.setter
-    def severity(self, value: pulumi.Input[Union[_builtins.str, Severity]]): ...
+    def severity(self, value: pulumi.Input[Union[_builtins.str, Severity]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentMetadataName")
     def assessment_metadata_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assessment_metadata_name.setter
     def assessment_metadata_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def categories(
@@ -68,12 +72,14 @@ class AssessmentsMetadataSubscriptionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Categories]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="implementationEffort")
     def implementation_effort(
@@ -82,17 +88,22 @@ class AssessmentsMetadataSubscriptionArgs:
     @implementation_effort.setter
     def implementation_effort(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ImplementationEffort]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def preview(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @preview.setter
-    def preview(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def preview(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remediationDescription")
     def remediation_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remediation_description.setter
-    def remediation_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def remediation_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def threats(
@@ -106,7 +117,8 @@ class AssessmentsMetadataSubscriptionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Threats]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userImpact")
     def user_impact(
@@ -115,7 +127,8 @@ class AssessmentsMetadataSubscriptionArgs:
     @user_impact.setter
     def user_impact(
         self, value: Optional[pulumi.Input[Union[_builtins.str, UserImpact]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AssessmentsMetadataSubscription(pulumi.CustomResource):

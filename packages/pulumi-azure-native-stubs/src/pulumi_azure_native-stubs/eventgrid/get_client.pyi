@@ -66,7 +66,8 @@ class GetClientResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetClientResult(GetClientResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClientResult]:
+        ...
 
 def get_client(
     client_name: Optional[_builtins.str] = ...,

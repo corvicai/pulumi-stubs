@@ -168,7 +168,8 @@ class GetInstanceGroupManagerResult:
     def zone(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetInstanceGroupManagerResult(GetInstanceGroupManagerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceGroupManagerResult]:
+        ...
 
 def get_instance_group_manager(
     name: Optional[_builtins.str] = ...,

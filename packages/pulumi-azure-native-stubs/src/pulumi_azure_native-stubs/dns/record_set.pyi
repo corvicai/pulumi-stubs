@@ -56,17 +56,20 @@ class RecordSetArgs:
     @pulumi.getter(name="recordType")
     def record_type(self) -> pulumi.Input[_builtins.str]: ...
     @record_type.setter
-    def record_type(self, value: pulumi.Input[_builtins.str]): ...
+    def record_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneName")
     def zone_name(self) -> pulumi.Input[_builtins.str]: ...
     @zone_name.setter
-    def zone_name(self, value: pulumi.Input[_builtins.str]): ...
+    def zone_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aRecords")
     def a_records(
@@ -75,7 +78,8 @@ class RecordSetArgs:
     @a_records.setter
     def a_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ARecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aaaaRecords")
     def aaaa_records(
@@ -84,7 +88,8 @@ class RecordSetArgs:
     @aaaa_records.setter
     def aaaa_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AaaaRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caaRecords")
     def caa_records(
@@ -93,12 +98,14 @@ class RecordSetArgs:
     @caa_records.setter
     def caa_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CaaRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cnameRecord")
     def cname_record(self) -> Optional[pulumi.Input[CnameRecordArgs]]: ...
     @cname_record.setter
-    def cname_record(self, value: Optional[pulumi.Input[CnameRecordArgs]]): ...
+    def cname_record(self, value: Optional[pulumi.Input[CnameRecordArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dsRecords")
     def ds_records(
@@ -107,7 +114,8 @@ class RecordSetArgs:
     @ds_records.setter
     def ds_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DsRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -116,7 +124,8 @@ class RecordSetArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mxRecords")
     def mx_records(
@@ -125,7 +134,8 @@ class RecordSetArgs:
     @mx_records.setter
     def mx_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MxRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="naptrRecords")
     def naptr_records(
@@ -134,7 +144,8 @@ class RecordSetArgs:
     @naptr_records.setter
     def naptr_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NaptrRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nsRecords")
     def ns_records(
@@ -143,7 +154,8 @@ class RecordSetArgs:
     @ns_records.setter
     def ns_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NsRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ptrRecords")
     def ptr_records(
@@ -152,19 +164,22 @@ class RecordSetArgs:
     @ptr_records.setter
     def ptr_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PtrRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relativeRecordSetName")
     def relative_record_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @relative_record_set_name.setter
     def relative_record_set_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="soaRecord")
     def soa_record(self) -> Optional[pulumi.Input[SoaRecordArgs]]: ...
     @soa_record.setter
-    def soa_record(self, value: Optional[pulumi.Input[SoaRecordArgs]]): ...
+    def soa_record(self, value: Optional[pulumi.Input[SoaRecordArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="srvRecords")
     def srv_records(
@@ -173,12 +188,16 @@ class RecordSetArgs:
     @srv_records.setter
     def srv_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SrvRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetResource")
     def target_resource(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @target_resource.setter
-    def target_resource(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def target_resource(
+        self, value: Optional[pulumi.Input[SubResourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsaRecords")
     def tlsa_records(
@@ -187,19 +206,22 @@ class RecordSetArgs:
     @tlsa_records.setter
     def tlsa_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TlsaRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficManagementProfile")
     def traffic_management_profile(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @traffic_management_profile.setter
     def traffic_management_profile(
         self, value: Optional[pulumi.Input[SubResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="txtRecords")
     def txt_records(
@@ -208,7 +230,8 @@ class RecordSetArgs:
     @txt_records.setter
     def txt_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TxtRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:dns:RecordSet")
 class RecordSet(pulumi.CustomResource):

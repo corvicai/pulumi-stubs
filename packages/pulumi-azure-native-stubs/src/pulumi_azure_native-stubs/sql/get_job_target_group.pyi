@@ -35,7 +35,8 @@ class GetJobTargetGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJobTargetGroupResult(GetJobTargetGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobTargetGroupResult]:
+        ...
 
 def get_job_target_group(
     job_agent_name: Optional[_builtins.str] = ...,

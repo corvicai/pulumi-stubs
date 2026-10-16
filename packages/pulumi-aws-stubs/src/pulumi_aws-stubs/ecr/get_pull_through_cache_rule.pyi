@@ -51,7 +51,8 @@ class GetPullThroughCacheRuleResult:
     def upstream_repository_prefix(self) -> _builtins.str: ...
 
 class AwaitableGetPullThroughCacheRuleResult(GetPullThroughCacheRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPullThroughCacheRuleResult]:
+        ...
 
 def get_pull_through_cache_rule(
     ecr_repository_prefix: Optional[_builtins.str] = ...,

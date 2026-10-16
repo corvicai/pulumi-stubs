@@ -47,7 +47,8 @@ class DataQualityJobDefinitionArgs:
     def data_quality_app_specification(
         self,
         value: pulumi.Input[DataQualityJobDefinitionDataQualityAppSpecificationArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataQualityJobInput")
     def data_quality_job_input(
@@ -56,7 +57,8 @@ class DataQualityJobDefinitionArgs:
     @data_quality_job_input.setter
     def data_quality_job_input(
         self, value: pulumi.Input[DataQualityJobDefinitionDataQualityJobInputArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataQualityJobOutputConfig")
     def data_quality_job_output_config(
@@ -66,7 +68,8 @@ class DataQualityJobDefinitionArgs:
     def data_quality_job_output_config(
         self,
         value: pulumi.Input[DataQualityJobDefinitionDataQualityJobOutputConfigArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobResources")
     def job_resources(
@@ -75,12 +78,14 @@ class DataQualityJobDefinitionArgs:
     @job_resources.setter
     def job_resources(
         self, value: pulumi.Input[DataQualityJobDefinitionJobResourcesArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataQualityBaselineConfig")
     def data_quality_baseline_config(
@@ -94,12 +99,14 @@ class DataQualityJobDefinitionArgs:
         value: Optional[
             pulumi.Input[DataQualityJobDefinitionDataQualityBaselineConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -108,12 +115,14 @@ class DataQualityJobDefinitionArgs:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[DataQualityJobDefinitionNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stoppingCondition")
     def stopping_condition(
@@ -123,7 +132,8 @@ class DataQualityJobDefinitionArgs:
     def stopping_condition(
         self,
         value: Optional[pulumi.Input[DataQualityJobDefinitionStoppingConditionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -132,7 +142,8 @@ class DataQualityJobDefinitionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DataQualityJobDefinitionState:
@@ -173,7 +184,8 @@ class _DataQualityJobDefinitionState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataQualityAppSpecification")
     def data_quality_app_specification(
@@ -187,7 +199,8 @@ class _DataQualityJobDefinitionState:
         value: Optional[
             pulumi.Input[DataQualityJobDefinitionDataQualityAppSpecificationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataQualityBaselineConfig")
     def data_quality_baseline_config(
@@ -201,7 +214,8 @@ class _DataQualityJobDefinitionState:
         value: Optional[
             pulumi.Input[DataQualityJobDefinitionDataQualityBaselineConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataQualityJobInput")
     def data_quality_job_input(
@@ -211,7 +225,8 @@ class _DataQualityJobDefinitionState:
     def data_quality_job_input(
         self,
         value: Optional[pulumi.Input[DataQualityJobDefinitionDataQualityJobInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataQualityJobOutputConfig")
     def data_quality_job_output_config(
@@ -225,7 +240,8 @@ class _DataQualityJobDefinitionState:
         value: Optional[
             pulumi.Input[DataQualityJobDefinitionDataQualityJobOutputConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobResources")
     def job_resources(
@@ -234,12 +250,14 @@ class _DataQualityJobDefinitionState:
     @job_resources.setter
     def job_resources(
         self, value: Optional[pulumi.Input[DataQualityJobDefinitionJobResourcesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -248,17 +266,20 @@ class _DataQualityJobDefinitionState:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[DataQualityJobDefinitionNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stoppingCondition")
     def stopping_condition(
@@ -268,7 +289,8 @@ class _DataQualityJobDefinitionState:
     def stopping_condition(
         self,
         value: Optional[pulumi.Input[DataQualityJobDefinitionStoppingConditionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -277,7 +299,8 @@ class _DataQualityJobDefinitionState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -286,7 +309,8 @@ class _DataQualityJobDefinitionState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DataQualityJobDefinition(pulumi.CustomResource):

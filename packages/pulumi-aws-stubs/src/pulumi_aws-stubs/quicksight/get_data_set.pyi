@@ -100,7 +100,8 @@ class GetDataSetResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetDataSetResult(GetDataSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataSetResult]:
+        ...
 
 def get_data_set(
     aws_account_id: Optional[_builtins.str] = ...,

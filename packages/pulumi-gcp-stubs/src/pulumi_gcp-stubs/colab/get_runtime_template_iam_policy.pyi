@@ -43,7 +43,8 @@ class GetRuntimeTemplateIamPolicyResult:
     def runtime_template(self) -> _builtins.str: ...
 
 class AwaitableGetRuntimeTemplateIamPolicyResult(GetRuntimeTemplateIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRuntimeTemplateIamPolicyResult]:
+        ...
 
 def get_runtime_template_iam_policy(
     location: Optional[_builtins.str] = ...,

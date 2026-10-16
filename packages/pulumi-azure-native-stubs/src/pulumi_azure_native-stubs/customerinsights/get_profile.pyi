@@ -110,7 +110,8 @@ class GetProfileResult:
     def type_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetProfileResult(GetProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProfileResult]:
+        ...
 
 def get_profile(
     hub_name: Optional[_builtins.str] = ...,

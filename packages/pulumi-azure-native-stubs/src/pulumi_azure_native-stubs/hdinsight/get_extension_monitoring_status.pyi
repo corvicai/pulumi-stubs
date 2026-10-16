@@ -31,7 +31,10 @@ class GetExtensionMonitoringStatusResult:
     def workspace_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetExtensionMonitoringStatusResult(GetExtensionMonitoringStatusResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExtensionMonitoringStatusResult]:
+        ...
 
 def get_extension_monitoring_status(
     cluster_name: Optional[_builtins.str] = ...,

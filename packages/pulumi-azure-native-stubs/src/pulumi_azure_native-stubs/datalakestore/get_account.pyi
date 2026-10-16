@@ -120,7 +120,8 @@ class GetAccountResult:
     def virtual_network_rules(self) -> Sequence[outputs.VirtualNetworkRuleResponse]: ...
 
 class AwaitableGetAccountResult(GetAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountResult]:
+        ...
 
 def get_account(
     account_name: Optional[_builtins.str] = ...,

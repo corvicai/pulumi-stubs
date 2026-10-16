@@ -35,7 +35,8 @@ class GetApiKeysResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetApiKeysResult(GetApiKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiKeysResult]:
+        ...
 
 def get_api_keys(
     customer_id: Optional[_builtins.str] = ...,

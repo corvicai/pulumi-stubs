@@ -52,7 +52,8 @@ class GetDocumentProcessorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDocumentProcessorResult(GetDocumentProcessorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDocumentProcessorResult]:
+        ...
 
 def get_document_processor(
     processor_name: Optional[_builtins.str] = ...,

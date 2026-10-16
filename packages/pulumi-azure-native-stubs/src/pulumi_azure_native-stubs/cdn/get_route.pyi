@@ -95,7 +95,8 @@ class GetRouteResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRouteResult(GetRouteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteResult]:
+        ...
 
 def get_route(
     endpoint_name: Optional[_builtins.str] = ...,

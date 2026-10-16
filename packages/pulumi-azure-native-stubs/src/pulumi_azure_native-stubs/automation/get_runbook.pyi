@@ -118,7 +118,8 @@ class GetRunbookResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRunbookResult(GetRunbookResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRunbookResult]:
+        ...
 
 def get_runbook(
     automation_account_name: Optional[_builtins.str] = ...,

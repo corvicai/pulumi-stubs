@@ -24,7 +24,8 @@ class ScopingConfigurationArgs:
     @pulumi.getter(name="reportName")
     def report_name(self) -> pulumi.Input[_builtins.str]: ...
     @report_name.setter
-    def report_name(self, value: pulumi.Input[_builtins.str]): ...
+    def report_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def answers(
@@ -33,14 +34,16 @@ class ScopingConfigurationArgs:
     @answers.setter
     def answers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ScopingAnswerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scopingConfigurationName")
     def scoping_configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scoping_configuration_name.setter
     def scoping_configuration_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ScopingConfiguration(pulumi.CustomResource):

@@ -53,7 +53,8 @@ class EventSubscriptionArgs:
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deadLetterDestination")
     def dead_letter_destination(
@@ -62,7 +63,8 @@ class EventSubscriptionArgs:
     @dead_letter_destination.setter
     def dead_letter_destination(
         self, value: Optional[pulumi.Input[StorageBlobDeadLetterDestinationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deadLetterWithResourceIdentity")
     def dead_letter_with_resource_identity(
@@ -71,7 +73,8 @@ class EventSubscriptionArgs:
     @dead_letter_with_resource_identity.setter
     def dead_letter_with_resource_identity(
         self, value: Optional[pulumi.Input[DeadLetterWithResourceIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryWithResourceIdentity")
     def delivery_with_resource_identity(
@@ -80,7 +83,8 @@ class EventSubscriptionArgs:
     @delivery_with_resource_identity.setter
     def delivery_with_resource_identity(
         self, value: Optional[pulumi.Input[DeliveryWithResourceIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destination(
@@ -118,7 +122,8 @@ class EventSubscriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventDeliverySchema")
     def event_delivery_schema(
@@ -127,22 +132,32 @@ class EventSubscriptionArgs:
     @event_delivery_schema.setter
     def event_delivery_schema(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EventDeliverySchema]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventSubscriptionName")
     def event_subscription_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_subscription_name.setter
-    def event_subscription_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_subscription_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirationTimeUtc")
     def expiration_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expiration_time_utc.setter
-    def expiration_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expiration_time_utc(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[EventSubscriptionFilterArgs]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[EventSubscriptionFilterArgs]]): ...
+    def filter(
+        self, value: Optional[pulumi.Input[EventSubscriptionFilterArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -151,12 +166,14 @@ class EventSubscriptionArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryPolicy")
     def retry_policy(self) -> Optional[pulumi.Input[RetryPolicyArgs]]: ...
     @retry_policy.setter
-    def retry_policy(self, value: Optional[pulumi.Input[RetryPolicyArgs]]): ...
+    def retry_policy(self, value: Optional[pulumi.Input[RetryPolicyArgs]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:eventgrid:EventSubscription")
 class EventSubscription(pulumi.CustomResource):

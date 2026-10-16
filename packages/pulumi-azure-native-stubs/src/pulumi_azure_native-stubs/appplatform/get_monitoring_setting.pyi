@@ -44,7 +44,8 @@ class GetMonitoringSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMonitoringSettingResult(GetMonitoringSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMonitoringSettingResult]:
+        ...
 
 def get_monitoring_setting(
     resource_group_name: Optional[_builtins.str] = ...,

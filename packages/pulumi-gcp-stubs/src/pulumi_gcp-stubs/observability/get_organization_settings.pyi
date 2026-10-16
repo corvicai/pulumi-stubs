@@ -47,7 +47,8 @@ class GetOrganizationSettingsResult:
     def service_account_id(self) -> _builtins.str: ...
 
 class AwaitableGetOrganizationSettingsResult(GetOrganizationSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationSettingsResult]:
+        ...
 
 def get_organization_settings(
     location: Optional[_builtins.str] = ...,

@@ -68,7 +68,8 @@ class GetWorkgroupResult:
     def workgroup_name(self) -> _builtins.str: ...
 
 class AwaitableGetWorkgroupResult(GetWorkgroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkgroupResult]:
+        ...
 
 def get_workgroup(
     region: Optional[_builtins.str] = ...,

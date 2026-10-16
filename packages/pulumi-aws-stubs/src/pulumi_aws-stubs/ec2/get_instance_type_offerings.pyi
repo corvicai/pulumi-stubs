@@ -51,7 +51,8 @@ class GetInstanceTypeOfferingsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceTypeOfferingsResult(GetInstanceTypeOfferingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceTypeOfferingsResult]:
+        ...
 
 def get_instance_type_offerings(
     filters: Optional[

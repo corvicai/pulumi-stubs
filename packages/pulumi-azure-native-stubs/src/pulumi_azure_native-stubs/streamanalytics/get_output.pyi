@@ -60,7 +60,8 @@ class GetOutputResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOutputResult(GetOutputResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOutputResult]:
+        ...
 
 def get_output(
     job_name: Optional[_builtins.str] = ...,

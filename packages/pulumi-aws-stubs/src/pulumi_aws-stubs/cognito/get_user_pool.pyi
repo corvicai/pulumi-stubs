@@ -136,7 +136,8 @@ class GetUserPoolResult:
     def username_attributes(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetUserPoolResult(GetUserPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserPoolResult]:
+        ...
 
 def get_user_pool(
     region: Optional[_builtins.str] = ...,

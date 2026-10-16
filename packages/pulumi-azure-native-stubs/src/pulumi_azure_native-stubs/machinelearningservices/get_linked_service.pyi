@@ -48,7 +48,8 @@ class GetLinkedServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLinkedServiceResult(GetLinkedServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkedServiceResult]:
+        ...
 
 def get_linked_service(
     link_name: Optional[_builtins.str] = ...,

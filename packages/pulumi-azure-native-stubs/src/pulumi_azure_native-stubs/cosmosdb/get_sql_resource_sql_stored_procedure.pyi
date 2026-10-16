@@ -52,7 +52,10 @@ class GetSqlResourceSqlStoredProcedureResult:
 class AwaitableGetSqlResourceSqlStoredProcedureResult(
     GetSqlResourceSqlStoredProcedureResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlResourceSqlStoredProcedureResult]:
+        ...
 
 def get_sql_resource_sql_stored_procedure(
     account_name: Optional[_builtins.str] = ...,

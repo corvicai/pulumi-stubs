@@ -271,7 +271,8 @@ class ConnectorProfileConnectorProfileConfigArgs:
         value: pulumi.Input[
             ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorProfileProperties")
     def connector_profile_properties(
@@ -285,7 +286,8 @@ class ConnectorProfileConnectorProfileConfigArgs:
         value: pulumi.Input[
             ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgsDict(
     TypedDict
@@ -494,7 +496,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customConnector")
     def custom_connector(
@@ -512,7 +515,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def datadog(
@@ -530,7 +534,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynatrace(
@@ -548,7 +553,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleAnalytics")
     def google_analytics(
@@ -566,7 +572,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def honeycode(
@@ -584,7 +591,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inforNexus")
     def infor_nexus(
@@ -602,7 +610,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def marketo(
@@ -620,7 +629,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def redshift(
@@ -638,7 +648,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def salesforce(
@@ -656,7 +667,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sapoData")
     def sapo_data(
@@ -674,7 +686,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNow")
     def service_now(
@@ -692,7 +705,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def singular(
@@ -710,7 +724,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def slack(
@@ -728,7 +743,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def snowflake(
@@ -746,7 +762,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trendmicro(
@@ -764,7 +781,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def veeva(
@@ -782,7 +800,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zendesk(
@@ -800,7 +819,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeArgsDict(
     TypedDict
@@ -820,12 +840,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude
     @pulumi.getter(name="apiKey")
     def api_key(self) -> pulumi.Input[_builtins.str]: ...
     @api_key.setter
-    def api_key(self, value: pulumi.Input[_builtins.str]): ...
+    def api_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretKey")
     def secret_key(self) -> pulumi.Input[_builtins.str]: ...
     @secret_key.setter
-    def secret_key(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorArgsDict(
     TypedDict
@@ -883,7 +905,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     @pulumi.getter(name="authenticationType")
     def authentication_type(self) -> pulumi.Input[_builtins.str]: ...
     @authentication_type.setter
-    def authentication_type(self, value: pulumi.Input[_builtins.str]): ...
+    def authentication_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiKey")
     def api_key(
@@ -901,7 +924,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def basic(
@@ -919,7 +943,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def custom(
@@ -937,7 +962,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def oauth2(
@@ -955,7 +981,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2Args
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyArgsDict(
     TypedDict
@@ -975,12 +1002,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     @pulumi.getter(name="apiKey")
     def api_key(self) -> pulumi.Input[_builtins.str]: ...
     @api_key.setter
-    def api_key(self, value: pulumi.Input[_builtins.str]): ...
+    def api_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiSecretKey")
     def api_secret_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_secret_key.setter
-    def api_secret_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_secret_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicArgsDict(
     TypedDict
@@ -1000,12 +1029,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     @pulumi.getter
     def password(self) -> pulumi.Input[_builtins.str]: ...
     @password.setter
-    def password(self, value: pulumi.Input[_builtins.str]): ...
+    def password(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomArgsDict(
     TypedDict
@@ -1029,7 +1060,10 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     @pulumi.getter(name="customAuthenticationType")
     def custom_authentication_type(self) -> pulumi.Input[_builtins.str]: ...
     @custom_authentication_type.setter
-    def custom_authentication_type(self, value: pulumi.Input[_builtins.str]): ...
+    def custom_authentication_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsMap")
     def credentials_map(
@@ -1038,7 +1072,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     @credentials_map.setter
     def credentials_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2ArgsDict(
     TypedDict
@@ -1072,17 +1107,20 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -1100,12 +1138,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshToken")
     def refresh_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_token.setter
-    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestArgsDict(
     TypedDict
@@ -1125,12 +1165,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogArgsDict(
     TypedDict
@@ -1150,12 +1192,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogAr
     @pulumi.getter(name="apiKey")
     def api_key(self) -> pulumi.Input[_builtins.str]: ...
     @api_key.setter
-    def api_key(self, value: pulumi.Input[_builtins.str]): ...
+    def api_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationKey")
     def application_key(self) -> pulumi.Input[_builtins.str]: ...
     @application_key.setter
-    def application_key(self, value: pulumi.Input[_builtins.str]): ...
+    def application_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceArgsDict(
     TypedDict
@@ -1169,7 +1213,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace
     @pulumi.getter(name="apiToken")
     def api_token(self) -> pulumi.Input[_builtins.str]: ...
     @api_token.setter
-    def api_token(self, value: pulumi.Input[_builtins.str]): ...
+    def api_token(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsArgsDict(
     TypedDict
@@ -1203,17 +1248,20 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAna
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> pulumi.Input[_builtins.str]: ...
     @client_secret.setter
-    def client_secret(self, value: pulumi.Input[_builtins.str]): ...
+    def client_secret(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -1231,12 +1279,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAna
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshToken")
     def refresh_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_token.setter
-    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestArgsDict(
     TypedDict
@@ -1256,12 +1306,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAna
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeArgsDict(
     TypedDict
@@ -1291,7 +1343,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -1309,12 +1362,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshToken")
     def refresh_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_token.setter
-    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestArgsDict(
     TypedDict
@@ -1334,12 +1389,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusArgsDict(
     TypedDict
@@ -1363,22 +1420,26 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexu
     @pulumi.getter(name="accessKeyId")
     def access_key_id(self) -> pulumi.Input[_builtins.str]: ...
     @access_key_id.setter
-    def access_key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def access_key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def datakey(self) -> pulumi.Input[_builtins.str]: ...
     @datakey.setter
-    def datakey(self, value: pulumi.Input[_builtins.str]): ...
+    def datakey(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretAccessKey")
     def secret_access_key(self) -> pulumi.Input[_builtins.str]: ...
     @secret_access_key.setter
-    def secret_access_key(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_access_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userId")
     def user_id(self) -> pulumi.Input[_builtins.str]: ...
     @user_id.setter
-    def user_id(self, value: pulumi.Input[_builtins.str]): ...
+    def user_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoArgsDict(
     TypedDict
@@ -1410,17 +1471,20 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoAr
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> pulumi.Input[_builtins.str]: ...
     @client_secret.setter
-    def client_secret(self, value: pulumi.Input[_builtins.str]): ...
+    def client_secret(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -1438,7 +1502,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoAr
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestArgsDict(
     TypedDict
@@ -1458,12 +1523,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOa
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftArgsDict(
     TypedDict
@@ -1483,12 +1550,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftA
     @pulumi.getter
     def password(self) -> pulumi.Input[_builtins.str]: ...
     @password.setter
-    def password(self, value: pulumi.Input[_builtins.str]): ...
+    def password(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceArgsDict(
     TypedDict
@@ -1524,22 +1593,30 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforc
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCredentialsArn")
     def client_credentials_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_credentials_arn.setter
-    def client_credentials_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_credentials_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jwtToken")
     def jwt_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @jwt_token.setter
-    def jwt_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def jwt_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2GrantType")
     def oauth2_grant_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oauth2_grant_type.setter
-    def oauth2_grant_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oauth2_grant_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -1557,12 +1634,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforc
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshToken")
     def refresh_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_token.setter
-    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestArgsDict(
     TypedDict
@@ -1582,12 +1661,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforc
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataArgsDict(
     TypedDict
@@ -1636,7 +1717,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataA
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthCredentials")
     def oauth_credentials(
@@ -1654,7 +1736,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataA
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsArgsDict(
     TypedDict
@@ -1674,12 +1757,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataB
     @pulumi.getter
     def password(self) -> pulumi.Input[_builtins.str]: ...
     @password.setter
-    def password(self, value: pulumi.Input[_builtins.str]): ...
+    def password(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsArgsDict(
     TypedDict
@@ -1713,17 +1798,20 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataO
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> pulumi.Input[_builtins.str]: ...
     @client_secret.setter
-    def client_secret(self, value: pulumi.Input[_builtins.str]): ...
+    def client_secret(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -1741,12 +1829,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataO
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshToken")
     def refresh_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_token.setter
-    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestArgsDict(
     TypedDict
@@ -1766,12 +1856,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataO
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowArgsDict(
     TypedDict
@@ -1791,12 +1883,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNo
     @pulumi.getter
     def password(self) -> pulumi.Input[_builtins.str]: ...
     @password.setter
-    def password(self, value: pulumi.Input[_builtins.str]): ...
+    def password(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularArgsDict(
     TypedDict
@@ -1810,7 +1904,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularA
     @pulumi.getter(name="apiKey")
     def api_key(self) -> pulumi.Input[_builtins.str]: ...
     @api_key.setter
-    def api_key(self, value: pulumi.Input[_builtins.str]): ...
+    def api_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackArgsDict(
     TypedDict
@@ -1842,17 +1937,20 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackArgs
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> pulumi.Input[_builtins.str]: ...
     @client_secret.setter
-    def client_secret(self, value: pulumi.Input[_builtins.str]): ...
+    def client_secret(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -1870,7 +1968,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackArgs
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestArgsDict(
     TypedDict
@@ -1890,12 +1989,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOaut
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeArgsDict(
     TypedDict
@@ -1915,12 +2016,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake
     @pulumi.getter
     def password(self) -> pulumi.Input[_builtins.str]: ...
     @password.setter
-    def password(self, value: pulumi.Input[_builtins.str]): ...
+    def password(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroArgsDict(
     TypedDict
@@ -1934,7 +2037,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicr
     @pulumi.getter(name="apiSecretKey")
     def api_secret_key(self) -> pulumi.Input[_builtins.str]: ...
     @api_secret_key.setter
-    def api_secret_key(self, value: pulumi.Input[_builtins.str]): ...
+    def api_secret_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaArgsDict(
     TypedDict
@@ -1954,12 +2058,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaArgs
     @pulumi.getter
     def password(self) -> pulumi.Input[_builtins.str]: ...
     @password.setter
-    def password(self, value: pulumi.Input[_builtins.str]): ...
+    def password(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskArgsDict(
     TypedDict
@@ -1991,17 +2097,20 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskAr
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> pulumi.Input[_builtins.str]: ...
     @client_secret.setter
-    def client_secret(self, value: pulumi.Input[_builtins.str]): ...
+    def client_secret(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthRequest")
     def oauth_request(
@@ -2019,7 +2128,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskAr
                 ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestArgsDict(
     TypedDict
@@ -2039,12 +2149,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOa
     @pulumi.getter(name="authCode")
     def auth_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_code.setter
-    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUri")
     def redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_uri.setter
-    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgsDict(
     TypedDict
@@ -2253,7 +2365,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customConnector")
     def custom_connector(
@@ -2271,7 +2384,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def datadog(
@@ -2289,7 +2403,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynatrace(
@@ -2307,7 +2422,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleAnalytics")
     def google_analytics(
@@ -2325,7 +2441,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def honeycode(
@@ -2343,7 +2460,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inforNexus")
     def infor_nexus(
@@ -2361,7 +2479,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def marketo(
@@ -2379,7 +2498,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def redshift(
@@ -2397,7 +2517,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def salesforce(
@@ -2415,7 +2536,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sapoData")
     def sapo_data(
@@ -2433,7 +2555,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNow")
     def service_now(
@@ -2451,7 +2574,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def singular(
@@ -2469,7 +2593,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def slack(
@@ -2487,7 +2612,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def snowflake(
@@ -2505,7 +2631,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trendmicro(
@@ -2523,7 +2650,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def veeva(
@@ -2541,7 +2669,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zendesk(
@@ -2559,7 +2688,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeArgsDict(
     TypedDict
@@ -2612,7 +2742,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConn
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profileProperties")
     def profile_properties(
@@ -2621,7 +2752,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConn
     @profile_properties.setter
     def profile_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesArgsDict(
     TypedDict
@@ -2647,12 +2779,14 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConn
     @pulumi.getter(name="oauth2GrantType")
     def oauth2_grant_type(self) -> pulumi.Input[_builtins.str]: ...
     @oauth2_grant_type.setter
-    def oauth2_grant_type(self, value: pulumi.Input[_builtins.str]): ...
+    def oauth2_grant_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenUrl")
     def token_url(self) -> pulumi.Input[_builtins.str]: ...
     @token_url.setter
-    def token_url(self, value: pulumi.Input[_builtins.str]): ...
+    def token_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenUrlCustomProperties")
     def token_url_custom_properties(
@@ -2661,7 +2795,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConn
     @token_url_custom_properties.setter
     def token_url_custom_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogArgsDict(
     TypedDict
@@ -2675,7 +2810,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogArg
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceArgsDict(
     TypedDict
@@ -2689,7 +2825,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceA
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsArgsDict(
     TypedDict
@@ -2719,7 +2856,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoArgsDict(
     TypedDict
@@ -2733,7 +2871,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoArg
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftArgsDict(
     TypedDict
@@ -2763,37 +2902,48 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftAr
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterIdentifier")
     def cluster_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_identifier.setter
-    def cluster_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataApiRoleArn")
     def data_api_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_api_role_arn.setter
-    def data_api_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_api_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseUrl")
     def database_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_url.setter
-    def database_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceArgsDict(
     TypedDict
@@ -2819,12 +2969,16 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_url.setter
-    def instance_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isSandboxEnvironment")
     def is_sandbox_environment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_sandbox_environment.setter
-    def is_sandbox_environment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_sandbox_environment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usePrivatelinkForMetadataAndAuthorization")
     def use_privatelink_for_metadata_and_authorization(
@@ -2833,7 +2987,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce
     @use_privatelink_for_metadata_and_authorization.setter
     def use_privatelink_for_metadata_and_authorization(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataArgsDict(
     TypedDict
@@ -2871,27 +3026,32 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataAr
     @pulumi.getter(name="applicationHostUrl")
     def application_host_url(self) -> pulumi.Input[_builtins.str]: ...
     @application_host_url.setter
-    def application_host_url(self, value: pulumi.Input[_builtins.str]): ...
+    def application_host_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationServicePath")
     def application_service_path(self) -> pulumi.Input[_builtins.str]: ...
     @application_service_path.setter
-    def application_service_path(self, value: pulumi.Input[_builtins.str]): ...
+    def application_service_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientNumber")
     def client_number(self) -> pulumi.Input[_builtins.str]: ...
     @client_number.setter
-    def client_number(self, value: pulumi.Input[_builtins.str]): ...
+    def client_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portNumber")
     def port_number(self) -> pulumi.Input[_builtins.int]: ...
     @port_number.setter
-    def port_number(self, value: pulumi.Input[_builtins.int]): ...
+    def port_number(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logonLanguage")
     def logon_language(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @logon_language.setter
-    def logon_language(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def logon_language(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthProperties")
     def oauth_properties(
@@ -2909,14 +3069,16 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataAr
                 ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceName")
     def private_link_service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_service_name.setter
     def private_link_service_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesArgsDict(
     TypedDict
@@ -2938,19 +3100,22 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOa
     @pulumi.getter(name="authCodeUrl")
     def auth_code_url(self) -> pulumi.Input[_builtins.str]: ...
     @auth_code_url.setter
-    def auth_code_url(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_code_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthScopes")
     def oauth_scopes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @oauth_scopes.setter
     def oauth_scopes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenUrl")
     def token_url(self) -> pulumi.Input[_builtins.str]: ...
     @token_url.setter
-    def token_url(self, value: pulumi.Input[_builtins.str]): ...
+    def token_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowArgsDict(
     TypedDict
@@ -2964,7 +3129,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularArgsDict(
     TypedDict
@@ -2986,7 +3152,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackArgs:
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeArgsDict(
     TypedDict
@@ -3016,39 +3183,46 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeA
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def stage(self) -> pulumi.Input[_builtins.str]: ...
     @stage.setter
-    def stage(self, value: pulumi.Input[_builtins.str]): ...
+    def stage(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def warehouse(self) -> pulumi.Input[_builtins.str]: ...
     @warehouse.setter
-    def warehouse(self, value: pulumi.Input[_builtins.str]): ...
+    def warehouse(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountName")
     def account_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_name.setter
-    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceName")
     def private_link_service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_service_name.setter
     def private_link_service_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroArgsDict(
     TypedDict
@@ -3070,7 +3244,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaArgs:
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskArgsDict(
     TypedDict
@@ -3084,7 +3259,8 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskArg
     @pulumi.getter(name="instanceUrl")
     def instance_url(self) -> pulumi.Input[_builtins.str]: ...
     @instance_url.setter
-    def instance_url(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigArgsDict(TypedDict):
     connector_type: pulumi.Input[_builtins.str]
@@ -3110,7 +3286,8 @@ class FlowDestinationFlowConfigArgs:
     @pulumi.getter(name="connectorType")
     def connector_type(self) -> pulumi.Input[_builtins.str]: ...
     @connector_type.setter
-    def connector_type(self, value: pulumi.Input[_builtins.str]): ...
+    def connector_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationConnectorProperties")
     def destination_connector_properties(
@@ -3122,17 +3299,22 @@ class FlowDestinationFlowConfigArgs:
         value: pulumi.Input[
             FlowDestinationFlowConfigDestinationConnectorPropertiesArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiVersion")
     def api_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_version.setter
-    def api_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorProfileName")
     def connector_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connector_profile_name.setter
-    def connector_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connector_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesArgsDict(TypedDict):
     custom_connector: NotRequired[
@@ -3285,7 +3467,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerProfiles")
     def customer_profiles(
@@ -3303,7 +3486,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventBridge")
     def event_bridge(
@@ -3321,7 +3505,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def honeycode(
@@ -3339,7 +3524,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lookoutMetrics")
     def lookout_metrics(
@@ -3357,7 +3543,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def marketo(
@@ -3373,7 +3560,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def redshift(
@@ -3391,7 +3579,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(
@@ -3405,7 +3594,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowDestinationFlowConfigDestinationConnectorPropertiesS3Args]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def salesforce(
@@ -3423,7 +3613,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sapoData")
     def sapo_data(
@@ -3441,7 +3632,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def snowflake(
@@ -3459,7 +3651,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def upsolver(
@@ -3477,7 +3670,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zendesk(
@@ -3493,7 +3687,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgsDict(
     TypedDict
@@ -3533,7 +3728,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgs
     @pulumi.getter(name="entityName")
     def entity_name(self) -> pulumi.Input[_builtins.str]: ...
     @entity_name.setter
-    def entity_name(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customProperties")
     def custom_properties(
@@ -3542,7 +3738,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgs
     @custom_properties.setter
     def custom_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -3560,7 +3757,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgs
                 FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idFieldNames")
     def id_field_names(
@@ -3569,12 +3767,16 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgs
     @id_field_names.setter
     def id_field_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeOperationType")
     def write_operation_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @write_operation_type.setter
-    def write_operation_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def write_operation_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigArgsDict(
     TypedDict
@@ -3596,12 +3798,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErro
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -3610,7 +3814,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErro
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesArgsDict(
     TypedDict
@@ -3630,12 +3835,16 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesArg
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectTypeName")
     def object_type_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_type_name.setter
-    def object_type_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_type_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeArgsDict(
     TypedDict
@@ -3663,7 +3872,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -3681,7 +3891,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigArgsDict(
     TypedDict
@@ -3703,12 +3914,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHan
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -3717,7 +3930,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHan
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeArgsDict(
     TypedDict
@@ -3745,7 +3959,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -3763,7 +3978,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigArgsDict(
     TypedDict
@@ -3785,12 +4001,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandl
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -3799,7 +4017,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandl
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsArgsDict(
     TypedDict
@@ -3833,7 +4052,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -3851,7 +4071,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigArgsDict(
     TypedDict
@@ -3873,12 +4094,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlin
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -3887,7 +4110,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlin
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftArgsDict(
     TypedDict
@@ -3919,17 +4143,20 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftArgs:
     @pulumi.getter(name="intermediateBucketName")
     def intermediate_bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @intermediate_bucket_name.setter
-    def intermediate_bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def intermediate_bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -3947,7 +4174,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigArgsDict(
     TypedDict
@@ -3969,12 +4197,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandli
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -3983,7 +4213,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandli
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3ArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -4011,12 +4242,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3Args:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3OutputFormatConfig")
     def s3_output_format_config(
@@ -4034,7 +4267,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3Args:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigArgsDict(
     TypedDict
@@ -4087,12 +4321,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
                 FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileType")
     def file_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_type.setter
-    def file_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixConfig")
     def prefix_config(
@@ -4110,14 +4346,16 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
                 FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preserveSourceDataTyping")
     def preserve_source_data_typing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @preserve_source_data_typing.setter
     def preserve_source_data_typing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigArgsDict(
     TypedDict
@@ -4137,12 +4375,18 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
     @pulumi.getter(name="aggregationType")
     def aggregation_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aggregation_type.setter
-    def aggregation_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aggregation_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFileSize")
     def target_file_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_file_size.setter
-    def target_file_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_file_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigArgsDict(
     TypedDict
@@ -4166,7 +4410,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
     @pulumi.getter(name="prefixFormat")
     def prefix_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix_format.setter
-    def prefix_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixHierarchies")
     def prefix_hierarchies(
@@ -4175,12 +4420,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
     @prefix_hierarchies.setter
     def prefix_hierarchies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixType")
     def prefix_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix_type.setter
-    def prefix_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceArgsDict(
     TypedDict
@@ -4216,12 +4463,16 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataTransferApi")
     def data_transfer_api(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_transfer_api.setter
-    def data_transfer_api(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_transfer_api(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -4239,7 +4490,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idFieldNames")
     def id_field_names(
@@ -4248,12 +4500,16 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceArgs:
     @id_field_names.setter
     def id_field_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeOperationType")
     def write_operation_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @write_operation_type.setter
-    def write_operation_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def write_operation_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigArgsDict(
     TypedDict
@@ -4275,12 +4531,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHand
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -4289,7 +4547,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHand
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgsDict(
     TypedDict
@@ -4333,7 +4592,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgs:
     @pulumi.getter(name="objectPath")
     def object_path(self) -> pulumi.Input[_builtins.str]: ...
     @object_path.setter
-    def object_path(self, value: pulumi.Input[_builtins.str]): ...
+    def object_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -4351,7 +4611,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idFieldNames")
     def id_field_names(
@@ -4360,7 +4621,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgs:
     @id_field_names.setter
     def id_field_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successResponseHandlingConfig")
     def success_response_handling_config(
@@ -4378,12 +4640,16 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeOperationType")
     def write_operation_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @write_operation_type.setter
-    def write_operation_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def write_operation_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigArgsDict(
     TypedDict
@@ -4405,12 +4671,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandli
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -4419,7 +4687,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandli
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigArgsDict(
     TypedDict
@@ -4439,12 +4708,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResp
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeArgsDict(
     TypedDict
@@ -4476,17 +4747,20 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeArgs:
     @pulumi.getter(name="intermediateBucketName")
     def intermediate_bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @intermediate_bucket_name.setter
-    def intermediate_bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def intermediate_bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -4504,7 +4778,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigArgsDict(
     TypedDict
@@ -4526,12 +4801,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandl
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -4540,7 +4817,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandl
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverArgsDict(
     TypedDict
@@ -4566,7 +4844,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3OutputFormatConfig")
     def s3_output_format_config(
@@ -4580,12 +4859,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverArgs:
         value: pulumi.Input[
             FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigArgsDict(
     TypedDict
@@ -4628,7 +4909,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
         value: pulumi.Input[
             FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aggregationConfig")
     def aggregation_config(
@@ -4646,12 +4928,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
                 FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileType")
     def file_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_type.setter
-    def file_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigArgsDict(
     TypedDict
@@ -4667,7 +4951,10 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
     @pulumi.getter(name="aggregationType")
     def aggregation_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aggregation_type.setter
-    def aggregation_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aggregation_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigArgsDict(
     TypedDict
@@ -4691,12 +4978,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
     @pulumi.getter(name="prefixType")
     def prefix_type(self) -> pulumi.Input[_builtins.str]: ...
     @prefix_type.setter
-    def prefix_type(self, value: pulumi.Input[_builtins.str]): ...
+    def prefix_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixFormat")
     def prefix_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix_format.setter
-    def prefix_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixHierarchies")
     def prefix_hierarchies(
@@ -4705,7 +4994,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
     @prefix_hierarchies.setter
     def prefix_hierarchies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -4737,7 +5027,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandlingConfig")
     def error_handling_config(
@@ -4755,7 +5046,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgs:
                 FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idFieldNames")
     def id_field_names(
@@ -4764,12 +5056,16 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgs:
     @id_field_names.setter
     def id_field_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeOperationType")
     def write_operation_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @write_operation_type.setter
-    def write_operation_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def write_operation_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigArgsDict(
     TypedDict
@@ -4791,12 +5087,14 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlin
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failOnFirstDestinationError")
     def fail_on_first_destination_error(
@@ -4805,7 +5103,8 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlin
     @fail_on_first_destination_error.setter
     def fail_on_first_destination_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowMetadataCatalogConfigArgsDict(TypedDict):
     glue_data_catalog: NotRequired[
@@ -4830,7 +5129,8 @@ class FlowMetadataCatalogConfigArgs:
     def glue_data_catalog(
         self,
         value: Optional[pulumi.Input[FlowMetadataCatalogConfigGlueDataCatalogArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowMetadataCatalogConfigGlueDataCatalogArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
@@ -4850,17 +5150,20 @@ class FlowMetadataCatalogConfigGlueDataCatalogArgs:
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tablePrefix")
     def table_prefix(self) -> pulumi.Input[_builtins.str]: ...
     @table_prefix.setter
-    def table_prefix(self, value: pulumi.Input[_builtins.str]): ...
+    def table_prefix(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigArgsDict(TypedDict):
     connector_type: pulumi.Input[_builtins.str]
@@ -4892,7 +5195,8 @@ class FlowSourceFlowConfigArgs:
     @pulumi.getter(name="connectorType")
     def connector_type(self) -> pulumi.Input[_builtins.str]: ...
     @connector_type.setter
-    def connector_type(self, value: pulumi.Input[_builtins.str]): ...
+    def connector_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectorProperties")
     def source_connector_properties(
@@ -4901,17 +5205,22 @@ class FlowSourceFlowConfigArgs:
     @source_connector_properties.setter
     def source_connector_properties(
         self, value: pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiVersion")
     def api_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_version.setter
-    def api_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorProfileName")
     def connector_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connector_profile_name.setter
-    def connector_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connector_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="incrementalPullConfig")
     def incremental_pull_config(
@@ -4921,7 +5230,8 @@ class FlowSourceFlowConfigArgs:
     def incremental_pull_config(
         self,
         value: Optional[pulumi.Input[FlowSourceFlowConfigIncrementalPullConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigIncrementalPullConfigArgsDict(TypedDict):
     datetime_type_field_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -4939,7 +5249,8 @@ class FlowSourceFlowConfigIncrementalPullConfigArgs:
     @datetime_type_field_name.setter
     def datetime_type_field_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesArgsDict(TypedDict):
     amplitude: NotRequired[
@@ -5066,7 +5377,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesAmplitudeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customConnector")
     def custom_connector(
@@ -5082,7 +5394,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
                 FlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def datadog(
@@ -5096,7 +5409,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesDatadogArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynatrace(
@@ -5110,7 +5424,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesDynatraceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleAnalytics")
     def google_analytics(
@@ -5126,7 +5441,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
                 FlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inforNexus")
     def infor_nexus(
@@ -5140,7 +5456,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesInforNexusArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def marketo(
@@ -5154,7 +5471,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesMarketoArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(
@@ -5168,7 +5486,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesS3Args]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def salesforce(
@@ -5182,7 +5501,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesSalesforceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sapoData")
     def sapo_data(
@@ -5196,7 +5516,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesSapoDataArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNow")
     def service_now(
@@ -5210,7 +5531,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesServiceNowArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def singular(
@@ -5224,7 +5546,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesSingularArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def slack(
@@ -5238,7 +5561,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesSlackArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trendmicro(
@@ -5252,7 +5576,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesTrendmicroArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def veeva(
@@ -5266,7 +5591,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesVeevaArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zendesk(
@@ -5280,7 +5606,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
         value: Optional[
             pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesZendeskArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesAmplitudeArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5292,7 +5619,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesAmplitudeArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorArgsDict(TypedDict):
     entity_name: pulumi.Input[_builtins.str]
@@ -5314,7 +5642,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorArgs:
     @pulumi.getter(name="entityName")
     def entity_name(self) -> pulumi.Input[_builtins.str]: ...
     @entity_name.setter
-    def entity_name(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customProperties")
     def custom_properties(
@@ -5323,7 +5652,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorArgs:
     @custom_properties.setter
     def custom_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesDatadogArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5335,7 +5665,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesDatadogArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesDynatraceArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5347,7 +5678,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesDynatraceArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5359,7 +5691,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesInforNexusArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5371,7 +5704,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesInforNexusArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesMarketoArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5383,7 +5717,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesMarketoArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesS3ArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -5411,12 +5746,14 @@ class FlowSourceFlowConfigSourceConnectorPropertiesS3Args:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefix")
     def bucket_prefix(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_prefix.setter
-    def bucket_prefix(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_prefix(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3InputFormatConfig")
     def s3_input_format_config(
@@ -5434,7 +5771,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesS3Args:
                 FlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigArgsDict(
     TypedDict
@@ -5450,7 +5788,10 @@ class FlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigArgs:
     @pulumi.getter(name="s3InputFileType")
     def s3_input_file_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_input_file_type.setter
-    def s3_input_file_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_input_file_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSalesforceArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5472,26 +5813,32 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSalesforceArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataTransferApi")
     def data_transfer_api(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_transfer_api.setter
-    def data_transfer_api(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_transfer_api(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDynamicFieldUpdate")
     def enable_dynamic_field_update(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_dynamic_field_update.setter
     def enable_dynamic_field_update(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeDeletedRecords")
     def include_deleted_records(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_deleted_records.setter
     def include_deleted_records(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataArgsDict(TypedDict):
     object_path: pulumi.Input[_builtins.str]
@@ -5527,7 +5874,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataArgs:
     @pulumi.getter(name="objectPath")
     def object_path(self) -> pulumi.Input[_builtins.str]: ...
     @object_path.setter
-    def object_path(self, value: pulumi.Input[_builtins.str]): ...
+    def object_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="paginationConfig")
     def pagination_config(
@@ -5545,7 +5893,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataArgs:
                 FlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelismConfig")
     def parallelism_config(
@@ -5563,7 +5912,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataArgs:
                 FlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigArgsDict(
     TypedDict
@@ -5577,7 +5927,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigArgs:
     @pulumi.getter(name="maxPageSize")
     def max_page_size(self) -> pulumi.Input[_builtins.int]: ...
     @max_page_size.setter
-    def max_page_size(self, value: pulumi.Input[_builtins.int]): ...
+    def max_page_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigArgsDict(
     TypedDict
@@ -5591,7 +5942,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigArgs
     @pulumi.getter(name="maxPageSize")
     def max_page_size(self) -> pulumi.Input[_builtins.int]: ...
     @max_page_size.setter
-    def max_page_size(self, value: pulumi.Input[_builtins.int]): ...
+    def max_page_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesServiceNowArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5603,7 +5955,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesServiceNowArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSingularArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5615,7 +5968,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSingularArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSlackArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5627,7 +5981,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSlackArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesTrendmicroArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5639,7 +5994,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesTrendmicroArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesVeevaArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5663,27 +6019,38 @@ class FlowSourceFlowConfigSourceConnectorPropertiesVeevaArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentType")
     def document_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @document_type.setter
-    def document_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def document_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeAllVersions")
     def include_all_versions(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_all_versions.setter
-    def include_all_versions(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_all_versions(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeRenditions")
     def include_renditions(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_renditions.setter
-    def include_renditions(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_renditions(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeSourceFiles")
     def include_source_files(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_source_files.setter
-    def include_source_files(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_source_files(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class FlowSourceFlowConfigSourceConnectorPropertiesZendeskArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
@@ -5695,7 +6062,8 @@ class FlowSourceFlowConfigSourceConnectorPropertiesZendeskArgs:
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FlowTaskArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -5729,7 +6097,8 @@ class FlowTaskArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorOperators")
     def connector_operators(
@@ -5743,12 +6112,16 @@ class FlowTaskArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FlowTaskConnectorOperatorArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationField")
     def destination_field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_field.setter
-    def destination_field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_field(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceFields")
     def source_fields(
@@ -5757,7 +6130,8 @@ class FlowTaskArgs:
     @source_fields.setter
     def source_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskProperties")
     def task_properties(
@@ -5766,7 +6140,8 @@ class FlowTaskArgs:
     @task_properties.setter
     def task_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowTaskConnectorOperatorArgsDict(TypedDict):
     amplitude: NotRequired[pulumi.Input[_builtins.str]]
@@ -5812,82 +6187,102 @@ class FlowTaskConnectorOperatorArgs:
     @pulumi.getter
     def amplitude(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @amplitude.setter
-    def amplitude(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def amplitude(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customConnector")
     def custom_connector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_connector.setter
-    def custom_connector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_connector(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def datadog(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @datadog.setter
-    def datadog(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def datadog(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynatrace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dynatrace.setter
-    def dynatrace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dynatrace(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleAnalytics")
     def google_analytics(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @google_analytics.setter
-    def google_analytics(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def google_analytics(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inforNexus")
     def infor_nexus(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @infor_nexus.setter
-    def infor_nexus(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def infor_nexus(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def marketo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @marketo.setter
-    def marketo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def marketo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3.setter
-    def s3(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def salesforce(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @salesforce.setter
-    def salesforce(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def salesforce(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sapoData")
     def sapo_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sapo_data.setter
-    def sapo_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sapo_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNow")
     def service_now(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_now.setter
-    def service_now(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_now(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def singular(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @singular.setter
-    def singular(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def singular(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def slack(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @slack.setter
-    def slack(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def slack(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trendmicro(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trendmicro.setter
-    def trendmicro(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def trendmicro(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def veeva(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @veeva.setter
-    def veeva(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def veeva(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zendesk(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zendesk.setter
-    def zendesk(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zendesk(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FlowTriggerConfigArgsDict(TypedDict):
     trigger_type: pulumi.Input[_builtins.str]
@@ -5909,7 +6304,8 @@ class FlowTriggerConfigArgs:
     @pulumi.getter(name="triggerType")
     def trigger_type(self) -> pulumi.Input[_builtins.str]: ...
     @trigger_type.setter
-    def trigger_type(self, value: pulumi.Input[_builtins.str]): ...
+    def trigger_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerProperties")
     def trigger_properties(
@@ -5918,7 +6314,8 @@ class FlowTriggerConfigArgs:
     @trigger_properties.setter
     def trigger_properties(
         self, value: Optional[pulumi.Input[FlowTriggerConfigTriggerPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowTriggerConfigTriggerPropertiesArgsDict(TypedDict):
     scheduled: NotRequired[
@@ -5943,7 +6340,8 @@ class FlowTriggerConfigTriggerPropertiesArgs:
     def scheduled(
         self,
         value: Optional[pulumi.Input[FlowTriggerConfigTriggerPropertiesScheduledArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FlowTriggerConfigTriggerPropertiesScheduledArgsDict(TypedDict):
     schedule_expression: pulumi.Input[_builtins.str]
@@ -5971,34 +6369,47 @@ class FlowTriggerConfigTriggerPropertiesScheduledArgs:
     @pulumi.getter(name="scheduleExpression")
     def schedule_expression(self) -> pulumi.Input[_builtins.str]: ...
     @schedule_expression.setter
-    def schedule_expression(self, value: pulumi.Input[_builtins.str]): ...
+    def schedule_expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPullMode")
     def data_pull_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_pull_mode.setter
-    def data_pull_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_pull_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firstExecutionFrom")
     def first_execution_from(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @first_execution_from.setter
-    def first_execution_from(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def first_execution_from(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleEndTime")
     def schedule_end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_end_time.setter
-    def schedule_end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule_end_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleOffset")
     def schedule_offset(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @schedule_offset.setter
-    def schedule_offset(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def schedule_offset(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleStartTime")
     def schedule_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_start_time.setter
-    def schedule_start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule_start_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timezone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timezone.setter
-    def timezone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timezone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

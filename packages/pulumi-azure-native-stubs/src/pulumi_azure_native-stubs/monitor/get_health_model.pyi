@@ -56,7 +56,8 @@ class GetHealthModelResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHealthModelResult(GetHealthModelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHealthModelResult]:
+        ...
 
 def get_health_model(
     azure_monitor_workspace_name: Optional[_builtins.str] = ...,

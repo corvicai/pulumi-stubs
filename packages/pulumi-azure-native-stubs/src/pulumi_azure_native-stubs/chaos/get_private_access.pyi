@@ -62,7 +62,8 @@ class GetPrivateAccessResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateAccessResult(GetPrivateAccessResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateAccessResult]:
+        ...
 
 def get_private_access(
     private_access_name: Optional[_builtins.str] = ...,

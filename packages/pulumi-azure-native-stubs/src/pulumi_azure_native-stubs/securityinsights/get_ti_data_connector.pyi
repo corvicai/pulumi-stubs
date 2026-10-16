@@ -60,7 +60,8 @@ class GetTIDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTIDataConnectorResult(GetTIDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTIDataConnectorResult]:
+        ...
 
 def get_ti_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

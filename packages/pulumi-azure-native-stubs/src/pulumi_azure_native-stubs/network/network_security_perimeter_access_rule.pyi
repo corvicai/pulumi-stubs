@@ -51,22 +51,30 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @pulumi.getter(name="networkSecurityPerimeterName")
     def network_security_perimeter_name(self) -> pulumi.Input[_builtins.str]: ...
     @network_security_perimeter_name.setter
-    def network_security_perimeter_name(self, value: pulumi.Input[_builtins.str]): ...
+    def network_security_perimeter_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profileName")
     def profile_name(self) -> pulumi.Input[_builtins.str]: ...
     @profile_name.setter
-    def profile_name(self, value: pulumi.Input[_builtins.str]): ...
+    def profile_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessRuleName")
     def access_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_rule_name.setter
-    def access_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_rule_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressPrefixes")
     def address_prefixes(
@@ -75,7 +83,8 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @address_prefixes.setter
     def address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def direction(
@@ -84,7 +93,8 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @direction.setter
     def direction(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AccessRuleDirection]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddresses")
     def email_addresses(
@@ -93,7 +103,8 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @email_addresses.setter
     def email_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fullyQualifiedDomainNames")
     def fully_qualified_domain_names(
@@ -102,17 +113,20 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @fully_qualified_domain_names.setter
     def fully_qualified_domain_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phoneNumbers")
     def phone_numbers(
@@ -121,7 +135,8 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @phone_numbers.setter
     def phone_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceTags")
     def service_tags(
@@ -130,7 +145,8 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @service_tags.setter
     def service_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subscriptions(
@@ -139,7 +155,8 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @subscriptions.setter
     def subscriptions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubscriptionIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -148,7 +165,8 @@ class NetworkSecurityPerimeterAccessRuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class NetworkSecurityPerimeterAccessRule(pulumi.CustomResource):

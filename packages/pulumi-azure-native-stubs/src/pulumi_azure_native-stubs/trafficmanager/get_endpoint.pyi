@@ -96,7 +96,8 @@ class GetEndpointResult:
     def weight(self) -> Optional[_builtins.float]: ...
 
 class AwaitableGetEndpointResult(GetEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEndpointResult]:
+        ...
 
 def get_endpoint(
     endpoint_name: Optional[_builtins.str] = ...,

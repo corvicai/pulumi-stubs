@@ -78,7 +78,8 @@ class GetCapacityDetailsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCapacityDetailsResult(GetCapacityDetailsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityDetailsResult]:
+        ...
 
 def get_capacity_details(
     dedicated_capacity_name: Optional[_builtins.str] = ...,

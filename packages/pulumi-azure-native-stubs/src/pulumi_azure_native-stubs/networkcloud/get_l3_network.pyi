@@ -116,7 +116,8 @@ class GetL3NetworkResult:
     def vlan(self) -> _builtins.float: ...
 
 class AwaitableGetL3NetworkResult(GetL3NetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetL3NetworkResult]:
+        ...
 
 def get_l3_network(
     l3_network_name: Optional[_builtins.str] = ...,

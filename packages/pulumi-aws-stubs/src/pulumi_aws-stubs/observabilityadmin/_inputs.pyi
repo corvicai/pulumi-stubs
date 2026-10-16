@@ -50,7 +50,8 @@ class CentralizationRuleForOrganizationRuleArgs:
     @destination.setter
     def destination(
         self, value: pulumi.Input[CentralizationRuleForOrganizationRuleDestinationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(
@@ -59,7 +60,8 @@ class CentralizationRuleForOrganizationRuleArgs:
     @source.setter
     def source(
         self, value: pulumi.Input[CentralizationRuleForOrganizationRuleSourceArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationRuleDestinationArgsDict(TypedDict):
     account: pulumi.Input[_builtins.str]
@@ -87,12 +89,14 @@ class CentralizationRuleForOrganizationRuleDestinationArgs:
     @pulumi.getter
     def account(self) -> pulumi.Input[_builtins.str]: ...
     @account.setter
-    def account(self, value: pulumi.Input[_builtins.str]): ...
+    def account(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> pulumi.Input[_builtins.str]: ...
     @region.setter
-    def region(self, value: pulumi.Input[_builtins.str]): ...
+    def region(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationLogsConfiguration")
     def destination_logs_configuration(
@@ -110,7 +114,8 @@ class CentralizationRuleForOrganizationRuleDestinationArgs:
                 CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationArgsDict(
     TypedDict
@@ -169,7 +174,8 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
                 CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logGroupNameConfiguration")
     def log_group_name_configuration(
@@ -187,7 +193,8 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
                 CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogGroupNameConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logsEncryptionConfiguration")
     def logs_encryption_configuration(
@@ -205,7 +212,8 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
                 CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationArgsDict(
     TypedDict
@@ -225,12 +233,14 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogGroupNameConfigurationArgsDict(
     TypedDict
@@ -246,7 +256,8 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
     @pulumi.getter(name="logGroupNamePattern")
     def log_group_name_pattern(self) -> pulumi.Input[_builtins.str]: ...
     @log_group_name_pattern.setter
-    def log_group_name_pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group_name_pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationArgsDict(
     TypedDict
@@ -270,7 +281,8 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
     @pulumi.getter(name="encryptionStrategy")
     def encryption_strategy(self) -> pulumi.Input[_builtins.str]: ...
     @encryption_strategy.setter
-    def encryption_strategy(self, value: pulumi.Input[_builtins.str]): ...
+    def encryption_strategy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConflictResolutionStrategy")
     def encryption_conflict_resolution_strategy(
@@ -279,12 +291,14 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
     @encryption_conflict_resolution_strategy.setter
     def encryption_conflict_resolution_strategy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationRuleSourceArgsDict(TypedDict):
     regions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -312,12 +326,16 @@ class CentralizationRuleForOrganizationRuleSourceArgs:
     @pulumi.getter
     def regions(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @regions.setter
-    def regions(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def regions(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceLogsConfiguration")
     def source_logs_configuration(
@@ -335,7 +353,8 @@ class CentralizationRuleForOrganizationRuleSourceArgs:
                 CentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationArgsDict(
     TypedDict
@@ -355,12 +374,18 @@ class CentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationArgs:
     @pulumi.getter(name="encryptedLogGroupStrategy")
     def encrypted_log_group_strategy(self) -> pulumi.Input[_builtins.str]: ...
     @encrypted_log_group_strategy.setter
-    def encrypted_log_group_strategy(self, value: pulumi.Input[_builtins.str]): ...
+    def encrypted_log_group_strategy(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logGroupSelectionCriteria")
     def log_group_selection_criteria(self) -> pulumi.Input[_builtins.str]: ...
     @log_group_selection_criteria.setter
-    def log_group_selection_criteria(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group_selection_criteria(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class CentralizationRuleForOrganizationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -378,12 +403,14 @@ class CentralizationRuleForOrganizationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TelemetryPipelineConfigurationArgsDict(TypedDict):
     body: pulumi.Input[_builtins.str]
@@ -395,7 +422,8 @@ class TelemetryPipelineConfigurationArgs:
     @pulumi.getter
     def body(self) -> pulumi.Input[_builtins.str]: ...
     @body.setter
-    def body(self, value: pulumi.Input[_builtins.str]): ...
+    def body(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TelemetryPipelineTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -415,14 +443,17 @@ class TelemetryPipelineTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

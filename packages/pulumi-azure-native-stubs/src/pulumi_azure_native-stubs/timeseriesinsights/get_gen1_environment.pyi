@@ -86,7 +86,8 @@ class GetGen1EnvironmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGen1EnvironmentResult(GetGen1EnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGen1EnvironmentResult]:
+        ...
 
 def get_gen1_environment(
     environment_name: Optional[_builtins.str] = ...,

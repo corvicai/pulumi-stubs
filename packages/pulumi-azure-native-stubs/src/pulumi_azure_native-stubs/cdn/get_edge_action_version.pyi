@@ -68,7 +68,8 @@ class GetEdgeActionVersionResult:
     def validation_status(self) -> _builtins.str: ...
 
 class AwaitableGetEdgeActionVersionResult(GetEdgeActionVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEdgeActionVersionResult]:
+        ...
 
 def get_edge_action_version(
     edge_action_name: Optional[_builtins.str] = ...,

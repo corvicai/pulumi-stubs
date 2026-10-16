@@ -33,7 +33,8 @@ class GetInstanceTypesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceTypesResult(GetInstanceTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceTypesResult]:
+        ...
 
 def get_instance_types(
     filters: Optional[

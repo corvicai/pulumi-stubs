@@ -60,7 +60,8 @@ class GetEdgeActionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEdgeActionResult(GetEdgeActionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEdgeActionResult]:
+        ...
 
 def get_edge_action(
     edge_action_name: Optional[_builtins.str] = ...,

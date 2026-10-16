@@ -31,12 +31,14 @@ class AttestationEvidenceArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceUri")
     def source_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_uri.setter
-    def source_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RemediationFiltersArgsDict(TypedDict):
     locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -60,7 +62,8 @@ class RemediationFiltersArgs:
     @locations.setter
     def locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceIds")
     def resource_ids(
@@ -69,7 +72,8 @@ class RemediationFiltersArgs:
     @resource_ids.setter
     def resource_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RemediationPropertiesFailureThresholdArgsDict(TypedDict):
     percentage: NotRequired[pulumi.Input[_builtins.float]]
@@ -83,4 +87,5 @@ class RemediationPropertiesFailureThresholdArgs:
     @pulumi.getter
     def percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @percentage.setter
-    def percentage(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def percentage(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...

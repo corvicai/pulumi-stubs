@@ -56,7 +56,8 @@ class GetDeidServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeidServiceResult(GetDeidServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeidServiceResult]:
+        ...
 
 def get_deid_service(
     deid_service_name: Optional[_builtins.str] = ...,

@@ -60,7 +60,8 @@ class GetWorkloadNetworkVMGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadNetworkVMGroupResult(GetWorkloadNetworkVMGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadNetworkVMGroupResult]:
+        ...
 
 def get_workload_network_vm_group(
     private_cloud_name: Optional[_builtins.str] = ...,

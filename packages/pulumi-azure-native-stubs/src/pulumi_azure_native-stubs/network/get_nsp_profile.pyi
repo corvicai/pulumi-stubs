@@ -51,7 +51,8 @@ class GetNspProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNspProfileResult(GetNspProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNspProfileResult]:
+        ...
 
 def get_nsp_profile(
     network_security_perimeter_name: Optional[_builtins.str] = ...,

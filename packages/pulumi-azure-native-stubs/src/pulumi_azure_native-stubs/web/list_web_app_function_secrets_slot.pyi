@@ -23,7 +23,10 @@ class ListWebAppFunctionSecretsSlotResult:
     def trigger_url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListWebAppFunctionSecretsSlotResult(ListWebAppFunctionSecretsSlotResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppFunctionSecretsSlotResult]:
+        ...
 
 def list_web_app_function_secrets_slot(
     function_name: Optional[_builtins.str] = ...,

@@ -29,7 +29,10 @@ class GetProjectCatalogSyncErrorDetailsResult:
 class AwaitableGetProjectCatalogSyncErrorDetailsResult(
     GetProjectCatalogSyncErrorDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProjectCatalogSyncErrorDetailsResult]:
+        ...
 
 def get_project_catalog_sync_error_details(
     catalog_name: Optional[_builtins.str] = ...,

@@ -60,7 +60,8 @@ class GetDatastoreResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDatastoreResult(GetDatastoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatastoreResult]:
+        ...
 
 def get_datastore(
     cluster_name: Optional[_builtins.str] = ...,

@@ -67,7 +67,8 @@ class GetManagedPrefixListResult:
     def version(self) -> _builtins.int: ...
 
 class AwaitableGetManagedPrefixListResult(GetManagedPrefixListResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedPrefixListResult]:
+        ...
 
 def get_managed_prefix_list(
     filters: Optional[

@@ -52,7 +52,8 @@ class GetMachineExtensionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMachineExtensionResult(GetMachineExtensionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMachineExtensionResult]:
+        ...
 
 def get_machine_extension(
     extension_name: Optional[_builtins.str] = ...,

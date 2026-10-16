@@ -52,7 +52,8 @@ class GetRoute53ResourceRecordSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRoute53ResourceRecordSetResult(GetRoute53ResourceRecordSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoute53ResourceRecordSetResult]:
+        ...
 
 def get_route53_resource_record_set(
     name: Optional[_builtins.str] = ...,

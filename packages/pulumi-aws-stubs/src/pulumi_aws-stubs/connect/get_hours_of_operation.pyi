@@ -60,7 +60,8 @@ class GetHoursOfOperationResult:
     def time_zone(self) -> _builtins.str: ...
 
 class AwaitableGetHoursOfOperationResult(GetHoursOfOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHoursOfOperationResult]:
+        ...
 
 def get_hours_of_operation(
     hours_of_operation_id: Optional[_builtins.str] = ...,

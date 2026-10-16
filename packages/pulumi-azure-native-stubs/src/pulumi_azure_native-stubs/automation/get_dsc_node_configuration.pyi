@@ -66,7 +66,8 @@ class GetDscNodeConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDscNodeConfigurationResult(GetDscNodeConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDscNodeConfigurationResult]:
+        ...
 
 def get_dsc_node_configuration(
     automation_account_name: Optional[_builtins.str] = ...,

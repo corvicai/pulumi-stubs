@@ -26,7 +26,8 @@ class GetSupportedServicesResult:
     ) -> Sequence[outputs.GetSupportedServicesSupportedServiceResult]: ...
 
 class AwaitableGetSupportedServicesResult(GetSupportedServicesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSupportedServicesResult]:
+        ...
 
 def get_supported_services(
     opts: Optional[pulumi.InvokeOptions] = ...,

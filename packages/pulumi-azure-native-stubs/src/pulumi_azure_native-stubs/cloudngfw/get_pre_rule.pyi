@@ -120,7 +120,8 @@ class GetPreRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPreRuleResult(GetPreRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPreRuleResult]:
+        ...
 
 def get_pre_rule(
     global_rulestack_name: Optional[_builtins.str] = ...,

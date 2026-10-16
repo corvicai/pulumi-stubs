@@ -280,7 +280,8 @@ class AnycastIpListTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CachePolicyParametersInCacheKeyAndForwardedToOriginArgsDict(TypedDict):
     cookies_config: pulumi.Input[
@@ -325,7 +326,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginArgs:
         value: pulumi.Input[
             CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headersConfig")
     def headers_config(
@@ -339,7 +341,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginArgs:
         value: pulumi.Input[
             CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringsConfig")
     def query_strings_config(
@@ -353,7 +356,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginArgs:
         value: pulumi.Input[
             CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAcceptEncodingBrotli")
     def enable_accept_encoding_brotli(
@@ -362,14 +366,16 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginArgs:
     @enable_accept_encoding_brotli.setter
     def enable_accept_encoding_brotli(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAcceptEncodingGzip")
     def enable_accept_encoding_gzip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_accept_encoding_gzip.setter
     def enable_accept_encoding_gzip(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigArgsDict(
     TypedDict
@@ -397,7 +403,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigArgs:
     @pulumi.getter(name="cookieBehavior")
     def cookie_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @cookie_behavior.setter
-    def cookie_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def cookie_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -415,7 +422,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigArgs:
                 CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesArgsDict(
     TypedDict
@@ -437,7 +445,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesArg
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigArgsDict(
     TypedDict
@@ -465,7 +474,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigArgs:
     @pulumi.getter(name="headerBehavior")
     def header_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @header_behavior.setter
-    def header_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def header_behavior(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -483,7 +493,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigArgs:
                 CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersArgsDict(
     TypedDict
@@ -505,7 +516,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersArg
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigArgsDict(
     TypedDict
@@ -533,7 +545,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigArgs:
     @pulumi.getter(name="queryStringBehavior")
     def query_string_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @query_string_behavior.setter
-    def query_string_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def query_string_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStrings")
     def query_strings(
@@ -551,7 +564,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigArgs:
                 CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsArgsDict(
     TypedDict
@@ -573,7 +587,8 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQuery
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionFunctionConnectionFunctionConfigArgsDict(TypedDict):
     comment: pulumi.Input[_builtins.str]
@@ -601,12 +616,14 @@ class ConnectionFunctionConnectionFunctionConfigArgs:
     @pulumi.getter
     def comment(self) -> pulumi.Input[_builtins.str]: ...
     @comment.setter
-    def comment(self, value: pulumi.Input[_builtins.str]): ...
+    def comment(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def runtime(self) -> pulumi.Input[_builtins.str]: ...
     @runtime.setter
-    def runtime(self, value: pulumi.Input[_builtins.str]): ...
+    def runtime(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyValueStoreAssociation")
     def key_value_store_association(
@@ -624,7 +641,8 @@ class ConnectionFunctionConnectionFunctionConfigArgs:
                 ConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationArgsDict(
     TypedDict
@@ -640,7 +658,8 @@ class ConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationArgs:
     @pulumi.getter(name="keyValueStoreArn")
     def key_value_store_arn(self) -> pulumi.Input[_builtins.str]: ...
     @key_value_store_arn.setter
-    def key_value_store_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def key_value_store_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionGroupTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -660,17 +679,20 @@ class ConnectionGroupTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ContinuousDeploymentPolicyStagingDistributionDnsNamesArgsDict(TypedDict):
     quantity: pulumi.Input[_builtins.int]
@@ -688,7 +710,8 @@ class ContinuousDeploymentPolicyStagingDistributionDnsNamesArgs:
     @pulumi.getter
     def quantity(self) -> pulumi.Input[_builtins.int]: ...
     @quantity.setter
-    def quantity(self, value: pulumi.Input[_builtins.int]): ...
+    def quantity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -697,7 +720,8 @@ class ContinuousDeploymentPolicyStagingDistributionDnsNamesArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ContinuousDeploymentPolicyTrafficConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -725,7 +749,8 @@ class ContinuousDeploymentPolicyTrafficConfigArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeaderConfig")
     def single_header_config(
@@ -739,7 +764,8 @@ class ContinuousDeploymentPolicyTrafficConfigArgs:
         value: Optional[
             pulumi.Input[ContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleWeightConfig")
     def single_weight_config(
@@ -753,7 +779,8 @@ class ContinuousDeploymentPolicyTrafficConfigArgs:
         value: Optional[
             pulumi.Input[ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigArgsDict(TypedDict):
     header: pulumi.Input[_builtins.str]
@@ -771,12 +798,14 @@ class ContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigArgs:
     @pulumi.getter
     def header(self) -> pulumi.Input[_builtins.str]: ...
     @header.setter
-    def header(self, value: pulumi.Input[_builtins.str]): ...
+    def header(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigArgsDict(TypedDict):
     weight: pulumi.Input[_builtins.float]
@@ -802,7 +831,8 @@ class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigArgs:
     @pulumi.getter
     def weight(self) -> pulumi.Input[_builtins.float]: ...
     @weight.setter
-    def weight(self, value: pulumi.Input[_builtins.float]): ...
+    def weight(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionStickinessConfig")
     def session_stickiness_config(
@@ -820,7 +850,8 @@ class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigArgs:
                 ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigArgsDict(
     TypedDict
@@ -840,12 +871,14 @@ class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickiness
     @pulumi.getter(name="idleTtl")
     def idle_ttl(self) -> pulumi.Input[_builtins.int]: ...
     @idle_ttl.setter
-    def idle_ttl(self, value: pulumi.Input[_builtins.int]): ...
+    def idle_ttl(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumTtl")
     def maximum_ttl(self) -> pulumi.Input[_builtins.int]: ...
     @maximum_ttl.setter
-    def maximum_ttl(self, value: pulumi.Input[_builtins.int]): ...
+    def maximum_ttl(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class DistributionConnectionFunctionAssociationArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -857,7 +890,8 @@ class DistributionConnectionFunctionAssociationArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionCustomErrorResponseArgsDict(TypedDict):
     error_code: pulumi.Input[_builtins.int]
@@ -879,22 +913,30 @@ class DistributionCustomErrorResponseArgs:
     @pulumi.getter(name="errorCode")
     def error_code(self) -> pulumi.Input[_builtins.int]: ...
     @error_code.setter
-    def error_code(self, value: pulumi.Input[_builtins.int]): ...
+    def error_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorCachingMinTtl")
     def error_caching_min_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @error_caching_min_ttl.setter
-    def error_caching_min_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def error_caching_min_ttl(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseCode")
     def response_code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @response_code.setter
-    def response_code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def response_code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responsePagePath")
     def response_page_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_page_path.setter
-    def response_page_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def response_page_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DistributionDefaultCacheBehaviorArgsDict(TypedDict):
     allowed_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -996,46 +1038,54 @@ class DistributionDefaultCacheBehaviorArgs:
     @allowed_methods.setter
     def allowed_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachedMethods")
     def cached_methods(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @cached_methods.setter
     def cached_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetOriginId")
     def target_origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @target_origin_id.setter
-    def target_origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def target_origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="viewerProtocolPolicy")
     def viewer_protocol_policy(self) -> pulumi.Input[_builtins.str]: ...
     @viewer_protocol_policy.setter
-    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachePolicyId")
     def cache_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_policy_id.setter
-    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def compress(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @compress.setter
-    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultTtl")
     def default_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_ttl.setter
-    def default_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldLevelEncryptionId")
     def field_level_encryption_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field_level_encryption_id.setter
     def field_level_encryption_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedValues")
     def forwarded_values(
@@ -1049,7 +1099,8 @@ class DistributionDefaultCacheBehaviorArgs:
         value: Optional[
             pulumi.Input[DistributionDefaultCacheBehaviorForwardedValuesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionAssociations")
     def function_associations(
@@ -1073,7 +1124,8 @@ class DistributionDefaultCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grpcConfig")
     def grpc_config(
@@ -1083,7 +1135,8 @@ class DistributionDefaultCacheBehaviorArgs:
     def grpc_config(
         self,
         value: Optional[pulumi.Input[DistributionDefaultCacheBehaviorGrpcConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionAssociations")
     def lambda_function_associations(
@@ -1109,41 +1162,52 @@ class DistributionDefaultCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxTtl")
     def max_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_ttl.setter
-    def max_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minTtl")
     def min_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_ttl.setter
-    def min_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originRequestPolicyId")
     def origin_request_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_request_policy_id.setter
     def origin_request_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="realtimeLogConfigArn")
     def realtime_log_config_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @realtime_log_config_arn.setter
-    def realtime_log_config_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def realtime_log_config_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeadersPolicyId")
     def response_headers_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_headers_policy_id.setter
     def response_headers_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smoothStreaming")
     def smooth_streaming(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @smooth_streaming.setter
-    def smooth_streaming(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def smooth_streaming(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedKeyGroups")
     def trusted_key_groups(
@@ -1152,7 +1216,8 @@ class DistributionDefaultCacheBehaviorArgs:
     @trusted_key_groups.setter
     def trusted_key_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedSigners")
     def trusted_signers(
@@ -1161,7 +1226,8 @@ class DistributionDefaultCacheBehaviorArgs:
     @trusted_signers.setter
     def trusted_signers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionDefaultCacheBehaviorForwardedValuesArgsDict(TypedDict):
     cookies: pulumi.Input[
@@ -1196,12 +1262,14 @@ class DistributionDefaultCacheBehaviorForwardedValuesArgs:
     def cookies(
         self,
         value: pulumi.Input[DistributionDefaultCacheBehaviorForwardedValuesCookiesArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(self) -> pulumi.Input[_builtins.bool]: ...
     @query_string.setter
-    def query_string(self, value: pulumi.Input[_builtins.bool]): ...
+    def query_string(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -1210,7 +1278,8 @@ class DistributionDefaultCacheBehaviorForwardedValuesArgs:
     @headers.setter
     def headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringCacheKeys")
     def query_string_cache_keys(
@@ -1219,7 +1288,8 @@ class DistributionDefaultCacheBehaviorForwardedValuesArgs:
     @query_string_cache_keys.setter
     def query_string_cache_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionDefaultCacheBehaviorForwardedValuesCookiesArgsDict(TypedDict):
     forward: pulumi.Input[_builtins.str]
@@ -1239,7 +1309,8 @@ class DistributionDefaultCacheBehaviorForwardedValuesCookiesArgs:
     @pulumi.getter
     def forward(self) -> pulumi.Input[_builtins.str]: ...
     @forward.setter
-    def forward(self, value: pulumi.Input[_builtins.str]): ...
+    def forward(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="whitelistedNames")
     def whitelisted_names(
@@ -1248,7 +1319,8 @@ class DistributionDefaultCacheBehaviorForwardedValuesCookiesArgs:
     @whitelisted_names.setter
     def whitelisted_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionDefaultCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -1266,12 +1338,14 @@ class DistributionDefaultCacheBehaviorFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionArn")
     def function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @function_arn.setter
-    def function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionDefaultCacheBehaviorGrpcConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1285,7 +1359,8 @@ class DistributionDefaultCacheBehaviorGrpcConfigArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DistributionDefaultCacheBehaviorLambdaFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -1305,17 +1380,20 @@ class DistributionDefaultCacheBehaviorLambdaFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaArn")
     def lambda_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_arn.setter
-    def lambda_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeBody")
     def include_body(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_body.setter
-    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DistributionLoggingConfigArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
@@ -1335,17 +1413,22 @@ class DistributionLoggingConfigArgs:
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeCookies")
     def include_cookies(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_cookies.setter
-    def include_cookies(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_cookies(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DistributionOrderedCacheBehaviorArgsDict(TypedDict):
     allowed_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1449,51 +1532,60 @@ class DistributionOrderedCacheBehaviorArgs:
     @allowed_methods.setter
     def allowed_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachedMethods")
     def cached_methods(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @cached_methods.setter
     def cached_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pathPattern")
     def path_pattern(self) -> pulumi.Input[_builtins.str]: ...
     @path_pattern.setter
-    def path_pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def path_pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetOriginId")
     def target_origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @target_origin_id.setter
-    def target_origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def target_origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="viewerProtocolPolicy")
     def viewer_protocol_policy(self) -> pulumi.Input[_builtins.str]: ...
     @viewer_protocol_policy.setter
-    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachePolicyId")
     def cache_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_policy_id.setter
-    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def compress(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @compress.setter
-    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultTtl")
     def default_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_ttl.setter
-    def default_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldLevelEncryptionId")
     def field_level_encryption_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field_level_encryption_id.setter
     def field_level_encryption_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedValues")
     def forwarded_values(
@@ -1507,7 +1599,8 @@ class DistributionOrderedCacheBehaviorArgs:
         value: Optional[
             pulumi.Input[DistributionOrderedCacheBehaviorForwardedValuesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionAssociations")
     def function_associations(
@@ -1531,7 +1624,8 @@ class DistributionOrderedCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grpcConfig")
     def grpc_config(
@@ -1541,7 +1635,8 @@ class DistributionOrderedCacheBehaviorArgs:
     def grpc_config(
         self,
         value: Optional[pulumi.Input[DistributionOrderedCacheBehaviorGrpcConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionAssociations")
     def lambda_function_associations(
@@ -1567,41 +1662,52 @@ class DistributionOrderedCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxTtl")
     def max_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_ttl.setter
-    def max_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minTtl")
     def min_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_ttl.setter
-    def min_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originRequestPolicyId")
     def origin_request_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_request_policy_id.setter
     def origin_request_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="realtimeLogConfigArn")
     def realtime_log_config_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @realtime_log_config_arn.setter
-    def realtime_log_config_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def realtime_log_config_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeadersPolicyId")
     def response_headers_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_headers_policy_id.setter
     def response_headers_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smoothStreaming")
     def smooth_streaming(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @smooth_streaming.setter
-    def smooth_streaming(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def smooth_streaming(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedKeyGroups")
     def trusted_key_groups(
@@ -1610,7 +1716,8 @@ class DistributionOrderedCacheBehaviorArgs:
     @trusted_key_groups.setter
     def trusted_key_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedSigners")
     def trusted_signers(
@@ -1619,7 +1726,8 @@ class DistributionOrderedCacheBehaviorArgs:
     @trusted_signers.setter
     def trusted_signers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionOrderedCacheBehaviorForwardedValuesArgsDict(TypedDict):
     cookies: pulumi.Input[
@@ -1654,12 +1762,14 @@ class DistributionOrderedCacheBehaviorForwardedValuesArgs:
     def cookies(
         self,
         value: pulumi.Input[DistributionOrderedCacheBehaviorForwardedValuesCookiesArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(self) -> pulumi.Input[_builtins.bool]: ...
     @query_string.setter
-    def query_string(self, value: pulumi.Input[_builtins.bool]): ...
+    def query_string(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -1668,7 +1778,8 @@ class DistributionOrderedCacheBehaviorForwardedValuesArgs:
     @headers.setter
     def headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringCacheKeys")
     def query_string_cache_keys(
@@ -1677,7 +1788,8 @@ class DistributionOrderedCacheBehaviorForwardedValuesArgs:
     @query_string_cache_keys.setter
     def query_string_cache_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionOrderedCacheBehaviorForwardedValuesCookiesArgsDict(TypedDict):
     forward: pulumi.Input[_builtins.str]
@@ -1697,7 +1809,8 @@ class DistributionOrderedCacheBehaviorForwardedValuesCookiesArgs:
     @pulumi.getter
     def forward(self) -> pulumi.Input[_builtins.str]: ...
     @forward.setter
-    def forward(self, value: pulumi.Input[_builtins.str]): ...
+    def forward(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="whitelistedNames")
     def whitelisted_names(
@@ -1706,7 +1819,8 @@ class DistributionOrderedCacheBehaviorForwardedValuesCookiesArgs:
     @whitelisted_names.setter
     def whitelisted_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionOrderedCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -1724,12 +1838,14 @@ class DistributionOrderedCacheBehaviorFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionArn")
     def function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @function_arn.setter
-    def function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionOrderedCacheBehaviorGrpcConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1743,7 +1859,8 @@ class DistributionOrderedCacheBehaviorGrpcConfigArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DistributionOrderedCacheBehaviorLambdaFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -1763,17 +1880,20 @@ class DistributionOrderedCacheBehaviorLambdaFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaArn")
     def lambda_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_arn.setter
-    def lambda_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeBody")
     def include_body(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_body.setter
-    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DistributionOriginArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
@@ -1827,22 +1947,30 @@ class DistributionOriginArgs:
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originId")
     def origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @origin_id.setter
-    def origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionAttempts")
     def connection_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @connection_attempts.setter
-    def connection_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def connection_attempts(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionTimeout")
     def connection_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @connection_timeout.setter
-    def connection_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def connection_timeout(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customHeaders")
     def custom_headers(
@@ -1856,7 +1984,8 @@ class DistributionOriginArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DistributionOriginCustomHeaderArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customOriginConfig")
     def custom_origin_config(
@@ -1865,19 +1994,22 @@ class DistributionOriginArgs:
     @custom_origin_config.setter
     def custom_origin_config(
         self, value: Optional[pulumi.Input[DistributionOriginCustomOriginConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originAccessControlId")
     def origin_access_control_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_access_control_id.setter
     def origin_access_control_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originPath")
     def origin_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_path.setter
-    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originShield")
     def origin_shield(
@@ -1886,14 +2018,16 @@ class DistributionOriginArgs:
     @origin_shield.setter
     def origin_shield(
         self, value: Optional[pulumi.Input[DistributionOriginOriginShieldArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseCompletionTimeout")
     def response_completion_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @response_completion_timeout.setter
     def response_completion_timeout(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3OriginConfig")
     def s3_origin_config(
@@ -1902,7 +2036,8 @@ class DistributionOriginArgs:
     @s3_origin_config.setter
     def s3_origin_config(
         self, value: Optional[pulumi.Input[DistributionOriginS3OriginConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcOriginConfig")
     def vpc_origin_config(
@@ -1911,7 +2046,8 @@ class DistributionOriginArgs:
     @vpc_origin_config.setter
     def vpc_origin_config(
         self, value: Optional[pulumi.Input[DistributionOriginVpcOriginConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionOriginCustomHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1929,12 +2065,14 @@ class DistributionOriginCustomHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionOriginCustomOriginConfigArgsDict(TypedDict):
     http_port: pulumi.Input[_builtins.int]
@@ -1962,17 +2100,20 @@ class DistributionOriginCustomOriginConfigArgs:
     @pulumi.getter(name="httpPort")
     def http_port(self) -> pulumi.Input[_builtins.int]: ...
     @http_port.setter
-    def http_port(self, value: pulumi.Input[_builtins.int]): ...
+    def http_port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsPort")
     def https_port(self) -> pulumi.Input[_builtins.int]: ...
     @https_port.setter
-    def https_port(self, value: pulumi.Input[_builtins.int]): ...
+    def https_port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originProtocolPolicy")
     def origin_protocol_policy(self) -> pulumi.Input[_builtins.str]: ...
     @origin_protocol_policy.setter
-    def origin_protocol_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_protocol_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originSslProtocols")
     def origin_ssl_protocols(
@@ -1981,24 +2122,30 @@ class DistributionOriginCustomOriginConfigArgs:
     @origin_ssl_protocols.setter
     def origin_ssl_protocols(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddressType")
     def ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_address_type.setter
-    def ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originKeepaliveTimeout")
     def origin_keepalive_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_keepalive_timeout.setter
     def origin_keepalive_timeout(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originReadTimeout")
     def origin_read_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_read_timeout.setter
-    def origin_read_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def origin_read_timeout(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class DistributionOriginGroupArgsDict(TypedDict):
     failover_criteria: pulumi.Input[DistributionOriginGroupFailoverCriteriaArgsDict]
@@ -2024,7 +2171,8 @@ class DistributionOriginGroupArgs:
     @failover_criteria.setter
     def failover_criteria(
         self, value: pulumi.Input[DistributionOriginGroupFailoverCriteriaArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def members(
@@ -2034,12 +2182,14 @@ class DistributionOriginGroupArgs:
     def members(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[DistributionOriginGroupMemberArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originId")
     def origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @origin_id.setter
-    def origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionOriginGroupFailoverCriteriaArgsDict(TypedDict):
     status_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -2055,7 +2205,8 @@ class DistributionOriginGroupFailoverCriteriaArgs:
     @status_codes.setter
     def status_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionOriginGroupMemberArgsDict(TypedDict):
     origin_id: pulumi.Input[_builtins.str]
@@ -2067,7 +2218,8 @@ class DistributionOriginGroupMemberArgs:
     @pulumi.getter(name="originId")
     def origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @origin_id.setter
-    def origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionOriginOriginShieldArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -2085,12 +2237,16 @@ class DistributionOriginOriginShieldArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originShieldRegion")
     def origin_shield_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_shield_region.setter
-    def origin_shield_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_shield_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DistributionOriginS3OriginConfigArgsDict(TypedDict):
     origin_access_identity: pulumi.Input[_builtins.str]
@@ -2104,7 +2260,8 @@ class DistributionOriginS3OriginConfigArgs:
     @pulumi.getter(name="originAccessIdentity")
     def origin_access_identity(self) -> pulumi.Input[_builtins.str]: ...
     @origin_access_identity.setter
-    def origin_access_identity(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_access_identity(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionOriginVpcOriginConfigArgsDict(TypedDict):
     vpc_origin_id: pulumi.Input[_builtins.str]
@@ -2126,24 +2283,32 @@ class DistributionOriginVpcOriginConfigArgs:
     @pulumi.getter(name="vpcOriginId")
     def vpc_origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_origin_id.setter
-    def vpc_origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originKeepaliveTimeout")
     def origin_keepalive_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_keepalive_timeout.setter
     def origin_keepalive_timeout(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originReadTimeout")
     def origin_read_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_read_timeout.setter
-    def origin_read_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def origin_read_timeout(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerAccountId")
     def owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_account_id.setter
-    def owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DistributionRestrictionsArgsDict(TypedDict):
     geo_restriction: pulumi.Input[DistributionRestrictionsGeoRestrictionArgsDict]
@@ -2163,7 +2328,8 @@ class DistributionRestrictionsArgs:
     @geo_restriction.setter
     def geo_restriction(
         self, value: pulumi.Input[DistributionRestrictionsGeoRestrictionArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionRestrictionsGeoRestrictionArgsDict(TypedDict):
     restriction_type: pulumi.Input[_builtins.str]
@@ -2181,7 +2347,8 @@ class DistributionRestrictionsGeoRestrictionArgs:
     @pulumi.getter(name="restrictionType")
     def restriction_type(self) -> pulumi.Input[_builtins.str]: ...
     @restriction_type.setter
-    def restriction_type(self, value: pulumi.Input[_builtins.str]): ...
+    def restriction_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locations(
@@ -2190,7 +2357,8 @@ class DistributionRestrictionsGeoRestrictionArgs:
     @locations.setter
     def locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionTenantCustomizationsArgsDict(TypedDict):
     certificate: NotRequired[
@@ -2225,7 +2393,8 @@ class DistributionTenantCustomizationsArgs:
     def certificate(
         self,
         value: Optional[pulumi.Input[DistributionTenantCustomizationsCertificateArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoRestriction")
     def geo_restriction(
@@ -2237,7 +2406,8 @@ class DistributionTenantCustomizationsArgs:
         value: Optional[
             pulumi.Input[DistributionTenantCustomizationsGeoRestrictionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAcl")
     def web_acl(
@@ -2246,7 +2416,8 @@ class DistributionTenantCustomizationsArgs:
     @web_acl.setter
     def web_acl(
         self, value: Optional[pulumi.Input[DistributionTenantCustomizationsWebAclArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionTenantCustomizationsCertificateArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -2260,7 +2431,8 @@ class DistributionTenantCustomizationsCertificateArgs:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DistributionTenantCustomizationsGeoRestrictionArgsDict(TypedDict):
     locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2282,12 +2454,16 @@ class DistributionTenantCustomizationsGeoRestrictionArgs:
     @locations.setter
     def locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restrictionType")
     def restriction_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @restriction_type.setter
-    def restriction_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def restriction_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DistributionTenantCustomizationsWebAclArgsDict(TypedDict):
     action: NotRequired[pulumi.Input[_builtins.str]]
@@ -2305,12 +2481,14 @@ class DistributionTenantCustomizationsWebAclArgs:
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DistributionTenantDomainArgsDict(TypedDict):
     domain: pulumi.Input[_builtins.str]
@@ -2328,12 +2506,14 @@ class DistributionTenantDomainArgs:
     @pulumi.getter
     def domain(self) -> pulumi.Input[_builtins.str]: ...
     @domain.setter
-    def domain(self, value: pulumi.Input[_builtins.str]): ...
+    def domain(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DistributionTenantManagedCertificateRequestArgsDict(TypedDict):
     certificate_transparency_logging_preference: NotRequired[
@@ -2361,17 +2541,24 @@ class DistributionTenantManagedCertificateRequestArgs:
     @certificate_transparency_logging_preference.setter
     def certificate_transparency_logging_preference(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryDomainName")
     def primary_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_domain_name.setter
-    def primary_domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_domain_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationTokenHost")
     def validation_token_host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @validation_token_host.setter
-    def validation_token_host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def validation_token_host(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DistributionTenantParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2389,12 +2576,14 @@ class DistributionTenantParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DistributionTenantTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -2414,17 +2603,20 @@ class DistributionTenantTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DistributionTrustedKeyGroupArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2446,7 +2638,8 @@ class DistributionTrustedKeyGroupArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -2460,7 +2653,8 @@ class DistributionTrustedKeyGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DistributionTrustedKeyGroupItemArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionTrustedKeyGroupItemArgsDict(TypedDict):
     key_group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2480,7 +2674,8 @@ class DistributionTrustedKeyGroupItemArgs:
     @pulumi.getter(name="keyGroupId")
     def key_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_group_id.setter
-    def key_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_group_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPairIds")
     def key_pair_ids(
@@ -2489,7 +2684,8 @@ class DistributionTrustedKeyGroupItemArgs:
     @key_pair_ids.setter
     def key_pair_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionTrustedSignerArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2511,7 +2707,8 @@ class DistributionTrustedSignerArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -2525,7 +2722,8 @@ class DistributionTrustedSignerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DistributionTrustedSignerItemArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionTrustedSignerItemArgsDict(TypedDict):
     aws_account_number: NotRequired[pulumi.Input[_builtins.str]]
@@ -2545,7 +2743,10 @@ class DistributionTrustedSignerItemArgs:
     @pulumi.getter(name="awsAccountNumber")
     def aws_account_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_account_number.setter
-    def aws_account_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aws_account_number(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPairIds")
     def key_pair_ids(
@@ -2554,7 +2755,8 @@ class DistributionTrustedSignerItemArgs:
     @key_pair_ids.setter
     def key_pair_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionViewerCertificateArgsDict(TypedDict):
     acm_certificate_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -2578,7 +2780,10 @@ class DistributionViewerCertificateArgs:
     @pulumi.getter(name="acmCertificateArn")
     def acm_certificate_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acm_certificate_arn.setter
-    def acm_certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acm_certificate_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudfrontDefaultCertificate")
     def cloudfront_default_certificate(
@@ -2587,24 +2792,32 @@ class DistributionViewerCertificateArgs:
     @cloudfront_default_certificate.setter
     def cloudfront_default_certificate(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamCertificateId")
     def iam_certificate_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_certificate_id.setter
-    def iam_certificate_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_certificate_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumProtocolVersion")
     def minimum_protocol_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @minimum_protocol_version.setter
     def minimum_protocol_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslSupportMethod")
     def ssl_support_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssl_support_method.setter
-    def ssl_support_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssl_support_method(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DistributionViewerMtlsConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
@@ -2626,7 +2839,8 @@ class DistributionViewerMtlsConfigArgs:
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustStoreConfig")
     def trust_store_config(
@@ -2636,7 +2850,8 @@ class DistributionViewerMtlsConfigArgs:
     def trust_store_config(
         self,
         value: Optional[pulumi.Input[DistributionViewerMtlsConfigTrustStoreConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DistributionViewerMtlsConfigTrustStoreConfigArgsDict(TypedDict):
     trust_store_id: pulumi.Input[_builtins.str]
@@ -2656,7 +2871,8 @@ class DistributionViewerMtlsConfigTrustStoreConfigArgs:
     @pulumi.getter(name="trustStoreId")
     def trust_store_id(self) -> pulumi.Input[_builtins.str]: ...
     @trust_store_id.setter
-    def trust_store_id(self, value: pulumi.Input[_builtins.str]): ...
+    def trust_store_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advertiseTrustStoreCaNames")
     def advertise_trust_store_ca_names(
@@ -2665,14 +2881,16 @@ class DistributionViewerMtlsConfigTrustStoreConfigArgs:
     @advertise_trust_store_ca_names.setter
     def advertise_trust_store_ca_names(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ignoreCertificateExpiry")
     def ignore_certificate_expiry(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ignore_certificate_expiry.setter
     def ignore_certificate_expiry(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FieldLevelEncryptionConfigContentTypeProfileConfigArgsDict(TypedDict):
     content_type_profiles: pulumi.Input[
@@ -2703,14 +2921,16 @@ class FieldLevelEncryptionConfigContentTypeProfileConfigArgs:
         value: pulumi.Input[
             FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardWhenContentTypeIsUnknown")
     def forward_when_content_type_is_unknown(self) -> pulumi.Input[_builtins.bool]: ...
     @forward_when_content_type_is_unknown.setter
     def forward_when_content_type_is_unknown(
         self, value: pulumi.Input[_builtins.bool]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesArgsDict(
     TypedDict
@@ -2757,7 +2977,8 @@ class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemArgsDict(
     TypedDict
@@ -2779,17 +3000,20 @@ class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemA
     @pulumi.getter(name="contentType")
     def content_type(self) -> pulumi.Input[_builtins.str]: ...
     @content_type.setter
-    def content_type(self, value: pulumi.Input[_builtins.str]): ...
+    def content_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def format(self) -> pulumi.Input[_builtins.str]: ...
     @format.setter
-    def format(self, value: pulumi.Input[_builtins.str]): ...
+    def format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profileId")
     def profile_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @profile_id.setter
-    def profile_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def profile_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FieldLevelEncryptionConfigQueryArgProfileConfigArgsDict(TypedDict):
     forward_when_query_arg_profile_is_unknown: pulumi.Input[_builtins.bool]
@@ -2819,7 +3043,8 @@ class FieldLevelEncryptionConfigQueryArgProfileConfigArgs:
     @forward_when_query_arg_profile_is_unknown.setter
     def forward_when_query_arg_profile_is_unknown(
         self, value: pulumi.Input[_builtins.bool]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryArgProfiles")
     def query_arg_profiles(
@@ -2837,7 +3062,8 @@ class FieldLevelEncryptionConfigQueryArgProfileConfigArgs:
                 FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesArgsDict(
     TypedDict
@@ -2892,7 +3118,8 @@ class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemArgsDict(
     TypedDict
@@ -2912,12 +3139,14 @@ class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemArgs:
     @pulumi.getter(name="profileId")
     def profile_id(self) -> pulumi.Input[_builtins.str]: ...
     @profile_id.setter
-    def profile_id(self, value: pulumi.Input[_builtins.str]): ...
+    def profile_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryArg")
     def query_arg(self) -> pulumi.Input[_builtins.str]: ...
     @query_arg.setter
-    def query_arg(self, value: pulumi.Input[_builtins.str]): ...
+    def query_arg(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FieldLevelEncryptionProfileEncryptionEntitiesArgsDict(TypedDict):
     items: NotRequired[
@@ -2962,7 +3191,8 @@ class FieldLevelEncryptionProfileEncryptionEntitiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FieldLevelEncryptionProfileEncryptionEntitiesItemArgsDict(TypedDict):
     field_patterns: pulumi.Input[
@@ -2995,17 +3225,20 @@ class FieldLevelEncryptionProfileEncryptionEntitiesItemArgs:
         value: pulumi.Input[
             FieldLevelEncryptionProfileEncryptionEntitiesItemFieldPatternsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerId")
     def provider_id(self) -> pulumi.Input[_builtins.str]: ...
     @provider_id.setter
-    def provider_id(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicKeyId")
     def public_key_id(self) -> pulumi.Input[_builtins.str]: ...
     @public_key_id.setter
-    def public_key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def public_key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FieldLevelEncryptionProfileEncryptionEntitiesItemFieldPatternsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -3025,7 +3258,8 @@ class FieldLevelEncryptionProfileEncryptionEntitiesItemFieldPatternsArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KeyValueStoreTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -3039,7 +3273,8 @@ class KeyValueStoreTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class KeyvaluestoreKeysExclusiveResourceKeyValuePairArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -3057,12 +3292,14 @@ class KeyvaluestoreKeysExclusiveResourceKeyValuePairArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MonitoringSubscriptionMonitoringSubscriptionArgsDict(TypedDict):
     realtime_metrics_subscription_config: pulumi.Input[
@@ -3091,7 +3328,8 @@ class MonitoringSubscriptionMonitoringSubscriptionArgs:
         value: pulumi.Input[
             MonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigArgsDict(
     TypedDict
@@ -3109,7 +3347,8 @@ class MonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionCon
     @realtime_metrics_subscription_status.setter
     def realtime_metrics_subscription_status(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionActiveTrustedKeyGroupArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3139,7 +3378,8 @@ class MultitenantDistributionActiveTrustedKeyGroupArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -3159,7 +3399,8 @@ class MultitenantDistributionActiveTrustedKeyGroupArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionActiveTrustedKeyGroupItemArgsDict(TypedDict):
     key_group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -3179,7 +3420,8 @@ class MultitenantDistributionActiveTrustedKeyGroupItemArgs:
     @pulumi.getter(name="keyGroupId")
     def key_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_group_id.setter
-    def key_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_group_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPairIds")
     def key_pair_ids(
@@ -3188,7 +3430,8 @@ class MultitenantDistributionActiveTrustedKeyGroupItemArgs:
     @key_pair_ids.setter
     def key_pair_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionCacheBehaviorArgsDict(TypedDict):
     allowed_methods: pulumi.Input[
@@ -3273,39 +3516,46 @@ class MultitenantDistributionCacheBehaviorArgs:
     def allowed_methods(
         self,
         value: pulumi.Input[MultitenantDistributionCacheBehaviorAllowedMethodsArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pathPattern")
     def path_pattern(self) -> pulumi.Input[_builtins.str]: ...
     @path_pattern.setter
-    def path_pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def path_pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetOriginId")
     def target_origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @target_origin_id.setter
-    def target_origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def target_origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="viewerProtocolPolicy")
     def viewer_protocol_policy(self) -> pulumi.Input[_builtins.str]: ...
     @viewer_protocol_policy.setter
-    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachePolicyId")
     def cache_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_policy_id.setter
-    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def compress(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @compress.setter
-    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldLevelEncryptionId")
     def field_level_encryption_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field_level_encryption_id.setter
     def field_level_encryption_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionAssociations")
     def function_associations(
@@ -3331,7 +3581,8 @@ class MultitenantDistributionCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionAssociations")
     def lambda_function_associations(
@@ -3357,26 +3608,32 @@ class MultitenantDistributionCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originRequestPolicyId")
     def origin_request_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_request_policy_id.setter
     def origin_request_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="realtimeLogConfigArn")
     def realtime_log_config_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @realtime_log_config_arn.setter
-    def realtime_log_config_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def realtime_log_config_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeadersPolicyId")
     def response_headers_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_headers_policy_id.setter
     def response_headers_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedKeyGroups")
     def trusted_key_groups(
@@ -3390,7 +3647,8 @@ class MultitenantDistributionCacheBehaviorArgs:
         value: Optional[
             pulumi.Input[MultitenantDistributionCacheBehaviorTrustedKeyGroupsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionCacheBehaviorAllowedMethodsArgsDict(TypedDict):
     cached_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -3410,12 +3668,16 @@ class MultitenantDistributionCacheBehaviorAllowedMethodsArgs:
     @cached_methods.setter
     def cached_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @items.setter
-    def items(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def items(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -3433,12 +3695,14 @@ class MultitenantDistributionCacheBehaviorFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionArn")
     def function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @function_arn.setter
-    def function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MultitenantDistributionCacheBehaviorLambdaFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -3458,17 +3722,20 @@ class MultitenantDistributionCacheBehaviorLambdaFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionArn")
     def lambda_function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_function_arn.setter
-    def lambda_function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeBody")
     def include_body(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_body.setter
-    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class MultitenantDistributionCacheBehaviorTrustedKeyGroupsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3486,7 +3753,8 @@ class MultitenantDistributionCacheBehaviorTrustedKeyGroupsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -3495,7 +3763,8 @@ class MultitenantDistributionCacheBehaviorTrustedKeyGroupsArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionCustomErrorResponseArgsDict(TypedDict):
     error_code: pulumi.Input[_builtins.int]
@@ -3517,22 +3786,30 @@ class MultitenantDistributionCustomErrorResponseArgs:
     @pulumi.getter(name="errorCode")
     def error_code(self) -> pulumi.Input[_builtins.int]: ...
     @error_code.setter
-    def error_code(self, value: pulumi.Input[_builtins.int]): ...
+    def error_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorCachingMinTtl")
     def error_caching_min_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @error_caching_min_ttl.setter
-    def error_caching_min_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def error_caching_min_ttl(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseCode")
     def response_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_code.setter
-    def response_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def response_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responsePagePath")
     def response_page_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_page_path.setter
-    def response_page_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def response_page_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionDefaultCacheBehaviorArgsDict(TypedDict):
     allowed_methods: pulumi.Input[
@@ -3623,34 +3900,40 @@ class MultitenantDistributionDefaultCacheBehaviorArgs:
         value: pulumi.Input[
             MultitenantDistributionDefaultCacheBehaviorAllowedMethodsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetOriginId")
     def target_origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @target_origin_id.setter
-    def target_origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def target_origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="viewerProtocolPolicy")
     def viewer_protocol_policy(self) -> pulumi.Input[_builtins.str]: ...
     @viewer_protocol_policy.setter
-    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def viewer_protocol_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachePolicyId")
     def cache_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_policy_id.setter
-    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def compress(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @compress.setter
-    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def compress(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldLevelEncryptionId")
     def field_level_encryption_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field_level_encryption_id.setter
     def field_level_encryption_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionAssociations")
     def function_associations(
@@ -3676,7 +3959,8 @@ class MultitenantDistributionDefaultCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionAssociations")
     def lambda_function_associations(
@@ -3702,26 +3986,32 @@ class MultitenantDistributionDefaultCacheBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originRequestPolicyId")
     def origin_request_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_request_policy_id.setter
     def origin_request_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="realtimeLogConfigArn")
     def realtime_log_config_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @realtime_log_config_arn.setter
-    def realtime_log_config_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def realtime_log_config_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeadersPolicyId")
     def response_headers_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_headers_policy_id.setter
     def response_headers_policy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedKeyGroups")
     def trusted_key_groups(
@@ -3737,7 +4027,8 @@ class MultitenantDistributionDefaultCacheBehaviorArgs:
                 MultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionDefaultCacheBehaviorAllowedMethodsArgsDict(TypedDict):
     cached_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -3757,12 +4048,16 @@ class MultitenantDistributionDefaultCacheBehaviorAllowedMethodsArgs:
     @cached_methods.setter
     def cached_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @items.setter
-    def items(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def items(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionDefaultCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -3780,12 +4075,14 @@ class MultitenantDistributionDefaultCacheBehaviorFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionArn")
     def function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @function_arn.setter
-    def function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationArgsDict(
     TypedDict
@@ -3807,17 +4104,20 @@ class MultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionArn")
     def lambda_function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_function_arn.setter
-    def lambda_function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeBody")
     def include_body(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_body.setter
-    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_body(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class MultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3835,7 +4135,8 @@ class MultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -3844,7 +4145,8 @@ class MultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionOriginArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
@@ -3916,22 +4218,30 @@ class MultitenantDistributionOriginArgs:
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionAttempts")
     def connection_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @connection_attempts.setter
-    def connection_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def connection_attempts(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionTimeout")
     def connection_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @connection_timeout.setter
-    def connection_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def connection_timeout(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customHeaders")
     def custom_headers(
@@ -3949,7 +4259,8 @@ class MultitenantDistributionOriginArgs:
                 Sequence[pulumi.Input[MultitenantDistributionOriginCustomHeaderArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customOriginConfigs")
     def custom_origin_configs(
@@ -3969,19 +4280,22 @@ class MultitenantDistributionOriginArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originAccessControlId")
     def origin_access_control_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_access_control_id.setter
     def origin_access_control_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originPath")
     def origin_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_path.setter
-    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originShields")
     def origin_shields(
@@ -3999,14 +4313,16 @@ class MultitenantDistributionOriginArgs:
                 Sequence[pulumi.Input[MultitenantDistributionOriginOriginShieldArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseCompletionTimeout")
     def response_completion_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @response_completion_timeout.setter
     def response_completion_timeout(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcOriginConfigs")
     def vpc_origin_configs(
@@ -4024,7 +4340,8 @@ class MultitenantDistributionOriginArgs:
                 Sequence[pulumi.Input[MultitenantDistributionOriginVpcOriginConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionOriginCustomHeaderArgsDict(TypedDict):
     header_name: pulumi.Input[_builtins.str]
@@ -4042,12 +4359,14 @@ class MultitenantDistributionOriginCustomHeaderArgs:
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerValue")
     def header_value(self) -> pulumi.Input[_builtins.str]: ...
     @header_value.setter
-    def header_value(self, value: pulumi.Input[_builtins.str]): ...
+    def header_value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MultitenantDistributionOriginCustomOriginConfigArgsDict(TypedDict):
     http_port: pulumi.Input[_builtins.int]
@@ -4075,17 +4394,20 @@ class MultitenantDistributionOriginCustomOriginConfigArgs:
     @pulumi.getter(name="httpPort")
     def http_port(self) -> pulumi.Input[_builtins.int]: ...
     @http_port.setter
-    def http_port(self, value: pulumi.Input[_builtins.int]): ...
+    def http_port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsPort")
     def https_port(self) -> pulumi.Input[_builtins.int]: ...
     @https_port.setter
-    def https_port(self, value: pulumi.Input[_builtins.int]): ...
+    def https_port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originProtocolPolicy")
     def origin_protocol_policy(self) -> pulumi.Input[_builtins.str]: ...
     @origin_protocol_policy.setter
-    def origin_protocol_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_protocol_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originSslProtocols")
     def origin_ssl_protocols(
@@ -4094,24 +4416,30 @@ class MultitenantDistributionOriginCustomOriginConfigArgs:
     @origin_ssl_protocols.setter
     def origin_ssl_protocols(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddressType")
     def ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_address_type.setter
-    def ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originKeepaliveTimeout")
     def origin_keepalive_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_keepalive_timeout.setter
     def origin_keepalive_timeout(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originReadTimeout")
     def origin_read_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_read_timeout.setter
-    def origin_read_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def origin_read_timeout(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionOriginGroupArgsDict(TypedDict):
     failover_criteria: pulumi.Input[
@@ -4144,12 +4472,14 @@ class MultitenantDistributionOriginGroupArgs:
     def failover_criteria(
         self,
         value: pulumi.Input[MultitenantDistributionOriginGroupFailoverCriteriaArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def members(
@@ -4163,7 +4493,8 @@ class MultitenantDistributionOriginGroupArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MultitenantDistributionOriginGroupMemberArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionOriginGroupFailoverCriteriaArgsDict(TypedDict):
     status_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -4179,7 +4510,8 @@ class MultitenantDistributionOriginGroupFailoverCriteriaArgs:
     @status_codes.setter
     def status_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionOriginGroupMemberArgsDict(TypedDict):
     origin_id: pulumi.Input[_builtins.str]
@@ -4191,7 +4523,8 @@ class MultitenantDistributionOriginGroupMemberArgs:
     @pulumi.getter(name="originId")
     def origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @origin_id.setter
-    def origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MultitenantDistributionOriginOriginShieldArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -4209,12 +4542,16 @@ class MultitenantDistributionOriginOriginShieldArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originShieldRegion")
     def origin_shield_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_shield_region.setter
-    def origin_shield_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_shield_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionOriginVpcOriginConfigArgsDict(TypedDict):
     vpc_origin_id: pulumi.Input[_builtins.str]
@@ -4234,19 +4571,24 @@ class MultitenantDistributionOriginVpcOriginConfigArgs:
     @pulumi.getter(name="vpcOriginId")
     def vpc_origin_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_origin_id.setter
-    def vpc_origin_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_origin_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originKeepaliveTimeout")
     def origin_keepalive_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_keepalive_timeout.setter
     def origin_keepalive_timeout(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originReadTimeout")
     def origin_read_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @origin_read_timeout.setter
-    def origin_read_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def origin_read_timeout(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionRestrictionsArgsDict(TypedDict):
     geo_restriction: pulumi.Input[
@@ -4270,7 +4612,8 @@ class MultitenantDistributionRestrictionsArgs:
     @geo_restriction.setter
     def geo_restriction(
         self, value: pulumi.Input[MultitenantDistributionRestrictionsGeoRestrictionArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionRestrictionsGeoRestrictionArgsDict(TypedDict):
     restriction_type: pulumi.Input[_builtins.str]
@@ -4288,7 +4631,8 @@ class MultitenantDistributionRestrictionsGeoRestrictionArgs:
     @pulumi.getter(name="restrictionType")
     def restriction_type(self) -> pulumi.Input[_builtins.str]: ...
     @restriction_type.setter
-    def restriction_type(self, value: pulumi.Input[_builtins.str]): ...
+    def restriction_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -4297,7 +4641,8 @@ class MultitenantDistributionRestrictionsGeoRestrictionArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionTenantConfigArgsDict(TypedDict):
     parameter_definitions: NotRequired[
@@ -4348,7 +4693,8 @@ class MultitenantDistributionTenantConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionTenantConfigParameterDefinitionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4382,7 +4728,8 @@ class MultitenantDistributionTenantConfigParameterDefinitionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def definitions(
@@ -4408,7 +4755,8 @@ class MultitenantDistributionTenantConfigParameterDefinitionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionTenantConfigParameterDefinitionDefinitionArgsDict(
     TypedDict
@@ -4463,7 +4811,8 @@ class MultitenantDistributionTenantConfigParameterDefinitionDefinitionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaArgsDict(
     TypedDict
@@ -4485,17 +4834,20 @@ class MultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSche
     @pulumi.getter
     def required(self) -> pulumi.Input[_builtins.bool]: ...
     @required.setter
-    def required(self, value: pulumi.Input[_builtins.bool]): ...
+    def required(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
     def default_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_value.setter
-    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MultitenantDistributionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -4515,17 +4867,20 @@ class MultitenantDistributionTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MultitenantDistributionViewerCertificateArgsDict(TypedDict):
     acm_certificate_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -4547,7 +4902,10 @@ class MultitenantDistributionViewerCertificateArgs:
     @pulumi.getter(name="acmCertificateArn")
     def acm_certificate_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acm_certificate_arn.setter
-    def acm_certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acm_certificate_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudfrontDefaultCertificate")
     def cloudfront_default_certificate(
@@ -4556,19 +4914,24 @@ class MultitenantDistributionViewerCertificateArgs:
     @cloudfront_default_certificate.setter
     def cloudfront_default_certificate(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumProtocolVersion")
     def minimum_protocol_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @minimum_protocol_version.setter
     def minimum_protocol_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslSupportMethod")
     def ssl_support_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssl_support_method.setter
-    def ssl_support_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssl_support_method(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class OriginRequestPolicyCookiesConfigArgsDict(TypedDict):
     cookie_behavior: pulumi.Input[_builtins.str]
@@ -4588,7 +4951,8 @@ class OriginRequestPolicyCookiesConfigArgs:
     @pulumi.getter(name="cookieBehavior")
     def cookie_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @cookie_behavior.setter
-    def cookie_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def cookie_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -4597,7 +4961,8 @@ class OriginRequestPolicyCookiesConfigArgs:
     @cookies.setter
     def cookies(
         self, value: Optional[pulumi.Input[OriginRequestPolicyCookiesConfigCookiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginRequestPolicyCookiesConfigCookiesArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4617,7 +4982,8 @@ class OriginRequestPolicyCookiesConfigCookiesArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginRequestPolicyHeadersConfigArgsDict(TypedDict):
     header_behavior: NotRequired[pulumi.Input[_builtins.str]]
@@ -4637,7 +5003,8 @@ class OriginRequestPolicyHeadersConfigArgs:
     @pulumi.getter(name="headerBehavior")
     def header_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @header_behavior.setter
-    def header_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def header_behavior(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -4646,7 +5013,8 @@ class OriginRequestPolicyHeadersConfigArgs:
     @headers.setter
     def headers(
         self, value: Optional[pulumi.Input[OriginRequestPolicyHeadersConfigHeadersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginRequestPolicyHeadersConfigHeadersArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4666,7 +5034,8 @@ class OriginRequestPolicyHeadersConfigHeadersArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginRequestPolicyQueryStringsConfigArgsDict(TypedDict):
     query_string_behavior: pulumi.Input[_builtins.str]
@@ -4688,7 +5057,8 @@ class OriginRequestPolicyQueryStringsConfigArgs:
     @pulumi.getter(name="queryStringBehavior")
     def query_string_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @query_string_behavior.setter
-    def query_string_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def query_string_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStrings")
     def query_strings(
@@ -4702,7 +5072,8 @@ class OriginRequestPolicyQueryStringsConfigArgs:
         value: Optional[
             pulumi.Input[OriginRequestPolicyQueryStringsConfigQueryStringsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginRequestPolicyQueryStringsConfigQueryStringsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4722,7 +5093,8 @@ class OriginRequestPolicyQueryStringsConfigQueryStringsArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RealtimeLogConfigEndpointArgsDict(TypedDict):
     kinesis_stream_config: pulumi.Input[
@@ -4748,12 +5120,14 @@ class RealtimeLogConfigEndpointArgs:
     @kinesis_stream_config.setter
     def kinesis_stream_config(
         self, value: pulumi.Input[RealtimeLogConfigEndpointKinesisStreamConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamType")
     def stream_type(self) -> pulumi.Input[_builtins.str]: ...
     @stream_type.setter
-    def stream_type(self, value: pulumi.Input[_builtins.str]): ...
+    def stream_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RealtimeLogConfigEndpointKinesisStreamConfigArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
@@ -4771,12 +5145,14 @@ class RealtimeLogConfigEndpointKinesisStreamConfigArgs:
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamArn")
     def stream_arn(self) -> pulumi.Input[_builtins.str]: ...
     @stream_arn.setter
-    def stream_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def stream_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ResponseHeadersPolicyCorsConfigArgsDict(TypedDict):
     access_control_allow_credentials: pulumi.Input[_builtins.bool]
@@ -4820,7 +5196,10 @@ class ResponseHeadersPolicyCorsConfigArgs:
     @pulumi.getter(name="accessControlAllowCredentials")
     def access_control_allow_credentials(self) -> pulumi.Input[_builtins.bool]: ...
     @access_control_allow_credentials.setter
-    def access_control_allow_credentials(self, value: pulumi.Input[_builtins.bool]): ...
+    def access_control_allow_credentials(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlAllowHeaders")
     def access_control_allow_headers(
@@ -4832,7 +5211,8 @@ class ResponseHeadersPolicyCorsConfigArgs:
         value: pulumi.Input[
             ResponseHeadersPolicyCorsConfigAccessControlAllowHeadersArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlAllowMethods")
     def access_control_allow_methods(
@@ -4844,7 +5224,8 @@ class ResponseHeadersPolicyCorsConfigArgs:
         value: pulumi.Input[
             ResponseHeadersPolicyCorsConfigAccessControlAllowMethodsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlAllowOrigins")
     def access_control_allow_origins(
@@ -4856,12 +5237,14 @@ class ResponseHeadersPolicyCorsConfigArgs:
         value: pulumi.Input[
             ResponseHeadersPolicyCorsConfigAccessControlAllowOriginsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originOverride")
     def origin_override(self) -> pulumi.Input[_builtins.bool]: ...
     @origin_override.setter
-    def origin_override(self, value: pulumi.Input[_builtins.bool]): ...
+    def origin_override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlExposeHeaders")
     def access_control_expose_headers(
@@ -4875,14 +5258,16 @@ class ResponseHeadersPolicyCorsConfigArgs:
         value: Optional[
             pulumi.Input[ResponseHeadersPolicyCorsConfigAccessControlExposeHeadersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlMaxAgeSec")
     def access_control_max_age_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @access_control_max_age_sec.setter
     def access_control_max_age_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicyCorsConfigAccessControlAllowHeadersArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4902,7 +5287,8 @@ class ResponseHeadersPolicyCorsConfigAccessControlAllowHeadersArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicyCorsConfigAccessControlAllowMethodsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4922,7 +5308,8 @@ class ResponseHeadersPolicyCorsConfigAccessControlAllowMethodsArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicyCorsConfigAccessControlAllowOriginsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4942,7 +5329,8 @@ class ResponseHeadersPolicyCorsConfigAccessControlAllowOriginsArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicyCorsConfigAccessControlExposeHeadersArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4962,7 +5350,8 @@ class ResponseHeadersPolicyCorsConfigAccessControlExposeHeadersArgs:
     @items.setter
     def items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicyCustomHeadersConfigArgsDict(TypedDict):
     items: NotRequired[
@@ -4999,7 +5388,8 @@ class ResponseHeadersPolicyCustomHeadersConfigArgs:
                 Sequence[pulumi.Input[ResponseHeadersPolicyCustomHeadersConfigItemArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicyCustomHeadersConfigItemArgsDict(TypedDict):
     header: pulumi.Input[_builtins.str]
@@ -5019,17 +5409,20 @@ class ResponseHeadersPolicyCustomHeadersConfigItemArgs:
     @pulumi.getter
     def header(self) -> pulumi.Input[_builtins.str]: ...
     @header.setter
-    def header(self, value: pulumi.Input[_builtins.str]): ...
+    def header(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def override(self) -> pulumi.Input[_builtins.bool]: ...
     @override.setter
-    def override(self, value: pulumi.Input[_builtins.bool]): ...
+    def override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ResponseHeadersPolicyRemoveHeadersConfigArgsDict(TypedDict):
     items: NotRequired[
@@ -5066,7 +5459,8 @@ class ResponseHeadersPolicyRemoveHeadersConfigArgs:
                 Sequence[pulumi.Input[ResponseHeadersPolicyRemoveHeadersConfigItemArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicyRemoveHeadersConfigItemArgsDict(TypedDict):
     header: pulumi.Input[_builtins.str]
@@ -5078,7 +5472,8 @@ class ResponseHeadersPolicyRemoveHeadersConfigItemArgs:
     @pulumi.getter
     def header(self) -> pulumi.Input[_builtins.str]: ...
     @header.setter
-    def header(self, value: pulumi.Input[_builtins.str]): ...
+    def header(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ResponseHeadersPolicySecurityHeadersConfigArgsDict(TypedDict):
     content_security_policy: NotRequired[
@@ -5153,7 +5548,8 @@ class ResponseHeadersPolicySecurityHeadersConfigArgs:
                 ResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentTypeOptions")
     def content_type_options(
@@ -5169,7 +5565,8 @@ class ResponseHeadersPolicySecurityHeadersConfigArgs:
                 ResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frameOptions")
     def frame_options(
@@ -5183,7 +5580,8 @@ class ResponseHeadersPolicySecurityHeadersConfigArgs:
         value: Optional[
             pulumi.Input[ResponseHeadersPolicySecurityHeadersConfigFrameOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="referrerPolicy")
     def referrer_policy(
@@ -5197,7 +5595,8 @@ class ResponseHeadersPolicySecurityHeadersConfigArgs:
         value: Optional[
             pulumi.Input[ResponseHeadersPolicySecurityHeadersConfigReferrerPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="strictTransportSecurity")
     def strict_transport_security(
@@ -5215,7 +5614,8 @@ class ResponseHeadersPolicySecurityHeadersConfigArgs:
                 ResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssProtection")
     def xss_protection(
@@ -5229,7 +5629,8 @@ class ResponseHeadersPolicySecurityHeadersConfigArgs:
         value: Optional[
             pulumi.Input[ResponseHeadersPolicySecurityHeadersConfigXssProtectionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyArgsDict(
     TypedDict
@@ -5249,12 +5650,14 @@ class ResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyArgs:
     @pulumi.getter(name="contentSecurityPolicy")
     def content_security_policy(self) -> pulumi.Input[_builtins.str]: ...
     @content_security_policy.setter
-    def content_security_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def content_security_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def override(self) -> pulumi.Input[_builtins.bool]: ...
     @override.setter
-    def override(self, value: pulumi.Input[_builtins.bool]): ...
+    def override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsArgsDict(TypedDict):
     override: pulumi.Input[_builtins.bool]
@@ -5266,7 +5669,8 @@ class ResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsArgs:
     @pulumi.getter
     def override(self) -> pulumi.Input[_builtins.bool]: ...
     @override.setter
-    def override(self, value: pulumi.Input[_builtins.bool]): ...
+    def override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ResponseHeadersPolicySecurityHeadersConfigFrameOptionsArgsDict(TypedDict):
     frame_option: pulumi.Input[_builtins.str]
@@ -5284,12 +5688,14 @@ class ResponseHeadersPolicySecurityHeadersConfigFrameOptionsArgs:
     @pulumi.getter(name="frameOption")
     def frame_option(self) -> pulumi.Input[_builtins.str]: ...
     @frame_option.setter
-    def frame_option(self, value: pulumi.Input[_builtins.str]): ...
+    def frame_option(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def override(self) -> pulumi.Input[_builtins.bool]: ...
     @override.setter
-    def override(self, value: pulumi.Input[_builtins.bool]): ...
+    def override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ResponseHeadersPolicySecurityHeadersConfigReferrerPolicyArgsDict(TypedDict):
     override: pulumi.Input[_builtins.bool]
@@ -5307,12 +5713,14 @@ class ResponseHeadersPolicySecurityHeadersConfigReferrerPolicyArgs:
     @pulumi.getter
     def override(self) -> pulumi.Input[_builtins.bool]: ...
     @override.setter
-    def override(self, value: pulumi.Input[_builtins.bool]): ...
+    def override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="referrerPolicy")
     def referrer_policy(self) -> pulumi.Input[_builtins.str]: ...
     @referrer_policy.setter
-    def referrer_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def referrer_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityArgsDict(
     TypedDict
@@ -5336,22 +5744,30 @@ class ResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityArgs:
     @pulumi.getter(name="accessControlMaxAgeSec")
     def access_control_max_age_sec(self) -> pulumi.Input[_builtins.int]: ...
     @access_control_max_age_sec.setter
-    def access_control_max_age_sec(self, value: pulumi.Input[_builtins.int]): ...
+    def access_control_max_age_sec(
+        self, value: pulumi.Input[_builtins.int]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def override(self) -> pulumi.Input[_builtins.bool]: ...
     @override.setter
-    def override(self, value: pulumi.Input[_builtins.bool]): ...
+    def override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeSubdomains")
     def include_subdomains(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_subdomains.setter
-    def include_subdomains(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_subdomains(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def preload(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @preload.setter
-    def preload(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def preload(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ResponseHeadersPolicySecurityHeadersConfigXssProtectionArgsDict(TypedDict):
     override: pulumi.Input[_builtins.bool]
@@ -5373,22 +5789,26 @@ class ResponseHeadersPolicySecurityHeadersConfigXssProtectionArgs:
     @pulumi.getter
     def override(self) -> pulumi.Input[_builtins.bool]: ...
     @override.setter
-    def override(self, value: pulumi.Input[_builtins.bool]): ...
+    def override(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protection(self) -> pulumi.Input[_builtins.bool]: ...
     @protection.setter
-    def protection(self, value: pulumi.Input[_builtins.bool]): ...
+    def protection(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modeBlock")
     def mode_block(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mode_block.setter
-    def mode_block(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def mode_block(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reportUri")
     def report_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @report_uri.setter
-    def report_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def report_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ResponseHeadersPolicyServerTimingHeadersConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -5406,12 +5826,14 @@ class ResponseHeadersPolicyServerTimingHeadersConfigArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samplingRate")
     def sampling_rate(self) -> pulumi.Input[_builtins.float]: ...
     @sampling_rate.setter
-    def sampling_rate(self, value: pulumi.Input[_builtins.float]): ...
+    def sampling_rate(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class TrustStoreCaCertificatesBundleSourceArgsDict(TypedDict):
     ca_certificates_bundle_s3_location: pulumi.Input[
@@ -5440,7 +5862,8 @@ class TrustStoreCaCertificatesBundleSourceArgs:
         value: pulumi.Input[
             TrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationArgsDict(
     TypedDict
@@ -5464,22 +5887,26 @@ class TrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> pulumi.Input[_builtins.str]: ...
     @region.setter
-    def region(self, value: pulumi.Input[_builtins.str]): ...
+    def region(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TrustStoreTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -5499,17 +5926,20 @@ class TrustStoreTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VpcOriginTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -5529,17 +5959,20 @@ class VpcOriginTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VpcOriginVpcOriginEndpointConfigArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -5569,27 +6002,32 @@ class VpcOriginVpcOriginEndpointConfigArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpPort")
     def http_port(self) -> pulumi.Input[_builtins.int]: ...
     @http_port.setter
-    def http_port(self, value: pulumi.Input[_builtins.int]): ...
+    def http_port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsPort")
     def https_port(self) -> pulumi.Input[_builtins.int]: ...
     @https_port.setter
-    def https_port(self, value: pulumi.Input[_builtins.int]): ...
+    def https_port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originProtocolPolicy")
     def origin_protocol_policy(self) -> pulumi.Input[_builtins.str]: ...
     @origin_protocol_policy.setter
-    def origin_protocol_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def origin_protocol_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originSslProtocols")
     def origin_ssl_protocols(
@@ -5599,7 +6037,8 @@ class VpcOriginVpcOriginEndpointConfigArgs:
     def origin_ssl_protocols(
         self,
         value: pulumi.Input[VpcOriginVpcOriginEndpointConfigOriginSslProtocolsArgs],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VpcOriginVpcOriginEndpointConfigOriginSslProtocolsArgsDict(TypedDict):
     items: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -5617,9 +6056,13 @@ class VpcOriginVpcOriginEndpointConfigOriginSslProtocolsArgs:
     @pulumi.getter
     def items(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @items.setter
-    def items(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def items(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def quantity(self) -> pulumi.Input[_builtins.int]: ...
     @quantity.setter
-    def quantity(self, value: pulumi.Input[_builtins.int]): ...
+    def quantity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...

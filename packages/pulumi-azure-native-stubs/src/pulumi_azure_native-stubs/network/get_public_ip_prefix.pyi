@@ -104,7 +104,8 @@ class GetPublicIPPrefixResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetPublicIPPrefixResult(GetPublicIPPrefixResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublicIPPrefixResult]:
+        ...
 
 def get_public_ip_prefix(
     expand: Optional[_builtins.str] = ...,

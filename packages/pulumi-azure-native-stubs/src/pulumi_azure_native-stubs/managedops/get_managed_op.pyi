@@ -44,7 +44,8 @@ class GetManagedOpResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedOpResult(GetManagedOpResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedOpResult]:
+        ...
 
 def get_managed_op(
     managed_ops_name: Optional[_builtins.str] = ...,

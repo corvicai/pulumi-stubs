@@ -27,7 +27,8 @@ class AssociationSubnetArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SecurityPolicyConfigurationsArgsDict(TypedDict):
     waf_security_policy: NotRequired[pulumi.Input[WafSecurityPolicyArgsDict]]
@@ -45,7 +46,8 @@ class SecurityPolicyConfigurationsArgs:
     @waf_security_policy.setter
     def waf_security_policy(
         self, value: Optional[pulumi.Input[WafSecurityPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WafPolicyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -57,7 +59,8 @@ class WafPolicyArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WafSecurityPolicyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -69,4 +72,5 @@ class WafSecurityPolicyArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

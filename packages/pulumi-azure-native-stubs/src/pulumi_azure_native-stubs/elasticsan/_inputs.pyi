@@ -49,7 +49,8 @@ class EncryptionIdentityArgs:
     @encryption_user_assigned_identity.setter
     def encryption_user_assigned_identity(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionPropertiesArgsDict(TypedDict):
     encryption_identity: NotRequired[pulumi.Input[EncryptionIdentityArgsDict]]
@@ -69,7 +70,8 @@ class EncryptionPropertiesArgs:
     @encryption_identity.setter
     def encryption_identity(
         self, value: Optional[pulumi.Input[EncryptionIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -78,7 +80,8 @@ class EncryptionPropertiesArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[KeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, IdentityType]]
@@ -100,7 +103,8 @@ class IdentityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, IdentityType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, IdentityType]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, IdentityType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -109,7 +113,8 @@ class IdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KeyVaultPropertiesArgsDict(TypedDict):
     key_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -129,17 +134,20 @@ class KeyVaultPropertiesArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_name.setter
-    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultUri")
     def key_vault_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_uri.setter
-    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVersion")
     def key_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_version.setter
-    def key_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedByInfoArgsDict(TypedDict):
     resource_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -153,7 +161,8 @@ class ManagedByInfoArgs:
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class NetworkRuleSetArgsDict(TypedDict):
     virtual_network_rules: NotRequired[
@@ -178,7 +187,8 @@ class NetworkRuleSetArgs:
     def virtual_network_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNetworkRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -202,12 +212,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -221,7 +235,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, SkuName]]
@@ -239,12 +254,16 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, SkuName]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]): ...
+    def tier(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]
+    ):  # -> None:
+        ...
 
 class SnapshotCreationDataArgsDict(TypedDict):
     source_id: pulumi.Input[_builtins.str]
@@ -256,7 +275,8 @@ class SnapshotCreationDataArgs:
     @pulumi.getter(name="sourceId")
     def source_id(self) -> pulumi.Input[_builtins.str]: ...
     @source_id.setter
-    def source_id(self, value: pulumi.Input[_builtins.str]): ...
+    def source_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SourceCreationDataArgsDict(TypedDict):
     create_source: NotRequired[pulumi.Input[Union[_builtins.str, VolumeCreateOption]]]
@@ -280,12 +300,14 @@ class SourceCreationDataArgs:
     @create_source.setter
     def create_source(
         self, value: Optional[pulumi.Input[Union[_builtins.str, VolumeCreateOption]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceId")
     def source_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_id.setter
-    def source_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualNetworkRuleArgsDict(TypedDict):
     virtual_network_resource_id: pulumi.Input[_builtins.str]
@@ -303,9 +325,15 @@ class VirtualNetworkRuleArgs:
     @pulumi.getter(name="virtualNetworkResourceId")
     def virtual_network_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @virtual_network_resource_id.setter
-    def virtual_network_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def virtual_network_resource_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[Union[_builtins.str, Action]]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[Union[_builtins.str, Action]]]): ...
+    def action(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Action]]]
+    ):  # -> None:
+        ...

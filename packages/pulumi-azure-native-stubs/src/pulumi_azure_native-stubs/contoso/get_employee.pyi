@@ -52,7 +52,8 @@ class GetEmployeeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEmployeeResult(GetEmployeeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEmployeeResult]:
+        ...
 
 def get_employee(
     employee_name: Optional[_builtins.str] = ...,

@@ -72,7 +72,8 @@ class GetCapacityReservationGroupResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCapacityReservationGroupResult(GetCapacityReservationGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityReservationGroupResult]:
+        ...
 
 def get_capacity_reservation_group(
     capacity_reservation_group_name: Optional[_builtins.str] = ...,

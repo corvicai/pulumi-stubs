@@ -76,7 +76,8 @@ class GetBackendBucketResult:
     def self_link(self) -> _builtins.str: ...
 
 class AwaitableGetBackendBucketResult(GetBackendBucketResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackendBucketResult]:
+        ...
 
 def get_backend_bucket(
     name: Optional[_builtins.str] = ...,

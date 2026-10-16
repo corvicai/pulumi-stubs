@@ -198,7 +198,8 @@ class GetServiceResult:
     def urls(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetServiceResult(GetServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceResult]:
+        ...
 
 def get_service(
     location: Optional[_builtins.str] = ...,

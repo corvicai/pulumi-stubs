@@ -52,7 +52,8 @@ class GetDiscoveredWorkloadResult:
     def workload_uri(self) -> _builtins.str: ...
 
 class AwaitableGetDiscoveredWorkloadResult(GetDiscoveredWorkloadResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiscoveredWorkloadResult]:
+        ...
 
 def get_discovered_workload(
     location: Optional[_builtins.str] = ...,

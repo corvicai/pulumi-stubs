@@ -60,7 +60,8 @@ class GetLinkerDryrunResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLinkerDryrunResult(GetLinkerDryrunResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkerDryrunResult]:
+        ...
 
 def get_linker_dryrun(
     dryrun_name: Optional[_builtins.str] = ...,

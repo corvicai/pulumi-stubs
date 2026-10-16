@@ -65,12 +65,14 @@ class EventDataStoreAdvancedEventSelectorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventDataStoreAdvancedEventSelectorFieldSelectorArgsDict(TypedDict):
     ends_withs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -108,7 +110,8 @@ class EventDataStoreAdvancedEventSelectorFieldSelectorArgs:
     @ends_withs.setter
     def ends_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def equals(
@@ -117,12 +120,14 @@ class EventDataStoreAdvancedEventSelectorFieldSelectorArgs:
     @equals.setter
     def equals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field.setter
-    def field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notEndsWiths")
     def not_ends_withs(
@@ -131,7 +136,8 @@ class EventDataStoreAdvancedEventSelectorFieldSelectorArgs:
     @not_ends_withs.setter
     def not_ends_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notEquals")
     def not_equals(
@@ -140,7 +146,8 @@ class EventDataStoreAdvancedEventSelectorFieldSelectorArgs:
     @not_equals.setter
     def not_equals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notStartsWiths")
     def not_starts_withs(
@@ -149,7 +156,8 @@ class EventDataStoreAdvancedEventSelectorFieldSelectorArgs:
     @not_starts_withs.setter
     def not_starts_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startsWiths")
     def starts_withs(
@@ -158,7 +166,8 @@ class EventDataStoreAdvancedEventSelectorFieldSelectorArgs:
     @starts_withs.setter
     def starts_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TrailAdvancedEventSelectorArgsDict(TypedDict):
     field_selectors: pulumi.Input[
@@ -189,12 +198,14 @@ class TrailAdvancedEventSelectorArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[TrailAdvancedEventSelectorFieldSelectorArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TrailAdvancedEventSelectorFieldSelectorArgsDict(TypedDict):
     field: pulumi.Input[_builtins.str]
@@ -228,7 +239,8 @@ class TrailAdvancedEventSelectorFieldSelectorArgs:
     @pulumi.getter
     def field(self) -> pulumi.Input[_builtins.str]: ...
     @field.setter
-    def field(self, value: pulumi.Input[_builtins.str]): ...
+    def field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endsWiths")
     def ends_withs(
@@ -237,7 +249,8 @@ class TrailAdvancedEventSelectorFieldSelectorArgs:
     @ends_withs.setter
     def ends_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def equals(
@@ -246,7 +259,8 @@ class TrailAdvancedEventSelectorFieldSelectorArgs:
     @equals.setter
     def equals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notEndsWiths")
     def not_ends_withs(
@@ -255,7 +269,8 @@ class TrailAdvancedEventSelectorFieldSelectorArgs:
     @not_ends_withs.setter
     def not_ends_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notEquals")
     def not_equals(
@@ -264,7 +279,8 @@ class TrailAdvancedEventSelectorFieldSelectorArgs:
     @not_equals.setter
     def not_equals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notStartsWiths")
     def not_starts_withs(
@@ -273,7 +289,8 @@ class TrailAdvancedEventSelectorFieldSelectorArgs:
     @not_starts_withs.setter
     def not_starts_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startsWiths")
     def starts_withs(
@@ -282,7 +299,8 @@ class TrailAdvancedEventSelectorFieldSelectorArgs:
     @starts_withs.setter
     def starts_withs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TrailEventSelectorArgsDict(TypedDict):
     data_resources: NotRequired[
@@ -321,7 +339,8 @@ class TrailEventSelectorArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TrailEventSelectorDataResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeManagementEventSources")
     def exclude_management_event_sources(
@@ -330,19 +349,22 @@ class TrailEventSelectorArgs:
     @exclude_management_event_sources.setter
     def exclude_management_event_sources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeManagementEvents")
     def include_management_events(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_management_events.setter
     def include_management_events(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readWriteType")
     def read_write_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @read_write_type.setter
-    def read_write_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def read_write_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TrailEventSelectorDataResourceArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -360,12 +382,16 @@ class TrailEventSelectorDataResourceArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class TrailInsightSelectorArgsDict(TypedDict):
     insight_type: pulumi.Input[_builtins.str]
@@ -377,4 +403,5 @@ class TrailInsightSelectorArgs:
     @pulumi.getter(name="insightType")
     def insight_type(self) -> pulumi.Input[_builtins.str]: ...
     @insight_type.setter
-    def insight_type(self, value: pulumi.Input[_builtins.str]): ...
+    def insight_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

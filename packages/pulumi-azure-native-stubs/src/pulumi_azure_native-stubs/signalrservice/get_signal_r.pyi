@@ -156,7 +156,8 @@ class GetSignalRResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetSignalRResult(GetSignalRResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSignalRResult]:
+        ...
 
 def get_signal_r(
     resource_group_name: Optional[_builtins.str] = ...,

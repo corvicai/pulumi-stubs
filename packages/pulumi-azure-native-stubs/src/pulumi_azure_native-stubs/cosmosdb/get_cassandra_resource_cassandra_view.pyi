@@ -62,7 +62,10 @@ class GetCassandraResourceCassandraViewResult:
 class AwaitableGetCassandraResourceCassandraViewResult(
     GetCassandraResourceCassandraViewResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCassandraResourceCassandraViewResult]:
+        ...
 
 def get_cassandra_resource_cassandra_view(
     account_name: Optional[_builtins.str] = ...,

@@ -58,7 +58,10 @@ class GetWebAppDiagnosticLogsConfigurationSlotResult:
 class AwaitableGetWebAppDiagnosticLogsConfigurationSlotResult(
     GetWebAppDiagnosticLogsConfigurationSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppDiagnosticLogsConfigurationSlotResult]:
+        ...
 
 def get_web_app_diagnostic_logs_configuration_slot(
     name: Optional[_builtins.str] = ...,

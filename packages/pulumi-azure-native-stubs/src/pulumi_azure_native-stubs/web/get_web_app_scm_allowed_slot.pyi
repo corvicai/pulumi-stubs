@@ -37,7 +37,8 @@ class GetWebAppScmAllowedSlotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppScmAllowedSlotResult(GetWebAppScmAllowedSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppScmAllowedSlotResult]:
+        ...
 
 def get_web_app_scm_allowed_slot(
     name: Optional[_builtins.str] = ...,

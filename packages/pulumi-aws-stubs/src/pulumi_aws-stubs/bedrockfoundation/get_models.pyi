@@ -48,7 +48,8 @@ class GetModelsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetModelsResult(GetModelsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetModelsResult]:
+        ...
 
 def get_models(
     by_customization_type: Optional[_builtins.str] = ...,

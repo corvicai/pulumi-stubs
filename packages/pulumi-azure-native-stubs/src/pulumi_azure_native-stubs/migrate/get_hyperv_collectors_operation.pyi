@@ -62,7 +62,10 @@ class GetHypervCollectorsOperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetHypervCollectorsOperationResult(GetHypervCollectorsOperationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetHypervCollectorsOperationResult]:
+        ...
 
 def get_hyperv_collectors_operation(
     hyperv_collector_name: Optional[_builtins.str] = ...,

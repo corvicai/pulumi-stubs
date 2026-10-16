@@ -56,7 +56,8 @@ class GetReportByDepartmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReportByDepartmentResult(GetReportByDepartmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReportByDepartmentResult]:
+        ...
 
 def get_report_by_department(
     department_id: Optional[_builtins.str] = ...,

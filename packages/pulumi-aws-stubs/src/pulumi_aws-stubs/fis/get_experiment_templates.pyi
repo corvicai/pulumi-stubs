@@ -29,7 +29,8 @@ class GetExperimentTemplatesResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetExperimentTemplatesResult(GetExperimentTemplatesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExperimentTemplatesResult]:
+        ...
 
 def get_experiment_templates(
     region: Optional[_builtins.str] = ...,

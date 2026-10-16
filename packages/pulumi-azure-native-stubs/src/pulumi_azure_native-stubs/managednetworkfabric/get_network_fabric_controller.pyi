@@ -110,7 +110,8 @@ class GetNetworkFabricControllerResult:
     def workload_services(self) -> outputs.ControllerServicesResponse: ...
 
 class AwaitableGetNetworkFabricControllerResult(GetNetworkFabricControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkFabricControllerResult]:
+        ...
 
 def get_network_fabric_controller(
     network_fabric_controller_name: Optional[_builtins.str] = ...,

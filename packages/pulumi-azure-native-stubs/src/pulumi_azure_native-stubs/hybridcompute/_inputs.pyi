@@ -75,19 +75,22 @@ class AgentUpgradeArgs:
     @pulumi.getter(name="correlationId")
     def correlation_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @correlation_id.setter
-    def correlation_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def correlation_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredVersion")
     def desired_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_version.setter
-    def desired_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desired_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
     def enable_automatic_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_upgrade.setter
     def enable_automatic_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class HybridComputePrivateLinkScopePropertiesArgsDict(TypedDict):
     public_network_access: NotRequired[
@@ -112,7 +115,8 @@ class HybridComputePrivateLinkScopePropertiesArgs:
     def public_network_access(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccessType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[ResourceIdentityType]]
@@ -126,7 +130,8 @@ class IdentityArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): ...
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]):  # -> None:
+        ...
 
 class LicenseDetailsArgsDict(TypedDict):
     edition: NotRequired[pulumi.Input[Union[_builtins.str, LicenseEdition]]]
@@ -160,33 +165,38 @@ class LicenseDetailsArgs:
     @edition.setter
     def edition(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseEdition]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def processors(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @processors.setter
-    def processors(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def processors(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[Union[_builtins.str, LicenseState]]]: ...
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> Optional[pulumi.Input[Union[_builtins.str, LicenseTarget]]]: ...
     @target.setter
     def target(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseTarget]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[Union[_builtins.str, LicenseCoreType]]]: ...
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseCoreType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeLicenseDetails")
     def volume_license_details(
@@ -196,7 +206,8 @@ class LicenseDetailsArgs:
     def volume_license_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VolumeLicenseDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LicenseProfileMachineInstanceViewEsuPropertiesArgsDict(TypedDict):
     assigned_license: NotRequired[pulumi.Input[LicenseArgsDict]]
@@ -218,7 +229,8 @@ class LicenseProfileMachineInstanceViewEsuPropertiesArgs:
     @pulumi.getter(name="assignedLicense")
     def assigned_license(self) -> Optional[pulumi.Input[LicenseArgs]]: ...
     @assigned_license.setter
-    def assigned_license(self, value: Optional[pulumi.Input[LicenseArgs]]): ...
+    def assigned_license(self, value: Optional[pulumi.Input[LicenseArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseAssignmentState")
     def license_assignment_state(
@@ -228,7 +240,8 @@ class LicenseProfileMachineInstanceViewEsuPropertiesArgs:
     def license_assignment_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, LicenseAssignmentState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LicenseProfileMachineInstanceViewArgsDict(TypedDict):
     esu_profile: NotRequired[
@@ -275,7 +288,8 @@ class LicenseProfileMachineInstanceViewArgs:
         value: Optional[
             pulumi.Input[LicenseProfileMachineInstanceViewEsuPropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productFeatures")
     def product_features(
@@ -284,7 +298,8 @@ class LicenseProfileMachineInstanceViewArgs:
     @product_features.setter
     def product_features(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ProductFeatureArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productType")
     def product_type(
@@ -294,14 +309,16 @@ class LicenseProfileMachineInstanceViewArgs:
     def product_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, LicenseProfileProductType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareAssuranceCustomer")
     def software_assurance_customer(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @software_assurance_customer.setter
     def software_assurance_customer(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscriptionStatus")
     def subscription_status(
@@ -315,7 +332,8 @@ class LicenseProfileMachineInstanceViewArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, LicenseProfileSubscriptionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LicenseArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
@@ -339,12 +357,16 @@ class LicenseArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseDetails")
     def license_details(self) -> Optional[pulumi.Input[LicenseDetailsArgs]]: ...
     @license_details.setter
-    def license_details(self, value: Optional[pulumi.Input[LicenseDetailsArgs]]): ...
+    def license_details(
+        self, value: Optional[pulumi.Input[LicenseDetailsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
     def license_type(
@@ -353,7 +375,8 @@ class LicenseArgs:
     @license_type.setter
     def license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -362,12 +385,14 @@ class LicenseArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenant_id.setter
-    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class LocationDataArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -389,22 +414,28 @@ class LocationDataArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def city(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @city.setter
-    def city(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def city(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="countryOrRegion")
     def country_or_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @country_or_region.setter
-    def country_or_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def country_or_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def district(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @district.setter
-    def district(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def district(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MachineExtensionInstanceViewStatusArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
@@ -428,12 +459,14 @@ class MachineExtensionInstanceViewStatusArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayStatus")
     def display_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_status.setter
-    def display_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def level(
@@ -442,17 +475,20 @@ class MachineExtensionInstanceViewStatusArgs:
     @level.setter
     def level(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StatusLevelTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time.setter
-    def time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MachineExtensionInstanceViewArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -474,7 +510,8 @@ class MachineExtensionInstanceViewArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -483,17 +520,22 @@ class MachineExtensionInstanceViewArgs:
     @status.setter
     def status(
         self, value: Optional[pulumi.Input[MachineExtensionInstanceViewStatusArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
     def type_handler_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_handler_version.setter
-    def type_handler_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_handler_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MachineExtensionPropertiesArgsDict(TypedDict):
     auto_upgrade_minor_version: NotRequired[pulumi.Input[_builtins.bool]]
@@ -527,19 +569,24 @@ class MachineExtensionPropertiesArgs:
     @auto_upgrade_minor_version.setter
     def auto_upgrade_minor_version(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
     def enable_automatic_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_upgrade.setter
     def enable_automatic_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateTag")
     def force_update_tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @force_update_tag.setter
-    def force_update_tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def force_update_tag(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceView")
     def instance_view(
@@ -548,32 +595,40 @@ class MachineExtensionPropertiesArgs:
     @instance_view.setter
     def instance_view(
         self, value: Optional[pulumi.Input[MachineExtensionInstanceViewArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedSettings")
     def protected_settings(self) -> Optional[Any]: ...
     @protected_settings.setter
-    def protected_settings(self, value: Optional[Any]): ...
+    def protected_settings(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher.setter
-    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[Any]: ...
     @settings.setter
-    def settings(self, value: Optional[Any]): ...
+    def settings(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
     def type_handler_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_handler_version.setter
-    def type_handler_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_handler_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MachineRunCommandScriptSourceArgsDict(TypedDict):
     command_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -599,17 +654,20 @@ class MachineRunCommandScriptSourceArgs:
     @pulumi.getter(name="commandId")
     def command_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @command_id.setter
-    def command_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def command_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptUri")
     def script_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script_uri.setter
-    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptUriManagedIdentity")
     def script_uri_managed_identity(
@@ -618,7 +676,8 @@ class MachineRunCommandScriptSourceArgs:
     @script_uri_managed_identity.setter
     def script_uri_managed_identity(
         self, value: Optional[pulumi.Input[RunCommandManagedIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OSProfileLinuxConfigurationArgsDict(TypedDict):
     assessment_mode: NotRequired[
@@ -646,12 +705,16 @@ class OSProfileLinuxConfigurationArgs:
     @assessment_mode.setter
     def assessment_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AssessmentModeTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHotpatching")
     def enable_hotpatching(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_hotpatching.setter
-    def enable_hotpatching(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_hotpatching(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patchMode")
     def patch_mode(
@@ -660,7 +723,8 @@ class OSProfileLinuxConfigurationArgs:
     @patch_mode.setter
     def patch_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PatchModeTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OSProfileWindowsConfigurationArgsDict(TypedDict):
     assessment_mode: NotRequired[
@@ -688,12 +752,16 @@ class OSProfileWindowsConfigurationArgs:
     @assessment_mode.setter
     def assessment_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AssessmentModeTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHotpatching")
     def enable_hotpatching(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_hotpatching.setter
-    def enable_hotpatching(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_hotpatching(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patchMode")
     def patch_mode(
@@ -702,7 +770,8 @@ class OSProfileWindowsConfigurationArgs:
     @patch_mode.setter
     def patch_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PatchModeTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OSProfileArgsDict(TypedDict):
     linux_configuration: NotRequired[pulumi.Input[OSProfileLinuxConfigurationArgsDict]]
@@ -730,7 +799,8 @@ class OSProfileArgs:
     @linux_configuration.setter
     def linux_configuration(
         self, value: Optional[pulumi.Input[OSProfileLinuxConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsConfiguration")
     def windows_configuration(
@@ -739,7 +809,8 @@ class OSProfileArgs:
     @windows_configuration.setter
     def windows_configuration(
         self, value: Optional[pulumi.Input[OSProfileWindowsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesArgsDict(TypedDict):
     private_endpoint: NotRequired[pulumi.Input[PrivateEndpointPropertyArgsDict]]
@@ -765,7 +836,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     @private_endpoint.setter
     def private_endpoint(
         self, value: Optional[pulumi.Input[PrivateEndpointPropertyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -775,7 +847,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     def private_link_service_connection_state(
         self,
         value: Optional[pulumi.Input[PrivateLinkServiceConnectionStatePropertyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointPropertyArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -789,7 +862,8 @@ class PrivateEndpointPropertyArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStatePropertyArgsDict(TypedDict):
     description: pulumi.Input[_builtins.str]
@@ -807,12 +881,14 @@ class PrivateLinkServiceConnectionStatePropertyArgs:
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ProductFeatureArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -834,7 +910,8 @@ class ProductFeatureArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscriptionStatus")
     def subscription_status(
@@ -848,7 +925,8 @@ class ProductFeatureArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, LicenseProfileSubscriptionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RunCommandInputParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -866,12 +944,14 @@ class RunCommandInputParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RunCommandManagedIdentityArgsDict(TypedDict):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -889,12 +969,14 @@ class RunCommandManagedIdentityArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectId")
     def object_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_id.setter
-    def object_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceStatusesArgsDict(TypedDict):
     extension_service: NotRequired[pulumi.Input[ServiceStatusArgsDict]]
@@ -912,7 +994,10 @@ class ServiceStatusesArgs:
     @pulumi.getter(name="extensionService")
     def extension_service(self) -> Optional[pulumi.Input[ServiceStatusArgs]]: ...
     @extension_service.setter
-    def extension_service(self, value: Optional[pulumi.Input[ServiceStatusArgs]]): ...
+    def extension_service(
+        self, value: Optional[pulumi.Input[ServiceStatusArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guestConfigurationService")
     def guest_configuration_service(
@@ -921,7 +1006,8 @@ class ServiceStatusesArgs:
     @guest_configuration_service.setter
     def guest_configuration_service(
         self, value: Optional[pulumi.Input[ServiceStatusArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceStatusArgsDict(TypedDict):
     startup_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -939,12 +1025,14 @@ class ServiceStatusArgs:
     @pulumi.getter(name="startupType")
     def startup_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @startup_type.setter
-    def startup_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def startup_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VolumeLicenseDetailsArgsDict(TypedDict):
     invoice_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -962,7 +1050,8 @@ class VolumeLicenseDetailsArgs:
     @pulumi.getter(name="invoiceId")
     def invoice_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invoice_id.setter
-    def invoice_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def invoice_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="programYear")
     def program_year(
@@ -971,4 +1060,5 @@ class VolumeLicenseDetailsArgs:
     @program_year.setter
     def program_year(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProgramYear]]]
-    ): ...
+    ):  # -> None:
+        ...

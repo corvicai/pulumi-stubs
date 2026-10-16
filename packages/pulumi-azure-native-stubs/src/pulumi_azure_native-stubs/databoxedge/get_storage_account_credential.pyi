@@ -72,7 +72,8 @@ class GetStorageAccountCredentialResult:
     def user_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetStorageAccountCredentialResult(GetStorageAccountCredentialResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageAccountCredentialResult]:
+        ...
 
 def get_storage_account_credential(
     device_name: Optional[_builtins.str] = ...,

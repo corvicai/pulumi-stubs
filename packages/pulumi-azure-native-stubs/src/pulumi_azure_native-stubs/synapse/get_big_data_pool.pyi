@@ -124,7 +124,8 @@ class GetBigDataPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBigDataPoolResult(GetBigDataPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBigDataPoolResult]:
+        ...
 
 def get_big_data_pool(
     big_data_pool_name: Optional[_builtins.str] = ...,

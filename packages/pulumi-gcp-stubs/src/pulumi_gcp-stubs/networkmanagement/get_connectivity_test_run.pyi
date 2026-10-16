@@ -34,7 +34,8 @@ class GetConnectivityTestRunResult:
     ) -> Sequence[outputs.GetConnectivityTestRunReachabilityDetailResult]: ...
 
 class AwaitableGetConnectivityTestRunResult(GetConnectivityTestRunResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectivityTestRunResult]:
+        ...
 
 def get_connectivity_test_run(
     name: Optional[_builtins.str] = ...,

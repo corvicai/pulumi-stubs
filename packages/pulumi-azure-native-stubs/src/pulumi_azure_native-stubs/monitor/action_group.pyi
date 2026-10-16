@@ -63,22 +63,28 @@ class ActionGroupInitArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupShortName")
     def group_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_short_name.setter
-    def group_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionGroupName")
     def action_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @action_group_name.setter
-    def action_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def action_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="armRoleReceivers")
     def arm_role_receivers(
@@ -87,7 +93,8 @@ class ActionGroupInitArgs:
     @arm_role_receivers.setter
     def arm_role_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ArmRoleReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automationRunbookReceivers")
     def automation_runbook_receivers(
@@ -101,7 +108,8 @@ class ActionGroupInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRunbookReceiverArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureAppPushReceivers")
     def azure_app_push_receivers(
@@ -111,7 +119,8 @@ class ActionGroupInitArgs:
     def azure_app_push_receivers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AzureAppPushReceiverArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureFunctionReceivers")
     def azure_function_receivers(
@@ -123,7 +132,8 @@ class ActionGroupInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AzureFunctionReceiverArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailReceivers")
     def email_receivers(
@@ -132,7 +142,8 @@ class ActionGroupInitArgs:
     @email_receivers.setter
     def email_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[EmailReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHubReceivers")
     def event_hub_receivers(
@@ -142,12 +153,16 @@ class ActionGroupInitArgs:
     def event_hub_receivers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[EventHubReceiverArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="incidentReceivers")
     def incident_receivers(
@@ -157,7 +172,8 @@ class ActionGroupInitArgs:
     def incident_receivers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[IncidentReceiverArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itsmReceivers")
     def itsm_receivers(
@@ -166,12 +182,14 @@ class ActionGroupInitArgs:
     @itsm_receivers.setter
     def itsm_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ItsmReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logicAppReceivers")
     def logic_app_receivers(
@@ -181,7 +199,8 @@ class ActionGroupInitArgs:
     def logic_app_receivers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[LogicAppReceiverArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsReceivers")
     def sms_receivers(
@@ -190,7 +209,8 @@ class ActionGroupInitArgs:
     @sms_receivers.setter
     def sms_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SmsReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -199,7 +219,8 @@ class ActionGroupInitArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="voiceReceivers")
     def voice_receivers(
@@ -208,7 +229,8 @@ class ActionGroupInitArgs:
     @voice_receivers.setter
     def voice_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VoiceReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webhookReceivers")
     def webhook_receivers(
@@ -217,7 +239,8 @@ class ActionGroupInitArgs:
     @webhook_receivers.setter
     def webhook_receivers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WebhookReceiverArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:monitor:ActionGroup")
 class ActionGroup(pulumi.CustomResource):

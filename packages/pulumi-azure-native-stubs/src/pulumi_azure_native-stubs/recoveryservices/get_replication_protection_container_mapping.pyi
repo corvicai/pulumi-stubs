@@ -46,7 +46,10 @@ class GetReplicationProtectionContainerMappingResult:
 class AwaitableGetReplicationProtectionContainerMappingResult(
     GetReplicationProtectionContainerMappingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReplicationProtectionContainerMappingResult]:
+        ...
 
 def get_replication_protection_container_mapping(
     fabric_name: Optional[_builtins.str] = ...,

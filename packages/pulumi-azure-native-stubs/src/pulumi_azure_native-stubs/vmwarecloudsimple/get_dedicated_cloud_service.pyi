@@ -59,7 +59,8 @@ class GetDedicatedCloudServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDedicatedCloudServiceResult(GetDedicatedCloudServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDedicatedCloudServiceResult]:
+        ...
 
 def get_dedicated_cloud_service(
     dedicated_cloud_service_name: Optional[_builtins.str] = ...,

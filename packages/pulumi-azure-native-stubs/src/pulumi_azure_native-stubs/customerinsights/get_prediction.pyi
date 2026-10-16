@@ -106,7 +106,8 @@ class GetPredictionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPredictionResult(GetPredictionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPredictionResult]:
+        ...
 
 def get_prediction(
     hub_name: Optional[_builtins.str] = ...,

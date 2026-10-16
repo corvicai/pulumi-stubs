@@ -109,7 +109,8 @@ class GetNetworkInterfaceResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkInterfaceResult(GetNetworkInterfaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkInterfaceResult]:
+        ...
 
 def get_network_interface(
     filters: Optional[

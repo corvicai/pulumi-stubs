@@ -27,7 +27,8 @@ class ListAccessInvitationsResult:
     def metadata(self) -> Optional[outputs.ConfluentListMetadataResponse]: ...
 
 class AwaitableListAccessInvitationsResult(ListAccessInvitationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccessInvitationsResult]:
+        ...
 
 def list_access_invitations(
     organization_name: Optional[_builtins.str] = ...,

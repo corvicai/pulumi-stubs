@@ -36,21 +36,24 @@ class DataCollectionRuleArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataCollectionEndpointId")
     def data_collection_endpoint_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_collection_endpoint_id.setter
     def data_collection_endpoint_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataCollectionRuleName")
     def data_collection_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_collection_rule_name.setter
     def data_collection_rule_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataFlows")
     def data_flows(
@@ -59,7 +62,8 @@ class DataCollectionRuleArgs:
     @data_flows.setter
     def data_flows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataFlowArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSources")
     def data_sources(
@@ -68,12 +72,14 @@ class DataCollectionRuleArgs:
     @data_sources.setter
     def data_sources(
         self, value: Optional[pulumi.Input[DataCollectionRuleDataSourcesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destinations(
@@ -82,7 +88,8 @@ class DataCollectionRuleArgs:
     @destinations.setter
     def destinations(
         self, value: Optional[pulumi.Input[DataCollectionRuleDestinationsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(
@@ -91,7 +98,8 @@ class DataCollectionRuleArgs:
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[DataCollectionRuleResourceIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(
@@ -105,12 +113,14 @@ class DataCollectionRuleArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, KnownDataCollectionRuleResourceKind]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamDeclarations")
     def stream_declarations(
@@ -122,7 +132,8 @@ class DataCollectionRuleArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[StreamDeclarationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -131,7 +142,8 @@ class DataCollectionRuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:monitor:DataCollectionRule")
 class DataCollectionRule(pulumi.CustomResource):

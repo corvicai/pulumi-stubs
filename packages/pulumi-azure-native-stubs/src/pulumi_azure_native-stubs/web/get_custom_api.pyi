@@ -52,7 +52,8 @@ class GetCustomApiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCustomApiResult(GetCustomApiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomApiResult]:
+        ...
 
 def get_custom_api(
     api_name: Optional[_builtins.str] = ...,

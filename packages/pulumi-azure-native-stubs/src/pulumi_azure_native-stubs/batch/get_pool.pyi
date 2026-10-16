@@ -175,7 +175,8 @@ class GetPoolResult:
     def vm_size(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPoolResult(GetPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPoolResult]:
+        ...
 
 def get_pool(
     account_name: Optional[_builtins.str] = ...,

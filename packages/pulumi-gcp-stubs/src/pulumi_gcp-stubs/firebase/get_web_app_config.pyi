@@ -59,7 +59,8 @@ class GetWebAppConfigResult:
     def web_app_id(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppConfigResult(GetWebAppConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppConfigResult]:
+        ...
 
 def get_web_app_config(
     project: Optional[_builtins.str] = ...,

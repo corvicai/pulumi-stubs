@@ -90,7 +90,8 @@ class GetOperatorApiConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOperatorApiConnectionResult(GetOperatorApiConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOperatorApiConnectionResult]:
+        ...
 
 def get_operator_api_connection(
     operator_api_connection_name: Optional[_builtins.str] = ...,

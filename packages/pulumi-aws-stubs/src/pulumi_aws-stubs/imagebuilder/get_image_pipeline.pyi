@@ -104,7 +104,8 @@ class GetImagePipelineResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetImagePipelineResult(GetImagePipelineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImagePipelineResult]:
+        ...
 
 def get_image_pipeline(
     arn: Optional[_builtins.str] = ...,

@@ -56,7 +56,10 @@ class GetManagedInstancePrivateEndpointConnectionResult:
 class AwaitableGetManagedInstancePrivateEndpointConnectionResult(
     GetManagedInstancePrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedInstancePrivateEndpointConnectionResult]:
+        ...
 
 def get_managed_instance_private_endpoint_connection(
     managed_instance_name: Optional[_builtins.str] = ...,

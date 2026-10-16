@@ -26,7 +26,8 @@ class ListBatchAccountKeysResult:
     def secondary(self) -> _builtins.str: ...
 
 class AwaitableListBatchAccountKeysResult(ListBatchAccountKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListBatchAccountKeysResult]:
+        ...
 
 def list_batch_account_keys(
     account_name: Optional[_builtins.str] = ...,

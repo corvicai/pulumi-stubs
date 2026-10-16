@@ -59,7 +59,8 @@ class GetConstraintResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConstraintResult(GetConstraintResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConstraintResult]:
+        ...
 
 def get_constraint(
     accept_language: Optional[_builtins.str] = ...,

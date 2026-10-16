@@ -124,7 +124,8 @@ class GetBatchAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBatchAccountResult(GetBatchAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBatchAccountResult]:
+        ...
 
 def get_batch_account(
     account_name: Optional[_builtins.str] = ...,

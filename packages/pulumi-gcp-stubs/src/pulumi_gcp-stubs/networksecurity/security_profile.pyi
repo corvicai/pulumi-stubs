@@ -37,7 +37,8 @@ class SecurityProfileArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customInterceptProfile")
     def custom_intercept_profile(
@@ -46,7 +47,8 @@ class SecurityProfileArgs:
     @custom_intercept_profile.setter
     def custom_intercept_profile(
         self, value: Optional[pulumi.Input[SecurityProfileCustomInterceptProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customMirroringProfile")
     def custom_mirroring_profile(
@@ -55,12 +57,14 @@ class SecurityProfileArgs:
     @custom_mirroring_profile.setter
     def custom_mirroring_profile(
         self, value: Optional[pulumi.Input[SecurityProfileCustomMirroringProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -69,22 +73,26 @@ class SecurityProfileArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatPreventionProfile")
     def threat_prevention_profile(
@@ -93,7 +101,8 @@ class SecurityProfileArgs:
     @threat_prevention_profile.setter
     def threat_prevention_profile(
         self, value: Optional[pulumi.Input[SecurityProfileThreatPreventionProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="urlFilteringProfile")
     def url_filtering_profile(
@@ -102,7 +111,8 @@ class SecurityProfileArgs:
     @url_filtering_profile.setter
     def url_filtering_profile(
         self, value: Optional[pulumi.Input[SecurityProfileUrlFilteringProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SecurityProfileState:
@@ -142,7 +152,8 @@ class _SecurityProfileState:
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customInterceptProfile")
     def custom_intercept_profile(
@@ -151,7 +162,8 @@ class _SecurityProfileState:
     @custom_intercept_profile.setter
     def custom_intercept_profile(
         self, value: Optional[pulumi.Input[SecurityProfileCustomInterceptProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customMirroringProfile")
     def custom_mirroring_profile(
@@ -160,12 +172,14 @@ class _SecurityProfileState:
     @custom_mirroring_profile.setter
     def custom_mirroring_profile(
         self, value: Optional[pulumi.Input[SecurityProfileCustomMirroringProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -174,12 +188,14 @@ class _SecurityProfileState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -188,22 +204,26 @@ class _SecurityProfileState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -212,12 +232,14 @@ class _SecurityProfileState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatPreventionProfile")
     def threat_prevention_profile(
@@ -226,17 +248,20 @@ class _SecurityProfileState:
     @threat_prevention_profile.setter
     def threat_prevention_profile(
         self, value: Optional[pulumi.Input[SecurityProfileThreatPreventionProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="urlFilteringProfile")
     def url_filtering_profile(
@@ -245,7 +270,8 @@ class _SecurityProfileState:
     @url_filtering_profile.setter
     def url_filtering_profile(
         self, value: Optional[pulumi.Input[SecurityProfileUrlFilteringProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SecurityProfile(pulumi.CustomResource):

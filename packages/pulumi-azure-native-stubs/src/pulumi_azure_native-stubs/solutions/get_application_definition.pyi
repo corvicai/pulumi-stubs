@@ -128,7 +128,8 @@ class GetApplicationDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationDefinitionResult(GetApplicationDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationDefinitionResult]:
+        ...
 
 def get_application_definition(
     application_definition_name: Optional[_builtins.str] = ...,

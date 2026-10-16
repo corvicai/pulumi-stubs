@@ -234,7 +234,8 @@ class GetDatabaseAccountResult:
     def write_locations(self) -> Sequence[outputs.LocationResponse]: ...
 
 class AwaitableGetDatabaseAccountResult(GetDatabaseAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseAccountResult]:
+        ...
 
 def get_database_account(
     account_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,10 @@ class GetCommitmentPlanAssociationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCommitmentPlanAssociationResult(GetCommitmentPlanAssociationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCommitmentPlanAssociationResult]:
+        ...
 
 def get_commitment_plan_association(
     commitment_plan_association_name: Optional[_builtins.str] = ...,

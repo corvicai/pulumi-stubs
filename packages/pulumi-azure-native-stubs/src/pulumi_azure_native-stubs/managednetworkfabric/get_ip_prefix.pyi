@@ -68,7 +68,8 @@ class GetIpPrefixResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIpPrefixResult(GetIpPrefixResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpPrefixResult]:
+        ...
 
 def get_ip_prefix(
     ip_prefix_name: Optional[_builtins.str] = ...,

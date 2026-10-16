@@ -96,7 +96,10 @@ class GetScopeAccessReviewHistoryDefinitionByIdResult:
 class AwaitableGetScopeAccessReviewHistoryDefinitionByIdResult(
     GetScopeAccessReviewHistoryDefinitionByIdResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetScopeAccessReviewHistoryDefinitionByIdResult]:
+        ...
 
 def get_scope_access_review_history_definition_by_id(
     history_definition_id: Optional[_builtins.str] = ...,

@@ -64,7 +64,8 @@ class GetGlobalReachConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGlobalReachConnectionResult(GetGlobalReachConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlobalReachConnectionResult]:
+        ...
 
 def get_global_reach_connection(
     global_reach_connection_name: Optional[_builtins.str] = ...,

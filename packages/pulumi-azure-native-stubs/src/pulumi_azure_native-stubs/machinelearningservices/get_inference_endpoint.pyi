@@ -64,7 +64,8 @@ class GetInferenceEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInferenceEndpointResult(GetInferenceEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInferenceEndpointResult]:
+        ...
 
 def get_inference_endpoint(
     endpoint_name: Optional[_builtins.str] = ...,

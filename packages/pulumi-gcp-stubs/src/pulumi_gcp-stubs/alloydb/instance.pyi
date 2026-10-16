@@ -51,22 +51,28 @@ class InstanceArgs:
     @pulumi.getter
     def cluster(self) -> pulumi.Input[_builtins.str]: ...
     @cluster.setter
-    def cluster(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceId")
     def instance_id(self) -> pulumi.Input[_builtins.str]: ...
     @instance_id.setter
-    def instance_id(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activationPolicy")
     def activation_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @activation_policy.setter
-    def activation_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def activation_policy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -75,12 +81,16 @@ class InstanceArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityType")
     def availability_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_type.setter
-    def availability_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientConnectionConfig")
     def client_connection_config(
@@ -89,7 +99,8 @@ class InstanceArgs:
     @client_connection_config.setter
     def client_connection_config(
         self, value: Optional[pulumi.Input[InstanceClientConnectionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionPoolConfig")
     def connection_pool_config(
@@ -98,7 +109,8 @@ class InstanceArgs:
     @connection_pool_config.setter
     def connection_pool_config(
         self, value: Optional[pulumi.Input[InstanceConnectionPoolConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseFlags")
     def database_flags(
@@ -107,17 +119,20 @@ class InstanceArgs:
     @database_flags.setter
     def database_flags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gceZone")
     def gce_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gce_zone.setter
-    def gce_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gce_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -126,21 +141,24 @@ class InstanceArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineConfig")
     def machine_config(self) -> Optional[pulumi.Input[InstanceMachineConfigArgs]]: ...
     @machine_config.setter
     def machine_config(
         self, value: Optional[pulumi.Input[InstanceMachineConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(self) -> Optional[pulumi.Input[InstanceNetworkConfigArgs]]: ...
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[InstanceNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="observabilityConfig")
     def observability_config(
@@ -149,7 +167,8 @@ class InstanceArgs:
     @observability_config.setter
     def observability_config(
         self, value: Optional[pulumi.Input[InstanceObservabilityConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pscInstanceConfig")
     def psc_instance_config(
@@ -158,7 +177,8 @@ class InstanceArgs:
     @psc_instance_config.setter
     def psc_instance_config(
         self, value: Optional[pulumi.Input[InstancePscInstanceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryInsightsConfig")
     def query_insights_config(
@@ -167,7 +187,8 @@ class InstanceArgs:
     @query_insights_config.setter
     def query_insights_config(
         self, value: Optional[pulumi.Input[InstanceQueryInsightsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readPoolConfig")
     def read_pool_config(
@@ -176,7 +197,8 @@ class InstanceArgs:
     @read_pool_config.setter
     def read_pool_config(
         self, value: Optional[pulumi.Input[InstanceReadPoolConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InstanceState:
@@ -240,7 +262,10 @@ class _InstanceState:
     @pulumi.getter(name="activationPolicy")
     def activation_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @activation_policy.setter
-    def activation_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def activation_policy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -249,12 +274,16 @@ class _InstanceState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityType")
     def availability_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_type.setter
-    def availability_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientConnectionConfig")
     def client_connection_config(
@@ -263,12 +292,14 @@ class _InstanceState:
     @client_connection_config.setter
     def client_connection_config(
         self, value: Optional[pulumi.Input[InstanceClientConnectionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionPoolConfig")
     def connection_pool_config(
@@ -277,12 +308,14 @@ class _InstanceState:
     @connection_pool_config.setter
     def connection_pool_config(
         self, value: Optional[pulumi.Input[InstanceConnectionPoolConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseFlags")
     def database_flags(
@@ -291,12 +324,14 @@ class _InstanceState:
     @database_flags.setter
     def database_flags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -305,7 +340,8 @@ class _InstanceState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -314,27 +350,32 @@ class _InstanceState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gceZone")
     def gce_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gce_zone.setter
-    def gce_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gce_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceId")
     def instance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_id.setter
-    def instance_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_type.setter
-    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddress")
     def ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_address.setter
-    def ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -343,26 +384,30 @@ class _InstanceState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineConfig")
     def machine_config(self) -> Optional[pulumi.Input[InstanceMachineConfigArgs]]: ...
     @machine_config.setter
     def machine_config(
         self, value: Optional[pulumi.Input[InstanceMachineConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(self) -> Optional[pulumi.Input[InstanceNetworkConfigArgs]]: ...
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[InstanceNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="observabilityConfig")
     def observability_config(
@@ -371,7 +416,8 @@ class _InstanceState:
     @observability_config.setter
     def observability_config(
         self, value: Optional[pulumi.Input[InstanceObservabilityConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outboundPublicIpAddresses")
     def outbound_public_ip_addresses(
@@ -380,7 +426,8 @@ class _InstanceState:
     @outbound_public_ip_addresses.setter
     def outbound_public_ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pscInstanceConfig")
     def psc_instance_config(
@@ -389,12 +436,16 @@ class _InstanceState:
     @psc_instance_config.setter
     def psc_instance_config(
         self, value: Optional[pulumi.Input[InstancePscInstanceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIpAddress")
     def public_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_ip_address.setter
-    def public_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -403,7 +454,8 @@ class _InstanceState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryInsightsConfig")
     def query_insights_config(
@@ -412,7 +464,8 @@ class _InstanceState:
     @query_insights_config.setter
     def query_insights_config(
         self, value: Optional[pulumi.Input[InstanceQueryInsightsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readPoolConfig")
     def read_pool_config(
@@ -421,27 +474,32 @@ class _InstanceState:
     @read_pool_config.setter
     def read_pool_config(
         self, value: Optional[pulumi.Input[InstanceReadPoolConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:alloydb/instance:Instance")
 class Instance(pulumi.CustomResource):

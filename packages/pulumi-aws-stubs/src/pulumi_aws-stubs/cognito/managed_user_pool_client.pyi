@@ -69,12 +69,16 @@ class ManagedUserPoolClientArgs:
     @pulumi.getter(name="userPoolId")
     def user_pool_id(self) -> pulumi.Input[_builtins.str]: ...
     @user_pool_id.setter
-    def user_pool_id(self, value: pulumi.Input[_builtins.str]): ...
+    def user_pool_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessTokenValidity")
     def access_token_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @access_token_validity.setter
-    def access_token_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def access_token_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOauthFlows")
     def allowed_oauth_flows(
@@ -83,7 +87,8 @@ class ManagedUserPoolClientArgs:
     @allowed_oauth_flows.setter
     def allowed_oauth_flows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOauthFlowsUserPoolClient")
     def allowed_oauth_flows_user_pool_client(
@@ -92,7 +97,8 @@ class ManagedUserPoolClientArgs:
     @allowed_oauth_flows_user_pool_client.setter
     def allowed_oauth_flows_user_pool_client(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOauthScopes")
     def allowed_oauth_scopes(
@@ -101,7 +107,8 @@ class ManagedUserPoolClientArgs:
     @allowed_oauth_scopes.setter
     def allowed_oauth_scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="analyticsConfiguration")
     def analytics_configuration(
@@ -111,12 +118,16 @@ class ManagedUserPoolClientArgs:
     def analytics_configuration(
         self,
         value: Optional[pulumi.Input[ManagedUserPoolClientAnalyticsConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authSessionValidity")
     def auth_session_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @auth_session_validity.setter
-    def auth_session_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def auth_session_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callbackUrls")
     def callback_urls(
@@ -125,12 +136,16 @@ class ManagedUserPoolClientArgs:
     @callback_urls.setter
     def callback_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRedirectUri")
     def default_redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_redirect_uri.setter
-    def default_redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_redirect_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePropagateAdditionalUserContextData")
     def enable_propagate_additional_user_context_data(
@@ -139,14 +154,16 @@ class ManagedUserPoolClientArgs:
     @enable_propagate_additional_user_context_data.setter
     def enable_propagate_additional_user_context_data(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableTokenRevocation")
     def enable_token_revocation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_token_revocation.setter
     def enable_token_revocation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="explicitAuthFlows")
     def explicit_auth_flows(
@@ -155,12 +172,16 @@ class ManagedUserPoolClientArgs:
     @explicit_auth_flows.setter
     def explicit_auth_flows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idTokenValidity")
     def id_token_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @id_token_validity.setter
-    def id_token_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def id_token_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logoutUrls")
     def logout_urls(
@@ -169,17 +190,20 @@ class ManagedUserPoolClientArgs:
     @logout_urls.setter
     def logout_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePattern")
     def name_pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_pattern.setter
-    def name_pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preventUserExistenceErrors")
     def prevent_user_existence_errors(
@@ -188,7 +212,8 @@ class ManagedUserPoolClientArgs:
     @prevent_user_existence_errors.setter
     def prevent_user_existence_errors(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readAttributes")
     def read_attributes(
@@ -197,7 +222,8 @@ class ManagedUserPoolClientArgs:
     @read_attributes.setter
     def read_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshTokenRotation")
     def refresh_token_rotation(
@@ -207,17 +233,22 @@ class ManagedUserPoolClientArgs:
     def refresh_token_rotation(
         self,
         value: Optional[pulumi.Input[ManagedUserPoolClientRefreshTokenRotationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshTokenValidity")
     def refresh_token_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @refresh_token_validity.setter
-    def refresh_token_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def refresh_token_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedIdentityProviders")
     def supported_identity_providers(
@@ -226,7 +257,8 @@ class ManagedUserPoolClientArgs:
     @supported_identity_providers.setter
     def supported_identity_providers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenValidityUnits")
     def token_validity_units(
@@ -235,7 +267,8 @@ class ManagedUserPoolClientArgs:
     @token_validity_units.setter
     def token_validity_units(
         self, value: Optional[pulumi.Input[ManagedUserPoolClientTokenValidityUnitsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeAttributes")
     def write_attributes(
@@ -244,7 +277,8 @@ class ManagedUserPoolClientArgs:
     @write_attributes.setter
     def write_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ManagedUserPoolClientState:
@@ -308,7 +342,10 @@ class _ManagedUserPoolClientState:
     @pulumi.getter(name="accessTokenValidity")
     def access_token_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @access_token_validity.setter
-    def access_token_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def access_token_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOauthFlows")
     def allowed_oauth_flows(
@@ -317,7 +354,8 @@ class _ManagedUserPoolClientState:
     @allowed_oauth_flows.setter
     def allowed_oauth_flows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOauthFlowsUserPoolClient")
     def allowed_oauth_flows_user_pool_client(
@@ -326,7 +364,8 @@ class _ManagedUserPoolClientState:
     @allowed_oauth_flows_user_pool_client.setter
     def allowed_oauth_flows_user_pool_client(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOauthScopes")
     def allowed_oauth_scopes(
@@ -335,7 +374,8 @@ class _ManagedUserPoolClientState:
     @allowed_oauth_scopes.setter
     def allowed_oauth_scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="analyticsConfiguration")
     def analytics_configuration(
@@ -345,12 +385,16 @@ class _ManagedUserPoolClientState:
     def analytics_configuration(
         self,
         value: Optional[pulumi.Input[ManagedUserPoolClientAnalyticsConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authSessionValidity")
     def auth_session_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @auth_session_validity.setter
-    def auth_session_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def auth_session_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callbackUrls")
     def callback_urls(
@@ -359,17 +403,22 @@ class _ManagedUserPoolClientState:
     @callback_urls.setter
     def callback_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRedirectUri")
     def default_redirect_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_redirect_uri.setter
-    def default_redirect_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_redirect_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePropagateAdditionalUserContextData")
     def enable_propagate_additional_user_context_data(
@@ -378,14 +427,16 @@ class _ManagedUserPoolClientState:
     @enable_propagate_additional_user_context_data.setter
     def enable_propagate_additional_user_context_data(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableTokenRevocation")
     def enable_token_revocation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_token_revocation.setter
     def enable_token_revocation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="explicitAuthFlows")
     def explicit_auth_flows(
@@ -394,12 +445,16 @@ class _ManagedUserPoolClientState:
     @explicit_auth_flows.setter
     def explicit_auth_flows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idTokenValidity")
     def id_token_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @id_token_validity.setter
-    def id_token_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def id_token_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logoutUrls")
     def logout_urls(
@@ -408,22 +463,26 @@ class _ManagedUserPoolClientState:
     @logout_urls.setter
     def logout_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePattern")
     def name_pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_pattern.setter
-    def name_pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preventUserExistenceErrors")
     def prevent_user_existence_errors(
@@ -432,7 +491,8 @@ class _ManagedUserPoolClientState:
     @prevent_user_existence_errors.setter
     def prevent_user_existence_errors(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readAttributes")
     def read_attributes(
@@ -441,7 +501,8 @@ class _ManagedUserPoolClientState:
     @read_attributes.setter
     def read_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshTokenRotation")
     def refresh_token_rotation(
@@ -451,17 +512,22 @@ class _ManagedUserPoolClientState:
     def refresh_token_rotation(
         self,
         value: Optional[pulumi.Input[ManagedUserPoolClientRefreshTokenRotationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshTokenValidity")
     def refresh_token_validity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @refresh_token_validity.setter
-    def refresh_token_validity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def refresh_token_validity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedIdentityProviders")
     def supported_identity_providers(
@@ -470,7 +536,8 @@ class _ManagedUserPoolClientState:
     @supported_identity_providers.setter
     def supported_identity_providers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenValidityUnits")
     def token_validity_units(
@@ -479,12 +546,14 @@ class _ManagedUserPoolClientState:
     @token_validity_units.setter
     def token_validity_units(
         self, value: Optional[pulumi.Input[ManagedUserPoolClientTokenValidityUnitsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolId")
     def user_pool_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_pool_id.setter
-    def user_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeAttributes")
     def write_attributes(
@@ -493,7 +562,8 @@ class _ManagedUserPoolClientState:
     @write_attributes.setter
     def write_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ManagedUserPoolClient(pulumi.CustomResource):

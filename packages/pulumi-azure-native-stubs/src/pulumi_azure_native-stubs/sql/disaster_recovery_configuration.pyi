@@ -22,12 +22,14 @@ class DisasterRecoveryConfigurationArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> pulumi.Input[_builtins.str]: ...
     @server_name.setter
-    def server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disasterRecoveryConfigurationName")
     def disaster_recovery_configuration_name(
@@ -36,7 +38,8 @@ class DisasterRecoveryConfigurationArgs:
     @disaster_recovery_configuration_name.setter
     def disaster_recovery_configuration_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:sql:DisasterRecoveryConfiguration")
 class DisasterRecoveryConfiguration(pulumi.CustomResource):

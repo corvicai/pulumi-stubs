@@ -104,7 +104,8 @@ class GetWebTestResult:
     def web_test_name(self) -> _builtins.str: ...
 
 class AwaitableGetWebTestResult(GetWebTestResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebTestResult]:
+        ...
 
 def get_web_test(
     resource_group_name: Optional[_builtins.str] = ...,

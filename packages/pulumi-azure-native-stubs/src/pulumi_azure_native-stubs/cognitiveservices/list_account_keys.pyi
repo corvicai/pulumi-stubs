@@ -23,7 +23,8 @@ class ListAccountKeysResult:
     def key2(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListAccountKeysResult(ListAccountKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccountKeysResult]:
+        ...
 
 def list_account_keys(
     account_name: Optional[_builtins.str] = ...,

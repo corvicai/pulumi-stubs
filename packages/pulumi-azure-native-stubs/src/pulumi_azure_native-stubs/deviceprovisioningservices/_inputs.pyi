@@ -45,12 +45,14 @@ class CertificatePropertiesArgs:
     @pulumi.getter
     def certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate.setter
-    def certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isVerified")
     def is_verified(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_verified.setter
-    def is_verified(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_verified(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class IotDpsPropertiesDescriptionArgsDict(TypedDict):
     allocation_policy: NotRequired[pulumi.Input[Union[_builtins.str, AllocationPolicy]]]
@@ -122,7 +124,8 @@ class IotDpsPropertiesDescriptionArgs:
     @allocation_policy.setter
     def allocation_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AllocationPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizationPolicies")
     def authorization_policies(
@@ -148,12 +151,16 @@ class IotDpsPropertiesDescriptionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDataResidency")
     def enable_data_residency(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_data_residency.setter
-    def enable_data_residency(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_data_residency(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iotHubs")
     def iot_hubs(
@@ -167,7 +174,8 @@ class IotDpsPropertiesDescriptionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[IotHubDefinitionDescriptionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipFilterRules")
     def ip_filter_rules(
@@ -176,14 +184,16 @@ class IotDpsPropertiesDescriptionArgs:
     @ip_filter_rules.setter
     def ip_filter_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IpFilterRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portalOperationsHostName")
     def portal_operations_host_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @portal_operations_host_name.setter
     def portal_operations_host_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnections")
     def private_endpoint_connections(
@@ -197,12 +207,16 @@ class IotDpsPropertiesDescriptionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioning_state.setter
-    def provisioning_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provisioning_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -211,12 +225,16 @@ class IotDpsPropertiesDescriptionArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[Union[_builtins.str, State]]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, State]]]): ...
+    def state(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, State]]]
+    ):  # -> None:
+        ...
 
 class IotDpsSkuInfoArgsDict(TypedDict):
     capacity: NotRequired[pulumi.Input[_builtins.float]]
@@ -234,12 +252,16 @@ class IotDpsSkuInfoArgs:
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[Union[_builtins.str, IotDpsSku]]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[Union[_builtins.str, IotDpsSku]]]): ...
+    def name(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, IotDpsSku]]]
+    ):  # -> None:
+        ...
 
 class IotHubDefinitionDescriptionArgsDict(TypedDict):
     connection_string: pulumi.Input[_builtins.str]
@@ -261,24 +283,30 @@ class IotHubDefinitionDescriptionArgs:
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> pulumi.Input[_builtins.str]: ...
     @connection_string.setter
-    def connection_string(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allocationWeight")
     def allocation_weight(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @allocation_weight.setter
-    def allocation_weight(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def allocation_weight(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applyAllocationPolicy")
     def apply_allocation_policy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @apply_allocation_policy.setter
     def apply_allocation_policy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IpFilterRuleArgsDict(TypedDict):
     action: pulumi.Input[IpFilterActionType]
@@ -300,22 +328,26 @@ class IpFilterRuleArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[IpFilterActionType]: ...
     @action.setter
-    def action(self, value: pulumi.Input[IpFilterActionType]): ...
+    def action(self, value: pulumi.Input[IpFilterActionType]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterName")
     def filter_name(self) -> pulumi.Input[_builtins.str]: ...
     @filter_name.setter
-    def filter_name(self, value: pulumi.Input[_builtins.str]): ...
+    def filter_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipMask")
     def ip_mask(self) -> pulumi.Input[_builtins.str]: ...
     @ip_mask.setter
-    def ip_mask(self, value: pulumi.Input[_builtins.str]): ...
+    def ip_mask(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> Optional[pulumi.Input[IpFilterTargetType]]: ...
     @target.setter
-    def target(self, value: Optional[pulumi.Input[IpFilterTargetType]]): ...
+    def target(self, value: Optional[pulumi.Input[IpFilterTargetType]]):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -341,7 +373,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -350,7 +383,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesArgsDict(TypedDict):
     private_link_service_connection_state: pulumi.Input[
@@ -374,7 +408,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionArgsDict(TypedDict):
     properties: pulumi.Input[PrivateEndpointConnectionPropertiesArgsDict]
@@ -390,7 +425,8 @@ class PrivateEndpointConnectionArgs:
     @properties.setter
     def properties(
         self, value: pulumi.Input[PrivateEndpointConnectionPropertiesArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     description: pulumi.Input[_builtins.str]
@@ -410,7 +446,8 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -420,12 +457,16 @@ class PrivateLinkServiceConnectionStateArgs:
     def status(
         self,
         value: pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStatus]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SharedAccessSignatureAuthorizationRuleAccessRightsDescriptionArgsDict(TypedDict):
     key_name: pulumi.Input[_builtins.str]
@@ -447,21 +488,25 @@ class SharedAccessSignatureAuthorizationRuleAccessRightsDescriptionArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> pulumi.Input[_builtins.str]: ...
     @key_name.setter
-    def key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rights(self) -> pulumi.Input[Union[_builtins.str, AccessRightsDescription]]: ...
     @rights.setter
     def rights(
         self, value: pulumi.Input[Union[_builtins.str, AccessRightsDescription]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryKey")
     def secondary_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secondary_key.setter
-    def secondary_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secondary_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

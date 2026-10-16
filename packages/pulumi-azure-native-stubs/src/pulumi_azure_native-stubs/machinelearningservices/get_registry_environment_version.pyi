@@ -44,7 +44,10 @@ class GetRegistryEnvironmentVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryEnvironmentVersionResult(GetRegistryEnvironmentVersionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegistryEnvironmentVersionResult]:
+        ...
 
 def get_registry_environment_version(
     environment_name: Optional[_builtins.str] = ...,

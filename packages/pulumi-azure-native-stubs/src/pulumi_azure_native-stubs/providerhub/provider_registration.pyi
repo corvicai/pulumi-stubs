@@ -30,7 +30,8 @@ class ProviderRegistrationArgs:
     def kind(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ProviderRegistrationKind]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -39,12 +40,16 @@ class ProviderRegistrationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[ProviderRegistrationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerNamespace")
     def provider_namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provider_namespace.setter
-    def provider_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provider_namespace(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:providerhub:ProviderRegistration")
 class ProviderRegistration(pulumi.CustomResource):

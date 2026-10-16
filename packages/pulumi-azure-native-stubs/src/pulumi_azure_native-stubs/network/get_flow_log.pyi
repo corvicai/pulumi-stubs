@@ -92,7 +92,8 @@ class GetFlowLogResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFlowLogResult(GetFlowLogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFlowLogResult]:
+        ...
 
 def get_flow_log(
     flow_log_name: Optional[_builtins.str] = ...,

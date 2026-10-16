@@ -26,7 +26,8 @@ class GetSubscribedRuleGroupResult:
     def name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSubscribedRuleGroupResult(GetSubscribedRuleGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubscribedRuleGroupResult]:
+        ...
 
 def get_subscribed_rule_group(
     metric_name: Optional[_builtins.str] = ...,

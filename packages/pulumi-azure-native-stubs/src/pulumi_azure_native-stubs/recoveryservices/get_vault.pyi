@@ -59,7 +59,8 @@ class GetVaultResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVaultResult(GetVaultResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVaultResult]:
+        ...
 
 def get_vault(
     resource_group_name: Optional[_builtins.str] = ...,

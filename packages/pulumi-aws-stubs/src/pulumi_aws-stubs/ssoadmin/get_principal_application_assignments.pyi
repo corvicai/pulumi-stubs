@@ -51,7 +51,10 @@ class GetPrincipalApplicationAssignmentsResult:
 class AwaitableGetPrincipalApplicationAssignmentsResult(
     GetPrincipalApplicationAssignmentsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrincipalApplicationAssignmentsResult]:
+        ...
 
 def get_principal_application_assignments(
     application_assignments: Optional[

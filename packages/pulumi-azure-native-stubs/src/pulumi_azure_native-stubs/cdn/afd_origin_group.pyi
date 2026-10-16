@@ -36,12 +36,14 @@ class AFDOriginGroupArgs:
     @pulumi.getter(name="profileName")
     def profile_name(self) -> pulumi.Input[_builtins.str]: ...
     @profile_name.setter
-    def profile_name(self, value: pulumi.Input[_builtins.str]): ...
+    def profile_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -50,7 +52,8 @@ class AFDOriginGroupArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[OriginAuthenticationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthProbeSettings")
     def health_probe_settings(
@@ -59,7 +62,8 @@ class AFDOriginGroupArgs:
     @health_probe_settings.setter
     def health_probe_settings(
         self, value: Optional[pulumi.Input[HealthProbeParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancingSettings")
     def load_balancing_settings(
@@ -68,12 +72,16 @@ class AFDOriginGroupArgs:
     @load_balancing_settings.setter
     def load_balancing_settings(
         self, value: Optional[pulumi.Input[LoadBalancingSettingsParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originGroupName")
     def origin_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_group_name.setter
-    def origin_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionAffinityState")
     def session_affinity_state(
@@ -82,7 +90,8 @@ class AFDOriginGroupArgs:
     @session_affinity_state.setter
     def session_affinity_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnabledState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def traffic_restoration_time_to_healed_or_new_endpoints_in_minutes(
@@ -91,7 +100,8 @@ class AFDOriginGroupArgs:
     @traffic_restoration_time_to_healed_or_new_endpoints_in_minutes.setter
     def traffic_restoration_time_to_healed_or_new_endpoints_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cdn:AFDOriginGroup")
 class AFDOriginGroup(pulumi.CustomResource):

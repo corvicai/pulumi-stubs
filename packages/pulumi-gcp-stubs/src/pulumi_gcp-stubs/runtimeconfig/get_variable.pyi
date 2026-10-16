@@ -47,7 +47,8 @@ class GetVariableResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableGetVariableResult(GetVariableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVariableResult]:
+        ...
 
 def get_variable(
     name: Optional[_builtins.str] = ...,

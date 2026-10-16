@@ -56,7 +56,8 @@ class GetMigrationServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMigrationServiceResult(GetMigrationServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMigrationServiceResult]:
+        ...
 
 def get_migration_service(
     migration_service_name: Optional[_builtins.str] = ...,

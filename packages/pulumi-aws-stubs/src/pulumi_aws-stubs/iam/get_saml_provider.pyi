@@ -51,7 +51,8 @@ class GetSamlProviderResult:
     def valid_until(self) -> _builtins.str: ...
 
 class AwaitableGetSamlProviderResult(GetSamlProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSamlProviderResult]:
+        ...
 
 def get_saml_provider(
     arn: Optional[_builtins.str] = ...,

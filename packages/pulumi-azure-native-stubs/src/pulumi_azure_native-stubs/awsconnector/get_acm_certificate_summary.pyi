@@ -52,7 +52,8 @@ class GetAcmCertificateSummaryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAcmCertificateSummaryResult(GetAcmCertificateSummaryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAcmCertificateSummaryResult]:
+        ...
 
 def get_acm_certificate_summary(
     name: Optional[_builtins.str] = ...,

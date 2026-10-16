@@ -78,7 +78,8 @@ class GetSourceControlResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSourceControlResult(GetSourceControlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSourceControlResult]:
+        ...
 
 def get_source_control(
     resource_group_name: Optional[_builtins.str] = ...,

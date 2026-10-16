@@ -36,27 +36,36 @@ class LicenseProfileArgs:
     @pulumi.getter(name="machineName")
     def machine_name(self) -> pulumi.Input[_builtins.str]: ...
     @machine_name.setter
-    def machine_name(self, value: pulumi.Input[_builtins.str]): ...
+    def machine_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assignedLicense")
     def assigned_license(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assigned_license.setter
-    def assigned_license(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assigned_license(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseProfileName")
     def license_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @license_profile_name.setter
-    def license_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def license_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productFeatures")
     def product_features(
@@ -65,7 +74,8 @@ class LicenseProfileArgs:
     @product_features.setter
     def product_features(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ProductFeatureArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productType")
     def product_type(
@@ -75,14 +85,16 @@ class LicenseProfileArgs:
     def product_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, LicenseProfileProductType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareAssuranceCustomer")
     def software_assurance_customer(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @software_assurance_customer.setter
     def software_assurance_customer(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscriptionStatus")
     def subscription_status(
@@ -96,7 +108,8 @@ class LicenseProfileArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, LicenseProfileSubscriptionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -105,7 +118,8 @@ class LicenseProfileArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:hybridcompute:LicenseProfile")
 class LicenseProfile(pulumi.CustomResource):

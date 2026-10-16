@@ -37,7 +37,8 @@ class GetPromptResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetPromptResult(GetPromptResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPromptResult]:
+        ...
 
 def get_prompt(
     instance_id: Optional[_builtins.str] = ...,

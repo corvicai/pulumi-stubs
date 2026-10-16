@@ -31,7 +31,8 @@ class GetAccountIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetAccountIamPolicyResult(GetAccountIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountIamPolicyResult]:
+        ...
 
 def get_account_iam_policy(
     billing_account_id: Optional[_builtins.str] = ...,

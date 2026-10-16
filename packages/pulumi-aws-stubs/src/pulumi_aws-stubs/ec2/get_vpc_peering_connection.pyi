@@ -109,7 +109,8 @@ class GetVpcPeeringConnectionResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetVpcPeeringConnectionResult(GetVpcPeeringConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcPeeringConnectionResult]:
+        ...
 
 def get_vpc_peering_connection(
     cidr_block: Optional[_builtins.str] = ...,

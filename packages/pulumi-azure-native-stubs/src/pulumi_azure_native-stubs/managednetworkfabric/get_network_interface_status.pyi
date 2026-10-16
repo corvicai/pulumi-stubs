@@ -39,7 +39,8 @@ class GetNetworkInterfaceStatusResult:
     def transceiver_status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNetworkInterfaceStatusResult(GetNetworkInterfaceStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkInterfaceStatusResult]:
+        ...
 
 def get_network_interface_status(
     network_device_name: Optional[_builtins.str] = ...,

@@ -196,7 +196,8 @@ class GetSqlAssessmentV2OperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetSqlAssessmentV2OperationResult(GetSqlAssessmentV2OperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlAssessmentV2OperationResult]:
+        ...
 
 def get_sql_assessment_v2_operation(
     assessment_name: Optional[_builtins.str] = ...,

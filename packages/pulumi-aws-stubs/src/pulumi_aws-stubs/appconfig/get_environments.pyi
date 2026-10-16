@@ -31,7 +31,8 @@ class GetEnvironmentsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetEnvironmentsResult(GetEnvironmentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentsResult]:
+        ...
 
 def get_environments(
     application_id: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class GetCodeVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCodeVersionResult(GetCodeVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCodeVersionResult]:
+        ...
 
 def get_code_version(
     name: Optional[_builtins.str] = ...,

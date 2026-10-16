@@ -206,12 +206,14 @@ class AnomalySubscriptionSubscriberArgs:
     @pulumi.getter
     def address(self) -> pulumi.Input[_builtins.str]: ...
     @address.setter
-    def address(self, value: pulumi.Input[_builtins.str]): ...
+    def address(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionArgsDict(TypedDict):
     ands: NotRequired[
@@ -278,7 +280,8 @@ class AnomalySubscriptionThresholdExpressionArgs:
                 Sequence[pulumi.Input[AnomalySubscriptionThresholdExpressionAndArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="costCategory")
     def cost_category(
@@ -292,7 +295,8 @@ class AnomalySubscriptionThresholdExpressionArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionCostCategoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -306,7 +310,8 @@ class AnomalySubscriptionThresholdExpressionArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionDimensionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="not")
     def not_(
@@ -316,7 +321,8 @@ class AnomalySubscriptionThresholdExpressionArgs:
     def not_(
         self,
         value: Optional[pulumi.Input[AnomalySubscriptionThresholdExpressionNotArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ors(
@@ -334,7 +340,8 @@ class AnomalySubscriptionThresholdExpressionArgs:
                 Sequence[pulumi.Input[AnomalySubscriptionThresholdExpressionOrArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -344,7 +351,8 @@ class AnomalySubscriptionThresholdExpressionArgs:
     def tags(
         self,
         value: Optional[pulumi.Input[AnomalySubscriptionThresholdExpressionTagsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionAndArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -385,7 +393,8 @@ class AnomalySubscriptionThresholdExpressionAndArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionAndCostCategoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -399,7 +408,8 @@ class AnomalySubscriptionThresholdExpressionAndArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionAndDimensionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -411,7 +421,8 @@ class AnomalySubscriptionThresholdExpressionAndArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionAndTagsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -433,7 +444,8 @@ class AnomalySubscriptionThresholdExpressionAndCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -442,7 +454,8 @@ class AnomalySubscriptionThresholdExpressionAndCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -451,7 +464,8 @@ class AnomalySubscriptionThresholdExpressionAndCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -473,7 +487,8 @@ class AnomalySubscriptionThresholdExpressionAndDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -482,7 +497,8 @@ class AnomalySubscriptionThresholdExpressionAndDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -491,7 +507,8 @@ class AnomalySubscriptionThresholdExpressionAndDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -513,7 +530,8 @@ class AnomalySubscriptionThresholdExpressionAndTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -522,7 +540,8 @@ class AnomalySubscriptionThresholdExpressionAndTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -531,7 +550,8 @@ class AnomalySubscriptionThresholdExpressionAndTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -553,7 +573,8 @@ class AnomalySubscriptionThresholdExpressionCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -562,7 +583,8 @@ class AnomalySubscriptionThresholdExpressionCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -571,7 +593,8 @@ class AnomalySubscriptionThresholdExpressionCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -593,7 +616,8 @@ class AnomalySubscriptionThresholdExpressionDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -602,7 +626,8 @@ class AnomalySubscriptionThresholdExpressionDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -611,7 +636,8 @@ class AnomalySubscriptionThresholdExpressionDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionNotArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -652,7 +678,8 @@ class AnomalySubscriptionThresholdExpressionNotArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionNotCostCategoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -666,7 +693,8 @@ class AnomalySubscriptionThresholdExpressionNotArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionNotDimensionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -678,7 +706,8 @@ class AnomalySubscriptionThresholdExpressionNotArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionNotTagsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -700,7 +729,8 @@ class AnomalySubscriptionThresholdExpressionNotCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -709,7 +739,8 @@ class AnomalySubscriptionThresholdExpressionNotCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -718,7 +749,8 @@ class AnomalySubscriptionThresholdExpressionNotCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -740,7 +772,8 @@ class AnomalySubscriptionThresholdExpressionNotDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -749,7 +782,8 @@ class AnomalySubscriptionThresholdExpressionNotDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -758,7 +792,8 @@ class AnomalySubscriptionThresholdExpressionNotDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -780,7 +815,8 @@ class AnomalySubscriptionThresholdExpressionNotTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -789,7 +825,8 @@ class AnomalySubscriptionThresholdExpressionNotTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -798,7 +835,8 @@ class AnomalySubscriptionThresholdExpressionNotTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionOrArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -839,7 +877,8 @@ class AnomalySubscriptionThresholdExpressionOrArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionOrCostCategoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -853,7 +892,8 @@ class AnomalySubscriptionThresholdExpressionOrArgs:
         value: Optional[
             pulumi.Input[AnomalySubscriptionThresholdExpressionOrDimensionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -863,7 +903,8 @@ class AnomalySubscriptionThresholdExpressionOrArgs:
     def tags(
         self,
         value: Optional[pulumi.Input[AnomalySubscriptionThresholdExpressionOrTagsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -885,7 +926,8 @@ class AnomalySubscriptionThresholdExpressionOrCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -894,7 +936,8 @@ class AnomalySubscriptionThresholdExpressionOrCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -903,7 +946,8 @@ class AnomalySubscriptionThresholdExpressionOrCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -925,7 +969,8 @@ class AnomalySubscriptionThresholdExpressionOrDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -934,7 +979,8 @@ class AnomalySubscriptionThresholdExpressionOrDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -943,7 +989,8 @@ class AnomalySubscriptionThresholdExpressionOrDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -965,7 +1012,8 @@ class AnomalySubscriptionThresholdExpressionOrTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -974,7 +1022,8 @@ class AnomalySubscriptionThresholdExpressionOrTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -983,7 +1032,8 @@ class AnomalySubscriptionThresholdExpressionOrTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnomalySubscriptionThresholdExpressionTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1005,7 +1055,8 @@ class AnomalySubscriptionThresholdExpressionTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1014,7 +1065,8 @@ class AnomalySubscriptionThresholdExpressionTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1023,7 +1075,8 @@ class AnomalySubscriptionThresholdExpressionTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleArgsDict(TypedDict):
     inherited_value: NotRequired[pulumi.Input[CostCategoryRuleInheritedValueArgsDict]]
@@ -1051,22 +1104,26 @@ class CostCategoryRuleArgs:
     @inherited_value.setter
     def inherited_value(
         self, value: Optional[pulumi.Input[CostCategoryRuleInheritedValueArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rule(self) -> Optional[pulumi.Input[CostCategoryRuleRuleArgs]]: ...
     @rule.setter
-    def rule(self, value: Optional[pulumi.Input[CostCategoryRuleRuleArgs]]): ...
+    def rule(self, value: Optional[pulumi.Input[CostCategoryRuleRuleArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CostCategoryRuleInheritedValueArgsDict(TypedDict):
     dimension_key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1084,12 +1141,14 @@ class CostCategoryRuleInheritedValueArgs:
     @pulumi.getter(name="dimensionKey")
     def dimension_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dimension_key.setter
-    def dimension_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dimension_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dimensionName")
     def dimension_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dimension_name.setter
-    def dimension_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dimension_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CostCategoryRuleRuleArgsDict(TypedDict):
     ands: NotRequired[
@@ -1134,7 +1193,8 @@ class CostCategoryRuleRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleAndArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="costCategory")
     def cost_category(
@@ -1143,7 +1203,8 @@ class CostCategoryRuleRuleArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -1152,12 +1213,16 @@ class CostCategoryRuleRuleArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="not")
     def not_(self) -> Optional[pulumi.Input[CostCategoryRuleRuleNotArgs]]: ...
     @not_.setter
-    def not_(self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotArgs]]): ...
+    def not_(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ors(
@@ -1169,12 +1234,16 @@ class CostCategoryRuleRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleOrArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleTagsArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[CostCategoryRuleRuleTagsArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleTagsArgs]]
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndArgsDict(TypedDict):
     ands: NotRequired[
@@ -1221,7 +1290,8 @@ class CostCategoryRuleRuleAndArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleAndAndArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="costCategory")
     def cost_category(
@@ -1230,7 +1300,8 @@ class CostCategoryRuleRuleAndArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -1239,12 +1310,16 @@ class CostCategoryRuleRuleAndArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="not")
     def not_(self) -> Optional[pulumi.Input[CostCategoryRuleRuleAndNotArgs]]: ...
     @not_.setter
-    def not_(self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndNotArgs]]): ...
+    def not_(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndNotArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ors(
@@ -1258,12 +1333,16 @@ class CostCategoryRuleRuleAndArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleAndOrArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleAndTagsArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndTagsArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndTagsArgs]]
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndAndArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -1293,7 +1372,8 @@ class CostCategoryRuleRuleAndAndArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndAndCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -1302,14 +1382,16 @@ class CostCategoryRuleRuleAndAndArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndAndDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleAndAndTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndAndTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1331,7 +1413,8 @@ class CostCategoryRuleRuleAndAndCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1340,7 +1423,8 @@ class CostCategoryRuleRuleAndAndCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1349,7 +1433,8 @@ class CostCategoryRuleRuleAndAndCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1371,7 +1456,8 @@ class CostCategoryRuleRuleAndAndDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1380,7 +1466,8 @@ class CostCategoryRuleRuleAndAndDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1389,7 +1476,8 @@ class CostCategoryRuleRuleAndAndDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1411,7 +1499,8 @@ class CostCategoryRuleRuleAndAndTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1420,7 +1509,8 @@ class CostCategoryRuleRuleAndAndTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1429,7 +1519,8 @@ class CostCategoryRuleRuleAndAndTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1451,7 +1542,8 @@ class CostCategoryRuleRuleAndCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1460,7 +1552,8 @@ class CostCategoryRuleRuleAndCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1469,7 +1562,8 @@ class CostCategoryRuleRuleAndCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1491,7 +1585,8 @@ class CostCategoryRuleRuleAndDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1500,7 +1595,8 @@ class CostCategoryRuleRuleAndDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1509,7 +1605,8 @@ class CostCategoryRuleRuleAndDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndNotArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -1539,7 +1636,8 @@ class CostCategoryRuleRuleAndNotArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndNotCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -1548,14 +1646,16 @@ class CostCategoryRuleRuleAndNotArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndNotDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleAndNotTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndNotTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1577,7 +1677,8 @@ class CostCategoryRuleRuleAndNotCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1586,7 +1687,8 @@ class CostCategoryRuleRuleAndNotCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1595,7 +1697,8 @@ class CostCategoryRuleRuleAndNotCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1617,7 +1720,8 @@ class CostCategoryRuleRuleAndNotDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1626,7 +1730,8 @@ class CostCategoryRuleRuleAndNotDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1635,7 +1740,8 @@ class CostCategoryRuleRuleAndNotDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1657,7 +1763,8 @@ class CostCategoryRuleRuleAndNotTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1666,7 +1773,8 @@ class CostCategoryRuleRuleAndNotTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1675,7 +1783,8 @@ class CostCategoryRuleRuleAndNotTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndOrArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -1703,7 +1812,8 @@ class CostCategoryRuleRuleAndOrArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndOrCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -1712,14 +1822,16 @@ class CostCategoryRuleRuleAndOrArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndOrDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleAndOrTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleAndOrTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1741,7 +1853,8 @@ class CostCategoryRuleRuleAndOrCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1750,7 +1863,8 @@ class CostCategoryRuleRuleAndOrCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1759,7 +1873,8 @@ class CostCategoryRuleRuleAndOrCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1781,7 +1896,8 @@ class CostCategoryRuleRuleAndOrDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1790,7 +1906,8 @@ class CostCategoryRuleRuleAndOrDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1799,7 +1916,8 @@ class CostCategoryRuleRuleAndOrDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1821,7 +1939,8 @@ class CostCategoryRuleRuleAndOrTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1830,7 +1949,8 @@ class CostCategoryRuleRuleAndOrTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1839,7 +1959,8 @@ class CostCategoryRuleRuleAndOrTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1861,7 +1982,8 @@ class CostCategoryRuleRuleAndTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1870,7 +1992,8 @@ class CostCategoryRuleRuleAndTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1879,7 +2002,8 @@ class CostCategoryRuleRuleAndTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1901,7 +2025,8 @@ class CostCategoryRuleRuleCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1910,7 +2035,8 @@ class CostCategoryRuleRuleCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1919,7 +2045,8 @@ class CostCategoryRuleRuleCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1941,7 +2068,8 @@ class CostCategoryRuleRuleDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -1950,7 +2078,8 @@ class CostCategoryRuleRuleDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1959,7 +2088,8 @@ class CostCategoryRuleRuleDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotArgsDict(TypedDict):
     ands: NotRequired[
@@ -2006,7 +2136,8 @@ class CostCategoryRuleRuleNotArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleNotAndArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="costCategory")
     def cost_category(
@@ -2015,7 +2146,8 @@ class CostCategoryRuleRuleNotArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -2024,12 +2156,16 @@ class CostCategoryRuleRuleNotArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="not")
     def not_(self) -> Optional[pulumi.Input[CostCategoryRuleRuleNotNotArgs]]: ...
     @not_.setter
-    def not_(self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotNotArgs]]): ...
+    def not_(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotNotArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ors(
@@ -2043,12 +2179,16 @@ class CostCategoryRuleRuleNotArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleNotOrArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleNotTagsArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotTagsArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotTagsArgs]]
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotAndArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -2078,7 +2218,8 @@ class CostCategoryRuleRuleNotAndArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotAndCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -2087,14 +2228,16 @@ class CostCategoryRuleRuleNotAndArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotAndDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleNotAndTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotAndTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2116,7 +2259,8 @@ class CostCategoryRuleRuleNotAndCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2125,7 +2269,8 @@ class CostCategoryRuleRuleNotAndCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2134,7 +2279,8 @@ class CostCategoryRuleRuleNotAndCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2156,7 +2302,8 @@ class CostCategoryRuleRuleNotAndDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2165,7 +2312,8 @@ class CostCategoryRuleRuleNotAndDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2174,7 +2322,8 @@ class CostCategoryRuleRuleNotAndDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2196,7 +2345,8 @@ class CostCategoryRuleRuleNotAndTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2205,7 +2355,8 @@ class CostCategoryRuleRuleNotAndTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2214,7 +2365,8 @@ class CostCategoryRuleRuleNotAndTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2236,7 +2388,8 @@ class CostCategoryRuleRuleNotCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2245,7 +2398,8 @@ class CostCategoryRuleRuleNotCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2254,7 +2408,8 @@ class CostCategoryRuleRuleNotCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2276,7 +2431,8 @@ class CostCategoryRuleRuleNotDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2285,7 +2441,8 @@ class CostCategoryRuleRuleNotDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2294,7 +2451,8 @@ class CostCategoryRuleRuleNotDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotNotArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -2324,7 +2482,8 @@ class CostCategoryRuleRuleNotNotArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotNotCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -2333,14 +2492,16 @@ class CostCategoryRuleRuleNotNotArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotNotDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleNotNotTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotNotTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2362,7 +2523,8 @@ class CostCategoryRuleRuleNotNotCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2371,7 +2533,8 @@ class CostCategoryRuleRuleNotNotCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2380,7 +2543,8 @@ class CostCategoryRuleRuleNotNotCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2402,7 +2566,8 @@ class CostCategoryRuleRuleNotNotDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2411,7 +2576,8 @@ class CostCategoryRuleRuleNotNotDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2420,7 +2586,8 @@ class CostCategoryRuleRuleNotNotDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2442,7 +2609,8 @@ class CostCategoryRuleRuleNotNotTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2451,7 +2619,8 @@ class CostCategoryRuleRuleNotNotTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2460,7 +2629,8 @@ class CostCategoryRuleRuleNotNotTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotOrArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -2488,7 +2658,8 @@ class CostCategoryRuleRuleNotOrArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotOrCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -2497,14 +2668,16 @@ class CostCategoryRuleRuleNotOrArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotOrDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleNotOrTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleNotOrTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2526,7 +2699,8 @@ class CostCategoryRuleRuleNotOrCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2535,7 +2709,8 @@ class CostCategoryRuleRuleNotOrCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2544,7 +2719,8 @@ class CostCategoryRuleRuleNotOrCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2566,7 +2742,8 @@ class CostCategoryRuleRuleNotOrDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2575,7 +2752,8 @@ class CostCategoryRuleRuleNotOrDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2584,7 +2762,8 @@ class CostCategoryRuleRuleNotOrDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2606,7 +2785,8 @@ class CostCategoryRuleRuleNotOrTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2615,7 +2795,8 @@ class CostCategoryRuleRuleNotOrTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2624,7 +2805,8 @@ class CostCategoryRuleRuleNotOrTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2646,7 +2828,8 @@ class CostCategoryRuleRuleNotTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2655,7 +2838,8 @@ class CostCategoryRuleRuleNotTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2664,7 +2848,8 @@ class CostCategoryRuleRuleNotTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrArgsDict(TypedDict):
     ands: NotRequired[
@@ -2709,7 +2894,8 @@ class CostCategoryRuleRuleOrArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleOrAndArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="costCategory")
     def cost_category(
@@ -2718,7 +2904,8 @@ class CostCategoryRuleRuleOrArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -2727,12 +2914,16 @@ class CostCategoryRuleRuleOrArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="not")
     def not_(self) -> Optional[pulumi.Input[CostCategoryRuleRuleOrNotArgs]]: ...
     @not_.setter
-    def not_(self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrNotArgs]]): ...
+    def not_(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrNotArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ors(
@@ -2746,12 +2937,16 @@ class CostCategoryRuleRuleOrArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleOrOrArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleOrTagsArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrTagsArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrTagsArgs]]
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrAndArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -2779,7 +2974,8 @@ class CostCategoryRuleRuleOrAndArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrAndCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -2788,14 +2984,16 @@ class CostCategoryRuleRuleOrAndArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrAndDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleOrAndTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrAndTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2817,7 +3015,8 @@ class CostCategoryRuleRuleOrAndCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2826,7 +3025,8 @@ class CostCategoryRuleRuleOrAndCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2835,7 +3035,8 @@ class CostCategoryRuleRuleOrAndCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2857,7 +3058,8 @@ class CostCategoryRuleRuleOrAndDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2866,7 +3068,8 @@ class CostCategoryRuleRuleOrAndDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2875,7 +3078,8 @@ class CostCategoryRuleRuleOrAndDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2897,7 +3101,8 @@ class CostCategoryRuleRuleOrAndTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2906,7 +3111,8 @@ class CostCategoryRuleRuleOrAndTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2915,7 +3121,8 @@ class CostCategoryRuleRuleOrAndTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2937,7 +3144,8 @@ class CostCategoryRuleRuleOrCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2946,7 +3154,8 @@ class CostCategoryRuleRuleOrCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2955,7 +3164,8 @@ class CostCategoryRuleRuleOrCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -2977,7 +3187,8 @@ class CostCategoryRuleRuleOrDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -2986,7 +3197,8 @@ class CostCategoryRuleRuleOrDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -2995,7 +3207,8 @@ class CostCategoryRuleRuleOrDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrNotArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -3023,7 +3236,8 @@ class CostCategoryRuleRuleOrNotArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrNotCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -3032,14 +3246,16 @@ class CostCategoryRuleRuleOrNotArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrNotDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleOrNotTagsArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrNotTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3061,7 +3277,8 @@ class CostCategoryRuleRuleOrNotCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3070,7 +3287,8 @@ class CostCategoryRuleRuleOrNotCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3079,7 +3297,8 @@ class CostCategoryRuleRuleOrNotCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3101,7 +3320,8 @@ class CostCategoryRuleRuleOrNotDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3110,7 +3330,8 @@ class CostCategoryRuleRuleOrNotDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3119,7 +3340,8 @@ class CostCategoryRuleRuleOrNotDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3141,7 +3363,8 @@ class CostCategoryRuleRuleOrNotTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3150,7 +3373,8 @@ class CostCategoryRuleRuleOrNotTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3159,7 +3383,8 @@ class CostCategoryRuleRuleOrNotTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrOrArgsDict(TypedDict):
     cost_category: NotRequired[
@@ -3187,7 +3412,8 @@ class CostCategoryRuleRuleOrOrArgs:
     @cost_category.setter
     def cost_category(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrOrCostCategoryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(
@@ -3196,12 +3422,16 @@ class CostCategoryRuleRuleOrOrArgs:
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrOrDimensionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[CostCategoryRuleRuleOrOrTagsArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrOrTagsArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[CostCategoryRuleRuleOrOrTagsArgs]]
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3223,7 +3453,8 @@ class CostCategoryRuleRuleOrOrCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3232,7 +3463,8 @@ class CostCategoryRuleRuleOrOrCostCategoryArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3241,7 +3473,8 @@ class CostCategoryRuleRuleOrOrCostCategoryArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3263,7 +3496,8 @@ class CostCategoryRuleRuleOrOrDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3272,7 +3506,8 @@ class CostCategoryRuleRuleOrOrDimensionArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3281,7 +3516,8 @@ class CostCategoryRuleRuleOrOrDimensionArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3303,7 +3539,8 @@ class CostCategoryRuleRuleOrOrTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3312,7 +3549,8 @@ class CostCategoryRuleRuleOrOrTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3321,7 +3559,8 @@ class CostCategoryRuleRuleOrOrTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3343,7 +3582,8 @@ class CostCategoryRuleRuleOrTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3352,7 +3592,8 @@ class CostCategoryRuleRuleOrTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3361,7 +3602,8 @@ class CostCategoryRuleRuleOrTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategoryRuleRuleTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -3383,7 +3625,8 @@ class CostCategoryRuleRuleTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(
@@ -3392,7 +3635,8 @@ class CostCategoryRuleRuleTagsArgs:
     @match_options.setter
     def match_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3401,7 +3645,8 @@ class CostCategoryRuleRuleTagsArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategorySplitChargeRuleArgsDict(TypedDict):
     method: pulumi.Input[_builtins.str]
@@ -3431,17 +3676,22 @@ class CostCategorySplitChargeRuleArgs:
     @pulumi.getter
     def method(self) -> pulumi.Input[_builtins.str]: ...
     @method.setter
-    def method(self, value: pulumi.Input[_builtins.str]): ...
+    def method(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> pulumi.Input[_builtins.str]: ...
     @source.setter
-    def source(self, value: pulumi.Input[_builtins.str]): ...
+    def source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @targets.setter
-    def targets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def targets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -3457,7 +3707,8 @@ class CostCategorySplitChargeRuleArgs:
                 Sequence[pulumi.Input[CostCategorySplitChargeRuleParameterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostCategorySplitChargeRuleParameterArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -3475,7 +3726,8 @@ class CostCategorySplitChargeRuleParameterArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -3484,7 +3736,8 @@ class CostCategorySplitChargeRuleParameterArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetTagsFilterArgsDict(TypedDict):
     ands: NotRequired[Sequence[GetTagsFilterAndArgsDict]]
@@ -3510,32 +3763,38 @@ class GetTagsFilterArgs:
     @pulumi.getter
     def ands(self) -> Optional[Sequence[GetTagsFilterAndArgs]]: ...
     @ands.setter
-    def ands(self, value: Optional[Sequence[GetTagsFilterAndArgs]]): ...
+    def ands(self, value: Optional[Sequence[GetTagsFilterAndArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="costCategory")
     def cost_category(self) -> Optional[GetTagsFilterCostCategoryArgs]: ...
     @cost_category.setter
-    def cost_category(self, value: Optional[GetTagsFilterCostCategoryArgs]): ...
+    def cost_category(self, value: Optional[GetTagsFilterCostCategoryArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(self) -> Optional[GetTagsFilterDimensionArgs]: ...
     @dimension.setter
-    def dimension(self, value: Optional[GetTagsFilterDimensionArgs]): ...
+    def dimension(self, value: Optional[GetTagsFilterDimensionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="not")
     def not_(self) -> Optional[GetTagsFilterNotArgs]: ...
     @not_.setter
-    def not_(self, value: Optional[GetTagsFilterNotArgs]): ...
+    def not_(self, value: Optional[GetTagsFilterNotArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ors(self) -> Optional[Sequence[GetTagsFilterOrArgs]]: ...
     @ors.setter
-    def ors(self, value: Optional[Sequence[GetTagsFilterOrArgs]]): ...
+    def ors(self, value: Optional[Sequence[GetTagsFilterOrArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[GetTagsFilterTagsArgs]: ...
     @tags.setter
-    def tags(self, value: Optional[GetTagsFilterTagsArgs]): ...
+    def tags(self, value: Optional[GetTagsFilterTagsArgs]):  # -> None:
+        ...
 
 class GetTagsFilterAndArgsDict(TypedDict):
     cost_category: NotRequired[GetTagsFilterAndCostCategoryArgsDict]
@@ -3555,17 +3814,22 @@ class GetTagsFilterAndArgs:
     @pulumi.getter(name="costCategory")
     def cost_category(self) -> Optional[GetTagsFilterAndCostCategoryArgs]: ...
     @cost_category.setter
-    def cost_category(self, value: Optional[GetTagsFilterAndCostCategoryArgs]): ...
+    def cost_category(
+        self, value: Optional[GetTagsFilterAndCostCategoryArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(self) -> Optional[GetTagsFilterAndDimensionArgs]: ...
     @dimension.setter
-    def dimension(self, value: Optional[GetTagsFilterAndDimensionArgs]): ...
+    def dimension(self, value: Optional[GetTagsFilterAndDimensionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[GetTagsFilterAndTagsArgs]: ...
     @tags.setter
-    def tags(self, value: Optional[GetTagsFilterAndTagsArgs]): ...
+    def tags(self, value: Optional[GetTagsFilterAndTagsArgs]):  # -> None:
+        ...
 
 class GetTagsFilterAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3585,17 +3849,20 @@ class GetTagsFilterAndCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterAndDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3615,17 +3882,20 @@ class GetTagsFilterAndDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterAndTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3645,17 +3915,20 @@ class GetTagsFilterAndTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3675,17 +3948,20 @@ class GetTagsFilterCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3705,17 +3981,20 @@ class GetTagsFilterDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterNotArgsDict(TypedDict):
     cost_category: NotRequired[GetTagsFilterNotCostCategoryArgsDict]
@@ -3735,17 +4014,22 @@ class GetTagsFilterNotArgs:
     @pulumi.getter(name="costCategory")
     def cost_category(self) -> Optional[GetTagsFilterNotCostCategoryArgs]: ...
     @cost_category.setter
-    def cost_category(self, value: Optional[GetTagsFilterNotCostCategoryArgs]): ...
+    def cost_category(
+        self, value: Optional[GetTagsFilterNotCostCategoryArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(self) -> Optional[GetTagsFilterNotDimensionArgs]: ...
     @dimension.setter
-    def dimension(self, value: Optional[GetTagsFilterNotDimensionArgs]): ...
+    def dimension(self, value: Optional[GetTagsFilterNotDimensionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[GetTagsFilterNotTagsArgs]: ...
     @tags.setter
-    def tags(self, value: Optional[GetTagsFilterNotTagsArgs]): ...
+    def tags(self, value: Optional[GetTagsFilterNotTagsArgs]):  # -> None:
+        ...
 
 class GetTagsFilterNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3765,17 +4049,20 @@ class GetTagsFilterNotCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterNotDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3795,17 +4082,20 @@ class GetTagsFilterNotDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterNotTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3825,17 +4115,20 @@ class GetTagsFilterNotTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterOrArgsDict(TypedDict):
     cost_category: NotRequired[GetTagsFilterOrCostCategoryArgsDict]
@@ -3855,17 +4148,22 @@ class GetTagsFilterOrArgs:
     @pulumi.getter(name="costCategory")
     def cost_category(self) -> Optional[GetTagsFilterOrCostCategoryArgs]: ...
     @cost_category.setter
-    def cost_category(self, value: Optional[GetTagsFilterOrCostCategoryArgs]): ...
+    def cost_category(
+        self, value: Optional[GetTagsFilterOrCostCategoryArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(self) -> Optional[GetTagsFilterOrDimensionArgs]: ...
     @dimension.setter
-    def dimension(self, value: Optional[GetTagsFilterOrDimensionArgs]): ...
+    def dimension(self, value: Optional[GetTagsFilterOrDimensionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[GetTagsFilterOrTagsArgs]: ...
     @tags.setter
-    def tags(self, value: Optional[GetTagsFilterOrTagsArgs]): ...
+    def tags(self, value: Optional[GetTagsFilterOrTagsArgs]):  # -> None:
+        ...
 
 class GetTagsFilterOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3885,17 +4183,20 @@ class GetTagsFilterOrCostCategoryArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterOrDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3915,17 +4216,20 @@ class GetTagsFilterOrDimensionArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterOrTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3945,17 +4249,20 @@ class GetTagsFilterOrTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsFilterTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -3975,17 +4282,20 @@ class GetTagsFilterTagsArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchOptions")
     def match_options(self) -> Optional[Sequence[_builtins.str]]: ...
     @match_options.setter
-    def match_options(self, value: Optional[Sequence[_builtins.str]]): ...
+    def match_options(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> Optional[Sequence[_builtins.str]]: ...
     @values.setter
-    def values(self, value: Optional[Sequence[_builtins.str]]): ...
+    def values(self, value: Optional[Sequence[_builtins.str]]):  # -> None:
+        ...
 
 class GetTagsSortByArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
@@ -4003,12 +4313,14 @@ class GetTagsSortByArgs:
     @pulumi.getter
     def key(self) -> Optional[_builtins.str]: ...
     @key.setter
-    def key(self, value: Optional[_builtins.str]): ...
+    def key(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sortOrder")
     def sort_order(self) -> Optional[_builtins.str]: ...
     @sort_order.setter
-    def sort_order(self, value: Optional[_builtins.str]): ...
+    def sort_order(self, value: Optional[_builtins.str]):  # -> None:
+        ...
 
 class GetTagsTimePeriodArgsDict(TypedDict):
     end: _builtins.str
@@ -4021,9 +4333,11 @@ class GetTagsTimePeriodArgs:
     @pulumi.getter
     def end(self) -> _builtins.str: ...
     @end.setter
-    def end(self, value: _builtins.str): ...
+    def end(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> _builtins.str: ...
     @start.setter
-    def start(self, value: _builtins.str): ...
+    def start(self, value: _builtins.str):  # -> None:
+        ...

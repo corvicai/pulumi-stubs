@@ -26,7 +26,8 @@ class EdgeActionExecutionFilterArgs:
     @pulumi.getter(name="edgeActionName")
     def edge_action_name(self) -> pulumi.Input[_builtins.str]: ...
     @edge_action_name.setter
-    def edge_action_name(self, value: pulumi.Input[_builtins.str]): ...
+    def edge_action_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionFilterIdentifierHeaderName")
     def execution_filter_identifier_header_name(
@@ -35,7 +36,8 @@ class EdgeActionExecutionFilterArgs:
     @execution_filter_identifier_header_name.setter
     def execution_filter_identifier_header_name(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionFilterIdentifierHeaderValue")
     def execution_filter_identifier_header_value(
@@ -44,27 +46,34 @@ class EdgeActionExecutionFilterArgs:
     @execution_filter_identifier_header_value.setter
     def execution_filter_identifier_header_value(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionId")
     def version_id(self) -> pulumi.Input[_builtins.str]: ...
     @version_id.setter
-    def version_id(self, value: pulumi.Input[_builtins.str]): ...
+    def version_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionFilter")
     def execution_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_filter.setter
-    def execution_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -73,7 +82,8 @@ class EdgeActionExecutionFilterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cdn:EdgeActionExecutionFilter")
 class EdgeActionExecutionFilter(pulumi.CustomResource):

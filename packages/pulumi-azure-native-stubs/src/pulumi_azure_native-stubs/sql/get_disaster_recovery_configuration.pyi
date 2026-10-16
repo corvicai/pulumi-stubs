@@ -69,7 +69,10 @@ class GetDisasterRecoveryConfigurationResult:
 class AwaitableGetDisasterRecoveryConfigurationResult(
     GetDisasterRecoveryConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDisasterRecoveryConfigurationResult]:
+        ...
 
 def get_disaster_recovery_configuration(
     disaster_recovery_configuration_name: Optional[_builtins.str] = ...,

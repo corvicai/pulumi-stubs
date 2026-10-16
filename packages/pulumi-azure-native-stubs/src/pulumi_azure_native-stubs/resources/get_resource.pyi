@@ -72,7 +72,8 @@ class GetResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetResourceResult(GetResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceResult]:
+        ...
 
 def get_resource(
     api_version: Optional[_builtins.str] = ...,

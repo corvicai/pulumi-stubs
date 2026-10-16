@@ -66,7 +66,8 @@ class GetAppResiliencyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAppResiliencyResult(GetAppResiliencyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppResiliencyResult]:
+        ...
 
 def get_app_resiliency(
     app_name: Optional[_builtins.str] = ...,

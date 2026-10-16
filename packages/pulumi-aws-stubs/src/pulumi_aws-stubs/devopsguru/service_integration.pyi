@@ -31,7 +31,8 @@ class ServiceIntegrationArgs:
     @kms_server_side_encryption.setter
     def kms_server_side_encryption(
         self, value: pulumi.Input[ServiceIntegrationKmsServerSideEncryptionArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logsAnomalyDetection")
     def logs_anomaly_detection(
@@ -40,17 +41,22 @@ class ServiceIntegrationArgs:
     @logs_anomaly_detection.setter
     def logs_anomaly_detection(
         self, value: pulumi.Input[ServiceIntegrationLogsAnomalyDetectionArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opsCenter")
     def ops_center(self) -> pulumi.Input[ServiceIntegrationOpsCenterArgs]: ...
     @ops_center.setter
-    def ops_center(self, value: pulumi.Input[ServiceIntegrationOpsCenterArgs]): ...
+    def ops_center(
+        self, value: pulumi.Input[ServiceIntegrationOpsCenterArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServiceIntegrationState:
@@ -75,7 +81,8 @@ class _ServiceIntegrationState:
     def kms_server_side_encryption(
         self,
         value: Optional[pulumi.Input[ServiceIntegrationKmsServerSideEncryptionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logsAnomalyDetection")
     def logs_anomaly_detection(
@@ -84,19 +91,22 @@ class _ServiceIntegrationState:
     @logs_anomaly_detection.setter
     def logs_anomaly_detection(
         self, value: Optional[pulumi.Input[ServiceIntegrationLogsAnomalyDetectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opsCenter")
     def ops_center(self) -> Optional[pulumi.Input[ServiceIntegrationOpsCenterArgs]]: ...
     @ops_center.setter
     def ops_center(
         self, value: Optional[pulumi.Input[ServiceIntegrationOpsCenterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ServiceIntegration(pulumi.CustomResource):

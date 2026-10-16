@@ -46,7 +46,10 @@ class GetManagedNetworkPeeringPolicyResult:
 class AwaitableGetManagedNetworkPeeringPolicyResult(
     GetManagedNetworkPeeringPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedNetworkPeeringPolicyResult]:
+        ...
 
 def get_managed_network_peering_policy(
     managed_network_name: Optional[_builtins.str] = ...,

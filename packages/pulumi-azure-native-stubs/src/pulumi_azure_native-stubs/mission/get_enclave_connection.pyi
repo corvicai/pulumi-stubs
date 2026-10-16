@@ -76,7 +76,8 @@ class GetEnclaveConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnclaveConnectionResult(GetEnclaveConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnclaveConnectionResult]:
+        ...
 
 def get_enclave_connection(
     enclave_connection_name: Optional[_builtins.str] = ...,

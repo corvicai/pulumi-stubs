@@ -52,7 +52,8 @@ class GetCodeBuildProjectResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCodeBuildProjectResult(GetCodeBuildProjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCodeBuildProjectResult]:
+        ...
 
 def get_code_build_project(
     name: Optional[_builtins.str] = ...,

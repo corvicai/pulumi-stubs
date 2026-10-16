@@ -42,7 +42,8 @@ class GetAclResult:
     def user_names(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetAclResult(GetAclResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAclResult]:
+        ...
 
 def get_acl(
     name: Optional[_builtins.str] = ...,

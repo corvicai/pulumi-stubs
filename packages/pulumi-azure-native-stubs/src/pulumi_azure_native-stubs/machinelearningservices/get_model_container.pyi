@@ -44,7 +44,8 @@ class GetModelContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetModelContainerResult(GetModelContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetModelContainerResult]:
+        ...
 
 def get_model_container(
     name: Optional[_builtins.str] = ...,

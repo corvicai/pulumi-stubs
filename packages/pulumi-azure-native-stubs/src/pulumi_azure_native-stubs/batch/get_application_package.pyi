@@ -68,7 +68,8 @@ class GetApplicationPackageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationPackageResult(GetApplicationPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationPackageResult]:
+        ...
 
 def get_application_package(
     account_name: Optional[_builtins.str] = ...,

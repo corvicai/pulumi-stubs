@@ -27,7 +27,8 @@ class ListAccessServiceAccountsResult:
     def metadata(self) -> Optional[outputs.ConfluentListMetadataResponse]: ...
 
 class AwaitableListAccessServiceAccountsResult(ListAccessServiceAccountsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccessServiceAccountsResult]:
+        ...
 
 def list_access_service_accounts(
     organization_name: Optional[_builtins.str] = ...,

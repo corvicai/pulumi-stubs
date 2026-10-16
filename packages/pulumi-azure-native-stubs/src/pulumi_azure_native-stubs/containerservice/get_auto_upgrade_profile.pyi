@@ -66,7 +66,8 @@ class GetAutoUpgradeProfileResult:
     def update_strategy_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAutoUpgradeProfileResult(GetAutoUpgradeProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAutoUpgradeProfileResult]:
+        ...
 
 def get_auto_upgrade_profile(
     auto_upgrade_profile_name: Optional[_builtins.str] = ...,

@@ -81,7 +81,10 @@ class GetMicrosoftSecurityIncidentCreationAlertRuleResult:
 class AwaitableGetMicrosoftSecurityIncidentCreationAlertRuleResult(
     GetMicrosoftSecurityIncidentCreationAlertRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMicrosoftSecurityIncidentCreationAlertRuleResult]:
+        ...
 
 def get_microsoft_security_incident_creation_alert_rule(
     resource_group_name: Optional[_builtins.str] = ...,

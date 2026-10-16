@@ -46,7 +46,10 @@ class GetProfessionalServiceSubscriptionLevelResult:
 class AwaitableGetProfessionalServiceSubscriptionLevelResult(
     GetProfessionalServiceSubscriptionLevelResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProfessionalServiceSubscriptionLevelResult]:
+        ...
 
 def get_professional_service_subscription_level(
     resource_group_name: Optional[_builtins.str] = ...,

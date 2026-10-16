@@ -50,12 +50,16 @@ class AppServiceEnvironmentArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetwork")
     def virtual_network(self) -> pulumi.Input[VirtualNetworkProfileArgs]: ...
     @virtual_network.setter
-    def virtual_network(self, value: pulumi.Input[VirtualNetworkProfileArgs]): ...
+    def virtual_network(
+        self, value: pulumi.Input[VirtualNetworkProfileArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterSettings")
     def cluster_settings(
@@ -64,7 +68,8 @@ class AppServiceEnvironmentArgs:
     @cluster_settings.setter
     def cluster_settings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NameValuePairArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customDnsSuffixConfiguration")
     def custom_dns_suffix_configuration(
@@ -73,22 +78,30 @@ class AppServiceEnvironmentArgs:
     @custom_dns_suffix_configuration.setter
     def custom_dns_suffix_configuration(
         self, value: Optional[pulumi.Input[CustomDnsSuffixConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dedicatedHostCount")
     def dedicated_host_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @dedicated_host_count.setter
-    def dedicated_host_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def dedicated_host_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSuffix")
     def dns_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_suffix.setter
-    def dns_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_suffix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frontEndScaleFactor")
     def front_end_scale_factor(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @front_end_scale_factor.setter
-    def front_end_scale_factor(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def front_end_scale_factor(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internalLoadBalancingMode")
     def internal_load_balancing_mode(
@@ -97,32 +110,40 @@ class AppServiceEnvironmentArgs:
     @internal_load_balancing_mode.setter
     def internal_load_balancing_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LoadBalancingMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipsslAddressCount")
     def ipssl_address_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipssl_address_count.setter
-    def ipssl_address_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipssl_address_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiSize")
     def multi_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_size.setter
-    def multi_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkingConfiguration")
     def networking_configuration(
@@ -131,7 +152,8 @@ class AppServiceEnvironmentArgs:
     @networking_configuration.setter
     def networking_configuration(
         self, value: Optional[pulumi.Input[AseV3NetworkingConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -140,7 +162,8 @@ class AppServiceEnvironmentArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradePreference")
     def upgrade_preference(
@@ -149,7 +172,8 @@ class AppServiceEnvironmentArgs:
     @upgrade_preference.setter
     def upgrade_preference(
         self, value: Optional[pulumi.Input[Union[_builtins.str, UpgradePreference]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userWhitelistedIpRanges")
     def user_whitelisted_ip_ranges(
@@ -158,12 +182,14 @@ class AppServiceEnvironmentArgs:
     @user_whitelisted_ip_ranges.setter
     def user_whitelisted_ip_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneRedundant")
     def zone_redundant(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zone_redundant.setter
-    def zone_redundant(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def zone_redundant(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:web:AppServiceEnvironment")
 class AppServiceEnvironment(pulumi.CustomResource):

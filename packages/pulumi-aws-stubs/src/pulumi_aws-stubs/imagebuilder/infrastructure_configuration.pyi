@@ -44,12 +44,14 @@ class InfrastructureConfigurationArgs:
     @pulumi.getter(name="instanceProfileName")
     def instance_profile_name(self) -> pulumi.Input[_builtins.str]: ...
     @instance_profile_name.setter
-    def instance_profile_name(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_profile_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMetadataOptions")
     def instance_metadata_options(
@@ -63,7 +65,8 @@ class InfrastructureConfigurationArgs:
         value: Optional[
             pulumi.Input[InfrastructureConfigurationInstanceMetadataOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceTypes")
     def instance_types(
@@ -72,12 +75,14 @@ class InfrastructureConfigurationArgs:
     @instance_types.setter
     def instance_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPair")
     def key_pair(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_pair.setter
-    def key_pair(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_pair(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def logging(
@@ -86,12 +91,14 @@ class InfrastructureConfigurationArgs:
     @logging.setter
     def logging(
         self, value: Optional[pulumi.Input[InfrastructureConfigurationLoggingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def placement(
@@ -100,12 +107,14 @@ class InfrastructureConfigurationArgs:
     @placement.setter
     def placement(
         self, value: Optional[pulumi.Input[InfrastructureConfigurationPlacementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -114,7 +123,8 @@ class InfrastructureConfigurationArgs:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -123,17 +133,20 @@ class InfrastructureConfigurationArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snsTopicArn")
     def sns_topic_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sns_topic_arn.setter
-    def sns_topic_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sns_topic_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -142,7 +155,8 @@ class InfrastructureConfigurationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateInstanceOnFailure")
     def terminate_instance_on_failure(
@@ -151,7 +165,8 @@ class InfrastructureConfigurationArgs:
     @terminate_instance_on_failure.setter
     def terminate_instance_on_failure(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InfrastructureConfigurationState:
@@ -194,22 +209,26 @@ class _InfrastructureConfigurationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateCreated")
     def date_created(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_created.setter
-    def date_created(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_created(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateUpdated")
     def date_updated(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_updated.setter
-    def date_updated(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_updated(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMetadataOptions")
     def instance_metadata_options(
@@ -223,12 +242,16 @@ class _InfrastructureConfigurationState:
         value: Optional[
             pulumi.Input[InfrastructureConfigurationInstanceMetadataOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceProfileName")
     def instance_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_profile_name.setter
-    def instance_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceTypes")
     def instance_types(
@@ -237,12 +260,14 @@ class _InfrastructureConfigurationState:
     @instance_types.setter
     def instance_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPair")
     def key_pair(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_pair.setter
-    def key_pair(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_pair(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def logging(
@@ -251,12 +276,14 @@ class _InfrastructureConfigurationState:
     @logging.setter
     def logging(
         self, value: Optional[pulumi.Input[InfrastructureConfigurationLoggingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def placement(
@@ -265,12 +292,14 @@ class _InfrastructureConfigurationState:
     @placement.setter
     def placement(
         self, value: Optional[pulumi.Input[InfrastructureConfigurationPlacementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -279,7 +308,8 @@ class _InfrastructureConfigurationState:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -288,17 +318,20 @@ class _InfrastructureConfigurationState:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snsTopicArn")
     def sns_topic_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sns_topic_arn.setter
-    def sns_topic_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sns_topic_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -307,7 +340,8 @@ class _InfrastructureConfigurationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -316,7 +350,8 @@ class _InfrastructureConfigurationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateInstanceOnFailure")
     def terminate_instance_on_failure(
@@ -325,7 +360,8 @@ class _InfrastructureConfigurationState:
     @terminate_instance_on_failure.setter
     def terminate_instance_on_failure(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InfrastructureConfiguration(pulumi.CustomResource):

@@ -39,7 +39,8 @@ class GetAddonResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAddonResult(GetAddonResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAddonResult]:
+        ...
 
 def get_addon(
     addon_name: Optional[_builtins.str] = ...,

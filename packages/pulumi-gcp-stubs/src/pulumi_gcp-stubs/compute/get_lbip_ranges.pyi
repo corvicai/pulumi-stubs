@@ -28,7 +28,8 @@ class GetLBIPRangesResult:
     def networks(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetLBIPRangesResult(GetLBIPRangesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLBIPRangesResult]:
+        ...
 
 def get_lbip_ranges(
     opts: Optional[pulumi.InvokeOptions] = ...,

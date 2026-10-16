@@ -66,12 +66,14 @@ class CrawlerArgs:
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): ...
+    def role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogTargets")
     def catalog_targets(
@@ -81,7 +83,8 @@ class CrawlerArgs:
     def catalog_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerCatalogTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def classifiers(
@@ -90,12 +93,14 @@ class CrawlerArgs:
     @classifiers.setter
     def classifiers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration.setter
-    def configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deltaTargets")
     def delta_targets(
@@ -105,12 +110,14 @@ class CrawlerArgs:
     def delta_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerDeltaTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamodbTargets")
     def dynamodb_targets(
@@ -122,7 +129,8 @@ class CrawlerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CrawlerDynamodbTargetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hudiTargets")
     def hudi_targets(
@@ -132,7 +140,8 @@ class CrawlerArgs:
     def hudi_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerHudiTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icebergTargets")
     def iceberg_targets(
@@ -142,7 +151,8 @@ class CrawlerArgs:
     def iceberg_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerIcebergTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jdbcTargets")
     def jdbc_targets(
@@ -152,7 +162,8 @@ class CrawlerArgs:
     def jdbc_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerJdbcTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lakeFormationConfiguration")
     def lake_formation_configuration(
@@ -161,7 +172,8 @@ class CrawlerArgs:
     @lake_formation_configuration.setter
     def lake_formation_configuration(
         self, value: Optional[pulumi.Input[CrawlerLakeFormationConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lineageConfiguration")
     def lineage_configuration(
@@ -170,7 +182,8 @@ class CrawlerArgs:
     @lineage_configuration.setter
     def lineage_configuration(
         self, value: Optional[pulumi.Input[CrawlerLineageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mongodbTargets")
     def mongodb_targets(
@@ -180,24 +193,28 @@ class CrawlerArgs:
     def mongodb_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerMongodbTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recrawlPolicy")
     def recrawl_policy(self) -> Optional[pulumi.Input[CrawlerRecrawlPolicyArgs]]: ...
     @recrawl_policy.setter
     def recrawl_policy(
         self, value: Optional[pulumi.Input[CrawlerRecrawlPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Targets")
     def s3_targets(
@@ -206,12 +223,14 @@ class CrawlerArgs:
     @s3_targets.setter
     def s3_targets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerS3TargetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule.setter
-    def schedule(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaChangePolicy")
     def schema_change_policy(
@@ -220,17 +239,22 @@ class CrawlerArgs:
     @schema_change_policy.setter
     def schema_change_policy(
         self, value: Optional[pulumi.Input[CrawlerSchemaChangePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConfiguration")
     def security_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_configuration.setter
-    def security_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tablePrefix")
     def table_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_prefix.setter
-    def table_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -239,7 +263,8 @@ class CrawlerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CrawlerState:
@@ -302,7 +327,8 @@ class _CrawlerState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogTargets")
     def catalog_targets(
@@ -312,7 +338,8 @@ class _CrawlerState:
     def catalog_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerCatalogTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def classifiers(
@@ -321,17 +348,20 @@ class _CrawlerState:
     @classifiers.setter
     def classifiers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration.setter
-    def configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deltaTargets")
     def delta_targets(
@@ -341,12 +371,14 @@ class _CrawlerState:
     def delta_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerDeltaTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamodbTargets")
     def dynamodb_targets(
@@ -358,7 +390,8 @@ class _CrawlerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CrawlerDynamodbTargetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hudiTargets")
     def hudi_targets(
@@ -368,7 +401,8 @@ class _CrawlerState:
     def hudi_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerHudiTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icebergTargets")
     def iceberg_targets(
@@ -378,7 +412,8 @@ class _CrawlerState:
     def iceberg_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerIcebergTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jdbcTargets")
     def jdbc_targets(
@@ -388,7 +423,8 @@ class _CrawlerState:
     def jdbc_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerJdbcTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lakeFormationConfiguration")
     def lake_formation_configuration(
@@ -397,7 +433,8 @@ class _CrawlerState:
     @lake_formation_configuration.setter
     def lake_formation_configuration(
         self, value: Optional[pulumi.Input[CrawlerLakeFormationConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lineageConfiguration")
     def lineage_configuration(
@@ -406,7 +443,8 @@ class _CrawlerState:
     @lineage_configuration.setter
     def lineage_configuration(
         self, value: Optional[pulumi.Input[CrawlerLineageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mongodbTargets")
     def mongodb_targets(
@@ -416,29 +454,34 @@ class _CrawlerState:
     def mongodb_targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerMongodbTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recrawlPolicy")
     def recrawl_policy(self) -> Optional[pulumi.Input[CrawlerRecrawlPolicyArgs]]: ...
     @recrawl_policy.setter
     def recrawl_policy(
         self, value: Optional[pulumi.Input[CrawlerRecrawlPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role.setter
-    def role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Targets")
     def s3_targets(
@@ -447,12 +490,14 @@ class _CrawlerState:
     @s3_targets.setter
     def s3_targets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CrawlerS3TargetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule.setter
-    def schedule(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaChangePolicy")
     def schema_change_policy(
@@ -461,17 +506,22 @@ class _CrawlerState:
     @schema_change_policy.setter
     def schema_change_policy(
         self, value: Optional[pulumi.Input[CrawlerSchemaChangePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConfiguration")
     def security_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_configuration.setter
-    def security_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tablePrefix")
     def table_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_prefix.setter
-    def table_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -480,7 +530,8 @@ class _CrawlerState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -489,7 +540,8 @@ class _CrawlerState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:glue/crawler:Crawler")
 class Crawler(pulumi.CustomResource):

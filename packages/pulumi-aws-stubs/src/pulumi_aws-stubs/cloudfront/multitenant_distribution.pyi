@@ -55,7 +55,8 @@ class MultitenantDistributionArgs:
     @pulumi.getter
     def comment(self) -> pulumi.Input[_builtins.str]: ...
     @comment.setter
-    def comment(self, value: pulumi.Input[_builtins.str]): ...
+    def comment(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCacheBehavior")
     def default_cache_behavior(
@@ -64,12 +65,14 @@ class MultitenantDistributionArgs:
     @default_cache_behavior.setter
     def default_cache_behavior(
         self, value: pulumi.Input[MultitenantDistributionDefaultCacheBehaviorArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantConfig")
     def tenant_config(
@@ -78,7 +81,8 @@ class MultitenantDistributionArgs:
     @tenant_config.setter
     def tenant_config(
         self, value: pulumi.Input[MultitenantDistributionTenantConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="viewerCertificate")
     def viewer_certificate(
@@ -87,7 +91,8 @@ class MultitenantDistributionArgs:
     @viewer_certificate.setter
     def viewer_certificate(
         self, value: pulumi.Input[MultitenantDistributionViewerCertificateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activeTrustedKeyGroups")
     def active_trusted_key_groups(
@@ -105,7 +110,8 @@ class MultitenantDistributionArgs:
                 Sequence[pulumi.Input[MultitenantDistributionActiveTrustedKeyGroupArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheBehaviors")
     def cache_behaviors(
@@ -121,7 +127,8 @@ class MultitenantDistributionArgs:
                 Sequence[pulumi.Input[MultitenantDistributionCacheBehaviorArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customErrorResponses")
     def custom_error_responses(
@@ -139,17 +146,22 @@ class MultitenantDistributionArgs:
                 Sequence[pulumi.Input[MultitenantDistributionCustomErrorResponseArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRootObject")
     def default_root_object(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_root_object.setter
-    def default_root_object(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_root_object(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpVersion")
     def http_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @http_version.setter
-    def http_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def http_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originGroups")
     def origin_groups(
@@ -163,7 +175,8 @@ class MultitenantDistributionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[MultitenantDistributionOriginGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def origins(
@@ -177,7 +190,8 @@ class MultitenantDistributionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[MultitenantDistributionOriginArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def restrictions(
@@ -186,7 +200,8 @@ class MultitenantDistributionArgs:
     @restrictions.setter
     def restrictions(
         self, value: Optional[pulumi.Input[MultitenantDistributionRestrictionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -195,7 +210,8 @@ class MultitenantDistributionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -204,12 +220,14 @@ class MultitenantDistributionArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[MultitenantDistributionTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAclId")
     def web_acl_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_acl_id.setter
-    def web_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _MultitenantDistributionState:
@@ -285,12 +303,14 @@ class _MultitenantDistributionState:
                 Sequence[pulumi.Input[MultitenantDistributionActiveTrustedKeyGroupArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheBehaviors")
     def cache_behaviors(
@@ -306,22 +326,28 @@ class _MultitenantDistributionState:
                 Sequence[pulumi.Input[MultitenantDistributionCacheBehaviorArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callerReference")
     def caller_reference(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @caller_reference.setter
-    def caller_reference(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def caller_reference(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionMode")
     def connection_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_mode.setter
-    def connection_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customErrorResponses")
     def custom_error_responses(
@@ -339,7 +365,8 @@ class _MultitenantDistributionState:
                 Sequence[pulumi.Input[MultitenantDistributionCustomErrorResponseArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCacheBehavior")
     def default_cache_behavior(
@@ -349,32 +376,40 @@ class _MultitenantDistributionState:
     def default_cache_behavior(
         self,
         value: Optional[pulumi.Input[MultitenantDistributionDefaultCacheBehaviorArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRootObject")
     def default_root_object(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_root_object.setter
-    def default_root_object(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_root_object(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpVersion")
     def http_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @http_version.setter
-    def http_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def http_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inProgressInvalidationBatches")
     def in_progress_invalidation_batches(
@@ -383,12 +418,16 @@ class _MultitenantDistributionState:
     @in_progress_invalidation_batches.setter
     def in_progress_invalidation_batches(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedTime")
     def last_modified_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_time.setter
-    def last_modified_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originGroups")
     def origin_groups(
@@ -402,7 +441,8 @@ class _MultitenantDistributionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[MultitenantDistributionOriginGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def origins(
@@ -416,7 +456,8 @@ class _MultitenantDistributionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[MultitenantDistributionOriginArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def restrictions(
@@ -425,12 +466,14 @@ class _MultitenantDistributionState:
     @restrictions.setter
     def restrictions(
         self, value: Optional[pulumi.Input[MultitenantDistributionRestrictionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -439,7 +482,8 @@ class _MultitenantDistributionState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -448,7 +492,8 @@ class _MultitenantDistributionState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantConfig")
     def tenant_config(
@@ -457,7 +502,8 @@ class _MultitenantDistributionState:
     @tenant_config.setter
     def tenant_config(
         self, value: Optional[pulumi.Input[MultitenantDistributionTenantConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -466,7 +512,8 @@ class _MultitenantDistributionState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[MultitenantDistributionTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="viewerCertificate")
     def viewer_certificate(
@@ -476,12 +523,14 @@ class _MultitenantDistributionState:
     def viewer_certificate(
         self,
         value: Optional[pulumi.Input[MultitenantDistributionViewerCertificateArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAclId")
     def web_acl_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_acl_id.setter
-    def web_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class MultitenantDistribution(pulumi.CustomResource):

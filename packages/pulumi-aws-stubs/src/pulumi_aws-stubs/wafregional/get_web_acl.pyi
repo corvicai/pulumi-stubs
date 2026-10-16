@@ -26,7 +26,8 @@ class GetWebAclResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetWebAclResult(GetWebAclResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAclResult]:
+        ...
 
 def get_web_acl(
     name: Optional[_builtins.str] = ...,

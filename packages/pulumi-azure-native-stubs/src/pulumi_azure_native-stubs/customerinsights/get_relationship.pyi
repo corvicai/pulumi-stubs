@@ -86,7 +86,8 @@ class GetRelationshipResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRelationshipResult(GetRelationshipResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRelationshipResult]:
+        ...
 
 def get_relationship(
     hub_name: Optional[_builtins.str] = ...,

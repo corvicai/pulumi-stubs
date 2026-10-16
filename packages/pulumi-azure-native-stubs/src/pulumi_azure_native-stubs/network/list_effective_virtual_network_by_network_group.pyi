@@ -26,7 +26,10 @@ class ListEffectiveVirtualNetworkByNetworkGroupResult:
 class AwaitableListEffectiveVirtualNetworkByNetworkGroupResult(
     ListEffectiveVirtualNetworkByNetworkGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListEffectiveVirtualNetworkByNetworkGroupResult]:
+        ...
 
 def list_effective_virtual_network_by_network_group(
     network_group_name: Optional[_builtins.str] = ...,

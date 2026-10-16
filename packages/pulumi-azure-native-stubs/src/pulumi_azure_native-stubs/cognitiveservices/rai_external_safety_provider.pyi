@@ -29,12 +29,16 @@ class RaiExternalSafetyProviderArgs:
     def properties(
         self,
         value: Optional[pulumi.Input[RaiExternalSafetyProviderSchemaPropertiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="safetyProviderName")
     def safety_provider_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @safety_provider_name.setter
-    def safety_provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def safety_provider_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -43,7 +47,8 @@ class RaiExternalSafetyProviderArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RaiExternalSafetyProvider(pulumi.CustomResource):

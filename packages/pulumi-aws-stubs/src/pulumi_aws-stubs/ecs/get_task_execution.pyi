@@ -113,7 +113,8 @@ class GetTaskExecutionResult:
     def task_definition(self) -> _builtins.str: ...
 
 class AwaitableGetTaskExecutionResult(GetTaskExecutionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTaskExecutionResult]:
+        ...
 
 def get_task_execution(
     capacity_provider_strategies: Optional[

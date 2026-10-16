@@ -84,7 +84,8 @@ class GetAccessPointResult:
     ) -> Sequence[outputs.GetAccessPointVpcConfigurationResult]: ...
 
 class AwaitableGetAccessPointResult(GetAccessPointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessPointResult]:
+        ...
 
 def get_access_point(
     account_id: Optional[_builtins.str] = ...,

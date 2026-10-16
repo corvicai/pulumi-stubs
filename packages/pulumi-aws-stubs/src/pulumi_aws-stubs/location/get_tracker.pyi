@@ -59,7 +59,8 @@ class GetTrackerResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetTrackerResult(GetTrackerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTrackerResult]:
+        ...
 
 def get_tracker(
     region: Optional[_builtins.str] = ...,

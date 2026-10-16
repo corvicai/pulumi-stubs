@@ -82,7 +82,8 @@ class GetCustomLocationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCustomLocationResult(GetCustomLocationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomLocationResult]:
+        ...
 
 def get_custom_location(
     resource_group_name: Optional[_builtins.str] = ...,

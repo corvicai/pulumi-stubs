@@ -64,7 +64,10 @@ class GetCloudHsmClusterPrivateEndpointConnectionResult:
 class AwaitableGetCloudHsmClusterPrivateEndpointConnectionResult(
     GetCloudHsmClusterPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCloudHsmClusterPrivateEndpointConnectionResult]:
+        ...
 
 def get_cloud_hsm_cluster_private_endpoint_connection(
     cloud_hsm_cluster_name: Optional[_builtins.str] = ...,

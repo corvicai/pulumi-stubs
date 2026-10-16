@@ -51,7 +51,8 @@ class GetWorkspaceGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceGroupResult(GetWorkspaceGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceGroupResult]:
+        ...
 
 def get_workspace_group(
     group_id: Optional[_builtins.str] = ...,

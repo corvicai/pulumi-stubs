@@ -60,7 +60,8 @@ class GetInstanceGroupResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceGroupResult(GetInstanceGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceGroupResult]:
+        ...
 
 def get_instance_group(
     name: Optional[_builtins.str] = ...,

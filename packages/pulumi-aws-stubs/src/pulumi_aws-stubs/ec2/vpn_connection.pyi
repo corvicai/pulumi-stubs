@@ -115,61 +115,84 @@ class VpnConnectionArgs:
     @pulumi.getter(name="customerGatewayId")
     def customer_gateway_id(self) -> pulumi.Input[_builtins.str]: ...
     @customer_gateway_id.setter
-    def customer_gateway_id(self, value: pulumi.Input[_builtins.str]): ...
+    def customer_gateway_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAcceleration")
     def enable_acceleration(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_acceleration.setter
-    def enable_acceleration(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_acceleration(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localIpv4NetworkCidr")
     def local_ipv4_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_ipv4_network_cidr.setter
-    def local_ipv4_network_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_ipv4_network_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localIpv6NetworkCidr")
     def local_ipv6_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_ipv6_network_cidr.setter
-    def local_ipv6_network_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_ipv6_network_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outsideIpAddressType")
     def outside_ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outside_ip_address_type.setter
-    def outside_ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def outside_ip_address_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="presharedKeyStorage")
     def preshared_key_storage(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preshared_key_storage.setter
-    def preshared_key_storage(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preshared_key_storage(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteIpv4NetworkCidr")
     def remote_ipv4_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remote_ipv4_network_cidr.setter
     def remote_ipv4_network_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteIpv6NetworkCidr")
     def remote_ipv6_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remote_ipv6_network_cidr.setter
     def remote_ipv6_network_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="staticRoutesOnly")
     def static_routes_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @static_routes_only.setter
-    def static_routes_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def static_routes_only(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -178,12 +201,16 @@ class VpnConnectionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transportTransitGatewayAttachmentId")
     def transport_transit_gateway_attachment_id(
@@ -192,21 +219,24 @@ class VpnConnectionArgs:
     @transport_transit_gateway_attachment_id.setter
     def transport_transit_gateway_attachment_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1DpdTimeoutAction")
     def tunnel1_dpd_timeout_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_dpd_timeout_action.setter
     def tunnel1_dpd_timeout_action(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1DpdTimeoutSeconds")
     def tunnel1_dpd_timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel1_dpd_timeout_seconds.setter
     def tunnel1_dpd_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1EnableTunnelLifecycleControl")
     def tunnel1_enable_tunnel_lifecycle_control(
@@ -215,7 +245,8 @@ class VpnConnectionArgs:
     @tunnel1_enable_tunnel_lifecycle_control.setter
     def tunnel1_enable_tunnel_lifecycle_control(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1IkeVersions")
     def tunnel1_ike_versions(
@@ -224,19 +255,24 @@ class VpnConnectionArgs:
     @tunnel1_ike_versions.setter
     def tunnel1_ike_versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1InsideCidr")
     def tunnel1_inside_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_inside_cidr.setter
-    def tunnel1_inside_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_inside_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1InsideIpv6Cidr")
     def tunnel1_inside_ipv6_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_inside_ipv6_cidr.setter
     def tunnel1_inside_ipv6_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1LogOptions")
     def tunnel1_log_options(
@@ -245,7 +281,8 @@ class VpnConnectionArgs:
     @tunnel1_log_options.setter
     def tunnel1_log_options(
         self, value: Optional[pulumi.Input[VpnConnectionTunnel1LogOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1DhGroupNumbers")
     def tunnel1_phase1_dh_group_numbers(
@@ -254,7 +291,8 @@ class VpnConnectionArgs:
     @tunnel1_phase1_dh_group_numbers.setter
     def tunnel1_phase1_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1EncryptionAlgorithms")
     def tunnel1_phase1_encryption_algorithms(
@@ -263,7 +301,8 @@ class VpnConnectionArgs:
     @tunnel1_phase1_encryption_algorithms.setter
     def tunnel1_phase1_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1IntegrityAlgorithms")
     def tunnel1_phase1_integrity_algorithms(
@@ -272,7 +311,8 @@ class VpnConnectionArgs:
     @tunnel1_phase1_integrity_algorithms.setter
     def tunnel1_phase1_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1LifetimeSeconds")
     def tunnel1_phase1_lifetime_seconds(
@@ -281,7 +321,8 @@ class VpnConnectionArgs:
     @tunnel1_phase1_lifetime_seconds.setter
     def tunnel1_phase1_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2DhGroupNumbers")
     def tunnel1_phase2_dh_group_numbers(
@@ -290,7 +331,8 @@ class VpnConnectionArgs:
     @tunnel1_phase2_dh_group_numbers.setter
     def tunnel1_phase2_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2EncryptionAlgorithms")
     def tunnel1_phase2_encryption_algorithms(
@@ -299,7 +341,8 @@ class VpnConnectionArgs:
     @tunnel1_phase2_encryption_algorithms.setter
     def tunnel1_phase2_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2IntegrityAlgorithms")
     def tunnel1_phase2_integrity_algorithms(
@@ -308,7 +351,8 @@ class VpnConnectionArgs:
     @tunnel1_phase2_integrity_algorithms.setter
     def tunnel1_phase2_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2LifetimeSeconds")
     def tunnel1_phase2_lifetime_seconds(
@@ -317,12 +361,16 @@ class VpnConnectionArgs:
     @tunnel1_phase2_lifetime_seconds.setter
     def tunnel1_phase2_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1PresharedKey")
     def tunnel1_preshared_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_preshared_key.setter
-    def tunnel1_preshared_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_preshared_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1RekeyFuzzPercentage")
     def tunnel1_rekey_fuzz_percentage(
@@ -331,7 +379,8 @@ class VpnConnectionArgs:
     @tunnel1_rekey_fuzz_percentage.setter
     def tunnel1_rekey_fuzz_percentage(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1RekeyMarginTimeSeconds")
     def tunnel1_rekey_margin_time_seconds(
@@ -340,33 +389,40 @@ class VpnConnectionArgs:
     @tunnel1_rekey_margin_time_seconds.setter
     def tunnel1_rekey_margin_time_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1ReplayWindowSize")
     def tunnel1_replay_window_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel1_replay_window_size.setter
     def tunnel1_replay_window_size(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1StartupAction")
     def tunnel1_startup_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_startup_action.setter
-    def tunnel1_startup_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_startup_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2DpdTimeoutAction")
     def tunnel2_dpd_timeout_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_dpd_timeout_action.setter
     def tunnel2_dpd_timeout_action(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2DpdTimeoutSeconds")
     def tunnel2_dpd_timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel2_dpd_timeout_seconds.setter
     def tunnel2_dpd_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2EnableTunnelLifecycleControl")
     def tunnel2_enable_tunnel_lifecycle_control(
@@ -375,7 +431,8 @@ class VpnConnectionArgs:
     @tunnel2_enable_tunnel_lifecycle_control.setter
     def tunnel2_enable_tunnel_lifecycle_control(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2IkeVersions")
     def tunnel2_ike_versions(
@@ -384,19 +441,24 @@ class VpnConnectionArgs:
     @tunnel2_ike_versions.setter
     def tunnel2_ike_versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2InsideCidr")
     def tunnel2_inside_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_inside_cidr.setter
-    def tunnel2_inside_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_inside_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2InsideIpv6Cidr")
     def tunnel2_inside_ipv6_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_inside_ipv6_cidr.setter
     def tunnel2_inside_ipv6_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2LogOptions")
     def tunnel2_log_options(
@@ -405,7 +467,8 @@ class VpnConnectionArgs:
     @tunnel2_log_options.setter
     def tunnel2_log_options(
         self, value: Optional[pulumi.Input[VpnConnectionTunnel2LogOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1DhGroupNumbers")
     def tunnel2_phase1_dh_group_numbers(
@@ -414,7 +477,8 @@ class VpnConnectionArgs:
     @tunnel2_phase1_dh_group_numbers.setter
     def tunnel2_phase1_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1EncryptionAlgorithms")
     def tunnel2_phase1_encryption_algorithms(
@@ -423,7 +487,8 @@ class VpnConnectionArgs:
     @tunnel2_phase1_encryption_algorithms.setter
     def tunnel2_phase1_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1IntegrityAlgorithms")
     def tunnel2_phase1_integrity_algorithms(
@@ -432,7 +497,8 @@ class VpnConnectionArgs:
     @tunnel2_phase1_integrity_algorithms.setter
     def tunnel2_phase1_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1LifetimeSeconds")
     def tunnel2_phase1_lifetime_seconds(
@@ -441,7 +507,8 @@ class VpnConnectionArgs:
     @tunnel2_phase1_lifetime_seconds.setter
     def tunnel2_phase1_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2DhGroupNumbers")
     def tunnel2_phase2_dh_group_numbers(
@@ -450,7 +517,8 @@ class VpnConnectionArgs:
     @tunnel2_phase2_dh_group_numbers.setter
     def tunnel2_phase2_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2EncryptionAlgorithms")
     def tunnel2_phase2_encryption_algorithms(
@@ -459,7 +527,8 @@ class VpnConnectionArgs:
     @tunnel2_phase2_encryption_algorithms.setter
     def tunnel2_phase2_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2IntegrityAlgorithms")
     def tunnel2_phase2_integrity_algorithms(
@@ -468,7 +537,8 @@ class VpnConnectionArgs:
     @tunnel2_phase2_integrity_algorithms.setter
     def tunnel2_phase2_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2LifetimeSeconds")
     def tunnel2_phase2_lifetime_seconds(
@@ -477,12 +547,16 @@ class VpnConnectionArgs:
     @tunnel2_phase2_lifetime_seconds.setter
     def tunnel2_phase2_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2PresharedKey")
     def tunnel2_preshared_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_preshared_key.setter
-    def tunnel2_preshared_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_preshared_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2RekeyFuzzPercentage")
     def tunnel2_rekey_fuzz_percentage(
@@ -491,7 +565,8 @@ class VpnConnectionArgs:
     @tunnel2_rekey_fuzz_percentage.setter
     def tunnel2_rekey_fuzz_percentage(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2RekeyMarginTimeSeconds")
     def tunnel2_rekey_margin_time_seconds(
@@ -500,41 +575,54 @@ class VpnConnectionArgs:
     @tunnel2_rekey_margin_time_seconds.setter
     def tunnel2_rekey_margin_time_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2ReplayWindowSize")
     def tunnel2_replay_window_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel2_replay_window_size.setter
     def tunnel2_replay_window_size(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2StartupAction")
     def tunnel2_startup_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_startup_action.setter
-    def tunnel2_startup_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_startup_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnelBandwidth")
     def tunnel_bandwidth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel_bandwidth.setter
-    def tunnel_bandwidth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel_bandwidth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnelInsideIpVersion")
     def tunnel_inside_ip_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel_inside_ip_version.setter
     def tunnel_inside_ip_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnConcentratorId")
     def vpn_concentrator_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpn_concentrator_id.setter
-    def vpn_concentrator_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpn_concentrator_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnGatewayId")
     def vpn_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpn_gateway_id.setter
-    def vpn_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpn_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpnConnectionState:
@@ -667,19 +755,24 @@ class _VpnConnectionState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coreNetworkArn")
     def core_network_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @core_network_arn.setter
-    def core_network_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def core_network_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coreNetworkAttachmentArn")
     def core_network_attachment_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @core_network_attachment_arn.setter
     def core_network_attachment_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerGatewayConfiguration")
     def customer_gateway_configuration(
@@ -688,61 +781,86 @@ class _VpnConnectionState:
     @customer_gateway_configuration.setter
     def customer_gateway_configuration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerGatewayId")
     def customer_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_gateway_id.setter
-    def customer_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAcceleration")
     def enable_acceleration(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_acceleration.setter
-    def enable_acceleration(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_acceleration(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localIpv4NetworkCidr")
     def local_ipv4_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_ipv4_network_cidr.setter
-    def local_ipv4_network_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_ipv4_network_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localIpv6NetworkCidr")
     def local_ipv6_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_ipv6_network_cidr.setter
-    def local_ipv6_network_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_ipv6_network_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outsideIpAddressType")
     def outside_ip_address_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outside_ip_address_type.setter
-    def outside_ip_address_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def outside_ip_address_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="presharedKeyArn")
     def preshared_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preshared_key_arn.setter
-    def preshared_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preshared_key_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="presharedKeyStorage")
     def preshared_key_storage(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preshared_key_storage.setter
-    def preshared_key_storage(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preshared_key_storage(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteIpv4NetworkCidr")
     def remote_ipv4_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remote_ipv4_network_cidr.setter
     def remote_ipv4_network_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteIpv6NetworkCidr")
     def remote_ipv6_network_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remote_ipv6_network_cidr.setter
     def remote_ipv6_network_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def routes(
@@ -752,12 +870,16 @@ class _VpnConnectionState:
     def routes(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VpnConnectionRouteArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="staticRoutesOnly")
     def static_routes_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @static_routes_only.setter
-    def static_routes_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def static_routes_only(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -766,7 +888,8 @@ class _VpnConnectionState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -775,7 +898,8 @@ class _VpnConnectionState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayAttachmentId")
     def transit_gateway_attachment_id(
@@ -784,12 +908,16 @@ class _VpnConnectionState:
     @transit_gateway_attachment_id.setter
     def transit_gateway_attachment_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transportTransitGatewayAttachmentId")
     def transport_transit_gateway_attachment_id(
@@ -798,43 +926,52 @@ class _VpnConnectionState:
     @transport_transit_gateway_attachment_id.setter
     def transport_transit_gateway_attachment_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Address")
     def tunnel1_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_address.setter
-    def tunnel1_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1BgpAsn")
     def tunnel1_bgp_asn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_bgp_asn.setter
-    def tunnel1_bgp_asn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_bgp_asn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1BgpHoldtime")
     def tunnel1_bgp_holdtime(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel1_bgp_holdtime.setter
-    def tunnel1_bgp_holdtime(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def tunnel1_bgp_holdtime(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1CgwInsideAddress")
     def tunnel1_cgw_inside_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_cgw_inside_address.setter
     def tunnel1_cgw_inside_address(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1DpdTimeoutAction")
     def tunnel1_dpd_timeout_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_dpd_timeout_action.setter
     def tunnel1_dpd_timeout_action(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1DpdTimeoutSeconds")
     def tunnel1_dpd_timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel1_dpd_timeout_seconds.setter
     def tunnel1_dpd_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1EnableTunnelLifecycleControl")
     def tunnel1_enable_tunnel_lifecycle_control(
@@ -843,7 +980,8 @@ class _VpnConnectionState:
     @tunnel1_enable_tunnel_lifecycle_control.setter
     def tunnel1_enable_tunnel_lifecycle_control(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1IkeVersions")
     def tunnel1_ike_versions(
@@ -852,19 +990,24 @@ class _VpnConnectionState:
     @tunnel1_ike_versions.setter
     def tunnel1_ike_versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1InsideCidr")
     def tunnel1_inside_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_inside_cidr.setter
-    def tunnel1_inside_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_inside_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1InsideIpv6Cidr")
     def tunnel1_inside_ipv6_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_inside_ipv6_cidr.setter
     def tunnel1_inside_ipv6_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1LogOptions")
     def tunnel1_log_options(
@@ -873,7 +1016,8 @@ class _VpnConnectionState:
     @tunnel1_log_options.setter
     def tunnel1_log_options(
         self, value: Optional[pulumi.Input[VpnConnectionTunnel1LogOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1DhGroupNumbers")
     def tunnel1_phase1_dh_group_numbers(
@@ -882,7 +1026,8 @@ class _VpnConnectionState:
     @tunnel1_phase1_dh_group_numbers.setter
     def tunnel1_phase1_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1EncryptionAlgorithms")
     def tunnel1_phase1_encryption_algorithms(
@@ -891,7 +1036,8 @@ class _VpnConnectionState:
     @tunnel1_phase1_encryption_algorithms.setter
     def tunnel1_phase1_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1IntegrityAlgorithms")
     def tunnel1_phase1_integrity_algorithms(
@@ -900,7 +1046,8 @@ class _VpnConnectionState:
     @tunnel1_phase1_integrity_algorithms.setter
     def tunnel1_phase1_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase1LifetimeSeconds")
     def tunnel1_phase1_lifetime_seconds(
@@ -909,7 +1056,8 @@ class _VpnConnectionState:
     @tunnel1_phase1_lifetime_seconds.setter
     def tunnel1_phase1_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2DhGroupNumbers")
     def tunnel1_phase2_dh_group_numbers(
@@ -918,7 +1066,8 @@ class _VpnConnectionState:
     @tunnel1_phase2_dh_group_numbers.setter
     def tunnel1_phase2_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2EncryptionAlgorithms")
     def tunnel1_phase2_encryption_algorithms(
@@ -927,7 +1076,8 @@ class _VpnConnectionState:
     @tunnel1_phase2_encryption_algorithms.setter
     def tunnel1_phase2_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2IntegrityAlgorithms")
     def tunnel1_phase2_integrity_algorithms(
@@ -936,7 +1086,8 @@ class _VpnConnectionState:
     @tunnel1_phase2_integrity_algorithms.setter
     def tunnel1_phase2_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1Phase2LifetimeSeconds")
     def tunnel1_phase2_lifetime_seconds(
@@ -945,12 +1096,16 @@ class _VpnConnectionState:
     @tunnel1_phase2_lifetime_seconds.setter
     def tunnel1_phase2_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1PresharedKey")
     def tunnel1_preshared_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_preshared_key.setter
-    def tunnel1_preshared_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_preshared_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1RekeyFuzzPercentage")
     def tunnel1_rekey_fuzz_percentage(
@@ -959,7 +1114,8 @@ class _VpnConnectionState:
     @tunnel1_rekey_fuzz_percentage.setter
     def tunnel1_rekey_fuzz_percentage(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1RekeyMarginTimeSeconds")
     def tunnel1_rekey_margin_time_seconds(
@@ -968,62 +1124,76 @@ class _VpnConnectionState:
     @tunnel1_rekey_margin_time_seconds.setter
     def tunnel1_rekey_margin_time_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1ReplayWindowSize")
     def tunnel1_replay_window_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel1_replay_window_size.setter
     def tunnel1_replay_window_size(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1StartupAction")
     def tunnel1_startup_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_startup_action.setter
-    def tunnel1_startup_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel1_startup_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel1VgwInsideAddress")
     def tunnel1_vgw_inside_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel1_vgw_inside_address.setter
     def tunnel1_vgw_inside_address(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Address")
     def tunnel2_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_address.setter
-    def tunnel2_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2BgpAsn")
     def tunnel2_bgp_asn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_bgp_asn.setter
-    def tunnel2_bgp_asn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_bgp_asn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2BgpHoldtime")
     def tunnel2_bgp_holdtime(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel2_bgp_holdtime.setter
-    def tunnel2_bgp_holdtime(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def tunnel2_bgp_holdtime(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2CgwInsideAddress")
     def tunnel2_cgw_inside_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_cgw_inside_address.setter
     def tunnel2_cgw_inside_address(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2DpdTimeoutAction")
     def tunnel2_dpd_timeout_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_dpd_timeout_action.setter
     def tunnel2_dpd_timeout_action(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2DpdTimeoutSeconds")
     def tunnel2_dpd_timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel2_dpd_timeout_seconds.setter
     def tunnel2_dpd_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2EnableTunnelLifecycleControl")
     def tunnel2_enable_tunnel_lifecycle_control(
@@ -1032,7 +1202,8 @@ class _VpnConnectionState:
     @tunnel2_enable_tunnel_lifecycle_control.setter
     def tunnel2_enable_tunnel_lifecycle_control(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2IkeVersions")
     def tunnel2_ike_versions(
@@ -1041,19 +1212,24 @@ class _VpnConnectionState:
     @tunnel2_ike_versions.setter
     def tunnel2_ike_versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2InsideCidr")
     def tunnel2_inside_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_inside_cidr.setter
-    def tunnel2_inside_cidr(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_inside_cidr(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2InsideIpv6Cidr")
     def tunnel2_inside_ipv6_cidr(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_inside_ipv6_cidr.setter
     def tunnel2_inside_ipv6_cidr(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2LogOptions")
     def tunnel2_log_options(
@@ -1062,7 +1238,8 @@ class _VpnConnectionState:
     @tunnel2_log_options.setter
     def tunnel2_log_options(
         self, value: Optional[pulumi.Input[VpnConnectionTunnel2LogOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1DhGroupNumbers")
     def tunnel2_phase1_dh_group_numbers(
@@ -1071,7 +1248,8 @@ class _VpnConnectionState:
     @tunnel2_phase1_dh_group_numbers.setter
     def tunnel2_phase1_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1EncryptionAlgorithms")
     def tunnel2_phase1_encryption_algorithms(
@@ -1080,7 +1258,8 @@ class _VpnConnectionState:
     @tunnel2_phase1_encryption_algorithms.setter
     def tunnel2_phase1_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1IntegrityAlgorithms")
     def tunnel2_phase1_integrity_algorithms(
@@ -1089,7 +1268,8 @@ class _VpnConnectionState:
     @tunnel2_phase1_integrity_algorithms.setter
     def tunnel2_phase1_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase1LifetimeSeconds")
     def tunnel2_phase1_lifetime_seconds(
@@ -1098,7 +1278,8 @@ class _VpnConnectionState:
     @tunnel2_phase1_lifetime_seconds.setter
     def tunnel2_phase1_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2DhGroupNumbers")
     def tunnel2_phase2_dh_group_numbers(
@@ -1107,7 +1288,8 @@ class _VpnConnectionState:
     @tunnel2_phase2_dh_group_numbers.setter
     def tunnel2_phase2_dh_group_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2EncryptionAlgorithms")
     def tunnel2_phase2_encryption_algorithms(
@@ -1116,7 +1298,8 @@ class _VpnConnectionState:
     @tunnel2_phase2_encryption_algorithms.setter
     def tunnel2_phase2_encryption_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2IntegrityAlgorithms")
     def tunnel2_phase2_integrity_algorithms(
@@ -1125,7 +1308,8 @@ class _VpnConnectionState:
     @tunnel2_phase2_integrity_algorithms.setter
     def tunnel2_phase2_integrity_algorithms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2Phase2LifetimeSeconds")
     def tunnel2_phase2_lifetime_seconds(
@@ -1134,12 +1318,16 @@ class _VpnConnectionState:
     @tunnel2_phase2_lifetime_seconds.setter
     def tunnel2_phase2_lifetime_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2PresharedKey")
     def tunnel2_preshared_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_preshared_key.setter
-    def tunnel2_preshared_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_preshared_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2RekeyFuzzPercentage")
     def tunnel2_rekey_fuzz_percentage(
@@ -1148,7 +1336,8 @@ class _VpnConnectionState:
     @tunnel2_rekey_fuzz_percentage.setter
     def tunnel2_rekey_fuzz_percentage(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2RekeyMarginTimeSeconds")
     def tunnel2_rekey_margin_time_seconds(
@@ -1157,43 +1346,54 @@ class _VpnConnectionState:
     @tunnel2_rekey_margin_time_seconds.setter
     def tunnel2_rekey_margin_time_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2ReplayWindowSize")
     def tunnel2_replay_window_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tunnel2_replay_window_size.setter
     def tunnel2_replay_window_size(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2StartupAction")
     def tunnel2_startup_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_startup_action.setter
-    def tunnel2_startup_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel2_startup_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnel2VgwInsideAddress")
     def tunnel2_vgw_inside_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel2_vgw_inside_address.setter
     def tunnel2_vgw_inside_address(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnelBandwidth")
     def tunnel_bandwidth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel_bandwidth.setter
-    def tunnel_bandwidth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel_bandwidth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnelInsideIpVersion")
     def tunnel_inside_ip_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel_inside_ip_version.setter
     def tunnel_inside_ip_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vgwTelemetries")
     def vgw_telemetries(
@@ -1207,17 +1407,22 @@ class _VpnConnectionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VpnConnectionVgwTelemetryArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnConcentratorId")
     def vpn_concentrator_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpn_concentrator_id.setter
-    def vpn_concentrator_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpn_concentrator_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnGatewayId")
     def vpn_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpn_gateway_id.setter
-    def vpn_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpn_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/vpnConnection:VpnConnection")
 class VpnConnection(pulumi.CustomResource):

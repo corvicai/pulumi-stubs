@@ -84,7 +84,8 @@ class GetDiskPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDiskPoolResult(GetDiskPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiskPoolResult]:
+        ...
 
 def get_disk_pool(
     disk_pool_name: Optional[_builtins.str] = ...,

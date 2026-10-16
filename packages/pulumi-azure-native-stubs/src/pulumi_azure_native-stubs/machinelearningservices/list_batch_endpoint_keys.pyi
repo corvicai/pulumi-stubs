@@ -23,7 +23,8 @@ class ListBatchEndpointKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListBatchEndpointKeysResult(ListBatchEndpointKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListBatchEndpointKeysResult]:
+        ...
 
 def list_batch_endpoint_keys(
     endpoint_name: Optional[_builtins.str] = ...,

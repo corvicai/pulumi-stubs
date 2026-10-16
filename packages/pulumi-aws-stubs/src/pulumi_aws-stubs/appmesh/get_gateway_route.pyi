@@ -68,7 +68,8 @@ class GetGatewayRouteResult:
     def virtual_gateway_name(self) -> _builtins.str: ...
 
 class AwaitableGetGatewayRouteResult(GetGatewayRouteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGatewayRouteResult]:
+        ...
 
 def get_gateway_route(
     mesh_name: Optional[_builtins.str] = ...,

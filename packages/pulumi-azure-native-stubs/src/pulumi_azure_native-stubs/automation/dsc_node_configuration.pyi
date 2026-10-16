@@ -30,7 +30,8 @@ class DscNodeConfigurationArgs:
     @pulumi.getter(name="automationAccountName")
     def automation_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @automation_account_name.setter
-    def automation_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def automation_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -39,17 +40,20 @@ class DscNodeConfigurationArgs:
     @configuration.setter
     def configuration(
         self, value: pulumi.Input[DscConfigurationAssociationPropertyArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> pulumi.Input[ContentSourceArgs]: ...
     @source.setter
-    def source(self, value: pulumi.Input[ContentSourceArgs]): ...
+    def source(self, value: pulumi.Input[ContentSourceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="incrementNodeConfigurationBuild")
     def increment_node_configuration_build(
@@ -58,17 +62,22 @@ class DscNodeConfigurationArgs:
     @increment_node_configuration_build.setter
     def increment_node_configuration_build(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeConfigurationName")
     def node_configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_configuration_name.setter
-    def node_configuration_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_configuration_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -77,7 +86,8 @@ class DscNodeConfigurationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:automation:DscNodeConfiguration")
 class DscNodeConfiguration(pulumi.CustomResource):

@@ -24,7 +24,8 @@ class ListProductsResult:
     def value(self) -> Optional[Sequence[outputs.ProductResponse]]: ...
 
 class AwaitableListProductsResult(ListProductsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListProductsResult]:
+        ...
 
 def list_products(
     product_name: Optional[_builtins.str] = ...,

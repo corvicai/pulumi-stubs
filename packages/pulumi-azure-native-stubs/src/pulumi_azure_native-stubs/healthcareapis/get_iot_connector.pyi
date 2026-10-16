@@ -70,7 +70,8 @@ class GetIotConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIotConnectorResult(GetIotConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIotConnectorResult]:
+        ...
 
 def get_iot_connector(
     iot_connector_name: Optional[_builtins.str] = ...,

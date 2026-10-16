@@ -35,7 +35,8 @@ class ListSignalRKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListSignalRKeysResult(ListSignalRKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListSignalRKeysResult]:
+        ...
 
 def list_signal_r_keys(
     resource_group_name: Optional[_builtins.str] = ...,

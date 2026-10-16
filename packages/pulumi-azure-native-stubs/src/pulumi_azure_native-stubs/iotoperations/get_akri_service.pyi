@@ -48,7 +48,8 @@ class GetAkriServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAkriServiceResult(GetAkriServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAkriServiceResult]:
+        ...
 
 def get_akri_service(
     akri_service_name: Optional[_builtins.str] = ...,

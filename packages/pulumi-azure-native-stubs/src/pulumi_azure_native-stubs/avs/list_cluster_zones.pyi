@@ -21,7 +21,8 @@ class ListClusterZonesResult:
     def zones(self) -> Optional[Sequence[outputs.ClusterZoneResponse]]: ...
 
 class AwaitableListClusterZonesResult(ListClusterZonesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListClusterZonesResult]:
+        ...
 
 def list_cluster_zones(
     cluster_name: Optional[_builtins.str] = ...,

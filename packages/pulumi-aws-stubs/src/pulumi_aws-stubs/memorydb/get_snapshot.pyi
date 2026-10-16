@@ -58,7 +58,8 @@ class GetSnapshotResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetSnapshotResult(GetSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotResult]:
+        ...
 
 def get_snapshot(
     name: Optional[_builtins.str] = ...,

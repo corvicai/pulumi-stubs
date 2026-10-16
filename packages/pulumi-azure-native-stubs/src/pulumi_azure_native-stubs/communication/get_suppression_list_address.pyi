@@ -64,7 +64,8 @@ class GetSuppressionListAddressResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSuppressionListAddressResult(GetSuppressionListAddressResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSuppressionListAddressResult]:
+        ...
 
 def get_suppression_list_address(
     address_id: Optional[_builtins.str] = ...,

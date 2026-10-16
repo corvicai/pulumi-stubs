@@ -62,7 +62,8 @@ class GetAccessPointResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetAccessPointResult(GetAccessPointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessPointResult]:
+        ...
 
 def get_access_point(
     access_point_id: Optional[_builtins.str] = ...,

@@ -42,7 +42,8 @@ class GetBillingHubServiceUsageResult:
     def total_used_free_hours(self) -> Optional[_builtins.float]: ...
 
 class AwaitableGetBillingHubServiceUsageResult(GetBillingHubServiceUsageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBillingHubServiceUsageResult]:
+        ...
 
 def get_billing_hub_service_usage(
     end_time_stamp: Optional[_builtins.str] = ...,

@@ -32,7 +32,8 @@ class ReplicatorArgs:
     @kafka_clusters.setter
     def kafka_clusters(
         self, value: pulumi.Input[Sequence[pulumi.Input[ReplicatorKafkaClusterArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationInfoList")
     def replication_info_list(
@@ -41,27 +42,34 @@ class ReplicatorArgs:
     @replication_info_list.setter
     def replication_info_list(
         self, value: pulumi.Input[ReplicatorReplicationInfoListArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicatorName")
     def replicator_name(self) -> pulumi.Input[_builtins.str]: ...
     @replicator_name.setter
-    def replicator_name(self, value: pulumi.Input[_builtins.str]): ...
+    def replicator_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceExecutionRoleArn")
     def service_execution_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @service_execution_role_arn.setter
-    def service_execution_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def service_execution_role_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -70,7 +78,8 @@ class ReplicatorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ReplicatorState:
@@ -98,17 +107,20 @@ class _ReplicatorState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="currentVersion")
     def current_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @current_version.setter
-    def current_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def current_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaClusters")
     def kafka_clusters(
@@ -120,12 +132,14 @@ class _ReplicatorState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReplicatorKafkaClusterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationInfoList")
     def replication_info_list(
@@ -134,19 +148,22 @@ class _ReplicatorState:
     @replication_info_list.setter
     def replication_info_list(
         self, value: Optional[pulumi.Input[ReplicatorReplicationInfoListArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicatorName")
     def replicator_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replicator_name.setter
-    def replicator_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replicator_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceExecutionRoleArn")
     def service_execution_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_execution_role_arn.setter
     def service_execution_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -155,7 +172,8 @@ class _ReplicatorState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -164,7 +182,8 @@ class _ReplicatorState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:msk/replicator:Replicator")
 class Replicator(pulumi.CustomResource):

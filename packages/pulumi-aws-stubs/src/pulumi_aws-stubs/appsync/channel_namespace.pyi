@@ -33,12 +33,14 @@ class ChannelNamespaceArgs:
     @pulumi.getter(name="apiId")
     def api_id(self) -> pulumi.Input[_builtins.str]: ...
     @api_id.setter
-    def api_id(self, value: pulumi.Input[_builtins.str]): ...
+    def api_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeHandlers")
     def code_handlers(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code_handlers.setter
-    def code_handlers(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def code_handlers(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="handlerConfigs")
     def handler_configs(
@@ -47,12 +49,14 @@ class ChannelNamespaceArgs:
     @handler_configs.setter
     def handler_configs(
         self, value: Optional[pulumi.Input[ChannelNamespaceHandlerConfigsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishAuthModes")
     def publish_auth_modes(
@@ -66,12 +70,14 @@ class ChannelNamespaceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ChannelNamespacePublishAuthModeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscribeAuthModes")
     def subscribe_auth_modes(
@@ -85,7 +91,8 @@ class ChannelNamespaceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ChannelNamespaceSubscribeAuthModeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -94,7 +101,8 @@ class ChannelNamespaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ChannelNamespaceState:
@@ -124,17 +132,22 @@ class _ChannelNamespaceState:
     @pulumi.getter(name="apiId")
     def api_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_id.setter
-    def api_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="channelNamespaceArn")
     def channel_namespace_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel_namespace_arn.setter
-    def channel_namespace_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel_namespace_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeHandlers")
     def code_handlers(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code_handlers.setter
-    def code_handlers(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def code_handlers(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="handlerConfigs")
     def handler_configs(
@@ -143,12 +156,14 @@ class _ChannelNamespaceState:
     @handler_configs.setter
     def handler_configs(
         self, value: Optional[pulumi.Input[ChannelNamespaceHandlerConfigsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishAuthModes")
     def publish_auth_modes(
@@ -162,12 +177,14 @@ class _ChannelNamespaceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ChannelNamespacePublishAuthModeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscribeAuthModes")
     def subscribe_auth_modes(
@@ -181,7 +198,8 @@ class _ChannelNamespaceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ChannelNamespaceSubscribeAuthModeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -190,7 +208,8 @@ class _ChannelNamespaceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -199,7 +218,8 @@ class _ChannelNamespaceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:appsync/channelNamespace:ChannelNamespace")
 class ChannelNamespace(pulumi.CustomResource):

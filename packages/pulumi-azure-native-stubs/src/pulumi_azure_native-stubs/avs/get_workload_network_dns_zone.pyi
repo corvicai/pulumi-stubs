@@ -68,7 +68,8 @@ class GetWorkloadNetworkDnsZoneResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadNetworkDnsZoneResult(GetWorkloadNetworkDnsZoneResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadNetworkDnsZoneResult]:
+        ...
 
 def get_workload_network_dns_zone(
     dns_zone_id: Optional[_builtins.str] = ...,

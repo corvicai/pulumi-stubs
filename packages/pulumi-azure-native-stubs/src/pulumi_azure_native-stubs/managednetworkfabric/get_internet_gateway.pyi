@@ -72,7 +72,8 @@ class GetInternetGatewayResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInternetGatewayResult(GetInternetGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInternetGatewayResult]:
+        ...
 
 def get_internet_gateway(
     internet_gateway_name: Optional[_builtins.str] = ...,

@@ -39,7 +39,8 @@ class GetDraResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDraResult(GetDraResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDraResult]:
+        ...
 
 def get_dra(
     fabric_agent_name: Optional[_builtins.str] = ...,

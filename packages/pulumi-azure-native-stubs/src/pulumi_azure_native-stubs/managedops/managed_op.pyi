@@ -22,12 +22,18 @@ class ManagedOpArgs:
     @pulumi.getter(name="managedOpsName")
     def managed_ops_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_ops_name.setter
-    def managed_ops_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def managed_ops_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(self) -> Optional[pulumi.Input[ManagedOpsPropertiesArgs]]: ...
     @properties.setter
-    def properties(self, value: Optional[pulumi.Input[ManagedOpsPropertiesArgs]]): ...
+    def properties(
+        self, value: Optional[pulumi.Input[ManagedOpsPropertiesArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:managedops:ManagedOp")
 class ManagedOp(pulumi.CustomResource):

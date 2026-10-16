@@ -76,7 +76,8 @@ class GetGlobalClusterResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetGlobalClusterResult(GetGlobalClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlobalClusterResult]:
+        ...
 
 def get_global_cluster(
     identifier: Optional[_builtins.str] = ...,

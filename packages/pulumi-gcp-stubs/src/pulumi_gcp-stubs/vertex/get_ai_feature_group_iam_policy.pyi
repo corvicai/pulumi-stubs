@@ -43,7 +43,8 @@ class GetAiFeatureGroupIamPolicyResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetAiFeatureGroupIamPolicyResult(GetAiFeatureGroupIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAiFeatureGroupIamPolicyResult]:
+        ...
 
 def get_ai_feature_group_iam_policy(
     feature_group: Optional[_builtins.str] = ...,

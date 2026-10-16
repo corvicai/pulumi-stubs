@@ -68,7 +68,8 @@ class GetKafkaConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKafkaConfigurationResult(GetKafkaConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKafkaConfigurationResult]:
+        ...
 
 def get_kafka_configuration(
     account_name: Optional[_builtins.str] = ...,

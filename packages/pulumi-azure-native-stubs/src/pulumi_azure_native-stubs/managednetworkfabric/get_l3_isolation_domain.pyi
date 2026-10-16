@@ -88,7 +88,8 @@ class GetL3IsolationDomainResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetL3IsolationDomainResult(GetL3IsolationDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetL3IsolationDomainResult]:
+        ...
 
 def get_l3_isolation_domain(
     l3_isolation_domain_name: Optional[_builtins.str] = ...,

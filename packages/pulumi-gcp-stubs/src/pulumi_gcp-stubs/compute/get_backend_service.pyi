@@ -212,7 +212,8 @@ class GetBackendServiceResult:
     def tls_settings(self) -> Sequence[outputs.GetBackendServiceTlsSettingResult]: ...
 
 class AwaitableGetBackendServiceResult(GetBackendServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackendServiceResult]:
+        ...
 
 def get_backend_service(
     name: Optional[_builtins.str] = ...,

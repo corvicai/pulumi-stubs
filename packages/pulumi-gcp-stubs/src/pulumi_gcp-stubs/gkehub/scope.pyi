@@ -25,7 +25,8 @@ class ScopeArgs:
     @pulumi.getter(name="scopeId")
     def scope_id(self) -> pulumi.Input[_builtins.str]: ...
     @scope_id.setter
-    def scope_id(self, value: pulumi.Input[_builtins.str]): ...
+    def scope_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -34,7 +35,8 @@ class ScopeArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceLabels")
     def namespace_labels(
@@ -43,12 +45,14 @@ class ScopeArgs:
     @namespace_labels.setter
     def namespace_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ScopeState:
@@ -78,12 +82,14 @@ class _ScopeState:
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteTime")
     def delete_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete_time.setter
-    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -92,7 +98,8 @@ class _ScopeState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -101,12 +108,14 @@ class _ScopeState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceLabels")
     def namespace_labels(
@@ -115,12 +124,14 @@ class _ScopeState:
     @namespace_labels.setter
     def namespace_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -129,12 +140,14 @@ class _ScopeState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scopeId")
     def scope_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope_id.setter
-    def scope_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def states(
@@ -143,17 +156,20 @@ class _ScopeState:
     @states.setter
     def states(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ScopeStateArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:gkehub/scope:Scope")
 class Scope(pulumi.CustomResource):

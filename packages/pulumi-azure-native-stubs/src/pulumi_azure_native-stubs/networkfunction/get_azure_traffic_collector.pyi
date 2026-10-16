@@ -64,7 +64,8 @@ class GetAzureTrafficCollectorResult:
     def virtual_hub(self) -> Optional[outputs.ResourceReferenceResponse]: ...
 
 class AwaitableGetAzureTrafficCollectorResult(GetAzureTrafficCollectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureTrafficCollectorResult]:
+        ...
 
 def get_azure_traffic_collector(
     azure_traffic_collector_name: Optional[_builtins.str] = ...,

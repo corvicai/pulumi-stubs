@@ -48,7 +48,8 @@ class GetAssociatedTenantResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAssociatedTenantResult(GetAssociatedTenantResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssociatedTenantResult]:
+        ...
 
 def get_associated_tenant(
     associated_tenant_name: Optional[_builtins.str] = ...,

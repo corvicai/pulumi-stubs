@@ -23,7 +23,8 @@ class GetTestResultFileResult:
     def next_link(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetTestResultFileResult(GetTestResultFileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTestResultFileResult]:
+        ...
 
 def get_test_result_file(
     continuation_token: Optional[_builtins.str] = ...,

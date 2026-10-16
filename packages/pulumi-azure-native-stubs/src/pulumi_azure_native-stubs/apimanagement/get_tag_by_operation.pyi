@@ -34,7 +34,8 @@ class GetTagByOperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTagByOperationResult(GetTagByOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagByOperationResult]:
+        ...
 
 def get_tag_by_operation(
     api_id: Optional[_builtins.str] = ...,

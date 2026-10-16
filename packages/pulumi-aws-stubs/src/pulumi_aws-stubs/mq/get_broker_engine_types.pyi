@@ -34,7 +34,8 @@ class GetBrokerEngineTypesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetBrokerEngineTypesResult(GetBrokerEngineTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBrokerEngineTypesResult]:
+        ...
 
 def get_broker_engine_types(
     engine_type: Optional[_builtins.str] = ...,

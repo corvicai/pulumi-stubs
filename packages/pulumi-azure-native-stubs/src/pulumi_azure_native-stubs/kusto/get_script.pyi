@@ -64,7 +64,8 @@ class GetScriptResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScriptResult(GetScriptResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScriptResult]:
+        ...
 
 def get_script(
     cluster_name: Optional[_builtins.str] = ...,

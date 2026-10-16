@@ -34,7 +34,8 @@ class GetConsentStoreIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetConsentStoreIamPolicyResult(GetConsentStoreIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConsentStoreIamPolicyResult]:
+        ...
 
 def get_consent_store_iam_policy(
     consent_store_id: Optional[_builtins.str] = ...,

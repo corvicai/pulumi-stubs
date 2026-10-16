@@ -34,7 +34,10 @@ class GetTransparentDataEncryptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTransparentDataEncryptionResult(GetTransparentDataEncryptionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTransparentDataEncryptionResult]:
+        ...
 
 def get_transparent_data_encryption(
     database_name: Optional[_builtins.str] = ...,

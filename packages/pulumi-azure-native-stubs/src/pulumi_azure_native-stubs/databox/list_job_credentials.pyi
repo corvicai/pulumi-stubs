@@ -24,7 +24,8 @@ class ListJobCredentialsResult:
     def value(self) -> Optional[Sequence[outputs.UnencryptedCredentialsResponse]]: ...
 
 class AwaitableListJobCredentialsResult(ListJobCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListJobCredentialsResult]:
+        ...
 
 def list_job_credentials(
     job_name: Optional[_builtins.str] = ...,

@@ -63,7 +63,8 @@ class GetPublicKeyResult:
     def signing_algorithms(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetPublicKeyResult(GetPublicKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublicKeyResult]:
+        ...
 
 def get_public_key(
     grant_tokens: Optional[Sequence[_builtins.str]] = ...,

@@ -24,7 +24,8 @@ class ListServiceGroupAncestorsResult:
     def value(self) -> Optional[Sequence[outputs.ServiceGroupResponse]]: ...
 
 class AwaitableListServiceGroupAncestorsResult(ListServiceGroupAncestorsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListServiceGroupAncestorsResult]:
+        ...
 
 def list_service_group_ancestors(
     service_group_name: Optional[_builtins.str] = ...,

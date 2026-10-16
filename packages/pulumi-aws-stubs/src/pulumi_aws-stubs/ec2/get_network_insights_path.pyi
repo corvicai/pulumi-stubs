@@ -91,7 +91,8 @@ class GetNetworkInsightsPathResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetNetworkInsightsPathResult(GetNetworkInsightsPathResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkInsightsPathResult]:
+        ...
 
 def get_network_insights_path(
     filters: Optional[

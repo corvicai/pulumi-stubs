@@ -22,12 +22,16 @@ class ConsentStoreArgs:
     @pulumi.getter
     def dataset(self) -> pulumi.Input[_builtins.str]: ...
     @dataset.setter
-    def dataset(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultConsentTtl")
     def default_consent_ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_consent_ttl.setter
-    def default_consent_ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_consent_ttl(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableConsentCreateOnUpdate")
     def enable_consent_create_on_update(
@@ -36,7 +40,8 @@ class ConsentStoreArgs:
     @enable_consent_create_on_update.setter
     def enable_consent_create_on_update(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -45,12 +50,14 @@ class ConsentStoreArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConsentStoreState:
@@ -73,12 +80,16 @@ class _ConsentStoreState:
     @pulumi.getter
     def dataset(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset.setter
-    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultConsentTtl")
     def default_consent_ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_consent_ttl.setter
-    def default_consent_ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_consent_ttl(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -87,7 +98,8 @@ class _ConsentStoreState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableConsentCreateOnUpdate")
     def enable_consent_create_on_update(
@@ -96,7 +108,8 @@ class _ConsentStoreState:
     @enable_consent_create_on_update.setter
     def enable_consent_create_on_update(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -105,12 +118,14 @@ class _ConsentStoreState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -119,7 +134,8 @@ class _ConsentStoreState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:healthcare/consentStore:ConsentStore")
 class ConsentStore(pulumi.CustomResource):

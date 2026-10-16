@@ -24,7 +24,10 @@ class ListFeaturesetVersionFeaturesResult:
     def value(self) -> Optional[Sequence[outputs.FeatureResponse]]: ...
 
 class AwaitableListFeaturesetVersionFeaturesResult(ListFeaturesetVersionFeaturesResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListFeaturesetVersionFeaturesResult]:
+        ...
 
 def list_featureset_version_features(
     name: Optional[_builtins.str] = ...,

@@ -38,32 +38,40 @@ class PimRoleEligibilityScheduleArgs:
     @pulumi.getter(name="principalId")
     def principal_id(self) -> pulumi.Input[_builtins.str]: ...
     @principal_id.setter
-    def principal_id(self, value: pulumi.Input[_builtins.str]): ...
+    def principal_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleDefinitionId")
     def role_definition_id(self) -> pulumi.Input[_builtins.str]: ...
     @role_definition_id.setter
-    def role_definition_id(self, value: pulumi.Input[_builtins.str]): ...
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def condition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def condition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionVersion")
     def condition_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @condition_version.setter
-    def condition_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def condition_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def justification(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @justification.setter
-    def justification(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def justification(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleInfo")
     def schedule_info(
@@ -77,7 +85,8 @@ class PimRoleEligibilityScheduleArgs:
         value: Optional[
             pulumi.Input[RoleEligibilityScheduleRequestPropertiesScheduleInfoArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetRoleEligibilityScheduleId")
     def target_role_eligibility_schedule_id(
@@ -86,7 +95,8 @@ class PimRoleEligibilityScheduleArgs:
     @target_role_eligibility_schedule_id.setter
     def target_role_eligibility_schedule_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetRoleEligibilityScheduleInstanceId")
     def target_role_eligibility_schedule_instance_id(
@@ -95,7 +105,8 @@ class PimRoleEligibilityScheduleArgs:
     @target_role_eligibility_schedule_instance_id.setter
     def target_role_eligibility_schedule_instance_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ticketInfo")
     def ticket_info(
@@ -109,7 +120,8 @@ class PimRoleEligibilityScheduleArgs:
         value: Optional[
             pulumi.Input[RoleEligibilityScheduleRequestPropertiesTicketInfoArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PimRoleEligibilitySchedule(pulumi.CustomResource):

@@ -51,32 +51,44 @@ class BigDataPoolArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoPause")
     def auto_pause(self) -> Optional[pulumi.Input[AutoPausePropertiesArgs]]: ...
     @auto_pause.setter
-    def auto_pause(self, value: Optional[pulumi.Input[AutoPausePropertiesArgs]]): ...
+    def auto_pause(
+        self, value: Optional[pulumi.Input[AutoPausePropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScale")
     def auto_scale(self) -> Optional[pulumi.Input[AutoScalePropertiesArgs]]: ...
     @auto_scale.setter
-    def auto_scale(self, value: Optional[pulumi.Input[AutoScalePropertiesArgs]]): ...
+    def auto_scale(
+        self, value: Optional[pulumi.Input[AutoScalePropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigDataPoolName")
     def big_data_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @big_data_pool_name.setter
-    def big_data_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def big_data_pool_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheSize")
     def cache_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @cache_size.setter
-    def cache_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def cache_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customLibraries")
     def custom_libraries(
@@ -85,14 +97,16 @@ class BigDataPoolArgs:
     @custom_libraries.setter
     def custom_libraries(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[LibraryInfoArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultSparkLogFolder")
     def default_spark_log_folder(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_spark_log_folder.setter
     def default_spark_log_folder(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamicExecutorAllocation")
     def dynamic_executor_allocation(
@@ -101,17 +115,22 @@ class BigDataPoolArgs:
     @dynamic_executor_allocation.setter
     def dynamic_executor_allocation(
         self, value: Optional[pulumi.Input[DynamicExecutorAllocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def force(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force.setter
-    def force(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isAutotuneEnabled")
     def is_autotune_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_autotune_enabled.setter
-    def is_autotune_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_autotune_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isComputeIsolationEnabled")
     def is_compute_isolation_enabled(
@@ -120,7 +139,8 @@ class BigDataPoolArgs:
     @is_compute_isolation_enabled.setter
     def is_compute_isolation_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="libraryRequirements")
     def library_requirements(
@@ -129,24 +149,28 @@ class BigDataPoolArgs:
     @library_requirements.setter
     def library_requirements(
         self, value: Optional[pulumi.Input[LibraryRequirementsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeCount")
     def node_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @node_count.setter
-    def node_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def node_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeSize")
     def node_size(self) -> Optional[pulumi.Input[Union[_builtins.str, NodeSize]]]: ...
     @node_size.setter
     def node_size(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NodeSize]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeSizeFamily")
     def node_size_family(
@@ -155,12 +179,16 @@ class BigDataPoolArgs:
     @node_size_family.setter
     def node_size_family(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NodeSizeFamily]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioning_state.setter
-    def provisioning_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provisioning_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionLevelPackagesEnabled")
     def session_level_packages_enabled(
@@ -169,7 +197,8 @@ class BigDataPoolArgs:
     @session_level_packages_enabled.setter
     def session_level_packages_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkConfigProperties")
     def spark_config_properties(
@@ -178,17 +207,22 @@ class BigDataPoolArgs:
     @spark_config_properties.setter
     def spark_config_properties(
         self, value: Optional[pulumi.Input[SparkConfigPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkEventsFolder")
     def spark_events_folder(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spark_events_folder.setter
-    def spark_events_folder(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spark_events_folder(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkVersion")
     def spark_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spark_version.setter
-    def spark_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spark_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -197,7 +231,8 @@ class BigDataPoolArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:synapse:BigDataPool")
 class BigDataPool(pulumi.CustomResource):

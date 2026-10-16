@@ -75,7 +75,8 @@ class GetObjectsResult:
     def start_after(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetObjectsResult(GetObjectsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetObjectsResult]:
+        ...
 
 def get_objects(
     bucket: Optional[_builtins.str] = ...,

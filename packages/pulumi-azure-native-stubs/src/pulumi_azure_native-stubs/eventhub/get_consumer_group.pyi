@@ -56,7 +56,8 @@ class GetConsumerGroupResult:
     def user_metadata(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetConsumerGroupResult(GetConsumerGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConsumerGroupResult]:
+        ...
 
 def get_consumer_group(
     consumer_group_name: Optional[_builtins.str] = ...,

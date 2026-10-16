@@ -206,7 +206,8 @@ class GetRegionBackendServiceResult:
     ) -> Sequence[outputs.GetRegionBackendServiceTlsSettingResult]: ...
 
 class AwaitableGetRegionBackendServiceResult(GetRegionBackendServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionBackendServiceResult]:
+        ...
 
 def get_region_backend_service(
     name: Optional[_builtins.str] = ...,

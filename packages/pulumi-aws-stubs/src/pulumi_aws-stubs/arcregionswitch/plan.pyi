@@ -37,17 +37,22 @@ class PlanArgs:
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> pulumi.Input[_builtins.str]: ...
     @execution_role.setter
-    def execution_role(self, value: pulumi.Input[_builtins.str]): ...
+    def execution_role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryApproach")
     def recovery_approach(self) -> pulumi.Input[_builtins.str]: ...
     @recovery_approach.setter
-    def recovery_approach(self, value: pulumi.Input[_builtins.str]): ...
+    def recovery_approach(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @regions.setter
-    def regions(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def regions(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedAlarms")
     def associated_alarms(
@@ -57,22 +62,26 @@ class PlanArgs:
     def associated_alarms(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanAssociatedAlarmArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryRegion")
     def primary_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_region.setter
-    def primary_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryTimeObjectiveMinutes")
     def recovery_time_objective_minutes(
@@ -81,13 +90,15 @@ class PlanArgs:
     @recovery_time_objective_minutes.setter
     def recovery_time_objective_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -96,12 +107,14 @@ class PlanArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[PlanTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[PlanTimeoutsArgs]]): ...
+    def timeouts(self, value: Optional[pulumi.Input[PlanTimeoutsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -110,7 +123,8 @@ class PlanArgs:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanTriggerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def workflows(
@@ -119,7 +133,8 @@ class PlanArgs:
     @workflows.setter
     def workflows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanWorkflowArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PlanState:
@@ -152,7 +167,8 @@ class _PlanState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedAlarms")
     def associated_alarms(
@@ -162,32 +178,40 @@ class _PlanState:
     def associated_alarms(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanAssociatedAlarmArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryRegion")
     def primary_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_region.setter
-    def primary_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryApproach")
     def recovery_approach(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_approach.setter
-    def recovery_approach(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_approach(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryTimeObjectiveMinutes")
     def recovery_time_objective_minutes(
@@ -196,13 +220,15 @@ class _PlanState:
     @recovery_time_objective_minutes.setter
     def recovery_time_objective_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -211,7 +237,8 @@ class _PlanState:
     @regions.setter
     def regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -220,7 +247,8 @@ class _PlanState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -229,12 +257,14 @@ class _PlanState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[PlanTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[PlanTimeoutsArgs]]): ...
+    def timeouts(self, value: Optional[pulumi.Input[PlanTimeoutsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -243,7 +273,8 @@ class _PlanState:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanTriggerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def workflows(
@@ -252,7 +283,8 @@ class _PlanState:
     @workflows.setter
     def workflows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanWorkflowArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:arcregionswitch/plan:Plan")
 class Plan(pulumi.CustomResource):

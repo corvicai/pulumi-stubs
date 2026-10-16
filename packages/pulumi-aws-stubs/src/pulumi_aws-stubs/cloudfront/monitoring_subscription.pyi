@@ -23,7 +23,8 @@ class MonitoringSubscriptionArgs:
     @pulumi.getter(name="distributionId")
     def distribution_id(self) -> pulumi.Input[_builtins.str]: ...
     @distribution_id.setter
-    def distribution_id(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringSubscription")
     def monitoring_subscription(
@@ -32,7 +33,8 @@ class MonitoringSubscriptionArgs:
     @monitoring_subscription.setter
     def monitoring_subscription(
         self, value: pulumi.Input[MonitoringSubscriptionMonitoringSubscriptionArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _MonitoringSubscriptionState:
@@ -48,7 +50,8 @@ class _MonitoringSubscriptionState:
     @pulumi.getter(name="distributionId")
     def distribution_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @distribution_id.setter
-    def distribution_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def distribution_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringSubscription")
     def monitoring_subscription(
@@ -58,7 +61,8 @@ class _MonitoringSubscriptionState:
     def monitoring_subscription(
         self,
         value: Optional[pulumi.Input[MonitoringSubscriptionMonitoringSubscriptionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class MonitoringSubscription(pulumi.CustomResource):

@@ -29,7 +29,8 @@ class GetClusterAuthResult:
     def token(self) -> _builtins.str: ...
 
 class AwaitableGetClusterAuthResult(GetClusterAuthResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterAuthResult]:
+        ...
 
 def get_cluster_auth(
     name: Optional[_builtins.str] = ...,

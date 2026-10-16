@@ -57,7 +57,8 @@ class GetAmiIdsResult:
     def sort_ascending(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetAmiIdsResult(GetAmiIdsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAmiIdsResult]:
+        ...
 
 def get_ami_ids(
     executable_users: Optional[Sequence[_builtins.str]] = ...,

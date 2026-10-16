@@ -84,7 +84,8 @@ class GetServiceGatewayResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetServiceGatewayResult(GetServiceGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceGatewayResult]:
+        ...
 
 def get_service_gateway(
     resource_group_name: Optional[_builtins.str] = ...,

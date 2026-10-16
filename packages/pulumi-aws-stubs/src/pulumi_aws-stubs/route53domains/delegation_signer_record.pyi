@@ -24,7 +24,8 @@ class DelegationSignerRecordArgs:
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signingAttributes")
     def signing_attributes(
@@ -33,7 +34,8 @@ class DelegationSignerRecordArgs:
     @signing_attributes.setter
     def signing_attributes(
         self, value: Optional[pulumi.Input[DelegationSignerRecordSigningAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -42,7 +44,8 @@ class DelegationSignerRecordArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DelegationSignerRecordTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DelegationSignerRecordState:
@@ -60,12 +63,14 @@ class _DelegationSignerRecordState:
     @pulumi.getter(name="dnssecKeyId")
     def dnssec_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dnssec_key_id.setter
-    def dnssec_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dnssec_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signingAttributes")
     def signing_attributes(
@@ -74,7 +79,8 @@ class _DelegationSignerRecordState:
     @signing_attributes.setter
     def signing_attributes(
         self, value: Optional[pulumi.Input[DelegationSignerRecordSigningAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -83,7 +89,8 @@ class _DelegationSignerRecordState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DelegationSignerRecordTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DelegationSignerRecord(pulumi.CustomResource):

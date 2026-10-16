@@ -52,7 +52,8 @@ class GetEc2AccountAttributeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2AccountAttributeResult(GetEc2AccountAttributeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2AccountAttributeResult]:
+        ...
 
 def get_ec2_account_attribute(
     name: Optional[_builtins.str] = ...,

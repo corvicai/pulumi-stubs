@@ -250,7 +250,8 @@ class GetAvsAssessmentsOperationResult:
     def vcpu_oversubscription(self) -> Optional[_builtins.float]: ...
 
 class AwaitableGetAvsAssessmentsOperationResult(GetAvsAssessmentsOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAvsAssessmentsOperationResult]:
+        ...
 
 def get_avs_assessments_operation(
     assessment_name: Optional[_builtins.str] = ...,

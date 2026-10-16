@@ -43,7 +43,8 @@ class LinkLinkConfigurationArgs:
     def log_group_configuration(
         self,
         value: Optional[pulumi.Input[LinkLinkConfigurationLogGroupConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricConfiguration")
     def metric_configuration(
@@ -53,7 +54,8 @@ class LinkLinkConfigurationArgs:
     def metric_configuration(
         self,
         value: Optional[pulumi.Input[LinkLinkConfigurationMetricConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LinkLinkConfigurationLogGroupConfigurationArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
@@ -65,7 +67,8 @@ class LinkLinkConfigurationLogGroupConfigurationArgs:
     @pulumi.getter
     def filter(self) -> pulumi.Input[_builtins.str]: ...
     @filter.setter
-    def filter(self, value: pulumi.Input[_builtins.str]): ...
+    def filter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class LinkLinkConfigurationMetricConfigurationArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
@@ -77,4 +80,5 @@ class LinkLinkConfigurationMetricConfigurationArgs:
     @pulumi.getter
     def filter(self) -> pulumi.Input[_builtins.str]: ...
     @filter.setter
-    def filter(self, value: pulumi.Input[_builtins.str]): ...
+    def filter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

@@ -52,7 +52,8 @@ class GetEc2KeyPairResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2KeyPairResult(GetEc2KeyPairResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2KeyPairResult]:
+        ...
 
 def get_ec2_key_pair(
     name: Optional[_builtins.str] = ...,

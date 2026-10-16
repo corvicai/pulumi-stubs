@@ -24,7 +24,8 @@ class GetUserSettingsResult:
     def properties(self) -> outputs.UserPropertiesResponse: ...
 
 class AwaitableGetUserSettingsResult(GetUserSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserSettingsResult]:
+        ...
 
 def get_user_settings(
     user_settings_name: Optional[_builtins.str] = ...,

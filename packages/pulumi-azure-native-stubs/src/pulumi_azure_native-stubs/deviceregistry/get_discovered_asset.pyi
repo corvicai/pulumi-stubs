@@ -120,7 +120,8 @@ class GetDiscoveredAssetResult:
     def version(self) -> _builtins.float: ...
 
 class AwaitableGetDiscoveredAssetResult(GetDiscoveredAssetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiscoveredAssetResult]:
+        ...
 
 def get_discovered_asset(
     discovered_asset_name: Optional[_builtins.str] = ...,

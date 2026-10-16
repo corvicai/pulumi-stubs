@@ -24,7 +24,8 @@ class ListConnectionAllModelsResult:
     def value(self) -> Optional[Sequence[outputs.EndpointModelPropertiesResponse]]: ...
 
 class AwaitableListConnectionAllModelsResult(ListConnectionAllModelsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListConnectionAllModelsResult]:
+        ...
 
 def list_connection_all_models(
     resource_group_name: Optional[_builtins.str] = ...,

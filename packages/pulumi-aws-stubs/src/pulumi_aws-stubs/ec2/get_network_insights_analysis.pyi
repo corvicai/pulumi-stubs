@@ -99,7 +99,8 @@ class GetNetworkInsightsAnalysisResult:
     def warning_message(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkInsightsAnalysisResult(GetNetworkInsightsAnalysisResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkInsightsAnalysisResult]:
+        ...
 
 def get_network_insights_analysis(
     filters: Optional[

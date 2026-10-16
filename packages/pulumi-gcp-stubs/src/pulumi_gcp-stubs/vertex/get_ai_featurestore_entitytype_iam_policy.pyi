@@ -36,7 +36,10 @@ class GetAiFeaturestoreEntitytypeIamPolicyResult:
 class AwaitableGetAiFeaturestoreEntitytypeIamPolicyResult(
     GetAiFeaturestoreEntitytypeIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAiFeaturestoreEntitytypeIamPolicyResult]:
+        ...
 
 def get_ai_featurestore_entitytype_iam_policy(
     entitytype: Optional[_builtins.str] = ...,

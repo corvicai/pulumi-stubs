@@ -22,12 +22,14 @@ class FindingAggregatorArgs:
     @pulumi.getter(name="linkingMode")
     def linking_mode(self) -> pulumi.Input[_builtins.str]: ...
     @linking_mode.setter
-    def linking_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def linking_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specifiedRegions")
     def specified_regions(
@@ -36,7 +38,8 @@ class FindingAggregatorArgs:
     @specified_regions.setter
     def specified_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FindingAggregatorState:
@@ -53,12 +56,14 @@ class _FindingAggregatorState:
     @pulumi.getter(name="linkingMode")
     def linking_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @linking_mode.setter
-    def linking_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def linking_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specifiedRegions")
     def specified_regions(
@@ -67,7 +72,8 @@ class _FindingAggregatorState:
     @specified_regions.setter
     def specified_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class FindingAggregator(pulumi.CustomResource):

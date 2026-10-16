@@ -56,7 +56,8 @@ class GetAdministratorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAdministratorResult(GetAdministratorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAdministratorResult]:
+        ...
 
 def get_administrator(
     object_id: Optional[_builtins.str] = ...,

@@ -90,7 +90,8 @@ class GetExternalNetworkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetExternalNetworkResult(GetExternalNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExternalNetworkResult]:
+        ...
 
 def get_external_network(
     external_network_name: Optional[_builtins.str] = ...,

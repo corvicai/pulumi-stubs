@@ -46,7 +46,10 @@ class ListProvisionedClusterInstanceUserKubeconfigResult:
 class AwaitableListProvisionedClusterInstanceUserKubeconfigResult(
     ListProvisionedClusterInstanceUserKubeconfigResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListProvisionedClusterInstanceUserKubeconfigResult]:
+        ...
 
 def list_provisioned_cluster_instance_user_kubeconfig(
     connected_cluster_resource_uri: Optional[_builtins.str] = ...,

@@ -54,7 +54,10 @@ class GetManagementLockAtResourceGroupLevelResult:
 class AwaitableGetManagementLockAtResourceGroupLevelResult(
     GetManagementLockAtResourceGroupLevelResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagementLockAtResourceGroupLevelResult]:
+        ...
 
 def get_management_lock_at_resource_group_level(
     lock_name: Optional[_builtins.str] = ...,

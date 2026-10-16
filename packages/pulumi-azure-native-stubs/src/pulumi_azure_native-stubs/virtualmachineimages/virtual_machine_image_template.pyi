@@ -95,17 +95,20 @@ class VirtualMachineImageTemplateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> pulumi.Input[ImageTemplateIdentityArgs]: ...
     @identity.setter
-    def identity(self, value: pulumi.Input[ImageTemplateIdentityArgs]): ...
+    def identity(self, value: pulumi.Input[ImageTemplateIdentityArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(
@@ -127,19 +130,24 @@ class VirtualMachineImageTemplateArgs:
                 ImageTemplateSharedImageVersionSourceArgs,
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoRun")
     def auto_run(self) -> Optional[pulumi.Input[ImageTemplateAutoRunArgs]]: ...
     @auto_run.setter
-    def auto_run(self, value: Optional[pulumi.Input[ImageTemplateAutoRunArgs]]): ...
+    def auto_run(
+        self, value: Optional[pulumi.Input[ImageTemplateAutoRunArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="buildTimeoutInMinutes")
     def build_timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @build_timeout_in_minutes.setter
     def build_timeout_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def customize(
@@ -177,7 +185,8 @@ class VirtualMachineImageTemplateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorHandling")
     def error_handling(
@@ -186,17 +195,22 @@ class VirtualMachineImageTemplateArgs:
     @error_handling.setter
     def error_handling(
         self, value: Optional[pulumi.Input[ImageTemplatePropertiesErrorHandlingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTemplateName")
     def image_template_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_template_name.setter
-    def image_template_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_template_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedResourceTags")
     def managed_resource_tags(
@@ -205,7 +219,8 @@ class VirtualMachineImageTemplateArgs:
     @managed_resource_tags.setter
     def managed_resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def optimize(
@@ -214,12 +229,16 @@ class VirtualMachineImageTemplateArgs:
     @optimize.setter
     def optimize(
         self, value: Optional[pulumi.Input[ImageTemplatePropertiesOptimizeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingResourceGroup")
     def staging_resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @staging_resource_group.setter
-    def staging_resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def staging_resource_group(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -228,7 +247,8 @@ class VirtualMachineImageTemplateArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def validate(
@@ -237,12 +257,16 @@ class VirtualMachineImageTemplateArgs:
     @validate.setter
     def validate(
         self, value: Optional[pulumi.Input[ImageTemplatePropertiesValidateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmProfile")
     def vm_profile(self) -> Optional[pulumi.Input[ImageTemplateVmProfileArgs]]: ...
     @vm_profile.setter
-    def vm_profile(self, value: Optional[pulumi.Input[ImageTemplateVmProfileArgs]]): ...
+    def vm_profile(
+        self, value: Optional[pulumi.Input[ImageTemplateVmProfileArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class VirtualMachineImageTemplate(pulumi.CustomResource):

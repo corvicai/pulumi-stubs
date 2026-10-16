@@ -34,7 +34,10 @@ class GetWebTypeAppEngineIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetWebTypeAppEngineIamPolicyResult(GetWebTypeAppEngineIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebTypeAppEngineIamPolicyResult]:
+        ...
 
 def get_web_type_app_engine_iam_policy(
     app_id: Optional[_builtins.str] = ...,

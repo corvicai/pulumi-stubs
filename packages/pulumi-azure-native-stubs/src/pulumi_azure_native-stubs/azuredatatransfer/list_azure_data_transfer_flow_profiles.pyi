@@ -23,7 +23,10 @@ class ListAzureDataTransferFlowProfilesResult:
 class AwaitableListAzureDataTransferFlowProfilesResult(
     ListAzureDataTransferFlowProfilesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListAzureDataTransferFlowProfilesResult]:
+        ...
 
 def list_azure_data_transfer_flow_profiles(
     pipeline: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

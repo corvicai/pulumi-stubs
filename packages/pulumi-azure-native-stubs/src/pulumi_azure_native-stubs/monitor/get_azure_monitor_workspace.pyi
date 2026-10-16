@@ -80,7 +80,8 @@ class GetAzureMonitorWorkspaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAzureMonitorWorkspaceResult(GetAzureMonitorWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureMonitorWorkspaceResult]:
+        ...
 
 def get_azure_monitor_workspace(
     azure_monitor_workspace_name: Optional[_builtins.str] = ...,

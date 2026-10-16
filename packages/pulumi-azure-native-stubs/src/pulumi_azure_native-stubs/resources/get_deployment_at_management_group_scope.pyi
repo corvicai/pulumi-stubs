@@ -50,7 +50,10 @@ class GetDeploymentAtManagementGroupScopeResult:
 class AwaitableGetDeploymentAtManagementGroupScopeResult(
     GetDeploymentAtManagementGroupScopeResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeploymentAtManagementGroupScopeResult]:
+        ...
 
 def get_deployment_at_management_group_scope(
     deployment_name: Optional[_builtins.str] = ...,

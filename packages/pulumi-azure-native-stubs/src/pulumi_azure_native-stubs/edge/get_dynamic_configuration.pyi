@@ -44,7 +44,8 @@ class GetDynamicConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDynamicConfigurationResult(GetDynamicConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDynamicConfigurationResult]:
+        ...
 
 def get_dynamic_configuration(
     configuration_name: Optional[_builtins.str] = ...,

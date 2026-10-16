@@ -28,7 +28,10 @@ class GetDefaultScraperConfigurationResult:
 class AwaitableGetDefaultScraperConfigurationResult(
     GetDefaultScraperConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDefaultScraperConfigurationResult]:
+        ...
 
 def get_default_scraper_configuration(
     region: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

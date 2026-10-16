@@ -27,7 +27,10 @@ class ListWorkflowAccessKeySecretKeysResult:
 class AwaitableListWorkflowAccessKeySecretKeysResult(
     ListWorkflowAccessKeySecretKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkflowAccessKeySecretKeysResult]:
+        ...
 
 def list_workflow_access_key_secret_keys(
     access_key_name: Optional[_builtins.str] = ...,

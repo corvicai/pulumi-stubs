@@ -51,7 +51,8 @@ class GetPolicyFragmentResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyFragmentResult(GetPolicyFragmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyFragmentResult]:
+        ...
 
 def get_policy_fragment(
     format: Optional[_builtins.str] = ...,

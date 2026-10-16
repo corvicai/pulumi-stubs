@@ -32,12 +32,14 @@ class ProjectKajPolicyConfigArgs:
         value: Optional[
             pulumi.Input[ProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ProjectKajPolicyConfigState:
@@ -62,12 +64,14 @@ class _ProjectKajPolicyConfigState:
         value: Optional[
             pulumi.Input[ProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ProjectKajPolicyConfig(pulumi.CustomResource):

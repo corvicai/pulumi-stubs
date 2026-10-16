@@ -126,7 +126,8 @@ class GetContainerAppResult:
     def workload_profile_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetContainerAppResult(GetContainerAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerAppResult]:
+        ...
 
 def get_container_app(
     container_app_name: Optional[_builtins.str] = ...,

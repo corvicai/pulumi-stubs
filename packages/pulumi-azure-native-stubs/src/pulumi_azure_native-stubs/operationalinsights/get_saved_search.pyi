@@ -68,7 +68,8 @@ class GetSavedSearchResult:
     def version(self) -> Optional[_builtins.float]: ...
 
 class AwaitableGetSavedSearchResult(GetSavedSearchResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSavedSearchResult]:
+        ...
 
 def get_saved_search(
     resource_group_name: Optional[_builtins.str] = ...,

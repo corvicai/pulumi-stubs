@@ -23,7 +23,10 @@ class ListNetworkManagerEffectiveConnectivityConfigurationsResult:
 class AwaitableListNetworkManagerEffectiveConnectivityConfigurationsResult(
     ListNetworkManagerEffectiveConnectivityConfigurationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListNetworkManagerEffectiveConnectivityConfigurationsResult]:
+        ...
 
 def list_network_manager_effective_connectivity_configurations(
     resource_group_name: Optional[_builtins.str] = ...,

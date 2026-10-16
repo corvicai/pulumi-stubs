@@ -48,7 +48,8 @@ class GetVMSkusResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVMSkusResult(GetVMSkusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVMSkusResult]:
+        ...
 
 def get_vm_skus(
     custom_location_resource_uri: Optional[_builtins.str] = ...,

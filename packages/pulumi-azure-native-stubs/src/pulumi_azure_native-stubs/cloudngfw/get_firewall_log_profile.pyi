@@ -48,7 +48,8 @@ class GetFirewallLogProfileResult:
     def traffic_log_destination(self) -> Optional[outputs.LogDestinationResponse]: ...
 
 class AwaitableGetFirewallLogProfileResult(GetFirewallLogProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirewallLogProfileResult]:
+        ...
 
 def get_firewall_log_profile(
     firewall_name: Optional[_builtins.str] = ...,

@@ -59,7 +59,10 @@ class GetSingleServerConfigurationResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSingleServerConfigurationResult(GetSingleServerConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSingleServerConfigurationResult]:
+        ...
 
 def get_single_server_configuration(
     configuration_name: Optional[_builtins.str] = ...,

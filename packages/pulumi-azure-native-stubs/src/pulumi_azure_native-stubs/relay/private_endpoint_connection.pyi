@@ -30,17 +30,22 @@ class PrivateEndpointConnectionInitArgs:
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> pulumi.Input[_builtins.str]: ...
     @namespace_name.setter
-    def namespace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpoint")
     def private_endpoint(self) -> Optional[pulumi.Input[PrivateEndpointArgs]]: ...
     @private_endpoint.setter
-    def private_endpoint(self, value: Optional[pulumi.Input[PrivateEndpointArgs]]): ...
+    def private_endpoint(
+        self, value: Optional[pulumi.Input[PrivateEndpointArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnectionName")
     def private_endpoint_connection_name(
@@ -49,7 +54,8 @@ class PrivateEndpointConnectionInitArgs:
     @private_endpoint_connection_name.setter
     def private_endpoint_connection_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -58,7 +64,8 @@ class PrivateEndpointConnectionInitArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: Optional[pulumi.Input[ConnectionStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -68,7 +75,8 @@ class PrivateEndpointConnectionInitArgs:
     def provisioning_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, EndPointProvisioningState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:relay:PrivateEndpointConnection")
 class PrivateEndpointConnection(pulumi.CustomResource):

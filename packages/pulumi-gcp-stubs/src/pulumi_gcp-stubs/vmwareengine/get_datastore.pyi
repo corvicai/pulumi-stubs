@@ -64,7 +64,8 @@ class GetDatastoreResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetDatastoreResult(GetDatastoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatastoreResult]:
+        ...
 
 def get_datastore(
     location: Optional[_builtins.str] = ...,

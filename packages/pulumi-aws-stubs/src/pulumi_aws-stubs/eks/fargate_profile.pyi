@@ -26,12 +26,14 @@ class FargateProfileArgs:
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_name.setter
-    def cluster_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="podExecutionRoleArn")
     def pod_execution_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @pod_execution_role_arn.setter
-    def pod_execution_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def pod_execution_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selectors(
@@ -40,17 +42,22 @@ class FargateProfileArgs:
     @selectors.setter
     def selectors(
         self, value: pulumi.Input[Sequence[pulumi.Input[FargateProfileSelectorArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fargateProfileName")
     def fargate_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fargate_profile_name.setter
-    def fargate_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fargate_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -59,7 +66,8 @@ class FargateProfileArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -68,7 +76,8 @@ class FargateProfileArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FargateProfileState:
@@ -94,27 +103,36 @@ class _FargateProfileState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fargateProfileName")
     def fargate_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fargate_profile_name.setter
-    def fargate_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fargate_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="podExecutionRoleArn")
     def pod_execution_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pod_execution_role_arn.setter
-    def pod_execution_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pod_execution_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selectors(
@@ -126,12 +144,14 @@ class _FargateProfileState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FargateProfileSelectorArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -140,7 +160,8 @@ class _FargateProfileState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -149,7 +170,8 @@ class _FargateProfileState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -158,7 +180,8 @@ class _FargateProfileState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:eks/fargateProfile:FargateProfile")
 class FargateProfile(pulumi.CustomResource):

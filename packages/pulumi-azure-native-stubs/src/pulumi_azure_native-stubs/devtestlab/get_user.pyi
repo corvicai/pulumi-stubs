@@ -63,7 +63,8 @@ class GetUserResult:
     def unique_identifier(self) -> _builtins.str: ...
 
 class AwaitableGetUserResult(GetUserResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserResult]:
+        ...
 
 def get_user(
     expand: Optional[_builtins.str] = ...,

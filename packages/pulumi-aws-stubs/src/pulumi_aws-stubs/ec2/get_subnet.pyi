@@ -125,7 +125,8 @@ class GetSubnetResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetSubnetResult(GetSubnetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetResult]:
+        ...
 
 def get_subnet(
     availability_zone: Optional[_builtins.str] = ...,

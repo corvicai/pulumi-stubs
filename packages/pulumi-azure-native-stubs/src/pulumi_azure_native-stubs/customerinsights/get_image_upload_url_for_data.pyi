@@ -28,7 +28,8 @@ class GetImageUploadUrlForDataResult:
     def relative_path(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetImageUploadUrlForDataResult(GetImageUploadUrlForDataResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImageUploadUrlForDataResult]:
+        ...
 
 def get_image_upload_url_for_data(
     entity_type: Optional[_builtins.str] = ...,

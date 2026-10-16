@@ -60,7 +60,10 @@ class GetServerGroupPrivateEndpointConnectionResult:
 class AwaitableGetServerGroupPrivateEndpointConnectionResult(
     GetServerGroupPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServerGroupPrivateEndpointConnectionResult]:
+        ...
 
 def get_server_group_private_endpoint_connection(
     cluster_name: Optional[_builtins.str] = ...,

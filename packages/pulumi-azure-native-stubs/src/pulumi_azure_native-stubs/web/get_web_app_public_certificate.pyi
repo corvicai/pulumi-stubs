@@ -51,7 +51,8 @@ class GetWebAppPublicCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppPublicCertificateResult(GetWebAppPublicCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppPublicCertificateResult]:
+        ...
 
 def get_web_app_public_certificate(
     name: Optional[_builtins.str] = ...,

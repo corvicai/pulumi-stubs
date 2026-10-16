@@ -43,7 +43,8 @@ class GetTriggerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTriggerResult(GetTriggerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTriggerResult]:
+        ...
 
 def get_trigger(
     factory_name: Optional[_builtins.str] = ...,

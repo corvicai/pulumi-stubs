@@ -24,7 +24,8 @@ class SubscriptionNetworkManagerConnectionArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkManagerConnectionName")
     def network_manager_connection_name(
@@ -33,12 +34,16 @@ class SubscriptionNetworkManagerConnectionArgs:
     @network_manager_connection_name.setter
     def network_manager_connection_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkManagerId")
     def network_manager_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_manager_id.setter
-    def network_manager_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network_manager_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SubscriptionNetworkManagerConnection(pulumi.CustomResource):

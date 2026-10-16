@@ -23,7 +23,8 @@ class ListAdminKeyResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListAdminKeyResult(ListAdminKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAdminKeyResult]:
+        ...
 
 def list_admin_key(
     resource_group_name: Optional[_builtins.str] = ...,

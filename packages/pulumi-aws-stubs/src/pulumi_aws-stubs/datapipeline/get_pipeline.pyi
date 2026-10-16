@@ -43,7 +43,8 @@ class GetPipelineResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetPipelineResult(GetPipelineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPipelineResult]:
+        ...
 
 def get_pipeline(
     pipeline_id: Optional[_builtins.str] = ...,

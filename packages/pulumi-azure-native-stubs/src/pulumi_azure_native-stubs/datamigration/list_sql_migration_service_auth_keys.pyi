@@ -25,7 +25,10 @@ class ListSqlMigrationServiceAuthKeysResult:
 class AwaitableListSqlMigrationServiceAuthKeysResult(
     ListSqlMigrationServiceAuthKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSqlMigrationServiceAuthKeysResult]:
+        ...
 
 def list_sql_migration_service_auth_keys(
     resource_group_name: Optional[_builtins.str] = ...,

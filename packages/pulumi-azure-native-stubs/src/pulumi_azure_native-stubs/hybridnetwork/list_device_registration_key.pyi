@@ -20,7 +20,8 @@ class ListDeviceRegistrationKeyResult:
     def registration_key(self) -> _builtins.str: ...
 
 class AwaitableListDeviceRegistrationKeyResult(ListDeviceRegistrationKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDeviceRegistrationKeyResult]:
+        ...
 
 def list_device_registration_key(
     device_name: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class GetGatewayCustomDomainResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGatewayCustomDomainResult(GetGatewayCustomDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGatewayCustomDomainResult]:
+        ...
 
 def get_gateway_custom_domain(
     domain_name: Optional[_builtins.str] = ...,

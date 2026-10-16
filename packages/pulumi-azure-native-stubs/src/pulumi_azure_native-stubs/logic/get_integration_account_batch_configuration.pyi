@@ -50,7 +50,10 @@ class GetIntegrationAccountBatchConfigurationResult:
 class AwaitableGetIntegrationAccountBatchConfigurationResult(
     GetIntegrationAccountBatchConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationAccountBatchConfigurationResult]:
+        ...
 
 def get_integration_account_batch_configuration(
     batch_configuration_name: Optional[_builtins.str] = ...,

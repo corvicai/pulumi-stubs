@@ -36,7 +36,8 @@ class PartnerTopicArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activationState")
     def activation_state(
@@ -48,12 +49,16 @@ class PartnerTopicArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PartnerTopicActivationState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventTypeInfo")
     def event_type_info(self) -> Optional[pulumi.Input[EventTypeInfoArgs]]: ...
     @event_type_info.setter
-    def event_type_info(self, value: Optional[pulumi.Input[EventTypeInfoArgs]]): ...
+    def event_type_info(
+        self, value: Optional[pulumi.Input[EventTypeInfoArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirationTimeIfNotActivatedUtc")
     def expiration_time_if_not_activated_utc(
@@ -62,22 +67,28 @@ class PartnerTopicArgs:
     @expiration_time_if_not_activated_utc.setter
     def expiration_time_if_not_activated_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityInfoArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityInfoArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityInfoArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageForActivation")
     def message_for_activation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_for_activation.setter
-    def message_for_activation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_for_activation(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerRegistrationImmutableId")
     def partner_registration_immutable_id(
@@ -86,7 +97,8 @@ class PartnerTopicArgs:
     @partner_registration_immutable_id.setter
     def partner_registration_immutable_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerTopicFriendlyDescription")
     def partner_topic_friendly_description(
@@ -95,17 +107,22 @@ class PartnerTopicArgs:
     @partner_topic_friendly_description.setter
     def partner_topic_friendly_description(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerTopicName")
     def partner_topic_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partner_topic_name.setter
-    def partner_topic_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def partner_topic_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source.setter
-    def source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -114,7 +131,8 @@ class PartnerTopicArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:eventgrid:PartnerTopic")
 class PartnerTopic(pulumi.CustomResource):

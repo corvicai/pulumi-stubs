@@ -80,7 +80,8 @@ class GetPricingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPricingResult(GetPricingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPricingResult]:
+        ...
 
 def get_pricing(
     pricing_name: Optional[_builtins.str] = ...,

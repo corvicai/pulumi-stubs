@@ -28,7 +28,8 @@ class ListWebAppHostKeysSlotResult:
     def system_keys(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableListWebAppHostKeysSlotResult(ListWebAppHostKeysSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebAppHostKeysSlotResult]:
+        ...
 
 def list_web_app_host_keys_slot(
     name: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class GetReplicationRecoveryPlanResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationRecoveryPlanResult(GetReplicationRecoveryPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationRecoveryPlanResult]:
+        ...
 
 def get_replication_recovery_plan(
     recovery_plan_name: Optional[_builtins.str] = ...,

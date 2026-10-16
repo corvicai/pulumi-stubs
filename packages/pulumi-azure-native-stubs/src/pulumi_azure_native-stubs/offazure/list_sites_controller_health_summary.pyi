@@ -26,7 +26,10 @@ class ListSitesControllerHealthSummaryResult:
 class AwaitableListSitesControllerHealthSummaryResult(
     ListSitesControllerHealthSummaryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSitesControllerHealthSummaryResult]:
+        ...
 
 def list_sites_controller_health_summary(
     resource_group_name: Optional[_builtins.str] = ...,

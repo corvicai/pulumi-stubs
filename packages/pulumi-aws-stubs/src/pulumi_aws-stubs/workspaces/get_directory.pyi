@@ -130,7 +130,8 @@ class GetDirectoryResult:
     def workspace_type(self) -> _builtins.str: ...
 
 class AwaitableGetDirectoryResult(GetDirectoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDirectoryResult]:
+        ...
 
 def get_directory(
     directory_id: Optional[_builtins.str] = ...,

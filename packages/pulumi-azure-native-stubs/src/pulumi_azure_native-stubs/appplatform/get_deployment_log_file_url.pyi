@@ -20,7 +20,8 @@ class GetDeploymentLogFileUrlResult:
     def url(self) -> _builtins.str: ...
 
 class AwaitableGetDeploymentLogFileUrlResult(GetDeploymentLogFileUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeploymentLogFileUrlResult]:
+        ...
 
 def get_deployment_log_file_url(
     app_name: Optional[_builtins.str] = ...,

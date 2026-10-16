@@ -44,7 +44,8 @@ class GetBuildServiceBuildResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBuildServiceBuildResult(GetBuildServiceBuildResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBuildServiceBuildResult]:
+        ...
 
 def get_build_service_build(
     build_name: Optional[_builtins.str] = ...,

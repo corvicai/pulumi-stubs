@@ -61,7 +61,8 @@ class GetQueryLogConfigResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetQueryLogConfigResult(GetQueryLogConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueryLogConfigResult]:
+        ...
 
 def get_query_log_config(
     filters: Optional[

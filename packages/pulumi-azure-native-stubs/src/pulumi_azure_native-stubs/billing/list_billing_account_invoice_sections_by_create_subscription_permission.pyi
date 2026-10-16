@@ -23,7 +23,10 @@ class ListBillingAccountInvoiceSectionsByCreateSubscriptionPermissionResult:
 class AwaitableListBillingAccountInvoiceSectionsByCreateSubscriptionPermissionResult(
     ListBillingAccountInvoiceSectionsByCreateSubscriptionPermissionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListBillingAccountInvoiceSectionsByCreateSubscriptionPermissionResult]:
+        ...
 
 def list_billing_account_invoice_sections_by_create_subscription_permission(
     billing_account_name: Optional[_builtins.str] = ...,

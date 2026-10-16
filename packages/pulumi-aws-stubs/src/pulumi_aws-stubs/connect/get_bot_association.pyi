@@ -33,7 +33,8 @@ class GetBotAssociationResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetBotAssociationResult(GetBotAssociationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBotAssociationResult]:
+        ...
 
 def get_bot_association(
     instance_id: Optional[_builtins.str] = ...,

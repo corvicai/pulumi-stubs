@@ -35,7 +35,8 @@ class GetAgentAgentVersionsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetAgentAgentVersionsResult(GetAgentAgentVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAgentAgentVersionsResult]:
+        ...
 
 def get_agent_agent_versions(
     agent_id: Optional[_builtins.str] = ...,

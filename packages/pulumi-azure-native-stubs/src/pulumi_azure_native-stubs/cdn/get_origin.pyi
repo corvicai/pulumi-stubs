@@ -96,7 +96,8 @@ class GetOriginResult:
     def weight(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetOriginResult(GetOriginResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOriginResult]:
+        ...
 
 def get_origin(
     endpoint_name: Optional[_builtins.str] = ...,

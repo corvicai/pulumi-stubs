@@ -296,7 +296,8 @@ class GetManagedClusterResult:
     ) -> Optional[outputs.ManagedClusterWorkloadAutoScalerProfileResponse]: ...
 
 class AwaitableGetManagedClusterResult(GetManagedClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedClusterResult]:
+        ...
 
 def get_managed_cluster(
     resource_group_name: Optional[_builtins.str] = ...,

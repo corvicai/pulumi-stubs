@@ -56,7 +56,8 @@ class GetExperimentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetExperimentResult(GetExperimentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExperimentResult]:
+        ...
 
 def get_experiment(
     experiment_name: Optional[_builtins.str] = ...,

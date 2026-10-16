@@ -43,7 +43,8 @@ class GetAccountJwtResult:
     def target_service_account(self) -> _builtins.str: ...
 
 class AwaitableGetAccountJwtResult(GetAccountJwtResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountJwtResult]:
+        ...
 
 def get_account_jwt(
     delegates: Optional[Sequence[_builtins.str]] = ...,

@@ -47,7 +47,8 @@ class ListTopicKeysResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListTopicKeysResult(ListTopicKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListTopicKeysResult]:
+        ...
 
 def list_topic_keys(
     authorization_rule_name: Optional[_builtins.str] = ...,

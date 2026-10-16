@@ -20,7 +20,10 @@ class ListNetworkManagerEffectiveSecurityAdminRulesResult:
 class AwaitableListNetworkManagerEffectiveSecurityAdminRulesResult(
     ListNetworkManagerEffectiveSecurityAdminRulesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListNetworkManagerEffectiveSecurityAdminRulesResult]:
+        ...
 
 def list_network_manager_effective_security_admin_rules(
     resource_group_name: Optional[_builtins.str] = ...,

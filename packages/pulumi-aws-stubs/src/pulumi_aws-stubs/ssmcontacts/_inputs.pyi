@@ -28,7 +28,8 @@ class ContactChannelDeliveryAddressArgs:
     @pulumi.getter(name="simpleAddress")
     def simple_address(self) -> pulumi.Input[_builtins.str]: ...
     @simple_address.setter
-    def simple_address(self, value: pulumi.Input[_builtins.str]): ...
+    def simple_address(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PlanStageArgsDict(TypedDict):
     duration_in_minutes: pulumi.Input[_builtins.int]
@@ -48,7 +49,8 @@ class PlanStageArgs:
     @pulumi.getter(name="durationInMinutes")
     def duration_in_minutes(self) -> pulumi.Input[_builtins.int]: ...
     @duration_in_minutes.setter
-    def duration_in_minutes(self, value: pulumi.Input[_builtins.int]): ...
+    def duration_in_minutes(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(
@@ -57,7 +59,8 @@ class PlanStageArgs:
     @targets.setter
     def targets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanStageTargetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanStageTargetArgsDict(TypedDict):
     channel_target_info: NotRequired[
@@ -87,7 +90,8 @@ class PlanStageTargetArgs:
     @channel_target_info.setter
     def channel_target_info(
         self, value: Optional[pulumi.Input[PlanStageTargetChannelTargetInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactTargetInfo")
     def contact_target_info(
@@ -96,7 +100,8 @@ class PlanStageTargetArgs:
     @contact_target_info.setter
     def contact_target_info(
         self, value: Optional[pulumi.Input[PlanStageTargetContactTargetInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanStageTargetChannelTargetInfoArgsDict(TypedDict):
     contact_channel_id: pulumi.Input[_builtins.str]
@@ -114,14 +119,16 @@ class PlanStageTargetChannelTargetInfoArgs:
     @pulumi.getter(name="contactChannelId")
     def contact_channel_id(self) -> pulumi.Input[_builtins.str]: ...
     @contact_channel_id.setter
-    def contact_channel_id(self, value: pulumi.Input[_builtins.str]): ...
+    def contact_channel_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryIntervalInMinutes")
     def retry_interval_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retry_interval_in_minutes.setter
     def retry_interval_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanStageTargetContactTargetInfoArgsDict(TypedDict):
     is_essential: pulumi.Input[_builtins.bool]
@@ -139,9 +146,11 @@ class PlanStageTargetContactTargetInfoArgs:
     @pulumi.getter(name="isEssential")
     def is_essential(self) -> pulumi.Input[_builtins.bool]: ...
     @is_essential.setter
-    def is_essential(self, value: pulumi.Input[_builtins.bool]): ...
+    def is_essential(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactId")
     def contact_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @contact_id.setter
-    def contact_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def contact_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

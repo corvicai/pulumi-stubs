@@ -83,7 +83,8 @@ class GetJobResult:
     def workload_profile_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetJobResult(GetJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobResult]:
+        ...
 
 def get_job(
     job_name: Optional[_builtins.str] = ...,

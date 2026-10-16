@@ -379,7 +379,8 @@ class A2AContainerMappingInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentAutoUpdateStatus")
     def agent_auto_update_status(
@@ -388,14 +389,16 @@ class A2AContainerMappingInputArgs:
     @agent_auto_update_status.setter
     def agent_auto_update_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AgentAutoUpdateStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automationAccountArmId")
     def automation_account_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @automation_account_arm_id.setter
     def automation_account_arm_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automationAccountAuthenticationType")
     def automation_account_authentication_type(
@@ -409,7 +412,8 @@ class A2AContainerMappingInputArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, AutomationAccountAuthenticationType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class A2ACrossClusterMigrationEnableProtectionInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -429,17 +433,24 @@ class A2ACrossClusterMigrationEnableProtectionInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fabricObjectId")
     def fabric_object_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fabric_object_id.setter
-    def fabric_object_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fabric_object_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryContainerId")
     def recovery_container_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_container_id.setter
-    def recovery_container_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_container_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class A2ACrossClusterMigrationPolicyCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -451,7 +462,8 @@ class A2ACrossClusterMigrationPolicyCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class A2AEnableProtectionInputArgsDict(TypedDict):
     fabric_object_id: pulumi.Input[_builtins.str]
@@ -527,12 +539,14 @@ class A2AEnableProtectionInputArgs:
     @pulumi.getter(name="fabricObjectId")
     def fabric_object_id(self) -> pulumi.Input[_builtins.str]: ...
     @fabric_object_id.setter
-    def fabric_object_id(self, value: pulumi.Input[_builtins.str]): ...
+    def fabric_object_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoProtectionOfDataDisk")
     def auto_protection_of_data_disk(
@@ -542,7 +556,8 @@ class A2AEnableProtectionInputArgs:
     def auto_protection_of_data_disk(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AutoProtectionOfDataDisk]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionInfo")
     def disk_encryption_info(
@@ -551,43 +566,56 @@ class A2AEnableProtectionInputArgs:
     @disk_encryption_info.setter
     def disk_encryption_info(
         self, value: Optional[pulumi.Input[DiskEncryptionInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupId")
     def multi_vm_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_vm_group_id.setter
-    def multi_vm_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_vm_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupName")
     def multi_vm_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_vm_group_name.setter
-    def multi_vm_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_vm_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionClusterId")
     def protection_cluster_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_cluster_id.setter
-    def protection_cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_cluster_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryAvailabilitySetId")
     def recovery_availability_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_availability_set_id.setter
     def recovery_availability_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryAvailabilityZone")
     def recovery_availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_availability_zone.setter
     def recovery_availability_zone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryAzureNetworkId")
     def recovery_azure_network_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_azure_network_id.setter
     def recovery_azure_network_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryBootDiagStorageAccountId")
     def recovery_boot_diag_storage_account_id(
@@ -596,7 +624,8 @@ class A2AEnableProtectionInputArgs:
     @recovery_boot_diag_storage_account_id.setter
     def recovery_boot_diag_storage_account_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryCapacityReservationGroupId")
     def recovery_capacity_reservation_group_id(
@@ -605,19 +634,24 @@ class A2AEnableProtectionInputArgs:
     @recovery_capacity_reservation_group_id.setter
     def recovery_capacity_reservation_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryCloudServiceId")
     def recovery_cloud_service_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_cloud_service_id.setter
     def recovery_cloud_service_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryContainerId")
     def recovery_container_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_container_id.setter
-    def recovery_container_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_container_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryExtendedLocation")
     def recovery_extended_location(
@@ -626,7 +660,8 @@ class A2AEnableProtectionInputArgs:
     @recovery_extended_location.setter
     def recovery_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryProximityPlacementGroupId")
     def recovery_proximity_placement_group_id(
@@ -635,19 +670,24 @@ class A2AEnableProtectionInputArgs:
     @recovery_proximity_placement_group_id.setter
     def recovery_proximity_placement_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryResourceGroupId")
     def recovery_resource_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_resource_group_id.setter
     def recovery_resource_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoverySubnetName")
     def recovery_subnet_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_subnet_name.setter
-    def recovery_subnet_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_subnet_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryVirtualMachineScaleSetId")
     def recovery_virtual_machine_scale_set_id(
@@ -656,7 +696,8 @@ class A2AEnableProtectionInputArgs:
     @recovery_virtual_machine_scale_set_id.setter
     def recovery_virtual_machine_scale_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmDisks")
     def vm_disks(
@@ -668,7 +709,8 @@ class A2AEnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[A2AVmDiskInputDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmManagedDisks")
     def vm_managed_disks(
@@ -682,7 +724,8 @@ class A2AEnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[A2AVmManagedDiskInputDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class A2APolicyCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -710,7 +753,8 @@ class A2APolicyCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmSyncStatus")
     def multi_vm_sync_status(
@@ -719,7 +763,8 @@ class A2APolicyCreationInputArgs:
     @multi_vm_sync_status.setter
     def multi_vm_sync_status(
         self, value: pulumi.Input[Union[_builtins.str, SetMultiVmSyncStatus]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appConsistentFrequencyInMinutes")
     def app_consistent_frequency_in_minutes(
@@ -728,7 +773,8 @@ class A2APolicyCreationInputArgs:
     @app_consistent_frequency_in_minutes.setter
     def app_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crashConsistentFrequencyInMinutes")
     def crash_consistent_frequency_in_minutes(
@@ -737,12 +783,16 @@ class A2APolicyCreationInputArgs:
     @crash_consistent_frequency_in_minutes.setter
     def crash_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointHistory")
     def recovery_point_history(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_history.setter
-    def recovery_point_history(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_history(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class A2AProtectedManagedDiskDetailsArgsDict(TypedDict):
     allowed_disk_level_operation: NotRequired[
@@ -828,7 +878,8 @@ class A2AProtectedManagedDiskDetailsArgs:
     @allowed_disk_level_operation.setter
     def allowed_disk_level_operation(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPendingAtSourceAgentInMB")
     def data_pending_at_source_agent_in_mb(
@@ -837,7 +888,8 @@ class A2AProtectedManagedDiskDetailsArgs:
     @data_pending_at_source_agent_in_mb.setter
     def data_pending_at_source_agent_in_mb(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPendingInStagingStorageAccountInMB")
     def data_pending_in_staging_storage_account_in_mb(
@@ -846,69 +898,94 @@ class A2AProtectedManagedDiskDetailsArgs:
     @data_pending_in_staging_storage_account_in_mb.setter
     def data_pending_in_staging_storage_account_in_mb(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dekKeyVaultArmId")
     def dek_key_vault_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dek_key_vault_arm_id.setter
-    def dek_key_vault_arm_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dek_key_vault_arm_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskCapacityInBytes")
     def disk_capacity_in_bytes(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @disk_capacity_in_bytes.setter
     def disk_capacity_in_bytes(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskId")
     def disk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_id.setter
-    def disk_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskName")
     def disk_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_name.setter
-    def disk_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskState")
     def disk_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_state.setter
-    def disk_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskType")
     def disk_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_type.setter
-    def disk_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverDiskName")
     def failover_disk_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failover_disk_name.setter
-    def failover_disk_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failover_disk_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDiskEncrypted")
     def is_disk_encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_disk_encrypted.setter
-    def is_disk_encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_disk_encrypted(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDiskKeyEncrypted")
     def is_disk_key_encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_disk_key_encrypted.setter
-    def is_disk_key_encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_disk_key_encrypted(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kekKeyVaultArmId")
     def kek_key_vault_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kek_key_vault_arm_id.setter
-    def kek_key_vault_arm_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kek_key_vault_arm_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyIdentifier")
     def key_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_identifier.setter
-    def key_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_identifier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringJobType")
     def monitoring_job_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @monitoring_job_type.setter
-    def monitoring_job_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def monitoring_job_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringPercentageCompletion")
     def monitoring_percentage_completion(
@@ -917,7 +994,8 @@ class A2AProtectedManagedDiskDetailsArgs:
     @monitoring_percentage_completion.setter
     def monitoring_percentage_completion(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryDiskEncryptionSetId")
     def primary_disk_encryption_set_id(
@@ -926,7 +1004,8 @@ class A2AProtectedManagedDiskDetailsArgs:
     @primary_disk_encryption_set_id.setter
     def primary_disk_encryption_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryStagingAzureStorageAccountId")
     def primary_staging_azure_storage_account_id(
@@ -935,7 +1014,8 @@ class A2AProtectedManagedDiskDetailsArgs:
     @primary_staging_azure_storage_account_id.setter
     def primary_staging_azure_storage_account_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryDiskEncryptionSetId")
     def recovery_disk_encryption_set_id(
@@ -944,7 +1024,8 @@ class A2AProtectedManagedDiskDetailsArgs:
     @recovery_disk_encryption_set_id.setter
     def recovery_disk_encryption_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryOrignalTargetDiskId")
     def recovery_orignal_target_disk_id(
@@ -953,7 +1034,8 @@ class A2AProtectedManagedDiskDetailsArgs:
     @recovery_orignal_target_disk_id.setter
     def recovery_orignal_target_disk_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryReplicaDiskAccountType")
     def recovery_replica_disk_account_type(
@@ -962,21 +1044,24 @@ class A2AProtectedManagedDiskDetailsArgs:
     @recovery_replica_disk_account_type.setter
     def recovery_replica_disk_account_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryReplicaDiskId")
     def recovery_replica_disk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_replica_disk_id.setter
     def recovery_replica_disk_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryResourceGroupId")
     def recovery_resource_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_resource_group_id.setter
     def recovery_resource_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryTargetDiskAccountType")
     def recovery_target_disk_account_type(
@@ -985,27 +1070,38 @@ class A2AProtectedManagedDiskDetailsArgs:
     @recovery_target_disk_account_type.setter
     def recovery_target_disk_account_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryTargetDiskId")
     def recovery_target_disk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_target_disk_id.setter
-    def recovery_target_disk_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_target_disk_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resyncRequired")
     def resync_required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @resync_required.setter
-    def resync_required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def resync_required(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretIdentifier")
     def secret_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_identifier.setter
-    def secret_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tfoDiskName")
     def tfo_disk_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tfo_disk_name.setter
-    def tfo_disk_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tfo_disk_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class A2AReplicationProtectionClusterDetailsArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -1073,19 +1169,24 @@ class A2AReplicationProtectionClusterDetailsArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterManagementId")
     def cluster_management_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_management_id.setter
-    def cluster_management_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_management_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverRecoveryPointId")
     def failover_recovery_point_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failover_recovery_point_id.setter
     def failover_recovery_point_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialPrimaryExtendedLocation")
     def initial_primary_extended_location(
@@ -1094,7 +1195,8 @@ class A2AReplicationProtectionClusterDetailsArgs:
     @initial_primary_extended_location.setter
     def initial_primary_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialPrimaryFabricLocation")
     def initial_primary_fabric_location(
@@ -1103,12 +1205,16 @@ class A2AReplicationProtectionClusterDetailsArgs:
     @initial_primary_fabric_location.setter
     def initial_primary_fabric_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialPrimaryZone")
     def initial_primary_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @initial_primary_zone.setter
-    def initial_primary_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def initial_primary_zone(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialRecoveryExtendedLocation")
     def initial_recovery_extended_location(
@@ -1117,7 +1223,8 @@ class A2AReplicationProtectionClusterDetailsArgs:
     @initial_recovery_extended_location.setter
     def initial_recovery_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialRecoveryFabricLocation")
     def initial_recovery_fabric_location(
@@ -1126,24 +1233,30 @@ class A2AReplicationProtectionClusterDetailsArgs:
     @initial_recovery_fabric_location.setter
     def initial_recovery_fabric_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialRecoveryZone")
     def initial_recovery_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @initial_recovery_zone.setter
-    def initial_recovery_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def initial_recovery_zone(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRpoCalculatedTime")
     def last_rpo_calculated_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_rpo_calculated_time.setter
     def last_rpo_calculated_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lifecycleId")
     def lifecycle_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lifecycle_id.setter
-    def lifecycle_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lifecycle_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupCreateOption")
     def multi_vm_group_create_option(
@@ -1153,24 +1266,32 @@ class A2AReplicationProtectionClusterDetailsArgs:
     def multi_vm_group_create_option(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, MultiVmGroupCreateOption]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupId")
     def multi_vm_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_vm_group_id.setter
-    def multi_vm_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_vm_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupName")
     def multi_vm_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_vm_group_name.setter
-    def multi_vm_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_vm_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryAvailabilityZone")
     def primary_availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_availability_zone.setter
     def primary_availability_zone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryExtendedLocation")
     def primary_extended_location(
@@ -1179,19 +1300,24 @@ class A2AReplicationProtectionClusterDetailsArgs:
     @primary_extended_location.setter
     def primary_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryFabricLocation")
     def primary_fabric_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_fabric_location.setter
-    def primary_fabric_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_fabric_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryAvailabilityZone")
     def recovery_availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_availability_zone.setter
     def recovery_availability_zone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryExtendedLocation")
     def recovery_extended_location(
@@ -1200,19 +1326,24 @@ class A2AReplicationProtectionClusterDetailsArgs:
     @recovery_extended_location.setter
     def recovery_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryFabricLocation")
     def recovery_fabric_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_fabric_location.setter
     def recovery_fabric_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rpoInSeconds")
     def rpo_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @rpo_in_seconds.setter
-    def rpo_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def rpo_in_seconds(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
 
 class A2ASharedDiskReplicationDetailsArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -1256,31 +1387,38 @@ class A2ASharedDiskReplicationDetailsArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverRecoveryPointId")
     def failover_recovery_point_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failover_recovery_point_id.setter
     def failover_recovery_point_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRpoCalculatedTime")
     def last_rpo_calculated_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_rpo_calculated_time.setter
     def last_rpo_calculated_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementId")
     def management_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @management_id.setter
-    def management_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def management_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringJobType")
     def monitoring_job_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @monitoring_job_type.setter
-    def monitoring_job_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def monitoring_job_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringPercentageCompletion")
     def monitoring_percentage_completion(
@@ -1289,12 +1427,16 @@ class A2ASharedDiskReplicationDetailsArgs:
     @monitoring_percentage_completion.setter
     def monitoring_percentage_completion(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryFabricLocation")
     def primary_fabric_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_fabric_location.setter
-    def primary_fabric_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_fabric_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedManagedDisks")
     def protected_managed_disks(
@@ -1308,19 +1450,24 @@ class A2ASharedDiskReplicationDetailsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[A2AProtectedManagedDiskDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryFabricLocation")
     def recovery_fabric_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_fabric_location.setter
     def recovery_fabric_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rpoInSeconds")
     def rpo_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @rpo_in_seconds.setter
-    def rpo_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def rpo_in_seconds(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unprotectedDisks")
     def unprotected_disks(
@@ -1334,7 +1481,8 @@ class A2ASharedDiskReplicationDetailsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[A2AUnprotectedDiskDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class A2AUnprotectedDiskDetailsArgsDict(TypedDict):
     disk_auto_protection_status: NotRequired[
@@ -1361,12 +1509,14 @@ class A2AUnprotectedDiskDetailsArgs:
     def disk_auto_protection_status(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AutoProtectionOfDataDisk]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskLunId")
     def disk_lun_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_lun_id.setter
-    def disk_lun_id(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_lun_id(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class A2AVmDiskInputDetailsArgsDict(TypedDict):
     disk_uri: pulumi.Input[_builtins.str]
@@ -1386,7 +1536,8 @@ class A2AVmDiskInputDetailsArgs:
     @pulumi.getter(name="diskUri")
     def disk_uri(self) -> pulumi.Input[_builtins.str]: ...
     @disk_uri.setter
-    def disk_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def disk_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryStagingAzureStorageAccountId")
     def primary_staging_azure_storage_account_id(
@@ -1395,12 +1546,16 @@ class A2AVmDiskInputDetailsArgs:
     @primary_staging_azure_storage_account_id.setter
     def primary_staging_azure_storage_account_id(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryAzureStorageAccountId")
     def recovery_azure_storage_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @recovery_azure_storage_account_id.setter
-    def recovery_azure_storage_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def recovery_azure_storage_account_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class A2AVmManagedDiskInputDetailsArgsDict(TypedDict):
     disk_id: pulumi.Input[_builtins.str]
@@ -1428,7 +1583,8 @@ class A2AVmManagedDiskInputDetailsArgs:
     @pulumi.getter(name="diskId")
     def disk_id(self) -> pulumi.Input[_builtins.str]: ...
     @disk_id.setter
-    def disk_id(self, value: pulumi.Input[_builtins.str]): ...
+    def disk_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryStagingAzureStorageAccountId")
     def primary_staging_azure_storage_account_id(
@@ -1437,12 +1593,16 @@ class A2AVmManagedDiskInputDetailsArgs:
     @primary_staging_azure_storage_account_id.setter
     def primary_staging_azure_storage_account_id(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryResourceGroupId")
     def recovery_resource_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @recovery_resource_group_id.setter
-    def recovery_resource_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def recovery_resource_group_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionInfo")
     def disk_encryption_info(
@@ -1451,7 +1611,8 @@ class A2AVmManagedDiskInputDetailsArgs:
     @disk_encryption_info.setter
     def disk_encryption_info(
         self, value: Optional[pulumi.Input[DiskEncryptionInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryDiskEncryptionSetId")
     def recovery_disk_encryption_set_id(
@@ -1460,7 +1621,8 @@ class A2AVmManagedDiskInputDetailsArgs:
     @recovery_disk_encryption_set_id.setter
     def recovery_disk_encryption_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryReplicaDiskAccountType")
     def recovery_replica_disk_account_type(
@@ -1469,7 +1631,8 @@ class A2AVmManagedDiskInputDetailsArgs:
     @recovery_replica_disk_account_type.setter
     def recovery_replica_disk_account_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryTargetDiskAccountType")
     def recovery_target_disk_account_type(
@@ -1478,7 +1641,8 @@ class A2AVmManagedDiskInputDetailsArgs:
     @recovery_target_disk_account_type.setter
     def recovery_target_disk_account_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AADPropertiesDict(TypedDict):
     audience: NotRequired[_builtins.str]
@@ -1502,27 +1666,32 @@ class AADProperties:
     @pulumi.getter
     def audience(self) -> Optional[_builtins.str]: ...
     @audience.setter
-    def audience(self, value: Optional[_builtins.str]): ...
+    def audience(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authority(self) -> Optional[_builtins.str]: ...
     @authority.setter
-    def authority(self, value: Optional[_builtins.str]): ...
+    def authority(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servicePrincipalClientId")
     def service_principal_client_id(self) -> Optional[_builtins.str]: ...
     @service_principal_client_id.setter
-    def service_principal_client_id(self, value: Optional[_builtins.str]): ...
+    def service_principal_client_id(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servicePrincipalObjectId")
     def service_principal_object_id(self) -> Optional[_builtins.str]: ...
     @service_principal_object_id.setter
-    def service_principal_object_id(self, value: Optional[_builtins.str]): ...
+    def service_principal_object_id(self, value: Optional[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> Optional[_builtins.str]: ...
     @tenant_id.setter
-    def tenant_id(self, value: Optional[_builtins.str]): ...
+    def tenant_id(self, value: Optional[_builtins.str]):  # -> None:
+        ...
 
 class AddRecoveryServicesProviderInputPropertiesArgsDict(TypedDict):
     authentication_identity_input: pulumi.Input[IdentityProviderInputArgsDict]
@@ -1556,12 +1725,14 @@ class AddRecoveryServicesProviderInputPropertiesArgs:
     @authentication_identity_input.setter
     def authentication_identity_input(
         self, value: pulumi.Input[IdentityProviderInputArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineName")
     def machine_name(self) -> pulumi.Input[_builtins.str]: ...
     @machine_name.setter
-    def machine_name(self, value: pulumi.Input[_builtins.str]): ...
+    def machine_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAccessIdentityInput")
     def resource_access_identity_input(
@@ -1570,12 +1741,14 @@ class AddRecoveryServicesProviderInputPropertiesArgs:
     @resource_access_identity_input.setter
     def resource_access_identity_input(
         self, value: pulumi.Input[IdentityProviderInputArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="biosId")
     def bios_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bios_id.setter
-    def bios_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bios_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPlaneAuthenticationIdentityInput")
     def data_plane_authentication_identity_input(
@@ -1584,12 +1757,14 @@ class AddRecoveryServicesProviderInputPropertiesArgs:
     @data_plane_authentication_identity_input.setter
     def data_plane_authentication_identity_input(
         self, value: Optional[pulumi.Input[IdentityProviderInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineId")
     def machine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @machine_id.setter
-    def machine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def machine_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AddVCenterRequestPropertiesArgsDict(TypedDict):
     friendly_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1613,27 +1788,36 @@ class AddVCenterRequestPropertiesArgs:
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddress")
     def ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_address.setter
-    def ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processServerId")
     def process_server_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @process_server_id.setter
-    def process_server_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def process_server_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runAsAccountId")
     def run_as_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @run_as_account_id.setter
-    def run_as_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def run_as_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureBackupServerContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -1681,7 +1865,8 @@ class AzureBackupServerContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -1690,22 +1875,30 @@ class AzureBackupServerContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="canReRegister")
     def can_re_register(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @can_re_register.setter
-    def can_re_register(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def can_re_register(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerId")
     def container_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_id.setter
-    def container_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dpmAgentVersion")
     def dpm_agent_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dpm_agent_version.setter
-    def dpm_agent_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dpm_agent_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dpmServers")
     def dpm_servers(
@@ -1714,49 +1907,68 @@ class AzureBackupServerContainerArgs:
     @dpm_servers.setter
     def dpm_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(self) -> Optional[pulumi.Input[DPMContainerExtendedInfoArgs]]: ...
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[DPMContainerExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemCount")
     def protected_item_count(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @protected_item_count.setter
-    def protected_item_count(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def protected_item_count(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionStatus")
     def protection_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_status.setter
-    def protection_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradeAvailable")
     def upgrade_available(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @upgrade_available.setter
-    def upgrade_available(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def upgrade_available(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class AzureFabricCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -1774,12 +1986,14 @@ class AzureFabricCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AzureFileShareProtectionPolicyArgsDict(TypedDict):
     backup_management_type: pulumi.Input[_builtins.str]
@@ -1839,12 +2053,16 @@ class AzureFileShareProtectionPolicyArgs:
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(self) -> pulumi.Input[_builtins.str]: ...
     @backup_management_type.setter
-    def backup_management_type(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_management_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemsCount")
     def protected_items_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @protected_items_count.setter
-    def protected_items_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def protected_items_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -1853,7 +2071,8 @@ class AzureFileShareProtectionPolicyArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPolicy")
     def retention_policy(
@@ -1867,7 +2086,8 @@ class AzureFileShareProtectionPolicyArgs:
         value: Optional[
             pulumi.Input[Union[LongTermRetentionPolicyArgs, SimpleRetentionPolicyArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulePolicy")
     def schedule_policy(
@@ -1895,12 +2115,14 @@ class AzureFileShareProtectionPolicyArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultRetentionPolicy")
     def vault_retention_policy(
@@ -1909,7 +2131,8 @@ class AzureFileShareProtectionPolicyArgs:
     @vault_retention_policy.setter
     def vault_retention_policy(
         self, value: Optional[pulumi.Input[VaultRetentionPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workLoadType")
     def work_load_type(
@@ -1918,7 +2141,8 @@ class AzureFileShareProtectionPolicyArgs:
     @work_load_type.setter
     def work_load_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, WorkloadType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureFileshareProtectedItemExtendedInfoArgsDict(TypedDict):
     oldest_recovery_point: NotRequired[pulumi.Input[_builtins.str]]
@@ -1938,17 +2162,24 @@ class AzureFileshareProtectedItemExtendedInfoArgs:
     @pulumi.getter(name="oldestRecoveryPoint")
     def oldest_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oldest_recovery_point.setter
-    def oldest_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oldest_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyState")
     def policy_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_state.setter
-    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointCount")
     def recovery_point_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_count.setter
-    def recovery_point_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class AzureFileshareProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -2026,17 +2257,20 @@ class AzureFileshareProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -2045,14 +2279,16 @@ class AzureFileshareProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -2061,7 +2297,8 @@ class AzureFileshareProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -2070,17 +2307,22 @@ class AzureFileshareProtectedItemArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureFileshareProtectedItemExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -2089,12 +2331,14 @@ class AzureFileshareProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -2103,7 +2347,8 @@ class AzureFileshareProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -2117,32 +2362,44 @@ class AzureFileshareProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_status.setter
-    def last_backup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupTime")
     def last_backup_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_time.setter
-    def last_backup_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -2151,12 +2408,16 @@ class AzureFileshareProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionStatus")
     def protection_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_status.setter
-    def protection_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -2165,7 +2426,8 @@ class AzureFileshareProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -2174,12 +2436,16 @@ class AzureFileshareProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureIaaSClassicComputeVMContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -2215,7 +2481,8 @@ class AzureIaaSClassicComputeVMContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -2224,42 +2491,58 @@ class AzureIaaSClassicComputeVMContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineId")
     def virtual_machine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_id.setter
-    def virtual_machine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineVersion")
     def virtual_machine_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_version.setter
-    def virtual_machine_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureIaaSClassicComputeVMProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -2335,17 +2618,20 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -2354,14 +2640,16 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -2370,7 +2658,8 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -2379,19 +2668,24 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureIaaSVMProtectedItemExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedProperties")
     def extended_properties(self) -> Optional[pulumi.Input[ExtendedPropertiesArgs]]: ...
     @extended_properties.setter
     def extended_properties(
         self, value: Optional[pulumi.Input[ExtendedPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -2400,12 +2694,14 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -2414,7 +2710,8 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -2428,27 +2725,36 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_status.setter
-    def last_backup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -2457,12 +2763,16 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionStatus")
     def protection_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_status.setter
-    def protection_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -2471,7 +2781,8 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -2480,12 +2791,16 @@ class AzureIaaSClassicComputeVMProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureIaaSComputeVMContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -2521,7 +2836,8 @@ class AzureIaaSComputeVMContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -2530,42 +2846,58 @@ class AzureIaaSComputeVMContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineId")
     def virtual_machine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_id.setter
-    def virtual_machine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineVersion")
     def virtual_machine_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_version.setter
-    def virtual_machine_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureIaaSComputeVMProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -2641,17 +2973,20 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -2660,14 +2995,16 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -2676,7 +3013,8 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -2685,19 +3023,24 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureIaaSVMProtectedItemExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedProperties")
     def extended_properties(self) -> Optional[pulumi.Input[ExtendedPropertiesArgs]]: ...
     @extended_properties.setter
     def extended_properties(
         self, value: Optional[pulumi.Input[ExtendedPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -2706,12 +3049,14 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -2720,7 +3065,8 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -2734,27 +3080,36 @@ class AzureIaaSComputeVMProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_status.setter
-    def last_backup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -2763,12 +3118,16 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionStatus")
     def protection_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_status.setter
-    def protection_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -2777,7 +3136,8 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -2786,12 +3146,16 @@ class AzureIaaSComputeVMProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureIaaSVMProtectedItemExtendedInfoArgsDict(TypedDict):
     newest_recovery_point_in_archive: NotRequired[pulumi.Input[_builtins.str]]
@@ -2821,12 +3185,16 @@ class AzureIaaSVMProtectedItemExtendedInfoArgs:
     @newest_recovery_point_in_archive.setter
     def newest_recovery_point_in_archive(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPoint")
     def oldest_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oldest_recovery_point.setter
-    def oldest_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oldest_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPointInArchive")
     def oldest_recovery_point_in_archive(
@@ -2835,7 +3203,8 @@ class AzureIaaSVMProtectedItemExtendedInfoArgs:
     @oldest_recovery_point_in_archive.setter
     def oldest_recovery_point_in_archive(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPointInVault")
     def oldest_recovery_point_in_vault(
@@ -2844,17 +3213,24 @@ class AzureIaaSVMProtectedItemExtendedInfoArgs:
     @oldest_recovery_point_in_vault.setter
     def oldest_recovery_point_in_vault(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyInconsistent")
     def policy_inconsistent(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @policy_inconsistent.setter
-    def policy_inconsistent(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def policy_inconsistent(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointCount")
     def recovery_point_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_count.setter
-    def recovery_point_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class AzureIaaSVMProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -2930,17 +3306,20 @@ class AzureIaaSVMProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -2949,14 +3328,16 @@ class AzureIaaSVMProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -2965,7 +3346,8 @@ class AzureIaaSVMProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -2974,19 +3356,24 @@ class AzureIaaSVMProtectedItemArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureIaaSVMProtectedItemExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedProperties")
     def extended_properties(self) -> Optional[pulumi.Input[ExtendedPropertiesArgs]]: ...
     @extended_properties.setter
     def extended_properties(
         self, value: Optional[pulumi.Input[ExtendedPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -2995,12 +3382,14 @@ class AzureIaaSVMProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -3009,7 +3398,8 @@ class AzureIaaSVMProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -3023,27 +3413,36 @@ class AzureIaaSVMProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_status.setter
-    def last_backup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -3052,12 +3451,16 @@ class AzureIaaSVMProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionStatus")
     def protection_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_status.setter
-    def protection_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -3066,7 +3469,8 @@ class AzureIaaSVMProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -3075,12 +3479,16 @@ class AzureIaaSVMProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureIaaSVMProtectionPolicyArgsDict(TypedDict):
     backup_management_type: pulumi.Input[_builtins.str]
@@ -3156,7 +3564,8 @@ class AzureIaaSVMProtectionPolicyArgs:
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(self) -> pulumi.Input[_builtins.str]: ...
     @backup_management_type.setter
-    def backup_management_type(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_management_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instantRPDetails")
     def instant_rp_details(
@@ -3165,7 +3574,8 @@ class AzureIaaSVMProtectionPolicyArgs:
     @instant_rp_details.setter
     def instant_rp_details(
         self, value: Optional[pulumi.Input[InstantRPAdditionalDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instantRpRetentionRangeInDays")
     def instant_rp_retention_range_in_days(
@@ -3174,7 +3584,8 @@ class AzureIaaSVMProtectionPolicyArgs:
     @instant_rp_retention_range_in_days.setter
     def instant_rp_retention_range_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyType")
     def policy_type(
@@ -3183,12 +3594,16 @@ class AzureIaaSVMProtectionPolicyArgs:
     @policy_type.setter
     def policy_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IAASVMPolicyType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemsCount")
     def protected_items_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @protected_items_count.setter
-    def protected_items_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def protected_items_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -3197,7 +3612,8 @@ class AzureIaaSVMProtectionPolicyArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPolicy")
     def retention_policy(
@@ -3211,7 +3627,8 @@ class AzureIaaSVMProtectionPolicyArgs:
         value: Optional[
             pulumi.Input[Union[LongTermRetentionPolicyArgs, SimpleRetentionPolicyArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulePolicy")
     def schedule_policy(
@@ -3239,7 +3656,8 @@ class AzureIaaSVMProtectionPolicyArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotConsistencyType")
     def snapshot_consistency_type(
@@ -3253,7 +3671,8 @@ class AzureIaaSVMProtectionPolicyArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, IaasVMSnapshotConsistencyType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tieringPolicy")
     def tiering_policy(
@@ -3263,12 +3682,14 @@ class AzureIaaSVMProtectionPolicyArgs:
     def tiering_policy(
         self,
         value: Optional[pulumi.Input[Mapping[str, pulumi.Input[TieringPolicyArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AzureMonitorAlertSettingsArgsDict(TypedDict):
     alerts_for_all_failover_issues: NotRequired[
@@ -3304,7 +3725,8 @@ class AzureMonitorAlertSettingsArgs:
     @alerts_for_all_failover_issues.setter
     def alerts_for_all_failover_issues(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AlertsState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alertsForAllJobFailures")
     def alerts_for_all_job_failures(
@@ -3313,7 +3735,8 @@ class AzureMonitorAlertSettingsArgs:
     @alerts_for_all_job_failures.setter
     def alerts_for_all_job_failures(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AlertsState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alertsForAllReplicationIssues")
     def alerts_for_all_replication_issues(
@@ -3322,7 +3745,8 @@ class AzureMonitorAlertSettingsArgs:
     @alerts_for_all_replication_issues.setter
     def alerts_for_all_replication_issues(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AlertsState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureRecoveryServiceVaultProtectionIntentArgsDict(TypedDict):
     protection_intent_item_type: pulumi.Input[_builtins.str]
@@ -3354,7 +3778,10 @@ class AzureRecoveryServiceVaultProtectionIntentArgs:
     @pulumi.getter(name="protectionIntentItemType")
     def protection_intent_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protection_intent_item_type.setter
-    def protection_intent_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protection_intent_item_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -3363,17 +3790,20 @@ class AzureRecoveryServiceVaultProtectionIntentArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemId")
     def item_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @item_id.setter
-    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -3382,12 +3812,16 @@ class AzureRecoveryServiceVaultProtectionIntentArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureResourceProtectionIntentArgsDict(TypedDict):
     protection_intent_item_type: pulumi.Input[_builtins.str]
@@ -3421,7 +3855,10 @@ class AzureResourceProtectionIntentArgs:
     @pulumi.getter(name="protectionIntentItemType")
     def protection_intent_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protection_intent_item_type.setter
-    def protection_intent_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protection_intent_item_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -3430,22 +3867,26 @@ class AzureResourceProtectionIntentArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemId")
     def item_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @item_id.setter
-    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -3454,12 +3895,16 @@ class AzureResourceProtectionIntentArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureSQLAGWorkloadContainerProtectionContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -3503,7 +3948,8 @@ class AzureSQLAGWorkloadContainerProtectionContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -3512,7 +3958,8 @@ class AzureSQLAGWorkloadContainerProtectionContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -3521,22 +3968,28 @@ class AzureSQLAGWorkloadContainerProtectionContainerArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureWorkloadContainerExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedTime")
     def last_updated_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_time.setter
-    def last_updated_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operationType")
     def operation_type(
@@ -3545,22 +3998,32 @@ class AzureSQLAGWorkloadContainerProtectionContainerArgs:
     @operation_type.setter
     def operation_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OperationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadType")
     def workload_type(
@@ -3569,7 +4032,8 @@ class AzureSQLAGWorkloadContainerProtectionContainerArgs:
     @workload_type.setter
     def workload_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, WorkloadType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureSqlContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -3599,7 +4063,8 @@ class AzureSqlContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -3608,27 +4073,36 @@ class AzureSqlContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureSqlProtectedItemExtendedInfoArgsDict(TypedDict):
     oldest_recovery_point: NotRequired[pulumi.Input[_builtins.str]]
@@ -3648,17 +4122,24 @@ class AzureSqlProtectedItemExtendedInfoArgs:
     @pulumi.getter(name="oldestRecoveryPoint")
     def oldest_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oldest_recovery_point.setter
-    def oldest_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oldest_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyState")
     def policy_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_state.setter
-    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointCount")
     def recovery_point_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_count.setter
-    def recovery_point_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class AzureSqlProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -3724,17 +4205,20 @@ class AzureSqlProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -3743,14 +4227,16 @@ class AzureSqlProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -3759,7 +4245,8 @@ class AzureSqlProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -3768,12 +4255,16 @@ class AzureSqlProtectedItemArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureSqlProtectedItemExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -3782,12 +4273,14 @@ class AzureSqlProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -3796,27 +4289,36 @@ class AzureSqlProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemDataId")
     def protected_item_data_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protected_item_data_id.setter
-    def protected_item_data_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protected_item_data_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -3825,7 +4327,8 @@ class AzureSqlProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectedItemState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -3834,7 +4337,8 @@ class AzureSqlProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -3843,12 +4347,16 @@ class AzureSqlProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureSqlProtectionPolicyArgsDict(TypedDict):
     backup_management_type: pulumi.Input[_builtins.str]
@@ -3880,12 +4388,16 @@ class AzureSqlProtectionPolicyArgs:
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(self) -> pulumi.Input[_builtins.str]: ...
     @backup_management_type.setter
-    def backup_management_type(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_management_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemsCount")
     def protected_items_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @protected_items_count.setter
-    def protected_items_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def protected_items_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -3894,7 +4406,8 @@ class AzureSqlProtectionPolicyArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPolicy")
     def retention_policy(
@@ -3908,7 +4421,8 @@ class AzureSqlProtectionPolicyArgs:
         value: Optional[
             pulumi.Input[Union[LongTermRetentionPolicyArgs, SimpleRetentionPolicyArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureStorageContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -3956,7 +4470,8 @@ class AzureStorageContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="acquireStorageAccountLock")
     def acquire_storage_account_lock(
@@ -3966,7 +4481,8 @@ class AzureStorageContainerArgs:
     def acquire_storage_account_lock(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AcquireStorageAccountLock]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -3975,17 +4491,20 @@ class AzureStorageContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operationType")
     def operation_type(
@@ -3994,37 +4513,54 @@ class AzureStorageContainerArgs:
     @operation_type.setter
     def operation_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OperationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemCount")
     def protected_item_count(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @protected_item_count.setter
-    def protected_item_count(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def protected_item_count(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountVersion")
     def storage_account_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_version.setter
-    def storage_account_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_account_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureToAzureCreateNetworkMappingInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -4042,12 +4578,14 @@ class AzureToAzureCreateNetworkMappingInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryNetworkId")
     def primary_network_id(self) -> pulumi.Input[_builtins.str]: ...
     @primary_network_id.setter
-    def primary_network_id(self, value: pulumi.Input[_builtins.str]): ...
+    def primary_network_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AzureVMAppContainerProtectionContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -4091,7 +4629,8 @@ class AzureVMAppContainerProtectionContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -4100,7 +4639,8 @@ class AzureVMAppContainerProtectionContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -4109,22 +4649,28 @@ class AzureVMAppContainerProtectionContainerArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureWorkloadContainerExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedTime")
     def last_updated_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_time.setter
-    def last_updated_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operationType")
     def operation_type(
@@ -4133,22 +4679,32 @@ class AzureVMAppContainerProtectionContainerArgs:
     @operation_type.setter
     def operation_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OperationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadType")
     def workload_type(
@@ -4157,7 +4713,8 @@ class AzureVMAppContainerProtectionContainerArgs:
     @workload_type.setter
     def workload_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, WorkloadType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureVmWorkloadProtectedItemExtendedInfoArgsDict(TypedDict):
     newest_recovery_point_in_archive: NotRequired[pulumi.Input[_builtins.str]]
@@ -4189,12 +4746,16 @@ class AzureVmWorkloadProtectedItemExtendedInfoArgs:
     @newest_recovery_point_in_archive.setter
     def newest_recovery_point_in_archive(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPoint")
     def oldest_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oldest_recovery_point.setter
-    def oldest_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oldest_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPointInArchive")
     def oldest_recovery_point_in_archive(
@@ -4203,7 +4764,8 @@ class AzureVmWorkloadProtectedItemExtendedInfoArgs:
     @oldest_recovery_point_in_archive.setter
     def oldest_recovery_point_in_archive(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPointInVault")
     def oldest_recovery_point_in_vault(
@@ -4212,22 +4774,28 @@ class AzureVmWorkloadProtectedItemExtendedInfoArgs:
     @oldest_recovery_point_in_vault.setter
     def oldest_recovery_point_in_vault(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyState")
     def policy_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_state.setter
-    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryModel")
     def recovery_model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_model.setter
-    def recovery_model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointCount")
     def recovery_point_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_count.setter
-    def recovery_point_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class AzureVmWorkloadProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -4325,17 +4893,20 @@ class AzureVmWorkloadProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -4344,14 +4915,16 @@ class AzureVmWorkloadProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -4360,7 +4933,8 @@ class AzureVmWorkloadProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -4370,12 +4944,16 @@ class AzureVmWorkloadProtectedItemArgs:
     def extended_info(
         self,
         value: Optional[pulumi.Input[AzureVmWorkloadProtectedItemExtendedInfoArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -4384,12 +4962,14 @@ class AzureVmWorkloadProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -4398,7 +4978,8 @@ class AzureVmWorkloadProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -4412,7 +4993,8 @@ class AzureVmWorkloadProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(
@@ -4421,17 +5003,24 @@ class AzureVmWorkloadProtectedItemArgs:
     @last_backup_status.setter
     def last_backup_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LastBackupStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupTime")
     def last_backup_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_time.setter
-    def last_backup_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodesList")
     def nodes_list(
@@ -4441,27 +5030,32 @@ class AzureVmWorkloadProtectedItemArgs:
     def nodes_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DistributedNodesInfoArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentName")
     def parent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_name.setter
-    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentType")
     def parent_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_type.setter
-    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemDataSourceId")
     def protected_item_data_source_id(
@@ -4470,7 +5064,8 @@ class AzureVmWorkloadProtectedItemArgs:
     @protected_item_data_source_id.setter
     def protected_item_data_source_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemHealthStatus")
     def protected_item_health_status(
@@ -4480,7 +5075,8 @@ class AzureVmWorkloadProtectedItemArgs:
     def protected_item_health_status(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ProtectedItemHealthStatus]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -4489,7 +5085,8 @@ class AzureVmWorkloadProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -4498,12 +5095,14 @@ class AzureVmWorkloadProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -4512,12 +5111,16 @@ class AzureVmWorkloadProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureVmWorkloadProtectionPolicyArgsDict(TypedDict):
     backup_management_type: pulumi.Input[_builtins.str]
@@ -4555,17 +5158,24 @@ class AzureVmWorkloadProtectionPolicyArgs:
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(self) -> pulumi.Input[_builtins.str]: ...
     @backup_management_type.setter
-    def backup_management_type(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_management_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="makePolicyConsistent")
     def make_policy_consistent(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @make_policy_consistent.setter
-    def make_policy_consistent(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def make_policy_consistent(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemsCount")
     def protected_items_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @protected_items_count.setter
-    def protected_items_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def protected_items_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -4574,12 +5184,14 @@ class AzureVmWorkloadProtectionPolicyArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[pulumi.Input[SettingsArgs]]: ...
     @settings.setter
-    def settings(self, value: Optional[pulumi.Input[SettingsArgs]]): ...
+    def settings(self, value: Optional[pulumi.Input[SettingsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subProtectionPolicy")
     def sub_protection_policy(
@@ -4589,7 +5201,8 @@ class AzureVmWorkloadProtectionPolicyArgs:
     def sub_protection_policy(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SubProtectionPolicyArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workLoadType")
     def work_load_type(
@@ -4598,7 +5211,8 @@ class AzureVmWorkloadProtectionPolicyArgs:
     @work_load_type.setter
     def work_load_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, WorkloadType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureVmWorkloadSAPAseDatabaseProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -4696,17 +5310,20 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -4715,14 +5332,16 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -4731,7 +5350,8 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -4741,12 +5361,16 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     def extended_info(
         self,
         value: Optional[pulumi.Input[AzureVmWorkloadProtectedItemExtendedInfoArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -4755,12 +5379,14 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -4769,7 +5395,8 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -4783,7 +5410,8 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(
@@ -4792,17 +5420,24 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @last_backup_status.setter
     def last_backup_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LastBackupStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupTime")
     def last_backup_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_time.setter
-    def last_backup_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodesList")
     def nodes_list(
@@ -4812,27 +5447,32 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     def nodes_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DistributedNodesInfoArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentName")
     def parent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_name.setter
-    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentType")
     def parent_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_type.setter
-    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemDataSourceId")
     def protected_item_data_source_id(
@@ -4841,7 +5481,8 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @protected_item_data_source_id.setter
     def protected_item_data_source_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemHealthStatus")
     def protected_item_health_status(
@@ -4851,7 +5492,8 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     def protected_item_health_status(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ProtectedItemHealthStatus]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -4860,7 +5502,8 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -4869,12 +5512,14 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -4883,12 +5528,16 @@ class AzureVmWorkloadSAPAseDatabaseProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -4986,17 +5635,20 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -5005,14 +5657,16 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -5021,7 +5675,8 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -5031,12 +5686,16 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     def extended_info(
         self,
         value: Optional[pulumi.Input[AzureVmWorkloadProtectedItemExtendedInfoArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -5045,12 +5704,14 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -5059,7 +5720,8 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -5073,7 +5735,8 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(
@@ -5082,17 +5745,24 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @last_backup_status.setter
     def last_backup_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LastBackupStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupTime")
     def last_backup_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_time.setter
-    def last_backup_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodesList")
     def nodes_list(
@@ -5102,27 +5772,32 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     def nodes_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DistributedNodesInfoArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentName")
     def parent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_name.setter
-    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentType")
     def parent_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_type.setter
-    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemDataSourceId")
     def protected_item_data_source_id(
@@ -5131,7 +5806,8 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @protected_item_data_source_id.setter
     def protected_item_data_source_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemHealthStatus")
     def protected_item_health_status(
@@ -5141,7 +5817,8 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     def protected_item_health_status(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ProtectedItemHealthStatus]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -5150,7 +5827,8 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -5159,12 +5837,14 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -5173,12 +5853,16 @@ class AzureVmWorkloadSAPHanaDBInstanceProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -5276,17 +5960,20 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -5295,14 +5982,16 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -5311,7 +6000,8 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -5321,12 +6011,16 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     def extended_info(
         self,
         value: Optional[pulumi.Input[AzureVmWorkloadProtectedItemExtendedInfoArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -5335,12 +6029,14 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -5349,7 +6045,8 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -5363,7 +6060,8 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(
@@ -5372,17 +6070,24 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @last_backup_status.setter
     def last_backup_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LastBackupStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupTime")
     def last_backup_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_time.setter
-    def last_backup_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodesList")
     def nodes_list(
@@ -5392,27 +6097,32 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     def nodes_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DistributedNodesInfoArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentName")
     def parent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_name.setter
-    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentType")
     def parent_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_type.setter
-    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemDataSourceId")
     def protected_item_data_source_id(
@@ -5421,7 +6131,8 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @protected_item_data_source_id.setter
     def protected_item_data_source_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemHealthStatus")
     def protected_item_health_status(
@@ -5431,7 +6142,8 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     def protected_item_health_status(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ProtectedItemHealthStatus]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -5440,7 +6152,8 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -5449,12 +6162,14 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -5463,12 +6178,16 @@ class AzureVmWorkloadSAPHanaDatabaseProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureVmWorkloadSQLDatabaseProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -5566,17 +6285,20 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -5585,14 +6307,16 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -5601,7 +6325,8 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -5611,12 +6336,16 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     def extended_info(
         self,
         value: Optional[pulumi.Input[AzureVmWorkloadProtectedItemExtendedInfoArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -5625,12 +6354,14 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -5639,7 +6370,8 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kpisHealths")
     def kpis_healths(
@@ -5653,7 +6385,8 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[KPIResourceHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(
@@ -5662,17 +6395,24 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @last_backup_status.setter
     def last_backup_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LastBackupStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupTime")
     def last_backup_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_time.setter
-    def last_backup_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodesList")
     def nodes_list(
@@ -5682,27 +6422,32 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     def nodes_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DistributedNodesInfoArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentName")
     def parent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_name.setter
-    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentType")
     def parent_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_type.setter
-    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemDataSourceId")
     def protected_item_data_source_id(
@@ -5711,7 +6456,8 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @protected_item_data_source_id.setter
     def protected_item_data_source_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemHealthStatus")
     def protected_item_health_status(
@@ -5721,7 +6467,8 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     def protected_item_health_status(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ProtectedItemHealthStatus]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -5730,7 +6477,8 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -5739,12 +6487,14 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -5753,12 +6503,16 @@ class AzureVmWorkloadSQLDatabaseProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureWorkloadAutoProtectionIntentArgsDict(TypedDict):
     protection_intent_item_type: pulumi.Input[_builtins.str]
@@ -5790,7 +6544,10 @@ class AzureWorkloadAutoProtectionIntentArgs:
     @pulumi.getter(name="protectionIntentItemType")
     def protection_intent_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protection_intent_item_type.setter
-    def protection_intent_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protection_intent_item_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -5799,17 +6556,20 @@ class AzureWorkloadAutoProtectionIntentArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemId")
     def item_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @item_id.setter
-    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -5818,12 +6578,16 @@ class AzureWorkloadAutoProtectionIntentArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureWorkloadContainerAutoProtectionIntentArgsDict(TypedDict):
     protection_intent_item_type: pulumi.Input[_builtins.str]
@@ -5855,7 +6619,10 @@ class AzureWorkloadContainerAutoProtectionIntentArgs:
     @pulumi.getter(name="protectionIntentItemType")
     def protection_intent_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protection_intent_item_type.setter
-    def protection_intent_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protection_intent_item_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -5864,17 +6631,20 @@ class AzureWorkloadContainerAutoProtectionIntentArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemId")
     def item_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @item_id.setter
-    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -5883,12 +6653,16 @@ class AzureWorkloadContainerAutoProtectionIntentArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureWorkloadContainerExtendedInfoArgsDict(TypedDict):
     host_server_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -5912,12 +6686,16 @@ class AzureWorkloadContainerExtendedInfoArgs:
     @pulumi.getter(name="hostServerName")
     def host_server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_server_name.setter
-    def host_server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_server_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inquiryInfo")
     def inquiry_info(self) -> Optional[pulumi.Input[InquiryInfoArgs]]: ...
     @inquiry_info.setter
-    def inquiry_info(self, value: Optional[pulumi.Input[InquiryInfoArgs]]): ...
+    def inquiry_info(self, value: Optional[pulumi.Input[InquiryInfoArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodesList")
     def nodes_list(
@@ -5927,7 +6705,8 @@ class AzureWorkloadContainerExtendedInfoArgs:
     def nodes_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DistributedNodesInfoArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureWorkloadContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -5971,7 +6750,8 @@ class AzureWorkloadContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -5980,7 +6760,8 @@ class AzureWorkloadContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -5989,22 +6770,28 @@ class AzureWorkloadContainerArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[AzureWorkloadContainerExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedTime")
     def last_updated_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_time.setter
-    def last_updated_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operationType")
     def operation_type(
@@ -6013,22 +6800,32 @@ class AzureWorkloadContainerArgs:
     @operation_type.setter
     def operation_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OperationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadType")
     def workload_type(
@@ -6037,7 +6834,8 @@ class AzureWorkloadContainerArgs:
     @workload_type.setter
     def workload_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, WorkloadType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureWorkloadSQLAutoProtectionIntentArgsDict(TypedDict):
     protection_intent_item_type: pulumi.Input[_builtins.str]
@@ -6075,7 +6873,10 @@ class AzureWorkloadSQLAutoProtectionIntentArgs:
     @pulumi.getter(name="protectionIntentItemType")
     def protection_intent_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protection_intent_item_type.setter
-    def protection_intent_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protection_intent_item_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -6084,17 +6885,20 @@ class AzureWorkloadSQLAutoProtectionIntentArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemId")
     def item_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @item_id.setter
-    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def item_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -6103,12 +6907,16 @@ class AzureWorkloadSQLAutoProtectionIntentArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadItemType")
     def workload_item_type(
@@ -6117,7 +6925,8 @@ class AzureWorkloadSQLAutoProtectionIntentArgs:
     @workload_item_type.setter
     def workload_item_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, WorkloadItemType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassicAlertSettingsArgsDict(TypedDict):
     alerts_for_critical_operations: NotRequired[
@@ -6147,7 +6956,8 @@ class ClassicAlertSettingsArgs:
     @alerts_for_critical_operations.setter
     def alerts_for_critical_operations(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AlertsState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailNotificationsForSiteRecovery")
     def email_notifications_for_site_recovery(
@@ -6156,7 +6966,8 @@ class ClassicAlertSettingsArgs:
     @email_notifications_for_site_recovery.setter
     def email_notifications_for_site_recovery(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AlertsState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CmkKekIdentityArgsDict(TypedDict):
     use_system_assigned_identity: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6178,12 +6989,16 @@ class CmkKekIdentityArgs:
     @use_system_assigned_identity.setter
     def use_system_assigned_identity(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentity")
     def user_assigned_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_assigned_identity.setter
-    def user_assigned_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_assigned_identity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CmkKeyVaultPropertiesArgsDict(TypedDict):
     key_uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -6197,7 +7012,8 @@ class CmkKeyVaultPropertiesArgs:
     @pulumi.getter(name="keyUri")
     def key_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_uri.setter
-    def key_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ContainerIdentityInfoArgsDict(TypedDict):
     aad_tenant_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -6219,24 +7035,28 @@ class ContainerIdentityInfoArgs:
     @pulumi.getter(name="aadTenantId")
     def aad_tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aad_tenant_id.setter
-    def aad_tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aad_tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def audience(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audience.setter
-    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audience(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servicePrincipalClientId")
     def service_principal_client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_principal_client_id.setter
     def service_principal_client_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uniqueName")
     def unique_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unique_name.setter
-    def unique_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unique_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CreateNetworkMappingInputPropertiesArgsDict(TypedDict):
     recovery_network_id: pulumi.Input[_builtins.str]
@@ -6272,7 +7092,8 @@ class CreateNetworkMappingInputPropertiesArgs:
     @pulumi.getter(name="recoveryNetworkId")
     def recovery_network_id(self) -> pulumi.Input[_builtins.str]: ...
     @recovery_network_id.setter
-    def recovery_network_id(self, value: pulumi.Input[_builtins.str]): ...
+    def recovery_network_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fabricSpecificDetails")
     def fabric_specific_details(
@@ -6298,12 +7119,16 @@ class CreateNetworkMappingInputPropertiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryFabricName")
     def recovery_fabric_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_fabric_name.setter
-    def recovery_fabric_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_fabric_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CreatePolicyInputPropertiesArgsDict(TypedDict):
     provider_specific_input: NotRequired[
@@ -6384,7 +7209,8 @@ class CreatePolicyInputPropertiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CreateProtectionContainerMappingInputPropertiesArgsDict(TypedDict):
     policy_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -6414,7 +7240,8 @@ class CreateProtectionContainerMappingInputPropertiesArgs:
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerSpecificInput")
     def provider_specific_input(
@@ -6432,7 +7259,8 @@ class CreateProtectionContainerMappingInputPropertiesArgs:
                 Union[A2AContainerMappingInputArgs, VMwareCbtContainerMappingInputArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetProtectionContainerId")
     def target_protection_container_id(
@@ -6441,7 +7269,8 @@ class CreateProtectionContainerMappingInputPropertiesArgs:
     @target_protection_container_id.setter
     def target_protection_container_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CreateRecoveryPlanInputPropertiesArgsDict(TypedDict):
     groups: pulumi.Input[Sequence[pulumi.Input[RecoveryPlanGroupArgsDict]]]
@@ -6475,17 +7304,20 @@ class CreateRecoveryPlanInputPropertiesArgs:
     @groups.setter
     def groups(
         self, value: pulumi.Input[Sequence[pulumi.Input[RecoveryPlanGroupArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryFabricId")
     def primary_fabric_id(self) -> pulumi.Input[_builtins.str]: ...
     @primary_fabric_id.setter
-    def primary_fabric_id(self, value: pulumi.Input[_builtins.str]): ...
+    def primary_fabric_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryFabricId")
     def recovery_fabric_id(self) -> pulumi.Input[_builtins.str]: ...
     @recovery_fabric_id.setter
-    def recovery_fabric_id(self, value: pulumi.Input[_builtins.str]): ...
+    def recovery_fabric_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverDeploymentModel")
     def failover_deployment_model(
@@ -6495,7 +7327,8 @@ class CreateRecoveryPlanInputPropertiesArgs:
     def failover_deployment_model(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, FailoverDeploymentModel]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerSpecificInput")
     def provider_specific_input(
@@ -6505,7 +7338,8 @@ class CreateRecoveryPlanInputPropertiesArgs:
     def provider_specific_input(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RecoveryPlanA2AInputArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CrossSubscriptionRestoreSettingsArgsDict(TypedDict):
     cross_subscription_restore_state: NotRequired[
@@ -6534,7 +7368,8 @@ class CrossSubscriptionRestoreSettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, CrossSubscriptionRestoreState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CurrentScenarioDetailsArgsDict(TypedDict):
     job_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -6554,17 +7389,20 @@ class CurrentScenarioDetailsArgs:
     @pulumi.getter(name="jobId")
     def job_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_id.setter
-    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scenarioName")
     def scenario_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scenario_name.setter
-    def scenario_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scenario_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DPMContainerExtendedInfoArgsDict(TypedDict):
     last_refreshed_at: NotRequired[pulumi.Input[_builtins.str]]
@@ -6578,7 +7416,10 @@ class DPMContainerExtendedInfoArgs:
     @pulumi.getter(name="lastRefreshedAt")
     def last_refreshed_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_refreshed_at.setter
-    def last_refreshed_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_refreshed_at(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DPMProtectedItemExtendedInfoArgsDict(TypedDict):
     disk_storage_used_in_bytes: NotRequired[pulumi.Input[_builtins.str]]
@@ -6626,32 +7467,46 @@ class DPMProtectedItemExtendedInfoArgs:
     @disk_storage_used_in_bytes.setter
     def disk_storage_used_in_bytes(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCollocated")
     def is_collocated(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_collocated.setter
-    def is_collocated(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_collocated(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isPresentOnCloud")
     def is_present_on_cloud(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_present_on_cloud.setter
-    def is_present_on_cloud(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_present_on_cloud(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_status.setter
-    def last_backup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRefreshedAt")
     def last_refreshed_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_refreshed_at.setter
-    def last_refreshed_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_refreshed_at(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPoint")
     def oldest_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oldest_recovery_point.setter
-    def oldest_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oldest_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPremiseLatestRecoveryPoint")
     def on_premise_latest_recovery_point(
@@ -6660,7 +7515,8 @@ class DPMProtectedItemExtendedInfoArgs:
     @on_premise_latest_recovery_point.setter
     def on_premise_latest_recovery_point(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPremiseOldestRecoveryPoint")
     def on_premise_oldest_recovery_point(
@@ -6669,7 +7525,8 @@ class DPMProtectedItemExtendedInfoArgs:
     @on_premise_oldest_recovery_point.setter
     def on_premise_oldest_recovery_point(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPremiseRecoveryPointCount")
     def on_premise_recovery_point_count(
@@ -6678,7 +7535,8 @@ class DPMProtectedItemExtendedInfoArgs:
     @on_premise_recovery_point_count.setter
     def on_premise_recovery_point_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectLoadPath")
     def protectable_object_load_path(
@@ -6687,22 +7545,30 @@ class DPMProtectedItemExtendedInfoArgs:
     @protectable_object_load_path.setter
     def protectable_object_load_path(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protected(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @protected.setter
-    def protected(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def protected(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionGroupName")
     def protection_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_group_name.setter
-    def protection_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointCount")
     def recovery_point_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_count.setter
-    def recovery_point_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="totalDiskStorageSizeInBytes")
     def total_disk_storage_size_in_bytes(
@@ -6711,7 +7577,8 @@ class DPMProtectedItemExtendedInfoArgs:
     @total_disk_storage_size_in_bytes.setter
     def total_disk_storage_size_in_bytes(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DPMProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -6777,22 +7644,28 @@ class DPMProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupEngineName")
     def backup_engine_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_engine_name.setter
-    def backup_engine_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_engine_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -6801,14 +7674,16 @@ class DPMProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -6817,7 +7692,8 @@ class DPMProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -6826,17 +7702,22 @@ class DPMProtectedItemArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[DPMProtectedItemExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -6845,12 +7726,14 @@ class DPMProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -6859,22 +7742,28 @@ class DPMProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -6883,7 +7772,8 @@ class DPMProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectedItemState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -6892,7 +7782,8 @@ class DPMProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -6901,12 +7792,16 @@ class DPMProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DailyRetentionFormatArgsDict(TypedDict):
     days_of_the_month: NotRequired[pulumi.Input[Sequence[pulumi.Input[DayArgsDict]]]]
@@ -6928,7 +7823,8 @@ class DailyRetentionFormatArgs:
     @days_of_the_month.setter
     def days_of_the_month(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DayArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DailyRetentionScheduleArgsDict(TypedDict):
     retention_duration: NotRequired[pulumi.Input[RetentionDurationArgsDict]]
@@ -6950,7 +7846,8 @@ class DailyRetentionScheduleArgs:
     @retention_duration.setter
     def retention_duration(
         self, value: Optional[pulumi.Input[RetentionDurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionTimes")
     def retention_times(
@@ -6959,7 +7856,8 @@ class DailyRetentionScheduleArgs:
     @retention_times.setter
     def retention_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DailyScheduleArgsDict(TypedDict):
     schedule_run_times: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -6981,7 +7879,8 @@ class DailyScheduleArgs:
     @schedule_run_times.setter
     def schedule_run_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DayArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.int]]
@@ -6999,12 +7898,14 @@ class DayArgs:
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isLast")
     def is_last(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_last.setter
-    def is_last(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_last(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DiskEncryptionInfoArgsDict(TypedDict):
     disk_encryption_key_info: NotRequired[pulumi.Input[DiskEncryptionKeyInfoArgsDict]]
@@ -7028,7 +7929,8 @@ class DiskEncryptionInfoArgs:
     @disk_encryption_key_info.setter
     def disk_encryption_key_info(
         self, value: Optional[pulumi.Input[DiskEncryptionKeyInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKeyInfo")
     def key_encryption_key_info(
@@ -7037,7 +7939,8 @@ class DiskEncryptionInfoArgs:
     @key_encryption_key_info.setter
     def key_encryption_key_info(
         self, value: Optional[pulumi.Input[KeyEncryptionKeyInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DiskEncryptionKeyInfoArgsDict(TypedDict):
     key_vault_resource_arm_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -7057,12 +7960,16 @@ class DiskEncryptionKeyInfoArgs:
     @key_vault_resource_arm_id.setter
     def key_vault_resource_arm_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretIdentifier")
     def secret_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_identifier.setter
-    def secret_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DiskExclusionPropertiesArgsDict(TypedDict):
     disk_lun_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
@@ -7086,12 +7993,16 @@ class DiskExclusionPropertiesArgs:
     @disk_lun_list.setter
     def disk_lun_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isInclusionList")
     def is_inclusion_list(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_inclusion_list.setter
-    def is_inclusion_list(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_inclusion_list(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class DistributedNodesInfoArgsDict(TypedDict):
     node_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -7111,17 +8022,22 @@ class DistributedNodesInfoArgs:
     @pulumi.getter(name="nodeName")
     def node_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_name.setter
-    def node_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DpmContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -7169,7 +8085,8 @@ class DpmContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -7178,22 +8095,30 @@ class DpmContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="canReRegister")
     def can_re_register(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @can_re_register.setter
-    def can_re_register(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def can_re_register(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerId")
     def container_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_id.setter
-    def container_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dpmAgentVersion")
     def dpm_agent_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dpm_agent_version.setter
-    def dpm_agent_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dpm_agent_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dpmServers")
     def dpm_servers(
@@ -7202,49 +8127,68 @@ class DpmContainerArgs:
     @dpm_servers.setter
     def dpm_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(self) -> Optional[pulumi.Input[DPMContainerExtendedInfoArgs]]: ...
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[DPMContainerExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemCount")
     def protected_item_count(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @protected_item_count.setter
-    def protected_item_count(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def protected_item_count(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionStatus")
     def protection_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_status.setter
-    def protection_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradeAvailable")
     def upgrade_available(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @upgrade_available.setter
-    def upgrade_available(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def upgrade_available(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class EnableMigrationInputPropertiesArgsDict(TypedDict):
     policy_id: pulumi.Input[_builtins.str]
@@ -7262,7 +8206,8 @@ class EnableMigrationInputPropertiesArgs:
     @pulumi.getter(name="policyId")
     def policy_id(self) -> pulumi.Input[_builtins.str]: ...
     @policy_id.setter
-    def policy_id(self, value: pulumi.Input[_builtins.str]): ...
+    def policy_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerSpecificDetails")
     def provider_specific_details(
@@ -7271,7 +8216,8 @@ class EnableMigrationInputPropertiesArgs:
     @provider_specific_details.setter
     def provider_specific_details(
         self, value: pulumi.Input[VMwareCbtEnableMigrationInputArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EnableProtectionInputPropertiesArgsDict(TypedDict):
     policy_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -7313,12 +8259,16 @@ class EnableProtectionInputPropertiesArgs:
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableItemId")
     def protectable_item_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_item_id.setter
-    def protectable_item_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_item_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerSpecificDetails")
     def provider_specific_details(
@@ -7350,7 +8300,8 @@ class EnableProtectionInputPropertiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExtendedLocationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -7368,12 +8319,16 @@ class ExtendedLocationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, ExtendedLocationType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]
+    ):  # -> None:
+        ...
 
 class ExtendedPropertiesArgsDict(TypedDict):
     disk_exclusion_properties: NotRequired[
@@ -7399,14 +8354,16 @@ class ExtendedPropertiesArgs:
     @disk_exclusion_properties.setter
     def disk_exclusion_properties(
         self, value: Optional[pulumi.Input[DiskExclusionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxVmApplicationName")
     def linux_vm_application_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @linux_vm_application_name.setter
     def linux_vm_application_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FabricCreationInputPropertiesArgsDict(TypedDict):
     custom_details: NotRequired[
@@ -7459,7 +8416,8 @@ class FabricCreationInputPropertiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GenericContainerExtendedInfoArgsDict(TypedDict):
     container_identity_info: NotRequired[pulumi.Input[ContainerIdentityInfoArgsDict]]
@@ -7489,12 +8447,14 @@ class GenericContainerExtendedInfoArgs:
     @container_identity_info.setter
     def container_identity_info(
         self, value: Optional[pulumi.Input[ContainerIdentityInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rawCertData")
     def raw_cert_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @raw_cert_data.setter
-    def raw_cert_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def raw_cert_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceEndpoints")
     def service_endpoints(
@@ -7503,7 +8463,8 @@ class GenericContainerExtendedInfoArgs:
     @service_endpoints.setter
     def service_endpoints(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GenericContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -7541,7 +8502,8 @@ class GenericContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -7550,7 +8512,8 @@ class GenericContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInformation")
     def extended_information(
@@ -7559,32 +8522,42 @@ class GenericContainerArgs:
     @extended_information.setter
     def extended_information(
         self, value: Optional[pulumi.Input[GenericContainerExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fabricName")
     def fabric_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fabric_name.setter
-    def fabric_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fabric_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class GenericProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -7656,17 +8629,20 @@ class GenericProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -7675,14 +8651,16 @@ class GenericProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -7691,22 +8669,28 @@ class GenericProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fabricName")
     def fabric_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fabric_name.setter
-    def fabric_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fabric_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -7715,12 +8699,14 @@ class GenericProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -7729,32 +8715,42 @@ class GenericProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyState")
     def policy_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_state.setter
-    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemId")
     def protected_item_id(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @protected_item_id.setter
-    def protected_item_id(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def protected_item_id(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(
@@ -7763,7 +8759,8 @@ class GenericProtectedItemArgs:
     @protection_state.setter
     def protection_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProtectionState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -7772,7 +8769,8 @@ class GenericProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -7781,7 +8779,8 @@ class GenericProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceAssociations")
     def source_associations(
@@ -7790,12 +8789,16 @@ class GenericProtectedItemArgs:
     @source_associations.setter
     def source_associations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class GenericProtectionPolicyArgsDict(TypedDict):
     backup_management_type: pulumi.Input[_builtins.str]
@@ -7829,17 +8832,22 @@ class GenericProtectionPolicyArgs:
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(self) -> pulumi.Input[_builtins.str]: ...
     @backup_management_type.setter
-    def backup_management_type(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_management_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fabricName")
     def fabric_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fabric_name.setter
-    def fabric_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fabric_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemsCount")
     def protected_items_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @protected_items_count.setter
-    def protected_items_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def protected_items_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -7848,7 +8856,8 @@ class GenericProtectionPolicyArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subProtectionPolicy")
     def sub_protection_policy(
@@ -7858,12 +8867,14 @@ class GenericProtectionPolicyArgs:
     def sub_protection_policy(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SubProtectionPolicyArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class HealthErrorArgsDict(TypedDict):
     creation_time_utc: NotRequired[pulumi.Input[_builtins.str]]
@@ -7915,7 +8926,10 @@ class HealthErrorArgs:
     @pulumi.getter(name="creationTimeUtc")
     def creation_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_time_utc.setter
-    def creation_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_time_utc(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerResolvability")
     def customer_resolvability(
@@ -7929,47 +8943,56 @@ class HealthErrorArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, HealthErrorCustomerResolvability]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityId")
     def entity_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @entity_id.setter
-    def entity_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def entity_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorCategory")
     def error_category(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_category.setter
-    def error_category(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_category(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorCode")
     def error_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_code.setter
-    def error_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorId")
     def error_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_id.setter
-    def error_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorLevel")
     def error_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_level.setter
-    def error_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorMessage")
     def error_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_message.setter
-    def error_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorSource")
     def error_source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_source.setter
-    def error_source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorType")
     def error_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_type.setter
-    def error_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="innerHealthErrors")
     def inner_health_errors(
@@ -7979,17 +9002,22 @@ class HealthErrorArgs:
     def inner_health_errors(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InnerHealthErrorArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="possibleCauses")
     def possible_causes(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @possible_causes.setter
-    def possible_causes(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def possible_causes(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recommendedAction")
     def recommended_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recommended_action.setter
-    def recommended_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recommended_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryProviderErrorMessage")
     def recovery_provider_error_message(
@@ -7998,12 +9026,14 @@ class HealthErrorArgs:
     @recovery_provider_error_message.setter
     def recovery_provider_error_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="summaryMessage")
     def summary_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @summary_message.setter
-    def summary_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def summary_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class HourlyScheduleArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.int]]
@@ -8023,21 +9053,24 @@ class HourlyScheduleArgs:
     @pulumi.getter
     def interval(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval.setter
-    def interval(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def interval(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleWindowDuration")
     def schedule_window_duration(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @schedule_window_duration.setter
     def schedule_window_duration(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleWindowStartTime")
     def schedule_window_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_window_start_time.setter
     def schedule_window_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class HyperVReplicaAzureDiskInputDetailsArgsDict(TypedDict):
     disk_encryption_set_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -8061,12 +9094,16 @@ class HyperVReplicaAzureDiskInputDetailsArgs:
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskId")
     def disk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_id.setter
-    def disk_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskType")
     def disk_type(
@@ -8075,17 +9112,24 @@ class HyperVReplicaAzureDiskInputDetailsArgs:
     @disk_type.setter
     def disk_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountId")
     def log_storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_storage_account_id.setter
-    def log_storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sectorSizeInBytes")
     def sector_size_in_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @sector_size_in_bytes.setter
-    def sector_size_in_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def sector_size_in_bytes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class HyperVReplicaAzureEnableProtectionInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -8197,12 +9241,16 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskType")
     def disk_type(
@@ -8211,7 +9259,8 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @disk_type.setter
     def disk_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disksToInclude")
     def disks_to_include(
@@ -8220,7 +9269,8 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @disks_to_include.setter
     def disks_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disksToIncludeForManagedDisks")
     def disks_to_include_for_managed_disks(
@@ -8234,19 +9284,22 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[HyperVReplicaAzureDiskInputDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableRdpOnTargetOption")
     def enable_rdp_on_target_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enable_rdp_on_target_option.setter
     def enable_rdp_on_target_option(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hvHostVmId")
     def hv_host_vm_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hv_host_vm_id.setter
-    def hv_host_vm_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hv_host_vm_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
     def license_type(
@@ -8255,7 +9308,8 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @license_type.setter
     def license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxLicenseType")
     def linux_license_type(
@@ -8264,17 +9318,22 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @linux_license_type.setter
     def linux_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LinuxLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountId")
     def log_storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_storage_account_id.setter
-    def log_storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osType")
     def os_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_type.setter
-    def os_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="seedManagedDiskTags")
     def seed_managed_disk_tags(
@@ -8283,7 +9342,8 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @seed_managed_disk_tags.setter
     def seed_managed_disk_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerLicenseType")
     def sql_server_license_type(
@@ -8292,31 +9352,40 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @sql_server_license_type.setter
     def sql_server_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlServerLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilitySetId")
     def target_availability_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_set_id.setter
     def target_availability_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilityZone")
     def target_availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_zone.setter
     def target_availability_zone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureNetworkId")
     def target_azure_network_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_azure_network_id.setter
-    def target_azure_network_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_azure_network_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureSubnetId")
     def target_azure_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_azure_subnet_id.setter
-    def target_azure_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_azure_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureV1ResourceGroupId")
     def target_azure_v1_resource_group_id(
@@ -8325,7 +9394,8 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @target_azure_v1_resource_group_id.setter
     def target_azure_v1_resource_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureV2ResourceGroupId")
     def target_azure_v2_resource_group_id(
@@ -8334,12 +9404,16 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @target_azure_v2_resource_group_id.setter
     def target_azure_v2_resource_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureVmName")
     def target_azure_vm_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_azure_vm_name.setter
-    def target_azure_vm_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_azure_vm_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetManagedDiskTags")
     def target_managed_disk_tags(
@@ -8348,7 +9422,8 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @target_managed_disk_tags.setter
     def target_managed_disk_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNicTags")
     def target_nic_tags(
@@ -8357,7 +9432,8 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @target_nic_tags.setter
     def target_nic_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetProximityPlacementGroupId")
     def target_proximity_placement_group_id(
@@ -8366,14 +9442,16 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @target_proximity_placement_group_id.setter
     def target_proximity_placement_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetStorageAccountId")
     def target_storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_storage_account_id.setter
     def target_storage_account_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSecurityProfile")
     def target_vm_security_profile(
@@ -8382,12 +9460,14 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @target_vm_security_profile.setter
     def target_vm_security_profile(
         self, value: Optional[pulumi.Input[SecurityProfilePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSize")
     def target_vm_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_vm_size.setter
-    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmTags")
     def target_vm_tags(
@@ -8396,12 +9476,16 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @target_vm_tags.setter
     def target_vm_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useManagedDisks")
     def use_managed_disks(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @use_managed_disks.setter
-    def use_managed_disks(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def use_managed_disks(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useManagedDisksForReplication")
     def use_managed_disks_for_replication(
@@ -8410,22 +9494,28 @@ class HyperVReplicaAzureEnableProtectionInputArgs:
     @use_managed_disks_for_replication.setter
     def use_managed_disks_for_replication(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userSelectedOSName")
     def user_selected_os_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_selected_os_name.setter
-    def user_selected_os_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_selected_os_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vhdId")
     def vhd_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vhd_id.setter
-    def vhd_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vhd_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmName")
     def vm_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_name.setter
-    def vm_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class HyperVReplicaAzurePolicyInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -8457,7 +9547,8 @@ class HyperVReplicaAzurePolicyInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationConsistentSnapshotFrequencyInHours")
     def application_consistent_snapshot_frequency_in_hours(
@@ -8466,7 +9557,8 @@ class HyperVReplicaAzurePolicyInputArgs:
     @application_consistent_snapshot_frequency_in_hours.setter
     def application_consistent_snapshot_frequency_in_hours(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlineReplicationStartTime")
     def online_replication_start_time(
@@ -8475,7 +9567,8 @@ class HyperVReplicaAzurePolicyInputArgs:
     @online_replication_start_time.setter
     def online_replication_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointHistoryDuration")
     def recovery_point_history_duration(
@@ -8484,12 +9577,16 @@ class HyperVReplicaAzurePolicyInputArgs:
     @recovery_point_history_duration.setter
     def recovery_point_history_duration(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationInterval")
     def replication_interval(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replication_interval.setter
-    def replication_interval(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replication_interval(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccounts")
     def storage_accounts(
@@ -8498,7 +9595,8 @@ class HyperVReplicaAzurePolicyInputArgs:
     @storage_accounts.setter
     def storage_accounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class HyperVReplicaBluePolicyInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -8540,14 +9638,16 @@ class HyperVReplicaBluePolicyInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedAuthenticationType")
     def allowed_authentication_type(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @allowed_authentication_type.setter
     def allowed_authentication_type(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationConsistentSnapshotFrequencyInHours")
     def application_consistent_snapshot_frequency_in_hours(
@@ -8556,19 +9656,22 @@ class HyperVReplicaBluePolicyInputArgs:
     @application_consistent_snapshot_frequency_in_hours.setter
     def application_consistent_snapshot_frequency_in_hours(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def compression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compression.setter
-    def compression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compression(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialReplicationMethod")
     def initial_replication_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @initial_replication_method.setter
     def initial_replication_method(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offlineReplicationExportPath")
     def offline_replication_export_path(
@@ -8577,7 +9680,8 @@ class HyperVReplicaBluePolicyInputArgs:
     @offline_replication_export_path.setter
     def offline_replication_export_path(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offlineReplicationImportPath")
     def offline_replication_import_path(
@@ -8586,7 +9690,8 @@ class HyperVReplicaBluePolicyInputArgs:
     @offline_replication_import_path.setter
     def offline_replication_import_path(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlineReplicationStartTime")
     def online_replication_start_time(
@@ -8595,17 +9700,22 @@ class HyperVReplicaBluePolicyInputArgs:
     @online_replication_start_time.setter
     def online_replication_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPoints")
     def recovery_points(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_points.setter
-    def recovery_points(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_points(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaDeletion")
     def replica_deletion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replica_deletion.setter
-    def replica_deletion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replica_deletion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationFrequencyInSeconds")
     def replication_frequency_in_seconds(
@@ -8614,12 +9724,16 @@ class HyperVReplicaBluePolicyInputArgs:
     @replication_frequency_in_seconds.setter
     def replication_frequency_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationPort")
     def replication_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replication_port.setter
-    def replication_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replication_port(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class HyperVReplicaPolicyInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -8659,14 +9773,16 @@ class HyperVReplicaPolicyInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedAuthenticationType")
     def allowed_authentication_type(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @allowed_authentication_type.setter
     def allowed_authentication_type(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationConsistentSnapshotFrequencyInHours")
     def application_consistent_snapshot_frequency_in_hours(
@@ -8675,19 +9791,22 @@ class HyperVReplicaPolicyInputArgs:
     @application_consistent_snapshot_frequency_in_hours.setter
     def application_consistent_snapshot_frequency_in_hours(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def compression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compression.setter
-    def compression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compression(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialReplicationMethod")
     def initial_replication_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @initial_replication_method.setter
     def initial_replication_method(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offlineReplicationExportPath")
     def offline_replication_export_path(
@@ -8696,7 +9815,8 @@ class HyperVReplicaPolicyInputArgs:
     @offline_replication_export_path.setter
     def offline_replication_export_path(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offlineReplicationImportPath")
     def offline_replication_import_path(
@@ -8705,7 +9825,8 @@ class HyperVReplicaPolicyInputArgs:
     @offline_replication_import_path.setter
     def offline_replication_import_path(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlineReplicationStartTime")
     def online_replication_start_time(
@@ -8714,22 +9835,30 @@ class HyperVReplicaPolicyInputArgs:
     @online_replication_start_time.setter
     def online_replication_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPoints")
     def recovery_points(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_points.setter
-    def recovery_points(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_points(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaDeletion")
     def replica_deletion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replica_deletion.setter
-    def replica_deletion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replica_deletion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationPort")
     def replication_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replication_port.setter
-    def replication_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replication_port(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class IaaSVMContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -8765,7 +9894,8 @@ class IaaSVMContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -8774,42 +9904,58 @@ class IaaSVMContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineId")
     def virtual_machine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_id.setter
-    def virtual_machine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineVersion")
     def virtual_machine_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_version.setter
-    def virtual_machine_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class IdentityDataArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ResourceIdentityType]]
@@ -8831,7 +9977,10 @@ class IdentityDataArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, ResourceIdentityType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ResourceIdentityType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, ResourceIdentityType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -8840,7 +9989,8 @@ class IdentityDataArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityProviderInputArgsDict(TypedDict):
     aad_authority: pulumi.Input[_builtins.str]
@@ -8864,27 +10014,32 @@ class IdentityProviderInputArgs:
     @pulumi.getter(name="aadAuthority")
     def aad_authority(self) -> pulumi.Input[_builtins.str]: ...
     @aad_authority.setter
-    def aad_authority(self, value: pulumi.Input[_builtins.str]): ...
+    def aad_authority(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationId")
     def application_id(self) -> pulumi.Input[_builtins.str]: ...
     @application_id.setter
-    def application_id(self, value: pulumi.Input[_builtins.str]): ...
+    def application_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def audience(self) -> pulumi.Input[_builtins.str]: ...
     @audience.setter
-    def audience(self, value: pulumi.Input[_builtins.str]): ...
+    def audience(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectId")
     def object_id(self) -> pulumi.Input[_builtins.str]: ...
     @object_id.setter
-    def object_id(self, value: pulumi.Input[_builtins.str]): ...
+    def object_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> pulumi.Input[_builtins.str]: ...
     @tenant_id.setter
-    def tenant_id(self, value: pulumi.Input[_builtins.str]): ...
+    def tenant_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ImmutabilitySettingsArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[Union[_builtins.str, ImmutabilityState]]]
@@ -8904,7 +10059,8 @@ class ImmutabilitySettingsArgs:
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ImmutabilityState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InMageAzureV2DiskInputDetailsArgsDict(TypedDict):
     disk_encryption_set_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -8926,12 +10082,16 @@ class InMageAzureV2DiskInputDetailsArgs:
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskId")
     def disk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_id.setter
-    def disk_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskType")
     def disk_type(
@@ -8940,12 +10100,16 @@ class InMageAzureV2DiskInputDetailsArgs:
     @disk_type.setter
     def disk_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountId")
     def log_storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_storage_account_id.setter
-    def log_storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InMageAzureV2EnableProtectionInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -9037,12 +10201,16 @@ class InMageAzureV2EnableProtectionInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskType")
     def disk_type(
@@ -9051,7 +10219,8 @@ class InMageAzureV2EnableProtectionInputArgs:
     @disk_type.setter
     def disk_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disksToInclude")
     def disks_to_include(
@@ -9065,14 +10234,16 @@ class InMageAzureV2EnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InMageAzureV2DiskInputDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableRdpOnTargetOption")
     def enable_rdp_on_target_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enable_rdp_on_target_option.setter
     def enable_rdp_on_target_option(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
     def license_type(
@@ -9081,37 +10252,56 @@ class InMageAzureV2EnableProtectionInputArgs:
     @license_type.setter
     def license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountId")
     def log_storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_storage_account_id.setter
-    def log_storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterTargetId")
     def master_target_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @master_target_id.setter
-    def master_target_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def master_target_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupId")
     def multi_vm_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_vm_group_id.setter
-    def multi_vm_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_vm_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupName")
     def multi_vm_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_vm_group_name.setter
-    def multi_vm_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_vm_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processServerId")
     def process_server_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @process_server_id.setter
-    def process_server_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def process_server_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runAsAccountId")
     def run_as_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @run_as_account_id.setter
-    def run_as_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def run_as_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="seedManagedDiskTags")
     def seed_managed_disk_tags(
@@ -9120,7 +10310,8 @@ class InMageAzureV2EnableProtectionInputArgs:
     @seed_managed_disk_tags.setter
     def seed_managed_disk_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerLicenseType")
     def sql_server_license_type(
@@ -9129,36 +10320,48 @@ class InMageAzureV2EnableProtectionInputArgs:
     @sql_server_license_type.setter
     def sql_server_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlServerLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
     def storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_id.setter
-    def storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilitySetId")
     def target_availability_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_set_id.setter
     def target_availability_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilityZone")
     def target_availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_zone.setter
     def target_availability_zone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureNetworkId")
     def target_azure_network_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_azure_network_id.setter
-    def target_azure_network_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_azure_network_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureSubnetId")
     def target_azure_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_azure_subnet_id.setter
-    def target_azure_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_azure_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureV1ResourceGroupId")
     def target_azure_v1_resource_group_id(
@@ -9167,7 +10370,8 @@ class InMageAzureV2EnableProtectionInputArgs:
     @target_azure_v1_resource_group_id.setter
     def target_azure_v1_resource_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureV2ResourceGroupId")
     def target_azure_v2_resource_group_id(
@@ -9176,12 +10380,16 @@ class InMageAzureV2EnableProtectionInputArgs:
     @target_azure_v2_resource_group_id.setter
     def target_azure_v2_resource_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAzureVmName")
     def target_azure_vm_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_azure_vm_name.setter
-    def target_azure_vm_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_azure_vm_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetManagedDiskTags")
     def target_managed_disk_tags(
@@ -9190,7 +10398,8 @@ class InMageAzureV2EnableProtectionInputArgs:
     @target_managed_disk_tags.setter
     def target_managed_disk_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNicTags")
     def target_nic_tags(
@@ -9199,7 +10408,8 @@ class InMageAzureV2EnableProtectionInputArgs:
     @target_nic_tags.setter
     def target_nic_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetProximityPlacementGroupId")
     def target_proximity_placement_group_id(
@@ -9208,12 +10418,14 @@ class InMageAzureV2EnableProtectionInputArgs:
     @target_proximity_placement_group_id.setter
     def target_proximity_placement_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSize")
     def target_vm_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_vm_size.setter
-    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmTags")
     def target_vm_tags(
@@ -9222,7 +10434,8 @@ class InMageAzureV2EnableProtectionInputArgs:
     @target_vm_tags.setter
     def target_vm_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InMageAzureV2PolicyInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -9254,7 +10467,8 @@ class InMageAzureV2PolicyInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmSyncStatus")
     def multi_vm_sync_status(
@@ -9263,7 +10477,8 @@ class InMageAzureV2PolicyInputArgs:
     @multi_vm_sync_status.setter
     def multi_vm_sync_status(
         self, value: pulumi.Input[Union[_builtins.str, SetMultiVmSyncStatus]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appConsistentFrequencyInMinutes")
     def app_consistent_frequency_in_minutes(
@@ -9272,7 +10487,8 @@ class InMageAzureV2PolicyInputArgs:
     @app_consistent_frequency_in_minutes.setter
     def app_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crashConsistentFrequencyInMinutes")
     def crash_consistent_frequency_in_minutes(
@@ -9281,12 +10497,16 @@ class InMageAzureV2PolicyInputArgs:
     @crash_consistent_frequency_in_minutes.setter
     def crash_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointHistory")
     def recovery_point_history(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_history.setter
-    def recovery_point_history(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_history(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointThresholdInMinutes")
     def recovery_point_threshold_in_minutes(
@@ -9295,7 +10515,8 @@ class InMageAzureV2PolicyInputArgs:
     @recovery_point_threshold_in_minutes.setter
     def recovery_point_threshold_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InMageDiskExclusionInputArgsDict(TypedDict):
     disk_signature_options: NotRequired[
@@ -9336,7 +10557,8 @@ class InMageDiskExclusionInputArgs:
                 Sequence[pulumi.Input[InMageDiskSignatureExclusionOptionsArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeOptions")
     def volume_options(
@@ -9350,7 +10572,8 @@ class InMageDiskExclusionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InMageVolumeExclusionOptionsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class InMageDiskSignatureExclusionOptionsArgsDict(TypedDict):
     disk_signature: NotRequired[pulumi.Input[_builtins.str]]
@@ -9364,7 +10587,8 @@ class InMageDiskSignatureExclusionOptionsArgs:
     @pulumi.getter(name="diskSignature")
     def disk_signature(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_signature.setter
-    def disk_signature(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_signature(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InMageEnableProtectionInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -9404,37 +10628,44 @@ class InMageEnableProtectionInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterTargetId")
     def master_target_id(self) -> pulumi.Input[_builtins.str]: ...
     @master_target_id.setter
-    def master_target_id(self, value: pulumi.Input[_builtins.str]): ...
+    def master_target_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupId")
     def multi_vm_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @multi_vm_group_id.setter
-    def multi_vm_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def multi_vm_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupName")
     def multi_vm_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @multi_vm_group_name.setter
-    def multi_vm_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def multi_vm_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processServerId")
     def process_server_id(self) -> pulumi.Input[_builtins.str]: ...
     @process_server_id.setter
-    def process_server_id(self, value: pulumi.Input[_builtins.str]): ...
+    def process_server_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionDrive")
     def retention_drive(self) -> pulumi.Input[_builtins.str]: ...
     @retention_drive.setter
-    def retention_drive(self, value: pulumi.Input[_builtins.str]): ...
+    def retention_drive(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datastoreName")
     def datastore_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @datastore_name.setter
-    def datastore_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def datastore_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskExclusionInput")
     def disk_exclusion_input(
@@ -9443,7 +10674,8 @@ class InMageEnableProtectionInputArgs:
     @disk_exclusion_input.setter
     def disk_exclusion_input(
         self, value: Optional[pulumi.Input[InMageDiskExclusionInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disksToInclude")
     def disks_to_include(
@@ -9452,17 +10684,24 @@ class InMageEnableProtectionInputArgs:
     @disks_to_include.setter
     def disks_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runAsAccountId")
     def run_as_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @run_as_account_id.setter
-    def run_as_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def run_as_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmFriendlyName")
     def vm_friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_friendly_name.setter
-    def vm_friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_friendly_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InMagePolicyInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -9490,7 +10729,8 @@ class InMagePolicyInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmSyncStatus")
     def multi_vm_sync_status(
@@ -9499,7 +10739,8 @@ class InMagePolicyInputArgs:
     @multi_vm_sync_status.setter
     def multi_vm_sync_status(
         self, value: pulumi.Input[Union[_builtins.str, SetMultiVmSyncStatus]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appConsistentFrequencyInMinutes")
     def app_consistent_frequency_in_minutes(
@@ -9508,12 +10749,16 @@ class InMagePolicyInputArgs:
     @app_consistent_frequency_in_minutes.setter
     def app_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointHistory")
     def recovery_point_history(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_history.setter
-    def recovery_point_history(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_history(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointThresholdInMinutes")
     def recovery_point_threshold_in_minutes(
@@ -9522,7 +10767,8 @@ class InMagePolicyInputArgs:
     @recovery_point_threshold_in_minutes.setter
     def recovery_point_threshold_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InMageRcmDiskInputArgsDict(TypedDict):
     disk_id: pulumi.Input[_builtins.str]
@@ -9546,27 +10792,38 @@ class InMageRcmDiskInputArgs:
     @pulumi.getter(name="diskId")
     def disk_id(self) -> pulumi.Input[_builtins.str]: ...
     @disk_id.setter
-    def disk_id(self, value: pulumi.Input[_builtins.str]): ...
+    def disk_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskType")
     def disk_type(self) -> pulumi.Input[Union[_builtins.str, DiskAccountType]]: ...
     @disk_type.setter
-    def disk_type(self, value: pulumi.Input[Union[_builtins.str, DiskAccountType]]): ...
+    def disk_type(
+        self, value: pulumi.Input[Union[_builtins.str, DiskAccountType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountId")
     def log_storage_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @log_storage_account_id.setter
-    def log_storage_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def log_storage_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sectorSizeInBytes")
     def sector_size_in_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @sector_size_in_bytes.setter
-    def sector_size_in_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def sector_size_in_bytes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class InMageRcmDisksDefaultInputArgsDict(TypedDict):
     disk_type: pulumi.Input[Union[_builtins.str, DiskAccountType]]
@@ -9588,22 +10845,32 @@ class InMageRcmDisksDefaultInputArgs:
     @pulumi.getter(name="diskType")
     def disk_type(self) -> pulumi.Input[Union[_builtins.str, DiskAccountType]]: ...
     @disk_type.setter
-    def disk_type(self, value: pulumi.Input[Union[_builtins.str, DiskAccountType]]): ...
+    def disk_type(
+        self, value: pulumi.Input[Union[_builtins.str, DiskAccountType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountId")
     def log_storage_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @log_storage_account_id.setter
-    def log_storage_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def log_storage_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sectorSizeInBytes")
     def sector_size_in_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @sector_size_in_bytes.setter
-    def sector_size_in_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def sector_size_in_bytes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class InMageRcmEnableProtectionInputArgsDict(TypedDict):
     fabric_discovery_machine_id: pulumi.Input[_builtins.str]
@@ -9707,22 +10974,28 @@ class InMageRcmEnableProtectionInputArgs:
     @pulumi.getter(name="fabricDiscoveryMachineId")
     def fabric_discovery_machine_id(self) -> pulumi.Input[_builtins.str]: ...
     @fabric_discovery_machine_id.setter
-    def fabric_discovery_machine_id(self, value: pulumi.Input[_builtins.str]): ...
+    def fabric_discovery_machine_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processServerId")
     def process_server_id(self) -> pulumi.Input[_builtins.str]: ...
     @process_server_id.setter
-    def process_server_id(self, value: pulumi.Input[_builtins.str]): ...
+    def process_server_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetResourceGroupId")
     def target_resource_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @target_resource_group_id.setter
-    def target_resource_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def target_resource_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disksDefault")
     def disks_default(
@@ -9731,7 +11004,8 @@ class InMageRcmEnableProtectionInputArgs:
     @disks_default.setter
     def disks_default(
         self, value: Optional[pulumi.Input[InMageRcmDisksDefaultInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disksToInclude")
     def disks_to_include(
@@ -9741,7 +11015,8 @@ class InMageRcmEnableProtectionInputArgs:
     def disks_to_include(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InMageRcmDiskInputArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
     def license_type(
@@ -9750,7 +11025,8 @@ class InMageRcmEnableProtectionInputArgs:
     @license_type.setter
     def license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxLicenseType")
     def linux_license_type(
@@ -9759,17 +11035,24 @@ class InMageRcmEnableProtectionInputArgs:
     @linux_license_type.setter
     def linux_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LinuxLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiVmGroupName")
     def multi_vm_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multi_vm_group_name.setter
-    def multi_vm_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multi_vm_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runAsAccountId")
     def run_as_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @run_as_account_id.setter
-    def run_as_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def run_as_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="seedManagedDiskTags")
     def seed_managed_disk_tags(
@@ -9781,7 +11064,8 @@ class InMageRcmEnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UserCreatedResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerLicenseType")
     def sql_server_license_type(
@@ -9790,21 +11074,24 @@ class InMageRcmEnableProtectionInputArgs:
     @sql_server_license_type.setter
     def sql_server_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlServerLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilitySetId")
     def target_availability_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_set_id.setter
     def target_availability_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilityZone")
     def target_availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_zone.setter
     def target_availability_zone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetBootDiagnosticsStorageAccountId")
     def target_boot_diagnostics_storage_account_id(
@@ -9813,7 +11100,8 @@ class InMageRcmEnableProtectionInputArgs:
     @target_boot_diagnostics_storage_account_id.setter
     def target_boot_diagnostics_storage_account_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetManagedDiskTags")
     def target_managed_disk_tags(
@@ -9825,12 +11113,16 @@ class InMageRcmEnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UserCreatedResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNetworkId")
     def target_network_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_network_id.setter
-    def target_network_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_network_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNicTags")
     def target_nic_tags(
@@ -9842,7 +11134,8 @@ class InMageRcmEnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UserCreatedResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetProximityPlacementGroupId")
     def target_proximity_placement_group_id(
@@ -9851,17 +11144,22 @@ class InMageRcmEnableProtectionInputArgs:
     @target_proximity_placement_group_id.setter
     def target_proximity_placement_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSubnetName")
     def target_subnet_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_subnet_name.setter
-    def target_subnet_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_subnet_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmName")
     def target_vm_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_vm_name.setter
-    def target_vm_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_vm_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSecurityProfile")
     def target_vm_security_profile(
@@ -9870,12 +11168,14 @@ class InMageRcmEnableProtectionInputArgs:
     @target_vm_security_profile.setter
     def target_vm_security_profile(
         self, value: Optional[pulumi.Input[SecurityProfilePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSize")
     def target_vm_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_vm_size.setter
-    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmTags")
     def target_vm_tags(
@@ -9887,22 +11187,30 @@ class InMageRcmEnableProtectionInputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UserCreatedResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testNetworkId")
     def test_network_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_network_id.setter
-    def test_network_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_network_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testSubnetName")
     def test_subnet_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_subnet_name.setter
-    def test_subnet_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_subnet_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userSelectedOSName")
     def user_selected_os_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_selected_os_name.setter
-    def user_selected_os_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_selected_os_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InMageRcmFabricCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -9924,22 +11232,28 @@ class InMageRcmFabricCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="physicalSiteId")
     def physical_site_id(self) -> pulumi.Input[_builtins.str]: ...
     @physical_site_id.setter
-    def physical_site_id(self, value: pulumi.Input[_builtins.str]): ...
+    def physical_site_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceAgentIdentity")
     def source_agent_identity(self) -> pulumi.Input[IdentityProviderInputArgs]: ...
     @source_agent_identity.setter
-    def source_agent_identity(self, value: pulumi.Input[IdentityProviderInputArgs]): ...
+    def source_agent_identity(
+        self, value: pulumi.Input[IdentityProviderInputArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmwareSiteId")
     def vmware_site_id(self) -> pulumi.Input[_builtins.str]: ...
     @vmware_site_id.setter
-    def vmware_site_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vmware_site_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InMageRcmFailbackPolicyCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -9963,7 +11277,8 @@ class InMageRcmFailbackPolicyCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appConsistentFrequencyInMinutes")
     def app_consistent_frequency_in_minutes(
@@ -9972,7 +11287,8 @@ class InMageRcmFailbackPolicyCreationInputArgs:
     @app_consistent_frequency_in_minutes.setter
     def app_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crashConsistentFrequencyInMinutes")
     def crash_consistent_frequency_in_minutes(
@@ -9981,7 +11297,8 @@ class InMageRcmFailbackPolicyCreationInputArgs:
     @crash_consistent_frequency_in_minutes.setter
     def crash_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InMageRcmPolicyCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -10009,7 +11326,8 @@ class InMageRcmPolicyCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appConsistentFrequencyInMinutes")
     def app_consistent_frequency_in_minutes(
@@ -10018,7 +11336,8 @@ class InMageRcmPolicyCreationInputArgs:
     @app_consistent_frequency_in_minutes.setter
     def app_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crashConsistentFrequencyInMinutes")
     def crash_consistent_frequency_in_minutes(
@@ -10027,12 +11346,16 @@ class InMageRcmPolicyCreationInputArgs:
     @crash_consistent_frequency_in_minutes.setter
     def crash_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMultiVmSync")
     def enable_multi_vm_sync(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enable_multi_vm_sync.setter
-    def enable_multi_vm_sync(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enable_multi_vm_sync(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointHistoryInMinutes")
     def recovery_point_history_in_minutes(
@@ -10041,7 +11364,8 @@ class InMageRcmPolicyCreationInputArgs:
     @recovery_point_history_in_minutes.setter
     def recovery_point_history_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InMageVolumeExclusionOptionsArgsDict(TypedDict):
     only_exclude_if_single_volume: NotRequired[pulumi.Input[_builtins.str]]
@@ -10063,12 +11387,14 @@ class InMageVolumeExclusionOptionsArgs:
     @only_exclude_if_single_volume.setter
     def only_exclude_if_single_volume(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeLabel")
     def volume_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_label.setter
-    def volume_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def volume_label(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InnerHealthErrorArgsDict(TypedDict):
     creation_time_utc: NotRequired[pulumi.Input[_builtins.str]]
@@ -10114,7 +11440,10 @@ class InnerHealthErrorArgs:
     @pulumi.getter(name="creationTimeUtc")
     def creation_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_time_utc.setter
-    def creation_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_time_utc(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerResolvability")
     def customer_resolvability(
@@ -10128,57 +11457,70 @@ class InnerHealthErrorArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, HealthErrorCustomerResolvability]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityId")
     def entity_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @entity_id.setter
-    def entity_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def entity_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorCategory")
     def error_category(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_category.setter
-    def error_category(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_category(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorCode")
     def error_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_code.setter
-    def error_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorId")
     def error_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_id.setter
-    def error_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorLevel")
     def error_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_level.setter
-    def error_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorMessage")
     def error_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_message.setter
-    def error_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorSource")
     def error_source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_source.setter
-    def error_source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorType")
     def error_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_type.setter
-    def error_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="possibleCauses")
     def possible_causes(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @possible_causes.setter
-    def possible_causes(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def possible_causes(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recommendedAction")
     def recommended_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recommended_action.setter
-    def recommended_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recommended_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryProviderErrorMessage")
     def recovery_provider_error_message(
@@ -10187,12 +11529,14 @@ class InnerHealthErrorArgs:
     @recovery_provider_error_message.setter
     def recovery_provider_error_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="summaryMessage")
     def summary_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @summary_message.setter
-    def summary_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def summary_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InquiryInfoArgsDict(TypedDict):
     inquiry_details: NotRequired[
@@ -10221,12 +11565,14 @@ class InquiryInfoArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadInquiryDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InquiryValidationArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
@@ -10240,7 +11586,8 @@ class InquiryValidationArgs:
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InstantRPAdditionalDetailsArgsDict(TypedDict):
     azure_backup_rg_name_prefix: NotRequired[pulumi.Input[_builtins.str]]
@@ -10260,14 +11607,16 @@ class InstantRPAdditionalDetailsArgs:
     @azure_backup_rg_name_prefix.setter
     def azure_backup_rg_name_prefix(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureBackupRGNameSuffix")
     def azure_backup_rg_name_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @azure_backup_rg_name_suffix.setter
     def azure_backup_rg_name_suffix(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KPIResourceHealthDetailsArgsDict(TypedDict):
     resource_health_status: NotRequired[
@@ -10291,7 +11640,8 @@ class KPIResourceHealthDetailsArgs:
     @resource_health_status.setter
     def resource_health_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ResourceHealthStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KeyEncryptionKeyInfoArgsDict(TypedDict):
     key_identifier: NotRequired[pulumi.Input[_builtins.str]]
@@ -10309,14 +11659,16 @@ class KeyEncryptionKeyInfoArgs:
     @pulumi.getter(name="keyIdentifier")
     def key_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_identifier.setter
-    def key_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_identifier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultResourceArmId")
     def key_vault_resource_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_resource_arm_id.setter
     def key_vault_resource_arm_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LogSchedulePolicyArgsDict(TypedDict):
     schedule_policy_type: pulumi.Input[_builtins.str]
@@ -10334,14 +11686,16 @@ class LogSchedulePolicyArgs:
     @pulumi.getter(name="schedulePolicyType")
     def schedule_policy_type(self) -> pulumi.Input[_builtins.str]: ...
     @schedule_policy_type.setter
-    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]): ...
+    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleFrequencyInMins")
     def schedule_frequency_in_mins(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @schedule_frequency_in_mins.setter
     def schedule_frequency_in_mins(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LongTermRetentionPolicyArgsDict(TypedDict):
     retention_policy_type: pulumi.Input[_builtins.str]
@@ -10365,14 +11719,16 @@ class LongTermRetentionPolicyArgs:
     @pulumi.getter(name="retentionPolicyType")
     def retention_policy_type(self) -> pulumi.Input[_builtins.str]: ...
     @retention_policy_type.setter
-    def retention_policy_type(self, value: pulumi.Input[_builtins.str]): ...
+    def retention_policy_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailySchedule")
     def daily_schedule(self) -> Optional[pulumi.Input[DailyRetentionScheduleArgs]]: ...
     @daily_schedule.setter
     def daily_schedule(
         self, value: Optional[pulumi.Input[DailyRetentionScheduleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monthlySchedule")
     def monthly_schedule(
@@ -10381,7 +11737,8 @@ class LongTermRetentionPolicyArgs:
     @monthly_schedule.setter
     def monthly_schedule(
         self, value: Optional[pulumi.Input[MonthlyRetentionScheduleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklySchedule")
     def weekly_schedule(
@@ -10390,7 +11747,8 @@ class LongTermRetentionPolicyArgs:
     @weekly_schedule.setter
     def weekly_schedule(
         self, value: Optional[pulumi.Input[WeeklyRetentionScheduleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="yearlySchedule")
     def yearly_schedule(
@@ -10399,7 +11757,8 @@ class LongTermRetentionPolicyArgs:
     @yearly_schedule.setter
     def yearly_schedule(
         self, value: Optional[pulumi.Input[YearlyRetentionScheduleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LongTermSchedulePolicyArgsDict(TypedDict):
     schedule_policy_type: pulumi.Input[_builtins.str]
@@ -10413,7 +11772,8 @@ class LongTermSchedulePolicyArgs:
     @pulumi.getter(name="schedulePolicyType")
     def schedule_policy_type(self) -> pulumi.Input[_builtins.str]: ...
     @schedule_policy_type.setter
-    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]): ...
+    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MABContainerHealthDetailsArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
@@ -10437,12 +11797,14 @@ class MABContainerHealthDetailsArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def recommendations(
@@ -10451,12 +11813,14 @@ class MABContainerHealthDetailsArgs:
     @recommendations.setter
     def recommendations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @title.setter
-    def title(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def title(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MabContainerExtendedInfoArgsDict(TypedDict):
     backup_item_type: NotRequired[pulumi.Input[Union[_builtins.str, BackupItemType]]]
@@ -10488,7 +11852,8 @@ class MabContainerExtendedInfoArgs:
     @backup_item_type.setter
     def backup_item_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupItemType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupItems")
     def backup_items(
@@ -10497,22 +11862,30 @@ class MabContainerExtendedInfoArgs:
     @backup_items.setter
     def backup_items(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_status.setter
-    def last_backup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRefreshedAt")
     def last_refreshed_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_refreshed_at.setter
-    def last_refreshed_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_refreshed_at(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MabContainerArgsDict(TypedDict):
     container_type: pulumi.Input[_builtins.str]
@@ -10560,12 +11933,14 @@ class MabContainerArgs:
     @pulumi.getter(name="containerType")
     def container_type(self) -> pulumi.Input[_builtins.str]: ...
     @container_type.setter
-    def container_type(self, value: pulumi.Input[_builtins.str]): ...
+    def container_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentVersion")
     def agent_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_version.setter
-    def agent_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(
@@ -10574,39 +11949,50 @@ class MabContainerArgs:
     @backup_management_type.setter
     def backup_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="canReRegister")
     def can_re_register(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @can_re_register.setter
-    def can_re_register(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def can_re_register(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerHealthState")
     def container_health_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_health_state.setter
-    def container_health_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_health_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerId")
     def container_id(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @container_id.setter
-    def container_id(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def container_id(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(self) -> Optional[pulumi.Input[MabContainerExtendedInfoArgs]]: ...
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[MabContainerExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_status.setter
-    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mabContainerHealthDetails")
     def mab_container_health_details(
@@ -10620,22 +12006,32 @@ class MabContainerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[MABContainerHealthDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectableObjectType")
     def protectable_object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protectable_object_type.setter
-    def protectable_object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protectable_object_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemCount")
     def protected_item_count(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @protected_item_count.setter
-    def protected_item_count(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def protected_item_count(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationStatus")
     def registration_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_status.setter
-    def registration_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MabFileFolderProtectedItemExtendedInfoArgsDict(TypedDict):
     last_refreshed_at: NotRequired[pulumi.Input[_builtins.str]]
@@ -10655,17 +12051,26 @@ class MabFileFolderProtectedItemExtendedInfoArgs:
     @pulumi.getter(name="lastRefreshedAt")
     def last_refreshed_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_refreshed_at.setter
-    def last_refreshed_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_refreshed_at(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oldestRecoveryPoint")
     def oldest_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oldest_recovery_point.setter
-    def oldest_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oldest_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointCount")
     def recovery_point_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recovery_point_count.setter
-    def recovery_point_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recovery_point_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class MabFileFolderProtectedItemArgsDict(TypedDict):
     protected_item_type: pulumi.Input[_builtins.str]
@@ -10737,22 +12142,26 @@ class MabFileFolderProtectedItemArgs:
     @pulumi.getter(name="protectedItemType")
     def protected_item_type(self) -> pulumi.Input[_builtins.str]: ...
     @protected_item_type.setter
-    def protected_item_type(self, value: pulumi.Input[_builtins.str]): ...
+    def protected_item_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupSetName")
     def backup_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_set_name.setter
-    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computerName")
     def computer_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @computer_name.setter
-    def computer_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def computer_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -10761,7 +12170,8 @@ class MabFileFolderProtectedItemArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteSyncTimeInUTC")
     def deferred_delete_sync_time_in_utc(
@@ -10770,14 +12180,16 @@ class MabFileFolderProtectedItemArgs:
     @deferred_delete_sync_time_in_utc.setter
     def deferred_delete_sync_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeInUTC")
     def deferred_delete_time_in_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deferred_delete_time_in_utc.setter
     def deferred_delete_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferredDeleteTimeRemaining")
     def deferred_delete_time_remaining(
@@ -10786,7 +12198,8 @@ class MabFileFolderProtectedItemArgs:
     @deferred_delete_time_remaining.setter
     def deferred_delete_time_remaining(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedInfo")
     def extended_info(
@@ -10795,17 +12208,22 @@ class MabFileFolderProtectedItemArgs:
     @extended_info.setter
     def extended_info(
         self, value: Optional[pulumi.Input[MabFileFolderProtectedItemExtendedInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isArchiveEnabled")
     def is_archive_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_archive_enabled.setter
-    def is_archive_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_archive_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDeferredDeleteScheduleUpcoming")
     def is_deferred_delete_schedule_upcoming(
@@ -10814,12 +12232,14 @@ class MabFileFolderProtectedItemArgs:
     @is_deferred_delete_schedule_upcoming.setter
     def is_deferred_delete_schedule_upcoming(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRehydrate")
     def is_rehydrate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_rehydrate.setter
-    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_rehydrate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isScheduledForDeferredDelete")
     def is_scheduled_for_deferred_delete(
@@ -10828,37 +12248,52 @@ class MabFileFolderProtectedItemArgs:
     @is_scheduled_for_deferred_delete.setter
     def is_scheduled_for_deferred_delete(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupStatus")
     def last_backup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_status.setter
-    def last_backup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupTime")
     def last_backup_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_time.setter
-    def last_backup_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRecoveryPoint")
     def last_recovery_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_recovery_point.setter
-    def last_recovery_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_recovery_point(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyName")
     def policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_name.setter
-    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_state.setter
-    def protection_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -10867,7 +12302,8 @@ class MabFileFolderProtectedItemArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -10876,12 +12312,16 @@ class MabFileFolderProtectedItemArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MabProtectionPolicyArgsDict(TypedDict):
     backup_management_type: pulumi.Input[_builtins.str]
@@ -10933,12 +12373,16 @@ class MabProtectionPolicyArgs:
     @pulumi.getter(name="backupManagementType")
     def backup_management_type(self) -> pulumi.Input[_builtins.str]: ...
     @backup_management_type.setter
-    def backup_management_type(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_management_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedItemsCount")
     def protected_items_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @protected_items_count.setter
-    def protected_items_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def protected_items_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -10947,7 +12391,8 @@ class MabProtectionPolicyArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPolicy")
     def retention_policy(
@@ -10961,7 +12406,8 @@ class MabProtectionPolicyArgs:
         value: Optional[
             pulumi.Input[Union[LongTermRetentionPolicyArgs, SimpleRetentionPolicyArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulePolicy")
     def schedule_policy(
@@ -10989,7 +12435,8 @@ class MabProtectionPolicyArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MonitoringSettingsArgsDict(TypedDict):
     azure_monitor_alert_settings: NotRequired[
@@ -11015,7 +12462,8 @@ class MonitoringSettingsArgs:
     @azure_monitor_alert_settings.setter
     def azure_monitor_alert_settings(
         self, value: Optional[pulumi.Input[AzureMonitorAlertSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="classicAlertSettings")
     def classic_alert_settings(
@@ -11024,7 +12472,8 @@ class MonitoringSettingsArgs:
     @classic_alert_settings.setter
     def classic_alert_settings(
         self, value: Optional[pulumi.Input[ClassicAlertSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MonthlyRetentionScheduleArgsDict(TypedDict):
     retention_duration: NotRequired[pulumi.Input[RetentionDurationArgsDict]]
@@ -11060,7 +12509,8 @@ class MonthlyRetentionScheduleArgs:
     @retention_duration.setter
     def retention_duration(
         self, value: Optional[pulumi.Input[RetentionDurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionScheduleDaily")
     def retention_schedule_daily(
@@ -11069,7 +12519,8 @@ class MonthlyRetentionScheduleArgs:
     @retention_schedule_daily.setter
     def retention_schedule_daily(
         self, value: Optional[pulumi.Input[DailyRetentionFormatArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionScheduleFormatType")
     def retention_schedule_format_type(
@@ -11079,7 +12530,8 @@ class MonthlyRetentionScheduleArgs:
     def retention_schedule_format_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, RetentionScheduleFormat]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionScheduleWeekly")
     def retention_schedule_weekly(
@@ -11088,7 +12540,8 @@ class MonthlyRetentionScheduleArgs:
     @retention_schedule_weekly.setter
     def retention_schedule_weekly(
         self, value: Optional[pulumi.Input[WeeklyRetentionFormatArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionTimes")
     def retention_times(
@@ -11097,7 +12550,8 @@ class MonthlyRetentionScheduleArgs:
     @retention_times.setter
     def retention_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionArgsDict(TypedDict):
     group_ids: NotRequired[
@@ -11144,12 +12598,16 @@ class PrivateEndpointConnectionArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, VaultSubResourceType]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpoint")
     def private_endpoint(self) -> Optional[pulumi.Input[PrivateEndpointArgs]]: ...
     @private_endpoint.setter
-    def private_endpoint(self, value: Optional[pulumi.Input[PrivateEndpointArgs]]): ...
+    def private_endpoint(
+        self, value: Optional[pulumi.Input[PrivateEndpointArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -11158,7 +12616,8 @@ class PrivateEndpointConnectionArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: Optional[pulumi.Input[PrivateLinkServiceConnectionStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -11167,7 +12626,8 @@ class PrivateEndpointConnectionArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11181,7 +12641,8 @@ class PrivateEndpointArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -11205,12 +12666,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -11224,7 +12689,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RecoveryPlanA2AInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -11248,7 +12714,8 @@ class RecoveryPlanA2AInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryExtendedLocation")
     def primary_extended_location(
@@ -11257,12 +12724,14 @@ class RecoveryPlanA2AInputArgs:
     @primary_extended_location.setter
     def primary_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryZone")
     def primary_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_zone.setter
-    def primary_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryExtendedLocation")
     def recovery_extended_location(
@@ -11271,12 +12740,14 @@ class RecoveryPlanA2AInputArgs:
     @recovery_extended_location.setter
     def recovery_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryZone")
     def recovery_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_zone.setter
-    def recovery_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RecoveryPlanActionArgsDict(TypedDict):
     action_name: pulumi.Input[_builtins.str]
@@ -11320,7 +12791,8 @@ class RecoveryPlanActionArgs:
     @pulumi.getter(name="actionName")
     def action_name(self) -> pulumi.Input[_builtins.str]: ...
     @action_name.setter
-    def action_name(self, value: pulumi.Input[_builtins.str]): ...
+    def action_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customDetails")
     def custom_details(
@@ -11342,7 +12814,8 @@ class RecoveryPlanActionArgs:
                 RecoveryPlanScriptActionDetailsArgs,
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverDirections")
     def failover_directions(
@@ -11356,7 +12829,8 @@ class RecoveryPlanActionArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[Union[_builtins.str, PossibleOperationsDirections]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverTypes")
     def failover_types(
@@ -11372,7 +12846,8 @@ class RecoveryPlanActionArgs:
                 pulumi.Input[Union[_builtins.str, ReplicationProtectedItemOperation]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RecoveryPlanAutomationRunbookActionDetailsArgsDict(TypedDict):
     fabric_location: pulumi.Input[Union[_builtins.str, RecoveryPlanActionLocation]]
@@ -11398,22 +12873,26 @@ class RecoveryPlanAutomationRunbookActionDetailsArgs:
     @fabric_location.setter
     def fabric_location(
         self, value: pulumi.Input[Union[_builtins.str, RecoveryPlanActionLocation]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runbookId")
     def runbook_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @runbook_id.setter
-    def runbook_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def runbook_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timeout.setter
-    def timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timeout(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RecoveryPlanGroupArgsDict(TypedDict):
     group_type: pulumi.Input[Union[_builtins.str, RecoveryPlanGroupType]]
@@ -11451,7 +12930,8 @@ class RecoveryPlanGroupArgs:
     @group_type.setter
     def group_type(
         self, value: pulumi.Input[Union[_builtins.str, RecoveryPlanGroupType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endGroupActions")
     def end_group_actions(
@@ -11461,7 +12941,8 @@ class RecoveryPlanGroupArgs:
     def end_group_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RecoveryPlanActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationProtectedItems")
     def replication_protected_items(
@@ -11475,7 +12956,8 @@ class RecoveryPlanGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecoveryPlanProtectedItemArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startGroupActions")
     def start_group_actions(
@@ -11485,7 +12967,8 @@ class RecoveryPlanGroupArgs:
     def start_group_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RecoveryPlanActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RecoveryPlanManualActionDetailsArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -11503,12 +12986,14 @@ class RecoveryPlanManualActionDetailsArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RecoveryPlanProtectedItemArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11526,12 +13011,16 @@ class RecoveryPlanProtectedItemArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineId")
     def virtual_machine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_id.setter
-    def virtual_machine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RecoveryPlanScriptActionDetailsArgsDict(TypedDict):
     fabric_location: pulumi.Input[Union[_builtins.str, RecoveryPlanActionLocation]]
@@ -11557,22 +13046,26 @@ class RecoveryPlanScriptActionDetailsArgs:
     @fabric_location.setter
     def fabric_location(
         self, value: pulumi.Input[Union[_builtins.str, RecoveryPlanActionLocation]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timeout.setter
-    def timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timeout(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RegisteredClusterNodesArgsDict(TypedDict):
     bios_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11594,24 +13087,30 @@ class RegisteredClusterNodesArgs:
     @pulumi.getter(name="biosId")
     def bios_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bios_id.setter
-    def bios_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bios_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterNodeFqdn")
     def cluster_node_fqdn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_node_fqdn.setter
-    def cluster_node_fqdn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_node_fqdn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isSharedDiskVirtualNode")
     def is_shared_disk_virtual_node(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_shared_disk_virtual_node.setter
     def is_shared_disk_virtual_node(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineId")
     def machine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @machine_id.setter
-    def machine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def machine_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ReplicationProtectionClusterPropertiesArgsDict(TypedDict):
     active_location: NotRequired[pulumi.Input[_builtins.str]]
@@ -11713,12 +13212,16 @@ class ReplicationProtectionClusterPropertiesArgs:
     @pulumi.getter(name="activeLocation")
     def active_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @active_location.setter
-    def active_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def active_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentClusterId")
     def agent_cluster_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_cluster_id.setter
-    def agent_cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_cluster_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOperations")
     def allowed_operations(
@@ -11727,7 +13230,8 @@ class ReplicationProtectionClusterPropertiesArgs:
     @allowed_operations.setter
     def allowed_operations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="areAllClusterNodesRegistered")
     def are_all_cluster_nodes_registered(
@@ -11736,12 +13240,14 @@ class ReplicationProtectionClusterPropertiesArgs:
     @are_all_cluster_nodes_registered.setter
     def are_all_cluster_nodes_registered(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterFqdn")
     def cluster_fqdn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_fqdn.setter
-    def cluster_fqdn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_fqdn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterNodeFqdns")
     def cluster_node_fqdns(
@@ -11750,7 +13256,8 @@ class ReplicationProtectionClusterPropertiesArgs:
     @cluster_node_fqdns.setter
     def cluster_node_fqdns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterProtectedItemIds")
     def cluster_protected_item_ids(
@@ -11759,7 +13266,8 @@ class ReplicationProtectionClusterPropertiesArgs:
     @cluster_protected_item_ids.setter
     def cluster_protected_item_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterRegisteredNodes")
     def cluster_registered_nodes(
@@ -11771,7 +13279,8 @@ class ReplicationProtectionClusterPropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RegisteredClusterNodesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="currentScenario")
     def current_scenario(
@@ -11780,7 +13289,8 @@ class ReplicationProtectionClusterPropertiesArgs:
     @current_scenario.setter
     def current_scenario(
         self, value: Optional[pulumi.Input[CurrentScenarioDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthErrors")
     def health_errors(
@@ -11789,7 +13299,8 @@ class ReplicationProtectionClusterPropertiesArgs:
     @health_errors.setter
     def health_errors(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[HealthErrorArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastSuccessfulFailoverTime")
     def last_successful_failover_time(
@@ -11798,7 +13309,8 @@ class ReplicationProtectionClusterPropertiesArgs:
     @last_successful_failover_time.setter
     def last_successful_failover_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastSuccessfulTestFailoverTime")
     def last_successful_test_failover_time(
@@ -11807,29 +13319,38 @@ class ReplicationProtectionClusterPropertiesArgs:
     @last_successful_test_failover_time.setter
     def last_successful_test_failover_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyFriendlyName")
     def policy_friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_friendly_name.setter
-    def policy_friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_friendly_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryFabricFriendlyName")
     def primary_fabric_friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_fabric_friendly_name.setter
     def primary_fabric_friendly_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryFabricProvider")
     def primary_fabric_provider(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_fabric_provider.setter
-    def primary_fabric_provider(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_fabric_provider(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryProtectionContainerFriendlyName")
     def primary_protection_container_friendly_name(
@@ -11838,24 +13359,32 @@ class ReplicationProtectionClusterPropertiesArgs:
     @primary_protection_container_friendly_name.setter
     def primary_protection_container_friendly_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionClusterType")
     def protection_cluster_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_cluster_type.setter
-    def protection_cluster_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_cluster_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_state.setter
-    def protection_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionStateDescription")
     def protection_state_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_state_description.setter
     def protection_state_description(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerSpecificDetails")
     def provider_specific_details(
@@ -11864,12 +13393,16 @@ class ReplicationProtectionClusterPropertiesArgs:
     @provider_specific_details.setter
     def provider_specific_details(
         self, value: Optional[pulumi.Input[A2AReplicationProtectionClusterDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryContainerId")
     def recovery_container_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_container_id.setter
-    def recovery_container_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_container_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryFabricFriendlyName")
     def recovery_fabric_friendly_name(
@@ -11878,12 +13411,16 @@ class ReplicationProtectionClusterPropertiesArgs:
     @recovery_fabric_friendly_name.setter
     def recovery_fabric_friendly_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryFabricId")
     def recovery_fabric_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_fabric_id.setter
-    def recovery_fabric_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_fabric_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryProtectionContainerFriendlyName")
     def recovery_protection_container_friendly_name(
@@ -11892,12 +13429,16 @@ class ReplicationProtectionClusterPropertiesArgs:
     @recovery_protection_container_friendly_name.setter
     def recovery_protection_container_friendly_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationHealth")
     def replication_health(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replication_health.setter
-    def replication_health(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replication_health(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharedDiskProperties")
     def shared_disk_properties(
@@ -11906,12 +13447,16 @@ class ReplicationProtectionClusterPropertiesArgs:
     @shared_disk_properties.setter
     def shared_disk_properties(
         self, value: Optional[pulumi.Input[SharedDiskReplicationItemPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testFailoverState")
     def test_failover_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_failover_state.setter
-    def test_failover_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_failover_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testFailoverStateDescription")
     def test_failover_state_description(
@@ -11920,7 +13465,8 @@ class ReplicationProtectionClusterPropertiesArgs:
     @test_failover_state_description.setter
     def test_failover_state_description(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceGuardOperationDetailArgsDict(TypedDict):
     default_resource_request: NotRequired[pulumi.Input[_builtins.str]]
@@ -11940,14 +13486,16 @@ class ResourceGuardOperationDetailArgs:
     @default_resource_request.setter
     def default_resource_request(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultCriticalOperation")
     def vault_critical_operation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vault_critical_operation.setter
     def vault_critical_operation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceGuardProxyBaseArgsDict(TypedDict):
     resource_guard_resource_id: pulumi.Input[_builtins.str]
@@ -11973,17 +13521,24 @@ class ResourceGuardProxyBaseArgs:
     @pulumi.getter(name="resourceGuardResourceId")
     def resource_guard_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_guard_resource_id.setter
-    def resource_guard_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_guard_resource_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedTime")
     def last_updated_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_time.setter
-    def last_updated_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationDetails")
     def resource_guard_operation_details(
@@ -11997,7 +13552,8 @@ class ResourceGuardProxyBaseArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ResourceGuardOperationDetailArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestoreSettingsArgsDict(TypedDict):
     cross_subscription_restore_settings: NotRequired[
@@ -12021,7 +13577,8 @@ class RestoreSettingsArgs:
     @cross_subscription_restore_settings.setter
     def cross_subscription_restore_settings(
         self, value: Optional[pulumi.Input[CrossSubscriptionRestoreSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RetentionDurationArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
@@ -12043,7 +13600,8 @@ class RetentionDurationArgs:
     @pulumi.getter
     def count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @count.setter
-    def count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="durationType")
     def duration_type(
@@ -12052,7 +13610,8 @@ class RetentionDurationArgs:
     @duration_type.setter
     def duration_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RetentionDurationType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityProfilePropertiesArgsDict(TypedDict):
     target_vm_confidential_encryption: NotRequired[
@@ -12100,7 +13659,8 @@ class SecurityProfilePropertiesArgs:
     @target_vm_confidential_encryption.setter
     def target_vm_confidential_encryption(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityConfiguration]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmMonitoring")
     def target_vm_monitoring(
@@ -12109,7 +13669,8 @@ class SecurityProfilePropertiesArgs:
     @target_vm_monitoring.setter
     def target_vm_monitoring(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityConfiguration]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSecureBoot")
     def target_vm_secure_boot(
@@ -12118,7 +13679,8 @@ class SecurityProfilePropertiesArgs:
     @target_vm_secure_boot.setter
     def target_vm_secure_boot(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityConfiguration]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSecurityType")
     def target_vm_security_type(
@@ -12127,7 +13689,8 @@ class SecurityProfilePropertiesArgs:
     @target_vm_security_type.setter
     def target_vm_security_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmTpm")
     def target_vm_tpm(
@@ -12136,7 +13699,8 @@ class SecurityProfilePropertiesArgs:
     @target_vm_tpm.setter
     def target_vm_tpm(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityConfiguration]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecuritySettingsArgsDict(TypedDict):
     immutability_settings: NotRequired[pulumi.Input[ImmutabilitySettingsArgsDict]]
@@ -12158,7 +13722,8 @@ class SecuritySettingsArgs:
     @immutability_settings.setter
     def immutability_settings(
         self, value: Optional[pulumi.Input[ImmutabilitySettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteSettings")
     def soft_delete_settings(
@@ -12167,7 +13732,8 @@ class SecuritySettingsArgs:
     @soft_delete_settings.setter
     def soft_delete_settings(
         self, value: Optional[pulumi.Input[SoftDeleteSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SettingsArgsDict(TypedDict):
     is_compression: NotRequired[pulumi.Input[_builtins.bool]]
@@ -12187,17 +13753,22 @@ class SettingsArgs:
     @pulumi.getter(name="isCompression")
     def is_compression(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_compression.setter
-    def is_compression(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_compression(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issqlcompression(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @issqlcompression.setter
-    def issqlcompression(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def issqlcompression(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SharedDiskReplicationItemPropertiesArgsDict(TypedDict):
     active_location: NotRequired[pulumi.Input[_builtins.str]]
@@ -12237,7 +13808,8 @@ class SharedDiskReplicationItemPropertiesArgs:
     @pulumi.getter(name="activeLocation")
     def active_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @active_location.setter
-    def active_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def active_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOperations")
     def allowed_operations(
@@ -12246,7 +13818,8 @@ class SharedDiskReplicationItemPropertiesArgs:
     @allowed_operations.setter
     def allowed_operations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="currentScenario")
     def current_scenario(
@@ -12255,7 +13828,8 @@ class SharedDiskReplicationItemPropertiesArgs:
     @current_scenario.setter
     def current_scenario(
         self, value: Optional[pulumi.Input[CurrentScenarioDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthErrors")
     def health_errors(
@@ -12264,17 +13838,24 @@ class SharedDiskReplicationItemPropertiesArgs:
     @health_errors.setter
     def health_errors(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[HealthErrorArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectionState")
     def protection_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protection_state.setter
-    def protection_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protection_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationHealth")
     def replication_health(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replication_health.setter
-    def replication_health(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replication_health(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharedDiskProviderSpecificDetails")
     def shared_disk_provider_specific_details(
@@ -12283,12 +13864,16 @@ class SharedDiskReplicationItemPropertiesArgs:
     @shared_disk_provider_specific_details.setter
     def shared_disk_provider_specific_details(
         self, value: Optional[pulumi.Input[A2ASharedDiskReplicationDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testFailoverState")
     def test_failover_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_failover_state.setter
-    def test_failover_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_failover_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SimpleRetentionPolicyArgsDict(TypedDict):
     retention_policy_type: pulumi.Input[_builtins.str]
@@ -12306,14 +13891,16 @@ class SimpleRetentionPolicyArgs:
     @pulumi.getter(name="retentionPolicyType")
     def retention_policy_type(self) -> pulumi.Input[_builtins.str]: ...
     @retention_policy_type.setter
-    def retention_policy_type(self, value: pulumi.Input[_builtins.str]): ...
+    def retention_policy_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionDuration")
     def retention_duration(self) -> Optional[pulumi.Input[RetentionDurationArgs]]: ...
     @retention_duration.setter
     def retention_duration(
         self, value: Optional[pulumi.Input[RetentionDurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SimpleSchedulePolicyV2ArgsDict(TypedDict):
     schedule_policy_type: pulumi.Input[_builtins.str]
@@ -12341,17 +13928,24 @@ class SimpleSchedulePolicyV2Args:
     @pulumi.getter(name="schedulePolicyType")
     def schedule_policy_type(self) -> pulumi.Input[_builtins.str]: ...
     @schedule_policy_type.setter
-    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]): ...
+    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailySchedule")
     def daily_schedule(self) -> Optional[pulumi.Input[DailyScheduleArgs]]: ...
     @daily_schedule.setter
-    def daily_schedule(self, value: Optional[pulumi.Input[DailyScheduleArgs]]): ...
+    def daily_schedule(
+        self, value: Optional[pulumi.Input[DailyScheduleArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hourlySchedule")
     def hourly_schedule(self) -> Optional[pulumi.Input[HourlyScheduleArgs]]: ...
     @hourly_schedule.setter
-    def hourly_schedule(self, value: Optional[pulumi.Input[HourlyScheduleArgs]]): ...
+    def hourly_schedule(
+        self, value: Optional[pulumi.Input[HourlyScheduleArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleRunFrequency")
     def schedule_run_frequency(
@@ -12360,12 +13954,16 @@ class SimpleSchedulePolicyV2Args:
     @schedule_run_frequency.setter
     def schedule_run_frequency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ScheduleRunType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklySchedule")
     def weekly_schedule(self) -> Optional[pulumi.Input[WeeklyScheduleArgs]]: ...
     @weekly_schedule.setter
-    def weekly_schedule(self, value: Optional[pulumi.Input[WeeklyScheduleArgs]]): ...
+    def weekly_schedule(
+        self, value: Optional[pulumi.Input[WeeklyScheduleArgs]]
+    ):  # -> None:
+        ...
 
 class SimpleSchedulePolicyArgsDict(TypedDict):
     schedule_policy_type: pulumi.Input[_builtins.str]
@@ -12399,12 +13997,16 @@ class SimpleSchedulePolicyArgs:
     @pulumi.getter(name="schedulePolicyType")
     def schedule_policy_type(self) -> pulumi.Input[_builtins.str]: ...
     @schedule_policy_type.setter
-    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]): ...
+    def schedule_policy_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hourlySchedule")
     def hourly_schedule(self) -> Optional[pulumi.Input[HourlyScheduleArgs]]: ...
     @hourly_schedule.setter
-    def hourly_schedule(self, value: Optional[pulumi.Input[HourlyScheduleArgs]]): ...
+    def hourly_schedule(
+        self, value: Optional[pulumi.Input[HourlyScheduleArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleRunDays")
     def schedule_run_days(
@@ -12413,7 +14015,8 @@ class SimpleSchedulePolicyArgs:
     @schedule_run_days.setter
     def schedule_run_days(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DayOfWeek]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleRunFrequency")
     def schedule_run_frequency(
@@ -12422,7 +14025,8 @@ class SimpleSchedulePolicyArgs:
     @schedule_run_frequency.setter
     def schedule_run_frequency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ScheduleRunType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleRunTimes")
     def schedule_run_times(
@@ -12431,14 +14035,16 @@ class SimpleSchedulePolicyArgs:
     @schedule_run_times.setter
     def schedule_run_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleWeeklyFrequency")
     def schedule_weekly_frequency(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @schedule_weekly_frequency.setter
     def schedule_weekly_frequency(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, SkuName]]
@@ -12462,27 +14068,32 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, SkuName]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @size.setter
-    def size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SnapshotBackupAdditionalDetailsArgsDict(TypedDict):
     instant_rp_details: NotRequired[pulumi.Input[_builtins.str]]
@@ -12506,7 +14117,10 @@ class SnapshotBackupAdditionalDetailsArgs:
     @pulumi.getter(name="instantRPDetails")
     def instant_rp_details(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instant_rp_details.setter
-    def instant_rp_details(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instant_rp_details(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instantRpRetentionRangeInDays")
     def instant_rp_retention_range_in_days(
@@ -12515,7 +14129,8 @@ class SnapshotBackupAdditionalDetailsArgs:
     @instant_rp_retention_range_in_days.setter
     def instant_rp_retention_range_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentityDetails")
     def user_assigned_managed_identity_details(
@@ -12524,7 +14139,8 @@ class SnapshotBackupAdditionalDetailsArgs:
     @user_assigned_managed_identity_details.setter
     def user_assigned_managed_identity_details(
         self, value: Optional[pulumi.Input[UserAssignedManagedIdentityDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SoftDeleteSettingsArgsDict(TypedDict):
     enhanced_security_state: NotRequired[
@@ -12556,7 +14172,8 @@ class SoftDeleteSettingsArgs:
     @enhanced_security_state.setter
     def enhanced_security_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnhancedSecurityState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteRetentionPeriodInDays")
     def soft_delete_retention_period_in_days(
@@ -12565,7 +14182,8 @@ class SoftDeleteSettingsArgs:
     @soft_delete_retention_period_in_days.setter
     def soft_delete_retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteState")
     def soft_delete_state(
@@ -12574,7 +14192,8 @@ class SoftDeleteSettingsArgs:
     @soft_delete_state.setter
     def soft_delete_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SoftDeleteState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageMappingInputPropertiesArgsDict(TypedDict):
     target_storage_classification_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -12594,7 +14213,8 @@ class StorageMappingInputPropertiesArgs:
     @target_storage_classification_id.setter
     def target_storage_classification_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SubProtectionPolicyArgsDict(TypedDict):
     policy_type: NotRequired[pulumi.Input[Union[_builtins.str, PolicyType]]]
@@ -12654,7 +14274,8 @@ class SubProtectionPolicyArgs:
     @policy_type.setter
     def policy_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPolicy")
     def retention_policy(
@@ -12668,7 +14289,8 @@ class SubProtectionPolicyArgs:
         value: Optional[
             pulumi.Input[Union[LongTermRetentionPolicyArgs, SimpleRetentionPolicyArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulePolicy")
     def schedule_policy(
@@ -12696,7 +14318,8 @@ class SubProtectionPolicyArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotBackupAdditionalDetails")
     def snapshot_backup_additional_details(
@@ -12705,7 +14328,8 @@ class SubProtectionPolicyArgs:
     @snapshot_backup_additional_details.setter
     def snapshot_backup_additional_details(
         self, value: Optional[pulumi.Input[SnapshotBackupAdditionalDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tieringPolicy")
     def tiering_policy(
@@ -12715,7 +14339,8 @@ class SubProtectionPolicyArgs:
     def tiering_policy(
         self,
         value: Optional[pulumi.Input[Mapping[str, pulumi.Input[TieringPolicyArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TieringPolicyArgsDict(TypedDict):
     duration: NotRequired[pulumi.Input[_builtins.int]]
@@ -12739,7 +14364,8 @@ class TieringPolicyArgs:
     @pulumi.getter
     def duration(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @duration.setter
-    def duration(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def duration(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="durationType")
     def duration_type(
@@ -12748,7 +14374,8 @@ class TieringPolicyArgs:
     @duration_type.setter
     def duration_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RetentionDurationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tieringMode")
     def tiering_mode(
@@ -12757,7 +14384,8 @@ class TieringPolicyArgs:
     @tiering_mode.setter
     def tiering_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TieringMode]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UserAssignedIdentityPropertiesArgsDict(TypedDict):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -12775,12 +14403,14 @@ class UserAssignedIdentityPropertiesArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalId")
     def principal_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal_id.setter
-    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UserAssignedManagedIdentityDetailsArgsDict(TypedDict):
     identity_arm_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -12804,12 +14434,14 @@ class UserAssignedManagedIdentityDetailsArgs:
     @pulumi.getter(name="identityArmId")
     def identity_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_arm_id.setter
-    def identity_arm_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_arm_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityName")
     def identity_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_name.setter
-    def identity_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityProperties")
     def user_assigned_identity_properties(
@@ -12818,7 +14450,8 @@ class UserAssignedManagedIdentityDetailsArgs:
     @user_assigned_identity_properties.setter
     def user_assigned_identity_properties(
         self, value: Optional[pulumi.Input[UserAssignedIdentityPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UserCreatedResourceTagArgsDict(TypedDict):
     tag_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -12836,12 +14469,14 @@ class UserCreatedResourceTagArgs:
     @pulumi.getter(name="tagName")
     def tag_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag_name.setter
-    def tag_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagValue")
     def tag_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag_value.setter
-    def tag_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VMwareCbtContainerMappingInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -12871,27 +14506,32 @@ class VMwareCbtContainerMappingInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
     def storage_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @storage_account_id.setter
-    def storage_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetLocation")
     def target_location(self) -> pulumi.Input[_builtins.str]: ...
     @target_location.setter
-    def target_location(self, value: pulumi.Input[_builtins.str]): ...
+    def target_location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultId")
     def key_vault_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_id.setter
-    def key_vault_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultUri")
     def key_vault_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_uri.setter
-    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceBusConnectionStringSecretName")
     def service_bus_connection_string_secret_name(
@@ -12900,7 +14540,8 @@ class VMwareCbtContainerMappingInputArgs:
     @service_bus_connection_string_secret_name.setter
     def service_bus_connection_string_secret_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountSasSecretName")
     def storage_account_sas_secret_name(
@@ -12909,7 +14550,8 @@ class VMwareCbtContainerMappingInputArgs:
     @storage_account_sas_secret_name.setter
     def storage_account_sas_secret_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VMwareCbtDiskInputArgsDict(TypedDict):
     disk_id: pulumi.Input[_builtins.str]
@@ -12937,29 +14579,36 @@ class VMwareCbtDiskInputArgs:
     @pulumi.getter(name="diskId")
     def disk_id(self) -> pulumi.Input[_builtins.str]: ...
     @disk_id.setter
-    def disk_id(self, value: pulumi.Input[_builtins.str]): ...
+    def disk_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isOSDisk")
     def is_os_disk(self) -> pulumi.Input[_builtins.str]: ...
     @is_os_disk.setter
-    def is_os_disk(self, value: pulumi.Input[_builtins.str]): ...
+    def is_os_disk(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountId")
     def log_storage_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @log_storage_account_id.setter
-    def log_storage_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def log_storage_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStorageAccountSasSecretName")
     def log_storage_account_sas_secret_name(self) -> pulumi.Input[_builtins.str]: ...
     @log_storage_account_sas_secret_name.setter
     def log_storage_account_sas_secret_name(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskType")
     def disk_type(
@@ -12968,12 +14617,16 @@ class VMwareCbtDiskInputArgs:
     @disk_type.setter
     def disk_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sectorSizeInBytes")
     def sector_size_in_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @sector_size_in_bytes.setter
-    def sector_size_in_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def sector_size_in_bytes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class VMwareCbtEnableMigrationInputArgsDict(TypedDict):
     data_mover_run_as_account_id: pulumi.Input[_builtins.str]
@@ -13071,7 +14724,10 @@ class VMwareCbtEnableMigrationInputArgs:
     @pulumi.getter(name="dataMoverRunAsAccountId")
     def data_mover_run_as_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @data_mover_run_as_account_id.setter
-    def data_mover_run_as_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def data_mover_run_as_account_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disksToInclude")
     def disks_to_include(
@@ -13080,39 +14736,48 @@ class VMwareCbtEnableMigrationInputArgs:
     @disks_to_include.setter
     def disks_to_include(
         self, value: pulumi.Input[Sequence[pulumi.Input[VMwareCbtDiskInputArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotRunAsAccountId")
     def snapshot_run_as_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @snapshot_run_as_account_id.setter
-    def snapshot_run_as_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def snapshot_run_as_account_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNetworkId")
     def target_network_id(self) -> pulumi.Input[_builtins.str]: ...
     @target_network_id.setter
-    def target_network_id(self, value: pulumi.Input[_builtins.str]): ...
+    def target_network_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetResourceGroupId")
     def target_resource_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @target_resource_group_id.setter
-    def target_resource_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def target_resource_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmwareMachineId")
     def vmware_machine_id(self) -> pulumi.Input[_builtins.str]: ...
     @vmware_machine_id.setter
-    def vmware_machine_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vmware_machine_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confidentialVmKeyVaultId")
     def confidential_vm_key_vault_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @confidential_vm_key_vault_id.setter
     def confidential_vm_key_vault_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
     def license_type(
@@ -13121,7 +14786,8 @@ class VMwareCbtEnableMigrationInputArgs:
     @license_type.setter
     def license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxLicenseType")
     def linux_license_type(
@@ -13130,12 +14796,16 @@ class VMwareCbtEnableMigrationInputArgs:
     @linux_license_type.setter
     def linux_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LinuxLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performAutoResync")
     def perform_auto_resync(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perform_auto_resync.setter
-    def perform_auto_resync(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perform_auto_resync(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performSqlBulkRegistration")
     def perform_sql_bulk_registration(
@@ -13144,7 +14814,8 @@ class VMwareCbtEnableMigrationInputArgs:
     @perform_sql_bulk_registration.setter
     def perform_sql_bulk_registration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="seedDiskTags")
     def seed_disk_tags(
@@ -13153,7 +14824,8 @@ class VMwareCbtEnableMigrationInputArgs:
     @seed_disk_tags.setter
     def seed_disk_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerLicenseType")
     def sql_server_license_type(
@@ -13162,21 +14834,24 @@ class VMwareCbtEnableMigrationInputArgs:
     @sql_server_license_type.setter
     def sql_server_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlServerLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilitySetId")
     def target_availability_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_set_id.setter
     def target_availability_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetAvailabilityZone")
     def target_availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_availability_zone.setter
     def target_availability_zone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetBootDiagnosticsStorageAccountId")
     def target_boot_diagnostics_storage_account_id(
@@ -13185,7 +14860,8 @@ class VMwareCbtEnableMigrationInputArgs:
     @target_boot_diagnostics_storage_account_id.setter
     def target_boot_diagnostics_storage_account_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDiskTags")
     def target_disk_tags(
@@ -13194,7 +14870,8 @@ class VMwareCbtEnableMigrationInputArgs:
     @target_disk_tags.setter
     def target_disk_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNicTags")
     def target_nic_tags(
@@ -13203,7 +14880,8 @@ class VMwareCbtEnableMigrationInputArgs:
     @target_nic_tags.setter
     def target_nic_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetProximityPlacementGroupId")
     def target_proximity_placement_group_id(
@@ -13212,17 +14890,22 @@ class VMwareCbtEnableMigrationInputArgs:
     @target_proximity_placement_group_id.setter
     def target_proximity_placement_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSubnetName")
     def target_subnet_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_subnet_name.setter
-    def target_subnet_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_subnet_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmName")
     def target_vm_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_vm_name.setter
-    def target_vm_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_vm_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSecurityProfile")
     def target_vm_security_profile(
@@ -13231,12 +14914,14 @@ class VMwareCbtEnableMigrationInputArgs:
     @target_vm_security_profile.setter
     def target_vm_security_profile(
         self, value: Optional[pulumi.Input[VMwareCbtSecurityProfilePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSize")
     def target_vm_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_vm_size.setter
-    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmTags")
     def target_vm_tags(
@@ -13245,22 +14930,30 @@ class VMwareCbtEnableMigrationInputArgs:
     @target_vm_tags.setter
     def target_vm_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testNetworkId")
     def test_network_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_network_id.setter
-    def test_network_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_network_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testSubnetName")
     def test_subnet_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_subnet_name.setter
-    def test_subnet_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_subnet_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userSelectedOSName")
     def user_selected_os_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_selected_os_name.setter
-    def user_selected_os_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_selected_os_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class VMwareCbtPolicyCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -13286,7 +14979,8 @@ class VMwareCbtPolicyCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appConsistentFrequencyInMinutes")
     def app_consistent_frequency_in_minutes(
@@ -13295,7 +14989,8 @@ class VMwareCbtPolicyCreationInputArgs:
     @app_consistent_frequency_in_minutes.setter
     def app_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crashConsistentFrequencyInMinutes")
     def crash_consistent_frequency_in_minutes(
@@ -13304,7 +14999,8 @@ class VMwareCbtPolicyCreationInputArgs:
     @crash_consistent_frequency_in_minutes.setter
     def crash_consistent_frequency_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointHistoryInMinutes")
     def recovery_point_history_in_minutes(
@@ -13313,7 +15009,8 @@ class VMwareCbtPolicyCreationInputArgs:
     @recovery_point_history_in_minutes.setter
     def recovery_point_history_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VMwareCbtSecurityProfilePropertiesArgsDict(TypedDict):
     is_target_vm_confidential_encryption_enabled: NotRequired[
@@ -13351,7 +15048,8 @@ class VMwareCbtSecurityProfilePropertiesArgs:
     @is_target_vm_confidential_encryption_enabled.setter
     def is_target_vm_confidential_encryption_enabled(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isTargetVmIntegrityMonitoringEnabled")
     def is_target_vm_integrity_monitoring_enabled(
@@ -13360,7 +15058,8 @@ class VMwareCbtSecurityProfilePropertiesArgs:
     @is_target_vm_integrity_monitoring_enabled.setter
     def is_target_vm_integrity_monitoring_enabled(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isTargetVmSecureBootEnabled")
     def is_target_vm_secure_boot_enabled(
@@ -13369,14 +15068,16 @@ class VMwareCbtSecurityProfilePropertiesArgs:
     @is_target_vm_secure_boot_enabled.setter
     def is_target_vm_secure_boot_enabled(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isTargetVmTpmEnabled")
     def is_target_vm_tpm_enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @is_target_vm_tpm_enabled.setter
     def is_target_vm_tpm_enabled(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVmSecurityType")
     def target_vm_security_type(
@@ -13385,7 +15086,8 @@ class VMwareCbtSecurityProfilePropertiesArgs:
     @target_vm_security_type.setter
     def target_vm_security_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VMwareV2FabricCreationInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -13407,22 +15109,28 @@ class VMwareV2FabricCreationInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationSolutionId")
     def migration_solution_id(self) -> pulumi.Input[_builtins.str]: ...
     @migration_solution_id.setter
-    def migration_solution_id(self, value: pulumi.Input[_builtins.str]): ...
+    def migration_solution_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="physicalSiteId")
     def physical_site_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @physical_site_id.setter
-    def physical_site_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def physical_site_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmwareSiteId")
     def vmware_site_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vmware_site_id.setter
-    def vmware_site_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vmware_site_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VaultPropertiesEncryptionArgsDict(TypedDict):
     infrastructure_encryption: NotRequired[
@@ -13455,12 +15163,16 @@ class VaultPropertiesEncryptionArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, InfrastructureEncryptionState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kekIdentity")
     def kek_identity(self) -> Optional[pulumi.Input[CmkKekIdentityArgs]]: ...
     @kek_identity.setter
-    def kek_identity(self, value: Optional[pulumi.Input[CmkKekIdentityArgs]]): ...
+    def kek_identity(
+        self, value: Optional[pulumi.Input[CmkKekIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -13469,7 +15181,8 @@ class VaultPropertiesEncryptionArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[CmkKeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VaultPropertiesRedundancySettingsArgsDict(TypedDict):
     cross_region_restore: NotRequired[
@@ -13499,7 +15212,8 @@ class VaultPropertiesRedundancySettingsArgs:
     @cross_region_restore.setter
     def cross_region_restore(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CrossRegionRestore]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="standardTierStorageRedundancy")
     def standard_tier_storage_redundancy(
@@ -13513,7 +15227,8 @@ class VaultPropertiesRedundancySettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, StandardTierStorageRedundancy]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VaultPropertiesArgsDict(TypedDict):
     encryption: NotRequired[pulumi.Input[VaultPropertiesEncryptionArgsDict]]
@@ -13555,14 +15270,16 @@ class VaultPropertiesArgs:
     @encryption.setter
     def encryption(
         self, value: Optional[pulumi.Input[VaultPropertiesEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringSettings")
     def monitoring_settings(self) -> Optional[pulumi.Input[MonitoringSettingsArgs]]: ...
     @monitoring_settings.setter
     def monitoring_settings(
         self, value: Optional[pulumi.Input[MonitoringSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -13571,7 +15288,8 @@ class VaultPropertiesArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redundancySettings")
     def redundancy_settings(
@@ -13580,7 +15298,8 @@ class VaultPropertiesArgs:
     @redundancy_settings.setter
     def redundancy_settings(
         self, value: Optional[pulumi.Input[VaultPropertiesRedundancySettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -13589,19 +15308,24 @@ class VaultPropertiesArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restoreSettings")
     def restore_settings(self) -> Optional[pulumi.Input[RestoreSettingsArgs]]: ...
     @restore_settings.setter
-    def restore_settings(self, value: Optional[pulumi.Input[RestoreSettingsArgs]]): ...
+    def restore_settings(
+        self, value: Optional[pulumi.Input[RestoreSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securitySettings")
     def security_settings(self) -> Optional[pulumi.Input[SecuritySettingsArgs]]: ...
     @security_settings.setter
     def security_settings(
         self, value: Optional[pulumi.Input[SecuritySettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VaultRetentionPolicyArgsDict(TypedDict):
     snapshot_retention_in_days: pulumi.Input[_builtins.int]
@@ -13623,7 +15347,10 @@ class VaultRetentionPolicyArgs:
     @pulumi.getter(name="snapshotRetentionInDays")
     def snapshot_retention_in_days(self) -> pulumi.Input[_builtins.int]: ...
     @snapshot_retention_in_days.setter
-    def snapshot_retention_in_days(self, value: pulumi.Input[_builtins.int]): ...
+    def snapshot_retention_in_days(
+        self, value: pulumi.Input[_builtins.int]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultRetention")
     def vault_retention(
@@ -13637,7 +15364,8 @@ class VaultRetentionPolicyArgs:
         value: pulumi.Input[
             Union[LongTermRetentionPolicyArgs, SimpleRetentionPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VmmToAzureCreateNetworkMappingInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -13649,7 +15377,8 @@ class VmmToAzureCreateNetworkMappingInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class VmmToVmmCreateNetworkMappingInputArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
@@ -13661,7 +15390,8 @@ class VmmToVmmCreateNetworkMappingInputArgs:
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WeeklyRetentionFormatArgsDict(TypedDict):
     days_of_the_week: NotRequired[pulumi.Input[Sequence[pulumi.Input[DayOfWeek]]]]
@@ -13687,7 +15417,8 @@ class WeeklyRetentionFormatArgs:
     @days_of_the_week.setter
     def days_of_the_week(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DayOfWeek]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeksOfTheMonth")
     def weeks_of_the_month(
@@ -13696,7 +15427,8 @@ class WeeklyRetentionFormatArgs:
     @weeks_of_the_month.setter
     def weeks_of_the_month(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WeekOfMonth]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WeeklyRetentionScheduleArgsDict(TypedDict):
     days_of_the_week: NotRequired[pulumi.Input[Sequence[pulumi.Input[DayOfWeek]]]]
@@ -13724,14 +15456,16 @@ class WeeklyRetentionScheduleArgs:
     @days_of_the_week.setter
     def days_of_the_week(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DayOfWeek]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionDuration")
     def retention_duration(self) -> Optional[pulumi.Input[RetentionDurationArgs]]: ...
     @retention_duration.setter
     def retention_duration(
         self, value: Optional[pulumi.Input[RetentionDurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionTimes")
     def retention_times(
@@ -13740,7 +15474,8 @@ class WeeklyRetentionScheduleArgs:
     @retention_times.setter
     def retention_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WeeklyScheduleArgsDict(TypedDict):
     schedule_run_days: NotRequired[pulumi.Input[Sequence[pulumi.Input[DayOfWeek]]]]
@@ -13766,7 +15501,8 @@ class WeeklyScheduleArgs:
     @schedule_run_days.setter
     def schedule_run_days(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DayOfWeek]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleRunTimes")
     def schedule_run_times(
@@ -13775,7 +15511,8 @@ class WeeklyScheduleArgs:
     @schedule_run_times.setter
     def schedule_run_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkloadInquiryDetailsArgsDict(TypedDict):
     inquiry_validation: NotRequired[pulumi.Input[InquiryValidationArgsDict]]
@@ -13797,17 +15534,20 @@ class WorkloadInquiryDetailsArgs:
     @inquiry_validation.setter
     def inquiry_validation(
         self, value: Optional[pulumi.Input[InquiryValidationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemCount")
     def item_count(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @item_count.setter
-    def item_count(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def item_count(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class YearlyRetentionScheduleArgsDict(TypedDict):
     months_of_year: NotRequired[pulumi.Input[Sequence[pulumi.Input[MonthOfYear]]]]
@@ -13849,14 +15589,16 @@ class YearlyRetentionScheduleArgs:
     @months_of_year.setter
     def months_of_year(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MonthOfYear]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionDuration")
     def retention_duration(self) -> Optional[pulumi.Input[RetentionDurationArgs]]: ...
     @retention_duration.setter
     def retention_duration(
         self, value: Optional[pulumi.Input[RetentionDurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionScheduleDaily")
     def retention_schedule_daily(
@@ -13865,7 +15607,8 @@ class YearlyRetentionScheduleArgs:
     @retention_schedule_daily.setter
     def retention_schedule_daily(
         self, value: Optional[pulumi.Input[DailyRetentionFormatArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionScheduleFormatType")
     def retention_schedule_format_type(
@@ -13875,7 +15618,8 @@ class YearlyRetentionScheduleArgs:
     def retention_schedule_format_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, RetentionScheduleFormat]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionScheduleWeekly")
     def retention_schedule_weekly(
@@ -13884,7 +15628,8 @@ class YearlyRetentionScheduleArgs:
     @retention_schedule_weekly.setter
     def retention_schedule_weekly(
         self, value: Optional[pulumi.Input[WeeklyRetentionFormatArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionTimes")
     def retention_times(
@@ -13893,4 +15638,5 @@ class YearlyRetentionScheduleArgs:
     @retention_times.setter
     def retention_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

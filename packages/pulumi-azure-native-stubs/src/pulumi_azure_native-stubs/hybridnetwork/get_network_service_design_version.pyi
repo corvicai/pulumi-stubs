@@ -56,7 +56,10 @@ class GetNetworkServiceDesignVersionResult:
 class AwaitableGetNetworkServiceDesignVersionResult(
     GetNetworkServiceDesignVersionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkServiceDesignVersionResult]:
+        ...
 
 def get_network_service_design_version(
     network_service_design_group_name: Optional[_builtins.str] = ...,

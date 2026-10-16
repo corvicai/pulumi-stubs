@@ -43,7 +43,8 @@ class AccessPolicyAssignmentPropertiesUserArgs:
     @pulumi.getter(name="objectId")
     def object_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_id.setter
-    def object_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterPropertiesCustomerManagedKeyEncryptionArgsDict(TypedDict):
     key_encryption_key_identity: NotRequired[
@@ -70,12 +71,16 @@ class ClusterPropertiesCustomerManagedKeyEncryptionArgs:
     def key_encryption_key_identity(
         self,
         value: Optional[pulumi.Input[ClusterPropertiesKeyEncryptionKeyIdentityArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKeyUrl")
     def key_encryption_key_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_encryption_key_url.setter
-    def key_encryption_key_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_encryption_key_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ClusterPropertiesEncryptionArgsDict(TypedDict):
     customer_managed_key_encryption: NotRequired[
@@ -102,7 +107,8 @@ class ClusterPropertiesEncryptionArgs:
         value: Optional[
             pulumi.Input[ClusterPropertiesCustomerManagedKeyEncryptionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterPropertiesKeyEncryptionKeyIdentityArgsDict(TypedDict):
     identity_type: NotRequired[pulumi.Input[Union[_builtins.str, CmkIdentityType]]]
@@ -126,7 +132,8 @@ class ClusterPropertiesKeyEncryptionKeyIdentityArgs:
     @identity_type.setter
     def identity_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CmkIdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityResourceId")
     def user_assigned_identity_resource_id(
@@ -135,7 +142,8 @@ class ClusterPropertiesKeyEncryptionKeyIdentityArgs:
     @user_assigned_identity_resource_id.setter
     def user_assigned_identity_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DatabasePropertiesGeoReplicationArgsDict(TypedDict):
     group_nickname: NotRequired[pulumi.Input[_builtins.str]]
@@ -157,7 +165,8 @@ class DatabasePropertiesGeoReplicationArgs:
     @pulumi.getter(name="groupNickname")
     def group_nickname(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_nickname.setter
-    def group_nickname(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_nickname(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedDatabases")
     def linked_databases(
@@ -166,7 +175,8 @@ class DatabasePropertiesGeoReplicationArgs:
     @linked_databases.setter
     def linked_databases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[LinkedDatabaseArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LinkedDatabaseArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -180,7 +190,8 @@ class LinkedDatabaseArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -206,7 +217,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -215,7 +227,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ModuleArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -233,12 +246,14 @@ class ModuleArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @args.setter
-    def args(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def args(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PersistenceArgsDict(TypedDict):
     aof_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -260,7 +275,8 @@ class PersistenceArgs:
     @pulumi.getter(name="aofEnabled")
     def aof_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @aof_enabled.setter
-    def aof_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def aof_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aofFrequency")
     def aof_frequency(
@@ -269,12 +285,14 @@ class PersistenceArgs:
     @aof_frequency.setter
     def aof_frequency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AofFrequency]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rdbEnabled")
     def rdb_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @rdb_enabled.setter
-    def rdb_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def rdb_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rdbFrequency")
     def rdb_frequency(
@@ -283,7 +301,8 @@ class PersistenceArgs:
     @rdb_frequency.setter
     def rdb_frequency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RdbFrequency]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -307,12 +326,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -326,7 +349,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, SkuName]]
@@ -344,9 +368,11 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, SkuName]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...

@@ -122,7 +122,8 @@ class GetAzureCliScriptResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAzureCliScriptResult(GetAzureCliScriptResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureCliScriptResult]:
+        ...
 
 def get_azure_cli_script(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -27,12 +27,16 @@ class FirewallTransitGatewayAttachmentAccepterArgs:
     @pulumi.getter(name="transitGatewayAttachmentId")
     def transit_gateway_attachment_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_attachment_id.setter
-    def transit_gateway_attachment_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_attachment_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -46,7 +50,8 @@ class FirewallTransitGatewayAttachmentAccepterArgs:
         value: Optional[
             pulumi.Input[FirewallTransitGatewayAttachmentAccepterTimeoutsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FirewallTransitGatewayAttachmentAccepterState:
@@ -63,7 +68,8 @@ class _FirewallTransitGatewayAttachmentAccepterState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -77,7 +83,8 @@ class _FirewallTransitGatewayAttachmentAccepterState:
         value: Optional[
             pulumi.Input[FirewallTransitGatewayAttachmentAccepterTimeoutsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayAttachmentId")
     def transit_gateway_attachment_id(
@@ -86,7 +93,8 @@ class _FirewallTransitGatewayAttachmentAccepterState:
     @transit_gateway_attachment_id.setter
     def transit_gateway_attachment_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class FirewallTransitGatewayAttachmentAccepter(pulumi.CustomResource):

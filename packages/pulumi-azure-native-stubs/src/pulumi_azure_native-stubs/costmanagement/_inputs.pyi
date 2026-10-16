@@ -121,19 +121,24 @@ class BudgetComparisonExpressionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, BudgetOperatorType]]: ...
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, BudgetOperatorType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class BudgetFilterPropertiesArgsDict(TypedDict):
     dimensions: NotRequired[pulumi.Input[BudgetComparisonExpressionArgsDict]]
@@ -153,12 +158,16 @@ class BudgetFilterPropertiesArgs:
     @dimensions.setter
     def dimensions(
         self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[BudgetComparisonExpressionArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
+    ):  # -> None:
+        ...
 
 class BudgetFilterArgsDict(TypedDict):
     and_: NotRequired[
@@ -189,19 +198,24 @@ class BudgetFilterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BudgetFilterPropertiesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimensions(self) -> Optional[pulumi.Input[BudgetComparisonExpressionArgs]]: ...
     @dimensions.setter
     def dimensions(
         self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[BudgetComparisonExpressionArgs]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[BudgetComparisonExpressionArgs]]
+    ):  # -> None:
+        ...
 
 class BudgetTimePeriodArgsDict(TypedDict):
     start_date: pulumi.Input[_builtins.str]
@@ -219,12 +233,14 @@ class BudgetTimePeriodArgs:
     @pulumi.getter(name="startDate")
     def start_date(self) -> pulumi.Input[_builtins.str]: ...
     @start_date.setter
-    def start_date(self, value: pulumi.Input[_builtins.str]): ...
+    def start_date(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endDate")
     def end_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_date.setter
-    def end_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CostAllocationProportionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -242,12 +258,14 @@ class CostAllocationProportionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentage(self) -> pulumi.Input[_builtins.float]: ...
     @percentage.setter
-    def percentage(self, value: pulumi.Input[_builtins.float]): ...
+    def percentage(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class CostAllocationRuleDetailsArgsDict(TypedDict):
     source_resources: NotRequired[
@@ -282,7 +300,8 @@ class CostAllocationRuleDetailsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SourceCostAllocationResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetResources")
     def target_resources(
@@ -296,7 +315,8 @@ class CostAllocationRuleDetailsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TargetCostAllocationResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CostAllocationRulePropertiesArgsDict(TypedDict):
     details: pulumi.Input[CostAllocationRuleDetailsArgsDict]
@@ -316,17 +336,20 @@ class CostAllocationRulePropertiesArgs:
     @pulumi.getter
     def details(self) -> pulumi.Input[CostAllocationRuleDetailsArgs]: ...
     @details.setter
-    def details(self, value: pulumi.Input[CostAllocationRuleDetailsArgs]): ...
+    def details(self, value: pulumi.Input[CostAllocationRuleDetailsArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[Union[_builtins.str, RuleStatus]]: ...
     @status.setter
-    def status(self, value: pulumi.Input[Union[_builtins.str, RuleStatus]]): ...
+    def status(self, value: pulumi.Input[Union[_builtins.str, RuleStatus]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomerMetadataArgsDict(TypedDict):
     billing_account_id: pulumi.Input[_builtins.str]
@@ -344,12 +367,14 @@ class CustomerMetadataArgs:
     @pulumi.getter(name="billingAccountId")
     def billing_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @billing_account_id.setter
-    def billing_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def billing_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="billingProfileId")
     def billing_profile_id(self) -> pulumi.Input[_builtins.str]: ...
     @billing_profile_id.setter
-    def billing_profile_id(self, value: pulumi.Input[_builtins.str]): ...
+    def billing_profile_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ExportDatasetConfigurationArgsDict(TypedDict):
     columns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -369,7 +394,8 @@ class ExportDatasetConfigurationArgs:
     @columns.setter
     def columns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExportDatasetArgsDict(TypedDict):
     configuration: NotRequired[pulumi.Input[ExportDatasetConfigurationArgsDict]]
@@ -393,7 +419,8 @@ class ExportDatasetArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[ExportDatasetConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def granularity(
@@ -402,7 +429,8 @@ class ExportDatasetArgs:
     @granularity.setter
     def granularity(
         self, value: Optional[pulumi.Input[Union[_builtins.str, GranularityType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExportDefinitionArgsDict(TypedDict):
     timeframe: pulumi.Input[Union[_builtins.str, TimeframeType]]
@@ -424,22 +452,30 @@ class ExportDefinitionArgs:
     @pulumi.getter
     def timeframe(self) -> pulumi.Input[Union[_builtins.str, TimeframeType]]: ...
     @timeframe.setter
-    def timeframe(self, value: pulumi.Input[Union[_builtins.str, TimeframeType]]): ...
+    def timeframe(
+        self, value: pulumi.Input[Union[_builtins.str, TimeframeType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, ExportType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ExportType]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, ExportType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSet")
     def data_set(self) -> Optional[pulumi.Input[ExportDatasetArgs]]: ...
     @data_set.setter
-    def data_set(self, value: Optional[pulumi.Input[ExportDatasetArgs]]): ...
+    def data_set(self, value: Optional[pulumi.Input[ExportDatasetArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timePeriod")
     def time_period(self) -> Optional[pulumi.Input[ExportTimePeriodArgs]]: ...
     @time_period.setter
-    def time_period(self, value: Optional[pulumi.Input[ExportTimePeriodArgs]]): ...
+    def time_period(
+        self, value: Optional[pulumi.Input[ExportTimePeriodArgs]]
+    ):  # -> None:
+        ...
 
 class ExportDeliveryDestinationArgsDict(TypedDict):
     container: pulumi.Input[_builtins.str]
@@ -463,27 +499,34 @@ class ExportDeliveryDestinationArgs:
     @pulumi.getter
     def container(self) -> pulumi.Input[_builtins.str]: ...
     @container.setter
-    def container(self, value: pulumi.Input[_builtins.str]): ...
+    def container(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootFolderPath")
     def root_folder_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @root_folder_path.setter
-    def root_folder_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def root_folder_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sasToken")
     def sas_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sas_token.setter
-    def sas_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sas_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccount")
     def storage_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account.setter
-    def storage_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ExportDeliveryInfoArgsDict(TypedDict):
     destination: pulumi.Input[ExportDeliveryDestinationArgsDict]
@@ -497,7 +540,10 @@ class ExportDeliveryInfoArgs:
     @pulumi.getter
     def destination(self) -> pulumi.Input[ExportDeliveryDestinationArgs]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[ExportDeliveryDestinationArgs]): ...
+    def destination(
+        self, value: pulumi.Input[ExportDeliveryDestinationArgs]
+    ):  # -> None:
+        ...
 
 class ExportRecurrencePeriodArgsDict(TypedDict):
     from_: pulumi.Input[_builtins.str]
@@ -515,12 +561,14 @@ class ExportRecurrencePeriodArgs:
     @pulumi.getter(name="from")
     def from_(self) -> pulumi.Input[_builtins.str]: ...
     @from_.setter
-    def from_(self, value: pulumi.Input[_builtins.str]): ...
+    def from_(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @to.setter
-    def to(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def to(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ExportScheduleArgsDict(TypedDict):
     recurrence: NotRequired[pulumi.Input[Union[_builtins.str, RecurrenceType]]]
@@ -544,7 +592,8 @@ class ExportScheduleArgs:
     @recurrence.setter
     def recurrence(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RecurrenceType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recurrencePeriod")
     def recurrence_period(
@@ -553,14 +602,16 @@ class ExportScheduleArgs:
     @recurrence_period.setter
     def recurrence_period(
         self, value: Optional[pulumi.Input[ExportRecurrencePeriodArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[Union[_builtins.str, StatusType]]]: ...
     @status.setter
     def status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StatusType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExportTimePeriodArgsDict(TypedDict):
     from_: pulumi.Input[_builtins.str]
@@ -575,12 +626,14 @@ class ExportTimePeriodArgs:
     @pulumi.getter(name="from")
     def from_(self) -> pulumi.Input[_builtins.str]: ...
     @from_.setter
-    def from_(self, value: pulumi.Input[_builtins.str]): ...
+    def from_(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> pulumi.Input[_builtins.str]: ...
     @to.setter
-    def to(self, value: pulumi.Input[_builtins.str]): ...
+    def to(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FileDestinationArgsDict(TypedDict):
     file_formats: NotRequired[
@@ -609,7 +662,8 @@ class FileDestinationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, FileFormat]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class KpiPropertiesArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -629,19 +683,22 @@ class KpiPropertiesArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[Union[_builtins.str, KpiTypeType]]]: ...
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, KpiTypeType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NotificationPropertiesArgsDict(TypedDict):
     subject: pulumi.Input[_builtins.str]
@@ -665,27 +722,34 @@ class NotificationPropertiesArgs:
     @pulumi.getter
     def subject(self) -> pulumi.Input[_builtins.str]: ...
     @subject.setter
-    def subject(self, value: pulumi.Input[_builtins.str]): ...
+    def subject(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @to.setter
-    def to(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def to(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def language(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language.setter
-    def language(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionalFormat")
     def regional_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @regional_format.setter
-    def regional_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def regional_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class NotificationArgsDict(TypedDict):
     contact_emails: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -725,12 +789,14 @@ class NotificationArgs:
     @contact_emails.setter
     def contact_emails(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(
@@ -739,12 +805,14 @@ class NotificationArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, BudgetNotificationOperatorType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def threshold(self) -> pulumi.Input[_builtins.float]: ...
     @threshold.setter
-    def threshold(self, value: pulumi.Input[_builtins.float]): ...
+    def threshold(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactGroups")
     def contact_groups(
@@ -753,7 +821,8 @@ class NotificationArgs:
     @contact_groups.setter
     def contact_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactRoles")
     def contact_roles(
@@ -762,21 +831,24 @@ class NotificationArgs:
     @contact_roles.setter
     def contact_roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[Union[_builtins.str, Frequency]]]: ...
     @frequency.setter
     def frequency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Frequency]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locale(self) -> Optional[pulumi.Input[Union[_builtins.str, CultureCode]]]: ...
     @locale.setter
     def locale(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CultureCode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdType")
     def threshold_type(
@@ -785,7 +857,8 @@ class NotificationArgs:
     @threshold_type.setter
     def threshold_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ThresholdType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PivotPropertiesArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -803,14 +876,16 @@ class PivotPropertiesArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[Union[_builtins.str, PivotTypeType]]]: ...
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PivotTypeType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportAggregationArgsDict(TypedDict):
     function: pulumi.Input[Union[_builtins.str, FunctionType]]
@@ -828,12 +903,16 @@ class ReportAggregationArgs:
     @pulumi.getter
     def function(self) -> pulumi.Input[Union[_builtins.str, FunctionType]]: ...
     @function.setter
-    def function(self, value: pulumi.Input[Union[_builtins.str, FunctionType]]): ...
+    def function(
+        self, value: pulumi.Input[Union[_builtins.str, FunctionType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ReportComparisonExpressionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -853,17 +932,24 @@ class ReportComparisonExpressionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, OperatorType]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, OperatorType]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, OperatorType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ReportConfigAggregationArgsDict(TypedDict):
     function: pulumi.Input[Union[_builtins.str, FunctionType]]
@@ -881,12 +967,16 @@ class ReportConfigAggregationArgs:
     @pulumi.getter
     def function(self) -> pulumi.Input[Union[_builtins.str, FunctionType]]: ...
     @function.setter
-    def function(self, value: pulumi.Input[Union[_builtins.str, FunctionType]]): ...
+    def function(
+        self, value: pulumi.Input[Union[_builtins.str, FunctionType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ReportConfigComparisonExpressionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -906,17 +996,24 @@ class ReportConfigComparisonExpressionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, OperatorType]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, OperatorType]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, OperatorType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ReportConfigDatasetConfigurationArgsDict(TypedDict):
     columns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -936,7 +1033,8 @@ class ReportConfigDatasetConfigurationArgs:
     @columns.setter
     def columns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportConfigDatasetArgsDict(TypedDict):
     aggregation: NotRequired[
@@ -987,7 +1085,8 @@ class ReportConfigDatasetArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[ReportConfigAggregationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -996,12 +1095,14 @@ class ReportConfigDatasetArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[ReportConfigDatasetConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[ReportConfigFilterArgs]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[ReportConfigFilterArgs]]): ...
+    def filter(self, value: Optional[pulumi.Input[ReportConfigFilterArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def granularity(
@@ -1010,7 +1111,8 @@ class ReportConfigDatasetArgs:
     @granularity.setter
     def granularity(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReportGranularityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def grouping(
@@ -1020,7 +1122,8 @@ class ReportConfigDatasetArgs:
     def grouping(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReportConfigGroupingArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sorting(
@@ -1030,7 +1133,8 @@ class ReportConfigDatasetArgs:
     def sorting(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReportConfigSortingArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportConfigFilterArgsDict(TypedDict):
     and_: NotRequired[pulumi.Input[Sequence[pulumi.Input[ReportConfigFilterArgsDict]]]]
@@ -1061,7 +1165,8 @@ class ReportConfigFilterArgs:
     def and_(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReportConfigFilterArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimensions(
@@ -1070,7 +1175,8 @@ class ReportConfigFilterArgs:
     @dimensions.setter
     def dimensions(
         self, value: Optional[pulumi.Input[ReportConfigComparisonExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="or")
     def or_(
@@ -1080,14 +1186,16 @@ class ReportConfigFilterArgs:
     def or_(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReportConfigFilterArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[ReportConfigComparisonExpressionArgs]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[ReportConfigComparisonExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportConfigGroupingArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1105,12 +1213,16 @@ class ReportConfigGroupingArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, QueryColumnType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, QueryColumnType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, QueryColumnType]]
+    ):  # -> None:
+        ...
 
 class ReportConfigSortingArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1130,7 +1242,8 @@ class ReportConfigSortingArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def direction(
@@ -1140,7 +1253,8 @@ class ReportConfigSortingArgs:
     def direction(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ReportConfigSortingType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportConfigTimePeriodArgsDict(TypedDict):
     from_: pulumi.Input[_builtins.str]
@@ -1155,12 +1269,14 @@ class ReportConfigTimePeriodArgs:
     @pulumi.getter(name="from")
     def from_(self) -> pulumi.Input[_builtins.str]: ...
     @from_.setter
-    def from_(self, value: pulumi.Input[_builtins.str]): ...
+    def from_(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> pulumi.Input[_builtins.str]: ...
     @to.setter
-    def to(self, value: pulumi.Input[_builtins.str]): ...
+    def to(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ReportDatasetConfigurationArgsDict(TypedDict):
     columns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1180,7 +1296,8 @@ class ReportDatasetConfigurationArgs:
     @columns.setter
     def columns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportDatasetArgsDict(TypedDict):
     aggregation: NotRequired[
@@ -1219,7 +1336,8 @@ class ReportDatasetArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[ReportAggregationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -1228,12 +1346,14 @@ class ReportDatasetArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[ReportDatasetConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[ReportFilterArgs]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[ReportFilterArgs]]): ...
+    def filter(self, value: Optional[pulumi.Input[ReportFilterArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def granularity(
@@ -1242,7 +1362,8 @@ class ReportDatasetArgs:
     @granularity.setter
     def granularity(
         self, value: Optional[pulumi.Input[Union[_builtins.str, GranularityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def grouping(
@@ -1251,7 +1372,8 @@ class ReportDatasetArgs:
     @grouping.setter
     def grouping(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ReportGroupingArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportDefinitionArgsDict(TypedDict):
     timeframe: pulumi.Input[Union[_builtins.str, TimeframeType]]
@@ -1273,22 +1395,30 @@ class ReportDefinitionArgs:
     @pulumi.getter
     def timeframe(self) -> pulumi.Input[Union[_builtins.str, TimeframeType]]: ...
     @timeframe.setter
-    def timeframe(self, value: pulumi.Input[Union[_builtins.str, TimeframeType]]): ...
+    def timeframe(
+        self, value: pulumi.Input[Union[_builtins.str, TimeframeType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, ReportType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ReportType]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, ReportType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dataset(self) -> Optional[pulumi.Input[ReportDatasetArgs]]: ...
     @dataset.setter
-    def dataset(self, value: Optional[pulumi.Input[ReportDatasetArgs]]): ...
+    def dataset(self, value: Optional[pulumi.Input[ReportDatasetArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timePeriod")
     def time_period(self) -> Optional[pulumi.Input[ReportTimePeriodArgs]]: ...
     @time_period.setter
-    def time_period(self, value: Optional[pulumi.Input[ReportTimePeriodArgs]]): ...
+    def time_period(
+        self, value: Optional[pulumi.Input[ReportTimePeriodArgs]]
+    ):  # -> None:
+        ...
 
 class ReportDeliveryDestinationArgsDict(TypedDict):
     container: pulumi.Input[_builtins.str]
@@ -1308,17 +1438,22 @@ class ReportDeliveryDestinationArgs:
     @pulumi.getter
     def container(self) -> pulumi.Input[_builtins.str]: ...
     @container.setter
-    def container(self, value: pulumi.Input[_builtins.str]): ...
+    def container(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootFolderPath")
     def root_folder_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @root_folder_path.setter
-    def root_folder_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def root_folder_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ReportDeliveryInfoArgsDict(TypedDict):
     destination: pulumi.Input[ReportDeliveryDestinationArgsDict]
@@ -1332,7 +1467,10 @@ class ReportDeliveryInfoArgs:
     @pulumi.getter
     def destination(self) -> pulumi.Input[ReportDeliveryDestinationArgs]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[ReportDeliveryDestinationArgs]): ...
+    def destination(
+        self, value: pulumi.Input[ReportDeliveryDestinationArgs]
+    ):  # -> None:
+        ...
 
 class ReportFilterArgsDict(TypedDict):
     and_: NotRequired[pulumi.Input[Sequence[pulumi.Input[ReportFilterArgsDict]]]]
@@ -1360,19 +1498,22 @@ class ReportFilterArgs:
     @and_.setter
     def and_(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ReportFilterArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dimension(self) -> Optional[pulumi.Input[ReportComparisonExpressionArgs]]: ...
     @dimension.setter
     def dimension(
         self, value: Optional[pulumi.Input[ReportComparisonExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="not")
     def not_(self) -> Optional[pulumi.Input[ReportFilterArgs]]: ...
     @not_.setter
-    def not_(self, value: Optional[pulumi.Input[ReportFilterArgs]]): ...
+    def not_(self, value: Optional[pulumi.Input[ReportFilterArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="or")
     def or_(
@@ -1381,12 +1522,16 @@ class ReportFilterArgs:
     @or_.setter
     def or_(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ReportFilterArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[ReportComparisonExpressionArgs]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[ReportComparisonExpressionArgs]]): ...
+    def tag(
+        self, value: Optional[pulumi.Input[ReportComparisonExpressionArgs]]
+    ):  # -> None:
+        ...
 
 class ReportGroupingArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1404,12 +1549,16 @@ class ReportGroupingArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, ReportColumnType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ReportColumnType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, ReportColumnType]]
+    ):  # -> None:
+        ...
 
 class ReportRecurrencePeriodArgsDict(TypedDict):
     from_: pulumi.Input[_builtins.str]
@@ -1427,12 +1576,14 @@ class ReportRecurrencePeriodArgs:
     @pulumi.getter(name="from")
     def from_(self) -> pulumi.Input[_builtins.str]: ...
     @from_.setter
-    def from_(self, value: pulumi.Input[_builtins.str]): ...
+    def from_(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @to.setter
-    def to(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def to(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ReportScheduleArgsDict(TypedDict):
     recurrence: pulumi.Input[Union[_builtins.str, RecurrenceType]]
@@ -1452,7 +1603,10 @@ class ReportScheduleArgs:
     @pulumi.getter
     def recurrence(self) -> pulumi.Input[Union[_builtins.str, RecurrenceType]]: ...
     @recurrence.setter
-    def recurrence(self, value: pulumi.Input[Union[_builtins.str, RecurrenceType]]): ...
+    def recurrence(
+        self, value: pulumi.Input[Union[_builtins.str, RecurrenceType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recurrencePeriod")
     def recurrence_period(
@@ -1461,14 +1615,16 @@ class ReportScheduleArgs:
     @recurrence_period.setter
     def recurrence_period(
         self, value: Optional[pulumi.Input[ReportRecurrencePeriodArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[Union[_builtins.str, StatusType]]]: ...
     @status.setter
     def status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StatusType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReportTimePeriodArgsDict(TypedDict):
     from_: pulumi.Input[_builtins.str]
@@ -1483,12 +1639,14 @@ class ReportTimePeriodArgs:
     @pulumi.getter(name="from")
     def from_(self) -> pulumi.Input[_builtins.str]: ...
     @from_.setter
-    def from_(self, value: pulumi.Input[_builtins.str]): ...
+    def from_(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> pulumi.Input[_builtins.str]: ...
     @to.setter
-    def to(self, value: pulumi.Input[_builtins.str]): ...
+    def to(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SchedulePropertiesArgsDict(TypedDict):
     end_date: pulumi.Input[_builtins.str]
@@ -1524,24 +1682,28 @@ class SchedulePropertiesArgs:
     @pulumi.getter(name="endDate")
     def end_date(self) -> pulumi.Input[_builtins.str]: ...
     @end_date.setter
-    def end_date(self, value: pulumi.Input[_builtins.str]): ...
+    def end_date(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def frequency(self) -> pulumi.Input[Union[_builtins.str, ScheduleFrequency]]: ...
     @frequency.setter
     def frequency(
         self, value: pulumi.Input[Union[_builtins.str, ScheduleFrequency]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startDate")
     def start_date(self) -> pulumi.Input[_builtins.str]: ...
     @start_date.setter
-    def start_date(self, value: pulumi.Input[_builtins.str]): ...
+    def start_date(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfMonth")
     def day_of_month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day_of_month.setter
-    def day_of_month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day_of_month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysOfWeek")
     def days_of_week(
@@ -1555,12 +1717,14 @@ class SchedulePropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, DaysOfWeek]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hourOfDay")
     def hour_of_day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hour_of_day.setter
-    def hour_of_day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hour_of_day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeksOfMonth")
     def weeks_of_month(
@@ -1574,7 +1738,8 @@ class SchedulePropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, WeeksOfMonth]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SettingsPropertiesCacheArgsDict(TypedDict):
     channel: pulumi.Input[_builtins.str]
@@ -1600,32 +1765,38 @@ class SettingsPropertiesCacheArgs:
     @pulumi.getter
     def channel(self) -> pulumi.Input[_builtins.str]: ...
     @channel.setter
-    def channel(self, value: pulumi.Input[_builtins.str]): ...
+    def channel(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subchannel(self) -> pulumi.Input[_builtins.str]: ...
     @subchannel.setter
-    def subchannel(self, value: pulumi.Input[_builtins.str]): ...
+    def subchannel(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SourceCostAllocationResourceArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1645,7 +1816,8 @@ class SourceCostAllocationResourceArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(
@@ -1654,12 +1826,16 @@ class SourceCostAllocationResourceArgs:
     @resource_type.setter
     def resource_type(
         self, value: pulumi.Input[Union[_builtins.str, CostAllocationResourceType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class SystemAssignedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, SystemAssignedServiceIdentityType]]
@@ -1680,7 +1856,8 @@ class SystemAssignedServiceIdentityArgs:
     def type(
         self,
         value: pulumi.Input[Union[_builtins.str, SystemAssignedServiceIdentityType]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TagInheritancePropertiesArgsDict(TypedDict):
     prefer_container_tags: pulumi.Input[_builtins.bool]
@@ -1694,7 +1871,8 @@ class TagInheritancePropertiesArgs:
     @pulumi.getter(name="preferContainerTags")
     def prefer_container_tags(self) -> pulumi.Input[_builtins.bool]: ...
     @prefer_container_tags.setter
-    def prefer_container_tags(self, value: pulumi.Input[_builtins.bool]): ...
+    def prefer_container_tags(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class TargetCostAllocationResourceArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1716,7 +1894,8 @@ class TargetCostAllocationResourceArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyType")
     def policy_type(
@@ -1725,7 +1904,8 @@ class TargetCostAllocationResourceArgs:
     @policy_type.setter
     def policy_type(
         self, value: pulumi.Input[Union[_builtins.str, CostAllocationPolicyType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(
@@ -1734,7 +1914,8 @@ class TargetCostAllocationResourceArgs:
     @resource_type.setter
     def resource_type(
         self, value: pulumi.Input[Union[_builtins.str, CostAllocationResourceType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1743,4 +1924,5 @@ class TargetCostAllocationResourceArgs:
     @values.setter
     def values(
         self, value: pulumi.Input[Sequence[pulumi.Input[CostAllocationProportionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...

@@ -56,7 +56,8 @@ class PatchBaselineArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PatchBaselineApprovalRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvedPatches")
     def approved_patches(
@@ -65,7 +66,8 @@ class PatchBaselineArgs:
     @approved_patches.setter
     def approved_patches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvedPatchesComplianceLevel")
     def approved_patches_compliance_level(
@@ -74,7 +76,8 @@ class PatchBaselineArgs:
     @approved_patches_compliance_level.setter
     def approved_patches_compliance_level(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvedPatchesEnableNonSecurity")
     def approved_patches_enable_non_security(
@@ -83,7 +86,8 @@ class PatchBaselineArgs:
     @approved_patches_enable_non_security.setter
     def approved_patches_enable_non_security(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availableSecurityUpdatesComplianceStatus")
     def available_security_updates_compliance_status(
@@ -92,12 +96,14 @@ class PatchBaselineArgs:
     @available_security_updates_compliance_status.setter
     def available_security_updates_compliance_status(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="globalFilters")
     def global_filters(
@@ -111,22 +117,28 @@ class PatchBaselineArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PatchBaselineGlobalFilterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operatingSystem")
     def operating_system(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @operating_system.setter
-    def operating_system(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def operating_system(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rejectedPatches")
     def rejected_patches(
@@ -135,12 +147,16 @@ class PatchBaselineArgs:
     @rejected_patches.setter
     def rejected_patches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rejectedPatchesAction")
     def rejected_patches_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rejected_patches_action.setter
-    def rejected_patches_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rejected_patches_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sources(
@@ -150,7 +166,8 @@ class PatchBaselineArgs:
     def sources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PatchBaselineSourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -159,7 +176,8 @@ class PatchBaselineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PatchBaselineState:
@@ -213,7 +231,8 @@ class _PatchBaselineState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PatchBaselineApprovalRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvedPatches")
     def approved_patches(
@@ -222,7 +241,8 @@ class _PatchBaselineState:
     @approved_patches.setter
     def approved_patches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvedPatchesComplianceLevel")
     def approved_patches_compliance_level(
@@ -231,7 +251,8 @@ class _PatchBaselineState:
     @approved_patches_compliance_level.setter
     def approved_patches_compliance_level(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvedPatchesEnableNonSecurity")
     def approved_patches_enable_non_security(
@@ -240,12 +261,14 @@ class _PatchBaselineState:
     @approved_patches_enable_non_security.setter
     def approved_patches_enable_non_security(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availableSecurityUpdatesComplianceStatus")
     def available_security_updates_compliance_status(
@@ -254,12 +277,14 @@ class _PatchBaselineState:
     @available_security_updates_compliance_status.setter
     def available_security_updates_compliance_status(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="globalFilters")
     def global_filters(
@@ -273,27 +298,34 @@ class _PatchBaselineState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PatchBaselineGlobalFilterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @json.setter
-    def json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operatingSystem")
     def operating_system(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @operating_system.setter
-    def operating_system(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def operating_system(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rejectedPatches")
     def rejected_patches(
@@ -302,12 +334,16 @@ class _PatchBaselineState:
     @rejected_patches.setter
     def rejected_patches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rejectedPatchesAction")
     def rejected_patches_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rejected_patches_action.setter
-    def rejected_patches_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rejected_patches_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sources(
@@ -317,7 +353,8 @@ class _PatchBaselineState:
     def sources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PatchBaselineSourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -326,7 +363,8 @@ class _PatchBaselineState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -335,7 +373,8 @@ class _PatchBaselineState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ssm/patchBaseline:PatchBaseline")
 class PatchBaseline(pulumi.CustomResource):

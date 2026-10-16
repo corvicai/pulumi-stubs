@@ -118,7 +118,8 @@ class GetBlobContainerResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetBlobContainerResult(GetBlobContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBlobContainerResult]:
+        ...
 
 def get_blob_container(
     account_name: Optional[_builtins.str] = ...,

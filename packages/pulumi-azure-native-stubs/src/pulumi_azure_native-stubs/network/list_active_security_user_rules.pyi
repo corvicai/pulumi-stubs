@@ -23,7 +23,8 @@ class ListActiveSecurityUserRulesResult:
     def value(self) -> Optional[Sequence[Any]]: ...
 
 class AwaitableListActiveSecurityUserRulesResult(ListActiveSecurityUserRulesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListActiveSecurityUserRulesResult]:
+        ...
 
 def list_active_security_user_rules(
     network_manager_name: Optional[_builtins.str] = ...,

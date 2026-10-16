@@ -108,7 +108,8 @@ class GetFreeServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFreeServiceResult(GetFreeServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFreeServiceResult]:
+        ...
 
 def get_free_service(
     free_service_name: Optional[_builtins.str] = ...,

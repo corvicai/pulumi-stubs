@@ -76,7 +76,8 @@ class GetSnapshotPolicyResult:
     def weekly_schedule(self) -> Optional[outputs.WeeklyScheduleResponse]: ...
 
 class AwaitableGetSnapshotPolicyResult(GetSnapshotPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotPolicyResult]:
+        ...
 
 def get_snapshot_policy(
     account_name: Optional[_builtins.str] = ...,

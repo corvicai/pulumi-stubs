@@ -51,7 +51,8 @@ class GetOrganizationResult:
     def organization(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetOrganizationResult(GetOrganizationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationResult]:
+        ...
 
 def get_organization(
     domain: Optional[_builtins.str] = ...,

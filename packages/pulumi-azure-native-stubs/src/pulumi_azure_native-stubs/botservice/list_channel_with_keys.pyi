@@ -84,7 +84,8 @@ class ListChannelWithKeysResult:
     def zones(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableListChannelWithKeysResult(ListChannelWithKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListChannelWithKeysResult]:
+        ...
 
 def list_channel_with_keys(
     channel_name: Optional[_builtins.str] = ...,

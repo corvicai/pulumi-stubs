@@ -35,7 +35,8 @@ class DataCollectionEndpointArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataCollectionEndpointName")
     def data_collection_endpoint_name(
@@ -44,12 +45,14 @@ class DataCollectionEndpointArgs:
     @data_collection_endpoint_name.setter
     def data_collection_endpoint_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(
@@ -58,12 +61,14 @@ class DataCollectionEndpointArgs:
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[DataCollectionEndpointResourceIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="immutableId")
     def immutable_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @immutable_id.setter
-    def immutable_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def immutable_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(
@@ -77,12 +82,14 @@ class DataCollectionEndpointArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, KnownDataCollectionEndpointResourceKind]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkAcls")
     def network_acls(
@@ -91,7 +98,8 @@ class DataCollectionEndpointArgs:
     @network_acls.setter
     def network_acls(
         self, value: Optional[pulumi.Input[DataCollectionEndpointNetworkAclsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -100,7 +108,8 @@ class DataCollectionEndpointArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:monitor:DataCollectionEndpoint")
 class DataCollectionEndpoint(pulumi.CustomResource):

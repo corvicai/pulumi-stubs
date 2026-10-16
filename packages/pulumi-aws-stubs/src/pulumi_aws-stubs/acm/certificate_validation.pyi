@@ -22,12 +22,14 @@ class CertificateValidationArgs:
     @pulumi.getter(name="certificateArn")
     def certificate_arn(self) -> pulumi.Input[_builtins.str]: ...
     @certificate_arn.setter
-    def certificate_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def certificate_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationRecordFqdns")
     def validation_record_fqdns(
@@ -36,7 +38,8 @@ class CertificateValidationArgs:
     @validation_record_fqdns.setter
     def validation_record_fqdns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CertificateValidationState:
@@ -53,12 +56,14 @@ class _CertificateValidationState:
     @pulumi.getter(name="certificateArn")
     def certificate_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_arn.setter
-    def certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationRecordFqdns")
     def validation_record_fqdns(
@@ -67,7 +72,8 @@ class _CertificateValidationState:
     @validation_record_fqdns.setter
     def validation_record_fqdns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CertificateValidation(pulumi.CustomResource):

@@ -84,7 +84,8 @@ class GetOuContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOuContainerResult(GetOuContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOuContainerResult]:
+        ...
 
 def get_ou_container(
     domain_service_name: Optional[_builtins.str] = ...,

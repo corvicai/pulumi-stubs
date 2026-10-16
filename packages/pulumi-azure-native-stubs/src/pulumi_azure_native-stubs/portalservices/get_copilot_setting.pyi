@@ -48,7 +48,8 @@ class GetCopilotSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCopilotSettingResult(GetCopilotSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCopilotSettingResult]:
+        ...
 
 def get_copilot_setting(
     opts: Optional[pulumi.InvokeOptions] = ...,

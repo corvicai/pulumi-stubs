@@ -44,7 +44,8 @@ class GetHttpRouteConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHttpRouteConfigResult(GetHttpRouteConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHttpRouteConfigResult]:
+        ...
 
 def get_http_route_config(
     environment_name: Optional[_builtins.str] = ...,

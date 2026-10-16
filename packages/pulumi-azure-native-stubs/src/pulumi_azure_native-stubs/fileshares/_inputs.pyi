@@ -65,12 +65,14 @@ class FileSharePropertiesArgs:
     @media_tier.setter
     def media_tier(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MediaTier]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mountName")
     def mount_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mount_name.setter
-    def mount_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mount_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nfsProtocolProperties")
     def nfs_protocol_properties(
@@ -79,26 +81,32 @@ class FileSharePropertiesArgs:
     @nfs_protocol_properties.setter
     def nfs_protocol_properties(
         self, value: Optional[pulumi.Input[NfsProtocolPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[Union[_builtins.str, Protocol]]]: ...
     @protocol.setter
     def protocol(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Protocol]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedIOPerSec")
     def provisioned_io_per_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @provisioned_io_per_sec.setter
-    def provisioned_io_per_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def provisioned_io_per_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedStorageGiB")
     def provisioned_storage_gi_b(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @provisioned_storage_gi_b.setter
     def provisioned_storage_gi_b(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedThroughputMiBPerSec")
     def provisioned_throughput_mi_b_per_sec(
@@ -107,7 +115,8 @@ class FileSharePropertiesArgs:
     @provisioned_throughput_mi_b_per_sec.setter
     def provisioned_throughput_mi_b_per_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicAccessProperties")
     def public_access_properties(
@@ -116,7 +125,8 @@ class FileSharePropertiesArgs:
     @public_access_properties.setter
     def public_access_properties(
         self, value: Optional[pulumi.Input[PublicAccessPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -125,7 +135,8 @@ class FileSharePropertiesArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def redundancy(
@@ -134,7 +145,8 @@ class FileSharePropertiesArgs:
     @redundancy.setter
     def redundancy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Redundancy]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FileShareProvisioningRecommendationInputDict(TypedDict):
     provisioned_storage_gi_b: _builtins.int
@@ -146,7 +158,8 @@ class FileShareProvisioningRecommendationInput:
     @pulumi.getter(name="provisionedStorageGiB")
     def provisioned_storage_gi_b(self) -> _builtins.int: ...
     @provisioned_storage_gi_b.setter
-    def provisioned_storage_gi_b(self, value: _builtins.int): ...
+    def provisioned_storage_gi_b(self, value: _builtins.int):  # -> None:
+        ...
 
 class FileShareSnapshotPropertiesArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -168,7 +181,8 @@ class FileShareSnapshotPropertiesArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NfsProtocolPropertiesArgsDict(TypedDict):
     root_squash: NotRequired[pulumi.Input[Union[_builtins.str, ShareRootSquash]]]
@@ -190,7 +204,8 @@ class NfsProtocolPropertiesArgs:
     @root_squash.setter
     def root_squash(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ShareRootSquash]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -214,12 +229,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -233,7 +252,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PublicAccessPropertiesArgsDict(TypedDict):
     allowed_subnets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -255,4 +275,5 @@ class PublicAccessPropertiesArgs:
     @allowed_subnets.setter
     def allowed_subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

@@ -68,7 +68,8 @@ class GetPeeringResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPeeringResult(GetPeeringResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPeeringResult]:
+        ...
 
 def get_peering(
     peering_name: Optional[_builtins.str] = ...,

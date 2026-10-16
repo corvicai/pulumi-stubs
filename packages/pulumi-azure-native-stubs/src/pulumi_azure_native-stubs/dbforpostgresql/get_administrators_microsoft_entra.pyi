@@ -58,7 +58,10 @@ class GetAdministratorsMicrosoftEntraResult:
 class AwaitableGetAdministratorsMicrosoftEntraResult(
     GetAdministratorsMicrosoftEntraResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAdministratorsMicrosoftEntraResult]:
+        ...
 
 def get_administrators_microsoft_entra(
     object_id: Optional[_builtins.str] = ...,

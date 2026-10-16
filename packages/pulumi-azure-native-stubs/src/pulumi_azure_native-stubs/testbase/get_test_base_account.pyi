@@ -64,7 +64,8 @@ class GetTestBaseAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTestBaseAccountResult(GetTestBaseAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTestBaseAccountResult]:
+        ...
 
 def get_test_base_account(
     resource_group_name: Optional[_builtins.str] = ...,

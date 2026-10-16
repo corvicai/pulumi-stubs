@@ -119,7 +119,8 @@ class GetWebAppSiteExtensionResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebAppSiteExtensionResult(GetWebAppSiteExtensionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppSiteExtensionResult]:
+        ...
 
 def get_web_app_site_extension(
     name: Optional[_builtins.str] = ...,

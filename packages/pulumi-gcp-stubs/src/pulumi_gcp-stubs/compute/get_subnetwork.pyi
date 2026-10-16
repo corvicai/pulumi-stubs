@@ -86,7 +86,8 @@ class GetSubnetworkResult:
     def subnetwork_id(self) -> _builtins.int: ...
 
 class AwaitableGetSubnetworkResult(GetSubnetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetworkResult]:
+        ...
 
 def get_subnetwork(
     name: Optional[_builtins.str] = ...,

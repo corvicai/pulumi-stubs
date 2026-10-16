@@ -60,7 +60,8 @@ class GetIncidentRelationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIncidentRelationResult(GetIncidentRelationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIncidentRelationResult]:
+        ...
 
 def get_incident_relation(
     incident_id: Optional[_builtins.str] = ...,

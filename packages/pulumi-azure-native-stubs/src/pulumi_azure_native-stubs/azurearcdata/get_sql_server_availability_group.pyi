@@ -54,7 +54,10 @@ class GetSqlServerAvailabilityGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlServerAvailabilityGroupResult(GetSqlServerAvailabilityGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlServerAvailabilityGroupResult]:
+        ...
 
 def get_sql_server_availability_group(
     availability_group_name: Optional[_builtins.str] = ...,

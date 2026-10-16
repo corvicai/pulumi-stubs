@@ -50,7 +50,10 @@ class GetNetworkInterfaceTapConfigurationResult:
 class AwaitableGetNetworkInterfaceTapConfigurationResult(
     GetNetworkInterfaceTapConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkInterfaceTapConfigurationResult]:
+        ...
 
 def get_network_interface_tap_configuration(
     network_interface_name: Optional[_builtins.str] = ...,

@@ -45,7 +45,10 @@ class GetEnterpriseMccCacheNodesOperationCacheNodeTlsCertificateHistoryResult:
 class AwaitableGetEnterpriseMccCacheNodesOperationCacheNodeTlsCertificateHistoryResult(
     GetEnterpriseMccCacheNodesOperationCacheNodeTlsCertificateHistoryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetEnterpriseMccCacheNodesOperationCacheNodeTlsCertificateHistoryResult]:
+        ...
 
 def get_enterprise_mcc_cache_nodes_operation_cache_node_tls_certificate_history(
     cache_node_resource_name: Optional[_builtins.str] = ...,

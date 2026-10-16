@@ -37,7 +37,10 @@ class GetCustomTargetTypeIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetCustomTargetTypeIamPolicyResult(GetCustomTargetTypeIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCustomTargetTypeIamPolicyResult]:
+        ...
 
 def get_custom_target_type_iam_policy(
     location: Optional[_builtins.str] = ...,

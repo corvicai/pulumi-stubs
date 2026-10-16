@@ -46,7 +46,8 @@ class GetCacheResult:
     def use_from_location(self) -> _builtins.str: ...
 
 class AwaitableGetCacheResult(GetCacheResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCacheResult]:
+        ...
 
 def get_cache(
     cache_id: Optional[_builtins.str] = ...,

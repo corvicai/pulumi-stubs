@@ -116,12 +116,14 @@ class ClusterBrokerNodeGroupInfoArgs:
     @client_subnets.setter
     def client_subnets(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @instance_type.setter
-    def instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -130,12 +132,14 @@ class ClusterBrokerNodeGroupInfoArgs:
     @security_groups.setter
     def security_groups(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azDistribution")
     def az_distribution(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @az_distribution.setter
-    def az_distribution(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def az_distribution(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectivityInfo")
     def connectivity_info(
@@ -145,7 +149,8 @@ class ClusterBrokerNodeGroupInfoArgs:
     def connectivity_info(
         self,
         value: Optional[pulumi.Input[ClusterBrokerNodeGroupInfoConnectivityInfoArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageInfo")
     def storage_info(
@@ -154,7 +159,8 @@ class ClusterBrokerNodeGroupInfoArgs:
     @storage_info.setter
     def storage_info(
         self, value: Optional[pulumi.Input[ClusterBrokerNodeGroupInfoStorageInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoConnectivityInfoArgsDict(TypedDict):
     public_access: NotRequired[
@@ -189,7 +195,8 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoArgs:
         value: Optional[
             pulumi.Input[ClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConnectivity")
     def vpc_connectivity(
@@ -203,7 +210,8 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoArgs:
         value: Optional[
             pulumi.Input[ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -217,7 +225,8 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityArgsDict(TypedDict):
     client_authentication: NotRequired[
@@ -254,7 +263,8 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityArgs:
                 ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationArgsDict(
     TypedDict
@@ -295,12 +305,14 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticat
                 ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tls(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @tls.setter
-    def tls(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def tls(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslArgsDict(
     TypedDict
@@ -320,12 +332,14 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticat
     @pulumi.getter
     def iam(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @iam.setter
-    def iam(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def iam(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scram(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @scram.setter
-    def scram(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def scram(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoStorageInfoArgsDict(TypedDict):
     ebs_storage_info: NotRequired[
@@ -354,7 +368,8 @@ class ClusterBrokerNodeGroupInfoStorageInfoArgs:
         value: Optional[
             pulumi.Input[ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoArgsDict(TypedDict):
     provisioned_throughput: NotRequired[
@@ -393,12 +408,14 @@ class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoArgs:
                 ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeSize")
     def volume_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @volume_size.setter
-    def volume_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def volume_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputArgsDict(
     TypedDict
@@ -418,12 +435,16 @@ class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputAr
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeThroughput")
     def volume_throughput(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @volume_throughput.setter
-    def volume_throughput(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def volume_throughput(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ClusterClientAuthenticationArgsDict(TypedDict):
     sasl: NotRequired[pulumi.Input[ClusterClientAuthenticationSaslArgsDict]]
@@ -445,19 +466,24 @@ class ClusterClientAuthenticationArgs:
     @sasl.setter
     def sasl(
         self, value: Optional[pulumi.Input[ClusterClientAuthenticationSaslArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tls(self) -> Optional[pulumi.Input[ClusterClientAuthenticationTlsArgs]]: ...
     @tls.setter
     def tls(
         self, value: Optional[pulumi.Input[ClusterClientAuthenticationTlsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unauthenticated(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @unauthenticated.setter
-    def unauthenticated(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def unauthenticated(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ClusterClientAuthenticationSaslArgsDict(TypedDict):
     iam: NotRequired[pulumi.Input[_builtins.bool]]
@@ -475,12 +501,14 @@ class ClusterClientAuthenticationSaslArgs:
     @pulumi.getter
     def iam(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @iam.setter
-    def iam(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def iam(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scram(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @scram.setter
-    def scram(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def scram(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ClusterClientAuthenticationTlsArgsDict(TypedDict):
     certificate_authority_arns: NotRequired[
@@ -504,7 +532,8 @@ class ClusterClientAuthenticationTlsArgs:
     @certificate_authority_arns.setter
     def certificate_authority_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterConfigurationInfoArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -522,12 +551,14 @@ class ClusterConfigurationInfoArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def revision(self) -> pulumi.Input[_builtins.int]: ...
     @revision.setter
-    def revision(self, value: pulumi.Input[_builtins.int]): ...
+    def revision(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class ClusterEncryptionInfoArgsDict(TypedDict):
     encryption_at_rest_kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -553,7 +584,8 @@ class ClusterEncryptionInfoArgs:
     @encryption_at_rest_kms_key_arn.setter
     def encryption_at_rest_kms_key_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionInTransit")
     def encryption_in_transit(
@@ -563,7 +595,8 @@ class ClusterEncryptionInfoArgs:
     def encryption_in_transit(
         self,
         value: Optional[pulumi.Input[ClusterEncryptionInfoEncryptionInTransitArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterEncryptionInfoEncryptionInTransitArgsDict(TypedDict):
     client_broker: NotRequired[pulumi.Input[_builtins.str]]
@@ -581,12 +614,14 @@ class ClusterEncryptionInfoEncryptionInTransitArgs:
     @pulumi.getter(name="clientBroker")
     def client_broker(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_broker.setter
-    def client_broker(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_broker(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inCluster")
     def in_cluster(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @in_cluster.setter
-    def in_cluster(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def in_cluster(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ClusterLoggingInfoArgsDict(TypedDict):
     broker_logs: pulumi.Input[ClusterLoggingInfoBrokerLogsArgsDict]
@@ -600,7 +635,10 @@ class ClusterLoggingInfoArgs:
     @pulumi.getter(name="brokerLogs")
     def broker_logs(self) -> pulumi.Input[ClusterLoggingInfoBrokerLogsArgs]: ...
     @broker_logs.setter
-    def broker_logs(self, value: pulumi.Input[ClusterLoggingInfoBrokerLogsArgs]): ...
+    def broker_logs(
+        self, value: pulumi.Input[ClusterLoggingInfoBrokerLogsArgs]
+    ):  # -> None:
+        ...
 
 class ClusterLoggingInfoBrokerLogsArgsDict(TypedDict):
     cloudwatch_logs: NotRequired[
@@ -631,7 +669,8 @@ class ClusterLoggingInfoBrokerLogsArgs:
     def cloudwatch_logs(
         self,
         value: Optional[pulumi.Input[ClusterLoggingInfoBrokerLogsCloudwatchLogsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def firehose(
@@ -640,12 +679,16 @@ class ClusterLoggingInfoBrokerLogsArgs:
     @firehose.setter
     def firehose(
         self, value: Optional[pulumi.Input[ClusterLoggingInfoBrokerLogsFirehoseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(self) -> Optional[pulumi.Input[ClusterLoggingInfoBrokerLogsS3Args]]: ...
     @s3.setter
-    def s3(self, value: Optional[pulumi.Input[ClusterLoggingInfoBrokerLogsS3Args]]): ...
+    def s3(
+        self, value: Optional[pulumi.Input[ClusterLoggingInfoBrokerLogsS3Args]]
+    ):  # -> None:
+        ...
 
 class ClusterLoggingInfoBrokerLogsCloudwatchLogsArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -663,12 +706,14 @@ class ClusterLoggingInfoBrokerLogsCloudwatchLogsArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logGroup")
     def log_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_group.setter
-    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterLoggingInfoBrokerLogsFirehoseArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -686,12 +731,14 @@ class ClusterLoggingInfoBrokerLogsFirehoseArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryStream")
     def delivery_stream(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delivery_stream.setter
-    def delivery_stream(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delivery_stream(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterLoggingInfoBrokerLogsS3ArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -711,17 +758,20 @@ class ClusterLoggingInfoBrokerLogsS3Args:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterOpenMonitoringArgsDict(TypedDict):
     prometheus: pulumi.Input[ClusterOpenMonitoringPrometheusArgsDict]
@@ -735,7 +785,10 @@ class ClusterOpenMonitoringArgs:
     @pulumi.getter
     def prometheus(self) -> pulumi.Input[ClusterOpenMonitoringPrometheusArgs]: ...
     @prometheus.setter
-    def prometheus(self, value: pulumi.Input[ClusterOpenMonitoringPrometheusArgs]): ...
+    def prometheus(
+        self, value: pulumi.Input[ClusterOpenMonitoringPrometheusArgs]
+    ):  # -> None:
+        ...
 
 class ClusterOpenMonitoringPrometheusArgsDict(TypedDict):
     jmx_exporter: NotRequired[
@@ -766,7 +819,8 @@ class ClusterOpenMonitoringPrometheusArgs:
     def jmx_exporter(
         self,
         value: Optional[pulumi.Input[ClusterOpenMonitoringPrometheusJmxExporterArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeExporter")
     def node_exporter(
@@ -776,7 +830,8 @@ class ClusterOpenMonitoringPrometheusArgs:
     def node_exporter(
         self,
         value: Optional[pulumi.Input[ClusterOpenMonitoringPrometheusNodeExporterArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterOpenMonitoringPrometheusJmxExporterArgsDict(TypedDict):
     enabled_in_broker: pulumi.Input[_builtins.bool]
@@ -790,7 +845,8 @@ class ClusterOpenMonitoringPrometheusJmxExporterArgs:
     @pulumi.getter(name="enabledInBroker")
     def enabled_in_broker(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled_in_broker.setter
-    def enabled_in_broker(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled_in_broker(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ClusterOpenMonitoringPrometheusNodeExporterArgsDict(TypedDict):
     enabled_in_broker: pulumi.Input[_builtins.bool]
@@ -804,7 +860,8 @@ class ClusterOpenMonitoringPrometheusNodeExporterArgs:
     @pulumi.getter(name="enabledInBroker")
     def enabled_in_broker(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled_in_broker.setter
-    def enabled_in_broker(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled_in_broker(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ClusterRebalancingArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -816,7 +873,8 @@ class ClusterRebalancingArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ReplicatorKafkaClusterArgsDict(TypedDict):
     amazon_msk_cluster: pulumi.Input[ReplicatorKafkaClusterAmazonMskClusterArgsDict]
@@ -838,12 +896,16 @@ class ReplicatorKafkaClusterArgs:
     @amazon_msk_cluster.setter
     def amazon_msk_cluster(
         self, value: pulumi.Input[ReplicatorKafkaClusterAmazonMskClusterArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(self) -> pulumi.Input[ReplicatorKafkaClusterVpcConfigArgs]: ...
     @vpc_config.setter
-    def vpc_config(self, value: pulumi.Input[ReplicatorKafkaClusterVpcConfigArgs]): ...
+    def vpc_config(
+        self, value: pulumi.Input[ReplicatorKafkaClusterVpcConfigArgs]
+    ):  # -> None:
+        ...
 
 class ReplicatorKafkaClusterAmazonMskClusterArgsDict(TypedDict):
     msk_cluster_arn: pulumi.Input[_builtins.str]
@@ -855,7 +917,8 @@ class ReplicatorKafkaClusterAmazonMskClusterArgs:
     @pulumi.getter(name="mskClusterArn")
     def msk_cluster_arn(self) -> pulumi.Input[_builtins.str]: ...
     @msk_cluster_arn.setter
-    def msk_cluster_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def msk_cluster_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ReplicatorKafkaClusterVpcConfigArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -879,7 +942,8 @@ class ReplicatorKafkaClusterVpcConfigArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupsIds")
     def security_groups_ids(
@@ -888,7 +952,8 @@ class ReplicatorKafkaClusterVpcConfigArgs:
     @security_groups_ids.setter
     def security_groups_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReplicatorReplicationInfoListArgsDict(TypedDict):
     consumer_group_replications: pulumi.Input[
@@ -941,22 +1006,26 @@ class ReplicatorReplicationInfoListArgs:
                 pulumi.Input[ReplicatorReplicationInfoListConsumerGroupReplicationArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceKafkaClusterArn")
     def source_kafka_cluster_arn(self) -> pulumi.Input[_builtins.str]: ...
     @source_kafka_cluster_arn.setter
-    def source_kafka_cluster_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def source_kafka_cluster_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetCompressionType")
     def target_compression_type(self) -> pulumi.Input[_builtins.str]: ...
     @target_compression_type.setter
-    def target_compression_type(self, value: pulumi.Input[_builtins.str]): ...
+    def target_compression_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetKafkaClusterArn")
     def target_kafka_cluster_arn(self) -> pulumi.Input[_builtins.str]: ...
     @target_kafka_cluster_arn.setter
-    def target_kafka_cluster_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def target_kafka_cluster_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicReplications")
     def topic_replications(
@@ -970,21 +1039,24 @@ class ReplicatorReplicationInfoListArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ReplicatorReplicationInfoListTopicReplicationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceKafkaClusterAlias")
     def source_kafka_cluster_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_kafka_cluster_alias.setter
     def source_kafka_cluster_alias(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetKafkaClusterAlias")
     def target_kafka_cluster_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_kafka_cluster_alias.setter
     def target_kafka_cluster_alias(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReplicatorReplicationInfoListConsumerGroupReplicationArgsDict(TypedDict):
     consumer_groups_to_replicates: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1020,7 +1092,8 @@ class ReplicatorReplicationInfoListConsumerGroupReplicationArgs:
     @consumer_groups_to_replicates.setter
     def consumer_groups_to_replicates(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consumerGroupsToExcludes")
     def consumer_groups_to_excludes(
@@ -1029,7 +1102,8 @@ class ReplicatorReplicationInfoListConsumerGroupReplicationArgs:
     @consumer_groups_to_excludes.setter
     def consumer_groups_to_excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="detectAndCopyNewConsumerGroups")
     def detect_and_copy_new_consumer_groups(
@@ -1038,7 +1112,8 @@ class ReplicatorReplicationInfoListConsumerGroupReplicationArgs:
     @detect_and_copy_new_consumer_groups.setter
     def detect_and_copy_new_consumer_groups(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="synchroniseConsumerGroupOffsets")
     def synchronise_consumer_group_offsets(
@@ -1047,7 +1122,8 @@ class ReplicatorReplicationInfoListConsumerGroupReplicationArgs:
     @synchronise_consumer_group_offsets.setter
     def synchronise_consumer_group_offsets(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReplicatorReplicationInfoListTopicReplicationArgsDict(TypedDict):
     topics_to_replicates: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1099,7 +1175,8 @@ class ReplicatorReplicationInfoListTopicReplicationArgs:
     @topics_to_replicates.setter
     def topics_to_replicates(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyAccessControlListsForTopics")
     def copy_access_control_lists_for_topics(
@@ -1108,21 +1185,24 @@ class ReplicatorReplicationInfoListTopicReplicationArgs:
     @copy_access_control_lists_for_topics.setter
     def copy_access_control_lists_for_topics(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTopicConfigurations")
     def copy_topic_configurations(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @copy_topic_configurations.setter
     def copy_topic_configurations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="detectAndCopyNewTopics")
     def detect_and_copy_new_topics(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @detect_and_copy_new_topics.setter
     def detect_and_copy_new_topics(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPosition")
     def starting_position(
@@ -1138,7 +1218,8 @@ class ReplicatorReplicationInfoListTopicReplicationArgs:
                 ReplicatorReplicationInfoListTopicReplicationStartingPositionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicNameConfiguration")
     def topic_name_configuration(
@@ -1156,7 +1237,8 @@ class ReplicatorReplicationInfoListTopicReplicationArgs:
                 ReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicsToExcludes")
     def topics_to_excludes(
@@ -1165,7 +1247,8 @@ class ReplicatorReplicationInfoListTopicReplicationArgs:
     @topics_to_excludes.setter
     def topics_to_excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReplicatorReplicationInfoListTopicReplicationStartingPositionArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -1179,7 +1262,8 @@ class ReplicatorReplicationInfoListTopicReplicationStartingPositionArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationArgsDict(
     TypedDict
@@ -1195,7 +1279,8 @@ class ReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServerlessClusterClientAuthenticationArgsDict(TypedDict):
     sasl: pulumi.Input[ServerlessClusterClientAuthenticationSaslArgsDict]
@@ -1211,7 +1296,8 @@ class ServerlessClusterClientAuthenticationArgs:
     @sasl.setter
     def sasl(
         self, value: pulumi.Input[ServerlessClusterClientAuthenticationSaslArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServerlessClusterClientAuthenticationSaslArgsDict(TypedDict):
     iam: pulumi.Input[ServerlessClusterClientAuthenticationSaslIamArgsDict]
@@ -1227,7 +1313,8 @@ class ServerlessClusterClientAuthenticationSaslArgs:
     @iam.setter
     def iam(
         self, value: pulumi.Input[ServerlessClusterClientAuthenticationSaslIamArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServerlessClusterClientAuthenticationSaslIamArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -1239,7 +1326,8 @@ class ServerlessClusterClientAuthenticationSaslIamArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ServerlessClusterVpcConfigArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1261,7 +1349,8 @@ class ServerlessClusterVpcConfigArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -1270,4 +1359,5 @@ class ServerlessClusterVpcConfigArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

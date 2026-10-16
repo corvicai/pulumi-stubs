@@ -31,7 +31,8 @@ class GetDelegatedAdministratorsResult:
     def service_principal(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDelegatedAdministratorsResult(GetDelegatedAdministratorsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDelegatedAdministratorsResult]:
+        ...
 
 def get_delegated_administrators(
     service_principal: Optional[_builtins.str] = ...,

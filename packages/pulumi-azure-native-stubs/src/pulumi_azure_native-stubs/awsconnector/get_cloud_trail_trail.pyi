@@ -52,7 +52,8 @@ class GetCloudTrailTrailResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudTrailTrailResult(GetCloudTrailTrailResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudTrailTrailResult]:
+        ...
 
 def get_cloud_trail_trail(
     name: Optional[_builtins.str] = ...,

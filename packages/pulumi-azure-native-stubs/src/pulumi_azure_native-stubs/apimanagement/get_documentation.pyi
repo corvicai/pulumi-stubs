@@ -43,7 +43,8 @@ class GetDocumentationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDocumentationResult(GetDocumentationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDocumentationResult]:
+        ...
 
 def get_documentation(
     documentation_id: Optional[_builtins.str] = ...,

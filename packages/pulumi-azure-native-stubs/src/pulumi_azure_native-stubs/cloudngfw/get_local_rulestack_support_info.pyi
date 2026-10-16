@@ -67,7 +67,10 @@ class GetLocalRulestackSupportInfoResult:
     def user_registered(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetLocalRulestackSupportInfoResult(GetLocalRulestackSupportInfoResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLocalRulestackSupportInfoResult]:
+        ...
 
 def get_local_rulestack_support_info(
     email: Optional[_builtins.str] = ...,

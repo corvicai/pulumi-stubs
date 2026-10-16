@@ -49,7 +49,8 @@ class PrivateEndpointConnectionArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -73,12 +74,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -92,7 +97,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceAccessPolicyEntryArgsDict(TypedDict):
     object_id: pulumi.Input[_builtins.str]
@@ -104,7 +110,8 @@ class ServiceAccessPolicyEntryArgs:
     @pulumi.getter(name="objectId")
     def object_id(self) -> pulumi.Input[_builtins.str]: ...
     @object_id.setter
-    def object_id(self, value: pulumi.Input[_builtins.str]): ...
+    def object_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ServiceAuthenticationConfigurationInfoArgsDict(TypedDict):
     audience: NotRequired[pulumi.Input[_builtins.str]]
@@ -124,17 +131,22 @@ class ServiceAuthenticationConfigurationInfoArgs:
     @pulumi.getter
     def audience(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audience.setter
-    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audience(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authority(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authority.setter
-    def authority(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authority(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smartProxyEnabled")
     def smart_proxy_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @smart_proxy_enabled.setter
-    def smart_proxy_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def smart_proxy_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ServiceCorsConfigurationInfoArgsDict(TypedDict):
     allow_credentials: NotRequired[pulumi.Input[_builtins.bool]]
@@ -158,7 +170,10 @@ class ServiceCorsConfigurationInfoArgs:
     @pulumi.getter(name="allowCredentials")
     def allow_credentials(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_credentials.setter
-    def allow_credentials(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_credentials(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -167,12 +182,14 @@ class ServiceCorsConfigurationInfoArgs:
     @headers.setter
     def headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxAge")
     def max_age(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max_age.setter
-    def max_age(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max_age(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def methods(
@@ -181,7 +198,8 @@ class ServiceCorsConfigurationInfoArgs:
     @methods.setter
     def methods(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def origins(
@@ -190,7 +208,8 @@ class ServiceCorsConfigurationInfoArgs:
     @origins.setter
     def origins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceCosmosDbConfigurationInfoArgsDict(TypedDict):
     key_vault_key_uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -208,12 +227,18 @@ class ServiceCosmosDbConfigurationInfoArgs:
     @pulumi.getter(name="keyVaultKeyUri")
     def key_vault_key_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_key_uri.setter
-    def key_vault_key_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_key_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offerThroughput")
     def offer_throughput(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @offer_throughput.setter
-    def offer_throughput(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def offer_throughput(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
 
 class ServiceExportConfigurationInfoArgsDict(TypedDict):
     storage_account_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -227,7 +252,10 @@ class ServiceExportConfigurationInfoArgs:
     @pulumi.getter(name="storageAccountName")
     def storage_account_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_name.setter
-    def storage_account_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_account_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ServicesPropertiesArgsDict(TypedDict):
     access_policies: NotRequired[
@@ -290,7 +318,8 @@ class ServicesPropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceAccessPolicyEntryArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authenticationConfiguration")
     def authentication_configuration(
@@ -299,7 +328,8 @@ class ServicesPropertiesArgs:
     @authentication_configuration.setter
     def authentication_configuration(
         self, value: Optional[pulumi.Input[ServiceAuthenticationConfigurationInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="corsConfiguration")
     def cors_configuration(
@@ -308,7 +338,8 @@ class ServicesPropertiesArgs:
     @cors_configuration.setter
     def cors_configuration(
         self, value: Optional[pulumi.Input[ServiceCorsConfigurationInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cosmosDbConfiguration")
     def cosmos_db_configuration(
@@ -317,7 +348,8 @@ class ServicesPropertiesArgs:
     @cosmos_db_configuration.setter
     def cosmos_db_configuration(
         self, value: Optional[pulumi.Input[ServiceCosmosDbConfigurationInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exportConfiguration")
     def export_configuration(
@@ -326,7 +358,8 @@ class ServicesPropertiesArgs:
     @export_configuration.setter
     def export_configuration(
         self, value: Optional[pulumi.Input[ServiceExportConfigurationInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnections")
     def private_endpoint_connections(
@@ -340,7 +373,8 @@ class ServicesPropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -349,7 +383,8 @@ class ServicesPropertiesArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServicesResourceIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]]
@@ -372,4 +407,5 @@ class ServicesResourceIdentityArgs:
     def type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]],
-    ): ...
+    ):  # -> None:
+        ...

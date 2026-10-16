@@ -44,7 +44,8 @@ class GetDatabaseMigrationsSqlMiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseMigrationsSqlMiResult(GetDatabaseMigrationsSqlMiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseMigrationsSqlMiResult]:
+        ...
 
 def get_database_migrations_sql_mi(
     expand: Optional[_builtins.str] = ...,

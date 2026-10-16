@@ -94,7 +94,10 @@ class GetVirtualMachineScaleSetVMExtensionResult:
 class AwaitableGetVirtualMachineScaleSetVMExtensionResult(
     GetVirtualMachineScaleSetVMExtensionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualMachineScaleSetVMExtensionResult]:
+        ...
 
 def get_virtual_machine_scale_set_vm_extension(
     expand: Optional[_builtins.str] = ...,

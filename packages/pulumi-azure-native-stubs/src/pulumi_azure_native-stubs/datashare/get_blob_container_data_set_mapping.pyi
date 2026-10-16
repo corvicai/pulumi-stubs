@@ -74,7 +74,10 @@ class GetBlobContainerDataSetMappingResult:
 class AwaitableGetBlobContainerDataSetMappingResult(
     GetBlobContainerDataSetMappingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBlobContainerDataSetMappingResult]:
+        ...
 
 def get_blob_container_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

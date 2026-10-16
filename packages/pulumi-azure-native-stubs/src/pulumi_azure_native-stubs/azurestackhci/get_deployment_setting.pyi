@@ -64,7 +64,8 @@ class GetDeploymentSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeploymentSettingResult(GetDeploymentSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeploymentSettingResult]:
+        ...
 
 def get_deployment_setting(
     cluster_name: Optional[_builtins.str] = ...,

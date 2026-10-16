@@ -47,7 +47,8 @@ class GetAppregistryApplicationResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetAppregistryApplicationResult(GetAppregistryApplicationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppregistryApplicationResult]:
+        ...
 
 def get_appregistry_application(
     id: Optional[_builtins.str] = ...,

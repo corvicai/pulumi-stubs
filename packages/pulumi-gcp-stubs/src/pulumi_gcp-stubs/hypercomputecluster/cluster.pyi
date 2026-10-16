@@ -34,12 +34,14 @@ class ClusterArgs:
     @pulumi.getter(name="clusterId")
     def cluster_id(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_id.setter
-    def cluster_id(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeResources")
     def compute_resources(
@@ -51,12 +53,14 @@ class ClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterComputeResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -65,7 +69,8 @@ class ClusterArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkResources")
     def network_resources(
@@ -77,17 +82,22 @@ class ClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterNetworkResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def orchestrator(self) -> Optional[pulumi.Input[ClusterOrchestratorArgs]]: ...
     @orchestrator.setter
-    def orchestrator(self, value: Optional[pulumi.Input[ClusterOrchestratorArgs]]): ...
+    def orchestrator(
+        self, value: Optional[pulumi.Input[ClusterOrchestratorArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageResources")
     def storage_resources(
@@ -99,7 +109,8 @@ class ClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterStorageResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClusterState:
@@ -136,7 +147,8 @@ class _ClusterState:
     @pulumi.getter(name="clusterId")
     def cluster_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_id.setter
-    def cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeResources")
     def compute_resources(
@@ -148,17 +160,20 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterComputeResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -167,7 +182,8 @@ class _ClusterState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -176,17 +192,20 @@ class _ClusterState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkResources")
     def network_resources(
@@ -198,17 +217,22 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterNetworkResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def orchestrator(self) -> Optional[pulumi.Input[ClusterOrchestratorArgs]]: ...
     @orchestrator.setter
-    def orchestrator(self, value: Optional[pulumi.Input[ClusterOrchestratorArgs]]): ...
+    def orchestrator(
+        self, value: Optional[pulumi.Input[ClusterOrchestratorArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -217,12 +241,14 @@ class _ClusterState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageResources")
     def storage_resources(
@@ -234,12 +260,14 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterStorageResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:hypercomputecluster/cluster:Cluster")
 class Cluster(pulumi.CustomResource):

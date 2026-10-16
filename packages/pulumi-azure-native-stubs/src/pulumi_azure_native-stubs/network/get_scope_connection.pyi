@@ -56,7 +56,8 @@ class GetScopeConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScopeConnectionResult(GetScopeConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScopeConnectionResult]:
+        ...
 
 def get_scope_connection(
     network_manager_name: Optional[_builtins.str] = ...,

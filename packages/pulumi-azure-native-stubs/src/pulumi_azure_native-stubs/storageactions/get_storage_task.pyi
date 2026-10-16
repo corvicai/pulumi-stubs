@@ -76,7 +76,8 @@ class GetStorageTaskResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageTaskResult(GetStorageTaskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageTaskResult]:
+        ...
 
 def get_storage_task(
     resource_group_name: Optional[_builtins.str] = ...,

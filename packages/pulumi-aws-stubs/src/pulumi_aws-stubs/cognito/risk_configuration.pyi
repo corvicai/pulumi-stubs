@@ -31,7 +31,8 @@ class RiskConfigurationArgs:
     @pulumi.getter(name="userPoolId")
     def user_pool_id(self) -> pulumi.Input[_builtins.str]: ...
     @user_pool_id.setter
-    def user_pool_id(self, value: pulumi.Input[_builtins.str]): ...
+    def user_pool_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountTakeoverRiskConfiguration")
     def account_takeover_risk_configuration(
@@ -45,12 +46,14 @@ class RiskConfigurationArgs:
         value: Optional[
             pulumi.Input[RiskConfigurationAccountTakeoverRiskConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="compromisedCredentialsRiskConfiguration")
     def compromised_credentials_risk_configuration(
@@ -64,12 +67,14 @@ class RiskConfigurationArgs:
         value: Optional[
             pulumi.Input[RiskConfigurationCompromisedCredentialsRiskConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="riskExceptionConfiguration")
     def risk_exception_configuration(
@@ -79,7 +84,8 @@ class RiskConfigurationArgs:
     def risk_exception_configuration(
         self,
         value: Optional[pulumi.Input[RiskConfigurationRiskExceptionConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RiskConfigurationState:
@@ -112,12 +118,14 @@ class _RiskConfigurationState:
         value: Optional[
             pulumi.Input[RiskConfigurationAccountTakeoverRiskConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="compromisedCredentialsRiskConfiguration")
     def compromised_credentials_risk_configuration(
@@ -131,12 +139,14 @@ class _RiskConfigurationState:
         value: Optional[
             pulumi.Input[RiskConfigurationCompromisedCredentialsRiskConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="riskExceptionConfiguration")
     def risk_exception_configuration(
@@ -146,12 +156,14 @@ class _RiskConfigurationState:
     def risk_exception_configuration(
         self,
         value: Optional[pulumi.Input[RiskConfigurationRiskExceptionConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolId")
     def user_pool_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_pool_id.setter
-    def user_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cognito/riskConfiguration:RiskConfiguration")
 class RiskConfiguration(pulumi.CustomResource):

@@ -33,12 +33,14 @@ class AutoImportJobArgs:
     @pulumi.getter(name="amlFilesystemName")
     def aml_filesystem_name(self) -> pulumi.Input[_builtins.str]: ...
     @aml_filesystem_name.setter
-    def aml_filesystem_name(self, value: pulumi.Input[_builtins.str]): ...
+    def aml_filesystem_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminStatus")
     def admin_status(
@@ -47,12 +49,16 @@ class AutoImportJobArgs:
     @admin_status.setter
     def admin_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AdminStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoImportJobName")
     def auto_import_job_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_import_job_name.setter
-    def auto_import_job_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_import_job_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoImportPrefixes")
     def auto_import_prefixes(
@@ -61,7 +67,8 @@ class AutoImportJobArgs:
     @auto_import_prefixes.setter
     def auto_import_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conflictResolutionMode")
     def conflict_resolution_mode(
@@ -71,22 +78,30 @@ class AutoImportJobArgs:
     def conflict_resolution_mode(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ConflictResolutionMode]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDeletions")
     def enable_deletions(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_deletions.setter
-    def enable_deletions(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_deletions(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumErrors")
     def maximum_errors(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @maximum_errors.setter
-    def maximum_errors(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def maximum_errors(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -95,7 +110,8 @@ class AutoImportJobArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:storagecache:AutoImportJob")
 class AutoImportJob(pulumi.CustomResource):

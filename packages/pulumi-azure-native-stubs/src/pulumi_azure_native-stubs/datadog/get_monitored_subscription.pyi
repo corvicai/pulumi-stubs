@@ -35,7 +35,8 @@ class GetMonitoredSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMonitoredSubscriptionResult(GetMonitoredSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMonitoredSubscriptionResult]:
+        ...
 
 def get_monitored_subscription(
     configuration_name: Optional[_builtins.str] = ...,

@@ -56,7 +56,8 @@ class GetContactsRotationResult:
     def time_zone_id(self) -> _builtins.str: ...
 
 class AwaitableGetContactsRotationResult(GetContactsRotationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContactsRotationResult]:
+        ...
 
 def get_contacts_rotation(
     arn: Optional[_builtins.str] = ...,

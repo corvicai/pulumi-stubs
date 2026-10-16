@@ -32,12 +32,16 @@ class RestorePointArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restorePointCollectionName")
     def restore_point_collection_name(self) -> pulumi.Input[_builtins.str]: ...
     @restore_point_collection_name.setter
-    def restore_point_collection_name(self, value: pulumi.Input[_builtins.str]): ...
+    def restore_point_collection_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consistencyMode")
     def consistency_mode(
@@ -46,7 +50,8 @@ class RestorePointArgs:
     @consistency_mode.setter
     def consistency_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ConsistencyModeTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeDisks")
     def exclude_disks(
@@ -56,12 +61,16 @@ class RestorePointArgs:
     def exclude_disks(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ApiEntityReferenceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restorePointName")
     def restore_point_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @restore_point_name.setter
-    def restore_point_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def restore_point_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceMetadata")
     def source_metadata(
@@ -70,7 +79,8 @@ class RestorePointArgs:
     @source_metadata.setter
     def source_metadata(
         self, value: Optional[pulumi.Input[RestorePointSourceMetadataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceRestorePoint")
     def source_restore_point(
@@ -79,12 +89,14 @@ class RestorePointArgs:
     @source_restore_point.setter
     def source_restore_point(
         self, value: Optional[pulumi.Input[ApiEntityReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeCreated")
     def time_created(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_created.setter
-    def time_created(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_created(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:compute:RestorePoint")
 class RestorePoint(pulumi.CustomResource):

@@ -40,29 +40,34 @@ class AccountArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountName")
     def account_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_name.setter
-    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingestionStorage")
     def ingestion_storage(self) -> Optional[pulumi.Input[IngestionStorageArgs]]: ...
     @ingestion_storage.setter
     def ingestion_storage(
         self, value: Optional[pulumi.Input[IngestionStorageArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedEventHubState")
     def managed_event_hub_state(
@@ -71,14 +76,16 @@ class AccountArgs:
     @managed_event_hub_state.setter
     def managed_event_hub_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedEventHubState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedResourceGroupName")
     def managed_resource_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_resource_group_name.setter
     def managed_resource_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedResourcesPublicNetworkAccess")
     def managed_resources_public_network_access(
@@ -87,7 +94,8 @@ class AccountArgs:
     @managed_resources_public_network_access.setter
     def managed_resources_public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -96,12 +104,14 @@ class AccountArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[AccountSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[AccountSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[AccountSkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -110,7 +120,8 @@ class AccountArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantEndpointState")
     def tenant_endpoint_state(
@@ -119,7 +130,8 @@ class AccountArgs:
     @tenant_endpoint_state.setter
     def tenant_endpoint_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TenantEndpointState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:purview:Account")
 class Account(pulumi.CustomResource):

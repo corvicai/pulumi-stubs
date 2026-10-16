@@ -34,22 +34,26 @@ class ApiSourceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
     def service_name(self) -> pulumi.Input[_builtins.str]: ...
     @service_name.setter
-    def service_name(self, value: pulumi.Input[_builtins.str]): ...
+    def service_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiSourceName")
     def api_source_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_source_name.setter
-    def api_source_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_source_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureApiManagementSource")
     def azure_api_management_source(
@@ -58,7 +62,8 @@ class ApiSourceArgs:
     @azure_api_management_source.setter
     def azure_api_management_source(
         self, value: Optional[pulumi.Input[AzureApiManagementSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importSpecification")
     def import_specification(
@@ -68,12 +73,16 @@ class ApiSourceArgs:
     def import_specification(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ImportSpecificationOptions]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetEnvironmentId")
     def target_environment_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_environment_id.setter
-    def target_environment_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_environment_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetLifecycleStage")
     def target_lifecycle_stage(
@@ -82,7 +91,8 @@ class ApiSourceArgs:
     @target_lifecycle_stage.setter
     def target_lifecycle_stage(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LifecycleStage]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:apicenter:ApiSource")
 class ApiSource(pulumi.CustomResource):

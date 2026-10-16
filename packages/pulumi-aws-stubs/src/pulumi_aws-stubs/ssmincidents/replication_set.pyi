@@ -33,7 +33,8 @@ class ReplicationSetArgs:
     def region(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReplicationSetRegionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -43,7 +44,8 @@ class ReplicationSetArgs:
     def regions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReplicationSetRegionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -52,7 +54,8 @@ class ReplicationSetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ReplicationSetState:
@@ -79,22 +82,30 @@ class _ReplicationSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdBy")
     def created_by(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_by.setter
-    def created_by(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_by(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtected")
     def deletion_protected(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protected.setter
-    def deletion_protected(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protected(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedBy")
     def last_modified_by(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_by.setter
-    def last_modified_by(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_by(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated("""region is deprecated. Use regions instead.""")
@@ -105,7 +116,8 @@ class _ReplicationSetState:
     def region(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReplicationSetRegionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -115,12 +127,14 @@ class _ReplicationSetState:
     def regions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReplicationSetRegionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -129,7 +143,8 @@ class _ReplicationSetState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -138,7 +153,8 @@ class _ReplicationSetState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ssmincidents/replicationSet:ReplicationSet")
 class ReplicationSet(pulumi.CustomResource):

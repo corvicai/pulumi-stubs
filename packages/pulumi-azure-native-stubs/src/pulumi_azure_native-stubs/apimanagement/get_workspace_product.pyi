@@ -63,7 +63,8 @@ class GetWorkspaceProductResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceProductResult(GetWorkspaceProductResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceProductResult]:
+        ...
 
 def get_workspace_product(
     product_id: Optional[_builtins.str] = ...,

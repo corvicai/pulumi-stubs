@@ -23,7 +23,10 @@ class ListCapacityPoolVolumeReplicationsResult:
 class AwaitableListCapacityPoolVolumeReplicationsResult(
     ListCapacityPoolVolumeReplicationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListCapacityPoolVolumeReplicationsResult]:
+        ...
 
 def list_capacity_pool_volume_replications(
     account_name: Optional[_builtins.str] = ...,

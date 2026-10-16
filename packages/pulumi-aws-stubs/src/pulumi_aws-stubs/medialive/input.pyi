@@ -38,7 +38,8 @@ class InputArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destinations(
@@ -48,7 +49,8 @@ class InputArgs:
     def destinations(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InputDestinationArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputDevices")
     def input_devices(
@@ -58,7 +60,8 @@ class InputArgs:
     def input_devices(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InputInputDeviceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSecurityGroups")
     def input_security_groups(
@@ -67,7 +70,8 @@ class InputArgs:
     @input_security_groups.setter
     def input_security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mediaConnectFlows")
     def media_connect_flows(
@@ -79,22 +83,26 @@ class InputArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InputMediaConnectFlowArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sources(
@@ -103,7 +111,8 @@ class InputArgs:
     @sources.setter
     def sources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[InputSourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -112,12 +121,14 @@ class InputArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vpc(self) -> Optional[pulumi.Input[InputVpcArgs]]: ...
     @vpc.setter
-    def vpc(self, value: Optional[pulumi.Input[InputVpcArgs]]): ...
+    def vpc(self, value: Optional[pulumi.Input[InputVpcArgs]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InputState:
@@ -160,7 +171,8 @@ class _InputState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="attachedChannels")
     def attached_channels(
@@ -169,7 +181,8 @@ class _InputState:
     @attached_channels.setter
     def attached_channels(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destinations(
@@ -179,12 +192,14 @@ class _InputState:
     def destinations(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InputDestinationArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputClass")
     def input_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_class.setter
-    def input_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputDevices")
     def input_devices(
@@ -194,7 +209,8 @@ class _InputState:
     def input_devices(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InputInputDeviceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputPartnerIds")
     def input_partner_ids(
@@ -203,7 +219,8 @@ class _InputState:
     @input_partner_ids.setter
     def input_partner_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSecurityGroups")
     def input_security_groups(
@@ -212,12 +229,16 @@ class _InputState:
     @input_security_groups.setter
     def input_security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSourceType")
     def input_source_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_source_type.setter
-    def input_source_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_source_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mediaConnectFlows")
     def media_connect_flows(
@@ -229,22 +250,26 @@ class _InputState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InputMediaConnectFlowArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sources(
@@ -253,7 +278,8 @@ class _InputState:
     @sources.setter
     def sources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[InputSourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -262,7 +288,8 @@ class _InputState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -271,17 +298,20 @@ class _InputState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vpc(self) -> Optional[pulumi.Input[InputVpcArgs]]: ...
     @vpc.setter
-    def vpc(self, value: Optional[pulumi.Input[InputVpcArgs]]): ...
+    def vpc(self, value: Optional[pulumi.Input[InputVpcArgs]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:medialive/input:Input")
 class Input(pulumi.CustomResource):

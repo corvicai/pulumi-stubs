@@ -130,7 +130,8 @@ class GetSessionHostResult:
     def virtual_machine_id(self) -> _builtins.str: ...
 
 class AwaitableGetSessionHostResult(GetSessionHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSessionHostResult]:
+        ...
 
 def get_session_host(
     host_pool_name: Optional[_builtins.str] = ...,

@@ -29,7 +29,8 @@ class GetZonesResult:
     def status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetZonesResult(GetZonesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetZonesResult]:
+        ...
 
 def get_zones(
     project: Optional[_builtins.str] = ...,

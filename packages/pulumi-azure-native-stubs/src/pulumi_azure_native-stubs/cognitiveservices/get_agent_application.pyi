@@ -44,7 +44,8 @@ class GetAgentApplicationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAgentApplicationResult(GetAgentApplicationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAgentApplicationResult]:
+        ...
 
 def get_agent_application(
     account_name: Optional[_builtins.str] = ...,

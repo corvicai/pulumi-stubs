@@ -45,7 +45,10 @@ class GetWorkspaceApiOperationPolicyResult:
 class AwaitableGetWorkspaceApiOperationPolicyResult(
     GetWorkspaceApiOperationPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkspaceApiOperationPolicyResult]:
+        ...
 
 def get_workspace_api_operation_policy(
     api_id: Optional[_builtins.str] = ...,

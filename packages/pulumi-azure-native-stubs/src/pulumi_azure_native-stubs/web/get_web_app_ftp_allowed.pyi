@@ -37,7 +37,8 @@ class GetWebAppFtpAllowedResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppFtpAllowedResult(GetWebAppFtpAllowedResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppFtpAllowedResult]:
+        ...
 
 def get_web_app_ftp_allowed(
     name: Optional[_builtins.str] = ...,

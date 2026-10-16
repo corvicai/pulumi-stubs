@@ -78,7 +78,8 @@ class GetCIAMTenantResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCIAMTenantResult(GetCIAMTenantResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCIAMTenantResult]:
+        ...
 
 def get_ciam_tenant(
     resource_group_name: Optional[_builtins.str] = ...,

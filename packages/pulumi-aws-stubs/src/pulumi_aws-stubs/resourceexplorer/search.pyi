@@ -39,7 +39,8 @@ class SearchResult:
     def view_arn(self) -> _builtins.str: ...
 
 class AwaitableSearchResult(SearchResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, SearchResult]:
+        ...
 
 def search(
     query_string: Optional[_builtins.str] = ...,

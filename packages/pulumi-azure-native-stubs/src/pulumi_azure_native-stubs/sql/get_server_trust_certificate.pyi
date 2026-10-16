@@ -47,7 +47,8 @@ class GetServerTrustCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerTrustCertificateResult(GetServerTrustCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerTrustCertificateResult]:
+        ...
 
 def get_server_trust_certificate(
     certificate_name: Optional[_builtins.str] = ...,

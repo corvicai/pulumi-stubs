@@ -64,7 +64,10 @@ class GetIntegrationAccountPartnerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIntegrationAccountPartnerResult(GetIntegrationAccountPartnerResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationAccountPartnerResult]:
+        ...
 
 def get_integration_account_partner(
     integration_account_name: Optional[_builtins.str] = ...,

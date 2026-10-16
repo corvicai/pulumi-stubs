@@ -21,7 +21,8 @@ class ListFleetCredentialsResult:
     def kubeconfigs(self) -> Sequence[outputs.FleetCredentialResultResponse]: ...
 
 class AwaitableListFleetCredentialsResult(ListFleetCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListFleetCredentialsResult]:
+        ...
 
 def list_fleet_credentials(
     fleet_name: Optional[_builtins.str] = ...,

@@ -41,12 +41,14 @@ class RegionalSecretArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretId")
     def secret_id(self) -> pulumi.Input[_builtins.str]: ...
     @secret_id.setter
-    def secret_id(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -55,7 +57,8 @@ class RegionalSecretArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedEncryption")
     def customer_managed_encryption(
@@ -64,17 +67,22 @@ class RegionalSecretArgs:
     @customer_managed_encryption.setter
     def customer_managed_encryption(
         self, value: Optional[pulumi.Input[RegionalSecretCustomerManagedEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -83,17 +91,22 @@ class RegionalSecretArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rotation(self) -> Optional[pulumi.Input[RegionalSecretRotationArgs]]: ...
     @rotation.setter
-    def rotation(self, value: Optional[pulumi.Input[RegionalSecretRotationArgs]]): ...
+    def rotation(
+        self, value: Optional[pulumi.Input[RegionalSecretRotationArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -102,7 +115,8 @@ class RegionalSecretArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -112,12 +126,14 @@ class RegionalSecretArgs:
     def topics(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionalSecretTopicArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionAliases")
     def version_aliases(
@@ -126,12 +142,16 @@ class RegionalSecretArgs:
     @version_aliases.setter
     def version_aliases(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionDestroyTtl")
     def version_destroy_ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_destroy_ttl.setter
-    def version_destroy_ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_destroy_ttl(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegionalSecretState:
@@ -180,12 +200,14 @@ class _RegionalSecretState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedEncryption")
     def customer_managed_encryption(
@@ -194,12 +216,16 @@ class _RegionalSecretState:
     @customer_managed_encryption.setter
     def customer_managed_encryption(
         self, value: Optional[pulumi.Input[RegionalSecretCustomerManagedEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -208,7 +234,8 @@ class _RegionalSecretState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -217,12 +244,14 @@ class _RegionalSecretState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -231,22 +260,26 @@ class _RegionalSecretState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -255,17 +288,22 @@ class _RegionalSecretState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rotation(self) -> Optional[pulumi.Input[RegionalSecretRotationArgs]]: ...
     @rotation.setter
-    def rotation(self, value: Optional[pulumi.Input[RegionalSecretRotationArgs]]): ...
+    def rotation(
+        self, value: Optional[pulumi.Input[RegionalSecretRotationArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretId")
     def secret_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_id.setter
-    def secret_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -274,7 +312,8 @@ class _RegionalSecretState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -284,12 +323,14 @@ class _RegionalSecretState:
     def topics(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionalSecretTopicArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionAliases")
     def version_aliases(
@@ -298,12 +339,16 @@ class _RegionalSecretState:
     @version_aliases.setter
     def version_aliases(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionDestroyTtl")
     def version_destroy_ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_destroy_ttl.setter
-    def version_destroy_ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_destroy_ttl(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:secretmanager/regionalSecret:RegionalSecret")
 class RegionalSecret(pulumi.CustomResource):

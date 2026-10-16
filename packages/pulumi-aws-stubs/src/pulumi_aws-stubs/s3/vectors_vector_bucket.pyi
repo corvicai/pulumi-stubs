@@ -28,7 +28,8 @@ class VectorsVectorBucketArgs:
     @pulumi.getter(name="vectorBucketName")
     def vector_bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @vector_bucket_name.setter
-    def vector_bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfigurations")
     def encryption_configurations(
@@ -46,17 +47,20 @@ class VectorsVectorBucketArgs:
                 Sequence[pulumi.Input[VectorsVectorBucketEncryptionConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -65,7 +69,8 @@ class VectorsVectorBucketArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VectorsVectorBucketState:
@@ -91,7 +96,8 @@ class _VectorsVectorBucketState:
     @pulumi.getter(name="creationTime")
     def creation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_time.setter
-    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfigurations")
     def encryption_configurations(
@@ -109,17 +115,20 @@ class _VectorsVectorBucketState:
                 Sequence[pulumi.Input[VectorsVectorBucketEncryptionConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -128,7 +137,8 @@ class _VectorsVectorBucketState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -137,17 +147,24 @@ class _VectorsVectorBucketState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorBucketArn")
     def vector_bucket_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vector_bucket_arn.setter
-    def vector_bucket_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vector_bucket_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorBucketName")
     def vector_bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vector_bucket_name.setter
-    def vector_bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vector_bucket_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:s3/vectorsVectorBucket:VectorsVectorBucket")
 class VectorsVectorBucket(pulumi.CustomResource):

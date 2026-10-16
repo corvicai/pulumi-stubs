@@ -94,7 +94,10 @@ class GetRemediationAtResourceGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRemediationAtResourceGroupResult(GetRemediationAtResourceGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRemediationAtResourceGroupResult]:
+        ...
 
 def get_remediation_at_resource_group(
     remediation_name: Optional[_builtins.str] = ...,

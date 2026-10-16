@@ -105,7 +105,8 @@ class GetVpcEndpointServiceResult:
     def vpc_endpoint_policy_supported(self) -> _builtins.bool: ...
 
 class AwaitableGetVpcEndpointServiceResult(GetVpcEndpointServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcEndpointServiceResult]:
+        ...
 
 def get_vpc_endpoint_service(
     filters: Optional[

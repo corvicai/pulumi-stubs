@@ -136,7 +136,8 @@ class GetContentPackageResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetContentPackageResult(GetContentPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContentPackageResult]:
+        ...
 
 def get_content_package(
     package_id: Optional[_builtins.str] = ...,

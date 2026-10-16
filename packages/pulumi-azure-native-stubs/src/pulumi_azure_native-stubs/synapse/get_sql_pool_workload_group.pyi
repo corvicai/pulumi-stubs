@@ -59,7 +59,8 @@ class GetSqlPoolWorkloadGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlPoolWorkloadGroupResult(GetSqlPoolWorkloadGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlPoolWorkloadGroupResult]:
+        ...
 
 def get_sql_pool_workload_group(
     resource_group_name: Optional[_builtins.str] = ...,

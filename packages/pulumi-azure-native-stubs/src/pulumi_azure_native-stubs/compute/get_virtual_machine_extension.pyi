@@ -100,7 +100,8 @@ class GetVirtualMachineExtensionResult:
     def type_handler_version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVirtualMachineExtensionResult(GetVirtualMachineExtensionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualMachineExtensionResult]:
+        ...
 
 def get_virtual_machine_extension(
     expand: Optional[_builtins.str] = ...,

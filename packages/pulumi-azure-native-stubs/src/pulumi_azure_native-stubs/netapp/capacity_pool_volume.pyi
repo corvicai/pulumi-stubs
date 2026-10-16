@@ -92,32 +92,38 @@ class CapacityPoolVolumeArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationToken")
     def creation_token(self) -> pulumi.Input[_builtins.str]: ...
     @creation_token.setter
-    def creation_token(self, value: pulumi.Input[_builtins.str]): ...
+    def creation_token(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="poolName")
     def pool_name(self) -> pulumi.Input[_builtins.str]: ...
     @pool_name.setter
-    def pool_name(self, value: pulumi.Input[_builtins.str]): ...
+    def pool_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> pulumi.Input[_builtins.str]: ...
     @subnet_id.setter
-    def subnet_id(self, value: pulumi.Input[_builtins.str]): ...
+    def subnet_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usageThreshold")
     def usage_threshold(self) -> pulumi.Input[_builtins.float]: ...
     @usage_threshold.setter
-    def usage_threshold(self, value: pulumi.Input[_builtins.float]): ...
+    def usage_threshold(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="avsDataStore")
     def avs_data_store(
@@ -126,24 +132,28 @@ class CapacityPoolVolumeArgs:
     @avs_data_store.setter
     def avs_data_store(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AvsDataStore]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupId")
     def backup_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_id.setter
-    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityPoolResourceId")
     def capacity_pool_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @capacity_pool_resource_id.setter
     def capacity_pool_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coolAccess")
     def cool_access(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @cool_access.setter
-    def cool_access(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def cool_access(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coolAccessRetrievalPolicy")
     def cool_access_retrieval_policy(
@@ -153,7 +163,8 @@ class CapacityPoolVolumeArgs:
     def cool_access_retrieval_policy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, CoolAccessRetrievalPolicy]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coolAccessTieringPolicy")
     def cool_access_tiering_policy(
@@ -163,12 +174,14 @@ class CapacityPoolVolumeArgs:
     def cool_access_tiering_policy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, CoolAccessTieringPolicy]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coolnessPeriod")
     def coolness_period(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @coolness_period.setter
-    def coolness_period(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def coolness_period(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataProtection")
     def data_protection(
@@ -177,7 +190,8 @@ class CapacityPoolVolumeArgs:
     @data_protection.setter
     def data_protection(
         self, value: Optional[pulumi.Input[VolumePropertiesDataProtectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultGroupQuotaInKiBs")
     def default_group_quota_in_ki_bs(
@@ -186,7 +200,8 @@ class CapacityPoolVolumeArgs:
     @default_group_quota_in_ki_bs.setter
     def default_group_quota_in_ki_bs(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultUserQuotaInKiBs")
     def default_user_quota_in_ki_bs(
@@ -195,12 +210,16 @@ class CapacityPoolVolumeArgs:
     @default_user_quota_in_ki_bs.setter
     def default_user_quota_in_ki_bs(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteBaseSnapshot")
     def delete_base_snapshot(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_base_snapshot.setter
-    def delete_base_snapshot(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def delete_base_snapshot(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableSubvolumes")
     def enable_subvolumes(
@@ -209,7 +228,8 @@ class CapacityPoolVolumeArgs:
     @enable_subvolumes.setter
     def enable_subvolumes(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnableSubvolumes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeySource")
     def encryption_key_source(
@@ -218,7 +238,8 @@ class CapacityPoolVolumeArgs:
     @encryption_key_source.setter
     def encryption_key_source(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionKeySource]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exportPolicy")
     def export_policy(
@@ -227,29 +248,38 @@ class CapacityPoolVolumeArgs:
     @export_policy.setter
     def export_policy(
         self, value: Optional[pulumi.Input[VolumePropertiesExportPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDefaultQuotaEnabled")
     def is_default_quota_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_default_quota_enabled.setter
     def is_default_quota_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isLargeVolume")
     def is_large_volume(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_large_volume.setter
-    def is_large_volume(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_large_volume(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRestoring")
     def is_restoring(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_restoring.setter
-    def is_restoring(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_restoring(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kerberosEnabled")
     def kerberos_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @kerberos_enabled.setter
-    def kerberos_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def kerberos_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultPrivateEndpointResourceId")
     def key_vault_private_endpoint_resource_id(
@@ -258,17 +288,20 @@ class CapacityPoolVolumeArgs:
     @key_vault_private_endpoint_resource_id.setter
     def key_vault_private_endpoint_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ldapEnabled")
     def ldap_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ldap_enabled.setter
-    def ldap_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ldap_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkFeatures")
     def network_features(
@@ -277,7 +310,8 @@ class CapacityPoolVolumeArgs:
     @network_features.setter
     def network_features(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkFeatures]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementRules")
     def placement_rules(
@@ -289,7 +323,8 @@ class CapacityPoolVolumeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PlacementKeyValuePairsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protocolTypes")
     def protocol_types(
@@ -298,14 +333,16 @@ class CapacityPoolVolumeArgs:
     @protocol_types.setter
     def protocol_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="proximityPlacementGroup")
     def proximity_placement_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @proximity_placement_group.setter
     def proximity_placement_group(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityStyle")
     def security_style(
@@ -314,7 +351,8 @@ class CapacityPoolVolumeArgs:
     @security_style.setter
     def security_style(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityStyle]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceLevel")
     def service_level(
@@ -323,7 +361,8 @@ class CapacityPoolVolumeArgs:
     @service_level.setter
     def service_level(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ServiceLevel]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smbAccessBasedEnumeration")
     def smb_access_based_enumeration(
@@ -333,19 +372,22 @@ class CapacityPoolVolumeArgs:
     def smb_access_based_enumeration(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SmbAccessBasedEnumeration]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smbContinuouslyAvailable")
     def smb_continuously_available(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @smb_continuously_available.setter
     def smb_continuously_available(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smbEncryption")
     def smb_encryption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @smb_encryption.setter
-    def smb_encryption(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def smb_encryption(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smbNonBrowsable")
     def smb_non_browsable(
@@ -354,19 +396,22 @@ class CapacityPoolVolumeArgs:
     @smb_non_browsable.setter
     def smb_non_browsable(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SmbNonBrowsable]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotDirectoryVisible")
     def snapshot_directory_visible(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @snapshot_directory_visible.setter
     def snapshot_directory_visible(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotId")
     def snapshot_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @snapshot_id.setter
-    def snapshot_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def snapshot_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -375,32 +420,44 @@ class CapacityPoolVolumeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputMibps")
     def throughput_mibps(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @throughput_mibps.setter
-    def throughput_mibps(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def throughput_mibps(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unixPermissions")
     def unix_permissions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unix_permissions.setter
-    def unix_permissions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unix_permissions(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeName")
     def volume_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_name.setter
-    def volume_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def volume_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeSpecName")
     def volume_spec_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_spec_name.setter
-    def volume_spec_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def volume_spec_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeType")
     def volume_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_type.setter
-    def volume_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def volume_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -409,7 +466,8 @@ class CapacityPoolVolumeArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:netapp:CapacityPoolVolume")
 class CapacityPoolVolume(pulumi.CustomResource):

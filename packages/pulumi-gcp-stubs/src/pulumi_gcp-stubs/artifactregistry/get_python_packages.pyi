@@ -42,7 +42,8 @@ class GetPythonPackagesResult:
     def repository_id(self) -> _builtins.str: ...
 
 class AwaitableGetPythonPackagesResult(GetPythonPackagesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPythonPackagesResult]:
+        ...
 
 def get_python_packages(
     location: Optional[_builtins.str] = ...,

@@ -70,7 +70,10 @@ class GetSubscriptionDiagnosticSettingResult:
 class AwaitableGetSubscriptionDiagnosticSettingResult(
     GetSubscriptionDiagnosticSettingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSubscriptionDiagnosticSettingResult]:
+        ...
 
 def get_subscription_diagnostic_setting(
     name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

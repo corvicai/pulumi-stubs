@@ -26,12 +26,16 @@ class AgentcoreOauth2CredentialProviderArgs:
     @pulumi.getter(name="credentialProviderVendor")
     def credential_provider_vendor(self) -> pulumi.Input[_builtins.str]: ...
     @credential_provider_vendor.setter
-    def credential_provider_vendor(self, value: pulumi.Input[_builtins.str]): ...
+    def credential_provider_vendor(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2ProviderConfig")
     def oauth2_provider_config(
@@ -45,12 +49,14 @@ class AgentcoreOauth2CredentialProviderArgs:
         value: Optional[
             pulumi.Input[AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -59,7 +65,8 @@ class AgentcoreOauth2CredentialProviderArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AgentcoreOauth2CredentialProviderState:
@@ -104,24 +111,30 @@ class _AgentcoreOauth2CredentialProviderState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialProviderArn")
     def credential_provider_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credential_provider_arn.setter
-    def credential_provider_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credential_provider_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialProviderVendor")
     def credential_provider_vendor(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credential_provider_vendor.setter
     def credential_provider_vendor(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2ProviderConfig")
     def oauth2_provider_config(
@@ -135,12 +148,14 @@ class _AgentcoreOauth2CredentialProviderState:
         value: Optional[
             pulumi.Input[AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -149,7 +164,8 @@ class _AgentcoreOauth2CredentialProviderState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -158,7 +174,8 @@ class _AgentcoreOauth2CredentialProviderState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AgentcoreOauth2CredentialProvider(pulumi.CustomResource):

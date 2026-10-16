@@ -54,7 +54,10 @@ class GetManagementLockAtResourceLevelResult:
 class AwaitableGetManagementLockAtResourceLevelResult(
     GetManagementLockAtResourceLevelResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagementLockAtResourceLevelResult]:
+        ...
 
 def get_management_lock_at_resource_level(
     api_version: Optional[_builtins.str] = ...,

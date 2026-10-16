@@ -60,7 +60,8 @@ class GetLongRunningBackupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLongRunningBackupResult(GetLongRunningBackupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLongRunningBackupResult]:
+        ...
 
 def get_long_running_backup(
     backup_name: Optional[_builtins.str] = ...,

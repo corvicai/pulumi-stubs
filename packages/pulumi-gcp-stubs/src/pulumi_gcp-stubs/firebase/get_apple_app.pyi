@@ -59,7 +59,8 @@ class GetAppleAppResult:
     def team_id(self) -> _builtins.str: ...
 
 class AwaitableGetAppleAppResult(GetAppleAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppleAppResult]:
+        ...
 
 def get_apple_app(
     app_id: Optional[_builtins.str] = ...,

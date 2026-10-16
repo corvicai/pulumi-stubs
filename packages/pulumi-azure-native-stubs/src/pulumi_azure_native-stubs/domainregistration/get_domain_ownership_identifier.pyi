@@ -43,7 +43,10 @@ class GetDomainOwnershipIdentifierResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDomainOwnershipIdentifierResult(GetDomainOwnershipIdentifierResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDomainOwnershipIdentifierResult]:
+        ...
 
 def get_domain_ownership_identifier(
     domain_name: Optional[_builtins.str] = ...,

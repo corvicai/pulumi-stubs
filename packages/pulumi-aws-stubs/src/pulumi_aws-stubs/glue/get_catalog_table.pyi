@@ -100,7 +100,8 @@ class GetCatalogTableResult:
     def view_original_text(self) -> _builtins.str: ...
 
 class AwaitableGetCatalogTableResult(GetCatalogTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCatalogTableResult]:
+        ...
 
 def get_catalog_table(
     catalog_id: Optional[_builtins.str] = ...,

@@ -23,12 +23,14 @@ class EventConfigurationsArgs:
     @event_configurations.setter
     def event_configurations(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.bool]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EventConfigurationsState:
@@ -48,12 +50,14 @@ class _EventConfigurationsState:
     @event_configurations.setter
     def event_configurations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.bool]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:iot/eventConfigurations:EventConfigurations")
 class EventConfigurations(pulumi.CustomResource):

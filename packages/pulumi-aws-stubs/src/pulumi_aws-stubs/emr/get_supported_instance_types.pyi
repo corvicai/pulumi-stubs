@@ -34,7 +34,8 @@ class GetSupportedInstanceTypesResult:
     ) -> Sequence[outputs.GetSupportedInstanceTypesSupportedInstanceTypeResult]: ...
 
 class AwaitableGetSupportedInstanceTypesResult(GetSupportedInstanceTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSupportedInstanceTypesResult]:
+        ...
 
 def get_supported_instance_types(
     region: Optional[_builtins.str] = ...,

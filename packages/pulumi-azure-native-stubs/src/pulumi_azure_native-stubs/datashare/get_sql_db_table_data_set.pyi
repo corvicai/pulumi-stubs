@@ -64,7 +64,8 @@ class GetSqlDBTableDataSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlDBTableDataSetResult(GetSqlDBTableDataSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlDBTableDataSetResult]:
+        ...
 
 def get_sql_db_table_data_set(
     account_name: Optional[_builtins.str] = ...,

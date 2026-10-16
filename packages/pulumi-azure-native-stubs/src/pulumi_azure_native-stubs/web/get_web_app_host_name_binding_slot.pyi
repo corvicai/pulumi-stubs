@@ -75,7 +75,10 @@ class GetWebAppHostNameBindingSlotResult:
     def virtual_ip(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppHostNameBindingSlotResult(GetWebAppHostNameBindingSlotResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppHostNameBindingSlotResult]:
+        ...
 
 def get_web_app_host_name_binding_slot(
     host_name: Optional[_builtins.str] = ...,

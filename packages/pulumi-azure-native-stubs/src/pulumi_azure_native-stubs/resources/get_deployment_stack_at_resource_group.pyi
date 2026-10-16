@@ -126,7 +126,10 @@ class GetDeploymentStackAtResourceGroupResult:
 class AwaitableGetDeploymentStackAtResourceGroupResult(
     GetDeploymentStackAtResourceGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeploymentStackAtResourceGroupResult]:
+        ...
 
 def get_deployment_stack_at_resource_group(
     deployment_stack_name: Optional[_builtins.str] = ...,

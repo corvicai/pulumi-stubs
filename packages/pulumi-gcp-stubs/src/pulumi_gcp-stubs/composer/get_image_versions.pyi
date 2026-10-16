@@ -34,7 +34,8 @@ class GetImageVersionsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetImageVersionsResult(GetImageVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImageVersionsResult]:
+        ...
 
 def get_image_versions(
     project: Optional[_builtins.str] = ...,

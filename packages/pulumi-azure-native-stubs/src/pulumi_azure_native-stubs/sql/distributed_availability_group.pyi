@@ -45,12 +45,14 @@ class DistributedAvailabilityGroupArgs:
     @pulumi.getter(name="managedInstanceName")
     def managed_instance_name(self) -> pulumi.Input[_builtins.str]: ...
     @managed_instance_name.setter
-    def managed_instance_name(self, value: pulumi.Input[_builtins.str]): ...
+    def managed_instance_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def databases(
@@ -66,7 +68,8 @@ class DistributedAvailabilityGroupArgs:
                 Sequence[pulumi.Input[DistributedAvailabilityGroupDatabaseArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="distributedAvailabilityGroupName")
     def distributed_availability_group_name(
@@ -75,7 +78,8 @@ class DistributedAvailabilityGroupArgs:
     @distributed_availability_group_name.setter
     def distributed_availability_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverMode")
     def failover_mode(
@@ -84,7 +88,8 @@ class DistributedAvailabilityGroupArgs:
     @failover_mode.setter
     def failover_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FailoverModeType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceAvailabilityGroupName")
     def instance_availability_group_name(
@@ -93,7 +98,8 @@ class DistributedAvailabilityGroupArgs:
     @instance_availability_group_name.setter
     def instance_availability_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceLinkRole")
     def instance_link_role(
@@ -102,7 +108,8 @@ class DistributedAvailabilityGroupArgs:
     @instance_link_role.setter
     def instance_link_role(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LinkRole]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerAvailabilityGroupName")
     def partner_availability_group_name(
@@ -111,12 +118,16 @@ class DistributedAvailabilityGroupArgs:
     @partner_availability_group_name.setter
     def partner_availability_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerEndpoint")
     def partner_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partner_endpoint.setter
-    def partner_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def partner_endpoint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationMode")
     def replication_mode(
@@ -125,7 +136,8 @@ class DistributedAvailabilityGroupArgs:
     @replication_mode.setter
     def replication_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReplicationModeType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="seedingMode")
     def seeding_mode(
@@ -134,7 +146,8 @@ class DistributedAvailabilityGroupArgs:
     @seeding_mode.setter
     def seeding_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SeedingModeType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:sql:DistributedAvailabilityGroup")
 class DistributedAvailabilityGroup(pulumi.CustomResource):

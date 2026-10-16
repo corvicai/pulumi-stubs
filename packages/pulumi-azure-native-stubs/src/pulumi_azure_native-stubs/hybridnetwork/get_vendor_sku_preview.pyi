@@ -44,7 +44,8 @@ class GetVendorSkuPreviewResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVendorSkuPreviewResult(GetVendorSkuPreviewResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVendorSkuPreviewResult]:
+        ...
 
 def get_vendor_sku_preview(
     preview_subscription: Optional[_builtins.str] = ...,

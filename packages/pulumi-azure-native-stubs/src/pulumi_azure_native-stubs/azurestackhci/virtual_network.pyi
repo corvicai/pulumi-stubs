@@ -35,7 +35,8 @@ class VirtualNetworkArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dhcpOptions")
     def dhcp_options(
@@ -44,19 +45,22 @@ class VirtualNetworkArgs:
     @dhcp_options.setter
     def dhcp_options(
         self, value: Optional[pulumi.Input[VirtualNetworkPropertiesDhcpOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkType")
     def network_type(
@@ -65,7 +69,8 @@ class VirtualNetworkArgs:
     @network_type.setter
     def network_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkTypeEnum]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -79,7 +84,8 @@ class VirtualNetworkArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VirtualNetworkPropertiesSubnetsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -88,17 +94,22 @@ class VirtualNetworkArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkName")
     def virtual_network_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_network_name.setter
-    def virtual_network_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_network_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSwitchName")
     def vm_switch_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_switch_name.setter
-    def vm_switch_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_switch_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azurestackhci:VirtualNetwork")
 class VirtualNetwork(pulumi.CustomResource):

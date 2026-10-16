@@ -70,7 +70,8 @@ class GetTemplateSpecVersionResult:
     def ui_form_definition(self) -> Optional[Any]: ...
 
 class AwaitableGetTemplateSpecVersionResult(GetTemplateSpecVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTemplateSpecVersionResult]:
+        ...
 
 def get_template_spec_version(
     resource_group_name: Optional[_builtins.str] = ...,

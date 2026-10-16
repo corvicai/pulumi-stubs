@@ -54,7 +54,10 @@ class GetClusterInstanceHybridIdentityMetadatumResult:
 class AwaitableGetClusterInstanceHybridIdentityMetadatumResult(
     GetClusterInstanceHybridIdentityMetadatumResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetClusterInstanceHybridIdentityMetadatumResult]:
+        ...
 
 def get_cluster_instance_hybrid_identity_metadatum(
     connected_cluster_resource_uri: Optional[_builtins.str] = ...,

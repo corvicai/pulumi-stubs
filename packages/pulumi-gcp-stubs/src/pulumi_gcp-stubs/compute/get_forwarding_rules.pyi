@@ -30,7 +30,8 @@ class GetForwardingRulesResult:
     def rules(self) -> Sequence[outputs.GetForwardingRulesRuleResult]: ...
 
 class AwaitableGetForwardingRulesResult(GetForwardingRulesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetForwardingRulesResult]:
+        ...
 
 def get_forwarding_rules(
     project: Optional[_builtins.str] = ...,

@@ -35,12 +35,14 @@ class RoutePolicyArgs:
     @pulumi.getter(name="networkFabricId")
     def network_fabric_id(self) -> pulumi.Input[_builtins.str]: ...
     @network_fabric_id.setter
-    def network_fabric_id(self, value: pulumi.Input[_builtins.str]): ...
+    def network_fabric_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statements(
@@ -50,7 +52,8 @@ class RoutePolicyArgs:
     def statements(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[RoutePolicyStatementPropertiesArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressFamilyType")
     def address_family_type(
@@ -59,12 +62,14 @@ class RoutePolicyArgs:
     @address_family_type.setter
     def address_family_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AddressFamilyType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @annotation.setter
-    def annotation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def annotation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultAction")
     def default_action(
@@ -73,17 +78,22 @@ class RoutePolicyArgs:
     @default_action.setter
     def default_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CommunityActionTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routePolicyName")
     def route_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @route_policy_name.setter
-    def route_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def route_policy_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -92,7 +102,8 @@ class RoutePolicyArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:managednetworkfabric:RoutePolicy")
 class RoutePolicy(pulumi.CustomResource):

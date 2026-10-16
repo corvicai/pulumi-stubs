@@ -60,7 +60,8 @@ class GetVariableResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVariableResult(GetVariableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVariableResult]:
+        ...
 
 def get_variable(
     automation_account_name: Optional[_builtins.str] = ...,

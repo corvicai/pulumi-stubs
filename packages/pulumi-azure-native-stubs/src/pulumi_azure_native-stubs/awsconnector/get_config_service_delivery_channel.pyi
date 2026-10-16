@@ -54,7 +54,10 @@ class GetConfigServiceDeliveryChannelResult:
 class AwaitableGetConfigServiceDeliveryChannelResult(
     GetConfigServiceDeliveryChannelResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigServiceDeliveryChannelResult]:
+        ...
 
 def get_config_service_delivery_channel(
     name: Optional[_builtins.str] = ...,

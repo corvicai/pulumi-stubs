@@ -52,7 +52,8 @@ class GetChatModelDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetChatModelDeploymentResult(GetChatModelDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetChatModelDeploymentResult]:
+        ...
 
 def get_chat_model_deployment(
     chat_model_deployment_name: Optional[_builtins.str] = ...,

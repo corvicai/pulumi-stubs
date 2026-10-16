@@ -46,7 +46,10 @@ class GetBucketObjectLockConfigurationResult:
 class AwaitableGetBucketObjectLockConfigurationResult(
     GetBucketObjectLockConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBucketObjectLockConfigurationResult]:
+        ...
 
 def get_bucket_object_lock_configuration(
     bucket: Optional[_builtins.str] = ...,

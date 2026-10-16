@@ -26,12 +26,18 @@ class TrustStoreArgs:
     @pulumi.getter(name="caCertificatesBundleS3Bucket")
     def ca_certificates_bundle_s3_bucket(self) -> pulumi.Input[_builtins.str]: ...
     @ca_certificates_bundle_s3_bucket.setter
-    def ca_certificates_bundle_s3_bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def ca_certificates_bundle_s3_bucket(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificatesBundleS3Key")
     def ca_certificates_bundle_s3_key(self) -> pulumi.Input[_builtins.str]: ...
     @ca_certificates_bundle_s3_key.setter
-    def ca_certificates_bundle_s3_key(self, value: pulumi.Input[_builtins.str]): ...
+    def ca_certificates_bundle_s3_key(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificatesBundleS3ObjectVersion")
     def ca_certificates_bundle_s3_object_version(
@@ -40,22 +46,26 @@ class TrustStoreArgs:
     @ca_certificates_bundle_s3_object_version.setter
     def ca_certificates_bundle_s3_object_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -64,7 +74,8 @@ class TrustStoreArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TrustStoreState:
@@ -90,12 +101,14 @@ class _TrustStoreState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="arnSuffix")
     def arn_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn_suffix.setter
-    def arn_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn_suffix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificatesBundleS3Bucket")
     def ca_certificates_bundle_s3_bucket(
@@ -104,7 +117,8 @@ class _TrustStoreState:
     @ca_certificates_bundle_s3_bucket.setter
     def ca_certificates_bundle_s3_bucket(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificatesBundleS3Key")
     def ca_certificates_bundle_s3_key(
@@ -113,7 +127,8 @@ class _TrustStoreState:
     @ca_certificates_bundle_s3_key.setter
     def ca_certificates_bundle_s3_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificatesBundleS3ObjectVersion")
     def ca_certificates_bundle_s3_object_version(
@@ -122,22 +137,26 @@ class _TrustStoreState:
     @ca_certificates_bundle_s3_object_version.setter
     def ca_certificates_bundle_s3_object_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -146,7 +165,8 @@ class _TrustStoreState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -155,7 +175,8 @@ class _TrustStoreState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:lb/trustStore:TrustStore")
 class TrustStore(pulumi.CustomResource):

@@ -54,7 +54,10 @@ class ListServiceFabricApplicableSchedulesResult:
 class AwaitableListServiceFabricApplicableSchedulesResult(
     ListServiceFabricApplicableSchedulesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListServiceFabricApplicableSchedulesResult]:
+        ...
 
 def list_service_fabric_applicable_schedules(
     lab_name: Optional[_builtins.str] = ...,

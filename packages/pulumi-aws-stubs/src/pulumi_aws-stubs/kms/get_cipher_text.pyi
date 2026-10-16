@@ -43,7 +43,8 @@ class GetCipherTextResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetCipherTextResult(GetCipherTextResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCipherTextResult]:
+        ...
 
 def get_cipher_text(
     context: Optional[Mapping[str, _builtins.str]] = ...,

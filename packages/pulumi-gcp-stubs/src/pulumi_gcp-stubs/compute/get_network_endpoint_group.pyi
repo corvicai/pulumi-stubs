@@ -67,7 +67,8 @@ class GetNetworkEndpointGroupResult:
     def zone(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNetworkEndpointGroupResult(GetNetworkEndpointGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkEndpointGroupResult]:
+        ...
 
 def get_network_endpoint_group(
     name: Optional[_builtins.str] = ...,

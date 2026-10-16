@@ -49,12 +49,16 @@ class RegionHealthCheckArgs:
     @pulumi.getter(name="checkIntervalSec")
     def check_interval_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @check_interval_sec.setter
-    def check_interval_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def check_interval_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grpcHealthCheck")
     def grpc_health_check(
@@ -63,7 +67,8 @@ class RegionHealthCheckArgs:
     @grpc_health_check.setter
     def grpc_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckGrpcHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grpcTlsHealthCheck")
     def grpc_tls_health_check(
@@ -72,12 +77,16 @@ class RegionHealthCheckArgs:
     @grpc_tls_health_check.setter
     def grpc_tls_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckGrpcTlsHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthyThreshold")
     def healthy_threshold(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @healthy_threshold.setter
-    def healthy_threshold(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def healthy_threshold(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="http2HealthCheck")
     def http2_health_check(
@@ -86,7 +95,8 @@ class RegionHealthCheckArgs:
     @http2_health_check.setter
     def http2_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckHttp2HealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpHealthCheck")
     def http_health_check(
@@ -95,7 +105,8 @@ class RegionHealthCheckArgs:
     @http_health_check.setter
     def http_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckHttpHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsHealthCheck")
     def https_health_check(
@@ -104,29 +115,34 @@ class RegionHealthCheckArgs:
     @https_health_check.setter
     def https_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckHttpsHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(self) -> Optional[pulumi.Input[RegionHealthCheckLogConfigArgs]]: ...
     @log_config.setter
     def log_config(
         self, value: Optional[pulumi.Input[RegionHealthCheckLogConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslHealthCheck")
     def ssl_health_check(
@@ -135,7 +151,8 @@ class RegionHealthCheckArgs:
     @ssl_health_check.setter
     def ssl_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckSslHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpHealthCheck")
     def tcp_health_check(
@@ -144,17 +161,22 @@ class RegionHealthCheckArgs:
     @tcp_health_check.setter
     def tcp_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckTcpHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutSec")
     def timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_sec.setter
-    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unhealthyThreshold")
     def unhealthy_threshold(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @unhealthy_threshold.setter
-    def unhealthy_threshold(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def unhealthy_threshold(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegionHealthCheckState:
@@ -200,17 +222,24 @@ class _RegionHealthCheckState:
     @pulumi.getter(name="checkIntervalSec")
     def check_interval_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @check_interval_sec.setter
-    def check_interval_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def check_interval_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grpcHealthCheck")
     def grpc_health_check(
@@ -219,7 +248,8 @@ class _RegionHealthCheckState:
     @grpc_health_check.setter
     def grpc_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckGrpcHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grpcTlsHealthCheck")
     def grpc_tls_health_check(
@@ -228,17 +258,22 @@ class _RegionHealthCheckState:
     @grpc_tls_health_check.setter
     def grpc_tls_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckGrpcTlsHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckId")
     def health_check_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @health_check_id.setter
-    def health_check_id(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def health_check_id(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthyThreshold")
     def healthy_threshold(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @healthy_threshold.setter
-    def healthy_threshold(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def healthy_threshold(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="http2HealthCheck")
     def http2_health_check(
@@ -247,7 +282,8 @@ class _RegionHealthCheckState:
     @http2_health_check.setter
     def http2_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckHttp2HealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpHealthCheck")
     def http_health_check(
@@ -256,7 +292,8 @@ class _RegionHealthCheckState:
     @http_health_check.setter
     def http_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckHttpHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsHealthCheck")
     def https_health_check(
@@ -265,34 +302,40 @@ class _RegionHealthCheckState:
     @https_health_check.setter
     def https_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckHttpsHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(self) -> Optional[pulumi.Input[RegionHealthCheckLogConfigArgs]]: ...
     @log_config.setter
     def log_config(
         self, value: Optional[pulumi.Input[RegionHealthCheckLogConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslHealthCheck")
     def ssl_health_check(
@@ -301,7 +344,8 @@ class _RegionHealthCheckState:
     @ssl_health_check.setter
     def ssl_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckSslHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpHealthCheck")
     def tcp_health_check(
@@ -310,22 +354,28 @@ class _RegionHealthCheckState:
     @tcp_health_check.setter
     def tcp_health_check(
         self, value: Optional[pulumi.Input[RegionHealthCheckTcpHealthCheckArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutSec")
     def timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_sec.setter
-    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unhealthyThreshold")
     def unhealthy_threshold(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @unhealthy_threshold.setter
-    def unhealthy_threshold(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def unhealthy_threshold(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/regionHealthCheck:RegionHealthCheck")
 class RegionHealthCheck(pulumi.CustomResource):

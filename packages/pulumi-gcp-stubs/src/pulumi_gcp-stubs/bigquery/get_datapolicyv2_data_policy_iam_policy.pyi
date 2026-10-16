@@ -45,7 +45,10 @@ class GetDatapolicyv2DataPolicyIamPolicyResult:
 class AwaitableGetDatapolicyv2DataPolicyIamPolicyResult(
     GetDatapolicyv2DataPolicyIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatapolicyv2DataPolicyIamPolicyResult]:
+        ...
 
 def get_datapolicyv2_data_policy_iam_policy(
     data_policy_id: Optional[_builtins.str] = ...,

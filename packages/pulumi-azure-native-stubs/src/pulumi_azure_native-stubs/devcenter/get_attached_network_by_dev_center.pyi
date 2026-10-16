@@ -60,7 +60,10 @@ class GetAttachedNetworkByDevCenterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAttachedNetworkByDevCenterResult(GetAttachedNetworkByDevCenterResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAttachedNetworkByDevCenterResult]:
+        ...
 
 def get_attached_network_by_dev_center(
     attached_network_connection_name: Optional[_builtins.str] = ...,

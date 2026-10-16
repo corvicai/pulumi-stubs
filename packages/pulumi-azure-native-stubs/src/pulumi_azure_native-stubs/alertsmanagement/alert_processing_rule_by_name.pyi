@@ -25,19 +25,22 @@ class AlertProcessingRuleByNameArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alertProcessingRuleName")
     def alert_processing_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alert_processing_rule_name.setter
     def alert_processing_rule_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -46,7 +49,8 @@ class AlertProcessingRuleByNameArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[AlertProcessingRulePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -55,7 +59,8 @@ class AlertProcessingRuleByNameArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AlertProcessingRuleByName(pulumi.CustomResource):

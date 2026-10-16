@@ -136,7 +136,8 @@ class GetTriggerResult:
     def webhook_configs(self) -> Sequence[outputs.GetTriggerWebhookConfigResult]: ...
 
 class AwaitableGetTriggerResult(GetTriggerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTriggerResult]:
+        ...
 
 def get_trigger(
     location: Optional[_builtins.str] = ...,

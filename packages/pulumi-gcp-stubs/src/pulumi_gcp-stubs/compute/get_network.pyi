@@ -65,7 +65,8 @@ class GetNetworkResult:
     def subnetworks_self_links(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetNetworkResult(GetNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkResult]:
+        ...
 
 def get_network(
     name: Optional[_builtins.str] = ...,

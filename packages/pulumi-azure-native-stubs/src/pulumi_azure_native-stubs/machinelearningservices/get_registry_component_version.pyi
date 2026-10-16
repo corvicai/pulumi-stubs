@@ -44,7 +44,8 @@ class GetRegistryComponentVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryComponentVersionResult(GetRegistryComponentVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryComponentVersionResult]:
+        ...
 
 def get_registry_component_version(
     component_name: Optional[_builtins.str] = ...,

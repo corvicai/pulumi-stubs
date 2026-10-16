@@ -24,7 +24,8 @@ class ListIssueAlertsResult:
     def value(self) -> Sequence[outputs.RelatedAlertResponse]: ...
 
 class AwaitableListIssueAlertsResult(ListIssueAlertsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListIssueAlertsResult]:
+        ...
 
 def list_issue_alerts(
     azure_monitor_workspace_name: Optional[_builtins.str] = ...,

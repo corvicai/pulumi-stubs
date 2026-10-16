@@ -286,7 +286,8 @@ class GetCapacityPoolVolumeResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCapacityPoolVolumeResult(GetCapacityPoolVolumeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityPoolVolumeResult]:
+        ...
 
 def get_capacity_pool_volume(
     account_name: Optional[_builtins.str] = ...,

@@ -30,7 +30,10 @@ class GetImageUploadUrlForEntityTypeResult:
 class AwaitableGetImageUploadUrlForEntityTypeResult(
     GetImageUploadUrlForEntityTypeResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetImageUploadUrlForEntityTypeResult]:
+        ...
 
 def get_image_upload_url_for_entity_type(
     entity_type: Optional[_builtins.str] = ...,

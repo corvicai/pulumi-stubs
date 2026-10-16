@@ -64,7 +64,8 @@ class GetLicenseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLicenseResult(GetLicenseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLicenseResult]:
+        ...
 
 def get_license(
     license_name: Optional[_builtins.str] = ...,

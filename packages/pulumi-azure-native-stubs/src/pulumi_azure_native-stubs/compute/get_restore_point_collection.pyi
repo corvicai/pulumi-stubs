@@ -66,7 +66,8 @@ class GetRestorePointCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRestorePointCollectionResult(GetRestorePointCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRestorePointCollectionResult]:
+        ...
 
 def get_restore_point_collection(
     expand: Optional[_builtins.str] = ...,

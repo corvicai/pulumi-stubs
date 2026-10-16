@@ -54,7 +54,8 @@ class GetProjectPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProjectPolicyResult(GetProjectPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectPolicyResult]:
+        ...
 
 def get_project_policy(
     dev_center_name: Optional[_builtins.str] = ...,

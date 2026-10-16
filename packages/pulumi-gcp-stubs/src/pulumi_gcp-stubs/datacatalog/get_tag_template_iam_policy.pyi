@@ -43,7 +43,8 @@ class GetTagTemplateIamPolicyResult:
     def tag_template(self) -> _builtins.str: ...
 
 class AwaitableGetTagTemplateIamPolicyResult(GetTagTemplateIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagTemplateIamPolicyResult]:
+        ...
 
 def get_tag_template_iam_policy(
     project: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetNamedQueryResult:
     def workgroup(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNamedQueryResult(GetNamedQueryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNamedQueryResult]:
+        ...
 
 def get_named_query(
     name: Optional[_builtins.str] = ...,

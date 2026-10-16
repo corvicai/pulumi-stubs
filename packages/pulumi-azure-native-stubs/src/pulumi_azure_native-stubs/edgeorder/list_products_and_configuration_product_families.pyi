@@ -28,7 +28,10 @@ class ListProductsAndConfigurationProductFamiliesResult:
 class AwaitableListProductsAndConfigurationProductFamiliesResult(
     ListProductsAndConfigurationProductFamiliesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListProductsAndConfigurationProductFamiliesResult]:
+        ...
 
 def list_products_and_configuration_product_families(
     customer_subscription_details: Optional[

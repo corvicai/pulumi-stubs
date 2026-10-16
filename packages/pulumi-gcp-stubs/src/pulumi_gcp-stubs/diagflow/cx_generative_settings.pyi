@@ -33,7 +33,8 @@ class CxGenerativeSettingsArgs:
     @pulumi.getter(name="languageCode")
     def language_code(self) -> pulumi.Input[_builtins.str]: ...
     @language_code.setter
-    def language_code(self, value: pulumi.Input[_builtins.str]): ...
+    def language_code(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fallbackSettings")
     def fallback_settings(
@@ -42,7 +43,8 @@ class CxGenerativeSettingsArgs:
     @fallback_settings.setter
     def fallback_settings(
         self, value: Optional[pulumi.Input[CxGenerativeSettingsFallbackSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generativeSafetySettings")
     def generative_safety_settings(
@@ -52,7 +54,8 @@ class CxGenerativeSettingsArgs:
     def generative_safety_settings(
         self,
         value: Optional[pulumi.Input[CxGenerativeSettingsGenerativeSafetySettingsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeConnectorSettings")
     def knowledge_connector_settings(
@@ -64,7 +67,8 @@ class CxGenerativeSettingsArgs:
         value: Optional[
             pulumi.Input[CxGenerativeSettingsKnowledgeConnectorSettingsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="llmModelSettings")
     def llm_model_settings(
@@ -73,12 +77,14 @@ class CxGenerativeSettingsArgs:
     @llm_model_settings.setter
     def llm_model_settings(
         self, value: Optional[pulumi.Input[CxGenerativeSettingsLlmModelSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CxGenerativeSettingsState:
@@ -109,7 +115,8 @@ class _CxGenerativeSettingsState:
     @fallback_settings.setter
     def fallback_settings(
         self, value: Optional[pulumi.Input[CxGenerativeSettingsFallbackSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generativeSafetySettings")
     def generative_safety_settings(
@@ -119,7 +126,8 @@ class _CxGenerativeSettingsState:
     def generative_safety_settings(
         self,
         value: Optional[pulumi.Input[CxGenerativeSettingsGenerativeSafetySettingsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeConnectorSettings")
     def knowledge_connector_settings(
@@ -131,12 +139,14 @@ class _CxGenerativeSettingsState:
         value: Optional[
             pulumi.Input[CxGenerativeSettingsKnowledgeConnectorSettingsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="llmModelSettings")
     def llm_model_settings(
@@ -145,17 +155,20 @@ class _CxGenerativeSettingsState:
     @llm_model_settings.setter
     def llm_model_settings(
         self, value: Optional[pulumi.Input[CxGenerativeSettingsLlmModelSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CxGenerativeSettings(pulumi.CustomResource):

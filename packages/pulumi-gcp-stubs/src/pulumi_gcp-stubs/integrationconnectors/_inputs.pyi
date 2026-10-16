@@ -156,7 +156,8 @@ class ConnectionAuthConfigArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalVariables")
     def additional_variables(
@@ -172,12 +173,14 @@ class ConnectionAuthConfigArgs:
                 Sequence[pulumi.Input[ConnectionAuthConfigAdditionalVariableArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authKey")
     def auth_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_key.setter
-    def auth_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2AuthCodeFlow")
     def oauth2_auth_code_flow(
@@ -186,7 +189,8 @@ class ConnectionAuthConfigArgs:
     @oauth2_auth_code_flow.setter
     def oauth2_auth_code_flow(
         self, value: Optional[pulumi.Input[ConnectionAuthConfigOauth2AuthCodeFlowArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2ClientCredentials")
     def oauth2_client_credentials(
@@ -196,7 +200,8 @@ class ConnectionAuthConfigArgs:
     def oauth2_client_credentials(
         self,
         value: Optional[pulumi.Input[ConnectionAuthConfigOauth2ClientCredentialsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2JwtBearer")
     def oauth2_jwt_bearer(
@@ -205,7 +210,8 @@ class ConnectionAuthConfigArgs:
     @oauth2_jwt_bearer.setter
     def oauth2_jwt_bearer(
         self, value: Optional[pulumi.Input[ConnectionAuthConfigOauth2JwtBearerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sshPublicKey")
     def ssh_public_key(
@@ -214,7 +220,8 @@ class ConnectionAuthConfigArgs:
     @ssh_public_key.setter
     def ssh_public_key(
         self, value: Optional[pulumi.Input[ConnectionAuthConfigSshPublicKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPassword")
     def user_password(
@@ -223,7 +230,8 @@ class ConnectionAuthConfigArgs:
     @user_password.setter
     def user_password(
         self, value: Optional[pulumi.Input[ConnectionAuthConfigUserPasswordArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionAuthConfigAdditionalVariableArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -257,12 +265,14 @@ class ConnectionAuthConfigAdditionalVariableArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeyValue")
     def encryption_key_value(
@@ -276,12 +286,14 @@ class ConnectionAuthConfigAdditionalVariableArgs:
         value: Optional[
             pulumi.Input[ConnectionAuthConfigAdditionalVariableEncryptionKeyValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretValue")
     def secret_value(
@@ -295,12 +307,14 @@ class ConnectionAuthConfigAdditionalVariableArgs:
         value: Optional[
             pulumi.Input[ConnectionAuthConfigAdditionalVariableSecretValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionAuthConfigAdditionalVariableEncryptionKeyValueArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -318,12 +332,14 @@ class ConnectionAuthConfigAdditionalVariableEncryptionKeyValueArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionAuthConfigAdditionalVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -335,7 +351,8 @@ class ConnectionAuthConfigAdditionalVariableSecretValueArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionAuthConfigOauth2AuthCodeFlowArgsDict(TypedDict):
     auth_uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -363,12 +380,14 @@ class ConnectionAuthConfigOauth2AuthCodeFlowArgs:
     @pulumi.getter(name="authUri")
     def auth_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_uri.setter
-    def auth_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(
@@ -382,12 +401,14 @@ class ConnectionAuthConfigOauth2AuthCodeFlowArgs:
         value: Optional[
             pulumi.Input[ConnectionAuthConfigOauth2AuthCodeFlowClientSecretArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePkce")
     def enable_pkce(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_pkce.setter
-    def enable_pkce(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_pkce(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -396,7 +417,8 @@ class ConnectionAuthConfigOauth2AuthCodeFlowArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionAuthConfigOauth2AuthCodeFlowClientSecretArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -408,7 +430,8 @@ class ConnectionAuthConfigOauth2AuthCodeFlowClientSecretArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionAuthConfigOauth2ClientCredentialsArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
@@ -430,7 +453,8 @@ class ConnectionAuthConfigOauth2ClientCredentialsArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(
@@ -444,7 +468,8 @@ class ConnectionAuthConfigOauth2ClientCredentialsArgs:
         value: Optional[
             pulumi.Input[ConnectionAuthConfigOauth2ClientCredentialsClientSecretArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionAuthConfigOauth2ClientCredentialsClientSecretArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -456,7 +481,8 @@ class ConnectionAuthConfigOauth2ClientCredentialsClientSecretArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionAuthConfigOauth2JwtBearerArgsDict(TypedDict):
     client_key: NotRequired[
@@ -487,7 +513,8 @@ class ConnectionAuthConfigOauth2JwtBearerArgs:
     def client_key(
         self,
         value: Optional[pulumi.Input[ConnectionAuthConfigOauth2JwtBearerClientKeyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jwtClaims")
     def jwt_claims(
@@ -497,7 +524,8 @@ class ConnectionAuthConfigOauth2JwtBearerArgs:
     def jwt_claims(
         self,
         value: Optional[pulumi.Input[ConnectionAuthConfigOauth2JwtBearerJwtClaimsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionAuthConfigOauth2JwtBearerClientKeyArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -509,7 +537,8 @@ class ConnectionAuthConfigOauth2JwtBearerClientKeyArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionAuthConfigOauth2JwtBearerJwtClaimsArgsDict(TypedDict):
     audience: NotRequired[pulumi.Input[_builtins.str]]
@@ -529,17 +558,20 @@ class ConnectionAuthConfigOauth2JwtBearerJwtClaimsArgs:
     @pulumi.getter
     def audience(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audience.setter
-    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audience(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @issuer.setter
-    def issuer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def issuer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subject(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subject.setter
-    def subject(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subject(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionAuthConfigSshPublicKeyArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
@@ -569,12 +601,14 @@ class ConnectionAuthConfigSshPublicKeyArgs:
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certType")
     def cert_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cert_type.setter
-    def cert_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cert_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sshClientCert")
     def ssh_client_cert(
@@ -586,7 +620,8 @@ class ConnectionAuthConfigSshPublicKeyArgs:
         value: Optional[
             pulumi.Input[ConnectionAuthConfigSshPublicKeySshClientCertArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sshClientCertPass")
     def ssh_client_cert_pass(
@@ -600,7 +635,8 @@ class ConnectionAuthConfigSshPublicKeyArgs:
         value: Optional[
             pulumi.Input[ConnectionAuthConfigSshPublicKeySshClientCertPassArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionAuthConfigSshPublicKeySshClientCertArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -612,7 +648,8 @@ class ConnectionAuthConfigSshPublicKeySshClientCertArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionAuthConfigSshPublicKeySshClientCertPassArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -624,7 +661,8 @@ class ConnectionAuthConfigSshPublicKeySshClientCertPassArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionAuthConfigUserPasswordArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
@@ -646,7 +684,8 @@ class ConnectionAuthConfigUserPasswordArgs:
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(
@@ -656,7 +695,8 @@ class ConnectionAuthConfigUserPasswordArgs:
     def password(
         self,
         value: Optional[pulumi.Input[ConnectionAuthConfigUserPasswordPasswordArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionAuthConfigUserPasswordPasswordArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -668,7 +708,8 @@ class ConnectionAuthConfigUserPasswordPasswordArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionConfigVariableArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -700,12 +741,14 @@ class ConnectionConfigVariableArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeyValue")
     def encryption_key_value(
@@ -715,12 +758,14 @@ class ConnectionConfigVariableArgs:
     def encryption_key_value(
         self,
         value: Optional[pulumi.Input[ConnectionConfigVariableEncryptionKeyValueArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretValue")
     def secret_value(
@@ -729,12 +774,14 @@ class ConnectionConfigVariableArgs:
     @secret_value.setter
     def secret_value(
         self, value: Optional[pulumi.Input[ConnectionConfigVariableSecretValueArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionConfigVariableEncryptionKeyValueArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -752,12 +799,14 @@ class ConnectionConfigVariableEncryptionKeyValueArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionConfigVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -769,7 +818,8 @@ class ConnectionConfigVariableSecretValueArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionConnectorVersionInfraConfigArgsDict(TypedDict):
     ratelimit_threshold: NotRequired[pulumi.Input[_builtins.str]]
@@ -783,7 +833,10 @@ class ConnectionConnectorVersionInfraConfigArgs:
     @pulumi.getter(name="ratelimitThreshold")
     def ratelimit_threshold(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ratelimit_threshold.setter
-    def ratelimit_threshold(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ratelimit_threshold(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ConnectionDestinationConfigArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -809,7 +862,8 @@ class ConnectionDestinationConfigArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destinations(
@@ -825,7 +879,8 @@ class ConnectionDestinationConfigArgs:
                 Sequence[pulumi.Input[ConnectionDestinationConfigDestinationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionDestinationConfigDestinationArgsDict(TypedDict):
     host: NotRequired[pulumi.Input[_builtins.str]]
@@ -845,17 +900,22 @@ class ConnectionDestinationConfigDestinationArgs:
     @pulumi.getter
     def host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAttachment")
     def service_attachment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_attachment.setter
-    def service_attachment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_attachment(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ConnectionEventingConfigArgsDict(TypedDict):
     registration_destination_config: pulumi.Input[
@@ -896,7 +956,8 @@ class ConnectionEventingConfigArgs:
     def registration_destination_config(
         self,
         value: pulumi.Input[ConnectionEventingConfigRegistrationDestinationConfigArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalVariables")
     def additional_variables(
@@ -914,7 +975,8 @@ class ConnectionEventingConfigArgs:
                 Sequence[pulumi.Input[ConnectionEventingConfigAdditionalVariableArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authConfig")
     def auth_config(
@@ -923,12 +985,16 @@ class ConnectionEventingConfigArgs:
     @auth_config.setter
     def auth_config(
         self, value: Optional[pulumi.Input[ConnectionEventingConfigAuthConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enrichmentEnabled")
     def enrichment_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enrichment_enabled.setter
-    def enrichment_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enrichment_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ConnectionEventingConfigAdditionalVariableArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -966,12 +1032,14 @@ class ConnectionEventingConfigAdditionalVariableArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeyValue")
     def encryption_key_value(
@@ -987,12 +1055,14 @@ class ConnectionEventingConfigAdditionalVariableArgs:
                 ConnectionEventingConfigAdditionalVariableEncryptionKeyValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretValue")
     def secret_value(
@@ -1006,12 +1076,14 @@ class ConnectionEventingConfigAdditionalVariableArgs:
         value: Optional[
             pulumi.Input[ConnectionEventingConfigAdditionalVariableSecretValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAdditionalVariableEncryptionKeyValueArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1029,12 +1101,14 @@ class ConnectionEventingConfigAdditionalVariableEncryptionKeyValueArgs:
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAdditionalVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -1046,7 +1120,8 @@ class ConnectionEventingConfigAdditionalVariableSecretValueArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAuthConfigArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -1084,7 +1159,8 @@ class ConnectionEventingConfigAuthConfigArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPassword")
     def user_password(
@@ -1093,7 +1169,8 @@ class ConnectionEventingConfigAuthConfigArgs:
     @user_password.setter
     def user_password(
         self, value: pulumi.Input[ConnectionEventingConfigAuthConfigUserPasswordArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalVariables")
     def additional_variables(
@@ -1117,12 +1194,14 @@ class ConnectionEventingConfigAuthConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authKey")
     def auth_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_key.setter
-    def auth_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAuthConfigAdditionalVariableArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -1164,12 +1243,14 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeyValue")
     def encryption_key_value(
@@ -1187,12 +1268,14 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableArgs:
                 ConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretValue")
     def secret_value(
@@ -1210,12 +1293,14 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableArgs:
                 ConnectionEventingConfigAuthConfigAdditionalVariableSecretValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueArgsDict(
     TypedDict
@@ -1235,12 +1320,14 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueArgs
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAuthConfigAdditionalVariableSecretValueArgsDict(
     TypedDict
@@ -1254,7 +1341,8 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableSecretValueArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAuthConfigUserPasswordArgsDict(TypedDict):
     password: NotRequired[
@@ -1285,12 +1373,14 @@ class ConnectionEventingConfigAuthConfigUserPasswordArgs:
         value: Optional[
             pulumi.Input[ConnectionEventingConfigAuthConfigUserPasswordPasswordArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @username.setter
-    def username(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionEventingConfigAuthConfigUserPasswordPasswordArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -1302,7 +1392,8 @@ class ConnectionEventingConfigAuthConfigUserPasswordPasswordArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionEventingConfigRegistrationDestinationConfigArgsDict(TypedDict):
     destinations: NotRequired[
@@ -1357,12 +1448,14 @@ class ConnectionEventingConfigRegistrationDestinationConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionEventingConfigRegistrationDestinationConfigDestinationArgsDict(
     TypedDict
@@ -1384,17 +1477,22 @@ class ConnectionEventingConfigRegistrationDestinationConfigDestinationArgs:
     @pulumi.getter
     def host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAttachment")
     def service_attachment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_attachment.setter
-    def service_attachment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_attachment(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ConnectionEventingRuntimeDataArgsDict(TypedDict):
     events_listener_endpoint: NotRequired[pulumi.Input[_builtins.str]]
@@ -1422,7 +1520,8 @@ class ConnectionEventingRuntimeDataArgs:
     @events_listener_endpoint.setter
     def events_listener_endpoint(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statuses(
@@ -1438,7 +1537,8 @@ class ConnectionEventingRuntimeDataArgs:
                 Sequence[pulumi.Input[ConnectionEventingRuntimeDataStatusArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionEventingRuntimeDataStatusArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -1456,12 +1556,14 @@ class ConnectionEventingRuntimeDataStatusArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionLockConfigArgsDict(TypedDict):
     locked: pulumi.Input[_builtins.bool]
@@ -1479,12 +1581,14 @@ class ConnectionLockConfigArgs:
     @pulumi.getter
     def locked(self) -> pulumi.Input[_builtins.bool]: ...
     @locked.setter
-    def locked(self, value: pulumi.Input[_builtins.bool]): ...
+    def locked(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reason(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reason.setter
-    def reason(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reason(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionLogConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -1502,12 +1606,14 @@ class ConnectionLogConfigArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @level.setter
-    def level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionNodeConfigArgsDict(TypedDict):
     max_node_count: NotRequired[pulumi.Input[_builtins.int]]
@@ -1525,12 +1631,14 @@ class ConnectionNodeConfigArgs:
     @pulumi.getter(name="maxNodeCount")
     def max_node_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_node_count.setter
-    def max_node_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_node_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minNodeCount")
     def min_node_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_node_count.setter
-    def min_node_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_node_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ConnectionSslConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -1588,7 +1696,8 @@ class ConnectionSslConfigArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalVariables")
     def additional_variables(
@@ -1604,12 +1713,16 @@ class ConnectionSslConfigArgs:
                 Sequence[pulumi.Input[ConnectionSslConfigAdditionalVariableArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertType")
     def client_cert_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_cert_type.setter
-    def client_cert_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_cert_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificate")
     def client_certificate(
@@ -1618,7 +1731,8 @@ class ConnectionSslConfigArgs:
     @client_certificate.setter
     def client_certificate(
         self, value: Optional[pulumi.Input[ConnectionSslConfigClientCertificateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientPrivateKey")
     def client_private_key(
@@ -1627,7 +1741,8 @@ class ConnectionSslConfigArgs:
     @client_private_key.setter
     def client_private_key(
         self, value: Optional[pulumi.Input[ConnectionSslConfigClientPrivateKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientPrivateKeyPass")
     def client_private_key_pass(
@@ -1636,7 +1751,8 @@ class ConnectionSslConfigArgs:
     @client_private_key_pass.setter
     def client_private_key_pass(
         self, value: Optional[pulumi.Input[ConnectionSslConfigClientPrivateKeyPassArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateServerCertificate")
     def private_server_certificate(
@@ -1646,22 +1762,28 @@ class ConnectionSslConfigArgs:
     def private_server_certificate(
         self,
         value: Optional[pulumi.Input[ConnectionSslConfigPrivateServerCertificateArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverCertType")
     def server_cert_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_cert_type.setter
-    def server_cert_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_cert_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustModel")
     def trust_model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trust_model.setter
-    def trust_model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def trust_model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useSsl")
     def use_ssl(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_ssl.setter
-    def use_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ConnectionSslConfigAdditionalVariableArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -1695,12 +1817,14 @@ class ConnectionSslConfigAdditionalVariableArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeyValue")
     def encryption_key_value(
@@ -1714,12 +1838,14 @@ class ConnectionSslConfigAdditionalVariableArgs:
         value: Optional[
             pulumi.Input[ConnectionSslConfigAdditionalVariableEncryptionKeyValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretValue")
     def secret_value(
@@ -1733,12 +1859,14 @@ class ConnectionSslConfigAdditionalVariableArgs:
         value: Optional[
             pulumi.Input[ConnectionSslConfigAdditionalVariableSecretValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionSslConfigAdditionalVariableEncryptionKeyValueArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1756,12 +1884,14 @@ class ConnectionSslConfigAdditionalVariableEncryptionKeyValueArgs:
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionSslConfigAdditionalVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -1773,7 +1903,8 @@ class ConnectionSslConfigAdditionalVariableSecretValueArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionSslConfigClientCertificateArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -1785,7 +1916,8 @@ class ConnectionSslConfigClientCertificateArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionSslConfigClientPrivateKeyArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -1797,7 +1929,8 @@ class ConnectionSslConfigClientPrivateKeyArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionSslConfigClientPrivateKeyPassArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -1809,7 +1942,8 @@ class ConnectionSslConfigClientPrivateKeyPassArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionSslConfigPrivateServerCertificateArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
@@ -1821,7 +1955,8 @@ class ConnectionSslConfigPrivateServerCertificateArgs:
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionStatusArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -1841,14 +1976,17 @@ class ConnectionStatusArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

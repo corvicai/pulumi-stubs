@@ -74,7 +74,8 @@ class GetDevCenterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDevCenterResult(GetDevCenterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDevCenterResult]:
+        ...
 
 def get_dev_center(
     dev_center_name: Optional[_builtins.str] = ...,

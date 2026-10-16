@@ -51,7 +51,8 @@ class GetSecretValueResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSecretValueResult(GetSecretValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretValueResult]:
+        ...
 
 def get_secret_value(
     resource_group_name: Optional[_builtins.str] = ...,

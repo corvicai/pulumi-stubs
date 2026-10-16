@@ -66,7 +66,10 @@ class GetNamespaceTopicEventSubscriptionResult:
 class AwaitableGetNamespaceTopicEventSubscriptionResult(
     GetNamespaceTopicEventSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNamespaceTopicEventSubscriptionResult]:
+        ...
 
 def get_namespace_topic_event_subscription(
     event_subscription_name: Optional[_builtins.str] = ...,

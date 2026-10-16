@@ -38,7 +38,8 @@ class ApplicationArgs:
     def app_configs(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ApplicationAppConfigArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSources")
     def data_sources(
@@ -50,7 +51,8 @@ class ApplicationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationDataSourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamIdentityCenterOptions")
     def iam_identity_center_options(
@@ -59,22 +61,26 @@ class ApplicationArgs:
     @iam_identity_center_options.setter
     def iam_identity_center_options(
         self, value: Optional[pulumi.Input[ApplicationIamIdentityCenterOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -83,12 +89,16 @@ class ApplicationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ApplicationTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ApplicationState:
@@ -124,12 +134,14 @@ class _ApplicationState:
     def app_configs(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ApplicationAppConfigArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSources")
     def data_sources(
@@ -141,12 +153,14 @@ class _ApplicationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationDataSourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamIdentityCenterOptions")
     def iam_identity_center_options(
@@ -155,22 +169,26 @@ class _ApplicationState:
     @iam_identity_center_options.setter
     def iam_identity_center_options(
         self, value: Optional[pulumi.Input[ApplicationIamIdentityCenterOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -179,7 +197,8 @@ class _ApplicationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -188,12 +207,16 @@ class _ApplicationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ApplicationTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:opensearch/application:Application")
 class Application(pulumi.CustomResource):

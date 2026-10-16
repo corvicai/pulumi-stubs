@@ -29,12 +29,14 @@ class SapLandscapeMonitorArgs:
     @pulumi.getter(name="monitorName")
     def monitor_name(self) -> pulumi.Input[_builtins.str]: ...
     @monitor_name.setter
-    def monitor_name(self, value: pulumi.Input[_builtins.str]): ...
+    def monitor_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def grouping(
@@ -43,7 +45,8 @@ class SapLandscapeMonitorArgs:
     @grouping.setter
     def grouping(
         self, value: Optional[pulumi.Input[SapLandscapeMonitorPropertiesGroupingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topMetricsThresholds")
     def top_metrics_thresholds(
@@ -59,7 +62,8 @@ class SapLandscapeMonitorArgs:
                 Sequence[pulumi.Input[SapLandscapeMonitorMetricThresholdsArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:workloads:SapLandscapeMonitor")
 class SapLandscapeMonitor(pulumi.CustomResource):

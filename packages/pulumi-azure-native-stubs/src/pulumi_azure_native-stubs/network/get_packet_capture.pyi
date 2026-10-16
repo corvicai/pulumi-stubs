@@ -80,7 +80,8 @@ class GetPacketCaptureResult:
     def total_bytes_per_session(self) -> Optional[_builtins.float]: ...
 
 class AwaitableGetPacketCaptureResult(GetPacketCaptureResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPacketCaptureResult]:
+        ...
 
 def get_packet_capture(
     network_watcher_name: Optional[_builtins.str] = ...,

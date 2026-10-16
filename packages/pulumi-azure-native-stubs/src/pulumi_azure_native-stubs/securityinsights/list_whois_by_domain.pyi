@@ -46,7 +46,8 @@ class ListWhoisByDomainResult:
     def updated(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListWhoisByDomainResult(ListWhoisByDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWhoisByDomainResult]:
+        ...
 
 def list_whois_by_domain(
     domain: Optional[_builtins.str] = ...,

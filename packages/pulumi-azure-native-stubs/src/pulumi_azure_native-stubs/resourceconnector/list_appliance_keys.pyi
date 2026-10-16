@@ -31,7 +31,8 @@ class ListApplianceKeysResult:
     def ssh_keys(self) -> Mapping[str, outputs.SSHKeyResponseV1]: ...
 
 class AwaitableListApplianceKeysResult(ListApplianceKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListApplianceKeysResult]:
+        ...
 
 def list_appliance_keys(
     artifact_type: Optional[_builtins.str] = ...,

@@ -64,7 +64,8 @@ class GetUpdateRunResult:
     def update_strategy_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetUpdateRunResult(GetUpdateRunResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUpdateRunResult]:
+        ...
 
 def get_update_run(
     fleet_name: Optional[_builtins.str] = ...,

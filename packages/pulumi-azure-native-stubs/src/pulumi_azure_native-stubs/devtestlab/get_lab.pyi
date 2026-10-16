@@ -127,7 +127,8 @@ class GetLabResult:
     def vm_creation_resource_group(self) -> _builtins.str: ...
 
 class AwaitableGetLabResult(GetLabResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLabResult]:
+        ...
 
 def get_lab(
     expand: Optional[_builtins.str] = ...,

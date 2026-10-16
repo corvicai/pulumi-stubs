@@ -41,7 +41,10 @@ class GetWorkloadIdentityPoolIamPolicyResult:
 class AwaitableGetWorkloadIdentityPoolIamPolicyResult(
     GetWorkloadIdentityPoolIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkloadIdentityPoolIamPolicyResult]:
+        ...
 
 def get_workload_identity_pool_iam_policy(
     project: Optional[_builtins.str] = ...,

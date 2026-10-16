@@ -41,7 +41,8 @@ class ContactProfileArgs:
     @links.setter
     def links(
         self, value: pulumi.Input[Sequence[pulumi.Input[ContactProfileLinkArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -50,12 +51,14 @@ class ContactProfileArgs:
     @network_configuration.setter
     def network_configuration(
         self, value: pulumi.Input[ContactProfilesPropertiesNetworkConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoTrackingConfiguration")
     def auto_tracking_configuration(
@@ -64,29 +67,36 @@ class ContactProfileArgs:
     @auto_tracking_configuration.setter
     def auto_tracking_configuration(
         self, value: Optional[pulumi.Input[AutoTrackingConfiguration]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactProfileName")
     def contact_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @contact_profile_name.setter
-    def contact_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def contact_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHubUri")
     def event_hub_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_hub_uri.setter
-    def event_hub_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_hub_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumElevationDegrees")
     def minimum_elevation_degrees(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @minimum_elevation_degrees.setter
     def minimum_elevation_degrees(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumViableContactDuration")
     def minimum_viable_contact_duration(
@@ -95,7 +105,8 @@ class ContactProfileArgs:
     @minimum_viable_contact_duration.setter
     def minimum_viable_contact_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -104,7 +115,8 @@ class ContactProfileArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thirdPartyConfigurations")
     def third_party_configurations(
@@ -120,7 +132,8 @@ class ContactProfileArgs:
                 Sequence[pulumi.Input[ContactProfileThirdPartyConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:orbital:ContactProfile")
 class ContactProfile(pulumi.CustomResource):

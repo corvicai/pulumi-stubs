@@ -72,7 +72,8 @@ class GetADCCatalogResult:
     def users(self) -> Optional[Sequence[outputs.PrincipalsResponse]]: ...
 
 class AwaitableGetADCCatalogResult(GetADCCatalogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetADCCatalogResult]:
+        ...
 
 def get_adc_catalog(
     catalog_name: Optional[_builtins.str] = ...,

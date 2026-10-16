@@ -52,7 +52,8 @@ class GetSmtpUsernameResult:
     def username(self) -> _builtins.str: ...
 
 class AwaitableGetSmtpUsernameResult(GetSmtpUsernameResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSmtpUsernameResult]:
+        ...
 
 def get_smtp_username(
     communication_service_name: Optional[_builtins.str] = ...,

@@ -146,7 +146,8 @@ class GetPrivateCloudResult:
     def vmotion_network(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateCloudResult(GetPrivateCloudResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateCloudResult]:
+        ...
 
 def get_private_cloud(
     private_cloud_name: Optional[_builtins.str] = ...,

@@ -99,7 +99,8 @@ class GetExportConfigurationResult:
     def subscription_id(self) -> _builtins.str: ...
 
 class AwaitableGetExportConfigurationResult(GetExportConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExportConfigurationResult]:
+        ...
 
 def get_export_configuration(
     export_id: Optional[_builtins.str] = ...,

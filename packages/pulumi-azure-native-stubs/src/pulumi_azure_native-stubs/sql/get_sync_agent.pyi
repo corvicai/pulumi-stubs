@@ -59,7 +59,8 @@ class GetSyncAgentResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetSyncAgentResult(GetSyncAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSyncAgentResult]:
+        ...
 
 def get_sync_agent(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -63,7 +63,8 @@ class GetRouteResult:
     def virtual_router_name(self) -> _builtins.str: ...
 
 class AwaitableGetRouteResult(GetRouteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteResult]:
+        ...
 
 def get_route(
     mesh_name: Optional[_builtins.str] = ...,

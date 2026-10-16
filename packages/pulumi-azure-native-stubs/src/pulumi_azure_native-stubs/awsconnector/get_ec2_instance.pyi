@@ -44,7 +44,8 @@ class GetEc2InstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2InstanceResult(GetEc2InstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2InstanceResult]:
+        ...
 
 def get_ec2_instance(
     resource_uri: Optional[_builtins.str] = ...,

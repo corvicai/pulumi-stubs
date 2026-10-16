@@ -47,7 +47,10 @@ class GetWorkstationConfigIamPolicyResult:
     def workstation_config_id(self) -> _builtins.str: ...
 
 class AwaitableGetWorkstationConfigIamPolicyResult(GetWorkstationConfigIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkstationConfigIamPolicyResult]:
+        ...
 
 def get_workstation_config_iam_policy(
     location: Optional[_builtins.str] = ...,

@@ -116,7 +116,10 @@ class GetVirtualMachineRunCommandByVirtualMachineResult:
 class AwaitableGetVirtualMachineRunCommandByVirtualMachineResult(
     GetVirtualMachineRunCommandByVirtualMachineResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualMachineRunCommandByVirtualMachineResult]:
+        ...
 
 def get_virtual_machine_run_command_by_virtual_machine(
     expand: Optional[_builtins.str] = ...,

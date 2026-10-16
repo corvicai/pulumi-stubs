@@ -29,12 +29,14 @@ class WebAppSlotConfigurationNamesArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appSettingNames")
     def app_setting_names(
@@ -43,7 +45,8 @@ class WebAppSlotConfigurationNamesArgs:
     @app_setting_names.setter
     def app_setting_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureStorageConfigNames")
     def azure_storage_config_names(
@@ -52,7 +55,8 @@ class WebAppSlotConfigurationNamesArgs:
     @azure_storage_config_names.setter
     def azure_storage_config_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionStringNames")
     def connection_string_names(
@@ -61,12 +65,14 @@ class WebAppSlotConfigurationNamesArgs:
     @connection_string_names.setter
     def connection_string_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:web:WebAppSlotConfigurationNames")
 class WebAppSlotConfigurationNames(pulumi.CustomResource):

@@ -64,7 +64,8 @@ class GetBatchEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBatchEndpointResult(GetBatchEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBatchEndpointResult]:
+        ...
 
 def get_batch_endpoint(
     endpoint_name: Optional[_builtins.str] = ...,

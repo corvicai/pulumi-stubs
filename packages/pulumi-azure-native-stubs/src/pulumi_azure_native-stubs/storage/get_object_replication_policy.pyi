@@ -64,7 +64,8 @@ class GetObjectReplicationPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetObjectReplicationPolicyResult(GetObjectReplicationPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetObjectReplicationPolicyResult]:
+        ...
 
 def get_object_replication_policy(
     account_name: Optional[_builtins.str] = ...,

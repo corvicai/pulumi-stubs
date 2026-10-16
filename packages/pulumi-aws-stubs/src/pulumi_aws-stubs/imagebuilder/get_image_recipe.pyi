@@ -86,7 +86,8 @@ class GetImageRecipeResult:
     def working_directory(self) -> _builtins.str: ...
 
 class AwaitableGetImageRecipeResult(GetImageRecipeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImageRecipeResult]:
+        ...
 
 def get_image_recipe(
     arn: Optional[_builtins.str] = ...,

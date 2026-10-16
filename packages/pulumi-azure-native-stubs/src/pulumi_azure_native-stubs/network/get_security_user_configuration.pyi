@@ -56,7 +56,10 @@ class GetSecurityUserConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityUserConfigurationResult(GetSecurityUserConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSecurityUserConfigurationResult]:
+        ...
 
 def get_security_user_configuration(
     configuration_name: Optional[_builtins.str] = ...,

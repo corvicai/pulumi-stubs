@@ -59,7 +59,8 @@ class GetObjectSignedUrlResult:
     def signed_url(self) -> _builtins.str: ...
 
 class AwaitableGetObjectSignedUrlResult(GetObjectSignedUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetObjectSignedUrlResult]:
+        ...
 
 def get_object_signed_url(
     bucket: Optional[_builtins.str] = ...,

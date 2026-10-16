@@ -63,7 +63,8 @@ class EventSourcesConfigEventSourceArgs:
                 pulumi.Input[EventSourcesConfigEventSourceAmazonCodeGuruProfilerArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourcesConfigEventSourceAmazonCodeGuruProfilerArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -75,7 +76,8 @@ class EventSourcesConfigEventSourceAmazonCodeGuruProfilerArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class NotificationChannelFiltersArgsDict(TypedDict):
     message_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -99,7 +101,8 @@ class NotificationChannelFiltersArgs:
     @message_types.setter
     def message_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def severities(
@@ -108,7 +111,8 @@ class NotificationChannelFiltersArgs:
     @severities.setter
     def severities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NotificationChannelSnsArgsDict(TypedDict):
     topic_arn: pulumi.Input[_builtins.str]
@@ -120,7 +124,8 @@ class NotificationChannelSnsArgs:
     @pulumi.getter(name="topicArn")
     def topic_arn(self) -> pulumi.Input[_builtins.str]: ...
     @topic_arn.setter
-    def topic_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def topic_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ResourceCollectionCloudformationArgsDict(TypedDict):
     stack_names: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -136,7 +141,8 @@ class ResourceCollectionCloudformationArgs:
     @stack_names.setter
     def stack_names(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceCollectionTagsArgsDict(TypedDict):
     app_boundary_key: pulumi.Input[_builtins.str]
@@ -154,14 +160,16 @@ class ResourceCollectionTagsArgs:
     @pulumi.getter(name="appBoundaryKey")
     def app_boundary_key(self) -> pulumi.Input[_builtins.str]: ...
     @app_boundary_key.setter
-    def app_boundary_key(self, value: pulumi.Input[_builtins.str]): ...
+    def app_boundary_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagValues")
     def tag_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @tag_values.setter
     def tag_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceIntegrationKmsServerSideEncryptionArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -181,17 +189,20 @@ class ServiceIntegrationKmsServerSideEncryptionArgs:
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optInStatus")
     def opt_in_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @opt_in_status.setter
-    def opt_in_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def opt_in_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceIntegrationLogsAnomalyDetectionArgsDict(TypedDict):
     opt_in_status: NotRequired[pulumi.Input[_builtins.str]]
@@ -205,7 +216,8 @@ class ServiceIntegrationLogsAnomalyDetectionArgs:
     @pulumi.getter(name="optInStatus")
     def opt_in_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @opt_in_status.setter
-    def opt_in_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def opt_in_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceIntegrationOpsCenterArgsDict(TypedDict):
     opt_in_status: NotRequired[pulumi.Input[_builtins.str]]
@@ -219,7 +231,8 @@ class ServiceIntegrationOpsCenterArgs:
     @pulumi.getter(name="optInStatus")
     def opt_in_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @opt_in_status.setter
-    def opt_in_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def opt_in_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GetNotificationChannelFilterArgsDict(TypedDict):
     message_types: Sequence[_builtins.str]
@@ -237,12 +250,14 @@ class GetNotificationChannelFilterArgs:
     @pulumi.getter(name="messageTypes")
     def message_types(self) -> Sequence[_builtins.str]: ...
     @message_types.setter
-    def message_types(self, value: Sequence[_builtins.str]): ...
+    def message_types(self, value: Sequence[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def severities(self) -> Sequence[_builtins.str]: ...
     @severities.setter
-    def severities(self, value: Sequence[_builtins.str]): ...
+    def severities(self, value: Sequence[_builtins.str]):  # -> None:
+        ...
 
 class GetNotificationChannelSnArgsDict(TypedDict):
     topic_arn: _builtins.str
@@ -254,4 +269,5 @@ class GetNotificationChannelSnArgs:
     @pulumi.getter(name="topicArn")
     def topic_arn(self) -> _builtins.str: ...
     @topic_arn.setter
-    def topic_arn(self, value: _builtins.str): ...
+    def topic_arn(self, value: _builtins.str):  # -> None:
+        ...

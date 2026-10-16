@@ -52,7 +52,10 @@ class GetStorageDiscoveryWorkspaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageDiscoveryWorkspaceResult(GetStorageDiscoveryWorkspaceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStorageDiscoveryWorkspaceResult]:
+        ...
 
 def get_storage_discovery_workspace(
     resource_group_name: Optional[_builtins.str] = ...,

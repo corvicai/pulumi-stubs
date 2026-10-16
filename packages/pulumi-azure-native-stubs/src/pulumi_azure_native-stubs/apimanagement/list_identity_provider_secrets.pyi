@@ -20,7 +20,8 @@ class ListIdentityProviderSecretsResult:
     def client_secret(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListIdentityProviderSecretsResult(ListIdentityProviderSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListIdentityProviderSecretsResult]:
+        ...
 
 def list_identity_provider_secrets(
     identity_provider_name: Optional[_builtins.str] = ...,

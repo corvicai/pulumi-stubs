@@ -20,7 +20,8 @@ class ListOrderDCAccessCodeResult:
     def auth_code(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListOrderDCAccessCodeResult(ListOrderDCAccessCodeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListOrderDCAccessCodeResult]:
+        ...
 
 def list_order_dc_access_code(
     device_name: Optional[_builtins.str] = ...,

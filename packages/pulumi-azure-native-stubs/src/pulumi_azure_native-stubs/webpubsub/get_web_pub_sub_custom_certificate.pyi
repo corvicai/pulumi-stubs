@@ -56,7 +56,10 @@ class GetWebPubSubCustomCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebPubSubCustomCertificateResult(GetWebPubSubCustomCertificateResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebPubSubCustomCertificateResult]:
+        ...
 
 def get_web_pub_sub_custom_certificate(
     certificate_name: Optional[_builtins.str] = ...,

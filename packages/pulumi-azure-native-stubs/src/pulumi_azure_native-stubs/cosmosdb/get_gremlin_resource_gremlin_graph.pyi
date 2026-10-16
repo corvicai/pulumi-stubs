@@ -56,7 +56,10 @@ class GetGremlinResourceGremlinGraphResult:
 class AwaitableGetGremlinResourceGremlinGraphResult(
     GetGremlinResourceGremlinGraphResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGremlinResourceGremlinGraphResult]:
+        ...
 
 def get_gremlin_resource_gremlin_graph(
     account_name: Optional[_builtins.str] = ...,

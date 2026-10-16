@@ -59,7 +59,8 @@ class GetClientApplicationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetClientApplicationResult(GetClientApplicationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClientApplicationResult]:
+        ...
 
 def get_client_application(
     client_application_id: Optional[_builtins.str] = ...,

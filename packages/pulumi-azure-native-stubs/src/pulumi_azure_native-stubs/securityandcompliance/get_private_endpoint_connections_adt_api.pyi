@@ -56,7 +56,10 @@ class GetPrivateEndpointConnectionsAdtAPIResult:
 class AwaitableGetPrivateEndpointConnectionsAdtAPIResult(
     GetPrivateEndpointConnectionsAdtAPIResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionsAdtAPIResult]:
+        ...
 
 def get_private_endpoint_connections_adt_api(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

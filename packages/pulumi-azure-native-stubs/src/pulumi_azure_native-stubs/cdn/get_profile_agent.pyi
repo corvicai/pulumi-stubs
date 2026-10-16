@@ -52,7 +52,8 @@ class GetProfileAgentResult:
     def web_agent(self) -> outputs.ResourceReferenceResponse: ...
 
 class AwaitableGetProfileAgentResult(GetProfileAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProfileAgentResult]:
+        ...
 
 def get_profile_agent(
     agent_name: Optional[_builtins.str] = ...,

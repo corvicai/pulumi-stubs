@@ -24,19 +24,24 @@ class AssociatedTenantArgs:
     @pulumi.getter(name="billingAccountName")
     def billing_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @billing_account_name.setter
-    def billing_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def billing_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedTenantName")
     def associated_tenant_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @associated_tenant_name.setter
-    def associated_tenant_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def associated_tenant_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(self) -> Optional[pulumi.Input[AssociatedTenantPropertiesArgs]]: ...
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[AssociatedTenantPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -45,7 +50,8 @@ class AssociatedTenantArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:billing:AssociatedTenant")
 class AssociatedTenant(pulumi.CustomResource):

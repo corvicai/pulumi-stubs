@@ -23,12 +23,14 @@ class ManagementConfigurationArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementConfigurationName")
     def management_configuration_name(
@@ -37,7 +39,8 @@ class ManagementConfigurationArgs:
     @management_configuration_name.setter
     def management_configuration_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -46,7 +49,8 @@ class ManagementConfigurationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[ManagementConfigurationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ManagementConfiguration(pulumi.CustomResource):

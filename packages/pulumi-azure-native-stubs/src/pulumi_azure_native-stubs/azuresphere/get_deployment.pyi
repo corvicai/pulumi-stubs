@@ -56,7 +56,8 @@ class GetDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeploymentResult(GetDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeploymentResult]:
+        ...
 
 def get_deployment(
     catalog_name: Optional[_builtins.str] = ...,

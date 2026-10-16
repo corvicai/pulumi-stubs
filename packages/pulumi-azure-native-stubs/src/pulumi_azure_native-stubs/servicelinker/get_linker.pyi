@@ -78,7 +78,8 @@ class GetLinkerResult:
     def v_net_solution(self) -> Optional[outputs.VNetSolutionResponse]: ...
 
 class AwaitableGetLinkerResult(GetLinkerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkerResult]:
+        ...
 
 def get_linker(
     linker_name: Optional[_builtins.str] = ...,

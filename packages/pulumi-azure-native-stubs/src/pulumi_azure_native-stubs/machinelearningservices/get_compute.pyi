@@ -60,7 +60,8 @@ class GetComputeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetComputeResult(GetComputeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetComputeResult]:
+        ...
 
 def get_compute(
     compute_name: Optional[_builtins.str] = ...,

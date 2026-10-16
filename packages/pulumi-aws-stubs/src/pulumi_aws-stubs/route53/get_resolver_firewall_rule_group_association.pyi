@@ -81,7 +81,10 @@ class GetResolverFirewallRuleGroupAssociationResult:
 class AwaitableGetResolverFirewallRuleGroupAssociationResult(
     GetResolverFirewallRuleGroupAssociationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetResolverFirewallRuleGroupAssociationResult]:
+        ...
 
 def get_resolver_firewall_rule_group_association(
     firewall_rule_group_association_id: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class FhirStoreArgs:
     @pulumi.getter
     def dataset(self) -> pulumi.Input[_builtins.str]: ...
     @dataset.setter
-    def dataset(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complexDataTypeReferenceParsing")
     def complex_data_type_reference_parsing(
@@ -53,14 +54,16 @@ class FhirStoreArgs:
     @complex_data_type_reference_parsing.setter
     def complex_data_type_reference_parsing(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consentConfig")
     def consent_config(self) -> Optional[pulumi.Input[FhirStoreConsentConfigArgs]]: ...
     @consent_config.setter
     def consent_config(
         self, value: Optional[pulumi.Input[FhirStoreConsentConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultSearchHandlingStrict")
     def default_search_handling_strict(
@@ -69,7 +72,8 @@ class FhirStoreArgs:
     @default_search_handling_strict.setter
     def default_search_handling_strict(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableReferentialIntegrity")
     def disable_referential_integrity(
@@ -78,19 +82,24 @@ class FhirStoreArgs:
     @disable_referential_integrity.setter
     def disable_referential_integrity(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableResourceVersioning")
     def disable_resource_versioning(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_resource_versioning.setter
     def disable_resource_versioning(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHistoryImport")
     def enable_history_import(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_history_import.setter
-    def enable_history_import(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_history_import(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHistoryModifications")
     def enable_history_modifications(
@@ -99,12 +108,16 @@ class FhirStoreArgs:
     @enable_history_modifications.setter
     def enable_history_modifications(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableUpdateCreate")
     def enable_update_create(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_update_create.setter
-    def enable_update_create(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_update_create(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -113,12 +126,14 @@ class FhirStoreArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfig")
     @_utilities.deprecated(...)
@@ -128,7 +143,8 @@ class FhirStoreArgs:
     @notification_config.setter
     def notification_config(
         self, value: Optional[pulumi.Input[FhirStoreNotificationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfigs")
     def notification_configs(
@@ -142,7 +158,8 @@ class FhirStoreArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FhirStoreNotificationConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamConfigs")
     def stream_configs(
@@ -154,7 +171,8 @@ class FhirStoreArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FhirStoreStreamConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationConfig")
     def validation_config(
@@ -163,12 +181,14 @@ class FhirStoreArgs:
     @validation_config.setter
     def validation_config(
         self, value: Optional[pulumi.Input[FhirStoreValidationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FhirStoreState:
@@ -215,19 +235,22 @@ class _FhirStoreState:
     @complex_data_type_reference_parsing.setter
     def complex_data_type_reference_parsing(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consentConfig")
     def consent_config(self) -> Optional[pulumi.Input[FhirStoreConsentConfigArgs]]: ...
     @consent_config.setter
     def consent_config(
         self, value: Optional[pulumi.Input[FhirStoreConsentConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dataset(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset.setter
-    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultSearchHandlingStrict")
     def default_search_handling_strict(
@@ -236,7 +259,8 @@ class _FhirStoreState:
     @default_search_handling_strict.setter
     def default_search_handling_strict(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableReferentialIntegrity")
     def disable_referential_integrity(
@@ -245,14 +269,16 @@ class _FhirStoreState:
     @disable_referential_integrity.setter
     def disable_referential_integrity(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableResourceVersioning")
     def disable_resource_versioning(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_resource_versioning.setter
     def disable_resource_versioning(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -261,12 +287,16 @@ class _FhirStoreState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHistoryImport")
     def enable_history_import(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_history_import.setter
-    def enable_history_import(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_history_import(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHistoryModifications")
     def enable_history_modifications(
@@ -275,12 +305,16 @@ class _FhirStoreState:
     @enable_history_modifications.setter
     def enable_history_modifications(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableUpdateCreate")
     def enable_update_create(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_update_create.setter
-    def enable_update_create(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_update_create(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -289,12 +323,14 @@ class _FhirStoreState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfig")
     @_utilities.deprecated(...)
@@ -304,7 +340,8 @@ class _FhirStoreState:
     @notification_config.setter
     def notification_config(
         self, value: Optional[pulumi.Input[FhirStoreNotificationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfigs")
     def notification_configs(
@@ -318,7 +355,8 @@ class _FhirStoreState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FhirStoreNotificationConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -327,12 +365,14 @@ class _FhirStoreState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamConfigs")
     def stream_configs(
@@ -344,7 +384,8 @@ class _FhirStoreState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FhirStoreStreamConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationConfig")
     def validation_config(
@@ -353,12 +394,14 @@ class _FhirStoreState:
     @validation_config.setter
     def validation_config(
         self, value: Optional[pulumi.Input[FhirStoreValidationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:healthcare/fhirStore:FhirStore")
 class FhirStore(pulumi.CustomResource):

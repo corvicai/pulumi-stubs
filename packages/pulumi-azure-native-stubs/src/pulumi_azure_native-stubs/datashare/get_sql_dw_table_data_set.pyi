@@ -64,7 +64,8 @@ class GetSqlDWTableDataSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlDWTableDataSetResult(GetSqlDWTableDataSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlDWTableDataSetResult]:
+        ...
 
 def get_sql_dw_table_data_set(
     account_name: Optional[_builtins.str] = ...,

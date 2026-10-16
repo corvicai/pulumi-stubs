@@ -45,7 +45,8 @@ class GetSnapshotIdsResult:
     def restorable_by_user_ids(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetSnapshotIdsResult(GetSnapshotIdsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotIdsResult]:
+        ...
 
 def get_snapshot_ids(
     filters: Optional[

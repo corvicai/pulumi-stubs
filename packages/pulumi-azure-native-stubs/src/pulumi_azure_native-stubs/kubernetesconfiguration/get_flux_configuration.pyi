@@ -120,7 +120,8 @@ class GetFluxConfigurationResult:
     def wait_for_reconciliation(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetFluxConfigurationResult(GetFluxConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFluxConfigurationResult]:
+        ...
 
 def get_flux_configuration(
     cluster_name: Optional[_builtins.str] = ...,

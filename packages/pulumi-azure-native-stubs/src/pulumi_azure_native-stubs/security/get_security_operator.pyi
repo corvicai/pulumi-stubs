@@ -35,7 +35,8 @@ class GetSecurityOperatorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityOperatorResult(GetSecurityOperatorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityOperatorResult]:
+        ...
 
 def get_security_operator(
     pricing_name: Optional[_builtins.str] = ...,

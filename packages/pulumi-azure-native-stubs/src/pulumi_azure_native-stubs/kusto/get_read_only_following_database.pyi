@@ -90,7 +90,10 @@ class GetReadOnlyFollowingDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReadOnlyFollowingDatabaseResult(GetReadOnlyFollowingDatabaseResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReadOnlyFollowingDatabaseResult]:
+        ...
 
 def get_read_only_following_database(
     cluster_name: Optional[_builtins.str] = ...,

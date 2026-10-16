@@ -36,27 +36,34 @@ class ApplicationArgs:
     @attachments_configuration.setter
     def attachments_configuration(
         self, value: pulumi.Input[ApplicationAttachmentsConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamServiceRoleArn")
     def iam_service_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @iam_service_role_arn.setter
-    def iam_service_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def iam_service_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterInstanceArn")
     def identity_center_instance_arn(self) -> pulumi.Input[_builtins.str]: ...
     @identity_center_instance_arn.setter
-    def identity_center_instance_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def identity_center_instance_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -65,12 +72,14 @@ class ApplicationArgs:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[ApplicationEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -79,12 +88,16 @@ class ApplicationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ApplicationTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ApplicationState:
@@ -114,7 +127,8 @@ class _ApplicationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="attachmentsConfiguration")
     def attachments_configuration(
@@ -123,17 +137,20 @@ class _ApplicationState:
     @attachments_configuration.setter
     def attachments_configuration(
         self, value: Optional[pulumi.Input[ApplicationAttachmentsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -142,12 +159,16 @@ class _ApplicationState:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[ApplicationEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamServiceRoleArn")
     def iam_service_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_service_role_arn.setter
-    def iam_service_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_service_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterApplicationArn")
     def identity_center_application_arn(
@@ -156,19 +177,22 @@ class _ApplicationState:
     @identity_center_application_arn.setter
     def identity_center_application_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterInstanceArn")
     def identity_center_instance_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_center_instance_arn.setter
     def identity_center_instance_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -177,7 +201,8 @@ class _ApplicationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -186,12 +211,16 @@ class _ApplicationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ApplicationTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ApplicationTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:qbusiness/application:Application")
 class Application(pulumi.CustomResource):

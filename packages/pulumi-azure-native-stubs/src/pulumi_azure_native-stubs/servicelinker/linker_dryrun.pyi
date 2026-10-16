@@ -23,12 +23,14 @@ class LinkerDryrunArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dryrunName")
     def dryrun_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dryrun_name.setter
-    def dryrun_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dryrun_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -37,7 +39,8 @@ class LinkerDryrunArgs:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[CreateOrUpdateDryrunParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:servicelinker:LinkerDryrun")
 class LinkerDryrun(pulumi.CustomResource):

@@ -21,7 +21,10 @@ class GetSapVirtualInstanceInvokeDiskConfigurationsResult:
 class AwaitableGetSapVirtualInstanceInvokeDiskConfigurationsResult(
     GetSapVirtualInstanceInvokeDiskConfigurationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSapVirtualInstanceInvokeDiskConfigurationsResult]:
+        ...
 
 def get_sap_virtual_instance_invoke_disk_configurations(
     app_location: Optional[_builtins.str] = ...,

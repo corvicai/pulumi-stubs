@@ -29,7 +29,8 @@ class GetKMSKeyRingResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetKMSKeyRingResult(GetKMSKeyRingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKMSKeyRingResult]:
+        ...
 
 def get_kms_key_ring(
     location: Optional[_builtins.str] = ...,

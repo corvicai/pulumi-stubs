@@ -42,7 +42,10 @@ class GetDataCatalogEncryptionSettingsResult:
 class AwaitableGetDataCatalogEncryptionSettingsResult(
     GetDataCatalogEncryptionSettingsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDataCatalogEncryptionSettingsResult]:
+        ...
 
 def get_data_catalog_encryption_settings(
     catalog_id: Optional[_builtins.str] = ...,

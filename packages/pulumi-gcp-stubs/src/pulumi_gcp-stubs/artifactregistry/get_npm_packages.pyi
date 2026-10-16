@@ -35,7 +35,8 @@ class GetNpmPackagesResult:
     def repository_id(self) -> _builtins.str: ...
 
 class AwaitableGetNpmPackagesResult(GetNpmPackagesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNpmPackagesResult]:
+        ...
 
 def get_npm_packages(
     location: Optional[_builtins.str] = ...,

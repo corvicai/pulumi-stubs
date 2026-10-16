@@ -47,7 +47,8 @@ class GetRepositoryEndpointResult:
     def repository_endpoint(self) -> _builtins.str: ...
 
 class AwaitableGetRepositoryEndpointResult(GetRepositoryEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRepositoryEndpointResult]:
+        ...
 
 def get_repository_endpoint(
     domain: Optional[_builtins.str] = ...,

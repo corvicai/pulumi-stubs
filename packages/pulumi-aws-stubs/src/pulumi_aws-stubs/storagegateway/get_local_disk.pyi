@@ -43,7 +43,8 @@ class GetLocalDiskResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetLocalDiskResult(GetLocalDiskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalDiskResult]:
+        ...
 
 def get_local_disk(
     disk_node: Optional[_builtins.str] = ...,

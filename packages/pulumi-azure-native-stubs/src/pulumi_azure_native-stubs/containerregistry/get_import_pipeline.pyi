@@ -64,7 +64,8 @@ class GetImportPipelineResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetImportPipelineResult(GetImportPipelineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImportPipelineResult]:
+        ...
 
 def get_import_pipeline(
     import_pipeline_name: Optional[_builtins.str] = ...,

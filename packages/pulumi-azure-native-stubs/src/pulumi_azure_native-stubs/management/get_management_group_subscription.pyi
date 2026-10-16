@@ -58,7 +58,10 @@ class GetManagementGroupSubscriptionResult:
 class AwaitableGetManagementGroupSubscriptionResult(
     GetManagementGroupSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagementGroupSubscriptionResult]:
+        ...
 
 def get_management_group_subscription(
     group_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

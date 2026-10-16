@@ -24,7 +24,8 @@ class ListGitLabSubgroupResult:
     def value(self) -> Optional[Sequence[outputs.GitLabGroupResponse]]: ...
 
 class AwaitableListGitLabSubgroupResult(ListGitLabSubgroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListGitLabSubgroupResult]:
+        ...
 
 def list_git_lab_subgroup(
     group_fq_name: Optional[_builtins.str] = ...,

@@ -22,7 +22,10 @@ class ListOpenIdConnectProviderSecretsResult:
 class AwaitableListOpenIdConnectProviderSecretsResult(
     ListOpenIdConnectProviderSecretsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListOpenIdConnectProviderSecretsResult]:
+        ...
 
 def list_open_id_connect_provider_secrets(
     opid: Optional[_builtins.str] = ...,

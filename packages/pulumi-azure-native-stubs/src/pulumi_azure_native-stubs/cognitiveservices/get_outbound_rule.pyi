@@ -44,7 +44,8 @@ class GetOutboundRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOutboundRuleResult(GetOutboundRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOutboundRuleResult]:
+        ...
 
 def get_outbound_rule(
     account_name: Optional[_builtins.str] = ...,

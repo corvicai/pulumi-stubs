@@ -64,7 +64,8 @@ class ListProductDetailsResult:
     def vm_scale_set_enabled(self) -> _builtins.bool: ...
 
 class AwaitableListProductDetailsResult(ListProductDetailsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListProductDetailsResult]:
+        ...
 
 def list_product_details(
     product_name: Optional[_builtins.str] = ...,

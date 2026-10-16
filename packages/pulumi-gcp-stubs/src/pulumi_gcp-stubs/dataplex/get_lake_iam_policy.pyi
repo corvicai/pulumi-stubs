@@ -37,7 +37,8 @@ class GetLakeIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetLakeIamPolicyResult(GetLakeIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLakeIamPolicyResult]:
+        ...
 
 def get_lake_iam_policy(
     lake: Optional[_builtins.str] = ...,

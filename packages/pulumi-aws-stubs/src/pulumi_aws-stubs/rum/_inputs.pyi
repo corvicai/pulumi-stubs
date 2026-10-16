@@ -50,12 +50,14 @@ class AppMonitorAppMonitorConfigurationArgs:
     @pulumi.getter(name="allowCookies")
     def allow_cookies(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_cookies.setter
-    def allow_cookies(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_cookies(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableXray")
     def enable_xray(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_xray.setter
-    def enable_xray(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_xray(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedPages")
     def excluded_pages(
@@ -64,7 +66,8 @@ class AppMonitorAppMonitorConfigurationArgs:
     @excluded_pages.setter
     def excluded_pages(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="favoritePages")
     def favorite_pages(
@@ -73,17 +76,22 @@ class AppMonitorAppMonitorConfigurationArgs:
     @favorite_pages.setter
     def favorite_pages(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guestRoleArn")
     def guest_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @guest_role_arn.setter
-    def guest_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def guest_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityPoolId")
     def identity_pool_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_pool_id.setter
-    def identity_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_pool_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPages")
     def included_pages(
@@ -92,12 +100,16 @@ class AppMonitorAppMonitorConfigurationArgs:
     @included_pages.setter
     def included_pages(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionSampleRate")
     def session_sample_rate(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @session_sample_rate.setter
-    def session_sample_rate(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def session_sample_rate(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def telemetries(
@@ -106,7 +118,8 @@ class AppMonitorAppMonitorConfigurationArgs:
     @telemetries.setter
     def telemetries(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AppMonitorCustomEventsArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
@@ -120,4 +133,5 @@ class AppMonitorCustomEventsArgs:
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

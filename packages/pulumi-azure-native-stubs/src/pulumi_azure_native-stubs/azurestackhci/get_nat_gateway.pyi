@@ -56,7 +56,8 @@ class GetNatGatewayResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNatGatewayResult(GetNatGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNatGatewayResult]:
+        ...
 
 def get_nat_gateway(
     nat_gateway_name: Optional[_builtins.str] = ...,

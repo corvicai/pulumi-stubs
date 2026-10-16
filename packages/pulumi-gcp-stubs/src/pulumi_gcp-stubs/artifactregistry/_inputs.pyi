@@ -84,12 +84,14 @@ class RepositoryCleanupPolicyArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def condition(
@@ -98,7 +100,8 @@ class RepositoryCleanupPolicyArgs:
     @condition.setter
     def condition(
         self, value: Optional[pulumi.Input[RepositoryCleanupPolicyConditionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mostRecentVersions")
     def most_recent_versions(
@@ -108,7 +111,8 @@ class RepositoryCleanupPolicyArgs:
     def most_recent_versions(
         self,
         value: Optional[pulumi.Input[RepositoryCleanupPolicyMostRecentVersionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryCleanupPolicyConditionArgsDict(TypedDict):
     newer_than: NotRequired[pulumi.Input[_builtins.str]]
@@ -144,12 +148,14 @@ class RepositoryCleanupPolicyConditionArgs:
     @pulumi.getter(name="newerThan")
     def newer_than(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @newer_than.setter
-    def newer_than(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def newer_than(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="olderThan")
     def older_than(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @older_than.setter
-    def older_than(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def older_than(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="packageNamePrefixes")
     def package_name_prefixes(
@@ -158,7 +164,8 @@ class RepositoryCleanupPolicyConditionArgs:
     @package_name_prefixes.setter
     def package_name_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagPrefixes")
     def tag_prefixes(
@@ -167,12 +174,14 @@ class RepositoryCleanupPolicyConditionArgs:
     @tag_prefixes.setter
     def tag_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagState")
     def tag_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag_state.setter
-    def tag_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionNamePrefixes")
     def version_name_prefixes(
@@ -181,7 +190,8 @@ class RepositoryCleanupPolicyConditionArgs:
     @version_name_prefixes.setter
     def version_name_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryCleanupPolicyMostRecentVersionsArgsDict(TypedDict):
     keep_count: NotRequired[pulumi.Input[_builtins.int]]
@@ -203,7 +213,8 @@ class RepositoryCleanupPolicyMostRecentVersionsArgs:
     @pulumi.getter(name="keepCount")
     def keep_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @keep_count.setter
-    def keep_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def keep_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="packageNamePrefixes")
     def package_name_prefixes(
@@ -212,7 +223,8 @@ class RepositoryCleanupPolicyMostRecentVersionsArgs:
     @package_name_prefixes.setter
     def package_name_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryDockerConfigArgsDict(TypedDict):
     immutable_tags: NotRequired[pulumi.Input[_builtins.bool]]
@@ -226,7 +238,8 @@ class RepositoryDockerConfigArgs:
     @pulumi.getter(name="immutableTags")
     def immutable_tags(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @immutable_tags.setter
-    def immutable_tags(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def immutable_tags(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class RepositoryIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -246,17 +259,20 @@ class RepositoryIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -276,17 +292,20 @@ class RepositoryIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryMavenConfigArgsDict(TypedDict):
     allow_snapshot_overwrites: NotRequired[pulumi.Input[_builtins.bool]]
@@ -306,12 +325,14 @@ class RepositoryMavenConfigArgs:
     @allow_snapshot_overwrites.setter
     def allow_snapshot_overwrites(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionPolicy")
     def version_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_policy.setter
-    def version_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigArgsDict(TypedDict):
     apt_repository: NotRequired[
@@ -384,7 +405,8 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigAptRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commonRepository")
     def common_repository(
@@ -398,19 +420,22 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigCommonRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableUpstreamValidation")
     def disable_upstream_validation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_upstream_validation.setter
     def disable_upstream_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dockerRepository")
     def docker_repository(
@@ -424,7 +449,8 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigDockerRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mavenRepository")
     def maven_repository(
@@ -438,7 +464,8 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigMavenRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="npmRepository")
     def npm_repository(
@@ -450,7 +477,8 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigNpmRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pythonRepository")
     def python_repository(
@@ -464,7 +492,8 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigPythonRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upstreamCredentials")
     def upstream_credentials(
@@ -478,7 +507,8 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigUpstreamCredentialsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="yumRepository")
     def yum_repository(
@@ -490,7 +520,8 @@ class RepositoryRemoteRepositoryConfigArgs:
         value: Optional[
             pulumi.Input[RepositoryRemoteRepositoryConfigYumRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigAptRepositoryArgsDict(TypedDict):
     public_repository: NotRequired[
@@ -525,7 +556,8 @@ class RepositoryRemoteRepositoryConfigAptRepositoryArgs:
                 RepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryArgsDict(TypedDict):
     repository_base: pulumi.Input[_builtins.str]
@@ -543,12 +575,14 @@ class RepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryArgs:
     @pulumi.getter(name="repositoryBase")
     def repository_base(self) -> pulumi.Input[_builtins.str]: ...
     @repository_base.setter
-    def repository_base(self, value: pulumi.Input[_builtins.str]): ...
+    def repository_base(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repositoryPath")
     def repository_path(self) -> pulumi.Input[_builtins.str]: ...
     @repository_path.setter
-    def repository_path(self, value: pulumi.Input[_builtins.str]): ...
+    def repository_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigCommonRepositoryArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
@@ -560,7 +594,8 @@ class RepositoryRemoteRepositoryConfigCommonRepositoryArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigDockerRepositoryArgsDict(TypedDict):
     custom_repository: NotRequired[
@@ -599,12 +634,16 @@ class RepositoryRemoteRepositoryConfigDockerRepositoryArgs:
                 RepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicRepository")
     def public_repository(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_repository.setter
-    def public_repository(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_repository(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryArgsDict(
     TypedDict
@@ -620,7 +659,8 @@ class RepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigMavenRepositoryArgsDict(TypedDict):
     custom_repository: NotRequired[
@@ -659,12 +699,16 @@ class RepositoryRemoteRepositoryConfigMavenRepositoryArgs:
                 RepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicRepository")
     def public_repository(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_repository.setter
-    def public_repository(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_repository(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryArgsDict(
     TypedDict
@@ -680,7 +724,8 @@ class RepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigNpmRepositoryArgsDict(TypedDict):
     custom_repository: NotRequired[
@@ -717,12 +762,16 @@ class RepositoryRemoteRepositoryConfigNpmRepositoryArgs:
                 RepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicRepository")
     def public_repository(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_repository.setter
-    def public_repository(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_repository(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -736,7 +785,8 @@ class RepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigPythonRepositoryArgsDict(TypedDict):
     custom_repository: NotRequired[
@@ -775,12 +825,16 @@ class RepositoryRemoteRepositoryConfigPythonRepositoryArgs:
                 RepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicRepository")
     def public_repository(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_repository.setter
-    def public_repository(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_repository(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryArgsDict(
     TypedDict
@@ -796,7 +850,8 @@ class RepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigUpstreamCredentialsArgsDict(TypedDict):
     username_password_credentials: NotRequired[
@@ -833,7 +888,8 @@ class RepositoryRemoteRepositoryConfigUpstreamCredentialsArgs:
                 RepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsArgsDict(
     TypedDict
@@ -853,12 +909,16 @@ class RepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredent
     @pulumi.getter(name="passwordSecretVersion")
     def password_secret_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password_secret_version.setter
-    def password_secret_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password_secret_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @username.setter
-    def username(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigYumRepositoryArgsDict(TypedDict):
     public_repository: NotRequired[
@@ -893,7 +953,8 @@ class RepositoryRemoteRepositoryConfigYumRepositoryArgs:
                 RepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryArgsDict(TypedDict):
     repository_base: pulumi.Input[_builtins.str]
@@ -911,12 +972,14 @@ class RepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryArgs:
     @pulumi.getter(name="repositoryBase")
     def repository_base(self) -> pulumi.Input[_builtins.str]: ...
     @repository_base.setter
-    def repository_base(self, value: pulumi.Input[_builtins.str]): ...
+    def repository_base(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repositoryPath")
     def repository_path(self) -> pulumi.Input[_builtins.str]: ...
     @repository_path.setter
-    def repository_path(self, value: pulumi.Input[_builtins.str]): ...
+    def repository_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RepositoryVirtualRepositoryConfigArgsDict(TypedDict):
     upstream_policies: NotRequired[
@@ -959,7 +1022,8 @@ class RepositoryVirtualRepositoryConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryVirtualRepositoryConfigUpstreamPolicyArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -979,17 +1043,20 @@ class RepositoryVirtualRepositoryConfigUpstreamPolicyArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def repository(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @repository.setter
-    def repository(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def repository(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryVulnerabilityScanningConfigArgsDict(TypedDict):
     enablement_config: NotRequired[pulumi.Input[_builtins.str]]
@@ -1009,14 +1076,23 @@ class RepositoryVulnerabilityScanningConfigArgs:
     @pulumi.getter(name="enablementConfig")
     def enablement_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enablement_config.setter
-    def enablement_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enablement_config(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablementState")
     def enablement_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enablement_state.setter
-    def enablement_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enablement_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablementStateReason")
     def enablement_state_reason(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enablement_state_reason.setter
-    def enablement_state_reason(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enablement_state_reason(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...

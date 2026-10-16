@@ -23,7 +23,10 @@ class ListIntegrationRuntimeAuthKeyResult:
     def auth_key2(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListIntegrationRuntimeAuthKeyResult(ListIntegrationRuntimeAuthKeyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIntegrationRuntimeAuthKeyResult]:
+        ...
 
 def list_integration_runtime_auth_key(
     integration_runtime_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class ListQueueKeysResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListQueueKeysResult(ListQueueKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListQueueKeysResult]:
+        ...
 
 def list_queue_keys(
     authorization_rule_name: Optional[_builtins.str] = ...,

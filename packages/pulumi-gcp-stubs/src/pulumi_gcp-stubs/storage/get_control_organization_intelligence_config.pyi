@@ -60,7 +60,10 @@ class GetControlOrganizationIntelligenceConfigResult:
 class AwaitableGetControlOrganizationIntelligenceConfigResult(
     GetControlOrganizationIntelligenceConfigResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetControlOrganizationIntelligenceConfigResult]:
+        ...
 
 def get_control_organization_intelligence_config(
     name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

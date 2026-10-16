@@ -123,7 +123,8 @@ class GetAndroidMAMPolicyByNameResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAndroidMAMPolicyByNameResult(GetAndroidMAMPolicyByNameResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAndroidMAMPolicyByNameResult]:
+        ...
 
 def get_android_mam_policy_by_name(
     host_name: Optional[_builtins.str] = ...,

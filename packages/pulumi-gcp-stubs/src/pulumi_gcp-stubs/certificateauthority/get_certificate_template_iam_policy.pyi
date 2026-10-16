@@ -45,7 +45,10 @@ class GetCertificateTemplateIamPolicyResult:
 class AwaitableGetCertificateTemplateIamPolicyResult(
     GetCertificateTemplateIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCertificateTemplateIamPolicyResult]:
+        ...
 
 def get_certificate_template_iam_policy(
     certificate_template: Optional[_builtins.str] = ...,

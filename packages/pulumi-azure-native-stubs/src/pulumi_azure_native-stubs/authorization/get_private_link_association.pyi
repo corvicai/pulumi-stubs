@@ -37,7 +37,8 @@ class GetPrivateLinkAssociationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateLinkAssociationResult(GetPrivateLinkAssociationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateLinkAssociationResult]:
+        ...
 
 def get_private_link_association(
     group_id: Optional[_builtins.str] = ...,

@@ -29,7 +29,10 @@ class AzureMonitorConfigurationArgs:
     @pulumi.getter(name="azureMonitorWorkspaceId")
     def azure_monitor_workspace_id(self) -> pulumi.Input[_builtins.str]: ...
     @azure_monitor_workspace_id.setter
-    def azure_monitor_workspace_id(self, value: pulumi.Input[_builtins.str]): ...
+    def azure_monitor_workspace_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class ChangeTrackingConfigurationArgsDict(TypedDict):
     log_analytics_workspace_id: pulumi.Input[_builtins.str]
@@ -43,7 +46,10 @@ class ChangeTrackingConfigurationArgs:
     @pulumi.getter(name="logAnalyticsWorkspaceId")
     def log_analytics_workspace_id(self) -> pulumi.Input[_builtins.str]: ...
     @log_analytics_workspace_id.setter
-    def log_analytics_workspace_id(self, value: pulumi.Input[_builtins.str]): ...
+    def log_analytics_workspace_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class DesiredConfigurationArgsDict(TypedDict):
     azure_monitor_insights: pulumi.Input[AzureMonitorConfigurationArgsDict]
@@ -77,7 +83,8 @@ class DesiredConfigurationArgs:
     @azure_monitor_insights.setter
     def azure_monitor_insights(
         self, value: pulumi.Input[AzureMonitorConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="changeTrackingAndInventory")
     def change_tracking_and_inventory(
@@ -86,12 +93,16 @@ class DesiredConfigurationArgs:
     @change_tracking_and_inventory.setter
     def change_tracking_and_inventory(
         self, value: pulumi.Input[ChangeTrackingConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentityId")
     def user_assigned_managed_identity_id(self) -> pulumi.Input[_builtins.str]: ...
     @user_assigned_managed_identity_id.setter
-    def user_assigned_managed_identity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def user_assigned_managed_identity_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defenderCspm")
     def defender_cspm(
@@ -101,7 +112,8 @@ class DesiredConfigurationArgs:
     def defender_cspm(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DesiredEnablementState]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defenderForServers")
     def defender_for_servers(
@@ -111,7 +123,8 @@ class DesiredConfigurationArgs:
     def defender_for_servers(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DesiredEnablementState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedOpsPropertiesArgsDict(TypedDict):
     desired_configuration: pulumi.Input[DesiredConfigurationArgsDict]
@@ -125,4 +138,7 @@ class ManagedOpsPropertiesArgs:
     @pulumi.getter(name="desiredConfiguration")
     def desired_configuration(self) -> pulumi.Input[DesiredConfigurationArgs]: ...
     @desired_configuration.setter
-    def desired_configuration(self, value: pulumi.Input[DesiredConfigurationArgs]): ...
+    def desired_configuration(
+        self, value: pulumi.Input[DesiredConfigurationArgs]
+    ):  # -> None:
+        ...

@@ -54,7 +54,10 @@ class GetManagementGroupNetworkManagerConnectionResult:
 class AwaitableGetManagementGroupNetworkManagerConnectionResult(
     GetManagementGroupNetworkManagerConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagementGroupNetworkManagerConnectionResult]:
+        ...
 
 def get_management_group_network_manager_connection(
     management_group_id: Optional[_builtins.str] = ...,

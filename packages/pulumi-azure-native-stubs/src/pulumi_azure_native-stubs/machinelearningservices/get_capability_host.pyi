@@ -44,7 +44,8 @@ class GetCapabilityHostResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCapabilityHostResult(GetCapabilityHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapabilityHostResult]:
+        ...
 
 def get_capability_host(
     name: Optional[_builtins.str] = ...,

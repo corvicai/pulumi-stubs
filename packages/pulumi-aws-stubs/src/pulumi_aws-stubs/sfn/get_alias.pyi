@@ -49,7 +49,8 @@ class GetAliasResult:
     def statemachine_arn(self) -> _builtins.str: ...
 
 class AwaitableGetAliasResult(GetAliasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAliasResult]:
+        ...
 
 def get_alias(
     description: Optional[_builtins.str] = ...,

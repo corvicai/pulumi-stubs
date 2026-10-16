@@ -52,7 +52,8 @@ class GetRaiTopicResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRaiTopicResult(GetRaiTopicResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRaiTopicResult]:
+        ...
 
 def get_rai_topic(
     account_name: Optional[_builtins.str] = ...,

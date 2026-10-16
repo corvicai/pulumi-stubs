@@ -60,7 +60,8 @@ class GetPreRuleCountersResult:
     def timestamp(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPreRuleCountersResult(GetPreRuleCountersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPreRuleCountersResult]:
+        ...
 
 def get_pre_rule_counters(
     firewall_name: Optional[_builtins.str] = ...,

@@ -75,7 +75,8 @@ class GetOdbSubnetResult:
     def state(self) -> _builtins.str: ...
 
 class AwaitableGetOdbSubnetResult(GetOdbSubnetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOdbSubnetResult]:
+        ...
 
 def get_odb_subnet(
     location: Optional[_builtins.str] = ...,

@@ -32,12 +32,16 @@ class WorkspaceNetworkAccessControlArgs:
     @prefix_list_ids.setter
     def prefix_list_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpceIds")
     def vpce_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @vpce_ids.setter
-    def vpce_ids(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def vpce_ids(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class WorkspaceVpcConfigurationArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -59,11 +63,13 @@ class WorkspaceVpcConfigurationArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...

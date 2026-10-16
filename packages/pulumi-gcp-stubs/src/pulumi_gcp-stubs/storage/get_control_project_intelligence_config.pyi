@@ -58,7 +58,10 @@ class GetControlProjectIntelligenceConfigResult:
 class AwaitableGetControlProjectIntelligenceConfigResult(
     GetControlProjectIntelligenceConfigResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetControlProjectIntelligenceConfigResult]:
+        ...
 
 def get_control_project_intelligence_config(
     name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

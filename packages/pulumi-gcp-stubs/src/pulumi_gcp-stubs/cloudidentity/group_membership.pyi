@@ -26,7 +26,8 @@ class GroupMembershipArgs:
     @pulumi.getter
     def group(self) -> pulumi.Input[_builtins.str]: ...
     @group.setter
-    def group(self, value: pulumi.Input[_builtins.str]): ...
+    def group(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -35,7 +36,8 @@ class GroupMembershipArgs:
     @roles.setter
     def roles(
         self, value: pulumi.Input[Sequence[pulumi.Input[GroupMembershipRoleArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createIgnoreAlreadyExists")
     def create_ignore_already_exists(
@@ -44,14 +46,16 @@ class GroupMembershipArgs:
     @create_ignore_already_exists.setter
     def create_ignore_already_exists(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memberKey")
     def member_key(self) -> Optional[pulumi.Input[GroupMembershipMemberKeyArgs]]: ...
     @member_key.setter
     def member_key(
         self, value: Optional[pulumi.Input[GroupMembershipMemberKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredMemberKey")
     def preferred_member_key(
@@ -60,7 +64,8 @@ class GroupMembershipArgs:
     @preferred_member_key.setter
     def preferred_member_key(
         self, value: Optional[pulumi.Input[GroupMembershipPreferredMemberKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GroupMembershipState:
@@ -89,29 +94,34 @@ class _GroupMembershipState:
     @create_ignore_already_exists.setter
     def create_ignore_already_exists(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group.setter
-    def group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memberKey")
     def member_key(self) -> Optional[pulumi.Input[GroupMembershipMemberKeyArgs]]: ...
     @member_key.setter
     def member_key(
         self, value: Optional[pulumi.Input[GroupMembershipMemberKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredMemberKey")
     def preferred_member_key(
@@ -120,7 +130,8 @@ class _GroupMembershipState:
     @preferred_member_key.setter
     def preferred_member_key(
         self, value: Optional[pulumi.Input[GroupMembershipPreferredMemberKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -130,17 +141,20 @@ class _GroupMembershipState:
     def roles(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[GroupMembershipRoleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:cloudidentity/groupMembership:GroupMembership")
 class GroupMembership(pulumi.CustomResource):

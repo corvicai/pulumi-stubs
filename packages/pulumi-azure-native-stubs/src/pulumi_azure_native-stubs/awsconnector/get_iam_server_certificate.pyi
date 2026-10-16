@@ -52,7 +52,8 @@ class GetIamServerCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamServerCertificateResult(GetIamServerCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamServerCertificateResult]:
+        ...
 
 def get_iam_server_certificate(
     name: Optional[_builtins.str] = ...,

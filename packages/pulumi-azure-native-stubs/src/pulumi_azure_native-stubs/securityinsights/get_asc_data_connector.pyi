@@ -56,7 +56,8 @@ class GetASCDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetASCDataConnectorResult(GetASCDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetASCDataConnectorResult]:
+        ...
 
 def get_asc_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

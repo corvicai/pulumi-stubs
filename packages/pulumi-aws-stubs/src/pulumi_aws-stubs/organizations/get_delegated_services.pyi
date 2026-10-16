@@ -29,7 +29,8 @@ class GetDelegatedServicesResult:
     def id(self) -> _builtins.str: ...
 
 class AwaitableGetDelegatedServicesResult(GetDelegatedServicesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDelegatedServicesResult]:
+        ...
 
 def get_delegated_services(
     account_id: Optional[_builtins.str] = ...,

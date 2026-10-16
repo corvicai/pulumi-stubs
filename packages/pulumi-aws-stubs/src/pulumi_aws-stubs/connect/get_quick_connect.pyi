@@ -58,7 +58,8 @@ class GetQuickConnectResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetQuickConnectResult(GetQuickConnectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQuickConnectResult]:
+        ...
 
 def get_quick_connect(
     instance_id: Optional[_builtins.str] = ...,

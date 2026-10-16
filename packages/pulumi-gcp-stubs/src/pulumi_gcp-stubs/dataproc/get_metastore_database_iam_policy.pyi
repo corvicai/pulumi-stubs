@@ -47,7 +47,10 @@ class GetMetastoreDatabaseIamPolicyResult:
     def service_id(self) -> _builtins.str: ...
 
 class AwaitableGetMetastoreDatabaseIamPolicyResult(GetMetastoreDatabaseIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMetastoreDatabaseIamPolicyResult]:
+        ...
 
 def get_metastore_database_iam_policy(
     database: Optional[_builtins.str] = ...,

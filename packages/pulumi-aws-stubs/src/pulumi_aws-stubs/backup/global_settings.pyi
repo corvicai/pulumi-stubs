@@ -22,7 +22,8 @@ class GlobalSettingsArgs:
     @global_settings.setter
     def global_settings(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GlobalSettingsState:
@@ -41,7 +42,8 @@ class _GlobalSettingsState:
     @global_settings.setter
     def global_settings(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:backup/globalSettings:GlobalSettings")
 class GlobalSettings(pulumi.CustomResource):

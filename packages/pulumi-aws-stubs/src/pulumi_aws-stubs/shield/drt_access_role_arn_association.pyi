@@ -21,7 +21,8 @@ class DrtAccessRoleArnAssociationArgs:
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -30,7 +31,8 @@ class DrtAccessRoleArnAssociationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DrtAccessRoleArnAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DrtAccessRoleArnAssociationState:
@@ -44,7 +46,8 @@ class _DrtAccessRoleArnAssociationState:
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -53,7 +56,8 @@ class _DrtAccessRoleArnAssociationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DrtAccessRoleArnAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DrtAccessRoleArnAssociation(pulumi.CustomResource):

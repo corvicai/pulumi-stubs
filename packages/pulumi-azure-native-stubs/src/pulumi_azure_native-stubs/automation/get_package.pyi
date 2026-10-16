@@ -76,7 +76,8 @@ class GetPackageResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPackageResult(GetPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPackageResult]:
+        ...
 
 def get_package(
     automation_account_name: Optional[_builtins.str] = ...,

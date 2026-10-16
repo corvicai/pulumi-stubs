@@ -22,7 +22,8 @@ class GetSAPSupportedSkuResult:
     def supported_skus(self) -> Optional[Sequence[outputs.SAPSupportedSkuResponse]]: ...
 
 class AwaitableGetSAPSupportedSkuResult(GetSAPSupportedSkuResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSAPSupportedSkuResult]:
+        ...
 
 def get_sap_supported_sku(
     app_location: Optional[_builtins.str] = ...,

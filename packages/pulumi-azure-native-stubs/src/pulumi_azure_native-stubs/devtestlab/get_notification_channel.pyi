@@ -80,7 +80,8 @@ class GetNotificationChannelResult:
     def web_hook_url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNotificationChannelResult(GetNotificationChannelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNotificationChannelResult]:
+        ...
 
 def get_notification_channel(
     expand: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetGarnetClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGarnetClusterResult(GetGarnetClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGarnetClusterResult]:
+        ...
 
 def get_garnet_cluster(
     cluster_name: Optional[_builtins.str] = ...,

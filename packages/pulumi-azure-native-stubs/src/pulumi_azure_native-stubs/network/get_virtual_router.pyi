@@ -72,7 +72,8 @@ class GetVirtualRouterResult:
     def virtual_router_ips(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetVirtualRouterResult(GetVirtualRouterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualRouterResult]:
+        ...
 
 def get_virtual_router(
     expand: Optional[_builtins.str] = ...,

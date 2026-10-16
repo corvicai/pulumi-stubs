@@ -68,7 +68,8 @@ class GetChannelResult:
     def zones(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetChannelResult(GetChannelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetChannelResult]:
+        ...
 
 def get_channel(
     channel_name: Optional[_builtins.str] = ...,

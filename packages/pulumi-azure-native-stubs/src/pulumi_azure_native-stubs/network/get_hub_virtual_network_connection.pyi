@@ -66,7 +66,10 @@ class GetHubVirtualNetworkConnectionResult:
 class AwaitableGetHubVirtualNetworkConnectionResult(
     GetHubVirtualNetworkConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetHubVirtualNetworkConnectionResult]:
+        ...
 
 def get_hub_virtual_network_connection(
     connection_name: Optional[_builtins.str] = ...,

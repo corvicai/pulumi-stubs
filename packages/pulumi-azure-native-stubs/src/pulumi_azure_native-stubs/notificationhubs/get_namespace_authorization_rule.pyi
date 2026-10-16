@@ -84,7 +84,10 @@ class GetNamespaceAuthorizationRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNamespaceAuthorizationRuleResult(GetNamespaceAuthorizationRuleResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNamespaceAuthorizationRuleResult]:
+        ...
 
 def get_namespace_authorization_rule(
     authorization_rule_name: Optional[_builtins.str] = ...,

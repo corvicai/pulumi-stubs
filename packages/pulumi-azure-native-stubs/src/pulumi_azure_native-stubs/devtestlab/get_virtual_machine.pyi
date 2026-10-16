@@ -200,7 +200,8 @@ class GetVirtualMachineResult:
     def virtual_machine_creation_source(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualMachineResult(GetVirtualMachineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualMachineResult]:
+        ...
 
 def get_virtual_machine(
     expand: Optional[_builtins.str] = ...,

@@ -87,7 +87,8 @@ class GetSecurityGroupRuleResult:
     def to_port(self) -> _builtins.int: ...
 
 class AwaitableGetSecurityGroupRuleResult(GetSecurityGroupRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityGroupRuleResult]:
+        ...
 
 def get_security_group_rule(
     filters: Optional[

@@ -47,7 +47,8 @@ class GetRegisteredAsnResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegisteredAsnResult(GetRegisteredAsnResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegisteredAsnResult]:
+        ...
 
 def get_registered_asn(
     peering_name: Optional[_builtins.str] = ...,

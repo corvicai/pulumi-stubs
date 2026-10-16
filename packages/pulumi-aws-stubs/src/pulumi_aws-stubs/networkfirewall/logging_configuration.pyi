@@ -25,7 +25,8 @@ class LoggingConfigurationArgs:
     @pulumi.getter(name="firewallArn")
     def firewall_arn(self) -> pulumi.Input[_builtins.str]: ...
     @firewall_arn.setter
-    def firewall_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def firewall_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfiguration")
     def logging_configuration(
@@ -34,19 +35,22 @@ class LoggingConfigurationArgs:
     @logging_configuration.setter
     def logging_configuration(
         self, value: pulumi.Input[LoggingConfigurationLoggingConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMonitoringDashboard")
     def enable_monitoring_dashboard(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_monitoring_dashboard.setter
     def enable_monitoring_dashboard(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LoggingConfigurationState:
@@ -66,12 +70,14 @@ class _LoggingConfigurationState:
     @enable_monitoring_dashboard.setter
     def enable_monitoring_dashboard(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallArn")
     def firewall_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @firewall_arn.setter
-    def firewall_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def firewall_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfiguration")
     def logging_configuration(
@@ -81,12 +87,14 @@ class _LoggingConfigurationState:
     def logging_configuration(
         self,
         value: Optional[pulumi.Input[LoggingConfigurationLoggingConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class LoggingConfiguration(pulumi.CustomResource):

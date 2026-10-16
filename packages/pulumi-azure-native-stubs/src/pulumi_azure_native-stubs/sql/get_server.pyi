@@ -116,7 +116,8 @@ class GetServerResult:
     def workspace_feature(self) -> _builtins.str: ...
 
 class AwaitableGetServerResult(GetServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerResult]:
+        ...
 
 def get_server(
     expand: Optional[_builtins.str] = ...,

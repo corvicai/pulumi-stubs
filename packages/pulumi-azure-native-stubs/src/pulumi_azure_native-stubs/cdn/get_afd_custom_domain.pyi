@@ -82,7 +82,8 @@ class GetAFDCustomDomainResult:
     def validation_properties(self) -> outputs.DomainValidationPropertiesResponse: ...
 
 class AwaitableGetAFDCustomDomainResult(GetAFDCustomDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAFDCustomDomainResult]:
+        ...
 
 def get_afd_custom_domain(
     custom_domain_name: Optional[_builtins.str] = ...,

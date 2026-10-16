@@ -52,7 +52,8 @@ class GetNetworkFirewallFirewallResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkFirewallFirewallResult(GetNetworkFirewallFirewallResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkFirewallFirewallResult]:
+        ...
 
 def get_network_firewall_firewall(
     name: Optional[_builtins.str] = ...,

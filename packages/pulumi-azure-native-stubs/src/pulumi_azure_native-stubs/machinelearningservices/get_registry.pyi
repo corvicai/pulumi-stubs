@@ -98,7 +98,8 @@ class GetRegistryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryResult(GetRegistryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryResult]:
+        ...
 
 def get_registry(
     registry_name: Optional[_builtins.str] = ...,

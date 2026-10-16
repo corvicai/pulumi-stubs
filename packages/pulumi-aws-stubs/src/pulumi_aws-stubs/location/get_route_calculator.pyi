@@ -55,7 +55,8 @@ class GetRouteCalculatorResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetRouteCalculatorResult(GetRouteCalculatorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteCalculatorResult]:
+        ...
 
 def get_route_calculator(
     calculator_name: Optional[_builtins.str] = ...,

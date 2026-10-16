@@ -55,7 +55,8 @@ class GetTokenResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTokenResult(GetTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTokenResult]:
+        ...
 
 def get_token(
     registry_name: Optional[_builtins.str] = ...,

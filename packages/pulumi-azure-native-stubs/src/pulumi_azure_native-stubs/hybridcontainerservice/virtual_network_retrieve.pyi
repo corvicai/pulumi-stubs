@@ -27,7 +27,8 @@ class VirtualNetworkRetrieveArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(
@@ -36,19 +37,22 @@ class VirtualNetworkRetrieveArgs:
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[VirtualNetworksExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(self) -> Optional[pulumi.Input[VirtualNetworksPropertiesArgs]]: ...
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[VirtualNetworksPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -57,12 +61,16 @@ class VirtualNetworkRetrieveArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworksName")
     def virtual_networks_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_networks_name.setter
-    def virtual_networks_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_networks_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class VirtualNetworkRetrieve(pulumi.CustomResource):

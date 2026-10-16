@@ -52,7 +52,8 @@ class GetRaiPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRaiPolicyResult(GetRaiPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRaiPolicyResult]:
+        ...
 
 def get_rai_policy(
     account_name: Optional[_builtins.str] = ...,

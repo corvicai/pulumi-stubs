@@ -52,7 +52,8 @@ class GetEc2SubnetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2SubnetResult(GetEc2SubnetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2SubnetResult]:
+        ...
 
 def get_ec2_subnet(
     name: Optional[_builtins.str] = ...,

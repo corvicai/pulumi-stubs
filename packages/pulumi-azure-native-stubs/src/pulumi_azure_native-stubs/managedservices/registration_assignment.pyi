@@ -22,7 +22,8 @@ class RegistrationAssignmentArgs:
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -31,14 +32,16 @@ class RegistrationAssignmentArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[RegistrationAssignmentPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationAssignmentId")
     def registration_assignment_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_assignment_id.setter
     def registration_assignment_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RegistrationAssignment(pulumi.CustomResource):

@@ -34,7 +34,8 @@ class GetProductApiLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProductApiLinkResult(GetProductApiLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProductApiLinkResult]:
+        ...
 
 def get_product_api_link(
     api_link_id: Optional[_builtins.str] = ...,

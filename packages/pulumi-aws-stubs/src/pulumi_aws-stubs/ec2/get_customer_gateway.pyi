@@ -65,7 +65,8 @@ class GetCustomerGatewayResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCustomerGatewayResult(GetCustomerGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomerGatewayResult]:
+        ...
 
 def get_customer_gateway(
     filters: Optional[

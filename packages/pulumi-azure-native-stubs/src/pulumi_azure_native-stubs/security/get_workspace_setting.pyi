@@ -43,7 +43,8 @@ class GetWorkspaceSettingResult:
     def workspace_id(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceSettingResult(GetWorkspaceSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceSettingResult]:
+        ...
 
 def get_workspace_setting(
     workspace_setting_name: Optional[_builtins.str] = ...,

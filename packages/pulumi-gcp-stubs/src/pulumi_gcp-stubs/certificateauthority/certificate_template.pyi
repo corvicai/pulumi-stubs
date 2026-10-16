@@ -34,12 +34,14 @@ class CertificateTemplateArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityConstraints")
     def identity_constraints(
@@ -48,7 +50,8 @@ class CertificateTemplateArgs:
     @identity_constraints.setter
     def identity_constraints(
         self, value: Optional[pulumi.Input[CertificateTemplateIdentityConstraintsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -57,17 +60,22 @@ class CertificateTemplateArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumLifetime")
     def maximum_lifetime(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @maximum_lifetime.setter
-    def maximum_lifetime(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def maximum_lifetime(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passthroughExtensions")
     def passthrough_extensions(
@@ -77,7 +85,8 @@ class CertificateTemplateArgs:
     def passthrough_extensions(
         self,
         value: Optional[pulumi.Input[CertificateTemplatePassthroughExtensionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predefinedValues")
     def predefined_values(
@@ -86,12 +95,14 @@ class CertificateTemplateArgs:
     @predefined_values.setter
     def predefined_values(
         self, value: Optional[pulumi.Input[CertificateTemplatePredefinedValuesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CertificateTemplateState:
@@ -126,12 +137,14 @@ class _CertificateTemplateState:
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -140,7 +153,8 @@ class _CertificateTemplateState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityConstraints")
     def identity_constraints(
@@ -149,7 +163,8 @@ class _CertificateTemplateState:
     @identity_constraints.setter
     def identity_constraints(
         self, value: Optional[pulumi.Input[CertificateTemplateIdentityConstraintsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -158,22 +173,28 @@ class _CertificateTemplateState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumLifetime")
     def maximum_lifetime(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @maximum_lifetime.setter
-    def maximum_lifetime(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def maximum_lifetime(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passthroughExtensions")
     def passthrough_extensions(
@@ -183,7 +204,8 @@ class _CertificateTemplateState:
     def passthrough_extensions(
         self,
         value: Optional[pulumi.Input[CertificateTemplatePassthroughExtensionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predefinedValues")
     def predefined_values(
@@ -192,12 +214,14 @@ class _CertificateTemplateState:
     @predefined_values.setter
     def predefined_values(
         self, value: Optional[pulumi.Input[CertificateTemplatePredefinedValuesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -206,12 +230,14 @@ class _CertificateTemplateState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CertificateTemplate(pulumi.CustomResource):

@@ -21,7 +21,8 @@ class ListBotSecretsResult:
     def secrets(self) -> Optional[Sequence[outputs.HealthBotKeyResponse]]: ...
 
 class AwaitableListBotSecretsResult(ListBotSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListBotSecretsResult]:
+        ...
 
 def list_bot_secrets(
     bot_name: Optional[_builtins.str] = ...,

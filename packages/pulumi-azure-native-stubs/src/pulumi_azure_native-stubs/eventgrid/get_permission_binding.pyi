@@ -60,7 +60,8 @@ class GetPermissionBindingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPermissionBindingResult(GetPermissionBindingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPermissionBindingResult]:
+        ...
 
 def get_permission_binding(
     namespace_name: Optional[_builtins.str] = ...,

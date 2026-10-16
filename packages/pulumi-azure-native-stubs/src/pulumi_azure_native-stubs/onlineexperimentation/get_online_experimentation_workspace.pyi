@@ -64,7 +64,10 @@ class GetOnlineExperimentationWorkspaceResult:
 class AwaitableGetOnlineExperimentationWorkspaceResult(
     GetOnlineExperimentationWorkspaceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOnlineExperimentationWorkspaceResult]:
+        ...
 
 def get_online_experimentation_workspace(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -94,7 +94,8 @@ class GetDscConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDscConfigurationResult(GetDscConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDscConfigurationResult]:
+        ...
 
 def get_dsc_configuration(
     automation_account_name: Optional[_builtins.str] = ...,

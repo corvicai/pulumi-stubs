@@ -23,7 +23,8 @@ class ListOnlineEndpointKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListOnlineEndpointKeysResult(ListOnlineEndpointKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListOnlineEndpointKeysResult]:
+        ...
 
 def list_online_endpoint_keys(
     endpoint_name: Optional[_builtins.str] = ...,

@@ -25,7 +25,10 @@ class IdentityArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[Union[_builtins.str, Type]]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, Type]]]): ...
+    def type(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Type]]]
+    ):  # -> None:
+        ...
 
 class TableLevelSharingPropertiesArgsDict(TypedDict):
     external_tables_to_exclude: NotRequired[
@@ -75,7 +78,8 @@ class TableLevelSharingPropertiesArgs:
     @external_tables_to_exclude.setter
     def external_tables_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalTablesToInclude")
     def external_tables_to_include(
@@ -84,7 +88,8 @@ class TableLevelSharingPropertiesArgs:
     @external_tables_to_include.setter
     def external_tables_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="materializedViewsToExclude")
     def materialized_views_to_exclude(
@@ -93,7 +98,8 @@ class TableLevelSharingPropertiesArgs:
     @materialized_views_to_exclude.setter
     def materialized_views_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="materializedViewsToInclude")
     def materialized_views_to_include(
@@ -102,7 +108,8 @@ class TableLevelSharingPropertiesArgs:
     @materialized_views_to_include.setter
     def materialized_views_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tablesToExclude")
     def tables_to_exclude(
@@ -111,7 +118,8 @@ class TableLevelSharingPropertiesArgs:
     @tables_to_exclude.setter
     def tables_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tablesToInclude")
     def tables_to_include(
@@ -120,4 +128,5 @@ class TableLevelSharingPropertiesArgs:
     @tables_to_include.setter
     def tables_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

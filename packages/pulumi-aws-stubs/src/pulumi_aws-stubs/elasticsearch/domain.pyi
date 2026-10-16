@@ -52,7 +52,8 @@ class DomainArgs:
     @access_policies.setter
     def access_policies(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyDocumentArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedOptions")
     def advanced_options(
@@ -61,7 +62,8 @@ class DomainArgs:
     @advanced_options.setter
     def advanced_options(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedSecurityOptions")
     def advanced_security_options(
@@ -70,7 +72,8 @@ class DomainArgs:
     @advanced_security_options.setter
     def advanced_security_options(
         self, value: Optional[pulumi.Input[DomainAdvancedSecurityOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoTuneOptions")
     def auto_tune_options(
@@ -79,21 +82,24 @@ class DomainArgs:
     @auto_tune_options.setter
     def auto_tune_options(
         self, value: Optional[pulumi.Input[DomainAutoTuneOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterConfig")
     def cluster_config(self) -> Optional[pulumi.Input[DomainClusterConfigArgs]]: ...
     @cluster_config.setter
     def cluster_config(
         self, value: Optional[pulumi.Input[DomainClusterConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cognitoOptions")
     def cognito_options(self) -> Optional[pulumi.Input[DomainCognitoOptionsArgs]]: ...
     @cognito_options.setter
     def cognito_options(
         self, value: Optional[pulumi.Input[DomainCognitoOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainEndpointOptions")
     def domain_endpoint_options(
@@ -102,29 +108,38 @@ class DomainArgs:
     @domain_endpoint_options.setter
     def domain_endpoint_options(
         self, value: Optional[pulumi.Input[DomainDomainEndpointOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsOptions")
     def ebs_options(self) -> Optional[pulumi.Input[DomainEbsOptionsArgs]]: ...
     @ebs_options.setter
-    def ebs_options(self, value: Optional[pulumi.Input[DomainEbsOptionsArgs]]): ...
+    def ebs_options(
+        self, value: Optional[pulumi.Input[DomainEbsOptionsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticsearchVersion")
     def elasticsearch_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @elasticsearch_version.setter
-    def elasticsearch_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def elasticsearch_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptAtRest")
     def encrypt_at_rest(self) -> Optional[pulumi.Input[DomainEncryptAtRestArgs]]: ...
     @encrypt_at_rest.setter
     def encrypt_at_rest(
         self, value: Optional[pulumi.Input[DomainEncryptAtRestArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logPublishingOptions")
     def log_publishing_options(
@@ -138,7 +153,8 @@ class DomainArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DomainLogPublishingOptionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeToNodeEncryption")
     def node_to_node_encryption(
@@ -147,19 +163,22 @@ class DomainArgs:
     @node_to_node_encryption.setter
     def node_to_node_encryption(
         self, value: Optional[pulumi.Input[DomainNodeToNodeEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotOptions")
     def snapshot_options(self) -> Optional[pulumi.Input[DomainSnapshotOptionsArgs]]: ...
     @snapshot_options.setter
     def snapshot_options(
         self, value: Optional[pulumi.Input[DomainSnapshotOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -168,12 +187,16 @@ class DomainArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcOptions")
     def vpc_options(self) -> Optional[pulumi.Input[DomainVpcOptionsArgs]]: ...
     @vpc_options.setter
-    def vpc_options(self, value: Optional[pulumi.Input[DomainVpcOptionsArgs]]): ...
+    def vpc_options(
+        self, value: Optional[pulumi.Input[DomainVpcOptionsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DomainState:
@@ -225,7 +248,8 @@ class _DomainState:
     @access_policies.setter
     def access_policies(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyDocumentArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedOptions")
     def advanced_options(
@@ -234,7 +258,8 @@ class _DomainState:
     @advanced_options.setter
     def advanced_options(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedSecurityOptions")
     def advanced_security_options(
@@ -243,12 +268,14 @@ class _DomainState:
     @advanced_security_options.setter
     def advanced_security_options(
         self, value: Optional[pulumi.Input[DomainAdvancedSecurityOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoTuneOptions")
     def auto_tune_options(
@@ -257,21 +284,24 @@ class _DomainState:
     @auto_tune_options.setter
     def auto_tune_options(
         self, value: Optional[pulumi.Input[DomainAutoTuneOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterConfig")
     def cluster_config(self) -> Optional[pulumi.Input[DomainClusterConfigArgs]]: ...
     @cluster_config.setter
     def cluster_config(
         self, value: Optional[pulumi.Input[DomainClusterConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cognitoOptions")
     def cognito_options(self) -> Optional[pulumi.Input[DomainCognitoOptionsArgs]]: ...
     @cognito_options.setter
     def cognito_options(
         self, value: Optional[pulumi.Input[DomainCognitoOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainEndpointOptions")
     def domain_endpoint_options(
@@ -280,44 +310,56 @@ class _DomainState:
     @domain_endpoint_options.setter
     def domain_endpoint_options(
         self, value: Optional[pulumi.Input[DomainDomainEndpointOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainId")
     def domain_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_id.setter
-    def domain_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsOptions")
     def ebs_options(self) -> Optional[pulumi.Input[DomainEbsOptionsArgs]]: ...
     @ebs_options.setter
-    def ebs_options(self, value: Optional[pulumi.Input[DomainEbsOptionsArgs]]): ...
+    def ebs_options(
+        self, value: Optional[pulumi.Input[DomainEbsOptionsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticsearchVersion")
     def elasticsearch_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @elasticsearch_version.setter
-    def elasticsearch_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def elasticsearch_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptAtRest")
     def encrypt_at_rest(self) -> Optional[pulumi.Input[DomainEncryptAtRestArgs]]: ...
     @encrypt_at_rest.setter
     def encrypt_at_rest(
         self, value: Optional[pulumi.Input[DomainEncryptAtRestArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kibanaEndpoint")
     def kibana_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kibana_endpoint.setter
-    def kibana_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kibana_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logPublishingOptions")
     def log_publishing_options(
@@ -331,7 +373,8 @@ class _DomainState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DomainLogPublishingOptionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeToNodeEncryption")
     def node_to_node_encryption(
@@ -340,19 +383,22 @@ class _DomainState:
     @node_to_node_encryption.setter
     def node_to_node_encryption(
         self, value: Optional[pulumi.Input[DomainNodeToNodeEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotOptions")
     def snapshot_options(self) -> Optional[pulumi.Input[DomainSnapshotOptionsArgs]]: ...
     @snapshot_options.setter
     def snapshot_options(
         self, value: Optional[pulumi.Input[DomainSnapshotOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -361,7 +407,8 @@ class _DomainState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -370,12 +417,16 @@ class _DomainState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcOptions")
     def vpc_options(self) -> Optional[pulumi.Input[DomainVpcOptionsArgs]]: ...
     @vpc_options.setter
-    def vpc_options(self, value: Optional[pulumi.Input[DomainVpcOptionsArgs]]): ...
+    def vpc_options(
+        self, value: Optional[pulumi.Input[DomainVpcOptionsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:elasticsearch/domain:Domain")
 class Domain(pulumi.CustomResource):

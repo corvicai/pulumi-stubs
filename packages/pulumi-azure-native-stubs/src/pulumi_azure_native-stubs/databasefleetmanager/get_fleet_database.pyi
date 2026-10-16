@@ -44,7 +44,8 @@ class GetFleetDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFleetDatabaseResult(GetFleetDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetDatabaseResult]:
+        ...
 
 def get_fleet_database(
     database_name: Optional[_builtins.str] = ...,

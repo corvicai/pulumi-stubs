@@ -79,7 +79,10 @@ class GetAPICollectionByAzureApiManagementServiceResult:
 class AwaitableGetAPICollectionByAzureApiManagementServiceResult(
     GetAPICollectionByAzureApiManagementServiceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAPICollectionByAzureApiManagementServiceResult]:
+        ...
 
 def get_api_collection_by_azure_api_management_service(
     api_id: Optional[_builtins.str] = ...,

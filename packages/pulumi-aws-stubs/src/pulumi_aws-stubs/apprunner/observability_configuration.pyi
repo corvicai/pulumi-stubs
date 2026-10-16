@@ -25,12 +25,16 @@ class ObservabilityConfigurationArgs:
     @pulumi.getter(name="observabilityConfigurationName")
     def observability_configuration_name(self) -> pulumi.Input[_builtins.str]: ...
     @observability_configuration_name.setter
-    def observability_configuration_name(self, value: pulumi.Input[_builtins.str]): ...
+    def observability_configuration_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -39,7 +43,8 @@ class ObservabilityConfigurationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="traceConfiguration")
     def trace_configuration(
@@ -49,7 +54,8 @@ class ObservabilityConfigurationArgs:
     def trace_configuration(
         self,
         value: Optional[pulumi.Input[ObservabilityConfigurationTraceConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ObservabilityConfigurationState:
@@ -76,12 +82,14 @@ class _ObservabilityConfigurationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def latest(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @latest.setter
-    def latest(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def latest(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="observabilityConfigurationName")
     def observability_configuration_name(
@@ -90,7 +98,8 @@ class _ObservabilityConfigurationState:
     @observability_configuration_name.setter
     def observability_configuration_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="observabilityConfigurationRevision")
     def observability_configuration_revision(
@@ -99,17 +108,20 @@ class _ObservabilityConfigurationState:
     @observability_configuration_revision.setter
     def observability_configuration_revision(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -118,7 +130,8 @@ class _ObservabilityConfigurationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -127,7 +140,8 @@ class _ObservabilityConfigurationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="traceConfiguration")
     def trace_configuration(
@@ -137,7 +151,8 @@ class _ObservabilityConfigurationState:
     def trace_configuration(
         self,
         value: Optional[pulumi.Input[ObservabilityConfigurationTraceConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ObservabilityConfiguration(pulumi.CustomResource):

@@ -29,7 +29,8 @@ class GetTagResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTagResult(GetTagResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagResult]:
+        ...
 
 def get_tag(
     resource_group_name: Optional[_builtins.str] = ...,

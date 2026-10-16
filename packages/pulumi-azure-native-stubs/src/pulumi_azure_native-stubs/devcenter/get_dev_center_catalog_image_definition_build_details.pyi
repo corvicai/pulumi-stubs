@@ -59,7 +59,10 @@ class GetDevCenterCatalogImageDefinitionBuildDetailsResult:
 class AwaitableGetDevCenterCatalogImageDefinitionBuildDetailsResult(
     GetDevCenterCatalogImageDefinitionBuildDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDevCenterCatalogImageDefinitionBuildDetailsResult]:
+        ...
 
 def get_dev_center_catalog_image_definition_build_details(
     build_name: Optional[_builtins.str] = ...,

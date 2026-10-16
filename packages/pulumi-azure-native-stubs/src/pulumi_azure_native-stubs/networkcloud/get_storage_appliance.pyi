@@ -132,7 +132,8 @@ class GetStorageApplianceResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetStorageApplianceResult(GetStorageApplianceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageApplianceResult]:
+        ...
 
 def get_storage_appliance(
     resource_group_name: Optional[_builtins.str] = ...,

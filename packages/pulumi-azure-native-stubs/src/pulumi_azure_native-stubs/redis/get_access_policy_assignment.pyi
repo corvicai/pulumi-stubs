@@ -56,7 +56,8 @@ class GetAccessPolicyAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAccessPolicyAssignmentResult(GetAccessPolicyAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessPolicyAssignmentResult]:
+        ...
 
 def get_access_policy_assignment(
     access_policy_assignment_name: Optional[_builtins.str] = ...,

@@ -22,7 +22,10 @@ class GetDomainEventSubscriptionDeliveryAttributesResult:
 class AwaitableGetDomainEventSubscriptionDeliveryAttributesResult(
     GetDomainEventSubscriptionDeliveryAttributesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDomainEventSubscriptionDeliveryAttributesResult]:
+        ...
 
 def get_domain_event_subscription_delivery_attributes(
     domain_name: Optional[_builtins.str] = ...,

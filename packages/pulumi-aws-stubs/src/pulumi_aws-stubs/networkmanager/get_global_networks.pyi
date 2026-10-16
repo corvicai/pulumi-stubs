@@ -26,7 +26,8 @@ class GetGlobalNetworksResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetGlobalNetworksResult(GetGlobalNetworksResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlobalNetworksResult]:
+        ...
 
 def get_global_networks(
     tags: Optional[Mapping[str, _builtins.str]] = ...,

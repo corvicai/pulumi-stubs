@@ -52,7 +52,8 @@ class GetSuppressionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSuppressionResult(GetSuppressionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSuppressionResult]:
+        ...
 
 def get_suppression(
     name: Optional[_builtins.str] = ...,

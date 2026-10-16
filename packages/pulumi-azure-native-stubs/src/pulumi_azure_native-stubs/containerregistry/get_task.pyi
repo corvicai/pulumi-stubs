@@ -95,7 +95,8 @@ class GetTaskResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTaskResult(GetTaskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTaskResult]:
+        ...
 
 def get_task(
     registry_name: Optional[_builtins.str] = ...,

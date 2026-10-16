@@ -52,7 +52,8 @@ class GetSubscriptionRaiPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSubscriptionRaiPolicyResult(GetSubscriptionRaiPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubscriptionRaiPolicyResult]:
+        ...
 
 def get_subscription_rai_policy(
     rai_policy_name: Optional[_builtins.str] = ...,

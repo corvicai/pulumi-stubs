@@ -27,7 +27,8 @@ class AccountVdmAttributesArgs:
     @pulumi.getter(name="vdmEnabled")
     def vdm_enabled(self) -> pulumi.Input[_builtins.str]: ...
     @vdm_enabled.setter
-    def vdm_enabled(self, value: pulumi.Input[_builtins.str]): ...
+    def vdm_enabled(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dashboardAttributes")
     def dashboard_attributes(
@@ -36,7 +37,8 @@ class AccountVdmAttributesArgs:
     @dashboard_attributes.setter
     def dashboard_attributes(
         self, value: Optional[pulumi.Input[AccountVdmAttributesDashboardAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardianAttributes")
     def guardian_attributes(
@@ -45,12 +47,14 @@ class AccountVdmAttributesArgs:
     @guardian_attributes.setter
     def guardian_attributes(
         self, value: Optional[pulumi.Input[AccountVdmAttributesGuardianAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccountVdmAttributesState:
@@ -74,7 +78,8 @@ class _AccountVdmAttributesState:
     @dashboard_attributes.setter
     def dashboard_attributes(
         self, value: Optional[pulumi.Input[AccountVdmAttributesDashboardAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardianAttributes")
     def guardian_attributes(
@@ -83,17 +88,20 @@ class _AccountVdmAttributesState:
     @guardian_attributes.setter
     def guardian_attributes(
         self, value: Optional[pulumi.Input[AccountVdmAttributesGuardianAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vdmEnabled")
     def vdm_enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vdm_enabled.setter
-    def vdm_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vdm_enabled(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AccountVdmAttributes(pulumi.CustomResource):

@@ -52,7 +52,8 @@ class GetIamVirtualMfaDeviceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamVirtualMfaDeviceResult(GetIamVirtualMfaDeviceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamVirtualMfaDeviceResult]:
+        ...
 
 def get_iam_virtual_mfa_device(
     name: Optional[_builtins.str] = ...,

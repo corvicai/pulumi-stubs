@@ -130,7 +130,8 @@ class DataSourceConfigurationArgs:
     @s3_configuration.setter
     def s3_configuration(
         self, value: Optional[pulumi.Input[DataSourceConfigurationS3ConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateConfiguration")
     def template_configuration(
@@ -140,7 +141,8 @@ class DataSourceConfigurationArgs:
     def template_configuration(
         self,
         value: Optional[pulumi.Input[DataSourceConfigurationTemplateConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webCrawlerConfiguration")
     @_utilities.deprecated(...)
@@ -153,7 +155,8 @@ class DataSourceConfigurationArgs:
         value: Optional[
             pulumi.Input[DataSourceConfigurationWebCrawlerConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -201,7 +204,8 @@ class DataSourceConfigurationS3ConfigurationArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlListConfiguration")
     def access_control_list_configuration(
@@ -219,7 +223,8 @@ class DataSourceConfigurationS3ConfigurationArgs:
                 DataSourceConfigurationS3ConfigurationAccessControlListConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentsMetadataConfiguration")
     def documents_metadata_configuration(
@@ -237,7 +242,8 @@ class DataSourceConfigurationS3ConfigurationArgs:
                 DataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionPatterns")
     def exclusion_patterns(
@@ -246,7 +252,8 @@ class DataSourceConfigurationS3ConfigurationArgs:
     @exclusion_patterns.setter
     def exclusion_patterns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionPatterns")
     def inclusion_patterns(
@@ -255,7 +262,8 @@ class DataSourceConfigurationS3ConfigurationArgs:
     @inclusion_patterns.setter
     def inclusion_patterns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionPrefixes")
     def inclusion_prefixes(
@@ -264,7 +272,8 @@ class DataSourceConfigurationS3ConfigurationArgs:
     @inclusion_prefixes.setter
     def inclusion_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceConfigurationS3ConfigurationAccessControlListConfigurationArgsDict(
     TypedDict
@@ -280,7 +289,8 @@ class DataSourceConfigurationS3ConfigurationAccessControlListConfigurationArgs:
     @pulumi.getter(name="keyPath")
     def key_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_path.setter
-    def key_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationArgsDict(
     TypedDict
@@ -296,7 +306,8 @@ class DataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationArgs:
     @pulumi.getter(name="s3Prefix")
     def s3_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_prefix.setter
-    def s3_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceConfigurationTemplateConfigurationArgsDict(TypedDict):
     template: pulumi.Input[_builtins.str]
@@ -308,7 +319,8 @@ class DataSourceConfigurationTemplateConfigurationArgs:
     @pulumi.getter
     def template(self) -> pulumi.Input[_builtins.str]: ...
     @template.setter
-    def template(self, value: pulumi.Input[_builtins.str]): ...
+    def template(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DataSourceConfigurationWebCrawlerConfigurationArgsDict(TypedDict):
     urls: pulumi.Input[DataSourceConfigurationWebCrawlerConfigurationUrlsArgsDict]
@@ -371,7 +383,8 @@ class DataSourceConfigurationWebCrawlerConfigurationArgs:
     def urls(
         self,
         value: pulumi.Input[DataSourceConfigurationWebCrawlerConfigurationUrlsArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authenticationConfiguration")
     def authentication_configuration(
@@ -389,12 +402,14 @@ class DataSourceConfigurationWebCrawlerConfigurationArgs:
                 DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crawlDepth")
     def crawl_depth(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @crawl_depth.setter
-    def crawl_depth(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def crawl_depth(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxContentSizePerPageInMegaBytes")
     def max_content_size_per_page_in_mega_bytes(
@@ -403,12 +418,16 @@ class DataSourceConfigurationWebCrawlerConfigurationArgs:
     @max_content_size_per_page_in_mega_bytes.setter
     def max_content_size_per_page_in_mega_bytes(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxLinksPerPage")
     def max_links_per_page(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_links_per_page.setter
-    def max_links_per_page(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_links_per_page(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxUrlsPerMinuteCrawlRate")
     def max_urls_per_minute_crawl_rate(
@@ -417,7 +436,8 @@ class DataSourceConfigurationWebCrawlerConfigurationArgs:
     @max_urls_per_minute_crawl_rate.setter
     def max_urls_per_minute_crawl_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="proxyConfiguration")
     def proxy_configuration(
@@ -435,7 +455,8 @@ class DataSourceConfigurationWebCrawlerConfigurationArgs:
                 DataSourceConfigurationWebCrawlerConfigurationProxyConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="urlExclusionPatterns")
     def url_exclusion_patterns(
@@ -444,7 +465,8 @@ class DataSourceConfigurationWebCrawlerConfigurationArgs:
     @url_exclusion_patterns.setter
     def url_exclusion_patterns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="urlInclusionPatterns")
     def url_inclusion_patterns(
@@ -453,7 +475,8 @@ class DataSourceConfigurationWebCrawlerConfigurationArgs:
     @url_inclusion_patterns.setter
     def url_inclusion_patterns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationArgsDict(
     TypedDict
@@ -508,7 +531,8 @@ class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationArgsDict(
     TypedDict
@@ -530,17 +554,20 @@ class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationB
     @pulumi.getter
     def credentials(self) -> pulumi.Input[_builtins.str]: ...
     @credentials.setter
-    def credentials(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): ...
+    def host(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): ...
+    def port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class DataSourceConfigurationWebCrawlerConfigurationProxyConfigurationArgsDict(
     TypedDict
@@ -562,17 +589,20 @@ class DataSourceConfigurationWebCrawlerConfigurationProxyConfigurationArgs:
     @pulumi.getter
     def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): ...
+    def host(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): ...
+    def port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def credentials(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credentials.setter
-    def credentials(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credentials(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceConfigurationWebCrawlerConfigurationUrlsArgsDict(TypedDict):
     seed_url_configuration: NotRequired[
@@ -619,7 +649,8 @@ class DataSourceConfigurationWebCrawlerConfigurationUrlsArgs:
                 DataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="siteMapsConfiguration")
     def site_maps_configuration(
@@ -637,7 +668,8 @@ class DataSourceConfigurationWebCrawlerConfigurationUrlsArgs:
                 DataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationArgsDict(
     TypedDict
@@ -657,12 +689,18 @@ class DataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationArgs
     @pulumi.getter(name="seedUrls")
     def seed_urls(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @seed_urls.setter
-    def seed_urls(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def seed_urls(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webCrawlerMode")
     def web_crawler_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_crawler_mode.setter
-    def web_crawler_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_crawler_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationArgsDict(
     TypedDict
@@ -678,7 +716,10 @@ class DataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationArg
     @pulumi.getter(name="siteMaps")
     def site_maps(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @site_maps.setter
-    def site_maps(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def site_maps(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationArgsDict(TypedDict):
     inline_configurations: NotRequired[
@@ -753,7 +794,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postExtractionHookConfiguration")
     def post_extraction_hook_configuration(
@@ -771,7 +813,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationArgs:
                 DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preExtractionHookConfiguration")
     def pre_extraction_hook_configuration(
@@ -789,12 +832,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationArgs:
                 DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationArgsDict(
     TypedDict
@@ -845,14 +890,16 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationArgs:
                 DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentContentDeletion")
     def document_content_deletion(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @document_content_deletion.setter
     def document_content_deletion(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(
@@ -870,7 +917,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationArgs:
                 DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditionArgsDict(
     TypedDict
@@ -900,12 +948,16 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditio
     @pulumi.getter(name="conditionDocumentAttributeKey")
     def condition_document_attribute_key(self) -> pulumi.Input[_builtins.str]: ...
     @condition_document_attribute_key.setter
-    def condition_document_attribute_key(self, value: pulumi.Input[_builtins.str]): ...
+    def condition_document_attribute_key(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[_builtins.str]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[_builtins.str]): ...
+    def operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionOnValue")
     def condition_on_value(
@@ -923,7 +975,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditio
                 DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditionConditionOnValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditionConditionOnValueArgsDict(
     TypedDict
@@ -949,12 +1002,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditio
     @pulumi.getter(name="dateValue")
     def date_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_value.setter
-    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="longValue")
     def long_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @long_value.setter
-    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValues")
     def string_list_values(
@@ -963,12 +1018,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditio
     @string_list_values.setter
     def string_list_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetArgsDict(
     TypedDict
@@ -1004,7 +1061,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetAr
     @target_document_attribute_key.setter
     def target_document_attribute_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDocumentAttributeValue")
     def target_document_attribute_value(
@@ -1022,7 +1080,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetAr
                 DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetTargetDocumentAttributeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDocumentAttributeValueDeletion")
     def target_document_attribute_value_deletion(
@@ -1031,7 +1090,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetAr
     @target_document_attribute_value_deletion.setter
     def target_document_attribute_value_deletion(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetTargetDocumentAttributeValueArgsDict(
     TypedDict
@@ -1057,12 +1117,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetTa
     @pulumi.getter(name="dateValue")
     def date_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_value.setter
-    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="longValue")
     def long_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @long_value.setter
-    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValues")
     def string_list_values(
@@ -1071,12 +1133,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetTa
     @string_list_values.setter
     def string_list_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationArgsDict(
     TypedDict
@@ -1106,12 +1170,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
     @pulumi.getter(name="lambdaArn")
     def lambda_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_arn.setter
-    def lambda_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Bucket")
     def s3_bucket(self) -> pulumi.Input[_builtins.str]: ...
     @s3_bucket.setter
-    def s3_bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invocationCondition")
     def invocation_condition(
@@ -1129,7 +1195,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
                 DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionArgsDict(
     TypedDict
@@ -1159,12 +1226,16 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
     @pulumi.getter(name="conditionDocumentAttributeKey")
     def condition_document_attribute_key(self) -> pulumi.Input[_builtins.str]: ...
     @condition_document_attribute_key.setter
-    def condition_document_attribute_key(self, value: pulumi.Input[_builtins.str]): ...
+    def condition_document_attribute_key(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[_builtins.str]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[_builtins.str]): ...
+    def operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionOnValue")
     def condition_on_value(
@@ -1182,7 +1253,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
                 DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValueArgsDict(
     TypedDict
@@ -1208,12 +1280,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
     @pulumi.getter(name="dateValue")
     def date_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_value.setter
-    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="longValue")
     def long_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @long_value.setter
-    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValues")
     def string_list_values(
@@ -1222,12 +1296,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
     @string_list_values.setter
     def string_list_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationArgsDict(
     TypedDict
@@ -1257,12 +1333,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
     @pulumi.getter(name="lambdaArn")
     def lambda_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_arn.setter
-    def lambda_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Bucket")
     def s3_bucket(self) -> pulumi.Input[_builtins.str]: ...
     @s3_bucket.setter
-    def s3_bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invocationCondition")
     def invocation_condition(
@@ -1280,7 +1358,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
                 DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionArgsDict(
     TypedDict
@@ -1310,12 +1389,16 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
     @pulumi.getter(name="conditionDocumentAttributeKey")
     def condition_document_attribute_key(self) -> pulumi.Input[_builtins.str]: ...
     @condition_document_attribute_key.setter
-    def condition_document_attribute_key(self, value: pulumi.Input[_builtins.str]): ...
+    def condition_document_attribute_key(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[_builtins.str]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[_builtins.str]): ...
+    def operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionOnValue")
     def condition_on_value(
@@ -1333,7 +1416,8 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
                 DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValueArgsDict(
     TypedDict
@@ -1359,12 +1443,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
     @pulumi.getter(name="dateValue")
     def date_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_value.setter
-    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="longValue")
     def long_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @long_value.setter
-    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def long_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValues")
     def string_list_values(
@@ -1373,12 +1459,14 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
     @string_list_values.setter
     def string_list_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ExperienceConfigurationArgsDict(TypedDict):
     content_source_configuration: NotRequired[
@@ -1413,7 +1501,8 @@ class ExperienceConfigurationArgs:
         value: Optional[
             pulumi.Input[ExperienceConfigurationContentSourceConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userIdentityConfiguration")
     def user_identity_configuration(
@@ -1427,7 +1516,8 @@ class ExperienceConfigurationArgs:
         value: Optional[
             pulumi.Input[ExperienceConfigurationUserIdentityConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperienceConfigurationContentSourceConfigurationArgsDict(TypedDict):
     data_source_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1453,12 +1543,16 @@ class ExperienceConfigurationContentSourceConfigurationArgs:
     @data_source_ids.setter
     def data_source_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directPutContent")
     def direct_put_content(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @direct_put_content.setter
-    def direct_put_content(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def direct_put_content(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="faqIds")
     def faq_ids(
@@ -1467,7 +1561,8 @@ class ExperienceConfigurationContentSourceConfigurationArgs:
     @faq_ids.setter
     def faq_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperienceConfigurationUserIdentityConfigurationArgsDict(TypedDict):
     identity_attribute_name: pulumi.Input[_builtins.str]
@@ -1481,7 +1576,8 @@ class ExperienceConfigurationUserIdentityConfigurationArgs:
     @pulumi.getter(name="identityAttributeName")
     def identity_attribute_name(self) -> pulumi.Input[_builtins.str]: ...
     @identity_attribute_name.setter
-    def identity_attribute_name(self, value: pulumi.Input[_builtins.str]): ...
+    def identity_attribute_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ExperienceEndpointArgsDict(TypedDict):
     endpoint: NotRequired[pulumi.Input[_builtins.str]]
@@ -1499,12 +1595,14 @@ class ExperienceEndpointArgs:
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointType")
     def endpoint_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_type.setter
-    def endpoint_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FaqS3PathArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -1522,12 +1620,14 @@ class FaqS3PathArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class IndexCapacityUnitsArgsDict(TypedDict):
     query_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
@@ -1545,12 +1645,18 @@ class IndexCapacityUnitsArgs:
     @pulumi.getter(name="queryCapacityUnits")
     def query_capacity_units(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @query_capacity_units.setter
-    def query_capacity_units(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def query_capacity_units(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacityUnits")
     def storage_capacity_units(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @storage_capacity_units.setter
-    def storage_capacity_units(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def storage_capacity_units(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class IndexDocumentMetadataConfigurationUpdateArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1580,12 +1686,14 @@ class IndexDocumentMetadataConfigurationUpdateArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def relevance(
@@ -1599,7 +1707,8 @@ class IndexDocumentMetadataConfigurationUpdateArgs:
         value: Optional[
             pulumi.Input[IndexDocumentMetadataConfigurationUpdateRelevanceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def search(
@@ -1611,7 +1720,8 @@ class IndexDocumentMetadataConfigurationUpdateArgs:
         value: Optional[
             pulumi.Input[IndexDocumentMetadataConfigurationUpdateSearchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IndexDocumentMetadataConfigurationUpdateRelevanceArgsDict(TypedDict):
     duration: NotRequired[pulumi.Input[_builtins.str]]
@@ -1639,22 +1749,26 @@ class IndexDocumentMetadataConfigurationUpdateRelevanceArgs:
     @pulumi.getter
     def duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @duration.setter
-    def duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def duration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def freshness(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @freshness.setter
-    def freshness(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def freshness(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def importance(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @importance.setter
-    def importance(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def importance(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rankOrder")
     def rank_order(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rank_order.setter
-    def rank_order(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rank_order(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="valuesImportanceMap")
     def values_importance_map(
@@ -1663,7 +1777,8 @@ class IndexDocumentMetadataConfigurationUpdateRelevanceArgs:
     @values_importance_map.setter
     def values_importance_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IndexDocumentMetadataConfigurationUpdateSearchArgsDict(TypedDict):
     displayable: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1685,22 +1800,26 @@ class IndexDocumentMetadataConfigurationUpdateSearchArgs:
     @pulumi.getter
     def displayable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @displayable.setter
-    def displayable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def displayable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def facetable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @facetable.setter
-    def facetable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def facetable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def searchable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @searchable.setter
-    def searchable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def searchable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sortable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @sortable.setter
-    def sortable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def sortable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class IndexIndexStatisticArgsDict(TypedDict):
     faq_statistics: NotRequired[
@@ -1739,7 +1858,8 @@ class IndexIndexStatisticArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[IndexIndexStatisticFaqStatisticArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textDocumentStatistics")
     def text_document_statistics(
@@ -1757,7 +1877,8 @@ class IndexIndexStatisticArgs:
                 Sequence[pulumi.Input[IndexIndexStatisticTextDocumentStatisticArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IndexIndexStatisticFaqStatisticArgsDict(TypedDict):
     indexed_question_answers_count: NotRequired[pulumi.Input[_builtins.int]]
@@ -1777,7 +1898,8 @@ class IndexIndexStatisticFaqStatisticArgs:
     @indexed_question_answers_count.setter
     def indexed_question_answers_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IndexIndexStatisticTextDocumentStatisticArgsDict(TypedDict):
     indexed_text_bytes: NotRequired[pulumi.Input[_builtins.int]]
@@ -1795,14 +1917,18 @@ class IndexIndexStatisticTextDocumentStatisticArgs:
     @pulumi.getter(name="indexedTextBytes")
     def indexed_text_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @indexed_text_bytes.setter
-    def indexed_text_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def indexed_text_bytes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="indexedTextDocumentsCount")
     def indexed_text_documents_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @indexed_text_documents_count.setter
     def indexed_text_documents_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IndexServerSideEncryptionConfigurationArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1816,7 +1942,8 @@ class IndexServerSideEncryptionConfigurationArgs:
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class IndexUserGroupResolutionConfigurationArgsDict(TypedDict):
     user_group_resolution_mode: pulumi.Input[_builtins.str]
@@ -1830,7 +1957,10 @@ class IndexUserGroupResolutionConfigurationArgs:
     @pulumi.getter(name="userGroupResolutionMode")
     def user_group_resolution_mode(self) -> pulumi.Input[_builtins.str]: ...
     @user_group_resolution_mode.setter
-    def user_group_resolution_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def user_group_resolution_mode(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class IndexUserTokenConfigurationsArgsDict(TypedDict):
     json_token_type_configuration: NotRequired[
@@ -1865,7 +1995,8 @@ class IndexUserTokenConfigurationsArgs:
         value: Optional[
             pulumi.Input[IndexUserTokenConfigurationsJsonTokenTypeConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jwtTokenTypeConfiguration")
     def jwt_token_type_configuration(
@@ -1879,7 +2010,8 @@ class IndexUserTokenConfigurationsArgs:
         value: Optional[
             pulumi.Input[IndexUserTokenConfigurationsJwtTokenTypeConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IndexUserTokenConfigurationsJsonTokenTypeConfigurationArgsDict(TypedDict):
     group_attribute_field: pulumi.Input[_builtins.str]
@@ -1897,12 +2029,14 @@ class IndexUserTokenConfigurationsJsonTokenTypeConfigurationArgs:
     @pulumi.getter(name="groupAttributeField")
     def group_attribute_field(self) -> pulumi.Input[_builtins.str]: ...
     @group_attribute_field.setter
-    def group_attribute_field(self, value: pulumi.Input[_builtins.str]): ...
+    def group_attribute_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userNameAttributeField")
     def user_name_attribute_field(self) -> pulumi.Input[_builtins.str]: ...
     @user_name_attribute_field.setter
-    def user_name_attribute_field(self, value: pulumi.Input[_builtins.str]): ...
+    def user_name_attribute_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class IndexUserTokenConfigurationsJwtTokenTypeConfigurationArgsDict(TypedDict):
     key_location: pulumi.Input[_builtins.str]
@@ -1930,39 +2064,50 @@ class IndexUserTokenConfigurationsJwtTokenTypeConfigurationArgs:
     @pulumi.getter(name="keyLocation")
     def key_location(self) -> pulumi.Input[_builtins.str]: ...
     @key_location.setter
-    def key_location(self, value: pulumi.Input[_builtins.str]): ...
+    def key_location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="claimRegex")
     def claim_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @claim_regex.setter
-    def claim_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def claim_regex(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupAttributeField")
     def group_attribute_field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_attribute_field.setter
-    def group_attribute_field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_attribute_field(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @issuer.setter
-    def issuer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def issuer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretsManagerArn")
     def secrets_manager_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secrets_manager_arn.setter
-    def secrets_manager_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secrets_manager_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @url.setter
-    def url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userNameAttributeField")
     def user_name_attribute_field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name_attribute_field.setter
     def user_name_attribute_field(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class QuerySuggestionsBlockListSourceS3PathArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -1980,12 +2125,14 @@ class QuerySuggestionsBlockListSourceS3PathArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ThesaurusSourceS3PathArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -2003,9 +2150,11 @@ class ThesaurusSourceS3PathArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

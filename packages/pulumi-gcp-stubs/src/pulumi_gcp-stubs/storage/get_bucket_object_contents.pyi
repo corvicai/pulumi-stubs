@@ -37,7 +37,8 @@ class GetBucketObjectContentsResult:
     def prefix(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetBucketObjectContentsResult(GetBucketObjectContentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBucketObjectContentsResult]:
+        ...
 
 def get_bucket_object_contents(
     bucket: Optional[_builtins.str] = ...,

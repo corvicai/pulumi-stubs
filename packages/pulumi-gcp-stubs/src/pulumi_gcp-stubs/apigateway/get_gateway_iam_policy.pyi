@@ -43,7 +43,8 @@ class GetGatewayIamPolicyResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetGatewayIamPolicyResult(GetGatewayIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGatewayIamPolicyResult]:
+        ...
 
 def get_gateway_iam_policy(
     gateway: Optional[_builtins.str] = ...,

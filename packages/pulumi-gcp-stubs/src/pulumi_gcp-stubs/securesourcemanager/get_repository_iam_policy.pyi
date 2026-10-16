@@ -43,7 +43,8 @@ class GetRepositoryIamPolicyResult:
     def repository_id(self) -> _builtins.str: ...
 
 class AwaitableGetRepositoryIamPolicyResult(GetRepositoryIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRepositoryIamPolicyResult]:
+        ...
 
 def get_repository_iam_policy(
     location: Optional[_builtins.str] = ...,

@@ -66,7 +66,8 @@ class GetResponsePlanResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetResponsePlanResult(GetResponsePlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResponsePlanResult]:
+        ...
 
 def get_response_plan(
     arn: Optional[_builtins.str] = ...,

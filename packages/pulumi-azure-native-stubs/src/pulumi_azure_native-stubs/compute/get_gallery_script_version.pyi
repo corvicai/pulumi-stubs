@@ -52,7 +52,8 @@ class GetGalleryScriptVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGalleryScriptVersionResult(GetGalleryScriptVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGalleryScriptVersionResult]:
+        ...
 
 def get_gallery_script_version(
     gallery_name: Optional[_builtins.str] = ...,

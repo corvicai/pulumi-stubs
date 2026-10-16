@@ -20,7 +20,10 @@ class GetVirtualNetworkGatewayVpnclientConnectionHealthResult:
 class AwaitableGetVirtualNetworkGatewayVpnclientConnectionHealthResult(
     GetVirtualNetworkGatewayVpnclientConnectionHealthResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayVpnclientConnectionHealthResult]:
+        ...
 
 def get_virtual_network_gateway_vpnclient_connection_health(
     resource_group_name: Optional[_builtins.str] = ...,

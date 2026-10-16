@@ -24,7 +24,8 @@ class ListConfigurationStoreKeysResult:
     def value(self) -> Optional[Sequence[outputs.ApiKeyResponse]]: ...
 
 class AwaitableListConfigurationStoreKeysResult(ListConfigurationStoreKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListConfigurationStoreKeysResult]:
+        ...
 
 def list_configuration_store_keys(
     config_store_name: Optional[_builtins.str] = ...,

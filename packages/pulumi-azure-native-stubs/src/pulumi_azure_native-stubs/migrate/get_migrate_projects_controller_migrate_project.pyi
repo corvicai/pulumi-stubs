@@ -54,7 +54,10 @@ class GetMigrateProjectsControllerMigrateProjectResult:
 class AwaitableGetMigrateProjectsControllerMigrateProjectResult(
     GetMigrateProjectsControllerMigrateProjectResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMigrateProjectsControllerMigrateProjectResult]:
+        ...
 
 def get_migrate_projects_controller_migrate_project(
     migrate_project_name: Optional[_builtins.str] = ...,

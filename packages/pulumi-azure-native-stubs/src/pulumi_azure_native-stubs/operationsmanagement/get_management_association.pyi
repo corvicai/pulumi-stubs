@@ -44,7 +44,8 @@ class GetManagementAssociationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagementAssociationResult(GetManagementAssociationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagementAssociationResult]:
+        ...
 
 def get_management_association(
     management_association_name: Optional[_builtins.str] = ...,

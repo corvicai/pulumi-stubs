@@ -601,7 +601,8 @@ class GuestPoliciesAssignmentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GuestPoliciesAssignmentGroupLabelArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceNamePrefixes")
     def instance_name_prefixes(
@@ -610,7 +611,8 @@ class GuestPoliciesAssignmentArgs:
     @instance_name_prefixes.setter
     def instance_name_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instances(
@@ -619,7 +621,8 @@ class GuestPoliciesAssignmentArgs:
     @instances.setter
     def instances(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osTypes")
     def os_types(
@@ -633,7 +636,8 @@ class GuestPoliciesAssignmentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GuestPoliciesAssignmentOsTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -642,7 +646,8 @@ class GuestPoliciesAssignmentArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesAssignmentGroupLabelArgsDict(TypedDict):
     labels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
@@ -658,7 +663,8 @@ class GuestPoliciesAssignmentGroupLabelArgs:
     @labels.setter
     def labels(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesAssignmentOsTypeArgsDict(TypedDict):
     os_architecture: NotRequired[pulumi.Input[_builtins.str]]
@@ -678,17 +684,20 @@ class GuestPoliciesAssignmentOsTypeArgs:
     @pulumi.getter(name="osArchitecture")
     def os_architecture(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_architecture.setter
-    def os_architecture(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_architecture(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_short_name.setter
-    def os_short_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_short_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesPackageArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -708,17 +717,20 @@ class GuestPoliciesPackageArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredState")
     def desired_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_state.setter
-    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def manager(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @manager.setter
-    def manager(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def manager(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesPackageRepositoryArgsDict(TypedDict):
     apt: NotRequired[pulumi.Input[GuestPoliciesPackageRepositoryAptArgsDict]]
@@ -742,21 +754,24 @@ class GuestPoliciesPackageRepositoryArgs:
     @apt.setter
     def apt(
         self, value: Optional[pulumi.Input[GuestPoliciesPackageRepositoryAptArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def goo(self) -> Optional[pulumi.Input[GuestPoliciesPackageRepositoryGooArgs]]: ...
     @goo.setter
     def goo(
         self, value: Optional[pulumi.Input[GuestPoliciesPackageRepositoryGooArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(self) -> Optional[pulumi.Input[GuestPoliciesPackageRepositoryYumArgs]]: ...
     @yum.setter
     def yum(
         self, value: Optional[pulumi.Input[GuestPoliciesPackageRepositoryYumArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -765,7 +780,8 @@ class GuestPoliciesPackageRepositoryArgs:
     @zypper.setter
     def zypper(
         self, value: Optional[pulumi.Input[GuestPoliciesPackageRepositoryZypperArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesPackageRepositoryAptArgsDict(TypedDict):
     components: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -791,27 +807,32 @@ class GuestPoliciesPackageRepositoryAptArgs:
     @components.setter
     def components(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def distribution(self) -> pulumi.Input[_builtins.str]: ...
     @distribution.setter
-    def distribution(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="archiveType")
     def archive_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @archive_type.setter
-    def archive_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def archive_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKey")
     def gpg_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gpg_key.setter
-    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesPackageRepositoryGooArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -826,12 +847,14 @@ class GuestPoliciesPackageRepositoryGooArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> pulumi.Input[_builtins.str]: ...
     @url.setter
-    def url(self, value: pulumi.Input[_builtins.str]): ...
+    def url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuestPoliciesPackageRepositoryYumArgsDict(TypedDict):
     base_url: pulumi.Input[_builtins.str]
@@ -853,17 +876,20 @@ class GuestPoliciesPackageRepositoryYumArgs:
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -872,7 +898,8 @@ class GuestPoliciesPackageRepositoryYumArgs:
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesPackageRepositoryZypperArgsDict(TypedDict):
     base_url: pulumi.Input[_builtins.str]
@@ -894,17 +921,20 @@ class GuestPoliciesPackageRepositoryZypperArgs:
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -913,7 +943,8 @@ class GuestPoliciesPackageRepositoryZypperArgs:
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesRecipeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -951,7 +982,8 @@ class GuestPoliciesRecipeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def artifacts(
@@ -965,12 +997,14 @@ class GuestPoliciesRecipeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GuestPoliciesRecipeArtifactArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredState")
     def desired_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_state.setter
-    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="installSteps")
     def install_steps(
@@ -984,7 +1018,8 @@ class GuestPoliciesRecipeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GuestPoliciesRecipeInstallStepArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateSteps")
     def update_steps(
@@ -998,12 +1033,14 @@ class GuestPoliciesRecipeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GuestPoliciesRecipeUpdateStepArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeArtifactArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -1025,19 +1062,22 @@ class GuestPoliciesRecipeArtifactArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(self) -> Optional[pulumi.Input[GuestPoliciesRecipeArtifactGcsArgs]]: ...
     @gcs.setter
     def gcs(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeArtifactGcsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -1046,7 +1086,8 @@ class GuestPoliciesRecipeArtifactArgs:
     @remote.setter
     def remote(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeArtifactRemoteArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesRecipeArtifactGcsArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
@@ -1066,17 +1107,20 @@ class GuestPoliciesRecipeArtifactGcsArgs:
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object.setter
-    def object(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeArtifactRemoteArgsDict(TypedDict):
     check_sum: NotRequired[pulumi.Input[_builtins.str]]
@@ -1094,12 +1138,14 @@ class GuestPoliciesRecipeArtifactRemoteArgs:
     @pulumi.getter(name="checkSum")
     def check_sum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @check_sum.setter
-    def check_sum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def check_sum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepArgsDict(TypedDict):
     archive_extraction: NotRequired[
@@ -1160,7 +1206,8 @@ class GuestPoliciesRecipeInstallStepArgs:
         value: Optional[
             pulumi.Input[GuestPoliciesRecipeInstallStepArchiveExtractionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dpkgInstallation")
     def dpkg_installation(
@@ -1172,7 +1219,8 @@ class GuestPoliciesRecipeInstallStepArgs:
         value: Optional[
             pulumi.Input[GuestPoliciesRecipeInstallStepDpkgInstallationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileCopy")
     def file_copy(
@@ -1181,7 +1229,8 @@ class GuestPoliciesRecipeInstallStepArgs:
     @file_copy.setter
     def file_copy(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeInstallStepFileCopyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileExec")
     def file_exec(
@@ -1190,7 +1239,8 @@ class GuestPoliciesRecipeInstallStepArgs:
     @file_exec.setter
     def file_exec(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeInstallStepFileExecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="msiInstallation")
     def msi_installation(
@@ -1202,7 +1252,8 @@ class GuestPoliciesRecipeInstallStepArgs:
         value: Optional[
             pulumi.Input[GuestPoliciesRecipeInstallStepMsiInstallationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rpmInstallation")
     def rpm_installation(
@@ -1214,7 +1265,8 @@ class GuestPoliciesRecipeInstallStepArgs:
         value: Optional[
             pulumi.Input[GuestPoliciesRecipeInstallStepRpmInstallationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptRun")
     def script_run(
@@ -1223,7 +1275,8 @@ class GuestPoliciesRecipeInstallStepArgs:
     @script_run.setter
     def script_run(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeInstallStepScriptRunArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepArchiveExtractionArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1243,17 +1296,20 @@ class GuestPoliciesRecipeInstallStepArchiveExtractionArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destination(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination.setter
-    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepDpkgInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1265,7 +1321,8 @@ class GuestPoliciesRecipeInstallStepDpkgInstallationArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepFileCopyArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1287,22 +1344,26 @@ class GuestPoliciesRecipeInstallStepFileCopyArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destination(self) -> pulumi.Input[_builtins.str]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[_builtins.str]): ...
+    def destination(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def overwrite(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @overwrite.setter
-    def overwrite(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def overwrite(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permissions.setter
-    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepFileExecArgsDict(TypedDict):
     allowed_exit_codes: NotRequired[pulumi.Input[_builtins.str]]
@@ -1324,24 +1385,30 @@ class GuestPoliciesRecipeInstallStepFileExecArgs:
     @pulumi.getter(name="allowedExitCodes")
     def allowed_exit_codes(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @allowed_exit_codes.setter
-    def allowed_exit_codes(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def allowed_exit_codes(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @artifact_id.setter
-    def artifact_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def artifact_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepMsiInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1363,7 +1430,8 @@ class GuestPoliciesRecipeInstallStepMsiInstallationArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedExitCodes")
     def allowed_exit_codes(
@@ -1372,7 +1440,8 @@ class GuestPoliciesRecipeInstallStepMsiInstallationArgs:
     @allowed_exit_codes.setter
     def allowed_exit_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def flags(
@@ -1381,7 +1450,8 @@ class GuestPoliciesRecipeInstallStepMsiInstallationArgs:
     @flags.setter
     def flags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepRpmInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1393,7 +1463,8 @@ class GuestPoliciesRecipeInstallStepRpmInstallationArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeInstallStepScriptRunArgsDict(TypedDict):
     script: pulumi.Input[_builtins.str]
@@ -1415,7 +1486,8 @@ class GuestPoliciesRecipeInstallStepScriptRunArgs:
     @pulumi.getter
     def script(self) -> pulumi.Input[_builtins.str]: ...
     @script.setter
-    def script(self, value: pulumi.Input[_builtins.str]): ...
+    def script(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedExitCodes")
     def allowed_exit_codes(
@@ -1424,12 +1496,14 @@ class GuestPoliciesRecipeInstallStepScriptRunArgs:
     @allowed_exit_codes.setter
     def allowed_exit_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interpreter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interpreter.setter
-    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepArgsDict(TypedDict):
     archive_extraction: NotRequired[
@@ -1488,7 +1562,8 @@ class GuestPoliciesRecipeUpdateStepArgs:
         value: Optional[
             pulumi.Input[GuestPoliciesRecipeUpdateStepArchiveExtractionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dpkgInstallation")
     def dpkg_installation(
@@ -1500,7 +1575,8 @@ class GuestPoliciesRecipeUpdateStepArgs:
         value: Optional[
             pulumi.Input[GuestPoliciesRecipeUpdateStepDpkgInstallationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileCopy")
     def file_copy(
@@ -1509,7 +1585,8 @@ class GuestPoliciesRecipeUpdateStepArgs:
     @file_copy.setter
     def file_copy(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeUpdateStepFileCopyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileExec")
     def file_exec(
@@ -1518,7 +1595,8 @@ class GuestPoliciesRecipeUpdateStepArgs:
     @file_exec.setter
     def file_exec(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeUpdateStepFileExecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="msiInstallation")
     def msi_installation(
@@ -1528,7 +1606,8 @@ class GuestPoliciesRecipeUpdateStepArgs:
     def msi_installation(
         self,
         value: Optional[pulumi.Input[GuestPoliciesRecipeUpdateStepMsiInstallationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rpmInstallation")
     def rpm_installation(
@@ -1538,7 +1617,8 @@ class GuestPoliciesRecipeUpdateStepArgs:
     def rpm_installation(
         self,
         value: Optional[pulumi.Input[GuestPoliciesRecipeUpdateStepRpmInstallationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptRun")
     def script_run(
@@ -1547,7 +1627,8 @@ class GuestPoliciesRecipeUpdateStepArgs:
     @script_run.setter
     def script_run(
         self, value: Optional[pulumi.Input[GuestPoliciesRecipeUpdateStepScriptRunArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepArchiveExtractionArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1567,17 +1648,20 @@ class GuestPoliciesRecipeUpdateStepArchiveExtractionArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destination(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination.setter
-    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepDpkgInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1589,7 +1673,8 @@ class GuestPoliciesRecipeUpdateStepDpkgInstallationArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepFileCopyArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1611,22 +1696,26 @@ class GuestPoliciesRecipeUpdateStepFileCopyArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destination(self) -> pulumi.Input[_builtins.str]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[_builtins.str]): ...
+    def destination(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def overwrite(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @overwrite.setter
-    def overwrite(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def overwrite(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permissions.setter
-    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepFileExecArgsDict(TypedDict):
     allowed_exit_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
@@ -1654,24 +1743,28 @@ class GuestPoliciesRecipeUpdateStepFileExecArgs:
     @allowed_exit_codes.setter
     def allowed_exit_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @artifact_id.setter
-    def artifact_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def artifact_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepMsiInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1693,7 +1786,8 @@ class GuestPoliciesRecipeUpdateStepMsiInstallationArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedExitCodes")
     def allowed_exit_codes(
@@ -1702,7 +1796,8 @@ class GuestPoliciesRecipeUpdateStepMsiInstallationArgs:
     @allowed_exit_codes.setter
     def allowed_exit_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def flags(
@@ -1711,7 +1806,8 @@ class GuestPoliciesRecipeUpdateStepMsiInstallationArgs:
     @flags.setter
     def flags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepRpmInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
@@ -1723,7 +1819,8 @@ class GuestPoliciesRecipeUpdateStepRpmInstallationArgs:
     @pulumi.getter(name="artifactId")
     def artifact_id(self) -> pulumi.Input[_builtins.str]: ...
     @artifact_id.setter
-    def artifact_id(self, value: pulumi.Input[_builtins.str]): ...
+    def artifact_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuestPoliciesRecipeUpdateStepScriptRunArgsDict(TypedDict):
     script: pulumi.Input[_builtins.str]
@@ -1745,7 +1842,8 @@ class GuestPoliciesRecipeUpdateStepScriptRunArgs:
     @pulumi.getter
     def script(self) -> pulumi.Input[_builtins.str]: ...
     @script.setter
-    def script(self, value: pulumi.Input[_builtins.str]): ...
+    def script(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedExitCodes")
     def allowed_exit_codes(
@@ -1754,12 +1852,14 @@ class GuestPoliciesRecipeUpdateStepScriptRunArgs:
     @allowed_exit_codes.setter
     def allowed_exit_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interpreter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interpreter.setter
-    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentInstanceFilterArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1813,7 +1913,8 @@ class OsPolicyAssignmentInstanceFilterArgs:
     @pulumi.getter
     def all(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all.setter
-    def all(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionLabels")
     def exclusion_labels(
@@ -1833,7 +1934,8 @@ class OsPolicyAssignmentInstanceFilterArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionLabels")
     def inclusion_labels(
@@ -1853,7 +1955,8 @@ class OsPolicyAssignmentInstanceFilterArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inventories(
@@ -1871,7 +1974,8 @@ class OsPolicyAssignmentInstanceFilterArgs:
                 Sequence[pulumi.Input[OsPolicyAssignmentInstanceFilterInventoryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentInstanceFilterExclusionLabelArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -1891,7 +1995,8 @@ class OsPolicyAssignmentInstanceFilterExclusionLabelArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentInstanceFilterInclusionLabelArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -1911,7 +2016,8 @@ class OsPolicyAssignmentInstanceFilterInclusionLabelArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentInstanceFilterInventoryArgsDict(TypedDict):
     os_short_name: pulumi.Input[_builtins.str]
@@ -1929,12 +2035,14 @@ class OsPolicyAssignmentInstanceFilterInventoryArgs:
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -1962,12 +2070,14 @@ class OsPolicyAssignmentOsPolicyArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroups")
     def resource_groups(
@@ -1981,7 +2091,8 @@ class OsPolicyAssignmentOsPolicyArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowNoResourceGroupMatch")
     def allow_no_resource_group_match(
@@ -1990,12 +2101,14 @@ class OsPolicyAssignmentOsPolicyArgs:
     @allow_no_resource_group_match.setter
     def allow_no_resource_group_match(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupArgsDict(TypedDict):
     resources: pulumi.Input[
@@ -2042,7 +2155,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inventoryFilters")
     def inventory_filters(
@@ -2066,7 +2180,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupInventoryFilterArgsDict(TypedDict):
     os_short_name: pulumi.Input[_builtins.str]
@@ -2084,12 +2199,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupInventoryFilterArgs:
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -2129,7 +2246,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exec")
     def exec_(
@@ -2143,7 +2261,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceExecArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -2157,7 +2276,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceFileArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pkg(
@@ -2171,7 +2291,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def repository(
@@ -2185,7 +2306,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecArgsDict(TypedDict):
     validate: pulumi.Input[
@@ -2220,7 +2342,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecArgs:
         value: pulumi.Input[
             OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enforce(
@@ -2234,7 +2357,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceArgsDict(TypedDict):
     interpreter: pulumi.Input[_builtins.str]
@@ -2266,14 +2390,16 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceArgs:
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -2289,17 +2415,22 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileArgsDict(TypedDict):
     allow_insecure: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2337,7 +2468,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileArgs:
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -2355,12 +2487,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -2378,7 +2512,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileGcsArgsDict(
     TypedDict
@@ -2400,17 +2535,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileGcsArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict(
     TypedDict
@@ -2430,12 +2568,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateArgsDict(TypedDict):
     interpreter: pulumi.Input[_builtins.str]
@@ -2467,14 +2607,16 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateArgs:
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -2492,17 +2634,22 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileArgsDict(
     TypedDict
@@ -2542,7 +2689,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileArgs:
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -2560,12 +2708,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -2583,7 +2733,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileGcsArgsDict(
     TypedDict
@@ -2605,17 +2756,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileGcsArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict(
     TypedDict
@@ -2635,12 +2789,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileRemoteArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
@@ -2668,17 +2824,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileArgs:
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> pulumi.Input[_builtins.str]: ...
     @state.setter
-    def state(self, value: pulumi.Input[_builtins.str]): ...
+    def state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def content(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content.setter
-    def content(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -2692,12 +2851,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permissions.setter
-    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgsDict(TypedDict):
     allow_insecure: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2731,7 +2892,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgs:
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -2745,12 +2907,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileGcsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -2766,7 +2930,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileGcsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -2786,17 +2951,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileGcsArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileRemoteArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
@@ -2814,12 +2982,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileRemoteArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgsDict(TypedDict):
     desired_state: pulumi.Input[_builtins.str]
@@ -2877,7 +3047,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
     @pulumi.getter(name="desiredState")
     def desired_state(self) -> pulumi.Input[_builtins.str]: ...
     @desired_state.setter
-    def desired_state(self, value: pulumi.Input[_builtins.str]): ...
+    def desired_state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def apt(
@@ -2891,7 +3062,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgAptArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deb(
@@ -2905,7 +3077,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def googet(
@@ -2919,7 +3092,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgGoogetArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def msi(
@@ -2933,7 +3107,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rpm(
@@ -2947,7 +3122,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -2961,7 +3137,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgYumArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -2975,7 +3152,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
         value: Optional[
             pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgZypperArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgAptArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2987,7 +3165,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgAptArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebArgsDict(TypedDict):
     source: pulumi.Input[
@@ -3018,12 +3197,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebArgs:
         value: pulumi.Input[
             OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgsDict(TypedDict):
     allow_insecure: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3061,7 +3242,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgs:
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -3077,12 +3259,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -3100,7 +3284,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceGcsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -3120,17 +3305,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceGcsArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict(
     TypedDict
@@ -3150,12 +3338,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgGoogetArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3167,7 +3357,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgGoogetArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiArgsDict(TypedDict):
     source: pulumi.Input[
@@ -3198,7 +3389,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiArgs:
         value: pulumi.Input[
             OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -3207,7 +3399,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgsDict(TypedDict):
     allow_insecure: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3245,7 +3438,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgs:
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -3261,12 +3455,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -3284,7 +3480,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceGcsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -3304,17 +3501,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict(
     TypedDict
@@ -3334,12 +3534,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmArgsDict(TypedDict):
     source: pulumi.Input[
@@ -3370,12 +3572,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmArgs:
         value: pulumi.Input[
             OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgsDict(TypedDict):
     allow_insecure: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3413,7 +3617,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgs:
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -3429,12 +3634,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -3452,7 +3659,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceGcsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -3472,17 +3680,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict(
     TypedDict
@@ -3502,12 +3713,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgYumArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3519,7 +3732,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgYumArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgZypperArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3531,7 +3745,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgZypperArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgsDict(TypedDict):
     apt: NotRequired[
@@ -3596,7 +3811,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryAptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def goo(
@@ -3612,7 +3828,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryGooArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -3628,7 +3845,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryYumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -3646,7 +3864,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgs:
                 OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryAptArgsDict(TypedDict):
     archive_type: pulumi.Input[_builtins.str]
@@ -3670,29 +3889,34 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryAptArgs:
     @pulumi.getter(name="archiveType")
     def archive_type(self) -> pulumi.Input[_builtins.str]: ...
     @archive_type.setter
-    def archive_type(self, value: pulumi.Input[_builtins.str]): ...
+    def archive_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def components(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @components.setter
     def components(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def distribution(self) -> pulumi.Input[_builtins.str]: ...
     @distribution.setter
-    def distribution(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKey")
     def gpg_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gpg_key.setter
-    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryGooArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3707,12 +3931,14 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryGooArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> pulumi.Input[_builtins.str]: ...
     @url.setter
-    def url(self, value: pulumi.Input[_builtins.str]): ...
+    def url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryYumArgsDict(TypedDict):
     base_url: pulumi.Input[_builtins.str]
@@ -3734,17 +3960,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryYumArgs:
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -3753,7 +3982,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryYumArgs:
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgsDict(
     TypedDict
@@ -3777,17 +4007,20 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgs:
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -3796,7 +4029,8 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgs:
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OsPolicyAssignmentRolloutArgsDict(TypedDict):
     disruption_budget: pulumi.Input[OsPolicyAssignmentRolloutDisruptionBudgetArgsDict]
@@ -3818,12 +4052,14 @@ class OsPolicyAssignmentRolloutArgs:
     @disruption_budget.setter
     def disruption_budget(
         self, value: pulumi.Input[OsPolicyAssignmentRolloutDisruptionBudgetArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minWaitDuration")
     def min_wait_duration(self) -> pulumi.Input[_builtins.str]: ...
     @min_wait_duration.setter
-    def min_wait_duration(self, value: pulumi.Input[_builtins.str]): ...
+    def min_wait_duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OsPolicyAssignmentRolloutDisruptionBudgetArgsDict(TypedDict):
     fixed: NotRequired[pulumi.Input[_builtins.int]]
@@ -3841,12 +4077,14 @@ class OsPolicyAssignmentRolloutDisruptionBudgetArgs:
     @pulumi.getter
     def fixed(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @fixed.setter
-    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @percent.setter
-    def percent(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def percent(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PatchDeploymentInstanceFilterArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3882,7 +4120,8 @@ class PatchDeploymentInstanceFilterArgs:
     @pulumi.getter
     def all(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all.setter
-    def all(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupLabels")
     def group_labels(
@@ -3900,7 +4139,8 @@ class PatchDeploymentInstanceFilterArgs:
                 Sequence[pulumi.Input[PatchDeploymentInstanceFilterGroupLabelArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceNamePrefixes")
     def instance_name_prefixes(
@@ -3909,7 +4149,8 @@ class PatchDeploymentInstanceFilterArgs:
     @instance_name_prefixes.setter
     def instance_name_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instances(
@@ -3918,7 +4159,8 @@ class PatchDeploymentInstanceFilterArgs:
     @instances.setter
     def instances(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -3927,7 +4169,8 @@ class PatchDeploymentInstanceFilterArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentInstanceFilterGroupLabelArgsDict(TypedDict):
     labels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
@@ -3943,7 +4186,8 @@ class PatchDeploymentInstanceFilterGroupLabelArgs:
     @labels.setter
     def labels(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentOneTimeScheduleArgsDict(TypedDict):
     execute_time: pulumi.Input[_builtins.str]
@@ -3955,7 +4199,8 @@ class PatchDeploymentOneTimeScheduleArgs:
     @pulumi.getter(name="executeTime")
     def execute_time(self) -> pulumi.Input[_builtins.str]: ...
     @execute_time.setter
-    def execute_time(self, value: pulumi.Input[_builtins.str]): ...
+    def execute_time(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigArgsDict(TypedDict):
     apt: NotRequired[pulumi.Input[PatchDeploymentPatchConfigAptArgsDict]]
@@ -3993,17 +4238,26 @@ class PatchDeploymentPatchConfigArgs:
     @pulumi.getter
     def apt(self) -> Optional[pulumi.Input[PatchDeploymentPatchConfigAptArgs]]: ...
     @apt.setter
-    def apt(self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigAptArgs]]): ...
+    def apt(
+        self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigAptArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def goo(self) -> Optional[pulumi.Input[PatchDeploymentPatchConfigGooArgs]]: ...
     @goo.setter
-    def goo(self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigGooArgs]]): ...
+    def goo(
+        self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigGooArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migInstancesAllowed")
     def mig_instances_allowed(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mig_instances_allowed.setter
-    def mig_instances_allowed(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def mig_instances_allowed(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postStep")
     def post_step(
@@ -4012,7 +4266,8 @@ class PatchDeploymentPatchConfigArgs:
     @post_step.setter
     def post_step(
         self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigPostStepArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preStep")
     def pre_step(
@@ -4021,17 +4276,22 @@ class PatchDeploymentPatchConfigArgs:
     @pre_step.setter
     def pre_step(
         self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigPreStepArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rebootConfig")
     def reboot_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reboot_config.setter
-    def reboot_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reboot_config(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipUnpatchableVms")
     def skip_unpatchable_vms(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @skip_unpatchable_vms.setter
-    def skip_unpatchable_vms(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def skip_unpatchable_vms(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsUpdate")
     def windows_update(
@@ -4040,12 +4300,16 @@ class PatchDeploymentPatchConfigArgs:
     @windows_update.setter
     def windows_update(
         self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigWindowsUpdateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(self) -> Optional[pulumi.Input[PatchDeploymentPatchConfigYumArgs]]: ...
     @yum.setter
-    def yum(self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigYumArgs]]): ...
+    def yum(
+        self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigYumArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -4054,7 +4318,8 @@ class PatchDeploymentPatchConfigArgs:
     @zypper.setter
     def zypper(
         self, value: Optional[pulumi.Input[PatchDeploymentPatchConfigZypperArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigAptArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4080,7 +4345,8 @@ class PatchDeploymentPatchConfigAptArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusivePackages")
     def exclusive_packages(
@@ -4089,12 +4355,14 @@ class PatchDeploymentPatchConfigAptArgs:
     @exclusive_packages.setter
     def exclusive_packages(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigGooArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -4106,7 +4374,8 @@ class PatchDeploymentPatchConfigGooArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPostStepArgsDict(TypedDict):
     linux_exec_step_config: NotRequired[
@@ -4141,7 +4410,8 @@ class PatchDeploymentPatchConfigPostStepArgs:
         value: Optional[
             pulumi.Input[PatchDeploymentPatchConfigPostStepLinuxExecStepConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsExecStepConfig")
     def windows_exec_step_config(
@@ -4155,7 +4425,8 @@ class PatchDeploymentPatchConfigPostStepArgs:
         value: Optional[
             pulumi.Input[PatchDeploymentPatchConfigPostStepWindowsExecStepConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigArgsDict(TypedDict):
     allowed_success_codes: NotRequired[
@@ -4193,7 +4464,8 @@ class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigArgs:
     @allowed_success_codes.setter
     def allowed_success_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsObject")
     def gcs_object(
@@ -4209,17 +4481,20 @@ class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigArgs:
                 PatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interpreter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interpreter.setter
-    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -4239,17 +4514,20 @@ class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationNumber")
     def generation_number(self) -> pulumi.Input[_builtins.str]: ...
     @generation_number.setter
-    def generation_number(self, value: pulumi.Input[_builtins.str]): ...
+    def generation_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigArgsDict(TypedDict):
     allowed_success_codes: NotRequired[
@@ -4287,7 +4565,8 @@ class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigArgs:
     @allowed_success_codes.setter
     def allowed_success_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsObject")
     def gcs_object(
@@ -4305,17 +4584,20 @@ class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigArgs:
                 PatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interpreter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interpreter.setter
-    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectArgsDict(
     TypedDict
@@ -4337,17 +4619,20 @@ class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationNumber")
     def generation_number(self) -> pulumi.Input[_builtins.str]: ...
     @generation_number.setter
-    def generation_number(self, value: pulumi.Input[_builtins.str]): ...
+    def generation_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPreStepArgsDict(TypedDict):
     linux_exec_step_config: NotRequired[
@@ -4382,7 +4667,8 @@ class PatchDeploymentPatchConfigPreStepArgs:
         value: Optional[
             pulumi.Input[PatchDeploymentPatchConfigPreStepLinuxExecStepConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsExecStepConfig")
     def windows_exec_step_config(
@@ -4396,7 +4682,8 @@ class PatchDeploymentPatchConfigPreStepArgs:
         value: Optional[
             pulumi.Input[PatchDeploymentPatchConfigPreStepWindowsExecStepConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigArgsDict(TypedDict):
     allowed_success_codes: NotRequired[
@@ -4434,7 +4721,8 @@ class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigArgs:
     @allowed_success_codes.setter
     def allowed_success_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsObject")
     def gcs_object(
@@ -4450,17 +4738,20 @@ class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigArgs:
                 PatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interpreter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interpreter.setter
-    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -4480,17 +4771,20 @@ class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationNumber")
     def generation_number(self) -> pulumi.Input[_builtins.str]: ...
     @generation_number.setter
-    def generation_number(self, value: pulumi.Input[_builtins.str]): ...
+    def generation_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigArgsDict(TypedDict):
     allowed_success_codes: NotRequired[
@@ -4528,7 +4822,8 @@ class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigArgs:
     @allowed_success_codes.setter
     def allowed_success_codes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsObject")
     def gcs_object(
@@ -4546,17 +4841,20 @@ class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigArgs:
                 PatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interpreter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interpreter.setter
-    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interpreter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectArgsDict(
     TypedDict
@@ -4578,17 +4876,20 @@ class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationNumber")
     def generation_number(self) -> pulumi.Input[_builtins.str]: ...
     @generation_number.setter
-    def generation_number(self, value: pulumi.Input[_builtins.str]): ...
+    def generation_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigWindowsUpdateArgsDict(TypedDict):
     classifications: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4616,7 +4917,8 @@ class PatchDeploymentPatchConfigWindowsUpdateArgs:
     @classifications.setter
     def classifications(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def excludes(
@@ -4625,7 +4927,8 @@ class PatchDeploymentPatchConfigWindowsUpdateArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusivePatches")
     def exclusive_patches(
@@ -4634,7 +4937,8 @@ class PatchDeploymentPatchConfigWindowsUpdateArgs:
     @exclusive_patches.setter
     def exclusive_patches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigYumArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4662,7 +4966,8 @@ class PatchDeploymentPatchConfigYumArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusivePackages")
     def exclusive_packages(
@@ -4671,17 +4976,20 @@ class PatchDeploymentPatchConfigYumArgs:
     @exclusive_packages.setter
     def exclusive_packages(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minimal(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @minimal.setter
-    def minimal(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def minimal(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def security(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @security.setter
-    def security(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def security(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class PatchDeploymentPatchConfigZypperArgsDict(TypedDict):
     categories: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4713,7 +5021,8 @@ class PatchDeploymentPatchConfigZypperArgs:
     @categories.setter
     def categories(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def excludes(
@@ -4722,7 +5031,8 @@ class PatchDeploymentPatchConfigZypperArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusivePatches")
     def exclusive_patches(
@@ -4731,7 +5041,8 @@ class PatchDeploymentPatchConfigZypperArgs:
     @exclusive_patches.setter
     def exclusive_patches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def severities(
@@ -4740,17 +5051,20 @@ class PatchDeploymentPatchConfigZypperArgs:
     @severities.setter
     def severities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="withOptional")
     def with_optional(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @with_optional.setter
-    def with_optional(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def with_optional(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="withUpdate")
     def with_update(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @with_update.setter
-    def with_update(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def with_update(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class PatchDeploymentRecurringScheduleArgsDict(TypedDict):
     time_of_day: pulumi.Input[PatchDeploymentRecurringScheduleTimeOfDayArgsDict]
@@ -4788,7 +5102,8 @@ class PatchDeploymentRecurringScheduleArgs:
     @time_of_day.setter
     def time_of_day(
         self, value: pulumi.Input[PatchDeploymentRecurringScheduleTimeOfDayArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(
@@ -4797,17 +5112,22 @@ class PatchDeploymentRecurringScheduleArgs:
     @time_zone.setter
     def time_zone(
         self, value: pulumi.Input[PatchDeploymentRecurringScheduleTimeZoneArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endTime")
     def end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_time.setter
-    def end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastExecuteTime")
     def last_execute_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_execute_time.setter
-    def last_execute_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_execute_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def monthly(
@@ -4816,17 +5136,22 @@ class PatchDeploymentRecurringScheduleArgs:
     @monthly.setter
     def monthly(
         self, value: Optional[pulumi.Input[PatchDeploymentRecurringScheduleMonthlyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nextExecuteTime")
     def next_execute_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @next_execute_time.setter
-    def next_execute_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def next_execute_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def weekly(
@@ -4835,7 +5160,8 @@ class PatchDeploymentRecurringScheduleArgs:
     @weekly.setter
     def weekly(
         self, value: Optional[pulumi.Input[PatchDeploymentRecurringScheduleWeeklyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentRecurringScheduleMonthlyArgsDict(TypedDict):
     month_day: NotRequired[pulumi.Input[_builtins.int]]
@@ -4857,7 +5183,8 @@ class PatchDeploymentRecurringScheduleMonthlyArgs:
     @pulumi.getter(name="monthDay")
     def month_day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month_day.setter
-    def month_day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month_day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weekDayOfMonth")
     def week_day_of_month(
@@ -4871,7 +5198,8 @@ class PatchDeploymentRecurringScheduleMonthlyArgs:
         value: Optional[
             pulumi.Input[PatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
@@ -4891,17 +5219,20 @@ class PatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthArgs:
     @pulumi.getter(name="dayOfWeek")
     def day_of_week(self) -> pulumi.Input[_builtins.str]: ...
     @day_of_week.setter
-    def day_of_week(self, value: pulumi.Input[_builtins.str]): ...
+    def day_of_week(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weekOrdinal")
     def week_ordinal(self) -> pulumi.Input[_builtins.int]: ...
     @week_ordinal.setter
-    def week_ordinal(self, value: pulumi.Input[_builtins.int]): ...
+    def week_ordinal(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOffset")
     def day_offset(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day_offset.setter
-    def day_offset(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day_offset(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PatchDeploymentRecurringScheduleTimeOfDayArgsDict(TypedDict):
     hours: NotRequired[pulumi.Input[_builtins.int]]
@@ -4923,22 +5254,26 @@ class PatchDeploymentRecurringScheduleTimeOfDayArgs:
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PatchDeploymentRecurringScheduleTimeZoneArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -4956,12 +5291,14 @@ class PatchDeploymentRecurringScheduleTimeZoneArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PatchDeploymentRecurringScheduleWeeklyArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
@@ -4973,7 +5310,8 @@ class PatchDeploymentRecurringScheduleWeeklyArgs:
     @pulumi.getter(name="dayOfWeek")
     def day_of_week(self) -> pulumi.Input[_builtins.str]: ...
     @day_of_week.setter
-    def day_of_week(self, value: pulumi.Input[_builtins.str]): ...
+    def day_of_week(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PatchDeploymentRolloutArgsDict(TypedDict):
     disruption_budget: pulumi.Input[PatchDeploymentRolloutDisruptionBudgetArgsDict]
@@ -4995,12 +5333,14 @@ class PatchDeploymentRolloutArgs:
     @disruption_budget.setter
     def disruption_budget(
         self, value: pulumi.Input[PatchDeploymentRolloutDisruptionBudgetArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PatchDeploymentRolloutDisruptionBudgetArgsDict(TypedDict):
     fixed: NotRequired[pulumi.Input[_builtins.int]]
@@ -5018,12 +5358,14 @@ class PatchDeploymentRolloutDisruptionBudgetArgs:
     @pulumi.getter
     def fixed(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @fixed.setter
-    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentage(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @percentage.setter
-    def percentage(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def percentage(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -5049,7 +5391,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osPolicyAssignmentV1Payload")
     def os_policy_assignment_v1_payload(
@@ -5067,7 +5410,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceArgs:
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadArgsDict(
     TypedDict
@@ -5138,7 +5482,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         value: pulumi.Input[
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osPolicies")
     def os_policies(
@@ -5160,7 +5505,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rollout(
@@ -5174,57 +5520,70 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         value: pulumi.Input[
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def baseline(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @baseline.setter
-    def baseline(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def baseline(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deleted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deleted.setter
-    def deleted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deleted(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revisionCreateTime")
     def revision_create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revision_create_time.setter
-    def revision_create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revision_create_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revisionId")
     def revision_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revision_id.setter
-    def revision_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revision_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutState")
     def rollout_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_state.setter
-    def rollout_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgsDict(
     TypedDict
@@ -5296,7 +5655,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def all(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all.setter
-    def all(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionLabels")
     def exclusion_labels(
@@ -5322,7 +5682,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionLabels")
     def inclusion_labels(
@@ -5348,7 +5709,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inventories(
@@ -5374,7 +5736,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelArgsDict(
     TypedDict
@@ -5396,7 +5759,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelArgsDict(
     TypedDict
@@ -5418,7 +5782,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoryArgsDict(
     TypedDict
@@ -5438,12 +5803,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyArgsDict(
     TypedDict
@@ -5481,12 +5848,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroups")
     def resource_groups(
@@ -5508,7 +5877,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowNoResourceGroupMatch")
     def allow_no_resource_group_match(
@@ -5517,12 +5887,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @allow_no_resource_group_match.setter
     def allow_no_resource_group_match(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupArgsDict(
     TypedDict
@@ -5587,7 +5959,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inventoryFilters")
     def inventory_filters(
@@ -5613,7 +5986,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupInventoryFilterArgsDict(
     TypedDict
@@ -5633,12 +6007,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceArgsDict(
     TypedDict
@@ -5696,7 +6072,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exec")
     def exec_(
@@ -5714,7 +6091,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -5732,7 +6110,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pkg(
@@ -5750,7 +6129,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def repository(
@@ -5768,7 +6148,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgsDict(
     TypedDict
@@ -5809,7 +6190,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         value: pulumi.Input[
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enforce(
@@ -5827,7 +6209,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgsDict(
     TypedDict
@@ -5861,14 +6244,16 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -5886,17 +6271,22 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgsDict(
     TypedDict
@@ -5936,7 +6326,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -5954,12 +6345,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -5977,7 +6370,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgsDict(
     TypedDict
@@ -5999,17 +6393,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict(
     TypedDict
@@ -6029,12 +6426,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgsDict(
     TypedDict
@@ -6068,14 +6467,16 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -6093,17 +6494,22 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgsDict(
     TypedDict
@@ -6143,7 +6549,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -6161,12 +6568,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -6184,7 +6593,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgsDict(
     TypedDict
@@ -6206,17 +6616,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict(
     TypedDict
@@ -6236,12 +6649,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgsDict(
     TypedDict
@@ -6275,17 +6690,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> pulumi.Input[_builtins.str]: ...
     @state.setter
-    def state(self, value: pulumi.Input[_builtins.str]): ...
+    def state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def content(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content.setter
-    def content(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -6303,12 +6721,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permissions.setter
-    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgsDict(
     TypedDict
@@ -6348,7 +6768,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -6366,12 +6787,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -6389,7 +6812,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgsDict(
     TypedDict
@@ -6411,17 +6835,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgsDict(
     TypedDict
@@ -6441,12 +6868,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgsDict(
     TypedDict
@@ -6534,7 +6963,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="desiredState")
     def desired_state(self) -> pulumi.Input[_builtins.str]: ...
     @desired_state.setter
-    def desired_state(self, value: pulumi.Input[_builtins.str]): ...
+    def desired_state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def apt(
@@ -6552,7 +6982,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deb(
@@ -6570,7 +7001,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def googet(
@@ -6588,7 +7020,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def msi(
@@ -6606,7 +7039,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rpm(
@@ -6624,7 +7058,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -6642,7 +7077,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -6660,7 +7096,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgsDict(
     TypedDict
@@ -6674,7 +7111,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgsDict(
     TypedDict
@@ -6707,12 +7145,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         value: pulumi.Input[
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgsDict(
     TypedDict
@@ -6752,7 +7192,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -6770,12 +7211,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -6793,7 +7236,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgsDict(
     TypedDict
@@ -6815,17 +7259,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict(
     TypedDict
@@ -6845,12 +7292,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgsDict(
     TypedDict
@@ -6864,7 +7313,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgsDict(
     TypedDict
@@ -6897,7 +7347,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         value: pulumi.Input[
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -6906,7 +7357,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgsDict(
     TypedDict
@@ -6946,7 +7398,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -6964,12 +7417,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -6987,7 +7442,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgsDict(
     TypedDict
@@ -7009,17 +7465,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict(
     TypedDict
@@ -7039,12 +7498,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgsDict(
     TypedDict
@@ -7077,12 +7538,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         value: pulumi.Input[
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgsDict(
     TypedDict
@@ -7122,7 +7585,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -7140,12 +7604,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -7163,7 +7629,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgsDict(
     TypedDict
@@ -7185,17 +7652,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict(
     TypedDict
@@ -7215,12 +7685,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgsDict(
     TypedDict
@@ -7234,7 +7706,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgsDict(
     TypedDict
@@ -7248,7 +7721,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgsDict(
     TypedDict
@@ -7317,7 +7791,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def goo(
@@ -7335,7 +7810,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -7353,7 +7829,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -7371,7 +7848,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
                 V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgsDict(
     TypedDict
@@ -7397,29 +7875,34 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="archiveType")
     def archive_type(self) -> pulumi.Input[_builtins.str]: ...
     @archive_type.setter
-    def archive_type(self, value: pulumi.Input[_builtins.str]): ...
+    def archive_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def components(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @components.setter
     def components(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def distribution(self) -> pulumi.Input[_builtins.str]: ...
     @distribution.setter
-    def distribution(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKey")
     def gpg_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gpg_key.setter
-    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgsDict(
     TypedDict
@@ -7436,12 +7919,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> pulumi.Input[_builtins.str]: ...
     @url.setter
-    def url(self, value: pulumi.Input[_builtins.str]): ...
+    def url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgsDict(
     TypedDict
@@ -7465,17 +7950,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -7484,7 +7972,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgsDict(
     TypedDict
@@ -7508,17 +7997,20 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -7527,7 +8019,8 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgsDict(
     TypedDict
@@ -7560,12 +8053,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         value: pulumi.Input[
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minWaitDuration")
     def min_wait_duration(self) -> pulumi.Input[_builtins.str]: ...
     @min_wait_duration.setter
-    def min_wait_duration(self, value: pulumi.Input[_builtins.str]): ...
+    def min_wait_duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgsDict(
     TypedDict
@@ -7585,12 +8080,14 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     @pulumi.getter
     def fixed(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @fixed.setter
-    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @percent.setter
-    def percent(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def percent(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationScopeArgsDict(TypedDict):
     selectors: NotRequired[
@@ -7643,7 +8140,8 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorArgsDict(TypedDict):
     location_selector: NotRequired[
@@ -7690,7 +8188,8 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorArgs:
                 V2PolicyOrchestratorForFolderOrchestrationScopeSelectorLocationSelectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceHierarchySelector")
     def resource_hierarchy_selector(
@@ -7708,7 +8207,8 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorArgs:
                 V2PolicyOrchestratorForFolderOrchestrationScopeSelectorResourceHierarchySelectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorLocationSelectorArgsDict(
     TypedDict
@@ -7732,7 +8232,8 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorLocationSelectorArg
     @included_locations.setter
     def included_locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorResourceHierarchySelectorArgsDict(
     TypedDict
@@ -7760,7 +8261,8 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorResourceHierarchySe
     @included_folders.setter
     def included_folders(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedProjects")
     def included_projects(
@@ -7769,7 +8271,8 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorResourceHierarchySe
     @included_projects.setter
     def included_projects(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationStateArgsDict(TypedDict):
     current_iteration_states: NotRequired[
@@ -7840,7 +8343,8 @@ class V2PolicyOrchestratorForFolderOrchestrationStateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="previousIterationStates")
     def previous_iteration_states(
@@ -7866,7 +8370,8 @@ class V2PolicyOrchestratorForFolderOrchestrationStateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateArgsDict(
     TypedDict
@@ -7935,42 +8440,54 @@ class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failedActions")
     def failed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failed_actions.setter
-    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishTime")
     def finish_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_time.setter
-    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performedActions")
     def performed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @performed_actions.setter
-    def performed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def performed_actions(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def progress(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @progress.setter
-    def progress(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def progress(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutResource")
     def rollout_resource(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_resource.setter
-    def rollout_resource(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_resource(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorArgsDict(
     TypedDict
@@ -8008,7 +8525,8 @@ class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorA
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(
@@ -8034,12 +8552,14 @@ class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorDetailArgsDict(
     TypedDict
@@ -8059,12 +8579,14 @@ class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorD
     @pulumi.getter(name="typeUrl")
     def type_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_url.setter
-    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateArgsDict(
     TypedDict
@@ -8133,42 +8655,54 @@ class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failedActions")
     def failed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failed_actions.setter
-    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishTime")
     def finish_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_time.setter
-    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performedActions")
     def performed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @performed_actions.setter
-    def performed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def performed_actions(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def progress(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @progress.setter
-    def progress(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def progress(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutResource")
     def rollout_resource(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_resource.setter
-    def rollout_resource(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_resource(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateErrorArgsDict(
     TypedDict
@@ -8206,7 +8740,8 @@ class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateError
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(
@@ -8232,12 +8767,14 @@ class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateError
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateErrorDetailArgsDict(
     TypedDict
@@ -8257,12 +8794,14 @@ class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateError
     @pulumi.getter(name="typeUrl")
     def type_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_url.setter
-    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -8288,7 +8827,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osPolicyAssignmentV1Payload")
     def os_policy_assignment_v1_payload(
@@ -8306,7 +8846,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceArgs:
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadArgsDict(
     TypedDict
@@ -8377,7 +8918,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         value: pulumi.Input[
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osPolicies")
     def os_policies(
@@ -8399,7 +8941,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rollout(
@@ -8413,57 +8956,70 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         value: pulumi.Input[
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def baseline(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @baseline.setter
-    def baseline(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def baseline(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deleted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deleted.setter
-    def deleted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deleted(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revisionCreateTime")
     def revision_create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revision_create_time.setter
-    def revision_create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revision_create_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revisionId")
     def revision_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revision_id.setter
-    def revision_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revision_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutState")
     def rollout_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_state.setter
-    def rollout_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgsDict(
     TypedDict
@@ -8535,7 +9091,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def all(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all.setter
-    def all(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionLabels")
     def exclusion_labels(
@@ -8561,7 +9118,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionLabels")
     def inclusion_labels(
@@ -8587,7 +9145,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inventories(
@@ -8613,7 +9172,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelArgsDict(
     TypedDict
@@ -8635,7 +9195,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelArgsDict(
     TypedDict
@@ -8657,7 +9218,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoryArgsDict(
     TypedDict
@@ -8677,12 +9239,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyArgsDict(
     TypedDict
@@ -8720,12 +9284,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroups")
     def resource_groups(
@@ -8747,7 +9313,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowNoResourceGroupMatch")
     def allow_no_resource_group_match(
@@ -8756,12 +9323,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @allow_no_resource_group_match.setter
     def allow_no_resource_group_match(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupArgsDict(
     TypedDict
@@ -8826,7 +9395,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inventoryFilters")
     def inventory_filters(
@@ -8852,7 +9422,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupInventoryFilterArgsDict(
     TypedDict
@@ -8872,12 +9443,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceArgsDict(
     TypedDict
@@ -8935,7 +9508,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exec")
     def exec_(
@@ -8953,7 +9527,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -8971,7 +9546,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pkg(
@@ -8989,7 +9565,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def repository(
@@ -9007,7 +9584,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgsDict(
     TypedDict
@@ -9048,7 +9626,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         value: pulumi.Input[
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enforce(
@@ -9066,7 +9645,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgsDict(
     TypedDict
@@ -9100,14 +9680,16 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -9125,17 +9707,22 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgsDict(
     TypedDict
@@ -9175,7 +9762,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -9193,12 +9781,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -9216,7 +9806,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgsDict(
     TypedDict
@@ -9238,17 +9829,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict(
     TypedDict
@@ -9268,12 +9862,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgsDict(
     TypedDict
@@ -9307,14 +9903,16 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -9332,17 +9930,22 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgsDict(
     TypedDict
@@ -9382,7 +9985,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -9400,12 +10004,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -9423,7 +10029,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgsDict(
     TypedDict
@@ -9445,17 +10052,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict(
     TypedDict
@@ -9475,12 +10085,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgsDict(
     TypedDict
@@ -9514,17 +10126,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> pulumi.Input[_builtins.str]: ...
     @state.setter
-    def state(self, value: pulumi.Input[_builtins.str]): ...
+    def state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def content(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content.setter
-    def content(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -9542,12 +10157,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permissions.setter
-    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgsDict(
     TypedDict
@@ -9587,7 +10204,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -9605,12 +10223,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -9628,7 +10248,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgsDict(
     TypedDict
@@ -9650,17 +10271,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgsDict(
     TypedDict
@@ -9680,12 +10304,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgsDict(
     TypedDict
@@ -9773,7 +10399,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="desiredState")
     def desired_state(self) -> pulumi.Input[_builtins.str]: ...
     @desired_state.setter
-    def desired_state(self, value: pulumi.Input[_builtins.str]): ...
+    def desired_state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def apt(
@@ -9791,7 +10418,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deb(
@@ -9809,7 +10437,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def googet(
@@ -9827,7 +10456,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def msi(
@@ -9845,7 +10475,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rpm(
@@ -9863,7 +10494,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -9881,7 +10513,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -9899,7 +10532,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgsDict(
     TypedDict
@@ -9913,7 +10547,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgsDict(
     TypedDict
@@ -9946,12 +10581,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         value: pulumi.Input[
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgsDict(
     TypedDict
@@ -9991,7 +10628,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -10009,12 +10647,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -10032,7 +10672,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgsDict(
     TypedDict
@@ -10054,17 +10695,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict(
     TypedDict
@@ -10084,12 +10728,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgsDict(
     TypedDict
@@ -10103,7 +10749,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgsDict(
     TypedDict
@@ -10136,7 +10783,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         value: pulumi.Input[
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -10145,7 +10793,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgsDict(
     TypedDict
@@ -10185,7 +10834,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -10203,12 +10853,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -10226,7 +10878,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgsDict(
     TypedDict
@@ -10248,17 +10901,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict(
     TypedDict
@@ -10278,12 +10934,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgsDict(
     TypedDict
@@ -10316,12 +10974,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         value: pulumi.Input[
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgsDict(
     TypedDict
@@ -10361,7 +11021,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -10379,12 +11040,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -10402,7 +11065,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgsDict(
     TypedDict
@@ -10424,17 +11088,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict(
     TypedDict
@@ -10454,12 +11121,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgsDict(
     TypedDict
@@ -10473,7 +11142,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgsDict(
     TypedDict
@@ -10487,7 +11157,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgsDict(
     TypedDict
@@ -10556,7 +11227,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def goo(
@@ -10574,7 +11246,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -10592,7 +11265,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -10610,7 +11284,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
                 V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgsDict(
     TypedDict
@@ -10636,29 +11311,34 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="archiveType")
     def archive_type(self) -> pulumi.Input[_builtins.str]: ...
     @archive_type.setter
-    def archive_type(self, value: pulumi.Input[_builtins.str]): ...
+    def archive_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def components(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @components.setter
     def components(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def distribution(self) -> pulumi.Input[_builtins.str]: ...
     @distribution.setter
-    def distribution(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKey")
     def gpg_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gpg_key.setter
-    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgsDict(
     TypedDict
@@ -10675,12 +11355,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> pulumi.Input[_builtins.str]: ...
     @url.setter
-    def url(self, value: pulumi.Input[_builtins.str]): ...
+    def url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgsDict(
     TypedDict
@@ -10704,17 +11386,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -10723,7 +11408,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgsDict(
     TypedDict
@@ -10747,17 +11433,20 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -10766,7 +11455,8 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgsDict(
     TypedDict
@@ -10799,12 +11489,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         value: pulumi.Input[
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minWaitDuration")
     def min_wait_duration(self) -> pulumi.Input[_builtins.str]: ...
     @min_wait_duration.setter
-    def min_wait_duration(self, value: pulumi.Input[_builtins.str]): ...
+    def min_wait_duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgsDict(
     TypedDict
@@ -10824,12 +11516,14 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     @pulumi.getter
     def fixed(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @fixed.setter
-    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @percent.setter
-    def percent(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def percent(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeArgsDict(TypedDict):
     selectors: NotRequired[
@@ -10882,7 +11576,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorArgsDict(TypedDict):
     location_selector: NotRequired[
@@ -10929,7 +11624,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorArgs:
                 V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorLocationSelectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceHierarchySelector")
     def resource_hierarchy_selector(
@@ -10947,7 +11643,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorArgs:
                 V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorResourceHierarchySelectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorLocationSelectorArgsDict(
     TypedDict
@@ -10971,7 +11668,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorLocationSelec
     @included_locations.setter
     def included_locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorResourceHierarchySelectorArgsDict(
     TypedDict
@@ -10999,7 +11697,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorResourceHiera
     @included_folders.setter
     def included_folders(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedProjects")
     def included_projects(
@@ -11008,7 +11707,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorResourceHiera
     @included_projects.setter
     def included_projects(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationStateArgsDict(TypedDict):
     current_iteration_states: NotRequired[
@@ -11071,7 +11771,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="previousIterationState")
     def previous_iteration_state(
@@ -11089,7 +11790,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateArgs:
                 V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationStateArgsDict(
     TypedDict
@@ -11142,42 +11844,54 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationState
                 V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationStateErrorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failedActions")
     def failed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failed_actions.setter
-    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishTime")
     def finish_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_time.setter
-    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performedActions")
     def performed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @performed_actions.setter
-    def performed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def performed_actions(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def progress(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @progress.setter
-    def progress(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def progress(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutResource")
     def rollout_resource(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_resource.setter
-    def rollout_resource(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_resource(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationStateErrorArgsDict(
     TypedDict
@@ -11215,7 +11929,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationState
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(
@@ -11241,12 +11956,14 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationState
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationStateErrorDetailArgsDict(
     TypedDict
@@ -11266,12 +11983,14 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationState
     @pulumi.getter(name="typeUrl")
     def type_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_url.setter
-    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateArgsDict(
     TypedDict
@@ -11324,42 +12043,54 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStat
                 V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateErrorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failedActions")
     def failed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failed_actions.setter
-    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishTime")
     def finish_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_time.setter
-    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performedActions")
     def performed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @performed_actions.setter
-    def performed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def performed_actions(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def progress(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @progress.setter
-    def progress(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def progress(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutResource")
     def rollout_resource(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_resource.setter
-    def rollout_resource(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_resource(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateErrorArgsDict(
     TypedDict
@@ -11397,7 +12128,8 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStat
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(
@@ -11423,12 +12155,14 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateErrorDetailArgsDict(
     TypedDict
@@ -11448,12 +12182,14 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStat
     @pulumi.getter(name="typeUrl")
     def type_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_url.setter
-    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11479,7 +12215,8 @@ class V2PolicyOrchestratorOrchestratedResourceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osPolicyAssignmentV1Payload")
     def os_policy_assignment_v1_payload(
@@ -11497,7 +12234,8 @@ class V2PolicyOrchestratorOrchestratedResourceArgs:
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgsDict(
     TypedDict
@@ -11566,7 +12304,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgs:
         value: pulumi.Input[
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osPolicies")
     def os_policies(
@@ -11588,7 +12327,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rollout(
@@ -11602,52 +12342,64 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgs:
         value: pulumi.Input[
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def baseline(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @baseline.setter
-    def baseline(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def baseline(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deleted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deleted.setter
-    def deleted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deleted(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revisionCreateTime")
     def revision_create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revision_create_time.setter
-    def revision_create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revision_create_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revisionId")
     def revision_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revision_id.setter
-    def revision_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revision_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutState")
     def rollout_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_state.setter
-    def rollout_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgsDict(
     TypedDict
@@ -11719,7 +12471,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
     @pulumi.getter
     def all(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all.setter
-    def all(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionLabels")
     def exclusion_labels(
@@ -11745,7 +12498,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionLabels")
     def inclusion_labels(
@@ -11771,7 +12525,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inventories(
@@ -11797,7 +12552,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelArgsDict(
     TypedDict
@@ -11819,7 +12575,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelArgsDict(
     TypedDict
@@ -11841,7 +12598,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoryArgsDict(
     TypedDict
@@ -11861,12 +12619,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyArgsDict(
     TypedDict
@@ -11904,12 +12664,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroups")
     def resource_groups(
@@ -11931,7 +12693,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowNoResourceGroupMatch")
     def allow_no_resource_group_match(
@@ -11940,12 +12703,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @allow_no_resource_group_match.setter
     def allow_no_resource_group_match(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupArgsDict(
     TypedDict
@@ -12010,7 +12775,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inventoryFilters")
     def inventory_filters(
@@ -12036,7 +12802,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupInventoryFilterArgsDict(
     TypedDict
@@ -12056,12 +12823,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="osShortName")
     def os_short_name(self) -> pulumi.Input[_builtins.str]: ...
     @os_short_name.setter
-    def os_short_name(self, value: pulumi.Input[_builtins.str]): ...
+    def os_short_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceArgsDict(
     TypedDict
@@ -12119,7 +12888,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exec")
     def exec_(
@@ -12137,7 +12907,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -12155,7 +12926,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pkg(
@@ -12173,7 +12945,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def repository(
@@ -12191,7 +12964,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgsDict(
     TypedDict
@@ -12232,7 +13006,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         value: pulumi.Input[
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enforce(
@@ -12250,7 +13025,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgsDict(
     TypedDict
@@ -12284,14 +13060,16 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -12309,17 +13087,22 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgsDict(
     TypedDict
@@ -12359,7 +13142,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -12377,12 +13161,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -12400,7 +13186,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgsDict(
     TypedDict
@@ -12422,17 +13209,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict(
     TypedDict
@@ -12452,12 +13242,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgsDict(
     TypedDict
@@ -12491,14 +13283,16 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def interpreter(self) -> pulumi.Input[_builtins.str]: ...
     @interpreter.setter
-    def interpreter(self, value: pulumi.Input[_builtins.str]): ...
+    def interpreter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def args(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @args.setter
     def args(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -12516,17 +13310,22 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFilePath")
     def output_file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_file_path.setter
-    def output_file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_file_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgsDict(
     TypedDict
@@ -12566,7 +13365,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -12584,12 +13384,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -12607,7 +13409,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgsDict(
     TypedDict
@@ -12629,17 +13432,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict(
     TypedDict
@@ -12659,12 +13465,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgsDict(
     TypedDict
@@ -12698,17 +13506,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> pulumi.Input[_builtins.str]: ...
     @state.setter
-    def state(self, value: pulumi.Input[_builtins.str]): ...
+    def state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def content(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content.setter
-    def content(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def file(
@@ -12726,12 +13537,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permissions.setter
-    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permissions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgsDict(
     TypedDict
@@ -12771,7 +13584,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -12789,12 +13603,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -12812,7 +13628,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgsDict(
     TypedDict
@@ -12834,17 +13651,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgsDict(
     TypedDict
@@ -12864,12 +13684,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgsDict(
     TypedDict
@@ -12957,7 +13779,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="desiredState")
     def desired_state(self) -> pulumi.Input[_builtins.str]: ...
     @desired_state.setter
-    def desired_state(self, value: pulumi.Input[_builtins.str]): ...
+    def desired_state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def apt(
@@ -12975,7 +13798,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deb(
@@ -12993,7 +13817,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def googet(
@@ -13011,7 +13836,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def msi(
@@ -13029,7 +13855,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rpm(
@@ -13047,7 +13874,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -13065,7 +13893,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -13083,7 +13912,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgsDict(
     TypedDict
@@ -13097,7 +13927,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgsDict(
     TypedDict
@@ -13130,12 +13961,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         value: pulumi.Input[
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgsDict(
     TypedDict
@@ -13175,7 +14008,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -13193,12 +14027,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -13216,7 +14052,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgsDict(
     TypedDict
@@ -13238,17 +14075,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict(
     TypedDict
@@ -13268,12 +14108,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgsDict(
     TypedDict
@@ -13287,7 +14129,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgsDict(
     TypedDict
@@ -13320,7 +14163,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         value: pulumi.Input[
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -13329,7 +14173,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgsDict(
     TypedDict
@@ -13369,7 +14214,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -13387,12 +14233,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -13410,7 +14258,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgsDict(
     TypedDict
@@ -13432,17 +14281,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict(
     TypedDict
@@ -13462,12 +14314,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgsDict(
     TypedDict
@@ -13500,12 +14354,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         value: pulumi.Input[
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullDeps")
     def pull_deps(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @pull_deps.setter
-    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def pull_deps(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgsDict(
     TypedDict
@@ -13545,7 +14401,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="allowInsecure")
     def allow_insecure(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_insecure.setter
-    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_insecure(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gcs(
@@ -13563,12 +14420,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localPath")
     def local_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_path.setter
-    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remote(
@@ -13586,7 +14445,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgsDict(
     TypedDict
@@ -13608,17 +14468,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def object(self) -> pulumi.Input[_builtins.str]: ...
     @object.setter
-    def object(self, value: pulumi.Input[_builtins.str]): ...
+    def object(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @generation.setter
-    def generation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def generation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict(
     TypedDict
@@ -13638,12 +14501,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha256Checksum")
     def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sha256_checksum.setter
-    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgsDict(
     TypedDict
@@ -13657,7 +14522,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgsDict(
     TypedDict
@@ -13671,7 +14537,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgsDict(
     TypedDict
@@ -13740,7 +14607,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def goo(
@@ -13758,7 +14626,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def yum(
@@ -13776,7 +14645,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zypper(
@@ -13794,7 +14664,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
                 V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgsDict(
     TypedDict
@@ -13820,29 +14691,34 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="archiveType")
     def archive_type(self) -> pulumi.Input[_builtins.str]: ...
     @archive_type.setter
-    def archive_type(self, value: pulumi.Input[_builtins.str]): ...
+    def archive_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def components(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @components.setter
     def components(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def distribution(self) -> pulumi.Input[_builtins.str]: ...
     @distribution.setter
-    def distribution(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKey")
     def gpg_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gpg_key.setter
-    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gpg_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgsDict(
     TypedDict
@@ -13859,12 +14735,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> pulumi.Input[_builtins.str]: ...
     @url.setter
-    def url(self, value: pulumi.Input[_builtins.str]): ...
+    def url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgsDict(
     TypedDict
@@ -13888,17 +14766,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -13907,7 +14788,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgsDict(
     TypedDict
@@ -13931,17 +14813,20 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @pulumi.getter(name="baseUrl")
     def base_url(self) -> pulumi.Input[_builtins.str]: ...
     @base_url.setter
-    def base_url(self, value: pulumi.Input[_builtins.str]): ...
+    def base_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gpgKeys")
     def gpg_keys(
@@ -13950,7 +14835,8 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     @gpg_keys.setter
     def gpg_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgsDict(
     TypedDict
@@ -13983,12 +14869,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout
         value: pulumi.Input[
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minWaitDuration")
     def min_wait_duration(self) -> pulumi.Input[_builtins.str]: ...
     @min_wait_duration.setter
-    def min_wait_duration(self, value: pulumi.Input[_builtins.str]): ...
+    def min_wait_duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgsDict(
     TypedDict
@@ -14008,12 +14896,14 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout
     @pulumi.getter
     def fixed(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @fixed.setter
-    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def fixed(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @percent.setter
-    def percent(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def percent(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationScopeArgsDict(TypedDict):
     selectors: NotRequired[
@@ -14056,7 +14946,8 @@ class V2PolicyOrchestratorOrchestrationScopeArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationScopeSelectorArgsDict(TypedDict):
     location_selector: NotRequired[
@@ -14101,7 +14992,8 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorArgs:
                 V2PolicyOrchestratorOrchestrationScopeSelectorLocationSelectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceHierarchySelector")
     def resource_hierarchy_selector(
@@ -14119,7 +15011,8 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorArgs:
                 V2PolicyOrchestratorOrchestrationScopeSelectorResourceHierarchySelectorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationScopeSelectorLocationSelectorArgsDict(TypedDict):
     included_locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -14141,7 +15034,8 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorLocationSelectorArgs:
     @included_locations.setter
     def included_locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationScopeSelectorResourceHierarchySelectorArgsDict(
     TypedDict
@@ -14169,7 +15063,8 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorResourceHierarchySelectorArg
     @included_folders.setter
     def included_folders(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedProjects")
     def included_projects(
@@ -14178,7 +15073,8 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorResourceHierarchySelectorArg
     @included_projects.setter
     def included_projects(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationStateArgsDict(TypedDict):
     current_iteration_states: NotRequired[
@@ -14241,7 +15137,8 @@ class V2PolicyOrchestratorOrchestrationStateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="previousIterationState")
     def previous_iteration_state(
@@ -14257,7 +15154,8 @@ class V2PolicyOrchestratorOrchestrationStateArgs:
                 V2PolicyOrchestratorOrchestrationStatePreviousIterationStateArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateArgsDict(TypedDict):
     error: NotRequired[
@@ -14308,42 +15206,54 @@ class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateArgs:
                 V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failedActions")
     def failed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failed_actions.setter
-    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishTime")
     def finish_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_time.setter
-    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performedActions")
     def performed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @performed_actions.setter
-    def performed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def performed_actions(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def progress(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @progress.setter
-    def progress(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def progress(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutResource")
     def rollout_resource(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_resource.setter
-    def rollout_resource(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_resource(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorArgsDict(
     TypedDict
@@ -14381,7 +15291,8 @@ class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(
@@ -14407,12 +15318,14 @@ class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailArgsDict(
     TypedDict
@@ -14432,12 +15345,14 @@ class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailArgs
     @pulumi.getter(name="typeUrl")
     def type_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_url.setter
-    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateArgsDict(TypedDict):
     error: NotRequired[
@@ -14488,42 +15403,54 @@ class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateArgs:
                 V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failedActions")
     def failed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failed_actions.setter
-    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failed_actions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishTime")
     def finish_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_time.setter
-    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performedActions")
     def performed_actions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @performed_actions.setter
-    def performed_actions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def performed_actions(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def progress(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @progress.setter
-    def progress(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def progress(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolloutResource")
     def rollout_resource(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rollout_resource.setter
-    def rollout_resource(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rollout_resource(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorArgsDict(
     TypedDict
@@ -14561,7 +15488,8 @@ class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(
@@ -14587,12 +15515,14 @@ class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailArgsDict(
     TypedDict
@@ -14612,9 +15542,11 @@ class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailArg
     @pulumi.getter(name="typeUrl")
     def type_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_url.setter
-    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

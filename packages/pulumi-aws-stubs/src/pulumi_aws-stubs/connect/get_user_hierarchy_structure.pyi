@@ -34,7 +34,8 @@ class GetUserHierarchyStructureResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetUserHierarchyStructureResult(GetUserHierarchyStructureResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserHierarchyStructureResult]:
+        ...
 
 def get_user_hierarchy_structure(
     instance_id: Optional[_builtins.str] = ...,

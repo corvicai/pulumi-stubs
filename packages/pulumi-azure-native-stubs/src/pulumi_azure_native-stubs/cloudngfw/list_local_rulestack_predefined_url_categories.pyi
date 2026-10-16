@@ -26,7 +26,10 @@ class ListLocalRulestackPredefinedUrlCategoriesResult:
 class AwaitableListLocalRulestackPredefinedUrlCategoriesResult(
     ListLocalRulestackPredefinedUrlCategoriesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListLocalRulestackPredefinedUrlCategoriesResult]:
+        ...
 
 def list_local_rulestack_predefined_url_categories(
     local_rulestack_name: Optional[_builtins.str] = ...,

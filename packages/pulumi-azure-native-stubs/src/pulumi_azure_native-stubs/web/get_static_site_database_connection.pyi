@@ -66,7 +66,10 @@ class GetStaticSiteDatabaseConnectionResult:
 class AwaitableGetStaticSiteDatabaseConnectionResult(
     GetStaticSiteDatabaseConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStaticSiteDatabaseConnectionResult]:
+        ...
 
 def get_static_site_database_connection(
     database_connection_name: Optional[_builtins.str] = ...,

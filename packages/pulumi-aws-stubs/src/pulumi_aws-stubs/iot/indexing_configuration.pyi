@@ -26,7 +26,8 @@ class IndexingConfigurationArgs:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thingGroupIndexingConfiguration")
     def thing_group_indexing_configuration(
@@ -40,7 +41,8 @@ class IndexingConfigurationArgs:
         value: Optional[
             pulumi.Input[IndexingConfigurationThingGroupIndexingConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thingIndexingConfiguration")
     def thing_indexing_configuration(
@@ -54,7 +56,8 @@ class IndexingConfigurationArgs:
         value: Optional[
             pulumi.Input[IndexingConfigurationThingIndexingConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IndexingConfigurationState:
@@ -73,7 +76,8 @@ class _IndexingConfigurationState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thingGroupIndexingConfiguration")
     def thing_group_indexing_configuration(
@@ -87,7 +91,8 @@ class _IndexingConfigurationState:
         value: Optional[
             pulumi.Input[IndexingConfigurationThingGroupIndexingConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thingIndexingConfiguration")
     def thing_indexing_configuration(
@@ -101,7 +106,8 @@ class _IndexingConfigurationState:
         value: Optional[
             pulumi.Input[IndexingConfigurationThingIndexingConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class IndexingConfiguration(pulumi.CustomResource):

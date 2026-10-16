@@ -266,7 +266,8 @@ class GetApplicationGatewayResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetApplicationGatewayResult(GetApplicationGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationGatewayResult]:
+        ...
 
 def get_application_gateway(
     application_gateway_name: Optional[_builtins.str] = ...,

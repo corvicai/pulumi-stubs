@@ -50,7 +50,10 @@ class GetGuestConfigurationAssignmentResult:
 class AwaitableGetGuestConfigurationAssignmentResult(
     GetGuestConfigurationAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGuestConfigurationAssignmentResult]:
+        ...
 
 def get_guest_configuration_assignment(
     guest_configuration_assignment_name: Optional[_builtins.str] = ...,

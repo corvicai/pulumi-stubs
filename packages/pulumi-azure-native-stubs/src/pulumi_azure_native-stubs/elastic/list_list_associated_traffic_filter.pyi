@@ -23,7 +23,10 @@ class ListListAssociatedTrafficFilterResult:
 class AwaitableListListAssociatedTrafficFilterResult(
     ListListAssociatedTrafficFilterResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListListAssociatedTrafficFilterResult]:
+        ...
 
 def list_list_associated_traffic_filter(
     monitor_name: Optional[_builtins.str] = ...,

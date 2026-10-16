@@ -31,7 +31,8 @@ class StandbyVirtualMachinePoolArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineState")
     def virtual_machine_state(
@@ -40,7 +41,8 @@ class StandbyVirtualMachinePoolArgs:
     @virtual_machine_state.setter
     def virtual_machine_state(
         self, value: pulumi.Input[Union[_builtins.str, VirtualMachineState]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="attachedVirtualMachineScaleSetId")
     def attached_virtual_machine_scale_set_id(
@@ -49,7 +51,8 @@ class StandbyVirtualMachinePoolArgs:
     @attached_virtual_machine_scale_set_id.setter
     def attached_virtual_machine_scale_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticityProfile")
     def elasticity_profile(
@@ -59,12 +62,14 @@ class StandbyVirtualMachinePoolArgs:
     def elasticity_profile(
         self,
         value: Optional[pulumi.Input[StandbyVirtualMachinePoolElasticityProfileArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="standbyVirtualMachinePoolName")
     def standby_virtual_machine_pool_name(
@@ -73,7 +78,8 @@ class StandbyVirtualMachinePoolArgs:
     @standby_virtual_machine_pool_name.setter
     def standby_virtual_machine_pool_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -82,7 +88,8 @@ class StandbyVirtualMachinePoolArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:standbypool:StandbyVirtualMachinePool")
 class StandbyVirtualMachinePool(pulumi.CustomResource):

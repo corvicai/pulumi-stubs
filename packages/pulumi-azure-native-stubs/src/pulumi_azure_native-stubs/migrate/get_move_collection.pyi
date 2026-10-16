@@ -60,7 +60,8 @@ class GetMoveCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMoveCollectionResult(GetMoveCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMoveCollectionResult]:
+        ...
 
 def get_move_collection(
     move_collection_name: Optional[_builtins.str] = ...,

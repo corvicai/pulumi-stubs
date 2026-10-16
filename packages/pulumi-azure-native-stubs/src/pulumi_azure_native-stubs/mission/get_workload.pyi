@@ -62,7 +62,8 @@ class GetWorkloadResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadResult(GetWorkloadResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadResult]:
+        ...
 
 def get_workload(
     resource_group_name: Optional[_builtins.str] = ...,

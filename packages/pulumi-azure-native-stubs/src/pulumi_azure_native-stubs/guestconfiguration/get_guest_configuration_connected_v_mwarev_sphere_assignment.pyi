@@ -45,7 +45,10 @@ class GetGuestConfigurationConnectedVMwarevSphereAssignmentResult:
 class AwaitableGetGuestConfigurationConnectedVMwarevSphereAssignmentResult(
     GetGuestConfigurationConnectedVMwarevSphereAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGuestConfigurationConnectedVMwarevSphereAssignmentResult]:
+        ...
 
 def get_guest_configuration_connected_v_mwarev_sphere_assignment(
     guest_configuration_assignment_name: Optional[_builtins.str] = ...,

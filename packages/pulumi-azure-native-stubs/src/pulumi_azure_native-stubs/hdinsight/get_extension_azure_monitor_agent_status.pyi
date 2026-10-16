@@ -40,7 +40,10 @@ class GetExtensionAzureMonitorAgentStatusResult:
 class AwaitableGetExtensionAzureMonitorAgentStatusResult(
     GetExtensionAzureMonitorAgentStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExtensionAzureMonitorAgentStatusResult]:
+        ...
 
 def get_extension_azure_monitor_agent_status(
     cluster_name: Optional[_builtins.str] = ...,

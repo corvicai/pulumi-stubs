@@ -48,7 +48,8 @@ class GetPrivateAtlaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateAtlaseResult(GetPrivateAtlaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateAtlaseResult]:
+        ...
 
 def get_private_atlase(
     account_name: Optional[_builtins.str] = ...,

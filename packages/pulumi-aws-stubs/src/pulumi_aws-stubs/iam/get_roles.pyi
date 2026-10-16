@@ -29,7 +29,8 @@ class GetRolesResult:
     def path_prefix(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetRolesResult(GetRolesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRolesResult]:
+        ...
 
 def get_roles(
     name_regex: Optional[_builtins.str] = ...,

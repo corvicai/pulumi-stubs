@@ -56,7 +56,8 @@ class GetHyperVSiteResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHyperVSiteResult(GetHyperVSiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHyperVSiteResult]:
+        ...
 
 def get_hyper_v_site(
     resource_group_name: Optional[_builtins.str] = ...,

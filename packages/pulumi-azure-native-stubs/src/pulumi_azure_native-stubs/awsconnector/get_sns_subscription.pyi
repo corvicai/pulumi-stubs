@@ -52,7 +52,8 @@ class GetSnsSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSnsSubscriptionResult(GetSnsSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnsSubscriptionResult]:
+        ...
 
 def get_sns_subscription(
     name: Optional[_builtins.str] = ...,

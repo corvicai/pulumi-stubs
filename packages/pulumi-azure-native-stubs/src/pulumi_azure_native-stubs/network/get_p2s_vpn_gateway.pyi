@@ -84,7 +84,8 @@ class GetP2sVpnGatewayResult:
     def vpn_server_configuration(self) -> Optional[outputs.SubResourceResponse]: ...
 
 class AwaitableGetP2sVpnGatewayResult(GetP2sVpnGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetP2sVpnGatewayResult]:
+        ...
 
 def get_p2s_vpn_gateway(
     gateway_name: Optional[_builtins.str] = ...,

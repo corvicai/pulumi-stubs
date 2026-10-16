@@ -30,7 +30,8 @@ class GetBillingInfoResult:
     ) -> Optional[outputs.PartnerBillingEntityResponse]: ...
 
 class AwaitableGetBillingInfoResult(GetBillingInfoResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBillingInfoResult]:
+        ...
 
 def get_billing_info(
     monitor_name: Optional[_builtins.str] = ...,

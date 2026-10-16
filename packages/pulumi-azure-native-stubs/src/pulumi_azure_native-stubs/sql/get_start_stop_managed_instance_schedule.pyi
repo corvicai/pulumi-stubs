@@ -62,7 +62,10 @@ class GetStartStopManagedInstanceScheduleResult:
 class AwaitableGetStartStopManagedInstanceScheduleResult(
     GetStartStopManagedInstanceScheduleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStartStopManagedInstanceScheduleResult]:
+        ...
 
 def get_start_stop_managed_instance_schedule(
     managed_instance_name: Optional[_builtins.str] = ...,

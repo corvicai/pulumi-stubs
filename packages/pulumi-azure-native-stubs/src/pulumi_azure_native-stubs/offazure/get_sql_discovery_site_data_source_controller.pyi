@@ -50,7 +50,10 @@ class GetSqlDiscoverySiteDataSourceControllerResult:
 class AwaitableGetSqlDiscoverySiteDataSourceControllerResult(
     GetSqlDiscoverySiteDataSourceControllerResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlDiscoverySiteDataSourceControllerResult]:
+        ...
 
 def get_sql_discovery_site_data_source_controller(
     discovery_site_data_source_name: Optional[_builtins.str] = ...,

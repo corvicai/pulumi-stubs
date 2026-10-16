@@ -65,7 +65,8 @@ class GetOpenZfsSnapshotResult:
     def volume_id(self) -> _builtins.str: ...
 
 class AwaitableGetOpenZfsSnapshotResult(GetOpenZfsSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOpenZfsSnapshotResult]:
+        ...
 
 def get_open_zfs_snapshot(
     filters: Optional[

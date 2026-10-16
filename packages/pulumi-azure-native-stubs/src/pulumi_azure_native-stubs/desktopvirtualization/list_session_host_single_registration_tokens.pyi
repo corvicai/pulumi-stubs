@@ -26,7 +26,10 @@ class ListSessionHostSingleRegistrationTokensResult:
 class AwaitableListSessionHostSingleRegistrationTokensResult(
     ListSessionHostSingleRegistrationTokensResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSessionHostSingleRegistrationTokensResult]:
+        ...
 
 def list_session_host_single_registration_tokens(
     expiration_time_in_utc: Optional[_builtins.str] = ...,

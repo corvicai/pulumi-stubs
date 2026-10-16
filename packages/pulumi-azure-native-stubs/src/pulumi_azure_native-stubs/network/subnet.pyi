@@ -63,17 +63,20 @@ class SubnetInitArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkName")
     def virtual_network_name(self) -> pulumi.Input[_builtins.str]: ...
     @virtual_network_name.setter
-    def virtual_network_name(self, value: pulumi.Input[_builtins.str]): ...
+    def virtual_network_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressPrefix")
     def address_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @address_prefix.setter
-    def address_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def address_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressPrefixes")
     def address_prefixes(
@@ -82,7 +85,8 @@ class SubnetInitArgs:
     @address_prefixes.setter
     def address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationGatewayIPConfigurations")
     def application_gateway_ip_configurations(
@@ -96,14 +100,16 @@ class SubnetInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationGatewayIPConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultOutboundAccess")
     def default_outbound_access(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @default_outbound_access.setter
     def default_outbound_access(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delegations(
@@ -112,12 +118,14 @@ class SubnetInitArgs:
     @delegations.setter
     def delegations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DelegationArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAllocations")
     def ip_allocations(
@@ -126,7 +134,8 @@ class SubnetInitArgs:
     @ip_allocations.setter
     def ip_allocations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipamPoolPrefixAllocations")
     def ipam_pool_prefix_allocations(
@@ -140,17 +149,20 @@ class SubnetInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[IpamPoolPrefixAllocationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natGateway")
     def nat_gateway(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @nat_gateway.setter
-    def nat_gateway(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def nat_gateway(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityGroup")
     def network_security_group(
@@ -159,7 +171,8 @@ class SubnetInitArgs:
     @network_security_group.setter
     def network_security_group(
         self, value: Optional[pulumi.Input[NetworkSecurityGroupArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointNetworkPolicies")
     def private_endpoint_network_policies(
@@ -175,7 +188,8 @@ class SubnetInitArgs:
                 Union[_builtins.str, VirtualNetworkPrivateEndpointNetworkPolicies]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceNetworkPolicies")
     def private_link_service_network_policies(
@@ -193,12 +207,14 @@ class SubnetInitArgs:
                 Union[_builtins.str, VirtualNetworkPrivateLinkServiceNetworkPolicies]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTable")
     def route_table(self) -> Optional[pulumi.Input[RouteTableArgs]]: ...
     @route_table.setter
-    def route_table(self, value: Optional[pulumi.Input[RouteTableArgs]]): ...
+    def route_table(self, value: Optional[pulumi.Input[RouteTableArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceEndpointPolicies")
     def service_endpoint_policies(
@@ -210,7 +226,8 @@ class SubnetInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceEndpointPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceEndpoints")
     def service_endpoints(
@@ -224,7 +241,8 @@ class SubnetInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceEndpointPropertiesFormatArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharingScope")
     def sharing_scope(
@@ -233,17 +251,20 @@ class SubnetInitArgs:
     @sharing_scope.setter
     def sharing_scope(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SharingScope]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetName")
     def subnet_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_name.setter
-    def subnet_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:Subnet")
 class Subnet(pulumi.CustomResource):

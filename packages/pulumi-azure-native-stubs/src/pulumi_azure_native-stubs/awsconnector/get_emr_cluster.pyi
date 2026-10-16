@@ -52,7 +52,8 @@ class GetEmrClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEmrClusterResult(GetEmrClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEmrClusterResult]:
+        ...
 
 def get_emr_cluster(
     name: Optional[_builtins.str] = ...,

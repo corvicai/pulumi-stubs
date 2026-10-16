@@ -134,7 +134,8 @@ class GetInsightsDatasetConfigResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetInsightsDatasetConfigResult(GetInsightsDatasetConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInsightsDatasetConfigResult]:
+        ...
 
 def get_insights_dataset_config(
     dataset_config_id: Optional[_builtins.str] = ...,

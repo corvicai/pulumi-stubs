@@ -62,7 +62,8 @@ class GetFleetspaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFleetspaceResult(GetFleetspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetspaceResult]:
+        ...
 
 def get_fleetspace(
     fleet_name: Optional[_builtins.str] = ...,

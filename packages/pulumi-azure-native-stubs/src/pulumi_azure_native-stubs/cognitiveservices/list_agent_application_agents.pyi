@@ -24,7 +24,8 @@ class ListAgentApplicationAgentsResult:
     def value(self) -> Optional[Sequence[outputs.AgentReferenceResponse]]: ...
 
 class AwaitableListAgentApplicationAgentsResult(ListAgentApplicationAgentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAgentApplicationAgentsResult]:
+        ...
 
 def list_agent_application_agents(
     account_name: Optional[_builtins.str] = ...,

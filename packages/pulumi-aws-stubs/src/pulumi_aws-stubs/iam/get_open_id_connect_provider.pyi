@@ -43,7 +43,8 @@ class GetOpenIdConnectProviderResult:
     def url(self) -> _builtins.str: ...
 
 class AwaitableGetOpenIdConnectProviderResult(GetOpenIdConnectProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOpenIdConnectProviderResult]:
+        ...
 
 def get_open_id_connect_provider(
     arn: Optional[_builtins.str] = ...,

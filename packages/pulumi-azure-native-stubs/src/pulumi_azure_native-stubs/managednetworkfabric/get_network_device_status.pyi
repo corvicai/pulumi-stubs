@@ -28,7 +28,8 @@ class GetNetworkDeviceStatusResult:
     def serial_number(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkDeviceStatusResult(GetNetworkDeviceStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkDeviceStatusResult]:
+        ...
 
 def get_network_device_status(
     network_device_name: Optional[_builtins.str] = ...,

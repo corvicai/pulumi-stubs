@@ -68,7 +68,8 @@ class GetScheduleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScheduleResult(GetScheduleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScheduleResult]:
+        ...
 
 def get_schedule(
     lab_name: Optional[_builtins.str] = ...,

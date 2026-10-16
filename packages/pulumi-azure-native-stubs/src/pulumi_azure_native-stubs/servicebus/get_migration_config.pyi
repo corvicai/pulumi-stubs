@@ -64,7 +64,8 @@ class GetMigrationConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMigrationConfigResult(GetMigrationConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMigrationConfigResult]:
+        ...
 
 def get_migration_config(
     config_name: Optional[_builtins.str] = ...,

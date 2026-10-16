@@ -57,19 +57,22 @@ class OpenZfsFileSystemArgs:
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> pulumi.Input[_builtins.str]: ...
     @deployment_type.setter
-    def deployment_type(self, value: pulumi.Input[_builtins.str]): ...
+    def deployment_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacity")
     def throughput_capacity(self) -> pulumi.Input[_builtins.int]: ...
     @throughput_capacity.setter
-    def throughput_capacity(self, value: pulumi.Input[_builtins.int]): ...
+    def throughput_capacity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticBackupRetentionDays")
     def automatic_backup_retention_days(
@@ -78,22 +81,30 @@ class OpenZfsFileSystemArgs:
     @automatic_backup_retention_days.setter
     def automatic_backup_retention_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupId")
     def backup_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_id.setter
-    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToBackups")
     def copy_tags_to_backups(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @copy_tags_to_backups.setter
-    def copy_tags_to_backups(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def copy_tags_to_backups(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToVolumes")
     def copy_tags_to_volumes(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @copy_tags_to_volumes.setter
-    def copy_tags_to_volumes(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def copy_tags_to_volumes(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailyAutomaticBackupStartTime")
     def daily_automatic_backup_start_time(
@@ -102,7 +113,8 @@ class OpenZfsFileSystemArgs:
     @daily_automatic_backup_start_time.setter
     def daily_automatic_backup_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOptions")
     def delete_options(
@@ -111,7 +123,8 @@ class OpenZfsFileSystemArgs:
     @delete_options.setter
     def delete_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskIopsConfiguration")
     def disk_iops_configuration(
@@ -120,14 +133,16 @@ class OpenZfsFileSystemArgs:
     @disk_iops_configuration.setter
     def disk_iops_configuration(
         self, value: Optional[pulumi.Input[OpenZfsFileSystemDiskIopsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointIpAddressRange")
     def endpoint_ip_address_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_ip_address_range.setter
     def endpoint_ip_address_range(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finalBackupTags")
     def final_backup_tags(
@@ -136,17 +151,22 @@ class OpenZfsFileSystemArgs:
     @final_backup_tags.setter
     def final_backup_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredSubnetId")
     def preferred_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preferred_subnet_id.setter
-    def preferred_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preferred_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readCacheConfiguration")
     def read_cache_configuration(
@@ -155,12 +175,14 @@ class OpenZfsFileSystemArgs:
     @read_cache_configuration.setter
     def read_cache_configuration(
         self, value: Optional[pulumi.Input[OpenZfsFileSystemReadCacheConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootVolumeConfiguration")
     def root_volume_configuration(
@@ -170,7 +192,8 @@ class OpenZfsFileSystemArgs:
     def root_volume_configuration(
         self,
         value: Optional[pulumi.Input[OpenZfsFileSystemRootVolumeConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTableIds")
     def route_table_ids(
@@ -179,7 +202,8 @@ class OpenZfsFileSystemArgs:
     @route_table_ids.setter
     def route_table_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -188,22 +212,30 @@ class OpenZfsFileSystemArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipFinalBackup")
     def skip_final_backup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @skip_final_backup.setter
-    def skip_final_backup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def skip_final_backup(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def storage_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -212,7 +244,8 @@ class OpenZfsFileSystemArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklyMaintenanceStartTime")
     def weekly_maintenance_start_time(
@@ -221,7 +254,8 @@ class OpenZfsFileSystemArgs:
     @weekly_maintenance_start_time.setter
     def weekly_maintenance_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OpenZfsFileSystemState:
@@ -283,7 +317,8 @@ class _OpenZfsFileSystemState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticBackupRetentionDays")
     def automatic_backup_retention_days(
@@ -292,22 +327,30 @@ class _OpenZfsFileSystemState:
     @automatic_backup_retention_days.setter
     def automatic_backup_retention_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupId")
     def backup_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_id.setter
-    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToBackups")
     def copy_tags_to_backups(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @copy_tags_to_backups.setter
-    def copy_tags_to_backups(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def copy_tags_to_backups(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToVolumes")
     def copy_tags_to_volumes(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @copy_tags_to_volumes.setter
-    def copy_tags_to_volumes(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def copy_tags_to_volumes(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailyAutomaticBackupStartTime")
     def daily_automatic_backup_start_time(
@@ -316,7 +359,8 @@ class _OpenZfsFileSystemState:
     @daily_automatic_backup_start_time.setter
     def daily_automatic_backup_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOptions")
     def delete_options(
@@ -325,12 +369,14 @@ class _OpenZfsFileSystemState:
     @delete_options.setter
     def delete_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_type.setter
-    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskIopsConfiguration")
     def disk_iops_configuration(
@@ -339,24 +385,30 @@ class _OpenZfsFileSystemState:
     @disk_iops_configuration.setter
     def disk_iops_configuration(
         self, value: Optional[pulumi.Input[OpenZfsFileSystemDiskIopsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointIpAddress")
     def endpoint_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_ip_address.setter
-    def endpoint_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointIpAddressRange")
     def endpoint_ip_address_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_ip_address_range.setter
     def endpoint_ip_address_range(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finalBackupTags")
     def final_backup_tags(
@@ -365,12 +417,14 @@ class _OpenZfsFileSystemState:
     @final_backup_tags.setter
     def final_backup_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceIds")
     def network_interface_ids(
@@ -379,17 +433,22 @@ class _OpenZfsFileSystemState:
     @network_interface_ids.setter
     def network_interface_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredSubnetId")
     def preferred_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preferred_subnet_id.setter
-    def preferred_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preferred_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readCacheConfiguration")
     def read_cache_configuration(
@@ -398,12 +457,14 @@ class _OpenZfsFileSystemState:
     @read_cache_configuration.setter
     def read_cache_configuration(
         self, value: Optional[pulumi.Input[OpenZfsFileSystemReadCacheConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootVolumeConfiguration")
     def root_volume_configuration(
@@ -413,12 +474,14 @@ class _OpenZfsFileSystemState:
     def root_volume_configuration(
         self,
         value: Optional[pulumi.Input[OpenZfsFileSystemRootVolumeConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootVolumeId")
     def root_volume_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @root_volume_id.setter
-    def root_volume_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def root_volume_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTableIds")
     def route_table_ids(
@@ -427,7 +490,8 @@ class _OpenZfsFileSystemState:
     @route_table_ids.setter
     def route_table_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -436,22 +500,30 @@ class _OpenZfsFileSystemState:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipFinalBackup")
     def skip_final_backup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @skip_final_backup.setter
-    def skip_final_backup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def skip_final_backup(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def storage_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -460,7 +532,8 @@ class _OpenZfsFileSystemState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -469,7 +542,8 @@ class _OpenZfsFileSystemState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -478,17 +552,22 @@ class _OpenZfsFileSystemState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacity")
     def throughput_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @throughput_capacity.setter
-    def throughput_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def throughput_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklyMaintenanceStartTime")
     def weekly_maintenance_start_time(
@@ -497,7 +576,8 @@ class _OpenZfsFileSystemState:
     @weekly_maintenance_start_time.setter
     def weekly_maintenance_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:fsx/openZfsFileSystem:OpenZfsFileSystem")
 class OpenZfsFileSystem(pulumi.CustomResource):

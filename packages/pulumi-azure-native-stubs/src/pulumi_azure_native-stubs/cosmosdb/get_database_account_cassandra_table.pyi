@@ -54,7 +54,10 @@ class GetDatabaseAccountCassandraTableResult:
 class AwaitableGetDatabaseAccountCassandraTableResult(
     GetDatabaseAccountCassandraTableResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseAccountCassandraTableResult]:
+        ...
 
 def get_database_account_cassandra_table(
     account_name: Optional[_builtins.str] = ...,

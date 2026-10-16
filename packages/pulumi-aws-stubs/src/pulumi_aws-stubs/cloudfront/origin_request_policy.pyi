@@ -26,14 +26,16 @@ class OriginRequestPolicyArgs:
     @cookies_config.setter
     def cookies_config(
         self, value: pulumi.Input[OriginRequestPolicyCookiesConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headersConfig")
     def headers_config(self) -> pulumi.Input[OriginRequestPolicyHeadersConfigArgs]: ...
     @headers_config.setter
     def headers_config(
         self, value: pulumi.Input[OriginRequestPolicyHeadersConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringsConfig")
     def query_strings_config(
@@ -42,17 +44,20 @@ class OriginRequestPolicyArgs:
     @query_strings_config.setter
     def query_strings_config(
         self, value: pulumi.Input[OriginRequestPolicyQueryStringsConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OriginRequestPolicyState:
@@ -77,12 +82,14 @@ class _OriginRequestPolicyState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cookiesConfig")
     def cookies_config(
@@ -91,12 +98,14 @@ class _OriginRequestPolicyState:
     @cookies_config.setter
     def cookies_config(
         self, value: Optional[pulumi.Input[OriginRequestPolicyCookiesConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headersConfig")
     def headers_config(
@@ -105,12 +114,14 @@ class _OriginRequestPolicyState:
     @headers_config.setter
     def headers_config(
         self, value: Optional[pulumi.Input[OriginRequestPolicyHeadersConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringsConfig")
     def query_strings_config(
@@ -119,7 +130,8 @@ class _OriginRequestPolicyState:
     @query_strings_config.setter
     def query_strings_config(
         self, value: Optional[pulumi.Input[OriginRequestPolicyQueryStringsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OriginRequestPolicy(pulumi.CustomResource):

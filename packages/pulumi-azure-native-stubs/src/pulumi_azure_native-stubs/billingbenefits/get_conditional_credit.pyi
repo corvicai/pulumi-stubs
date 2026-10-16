@@ -112,7 +112,8 @@ class GetConditionalCreditResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConditionalCreditResult(GetConditionalCreditResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConditionalCreditResult]:
+        ...
 
 def get_conditional_credit(
     conditional_credit_name: Optional[_builtins.str] = ...,

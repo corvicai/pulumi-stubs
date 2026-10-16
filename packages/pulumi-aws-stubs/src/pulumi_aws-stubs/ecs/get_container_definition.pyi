@@ -67,7 +67,8 @@ class GetContainerDefinitionResult:
     def task_definition(self) -> _builtins.str: ...
 
 class AwaitableGetContainerDefinitionResult(GetContainerDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerDefinitionResult]:
+        ...
 
 def get_container_definition(
     container_name: Optional[_builtins.str] = ...,

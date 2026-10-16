@@ -57,7 +57,8 @@ class GetTrafficPolicyDocumentResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetTrafficPolicyDocumentResult(GetTrafficPolicyDocumentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTrafficPolicyDocumentResult]:
+        ...
 
 def get_traffic_policy_document(
     endpoints: Optional[

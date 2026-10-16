@@ -60,7 +60,8 @@ class GetSecretResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSecretResult(GetSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretResult]:
+        ...
 
 def get_secret(
     expand: Optional[_builtins.str] = ...,

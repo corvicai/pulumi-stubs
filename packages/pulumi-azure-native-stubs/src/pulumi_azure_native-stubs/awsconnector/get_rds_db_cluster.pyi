@@ -52,7 +52,8 @@ class GetRdsDbClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRdsDbClusterResult(GetRdsDbClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRdsDbClusterResult]:
+        ...
 
 def get_rds_db_cluster(
     name: Optional[_builtins.str] = ...,

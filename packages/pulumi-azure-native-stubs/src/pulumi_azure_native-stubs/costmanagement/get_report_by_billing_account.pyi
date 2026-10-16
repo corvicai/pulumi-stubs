@@ -56,7 +56,8 @@ class GetReportByBillingAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReportByBillingAccountResult(GetReportByBillingAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReportByBillingAccountResult]:
+        ...
 
 def get_report_by_billing_account(
     billing_account_id: Optional[_builtins.str] = ...,

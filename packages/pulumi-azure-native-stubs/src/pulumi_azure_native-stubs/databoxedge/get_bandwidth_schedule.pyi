@@ -56,7 +56,8 @@ class GetBandwidthScheduleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBandwidthScheduleResult(GetBandwidthScheduleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBandwidthScheduleResult]:
+        ...
 
 def get_bandwidth_schedule(
     device_name: Optional[_builtins.str] = ...,

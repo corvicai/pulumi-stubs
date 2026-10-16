@@ -87,7 +87,10 @@ class GetCoreNetworkPolicyDocumentResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetCoreNetworkPolicyDocumentResult(GetCoreNetworkPolicyDocumentResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCoreNetworkPolicyDocumentResult]:
+        ...
 
 def get_core_network_policy_document(
     attachment_policies: Optional[

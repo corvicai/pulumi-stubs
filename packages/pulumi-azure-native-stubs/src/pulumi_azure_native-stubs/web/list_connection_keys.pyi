@@ -23,7 +23,8 @@ class ListConnectionKeysResult:
     def parameter_values(self) -> Optional[Mapping[str, Any]]: ...
 
 class AwaitableListConnectionKeysResult(ListConnectionKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListConnectionKeysResult]:
+        ...
 
 def list_connection_keys(
     connection_name: Optional[_builtins.str] = ...,

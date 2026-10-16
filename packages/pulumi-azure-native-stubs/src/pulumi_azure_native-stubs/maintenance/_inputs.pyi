@@ -49,7 +49,8 @@ class ConfigurationAssignmentFilterPropertiesArgs:
     @locations.setter
     def locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osTypes")
     def os_types(
@@ -58,7 +59,8 @@ class ConfigurationAssignmentFilterPropertiesArgs:
     @os_types.setter
     def os_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroups")
     def resource_groups(
@@ -67,7 +69,8 @@ class ConfigurationAssignmentFilterPropertiesArgs:
     @resource_groups.setter
     def resource_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(
@@ -76,14 +79,16 @@ class ConfigurationAssignmentFilterPropertiesArgs:
     @resource_types.setter
     def resource_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagSettings")
     def tag_settings(self) -> Optional[pulumi.Input[TagSettingsPropertiesArgs]]: ...
     @tag_settings.setter
     def tag_settings(
         self, value: Optional[pulumi.Input[TagSettingsPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InputLinuxParametersArgsDict(TypedDict):
     classifications_to_include: NotRequired[
@@ -119,7 +124,8 @@ class InputLinuxParametersArgs:
     @classifications_to_include.setter
     def classifications_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="packageNameMasksToExclude")
     def package_name_masks_to_exclude(
@@ -128,7 +134,8 @@ class InputLinuxParametersArgs:
     @package_name_masks_to_exclude.setter
     def package_name_masks_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="packageNameMasksToInclude")
     def package_name_masks_to_include(
@@ -137,7 +144,8 @@ class InputLinuxParametersArgs:
     @package_name_masks_to_include.setter
     def package_name_masks_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InputPatchConfigurationArgsDict(TypedDict):
     linux_parameters: NotRequired[pulumi.Input[InputLinuxParametersArgsDict]]
@@ -161,7 +169,8 @@ class InputPatchConfigurationArgs:
     @linux_parameters.setter
     def linux_parameters(
         self, value: Optional[pulumi.Input[InputLinuxParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rebootSetting")
     def reboot_setting(
@@ -170,7 +179,8 @@ class InputPatchConfigurationArgs:
     @reboot_setting.setter
     def reboot_setting(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RebootOptions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsParameters")
     def windows_parameters(
@@ -179,7 +189,8 @@ class InputPatchConfigurationArgs:
     @windows_parameters.setter
     def windows_parameters(
         self, value: Optional[pulumi.Input[InputWindowsParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InputWindowsParametersArgsDict(TypedDict):
     classifications_to_include: NotRequired[
@@ -217,7 +228,8 @@ class InputWindowsParametersArgs:
     @classifications_to_include.setter
     def classifications_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeKbsRequiringReboot")
     def exclude_kbs_requiring_reboot(
@@ -226,7 +238,8 @@ class InputWindowsParametersArgs:
     @exclude_kbs_requiring_reboot.setter
     def exclude_kbs_requiring_reboot(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kbNumbersToExclude")
     def kb_numbers_to_exclude(
@@ -235,7 +248,8 @@ class InputWindowsParametersArgs:
     @kb_numbers_to_exclude.setter
     def kb_numbers_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kbNumbersToInclude")
     def kb_numbers_to_include(
@@ -244,7 +258,8 @@ class InputWindowsParametersArgs:
     @kb_numbers_to_include.setter
     def kb_numbers_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TagSettingsPropertiesArgsDict(TypedDict):
     filter_operator: NotRequired[pulumi.Input[TagOperators]]
@@ -268,7 +283,8 @@ class TagSettingsPropertiesArgs:
     @pulumi.getter(name="filterOperator")
     def filter_operator(self) -> Optional[pulumi.Input[TagOperators]]: ...
     @filter_operator.setter
-    def filter_operator(self, value: Optional[pulumi.Input[TagOperators]]): ...
+    def filter_operator(self, value: Optional[pulumi.Input[TagOperators]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -284,4 +300,5 @@ class TagSettingsPropertiesArgs:
                 Mapping[str, pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...

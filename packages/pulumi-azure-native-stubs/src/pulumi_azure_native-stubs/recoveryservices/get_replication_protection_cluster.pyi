@@ -37,7 +37,10 @@ class GetReplicationProtectionClusterResult:
 class AwaitableGetReplicationProtectionClusterResult(
     GetReplicationProtectionClusterResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReplicationProtectionClusterResult]:
+        ...
 
 def get_replication_protection_cluster(
     fabric_name: Optional[_builtins.str] = ...,

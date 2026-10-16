@@ -26,7 +26,10 @@ class ListRemediationDeploymentsAtManagementGroupResult:
 class AwaitableListRemediationDeploymentsAtManagementGroupResult(
     ListRemediationDeploymentsAtManagementGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListRemediationDeploymentsAtManagementGroupResult]:
+        ...
 
 def list_remediation_deployments_at_management_group(
     management_group_id: Optional[_builtins.str] = ...,

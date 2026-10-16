@@ -32,7 +32,8 @@ class BlockPublicAccessConfigurationArgs:
     @block_public_security_group_rules.setter
     def block_public_security_group_rules(
         self, value: pulumi.Input[_builtins.bool]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedPublicSecurityGroupRuleRanges")
     def permitted_public_security_group_rule_ranges(
@@ -58,12 +59,14 @@ class BlockPublicAccessConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BlockPublicAccessConfigurationState:
@@ -90,7 +93,8 @@ class _BlockPublicAccessConfigurationState:
     @block_public_security_group_rules.setter
     def block_public_security_group_rules(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permittedPublicSecurityGroupRuleRanges")
     def permitted_public_security_group_rule_ranges(
@@ -116,12 +120,14 @@ class _BlockPublicAccessConfigurationState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class BlockPublicAccessConfiguration(pulumi.CustomResource):

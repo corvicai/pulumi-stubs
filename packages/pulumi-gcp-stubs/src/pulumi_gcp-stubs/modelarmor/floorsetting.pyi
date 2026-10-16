@@ -35,17 +35,22 @@ class FloorsettingArgs:
     @pulumi.getter(name="filterConfig")
     def filter_config(self) -> pulumi.Input[FloorsettingFilterConfigArgs]: ...
     @filter_config.setter
-    def filter_config(self, value: pulumi.Input[FloorsettingFilterConfigArgs]): ...
+    def filter_config(
+        self, value: pulumi.Input[FloorsettingFilterConfigArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> pulumi.Input[_builtins.str]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[_builtins.str]): ...
+    def parent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aiPlatformFloorSetting")
     def ai_platform_floor_setting(
@@ -54,7 +59,8 @@ class FloorsettingArgs:
     @ai_platform_floor_setting.setter
     def ai_platform_floor_setting(
         self, value: Optional[pulumi.Input[FloorsettingAiPlatformFloorSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableFloorSettingEnforcement")
     def enable_floor_setting_enforcement(
@@ -63,7 +69,8 @@ class FloorsettingArgs:
     @enable_floor_setting_enforcement.setter
     def enable_floor_setting_enforcement(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floorSettingMetadata")
     def floor_setting_metadata(
@@ -72,7 +79,8 @@ class FloorsettingArgs:
     @floor_setting_metadata.setter
     def floor_setting_metadata(
         self, value: Optional[pulumi.Input[FloorsettingFloorSettingMetadataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleMcpServerFloorSetting")
     def google_mcp_server_floor_setting(
@@ -81,7 +89,8 @@ class FloorsettingArgs:
     @google_mcp_server_floor_setting.setter
     def google_mcp_server_floor_setting(
         self, value: Optional[pulumi.Input[FloorsettingGoogleMcpServerFloorSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integratedServices")
     def integrated_services(
@@ -90,7 +99,8 @@ class FloorsettingArgs:
     @integrated_services.setter
     def integrated_services(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FloorsettingState:
@@ -125,12 +135,14 @@ class _FloorsettingState:
     @ai_platform_floor_setting.setter
     def ai_platform_floor_setting(
         self, value: Optional[pulumi.Input[FloorsettingAiPlatformFloorSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableFloorSettingEnforcement")
     def enable_floor_setting_enforcement(
@@ -139,14 +151,16 @@ class _FloorsettingState:
     @enable_floor_setting_enforcement.setter
     def enable_floor_setting_enforcement(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterConfig")
     def filter_config(self) -> Optional[pulumi.Input[FloorsettingFilterConfigArgs]]: ...
     @filter_config.setter
     def filter_config(
         self, value: Optional[pulumi.Input[FloorsettingFilterConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floorSettingMetadata")
     def floor_setting_metadata(
@@ -155,7 +169,8 @@ class _FloorsettingState:
     @floor_setting_metadata.setter
     def floor_setting_metadata(
         self, value: Optional[pulumi.Input[FloorsettingFloorSettingMetadataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleMcpServerFloorSetting")
     def google_mcp_server_floor_setting(
@@ -164,7 +179,8 @@ class _FloorsettingState:
     @google_mcp_server_floor_setting.setter
     def google_mcp_server_floor_setting(
         self, value: Optional[pulumi.Input[FloorsettingGoogleMcpServerFloorSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integratedServices")
     def integrated_services(
@@ -173,27 +189,32 @@ class _FloorsettingState:
     @integrated_services.setter
     def integrated_services(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:modelarmor/floorsetting:Floorsetting")
 class Floorsetting(pulumi.CustomResource):

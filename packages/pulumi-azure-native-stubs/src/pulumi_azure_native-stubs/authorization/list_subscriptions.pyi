@@ -24,7 +24,8 @@ class ListSubscriptionsResult:
     def value(self) -> Optional[Sequence[outputs.SubscriptionResponse]]: ...
 
 class AwaitableListSubscriptionsResult(ListSubscriptionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListSubscriptionsResult]:
+        ...
 
 def list_subscriptions(
     api_version: Optional[_builtins.str] = ...,

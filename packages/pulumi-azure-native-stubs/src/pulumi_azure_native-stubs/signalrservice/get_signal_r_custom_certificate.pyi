@@ -56,7 +56,8 @@ class GetSignalRCustomCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSignalRCustomCertificateResult(GetSignalRCustomCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSignalRCustomCertificateResult]:
+        ...
 
 def get_signal_r_custom_certificate(
     certificate_name: Optional[_builtins.str] = ...,

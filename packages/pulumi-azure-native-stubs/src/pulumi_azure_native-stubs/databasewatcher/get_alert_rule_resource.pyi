@@ -64,7 +64,8 @@ class GetAlertRuleResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAlertRuleResourceResult(GetAlertRuleResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAlertRuleResourceResult]:
+        ...
 
 def get_alert_rule_resource(
     alert_rule_resource_name: Optional[_builtins.str] = ...,

@@ -23,7 +23,8 @@ class ServicePerimetersArgs:
     @pulumi.getter
     def parent(self) -> pulumi.Input[_builtins.str]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[_builtins.str]): ...
+    def parent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servicePerimeters")
     def service_perimeters(
@@ -37,7 +38,8 @@ class ServicePerimetersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServicePerimetersServicePerimeterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServicePerimetersState:
@@ -53,7 +55,8 @@ class _ServicePerimetersState:
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servicePerimeters")
     def service_perimeters(
@@ -67,7 +70,8 @@ class _ServicePerimetersState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServicePerimetersServicePerimeterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ServicePerimeters(pulumi.CustomResource):

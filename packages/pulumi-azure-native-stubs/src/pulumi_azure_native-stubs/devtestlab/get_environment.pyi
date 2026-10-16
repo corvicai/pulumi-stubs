@@ -74,7 +74,8 @@ class GetEnvironmentResult:
     def unique_identifier(self) -> _builtins.str: ...
 
 class AwaitableGetEnvironmentResult(GetEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentResult]:
+        ...
 
 def get_environment(
     expand: Optional[_builtins.str] = ...,

@@ -60,7 +60,8 @@ class GetACSSBackupConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetACSSBackupConnectionResult(GetACSSBackupConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetACSSBackupConnectionResult]:
+        ...
 
 def get_acss_backup_connection(
     backup_name: Optional[_builtins.str] = ...,

@@ -20,7 +20,10 @@ class GetRegistrationActivationKeyResult:
     def activation_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetRegistrationActivationKeyResult(GetRegistrationActivationKeyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegistrationActivationKeyResult]:
+        ...
 
 def get_registration_activation_key(
     registration_name: Optional[_builtins.str] = ...,

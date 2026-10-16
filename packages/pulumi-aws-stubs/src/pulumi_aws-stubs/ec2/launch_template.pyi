@@ -102,7 +102,8 @@ class LaunchTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateBlockDeviceMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationSpecification")
     def capacity_reservation_specification(
@@ -114,14 +115,16 @@ class LaunchTemplateArgs:
         value: Optional[
             pulumi.Input[LaunchTemplateCapacityReservationSpecificationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuOptions")
     def cpu_options(self) -> Optional[pulumi.Input[LaunchTemplateCpuOptionsArgs]]: ...
     @cpu_options.setter
     def cpu_options(
         self, value: Optional[pulumi.Input[LaunchTemplateCpuOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creditSpecification")
     def credit_specification(
@@ -130,34 +133,42 @@ class LaunchTemplateArgs:
     @credit_specification.setter
     def credit_specification(
         self, value: Optional[pulumi.Input[LaunchTemplateCreditSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultVersion")
     def default_version(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_version.setter
-    def default_version(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_version(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiStop")
     def disable_api_stop(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_stop.setter
-    def disable_api_stop(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_api_stop(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiTermination")
     def disable_api_termination(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_termination.setter
     def disable_api_termination(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsOptimized")
     def ebs_optimized(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ebs_optimized.setter
-    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveOptions")
     def enclave_options(
@@ -166,7 +177,8 @@ class LaunchTemplateArgs:
     @enclave_options.setter
     def enclave_options(
         self, value: Optional[pulumi.Input[LaunchTemplateEnclaveOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hibernationOptions")
     def hibernation_options(
@@ -175,7 +187,8 @@ class LaunchTemplateArgs:
     @hibernation_options.setter
     def hibernation_options(
         self, value: Optional[pulumi.Input[LaunchTemplateHibernationOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamInstanceProfile")
     def iam_instance_profile(
@@ -184,12 +197,14 @@ class LaunchTemplateArgs:
     @iam_instance_profile.setter
     def iam_instance_profile(
         self, value: Optional[pulumi.Input[LaunchTemplateIamInstanceProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageId")
     def image_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_id.setter
-    def image_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceInitiatedShutdownBehavior")
     def instance_initiated_shutdown_behavior(
@@ -198,7 +213,8 @@ class LaunchTemplateArgs:
     @instance_initiated_shutdown_behavior.setter
     def instance_initiated_shutdown_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMarketOptions")
     def instance_market_options(
@@ -207,7 +223,8 @@ class LaunchTemplateArgs:
     @instance_market_options.setter
     def instance_market_options(
         self, value: Optional[pulumi.Input[LaunchTemplateInstanceMarketOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceRequirements")
     def instance_requirements(
@@ -216,22 +233,26 @@ class LaunchTemplateArgs:
     @instance_requirements.setter
     def instance_requirements(
         self, value: Optional[pulumi.Input[LaunchTemplateInstanceRequirementsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_type.setter
-    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kernelId")
     def kernel_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kernel_id.setter
-    def kernel_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kernel_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyName")
     def key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_name.setter
-    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseSpecifications")
     def license_specifications(
@@ -245,7 +266,8 @@ class LaunchTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateLicenseSpecificationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceOptions")
     def maintenance_options(
@@ -254,7 +276,8 @@ class LaunchTemplateArgs:
     @maintenance_options.setter
     def maintenance_options(
         self, value: Optional[pulumi.Input[LaunchTemplateMaintenanceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataOptions")
     def metadata_options(
@@ -263,24 +286,28 @@ class LaunchTemplateArgs:
     @metadata_options.setter
     def metadata_options(
         self, value: Optional[pulumi.Input[LaunchTemplateMetadataOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def monitoring(self) -> Optional[pulumi.Input[LaunchTemplateMonitoringArgs]]: ...
     @monitoring.setter
     def monitoring(
         self, value: Optional[pulumi.Input[LaunchTemplateMonitoringArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
     def network_interfaces(
@@ -294,7 +321,8 @@ class LaunchTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateNetworkInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkPerformanceOptions")
     def network_performance_options(
@@ -303,12 +331,16 @@ class LaunchTemplateArgs:
     @network_performance_options.setter
     def network_performance_options(
         self, value: Optional[pulumi.Input[LaunchTemplateNetworkPerformanceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def placement(self) -> Optional[pulumi.Input[LaunchTemplatePlacementArgs]]: ...
     @placement.setter
-    def placement(self, value: Optional[pulumi.Input[LaunchTemplatePlacementArgs]]): ...
+    def placement(
+        self, value: Optional[pulumi.Input[LaunchTemplatePlacementArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsNameOptions")
     def private_dns_name_options(
@@ -317,17 +349,20 @@ class LaunchTemplateArgs:
     @private_dns_name_options.setter
     def private_dns_name_options(
         self, value: Optional[pulumi.Input[LaunchTemplatePrivateDnsNameOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ramDiskId")
     def ram_disk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ram_disk_id.setter
-    def ram_disk_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ram_disk_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryInterfaces")
     def secondary_interfaces(
@@ -341,7 +376,8 @@ class LaunchTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateSecondaryInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupNames")
     def security_group_names(
@@ -350,7 +386,8 @@ class LaunchTemplateArgs:
     @security_group_names.setter
     def security_group_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagSpecifications")
     def tag_specifications(
@@ -364,7 +401,8 @@ class LaunchTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateTagSpecificationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -373,17 +411,22 @@ class LaunchTemplateArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateDefaultVersion")
     def update_default_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @update_default_version.setter
-    def update_default_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def update_default_version(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userData")
     def user_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data.setter
-    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcSecurityGroupIds")
     def vpc_security_group_ids(
@@ -392,7 +435,8 @@ class LaunchTemplateArgs:
     @vpc_security_group_ids.setter
     def vpc_security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LaunchTemplateState:
@@ -483,7 +527,8 @@ class _LaunchTemplateState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockDeviceMappings")
     def block_device_mappings(
@@ -497,7 +542,8 @@ class _LaunchTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateBlockDeviceMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationSpecification")
     def capacity_reservation_specification(
@@ -509,14 +555,16 @@ class _LaunchTemplateState:
         value: Optional[
             pulumi.Input[LaunchTemplateCapacityReservationSpecificationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuOptions")
     def cpu_options(self) -> Optional[pulumi.Input[LaunchTemplateCpuOptionsArgs]]: ...
     @cpu_options.setter
     def cpu_options(
         self, value: Optional[pulumi.Input[LaunchTemplateCpuOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creditSpecification")
     def credit_specification(
@@ -525,34 +573,42 @@ class _LaunchTemplateState:
     @credit_specification.setter
     def credit_specification(
         self, value: Optional[pulumi.Input[LaunchTemplateCreditSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultVersion")
     def default_version(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_version.setter
-    def default_version(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_version(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiStop")
     def disable_api_stop(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_stop.setter
-    def disable_api_stop(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_api_stop(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiTermination")
     def disable_api_termination(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_termination.setter
     def disable_api_termination(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsOptimized")
     def ebs_optimized(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ebs_optimized.setter
-    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveOptions")
     def enclave_options(
@@ -561,7 +617,8 @@ class _LaunchTemplateState:
     @enclave_options.setter
     def enclave_options(
         self, value: Optional[pulumi.Input[LaunchTemplateEnclaveOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hibernationOptions")
     def hibernation_options(
@@ -570,7 +627,8 @@ class _LaunchTemplateState:
     @hibernation_options.setter
     def hibernation_options(
         self, value: Optional[pulumi.Input[LaunchTemplateHibernationOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamInstanceProfile")
     def iam_instance_profile(
@@ -579,12 +637,14 @@ class _LaunchTemplateState:
     @iam_instance_profile.setter
     def iam_instance_profile(
         self, value: Optional[pulumi.Input[LaunchTemplateIamInstanceProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageId")
     def image_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_id.setter
-    def image_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceInitiatedShutdownBehavior")
     def instance_initiated_shutdown_behavior(
@@ -593,7 +653,8 @@ class _LaunchTemplateState:
     @instance_initiated_shutdown_behavior.setter
     def instance_initiated_shutdown_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMarketOptions")
     def instance_market_options(
@@ -602,7 +663,8 @@ class _LaunchTemplateState:
     @instance_market_options.setter
     def instance_market_options(
         self, value: Optional[pulumi.Input[LaunchTemplateInstanceMarketOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceRequirements")
     def instance_requirements(
@@ -611,27 +673,32 @@ class _LaunchTemplateState:
     @instance_requirements.setter
     def instance_requirements(
         self, value: Optional[pulumi.Input[LaunchTemplateInstanceRequirementsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_type.setter
-    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kernelId")
     def kernel_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kernel_id.setter
-    def kernel_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kernel_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyName")
     def key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_name.setter
-    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="latestVersion")
     def latest_version(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @latest_version.setter
-    def latest_version(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def latest_version(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseSpecifications")
     def license_specifications(
@@ -645,7 +712,8 @@ class _LaunchTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateLicenseSpecificationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceOptions")
     def maintenance_options(
@@ -654,7 +722,8 @@ class _LaunchTemplateState:
     @maintenance_options.setter
     def maintenance_options(
         self, value: Optional[pulumi.Input[LaunchTemplateMaintenanceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataOptions")
     def metadata_options(
@@ -663,24 +732,28 @@ class _LaunchTemplateState:
     @metadata_options.setter
     def metadata_options(
         self, value: Optional[pulumi.Input[LaunchTemplateMetadataOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def monitoring(self) -> Optional[pulumi.Input[LaunchTemplateMonitoringArgs]]: ...
     @monitoring.setter
     def monitoring(
         self, value: Optional[pulumi.Input[LaunchTemplateMonitoringArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
     def network_interfaces(
@@ -694,7 +767,8 @@ class _LaunchTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateNetworkInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkPerformanceOptions")
     def network_performance_options(
@@ -703,12 +777,16 @@ class _LaunchTemplateState:
     @network_performance_options.setter
     def network_performance_options(
         self, value: Optional[pulumi.Input[LaunchTemplateNetworkPerformanceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def placement(self) -> Optional[pulumi.Input[LaunchTemplatePlacementArgs]]: ...
     @placement.setter
-    def placement(self, value: Optional[pulumi.Input[LaunchTemplatePlacementArgs]]): ...
+    def placement(
+        self, value: Optional[pulumi.Input[LaunchTemplatePlacementArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsNameOptions")
     def private_dns_name_options(
@@ -717,17 +795,20 @@ class _LaunchTemplateState:
     @private_dns_name_options.setter
     def private_dns_name_options(
         self, value: Optional[pulumi.Input[LaunchTemplatePrivateDnsNameOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ramDiskId")
     def ram_disk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ram_disk_id.setter
-    def ram_disk_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ram_disk_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryInterfaces")
     def secondary_interfaces(
@@ -741,7 +822,8 @@ class _LaunchTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateSecondaryInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupNames")
     def security_group_names(
@@ -750,7 +832,8 @@ class _LaunchTemplateState:
     @security_group_names.setter
     def security_group_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagSpecifications")
     def tag_specifications(
@@ -764,7 +847,8 @@ class _LaunchTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LaunchTemplateTagSpecificationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -773,7 +857,8 @@ class _LaunchTemplateState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -782,17 +867,22 @@ class _LaunchTemplateState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateDefaultVersion")
     def update_default_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @update_default_version.setter
-    def update_default_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def update_default_version(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userData")
     def user_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data.setter
-    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcSecurityGroupIds")
     def vpc_security_group_ids(
@@ -801,7 +891,8 @@ class _LaunchTemplateState:
     @vpc_security_group_ids.setter
     def vpc_security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/launchTemplate:LaunchTemplate")
 class LaunchTemplate(pulumi.CustomResource):

@@ -43,7 +43,8 @@ class GetLinkedStorageAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLinkedStorageAccountResult(GetLinkedStorageAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkedStorageAccountResult]:
+        ...
 
 def get_linked_storage_account(
     data_source_type: Optional[_builtins.str] = ...,

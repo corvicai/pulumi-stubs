@@ -21,7 +21,8 @@ class GetSAPSizingRecommendationsResult:
     def deployment_type(self) -> _builtins.str: ...
 
 class AwaitableGetSAPSizingRecommendationsResult(GetSAPSizingRecommendationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSAPSizingRecommendationsResult]:
+        ...
 
 def get_sap_sizing_recommendations(
     app_location: Optional[_builtins.str] = ...,

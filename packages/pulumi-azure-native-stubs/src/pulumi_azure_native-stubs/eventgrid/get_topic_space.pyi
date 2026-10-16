@@ -52,7 +52,8 @@ class GetTopicSpaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTopicSpaceResult(GetTopicSpaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTopicSpaceResult]:
+        ...
 
 def get_topic_space(
     namespace_name: Optional[_builtins.str] = ...,

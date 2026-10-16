@@ -21,7 +21,10 @@ class ListSecurityAdvisoryImpactedResourceBySubscriptionIdAndEventIdResult:
 class AwaitableListSecurityAdvisoryImpactedResourceBySubscriptionIdAndEventIdResult(
     ListSecurityAdvisoryImpactedResourceBySubscriptionIdAndEventIdResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSecurityAdvisoryImpactedResourceBySubscriptionIdAndEventIdResult]:
+        ...
 
 def list_security_advisory_impacted_resource_by_subscription_id_and_event_id(
     event_tracking_id: Optional[_builtins.str] = ...,

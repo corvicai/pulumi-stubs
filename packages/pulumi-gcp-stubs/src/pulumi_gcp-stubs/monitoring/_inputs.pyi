@@ -182,7 +182,8 @@ class AlertPolicyAlertStrategyArgs:
     @pulumi.getter(name="autoClose")
     def auto_close(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_close.setter
-    def auto_close(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_close(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationChannelStrategies")
     def notification_channel_strategies(
@@ -206,7 +207,8 @@ class AlertPolicyAlertStrategyArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationPrompts")
     def notification_prompts(
@@ -215,7 +217,8 @@ class AlertPolicyAlertStrategyArgs:
     @notification_prompts.setter
     def notification_prompts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationRateLimit")
     def notification_rate_limit(
@@ -227,7 +230,8 @@ class AlertPolicyAlertStrategyArgs:
         value: Optional[
             pulumi.Input[AlertPolicyAlertStrategyNotificationRateLimitArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AlertPolicyAlertStrategyNotificationChannelStrategyArgsDict(TypedDict):
     notification_channel_names: NotRequired[
@@ -253,12 +257,16 @@ class AlertPolicyAlertStrategyNotificationChannelStrategyArgs:
     @notification_channel_names.setter
     def notification_channel_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="renotifyInterval")
     def renotify_interval(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @renotify_interval.setter
-    def renotify_interval(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def renotify_interval(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AlertPolicyAlertStrategyNotificationRateLimitArgsDict(TypedDict):
     period: NotRequired[pulumi.Input[_builtins.str]]
@@ -272,7 +280,8 @@ class AlertPolicyAlertStrategyNotificationRateLimitArgs:
     @pulumi.getter
     def period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @period.setter
-    def period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def period(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AlertPolicyConditionArgsDict(TypedDict):
     display_name: pulumi.Input[_builtins.str]
@@ -324,7 +333,8 @@ class AlertPolicyConditionArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionAbsent")
     def condition_absent(
@@ -333,7 +343,8 @@ class AlertPolicyConditionArgs:
     @condition_absent.setter
     def condition_absent(
         self, value: Optional[pulumi.Input[AlertPolicyConditionConditionAbsentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionMatchedLog")
     def condition_matched_log(
@@ -342,7 +353,8 @@ class AlertPolicyConditionArgs:
     @condition_matched_log.setter
     def condition_matched_log(
         self, value: Optional[pulumi.Input[AlertPolicyConditionConditionMatchedLogArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionMonitoringQueryLanguage")
     def condition_monitoring_query_language(
@@ -356,7 +368,8 @@ class AlertPolicyConditionArgs:
         value: Optional[
             pulumi.Input[AlertPolicyConditionConditionMonitoringQueryLanguageArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionPrometheusQueryLanguage")
     def condition_prometheus_query_language(
@@ -370,7 +383,8 @@ class AlertPolicyConditionArgs:
         value: Optional[
             pulumi.Input[AlertPolicyConditionConditionPrometheusQueryLanguageArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionSql")
     def condition_sql(
@@ -379,7 +393,8 @@ class AlertPolicyConditionArgs:
     @condition_sql.setter
     def condition_sql(
         self, value: Optional[pulumi.Input[AlertPolicyConditionConditionSqlArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionThreshold")
     def condition_threshold(
@@ -388,12 +403,14 @@ class AlertPolicyConditionArgs:
     @condition_threshold.setter
     def condition_threshold(
         self, value: Optional[pulumi.Input[AlertPolicyConditionConditionThresholdArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionAbsentArgsDict(TypedDict):
     duration: pulumi.Input[_builtins.str]
@@ -431,7 +448,8 @@ class AlertPolicyConditionConditionAbsentArgs:
     @pulumi.getter
     def duration(self) -> pulumi.Input[_builtins.str]: ...
     @duration.setter
-    def duration(self, value: pulumi.Input[_builtins.str]): ...
+    def duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def aggregations(
@@ -451,12 +469,14 @@ class AlertPolicyConditionConditionAbsentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trigger(
@@ -466,7 +486,8 @@ class AlertPolicyConditionConditionAbsentArgs:
     def trigger(
         self,
         value: Optional[pulumi.Input[AlertPolicyConditionConditionAbsentTriggerArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionAbsentAggregationArgsDict(TypedDict):
     alignment_period: NotRequired[pulumi.Input[_builtins.str]]
@@ -490,12 +511,18 @@ class AlertPolicyConditionConditionAbsentAggregationArgs:
     @pulumi.getter(name="alignmentPeriod")
     def alignment_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alignment_period.setter
-    def alignment_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alignment_period(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSeriesReducer")
     def cross_series_reducer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cross_series_reducer.setter
-    def cross_series_reducer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cross_series_reducer(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupByFields")
     def group_by_fields(
@@ -504,12 +531,16 @@ class AlertPolicyConditionConditionAbsentAggregationArgs:
     @group_by_fields.setter
     def group_by_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perSeriesAligner")
     def per_series_aligner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @per_series_aligner.setter
-    def per_series_aligner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def per_series_aligner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionAbsentTriggerArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
@@ -527,12 +558,14 @@ class AlertPolicyConditionConditionAbsentTriggerArgs:
     @pulumi.getter
     def count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @count.setter
-    def count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percent(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @percent.setter
-    def percent(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def percent(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionMatchedLogArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
@@ -554,7 +587,8 @@ class AlertPolicyConditionConditionMatchedLogArgs:
     @pulumi.getter
     def filter(self) -> pulumi.Input[_builtins.str]: ...
     @filter.setter
-    def filter(self, value: pulumi.Input[_builtins.str]): ...
+    def filter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelExtractors")
     def label_extractors(
@@ -563,7 +597,8 @@ class AlertPolicyConditionConditionMatchedLogArgs:
     @label_extractors.setter
     def label_extractors(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionMonitoringQueryLanguageArgsDict(TypedDict):
     duration: pulumi.Input[_builtins.str]
@@ -593,17 +628,22 @@ class AlertPolicyConditionConditionMonitoringQueryLanguageArgs:
     @pulumi.getter
     def duration(self) -> pulumi.Input[_builtins.str]: ...
     @duration.setter
-    def duration(self, value: pulumi.Input[_builtins.str]): ...
+    def duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def query(self) -> pulumi.Input[_builtins.str]: ...
     @query.setter
-    def query(self, value: pulumi.Input[_builtins.str]): ...
+    def query(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evaluationMissingData")
     def evaluation_missing_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @evaluation_missing_data.setter
-    def evaluation_missing_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def evaluation_missing_data(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trigger(
@@ -619,7 +659,8 @@ class AlertPolicyConditionConditionMonitoringQueryLanguageArgs:
                 AlertPolicyConditionConditionMonitoringQueryLanguageTriggerArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionMonitoringQueryLanguageTriggerArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
@@ -637,12 +678,14 @@ class AlertPolicyConditionConditionMonitoringQueryLanguageTriggerArgs:
     @pulumi.getter
     def count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @count.setter
-    def count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percent(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @percent.setter
-    def percent(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def percent(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionPrometheusQueryLanguageArgsDict(TypedDict):
     query: pulumi.Input[_builtins.str]
@@ -670,29 +713,36 @@ class AlertPolicyConditionConditionPrometheusQueryLanguageArgs:
     @pulumi.getter
     def query(self) -> pulumi.Input[_builtins.str]: ...
     @query.setter
-    def query(self, value: pulumi.Input[_builtins.str]): ...
+    def query(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alertRule")
     def alert_rule(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alert_rule.setter
-    def alert_rule(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alert_rule(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableMetricValidation")
     def disable_metric_validation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_metric_validation.setter
     def disable_metric_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @duration.setter
-    def duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def duration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evaluationInterval")
     def evaluation_interval(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @evaluation_interval.setter
-    def evaluation_interval(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def evaluation_interval(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -701,12 +751,14 @@ class AlertPolicyConditionConditionPrometheusQueryLanguageArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleGroup")
     def rule_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rule_group.setter
-    def rule_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rule_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionSqlArgsDict(TypedDict):
     query: pulumi.Input[_builtins.str]
@@ -744,7 +796,8 @@ class AlertPolicyConditionConditionSqlArgs:
     @pulumi.getter
     def query(self) -> pulumi.Input[_builtins.str]: ...
     @query.setter
-    def query(self, value: pulumi.Input[_builtins.str]): ...
+    def query(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="booleanTest")
     def boolean_test(
@@ -754,7 +807,8 @@ class AlertPolicyConditionConditionSqlArgs:
     def boolean_test(
         self,
         value: Optional[pulumi.Input[AlertPolicyConditionConditionSqlBooleanTestArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def daily(
@@ -763,7 +817,8 @@ class AlertPolicyConditionConditionSqlArgs:
     @daily.setter
     def daily(
         self, value: Optional[pulumi.Input[AlertPolicyConditionConditionSqlDailyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hourly(
@@ -772,7 +827,8 @@ class AlertPolicyConditionConditionSqlArgs:
     @hourly.setter
     def hourly(
         self, value: Optional[pulumi.Input[AlertPolicyConditionConditionSqlHourlyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(
@@ -781,7 +837,8 @@ class AlertPolicyConditionConditionSqlArgs:
     @minutes.setter
     def minutes(
         self, value: Optional[pulumi.Input[AlertPolicyConditionConditionSqlMinutesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rowCountTest")
     def row_count_test(
@@ -791,7 +848,8 @@ class AlertPolicyConditionConditionSqlArgs:
     def row_count_test(
         self,
         value: Optional[pulumi.Input[AlertPolicyConditionConditionSqlRowCountTestArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionSqlBooleanTestArgsDict(TypedDict):
     column: pulumi.Input[_builtins.str]
@@ -803,7 +861,8 @@ class AlertPolicyConditionConditionSqlBooleanTestArgs:
     @pulumi.getter
     def column(self) -> pulumi.Input[_builtins.str]: ...
     @column.setter
-    def column(self, value: pulumi.Input[_builtins.str]): ...
+    def column(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionSqlDailyArgsDict(TypedDict):
     periodicity: pulumi.Input[_builtins.int]
@@ -825,7 +884,8 @@ class AlertPolicyConditionConditionSqlDailyArgs:
     @pulumi.getter
     def periodicity(self) -> pulumi.Input[_builtins.int]: ...
     @periodicity.setter
-    def periodicity(self, value: pulumi.Input[_builtins.int]): ...
+    def periodicity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionTime")
     def execution_time(
@@ -839,7 +899,8 @@ class AlertPolicyConditionConditionSqlDailyArgs:
         value: Optional[
             pulumi.Input[AlertPolicyConditionConditionSqlDailyExecutionTimeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionSqlDailyExecutionTimeArgsDict(TypedDict):
     hours: NotRequired[pulumi.Input[_builtins.int]]
@@ -861,22 +922,26 @@ class AlertPolicyConditionConditionSqlDailyExecutionTimeArgs:
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionSqlHourlyArgsDict(TypedDict):
     periodicity: pulumi.Input[_builtins.int]
@@ -894,12 +959,14 @@ class AlertPolicyConditionConditionSqlHourlyArgs:
     @pulumi.getter
     def periodicity(self) -> pulumi.Input[_builtins.int]: ...
     @periodicity.setter
-    def periodicity(self, value: pulumi.Input[_builtins.int]): ...
+    def periodicity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minuteOffset")
     def minute_offset(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minute_offset.setter
-    def minute_offset(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minute_offset(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionSqlMinutesArgsDict(TypedDict):
     periodicity: pulumi.Input[_builtins.int]
@@ -911,7 +978,8 @@ class AlertPolicyConditionConditionSqlMinutesArgs:
     @pulumi.getter
     def periodicity(self) -> pulumi.Input[_builtins.int]: ...
     @periodicity.setter
-    def periodicity(self, value: pulumi.Input[_builtins.int]): ...
+    def periodicity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionSqlRowCountTestArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -929,12 +997,14 @@ class AlertPolicyConditionConditionSqlRowCountTestArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def threshold(self) -> pulumi.Input[_builtins.int]: ...
     @threshold.setter
-    def threshold(self, value: pulumi.Input[_builtins.int]): ...
+    def threshold(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionThresholdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1004,12 +1074,14 @@ class AlertPolicyConditionConditionThresholdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def duration(self) -> pulumi.Input[_builtins.str]: ...
     @duration.setter
-    def duration(self, value: pulumi.Input[_builtins.str]): ...
+    def duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def aggregations(
@@ -1031,7 +1103,8 @@ class AlertPolicyConditionConditionThresholdArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="denominatorAggregations")
     def denominator_aggregations(
@@ -1057,22 +1130,30 @@ class AlertPolicyConditionConditionThresholdArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="denominatorFilter")
     def denominator_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @denominator_filter.setter
-    def denominator_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def denominator_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evaluationMissingData")
     def evaluation_missing_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @evaluation_missing_data.setter
-    def evaluation_missing_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def evaluation_missing_data(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forecastOptions")
     def forecast_options(
@@ -1086,12 +1167,16 @@ class AlertPolicyConditionConditionThresholdArgs:
         value: Optional[
             pulumi.Input[AlertPolicyConditionConditionThresholdForecastOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdValue")
     def threshold_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @threshold_value.setter
-    def threshold_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def threshold_value(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trigger(
@@ -1103,7 +1188,8 @@ class AlertPolicyConditionConditionThresholdArgs:
         value: Optional[
             pulumi.Input[AlertPolicyConditionConditionThresholdTriggerArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionThresholdAggregationArgsDict(TypedDict):
     alignment_period: NotRequired[pulumi.Input[_builtins.str]]
@@ -1127,12 +1213,18 @@ class AlertPolicyConditionConditionThresholdAggregationArgs:
     @pulumi.getter(name="alignmentPeriod")
     def alignment_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alignment_period.setter
-    def alignment_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alignment_period(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSeriesReducer")
     def cross_series_reducer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cross_series_reducer.setter
-    def cross_series_reducer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cross_series_reducer(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupByFields")
     def group_by_fields(
@@ -1141,12 +1233,16 @@ class AlertPolicyConditionConditionThresholdAggregationArgs:
     @group_by_fields.setter
     def group_by_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perSeriesAligner")
     def per_series_aligner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @per_series_aligner.setter
-    def per_series_aligner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def per_series_aligner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionThresholdDenominatorAggregationArgsDict(TypedDict):
     alignment_period: NotRequired[pulumi.Input[_builtins.str]]
@@ -1170,12 +1266,18 @@ class AlertPolicyConditionConditionThresholdDenominatorAggregationArgs:
     @pulumi.getter(name="alignmentPeriod")
     def alignment_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alignment_period.setter
-    def alignment_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alignment_period(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSeriesReducer")
     def cross_series_reducer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cross_series_reducer.setter
-    def cross_series_reducer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cross_series_reducer(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupByFields")
     def group_by_fields(
@@ -1184,12 +1286,16 @@ class AlertPolicyConditionConditionThresholdDenominatorAggregationArgs:
     @group_by_fields.setter
     def group_by_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perSeriesAligner")
     def per_series_aligner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @per_series_aligner.setter
-    def per_series_aligner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def per_series_aligner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionThresholdForecastOptionsArgsDict(TypedDict):
     forecast_horizon: pulumi.Input[_builtins.str]
@@ -1203,7 +1309,8 @@ class AlertPolicyConditionConditionThresholdForecastOptionsArgs:
     @pulumi.getter(name="forecastHorizon")
     def forecast_horizon(self) -> pulumi.Input[_builtins.str]: ...
     @forecast_horizon.setter
-    def forecast_horizon(self, value: pulumi.Input[_builtins.str]): ...
+    def forecast_horizon(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AlertPolicyConditionConditionThresholdTriggerArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
@@ -1221,12 +1328,14 @@ class AlertPolicyConditionConditionThresholdTriggerArgs:
     @pulumi.getter
     def count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @count.setter
-    def count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percent(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @percent.setter
-    def percent(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def percent(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AlertPolicyCreationRecordArgsDict(TypedDict):
     mutate_time: NotRequired[pulumi.Input[_builtins.str]]
@@ -1244,12 +1353,14 @@ class AlertPolicyCreationRecordArgs:
     @pulumi.getter(name="mutateTime")
     def mutate_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mutate_time.setter
-    def mutate_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mutate_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mutatedBy")
     def mutated_by(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mutated_by.setter
-    def mutated_by(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mutated_by(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AlertPolicyDocumentationArgsDict(TypedDict):
     content: NotRequired[pulumi.Input[_builtins.str]]
@@ -1275,7 +1386,8 @@ class AlertPolicyDocumentationArgs:
     @pulumi.getter
     def content(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content.setter
-    def content(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def links(
@@ -1289,17 +1401,20 @@ class AlertPolicyDocumentationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AlertPolicyDocumentationLinkArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mimeType")
     def mime_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mime_type.setter
-    def mime_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mime_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subject(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subject.setter
-    def subject(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subject(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AlertPolicyDocumentationLinkArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1317,12 +1432,14 @@ class AlertPolicyDocumentationLinkArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @url.setter
-    def url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomServiceTelemetryArgsDict(TypedDict):
     resource_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1336,7 +1453,8 @@ class CustomServiceTelemetryArgs:
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GenericServiceBasicServiceArgsDict(TypedDict):
     service_labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -1360,12 +1478,14 @@ class GenericServiceBasicServiceArgs:
     @service_labels.setter
     def service_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceType")
     def service_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_type.setter
-    def service_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GenericServiceTelemetryArgsDict(TypedDict):
     resource_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1379,7 +1499,8 @@ class GenericServiceTelemetryArgs:
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MetricDescriptorLabelArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -1399,17 +1520,20 @@ class MetricDescriptorLabelArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="valueType")
     def value_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value_type.setter
-    def value_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MetricDescriptorMetadataArgsDict(TypedDict):
     ingest_delay: NotRequired[pulumi.Input[_builtins.str]]
@@ -1427,12 +1551,14 @@ class MetricDescriptorMetadataArgs:
     @pulumi.getter(name="ingestDelay")
     def ingest_delay(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ingest_delay.setter
-    def ingest_delay(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ingest_delay(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samplePeriod")
     def sample_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sample_period.setter
-    def sample_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sample_period(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class NotificationChannelSensitiveLabelsArgsDict(TypedDict):
     auth_token: NotRequired[pulumi.Input[_builtins.str]]
@@ -1464,47 +1590,62 @@ class NotificationChannelSensitiveLabelsArgs:
     @pulumi.getter(name="authToken")
     def auth_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_token.setter
-    def auth_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authTokenWo")
     def auth_token_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_token_wo.setter
-    def auth_token_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_token_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authTokenWoVersion")
     def auth_token_wo_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_token_wo_version.setter
-    def auth_token_wo_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_token_wo_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordWo")
     def password_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password_wo.setter
-    def password_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordWoVersion")
     def password_wo_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password_wo_version.setter
-    def password_wo_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password_wo_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceKey")
     def service_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_key.setter
-    def service_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceKeyWo")
     def service_key_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_key_wo.setter
-    def service_key_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_key_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceKeyWoVersion")
     def service_key_wo_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_key_wo_version.setter
-    def service_key_wo_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_key_wo_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SloBasicSliArgsDict(TypedDict):
     availability: NotRequired[pulumi.Input[SloBasicSliAvailabilityArgsDict]]
@@ -1530,12 +1671,16 @@ class SloBasicSliArgs:
     @availability.setter
     def availability(
         self, value: Optional[pulumi.Input[SloBasicSliAvailabilityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def latency(self) -> Optional[pulumi.Input[SloBasicSliLatencyArgs]]: ...
     @latency.setter
-    def latency(self, value: Optional[pulumi.Input[SloBasicSliLatencyArgs]]): ...
+    def latency(
+        self, value: Optional[pulumi.Input[SloBasicSliLatencyArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locations(
@@ -1544,7 +1689,8 @@ class SloBasicSliArgs:
     @locations.setter
     def locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def methods(
@@ -1553,7 +1699,8 @@ class SloBasicSliArgs:
     @methods.setter
     def methods(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def versions(
@@ -1562,7 +1709,8 @@ class SloBasicSliArgs:
     @versions.setter
     def versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SloBasicSliAvailabilityArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1576,7 +1724,8 @@ class SloBasicSliAvailabilityArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class SloBasicSliLatencyArgsDict(TypedDict):
     threshold: pulumi.Input[_builtins.str]
@@ -1588,7 +1737,8 @@ class SloBasicSliLatencyArgs:
     @pulumi.getter
     def threshold(self) -> pulumi.Input[_builtins.str]: ...
     @threshold.setter
-    def threshold(self, value: pulumi.Input[_builtins.str]): ...
+    def threshold(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SloRequestBasedSliArgsDict(TypedDict):
     distribution_cut: NotRequired[
@@ -1618,7 +1768,8 @@ class SloRequestBasedSliArgs:
     @distribution_cut.setter
     def distribution_cut(
         self, value: Optional[pulumi.Input[SloRequestBasedSliDistributionCutArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="goodTotalRatio")
     def good_total_ratio(
@@ -1627,7 +1778,8 @@ class SloRequestBasedSliArgs:
     @good_total_ratio.setter
     def good_total_ratio(
         self, value: Optional[pulumi.Input[SloRequestBasedSliGoodTotalRatioArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SloRequestBasedSliDistributionCutArgsDict(TypedDict):
     distribution_filter: pulumi.Input[_builtins.str]
@@ -1645,14 +1797,16 @@ class SloRequestBasedSliDistributionCutArgs:
     @pulumi.getter(name="distributionFilter")
     def distribution_filter(self) -> pulumi.Input[_builtins.str]: ...
     @distribution_filter.setter
-    def distribution_filter(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution_filter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def range(self) -> pulumi.Input[SloRequestBasedSliDistributionCutRangeArgs]: ...
     @range.setter
     def range(
         self, value: pulumi.Input[SloRequestBasedSliDistributionCutRangeArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SloRequestBasedSliDistributionCutRangeArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
@@ -1670,12 +1824,14 @@ class SloRequestBasedSliDistributionCutRangeArgs:
     @pulumi.getter
     def max(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max.setter
-    def max(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @min.setter
-    def min(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def min(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class SloRequestBasedSliGoodTotalRatioArgsDict(TypedDict):
     bad_service_filter: NotRequired[pulumi.Input[_builtins.str]]
@@ -1695,17 +1851,26 @@ class SloRequestBasedSliGoodTotalRatioArgs:
     @pulumi.getter(name="badServiceFilter")
     def bad_service_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bad_service_filter.setter
-    def bad_service_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bad_service_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="goodServiceFilter")
     def good_service_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @good_service_filter.setter
-    def good_service_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def good_service_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="totalServiceFilter")
     def total_service_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @total_service_filter.setter
-    def total_service_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def total_service_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SloWindowsBasedSliArgsDict(TypedDict):
     good_bad_metric_filter: NotRequired[pulumi.Input[_builtins.str]]
@@ -1741,7 +1906,10 @@ class SloWindowsBasedSliArgs:
     @pulumi.getter(name="goodBadMetricFilter")
     def good_bad_metric_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @good_bad_metric_filter.setter
-    def good_bad_metric_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def good_bad_metric_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="goodTotalRatioThreshold")
     def good_total_ratio_threshold(
@@ -1751,7 +1919,8 @@ class SloWindowsBasedSliArgs:
     def good_total_ratio_threshold(
         self,
         value: Optional[pulumi.Input[SloWindowsBasedSliGoodTotalRatioThresholdArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricMeanInRange")
     def metric_mean_in_range(
@@ -1760,7 +1929,8 @@ class SloWindowsBasedSliArgs:
     @metric_mean_in_range.setter
     def metric_mean_in_range(
         self, value: Optional[pulumi.Input[SloWindowsBasedSliMetricMeanInRangeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricSumInRange")
     def metric_sum_in_range(
@@ -1769,12 +1939,14 @@ class SloWindowsBasedSliArgs:
     @metric_sum_in_range.setter
     def metric_sum_in_range(
         self, value: Optional[pulumi.Input[SloWindowsBasedSliMetricSumInRangeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowPeriod")
     def window_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @window_period.setter
-    def window_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def window_period(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdArgsDict(TypedDict):
     basic_sli_performance: NotRequired[
@@ -1817,7 +1989,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdArgs:
                 SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def performance(
@@ -1831,12 +2004,14 @@ class SloWindowsBasedSliGoodTotalRatioThresholdArgs:
         value: Optional[
             pulumi.Input[SloWindowsBasedSliGoodTotalRatioThresholdPerformanceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def threshold(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @threshold.setter
-    def threshold(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def threshold(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgsDict(TypedDict):
     availability: NotRequired[
@@ -1889,7 +2064,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgs:
                 SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def latency(
@@ -1907,7 +2083,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgs:
                 SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locations(
@@ -1916,7 +2093,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgs:
     @locations.setter
     def locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def methods(
@@ -1925,7 +2103,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgs:
     @methods.setter
     def methods(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def versions(
@@ -1934,7 +2113,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgs:
     @versions.setter
     def versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityArgsDict(
     TypedDict
@@ -1950,7 +2130,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityAr
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyArgsDict(
     TypedDict
@@ -1964,7 +2145,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyArgs:
     @pulumi.getter
     def threshold(self) -> pulumi.Input[_builtins.str]: ...
     @threshold.setter
-    def threshold(self, value: pulumi.Input[_builtins.str]): ...
+    def threshold(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceArgsDict(TypedDict):
     distribution_cut: NotRequired[
@@ -2011,7 +2193,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceArgs:
                 SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="goodTotalRatio")
     def good_total_ratio(
@@ -2029,7 +2212,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceArgs:
                 SloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutArgsDict(
     TypedDict
@@ -2053,7 +2237,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutArgs:
     @pulumi.getter(name="distributionFilter")
     def distribution_filter(self) -> pulumi.Input[_builtins.str]: ...
     @distribution_filter.setter
-    def distribution_filter(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution_filter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def range(
@@ -2067,7 +2252,8 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutArgs:
         value: pulumi.Input[
             SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeArgsDict(
     TypedDict
@@ -2087,12 +2273,14 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeAr
     @pulumi.getter
     def max(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max.setter
-    def max(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @min.setter
-    def min(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def min(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioArgsDict(
     TypedDict
@@ -2114,17 +2302,26 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioArgs:
     @pulumi.getter(name="badServiceFilter")
     def bad_service_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bad_service_filter.setter
-    def bad_service_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bad_service_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="goodServiceFilter")
     def good_service_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @good_service_filter.setter
-    def good_service_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def good_service_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="totalServiceFilter")
     def total_service_filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @total_service_filter.setter
-    def total_service_filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def total_service_filter(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SloWindowsBasedSliMetricMeanInRangeArgsDict(TypedDict):
     range: pulumi.Input[SloWindowsBasedSliMetricMeanInRangeRangeArgsDict]
@@ -2144,12 +2341,14 @@ class SloWindowsBasedSliMetricMeanInRangeArgs:
     @range.setter
     def range(
         self, value: pulumi.Input[SloWindowsBasedSliMetricMeanInRangeRangeArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeSeries")
     def time_series(self) -> pulumi.Input[_builtins.str]: ...
     @time_series.setter
-    def time_series(self, value: pulumi.Input[_builtins.str]): ...
+    def time_series(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SloWindowsBasedSliMetricMeanInRangeRangeArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
@@ -2167,12 +2366,14 @@ class SloWindowsBasedSliMetricMeanInRangeRangeArgs:
     @pulumi.getter
     def max(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max.setter
-    def max(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @min.setter
-    def min(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def min(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class SloWindowsBasedSliMetricSumInRangeArgsDict(TypedDict):
     range: pulumi.Input[SloWindowsBasedSliMetricSumInRangeRangeArgsDict]
@@ -2192,12 +2393,14 @@ class SloWindowsBasedSliMetricSumInRangeArgs:
     @range.setter
     def range(
         self, value: pulumi.Input[SloWindowsBasedSliMetricSumInRangeRangeArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeSeries")
     def time_series(self) -> pulumi.Input[_builtins.str]: ...
     @time_series.setter
-    def time_series(self, value: pulumi.Input[_builtins.str]): ...
+    def time_series(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SloWindowsBasedSliMetricSumInRangeRangeArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
@@ -2215,12 +2418,14 @@ class SloWindowsBasedSliMetricSumInRangeRangeArgs:
     @pulumi.getter
     def max(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max.setter
-    def max(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @min.setter
-    def min(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def min(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class UptimeCheckConfigContentMatcherArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
@@ -2244,7 +2449,8 @@ class UptimeCheckConfigContentMatcherArgs:
     @pulumi.getter
     def content(self) -> pulumi.Input[_builtins.str]: ...
     @content.setter
-    def content(self, value: pulumi.Input[_builtins.str]): ...
+    def content(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonPathMatcher")
     def json_path_matcher(
@@ -2256,12 +2462,14 @@ class UptimeCheckConfigContentMatcherArgs:
         value: Optional[
             pulumi.Input[UptimeCheckConfigContentMatcherJsonPathMatcherArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def matcher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @matcher.setter
-    def matcher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def matcher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UptimeCheckConfigContentMatcherJsonPathMatcherArgsDict(TypedDict):
     json_path: pulumi.Input[_builtins.str]
@@ -2279,12 +2487,14 @@ class UptimeCheckConfigContentMatcherJsonPathMatcherArgs:
     @pulumi.getter(name="jsonPath")
     def json_path(self) -> pulumi.Input[_builtins.str]: ...
     @json_path.setter
-    def json_path(self, value: pulumi.Input[_builtins.str]): ...
+    def json_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonMatcher")
     def json_matcher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @json_matcher.setter
-    def json_matcher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def json_matcher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UptimeCheckConfigHttpCheckArgsDict(TypedDict):
     accepted_response_status_codes: NotRequired[
@@ -2369,7 +2579,8 @@ class UptimeCheckConfigHttpCheckArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authInfo")
     def auth_info(
@@ -2378,22 +2589,28 @@ class UptimeCheckConfigHttpCheckArgs:
     @auth_info.setter
     def auth_info(
         self, value: Optional[pulumi.Input[UptimeCheckConfigHttpCheckAuthInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @body.setter
-    def body(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def body(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentType")
     def content_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_type.setter
-    def content_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customContentType")
     def custom_content_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_content_type.setter
-    def custom_content_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_content_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -2402,17 +2619,20 @@ class UptimeCheckConfigHttpCheckArgs:
     @headers.setter
     def headers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maskHeaders")
     def mask_headers(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mask_headers.setter
-    def mask_headers(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def mask_headers(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pingConfig")
     def ping_config(
@@ -2421,17 +2641,20 @@ class UptimeCheckConfigHttpCheckArgs:
     @ping_config.setter
     def ping_config(
         self, value: Optional[pulumi.Input[UptimeCheckConfigHttpCheckPingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestMethod")
     def request_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_method.setter
-    def request_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_method(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAgentAuthentication")
     def service_agent_authentication(
@@ -2445,17 +2668,20 @@ class UptimeCheckConfigHttpCheckArgs:
         value: Optional[
             pulumi.Input[UptimeCheckConfigHttpCheckServiceAgentAuthenticationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useSsl")
     def use_ssl(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_ssl.setter
-    def use_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validateSsl")
     def validate_ssl(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @validate_ssl.setter
-    def validate_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def validate_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class UptimeCheckConfigHttpCheckAcceptedResponseStatusCodeArgsDict(TypedDict):
     status_class: NotRequired[pulumi.Input[_builtins.str]]
@@ -2473,12 +2699,14 @@ class UptimeCheckConfigHttpCheckAcceptedResponseStatusCodeArgs:
     @pulumi.getter(name="statusClass")
     def status_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status_class.setter
-    def status_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statusValue")
     def status_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @status_value.setter
-    def status_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def status_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class UptimeCheckConfigHttpCheckAuthInfoArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
@@ -2500,22 +2728,28 @@ class UptimeCheckConfigHttpCheckAuthInfoArgs:
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordWo")
     def password_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password_wo.setter
-    def password_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordWoVersion")
     def password_wo_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password_wo_version.setter
-    def password_wo_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password_wo_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class UptimeCheckConfigHttpCheckPingConfigArgsDict(TypedDict):
     pings_count: pulumi.Input[_builtins.int]
@@ -2527,7 +2761,8 @@ class UptimeCheckConfigHttpCheckPingConfigArgs:
     @pulumi.getter(name="pingsCount")
     def pings_count(self) -> pulumi.Input[_builtins.int]: ...
     @pings_count.setter
-    def pings_count(self, value: pulumi.Input[_builtins.int]): ...
+    def pings_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class UptimeCheckConfigHttpCheckServiceAgentAuthenticationArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -2541,7 +2776,8 @@ class UptimeCheckConfigHttpCheckServiceAgentAuthenticationArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UptimeCheckConfigMonitoredResourceArgsDict(TypedDict):
     labels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
@@ -2561,12 +2797,14 @@ class UptimeCheckConfigMonitoredResourceArgs:
     @labels.setter
     def labels(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class UptimeCheckConfigResourceGroupArgsDict(TypedDict):
     group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2584,12 +2822,14 @@ class UptimeCheckConfigResourceGroupArgs:
     @pulumi.getter(name="groupId")
     def group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_id.setter
-    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UptimeCheckConfigSyntheticMonitorArgsDict(TypedDict):
     cloud_function_v2: pulumi.Input[
@@ -2613,7 +2853,8 @@ class UptimeCheckConfigSyntheticMonitorArgs:
     @cloud_function_v2.setter
     def cloud_function_v2(
         self, value: pulumi.Input[UptimeCheckConfigSyntheticMonitorCloudFunctionV2Args]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UptimeCheckConfigSyntheticMonitorCloudFunctionV2ArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2625,7 +2866,8 @@ class UptimeCheckConfigSyntheticMonitorCloudFunctionV2Args:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class UptimeCheckConfigTcpCheckArgsDict(TypedDict):
     port: pulumi.Input[_builtins.int]
@@ -2645,7 +2887,8 @@ class UptimeCheckConfigTcpCheckArgs:
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): ...
+    def port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pingConfig")
     def ping_config(
@@ -2654,7 +2897,8 @@ class UptimeCheckConfigTcpCheckArgs:
     @ping_config.setter
     def ping_config(
         self, value: Optional[pulumi.Input[UptimeCheckConfigTcpCheckPingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UptimeCheckConfigTcpCheckPingConfigArgsDict(TypedDict):
     pings_count: pulumi.Input[_builtins.int]
@@ -2666,4 +2910,5 @@ class UptimeCheckConfigTcpCheckPingConfigArgs:
     @pulumi.getter(name="pingsCount")
     def pings_count(self) -> pulumi.Input[_builtins.int]: ...
     @pings_count.setter
-    def pings_count(self, value: pulumi.Input[_builtins.int]): ...
+    def pings_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...

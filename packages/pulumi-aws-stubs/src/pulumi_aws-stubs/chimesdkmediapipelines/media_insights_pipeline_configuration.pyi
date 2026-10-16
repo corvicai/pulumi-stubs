@@ -43,17 +43,20 @@ class MediaInsightsPipelineConfigurationArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MediaInsightsPipelineConfigurationElementArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAccessRoleArn")
     def resource_access_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_access_role_arn.setter
-    def resource_access_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_access_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="realTimeAlertConfiguration")
     def real_time_alert_configuration(
@@ -69,12 +72,14 @@ class MediaInsightsPipelineConfigurationArgs:
                 MediaInsightsPipelineConfigurationRealTimeAlertConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -83,7 +88,8 @@ class MediaInsightsPipelineConfigurationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _MediaInsightsPipelineConfigurationState:
@@ -113,7 +119,8 @@ class _MediaInsightsPipelineConfigurationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def elements(
@@ -131,12 +138,14 @@ class _MediaInsightsPipelineConfigurationState:
                 Sequence[pulumi.Input[MediaInsightsPipelineConfigurationElementArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="realTimeAlertConfiguration")
     def real_time_alert_configuration(
@@ -152,19 +161,22 @@ class _MediaInsightsPipelineConfigurationState:
                 MediaInsightsPipelineConfigurationRealTimeAlertConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAccessRoleArn")
     def resource_access_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_access_role_arn.setter
     def resource_access_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -173,7 +185,8 @@ class _MediaInsightsPipelineConfigurationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -182,7 +195,8 @@ class _MediaInsightsPipelineConfigurationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class MediaInsightsPipelineConfiguration(pulumi.CustomResource):

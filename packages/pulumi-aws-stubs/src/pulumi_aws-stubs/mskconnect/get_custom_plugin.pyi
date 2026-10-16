@@ -51,7 +51,8 @@ class GetCustomPluginResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetCustomPluginResult(GetCustomPluginResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomPluginResult]:
+        ...
 
 def get_custom_plugin(
     name: Optional[_builtins.str] = ...,

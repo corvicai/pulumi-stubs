@@ -47,7 +47,8 @@ class GetIcebergTableIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetIcebergTableIamPolicyResult(GetIcebergTableIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIcebergTableIamPolicyResult]:
+        ...
 
 def get_iceberg_table_iam_policy(
     catalog: Optional[_builtins.str] = ...,

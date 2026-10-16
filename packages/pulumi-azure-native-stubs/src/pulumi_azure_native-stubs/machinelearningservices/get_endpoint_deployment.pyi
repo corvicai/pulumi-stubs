@@ -44,7 +44,8 @@ class GetEndpointDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEndpointDeploymentResult(GetEndpointDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEndpointDeploymentResult]:
+        ...
 
 def get_endpoint_deployment(
     deployment_name: Optional[_builtins.str] = ...,

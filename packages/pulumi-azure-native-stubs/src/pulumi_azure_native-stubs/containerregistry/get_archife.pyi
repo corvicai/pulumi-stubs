@@ -62,7 +62,8 @@ class GetArchifeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetArchifeResult(GetArchifeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetArchifeResult]:
+        ...
 
 def get_archife(
     archive_name: Optional[_builtins.str] = ...,

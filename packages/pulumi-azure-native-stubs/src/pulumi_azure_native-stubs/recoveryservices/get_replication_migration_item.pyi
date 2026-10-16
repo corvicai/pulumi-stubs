@@ -44,7 +44,8 @@ class GetReplicationMigrationItemResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationMigrationItemResult(GetReplicationMigrationItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationMigrationItemResult]:
+        ...
 
 def get_replication_migration_item(
     fabric_name: Optional[_builtins.str] = ...,

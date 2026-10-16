@@ -70,7 +70,8 @@ class GetIdentityPoolResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetIdentityPoolResult(GetIdentityPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIdentityPoolResult]:
+        ...
 
 def get_identity_pool(
     identity_pool_name: Optional[_builtins.str] = ...,

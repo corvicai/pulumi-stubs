@@ -38,7 +38,8 @@ class GetAccountKeyVaultStatusResult:
     def key_vault_uri(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAccountKeyVaultStatusResult(GetAccountKeyVaultStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountKeyVaultStatusResult]:
+        ...
 
 def get_account_key_vault_status(
     account_name: Optional[_builtins.str] = ...,

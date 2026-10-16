@@ -67,7 +67,8 @@ class GetUserResult:
     def user_id(self) -> _builtins.str: ...
 
 class AwaitableGetUserResult(GetUserResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserResult]:
+        ...
 
 def get_user(
     instance_id: Optional[_builtins.str] = ...,

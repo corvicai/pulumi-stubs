@@ -76,7 +76,8 @@ class GetClusterResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetClusterResult(GetClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterResult]:
+        ...
 
 def get_cluster(
     cluster_name: Optional[_builtins.str] = ...,

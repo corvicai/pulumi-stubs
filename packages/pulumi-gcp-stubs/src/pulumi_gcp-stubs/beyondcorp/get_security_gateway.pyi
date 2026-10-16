@@ -84,7 +84,8 @@ class GetSecurityGatewayResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityGatewayResult(GetSecurityGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityGatewayResult]:
+        ...
 
 def get_security_gateway(
     project: Optional[_builtins.str] = ...,

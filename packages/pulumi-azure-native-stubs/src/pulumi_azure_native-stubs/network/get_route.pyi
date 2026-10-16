@@ -54,7 +54,8 @@ class GetRouteResult:
     def type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetRouteResult(GetRouteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteResult]:
+        ...
 
 def get_route(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -36,7 +36,8 @@ class ResourcePolicyArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskConsistencyGroupPolicy")
     def disk_consistency_group_policy(
@@ -46,7 +47,8 @@ class ResourcePolicyArgs:
     def disk_consistency_group_policy(
         self,
         value: Optional[pulumi.Input[ResourcePolicyDiskConsistencyGroupPolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupPlacementPolicy")
     def group_placement_policy(
@@ -55,7 +57,8 @@ class ResourcePolicyArgs:
     @group_placement_policy.setter
     def group_placement_policy(
         self, value: Optional[pulumi.Input[ResourcePolicyGroupPlacementPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceSchedulePolicy")
     def instance_schedule_policy(
@@ -64,22 +67,26 @@ class ResourcePolicyArgs:
     @instance_schedule_policy.setter
     def instance_schedule_policy(
         self, value: Optional[pulumi.Input[ResourcePolicyInstanceSchedulePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotSchedulePolicy")
     def snapshot_schedule_policy(
@@ -88,7 +95,8 @@ class ResourcePolicyArgs:
     @snapshot_schedule_policy.setter
     def snapshot_schedule_policy(
         self, value: Optional[pulumi.Input[ResourcePolicySnapshotSchedulePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadPolicy")
     def workload_policy(
@@ -97,7 +105,8 @@ class ResourcePolicyArgs:
     @workload_policy.setter
     def workload_policy(
         self, value: Optional[pulumi.Input[ResourcePolicyWorkloadPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ResourcePolicyState:
@@ -127,7 +136,8 @@ class _ResourcePolicyState:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskConsistencyGroupPolicy")
     def disk_consistency_group_policy(
@@ -137,7 +147,8 @@ class _ResourcePolicyState:
     def disk_consistency_group_policy(
         self,
         value: Optional[pulumi.Input[ResourcePolicyDiskConsistencyGroupPolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupPlacementPolicy")
     def group_placement_policy(
@@ -146,7 +157,8 @@ class _ResourcePolicyState:
     @group_placement_policy.setter
     def group_placement_policy(
         self, value: Optional[pulumi.Input[ResourcePolicyGroupPlacementPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceSchedulePolicy")
     def instance_schedule_policy(
@@ -155,27 +167,32 @@ class _ResourcePolicyState:
     @instance_schedule_policy.setter
     def instance_schedule_policy(
         self, value: Optional[pulumi.Input[ResourcePolicyInstanceSchedulePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotSchedulePolicy")
     def snapshot_schedule_policy(
@@ -184,7 +201,8 @@ class _ResourcePolicyState:
     @snapshot_schedule_policy.setter
     def snapshot_schedule_policy(
         self, value: Optional[pulumi.Input[ResourcePolicySnapshotSchedulePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadPolicy")
     def workload_policy(
@@ -193,7 +211,8 @@ class _ResourcePolicyState:
     @workload_policy.setter
     def workload_policy(
         self, value: Optional[pulumi.Input[ResourcePolicyWorkloadPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/resourcePolicy:ResourcePolicy")
 class ResourcePolicy(pulumi.CustomResource):

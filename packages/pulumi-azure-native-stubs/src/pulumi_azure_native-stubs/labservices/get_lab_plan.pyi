@@ -94,7 +94,8 @@ class GetLabPlanResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLabPlanResult(GetLabPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLabPlanResult]:
+        ...
 
 def get_lab_plan(
     lab_plan_name: Optional[_builtins.str] = ...,

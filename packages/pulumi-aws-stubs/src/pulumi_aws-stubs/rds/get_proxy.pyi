@@ -83,7 +83,8 @@ class GetProxyResult:
     def vpc_subnet_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetProxyResult(GetProxyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProxyResult]:
+        ...
 
 def get_proxy(
     name: Optional[_builtins.str] = ...,

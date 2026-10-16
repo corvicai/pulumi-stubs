@@ -69,7 +69,8 @@ class InstanceGroupManagerArgs:
     @pulumi.getter(name="baseInstanceName")
     def base_instance_name(self) -> pulumi.Input[_builtins.str]: ...
     @base_instance_name.setter
-    def base_instance_name(self, value: pulumi.Input[_builtins.str]): ...
+    def base_instance_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def versions(
@@ -79,7 +80,8 @@ class InstanceGroupManagerArgs:
     def versions(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[InstanceGroupManagerVersionArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allInstancesConfig")
     def all_instances_config(
@@ -88,7 +90,8 @@ class InstanceGroupManagerArgs:
     @all_instances_config.setter
     def all_instances_config(
         self, value: Optional[pulumi.Input[InstanceGroupManagerAllInstancesConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoHealingPolicies")
     def auto_healing_policies(
@@ -97,12 +100,14 @@ class InstanceGroupManagerArgs:
     @auto_healing_policies.setter
     def auto_healing_policies(
         self, value: Optional[pulumi.Input[InstanceGroupManagerAutoHealingPoliciesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceLifecyclePolicy")
     def instance_lifecycle_policy(
@@ -112,7 +117,8 @@ class InstanceGroupManagerArgs:
     def instance_lifecycle_policy(
         self,
         value: Optional[pulumi.Input[InstanceGroupManagerInstanceLifecyclePolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listManagedInstancesResults")
     def list_managed_instances_results(
@@ -121,12 +127,14 @@ class InstanceGroupManagerArgs:
     @list_managed_instances_results.setter
     def list_managed_instances_results(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namedPorts")
     def named_ports(
@@ -140,17 +148,22 @@ class InstanceGroupManagerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceGroupManagerNamedPortArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def params(self) -> Optional[pulumi.Input[InstanceGroupManagerParamsArgs]]: ...
     @params.setter
-    def params(self, value: Optional[pulumi.Input[InstanceGroupManagerParamsArgs]]): ...
+    def params(
+        self, value: Optional[pulumi.Input[InstanceGroupManagerParamsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePolicies")
     def resource_policies(
@@ -159,7 +172,8 @@ class InstanceGroupManagerArgs:
     @resource_policies.setter
     def resource_policies(
         self, value: Optional[pulumi.Input[InstanceGroupManagerResourcePoliciesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="standbyPolicy")
     def standby_policy(
@@ -168,7 +182,8 @@ class InstanceGroupManagerArgs:
     @standby_policy.setter
     def standby_policy(
         self, value: Optional[pulumi.Input[InstanceGroupManagerStandbyPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statefulDisks")
     def stateful_disks(
@@ -182,7 +197,8 @@ class InstanceGroupManagerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceGroupManagerStatefulDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statefulExternalIps")
     def stateful_external_ips(
@@ -198,7 +214,8 @@ class InstanceGroupManagerArgs:
                 Sequence[pulumi.Input[InstanceGroupManagerStatefulExternalIpArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statefulInternalIps")
     def stateful_internal_ips(
@@ -214,7 +231,8 @@ class InstanceGroupManagerArgs:
                 Sequence[pulumi.Input[InstanceGroupManagerStatefulInternalIpArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPools")
     def target_pools(
@@ -223,22 +241,30 @@ class InstanceGroupManagerArgs:
     @target_pools.setter
     def target_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSize")
     def target_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_size.setter
-    def target_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetStoppedSize")
     def target_stopped_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_stopped_size.setter
-    def target_stopped_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_stopped_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSuspendedSize")
     def target_suspended_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_suspended_size.setter
-    def target_suspended_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_suspended_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatePolicy")
     def update_policy(
@@ -247,24 +273,30 @@ class InstanceGroupManagerArgs:
     @update_policy.setter
     def update_policy(
         self, value: Optional[pulumi.Input[InstanceGroupManagerUpdatePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForInstances")
     def wait_for_instances(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_instances.setter
-    def wait_for_instances(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_instances(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForInstancesStatus")
     def wait_for_instances_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wait_for_instances_status.setter
     def wait_for_instances_status(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InstanceGroupManagerState:
@@ -341,7 +373,8 @@ class _InstanceGroupManagerState:
     @all_instances_config.setter
     def all_instances_config(
         self, value: Optional[pulumi.Input[InstanceGroupManagerAllInstancesConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoHealingPolicies")
     def auto_healing_policies(
@@ -350,39 +383,50 @@ class _InstanceGroupManagerState:
     @auto_healing_policies.setter
     def auto_healing_policies(
         self, value: Optional[pulumi.Input[InstanceGroupManagerAutoHealingPoliciesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="baseInstanceName")
     def base_instance_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @base_instance_name.setter
-    def base_instance_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def base_instance_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fingerprint.setter
-    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceGroup")
     def instance_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_group.setter
-    def instance_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceGroupManagerId")
     def instance_group_manager_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @instance_group_manager_id.setter
     def instance_group_manager_id(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceLifecyclePolicy")
     def instance_lifecycle_policy(
@@ -392,7 +436,8 @@ class _InstanceGroupManagerState:
     def instance_lifecycle_policy(
         self,
         value: Optional[pulumi.Input[InstanceGroupManagerInstanceLifecyclePolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listManagedInstancesResults")
     def list_managed_instances_results(
@@ -401,12 +446,14 @@ class _InstanceGroupManagerState:
     @list_managed_instances_results.setter
     def list_managed_instances_results(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namedPorts")
     def named_ports(
@@ -420,22 +467,28 @@ class _InstanceGroupManagerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceGroupManagerNamedPortArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @operation.setter
-    def operation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def operation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def params(self) -> Optional[pulumi.Input[InstanceGroupManagerParamsArgs]]: ...
     @params.setter
-    def params(self, value: Optional[pulumi.Input[InstanceGroupManagerParamsArgs]]): ...
+    def params(
+        self, value: Optional[pulumi.Input[InstanceGroupManagerParamsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePolicies")
     def resource_policies(
@@ -444,12 +497,14 @@ class _InstanceGroupManagerState:
     @resource_policies.setter
     def resource_policies(
         self, value: Optional[pulumi.Input[InstanceGroupManagerResourcePoliciesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="standbyPolicy")
     def standby_policy(
@@ -458,7 +513,8 @@ class _InstanceGroupManagerState:
     @standby_policy.setter
     def standby_policy(
         self, value: Optional[pulumi.Input[InstanceGroupManagerStandbyPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statefulDisks")
     def stateful_disks(
@@ -472,7 +528,8 @@ class _InstanceGroupManagerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceGroupManagerStatefulDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statefulExternalIps")
     def stateful_external_ips(
@@ -488,7 +545,8 @@ class _InstanceGroupManagerState:
                 Sequence[pulumi.Input[InstanceGroupManagerStatefulExternalIpArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statefulInternalIps")
     def stateful_internal_ips(
@@ -504,7 +562,8 @@ class _InstanceGroupManagerState:
                 Sequence[pulumi.Input[InstanceGroupManagerStatefulInternalIpArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statuses(
@@ -518,7 +577,8 @@ class _InstanceGroupManagerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceGroupManagerStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPools")
     def target_pools(
@@ -527,22 +587,30 @@ class _InstanceGroupManagerState:
     @target_pools.setter
     def target_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSize")
     def target_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_size.setter
-    def target_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetStoppedSize")
     def target_stopped_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_stopped_size.setter
-    def target_stopped_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_stopped_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSuspendedSize")
     def target_suspended_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_suspended_size.setter
-    def target_suspended_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_suspended_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatePolicy")
     def update_policy(
@@ -551,7 +619,8 @@ class _InstanceGroupManagerState:
     @update_policy.setter
     def update_policy(
         self, value: Optional[pulumi.Input[InstanceGroupManagerUpdatePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def versions(
@@ -565,24 +634,30 @@ class _InstanceGroupManagerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceGroupManagerVersionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForInstances")
     def wait_for_instances(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_instances.setter
-    def wait_for_instances(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_instances(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForInstancesStatus")
     def wait_for_instances_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wait_for_instances_status.setter
     def wait_for_instances_status(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InstanceGroupManager(pulumi.CustomResource):

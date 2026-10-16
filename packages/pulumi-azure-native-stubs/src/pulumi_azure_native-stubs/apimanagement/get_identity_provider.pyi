@@ -75,7 +75,8 @@ class GetIdentityProviderResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIdentityProviderResult(GetIdentityProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIdentityProviderResult]:
+        ...
 
 def get_identity_provider(
     identity_provider_name: Optional[_builtins.str] = ...,

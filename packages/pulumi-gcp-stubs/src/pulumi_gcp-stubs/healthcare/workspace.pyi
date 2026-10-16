@@ -23,12 +23,14 @@ class WorkspaceArgs:
     @pulumi.getter
     def dataset(self) -> pulumi.Input[_builtins.str]: ...
     @dataset.setter
-    def dataset(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> pulumi.Input[WorkspaceSettingsArgs]: ...
     @settings.setter
-    def settings(self, value: pulumi.Input[WorkspaceSettingsArgs]): ...
+    def settings(self, value: pulumi.Input[WorkspaceSettingsArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -37,12 +39,14 @@ class WorkspaceArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WorkspaceState:
@@ -64,7 +68,8 @@ class _WorkspaceState:
     @pulumi.getter
     def dataset(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset.setter
-    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -73,7 +78,8 @@ class _WorkspaceState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -82,12 +88,14 @@ class _WorkspaceState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -96,12 +104,16 @@ class _WorkspaceState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[pulumi.Input[WorkspaceSettingsArgs]]: ...
     @settings.setter
-    def settings(self, value: Optional[pulumi.Input[WorkspaceSettingsArgs]]): ...
+    def settings(
+        self, value: Optional[pulumi.Input[WorkspaceSettingsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:healthcare/workspace:Workspace")
 class Workspace(pulumi.CustomResource):

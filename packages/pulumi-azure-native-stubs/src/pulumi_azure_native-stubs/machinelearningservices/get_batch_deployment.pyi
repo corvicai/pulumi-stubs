@@ -64,7 +64,8 @@ class GetBatchDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBatchDeploymentResult(GetBatchDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBatchDeploymentResult]:
+        ...
 
 def get_batch_deployment(
     deployment_name: Optional[_builtins.str] = ...,

@@ -20,17 +20,24 @@ class InstanceTrustProviderAttachmentArgs:
     @pulumi.getter(name="verifiedaccessInstanceId")
     def verifiedaccess_instance_id(self) -> pulumi.Input[_builtins.str]: ...
     @verifiedaccess_instance_id.setter
-    def verifiedaccess_instance_id(self, value: pulumi.Input[_builtins.str]): ...
+    def verifiedaccess_instance_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verifiedaccessTrustProviderId")
     def verifiedaccess_trust_provider_id(self) -> pulumi.Input[_builtins.str]: ...
     @verifiedaccess_trust_provider_id.setter
-    def verifiedaccess_trust_provider_id(self, value: pulumi.Input[_builtins.str]): ...
+    def verifiedaccess_trust_provider_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InstanceTrustProviderAttachmentState:
@@ -45,14 +52,16 @@ class _InstanceTrustProviderAttachmentState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verifiedaccessInstanceId")
     def verifiedaccess_instance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @verifiedaccess_instance_id.setter
     def verifiedaccess_instance_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verifiedaccessTrustProviderId")
     def verifiedaccess_trust_provider_id(
@@ -61,7 +70,8 @@ class _InstanceTrustProviderAttachmentState:
     @verifiedaccess_trust_provider_id.setter
     def verifiedaccess_trust_provider_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InstanceTrustProviderAttachment(pulumi.CustomResource):

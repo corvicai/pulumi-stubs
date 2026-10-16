@@ -34,7 +34,10 @@ class GetApplicationGatewayBackendHealthOnDemandResult:
 class AwaitableGetApplicationGatewayBackendHealthOnDemandResult(
     GetApplicationGatewayBackendHealthOnDemandResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetApplicationGatewayBackendHealthOnDemandResult]:
+        ...
 
 def get_application_gateway_backend_health_on_demand(
     application_gateway_name: Optional[_builtins.str] = ...,

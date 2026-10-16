@@ -44,7 +44,8 @@ class GetRulesEngineResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRulesEngineResult(GetRulesEngineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRulesEngineResult]:
+        ...
 
 def get_rules_engine(
     front_door_name: Optional[_builtins.str] = ...,

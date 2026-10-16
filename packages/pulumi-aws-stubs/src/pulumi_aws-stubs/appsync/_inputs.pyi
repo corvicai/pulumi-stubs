@@ -147,7 +147,8 @@ class ApiEventConfigArgs:
     def auth_providers(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[ApiEventConfigAuthProviderArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionAuthModes")
     def connection_auth_modes(
@@ -159,7 +160,8 @@ class ApiEventConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ApiEventConfigConnectionAuthModeArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultPublishAuthModes")
     def default_publish_auth_modes(
@@ -173,7 +175,8 @@ class ApiEventConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ApiEventConfigDefaultPublishAuthModeArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultSubscribeAuthModes")
     def default_subscribe_auth_modes(
@@ -187,14 +190,16 @@ class ApiEventConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ApiEventConfigDefaultSubscribeAuthModeArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(self) -> Optional[pulumi.Input[ApiEventConfigLogConfigArgs]]: ...
     @log_config.setter
     def log_config(
         self, value: Optional[pulumi.Input[ApiEventConfigLogConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiEventConfigAuthProviderArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -228,7 +233,8 @@ class ApiEventConfigAuthProviderArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cognitoConfig")
     def cognito_config(
@@ -237,7 +243,8 @@ class ApiEventConfigAuthProviderArgs:
     @cognito_config.setter
     def cognito_config(
         self, value: Optional[pulumi.Input[ApiEventConfigAuthProviderCognitoConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaAuthorizerConfig")
     def lambda_authorizer_config(
@@ -251,7 +258,8 @@ class ApiEventConfigAuthProviderArgs:
         value: Optional[
             pulumi.Input[ApiEventConfigAuthProviderLambdaAuthorizerConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openidConnectConfig")
     def openid_connect_config(
@@ -263,7 +271,8 @@ class ApiEventConfigAuthProviderArgs:
         value: Optional[
             pulumi.Input[ApiEventConfigAuthProviderOpenidConnectConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiEventConfigAuthProviderCognitoConfigArgsDict(TypedDict):
     aws_region: pulumi.Input[_builtins.str]
@@ -283,17 +292,22 @@ class ApiEventConfigAuthProviderCognitoConfigArgs:
     @pulumi.getter(name="awsRegion")
     def aws_region(self) -> pulumi.Input[_builtins.str]: ...
     @aws_region.setter
-    def aws_region(self, value: pulumi.Input[_builtins.str]): ...
+    def aws_region(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolId")
     def user_pool_id(self) -> pulumi.Input[_builtins.str]: ...
     @user_pool_id.setter
-    def user_pool_id(self, value: pulumi.Input[_builtins.str]): ...
+    def user_pool_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appIdClientRegex")
     def app_id_client_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_id_client_regex.setter
-    def app_id_client_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_id_client_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ApiEventConfigAuthProviderLambdaAuthorizerConfigArgsDict(TypedDict):
     authorizer_uri: pulumi.Input[_builtins.str]
@@ -313,7 +327,8 @@ class ApiEventConfigAuthProviderLambdaAuthorizerConfigArgs:
     @pulumi.getter(name="authorizerUri")
     def authorizer_uri(self) -> pulumi.Input[_builtins.str]: ...
     @authorizer_uri.setter
-    def authorizer_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def authorizer_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizerResultTtlInSeconds")
     def authorizer_result_ttl_in_seconds(
@@ -322,7 +337,8 @@ class ApiEventConfigAuthProviderLambdaAuthorizerConfigArgs:
     @authorizer_result_ttl_in_seconds.setter
     def authorizer_result_ttl_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityValidationExpression")
     def identity_validation_expression(
@@ -331,7 +347,8 @@ class ApiEventConfigAuthProviderLambdaAuthorizerConfigArgs:
     @identity_validation_expression.setter
     def identity_validation_expression(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiEventConfigAuthProviderOpenidConnectConfigArgsDict(TypedDict):
     issuer: pulumi.Input[_builtins.str]
@@ -353,22 +370,26 @@ class ApiEventConfigAuthProviderOpenidConnectConfigArgs:
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authTtl")
     def auth_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @auth_ttl.setter
-    def auth_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def auth_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iatTtl")
     def iat_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @iat_ttl.setter
-    def iat_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def iat_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ApiEventConfigConnectionAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -380,7 +401,8 @@ class ApiEventConfigConnectionAuthModeArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApiEventConfigDefaultPublishAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -392,7 +414,8 @@ class ApiEventConfigDefaultPublishAuthModeArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApiEventConfigDefaultSubscribeAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -404,7 +427,8 @@ class ApiEventConfigDefaultSubscribeAuthModeArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApiEventConfigLogConfigArgsDict(TypedDict):
     cloudwatch_logs_role_arn: pulumi.Input[_builtins.str]
@@ -422,12 +446,14 @@ class ApiEventConfigLogConfigArgs:
     @pulumi.getter(name="cloudwatchLogsRoleArn")
     def cloudwatch_logs_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @cloudwatch_logs_role_arn.setter
-    def cloudwatch_logs_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def cloudwatch_logs_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLevel")
     def log_level(self) -> pulumi.Input[_builtins.str]: ...
     @log_level.setter
-    def log_level(self, value: pulumi.Input[_builtins.str]): ...
+    def log_level(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ChannelNamespaceHandlerConfigsArgsDict(TypedDict):
     on_publish: NotRequired[
@@ -457,7 +483,8 @@ class ChannelNamespaceHandlerConfigsArgs:
     @on_publish.setter
     def on_publish(
         self, value: Optional[pulumi.Input[ChannelNamespaceHandlerConfigsOnPublishArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onSubscribe")
     def on_subscribe(
@@ -467,7 +494,8 @@ class ChannelNamespaceHandlerConfigsArgs:
     def on_subscribe(
         self,
         value: Optional[pulumi.Input[ChannelNamespaceHandlerConfigsOnSubscribeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ChannelNamespaceHandlerConfigsOnPublishArgsDict(TypedDict):
     behavior: pulumi.Input[_builtins.str]
@@ -489,7 +517,8 @@ class ChannelNamespaceHandlerConfigsOnPublishArgs:
     @pulumi.getter
     def behavior(self) -> pulumi.Input[_builtins.str]: ...
     @behavior.setter
-    def behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def integration(
@@ -499,7 +528,8 @@ class ChannelNamespaceHandlerConfigsOnPublishArgs:
     def integration(
         self,
         value: pulumi.Input[ChannelNamespaceHandlerConfigsOnPublishIntegrationArgs],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ChannelNamespaceHandlerConfigsOnPublishIntegrationArgsDict(TypedDict):
     data_source_name: pulumi.Input[_builtins.str]
@@ -525,7 +555,8 @@ class ChannelNamespaceHandlerConfigsOnPublishIntegrationArgs:
     @pulumi.getter(name="dataSourceName")
     def data_source_name(self) -> pulumi.Input[_builtins.str]: ...
     @data_source_name.setter
-    def data_source_name(self, value: pulumi.Input[_builtins.str]): ...
+    def data_source_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConfig")
     def lambda_config(
@@ -541,7 +572,8 @@ class ChannelNamespaceHandlerConfigsOnPublishIntegrationArgs:
                 ChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigArgsDict(TypedDict):
     invoke_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -555,7 +587,8 @@ class ChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigArgs:
     @pulumi.getter(name="invokeType")
     def invoke_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invoke_type.setter
-    def invoke_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def invoke_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ChannelNamespaceHandlerConfigsOnSubscribeArgsDict(TypedDict):
     behavior: pulumi.Input[_builtins.str]
@@ -577,7 +610,8 @@ class ChannelNamespaceHandlerConfigsOnSubscribeArgs:
     @pulumi.getter
     def behavior(self) -> pulumi.Input[_builtins.str]: ...
     @behavior.setter
-    def behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def integration(
@@ -587,7 +621,8 @@ class ChannelNamespaceHandlerConfigsOnSubscribeArgs:
     def integration(
         self,
         value: pulumi.Input[ChannelNamespaceHandlerConfigsOnSubscribeIntegrationArgs],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationArgsDict(TypedDict):
     data_source_name: pulumi.Input[_builtins.str]
@@ -613,7 +648,8 @@ class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationArgs:
     @pulumi.getter(name="dataSourceName")
     def data_source_name(self) -> pulumi.Input[_builtins.str]: ...
     @data_source_name.setter
-    def data_source_name(self, value: pulumi.Input[_builtins.str]): ...
+    def data_source_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConfig")
     def lambda_config(
@@ -631,7 +667,8 @@ class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationArgs:
                 ChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigArgsDict(
     TypedDict
@@ -647,7 +684,8 @@ class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigArgs:
     @pulumi.getter(name="invokeType")
     def invoke_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invoke_type.setter
-    def invoke_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def invoke_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ChannelNamespacePublishAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -659,7 +697,8 @@ class ChannelNamespacePublishAuthModeArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ChannelNamespaceSubscribeAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
@@ -671,7 +710,8 @@ class ChannelNamespaceSubscribeAuthModeArgs:
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DataSourceDynamodbConfigArgsDict(TypedDict):
     table_name: pulumi.Input[_builtins.str]
@@ -699,7 +739,8 @@ class DataSourceDynamodbConfigArgs:
     @pulumi.getter(name="tableName")
     def table_name(self) -> pulumi.Input[_builtins.str]: ...
     @table_name.setter
-    def table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deltaSyncConfig")
     def delta_sync_config(
@@ -708,22 +749,28 @@ class DataSourceDynamodbConfigArgs:
     @delta_sync_config.setter
     def delta_sync_config(
         self, value: Optional[pulumi.Input[DataSourceDynamodbConfigDeltaSyncConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useCallerCredentials")
     def use_caller_credentials(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_caller_credentials.setter
-    def use_caller_credentials(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_caller_credentials(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def versioned(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @versioned.setter
-    def versioned(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def versioned(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DataSourceDynamodbConfigDeltaSyncConfigArgsDict(TypedDict):
     delta_sync_table_name: pulumi.Input[_builtins.str]
@@ -743,17 +790,22 @@ class DataSourceDynamodbConfigDeltaSyncConfigArgs:
     @pulumi.getter(name="deltaSyncTableName")
     def delta_sync_table_name(self) -> pulumi.Input[_builtins.str]: ...
     @delta_sync_table_name.setter
-    def delta_sync_table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def delta_sync_table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="baseTableTtl")
     def base_table_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @base_table_ttl.setter
-    def base_table_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def base_table_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deltaSyncTableTtl")
     def delta_sync_table_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @delta_sync_table_ttl.setter
-    def delta_sync_table_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def delta_sync_table_ttl(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class DataSourceElasticsearchConfigArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
@@ -771,12 +823,14 @@ class DataSourceElasticsearchConfigArgs:
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceEventBridgeConfigArgsDict(TypedDict):
     event_bus_arn: pulumi.Input[_builtins.str]
@@ -788,7 +842,8 @@ class DataSourceEventBridgeConfigArgs:
     @pulumi.getter(name="eventBusArn")
     def event_bus_arn(self) -> pulumi.Input[_builtins.str]: ...
     @event_bus_arn.setter
-    def event_bus_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def event_bus_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DataSourceHttpConfigArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
@@ -810,7 +865,8 @@ class DataSourceHttpConfigArgs:
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizationConfig")
     def authorization_config(
@@ -819,7 +875,8 @@ class DataSourceHttpConfigArgs:
     @authorization_config.setter
     def authorization_config(
         self, value: Optional[pulumi.Input[DataSourceHttpConfigAuthorizationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceHttpConfigAuthorizationConfigArgsDict(TypedDict):
     authorization_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -841,7 +898,10 @@ class DataSourceHttpConfigAuthorizationConfigArgs:
     @pulumi.getter(name="authorizationType")
     def authorization_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorization_type.setter
-    def authorization_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authorization_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsIamConfig")
     def aws_iam_config(
@@ -855,7 +915,8 @@ class DataSourceHttpConfigAuthorizationConfigArgs:
         value: Optional[
             pulumi.Input[DataSourceHttpConfigAuthorizationConfigAwsIamConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataSourceHttpConfigAuthorizationConfigAwsIamConfigArgsDict(TypedDict):
     signing_region: NotRequired[pulumi.Input[_builtins.str]]
@@ -873,12 +934,16 @@ class DataSourceHttpConfigAuthorizationConfigAwsIamConfigArgs:
     @pulumi.getter(name="signingRegion")
     def signing_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @signing_region.setter
-    def signing_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def signing_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signingServiceName")
     def signing_service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @signing_service_name.setter
-    def signing_service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def signing_service_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DataSourceLambdaConfigArgsDict(TypedDict):
     function_arn: pulumi.Input[_builtins.str]
@@ -890,7 +955,8 @@ class DataSourceLambdaConfigArgs:
     @pulumi.getter(name="functionArn")
     def function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @function_arn.setter
-    def function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DataSourceOpensearchserviceConfigArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
@@ -908,12 +974,14 @@ class DataSourceOpensearchserviceConfigArgs:
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceRelationalDatabaseConfigArgsDict(TypedDict):
     http_endpoint_config: NotRequired[
@@ -944,12 +1012,14 @@ class DataSourceRelationalDatabaseConfigArgs:
         value: Optional[
             pulumi.Input[DataSourceRelationalDatabaseConfigHttpEndpointConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceType")
     def source_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_type.setter
-    def source_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataSourceRelationalDatabaseConfigHttpEndpointConfigArgsDict(TypedDict):
     aws_secret_store_arn: pulumi.Input[_builtins.str]
@@ -973,27 +1043,32 @@ class DataSourceRelationalDatabaseConfigHttpEndpointConfigArgs:
     @pulumi.getter(name="awsSecretStoreArn")
     def aws_secret_store_arn(self) -> pulumi.Input[_builtins.str]: ...
     @aws_secret_store_arn.setter
-    def aws_secret_store_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def aws_secret_store_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dbClusterIdentifier")
     def db_cluster_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @db_cluster_identifier.setter
-    def db_cluster_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def db_cluster_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema.setter
-    def schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FunctionRuntimeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1011,12 +1086,14 @@ class FunctionRuntimeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeVersion")
     def runtime_version(self) -> pulumi.Input[_builtins.str]: ...
     @runtime_version.setter
-    def runtime_version(self, value: pulumi.Input[_builtins.str]): ...
+    def runtime_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionSyncConfigArgsDict(TypedDict):
     conflict_detection: NotRequired[pulumi.Input[_builtins.str]]
@@ -1040,12 +1117,18 @@ class FunctionSyncConfigArgs:
     @pulumi.getter(name="conflictDetection")
     def conflict_detection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @conflict_detection.setter
-    def conflict_detection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def conflict_detection(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conflictHandler")
     def conflict_handler(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @conflict_handler.setter
-    def conflict_handler(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def conflict_handler(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConflictHandlerConfig")
     def lambda_conflict_handler_config(
@@ -1057,7 +1140,8 @@ class FunctionSyncConfigArgs:
         value: Optional[
             pulumi.Input[FunctionSyncConfigLambdaConflictHandlerConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FunctionSyncConfigLambdaConflictHandlerConfigArgsDict(TypedDict):
     lambda_conflict_handler_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -1075,7 +1159,8 @@ class FunctionSyncConfigLambdaConflictHandlerConfigArgs:
     @lambda_conflict_handler_arn.setter
     def lambda_conflict_handler_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GraphQLApiAdditionalAuthenticationProviderArgsDict(TypedDict):
     authentication_type: pulumi.Input[_builtins.str]
@@ -1117,7 +1202,8 @@ class GraphQLApiAdditionalAuthenticationProviderArgs:
     @pulumi.getter(name="authenticationType")
     def authentication_type(self) -> pulumi.Input[_builtins.str]: ...
     @authentication_type.setter
-    def authentication_type(self, value: pulumi.Input[_builtins.str]): ...
+    def authentication_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaAuthorizerConfig")
     def lambda_authorizer_config(
@@ -1135,7 +1221,8 @@ class GraphQLApiAdditionalAuthenticationProviderArgs:
                 GraphQLApiAdditionalAuthenticationProviderLambdaAuthorizerConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openidConnectConfig")
     def openid_connect_config(
@@ -1151,7 +1238,8 @@ class GraphQLApiAdditionalAuthenticationProviderArgs:
                 GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolConfig")
     def user_pool_config(
@@ -1165,7 +1253,8 @@ class GraphQLApiAdditionalAuthenticationProviderArgs:
         value: Optional[
             pulumi.Input[GraphQLApiAdditionalAuthenticationProviderUserPoolConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GraphQLApiAdditionalAuthenticationProviderLambdaAuthorizerConfigArgsDict(
     TypedDict
@@ -1187,7 +1276,8 @@ class GraphQLApiAdditionalAuthenticationProviderLambdaAuthorizerConfigArgs:
     @pulumi.getter(name="authorizerUri")
     def authorizer_uri(self) -> pulumi.Input[_builtins.str]: ...
     @authorizer_uri.setter
-    def authorizer_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def authorizer_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizerResultTtlInSeconds")
     def authorizer_result_ttl_in_seconds(
@@ -1196,7 +1286,8 @@ class GraphQLApiAdditionalAuthenticationProviderLambdaAuthorizerConfigArgs:
     @authorizer_result_ttl_in_seconds.setter
     def authorizer_result_ttl_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityValidationExpression")
     def identity_validation_expression(
@@ -1205,7 +1296,8 @@ class GraphQLApiAdditionalAuthenticationProviderLambdaAuthorizerConfigArgs:
     @identity_validation_expression.setter
     def identity_validation_expression(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfigArgsDict(TypedDict):
     issuer: pulumi.Input[_builtins.str]
@@ -1227,22 +1319,26 @@ class GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfigArgs:
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authTtl")
     def auth_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @auth_ttl.setter
-    def auth_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def auth_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iatTtl")
     def iat_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @iat_ttl.setter
-    def iat_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def iat_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class GraphQLApiAdditionalAuthenticationProviderUserPoolConfigArgsDict(TypedDict):
     user_pool_id: pulumi.Input[_builtins.str]
@@ -1262,17 +1358,22 @@ class GraphQLApiAdditionalAuthenticationProviderUserPoolConfigArgs:
     @pulumi.getter(name="userPoolId")
     def user_pool_id(self) -> pulumi.Input[_builtins.str]: ...
     @user_pool_id.setter
-    def user_pool_id(self, value: pulumi.Input[_builtins.str]): ...
+    def user_pool_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appIdClientRegex")
     def app_id_client_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_id_client_regex.setter
-    def app_id_client_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_id_client_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsRegion")
     def aws_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_region.setter
-    def aws_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aws_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GraphQLApiEnhancedMetricsConfigArgsDict(TypedDict):
     data_source_level_metrics_behavior: pulumi.Input[_builtins.str]
@@ -1294,17 +1395,24 @@ class GraphQLApiEnhancedMetricsConfigArgs:
     @data_source_level_metrics_behavior.setter
     def data_source_level_metrics_behavior(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operationLevelMetricsConfig")
     def operation_level_metrics_config(self) -> pulumi.Input[_builtins.str]: ...
     @operation_level_metrics_config.setter
-    def operation_level_metrics_config(self, value: pulumi.Input[_builtins.str]): ...
+    def operation_level_metrics_config(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resolverLevelMetricsBehavior")
     def resolver_level_metrics_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @resolver_level_metrics_behavior.setter
-    def resolver_level_metrics_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def resolver_level_metrics_behavior(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class GraphQLApiLambdaAuthorizerConfigArgsDict(TypedDict):
     authorizer_uri: pulumi.Input[_builtins.str]
@@ -1324,7 +1432,8 @@ class GraphQLApiLambdaAuthorizerConfigArgs:
     @pulumi.getter(name="authorizerUri")
     def authorizer_uri(self) -> pulumi.Input[_builtins.str]: ...
     @authorizer_uri.setter
-    def authorizer_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def authorizer_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizerResultTtlInSeconds")
     def authorizer_result_ttl_in_seconds(
@@ -1333,7 +1442,8 @@ class GraphQLApiLambdaAuthorizerConfigArgs:
     @authorizer_result_ttl_in_seconds.setter
     def authorizer_result_ttl_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityValidationExpression")
     def identity_validation_expression(
@@ -1342,7 +1452,8 @@ class GraphQLApiLambdaAuthorizerConfigArgs:
     @identity_validation_expression.setter
     def identity_validation_expression(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GraphQLApiLogConfigArgsDict(TypedDict):
     cloudwatch_logs_role_arn: pulumi.Input[_builtins.str]
@@ -1362,19 +1473,22 @@ class GraphQLApiLogConfigArgs:
     @pulumi.getter(name="cloudwatchLogsRoleArn")
     def cloudwatch_logs_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @cloudwatch_logs_role_arn.setter
-    def cloudwatch_logs_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def cloudwatch_logs_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldLogLevel")
     def field_log_level(self) -> pulumi.Input[_builtins.str]: ...
     @field_log_level.setter
-    def field_log_level(self, value: pulumi.Input[_builtins.str]): ...
+    def field_log_level(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeVerboseContent")
     def exclude_verbose_content(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_verbose_content.setter
     def exclude_verbose_content(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GraphQLApiOpenidConnectConfigArgsDict(TypedDict):
     issuer: pulumi.Input[_builtins.str]
@@ -1396,22 +1510,26 @@ class GraphQLApiOpenidConnectConfigArgs:
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authTtl")
     def auth_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @auth_ttl.setter
-    def auth_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def auth_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iatTtl")
     def iat_ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @iat_ttl.setter
-    def iat_ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def iat_ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class GraphQLApiUserPoolConfigArgsDict(TypedDict):
     default_action: pulumi.Input[_builtins.str]
@@ -1433,22 +1551,28 @@ class GraphQLApiUserPoolConfigArgs:
     @pulumi.getter(name="defaultAction")
     def default_action(self) -> pulumi.Input[_builtins.str]: ...
     @default_action.setter
-    def default_action(self, value: pulumi.Input[_builtins.str]): ...
+    def default_action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolId")
     def user_pool_id(self) -> pulumi.Input[_builtins.str]: ...
     @user_pool_id.setter
-    def user_pool_id(self, value: pulumi.Input[_builtins.str]): ...
+    def user_pool_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appIdClientRegex")
     def app_id_client_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_id_client_regex.setter
-    def app_id_client_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_id_client_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsRegion")
     def aws_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_region.setter
-    def aws_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aws_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ResolverCachingConfigArgsDict(TypedDict):
     caching_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1472,12 +1596,14 @@ class ResolverCachingConfigArgs:
     @caching_keys.setter
     def caching_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ResolverPipelineConfigArgsDict(TypedDict):
     functions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1497,7 +1623,8 @@ class ResolverPipelineConfigArgs:
     @functions.setter
     def functions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResolverRuntimeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1515,12 +1642,14 @@ class ResolverRuntimeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeVersion")
     def runtime_version(self) -> pulumi.Input[_builtins.str]: ...
     @runtime_version.setter
-    def runtime_version(self, value: pulumi.Input[_builtins.str]): ...
+    def runtime_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ResolverSyncConfigArgsDict(TypedDict):
     conflict_detection: NotRequired[pulumi.Input[_builtins.str]]
@@ -1544,12 +1673,18 @@ class ResolverSyncConfigArgs:
     @pulumi.getter(name="conflictDetection")
     def conflict_detection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @conflict_detection.setter
-    def conflict_detection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def conflict_detection(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conflictHandler")
     def conflict_handler(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @conflict_handler.setter
-    def conflict_handler(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def conflict_handler(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConflictHandlerConfig")
     def lambda_conflict_handler_config(
@@ -1561,7 +1696,8 @@ class ResolverSyncConfigArgs:
         value: Optional[
             pulumi.Input[ResolverSyncConfigLambdaConflictHandlerConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResolverSyncConfigLambdaConflictHandlerConfigArgsDict(TypedDict):
     lambda_conflict_handler_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -1579,7 +1715,8 @@ class ResolverSyncConfigLambdaConflictHandlerConfigArgs:
     @lambda_conflict_handler_arn.setter
     def lambda_conflict_handler_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SourceApiAssociationSourceApiAssociationConfigArgsDict(TypedDict):
     merge_type: pulumi.Input[_builtins.str]
@@ -1591,7 +1728,8 @@ class SourceApiAssociationSourceApiAssociationConfigArgs:
     @pulumi.getter(name="mergeType")
     def merge_type(self) -> pulumi.Input[_builtins.str]: ...
     @merge_type.setter
-    def merge_type(self, value: pulumi.Input[_builtins.str]): ...
+    def merge_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SourceApiAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -1611,14 +1749,17 @@ class SourceApiAssociationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

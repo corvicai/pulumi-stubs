@@ -34,12 +34,16 @@ class AssessmentProjectsOperationArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentSolutionId")
     def assessment_solution_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assessment_solution_id.setter
-    def assessment_solution_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assessment_solution_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerStorageAccountArmId")
     def customer_storage_account_arm_id(
@@ -48,29 +52,36 @@ class AssessmentProjectsOperationArgs:
     @customer_storage_account_arm_id.setter
     def customer_storage_account_arm_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerWorkspaceId")
     def customer_workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_workspace_id.setter
-    def customer_workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_workspace_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerWorkspaceLocation")
     def customer_workspace_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_workspace_location.setter
     def customer_workspace_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectName")
     def project_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_name.setter
-    def project_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectStatus")
     def project_status(
@@ -79,7 +90,8 @@ class AssessmentProjectsOperationArgs:
     @project_status.setter
     def project_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProjectStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -88,12 +100,16 @@ class AssessmentProjectsOperationArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_network_access.setter
-    def public_network_access(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_network_access(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -102,7 +118,8 @@ class AssessmentProjectsOperationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:migrate:AssessmentProjectsOperation")
 class AssessmentProjectsOperation(pulumi.CustomResource):

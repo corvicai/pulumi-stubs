@@ -52,7 +52,8 @@ class GetEc2InstanceStatusResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2InstanceStatusResult(GetEc2InstanceStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2InstanceStatusResult]:
+        ...
 
 def get_ec2_instance_status(
     name: Optional[_builtins.str] = ...,

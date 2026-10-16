@@ -66,7 +66,10 @@ class GetScheduledSynchronizationSettingResult:
 class AwaitableGetScheduledSynchronizationSettingResult(
     GetScheduledSynchronizationSettingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetScheduledSynchronizationSettingResult]:
+        ...
 
 def get_scheduled_synchronization_setting(
     account_name: Optional[_builtins.str] = ...,

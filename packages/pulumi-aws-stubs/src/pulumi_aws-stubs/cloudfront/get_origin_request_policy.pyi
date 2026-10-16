@@ -58,7 +58,8 @@ class GetOriginRequestPolicyResult:
     ) -> Sequence[outputs.GetOriginRequestPolicyQueryStringsConfigResult]: ...
 
 class AwaitableGetOriginRequestPolicyResult(GetOriginRequestPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOriginRequestPolicyResult]:
+        ...
 
 def get_origin_request_policy(
     id: Optional[_builtins.str] = ...,

@@ -49,7 +49,10 @@ class GetWebAppSwiftVirtualNetworkConnectionSlotResult:
 class AwaitableGetWebAppSwiftVirtualNetworkConnectionSlotResult(
     GetWebAppSwiftVirtualNetworkConnectionSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppSwiftVirtualNetworkConnectionSlotResult]:
+        ...
 
 def get_web_app_swift_virtual_network_connection_slot(
     name: Optional[_builtins.str] = ...,

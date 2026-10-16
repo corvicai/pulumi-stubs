@@ -26,7 +26,10 @@ class ListLocalRulestackAdvancedSecurityObjectsResult:
 class AwaitableListLocalRulestackAdvancedSecurityObjectsResult(
     ListLocalRulestackAdvancedSecurityObjectsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListLocalRulestackAdvancedSecurityObjectsResult]:
+        ...
 
 def list_local_rulestack_advanced_security_objects(
     local_rulestack_name: Optional[_builtins.str] = ...,

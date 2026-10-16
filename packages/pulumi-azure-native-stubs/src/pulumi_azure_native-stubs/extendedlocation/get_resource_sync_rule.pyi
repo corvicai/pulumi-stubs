@@ -66,7 +66,8 @@ class GetResourceSyncRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetResourceSyncRuleResult(GetResourceSyncRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceSyncRuleResult]:
+        ...
 
 def get_resource_sync_rule(
     child_resource_name: Optional[_builtins.str] = ...,

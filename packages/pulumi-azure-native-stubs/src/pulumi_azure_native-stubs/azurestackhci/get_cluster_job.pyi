@@ -44,7 +44,8 @@ class GetClusterJobResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetClusterJobResult(GetClusterJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterJobResult]:
+        ...
 
 def get_cluster_job(
     cluster_name: Optional[_builtins.str] = ...,

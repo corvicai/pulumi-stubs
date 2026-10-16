@@ -36,7 +36,8 @@ class GetRegionResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetRegionResult(GetRegionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionResult]:
+        ...
 
 def get_region(
     endpoint: Optional[_builtins.str] = ...,

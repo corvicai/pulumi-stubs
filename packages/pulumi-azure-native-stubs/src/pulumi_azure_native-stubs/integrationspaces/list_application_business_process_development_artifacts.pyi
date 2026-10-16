@@ -22,7 +22,10 @@ class ListApplicationBusinessProcessDevelopmentArtifactsResult:
 class AwaitableListApplicationBusinessProcessDevelopmentArtifactsResult(
     ListApplicationBusinessProcessDevelopmentArtifactsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListApplicationBusinessProcessDevelopmentArtifactsResult]:
+        ...
 
 def list_application_business_process_development_artifacts(
     application_name: Optional[_builtins.str] = ...,

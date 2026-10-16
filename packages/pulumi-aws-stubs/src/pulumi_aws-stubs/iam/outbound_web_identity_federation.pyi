@@ -20,7 +20,10 @@ class _OutboundWebIdentityFederationState:
     @pulumi.getter(name="issuerIdentifier")
     def issuer_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @issuer_identifier.setter
-    def issuer_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def issuer_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OutboundWebIdentityFederation(pulumi.CustomResource):

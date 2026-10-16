@@ -86,7 +86,10 @@ class GetOrchestratorInstanceServiceDetailsResult:
 class AwaitableGetOrchestratorInstanceServiceDetailsResult(
     GetOrchestratorInstanceServiceDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOrchestratorInstanceServiceDetailsResult]:
+        ...
 
 def get_orchestrator_instance_service_details(
     resource_group_name: Optional[_builtins.str] = ...,

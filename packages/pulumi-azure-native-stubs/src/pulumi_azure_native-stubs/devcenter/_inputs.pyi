@@ -55,7 +55,8 @@ class CustomerManagedKeyEncryptionKeyEncryptionKeyIdentityArgs:
     @delegated_identity_client_id.setter
     def delegated_identity_client_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityType")
     def identity_type(
@@ -64,7 +65,8 @@ class CustomerManagedKeyEncryptionKeyEncryptionKeyIdentityArgs:
     @identity_type.setter
     def identity_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityResourceId")
     def user_assigned_identity_resource_id(
@@ -73,7 +75,8 @@ class CustomerManagedKeyEncryptionKeyEncryptionKeyIdentityArgs:
     @user_assigned_identity_resource_id.setter
     def user_assigned_identity_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomerManagedKeyEncryptionArgsDict(TypedDict):
     key_encryption_key_identity: NotRequired[
@@ -104,12 +107,16 @@ class CustomerManagedKeyEncryptionArgs:
         value: Optional[
             pulumi.Input[CustomerManagedKeyEncryptionKeyEncryptionKeyIdentityArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKeyUrl")
     def key_encryption_key_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_encryption_key_url.setter
-    def key_encryption_key_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_encryption_key_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DevCenterProjectCatalogSettingsArgsDict(TypedDict):
     catalog_item_sync_enable_status: NotRequired[
@@ -136,7 +143,8 @@ class DevCenterProjectCatalogSettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, CatalogItemSyncEnableStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionArgsDict(TypedDict):
     customer_managed_key_encryption: NotRequired[
@@ -160,7 +168,8 @@ class EncryptionArgs:
     @customer_managed_key_encryption.setter
     def customer_managed_key_encryption(
         self, value: Optional[pulumi.Input[CustomerManagedKeyEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GitCatalogArgsDict(TypedDict):
     branch: NotRequired[pulumi.Input[_builtins.str]]
@@ -182,22 +191,28 @@ class GitCatalogArgs:
     @pulumi.getter
     def branch(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @branch.setter
-    def branch(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def branch(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretIdentifier")
     def secret_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_identifier.setter
-    def secret_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ImageReferenceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -211,7 +226,8 @@ class ImageReferenceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -237,7 +253,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -246,7 +263,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ProjectCatalogSettingsArgsDict(TypedDict):
     catalog_item_sync_types: NotRequired[
@@ -275,7 +293,8 @@ class ProjectCatalogSettingsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, CatalogItemType]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ProjectEnvironmentTypeUpdatePropertiesCreatorRoleAssignmentArgsDict(TypedDict):
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -295,7 +314,8 @@ class ProjectEnvironmentTypeUpdatePropertiesCreatorRoleAssignmentArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourcePolicyArgsDict(TypedDict):
     filter: NotRequired[pulumi.Input[_builtins.str]]
@@ -313,12 +333,14 @@ class ResourcePolicyArgs:
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resources.setter
-    def resources(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resources(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -342,27 +364,32 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @size.setter
-    def size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[SkuTier]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[SkuTier]]): ...
+    def tier(self, value: Optional[pulumi.Input[SkuTier]]):  # -> None:
+        ...
 
 class StopOnDisconnectConfigurationArgsDict(TypedDict):
     grace_period_minutes: NotRequired[pulumi.Input[_builtins.int]]
@@ -384,7 +411,10 @@ class StopOnDisconnectConfigurationArgs:
     @pulumi.getter(name="gracePeriodMinutes")
     def grace_period_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @grace_period_minutes.setter
-    def grace_period_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def grace_period_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -396,7 +426,8 @@ class StopOnDisconnectConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, StopOnDisconnectEnableStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class UserRoleAssignmentArgsDict(TypedDict):
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -416,4 +447,5 @@ class UserRoleAssignmentArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

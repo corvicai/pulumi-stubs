@@ -84,7 +84,8 @@ class GetAssetEndpointProfileResult:
     def uuid(self) -> _builtins.str: ...
 
 class AwaitableGetAssetEndpointProfileResult(GetAssetEndpointProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssetEndpointProfileResult]:
+        ...
 
 def get_asset_endpoint_profile(
     asset_endpoint_profile_name: Optional[_builtins.str] = ...,

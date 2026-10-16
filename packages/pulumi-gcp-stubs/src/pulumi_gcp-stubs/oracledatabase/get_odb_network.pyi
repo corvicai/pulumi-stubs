@@ -75,7 +75,8 @@ class GetOdbNetworkResult:
     def state(self) -> _builtins.str: ...
 
 class AwaitableGetOdbNetworkResult(GetOdbNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOdbNetworkResult]:
+        ...
 
 def get_odb_network(
     location: Optional[_builtins.str] = ...,

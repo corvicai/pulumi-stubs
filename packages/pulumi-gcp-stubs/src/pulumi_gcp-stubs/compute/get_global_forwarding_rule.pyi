@@ -144,7 +144,8 @@ class GetGlobalForwardingRuleResult:
     def target(self) -> _builtins.str: ...
 
 class AwaitableGetGlobalForwardingRuleResult(GetGlobalForwardingRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlobalForwardingRuleResult]:
+        ...
 
 def get_global_forwarding_rule(
     name: Optional[_builtins.str] = ...,

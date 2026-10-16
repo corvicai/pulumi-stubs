@@ -48,7 +48,8 @@ class GetUserSolutionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetUserSolutionResult(GetUserSolutionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserSolutionResult]:
+        ...
 
 def get_user_solution(
     solution_id: Optional[_builtins.str] = ...,

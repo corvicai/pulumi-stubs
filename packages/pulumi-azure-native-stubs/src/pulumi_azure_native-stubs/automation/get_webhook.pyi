@@ -84,7 +84,8 @@ class GetWebhookResult:
     def uri(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebhookResult(GetWebhookResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebhookResult]:
+        ...
 
 def get_webhook(
     automation_account_name: Optional[_builtins.str] = ...,

@@ -44,27 +44,32 @@ class ScalingPlanArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> pulumi.Input[_builtins.str]: ...
     @time_zone.setter
-    def time_zone(self, value: pulumi.Input[_builtins.str]): ...
+    def time_zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionTag")
     def exclusion_tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @exclusion_tag.setter
-    def exclusion_tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def exclusion_tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostPoolReferences")
     def host_pool_references(
@@ -78,7 +83,8 @@ class ScalingPlanArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ScalingHostPoolReferenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostPoolType")
     def host_pool_type(
@@ -87,7 +93,8 @@ class ScalingPlanArgs:
     @host_pool_type.setter
     def host_pool_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ScalingHostPoolType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(
@@ -97,22 +104,26 @@ class ScalingPlanArgs:
     def identity(
         self,
         value: Optional[pulumi.Input[ResourceModelWithAllowedPropertySetIdentityArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedBy")
     def managed_by(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_by.setter
-    def managed_by(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def managed_by(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def plan(
@@ -121,12 +132,16 @@ class ScalingPlanArgs:
     @plan.setter
     def plan(
         self, value: Optional[pulumi.Input[ResourceModelWithAllowedPropertySetPlanArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPlanName")
     def scaling_plan_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scaling_plan_name.setter
-    def scaling_plan_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scaling_plan_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedules(
@@ -135,7 +150,8 @@ class ScalingPlanArgs:
     @schedules.setter
     def schedules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ScalingScheduleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(
@@ -144,7 +160,8 @@ class ScalingPlanArgs:
     @sku.setter
     def sku(
         self, value: Optional[pulumi.Input[ResourceModelWithAllowedPropertySetSkuArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -153,7 +170,8 @@ class ScalingPlanArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:desktopvirtualization:ScalingPlan")
 class ScalingPlan(pulumi.CustomResource):

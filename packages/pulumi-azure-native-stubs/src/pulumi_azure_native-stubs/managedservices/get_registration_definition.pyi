@@ -48,7 +48,8 @@ class GetRegistrationDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistrationDefinitionResult(GetRegistrationDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistrationDefinitionResult]:
+        ...
 
 def get_registration_definition(
     registration_definition_id: Optional[_builtins.str] = ...,

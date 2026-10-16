@@ -25,7 +25,8 @@ class EmailTemplateArgs:
     @pulumi.getter(name="templateName")
     def template_name(self) -> pulumi.Input[_builtins.str]: ...
     @template_name.setter
-    def template_name(self, value: pulumi.Input[_builtins.str]): ...
+    def template_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailTemplates")
     def email_templates(
@@ -39,12 +40,14 @@ class EmailTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EmailTemplateEmailTemplateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -53,7 +56,8 @@ class EmailTemplateArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EmailTemplateState:
@@ -75,7 +79,8 @@ class _EmailTemplateState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailTemplates")
     def email_templates(
@@ -89,12 +94,14 @@ class _EmailTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EmailTemplateEmailTemplateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -103,7 +110,8 @@ class _EmailTemplateState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -112,12 +120,14 @@ class _EmailTemplateState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateName")
     def template_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @template_name.setter
-    def template_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def template_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:pinpoint/emailTemplate:EmailTemplate")
 class EmailTemplate(pulumi.CustomResource):

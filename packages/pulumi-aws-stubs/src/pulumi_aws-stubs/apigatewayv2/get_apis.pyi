@@ -32,7 +32,8 @@ class GetApisResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetApisResult(GetApisResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApisResult]:
+        ...
 
 def get_apis(
     name: Optional[_builtins.str] = ...,

@@ -34,7 +34,8 @@ class GetManagedFolderIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetManagedFolderIamPolicyResult(GetManagedFolderIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedFolderIamPolicyResult]:
+        ...
 
 def get_managed_folder_iam_policy(
     bucket: Optional[_builtins.str] = ...,

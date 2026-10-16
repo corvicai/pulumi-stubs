@@ -20,7 +20,8 @@ class ListApmSecretKeysResult:
     def value(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableListApmSecretKeysResult(ListApmSecretKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListApmSecretKeysResult]:
+        ...
 
 def list_apm_secret_keys(
     apm_name: Optional[_builtins.str] = ...,

@@ -54,7 +54,8 @@ class GetKMSCryptoKeyVersionResult:
     def version(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetKMSCryptoKeyVersionResult(GetKMSCryptoKeyVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKMSCryptoKeyVersionResult]:
+        ...
 
 def get_kms_crypto_key_version(
     crypto_key: Optional[_builtins.str] = ...,

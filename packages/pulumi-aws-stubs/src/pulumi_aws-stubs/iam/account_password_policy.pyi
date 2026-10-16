@@ -30,29 +30,38 @@ class AccountPasswordPolicyArgs:
     @allow_users_to_change_password.setter
     def allow_users_to_change_password(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hardExpiry")
     def hard_expiry(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @hard_expiry.setter
-    def hard_expiry(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def hard_expiry(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxPasswordAge")
     def max_password_age(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_password_age.setter
-    def max_password_age(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_password_age(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumPasswordLength")
     def minimum_password_length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minimum_password_length.setter
-    def minimum_password_length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minimum_password_length(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordReusePrevention")
     def password_reuse_prevention(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @password_reuse_prevention.setter
     def password_reuse_prevention(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireLowercaseCharacters")
     def require_lowercase_characters(
@@ -61,17 +70,24 @@ class AccountPasswordPolicyArgs:
     @require_lowercase_characters.setter
     def require_lowercase_characters(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireNumbers")
     def require_numbers(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @require_numbers.setter
-    def require_numbers(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def require_numbers(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireSymbols")
     def require_symbols(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @require_symbols.setter
-    def require_symbols(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def require_symbols(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireUppercaseCharacters")
     def require_uppercase_characters(
@@ -80,7 +96,8 @@ class AccountPasswordPolicyArgs:
     @require_uppercase_characters.setter
     def require_uppercase_characters(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccountPasswordPolicyState:
@@ -106,34 +123,46 @@ class _AccountPasswordPolicyState:
     @allow_users_to_change_password.setter
     def allow_users_to_change_password(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirePasswords")
     def expire_passwords(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @expire_passwords.setter
-    def expire_passwords(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def expire_passwords(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hardExpiry")
     def hard_expiry(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @hard_expiry.setter
-    def hard_expiry(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def hard_expiry(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxPasswordAge")
     def max_password_age(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_password_age.setter
-    def max_password_age(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_password_age(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumPasswordLength")
     def minimum_password_length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minimum_password_length.setter
-    def minimum_password_length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minimum_password_length(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordReusePrevention")
     def password_reuse_prevention(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @password_reuse_prevention.setter
     def password_reuse_prevention(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireLowercaseCharacters")
     def require_lowercase_characters(
@@ -142,17 +171,24 @@ class _AccountPasswordPolicyState:
     @require_lowercase_characters.setter
     def require_lowercase_characters(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireNumbers")
     def require_numbers(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @require_numbers.setter
-    def require_numbers(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def require_numbers(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireSymbols")
     def require_symbols(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @require_symbols.setter
-    def require_symbols(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def require_symbols(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireUppercaseCharacters")
     def require_uppercase_characters(
@@ -161,7 +197,8 @@ class _AccountPasswordPolicyState:
     @require_uppercase_characters.setter
     def require_uppercase_characters(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AccountPasswordPolicy(pulumi.CustomResource):

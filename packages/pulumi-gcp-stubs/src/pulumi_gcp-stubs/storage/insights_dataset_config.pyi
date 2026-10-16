@@ -50,22 +50,28 @@ class InsightsDatasetConfigArgs:
     @pulumi.getter(name="datasetConfigId")
     def dataset_config_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_config_id.setter
-    def dataset_config_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_config_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> pulumi.Input[InsightsDatasetConfigIdentityArgs]: ...
     @identity.setter
-    def identity(self, value: pulumi.Input[InsightsDatasetConfigIdentityArgs]): ...
+    def identity(
+        self, value: pulumi.Input[InsightsDatasetConfigIdentityArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPeriodDays")
     def retention_period_days(self) -> pulumi.Input[_builtins.int]: ...
     @retention_period_days.setter
-    def retention_period_days(self, value: pulumi.Input[_builtins.int]): ...
+    def retention_period_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activityDataRetentionPeriodDays")
     def activity_data_retention_period_days(
@@ -74,12 +80,14 @@ class InsightsDatasetConfigArgs:
     @activity_data_retention_period_days.setter
     def activity_data_retention_period_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeCloudStorageBuckets")
     def exclude_cloud_storage_buckets(
@@ -93,7 +101,8 @@ class InsightsDatasetConfigArgs:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigExcludeCloudStorageBucketsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeCloudStorageLocations")
     def exclude_cloud_storage_locations(
@@ -107,7 +116,8 @@ class InsightsDatasetConfigArgs:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigExcludeCloudStorageLocationsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeCloudStorageBuckets")
     def include_cloud_storage_buckets(
@@ -121,7 +131,8 @@ class InsightsDatasetConfigArgs:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigIncludeCloudStorageBucketsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeCloudStorageLocations")
     def include_cloud_storage_locations(
@@ -135,7 +146,8 @@ class InsightsDatasetConfigArgs:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigIncludeCloudStorageLocationsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeNewlyCreatedBuckets")
     def include_newly_created_buckets(
@@ -144,27 +156,36 @@ class InsightsDatasetConfigArgs:
     @include_newly_created_buckets.setter
     def include_newly_created_buckets(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkDataset")
     def link_dataset(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @link_dataset.setter
-    def link_dataset(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def link_dataset(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationNumber")
     def organization_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization_number.setter
-    def organization_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organization_number(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationScope")
     def organization_scope(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @organization_scope.setter
-    def organization_scope(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def organization_scope(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceFolders")
     def source_folders(
@@ -173,7 +194,8 @@ class InsightsDatasetConfigArgs:
     @source_folders.setter
     def source_folders(
         self, value: Optional[pulumi.Input[InsightsDatasetConfigSourceFoldersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceProjects")
     def source_projects(
@@ -182,7 +204,8 @@ class InsightsDatasetConfigArgs:
     @source_projects.setter
     def source_projects(
         self, value: Optional[pulumi.Input[InsightsDatasetConfigSourceProjectsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InsightsDatasetConfigState:
@@ -237,27 +260,36 @@ class _InsightsDatasetConfigState:
     @activity_data_retention_period_days.setter
     def activity_data_retention_period_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datasetConfigId")
     def dataset_config_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset_config_id.setter
-    def dataset_config_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset_config_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datasetConfigState")
     def dataset_config_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset_config_state.setter
-    def dataset_config_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset_config_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeCloudStorageBuckets")
     def exclude_cloud_storage_buckets(
@@ -271,7 +303,8 @@ class _InsightsDatasetConfigState:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigExcludeCloudStorageBucketsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeCloudStorageLocations")
     def exclude_cloud_storage_locations(
@@ -285,14 +318,16 @@ class _InsightsDatasetConfigState:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigExcludeCloudStorageLocationsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[InsightsDatasetConfigIdentityArgs]]: ...
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[InsightsDatasetConfigIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeCloudStorageBuckets")
     def include_cloud_storage_buckets(
@@ -306,7 +341,8 @@ class _InsightsDatasetConfigState:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigIncludeCloudStorageBucketsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeCloudStorageLocations")
     def include_cloud_storage_locations(
@@ -320,7 +356,8 @@ class _InsightsDatasetConfigState:
         value: Optional[
             pulumi.Input[InsightsDatasetConfigIncludeCloudStorageLocationsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeNewlyCreatedBuckets")
     def include_newly_created_buckets(
@@ -329,12 +366,14 @@ class _InsightsDatasetConfigState:
     @include_newly_created_buckets.setter
     def include_newly_created_buckets(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkDataset")
     def link_dataset(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @link_dataset.setter
-    def link_dataset(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def link_dataset(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def links(
@@ -348,37 +387,50 @@ class _InsightsDatasetConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightsDatasetConfigLinkArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationNumber")
     def organization_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization_number.setter
-    def organization_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organization_number(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationScope")
     def organization_scope(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @organization_scope.setter
-    def organization_scope(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def organization_scope(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPeriodDays")
     def retention_period_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retention_period_days.setter
-    def retention_period_days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def retention_period_days(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceFolders")
     def source_folders(
@@ -387,7 +439,8 @@ class _InsightsDatasetConfigState:
     @source_folders.setter
     def source_folders(
         self, value: Optional[pulumi.Input[InsightsDatasetConfigSourceFoldersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceProjects")
     def source_projects(
@@ -396,17 +449,20 @@ class _InsightsDatasetConfigState:
     @source_projects.setter
     def source_projects(
         self, value: Optional[pulumi.Input[InsightsDatasetConfigSourceProjectsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InsightsDatasetConfig(pulumi.CustomResource):

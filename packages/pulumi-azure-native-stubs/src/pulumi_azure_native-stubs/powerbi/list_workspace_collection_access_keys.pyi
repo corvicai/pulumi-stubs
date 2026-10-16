@@ -25,7 +25,10 @@ class ListWorkspaceCollectionAccessKeysResult:
 class AwaitableListWorkspaceCollectionAccessKeysResult(
     ListWorkspaceCollectionAccessKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkspaceCollectionAccessKeysResult]:
+        ...
 
 def list_workspace_collection_access_keys(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -64,7 +64,8 @@ class GetEncryptionSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEncryptionSetResult(GetEncryptionSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEncryptionSetResult]:
+        ...
 
 def get_encryption_set(
     dev_center_name: Optional[_builtins.str] = ...,

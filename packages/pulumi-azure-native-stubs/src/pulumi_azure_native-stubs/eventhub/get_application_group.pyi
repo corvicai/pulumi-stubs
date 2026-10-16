@@ -56,7 +56,8 @@ class GetApplicationGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationGroupResult(GetApplicationGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationGroupResult]:
+        ...
 
 def get_application_group(
     application_group_name: Optional[_builtins.str] = ...,

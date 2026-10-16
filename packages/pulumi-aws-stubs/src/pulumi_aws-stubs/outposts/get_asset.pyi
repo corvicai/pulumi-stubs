@@ -46,7 +46,8 @@ class GetAssetResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetAssetResult(GetAssetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssetResult]:
+        ...
 
 def get_asset(
     arn: Optional[_builtins.str] = ...,

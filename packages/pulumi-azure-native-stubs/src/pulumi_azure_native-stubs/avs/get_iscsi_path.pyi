@@ -48,7 +48,8 @@ class GetIscsiPathResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIscsiPathResult(GetIscsiPathResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIscsiPathResult]:
+        ...
 
 def get_iscsi_path(
     private_cloud_name: Optional[_builtins.str] = ...,

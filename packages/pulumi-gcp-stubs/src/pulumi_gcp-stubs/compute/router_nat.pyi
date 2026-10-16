@@ -59,19 +59,24 @@ class RouterNatArgs:
     @pulumi.getter
     def router(self) -> pulumi.Input[_builtins.str]: ...
     @router.setter
-    def router(self, value: pulumi.Input[_builtins.str]): ...
+    def router(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSubnetworkIpRangesToNat")
     def source_subnetwork_ip_ranges_to_nat(self) -> pulumi.Input[_builtins.str]: ...
     @source_subnetwork_ip_ranges_to_nat.setter
     def source_subnetwork_ip_ranges_to_nat(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoNetworkTier")
     def auto_network_tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_network_tier.setter
-    def auto_network_tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_network_tier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="drainNatIps")
     def drain_nat_ips(
@@ -80,7 +85,8 @@ class RouterNatArgs:
     @drain_nat_ips.setter
     def drain_nat_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDynamicPortAllocation")
     def enable_dynamic_port_allocation(
@@ -89,7 +95,8 @@ class RouterNatArgs:
     @enable_dynamic_port_allocation.setter
     def enable_dynamic_port_allocation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEndpointIndependentMapping")
     def enable_endpoint_independent_mapping(
@@ -98,7 +105,8 @@ class RouterNatArgs:
     @enable_endpoint_independent_mapping.setter
     def enable_endpoint_independent_mapping(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointTypes")
     def endpoint_types(
@@ -107,12 +115,16 @@ class RouterNatArgs:
     @endpoint_types.setter
     def endpoint_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icmpIdleTimeoutSec")
     def icmp_idle_timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @icmp_idle_timeout_sec.setter
-    def icmp_idle_timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def icmp_idle_timeout_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialNatIps")
     def initial_nat_ips(
@@ -121,27 +133,38 @@ class RouterNatArgs:
     @initial_nat_ips.setter
     def initial_nat_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(self) -> Optional[pulumi.Input[RouterNatLogConfigArgs]]: ...
     @log_config.setter
-    def log_config(self, value: Optional[pulumi.Input[RouterNatLogConfigArgs]]): ...
+    def log_config(
+        self, value: Optional[pulumi.Input[RouterNatLogConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxPortsPerVm")
     def max_ports_per_vm(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_ports_per_vm.setter
-    def max_ports_per_vm(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_ports_per_vm(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minPortsPerVm")
     def min_ports_per_vm(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_ports_per_vm.setter
-    def min_ports_per_vm(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_ports_per_vm(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nat64Subnetworks")
     def nat64_subnetworks(
@@ -155,12 +178,16 @@ class RouterNatArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RouterNatNat64SubnetworkArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natIpAllocateOption")
     def nat_ip_allocate_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @nat_ip_allocate_option.setter
-    def nat_ip_allocate_option(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def nat_ip_allocate_option(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natIps")
     def nat_ips(
@@ -169,17 +196,20 @@ class RouterNatArgs:
     @nat_ips.setter
     def nat_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -188,7 +218,8 @@ class RouterNatArgs:
     @rules.setter
     def rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RouterNatRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSubnetworkIpRangesToNat64")
     def source_subnetwork_ip_ranges_to_nat64(
@@ -197,7 +228,8 @@ class RouterNatArgs:
     @source_subnetwork_ip_ranges_to_nat64.setter
     def source_subnetwork_ip_ranges_to_nat64(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnetworks(
@@ -207,7 +239,8 @@ class RouterNatArgs:
     def subnetworks(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RouterNatSubnetworkArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpEstablishedIdleTimeoutSec")
     def tcp_established_idle_timeout_sec(
@@ -216,14 +249,16 @@ class RouterNatArgs:
     @tcp_established_idle_timeout_sec.setter
     def tcp_established_idle_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpTimeWaitTimeoutSec")
     def tcp_time_wait_timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tcp_time_wait_timeout_sec.setter
     def tcp_time_wait_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpTransitoryIdleTimeoutSec")
     def tcp_transitory_idle_timeout_sec(
@@ -232,17 +267,22 @@ class RouterNatArgs:
     @tcp_transitory_idle_timeout_sec.setter
     def tcp_transitory_idle_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="udpIdleTimeoutSec")
     def udp_idle_timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @udp_idle_timeout_sec.setter
-    def udp_idle_timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def udp_idle_timeout_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RouterNatState:
@@ -294,7 +334,10 @@ class _RouterNatState:
     @pulumi.getter(name="autoNetworkTier")
     def auto_network_tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_network_tier.setter
-    def auto_network_tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_network_tier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="drainNatIps")
     def drain_nat_ips(
@@ -303,7 +346,8 @@ class _RouterNatState:
     @drain_nat_ips.setter
     def drain_nat_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDynamicPortAllocation")
     def enable_dynamic_port_allocation(
@@ -312,7 +356,8 @@ class _RouterNatState:
     @enable_dynamic_port_allocation.setter
     def enable_dynamic_port_allocation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEndpointIndependentMapping")
     def enable_endpoint_independent_mapping(
@@ -321,7 +366,8 @@ class _RouterNatState:
     @enable_endpoint_independent_mapping.setter
     def enable_endpoint_independent_mapping(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointTypes")
     def endpoint_types(
@@ -330,12 +376,16 @@ class _RouterNatState:
     @endpoint_types.setter
     def endpoint_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icmpIdleTimeoutSec")
     def icmp_idle_timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @icmp_idle_timeout_sec.setter
-    def icmp_idle_timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def icmp_idle_timeout_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialNatIps")
     def initial_nat_ips(
@@ -344,27 +394,38 @@ class _RouterNatState:
     @initial_nat_ips.setter
     def initial_nat_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(self) -> Optional[pulumi.Input[RouterNatLogConfigArgs]]: ...
     @log_config.setter
-    def log_config(self, value: Optional[pulumi.Input[RouterNatLogConfigArgs]]): ...
+    def log_config(
+        self, value: Optional[pulumi.Input[RouterNatLogConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxPortsPerVm")
     def max_ports_per_vm(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_ports_per_vm.setter
-    def max_ports_per_vm(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_ports_per_vm(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minPortsPerVm")
     def min_ports_per_vm(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_ports_per_vm.setter
-    def min_ports_per_vm(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_ports_per_vm(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nat64Subnetworks")
     def nat64_subnetworks(
@@ -378,12 +439,16 @@ class _RouterNatState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RouterNatNat64SubnetworkArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natIpAllocateOption")
     def nat_ip_allocate_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @nat_ip_allocate_option.setter
-    def nat_ip_allocate_option(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def nat_ip_allocate_option(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natIps")
     def nat_ips(
@@ -392,22 +457,26 @@ class _RouterNatState:
     @nat_ips.setter
     def nat_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def router(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @router.setter
-    def router(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def router(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -416,7 +485,8 @@ class _RouterNatState:
     @rules.setter
     def rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RouterNatRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSubnetworkIpRangesToNat")
     def source_subnetwork_ip_ranges_to_nat(
@@ -425,7 +495,8 @@ class _RouterNatState:
     @source_subnetwork_ip_ranges_to_nat.setter
     def source_subnetwork_ip_ranges_to_nat(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSubnetworkIpRangesToNat64")
     def source_subnetwork_ip_ranges_to_nat64(
@@ -434,7 +505,8 @@ class _RouterNatState:
     @source_subnetwork_ip_ranges_to_nat64.setter
     def source_subnetwork_ip_ranges_to_nat64(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnetworks(
@@ -444,7 +516,8 @@ class _RouterNatState:
     def subnetworks(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RouterNatSubnetworkArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpEstablishedIdleTimeoutSec")
     def tcp_established_idle_timeout_sec(
@@ -453,14 +526,16 @@ class _RouterNatState:
     @tcp_established_idle_timeout_sec.setter
     def tcp_established_idle_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpTimeWaitTimeoutSec")
     def tcp_time_wait_timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tcp_time_wait_timeout_sec.setter
     def tcp_time_wait_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpTransitoryIdleTimeoutSec")
     def tcp_transitory_idle_timeout_sec(
@@ -469,17 +544,22 @@ class _RouterNatState:
     @tcp_transitory_idle_timeout_sec.setter
     def tcp_transitory_idle_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="udpIdleTimeoutSec")
     def udp_idle_timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @udp_idle_timeout_sec.setter
-    def udp_idle_timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def udp_idle_timeout_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/routerNat:RouterNat")
 class RouterNat(pulumi.CustomResource):

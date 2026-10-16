@@ -51,7 +51,10 @@ class GetPrivateEndpointConnectionsForMIPPolicySyncResult:
 class AwaitableGetPrivateEndpointConnectionsForMIPPolicySyncResult(
     GetPrivateEndpointConnectionsForMIPPolicySyncResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionsForMIPPolicySyncResult]:
+        ...
 
 def get_private_endpoint_connections_for_mip_policy_sync(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

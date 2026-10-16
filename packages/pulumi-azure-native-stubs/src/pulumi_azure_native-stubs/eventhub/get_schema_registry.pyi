@@ -68,7 +68,8 @@ class GetSchemaRegistryResult:
     def updated_at_utc(self) -> _builtins.str: ...
 
 class AwaitableGetSchemaRegistryResult(GetSchemaRegistryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSchemaRegistryResult]:
+        ...
 
 def get_schema_registry(
     namespace_name: Optional[_builtins.str] = ...,

@@ -83,7 +83,8 @@ class GetRoleAssignmentResult:
     def updated_on(self) -> _builtins.str: ...
 
 class AwaitableGetRoleAssignmentResult(GetRoleAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoleAssignmentResult]:
+        ...
 
 def get_role_assignment(
     role_assignment_name: Optional[_builtins.str] = ...,

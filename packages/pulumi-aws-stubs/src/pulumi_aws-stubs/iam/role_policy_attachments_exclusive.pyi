@@ -21,12 +21,14 @@ class RolePolicyAttachmentsExclusiveArgs:
     @policy_arns.setter
     def policy_arns(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleName")
     def role_name(self) -> pulumi.Input[_builtins.str]: ...
     @role_name.setter
-    def role_name(self, value: pulumi.Input[_builtins.str]): ...
+    def role_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RolePolicyAttachmentsExclusiveState:
@@ -46,12 +48,14 @@ class _RolePolicyAttachmentsExclusiveState:
     @policy_arns.setter
     def policy_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleName")
     def role_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_name.setter
-    def role_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RolePolicyAttachmentsExclusive(pulumi.CustomResource):

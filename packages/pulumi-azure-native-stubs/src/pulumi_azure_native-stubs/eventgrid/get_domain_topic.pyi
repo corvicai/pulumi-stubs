@@ -44,7 +44,8 @@ class GetDomainTopicResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDomainTopicResult(GetDomainTopicResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDomainTopicResult]:
+        ...
 
 def get_domain_topic(
     domain_name: Optional[_builtins.str] = ...,

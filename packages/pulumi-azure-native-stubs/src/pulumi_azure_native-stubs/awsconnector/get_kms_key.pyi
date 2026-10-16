@@ -52,7 +52,8 @@ class GetKmsKeyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKmsKeyResult(GetKmsKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKmsKeyResult]:
+        ...
 
 def get_kms_key(
     name: Optional[_builtins.str] = ...,

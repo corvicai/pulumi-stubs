@@ -144,7 +144,8 @@ class GetVirtualHubResult:
     def vpn_gateway(self) -> Optional[outputs.SubResourceResponse]: ...
 
 class AwaitableGetVirtualHubResult(GetVirtualHubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualHubResult]:
+        ...
 
 def get_virtual_hub(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -120,7 +120,8 @@ class GetTaskDefinitionResult:
     def volumes(self) -> Sequence[outputs.GetTaskDefinitionVolumeResult]: ...
 
 class AwaitableGetTaskDefinitionResult(GetTaskDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTaskDefinitionResult]:
+        ...
 
 def get_task_definition(
     region: Optional[_builtins.str] = ...,

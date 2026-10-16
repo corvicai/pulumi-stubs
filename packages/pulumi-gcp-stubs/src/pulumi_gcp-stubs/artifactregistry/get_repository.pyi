@@ -116,7 +116,8 @@ class GetRepositoryResult:
     ) -> Sequence[outputs.GetRepositoryVulnerabilityScanningConfigResult]: ...
 
 class AwaitableGetRepositoryResult(GetRepositoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRepositoryResult]:
+        ...
 
 def get_repository(
     location: Optional[_builtins.str] = ...,

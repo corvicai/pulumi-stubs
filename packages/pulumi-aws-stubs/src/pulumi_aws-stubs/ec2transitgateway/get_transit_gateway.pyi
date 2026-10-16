@@ -97,7 +97,8 @@ class GetTransitGatewayResult:
     def vpn_ecmp_support(self) -> _builtins.str: ...
 
 class AwaitableGetTransitGatewayResult(GetTransitGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTransitGatewayResult]:
+        ...
 
 def get_transit_gateway(
     filters: Optional[

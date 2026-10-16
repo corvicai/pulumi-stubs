@@ -84,7 +84,8 @@ class GetServiceResult:
     def virtual_subnet_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetServiceResult(GetServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceResult]:
+        ...
 
 def get_service(
     group_name: Optional[_builtins.str] = ...,

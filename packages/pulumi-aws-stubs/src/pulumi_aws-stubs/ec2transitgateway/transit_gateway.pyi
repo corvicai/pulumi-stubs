@@ -32,7 +32,8 @@ class TransitGatewayArgs:
     @pulumi.getter(name="amazonSideAsn")
     def amazon_side_asn(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @amazon_side_asn.setter
-    def amazon_side_asn(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def amazon_side_asn(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoAcceptSharedAttachments")
     def auto_accept_shared_attachments(
@@ -41,7 +42,8 @@ class TransitGatewayArgs:
     @auto_accept_shared_attachments.setter
     def auto_accept_shared_attachments(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteTableAssociation")
     def default_route_table_association(
@@ -50,7 +52,8 @@ class TransitGatewayArgs:
     @default_route_table_association.setter
     def default_route_table_association(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteTablePropagation")
     def default_route_table_propagation(
@@ -59,32 +62,42 @@ class TransitGatewayArgs:
     @default_route_table_propagation.setter
     def default_route_table_propagation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSupport")
     def dns_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_support.setter
-    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSupport")
     def encryption_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_support.setter
-    def encryption_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastSupport")
     def multicast_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multicast_support.setter
-    def multicast_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multicast_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupReferencingSupport")
     def security_group_referencing_support(
@@ -93,7 +106,8 @@ class TransitGatewayArgs:
     @security_group_referencing_support.setter
     def security_group_referencing_support(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -102,7 +116,8 @@ class TransitGatewayArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayCidrBlocks")
     def transit_gateway_cidr_blocks(
@@ -111,12 +126,16 @@ class TransitGatewayArgs:
     @transit_gateway_cidr_blocks.setter
     def transit_gateway_cidr_blocks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnEcmpSupport")
     def vpn_ecmp_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpn_ecmp_support.setter
-    def vpn_ecmp_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpn_ecmp_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TransitGatewayState:
@@ -150,12 +169,14 @@ class _TransitGatewayState:
     @pulumi.getter(name="amazonSideAsn")
     def amazon_side_asn(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @amazon_side_asn.setter
-    def amazon_side_asn(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def amazon_side_asn(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associationDefaultRouteTableId")
     def association_default_route_table_id(
@@ -164,7 +185,8 @@ class _TransitGatewayState:
     @association_default_route_table_id.setter
     def association_default_route_table_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoAcceptSharedAttachments")
     def auto_accept_shared_attachments(
@@ -173,7 +195,8 @@ class _TransitGatewayState:
     @auto_accept_shared_attachments.setter
     def auto_accept_shared_attachments(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteTableAssociation")
     def default_route_table_association(
@@ -182,7 +205,8 @@ class _TransitGatewayState:
     @default_route_table_association.setter
     def default_route_table_association(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteTablePropagation")
     def default_route_table_propagation(
@@ -191,32 +215,42 @@ class _TransitGatewayState:
     @default_route_table_propagation.setter
     def default_route_table_propagation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSupport")
     def dns_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_support.setter
-    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSupport")
     def encryption_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_support.setter
-    def encryption_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastSupport")
     def multicast_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @multicast_support.setter
-    def multicast_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def multicast_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagationDefaultRouteTableId")
     def propagation_default_route_table_id(
@@ -225,12 +259,14 @@ class _TransitGatewayState:
     @propagation_default_route_table_id.setter
     def propagation_default_route_table_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupReferencingSupport")
     def security_group_referencing_support(
@@ -239,7 +275,8 @@ class _TransitGatewayState:
     @security_group_referencing_support.setter
     def security_group_referencing_support(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -248,7 +285,8 @@ class _TransitGatewayState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -257,7 +295,8 @@ class _TransitGatewayState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayCidrBlocks")
     def transit_gateway_cidr_blocks(
@@ -266,12 +305,16 @@ class _TransitGatewayState:
     @transit_gateway_cidr_blocks.setter
     def transit_gateway_cidr_blocks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpnEcmpSupport")
     def vpn_ecmp_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpn_ecmp_support.setter
-    def vpn_ecmp_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpn_ecmp_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class TransitGateway(pulumi.CustomResource):

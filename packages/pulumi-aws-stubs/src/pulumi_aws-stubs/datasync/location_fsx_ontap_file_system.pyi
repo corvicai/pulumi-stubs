@@ -25,7 +25,10 @@ class LocationFsxOntapFileSystemArgs:
     @pulumi.getter
     def protocol(self) -> pulumi.Input[LocationFsxOntapFileSystemProtocolArgs]: ...
     @protocol.setter
-    def protocol(self, value: pulumi.Input[LocationFsxOntapFileSystemProtocolArgs]): ...
+    def protocol(
+        self, value: pulumi.Input[LocationFsxOntapFileSystemProtocolArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupArns")
     def security_group_arns(
@@ -34,22 +37,28 @@ class LocationFsxOntapFileSystemArgs:
     @security_group_arns.setter
     def security_group_arns(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageVirtualMachineArn")
     def storage_virtual_machine_arn(self) -> pulumi.Input[_builtins.str]: ...
     @storage_virtual_machine_arn.setter
-    def storage_virtual_machine_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_virtual_machine_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subdirectory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subdirectory.setter
-    def subdirectory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subdirectory(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -58,7 +67,8 @@ class LocationFsxOntapFileSystemArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LocationFsxOntapFileSystemState:
@@ -85,17 +95,22 @@ class _LocationFsxOntapFileSystemState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTime")
     def creation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_time.setter
-    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fsxFilesystemArn")
     def fsx_filesystem_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fsx_filesystem_arn.setter
-    def fsx_filesystem_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fsx_filesystem_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(
@@ -104,12 +119,14 @@ class _LocationFsxOntapFileSystemState:
     @protocol.setter
     def protocol(
         self, value: Optional[pulumi.Input[LocationFsxOntapFileSystemProtocolArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupArns")
     def security_group_arns(
@@ -118,19 +135,22 @@ class _LocationFsxOntapFileSystemState:
     @security_group_arns.setter
     def security_group_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageVirtualMachineArn")
     def storage_virtual_machine_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_virtual_machine_arn.setter
     def storage_virtual_machine_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subdirectory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subdirectory.setter
-    def subdirectory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subdirectory(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -139,7 +159,8 @@ class _LocationFsxOntapFileSystemState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -148,12 +169,14 @@ class _LocationFsxOntapFileSystemState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class LocationFsxOntapFileSystem(pulumi.CustomResource):

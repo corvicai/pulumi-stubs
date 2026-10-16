@@ -92,7 +92,8 @@ class GetMySQLServerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMySQLServerResult(GetMySQLServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMySQLServerResult]:
+        ...
 
 def get_my_sql_server(
     resource_group_name: Optional[_builtins.str] = ...,

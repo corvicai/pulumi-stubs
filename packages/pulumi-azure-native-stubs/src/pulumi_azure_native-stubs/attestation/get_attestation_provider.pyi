@@ -74,7 +74,8 @@ class GetAttestationProviderResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAttestationProviderResult(GetAttestationProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAttestationProviderResult]:
+        ...
 
 def get_attestation_provider(
     provider_name: Optional[_builtins.str] = ...,

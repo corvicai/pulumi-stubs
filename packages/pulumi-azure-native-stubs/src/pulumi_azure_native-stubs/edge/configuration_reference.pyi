@@ -22,14 +22,16 @@ class ConfigurationReferenceArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationReferenceName")
     def configuration_reference_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_reference_name.setter
     def configuration_reference_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -38,7 +40,8 @@ class ConfigurationReferenceArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[ConfigurationReferencePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:edge:ConfigurationReference")
 class ConfigurationReference(pulumi.CustomResource):

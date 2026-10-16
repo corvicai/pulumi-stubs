@@ -35,7 +35,8 @@ class GetTableServicePropertiesResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTableServicePropertiesResult(GetTableServicePropertiesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableServicePropertiesResult]:
+        ...
 
 def get_table_service_properties(
     account_name: Optional[_builtins.str] = ...,

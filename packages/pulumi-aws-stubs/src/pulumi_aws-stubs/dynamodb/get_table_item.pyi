@@ -47,7 +47,8 @@ class GetTableItemResult:
     def table_name(self) -> _builtins.str: ...
 
 class AwaitableGetTableItemResult(GetTableItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableItemResult]:
+        ...
 
 def get_table_item(
     expression_attribute_names: Optional[Mapping[str, _builtins.str]] = ...,

@@ -74,7 +74,8 @@ class GetVendorSkusResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVendorSkusResult(GetVendorSkusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVendorSkusResult]:
+        ...
 
 def get_vendor_skus(
     sku_name: Optional[_builtins.str] = ...,

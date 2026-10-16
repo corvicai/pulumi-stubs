@@ -44,7 +44,8 @@ class GetReplicationExtensionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationExtensionResult(GetReplicationExtensionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationExtensionResult]:
+        ...
 
 def get_replication_extension(
     replication_extension_name: Optional[_builtins.str] = ...,

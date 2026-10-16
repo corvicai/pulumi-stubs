@@ -64,7 +64,8 @@ class GetMqttBridgeTopicMapResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMqttBridgeTopicMapResult(GetMqttBridgeTopicMapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMqttBridgeTopicMapResult]:
+        ...
 
 def get_mqtt_bridge_topic_map(
     mq_name: Optional[_builtins.str] = ...,

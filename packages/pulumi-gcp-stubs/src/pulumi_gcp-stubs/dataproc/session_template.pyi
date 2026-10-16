@@ -37,7 +37,8 @@ class SessionTemplateArgs:
     @environment_config.setter
     def environment_config(
         self, value: Optional[pulumi.Input[SessionTemplateEnvironmentConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jupyterSession")
     def jupyter_session(
@@ -46,7 +47,8 @@ class SessionTemplateArgs:
     @jupyter_session.setter
     def jupyter_session(
         self, value: Optional[pulumi.Input[SessionTemplateJupyterSessionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -55,22 +57,26 @@ class SessionTemplateArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfig")
     def runtime_config(
@@ -79,7 +85,8 @@ class SessionTemplateArgs:
     @runtime_config.setter
     def runtime_config(
         self, value: Optional[pulumi.Input[SessionTemplateRuntimeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkConnectSession")
     def spark_connect_session(
@@ -88,7 +95,8 @@ class SessionTemplateArgs:
     @spark_connect_session.setter
     def spark_connect_session(
         self, value: Optional[pulumi.Input[SessionTemplateSparkConnectSessionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SessionTemplateState:
@@ -124,12 +132,14 @@ class _SessionTemplateState:
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def creator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creator.setter
-    def creator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -138,7 +148,8 @@ class _SessionTemplateState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentConfig")
     def environment_config(
@@ -147,7 +158,8 @@ class _SessionTemplateState:
     @environment_config.setter
     def environment_config(
         self, value: Optional[pulumi.Input[SessionTemplateEnvironmentConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jupyterSession")
     def jupyter_session(
@@ -156,7 +168,8 @@ class _SessionTemplateState:
     @jupyter_session.setter
     def jupyter_session(
         self, value: Optional[pulumi.Input[SessionTemplateJupyterSessionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -165,22 +178,26 @@ class _SessionTemplateState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -189,7 +206,8 @@ class _SessionTemplateState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfig")
     def runtime_config(
@@ -198,7 +216,8 @@ class _SessionTemplateState:
     @runtime_config.setter
     def runtime_config(
         self, value: Optional[pulumi.Input[SessionTemplateRuntimeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkConnectSession")
     def spark_connect_session(
@@ -207,17 +226,20 @@ class _SessionTemplateState:
     @spark_connect_session.setter
     def spark_connect_session(
         self, value: Optional[pulumi.Input[SessionTemplateSparkConnectSessionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uuid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uuid.setter
-    def uuid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uuid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:dataproc/sessionTemplate:SessionTemplate")
 class SessionTemplate(pulumi.CustomResource):

@@ -35,14 +35,16 @@ class SecurityScanConfigArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingUrls")
     def starting_urls(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @starting_urls.setter
     def starting_urls(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -51,7 +53,8 @@ class SecurityScanConfigArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[SecurityScanConfigAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blacklistPatterns")
     def blacklist_patterns(
@@ -60,7 +63,8 @@ class SecurityScanConfigArgs:
     @blacklist_patterns.setter
     def blacklist_patterns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exportToSecurityCommandCenter")
     def export_to_security_command_center(
@@ -69,24 +73,28 @@ class SecurityScanConfigArgs:
     @export_to_security_command_center.setter
     def export_to_security_command_center(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxQps")
     def max_qps(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_qps.setter
-    def max_qps(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_qps(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> Optional[pulumi.Input[SecurityScanConfigScheduleArgs]]: ...
     @schedule.setter
     def schedule(
         self, value: Optional[pulumi.Input[SecurityScanConfigScheduleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPlatforms")
     def target_platforms(
@@ -95,12 +103,14 @@ class SecurityScanConfigArgs:
     @target_platforms.setter
     def target_platforms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAgent")
     def user_agent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_agent.setter
-    def user_agent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_agent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SecurityScanConfigState:
@@ -135,7 +145,8 @@ class _SecurityScanConfigState:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[SecurityScanConfigAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blacklistPatterns")
     def blacklist_patterns(
@@ -144,12 +155,14 @@ class _SecurityScanConfigState:
     @blacklist_patterns.setter
     def blacklist_patterns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exportToSecurityCommandCenter")
     def export_to_security_command_center(
@@ -158,29 +171,34 @@ class _SecurityScanConfigState:
     @export_to_security_command_center.setter
     def export_to_security_command_center(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxQps")
     def max_qps(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_qps.setter
-    def max_qps(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_qps(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> Optional[pulumi.Input[SecurityScanConfigScheduleArgs]]: ...
     @schedule.setter
     def schedule(
         self, value: Optional[pulumi.Input[SecurityScanConfigScheduleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingUrls")
     def starting_urls(
@@ -189,7 +207,8 @@ class _SecurityScanConfigState:
     @starting_urls.setter
     def starting_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPlatforms")
     def target_platforms(
@@ -198,12 +217,14 @@ class _SecurityScanConfigState:
     @target_platforms.setter
     def target_platforms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAgent")
     def user_agent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_agent.setter
-    def user_agent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_agent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/securityScanConfig:SecurityScanConfig")
 class SecurityScanConfig(pulumi.CustomResource):

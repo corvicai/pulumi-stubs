@@ -76,7 +76,8 @@ class GetExperienceResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetExperienceResult(GetExperienceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExperienceResult]:
+        ...
 
 def get_experience(
     experience_id: Optional[_builtins.str] = ...,

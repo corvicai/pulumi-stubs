@@ -35,7 +35,8 @@ class GetIAMPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetIAMPolicyResult(GetIAMPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIAMPolicyResult]:
+        ...
 
 def get_iam_policy(
     audit_configs: Optional[

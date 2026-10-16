@@ -186,7 +186,10 @@ class GetCloudExadataInfrastructureResult:
     def total_storage_size_in_gbs(self) -> _builtins.int: ...
 
 class AwaitableGetCloudExadataInfrastructureResult(GetCloudExadataInfrastructureResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCloudExadataInfrastructureResult]:
+        ...
 
 def get_cloud_exadata_infrastructure(
     id: Optional[_builtins.str] = ...,

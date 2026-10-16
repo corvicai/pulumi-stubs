@@ -78,7 +78,8 @@ class GetGalleryApplicationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGalleryApplicationResult(GetGalleryApplicationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGalleryApplicationResult]:
+        ...
 
 def get_gallery_application(
     gallery_application_name: Optional[_builtins.str] = ...,

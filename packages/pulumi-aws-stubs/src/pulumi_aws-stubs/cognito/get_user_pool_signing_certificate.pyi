@@ -31,7 +31,10 @@ class GetUserPoolSigningCertificateResult:
     def user_pool_id(self) -> _builtins.str: ...
 
 class AwaitableGetUserPoolSigningCertificateResult(GetUserPoolSigningCertificateResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetUserPoolSigningCertificateResult]:
+        ...
 
 def get_user_pool_signing_certificate(
     region: Optional[_builtins.str] = ...,

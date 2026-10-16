@@ -94,7 +94,8 @@ class GetConnectedRegistryResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetConnectedRegistryResult(GetConnectedRegistryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectedRegistryResult]:
+        ...
 
 def get_connected_registry(
     connected_registry_name: Optional[_builtins.str] = ...,

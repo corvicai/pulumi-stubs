@@ -60,7 +60,8 @@ class GetMembershipResult:
     def pulumi_labels(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetMembershipResult(GetMembershipResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMembershipResult]:
+        ...
 
 def get_membership(
     location: Optional[_builtins.str] = ...,

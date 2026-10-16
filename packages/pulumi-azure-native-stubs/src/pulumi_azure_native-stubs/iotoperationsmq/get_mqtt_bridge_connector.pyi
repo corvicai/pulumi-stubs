@@ -92,7 +92,8 @@ class GetMqttBridgeConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMqttBridgeConnectorResult(GetMqttBridgeConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMqttBridgeConnectorResult]:
+        ...
 
 def get_mqtt_bridge_connector(
     mq_name: Optional[_builtins.str] = ...,

@@ -20,7 +20,8 @@ class EnrollmentStatusArgs:
     @include_member_accounts.setter
     def include_member_accounts(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EnrollmentStatusState:
@@ -36,12 +37,14 @@ class _EnrollmentStatusState:
     @include_member_accounts.setter
     def include_member_accounts(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class EnrollmentStatus(pulumi.CustomResource):

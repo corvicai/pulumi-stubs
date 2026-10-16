@@ -41,7 +41,10 @@ class GetComponentLinkedStorageAccountResult:
 class AwaitableGetComponentLinkedStorageAccountResult(
     GetComponentLinkedStorageAccountResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetComponentLinkedStorageAccountResult]:
+        ...
 
 def get_component_linked_storage_account(
     resource_group_name: Optional[_builtins.str] = ...,

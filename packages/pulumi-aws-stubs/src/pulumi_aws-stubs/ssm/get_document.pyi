@@ -51,7 +51,8 @@ class GetDocumentResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetDocumentResult(GetDocumentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDocumentResult]:
+        ...
 
 def get_document(
     document_format: Optional[_builtins.str] = ...,

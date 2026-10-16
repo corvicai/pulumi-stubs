@@ -44,7 +44,8 @@ class GetDevToolPortalResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDevToolPortalResult(GetDevToolPortalResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDevToolPortalResult]:
+        ...
 
 def get_dev_tool_portal(
     dev_tool_portal_name: Optional[_builtins.str] = ...,

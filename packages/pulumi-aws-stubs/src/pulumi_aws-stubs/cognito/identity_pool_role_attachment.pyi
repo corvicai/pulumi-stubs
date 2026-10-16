@@ -27,17 +27,22 @@ class IdentityPoolRoleAttachmentArgs:
     @pulumi.getter(name="identityPoolId")
     def identity_pool_id(self) -> pulumi.Input[_builtins.str]: ...
     @identity_pool_id.setter
-    def identity_pool_id(self, value: pulumi.Input[_builtins.str]): ...
+    def identity_pool_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(self) -> pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]: ...
     @roles.setter
-    def roles(self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]): ...
+    def roles(
+        self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleMappings")
     def role_mappings(
@@ -53,7 +58,8 @@ class IdentityPoolRoleAttachmentArgs:
                 Sequence[pulumi.Input[IdentityPoolRoleAttachmentRoleMappingArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IdentityPoolRoleAttachmentState:
@@ -73,12 +79,16 @@ class _IdentityPoolRoleAttachmentState:
     @pulumi.getter(name="identityPoolId")
     def identity_pool_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_pool_id.setter
-    def identity_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_pool_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleMappings")
     def role_mappings(
@@ -94,7 +104,8 @@ class _IdentityPoolRoleAttachmentState:
                 Sequence[pulumi.Input[IdentityPoolRoleAttachmentRoleMappingArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -103,7 +114,8 @@ class _IdentityPoolRoleAttachmentState:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class IdentityPoolRoleAttachment(pulumi.CustomResource):

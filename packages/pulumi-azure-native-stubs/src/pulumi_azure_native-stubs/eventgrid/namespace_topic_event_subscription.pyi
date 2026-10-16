@@ -30,17 +30,20 @@ class NamespaceTopicEventSubscriptionArgs:
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> pulumi.Input[_builtins.str]: ...
     @namespace_name.setter
-    def namespace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicName")
     def topic_name(self) -> pulumi.Input[_builtins.str]: ...
     @topic_name.setter
-    def topic_name(self, value: pulumi.Input[_builtins.str]): ...
+    def topic_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryConfiguration")
     def delivery_configuration(
@@ -49,7 +52,8 @@ class NamespaceTopicEventSubscriptionArgs:
     @delivery_configuration.setter
     def delivery_configuration(
         self, value: Optional[pulumi.Input[DeliveryConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventDeliverySchema")
     def event_delivery_schema(
@@ -58,17 +62,24 @@ class NamespaceTopicEventSubscriptionArgs:
     @event_delivery_schema.setter
     def event_delivery_schema(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeliverySchema]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventSubscriptionName")
     def event_subscription_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_subscription_name.setter
-    def event_subscription_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_subscription_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirationTimeUtc")
     def expiration_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expiration_time_utc.setter
-    def expiration_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expiration_time_utc(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filtersConfiguration")
     def filters_configuration(
@@ -77,7 +88,8 @@ class NamespaceTopicEventSubscriptionArgs:
     @filters_configuration.setter
     def filters_configuration(
         self, value: Optional[pulumi.Input[FiltersConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class NamespaceTopicEventSubscription(pulumi.CustomResource):

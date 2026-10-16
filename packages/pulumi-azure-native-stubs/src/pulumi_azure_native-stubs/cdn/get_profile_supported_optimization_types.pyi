@@ -22,7 +22,10 @@ class GetProfileSupportedOptimizationTypesResult:
 class AwaitableGetProfileSupportedOptimizationTypesResult(
     GetProfileSupportedOptimizationTypesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProfileSupportedOptimizationTypesResult]:
+        ...
 
 def get_profile_supported_optimization_types(
     profile_name: Optional[_builtins.str] = ...,

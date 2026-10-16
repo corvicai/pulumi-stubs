@@ -62,7 +62,8 @@ class GetMachineGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMachineGroupResult(GetMachineGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMachineGroupResult]:
+        ...
 
 def get_machine_group(
     end_time: Optional[_builtins.str] = ...,

@@ -58,7 +58,10 @@ class GetManagedClusterApplicationTypeVersionResult:
 class AwaitableGetManagedClusterApplicationTypeVersionResult(
     GetManagedClusterApplicationTypeVersionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedClusterApplicationTypeVersionResult]:
+        ...
 
 def get_managed_cluster_application_type_version(
     application_type_name: Optional[_builtins.str] = ...,

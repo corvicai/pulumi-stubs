@@ -92,7 +92,8 @@ class GetArtifactSourceResult:
     def uri(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetArtifactSourceResult(GetArtifactSourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetArtifactSourceResult]:
+        ...
 
 def get_artifact_source(
     expand: Optional[_builtins.str] = ...,

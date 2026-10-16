@@ -58,7 +58,10 @@ class ListWebAppBackupConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListWebAppBackupConfigurationResult(ListWebAppBackupConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppBackupConfigurationResult]:
+        ...
 
 def list_web_app_backup_configuration(
     name: Optional[_builtins.str] = ...,

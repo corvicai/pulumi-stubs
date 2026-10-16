@@ -64,7 +64,8 @@ class GetDdosProtectionPlanResult:
     def virtual_networks(self) -> Sequence[outputs.SubResourceResponse]: ...
 
 class AwaitableGetDdosProtectionPlanResult(GetDdosProtectionPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDdosProtectionPlanResult]:
+        ...
 
 def get_ddos_protection_plan(
     ddos_protection_plan_name: Optional[_builtins.str] = ...,

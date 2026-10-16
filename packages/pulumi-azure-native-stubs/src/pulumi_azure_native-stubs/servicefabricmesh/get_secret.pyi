@@ -48,7 +48,8 @@ class GetSecretResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecretResult(GetSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretResult]:
+        ...
 
 def get_secret(
     resource_group_name: Optional[_builtins.str] = ...,

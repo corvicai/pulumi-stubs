@@ -44,7 +44,8 @@ class GetTagInheritanceSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTagInheritanceSettingResult(GetTagInheritanceSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagInheritanceSettingResult]:
+        ...
 
 def get_tag_inheritance_setting(
     scope: Optional[_builtins.str] = ...,

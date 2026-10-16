@@ -85,7 +85,8 @@ class GetMulticastDomainResult:
     def transit_gateway_multicast_domain_id(self) -> _builtins.str: ...
 
 class AwaitableGetMulticastDomainResult(GetMulticastDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMulticastDomainResult]:
+        ...
 
 def get_multicast_domain(
     filters: Optional[

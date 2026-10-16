@@ -30,12 +30,16 @@ class NetworkSecurityPerimeterLinkArgs:
     @pulumi.getter(name="networkSecurityPerimeterName")
     def network_security_perimeter_name(self) -> pulumi.Input[_builtins.str]: ...
     @network_security_perimeter_name.setter
-    def network_security_perimeter_name(self, value: pulumi.Input[_builtins.str]): ...
+    def network_security_perimeter_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoApprovedRemotePerimeterResourceId")
     def auto_approved_remote_perimeter_resource_id(
@@ -44,17 +48,20 @@ class NetworkSecurityPerimeterLinkArgs:
     @auto_approved_remote_perimeter_resource_id.setter
     def auto_approved_remote_perimeter_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkName")
     def link_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @link_name.setter
-    def link_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def link_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localInboundProfiles")
     def local_inbound_profiles(
@@ -63,7 +70,8 @@ class NetworkSecurityPerimeterLinkArgs:
     @local_inbound_profiles.setter
     def local_inbound_profiles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteInboundProfiles")
     def remote_inbound_profiles(
@@ -72,7 +80,8 @@ class NetworkSecurityPerimeterLinkArgs:
     @remote_inbound_profiles.setter
     def remote_inbound_profiles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:NetworkSecurityPerimeterLink")
 class NetworkSecurityPerimeterLink(pulumi.CustomResource):

@@ -76,7 +76,10 @@ class GetExpressRouteCircuitConnectionResult:
 class AwaitableGetExpressRouteCircuitConnectionResult(
     GetExpressRouteCircuitConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExpressRouteCircuitConnectionResult]:
+        ...
 
 def get_express_route_circuit_connection(
     circuit_name: Optional[_builtins.str] = ...,

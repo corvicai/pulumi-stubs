@@ -32,12 +32,14 @@ class AppServiceEnvironmentPrivateEndpointConnectionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddresses")
     def ip_addresses(
@@ -46,12 +48,14 @@ class AppServiceEnvironmentPrivateEndpointConnectionArgs:
     @ip_addresses.setter
     def ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnectionName")
     def private_endpoint_connection_name(
@@ -60,7 +64,8 @@ class AppServiceEnvironmentPrivateEndpointConnectionArgs:
     @private_endpoint_connection_name.setter
     def private_endpoint_connection_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -69,7 +74,8 @@ class AppServiceEnvironmentPrivateEndpointConnectionArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: Optional[pulumi.Input[PrivateLinkConnectionStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AppServiceEnvironmentPrivateEndpointConnection(pulumi.CustomResource):

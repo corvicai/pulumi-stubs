@@ -122,7 +122,8 @@ class BackupPlanBackupConfigArgs:
     @pulumi.getter(name="allNamespaces")
     def all_namespaces(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all_namespaces.setter
-    def all_namespaces(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all_namespaces(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKey")
     def encryption_key(
@@ -131,22 +132,32 @@ class BackupPlanBackupConfigArgs:
     @encryption_key.setter
     def encryption_key(
         self, value: Optional[pulumi.Input[BackupPlanBackupConfigEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeSecrets")
     def include_secrets(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_secrets.setter
-    def include_secrets(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_secrets(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeVolumeData")
     def include_volume_data(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_volume_data.setter
-    def include_volume_data(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_volume_data(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permissiveMode")
     def permissive_mode(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @permissive_mode.setter
-    def permissive_mode(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def permissive_mode(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedApplications")
     def selected_applications(
@@ -156,7 +167,8 @@ class BackupPlanBackupConfigArgs:
     def selected_applications(
         self,
         value: Optional[pulumi.Input[BackupPlanBackupConfigSelectedApplicationsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedNamespaceLabels")
     def selected_namespace_labels(
@@ -168,7 +180,8 @@ class BackupPlanBackupConfigArgs:
         value: Optional[
             pulumi.Input[BackupPlanBackupConfigSelectedNamespaceLabelsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedNamespaces")
     def selected_namespaces(
@@ -178,7 +191,8 @@ class BackupPlanBackupConfigArgs:
     def selected_namespaces(
         self,
         value: Optional[pulumi.Input[BackupPlanBackupConfigSelectedNamespacesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupConfigEncryptionKeyArgsDict(TypedDict):
     gcp_kms_encryption_key: pulumi.Input[_builtins.str]
@@ -192,7 +206,8 @@ class BackupPlanBackupConfigEncryptionKeyArgs:
     @pulumi.getter(name="gcpKmsEncryptionKey")
     def gcp_kms_encryption_key(self) -> pulumi.Input[_builtins.str]: ...
     @gcp_kms_encryption_key.setter
-    def gcp_kms_encryption_key(self, value: pulumi.Input[_builtins.str]): ...
+    def gcp_kms_encryption_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BackupPlanBackupConfigSelectedApplicationsArgsDict(TypedDict):
     namespaced_names: pulumi.Input[
@@ -235,7 +250,8 @@ class BackupPlanBackupConfigSelectedApplicationsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupConfigSelectedApplicationsNamespacedNameArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -253,12 +269,14 @@ class BackupPlanBackupConfigSelectedApplicationsNamespacedNameArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespace(self) -> pulumi.Input[_builtins.str]: ...
     @namespace.setter
-    def namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BackupPlanBackupConfigSelectedNamespaceLabelsArgsDict(TypedDict):
     resource_labels: pulumi.Input[
@@ -301,7 +319,8 @@ class BackupPlanBackupConfigSelectedNamespaceLabelsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -319,12 +338,14 @@ class BackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BackupPlanBackupConfigSelectedNamespacesArgsDict(TypedDict):
     namespaces: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -340,7 +361,8 @@ class BackupPlanBackupConfigSelectedNamespacesArgs:
     @namespaces.setter
     def namespaces(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupScheduleArgsDict(TypedDict):
     cron_schedule: NotRequired[pulumi.Input[_builtins.str]]
@@ -360,12 +382,14 @@ class BackupPlanBackupScheduleArgs:
     @pulumi.getter(name="cronSchedule")
     def cron_schedule(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cron_schedule.setter
-    def cron_schedule(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cron_schedule(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def paused(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @paused.setter
-    def paused(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def paused(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rpoConfig")
     def rpo_config(
@@ -374,7 +398,8 @@ class BackupPlanBackupScheduleArgs:
     @rpo_config.setter
     def rpo_config(
         self, value: Optional[pulumi.Input[BackupPlanBackupScheduleRpoConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupScheduleRpoConfigArgsDict(TypedDict):
     target_rpo_minutes: pulumi.Input[_builtins.int]
@@ -404,7 +429,8 @@ class BackupPlanBackupScheduleRpoConfigArgs:
     @pulumi.getter(name="targetRpoMinutes")
     def target_rpo_minutes(self) -> pulumi.Input[_builtins.int]: ...
     @target_rpo_minutes.setter
-    def target_rpo_minutes(self, value: pulumi.Input[_builtins.int]): ...
+    def target_rpo_minutes(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionWindows")
     def exclusion_windows(
@@ -424,7 +450,8 @@ class BackupPlanBackupScheduleRpoConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupScheduleRpoConfigExclusionWindowArgsDict(TypedDict):
     duration: pulumi.Input[_builtins.str]
@@ -464,7 +491,8 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowArgs:
     @pulumi.getter
     def duration(self) -> pulumi.Input[_builtins.str]: ...
     @duration.setter
-    def duration(self, value: pulumi.Input[_builtins.str]): ...
+    def duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(
@@ -478,12 +506,14 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowArgs:
         value: pulumi.Input[
             BackupPlanBackupScheduleRpoConfigExclusionWindowStartTimeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def daily(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @daily.setter
-    def daily(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def daily(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysOfWeek")
     def days_of_week(
@@ -497,7 +527,8 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowArgs:
         value: Optional[
             pulumi.Input[BackupPlanBackupScheduleRpoConfigExclusionWindowDaysOfWeekArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleOccurrenceDate")
     def single_occurrence_date(
@@ -515,7 +546,8 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowArgs:
                 BackupPlanBackupScheduleRpoConfigExclusionWindowSingleOccurrenceDateArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupScheduleRpoConfigExclusionWindowDaysOfWeekArgsDict(TypedDict):
     days_of_weeks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -537,7 +569,8 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowDaysOfWeekArgs:
     @days_of_weeks.setter
     def days_of_weeks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPlanBackupScheduleRpoConfigExclusionWindowSingleOccurrenceDateArgsDict(
     TypedDict
@@ -559,17 +592,20 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowSingleOccurrenceDateArgs:
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BackupPlanBackupScheduleRpoConfigExclusionWindowStartTimeArgsDict(TypedDict):
     hours: NotRequired[pulumi.Input[_builtins.int]]
@@ -591,22 +627,26 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowStartTimeArgs:
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BackupPlanIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -626,17 +666,20 @@ class BackupPlanIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BackupPlanIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -656,17 +699,20 @@ class BackupPlanIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BackupPlanRetentionPolicyArgsDict(TypedDict):
     backup_delete_lock_days: NotRequired[pulumi.Input[_builtins.int]]
@@ -686,17 +732,24 @@ class BackupPlanRetentionPolicyArgs:
     @pulumi.getter(name="backupDeleteLockDays")
     def backup_delete_lock_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @backup_delete_lock_days.setter
-    def backup_delete_lock_days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def backup_delete_lock_days(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupRetainDays")
     def backup_retain_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @backup_retain_days.setter
-    def backup_retain_days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def backup_retain_days(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locked(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @locked.setter
-    def locked(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def locked(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class RestorePlanIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -716,17 +769,20 @@ class RestorePlanIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -746,17 +802,20 @@ class RestorePlanIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigArgsDict(TypedDict):
     all_namespaces: NotRequired[pulumi.Input[_builtins.bool]]
@@ -838,7 +897,8 @@ class RestorePlanRestoreConfigArgs:
     @pulumi.getter(name="allNamespaces")
     def all_namespaces(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all_namespaces.setter
-    def all_namespaces(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all_namespaces(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterResourceConflictPolicy")
     def cluster_resource_conflict_policy(
@@ -847,7 +907,8 @@ class RestorePlanRestoreConfigArgs:
     @cluster_resource_conflict_policy.setter
     def cluster_resource_conflict_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterResourceRestoreScope")
     def cluster_resource_restore_scope(
@@ -861,7 +922,8 @@ class RestorePlanRestoreConfigArgs:
         value: Optional[
             pulumi.Input[RestorePlanRestoreConfigClusterResourceRestoreScopeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedNamespaces")
     def excluded_namespaces(
@@ -871,7 +933,8 @@ class RestorePlanRestoreConfigArgs:
     def excluded_namespaces(
         self,
         value: Optional[pulumi.Input[RestorePlanRestoreConfigExcludedNamespacesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespacedResourceRestoreMode")
     def namespaced_resource_restore_mode(
@@ -880,12 +943,14 @@ class RestorePlanRestoreConfigArgs:
     @namespaced_resource_restore_mode.setter
     def namespaced_resource_restore_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noNamespaces")
     def no_namespaces(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @no_namespaces.setter
-    def no_namespaces(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def no_namespaces(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restoreOrder")
     def restore_order(
@@ -894,7 +959,8 @@ class RestorePlanRestoreConfigArgs:
     @restore_order.setter
     def restore_order(
         self, value: Optional[pulumi.Input[RestorePlanRestoreConfigRestoreOrderArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedApplications")
     def selected_applications(
@@ -904,7 +970,8 @@ class RestorePlanRestoreConfigArgs:
     def selected_applications(
         self,
         value: Optional[pulumi.Input[RestorePlanRestoreConfigSelectedApplicationsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedNamespaces")
     def selected_namespaces(
@@ -914,7 +981,8 @@ class RestorePlanRestoreConfigArgs:
     def selected_namespaces(
         self,
         value: Optional[pulumi.Input[RestorePlanRestoreConfigSelectedNamespacesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transformationRules")
     def transformation_rules(
@@ -932,14 +1000,16 @@ class RestorePlanRestoreConfigArgs:
                 Sequence[pulumi.Input[RestorePlanRestoreConfigTransformationRuleArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeDataRestorePolicy")
     def volume_data_restore_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_data_restore_policy.setter
     def volume_data_restore_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeDataRestorePolicyBindings")
     def volume_data_restore_policy_bindings(
@@ -963,7 +1033,8 @@ class RestorePlanRestoreConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigClusterResourceRestoreScopeArgsDict(TypedDict):
     all_group_kinds: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1017,7 +1088,10 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeArgs:
     @pulumi.getter(name="allGroupKinds")
     def all_group_kinds(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all_group_kinds.setter
-    def all_group_kinds(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all_group_kinds(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedGroupKinds")
     def excluded_group_kinds(
@@ -1043,12 +1117,14 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noGroupKinds")
     def no_group_kinds(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @no_group_kinds.setter
-    def no_group_kinds(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def no_group_kinds(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedGroupKinds")
     def selected_group_kinds(
@@ -1074,7 +1150,8 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindArgsDict(
     TypedDict
@@ -1094,12 +1171,14 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindArgs:
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceKind")
     def resource_kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_kind.setter
-    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindArgsDict(
     TypedDict
@@ -1119,12 +1198,14 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindArgs:
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceKind")
     def resource_kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_kind.setter
-    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigExcludedNamespacesArgsDict(TypedDict):
     namespaces: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1140,7 +1221,8 @@ class RestorePlanRestoreConfigExcludedNamespacesArgs:
     @namespaces.setter
     def namespaces(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigRestoreOrderArgsDict(TypedDict):
     group_kind_dependencies: pulumi.Input[
@@ -1183,7 +1265,8 @@ class RestorePlanRestoreConfigRestoreOrderArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyArgsDict(TypedDict):
     requiring: pulumi.Input[
@@ -1218,7 +1301,8 @@ class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyArgs:
         value: pulumi.Input[
             RestorePlanRestoreConfigRestoreOrderGroupKindDependencyRequiringArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def satisfying(
@@ -1232,7 +1316,8 @@ class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyArgs:
         value: pulumi.Input[
             RestorePlanRestoreConfigRestoreOrderGroupKindDependencySatisfyingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyRequiringArgsDict(
     TypedDict
@@ -1252,12 +1337,14 @@ class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyRequiringArgs:
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceKind")
     def resource_kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_kind.setter
-    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigRestoreOrderGroupKindDependencySatisfyingArgsDict(
     TypedDict
@@ -1277,12 +1364,14 @@ class RestorePlanRestoreConfigRestoreOrderGroupKindDependencySatisfyingArgs:
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceKind")
     def resource_kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_kind.setter
-    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigSelectedApplicationsArgsDict(TypedDict):
     namespaced_names: pulumi.Input[
@@ -1325,7 +1414,8 @@ class RestorePlanRestoreConfigSelectedApplicationsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigSelectedApplicationsNamespacedNameArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1343,12 +1433,14 @@ class RestorePlanRestoreConfigSelectedApplicationsNamespacedNameArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespace(self) -> pulumi.Input[_builtins.str]: ...
     @namespace.setter
-    def namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigSelectedNamespacesArgsDict(TypedDict):
     namespaces: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1364,7 +1456,8 @@ class RestorePlanRestoreConfigSelectedNamespacesArgs:
     @namespaces.setter
     def namespaces(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigTransformationRuleArgsDict(TypedDict):
     field_actions: pulumi.Input[
@@ -1409,12 +1502,14 @@ class RestorePlanRestoreConfigTransformationRuleArgs:
                 pulumi.Input[RestorePlanRestoreConfigTransformationRuleFieldActionArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceFilter")
     def resource_filter(
@@ -1428,7 +1523,8 @@ class RestorePlanRestoreConfigTransformationRuleArgs:
         value: Optional[
             pulumi.Input[RestorePlanRestoreConfigTransformationRuleResourceFilterArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigTransformationRuleFieldActionArgsDict(TypedDict):
     op: pulumi.Input[_builtins.str]
@@ -1450,22 +1546,26 @@ class RestorePlanRestoreConfigTransformationRuleFieldActionArgs:
     @pulumi.getter
     def op(self) -> pulumi.Input[_builtins.str]: ...
     @op.setter
-    def op(self, value: pulumi.Input[_builtins.str]): ...
+    def op(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fromPath")
     def from_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @from_path.setter
-    def from_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def from_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigTransformationRuleResourceFilterArgsDict(TypedDict):
     group_kinds: NotRequired[
@@ -1522,12 +1622,14 @@ class RestorePlanRestoreConfigTransformationRuleResourceFilterArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonPath")
     def json_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @json_path.setter
-    def json_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def json_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespaces(
@@ -1536,7 +1638,8 @@ class RestorePlanRestoreConfigTransformationRuleResourceFilterArgs:
     @namespaces.setter
     def namespaces(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigTransformationRuleResourceFilterGroupKindArgsDict(
     TypedDict
@@ -1556,12 +1659,14 @@ class RestorePlanRestoreConfigTransformationRuleResourceFilterGroupKindArgs:
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group.setter
-    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceKind")
     def resource_kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_kind.setter
-    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePlanRestoreConfigVolumeDataRestorePolicyBindingArgsDict(TypedDict):
     policy: pulumi.Input[_builtins.str]
@@ -1579,9 +1684,11 @@ class RestorePlanRestoreConfigVolumeDataRestorePolicyBindingArgs:
     @pulumi.getter
     def policy(self) -> pulumi.Input[_builtins.str]: ...
     @policy.setter
-    def policy(self, value: pulumi.Input[_builtins.str]): ...
+    def policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeType")
     def volume_type(self) -> pulumi.Input[_builtins.str]: ...
     @volume_type.setter
-    def volume_type(self, value: pulumi.Input[_builtins.str]): ...
+    def volume_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

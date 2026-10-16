@@ -47,7 +47,8 @@ class GetListingIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetListingIamPolicyResult(GetListingIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetListingIamPolicyResult]:
+        ...
 
 def get_listing_iam_policy(
     data_exchange_id: Optional[_builtins.str] = ...,

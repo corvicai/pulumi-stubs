@@ -37,7 +37,8 @@ class GetJobIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetJobIamPolicyResult(GetJobIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobIamPolicyResult]:
+        ...
 
 def get_job_iam_policy(
     location: Optional[_builtins.str] = ...,

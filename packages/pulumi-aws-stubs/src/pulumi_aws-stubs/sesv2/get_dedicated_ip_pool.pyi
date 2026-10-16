@@ -50,7 +50,8 @@ class GetDedicatedIpPoolResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetDedicatedIpPoolResult(GetDedicatedIpPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDedicatedIpPoolResult]:
+        ...
 
 def get_dedicated_ip_pool(
     pool_name: Optional[_builtins.str] = ...,

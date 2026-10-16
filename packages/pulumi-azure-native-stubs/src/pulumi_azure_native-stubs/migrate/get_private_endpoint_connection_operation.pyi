@@ -60,7 +60,10 @@ class GetPrivateEndpointConnectionOperationResult:
 class AwaitableGetPrivateEndpointConnectionOperationResult(
     GetPrivateEndpointConnectionOperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionOperationResult]:
+        ...
 
 def get_private_endpoint_connection_operation(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class GetIpRangesResult:
     def url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetIpRangesResult(GetIpRangesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpRangesResult]:
+        ...
 
 def get_ip_ranges(
     id: Optional[_builtins.str] = ...,

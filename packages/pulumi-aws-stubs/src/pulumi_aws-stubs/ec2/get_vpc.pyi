@@ -90,7 +90,8 @@ class GetVpcResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVpcResult(GetVpcResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcResult]:
+        ...
 
 def get_vpc(
     cidr_block: Optional[_builtins.str] = ...,

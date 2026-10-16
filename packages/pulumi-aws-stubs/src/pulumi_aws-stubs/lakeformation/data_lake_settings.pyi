@@ -57,7 +57,8 @@ class DataLakeSettingsArgs:
     @admins.setter
     def admins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowExternalDataFiltering")
     def allow_external_data_filtering(
@@ -66,7 +67,8 @@ class DataLakeSettingsArgs:
     @allow_external_data_filtering.setter
     def allow_external_data_filtering(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowFullTableExternalDataAccess")
     def allow_full_table_external_data_access(
@@ -75,7 +77,8 @@ class DataLakeSettingsArgs:
     @allow_full_table_external_data_access.setter
     def allow_full_table_external_data_access(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizedSessionTagValueLists")
     def authorized_session_tag_value_lists(
@@ -84,12 +87,14 @@ class DataLakeSettingsArgs:
     @authorized_session_tag_value_lists.setter
     def authorized_session_tag_value_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogId")
     def catalog_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @catalog_id.setter
-    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createDatabaseDefaultPermissions")
     def create_database_default_permissions(
@@ -109,7 +114,8 @@ class DataLakeSettingsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTableDefaultPermissions")
     def create_table_default_permissions(
@@ -127,7 +133,8 @@ class DataLakeSettingsArgs:
                 Sequence[pulumi.Input[DataLakeSettingsCreateTableDefaultPermissionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalDataFilteringAllowLists")
     def external_data_filtering_allow_lists(
@@ -136,7 +143,8 @@ class DataLakeSettingsArgs:
     @external_data_filtering_allow_lists.setter
     def external_data_filtering_allow_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -145,7 +153,8 @@ class DataLakeSettingsArgs:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readOnlyAdmins")
     def read_only_admins(
@@ -154,12 +163,14 @@ class DataLakeSettingsArgs:
     @read_only_admins.setter
     def read_only_admins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedResourceOwners")
     def trusted_resource_owners(
@@ -168,7 +179,8 @@ class DataLakeSettingsArgs:
     @trusted_resource_owners.setter
     def trusted_resource_owners(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DataLakeSettingsState:
@@ -218,7 +230,8 @@ class _DataLakeSettingsState:
     @admins.setter
     def admins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowExternalDataFiltering")
     def allow_external_data_filtering(
@@ -227,7 +240,8 @@ class _DataLakeSettingsState:
     @allow_external_data_filtering.setter
     def allow_external_data_filtering(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowFullTableExternalDataAccess")
     def allow_full_table_external_data_access(
@@ -236,7 +250,8 @@ class _DataLakeSettingsState:
     @allow_full_table_external_data_access.setter
     def allow_full_table_external_data_access(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizedSessionTagValueLists")
     def authorized_session_tag_value_lists(
@@ -245,12 +260,14 @@ class _DataLakeSettingsState:
     @authorized_session_tag_value_lists.setter
     def authorized_session_tag_value_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogId")
     def catalog_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @catalog_id.setter
-    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createDatabaseDefaultPermissions")
     def create_database_default_permissions(
@@ -270,7 +287,8 @@ class _DataLakeSettingsState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTableDefaultPermissions")
     def create_table_default_permissions(
@@ -288,7 +306,8 @@ class _DataLakeSettingsState:
                 Sequence[pulumi.Input[DataLakeSettingsCreateTableDefaultPermissionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalDataFilteringAllowLists")
     def external_data_filtering_allow_lists(
@@ -297,7 +316,8 @@ class _DataLakeSettingsState:
     @external_data_filtering_allow_lists.setter
     def external_data_filtering_allow_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -306,7 +326,8 @@ class _DataLakeSettingsState:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readOnlyAdmins")
     def read_only_admins(
@@ -315,12 +336,14 @@ class _DataLakeSettingsState:
     @read_only_admins.setter
     def read_only_admins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedResourceOwners")
     def trusted_resource_owners(
@@ -329,7 +352,8 @@ class _DataLakeSettingsState:
     @trusted_resource_owners.setter
     def trusted_resource_owners(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DataLakeSettings(pulumi.CustomResource):

@@ -44,7 +44,8 @@ class GetEntityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEntityResult(GetEntityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntityResult]:
+        ...
 
 def get_entity(
     azure_monitor_workspace_name: Optional[_builtins.str] = ...,

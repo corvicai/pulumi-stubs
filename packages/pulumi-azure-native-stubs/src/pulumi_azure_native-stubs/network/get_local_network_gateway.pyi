@@ -72,7 +72,8 @@ class GetLocalNetworkGatewayResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLocalNetworkGatewayResult(GetLocalNetworkGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalNetworkGatewayResult]:
+        ...
 
 def get_local_network_gateway(
     local_network_gateway_name: Optional[_builtins.str] = ...,

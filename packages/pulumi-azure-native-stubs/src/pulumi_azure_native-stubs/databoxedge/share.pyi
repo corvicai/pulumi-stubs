@@ -40,12 +40,14 @@ class ShareArgs:
     @access_protocol.setter
     def access_protocol(
         self, value: pulumi.Input[Union[_builtins.str, ShareAccessProtocol]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceName")
     def device_name(self) -> pulumi.Input[_builtins.str]: ...
     @device_name.setter
-    def device_name(self, value: pulumi.Input[_builtins.str]): ...
+    def device_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringStatus")
     def monitoring_status(
@@ -54,17 +56,22 @@ class ShareArgs:
     @monitoring_status.setter
     def monitoring_status(
         self, value: pulumi.Input[Union[_builtins.str, MonitoringStatus]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shareStatus")
     def share_status(self) -> pulumi.Input[Union[_builtins.str, ShareStatus]]: ...
     @share_status.setter
-    def share_status(self, value: pulumi.Input[Union[_builtins.str, ShareStatus]]): ...
+    def share_status(
+        self, value: pulumi.Input[Union[_builtins.str, ShareStatus]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureContainerInfo")
     def azure_container_info(
@@ -73,7 +80,8 @@ class ShareArgs:
     @azure_container_info.setter
     def azure_container_info(
         self, value: Optional[pulumi.Input[AzureContainerInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientAccessRights")
     def client_access_rights(
@@ -83,7 +91,8 @@ class ShareArgs:
     def client_access_rights(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ClientAccessRightArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPolicy")
     def data_policy(
@@ -92,22 +101,28 @@ class ShareArgs:
     @data_policy.setter
     def data_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DataPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshDetails")
     def refresh_details(self) -> Optional[pulumi.Input[RefreshDetailsArgs]]: ...
     @refresh_details.setter
-    def refresh_details(self, value: Optional[pulumi.Input[RefreshDetailsArgs]]): ...
+    def refresh_details(
+        self, value: Optional[pulumi.Input[RefreshDetailsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAccessRights")
     def user_access_rights(
@@ -116,7 +131,8 @@ class ShareArgs:
     @user_access_rights.setter
     def user_access_rights(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UserAccessRightArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:databoxedge:Share")
 class Share(pulumi.CustomResource):

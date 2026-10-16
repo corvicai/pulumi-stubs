@@ -39,7 +39,8 @@ class ListServiceTestKeysResult:
     def secondary_test_endpoint(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListServiceTestKeysResult(ListServiceTestKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListServiceTestKeysResult]:
+        ...
 
 def list_service_test_keys(
     resource_group_name: Optional[_builtins.str] = ...,

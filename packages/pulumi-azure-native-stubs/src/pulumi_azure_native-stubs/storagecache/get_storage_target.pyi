@@ -80,7 +80,8 @@ class GetStorageTargetResult:
     def unknown(self) -> Optional[outputs.UnknownTargetResponse]: ...
 
 class AwaitableGetStorageTargetResult(GetStorageTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageTargetResult]:
+        ...
 
 def get_storage_target(
     cache_name: Optional[_builtins.str] = ...,

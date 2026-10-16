@@ -52,7 +52,8 @@ class GetIamPasswordPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamPasswordPolicyResult(GetIamPasswordPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamPasswordPolicyResult]:
+        ...
 
 def get_iam_password_policy(
     name: Optional[_builtins.str] = ...,

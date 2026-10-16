@@ -17,7 +17,10 @@ class GetDomainTopicEventSubscriptionDeliveryAttributesResult:
 class AwaitableGetDomainTopicEventSubscriptionDeliveryAttributesResult(
     GetDomainTopicEventSubscriptionDeliveryAttributesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDomainTopicEventSubscriptionDeliveryAttributesResult]:
+        ...
 
 def get_domain_topic_event_subscription_delivery_attributes(
     domain_name: Optional[_builtins.str] = ...,

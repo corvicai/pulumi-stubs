@@ -90,7 +90,8 @@ class GetEventSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEventSubscriptionResult(GetEventSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventSubscriptionResult]:
+        ...
 
 def get_event_subscription(
     event_subscription_name: Optional[_builtins.str] = ...,

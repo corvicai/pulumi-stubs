@@ -102,7 +102,8 @@ class GetCloudServicesNetworkResult:
     def virtual_machines_associated_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetCloudServicesNetworkResult(GetCloudServicesNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudServicesNetworkResult]:
+        ...
 
 def get_cloud_services_network(
     cloud_services_network_name: Optional[_builtins.str] = ...,

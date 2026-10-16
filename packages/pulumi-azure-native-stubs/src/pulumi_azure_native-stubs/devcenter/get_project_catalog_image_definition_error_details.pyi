@@ -23,7 +23,10 @@ class GetProjectCatalogImageDefinitionErrorDetailsResult:
 class AwaitableGetProjectCatalogImageDefinitionErrorDetailsResult(
     GetProjectCatalogImageDefinitionErrorDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProjectCatalogImageDefinitionErrorDetailsResult]:
+        ...
 
 def get_project_catalog_image_definition_error_details(
     catalog_name: Optional[_builtins.str] = ...,

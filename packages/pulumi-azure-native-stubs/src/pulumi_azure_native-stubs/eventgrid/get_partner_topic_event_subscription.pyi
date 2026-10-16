@@ -92,7 +92,10 @@ class GetPartnerTopicEventSubscriptionResult:
 class AwaitableGetPartnerTopicEventSubscriptionResult(
     GetPartnerTopicEventSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPartnerTopicEventSubscriptionResult]:
+        ...
 
 def get_partner_topic_event_subscription(
     event_subscription_name: Optional[_builtins.str] = ...,

@@ -31,7 +31,8 @@ class GetTrackerAssociationResult:
     def tracker_name(self) -> _builtins.str: ...
 
 class AwaitableGetTrackerAssociationResult(GetTrackerAssociationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTrackerAssociationResult]:
+        ...
 
 def get_tracker_association(
     consumer_arn: Optional[_builtins.str] = ...,

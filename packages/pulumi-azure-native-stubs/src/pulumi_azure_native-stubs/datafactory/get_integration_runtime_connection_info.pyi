@@ -45,7 +45,10 @@ class GetIntegrationRuntimeConnectionInfoResult:
 class AwaitableGetIntegrationRuntimeConnectionInfoResult(
     GetIntegrationRuntimeConnectionInfoResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationRuntimeConnectionInfoResult]:
+        ...
 
 def get_integration_runtime_connection_info(
     factory_name: Optional[_builtins.str] = ...,

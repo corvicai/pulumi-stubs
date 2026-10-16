@@ -28,7 +28,8 @@ class DefaultRouteTableArgs:
     @pulumi.getter(name="defaultRouteTableId")
     def default_route_table_id(self) -> pulumi.Input[_builtins.str]: ...
     @default_route_table_id.setter
-    def default_route_table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def default_route_table_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagatingVgws")
     def propagating_vgws(
@@ -37,12 +38,14 @@ class DefaultRouteTableArgs:
     @propagating_vgws.setter
     def propagating_vgws(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def routes(
@@ -54,7 +57,8 @@ class DefaultRouteTableArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DefaultRouteTableRouteArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -63,7 +67,8 @@ class DefaultRouteTableArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DefaultRouteTableState:
@@ -90,17 +95,22 @@ class _DefaultRouteTableState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteTableId")
     def default_route_table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_route_table_id.setter
-    def default_route_table_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_route_table_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagatingVgws")
     def propagating_vgws(
@@ -109,12 +119,14 @@ class _DefaultRouteTableState:
     @propagating_vgws.setter
     def propagating_vgws(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def routes(
@@ -126,7 +138,8 @@ class _DefaultRouteTableState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DefaultRouteTableRouteArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -135,7 +148,8 @@ class _DefaultRouteTableState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -144,12 +158,14 @@ class _DefaultRouteTableState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/defaultRouteTable:DefaultRouteTable")
 class DefaultRouteTable(pulumi.CustomResource):

@@ -28,12 +28,14 @@ class KeyvaluestoreKeysExclusiveArgs:
     @pulumi.getter(name="keyValueStoreArn")
     def key_value_store_arn(self) -> pulumi.Input[_builtins.str]: ...
     @key_value_store_arn.setter
-    def key_value_store_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def key_value_store_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxBatchSize")
     def max_batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_batch_size.setter
-    def max_batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceKeyValuePairs")
     def resource_key_value_pairs(
@@ -53,7 +55,8 @@ class KeyvaluestoreKeysExclusiveArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _KeyvaluestoreKeysExclusiveState:
@@ -75,12 +78,16 @@ class _KeyvaluestoreKeysExclusiveState:
     @pulumi.getter(name="keyValueStoreArn")
     def key_value_store_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_value_store_arn.setter
-    def key_value_store_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_value_store_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxBatchSize")
     def max_batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_batch_size.setter
-    def max_batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceKeyValuePairs")
     def resource_key_value_pairs(
@@ -100,12 +107,16 @@ class _KeyvaluestoreKeysExclusiveState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="totalSizeInBytes")
     def total_size_in_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @total_size_in_bytes.setter
-    def total_size_in_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def total_size_in_bytes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class KeyvaluestoreKeysExclusive(pulumi.CustomResource):

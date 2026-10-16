@@ -60,7 +60,8 @@ class GetCachePolicyResult:
     ]: ...
 
 class AwaitableGetCachePolicyResult(GetCachePolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCachePolicyResult]:
+        ...
 
 def get_cache_policy(
     id: Optional[_builtins.str] = ...,

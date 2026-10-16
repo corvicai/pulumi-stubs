@@ -54,7 +54,8 @@ class GetWorkflowVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkflowVersionResult(GetWorkflowVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkflowVersionResult]:
+        ...
 
 def get_workflow_version(
     context_name: Optional[_builtins.str] = ...,

@@ -62,7 +62,8 @@ class GetCustomRoutingAcceleratorResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetCustomRoutingAcceleratorResult(GetCustomRoutingAcceleratorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomRoutingAcceleratorResult]:
+        ...
 
 def get_custom_routing_accelerator(
     arn: Optional[_builtins.str] = ...,

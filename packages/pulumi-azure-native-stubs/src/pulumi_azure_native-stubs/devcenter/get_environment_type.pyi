@@ -52,7 +52,8 @@ class GetEnvironmentTypeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnvironmentTypeResult(GetEnvironmentTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentTypeResult]:
+        ...
 
 def get_environment_type(
     dev_center_name: Optional[_builtins.str] = ...,

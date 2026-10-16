@@ -37,7 +37,8 @@ class GetWebAppScmAllowedResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppScmAllowedResult(GetWebAppScmAllowedResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppScmAllowedResult]:
+        ...
 
 def get_web_app_scm_allowed(
     name: Optional[_builtins.str] = ...,

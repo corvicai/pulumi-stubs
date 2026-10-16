@@ -31,7 +31,8 @@ class GetSlackWorkspaceResult:
     def slack_team_name(self) -> _builtins.str: ...
 
 class AwaitableGetSlackWorkspaceResult(GetSlackWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSlackWorkspaceResult]:
+        ...
 
 def get_slack_workspace(
     region: Optional[_builtins.str] = ...,

@@ -59,7 +59,8 @@ class GetDataMaskingPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataMaskingPolicyResult(GetDataMaskingPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataMaskingPolicyResult]:
+        ...
 
 def get_data_masking_policy(
     data_masking_policy_name: Optional[_builtins.str] = ...,

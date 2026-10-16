@@ -60,7 +60,8 @@ class GetBookmarkRelationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBookmarkRelationResult(GetBookmarkRelationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBookmarkRelationResult]:
+        ...
 
 def get_bookmark_relation(
     bookmark_id: Optional[_builtins.str] = ...,

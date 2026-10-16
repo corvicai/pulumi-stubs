@@ -41,26 +41,30 @@ class DomainServiceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configDiagnostics")
     def config_diagnostics(self) -> Optional[pulumi.Input[ConfigDiagnosticsArgs]]: ...
     @config_diagnostics.setter
     def config_diagnostics(
         self, value: Optional[pulumi.Input[ConfigDiagnosticsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainConfigurationType")
     def domain_configuration_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_configuration_type.setter
     def domain_configuration_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainSecuritySettings")
     def domain_security_settings(
@@ -69,12 +73,16 @@ class DomainServiceArgs:
     @domain_security_settings.setter
     def domain_security_settings(
         self, value: Optional[pulumi.Input[DomainSecuritySettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainServiceName")
     def domain_service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_service_name.setter
-    def domain_service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_service_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filteredSync")
     def filtered_sync(
@@ -83,17 +91,22 @@ class DomainServiceArgs:
     @filtered_sync.setter
     def filtered_sync(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FilteredSync]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ldapsSettings")
     def ldaps_settings(self) -> Optional[pulumi.Input[LdapsSettingsArgs]]: ...
     @ldaps_settings.setter
-    def ldaps_settings(self, value: Optional[pulumi.Input[LdapsSettingsArgs]]): ...
+    def ldaps_settings(
+        self, value: Optional[pulumi.Input[LdapsSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationSettings")
     def notification_settings(
@@ -102,7 +115,8 @@ class DomainServiceArgs:
     @notification_settings.setter
     def notification_settings(
         self, value: Optional[pulumi.Input[NotificationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaSets")
     def replica_sets(
@@ -111,7 +125,8 @@ class DomainServiceArgs:
     @replica_sets.setter
     def replica_sets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ReplicaSetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceForestSettings")
     def resource_forest_settings(
@@ -120,19 +135,22 @@ class DomainServiceArgs:
     @resource_forest_settings.setter
     def resource_forest_settings(
         self, value: Optional[pulumi.Input[ResourceForestSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sku(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncScope")
     def sync_scope(self) -> Optional[pulumi.Input[Union[_builtins.str, SyncScope]]]: ...
     @sync_scope.setter
     def sync_scope(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SyncScope]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -141,7 +159,8 @@ class DomainServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:aad:DomainService")
 class DomainService(pulumi.CustomResource):

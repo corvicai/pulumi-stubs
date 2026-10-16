@@ -82,7 +82,8 @@ class GetStreamResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetStreamResult(GetStreamResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStreamResult]:
+        ...
 
 def get_stream(
     name: Optional[_builtins.str] = ...,

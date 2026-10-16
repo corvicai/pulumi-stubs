@@ -44,7 +44,8 @@ class GetBindingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBindingResult(GetBindingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBindingResult]:
+        ...
 
 def get_binding(
     app_name: Optional[_builtins.str] = ...,

@@ -59,7 +59,8 @@ class GetPermissionSetResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetPermissionSetResult(GetPermissionSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPermissionSetResult]:
+        ...
 
 def get_permission_set(
     arn: Optional[_builtins.str] = ...,

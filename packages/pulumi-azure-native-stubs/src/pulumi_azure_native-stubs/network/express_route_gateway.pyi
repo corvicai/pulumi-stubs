@@ -33,12 +33,14 @@ class ExpressRouteGatewayArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualHub")
     def virtual_hub(self) -> pulumi.Input[VirtualHubIdArgs]: ...
     @virtual_hub.setter
-    def virtual_hub(self, value: pulumi.Input[VirtualHubIdArgs]): ...
+    def virtual_hub(self, value: pulumi.Input[VirtualHubIdArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowNonVirtualWanTraffic")
     def allow_non_virtual_wan_traffic(
@@ -47,7 +49,8 @@ class ExpressRouteGatewayArgs:
     @allow_non_virtual_wan_traffic.setter
     def allow_non_virtual_wan_traffic(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScaleConfiguration")
     def auto_scale_configuration(
@@ -61,7 +64,8 @@ class ExpressRouteGatewayArgs:
         value: Optional[
             pulumi.Input[ExpressRouteGatewayPropertiesAutoScaleConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expressRouteConnections")
     def express_route_connections(
@@ -73,24 +77,28 @@ class ExpressRouteGatewayArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ExpressRouteConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expressRouteGatewayName")
     def express_route_gateway_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @express_route_gateway_name.setter
     def express_route_gateway_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -99,7 +107,8 @@ class ExpressRouteGatewayArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:ExpressRouteGateway")
 class ExpressRouteGateway(pulumi.CustomResource):

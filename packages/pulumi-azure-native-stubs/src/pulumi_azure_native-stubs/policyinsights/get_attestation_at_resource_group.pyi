@@ -84,7 +84,10 @@ class GetAttestationAtResourceGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAttestationAtResourceGroupResult(GetAttestationAtResourceGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAttestationAtResourceGroupResult]:
+        ...
 
 def get_attestation_at_resource_group(
     attestation_name: Optional[_builtins.str] = ...,

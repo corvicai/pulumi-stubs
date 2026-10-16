@@ -83,7 +83,8 @@ class GetReplicationLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationLinkResult(GetReplicationLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationLinkResult]:
+        ...
 
 def get_replication_link(
     database_name: Optional[_builtins.str] = ...,

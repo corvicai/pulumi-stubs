@@ -43,7 +43,8 @@ class GetSingleServerDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSingleServerDatabaseResult(GetSingleServerDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSingleServerDatabaseResult]:
+        ...
 
 def get_single_server_database(
     database_name: Optional[_builtins.str] = ...,

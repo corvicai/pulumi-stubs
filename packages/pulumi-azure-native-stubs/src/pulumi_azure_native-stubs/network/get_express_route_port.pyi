@@ -100,7 +100,8 @@ class GetExpressRoutePortResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetExpressRoutePortResult(GetExpressRoutePortResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExpressRoutePortResult]:
+        ...
 
 def get_express_route_port(
     express_route_port_name: Optional[_builtins.str] = ...,

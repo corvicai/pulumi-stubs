@@ -54,7 +54,10 @@ class GetMapDependencyViewForAllMachinesResult:
 class AwaitableGetMapDependencyViewForAllMachinesResult(
     GetMapDependencyViewForAllMachinesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMapDependencyViewForAllMachinesResult]:
+        ...
 
 def get_map_dependency_view_for_all_machines(
     filters: Optional[

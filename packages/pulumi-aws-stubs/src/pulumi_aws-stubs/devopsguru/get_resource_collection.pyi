@@ -37,7 +37,8 @@ class GetResourceCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetResourceCollectionResult(GetResourceCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceCollectionResult]:
+        ...
 
 def get_resource_collection(
     region: Optional[_builtins.str] = ...,

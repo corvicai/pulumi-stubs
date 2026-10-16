@@ -63,7 +63,8 @@ class GetCertificateResult:
     def valid_till(self) -> _builtins.str: ...
 
 class AwaitableGetCertificateResult(GetCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateResult]:
+        ...
 
 def get_certificate(
     default_for_new_launches: Optional[_builtins.bool] = ...,

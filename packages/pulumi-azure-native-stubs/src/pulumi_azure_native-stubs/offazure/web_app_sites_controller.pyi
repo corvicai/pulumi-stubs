@@ -29,12 +29,14 @@ class WebAppSitesControllerArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="siteName")
     def site_name(self) -> pulumi.Input[_builtins.str]: ...
     @site_name.setter
-    def site_name(self, value: pulumi.Input[_builtins.str]): ...
+    def site_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryScenario")
     def discovery_scenario(
@@ -48,7 +50,8 @@ class WebAppSitesControllerArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, WebAppSitePropertiesDiscoveryScenario]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="siteAppliancePropertiesCollection")
     def site_appliance_properties_collection(
@@ -62,12 +65,16 @@ class WebAppSitesControllerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SiteAppliancePropertiesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAppSiteName")
     def web_app_site_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_app_site_name.setter
-    def web_app_site_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_app_site_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:offazure:WebAppSitesController")
 class WebAppSitesController(pulumi.CustomResource):

@@ -62,7 +62,8 @@ class GetTunnelPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTunnelPolicyResult(GetTunnelPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTunnelPolicyResult]:
+        ...
 
 def get_tunnel_policy(
     profile_name: Optional[_builtins.str] = ...,

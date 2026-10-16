@@ -44,7 +44,8 @@ class GetComponentVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetComponentVersionResult(GetComponentVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetComponentVersionResult]:
+        ...
 
 def get_component_version(
     name: Optional[_builtins.str] = ...,

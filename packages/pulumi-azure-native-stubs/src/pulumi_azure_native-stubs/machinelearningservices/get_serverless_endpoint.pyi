@@ -64,7 +64,8 @@ class GetServerlessEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerlessEndpointResult(GetServerlessEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerlessEndpointResult]:
+        ...
 
 def get_serverless_endpoint(
     name: Optional[_builtins.str] = ...,

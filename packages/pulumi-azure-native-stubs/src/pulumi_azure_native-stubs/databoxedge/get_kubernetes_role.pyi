@@ -68,7 +68,8 @@ class GetKubernetesRoleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKubernetesRoleResult(GetKubernetesRoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKubernetesRoleResult]:
+        ...
 
 def get_kubernetes_role(
     device_name: Optional[_builtins.str] = ...,

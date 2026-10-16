@@ -44,12 +44,14 @@ class RepositoryArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RepositoryEncryptionConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDelete")
     def force_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete.setter
-    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageScanningConfiguration")
     def image_scanning_configuration(
@@ -58,12 +60,16 @@ class RepositoryArgs:
     @image_scanning_configuration.setter
     def image_scanning_configuration(
         self, value: Optional[pulumi.Input[RepositoryImageScanningConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTagMutability")
     def image_tag_mutability(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_tag_mutability.setter
-    def image_tag_mutability(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_tag_mutability(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTagMutabilityExclusionFilters")
     def image_tag_mutability_exclusion_filters(
@@ -81,17 +87,20 @@ class RepositoryArgs:
                 Sequence[pulumi.Input[RepositoryImageTagMutabilityExclusionFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -100,7 +109,8 @@ class RepositoryArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RepositoryState:
@@ -134,7 +144,8 @@ class _RepositoryState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfigurations")
     def encryption_configurations(
@@ -148,12 +159,14 @@ class _RepositoryState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RepositoryEncryptionConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDelete")
     def force_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete.setter
-    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageScanningConfiguration")
     def image_scanning_configuration(
@@ -162,12 +175,16 @@ class _RepositoryState:
     @image_scanning_configuration.setter
     def image_scanning_configuration(
         self, value: Optional[pulumi.Input[RepositoryImageScanningConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTagMutability")
     def image_tag_mutability(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_tag_mutability.setter
-    def image_tag_mutability(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_tag_mutability(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTagMutabilityExclusionFilters")
     def image_tag_mutability_exclusion_filters(
@@ -185,27 +202,32 @@ class _RepositoryState:
                 Sequence[pulumi.Input[RepositoryImageTagMutabilityExclusionFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registryId")
     def registry_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registry_id.setter
-    def registry_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registry_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repositoryUrl")
     def repository_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @repository_url.setter
-    def repository_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def repository_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -214,7 +236,8 @@ class _RepositoryState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -223,7 +246,8 @@ class _RepositoryState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ecr/repository:Repository")
 class Repository(pulumi.CustomResource):

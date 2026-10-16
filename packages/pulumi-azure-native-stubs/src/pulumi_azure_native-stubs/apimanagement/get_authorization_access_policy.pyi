@@ -47,7 +47,10 @@ class GetAuthorizationAccessPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAuthorizationAccessPolicyResult(GetAuthorizationAccessPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAuthorizationAccessPolicyResult]:
+        ...
 
 def get_authorization_access_policy(
     authorization_access_policy_id: Optional[_builtins.str] = ...,

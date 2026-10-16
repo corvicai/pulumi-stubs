@@ -232,7 +232,8 @@ class GetStorageAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageAccountResult(GetStorageAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageAccountResult]:
+        ...
 
 def get_storage_account(
     account_name: Optional[_builtins.str] = ...,

@@ -54,12 +54,16 @@ class ClusterArgs:
     @pulumi.getter(name="shardCount")
     def shard_count(self) -> pulumi.Input[_builtins.int]: ...
     @shard_count.setter
-    def shard_count(self, value: pulumi.Input[_builtins.int]): ...
+    def shard_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizationMode")
     def authorization_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorization_mode.setter
-    def authorization_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authorization_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automatedBackupConfig")
     def automated_backup_config(
@@ -68,7 +72,8 @@ class ClusterArgs:
     @automated_backup_config.setter
     def automated_backup_config(
         self, value: Optional[pulumi.Input[ClusterAutomatedBackupConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossClusterReplicationConfig")
     def cross_cluster_replication_config(
@@ -77,24 +82,30 @@ class ClusterArgs:
     @cross_cluster_replication_config.setter
     def cross_cluster_replication_config(
         self, value: Optional[pulumi.Input[ClusterCrossClusterReplicationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtectionEnabled")
     def deletion_protection_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection_enabled.setter
     def deletion_protection_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsSource")
     def gcs_source(self) -> Optional[pulumi.Input[ClusterGcsSourceArgs]]: ...
     @gcs_source.setter
-    def gcs_source(self, value: Optional[pulumi.Input[ClusterGcsSourceArgs]]): ...
+    def gcs_source(
+        self, value: Optional[pulumi.Input[ClusterGcsSourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -103,7 +114,8 @@ class ClusterArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenancePolicy")
     def maintenance_policy(
@@ -112,12 +124,16 @@ class ClusterArgs:
     @maintenance_policy.setter
     def maintenance_policy(
         self, value: Optional[pulumi.Input[ClusterMaintenancePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceVersion")
     def maintenance_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @maintenance_version.setter
-    def maintenance_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def maintenance_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedBackupSource")
     def managed_backup_source(
@@ -126,17 +142,20 @@ class ClusterArgs:
     @managed_backup_source.setter
     def managed_backup_source(
         self, value: Optional[pulumi.Input[ClusterManagedBackupSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
     def node_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_type.setter
-    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="persistenceConfig")
     def persistence_config(
@@ -145,12 +164,14 @@ class ClusterArgs:
     @persistence_config.setter
     def persistence_config(
         self, value: Optional[pulumi.Input[ClusterPersistenceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pscConfigs")
     def psc_configs(
@@ -160,7 +181,8 @@ class ClusterArgs:
     def psc_configs(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ClusterPscConfigArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redisConfigs")
     def redis_configs(
@@ -169,32 +191,40 @@ class ClusterArgs:
     @redis_configs.setter
     def redis_configs(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
     def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replica_count.setter
-    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverCaMode")
     def server_ca_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_ca_mode.setter
-    def server_ca_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_ca_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverCaPool")
     def server_ca_pool(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_ca_pool.setter
-    def server_ca_pool(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_ca_pool(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitEncryptionMode")
     def transit_encryption_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_encryption_mode.setter
-    def transit_encryption_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_encryption_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneDistributionConfig")
     def zone_distribution_config(
@@ -203,7 +233,8 @@ class ClusterArgs:
     @zone_distribution_config.setter
     def zone_distribution_config(
         self, value: Optional[pulumi.Input[ClusterZoneDistributionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClusterState:
@@ -284,7 +315,10 @@ class _ClusterState:
     @pulumi.getter(name="authorizationMode")
     def authorization_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorization_mode.setter
-    def authorization_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authorization_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automatedBackupConfig")
     def automated_backup_config(
@@ -293,7 +327,8 @@ class _ClusterState:
     @automated_backup_config.setter
     def automated_backup_config(
         self, value: Optional[pulumi.Input[ClusterAutomatedBackupConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availableMaintenanceVersions")
     def available_maintenance_versions(
@@ -302,17 +337,22 @@ class _ClusterState:
     @available_maintenance_versions.setter
     def available_maintenance_versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupCollection")
     def backup_collection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_collection.setter
-    def backup_collection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_collection(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossClusterReplicationConfig")
     def cross_cluster_replication_config(
@@ -321,14 +361,16 @@ class _ClusterState:
     @cross_cluster_replication_config.setter
     def cross_cluster_replication_config(
         self, value: Optional[pulumi.Input[ClusterCrossClusterReplicationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtectionEnabled")
     def deletion_protection_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection_enabled.setter
     def deletion_protection_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryEndpoints")
     def discovery_endpoints(
@@ -342,7 +384,8 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterDiscoveryEndpointArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -351,7 +394,8 @@ class _ClusterState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveMaintenanceVersion")
     def effective_maintenance_version(
@@ -360,17 +404,22 @@ class _ClusterState:
     @effective_maintenance_version.setter
     def effective_maintenance_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsSource")
     def gcs_source(self) -> Optional[pulumi.Input[ClusterGcsSourceArgs]]: ...
     @gcs_source.setter
-    def gcs_source(self, value: Optional[pulumi.Input[ClusterGcsSourceArgs]]): ...
+    def gcs_source(
+        self, value: Optional[pulumi.Input[ClusterGcsSourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -379,7 +428,8 @@ class _ClusterState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenancePolicy")
     def maintenance_policy(
@@ -388,7 +438,8 @@ class _ClusterState:
     @maintenance_policy.setter
     def maintenance_policy(
         self, value: Optional[pulumi.Input[ClusterMaintenancePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceSchedules")
     def maintenance_schedules(
@@ -402,12 +453,16 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterMaintenanceScheduleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceVersion")
     def maintenance_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @maintenance_version.setter
-    def maintenance_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def maintenance_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedBackupSource")
     def managed_backup_source(
@@ -416,7 +471,8 @@ class _ClusterState:
     @managed_backup_source.setter
     def managed_backup_source(
         self, value: Optional[pulumi.Input[ClusterManagedBackupSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedServerCas")
     def managed_server_cas(
@@ -428,17 +484,20 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterManagedServerCaArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
     def node_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_type.setter
-    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="persistenceConfig")
     def persistence_config(
@@ -447,17 +506,22 @@ class _ClusterState:
     @persistence_config.setter
     def persistence_config(
         self, value: Optional[pulumi.Input[ClusterPersistenceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preciseSizeGb")
     def precise_size_gb(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @precise_size_gb.setter
-    def precise_size_gb(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def precise_size_gb(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pscConfigs")
     def psc_configs(
@@ -467,7 +531,8 @@ class _ClusterState:
     def psc_configs(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ClusterPscConfigArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pscConnections")
     def psc_connections(
@@ -477,7 +542,8 @@ class _ClusterState:
     def psc_connections(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ClusterPscConnectionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pscServiceAttachments")
     def psc_service_attachments(
@@ -491,7 +557,8 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterPscServiceAttachmentArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -500,7 +567,8 @@ class _ClusterState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redisConfigs")
     def redis_configs(
@@ -509,42 +577,50 @@ class _ClusterState:
     @redis_configs.setter
     def redis_configs(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
     def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replica_count.setter
-    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverCaMode")
     def server_ca_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_ca_mode.setter
-    def server_ca_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_ca_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverCaPool")
     def server_ca_pool(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_ca_pool.setter
-    def server_ca_pool(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_ca_pool(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shardCount")
     def shard_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @shard_count.setter
-    def shard_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def shard_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeGb")
     def size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @size_gb.setter
-    def size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stateInfos")
     def state_infos(
@@ -554,17 +630,22 @@ class _ClusterState:
     def state_infos(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ClusterStateInfoArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitEncryptionMode")
     def transit_encryption_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_encryption_mode.setter
-    def transit_encryption_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_encryption_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneDistributionConfig")
     def zone_distribution_config(
@@ -573,7 +654,8 @@ class _ClusterState:
     @zone_distribution_config.setter
     def zone_distribution_config(
         self, value: Optional[pulumi.Input[ClusterZoneDistributionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:redis/cluster:Cluster")
 class Cluster(pulumi.CustomResource):

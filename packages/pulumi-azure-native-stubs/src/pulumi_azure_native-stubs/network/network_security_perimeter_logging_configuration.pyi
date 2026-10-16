@@ -26,19 +26,24 @@ class NetworkSecurityPerimeterLoggingConfigurationArgs:
     @pulumi.getter(name="networkSecurityPerimeterName")
     def network_security_perimeter_name(self) -> pulumi.Input[_builtins.str]: ...
     @network_security_perimeter_name.setter
-    def network_security_perimeter_name(self, value: pulumi.Input[_builtins.str]): ...
+    def network_security_perimeter_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfigurationName")
     def logging_configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @logging_configuration_name.setter
     def logging_configuration_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -47,7 +52,8 @@ class NetworkSecurityPerimeterLoggingConfigurationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[NspLoggingConfigurationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class NetworkSecurityPerimeterLoggingConfiguration(pulumi.CustomResource):

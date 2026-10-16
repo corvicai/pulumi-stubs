@@ -64,7 +64,8 @@ class GetPrivateLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateLinkResult(GetPrivateLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateLinkResult]:
+        ...
 
 def get_private_link(
     private_link_name: Optional[_builtins.str] = ...,

@@ -120,7 +120,8 @@ class GetRoleAssignmentResult:
     def widget_types(self) -> Optional[outputs.ResourceSetDescriptionResponse]: ...
 
 class AwaitableGetRoleAssignmentResult(GetRoleAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoleAssignmentResult]:
+        ...
 
 def get_role_assignment(
     assignment_name: Optional[_builtins.str] = ...,

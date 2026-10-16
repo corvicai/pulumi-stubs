@@ -52,7 +52,8 @@ class GetEc2AddressResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2AddressResult(GetEc2AddressResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2AddressResult]:
+        ...
 
 def get_ec2_address(
     name: Optional[_builtins.str] = ...,

@@ -72,7 +72,8 @@ class GetApprovalResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApprovalResult(GetApprovalResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApprovalResult]:
+        ...
 
 def get_approval(
     approval_name: Optional[_builtins.str] = ...,

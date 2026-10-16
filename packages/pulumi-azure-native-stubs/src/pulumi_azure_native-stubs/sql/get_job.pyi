@@ -43,7 +43,8 @@ class GetJobResult:
     def version(self) -> _builtins.int: ...
 
 class AwaitableGetJobResult(GetJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobResult]:
+        ...
 
 def get_job(
     job_agent_name: Optional[_builtins.str] = ...,

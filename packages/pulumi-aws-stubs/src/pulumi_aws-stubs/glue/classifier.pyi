@@ -27,7 +27,8 @@ class ClassifierArgs:
     @csv_classifier.setter
     def csv_classifier(
         self, value: Optional[pulumi.Input[ClassifierCsvClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grokClassifier")
     def grok_classifier(
@@ -36,7 +37,8 @@ class ClassifierArgs:
     @grok_classifier.setter
     def grok_classifier(
         self, value: Optional[pulumi.Input[ClassifierGrokClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonClassifier")
     def json_classifier(
@@ -45,24 +47,28 @@ class ClassifierArgs:
     @json_classifier.setter
     def json_classifier(
         self, value: Optional[pulumi.Input[ClassifierJsonClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xmlClassifier")
     def xml_classifier(self) -> Optional[pulumi.Input[ClassifierXmlClassifierArgs]]: ...
     @xml_classifier.setter
     def xml_classifier(
         self, value: Optional[pulumi.Input[ClassifierXmlClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClassifierState:
@@ -82,7 +88,8 @@ class _ClassifierState:
     @csv_classifier.setter
     def csv_classifier(
         self, value: Optional[pulumi.Input[ClassifierCsvClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grokClassifier")
     def grok_classifier(
@@ -91,7 +98,8 @@ class _ClassifierState:
     @grok_classifier.setter
     def grok_classifier(
         self, value: Optional[pulumi.Input[ClassifierGrokClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonClassifier")
     def json_classifier(
@@ -100,24 +108,28 @@ class _ClassifierState:
     @json_classifier.setter
     def json_classifier(
         self, value: Optional[pulumi.Input[ClassifierJsonClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xmlClassifier")
     def xml_classifier(self) -> Optional[pulumi.Input[ClassifierXmlClassifierArgs]]: ...
     @xml_classifier.setter
     def xml_classifier(
         self, value: Optional[pulumi.Input[ClassifierXmlClassifierArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:glue/classifier:Classifier")
 class Classifier(pulumi.CustomResource):

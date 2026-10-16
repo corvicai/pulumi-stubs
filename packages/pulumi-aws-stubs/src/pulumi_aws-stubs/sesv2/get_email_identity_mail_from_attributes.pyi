@@ -41,7 +41,10 @@ class GetEmailIdentityMailFromAttributesResult:
 class AwaitableGetEmailIdentityMailFromAttributesResult(
     GetEmailIdentityMailFromAttributesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetEmailIdentityMailFromAttributesResult]:
+        ...
 
 def get_email_identity_mail_from_attributes(
     email_identity: Optional[_builtins.str] = ...,

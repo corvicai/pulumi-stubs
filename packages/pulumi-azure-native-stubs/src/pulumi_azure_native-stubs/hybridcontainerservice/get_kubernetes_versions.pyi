@@ -48,7 +48,8 @@ class GetKubernetesVersionsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKubernetesVersionsResult(GetKubernetesVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKubernetesVersionsResult]:
+        ...
 
 def get_kubernetes_versions(
     custom_location_resource_uri: Optional[_builtins.str] = ...,

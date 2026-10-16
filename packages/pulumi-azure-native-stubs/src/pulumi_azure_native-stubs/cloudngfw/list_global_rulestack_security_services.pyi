@@ -26,7 +26,10 @@ class ListGlobalRulestackSecurityServicesResult:
 class AwaitableListGlobalRulestackSecurityServicesResult(
     ListGlobalRulestackSecurityServicesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListGlobalRulestackSecurityServicesResult]:
+        ...
 
 def list_global_rulestack_security_services(
     global_rulestack_name: Optional[_builtins.str] = ...,

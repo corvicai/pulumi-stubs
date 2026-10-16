@@ -30,22 +30,26 @@ class WorkspaceArgs:
     @pulumi.getter(name="bundleId")
     def bundle_id(self) -> pulumi.Input[_builtins.str]: ...
     @bundle_id.setter
-    def bundle_id(self, value: pulumi.Input[_builtins.str]): ...
+    def bundle_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directoryId")
     def directory_id(self) -> pulumi.Input[_builtins.str]: ...
     @directory_id.setter
-    def directory_id(self, value: pulumi.Input[_builtins.str]): ...
+    def directory_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> pulumi.Input[_builtins.str]: ...
     @user_name.setter
-    def user_name(self, value: pulumi.Input[_builtins.str]): ...
+    def user_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootVolumeEncryptionEnabled")
     def root_volume_encryption_enabled(
@@ -54,7 +58,8 @@ class WorkspaceArgs:
     @root_volume_encryption_enabled.setter
     def root_volume_encryption_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -63,7 +68,8 @@ class WorkspaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userVolumeEncryptionEnabled")
     def user_volume_encryption_enabled(
@@ -72,12 +78,16 @@ class WorkspaceArgs:
     @user_volume_encryption_enabled.setter
     def user_volume_encryption_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeEncryptionKey")
     def volume_encryption_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_encryption_key.setter
-    def volume_encryption_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def volume_encryption_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceProperties")
     def workspace_properties(
@@ -86,7 +96,8 @@ class WorkspaceArgs:
     @workspace_properties.setter
     def workspace_properties(
         self, value: Optional[pulumi.Input[WorkspaceWorkspacePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WorkspaceState:
@@ -115,27 +126,32 @@ class _WorkspaceState:
     @pulumi.getter(name="bundleId")
     def bundle_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bundle_id.setter
-    def bundle_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bundle_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computerName")
     def computer_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @computer_name.setter
-    def computer_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def computer_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directoryId")
     def directory_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @directory_id.setter
-    def directory_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def directory_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddress")
     def ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_address.setter
-    def ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootVolumeEncryptionEnabled")
     def root_volume_encryption_enabled(
@@ -144,12 +160,14 @@ class _WorkspaceState:
     @root_volume_encryption_enabled.setter
     def root_volume_encryption_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -158,7 +176,8 @@ class _WorkspaceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -167,12 +186,14 @@ class _WorkspaceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userVolumeEncryptionEnabled")
     def user_volume_encryption_enabled(
@@ -181,12 +202,16 @@ class _WorkspaceState:
     @user_volume_encryption_enabled.setter
     def user_volume_encryption_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeEncryptionKey")
     def volume_encryption_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_encryption_key.setter
-    def volume_encryption_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def volume_encryption_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceProperties")
     def workspace_properties(
@@ -195,7 +220,8 @@ class _WorkspaceState:
     @workspace_properties.setter
     def workspace_properties(
         self, value: Optional[pulumi.Input[WorkspaceWorkspacePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:workspaces/workspace:Workspace")
 class Workspace(pulumi.CustomResource):

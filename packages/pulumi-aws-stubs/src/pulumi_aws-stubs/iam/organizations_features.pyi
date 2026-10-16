@@ -22,7 +22,8 @@ class OrganizationsFeaturesArgs:
     @enabled_features.setter
     def enabled_features(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OrganizationsFeaturesState:
@@ -41,7 +42,8 @@ class _OrganizationsFeaturesState:
     @enabled_features.setter
     def enabled_features(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OrganizationsFeatures(pulumi.CustomResource):

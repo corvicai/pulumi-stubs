@@ -24,7 +24,8 @@ class SdkvoiceGlobalSettingsArgs:
     @voice_connector.setter
     def voice_connector(
         self, value: pulumi.Input[SdkvoiceGlobalSettingsVoiceConnectorArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SdkvoiceGlobalSettingsState:
@@ -43,7 +44,8 @@ class _SdkvoiceGlobalSettingsState:
     @voice_connector.setter
     def voice_connector(
         self, value: Optional[pulumi.Input[SdkvoiceGlobalSettingsVoiceConnectorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SdkvoiceGlobalSettings(pulumi.CustomResource):

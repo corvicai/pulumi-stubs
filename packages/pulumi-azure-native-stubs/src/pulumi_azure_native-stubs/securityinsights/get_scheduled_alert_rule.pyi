@@ -138,7 +138,8 @@ class GetScheduledAlertRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScheduledAlertRuleResult(GetScheduledAlertRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScheduledAlertRuleResult]:
+        ...
 
 def get_scheduled_alert_rule(
     resource_group_name: Optional[_builtins.str] = ...,

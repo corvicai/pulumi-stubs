@@ -34,7 +34,8 @@ class GetActivityResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetActivityResult(GetActivityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActivityResult]:
+        ...
 
 def get_activity(
     arn: Optional[_builtins.str] = ...,

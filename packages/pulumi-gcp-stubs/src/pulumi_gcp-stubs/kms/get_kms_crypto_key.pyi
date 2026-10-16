@@ -84,7 +84,8 @@ class GetKMSCryptoKeyResult:
     ) -> Sequence[outputs.GetKMSCryptoKeyVersionTemplateResult]: ...
 
 class AwaitableGetKMSCryptoKeyResult(GetKMSCryptoKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKMSCryptoKeyResult]:
+        ...
 
 def get_kms_crypto_key(
     key_ring: Optional[_builtins.str] = ...,

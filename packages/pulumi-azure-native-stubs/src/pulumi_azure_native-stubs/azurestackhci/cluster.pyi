@@ -37,7 +37,8 @@ class ClusterArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -46,19 +47,22 @@ class ClusterArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aadApplicationObjectId")
     def aad_application_object_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aad_application_object_id.setter
     def aad_application_object_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aadClientId")
     def aad_client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aad_client_id.setter
-    def aad_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aad_client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aadServicePrincipalObjectId")
     def aad_service_principal_object_id(
@@ -67,24 +71,28 @@ class ClusterArgs:
     @aad_service_principal_object_id.setter
     def aad_service_principal_object_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aadTenantId")
     def aad_tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aad_tenant_id.setter
-    def aad_tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aad_tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudManagementEndpoint")
     def cloud_management_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloud_management_endpoint.setter
     def cloud_management_endpoint(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredProperties")
     def desired_properties(
@@ -93,12 +101,14 @@ class ClusterArgs:
     @desired_properties.setter
     def desired_properties(
         self, value: Optional[pulumi.Input[ClusterDesiredPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareAssuranceProperties")
     def software_assurance_properties(
@@ -107,7 +117,8 @@ class ClusterArgs:
     @software_assurance_properties.setter
     def software_assurance_properties(
         self, value: Optional[pulumi.Input[SoftwareAssurancePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -116,7 +127,8 @@ class ClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -125,7 +137,8 @@ class ClusterArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azurestackhci:Cluster")
 class Cluster(pulumi.CustomResource):

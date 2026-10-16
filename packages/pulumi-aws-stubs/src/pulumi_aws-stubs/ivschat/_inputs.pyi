@@ -57,7 +57,8 @@ class LoggingConfigurationDestinationConfigurationArgs:
         value: Optional[
             pulumi.Input[LoggingConfigurationDestinationConfigurationCloudwatchLogsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def firehose(
@@ -71,7 +72,8 @@ class LoggingConfigurationDestinationConfigurationArgs:
         value: Optional[
             pulumi.Input[LoggingConfigurationDestinationConfigurationFirehoseArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(
@@ -83,7 +85,8 @@ class LoggingConfigurationDestinationConfigurationArgs:
         value: Optional[
             pulumi.Input[LoggingConfigurationDestinationConfigurationS3Args]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LoggingConfigurationDestinationConfigurationCloudwatchLogsArgsDict(TypedDict):
     log_group_name: pulumi.Input[_builtins.str]
@@ -95,7 +98,8 @@ class LoggingConfigurationDestinationConfigurationCloudwatchLogsArgs:
     @pulumi.getter(name="logGroupName")
     def log_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @log_group_name.setter
-    def log_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class LoggingConfigurationDestinationConfigurationFirehoseArgsDict(TypedDict):
     delivery_stream_name: pulumi.Input[_builtins.str]
@@ -109,7 +113,8 @@ class LoggingConfigurationDestinationConfigurationFirehoseArgs:
     @pulumi.getter(name="deliveryStreamName")
     def delivery_stream_name(self) -> pulumi.Input[_builtins.str]: ...
     @delivery_stream_name.setter
-    def delivery_stream_name(self, value: pulumi.Input[_builtins.str]): ...
+    def delivery_stream_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class LoggingConfigurationDestinationConfigurationS3ArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -121,7 +126,8 @@ class LoggingConfigurationDestinationConfigurationS3Args:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RoomMessageReviewHandlerArgsDict(TypedDict):
     fallback_result: NotRequired[pulumi.Input[_builtins.str]]
@@ -139,9 +145,11 @@ class RoomMessageReviewHandlerArgs:
     @pulumi.getter(name="fallbackResult")
     def fallback_result(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_result.setter
-    def fallback_result(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_result(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

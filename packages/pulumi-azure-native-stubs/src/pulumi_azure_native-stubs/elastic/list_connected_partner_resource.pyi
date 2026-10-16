@@ -26,7 +26,10 @@ class ListConnectedPartnerResourceResult:
     ) -> Optional[Sequence[outputs.ConnectedPartnerResourcesListFormatResponse]]: ...
 
 class AwaitableListConnectedPartnerResourceResult(ListConnectedPartnerResourceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListConnectedPartnerResourceResult]:
+        ...
 
 def list_connected_partner_resource(
     monitor_name: Optional[_builtins.str] = ...,

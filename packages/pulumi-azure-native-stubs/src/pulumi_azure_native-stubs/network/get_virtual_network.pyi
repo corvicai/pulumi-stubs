@@ -116,7 +116,8 @@ class GetVirtualNetworkResult:
     ) -> Optional[Sequence[outputs.VirtualNetworkPeeringResponse]]: ...
 
 class AwaitableGetVirtualNetworkResult(GetVirtualNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkResult]:
+        ...
 
 def get_virtual_network(
     expand: Optional[_builtins.str] = ...,

@@ -68,7 +68,8 @@ class GetNeighborGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNeighborGroupResult(GetNeighborGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNeighborGroupResult]:
+        ...
 
 def get_neighbor_group(
     neighbor_group_name: Optional[_builtins.str] = ...,

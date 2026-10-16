@@ -42,7 +42,10 @@ class GetStandardsControlAssociationsResult:
 class AwaitableGetStandardsControlAssociationsResult(
     GetStandardsControlAssociationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStandardsControlAssociationsResult]:
+        ...
 
 def get_standards_control_associations(
     region: Optional[_builtins.str] = ...,

@@ -51,7 +51,10 @@ class FutureReservationArgs:
     @pulumi.getter(name="timeWindow")
     def time_window(self) -> pulumi.Input[FutureReservationTimeWindowArgs]: ...
     @time_window.setter
-    def time_window(self, value: pulumi.Input[FutureReservationTimeWindowArgs]): ...
+    def time_window(
+        self, value: pulumi.Input[FutureReservationTimeWindowArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aggregateReservation")
     def aggregate_reservation(
@@ -60,7 +63,8 @@ class FutureReservationArgs:
     @aggregate_reservation.setter
     def aggregate_reservation(
         self, value: Optional[pulumi.Input[FutureReservationAggregateReservationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoCreatedReservationsDeleteTime")
     def auto_created_reservations_delete_time(
@@ -69,7 +73,8 @@ class FutureReservationArgs:
     @auto_created_reservations_delete_time.setter
     def auto_created_reservations_delete_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoCreatedReservationsDuration")
     def auto_created_reservations_duration(
@@ -83,7 +88,8 @@ class FutureReservationArgs:
         value: Optional[
             pulumi.Input[FutureReservationAutoCreatedReservationsDurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoDeleteAutoCreatedReservations")
     def auto_delete_auto_created_reservations(
@@ -92,7 +98,8 @@ class FutureReservationArgs:
     @auto_delete_auto_created_reservations.setter
     def auto_delete_auto_created_reservations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commitmentInfo")
     def commitment_info(
@@ -101,52 +108,66 @@ class FutureReservationArgs:
     @commitment_info.setter
     def commitment_info(
         self, value: Optional[pulumi.Input[FutureReservationCommitmentInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_type.setter
-    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="planningStatus")
     def planning_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @planning_status.setter
-    def planning_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def planning_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationMode")
     def reservation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reservation_mode.setter
-    def reservation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reservation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationName")
     def reservation_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reservation_name.setter
-    def reservation_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reservation_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulingType")
     def scheduling_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scheduling_type.setter
-    def scheduling_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scheduling_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shareSettings")
     def share_settings(
@@ -155,7 +176,8 @@ class FutureReservationArgs:
     @share_settings.setter
     def share_settings(
         self, value: Optional[pulumi.Input[FutureReservationShareSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specificReservationRequired")
     def specific_reservation_required(
@@ -164,7 +186,8 @@ class FutureReservationArgs:
     @specific_reservation_required.setter
     def specific_reservation_required(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specificSkuProperties")
     def specific_sku_properties(
@@ -173,7 +196,8 @@ class FutureReservationArgs:
     @specific_sku_properties.setter
     def specific_sku_properties(
         self, value: Optional[pulumi.Input[FutureReservationSpecificSkuPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FutureReservationState:
@@ -228,7 +252,8 @@ class _FutureReservationState:
     @aggregate_reservation.setter
     def aggregate_reservation(
         self, value: Optional[pulumi.Input[FutureReservationAggregateReservationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoCreatedReservationsDeleteTime")
     def auto_created_reservations_delete_time(
@@ -237,7 +262,8 @@ class _FutureReservationState:
     @auto_created_reservations_delete_time.setter
     def auto_created_reservations_delete_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoCreatedReservationsDuration")
     def auto_created_reservations_duration(
@@ -251,7 +277,8 @@ class _FutureReservationState:
         value: Optional[
             pulumi.Input[FutureReservationAutoCreatedReservationsDurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoDeleteAutoCreatedReservations")
     def auto_delete_auto_created_reservations(
@@ -260,7 +287,8 @@ class _FutureReservationState:
     @auto_delete_auto_created_reservations.setter
     def auto_delete_auto_created_reservations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commitmentInfo")
     def commitment_info(
@@ -269,67 +297,88 @@ class _FutureReservationState:
     @commitment_info.setter
     def commitment_info(
         self, value: Optional[pulumi.Input[FutureReservationCommitmentInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_type.setter
-    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="planningStatus")
     def planning_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @planning_status.setter
-    def planning_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def planning_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationMode")
     def reservation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reservation_mode.setter
-    def reservation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reservation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationName")
     def reservation_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reservation_name.setter
-    def reservation_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reservation_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulingType")
     def scheduling_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scheduling_type.setter
-    def scheduling_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scheduling_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLinkWithId")
     def self_link_with_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link_with_id.setter
-    def self_link_with_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link_with_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shareSettings")
     def share_settings(
@@ -338,7 +387,8 @@ class _FutureReservationState:
     @share_settings.setter
     def share_settings(
         self, value: Optional[pulumi.Input[FutureReservationShareSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specificReservationRequired")
     def specific_reservation_required(
@@ -347,7 +397,8 @@ class _FutureReservationState:
     @specific_reservation_required.setter
     def specific_reservation_required(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specificSkuProperties")
     def specific_sku_properties(
@@ -356,7 +407,8 @@ class _FutureReservationState:
     @specific_sku_properties.setter
     def specific_sku_properties(
         self, value: Optional[pulumi.Input[FutureReservationSpecificSkuPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statuses(
@@ -370,7 +422,8 @@ class _FutureReservationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FutureReservationStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeWindow")
     def time_window(
@@ -379,12 +432,14 @@ class _FutureReservationState:
     @time_window.setter
     def time_window(
         self, value: Optional[pulumi.Input[FutureReservationTimeWindowArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/futureReservation:FutureReservation")
 class FutureReservation(pulumi.CustomResource):

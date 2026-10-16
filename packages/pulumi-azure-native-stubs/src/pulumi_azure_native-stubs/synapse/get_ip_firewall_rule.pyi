@@ -47,7 +47,8 @@ class GetIpFirewallRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIpFirewallRuleResult(GetIpFirewallRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpFirewallRuleResult]:
+        ...
 
 def get_ip_firewall_rule(
     resource_group_name: Optional[_builtins.str] = ...,

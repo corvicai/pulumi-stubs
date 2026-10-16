@@ -56,7 +56,8 @@ class GetSqlMigrationServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlMigrationServiceResult(GetSqlMigrationServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlMigrationServiceResult]:
+        ...
 
 def get_sql_migration_service(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -31,7 +31,8 @@ class GetClientConfigResult:
     def tenant_id(self) -> _builtins.str: ...
 
 class AwaitableGetClientConfigResult(GetClientConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClientConfigResult]:
+        ...
 
 def get_client_config(
     opts: Optional[pulumi.InvokeOptions] = ...,

@@ -43,7 +43,8 @@ class PrivateEndpointArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSecurityGroups")
     def application_security_groups(
@@ -57,7 +58,8 @@ class PrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationSecurityGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customDnsConfigs")
     def custom_dns_configs(
@@ -71,7 +73,8 @@ class PrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomDnsConfigPropertiesFormatArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customNetworkInterfaceName")
     def custom_network_interface_name(
@@ -80,19 +83,22 @@ class PrivateEndpointArgs:
     @custom_network_interface_name.setter
     def custom_network_interface_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipConfigurations")
     def ip_configurations(
@@ -106,12 +112,14 @@ class PrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateEndpointIPConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manualPrivateLinkServiceConnections")
     def manual_private_link_service_connections(
@@ -125,12 +133,16 @@ class PrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateLinkServiceConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointName")
     def private_endpoint_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_endpoint_name.setter
-    def private_endpoint_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_endpoint_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnections")
     def private_link_service_connections(
@@ -144,12 +156,14 @@ class PrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateLinkServiceConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnet(self) -> Optional[pulumi.Input[SubnetArgs]]: ...
     @subnet.setter
-    def subnet(self, value: Optional[pulumi.Input[SubnetArgs]]): ...
+    def subnet(self, value: Optional[pulumi.Input[SubnetArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -158,7 +172,8 @@ class PrivateEndpointArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:PrivateEndpoint")
 class PrivateEndpoint(pulumi.CustomResource):

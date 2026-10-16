@@ -29,12 +29,18 @@ class DeploymentConfigArgs:
     @pulumi.getter(name="computePlatform")
     def compute_platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compute_platform.setter
-    def compute_platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compute_platform(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfigName")
     def deployment_config_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_config_name.setter
-    def deployment_config_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_config_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumHealthyHosts")
     def minimum_healthy_hosts(
@@ -43,12 +49,14 @@ class DeploymentConfigArgs:
     @minimum_healthy_hosts.setter
     def minimum_healthy_hosts(
         self, value: Optional[pulumi.Input[DeploymentConfigMinimumHealthyHostsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficRoutingConfig")
     def traffic_routing_config(
@@ -57,7 +65,8 @@ class DeploymentConfigArgs:
     @traffic_routing_config.setter
     def traffic_routing_config(
         self, value: Optional[pulumi.Input[DeploymentConfigTrafficRoutingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zonalConfig")
     def zonal_config(
@@ -66,7 +75,8 @@ class DeploymentConfigArgs:
     @zonal_config.setter
     def zonal_config(
         self, value: Optional[pulumi.Input[DeploymentConfigZonalConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DeploymentConfigState:
@@ -90,22 +100,32 @@ class _DeploymentConfigState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computePlatform")
     def compute_platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compute_platform.setter
-    def compute_platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compute_platform(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfigId")
     def deployment_config_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_config_id.setter
-    def deployment_config_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_config_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfigName")
     def deployment_config_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_config_name.setter
-    def deployment_config_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_config_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumHealthyHosts")
     def minimum_healthy_hosts(
@@ -114,12 +134,14 @@ class _DeploymentConfigState:
     @minimum_healthy_hosts.setter
     def minimum_healthy_hosts(
         self, value: Optional[pulumi.Input[DeploymentConfigMinimumHealthyHostsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficRoutingConfig")
     def traffic_routing_config(
@@ -128,7 +150,8 @@ class _DeploymentConfigState:
     @traffic_routing_config.setter
     def traffic_routing_config(
         self, value: Optional[pulumi.Input[DeploymentConfigTrafficRoutingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zonalConfig")
     def zonal_config(
@@ -137,7 +160,8 @@ class _DeploymentConfigState:
     @zonal_config.setter
     def zonal_config(
         self, value: Optional[pulumi.Input[DeploymentConfigZonalConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:codedeploy/deploymentConfig:DeploymentConfig")
 class DeploymentConfig(pulumi.CustomResource):

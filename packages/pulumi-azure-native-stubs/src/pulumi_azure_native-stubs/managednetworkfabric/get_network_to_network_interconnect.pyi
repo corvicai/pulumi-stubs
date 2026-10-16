@@ -104,7 +104,10 @@ class GetNetworkToNetworkInterconnectResult:
 class AwaitableGetNetworkToNetworkInterconnectResult(
     GetNetworkToNetworkInterconnectResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkToNetworkInterconnectResult]:
+        ...
 
 def get_network_to_network_interconnect(
     network_fabric_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,10 @@ class GetSqlServerAvailabilityGroupDetailViewResult:
 class AwaitableGetSqlServerAvailabilityGroupDetailViewResult(
     GetSqlServerAvailabilityGroupDetailViewResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlServerAvailabilityGroupDetailViewResult]:
+        ...
 
 def get_sql_server_availability_group_detail_view(
     availability_group_name: Optional[_builtins.str] = ...,

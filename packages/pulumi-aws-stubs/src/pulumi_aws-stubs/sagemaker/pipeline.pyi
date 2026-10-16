@@ -32,12 +32,14 @@ class PipelineArgs:
     @pulumi.getter(name="pipelineDisplayName")
     def pipeline_display_name(self) -> pulumi.Input[_builtins.str]: ...
     @pipeline_display_name.setter
-    def pipeline_display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def pipeline_display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineName")
     def pipeline_name(self) -> pulumi.Input[_builtins.str]: ...
     @pipeline_name.setter
-    def pipeline_name(self, value: pulumi.Input[_builtins.str]): ...
+    def pipeline_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelismConfiguration")
     def parallelism_configuration(
@@ -46,12 +48,16 @@ class PipelineArgs:
     @parallelism_configuration.setter
     def parallelism_configuration(
         self, value: Optional[pulumi.Input[PipelineParallelismConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineDefinition")
     def pipeline_definition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_definition.setter
-    def pipeline_definition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_definition(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineDefinitionS3Location")
     def pipeline_definition_s3_location(
@@ -60,22 +66,28 @@ class PipelineArgs:
     @pipeline_definition_s3_location.setter
     def pipeline_definition_s3_location(
         self, value: Optional[pulumi.Input[PipelinePipelineDefinitionS3LocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineDescription")
     def pipeline_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_description.setter
-    def pipeline_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -84,7 +96,8 @@ class PipelineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PipelineState:
@@ -113,7 +126,8 @@ class _PipelineState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelismConfiguration")
     def parallelism_configuration(
@@ -122,12 +136,16 @@ class _PipelineState:
     @parallelism_configuration.setter
     def parallelism_configuration(
         self, value: Optional[pulumi.Input[PipelineParallelismConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineDefinition")
     def pipeline_definition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_definition.setter
-    def pipeline_definition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_definition(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineDefinitionS3Location")
     def pipeline_definition_s3_location(
@@ -136,32 +154,42 @@ class _PipelineState:
     @pipeline_definition_s3_location.setter
     def pipeline_definition_s3_location(
         self, value: Optional[pulumi.Input[PipelinePipelineDefinitionS3LocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineDescription")
     def pipeline_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_description.setter
-    def pipeline_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineDisplayName")
     def pipeline_display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_display_name.setter
-    def pipeline_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_display_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineName")
     def pipeline_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_name.setter
-    def pipeline_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -170,7 +198,8 @@ class _PipelineState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -179,7 +208,8 @@ class _PipelineState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/pipeline:Pipeline")
 class Pipeline(pulumi.CustomResource):

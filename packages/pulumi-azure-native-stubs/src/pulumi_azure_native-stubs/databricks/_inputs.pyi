@@ -81,7 +81,8 @@ class AddressSpaceArgs:
     @address_prefixes.setter
     def address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomaticClusterUpdateDefinitionArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[Union[_builtins.str, AutomaticClusterUpdateValue]]]
@@ -106,7 +107,8 @@ class AutomaticClusterUpdateDefinitionArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, AutomaticClusterUpdateValue]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ComplianceSecurityProfileDefinitionArgsDict(TypedDict):
     compliance_standards: NotRequired[
@@ -145,7 +147,8 @@ class ComplianceSecurityProfileDefinitionArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, ComplianceStandard]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(
@@ -159,7 +162,8 @@ class ComplianceSecurityProfileDefinitionArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ComplianceSecurityProfileValue]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DefaultCatalogPropertiesArgsDict(TypedDict):
     initial_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -177,7 +181,8 @@ class DefaultCatalogPropertiesArgs:
     @pulumi.getter(name="initialName")
     def initial_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @initial_name.setter
-    def initial_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def initial_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialType")
     def initial_type(
@@ -186,7 +191,8 @@ class DefaultCatalogPropertiesArgs:
     @initial_type.setter
     def initial_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, InitialType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionEntitiesDefinitionArgsDict(TypedDict):
     managed_disk: NotRequired[pulumi.Input[ManagedDiskEncryptionArgsDict]]
@@ -206,12 +212,16 @@ class EncryptionEntitiesDefinitionArgs:
     @managed_disk.setter
     def managed_disk(
         self, value: Optional[pulumi.Input[ManagedDiskEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedServices")
     def managed_services(self) -> Optional[pulumi.Input[EncryptionV2Args]]: ...
     @managed_services.setter
-    def managed_services(self, value: Optional[pulumi.Input[EncryptionV2Args]]): ...
+    def managed_services(
+        self, value: Optional[pulumi.Input[EncryptionV2Args]]
+    ):  # -> None:
+        ...
 
 class EncryptionV2KeyVaultPropertiesArgsDict(TypedDict):
     key_name: pulumi.Input[_builtins.str]
@@ -231,17 +241,20 @@ class EncryptionV2KeyVaultPropertiesArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> pulumi.Input[_builtins.str]: ...
     @key_name.setter
-    def key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultUri")
     def key_vault_uri(self) -> pulumi.Input[_builtins.str]: ...
     @key_vault_uri.setter
-    def key_vault_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def key_vault_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVersion")
     def key_version(self) -> pulumi.Input[_builtins.str]: ...
     @key_version.setter
-    def key_version(self, value: pulumi.Input[_builtins.str]): ...
+    def key_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class EncryptionV2ArgsDict(TypedDict):
     key_source: pulumi.Input[Union[_builtins.str, EncryptionKeySource]]
@@ -265,7 +278,8 @@ class EncryptionV2Args:
     @key_source.setter
     def key_source(
         self, value: pulumi.Input[Union[_builtins.str, EncryptionKeySource]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -274,7 +288,8 @@ class EncryptionV2Args:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[EncryptionV2KeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionArgsDict(TypedDict):
     key_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -296,24 +311,28 @@ class EncryptionArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_name.setter
-    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keySource")
     def key_source(self) -> Optional[pulumi.Input[Union[_builtins.str, KeySource]]]: ...
     @key_source.setter
     def key_source(
         self, value: Optional[pulumi.Input[Union[_builtins.str, KeySource]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultUri")
     def key_vault_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_uri.setter
-    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVersion")
     def key_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_version.setter
-    def key_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnhancedSecurityComplianceDefinitionArgsDict(TypedDict):
     automatic_cluster_update: NotRequired[
@@ -349,7 +368,8 @@ class EnhancedSecurityComplianceDefinitionArgs:
     @automatic_cluster_update.setter
     def automatic_cluster_update(
         self, value: Optional[pulumi.Input[AutomaticClusterUpdateDefinitionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceSecurityProfile")
     def compliance_security_profile(
@@ -358,7 +378,8 @@ class EnhancedSecurityComplianceDefinitionArgs:
     @compliance_security_profile.setter
     def compliance_security_profile(
         self, value: Optional[pulumi.Input[ComplianceSecurityProfileDefinitionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedSecurityMonitoring")
     def enhanced_security_monitoring(
@@ -367,7 +388,8 @@ class EnhancedSecurityComplianceDefinitionArgs:
     @enhanced_security_monitoring.setter
     def enhanced_security_monitoring(
         self, value: Optional[pulumi.Input[EnhancedSecurityMonitoringDefinitionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EnhancedSecurityMonitoringDefinitionArgsDict(TypedDict):
     value: NotRequired[
@@ -396,7 +418,8 @@ class EnhancedSecurityMonitoringDefinitionArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, EnhancedSecurityMonitoringValue]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedDiskEncryptionKeyVaultPropertiesArgsDict(TypedDict):
     key_name: pulumi.Input[_builtins.str]
@@ -416,17 +439,20 @@ class ManagedDiskEncryptionKeyVaultPropertiesArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> pulumi.Input[_builtins.str]: ...
     @key_name.setter
-    def key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultUri")
     def key_vault_uri(self) -> pulumi.Input[_builtins.str]: ...
     @key_vault_uri.setter
-    def key_vault_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def key_vault_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVersion")
     def key_version(self) -> pulumi.Input[_builtins.str]: ...
     @key_version.setter
-    def key_version(self, value: pulumi.Input[_builtins.str]): ...
+    def key_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ManagedDiskEncryptionArgsDict(TypedDict):
     key_source: pulumi.Input[Union[_builtins.str, EncryptionKeySource]]
@@ -450,7 +476,8 @@ class ManagedDiskEncryptionArgs:
     @key_source.setter
     def key_source(
         self, value: pulumi.Input[Union[_builtins.str, EncryptionKeySource]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -459,7 +486,8 @@ class ManagedDiskEncryptionArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: pulumi.Input[ManagedDiskEncryptionKeyVaultPropertiesArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rotationToLatestKeyVersionEnabled")
     def rotation_to_latest_key_version_enabled(
@@ -468,7 +496,8 @@ class ManagedDiskEncryptionArgs:
     @rotation_to_latest_key_version_enabled.setter
     def rotation_to_latest_key_version_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -494,7 +523,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -503,7 +533,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesArgsDict(TypedDict):
     private_link_service_connection_state: pulumi.Input[
@@ -529,7 +560,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIds")
     def group_ids(
@@ -538,7 +570,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     @group_ids.setter
     def group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     status: pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStatus]]
@@ -563,17 +596,22 @@ class PrivateLinkServiceConnectionStateArgs:
     def status(
         self,
         value: pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStatus]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -591,12 +629,14 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualNetworkPeeringPropertiesFormatDatabricksVirtualNetworkArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -610,7 +650,8 @@ class VirtualNetworkPeeringPropertiesFormatDatabricksVirtualNetworkArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualNetworkPeeringPropertiesFormatRemoteVirtualNetworkArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -624,7 +665,8 @@ class VirtualNetworkPeeringPropertiesFormatRemoteVirtualNetworkArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkspaceCustomBooleanParameterArgsDict(TypedDict):
     value: pulumi.Input[_builtins.bool]
@@ -636,7 +678,8 @@ class WorkspaceCustomBooleanParameterArgs:
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.bool]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.bool]): ...
+    def value(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class WorkspaceCustomParametersArgsDict(TypedDict):
     aml_workspace_id: NotRequired[pulumi.Input[WorkspaceCustomStringParameterArgsDict]]
@@ -732,7 +775,8 @@ class WorkspaceCustomParametersArgs:
     @aml_workspace_id.setter
     def aml_workspace_id(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customPrivateSubnetName")
     def custom_private_subnet_name(
@@ -741,7 +785,8 @@ class WorkspaceCustomParametersArgs:
     @custom_private_subnet_name.setter
     def custom_private_subnet_name(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customPublicSubnetName")
     def custom_public_subnet_name(
@@ -750,7 +795,8 @@ class WorkspaceCustomParametersArgs:
     @custom_public_subnet_name.setter
     def custom_public_subnet_name(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customVirtualNetworkId")
     def custom_virtual_network_id(
@@ -759,7 +805,8 @@ class WorkspaceCustomParametersArgs:
     @custom_virtual_network_id.setter
     def custom_virtual_network_id(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableNoPublicIp")
     def enable_no_public_ip(
@@ -768,7 +815,8 @@ class WorkspaceCustomParametersArgs:
     @enable_no_public_ip.setter
     def enable_no_public_ip(
         self, value: Optional[pulumi.Input[WorkspaceNoPublicIPBooleanParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(
@@ -777,7 +825,8 @@ class WorkspaceCustomParametersArgs:
     @encryption.setter
     def encryption(
         self, value: Optional[pulumi.Input[WorkspaceEncryptionParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerBackendPoolName")
     def load_balancer_backend_pool_name(
@@ -786,7 +835,8 @@ class WorkspaceCustomParametersArgs:
     @load_balancer_backend_pool_name.setter
     def load_balancer_backend_pool_name(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerId")
     def load_balancer_id(
@@ -795,7 +845,8 @@ class WorkspaceCustomParametersArgs:
     @load_balancer_id.setter
     def load_balancer_id(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natGatewayName")
     def nat_gateway_name(
@@ -804,7 +855,8 @@ class WorkspaceCustomParametersArgs:
     @nat_gateway_name.setter
     def nat_gateway_name(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prepareEncryption")
     def prepare_encryption(
@@ -813,7 +865,8 @@ class WorkspaceCustomParametersArgs:
     @prepare_encryption.setter
     def prepare_encryption(
         self, value: Optional[pulumi.Input[WorkspaceCustomBooleanParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIpName")
     def public_ip_name(
@@ -822,7 +875,8 @@ class WorkspaceCustomParametersArgs:
     @public_ip_name.setter
     def public_ip_name(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireInfrastructureEncryption")
     def require_infrastructure_encryption(
@@ -831,7 +885,8 @@ class WorkspaceCustomParametersArgs:
     @require_infrastructure_encryption.setter
     def require_infrastructure_encryption(
         self, value: Optional[pulumi.Input[WorkspaceCustomBooleanParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountName")
     def storage_account_name(
@@ -840,7 +895,8 @@ class WorkspaceCustomParametersArgs:
     @storage_account_name.setter
     def storage_account_name(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountSkuName")
     def storage_account_sku_name(
@@ -849,7 +905,8 @@ class WorkspaceCustomParametersArgs:
     @storage_account_sku_name.setter
     def storage_account_sku_name(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vnetAddressPrefix")
     def vnet_address_prefix(
@@ -858,7 +915,8 @@ class WorkspaceCustomParametersArgs:
     @vnet_address_prefix.setter
     def vnet_address_prefix(
         self, value: Optional[pulumi.Input[WorkspaceCustomStringParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkspaceCustomStringParameterArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
@@ -870,7 +928,8 @@ class WorkspaceCustomStringParameterArgs:
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WorkspaceEncryptionParameterArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[EncryptionArgsDict]]
@@ -884,7 +943,8 @@ class WorkspaceEncryptionParameterArgs:
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[EncryptionArgs]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[EncryptionArgs]]): ...
+    def value(self, value: Optional[pulumi.Input[EncryptionArgs]]):  # -> None:
+        ...
 
 class WorkspaceNoPublicIPBooleanParameterArgsDict(TypedDict):
     value: pulumi.Input[_builtins.bool]
@@ -896,7 +956,8 @@ class WorkspaceNoPublicIPBooleanParameterArgs:
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.bool]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.bool]): ...
+    def value(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class WorkspacePropertiesAccessConnectorArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -916,21 +977,24 @@ class WorkspacePropertiesAccessConnectorArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityType")
     def identity_type(self) -> pulumi.Input[Union[_builtins.str, IdentityType]]: ...
     @identity_type.setter
     def identity_type(
         self, value: pulumi.Input[Union[_builtins.str, IdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityId")
     def user_assigned_identity_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_assigned_identity_id.setter
     def user_assigned_identity_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkspacePropertiesEncryptionArgsDict(TypedDict):
     entities: pulumi.Input[EncryptionEntitiesDefinitionArgsDict]
@@ -944,7 +1008,10 @@ class WorkspacePropertiesEncryptionArgs:
     @pulumi.getter
     def entities(self) -> pulumi.Input[EncryptionEntitiesDefinitionArgs]: ...
     @entities.setter
-    def entities(self, value: pulumi.Input[EncryptionEntitiesDefinitionArgs]): ...
+    def entities(
+        self, value: pulumi.Input[EncryptionEntitiesDefinitionArgs]
+    ):  # -> None:
+        ...
 
 class WorkspaceProviderAuthorizationArgsDict(TypedDict):
     principal_id: pulumi.Input[_builtins.str]
@@ -962,9 +1029,11 @@ class WorkspaceProviderAuthorizationArgs:
     @pulumi.getter(name="principalId")
     def principal_id(self) -> pulumi.Input[_builtins.str]: ...
     @principal_id.setter
-    def principal_id(self, value: pulumi.Input[_builtins.str]): ...
+    def principal_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleDefinitionId")
     def role_definition_id(self) -> pulumi.Input[_builtins.str]: ...
     @role_definition_id.setter
-    def role_definition_id(self, value: pulumi.Input[_builtins.str]): ...
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

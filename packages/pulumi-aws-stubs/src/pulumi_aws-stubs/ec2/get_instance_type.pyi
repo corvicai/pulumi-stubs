@@ -284,7 +284,8 @@ class GetInstanceTypeResult:
     def valid_threads_per_cores(self) -> Sequence[_builtins.int]: ...
 
 class AwaitableGetInstanceTypeResult(GetInstanceTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceTypeResult]:
+        ...
 
 def get_instance_type(
     instance_type: Optional[_builtins.str] = ...,

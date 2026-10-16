@@ -39,7 +39,8 @@ class GetNetworkAclsResult:
     def vpc_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNetworkAclsResult(GetNetworkAclsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkAclsResult]:
+        ...
 
 def get_network_acls(
     filters: Optional[

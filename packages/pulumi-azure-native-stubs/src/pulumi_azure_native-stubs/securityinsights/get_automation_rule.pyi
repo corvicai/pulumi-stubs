@@ -76,7 +76,8 @@ class GetAutomationRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAutomationRuleResult(GetAutomationRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAutomationRuleResult]:
+        ...
 
 def get_automation_rule(
     automation_rule_id: Optional[_builtins.str] = ...,

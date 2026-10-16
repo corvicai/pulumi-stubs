@@ -278,7 +278,8 @@ class GetWebAppResult:
     def workload_profile_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebAppResult(GetWebAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppResult]:
+        ...
 
 def get_web_app(
     name: Optional[_builtins.str] = ...,

@@ -67,7 +67,10 @@ class GetClusterPrincipalAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetClusterPrincipalAssignmentResult(GetClusterPrincipalAssignmentResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetClusterPrincipalAssignmentResult]:
+        ...
 
 def get_cluster_principal_assignment(
     cluster_name: Optional[_builtins.str] = ...,

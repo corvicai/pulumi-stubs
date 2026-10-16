@@ -128,7 +128,8 @@ class GetVirtualNetworkPeeringResult:
     def use_remote_gateways(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetVirtualNetworkPeeringResult(GetVirtualNetworkPeeringResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkPeeringResult]:
+        ...
 
 def get_virtual_network_peering(
     resource_group_name: Optional[_builtins.str] = ...,

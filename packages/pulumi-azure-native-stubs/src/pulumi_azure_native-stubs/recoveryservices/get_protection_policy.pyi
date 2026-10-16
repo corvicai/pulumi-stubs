@@ -51,7 +51,8 @@ class GetProtectionPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProtectionPolicyResult(GetProtectionPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProtectionPolicyResult]:
+        ...
 
 def get_protection_policy(
     policy_name: Optional[_builtins.str] = ...,

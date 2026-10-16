@@ -116,7 +116,10 @@ class GetVirtualMachineImageTemplateResult:
 class AwaitableGetVirtualMachineImageTemplateResult(
     GetVirtualMachineImageTemplateResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualMachineImageTemplateResult]:
+        ...
 
 def get_virtual_machine_image_template(
     image_template_name: Optional[_builtins.str] = ...,

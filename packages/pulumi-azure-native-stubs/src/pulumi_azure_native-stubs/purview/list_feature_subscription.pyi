@@ -20,7 +20,8 @@ class ListFeatureSubscriptionResult:
     def features(self) -> Mapping[str, _builtins.bool]: ...
 
 class AwaitableListFeatureSubscriptionResult(ListFeatureSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListFeatureSubscriptionResult]:
+        ...
 
 def list_feature_subscription(
     features: Optional[Sequence[_builtins.str]] = ...,

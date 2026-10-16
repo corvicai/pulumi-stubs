@@ -60,7 +60,8 @@ class GetProjectResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProjectResult(GetProjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectResult]:
+        ...
 
 def get_project(
     account_name: Optional[_builtins.str] = ...,

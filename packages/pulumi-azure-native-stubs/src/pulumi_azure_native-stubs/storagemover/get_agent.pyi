@@ -93,7 +93,8 @@ class GetAgentResult:
     def uptime_in_seconds(self) -> _builtins.float: ...
 
 class AwaitableGetAgentResult(GetAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAgentResult]:
+        ...
 
 def get_agent(
     agent_name: Optional[_builtins.str] = ...,

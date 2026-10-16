@@ -39,7 +39,10 @@ class GetWebAppDomainOwnershipIdentifierResult:
 class AwaitableGetWebAppDomainOwnershipIdentifierResult(
     GetWebAppDomainOwnershipIdentifierResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppDomainOwnershipIdentifierResult]:
+        ...
 
 def get_web_app_domain_ownership_identifier(
     domain_ownership_identifier_name: Optional[_builtins.str] = ...,

@@ -54,7 +54,8 @@ class GetKeyGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKeyGroupResult(GetKeyGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyGroupResult]:
+        ...
 
 def get_key_group(
     key_group_name: Optional[_builtins.str] = ...,

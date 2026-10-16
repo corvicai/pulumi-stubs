@@ -109,7 +109,8 @@ class GetKpiResult:
     def unit(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetKpiResult(GetKpiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKpiResult]:
+        ...
 
 def get_kpi(
     hub_name: Optional[_builtins.str] = ...,

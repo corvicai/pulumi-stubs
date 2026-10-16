@@ -54,34 +54,44 @@ class ComponentArgs:
     @application_type.setter
     def application_type(
         self, value: pulumi.Input[Union[_builtins.str, ApplicationType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): ...
+    def kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableIpMasking")
     def disable_ip_masking(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_ip_masking.setter
-    def disable_ip_masking(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_ip_masking(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableLocalAuth")
     def disable_local_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_local_auth.setter
-    def disable_local_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_local_auth(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="flowType")
     def flow_type(self) -> Optional[pulumi.Input[Union[_builtins.str, FlowType]]]: ...
     @flow_type.setter
     def flow_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FlowType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceCustomerStorageForProfiler")
     def force_customer_storage_for_profiler(
@@ -90,12 +100,14 @@ class ComponentArgs:
     @force_customer_storage_for_profiler.setter
     def force_customer_storage_for_profiler(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hockeyAppId")
     def hockey_app_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hockey_app_id.setter
-    def hockey_app_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hockey_app_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="immediatePurgeDataOn30Days")
     def immediate_purge_data_on30_days(
@@ -104,7 +116,8 @@ class ComponentArgs:
     @immediate_purge_data_on30_days.setter
     def immediate_purge_data_on30_days(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingestionMode")
     def ingestion_mode(
@@ -113,12 +126,14 @@ class ComponentArgs:
     @ingestion_mode.setter
     def ingestion_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IngestionMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccessForIngestion")
     def public_network_access_for_ingestion(
@@ -128,7 +143,8 @@ class ComponentArgs:
     def public_network_access_for_ingestion(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccessType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccessForQuery")
     def public_network_access_for_query(
@@ -138,7 +154,8 @@ class ComponentArgs:
     def public_network_access_for_query(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccessType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestSource")
     def request_source(
@@ -147,22 +164,30 @@ class ComponentArgs:
     @request_source.setter
     def request_source(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RequestSource]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionInDays")
     def retention_in_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retention_in_days.setter
-    def retention_in_days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def retention_in_days(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samplingPercentage")
     def sampling_percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @sampling_percentage.setter
-    def sampling_percentage(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def sampling_percentage(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -171,12 +196,16 @@ class ComponentArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceResourceId")
     def workspace_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_resource_id.setter
-    def workspace_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:applicationinsights:Component")
 class Component(pulumi.CustomResource):

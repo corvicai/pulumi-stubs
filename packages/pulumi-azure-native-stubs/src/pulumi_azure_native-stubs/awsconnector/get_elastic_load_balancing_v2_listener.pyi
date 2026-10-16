@@ -56,7 +56,10 @@ class GetElasticLoadBalancingV2ListenerResult:
 class AwaitableGetElasticLoadBalancingV2ListenerResult(
     GetElasticLoadBalancingV2ListenerResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetElasticLoadBalancingV2ListenerResult]:
+        ...
 
 def get_elastic_load_balancing_v2_listener(
     name: Optional[_builtins.str] = ...,

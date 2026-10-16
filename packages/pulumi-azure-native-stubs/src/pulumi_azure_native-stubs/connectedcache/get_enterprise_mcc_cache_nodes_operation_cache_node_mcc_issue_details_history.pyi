@@ -45,7 +45,10 @@ class GetEnterpriseMccCacheNodesOperationCacheNodeMccIssueDetailsHistoryResult:
 class AwaitableGetEnterpriseMccCacheNodesOperationCacheNodeMccIssueDetailsHistoryResult(
     GetEnterpriseMccCacheNodesOperationCacheNodeMccIssueDetailsHistoryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetEnterpriseMccCacheNodesOperationCacheNodeMccIssueDetailsHistoryResult]:
+        ...
 
 def get_enterprise_mcc_cache_nodes_operation_cache_node_mcc_issue_details_history(
     cache_node_resource_name: Optional[_builtins.str] = ...,

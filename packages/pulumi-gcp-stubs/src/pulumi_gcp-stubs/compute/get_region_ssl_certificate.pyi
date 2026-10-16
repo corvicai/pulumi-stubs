@@ -75,7 +75,8 @@ class GetRegionSslCertificateResult:
     def self_link(self) -> _builtins.str: ...
 
 class AwaitableGetRegionSslCertificateResult(GetRegionSslCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionSslCertificateResult]:
+        ...
 
 def get_region_ssl_certificate(
     name: Optional[_builtins.str] = ...,

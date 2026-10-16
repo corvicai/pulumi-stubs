@@ -80,7 +80,8 @@ class UserPoolArgs:
     @account_recovery_setting.setter
     def account_recovery_setting(
         self, value: Optional[pulumi.Input[UserPoolAccountRecoverySettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminCreateUserConfig")
     def admin_create_user_config(
@@ -89,7 +90,8 @@ class UserPoolArgs:
     @admin_create_user_config.setter
     def admin_create_user_config(
         self, value: Optional[pulumi.Input[UserPoolAdminCreateUserConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aliasAttributes")
     def alias_attributes(
@@ -98,7 +100,8 @@ class UserPoolArgs:
     @alias_attributes.setter
     def alias_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoVerifiedAttributes")
     def auto_verified_attributes(
@@ -107,12 +110,16 @@ class UserPoolArgs:
     @auto_verified_attributes.setter
     def auto_verified_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceConfiguration")
     def device_configuration(
@@ -121,7 +128,8 @@ class UserPoolArgs:
     @device_configuration.setter
     def device_configuration(
         self, value: Optional[pulumi.Input[UserPoolDeviceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailConfiguration")
     def email_configuration(
@@ -130,7 +138,8 @@ class UserPoolArgs:
     @email_configuration.setter
     def email_configuration(
         self, value: Optional[pulumi.Input[UserPoolEmailConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailMfaConfiguration")
     def email_mfa_configuration(
@@ -139,50 +148,60 @@ class UserPoolArgs:
     @email_mfa_configuration.setter
     def email_mfa_configuration(
         self, value: Optional[pulumi.Input[UserPoolEmailMfaConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailVerificationMessage")
     def email_verification_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_verification_message.setter
     def email_verification_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailVerificationSubject")
     def email_verification_subject(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_verification_subject.setter
     def email_verification_subject(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConfig")
     def lambda_config(self) -> Optional[pulumi.Input[UserPoolLambdaConfigArgs]]: ...
     @lambda_config.setter
     def lambda_config(
         self, value: Optional[pulumi.Input[UserPoolLambdaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mfaConfiguration")
     def mfa_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mfa_configuration.setter
-    def mfa_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mfa_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordPolicy")
     def password_policy(self) -> Optional[pulumi.Input[UserPoolPasswordPolicyArgs]]: ...
     @password_policy.setter
     def password_policy(
         self, value: Optional[pulumi.Input[UserPoolPasswordPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schemas(
@@ -191,21 +210,24 @@ class UserPoolArgs:
     @schemas.setter
     def schemas(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UserPoolSchemaArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signInPolicy")
     def sign_in_policy(self) -> Optional[pulumi.Input[UserPoolSignInPolicyArgs]]: ...
     @sign_in_policy.setter
     def sign_in_policy(
         self, value: Optional[pulumi.Input[UserPoolSignInPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsAuthenticationMessage")
     def sms_authentication_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sms_authentication_message.setter
     def sms_authentication_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsConfiguration")
     def sms_configuration(
@@ -214,14 +236,16 @@ class UserPoolArgs:
     @sms_configuration.setter
     def sms_configuration(
         self, value: Optional[pulumi.Input[UserPoolSmsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsVerificationMessage")
     def sms_verification_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sms_verification_message.setter
     def sms_verification_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareTokenMfaConfiguration")
     def software_token_mfa_configuration(
@@ -230,7 +254,8 @@ class UserPoolArgs:
     @software_token_mfa_configuration.setter
     def software_token_mfa_configuration(
         self, value: Optional[pulumi.Input[UserPoolSoftwareTokenMfaConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -239,7 +264,8 @@ class UserPoolArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAttributeUpdateSettings")
     def user_attribute_update_settings(
@@ -248,7 +274,8 @@ class UserPoolArgs:
     @user_attribute_update_settings.setter
     def user_attribute_update_settings(
         self, value: Optional[pulumi.Input[UserPoolUserAttributeUpdateSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolAddOns")
     def user_pool_add_ons(
@@ -257,12 +284,14 @@ class UserPoolArgs:
     @user_pool_add_ons.setter
     def user_pool_add_ons(
         self, value: Optional[pulumi.Input[UserPoolUserPoolAddOnsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolTier")
     def user_pool_tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_pool_tier.setter
-    def user_pool_tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_pool_tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameAttributes")
     def username_attributes(
@@ -271,7 +300,8 @@ class UserPoolArgs:
     @username_attributes.setter
     def username_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameConfiguration")
     def username_configuration(
@@ -280,7 +310,8 @@ class UserPoolArgs:
     @username_configuration.setter
     def username_configuration(
         self, value: Optional[pulumi.Input[UserPoolUsernameConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verificationMessageTemplate")
     def verification_message_template(
@@ -289,7 +320,8 @@ class UserPoolArgs:
     @verification_message_template.setter
     def verification_message_template(
         self, value: Optional[pulumi.Input[UserPoolVerificationMessageTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAuthnConfiguration")
     def web_authn_configuration(
@@ -298,7 +330,8 @@ class UserPoolArgs:
     @web_authn_configuration.setter
     def web_authn_configuration(
         self, value: Optional[pulumi.Input[UserPoolWebAuthnConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _UserPoolState:
@@ -381,7 +414,8 @@ class _UserPoolState:
     @account_recovery_setting.setter
     def account_recovery_setting(
         self, value: Optional[pulumi.Input[UserPoolAccountRecoverySettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminCreateUserConfig")
     def admin_create_user_config(
@@ -390,7 +424,8 @@ class _UserPoolState:
     @admin_create_user_config.setter
     def admin_create_user_config(
         self, value: Optional[pulumi.Input[UserPoolAdminCreateUserConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aliasAttributes")
     def alias_attributes(
@@ -399,12 +434,14 @@ class _UserPoolState:
     @alias_attributes.setter
     def alias_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoVerifiedAttributes")
     def auto_verified_attributes(
@@ -413,22 +450,28 @@ class _UserPoolState:
     @auto_verified_attributes.setter
     def auto_verified_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationDate")
     def creation_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_date.setter
-    def creation_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customDomain")
     def custom_domain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_domain.setter
-    def custom_domain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_domain(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceConfiguration")
     def device_configuration(
@@ -437,12 +480,14 @@ class _UserPoolState:
     @device_configuration.setter
     def device_configuration(
         self, value: Optional[pulumi.Input[UserPoolDeviceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def domain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain.setter
-    def domain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailConfiguration")
     def email_configuration(
@@ -451,7 +496,8 @@ class _UserPoolState:
     @email_configuration.setter
     def email_configuration(
         self, value: Optional[pulumi.Input[UserPoolEmailConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailMfaConfiguration")
     def email_mfa_configuration(
@@ -460,67 +506,82 @@ class _UserPoolState:
     @email_mfa_configuration.setter
     def email_mfa_configuration(
         self, value: Optional[pulumi.Input[UserPoolEmailMfaConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailVerificationMessage")
     def email_verification_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_verification_message.setter
     def email_verification_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailVerificationSubject")
     def email_verification_subject(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_verification_subject.setter
     def email_verification_subject(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="estimatedNumberOfUsers")
     def estimated_number_of_users(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @estimated_number_of_users.setter
     def estimated_number_of_users(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConfig")
     def lambda_config(self) -> Optional[pulumi.Input[UserPoolLambdaConfigArgs]]: ...
     @lambda_config.setter
     def lambda_config(
         self, value: Optional[pulumi.Input[UserPoolLambdaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedDate")
     def last_modified_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_date.setter
-    def last_modified_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_date(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mfaConfiguration")
     def mfa_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mfa_configuration.setter
-    def mfa_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mfa_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordPolicy")
     def password_policy(self) -> Optional[pulumi.Input[UserPoolPasswordPolicyArgs]]: ...
     @password_policy.setter
     def password_policy(
         self, value: Optional[pulumi.Input[UserPoolPasswordPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schemas(
@@ -529,21 +590,24 @@ class _UserPoolState:
     @schemas.setter
     def schemas(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UserPoolSchemaArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signInPolicy")
     def sign_in_policy(self) -> Optional[pulumi.Input[UserPoolSignInPolicyArgs]]: ...
     @sign_in_policy.setter
     def sign_in_policy(
         self, value: Optional[pulumi.Input[UserPoolSignInPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsAuthenticationMessage")
     def sms_authentication_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sms_authentication_message.setter
     def sms_authentication_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsConfiguration")
     def sms_configuration(
@@ -552,14 +616,16 @@ class _UserPoolState:
     @sms_configuration.setter
     def sms_configuration(
         self, value: Optional[pulumi.Input[UserPoolSmsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smsVerificationMessage")
     def sms_verification_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sms_verification_message.setter
     def sms_verification_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareTokenMfaConfiguration")
     def software_token_mfa_configuration(
@@ -568,7 +634,8 @@ class _UserPoolState:
     @software_token_mfa_configuration.setter
     def software_token_mfa_configuration(
         self, value: Optional[pulumi.Input[UserPoolSoftwareTokenMfaConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -577,7 +644,8 @@ class _UserPoolState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -586,7 +654,8 @@ class _UserPoolState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAttributeUpdateSettings")
     def user_attribute_update_settings(
@@ -595,7 +664,8 @@ class _UserPoolState:
     @user_attribute_update_settings.setter
     def user_attribute_update_settings(
         self, value: Optional[pulumi.Input[UserPoolUserAttributeUpdateSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolAddOns")
     def user_pool_add_ons(
@@ -604,12 +674,14 @@ class _UserPoolState:
     @user_pool_add_ons.setter
     def user_pool_add_ons(
         self, value: Optional[pulumi.Input[UserPoolUserPoolAddOnsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolTier")
     def user_pool_tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_pool_tier.setter
-    def user_pool_tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_pool_tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameAttributes")
     def username_attributes(
@@ -618,7 +690,8 @@ class _UserPoolState:
     @username_attributes.setter
     def username_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameConfiguration")
     def username_configuration(
@@ -627,7 +700,8 @@ class _UserPoolState:
     @username_configuration.setter
     def username_configuration(
         self, value: Optional[pulumi.Input[UserPoolUsernameConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verificationMessageTemplate")
     def verification_message_template(
@@ -636,7 +710,8 @@ class _UserPoolState:
     @verification_message_template.setter
     def verification_message_template(
         self, value: Optional[pulumi.Input[UserPoolVerificationMessageTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAuthnConfiguration")
     def web_authn_configuration(
@@ -645,7 +720,8 @@ class _UserPoolState:
     @web_authn_configuration.setter
     def web_authn_configuration(
         self, value: Optional[pulumi.Input[UserPoolWebAuthnConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cognito/userPool:UserPool")
 class UserPool(pulumi.CustomResource):

@@ -51,7 +51,8 @@ class GetServerlessVpcEndpointResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetServerlessVpcEndpointResult(GetServerlessVpcEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerlessVpcEndpointResult]:
+        ...
 
 def get_serverless_vpc_endpoint(
     region: Optional[_builtins.str] = ...,

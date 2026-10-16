@@ -27,7 +27,8 @@ class ListAccessRoleBindingsResult:
     def metadata(self) -> Optional[outputs.ConfluentListMetadataResponse]: ...
 
 class AwaitableListAccessRoleBindingsResult(ListAccessRoleBindingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccessRoleBindingsResult]:
+        ...
 
 def list_access_role_bindings(
     organization_name: Optional[_builtins.str] = ...,

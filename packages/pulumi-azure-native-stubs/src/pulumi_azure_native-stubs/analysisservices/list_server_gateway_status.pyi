@@ -20,7 +20,8 @@ class ListServerGatewayStatusResult:
     def status(self) -> Optional[_builtins.int]: ...
 
 class AwaitableListServerGatewayStatusResult(ListServerGatewayStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListServerGatewayStatusResult]:
+        ...
 
 def list_server_gateway_status(
     resource_group_name: Optional[_builtins.str] = ...,

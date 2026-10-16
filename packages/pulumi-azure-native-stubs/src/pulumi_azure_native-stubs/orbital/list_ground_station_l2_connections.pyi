@@ -28,7 +28,10 @@ class ListGroundStationL2ConnectionsResult:
 class AwaitableListGroundStationL2ConnectionsResult(
     ListGroundStationL2ConnectionsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListGroundStationL2ConnectionsResult]:
+        ...
 
 def list_ground_station_l2_connections(
     ground_station_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetOpenSearchDomainStatusResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOpenSearchDomainStatusResult(GetOpenSearchDomainStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOpenSearchDomainStatusResult]:
+        ...
 
 def get_open_search_domain_status(
     name: Optional[_builtins.str] = ...,

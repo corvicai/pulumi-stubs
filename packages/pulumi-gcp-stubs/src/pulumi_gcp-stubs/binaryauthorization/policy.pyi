@@ -33,7 +33,8 @@ class PolicyArgs:
     @default_admission_rule.setter
     def default_admission_rule(
         self, value: pulumi.Input[PolicyDefaultAdmissionRuleArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="admissionWhitelistPatterns")
     def admission_whitelist_patterns(
@@ -47,7 +48,8 @@ class PolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PolicyAdmissionWhitelistPatternArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterAdmissionRules")
     def cluster_admission_rules(
@@ -61,12 +63,14 @@ class PolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PolicyClusterAdmissionRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="globalPolicyEvaluationMode")
     def global_policy_evaluation_mode(
@@ -75,12 +79,14 @@ class PolicyArgs:
     @global_policy_evaluation_mode.setter
     def global_policy_evaluation_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PolicyState:
@@ -113,7 +119,8 @@ class _PolicyState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PolicyAdmissionWhitelistPatternArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterAdmissionRules")
     def cluster_admission_rules(
@@ -127,7 +134,8 @@ class _PolicyState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PolicyClusterAdmissionRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultAdmissionRule")
     def default_admission_rule(
@@ -136,12 +144,14 @@ class _PolicyState:
     @default_admission_rule.setter
     def default_admission_rule(
         self, value: Optional[pulumi.Input[PolicyDefaultAdmissionRuleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="globalPolicyEvaluationMode")
     def global_policy_evaluation_mode(
@@ -150,12 +160,14 @@ class _PolicyState:
     @global_policy_evaluation_mode.setter
     def global_policy_evaluation_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:binaryauthorization/policy:Policy")
 class Policy(pulumi.CustomResource):

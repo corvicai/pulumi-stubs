@@ -39,7 +39,8 @@ class GetAwsVersionsResult:
     def valid_versions(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetAwsVersionsResult(GetAwsVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAwsVersionsResult]:
+        ...
 
 def get_aws_versions(
     location: Optional[_builtins.str] = ...,

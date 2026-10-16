@@ -69,7 +69,10 @@ class GetWebAppRelayServiceConnectionResult:
 class AwaitableGetWebAppRelayServiceConnectionResult(
     GetWebAppRelayServiceConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppRelayServiceConnectionResult]:
+        ...
 
 def get_web_app_relay_service_connection(
     entity_name: Optional[_builtins.str] = ...,

@@ -180,7 +180,8 @@ class GetFunctionResult:
     def vpc_connector_egress_settings(self) -> _builtins.str: ...
 
 class AwaitableGetFunctionResult(GetFunctionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFunctionResult]:
+        ...
 
 def get_function(
     name: Optional[_builtins.str] = ...,

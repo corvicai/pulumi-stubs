@@ -56,7 +56,10 @@ class GetCodeBuildSourceCredentialsInfoResult:
 class AwaitableGetCodeBuildSourceCredentialsInfoResult(
     GetCodeBuildSourceCredentialsInfoResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCodeBuildSourceCredentialsInfoResult]:
+        ...
 
 def get_code_build_source_credentials_info(
     name: Optional[_builtins.str] = ...,

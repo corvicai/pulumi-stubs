@@ -132,7 +132,8 @@ class GetWatchlistResult:
     def watchlist_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWatchlistResult(GetWatchlistResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWatchlistResult]:
+        ...
 
 def get_watchlist(
     resource_group_name: Optional[_builtins.str] = ...,

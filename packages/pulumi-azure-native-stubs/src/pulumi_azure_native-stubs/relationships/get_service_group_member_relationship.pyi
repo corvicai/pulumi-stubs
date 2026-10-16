@@ -48,7 +48,10 @@ class GetServiceGroupMemberRelationshipResult:
 class AwaitableGetServiceGroupMemberRelationshipResult(
     GetServiceGroupMemberRelationshipResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServiceGroupMemberRelationshipResult]:
+        ...
 
 def get_service_group_member_relationship(
     name: Optional[_builtins.str] = ...,

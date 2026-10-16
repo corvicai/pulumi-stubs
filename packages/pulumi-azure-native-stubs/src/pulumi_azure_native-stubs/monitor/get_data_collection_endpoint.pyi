@@ -116,7 +116,8 @@ class GetDataCollectionEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataCollectionEndpointResult(GetDataCollectionEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataCollectionEndpointResult]:
+        ...
 
 def get_data_collection_endpoint(
     data_collection_endpoint_name: Optional[_builtins.str] = ...,

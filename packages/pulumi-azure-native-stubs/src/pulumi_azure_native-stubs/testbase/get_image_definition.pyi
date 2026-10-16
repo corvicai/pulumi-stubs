@@ -56,7 +56,8 @@ class GetImageDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetImageDefinitionResult(GetImageDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImageDefinitionResult]:
+        ...
 
 def get_image_definition(
     image_definition_name: Optional[_builtins.str] = ...,

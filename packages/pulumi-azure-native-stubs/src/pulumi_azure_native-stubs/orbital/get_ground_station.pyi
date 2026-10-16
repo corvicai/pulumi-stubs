@@ -82,7 +82,8 @@ class GetGroundStationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGroundStationResult(GetGroundStationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroundStationResult]:
+        ...
 
 def get_ground_station(
     ground_station_name: Optional[_builtins.str] = ...,

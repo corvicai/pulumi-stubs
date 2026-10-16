@@ -200,7 +200,8 @@ class GetCloudVmClusterResult:
     def vip_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetCloudVmClusterResult(GetCloudVmClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudVmClusterResult]:
+        ...
 
 def get_cloud_vm_cluster(
     id: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class GetSolutionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSolutionResult(GetSolutionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSolutionResult]:
+        ...
 
 def get_solution(
     migrate_project_name: Optional[_builtins.str] = ...,

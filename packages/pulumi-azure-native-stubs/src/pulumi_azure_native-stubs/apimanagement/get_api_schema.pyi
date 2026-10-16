@@ -55,7 +55,8 @@ class GetApiSchemaResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetApiSchemaResult(GetApiSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiSchemaResult]:
+        ...
 
 def get_api_schema(
     api_id: Optional[_builtins.str] = ...,

@@ -23,17 +23,20 @@ class CommitmentPlanAssociationArgs:
     @pulumi.getter(name="commitmentPlanName")
     def commitment_plan_name(self) -> pulumi.Input[_builtins.str]: ...
     @commitment_plan_name.setter
-    def commitment_plan_name(self, value: pulumi.Input[_builtins.str]): ...
+    def commitment_plan_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commitmentPlanAssociationName")
     def commitment_plan_association_name(
@@ -42,7 +45,8 @@ class CommitmentPlanAssociationArgs:
     @commitment_plan_association_name.setter
     def commitment_plan_association_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -51,7 +55,8 @@ class CommitmentPlanAssociationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CommitmentPlanAssociation(pulumi.CustomResource):

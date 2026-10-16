@@ -45,7 +45,10 @@ class GetWebRegionForwardingRuleServiceIamPolicyResult:
 class AwaitableGetWebRegionForwardingRuleServiceIamPolicyResult(
     GetWebRegionForwardingRuleServiceIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebRegionForwardingRuleServiceIamPolicyResult]:
+        ...
 
 def get_web_region_forwarding_rule_service_iam_policy(
     forwarding_rule_region_service_name: Optional[_builtins.str] = ...,

@@ -66,7 +66,8 @@ class GetRoutingRuleCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRoutingRuleCollectionResult(GetRoutingRuleCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoutingRuleCollectionResult]:
+        ...
 
 def get_routing_rule_collection(
     configuration_name: Optional[_builtins.str] = ...,

@@ -25,7 +25,10 @@ class GetOutboundWebIdentityFederationResult:
 class AwaitableGetOutboundWebIdentityFederationResult(
     GetOutboundWebIdentityFederationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOutboundWebIdentityFederationResult]:
+        ...
 
 def get_outbound_web_identity_federation(
     opts: Optional[pulumi.InvokeOptions] = ...,

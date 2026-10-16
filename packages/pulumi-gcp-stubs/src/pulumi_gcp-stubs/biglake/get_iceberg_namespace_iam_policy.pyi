@@ -43,7 +43,10 @@ class GetIcebergNamespaceIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetIcebergNamespaceIamPolicyResult(GetIcebergNamespaceIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIcebergNamespaceIamPolicyResult]:
+        ...
 
 def get_iceberg_namespace_iam_policy(
     catalog: Optional[_builtins.str] = ...,

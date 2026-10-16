@@ -34,7 +34,8 @@ class GetServicePrincipalResult:
     def suffix(self) -> _builtins.str: ...
 
 class AwaitableGetServicePrincipalResult(GetServicePrincipalResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServicePrincipalResult]:
+        ...
 
 def get_service_principal(
     region: Optional[_builtins.str] = ...,

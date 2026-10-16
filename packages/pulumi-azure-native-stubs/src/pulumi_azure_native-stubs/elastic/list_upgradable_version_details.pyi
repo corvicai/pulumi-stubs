@@ -23,7 +23,10 @@ class ListUpgradableVersionDetailsResult:
     def upgradable_versions(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableListUpgradableVersionDetailsResult(ListUpgradableVersionDetailsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListUpgradableVersionDetailsResult]:
+        ...
 
 def list_upgradable_version_details(
     monitor_name: Optional[_builtins.str] = ...,

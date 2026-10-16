@@ -66,7 +66,8 @@ class GetAlertsSuppressionRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAlertsSuppressionRuleResult(GetAlertsSuppressionRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAlertsSuppressionRuleResult]:
+        ...
 
 def get_alerts_suppression_rule(
     alerts_suppression_rule_name: Optional[_builtins.str] = ...,

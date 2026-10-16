@@ -35,7 +35,8 @@ class ListWebAppConnectionStringsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListWebAppConnectionStringsResult(ListWebAppConnectionStringsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebAppConnectionStringsResult]:
+        ...
 
 def list_web_app_connection_strings(
     name: Optional[_builtins.str] = ...,

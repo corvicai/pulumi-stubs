@@ -20,7 +20,8 @@ class GetPrivateDnsZoneSuffixResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPrivateDnsZoneSuffixResult(GetPrivateDnsZoneSuffixResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateDnsZoneSuffixResult]:
+        ...
 
 def get_private_dns_zone_suffix(
     opts: Optional[pulumi.InvokeOptions] = ...,

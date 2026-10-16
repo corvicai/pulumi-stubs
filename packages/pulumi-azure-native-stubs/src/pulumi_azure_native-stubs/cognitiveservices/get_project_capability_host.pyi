@@ -42,7 +42,8 @@ class GetProjectCapabilityHostResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProjectCapabilityHostResult(GetProjectCapabilityHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectCapabilityHostResult]:
+        ...
 
 def get_project_capability_host(
     account_name: Optional[_builtins.str] = ...,

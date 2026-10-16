@@ -90,7 +90,8 @@ class GetServerDetailsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerDetailsResult(GetServerDetailsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerDetailsResult]:
+        ...
 
 def get_server_details(
     resource_group_name: Optional[_builtins.str] = ...,

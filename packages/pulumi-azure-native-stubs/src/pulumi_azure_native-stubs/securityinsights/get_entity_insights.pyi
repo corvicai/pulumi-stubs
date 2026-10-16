@@ -24,7 +24,8 @@ class GetEntityInsightsResult:
     def value(self) -> Optional[Sequence[outputs.EntityInsightItemResponse]]: ...
 
 class AwaitableGetEntityInsightsResult(GetEntityInsightsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntityInsightsResult]:
+        ...
 
 def get_entity_insights(
     add_default_extended_time_range: Optional[_builtins.bool] = ...,

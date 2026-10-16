@@ -44,7 +44,8 @@ class GetBuildServiceAgentPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBuildServiceAgentPoolResult(GetBuildServiceAgentPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBuildServiceAgentPoolResult]:
+        ...
 
 def get_build_service_agent_pool(
     agent_pool_name: Optional[_builtins.str] = ...,

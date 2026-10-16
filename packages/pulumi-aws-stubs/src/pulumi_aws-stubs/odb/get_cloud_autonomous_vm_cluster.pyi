@@ -234,7 +234,8 @@ class GetCloudAutonomousVmClusterResult:
     def total_container_databases(self) -> _builtins.int: ...
 
 class AwaitableGetCloudAutonomousVmClusterResult(GetCloudAutonomousVmClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudAutonomousVmClusterResult]:
+        ...
 
 def get_cloud_autonomous_vm_cluster(
     id: Optional[_builtins.str] = ...,

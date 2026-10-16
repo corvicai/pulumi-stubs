@@ -35,7 +35,8 @@ class GetStorageTaskAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageTaskAssignmentResult(GetStorageTaskAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageTaskAssignmentResult]:
+        ...
 
 def get_storage_task_assignment(
     account_name: Optional[_builtins.str] = ...,

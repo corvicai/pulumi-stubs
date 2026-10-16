@@ -74,7 +74,8 @@ class GetQuicksightAnalysisResult:
     def theme_arn(self) -> _builtins.str: ...
 
 class AwaitableGetQuicksightAnalysisResult(GetQuicksightAnalysisResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQuicksightAnalysisResult]:
+        ...
 
 def get_quicksight_analysis(
     analysis_id: Optional[_builtins.str] = ...,

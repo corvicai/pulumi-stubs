@@ -71,7 +71,8 @@ class EventSourceMappingArgs:
     @pulumi.getter(name="functionName")
     def function_name(self) -> pulumi.Input[_builtins.str]: ...
     @function_name.setter
-    def function_name(self, value: pulumi.Input[_builtins.str]): ...
+    def function_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="amazonManagedKafkaEventSourceConfig")
     def amazon_managed_kafka_event_source_config(
@@ -85,12 +86,14 @@ class EventSourceMappingArgs:
         value: Optional[
             pulumi.Input[EventSourceMappingAmazonManagedKafkaEventSourceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bisectBatchOnFunctionError")
     def bisect_batch_on_function_error(
@@ -99,7 +102,8 @@ class EventSourceMappingArgs:
     @bisect_batch_on_function_error.setter
     def bisect_batch_on_function_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationConfig")
     def destination_config(
@@ -108,7 +112,8 @@ class EventSourceMappingArgs:
     @destination_config.setter
     def destination_config(
         self, value: Optional[pulumi.Input[EventSourceMappingDestinationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentDbEventSourceConfig")
     def document_db_event_source_config(
@@ -120,17 +125,22 @@ class EventSourceMappingArgs:
         value: Optional[
             pulumi.Input[EventSourceMappingDocumentDbEventSourceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventSourceArn")
     def event_source_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_source_arn.setter
-    def event_source_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_source_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterCriteria")
     def filter_criteria(
@@ -139,7 +149,8 @@ class EventSourceMappingArgs:
     @filter_criteria.setter
     def filter_criteria(
         self, value: Optional[pulumi.Input[EventSourceMappingFilterCriteriaArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionResponseTypes")
     def function_response_types(
@@ -148,12 +159,14 @@ class EventSourceMappingArgs:
     @function_response_types.setter
     def function_response_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -162,7 +175,8 @@ class EventSourceMappingArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRecordAgeInSeconds")
     def maximum_record_age_in_seconds(
@@ -171,12 +185,16 @@ class EventSourceMappingArgs:
     @maximum_record_age_in_seconds.setter
     def maximum_record_age_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRetryAttempts")
     def maximum_retry_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_retry_attempts.setter
-    def maximum_retry_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def maximum_retry_attempts(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricsConfig")
     def metrics_config(
@@ -185,12 +203,16 @@ class EventSourceMappingArgs:
     @metrics_config.setter
     def metrics_config(
         self, value: Optional[pulumi.Input[EventSourceMappingMetricsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelizationFactor")
     def parallelization_factor(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @parallelization_factor.setter
-    def parallelization_factor(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def parallelization_factor(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedPollerConfig")
     def provisioned_poller_config(
@@ -200,17 +222,20 @@ class EventSourceMappingArgs:
     def provisioned_poller_config(
         self,
         value: Optional[pulumi.Input[EventSourceMappingProvisionedPollerConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def queues(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @queues.setter
-    def queues(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def queues(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingConfig")
     def scaling_config(
@@ -219,7 +244,8 @@ class EventSourceMappingArgs:
     @scaling_config.setter
     def scaling_config(
         self, value: Optional[pulumi.Input[EventSourceMappingScalingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfManagedEventSource")
     def self_managed_event_source(
@@ -229,7 +255,8 @@ class EventSourceMappingArgs:
     def self_managed_event_source(
         self,
         value: Optional[pulumi.Input[EventSourceMappingSelfManagedEventSourceArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfManagedKafkaEventSourceConfig")
     def self_managed_kafka_event_source_config(
@@ -243,7 +270,8 @@ class EventSourceMappingArgs:
         value: Optional[
             pulumi.Input[EventSourceMappingSelfManagedKafkaEventSourceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceAccessConfigurations")
     def source_access_configurations(
@@ -261,19 +289,24 @@ class EventSourceMappingArgs:
                 Sequence[pulumi.Input[EventSourceMappingSourceAccessConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPosition")
     def starting_position(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starting_position.setter
-    def starting_position(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def starting_position(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPositionTimestamp")
     def starting_position_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starting_position_timestamp.setter
     def starting_position_timestamp(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -282,7 +315,8 @@ class EventSourceMappingArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -291,14 +325,16 @@ class EventSourceMappingArgs:
     @topics.setter
     def topics(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tumblingWindowInSeconds")
     def tumbling_window_in_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tumbling_window_in_seconds.setter
     def tumbling_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EventSourceMappingState:
@@ -381,17 +417,20 @@ class _EventSourceMappingState:
         value: Optional[
             pulumi.Input[EventSourceMappingAmazonManagedKafkaEventSourceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bisectBatchOnFunctionError")
     def bisect_batch_on_function_error(
@@ -400,7 +439,8 @@ class _EventSourceMappingState:
     @bisect_batch_on_function_error.setter
     def bisect_batch_on_function_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationConfig")
     def destination_config(
@@ -409,7 +449,8 @@ class _EventSourceMappingState:
     @destination_config.setter
     def destination_config(
         self, value: Optional[pulumi.Input[EventSourceMappingDestinationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentDbEventSourceConfig")
     def document_db_event_source_config(
@@ -421,17 +462,22 @@ class _EventSourceMappingState:
         value: Optional[
             pulumi.Input[EventSourceMappingDocumentDbEventSourceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventSourceArn")
     def event_source_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_source_arn.setter
-    def event_source_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_source_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterCriteria")
     def filter_criteria(
@@ -440,17 +486,20 @@ class _EventSourceMappingState:
     @filter_criteria.setter
     def filter_criteria(
         self, value: Optional[pulumi.Input[EventSourceMappingFilterCriteriaArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionArn")
     def function_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @function_arn.setter
-    def function_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def function_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionName")
     def function_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @function_name.setter
-    def function_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def function_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionResponseTypes")
     def function_response_types(
@@ -459,22 +508,28 @@ class _EventSourceMappingState:
     @function_response_types.setter
     def function_response_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModified")
     def last_modified(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified.setter
-    def last_modified(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastProcessingResult")
     def last_processing_result(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_processing_result.setter
-    def last_processing_result(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_processing_result(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -483,7 +538,8 @@ class _EventSourceMappingState:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRecordAgeInSeconds")
     def maximum_record_age_in_seconds(
@@ -492,12 +548,16 @@ class _EventSourceMappingState:
     @maximum_record_age_in_seconds.setter
     def maximum_record_age_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRetryAttempts")
     def maximum_retry_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_retry_attempts.setter
-    def maximum_retry_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def maximum_retry_attempts(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricsConfig")
     def metrics_config(
@@ -506,12 +566,16 @@ class _EventSourceMappingState:
     @metrics_config.setter
     def metrics_config(
         self, value: Optional[pulumi.Input[EventSourceMappingMetricsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelizationFactor")
     def parallelization_factor(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @parallelization_factor.setter
-    def parallelization_factor(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def parallelization_factor(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedPollerConfig")
     def provisioned_poller_config(
@@ -521,17 +585,20 @@ class _EventSourceMappingState:
     def provisioned_poller_config(
         self,
         value: Optional[pulumi.Input[EventSourceMappingProvisionedPollerConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def queues(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @queues.setter
-    def queues(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def queues(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingConfig")
     def scaling_config(
@@ -540,7 +607,8 @@ class _EventSourceMappingState:
     @scaling_config.setter
     def scaling_config(
         self, value: Optional[pulumi.Input[EventSourceMappingScalingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfManagedEventSource")
     def self_managed_event_source(
@@ -550,7 +618,8 @@ class _EventSourceMappingState:
     def self_managed_event_source(
         self,
         value: Optional[pulumi.Input[EventSourceMappingSelfManagedEventSourceArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfManagedKafkaEventSourceConfig")
     def self_managed_kafka_event_source_config(
@@ -564,7 +633,8 @@ class _EventSourceMappingState:
         value: Optional[
             pulumi.Input[EventSourceMappingSelfManagedKafkaEventSourceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceAccessConfigurations")
     def source_access_configurations(
@@ -582,29 +652,38 @@ class _EventSourceMappingState:
                 Sequence[pulumi.Input[EventSourceMappingSourceAccessConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPosition")
     def starting_position(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starting_position.setter
-    def starting_position(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def starting_position(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPositionTimestamp")
     def starting_position_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starting_position_timestamp.setter
     def starting_position_timestamp(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stateTransitionReason")
     def state_transition_reason(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state_transition_reason.setter
-    def state_transition_reason(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state_transition_reason(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -613,7 +692,8 @@ class _EventSourceMappingState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -622,7 +702,8 @@ class _EventSourceMappingState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -631,19 +712,22 @@ class _EventSourceMappingState:
     @topics.setter
     def topics(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tumblingWindowInSeconds")
     def tumbling_window_in_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tumbling_window_in_seconds.setter
     def tumbling_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uuid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uuid.setter
-    def uuid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uuid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:lambda/eventSourceMapping:EventSourceMapping")
 class EventSourceMapping(pulumi.CustomResource):

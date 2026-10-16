@@ -52,7 +52,8 @@ class GetWafWebAclSummaryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWafWebAclSummaryResult(GetWafWebAclSummaryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWafWebAclSummaryResult]:
+        ...
 
 def get_waf_web_acl_summary(
     name: Optional[_builtins.str] = ...,

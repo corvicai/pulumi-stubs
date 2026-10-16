@@ -90,7 +90,8 @@ class GetDataLakeConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataLakeConnectorResult(GetDataLakeConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataLakeConnectorResult]:
+        ...
 
 def get_data_lake_connector(
     data_lake_connector_name: Optional[_builtins.str] = ...,

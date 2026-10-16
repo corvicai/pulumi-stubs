@@ -60,7 +60,8 @@ class GetServerGroupRoleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerGroupRoleResult(GetServerGroupRoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerGroupRoleResult]:
+        ...
 
 def get_server_group_role(
     cluster_name: Optional[_builtins.str] = ...,

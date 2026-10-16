@@ -34,17 +34,20 @@ class TrustProviderArgs:
     @pulumi.getter(name="policyReferenceName")
     def policy_reference_name(self) -> pulumi.Input[_builtins.str]: ...
     @policy_reference_name.setter
-    def policy_reference_name(self, value: pulumi.Input[_builtins.str]): ...
+    def policy_reference_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustProviderType")
     def trust_provider_type(self) -> pulumi.Input[_builtins.str]: ...
     @trust_provider_type.setter
-    def trust_provider_type(self, value: pulumi.Input[_builtins.str]): ...
+    def trust_provider_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceOptions")
     def device_options(
@@ -53,14 +56,16 @@ class TrustProviderArgs:
     @device_options.setter
     def device_options(
         self, value: Optional[pulumi.Input[TrustProviderDeviceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceTrustProviderType")
     def device_trust_provider_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_trust_provider_type.setter
     def device_trust_provider_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nativeApplicationOidcOptions")
     def native_application_oidc_options(
@@ -70,19 +75,22 @@ class TrustProviderArgs:
     def native_application_oidc_options(
         self,
         value: Optional[pulumi.Input[TrustProviderNativeApplicationOidcOptionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oidcOptions")
     def oidc_options(self) -> Optional[pulumi.Input[TrustProviderOidcOptionsArgs]]: ...
     @oidc_options.setter
     def oidc_options(
         self, value: Optional[pulumi.Input[TrustProviderOidcOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseSpecification")
     def sse_specification(
@@ -91,7 +99,8 @@ class TrustProviderArgs:
     @sse_specification.setter
     def sse_specification(
         self, value: Optional[pulumi.Input[TrustProviderSseSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -100,14 +109,16 @@ class TrustProviderArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userTrustProviderType")
     def user_trust_provider_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_trust_provider_type.setter
     def user_trust_provider_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TrustProviderState:
@@ -137,7 +148,8 @@ class _TrustProviderState:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceOptions")
     def device_options(
@@ -146,14 +158,16 @@ class _TrustProviderState:
     @device_options.setter
     def device_options(
         self, value: Optional[pulumi.Input[TrustProviderDeviceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceTrustProviderType")
     def device_trust_provider_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_trust_provider_type.setter
     def device_trust_provider_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nativeApplicationOidcOptions")
     def native_application_oidc_options(
@@ -163,24 +177,30 @@ class _TrustProviderState:
     def native_application_oidc_options(
         self,
         value: Optional[pulumi.Input[TrustProviderNativeApplicationOidcOptionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oidcOptions")
     def oidc_options(self) -> Optional[pulumi.Input[TrustProviderOidcOptionsArgs]]: ...
     @oidc_options.setter
     def oidc_options(
         self, value: Optional[pulumi.Input[TrustProviderOidcOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyReferenceName")
     def policy_reference_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_reference_name.setter
-    def policy_reference_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_reference_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseSpecification")
     def sse_specification(
@@ -189,7 +209,8 @@ class _TrustProviderState:
     @sse_specification.setter
     def sse_specification(
         self, value: Optional[pulumi.Input[TrustProviderSseSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -198,7 +219,8 @@ class _TrustProviderState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -207,19 +229,24 @@ class _TrustProviderState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustProviderType")
     def trust_provider_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trust_provider_type.setter
-    def trust_provider_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def trust_provider_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userTrustProviderType")
     def user_trust_provider_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_trust_provider_type.setter
     def user_trust_provider_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:verifiedaccess/trustProvider:TrustProvider")
 class TrustProvider(pulumi.CustomResource):

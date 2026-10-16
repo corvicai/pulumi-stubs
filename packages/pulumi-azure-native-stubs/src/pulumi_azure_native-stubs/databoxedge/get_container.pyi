@@ -56,7 +56,8 @@ class GetContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContainerResult(GetContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerResult]:
+        ...
 
 def get_container(
     container_name: Optional[_builtins.str] = ...,

@@ -61,7 +61,10 @@ class GetGatewayHostnameConfigurationResult:
 class AwaitableGetGatewayHostnameConfigurationResult(
     GetGatewayHostnameConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGatewayHostnameConfigurationResult]:
+        ...
 
 def get_gateway_hostname_configuration(
     gateway_id: Optional[_builtins.str] = ...,

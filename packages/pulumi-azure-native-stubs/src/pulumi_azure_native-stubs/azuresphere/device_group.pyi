@@ -32,17 +32,20 @@ class DeviceGroupArgs:
     @pulumi.getter(name="catalogName")
     def catalog_name(self) -> pulumi.Input[_builtins.str]: ...
     @catalog_name.setter
-    def catalog_name(self, value: pulumi.Input[_builtins.str]): ...
+    def catalog_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productName")
     def product_name(self) -> pulumi.Input[_builtins.str]: ...
     @product_name.setter
-    def product_name(self, value: pulumi.Input[_builtins.str]): ...
+    def product_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowCrashDumpsCollection")
     def allow_crash_dumps_collection(
@@ -52,17 +55,22 @@ class DeviceGroupArgs:
     def allow_crash_dumps_collection(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AllowCrashDumpCollection]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceGroupName")
     def device_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_group_name.setter
-    def device_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def device_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osFeedType")
     def os_feed_type(
@@ -71,7 +79,8 @@ class DeviceGroupArgs:
     @os_feed_type.setter
     def os_feed_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OSFeedType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionalDataBoundary")
     def regional_data_boundary(
@@ -80,7 +89,8 @@ class DeviceGroupArgs:
     @regional_data_boundary.setter
     def regional_data_boundary(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RegionalDataBoundary]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatePolicy")
     def update_policy(
@@ -89,7 +99,8 @@ class DeviceGroupArgs:
     @update_policy.setter
     def update_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, UpdatePolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azuresphere:DeviceGroup")
 class DeviceGroup(pulumi.CustomResource):

@@ -48,7 +48,8 @@ class GetMetadataSchemaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMetadataSchemaResult(GetMetadataSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMetadataSchemaResult]:
+        ...
 
 def get_metadata_schema(
     metadata_schema_name: Optional[_builtins.str] = ...,

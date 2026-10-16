@@ -34,7 +34,10 @@ class GetInstanceTemplateIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceTemplateIamPolicyResult(GetInstanceTemplateIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetInstanceTemplateIamPolicyResult]:
+        ...
 
 def get_instance_template_iam_policy(
     name: Optional[_builtins.str] = ...,

@@ -58,7 +58,10 @@ class GetMongoDBResourceMongoDBCollectionResult:
 class AwaitableGetMongoDBResourceMongoDBCollectionResult(
     GetMongoDBResourceMongoDBCollectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMongoDBResourceMongoDBCollectionResult]:
+        ...
 
 def get_mongo_db_resource_mongo_db_collection(
     account_name: Optional[_builtins.str] = ...,

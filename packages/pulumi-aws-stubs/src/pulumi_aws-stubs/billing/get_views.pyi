@@ -24,7 +24,8 @@ class GetViewsResult:
     def id(self) -> _builtins.str: ...
 
 class AwaitableGetViewsResult(GetViewsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetViewsResult]:
+        ...
 
 def get_views(
     billing_view_types: Optional[Sequence[_builtins.str]] = ...,

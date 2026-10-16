@@ -29,7 +29,8 @@ class GetFactoryDataPlaneAccessResult:
     def policy(self) -> Optional[outputs.UserAccessPolicyResponse]: ...
 
 class AwaitableGetFactoryDataPlaneAccessResult(GetFactoryDataPlaneAccessResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFactoryDataPlaneAccessResult]:
+        ...
 
 def get_factory_data_plane_access(
     access_resource_path: Optional[_builtins.str] = ...,

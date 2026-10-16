@@ -52,7 +52,8 @@ class GetProviderMonitorSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProviderMonitorSettingResult(GetProviderMonitorSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProviderMonitorSettingResult]:
+        ...
 
 def get_provider_monitor_setting(
     provider_monitor_setting_name: Optional[_builtins.str] = ...,

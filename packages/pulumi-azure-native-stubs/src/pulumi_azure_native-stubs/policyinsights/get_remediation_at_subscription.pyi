@@ -94,7 +94,10 @@ class GetRemediationAtSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRemediationAtSubscriptionResult(GetRemediationAtSubscriptionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRemediationAtSubscriptionResult]:
+        ...
 
 def get_remediation_at_subscription(
     remediation_name: Optional[_builtins.str] = ...,

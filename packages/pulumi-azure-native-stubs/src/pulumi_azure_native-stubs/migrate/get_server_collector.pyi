@@ -44,7 +44,8 @@ class GetServerCollectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerCollectorResult(GetServerCollectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerCollectorResult]:
+        ...
 
 def get_server_collector(
     project_name: Optional[_builtins.str] = ...,

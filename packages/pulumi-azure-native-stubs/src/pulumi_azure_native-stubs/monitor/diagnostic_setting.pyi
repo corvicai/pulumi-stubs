@@ -32,7 +32,8 @@ class DiagnosticSettingArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHubAuthorizationRuleId")
     def event_hub_authorization_rule_id(
@@ -41,12 +42,14 @@ class DiagnosticSettingArgs:
     @event_hub_authorization_rule_id.setter
     def event_hub_authorization_rule_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHubName")
     def event_hub_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_hub_name.setter
-    def event_hub_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_hub_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logAnalyticsDestinationType")
     def log_analytics_destination_type(
@@ -55,7 +58,8 @@ class DiagnosticSettingArgs:
     @log_analytics_destination_type.setter
     def log_analytics_destination_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def logs(
@@ -64,12 +68,16 @@ class DiagnosticSettingArgs:
     @logs.setter
     def logs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[LogSettingsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="marketplacePartnerId")
     def marketplace_partner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @marketplace_partner_id.setter
-    def marketplace_partner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def marketplace_partner_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metrics(
@@ -78,27 +86,36 @@ class DiagnosticSettingArgs:
     @metrics.setter
     def metrics(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MetricSettingsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceBusRuleId")
     def service_bus_rule_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_bus_rule_id.setter
-    def service_bus_rule_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_bus_rule_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
     def storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_id.setter
-    def storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceId")
     def workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_id.setter
-    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:monitor:DiagnosticSetting")
 class DiagnosticSetting(pulumi.CustomResource):

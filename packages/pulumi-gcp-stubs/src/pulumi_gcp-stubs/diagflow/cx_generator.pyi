@@ -30,17 +30,20 @@ class CxGeneratorArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptText")
     def prompt_text(self) -> pulumi.Input[CxGeneratorPromptTextArgs]: ...
     @prompt_text.setter
-    def prompt_text(self, value: pulumi.Input[CxGeneratorPromptTextArgs]): ...
+    def prompt_text(self, value: pulumi.Input[CxGeneratorPromptTextArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="llmModelSettings")
     def llm_model_settings(
@@ -49,7 +52,8 @@ class CxGeneratorArgs:
     @llm_model_settings.setter
     def llm_model_settings(
         self, value: Optional[pulumi.Input[CxGeneratorLlmModelSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelParameter")
     def model_parameter(
@@ -58,12 +62,14 @@ class CxGeneratorArgs:
     @model_parameter.setter
     def model_parameter(
         self, value: Optional[pulumi.Input[CxGeneratorModelParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def placeholders(
@@ -75,7 +81,8 @@ class CxGeneratorArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxGeneratorPlaceholderArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CxGeneratorState:
@@ -99,12 +106,14 @@ class _CxGeneratorState:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="llmModelSettings")
     def llm_model_settings(
@@ -113,7 +122,8 @@ class _CxGeneratorState:
     @llm_model_settings.setter
     def llm_model_settings(
         self, value: Optional[pulumi.Input[CxGeneratorLlmModelSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelParameter")
     def model_parameter(
@@ -122,17 +132,20 @@ class _CxGeneratorState:
     @model_parameter.setter
     def model_parameter(
         self, value: Optional[pulumi.Input[CxGeneratorModelParameterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def placeholders(
@@ -144,12 +157,16 @@ class _CxGeneratorState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxGeneratorPlaceholderArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptText")
     def prompt_text(self) -> Optional[pulumi.Input[CxGeneratorPromptTextArgs]]: ...
     @prompt_text.setter
-    def prompt_text(self, value: Optional[pulumi.Input[CxGeneratorPromptTextArgs]]): ...
+    def prompt_text(
+        self, value: Optional[pulumi.Input[CxGeneratorPromptTextArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:diagflow/cxGenerator:CxGenerator")
 class CxGenerator(pulumi.CustomResource):

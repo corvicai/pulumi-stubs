@@ -110,7 +110,8 @@ class GetNodeGroupResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetNodeGroupResult(GetNodeGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNodeGroupResult]:
+        ...
 
 def get_node_group(
     cluster_name: Optional[_builtins.str] = ...,

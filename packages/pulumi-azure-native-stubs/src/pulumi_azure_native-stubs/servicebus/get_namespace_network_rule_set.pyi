@@ -66,7 +66,8 @@ class GetNamespaceNetworkRuleSetResult:
     ) -> Optional[Sequence[outputs.NWRuleSetVirtualNetworkRulesResponse]]: ...
 
 class AwaitableGetNamespaceNetworkRuleSetResult(GetNamespaceNetworkRuleSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNamespaceNetworkRuleSetResult]:
+        ...
 
 def get_namespace_network_rule_set(
     namespace_name: Optional[_builtins.str] = ...,

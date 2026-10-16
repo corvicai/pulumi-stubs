@@ -43,7 +43,8 @@ class GetTableIamPolicyResult:
     def table_id(self) -> _builtins.str: ...
 
 class AwaitableGetTableIamPolicyResult(GetTableIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableIamPolicyResult]:
+        ...
 
 def get_table_iam_policy(
     dataset_id: Optional[_builtins.str] = ...,

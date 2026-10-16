@@ -148,7 +148,8 @@ class GetFileShareResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetFileShareResult(GetFileShareResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileShareResult]:
+        ...
 
 def get_file_share(
     account_name: Optional[_builtins.str] = ...,

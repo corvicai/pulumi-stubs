@@ -31,24 +31,30 @@ class FlowDefinitionArgs:
     @pulumi.getter(name="flowDefinitionName")
     def flow_definition_name(self) -> pulumi.Input[_builtins.str]: ...
     @flow_definition_name.setter
-    def flow_definition_name(self, value: pulumi.Input[_builtins.str]): ...
+    def flow_definition_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanLoopConfig")
     def human_loop_config(self) -> pulumi.Input[FlowDefinitionHumanLoopConfigArgs]: ...
     @human_loop_config.setter
     def human_loop_config(
         self, value: pulumi.Input[FlowDefinitionHumanLoopConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputConfig")
     def output_config(self) -> pulumi.Input[FlowDefinitionOutputConfigArgs]: ...
     @output_config.setter
-    def output_config(self, value: pulumi.Input[FlowDefinitionOutputConfigArgs]): ...
+    def output_config(
+        self, value: pulumi.Input[FlowDefinitionOutputConfigArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanLoopActivationConfig")
     def human_loop_activation_config(
@@ -57,7 +63,8 @@ class FlowDefinitionArgs:
     @human_loop_activation_config.setter
     def human_loop_activation_config(
         self, value: Optional[pulumi.Input[FlowDefinitionHumanLoopActivationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanLoopRequestSource")
     def human_loop_request_source(
@@ -66,12 +73,14 @@ class FlowDefinitionArgs:
     @human_loop_request_source.setter
     def human_loop_request_source(
         self, value: Optional[pulumi.Input[FlowDefinitionHumanLoopRequestSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -80,7 +89,8 @@ class FlowDefinitionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FlowDefinitionState:
@@ -110,12 +120,16 @@ class _FlowDefinitionState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="flowDefinitionName")
     def flow_definition_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @flow_definition_name.setter
-    def flow_definition_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def flow_definition_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanLoopActivationConfig")
     def human_loop_activation_config(
@@ -124,7 +138,8 @@ class _FlowDefinitionState:
     @human_loop_activation_config.setter
     def human_loop_activation_config(
         self, value: Optional[pulumi.Input[FlowDefinitionHumanLoopActivationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanLoopConfig")
     def human_loop_config(
@@ -133,7 +148,8 @@ class _FlowDefinitionState:
     @human_loop_config.setter
     def human_loop_config(
         self, value: Optional[pulumi.Input[FlowDefinitionHumanLoopConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanLoopRequestSource")
     def human_loop_request_source(
@@ -142,7 +158,8 @@ class _FlowDefinitionState:
     @human_loop_request_source.setter
     def human_loop_request_source(
         self, value: Optional[pulumi.Input[FlowDefinitionHumanLoopRequestSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputConfig")
     def output_config(
@@ -151,17 +168,20 @@ class _FlowDefinitionState:
     @output_config.setter
     def output_config(
         self, value: Optional[pulumi.Input[FlowDefinitionOutputConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -170,7 +190,8 @@ class _FlowDefinitionState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -179,7 +200,8 @@ class _FlowDefinitionState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/flowDefinition:FlowDefinition")
 class FlowDefinition(pulumi.CustomResource):

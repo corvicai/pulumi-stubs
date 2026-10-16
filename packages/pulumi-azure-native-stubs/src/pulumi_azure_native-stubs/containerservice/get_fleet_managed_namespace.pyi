@@ -56,7 +56,8 @@ class GetFleetManagedNamespaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFleetManagedNamespaceResult(GetFleetManagedNamespaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetManagedNamespaceResult]:
+        ...
 
 def get_fleet_managed_namespace(
     fleet_name: Optional[_builtins.str] = ...,

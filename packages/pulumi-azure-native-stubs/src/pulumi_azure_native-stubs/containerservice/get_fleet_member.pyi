@@ -56,7 +56,8 @@ class GetFleetMemberResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFleetMemberResult(GetFleetMemberResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetMemberResult]:
+        ...
 
 def get_fleet_member(
     fleet_member_name: Optional[_builtins.str] = ...,

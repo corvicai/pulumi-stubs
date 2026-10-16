@@ -64,7 +64,8 @@ class GetKnowledgeSourceResult:
     def url(self) -> _builtins.str: ...
 
 class AwaitableGetKnowledgeSourceResult(GetKnowledgeSourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKnowledgeSourceResult]:
+        ...
 
 def get_knowledge_source(
     knowledge_source_name: Optional[_builtins.str] = ...,

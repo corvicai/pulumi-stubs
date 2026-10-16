@@ -47,7 +47,8 @@ class GetLocationResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetLocationResult(GetLocationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocationResult]:
+        ...
 
 def get_location(
     location_code: Optional[_builtins.str] = ...,

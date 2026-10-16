@@ -37,7 +37,8 @@ class SubscriptionFeatureRegistrationPropertiesArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -46,7 +47,8 @@ class SubscriptionFeatureRegistrationPropertiesArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shouldFeatureDisplayInPortal")
     def should_feature_display_in_portal(
@@ -55,7 +57,8 @@ class SubscriptionFeatureRegistrationPropertiesArgs:
     @should_feature_display_in_portal.setter
     def should_feature_display_in_portal(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -69,4 +72,5 @@ class SubscriptionFeatureRegistrationPropertiesArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SubscriptionFeatureRegistrationState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...

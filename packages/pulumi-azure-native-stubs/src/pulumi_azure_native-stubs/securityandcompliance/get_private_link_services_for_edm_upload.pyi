@@ -66,7 +66,10 @@ class GetPrivateLinkServicesForEDMUploadResult:
 class AwaitableGetPrivateLinkServicesForEDMUploadResult(
     GetPrivateLinkServicesForEDMUploadResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateLinkServicesForEDMUploadResult]:
+        ...
 
 def get_private_link_services_for_edm_upload(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class GetNetworkSecurityPerimeterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkSecurityPerimeterResult(GetNetworkSecurityPerimeterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkSecurityPerimeterResult]:
+        ...
 
 def get_network_security_perimeter(
     network_security_perimeter_name: Optional[_builtins.str] = ...,

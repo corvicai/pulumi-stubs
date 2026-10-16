@@ -50,7 +50,10 @@ class GetThreatIntelligenceIndicatorResult:
 class AwaitableGetThreatIntelligenceIndicatorResult(
     GetThreatIntelligenceIndicatorResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetThreatIntelligenceIndicatorResult]:
+        ...
 
 def get_threat_intelligence_indicator(
     name: Optional[_builtins.str] = ...,

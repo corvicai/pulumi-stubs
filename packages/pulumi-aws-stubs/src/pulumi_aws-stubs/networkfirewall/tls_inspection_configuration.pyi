@@ -39,12 +39,14 @@ class TlsInspectionConfigurationArgs:
     def tls_inspection_configuration(
         self,
         value: pulumi.Input[TlsInspectionConfigurationTlsInspectionConfigurationArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfigurations")
     def encryption_configurations(
@@ -66,17 +68,20 @@ class TlsInspectionConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -85,7 +90,8 @@ class TlsInspectionConfigurationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -94,7 +100,8 @@ class TlsInspectionConfigurationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[TlsInspectionConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TlsInspectionConfigurationState:
@@ -140,7 +147,8 @@ class _TlsInspectionConfigurationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateAuthorities")
     def certificate_authorities(
@@ -160,7 +168,8 @@ class _TlsInspectionConfigurationState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def certificates(
@@ -176,12 +185,14 @@ class _TlsInspectionConfigurationState:
                 Sequence[pulumi.Input[TlsInspectionConfigurationCertificateArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfigurations")
     def encryption_configurations(
@@ -203,22 +214,28 @@ class _TlsInspectionConfigurationState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberOfAssociations")
     def number_of_associations(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_of_associations.setter
-    def number_of_associations(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def number_of_associations(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -227,7 +244,8 @@ class _TlsInspectionConfigurationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -236,7 +254,8 @@ class _TlsInspectionConfigurationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -245,7 +264,8 @@ class _TlsInspectionConfigurationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[TlsInspectionConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsInspectionConfiguration")
     def tls_inspection_configuration(
@@ -259,7 +279,8 @@ class _TlsInspectionConfigurationState:
         value: Optional[
             pulumi.Input[TlsInspectionConfigurationTlsInspectionConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsInspectionConfigurationId")
     def tls_inspection_configuration_id(
@@ -268,12 +289,14 @@ class _TlsInspectionConfigurationState:
     @tls_inspection_configuration_id.setter
     def tls_inspection_configuration_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateToken")
     def update_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_token.setter
-    def update_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class TlsInspectionConfiguration(pulumi.CustomResource):

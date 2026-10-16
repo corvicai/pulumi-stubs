@@ -23,7 +23,8 @@ class ListCustomApiWsdlInterfacesResult:
     def value(self) -> Optional[Sequence[outputs.WsdlServiceResponse]]: ...
 
 class AwaitableListCustomApiWsdlInterfacesResult(ListCustomApiWsdlInterfacesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListCustomApiWsdlInterfacesResult]:
+        ...
 
 def list_custom_api_wsdl_interfaces(
     content: Optional[_builtins.str] = ...,

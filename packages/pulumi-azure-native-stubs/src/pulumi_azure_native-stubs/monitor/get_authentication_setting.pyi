@@ -46,7 +46,8 @@ class GetAuthenticationSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAuthenticationSettingResult(GetAuthenticationSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthenticationSettingResult]:
+        ...
 
 def get_authentication_setting(
     authentication_setting_name: Optional[_builtins.str] = ...,

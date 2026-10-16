@@ -71,7 +71,8 @@ class GetInterconnectLocationResult:
     def status(self) -> _builtins.str: ...
 
 class AwaitableGetInterconnectLocationResult(GetInterconnectLocationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInterconnectLocationResult]:
+        ...
 
 def get_interconnect_location(
     name: Optional[_builtins.str] = ...,

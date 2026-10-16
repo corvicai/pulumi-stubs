@@ -92,7 +92,8 @@ class GetMyWorkbookResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetMyWorkbookResult(GetMyWorkbookResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMyWorkbookResult]:
+        ...
 
 def get_my_workbook(
     resource_group_name: Optional[_builtins.str] = ...,

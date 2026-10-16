@@ -38,7 +38,8 @@ class IntentArgs:
     @fulfillment_activity.setter
     def fulfillment_activity(
         self, value: pulumi.Input[IntentFulfillmentActivityArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conclusionStatement")
     def conclusion_statement(
@@ -47,7 +48,8 @@ class IntentArgs:
     @conclusion_statement.setter
     def conclusion_statement(
         self, value: Optional[pulumi.Input[IntentConclusionStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confirmationPrompt")
     def confirmation_prompt(
@@ -56,46 +58,56 @@ class IntentArgs:
     @confirmation_prompt.setter
     def confirmation_prompt(
         self, value: Optional[pulumi.Input[IntentConfirmationPromptArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createVersion")
     def create_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_version.setter
-    def create_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def create_version(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dialogCodeHook")
     def dialog_code_hook(self) -> Optional[pulumi.Input[IntentDialogCodeHookArgs]]: ...
     @dialog_code_hook.setter
     def dialog_code_hook(
         self, value: Optional[pulumi.Input[IntentDialogCodeHookArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="followUpPrompt")
     def follow_up_prompt(self) -> Optional[pulumi.Input[IntentFollowUpPromptArgs]]: ...
     @follow_up_prompt.setter
     def follow_up_prompt(
         self, value: Optional[pulumi.Input[IntentFollowUpPromptArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentIntentSignature")
     def parent_intent_signature(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_intent_signature.setter
-    def parent_intent_signature(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_intent_signature(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rejectionStatement")
     def rejection_statement(
@@ -104,7 +116,8 @@ class IntentArgs:
     @rejection_statement.setter
     def rejection_statement(
         self, value: Optional[pulumi.Input[IntentRejectionStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleUtterances")
     def sample_utterances(
@@ -113,7 +126,8 @@ class IntentArgs:
     @sample_utterances.setter
     def sample_utterances(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def slots(
@@ -122,7 +136,8 @@ class IntentArgs:
     @slots.setter
     def slots(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IntentSlotArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IntentState:
@@ -158,12 +173,14 @@ class _IntentState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def checksum(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @checksum.setter
-    def checksum(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def checksum(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conclusionStatement")
     def conclusion_statement(
@@ -172,7 +189,8 @@ class _IntentState:
     @conclusion_statement.setter
     def conclusion_statement(
         self, value: Optional[pulumi.Input[IntentConclusionStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confirmationPrompt")
     def confirmation_prompt(
@@ -181,36 +199,42 @@ class _IntentState:
     @confirmation_prompt.setter
     def confirmation_prompt(
         self, value: Optional[pulumi.Input[IntentConfirmationPromptArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createVersion")
     def create_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_version.setter
-    def create_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def create_version(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdDate")
     def created_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_date.setter
-    def created_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dialogCodeHook")
     def dialog_code_hook(self) -> Optional[pulumi.Input[IntentDialogCodeHookArgs]]: ...
     @dialog_code_hook.setter
     def dialog_code_hook(
         self, value: Optional[pulumi.Input[IntentDialogCodeHookArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="followUpPrompt")
     def follow_up_prompt(self) -> Optional[pulumi.Input[IntentFollowUpPromptArgs]]: ...
     @follow_up_prompt.setter
     def follow_up_prompt(
         self, value: Optional[pulumi.Input[IntentFollowUpPromptArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fulfillmentActivity")
     def fulfillment_activity(
@@ -219,27 +243,36 @@ class _IntentState:
     @fulfillment_activity.setter
     def fulfillment_activity(
         self, value: Optional[pulumi.Input[IntentFulfillmentActivityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedDate")
     def last_updated_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_date.setter
-    def last_updated_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_date(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentIntentSignature")
     def parent_intent_signature(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_intent_signature.setter
-    def parent_intent_signature(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_intent_signature(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rejectionStatement")
     def rejection_statement(
@@ -248,7 +281,8 @@ class _IntentState:
     @rejection_statement.setter
     def rejection_statement(
         self, value: Optional[pulumi.Input[IntentRejectionStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleUtterances")
     def sample_utterances(
@@ -257,7 +291,8 @@ class _IntentState:
     @sample_utterances.setter
     def sample_utterances(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def slots(
@@ -266,12 +301,14 @@ class _IntentState:
     @slots.setter
     def slots(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IntentSlotArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:lex/intent:Intent")
 class Intent(pulumi.CustomResource):

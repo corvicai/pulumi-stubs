@@ -52,7 +52,8 @@ class GetAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAccountResult(GetAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountResult]:
+        ...
 
 def get_account(
     resource_group_name: Optional[_builtins.str] = ...,

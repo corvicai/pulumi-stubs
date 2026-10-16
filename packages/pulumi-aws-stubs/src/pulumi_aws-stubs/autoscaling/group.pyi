@@ -88,12 +88,14 @@ class GroupArgs:
     @pulumi.getter(name="maxSize")
     def max_size(self) -> pulumi.Input[_builtins.int]: ...
     @max_size.setter
-    def max_size(self, value: pulumi.Input[_builtins.int]): ...
+    def max_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minSize")
     def min_size(self) -> pulumi.Input[_builtins.int]: ...
     @min_size.setter
-    def min_size(self, value: pulumi.Input[_builtins.int]): ...
+    def min_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneDistribution")
     def availability_zone_distribution(
@@ -102,7 +104,8 @@ class GroupArgs:
     @availability_zone_distribution.setter
     def availability_zone_distribution(
         self, value: Optional[pulumi.Input[GroupAvailabilityZoneDistributionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZones")
     def availability_zones(
@@ -111,12 +114,16 @@ class GroupArgs:
     @availability_zones.setter
     def availability_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityRebalance")
     def capacity_rebalance(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @capacity_rebalance.setter
-    def capacity_rebalance(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def capacity_rebalance(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationSpecification")
     def capacity_reservation_specification(
@@ -125,32 +132,46 @@ class GroupArgs:
     @capacity_reservation_specification.setter
     def capacity_reservation_specification(
         self, value: Optional[pulumi.Input[GroupCapacityReservationSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @context.setter
-    def context(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def context(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCooldown")
     def default_cooldown(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_cooldown.setter
-    def default_cooldown(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_cooldown(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultInstanceWarmup")
     def default_instance_warmup(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_instance_warmup.setter
-    def default_instance_warmup(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_instance_warmup(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredCapacity")
     def desired_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @desired_capacity.setter
-    def desired_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def desired_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredCapacityType")
     def desired_capacity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_capacity_type.setter
-    def desired_capacity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desired_capacity_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledMetrics")
     def enabled_metrics(
@@ -159,29 +180,38 @@ class GroupArgs:
     @enabled_metrics.setter
     def enabled_metrics(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Metric]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDelete")
     def force_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete.setter
-    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDeleteWarmPool")
     def force_delete_warm_pool(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete_warm_pool.setter
-    def force_delete_warm_pool(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete_warm_pool(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckGracePeriod")
     def health_check_grace_period(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @health_check_grace_period.setter
     def health_check_grace_period(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckType")
     def health_check_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_type.setter
-    def health_check_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ignoreFailedScalingActivities")
     def ignore_failed_scaling_activities(
@@ -190,7 +220,8 @@ class GroupArgs:
     @ignore_failed_scaling_activities.setter
     def ignore_failed_scaling_activities(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialLifecycleHooks")
     def initial_lifecycle_hooks(
@@ -204,7 +235,8 @@ class GroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GroupInitialLifecycleHookArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMaintenancePolicy")
     def instance_maintenance_policy(
@@ -213,26 +245,32 @@ class GroupArgs:
     @instance_maintenance_policy.setter
     def instance_maintenance_policy(
         self, value: Optional[pulumi.Input[GroupInstanceMaintenancePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceRefresh")
     def instance_refresh(self) -> Optional[pulumi.Input[GroupInstanceRefreshArgs]]: ...
     @instance_refresh.setter
     def instance_refresh(
         self, value: Optional[pulumi.Input[GroupInstanceRefreshArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchConfiguration")
     def launch_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @launch_configuration.setter
-    def launch_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def launch_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplate")
     def launch_template(self) -> Optional[pulumi.Input[GroupLaunchTemplateArgs]]: ...
     @launch_template.setter
     def launch_template(
         self, value: Optional[pulumi.Input[GroupLaunchTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancers")
     def load_balancers(
@@ -241,12 +279,16 @@ class GroupArgs:
     @load_balancers.setter
     def load_balancers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxInstanceLifetime")
     def max_instance_lifetime(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_instance_lifetime.setter
-    def max_instance_lifetime(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_instance_lifetime(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricsGranularity")
     def metrics_granularity(
@@ -255,12 +297,16 @@ class GroupArgs:
     @metrics_granularity.setter
     def metrics_granularity(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MetricsGranularity]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minElbCapacity")
     def min_elb_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_elb_capacity.setter
-    def min_elb_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_elb_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mixedInstancesPolicy")
     def mixed_instances_policy(
@@ -269,37 +315,48 @@ class GroupArgs:
     @mixed_instances_policy.setter
     def mixed_instances_policy(
         self, value: Optional[pulumi.Input[GroupMixedInstancesPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroup")
     def placement_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @placement_group.setter
-    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectFromScaleIn")
     def protect_from_scale_in(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @protect_from_scale_in.setter
-    def protect_from_scale_in(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def protect_from_scale_in(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceLinkedRoleArn")
     def service_linked_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_linked_role_arn.setter
-    def service_linked_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_linked_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suspendedProcesses")
     def suspended_processes(
@@ -308,14 +365,16 @@ class GroupArgs:
     @suspended_processes.setter
     def suspended_processes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[GroupTagArgs]]]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[GroupTagArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroupArns")
     def target_group_arns(
@@ -324,7 +383,8 @@ class GroupArgs:
     @target_group_arns.setter
     def target_group_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationPolicies")
     def termination_policies(
@@ -333,7 +393,8 @@ class GroupArgs:
     @termination_policies.setter
     def termination_policies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficSources")
     def traffic_sources(
@@ -343,7 +404,8 @@ class GroupArgs:
     def traffic_sources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[GroupTrafficSourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcZoneIdentifiers")
     def vpc_zone_identifiers(
@@ -352,24 +414,30 @@ class GroupArgs:
     @vpc_zone_identifiers.setter
     def vpc_zone_identifiers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForCapacityTimeout")
     def wait_for_capacity_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wait_for_capacity_timeout.setter
     def wait_for_capacity_timeout(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForElbCapacity")
     def wait_for_elb_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @wait_for_elb_capacity.setter
-    def wait_for_elb_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def wait_for_elb_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="warmPool")
     def warm_pool(self) -> Optional[pulumi.Input[GroupWarmPoolArgs]]: ...
     @warm_pool.setter
-    def warm_pool(self, value: Optional[pulumi.Input[GroupWarmPoolArgs]]): ...
+    def warm_pool(self, value: Optional[pulumi.Input[GroupWarmPoolArgs]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GroupState:
@@ -452,7 +520,8 @@ class _GroupState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneDistribution")
     def availability_zone_distribution(
@@ -461,7 +530,8 @@ class _GroupState:
     @availability_zone_distribution.setter
     def availability_zone_distribution(
         self, value: Optional[pulumi.Input[GroupAvailabilityZoneDistributionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZones")
     def availability_zones(
@@ -470,12 +540,16 @@ class _GroupState:
     @availability_zones.setter
     def availability_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityRebalance")
     def capacity_rebalance(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @capacity_rebalance.setter
-    def capacity_rebalance(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def capacity_rebalance(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationSpecification")
     def capacity_reservation_specification(
@@ -484,32 +558,46 @@ class _GroupState:
     @capacity_reservation_specification.setter
     def capacity_reservation_specification(
         self, value: Optional[pulumi.Input[GroupCapacityReservationSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @context.setter
-    def context(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def context(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCooldown")
     def default_cooldown(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_cooldown.setter
-    def default_cooldown(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_cooldown(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultInstanceWarmup")
     def default_instance_warmup(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_instance_warmup.setter
-    def default_instance_warmup(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_instance_warmup(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredCapacity")
     def desired_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @desired_capacity.setter
-    def desired_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def desired_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredCapacityType")
     def desired_capacity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_capacity_type.setter
-    def desired_capacity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desired_capacity_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledMetrics")
     def enabled_metrics(
@@ -518,29 +606,38 @@ class _GroupState:
     @enabled_metrics.setter
     def enabled_metrics(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Metric]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDelete")
     def force_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete.setter
-    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDeleteWarmPool")
     def force_delete_warm_pool(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_delete_warm_pool.setter
-    def force_delete_warm_pool(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_delete_warm_pool(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckGracePeriod")
     def health_check_grace_period(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @health_check_grace_period.setter
     def health_check_grace_period(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckType")
     def health_check_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_type.setter
-    def health_check_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ignoreFailedScalingActivities")
     def ignore_failed_scaling_activities(
@@ -549,7 +646,8 @@ class _GroupState:
     @ignore_failed_scaling_activities.setter
     def ignore_failed_scaling_activities(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialLifecycleHooks")
     def initial_lifecycle_hooks(
@@ -563,7 +661,8 @@ class _GroupState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GroupInitialLifecycleHookArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMaintenancePolicy")
     def instance_maintenance_policy(
@@ -572,26 +671,32 @@ class _GroupState:
     @instance_maintenance_policy.setter
     def instance_maintenance_policy(
         self, value: Optional[pulumi.Input[GroupInstanceMaintenancePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceRefresh")
     def instance_refresh(self) -> Optional[pulumi.Input[GroupInstanceRefreshArgs]]: ...
     @instance_refresh.setter
     def instance_refresh(
         self, value: Optional[pulumi.Input[GroupInstanceRefreshArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchConfiguration")
     def launch_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @launch_configuration.setter
-    def launch_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def launch_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplate")
     def launch_template(self) -> Optional[pulumi.Input[GroupLaunchTemplateArgs]]: ...
     @launch_template.setter
     def launch_template(
         self, value: Optional[pulumi.Input[GroupLaunchTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancers")
     def load_balancers(
@@ -600,17 +705,22 @@ class _GroupState:
     @load_balancers.setter
     def load_balancers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxInstanceLifetime")
     def max_instance_lifetime(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_instance_lifetime.setter
-    def max_instance_lifetime(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_instance_lifetime(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxSize")
     def max_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_size.setter
-    def max_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricsGranularity")
     def metrics_granularity(
@@ -619,17 +729,22 @@ class _GroupState:
     @metrics_granularity.setter
     def metrics_granularity(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MetricsGranularity]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minElbCapacity")
     def min_elb_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_elb_capacity.setter
-    def min_elb_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_elb_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minSize")
     def min_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_size.setter
-    def min_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mixedInstancesPolicy")
     def mixed_instances_policy(
@@ -638,42 +753,56 @@ class _GroupState:
     @mixed_instances_policy.setter
     def mixed_instances_policy(
         self, value: Optional[pulumi.Input[GroupMixedInstancesPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroup")
     def placement_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @placement_group.setter
-    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="predictedCapacity")
     def predicted_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @predicted_capacity.setter
-    def predicted_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def predicted_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectFromScaleIn")
     def protect_from_scale_in(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @protect_from_scale_in.setter
-    def protect_from_scale_in(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def protect_from_scale_in(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceLinkedRoleArn")
     def service_linked_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_linked_role_arn.setter
-    def service_linked_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_linked_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suspendedProcesses")
     def suspended_processes(
@@ -682,14 +811,16 @@ class _GroupState:
     @suspended_processes.setter
     def suspended_processes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[GroupTagArgs]]]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[GroupTagArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroupArns")
     def target_group_arns(
@@ -698,7 +829,8 @@ class _GroupState:
     @target_group_arns.setter
     def target_group_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationPolicies")
     def termination_policies(
@@ -707,7 +839,8 @@ class _GroupState:
     @termination_policies.setter
     def termination_policies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficSources")
     def traffic_sources(
@@ -717,7 +850,8 @@ class _GroupState:
     def traffic_sources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[GroupTrafficSourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcZoneIdentifiers")
     def vpc_zone_identifiers(
@@ -726,29 +860,36 @@ class _GroupState:
     @vpc_zone_identifiers.setter
     def vpc_zone_identifiers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForCapacityTimeout")
     def wait_for_capacity_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wait_for_capacity_timeout.setter
     def wait_for_capacity_timeout(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForElbCapacity")
     def wait_for_elb_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @wait_for_elb_capacity.setter
-    def wait_for_elb_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def wait_for_elb_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="warmPool")
     def warm_pool(self) -> Optional[pulumi.Input[GroupWarmPoolArgs]]: ...
     @warm_pool.setter
-    def warm_pool(self, value: Optional[pulumi.Input[GroupWarmPoolArgs]]): ...
+    def warm_pool(self, value: Optional[pulumi.Input[GroupWarmPoolArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="warmPoolSize")
     def warm_pool_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @warm_pool_size.setter
-    def warm_pool_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def warm_pool_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:autoscaling/group:Group")
 class Group(pulumi.CustomResource):

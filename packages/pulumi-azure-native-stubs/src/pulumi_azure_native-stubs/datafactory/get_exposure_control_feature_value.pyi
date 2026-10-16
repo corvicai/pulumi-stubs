@@ -25,7 +25,10 @@ class GetExposureControlFeatureValueResult:
 class AwaitableGetExposureControlFeatureValueResult(
     GetExposureControlFeatureValueResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExposureControlFeatureValueResult]:
+        ...
 
 def get_exposure_control_feature_value(
     feature_name: Optional[_builtins.str] = ...,

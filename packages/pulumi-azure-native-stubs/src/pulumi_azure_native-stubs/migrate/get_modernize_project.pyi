@@ -56,7 +56,8 @@ class GetModernizeProjectResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetModernizeProjectResult(GetModernizeProjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetModernizeProjectResult]:
+        ...
 
 def get_modernize_project(
     modernize_project_name: Optional[_builtins.str] = ...,

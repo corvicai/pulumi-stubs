@@ -19,12 +19,16 @@ class ChannelAssociationArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfigurationArn")
     def notification_configuration_arn(self) -> pulumi.Input[_builtins.str]: ...
     @notification_configuration_arn.setter
-    def notification_configuration_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def notification_configuration_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ChannelAssociationState:
@@ -38,7 +42,8 @@ class _ChannelAssociationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfigurationArn")
     def notification_configuration_arn(
@@ -47,7 +52,8 @@ class _ChannelAssociationState:
     @notification_configuration_arn.setter
     def notification_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ChannelAssociation(pulumi.CustomResource):

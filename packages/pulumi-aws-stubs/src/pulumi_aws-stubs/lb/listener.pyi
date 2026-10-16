@@ -95,22 +95,26 @@ class ListenerArgs:
     @default_actions.setter
     def default_actions(
         self, value: pulumi.Input[Sequence[pulumi.Input[ListenerDefaultActionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerArn")
     def load_balancer_arn(self) -> pulumi.Input[_builtins.str]: ...
     @load_balancer_arn.setter
-    def load_balancer_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def load_balancer_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alpnPolicy")
     def alpn_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alpn_policy.setter
-    def alpn_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alpn_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateArn")
     def certificate_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_arn.setter
-    def certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mutualAuthentication")
     def mutual_authentication(
@@ -119,22 +123,26 @@ class ListenerArgs:
     @mutual_authentication.setter
     def mutual_authentication(
         self, value: Optional[pulumi.Input[ListenerMutualAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpRequestXAmznMtlsClientcertHeaderName")
     def routing_http_request_x_amzn_mtls_clientcert_header_name(
@@ -143,7 +151,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_mtls_clientcert_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_issuer_header_name(
@@ -152,7 +161,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_mtls_clientcert_issuer_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_issuer_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_leaf_header_name(
@@ -161,7 +171,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_mtls_clientcert_leaf_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_leaf_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name(
@@ -170,7 +181,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_subject_header_name(
@@ -179,7 +191,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_mtls_clientcert_subject_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_subject_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_validity_header_name(
@@ -188,7 +201,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_mtls_clientcert_validity_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_validity_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpRequestXAmznTlsCipherSuiteHeaderName")
     def routing_http_request_x_amzn_tls_cipher_suite_header_name(
@@ -197,7 +211,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_tls_cipher_suite_header_name.setter
     def routing_http_request_x_amzn_tls_cipher_suite_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpRequestXAmznTlsVersionHeaderName")
     def routing_http_request_x_amzn_tls_version_header_name(
@@ -206,7 +221,8 @@ class ListenerArgs:
     @routing_http_request_x_amzn_tls_version_header_name.setter
     def routing_http_request_x_amzn_tls_version_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_credentials_header_value(
@@ -215,7 +231,8 @@ class ListenerArgs:
     @routing_http_response_access_control_allow_credentials_header_value.setter
     def routing_http_response_access_control_allow_credentials_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_headers_header_value(
@@ -224,7 +241,8 @@ class ListenerArgs:
     @routing_http_response_access_control_allow_headers_header_value.setter
     def routing_http_response_access_control_allow_headers_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_methods_header_value(
@@ -233,7 +251,8 @@ class ListenerArgs:
     @routing_http_response_access_control_allow_methods_header_value.setter
     def routing_http_response_access_control_allow_methods_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_origin_header_value(
@@ -242,7 +261,8 @@ class ListenerArgs:
     @routing_http_response_access_control_allow_origin_header_value.setter
     def routing_http_response_access_control_allow_origin_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_expose_headers_header_value(
@@ -251,7 +271,8 @@ class ListenerArgs:
     @routing_http_response_access_control_expose_headers_header_value.setter
     def routing_http_response_access_control_expose_headers_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseAccessControlMaxAgeHeaderValue")
     def routing_http_response_access_control_max_age_header_value(
@@ -260,7 +281,8 @@ class ListenerArgs:
     @routing_http_response_access_control_max_age_header_value.setter
     def routing_http_response_access_control_max_age_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_content_security_policy_header_value(
@@ -269,7 +291,8 @@ class ListenerArgs:
     @routing_http_response_content_security_policy_header_value.setter
     def routing_http_response_content_security_policy_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseServerEnabled")
     def routing_http_response_server_enabled(
@@ -278,7 +301,8 @@ class ListenerArgs:
     @routing_http_response_server_enabled.setter
     def routing_http_response_server_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_strict_transport_security_header_value(
@@ -287,7 +311,8 @@ class ListenerArgs:
     @routing_http_response_strict_transport_security_header_value.setter
     def routing_http_response_strict_transport_security_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseXContentTypeOptionsHeaderValue")
     def routing_http_response_x_content_type_options_header_value(
@@ -296,7 +321,8 @@ class ListenerArgs:
     @routing_http_response_x_content_type_options_header_value.setter
     def routing_http_response_x_content_type_options_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseXFrameOptionsHeaderValue")
     def routing_http_response_x_frame_options_header_value(
@@ -305,12 +331,14 @@ class ListenerArgs:
     @routing_http_response_x_frame_options_header_value.setter
     def routing_http_response_x_frame_options_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslPolicy")
     def ssl_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssl_policy.setter
-    def ssl_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssl_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -319,14 +347,16 @@ class ListenerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpIdleTimeoutSeconds")
     def tcp_idle_timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tcp_idle_timeout_seconds.setter
     def tcp_idle_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ListenerState:
@@ -414,17 +444,20 @@ class _ListenerState:
     @pulumi.getter(name="alpnPolicy")
     def alpn_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alpn_policy.setter
-    def alpn_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alpn_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateArn")
     def certificate_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_arn.setter
-    def certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultActions")
     def default_actions(
@@ -436,12 +469,16 @@ class _ListenerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ListenerDefaultActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerArn")
     def load_balancer_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @load_balancer_arn.setter
-    def load_balancer_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def load_balancer_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mutualAuthentication")
     def mutual_authentication(
@@ -450,22 +487,26 @@ class _ListenerState:
     @mutual_authentication.setter
     def mutual_authentication(
         self, value: Optional[pulumi.Input[ListenerMutualAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpRequestXAmznMtlsClientcertHeaderName")
     def routing_http_request_x_amzn_mtls_clientcert_header_name(
@@ -474,7 +515,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_mtls_clientcert_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_issuer_header_name(
@@ -483,7 +525,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_mtls_clientcert_issuer_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_issuer_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_leaf_header_name(
@@ -492,7 +535,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_mtls_clientcert_leaf_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_leaf_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name(
@@ -501,7 +545,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_subject_header_name(
@@ -510,7 +555,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_mtls_clientcert_subject_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_subject_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_request_x_amzn_mtls_clientcert_validity_header_name(
@@ -519,7 +565,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_mtls_clientcert_validity_header_name.setter
     def routing_http_request_x_amzn_mtls_clientcert_validity_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpRequestXAmznTlsCipherSuiteHeaderName")
     def routing_http_request_x_amzn_tls_cipher_suite_header_name(
@@ -528,7 +575,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_tls_cipher_suite_header_name.setter
     def routing_http_request_x_amzn_tls_cipher_suite_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpRequestXAmznTlsVersionHeaderName")
     def routing_http_request_x_amzn_tls_version_header_name(
@@ -537,7 +585,8 @@ class _ListenerState:
     @routing_http_request_x_amzn_tls_version_header_name.setter
     def routing_http_request_x_amzn_tls_version_header_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_credentials_header_value(
@@ -546,7 +595,8 @@ class _ListenerState:
     @routing_http_response_access_control_allow_credentials_header_value.setter
     def routing_http_response_access_control_allow_credentials_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_headers_header_value(
@@ -555,7 +605,8 @@ class _ListenerState:
     @routing_http_response_access_control_allow_headers_header_value.setter
     def routing_http_response_access_control_allow_headers_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_methods_header_value(
@@ -564,7 +615,8 @@ class _ListenerState:
     @routing_http_response_access_control_allow_methods_header_value.setter
     def routing_http_response_access_control_allow_methods_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_allow_origin_header_value(
@@ -573,7 +625,8 @@ class _ListenerState:
     @routing_http_response_access_control_allow_origin_header_value.setter
     def routing_http_response_access_control_allow_origin_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_access_control_expose_headers_header_value(
@@ -582,7 +635,8 @@ class _ListenerState:
     @routing_http_response_access_control_expose_headers_header_value.setter
     def routing_http_response_access_control_expose_headers_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseAccessControlMaxAgeHeaderValue")
     def routing_http_response_access_control_max_age_header_value(
@@ -591,7 +645,8 @@ class _ListenerState:
     @routing_http_response_access_control_max_age_header_value.setter
     def routing_http_response_access_control_max_age_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_content_security_policy_header_value(
@@ -600,7 +655,8 @@ class _ListenerState:
     @routing_http_response_content_security_policy_header_value.setter
     def routing_http_response_content_security_policy_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseServerEnabled")
     def routing_http_response_server_enabled(
@@ -609,7 +665,8 @@ class _ListenerState:
     @routing_http_response_server_enabled.setter
     def routing_http_response_server_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def routing_http_response_strict_transport_security_header_value(
@@ -618,7 +675,8 @@ class _ListenerState:
     @routing_http_response_strict_transport_security_header_value.setter
     def routing_http_response_strict_transport_security_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseXContentTypeOptionsHeaderValue")
     def routing_http_response_x_content_type_options_header_value(
@@ -627,7 +685,8 @@ class _ListenerState:
     @routing_http_response_x_content_type_options_header_value.setter
     def routing_http_response_x_content_type_options_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingHttpResponseXFrameOptionsHeaderValue")
     def routing_http_response_x_frame_options_header_value(
@@ -636,12 +695,14 @@ class _ListenerState:
     @routing_http_response_x_frame_options_header_value.setter
     def routing_http_response_x_frame_options_header_value(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslPolicy")
     def ssl_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssl_policy.setter
-    def ssl_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssl_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -650,7 +711,8 @@ class _ListenerState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -659,14 +721,16 @@ class _ListenerState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tcpIdleTimeoutSeconds")
     def tcp_idle_timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @tcp_idle_timeout_seconds.setter
     def tcp_idle_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:lb/listener:Listener")
 class Listener(pulumi.CustomResource):

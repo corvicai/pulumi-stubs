@@ -48,7 +48,8 @@ class GetApplicationAcceleratorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationAcceleratorResult(GetApplicationAcceleratorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationAcceleratorResult]:
+        ...
 
 def get_application_accelerator(
     application_accelerator_name: Optional[_builtins.str] = ...,

@@ -82,7 +82,8 @@ class GetNetworkTapResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkTapResult(GetNetworkTapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkTapResult]:
+        ...
 
 def get_network_tap(
     network_tap_name: Optional[_builtins.str] = ...,

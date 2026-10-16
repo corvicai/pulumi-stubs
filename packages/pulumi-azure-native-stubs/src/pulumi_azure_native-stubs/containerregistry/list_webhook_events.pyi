@@ -24,7 +24,8 @@ class ListWebhookEventsResult:
     def value(self) -> Optional[Sequence[outputs.EventResponse]]: ...
 
 class AwaitableListWebhookEventsResult(ListWebhookEventsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebhookEventsResult]:
+        ...
 
 def list_webhook_events(
     registry_name: Optional[_builtins.str] = ...,

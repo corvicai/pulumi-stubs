@@ -37,7 +37,10 @@ class ListWorkspaceConnectionSecretsResult:
 class AwaitableListWorkspaceConnectionSecretsResult(
     ListWorkspaceConnectionSecretsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkspaceConnectionSecretsResult]:
+        ...
 
 def list_workspace_connection_secrets(
     connection_name: Optional[_builtins.str] = ...,

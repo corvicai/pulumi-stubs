@@ -108,7 +108,8 @@ class GetContainerAppsSessionPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContainerAppsSessionPoolResult(GetContainerAppsSessionPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerAppsSessionPoolResult]:
+        ...
 
 def get_container_apps_session_pool(
     resource_group_name: Optional[_builtins.str] = ...,

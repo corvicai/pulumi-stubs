@@ -60,7 +60,8 @@ class GetAksAssessmentOperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAksAssessmentOperationResult(GetAksAssessmentOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAksAssessmentOperationResult]:
+        ...
 
 def get_aks_assessment_operation(
     assessment_name: Optional[_builtins.str] = ...,

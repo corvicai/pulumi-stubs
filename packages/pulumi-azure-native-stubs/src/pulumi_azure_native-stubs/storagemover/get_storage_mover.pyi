@@ -56,7 +56,8 @@ class GetStorageMoverResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageMoverResult(GetStorageMoverResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageMoverResult]:
+        ...
 
 def get_storage_mover(
     resource_group_name: Optional[_builtins.str] = ...,

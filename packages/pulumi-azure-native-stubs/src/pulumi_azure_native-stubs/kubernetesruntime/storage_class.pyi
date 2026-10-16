@@ -57,7 +57,8 @@ class StorageClassArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeProperties")
     def type_properties(
@@ -83,7 +84,8 @@ class StorageClassArgs:
                 SmbStorageClassTypePropertiesArgs,
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessModes")
     def access_modes(
@@ -97,7 +99,8 @@ class StorageClassArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AccessMode]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowVolumeExpansion")
     def allow_volume_expansion(
@@ -106,7 +109,8 @@ class StorageClassArgs:
     @allow_volume_expansion.setter
     def allow_volume_expansion(
         self, value: Optional[pulumi.Input[Union[_builtins.str, VolumeExpansion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataResilience")
     def data_resilience(
@@ -115,7 +119,8 @@ class StorageClassArgs:
     @data_resilience.setter
     def data_resilience(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DataResilienceTier]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverSpeed")
     def failover_speed(
@@ -124,7 +129,8 @@ class StorageClassArgs:
     @failover_speed.setter
     def failover_speed(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FailoverTier]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def limitations(
@@ -133,7 +139,8 @@ class StorageClassArgs:
     @limitations.setter
     def limitations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mountOptions")
     def mount_options(
@@ -142,7 +149,8 @@ class StorageClassArgs:
     @mount_options.setter
     def mount_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def performance(
@@ -151,22 +159,28 @@ class StorageClassArgs:
     @performance.setter
     def performance(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PerformanceTier]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def provisioner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioner.setter
-    def provisioner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provisioner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClassName")
     def storage_class_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class_name.setter
-    def storage_class_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeBindingMode")
     def volume_binding_mode(
@@ -175,7 +189,8 @@ class StorageClassArgs:
     @volume_binding_mode.setter
     def volume_binding_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, VolumeBindingMode]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:kubernetesruntime:StorageClass")
 class StorageClass(pulumi.CustomResource):

@@ -84,7 +84,8 @@ class GetProximityPlacementGroupResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetProximityPlacementGroupResult(GetProximityPlacementGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProximityPlacementGroupResult]:
+        ...
 
 def get_proximity_placement_group(
     include_colocation_status: Optional[_builtins.str] = ...,

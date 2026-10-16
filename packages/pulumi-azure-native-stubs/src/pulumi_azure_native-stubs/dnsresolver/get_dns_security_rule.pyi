@@ -72,7 +72,8 @@ class GetDnsSecurityRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDnsSecurityRuleResult(GetDnsSecurityRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnsSecurityRuleResult]:
+        ...
 
 def get_dns_security_rule(
     dns_resolver_policy_name: Optional[_builtins.str] = ...,

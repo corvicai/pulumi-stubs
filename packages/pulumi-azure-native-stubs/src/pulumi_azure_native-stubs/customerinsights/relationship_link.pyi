@@ -40,12 +40,14 @@ class RelationshipLinkArgs:
     @pulumi.getter(name="hubName")
     def hub_name(self) -> pulumi.Input[_builtins.str]: ...
     @hub_name.setter
-    def hub_name(self, value: pulumi.Input[_builtins.str]): ...
+    def hub_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interactionType")
     def interaction_type(self) -> pulumi.Input[_builtins.str]: ...
     @interaction_type.setter
-    def interaction_type(self, value: pulumi.Input[_builtins.str]): ...
+    def interaction_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profilePropertyReferences")
     def profile_property_references(
@@ -59,7 +61,8 @@ class RelationshipLinkArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ParticipantProfilePropertyReferenceArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relatedProfilePropertyReferences")
     def related_profile_property_references(
@@ -73,17 +76,20 @@ class RelationshipLinkArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ParticipantProfilePropertyReferenceArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relationshipName")
     def relationship_name(self) -> pulumi.Input[_builtins.str]: ...
     @relationship_name.setter
-    def relationship_name(self, value: pulumi.Input[_builtins.str]): ...
+    def relationship_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(
@@ -92,7 +98,8 @@ class RelationshipLinkArgs:
     @description.setter
     def description(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(
@@ -101,7 +108,8 @@ class RelationshipLinkArgs:
     @display_name.setter
     def display_name(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mappings(
@@ -115,12 +123,16 @@ class RelationshipLinkArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RelationshipLinkFieldMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relationshipLinkName")
     def relationship_link_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @relationship_link_name.setter
-    def relationship_link_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def relationship_link_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:customerinsights:RelationshipLink")
 class RelationshipLink(pulumi.CustomResource):

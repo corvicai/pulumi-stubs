@@ -84,7 +84,8 @@ class GetStudentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStudentResult(GetStudentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStudentResult]:
+        ...
 
 def get_student(
     billing_account_name: Optional[_builtins.str] = ...,

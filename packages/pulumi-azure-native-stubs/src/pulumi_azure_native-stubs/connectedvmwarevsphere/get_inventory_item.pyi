@@ -64,7 +64,8 @@ class GetInventoryItemResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInventoryItemResult(GetInventoryItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInventoryItemResult]:
+        ...
 
 def get_inventory_item(
     inventory_item_name: Optional[_builtins.str] = ...,

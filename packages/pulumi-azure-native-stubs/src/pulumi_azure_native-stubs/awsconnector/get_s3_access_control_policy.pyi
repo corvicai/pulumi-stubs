@@ -52,7 +52,8 @@ class GetS3AccessControlPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetS3AccessControlPolicyResult(GetS3AccessControlPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetS3AccessControlPolicyResult]:
+        ...
 
 def get_s3_access_control_policy(
     name: Optional[_builtins.str] = ...,

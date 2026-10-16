@@ -54,7 +54,10 @@ class GetRedshiftClusterParameterGroupResult:
 class AwaitableGetRedshiftClusterParameterGroupResult(
     GetRedshiftClusterParameterGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRedshiftClusterParameterGroupResult]:
+        ...
 
 def get_redshift_cluster_parameter_group(
     name: Optional[_builtins.str] = ...,

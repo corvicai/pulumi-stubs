@@ -52,7 +52,8 @@ class GetServiceRunnerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceRunnerResult(GetServiceRunnerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceRunnerResult]:
+        ...
 
 def get_service_runner(
     lab_name: Optional[_builtins.str] = ...,

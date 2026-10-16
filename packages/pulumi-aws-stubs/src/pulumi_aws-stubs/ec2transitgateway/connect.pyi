@@ -28,22 +28,26 @@ class ConnectArgs:
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transportAttachmentId")
     def transport_attachment_id(self) -> pulumi.Input[_builtins.str]: ...
     @transport_attachment_id.setter
-    def transport_attachment_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transport_attachment_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -52,7 +56,8 @@ class ConnectArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTableAssociation")
     def transit_gateway_default_route_table_association(
@@ -61,7 +66,8 @@ class ConnectArgs:
     @transit_gateway_default_route_table_association.setter
     def transit_gateway_default_route_table_association(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTablePropagation")
     def transit_gateway_default_route_table_propagation(
@@ -70,7 +76,8 @@ class ConnectArgs:
     @transit_gateway_default_route_table_propagation.setter
     def transit_gateway_default_route_table_propagation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConnectState:
@@ -96,12 +103,14 @@ class _ConnectState:
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -110,7 +119,8 @@ class _ConnectState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -119,7 +129,8 @@ class _ConnectState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTableAssociation")
     def transit_gateway_default_route_table_association(
@@ -128,7 +139,8 @@ class _ConnectState:
     @transit_gateway_default_route_table_association.setter
     def transit_gateway_default_route_table_association(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTablePropagation")
     def transit_gateway_default_route_table_propagation(
@@ -137,17 +149,24 @@ class _ConnectState:
     @transit_gateway_default_route_table_propagation.setter
     def transit_gateway_default_route_table_propagation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transportAttachmentId")
     def transport_attachment_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transport_attachment_id.setter
-    def transport_attachment_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transport_attachment_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2transitgateway/connect:Connect")
 class Connect(pulumi.CustomResource):

@@ -52,7 +52,8 @@ class GetEcrImageDetailResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEcrImageDetailResult(GetEcrImageDetailResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEcrImageDetailResult]:
+        ...
 
 def get_ecr_image_detail(
     name: Optional[_builtins.str] = ...,

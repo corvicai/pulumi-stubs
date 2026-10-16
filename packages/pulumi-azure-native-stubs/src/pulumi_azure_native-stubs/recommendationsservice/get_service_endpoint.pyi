@@ -52,7 +52,8 @@ class GetServiceEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceEndpointResult(GetServiceEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceEndpointResult]:
+        ...
 
 def get_service_endpoint(
     account_name: Optional[_builtins.str] = ...,

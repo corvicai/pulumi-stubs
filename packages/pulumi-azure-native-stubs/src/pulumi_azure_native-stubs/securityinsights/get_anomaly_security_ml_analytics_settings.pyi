@@ -108,7 +108,10 @@ class GetAnomalySecurityMLAnalyticsSettingsResult:
 class AwaitableGetAnomalySecurityMLAnalyticsSettingsResult(
     GetAnomalySecurityMLAnalyticsSettingsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAnomalySecurityMLAnalyticsSettingsResult]:
+        ...
 
 def get_anomaly_security_ml_analytics_settings(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -24,12 +24,14 @@ class DrtAccessLogBucketAssociationArgs:
     @pulumi.getter(name="logBucket")
     def log_bucket(self) -> pulumi.Input[_builtins.str]: ...
     @log_bucket.setter
-    def log_bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def log_bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArnAssociationId")
     def role_arn_association_id(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn_association_id.setter
-    def role_arn_association_id(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn_association_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -38,7 +40,8 @@ class DrtAccessLogBucketAssociationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DrtAccessLogBucketAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DrtAccessLogBucketAssociationState:
@@ -55,12 +58,16 @@ class _DrtAccessLogBucketAssociationState:
     @pulumi.getter(name="logBucket")
     def log_bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_bucket.setter
-    def log_bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArnAssociationId")
     def role_arn_association_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn_association_id.setter
-    def role_arn_association_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn_association_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -69,7 +76,8 @@ class _DrtAccessLogBucketAssociationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DrtAccessLogBucketAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DrtAccessLogBucketAssociation(pulumi.CustomResource):

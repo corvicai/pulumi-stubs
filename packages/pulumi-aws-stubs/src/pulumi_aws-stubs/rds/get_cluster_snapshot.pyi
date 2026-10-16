@@ -107,7 +107,8 @@ class GetClusterSnapshotResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetClusterSnapshotResult(GetClusterSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterSnapshotResult]:
+        ...
 
 def get_cluster_snapshot(
     db_cluster_identifier: Optional[_builtins.str] = ...,

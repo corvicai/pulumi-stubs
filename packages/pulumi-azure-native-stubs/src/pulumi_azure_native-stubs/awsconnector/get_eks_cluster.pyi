@@ -44,7 +44,8 @@ class GetEksClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEksClusterResult(GetEksClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEksClusterResult]:
+        ...
 
 def get_eks_cluster(
     resource_uri: Optional[_builtins.str] = ...,

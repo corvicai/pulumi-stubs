@@ -28,7 +28,10 @@ class ListApplianceClusterUserCredentialResult:
 class AwaitableListApplianceClusterUserCredentialResult(
     ListApplianceClusterUserCredentialResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListApplianceClusterUserCredentialResult]:
+        ...
 
 def list_appliance_cluster_user_credential(
     resource_group_name: Optional[_builtins.str] = ...,

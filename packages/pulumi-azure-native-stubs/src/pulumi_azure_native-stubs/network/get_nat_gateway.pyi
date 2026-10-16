@@ -82,7 +82,8 @@ class GetNatGatewayResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetNatGatewayResult(GetNatGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNatGatewayResult]:
+        ...
 
 def get_nat_gateway(
     expand: Optional[_builtins.str] = ...,

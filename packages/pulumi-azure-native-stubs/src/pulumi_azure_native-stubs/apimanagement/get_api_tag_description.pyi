@@ -55,7 +55,8 @@ class GetApiTagDescriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiTagDescriptionResult(GetApiTagDescriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiTagDescriptionResult]:
+        ...
 
 def get_api_tag_description(
     api_id: Optional[_builtins.str] = ...,

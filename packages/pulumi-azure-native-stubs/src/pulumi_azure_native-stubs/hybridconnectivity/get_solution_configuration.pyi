@@ -64,7 +64,8 @@ class GetSolutionConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSolutionConfigurationResult(GetSolutionConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSolutionConfigurationResult]:
+        ...
 
 def get_solution_configuration(
     resource_uri: Optional[_builtins.str] = ...,

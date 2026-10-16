@@ -24,7 +24,8 @@ class ListWebAppSiteBackupsSlotResult:
     def value(self) -> Sequence[outputs.BackupItemResponse]: ...
 
 class AwaitableListWebAppSiteBackupsSlotResult(ListWebAppSiteBackupsSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebAppSiteBackupsSlotResult]:
+        ...
 
 def list_web_app_site_backups_slot(
     name: Optional[_builtins.str] = ...,

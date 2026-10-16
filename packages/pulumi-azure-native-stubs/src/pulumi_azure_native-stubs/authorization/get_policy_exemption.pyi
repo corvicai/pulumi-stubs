@@ -78,7 +78,8 @@ class GetPolicyExemptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyExemptionResult(GetPolicyExemptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyExemptionResult]:
+        ...
 
 def get_policy_exemption(
     policy_exemption_name: Optional[_builtins.str] = ...,

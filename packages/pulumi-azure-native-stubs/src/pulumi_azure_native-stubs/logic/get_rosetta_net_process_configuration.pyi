@@ -86,7 +86,10 @@ class GetRosettaNetProcessConfigurationResult:
 class AwaitableGetRosettaNetProcessConfigurationResult(
     GetRosettaNetProcessConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRosettaNetProcessConfigurationResult]:
+        ...
 
 def get_rosetta_net_process_configuration(
     integration_account_name: Optional[_builtins.str] = ...,

@@ -23,7 +23,8 @@ class GetPrivateCloudVcfLicenseResult:
     def provisioning_state(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateCloudVcfLicenseResult(GetPrivateCloudVcfLicenseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateCloudVcfLicenseResult]:
+        ...
 
 def get_private_cloud_vcf_license(
     private_cloud_name: Optional[_builtins.str] = ...,

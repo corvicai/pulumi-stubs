@@ -44,7 +44,8 @@ class GetMarketplaceSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMarketplaceSubscriptionResult(GetMarketplaceSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMarketplaceSubscriptionResult]:
+        ...
 
 def get_marketplace_subscription(
     name: Optional[_builtins.str] = ...,

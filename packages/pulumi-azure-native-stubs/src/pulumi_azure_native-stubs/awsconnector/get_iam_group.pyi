@@ -52,7 +52,8 @@ class GetIamGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamGroupResult(GetIamGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamGroupResult]:
+        ...
 
 def get_iam_group(
     name: Optional[_builtins.str] = ...,

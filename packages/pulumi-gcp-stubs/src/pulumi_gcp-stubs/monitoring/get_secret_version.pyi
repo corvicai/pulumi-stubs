@@ -63,7 +63,8 @@ class GetSecretVersionResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetSecretVersionResult(GetSecretVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretVersionResult]:
+        ...
 
 def get_secret_version(
     fetch_secret_data: Optional[_builtins.bool] = ...,

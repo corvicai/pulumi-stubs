@@ -32,7 +32,8 @@ class ModelArgs:
     @pulumi.getter(name="executionRoleArn")
     def execution_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @execution_role_arn.setter
-    def execution_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def execution_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def containers(
@@ -41,14 +42,16 @@ class ModelArgs:
     @containers.setter
     def containers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ModelContainerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableNetworkIsolation")
     def enable_network_isolation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_network_isolation.setter
     def enable_network_isolation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferenceExecutionConfig")
     def inference_execution_config(
@@ -57,12 +60,14 @@ class ModelArgs:
     @inference_execution_config.setter
     def inference_execution_config(
         self, value: Optional[pulumi.Input[ModelInferenceExecutionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryContainer")
     def primary_container(
@@ -71,12 +76,14 @@ class ModelArgs:
     @primary_container.setter
     def primary_container(
         self, value: Optional[pulumi.Input[ModelPrimaryContainerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -85,12 +92,14 @@ class ModelArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(self) -> Optional[pulumi.Input[ModelVpcConfigArgs]]: ...
     @vpc_config.setter
-    def vpc_config(self, value: Optional[pulumi.Input[ModelVpcConfigArgs]]): ...
+    def vpc_config(self, value: Optional[pulumi.Input[ModelVpcConfigArgs]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ModelState:
@@ -119,7 +128,8 @@ class _ModelState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def containers(
@@ -128,19 +138,24 @@ class _ModelState:
     @containers.setter
     def containers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ModelContainerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableNetworkIsolation")
     def enable_network_isolation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_network_isolation.setter
     def enable_network_isolation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRoleArn")
     def execution_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role_arn.setter
-    def execution_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferenceExecutionConfig")
     def inference_execution_config(
@@ -149,12 +164,14 @@ class _ModelState:
     @inference_execution_config.setter
     def inference_execution_config(
         self, value: Optional[pulumi.Input[ModelInferenceExecutionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryContainer")
     def primary_container(
@@ -163,12 +180,14 @@ class _ModelState:
     @primary_container.setter
     def primary_container(
         self, value: Optional[pulumi.Input[ModelPrimaryContainerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -177,7 +196,8 @@ class _ModelState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -186,12 +206,14 @@ class _ModelState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(self) -> Optional[pulumi.Input[ModelVpcConfigArgs]]: ...
     @vpc_config.setter
-    def vpc_config(self, value: Optional[pulumi.Input[ModelVpcConfigArgs]]): ...
+    def vpc_config(self, value: Optional[pulumi.Input[ModelVpcConfigArgs]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/model:Model")
 class Model(pulumi.CustomResource):

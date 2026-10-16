@@ -25,7 +25,10 @@ class ListInferenceGroupDeltaModelsAsyncResult:
 class AwaitableListInferenceGroupDeltaModelsAsyncResult(
     ListInferenceGroupDeltaModelsAsyncResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListInferenceGroupDeltaModelsAsyncResult]:
+        ...
 
 def list_inference_group_delta_models_async(
     count: Optional[_builtins.int] = ...,

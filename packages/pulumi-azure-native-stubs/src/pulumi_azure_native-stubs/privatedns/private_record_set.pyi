@@ -43,17 +43,20 @@ class PrivateRecordSetArgs:
     @pulumi.getter(name="privateZoneName")
     def private_zone_name(self) -> pulumi.Input[_builtins.str]: ...
     @private_zone_name.setter
-    def private_zone_name(self, value: pulumi.Input[_builtins.str]): ...
+    def private_zone_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordType")
     def record_type(self) -> pulumi.Input[_builtins.str]: ...
     @record_type.setter
-    def record_type(self, value: pulumi.Input[_builtins.str]): ...
+    def record_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aRecords")
     def a_records(
@@ -62,7 +65,8 @@ class PrivateRecordSetArgs:
     @a_records.setter
     def a_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ARecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aaaaRecords")
     def aaaa_records(
@@ -71,12 +75,14 @@ class PrivateRecordSetArgs:
     @aaaa_records.setter
     def aaaa_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AaaaRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cnameRecord")
     def cname_record(self) -> Optional[pulumi.Input[CnameRecordArgs]]: ...
     @cname_record.setter
-    def cname_record(self, value: Optional[pulumi.Input[CnameRecordArgs]]): ...
+    def cname_record(self, value: Optional[pulumi.Input[CnameRecordArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -85,7 +91,8 @@ class PrivateRecordSetArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mxRecords")
     def mx_records(
@@ -94,7 +101,8 @@ class PrivateRecordSetArgs:
     @mx_records.setter
     def mx_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MxRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ptrRecords")
     def ptr_records(
@@ -103,19 +111,22 @@ class PrivateRecordSetArgs:
     @ptr_records.setter
     def ptr_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PtrRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relativeRecordSetName")
     def relative_record_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @relative_record_set_name.setter
     def relative_record_set_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="soaRecord")
     def soa_record(self) -> Optional[pulumi.Input[SoaRecordArgs]]: ...
     @soa_record.setter
-    def soa_record(self, value: Optional[pulumi.Input[SoaRecordArgs]]): ...
+    def soa_record(self, value: Optional[pulumi.Input[SoaRecordArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="srvRecords")
     def srv_records(
@@ -124,12 +135,14 @@ class PrivateRecordSetArgs:
     @srv_records.setter
     def srv_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SrvRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="txtRecords")
     def txt_records(
@@ -138,7 +151,8 @@ class PrivateRecordSetArgs:
     @txt_records.setter
     def txt_records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TxtRecordArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:privatedns:PrivateRecordSet")
 class PrivateRecordSet(pulumi.CustomResource):

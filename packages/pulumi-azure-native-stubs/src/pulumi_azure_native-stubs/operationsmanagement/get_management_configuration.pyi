@@ -44,7 +44,8 @@ class GetManagementConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagementConfigurationResult(GetManagementConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagementConfigurationResult]:
+        ...
 
 def get_management_configuration(
     management_configuration_name: Optional[_builtins.str] = ...,

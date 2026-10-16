@@ -20,7 +20,10 @@ class ListPaloAltoNetworksCloudngfwOperationProductSerialNumberStatusResult:
 class AwaitableListPaloAltoNetworksCloudngfwOperationProductSerialNumberStatusResult(
     ListPaloAltoNetworksCloudngfwOperationProductSerialNumberStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPaloAltoNetworksCloudngfwOperationProductSerialNumberStatusResult]:
+        ...
 
 def list_palo_alto_networks_cloudngfw_operation_product_serial_number_status(
     opts: Optional[pulumi.InvokeOptions] = ...,

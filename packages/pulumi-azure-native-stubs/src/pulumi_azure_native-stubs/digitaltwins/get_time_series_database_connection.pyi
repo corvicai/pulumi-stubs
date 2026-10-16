@@ -46,7 +46,10 @@ class GetTimeSeriesDatabaseConnectionResult:
 class AwaitableGetTimeSeriesDatabaseConnectionResult(
     GetTimeSeriesDatabaseConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTimeSeriesDatabaseConnectionResult]:
+        ...
 
 def get_time_series_database_connection(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -50,7 +50,10 @@ class GetIspCacheNodesOperationBgpCidrsResult:
 class AwaitableGetIspCacheNodesOperationBgpCidrsResult(
     GetIspCacheNodesOperationBgpCidrsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIspCacheNodesOperationBgpCidrsResult]:
+        ...
 
 def get_isp_cache_nodes_operation_bgp_cidrs(
     cache_node_resource_name: Optional[_builtins.str] = ...,

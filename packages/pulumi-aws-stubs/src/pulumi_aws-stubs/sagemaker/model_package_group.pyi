@@ -21,7 +21,8 @@ class ModelPackageGroupArgs:
     @pulumi.getter(name="modelPackageGroupName")
     def model_package_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @model_package_group_name.setter
-    def model_package_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def model_package_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelPackageGroupDescription")
     def model_package_group_description(
@@ -30,12 +31,14 @@ class ModelPackageGroupArgs:
     @model_package_group_description.setter
     def model_package_group_description(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -44,7 +47,8 @@ class ModelPackageGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ModelPackageGroupState:
@@ -64,7 +68,8 @@ class _ModelPackageGroupState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelPackageGroupDescription")
     def model_package_group_description(
@@ -73,19 +78,22 @@ class _ModelPackageGroupState:
     @model_package_group_description.setter
     def model_package_group_description(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelPackageGroupName")
     def model_package_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model_package_group_name.setter
     def model_package_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -94,7 +102,8 @@ class _ModelPackageGroupState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -103,7 +112,8 @@ class _ModelPackageGroupState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/modelPackageGroup:ModelPackageGroup")
 class ModelPackageGroup(pulumi.CustomResource):

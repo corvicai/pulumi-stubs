@@ -33,7 +33,10 @@ class ListAuthorizationServerSecretsResult:
 class AwaitableListAuthorizationServerSecretsResult(
     ListAuthorizationServerSecretsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListAuthorizationServerSecretsResult]:
+        ...
 
 def list_authorization_server_secrets(
     authsid: Optional[_builtins.str] = ...,

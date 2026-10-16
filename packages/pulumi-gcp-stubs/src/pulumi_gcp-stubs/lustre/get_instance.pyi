@@ -114,7 +114,8 @@ class GetInstanceResult:
     def zone(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetInstanceResult(GetInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceResult]:
+        ...
 
 def get_instance(
     instance_id: Optional[_builtins.str] = ...,

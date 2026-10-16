@@ -95,7 +95,10 @@ class GetDatabaseMigrationsMongoToCosmosDbRUMongoResult:
 class AwaitableGetDatabaseMigrationsMongoToCosmosDbRUMongoResult(
     GetDatabaseMigrationsMongoToCosmosDbRUMongoResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseMigrationsMongoToCosmosDbRUMongoResult]:
+        ...
 
 def get_database_migrations_mongo_to_cosmos_db_ru_mongo(
     migration_name: Optional[_builtins.str] = ...,

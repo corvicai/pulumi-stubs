@@ -31,12 +31,16 @@ class EncryptionPropertiesIdentityArgs:
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[Union[_builtins.str, Type]]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, Type]]]): ...
+    def type(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Type]]]
+    ):  # -> None:
+        ...
 
 class EncryptionPropertiesArgsDict(TypedDict):
     identity: NotRequired[pulumi.Input[EncryptionPropertiesIdentityArgsDict]]
@@ -56,12 +60,14 @@ class EncryptionPropertiesArgs:
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[EncryptionPropertiesIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyUrl")
     def key_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_url.setter
-    def key_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -87,7 +93,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -96,4 +103,5 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

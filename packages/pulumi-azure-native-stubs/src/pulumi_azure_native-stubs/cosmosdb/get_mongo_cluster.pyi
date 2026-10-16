@@ -76,7 +76,8 @@ class GetMongoClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMongoClusterResult(GetMongoClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMongoClusterResult]:
+        ...
 
 def get_mongo_cluster(
     mongo_cluster_name: Optional[_builtins.str] = ...,

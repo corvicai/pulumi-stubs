@@ -58,7 +58,8 @@ class GetSpringbootsiteResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSpringbootsiteResult(GetSpringbootsiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSpringbootsiteResult]:
+        ...
 
 def get_springbootsite(
     resource_group_name: Optional[_builtins.str] = ...,

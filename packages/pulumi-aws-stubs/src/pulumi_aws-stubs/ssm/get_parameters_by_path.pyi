@@ -55,7 +55,8 @@ class GetParametersByPathResult:
     def with_decryption(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetParametersByPathResult(GetParametersByPathResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetParametersByPathResult]:
+        ...
 
 def get_parameters_by_path(
     path: Optional[_builtins.str] = ...,

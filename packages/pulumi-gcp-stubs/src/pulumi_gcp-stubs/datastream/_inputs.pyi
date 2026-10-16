@@ -332,27 +332,32 @@ class ConnectionProfileForwardSshConnectivityArgs:
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateKey")
     def private_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_key.setter
-    def private_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionProfileGcsProfileArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -370,12 +375,14 @@ class ConnectionProfileGcsProfileArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootPath")
     def root_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @root_path.setter
-    def root_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def root_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionProfileMongodbProfileArgsDict(TypedDict):
     host_addresses: pulumi.Input[
@@ -430,22 +437,26 @@ class ConnectionProfileMongodbProfileArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ConnectionProfileMongodbProfileHostAddressArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaSet")
     def replica_set(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replica_set.setter
-    def replica_set(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replica_set(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredPassword")
     def secret_manager_stored_password(
@@ -454,7 +465,8 @@ class ConnectionProfileMongodbProfileArgs:
     @secret_manager_stored_password.setter
     def secret_manager_stored_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="srvConnectionFormat")
     def srv_connection_format(
@@ -468,7 +480,8 @@ class ConnectionProfileMongodbProfileArgs:
         value: Optional[
             pulumi.Input[ConnectionProfileMongodbProfileSrvConnectionFormatArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslConfig")
     def ssl_config(
@@ -478,7 +491,8 @@ class ConnectionProfileMongodbProfileArgs:
     def ssl_config(
         self,
         value: Optional[pulumi.Input[ConnectionProfileMongodbProfileSslConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="standardConnectionFormat")
     def standard_connection_format(
@@ -492,7 +506,8 @@ class ConnectionProfileMongodbProfileArgs:
         value: Optional[
             pulumi.Input[ConnectionProfileMongodbProfileStandardConnectionFormatArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfileMongodbProfileHostAddressArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
@@ -510,12 +525,14 @@ class ConnectionProfileMongodbProfileHostAddressArgs:
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ConnectionProfileMongodbProfileSrvConnectionFormatArgsDict(TypedDict): ...
 
@@ -549,32 +566,44 @@ class ConnectionProfileMongodbProfileSslConfigArgs:
     @pulumi.getter(name="caCertificate")
     def ca_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ca_certificate.setter
-    def ca_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ca_certificate(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificateSet")
     def ca_certificate_set(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ca_certificate_set.setter
-    def ca_certificate_set(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ca_certificate_set(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificate")
     def client_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_certificate.setter
-    def client_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_certificate(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificateSet")
     def client_certificate_set(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_certificate_set.setter
-    def client_certificate_set(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_certificate_set(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientKey")
     def client_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_key.setter
-    def client_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientKeySet")
     def client_key_set(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_key_set.setter
-    def client_key_set(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_key_set(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredClientKey")
     def secret_manager_stored_client_key(
@@ -583,7 +612,8 @@ class ConnectionProfileMongodbProfileSslConfigArgs:
     @secret_manager_stored_client_key.setter
     def secret_manager_stored_client_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfileMongodbProfileStandardConnectionFormatArgsDict(TypedDict):
     direct_connection: NotRequired[pulumi.Input[_builtins.bool]]
@@ -597,7 +627,10 @@ class ConnectionProfileMongodbProfileStandardConnectionFormatArgs:
     @pulumi.getter(name="directConnection")
     def direct_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @direct_connection.setter
-    def direct_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def direct_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ConnectionProfileMysqlProfileArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
@@ -627,22 +660,26 @@ class ConnectionProfileMysqlProfileArgs:
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredPassword")
     def secret_manager_stored_password(
@@ -651,7 +688,8 @@ class ConnectionProfileMysqlProfileArgs:
     @secret_manager_stored_password.setter
     def secret_manager_stored_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslConfig")
     def ssl_config(
@@ -660,7 +698,8 @@ class ConnectionProfileMysqlProfileArgs:
     @ssl_config.setter
     def ssl_config(
         self, value: Optional[pulumi.Input[ConnectionProfileMysqlProfileSslConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfileMysqlProfileSslConfigArgsDict(TypedDict):
     ca_certificate: NotRequired[pulumi.Input[_builtins.str]]
@@ -686,32 +725,44 @@ class ConnectionProfileMysqlProfileSslConfigArgs:
     @pulumi.getter(name="caCertificate")
     def ca_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ca_certificate.setter
-    def ca_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ca_certificate(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificateSet")
     def ca_certificate_set(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ca_certificate_set.setter
-    def ca_certificate_set(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ca_certificate_set(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificate")
     def client_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_certificate.setter
-    def client_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_certificate(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificateSet")
     def client_certificate_set(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_certificate_set.setter
-    def client_certificate_set(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_certificate_set(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientKey")
     def client_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_key.setter
-    def client_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientKeySet")
     def client_key_set(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @client_key_set.setter
-    def client_key_set(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def client_key_set(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ConnectionProfileOracleProfileArgsDict(TypedDict):
     database_service: pulumi.Input[_builtins.str]
@@ -743,17 +794,20 @@ class ConnectionProfileOracleProfileArgs:
     @pulumi.getter(name="databaseService")
     def database_service(self) -> pulumi.Input[_builtins.str]: ...
     @database_service.setter
-    def database_service(self, value: pulumi.Input[_builtins.str]): ...
+    def database_service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionAttributes")
     def connection_attributes(
@@ -762,17 +816,20 @@ class ConnectionProfileOracleProfileArgs:
     @connection_attributes.setter
     def connection_attributes(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredPassword")
     def secret_manager_stored_password(
@@ -781,7 +838,8 @@ class ConnectionProfileOracleProfileArgs:
     @secret_manager_stored_password.setter
     def secret_manager_stored_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfilePostgresqlProfileArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -813,27 +871,32 @@ class ConnectionProfilePostgresqlProfileArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredPassword")
     def secret_manager_stored_password(
@@ -842,7 +905,8 @@ class ConnectionProfilePostgresqlProfileArgs:
     @secret_manager_stored_password.setter
     def secret_manager_stored_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslConfig")
     def ssl_config(
@@ -852,7 +916,8 @@ class ConnectionProfilePostgresqlProfileArgs:
     def ssl_config(
         self,
         value: Optional[pulumi.Input[ConnectionProfilePostgresqlProfileSslConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfilePostgresqlProfileSslConfigArgsDict(TypedDict):
     server_and_client_verification: NotRequired[
@@ -899,7 +964,8 @@ class ConnectionProfilePostgresqlProfileSslConfigArgs:
                 ConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverVerification")
     def server_verification(
@@ -915,7 +981,8 @@ class ConnectionProfilePostgresqlProfileSslConfigArgs:
                 ConnectionProfilePostgresqlProfileSslConfigServerVerificationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationArgsDict(
     TypedDict
@@ -937,17 +1004,20 @@ class ConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationArgs
     @pulumi.getter(name="caCertificate")
     def ca_certificate(self) -> pulumi.Input[_builtins.str]: ...
     @ca_certificate.setter
-    def ca_certificate(self, value: pulumi.Input[_builtins.str]): ...
+    def ca_certificate(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificate")
     def client_certificate(self) -> pulumi.Input[_builtins.str]: ...
     @client_certificate.setter
-    def client_certificate(self, value: pulumi.Input[_builtins.str]): ...
+    def client_certificate(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientKey")
     def client_key(self) -> pulumi.Input[_builtins.str]: ...
     @client_key.setter
-    def client_key(self, value: pulumi.Input[_builtins.str]): ...
+    def client_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionProfilePostgresqlProfileSslConfigServerVerificationArgsDict(TypedDict):
     ca_certificate: pulumi.Input[_builtins.str]
@@ -959,7 +1029,8 @@ class ConnectionProfilePostgresqlProfileSslConfigServerVerificationArgs:
     @pulumi.getter(name="caCertificate")
     def ca_certificate(self) -> pulumi.Input[_builtins.str]: ...
     @ca_certificate.setter
-    def ca_certificate(self, value: pulumi.Input[_builtins.str]): ...
+    def ca_certificate(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionProfilePrivateConnectivityArgsDict(TypedDict):
     private_connection: pulumi.Input[_builtins.str]
@@ -973,7 +1044,8 @@ class ConnectionProfilePrivateConnectivityArgs:
     @pulumi.getter(name="privateConnection")
     def private_connection(self) -> pulumi.Input[_builtins.str]: ...
     @private_connection.setter
-    def private_connection(self, value: pulumi.Input[_builtins.str]): ...
+    def private_connection(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConnectionProfileSalesforceProfileArgsDict(TypedDict):
     domain: pulumi.Input[_builtins.str]
@@ -1001,7 +1073,8 @@ class ConnectionProfileSalesforceProfileArgs:
     @pulumi.getter
     def domain(self) -> pulumi.Input[_builtins.str]: ...
     @domain.setter
-    def domain(self, value: pulumi.Input[_builtins.str]): ...
+    def domain(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2ClientCredentials")
     def oauth2_client_credentials(
@@ -1015,7 +1088,8 @@ class ConnectionProfileSalesforceProfileArgs:
         value: Optional[
             pulumi.Input[ConnectionProfileSalesforceProfileOauth2ClientCredentialsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userCredentials")
     def user_credentials(
@@ -1029,7 +1103,8 @@ class ConnectionProfileSalesforceProfileArgs:
         value: Optional[
             pulumi.Input[ConnectionProfileSalesforceProfileUserCredentialsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfileSalesforceProfileOauth2ClientCredentialsArgsDict(TypedDict):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1051,12 +1126,14 @@ class ConnectionProfileSalesforceProfileOauth2ClientCredentialsArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredClientSecret")
     def secret_manager_stored_client_secret(
@@ -1065,7 +1142,8 @@ class ConnectionProfileSalesforceProfileOauth2ClientCredentialsArgs:
     @secret_manager_stored_client_secret.setter
     def secret_manager_stored_client_secret(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectionProfileSalesforceProfileUserCredentialsArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
@@ -1091,7 +1169,8 @@ class ConnectionProfileSalesforceProfileUserCredentialsArgs:
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredPassword")
     def secret_manager_stored_password(
@@ -1100,7 +1179,8 @@ class ConnectionProfileSalesforceProfileUserCredentialsArgs:
     @secret_manager_stored_password.setter
     def secret_manager_stored_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredSecurityToken")
     def secret_manager_stored_security_token(
@@ -1109,17 +1189,20 @@ class ConnectionProfileSalesforceProfileUserCredentialsArgs:
     @secret_manager_stored_security_token.setter
     def secret_manager_stored_security_token(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityToken")
     def security_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_token.setter
-    def security_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @username.setter
-    def username(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionProfileSpannerProfileArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -1137,12 +1220,14 @@ class ConnectionProfileSpannerProfileArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectionProfileSqlServerProfileArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -1168,27 +1253,32 @@ class ConnectionProfileSqlServerProfileArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hostname(self) -> pulumi.Input[_builtins.str]: ...
     @hostname.setter
-    def hostname(self, value: pulumi.Input[_builtins.str]): ...
+    def hostname(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> pulumi.Input[_builtins.str]: ...
     @username.setter
-    def username(self, value: pulumi.Input[_builtins.str]): ...
+    def username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerStoredPassword")
     def secret_manager_stored_password(
@@ -1197,7 +1287,8 @@ class ConnectionProfileSqlServerProfileArgs:
     @secret_manager_stored_password.setter
     def secret_manager_stored_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateConnectionErrorArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -1221,12 +1312,14 @@ class PrivateConnectionErrorArgs:
     @details.setter
     def details(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateConnectionPscInterfaceConfigArgsDict(TypedDict):
     network_attachment: pulumi.Input[_builtins.str]
@@ -1240,7 +1333,8 @@ class PrivateConnectionPscInterfaceConfigArgs:
     @pulumi.getter(name="networkAttachment")
     def network_attachment(self) -> pulumi.Input[_builtins.str]: ...
     @network_attachment.setter
-    def network_attachment(self, value: pulumi.Input[_builtins.str]): ...
+    def network_attachment(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PrivateConnectionVpcPeeringConfigArgsDict(TypedDict):
     subnet: pulumi.Input[_builtins.str]
@@ -1258,12 +1352,14 @@ class PrivateConnectionVpcPeeringConfigArgs:
     @pulumi.getter
     def subnet(self) -> pulumi.Input[_builtins.str]: ...
     @subnet.setter
-    def subnet(self, value: pulumi.Input[_builtins.str]): ...
+    def subnet(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vpc(self) -> pulumi.Input[_builtins.str]: ...
     @vpc.setter
-    def vpc(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamBackfillAllArgsDict(TypedDict):
     mongodb_excluded_objects: NotRequired[
@@ -1323,7 +1419,8 @@ class StreamBackfillAllArgs:
     @mongodb_excluded_objects.setter
     def mongodb_excluded_objects(
         self, value: Optional[pulumi.Input[StreamBackfillAllMongodbExcludedObjectsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlExcludedObjects")
     def mysql_excluded_objects(
@@ -1332,7 +1429,8 @@ class StreamBackfillAllArgs:
     @mysql_excluded_objects.setter
     def mysql_excluded_objects(
         self, value: Optional[pulumi.Input[StreamBackfillAllMysqlExcludedObjectsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleExcludedObjects")
     def oracle_excluded_objects(
@@ -1341,7 +1439,8 @@ class StreamBackfillAllArgs:
     @oracle_excluded_objects.setter
     def oracle_excluded_objects(
         self, value: Optional[pulumi.Input[StreamBackfillAllOracleExcludedObjectsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlExcludedObjects")
     def postgresql_excluded_objects(
@@ -1351,7 +1450,8 @@ class StreamBackfillAllArgs:
     def postgresql_excluded_objects(
         self,
         value: Optional[pulumi.Input[StreamBackfillAllPostgresqlExcludedObjectsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="salesforceExcludedObjects")
     def salesforce_excluded_objects(
@@ -1361,7 +1461,8 @@ class StreamBackfillAllArgs:
     def salesforce_excluded_objects(
         self,
         value: Optional[pulumi.Input[StreamBackfillAllSalesforceExcludedObjectsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spannerExcludedObjects")
     def spanner_excluded_objects(
@@ -1370,7 +1471,8 @@ class StreamBackfillAllArgs:
     @spanner_excluded_objects.setter
     def spanner_excluded_objects(
         self, value: Optional[pulumi.Input[StreamBackfillAllSpannerExcludedObjectsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerExcludedObjects")
     def sql_server_excluded_objects(
@@ -1380,7 +1482,8 @@ class StreamBackfillAllArgs:
     def sql_server_excluded_objects(
         self,
         value: Optional[pulumi.Input[StreamBackfillAllSqlServerExcludedObjectsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllMongodbExcludedObjectsArgsDict(TypedDict):
     databases: pulumi.Input[
@@ -1409,7 +1512,8 @@ class StreamBackfillAllMongodbExcludedObjectsArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[StreamBackfillAllMongodbExcludedObjectsDatabaseArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllMongodbExcludedObjectsDatabaseArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -1443,7 +1547,8 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def collections(
@@ -1469,7 +1574,8 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionArgsDict(TypedDict):
     collection: pulumi.Input[_builtins.str]
@@ -1503,7 +1609,8 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionArgs:
     @pulumi.getter
     def collection(self) -> pulumi.Input[_builtins.str]: ...
     @collection.setter
-    def collection(self, value: pulumi.Input[_builtins.str]): ...
+    def collection(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fields(
@@ -1529,7 +1636,8 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionFieldArgsDict(TypedDict):
     field: NotRequired[pulumi.Input[_builtins.str]]
@@ -1543,7 +1651,8 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionFieldArgs:
     @pulumi.getter
     def field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field.setter
-    def field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamBackfillAllMysqlExcludedObjectsArgsDict(TypedDict):
     mysql_databases: pulumi.Input[
@@ -1578,7 +1687,8 @@ class StreamBackfillAllMysqlExcludedObjectsArgs:
                 pulumi.Input[StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -1612,7 +1722,8 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlTables")
     def mysql_tables(
@@ -1638,7 +1749,8 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableArgsDict(TypedDict):
     table: pulumi.Input[_builtins.str]
@@ -1672,7 +1784,8 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlColumns")
     def mysql_columns(
@@ -1698,7 +1811,8 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableMysqlColumnArgsDict(
     TypedDict
@@ -1728,37 +1842,46 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableMysqlColumnArg
     @pulumi.getter
     def collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collation.setter
-    def collation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StreamBackfillAllOracleExcludedObjectsArgsDict(TypedDict):
     oracle_schemas: pulumi.Input[
@@ -1793,7 +1916,8 @@ class StreamBackfillAllOracleExcludedObjectsArgs:
                 pulumi.Input[StreamBackfillAllOracleExcludedObjectsOracleSchemaArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllOracleExcludedObjectsOracleSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -1827,7 +1951,8 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleTables")
     def oracle_tables(
@@ -1853,7 +1978,8 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableArgsDict(TypedDict):
     table: pulumi.Input[_builtins.str]
@@ -1887,7 +2013,8 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleColumns")
     def oracle_columns(
@@ -1913,7 +2040,8 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableOracleColumnArgsDict(
     TypedDict
@@ -1947,47 +2075,58 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableOracleColumnA
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encoding(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encoding.setter
-    def encoding(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encoding(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamBackfillAllPostgresqlExcludedObjectsArgsDict(TypedDict):
     postgresql_schemas: pulumi.Input[
@@ -2030,7 +2169,8 @@ class StreamBackfillAllPostgresqlExcludedObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -2064,7 +2204,8 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlTables")
     def postgresql_tables(
@@ -2090,7 +2231,8 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTableArgsDict(
     TypedDict
@@ -2126,7 +2268,8 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTableA
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlColumns")
     def postgresql_columns(
@@ -2152,7 +2295,8 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTableA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTablePostgresqlColumnArgsDict(
     TypedDict
@@ -2184,42 +2328,52 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTableP
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamBackfillAllSalesforceExcludedObjectsArgsDict(TypedDict):
     objects: pulumi.Input[
@@ -2248,7 +2402,8 @@ class StreamBackfillAllSalesforceExcludedObjectsArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[StreamBackfillAllSalesforceExcludedObjectsObjectArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSalesforceExcludedObjectsObjectArgsDict(TypedDict):
     fields: NotRequired[
@@ -2301,12 +2456,14 @@ class StreamBackfillAllSalesforceExcludedObjectsObjectArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectName")
     def object_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_name.setter
-    def object_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamBackfillAllSalesforceExcludedObjectsObjectFieldArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2320,7 +2477,8 @@ class StreamBackfillAllSalesforceExcludedObjectsObjectFieldArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamBackfillAllSpannerExcludedObjectsArgsDict(TypedDict):
     schemas: pulumi.Input[
@@ -2349,7 +2507,8 @@ class StreamBackfillAllSpannerExcludedObjectsArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[StreamBackfillAllSpannerExcludedObjectsSchemaArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSpannerExcludedObjectsSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -2379,7 +2538,8 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -2401,7 +2561,8 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSpannerExcludedObjectsSchemaTableArgsDict(TypedDict):
     table: pulumi.Input[_builtins.str]
@@ -2435,7 +2596,8 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def columns(
@@ -2461,7 +2623,8 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSpannerExcludedObjectsSchemaTableColumnArgsDict(TypedDict):
     column: pulumi.Input[_builtins.str]
@@ -2483,22 +2646,28 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaTableColumnArgs:
     @pulumi.getter
     def column(self) -> pulumi.Input[_builtins.str]: ...
     @column.setter
-    def column(self, value: pulumi.Input[_builtins.str]): ...
+    def column(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isPrimaryKey")
     def is_primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_primary_key.setter
-    def is_primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSqlServerExcludedObjectsArgsDict(TypedDict):
     schemas: pulumi.Input[
@@ -2527,7 +2696,8 @@ class StreamBackfillAllSqlServerExcludedObjectsArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[StreamBackfillAllSqlServerExcludedObjectsSchemaArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSqlServerExcludedObjectsSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -2561,7 +2731,8 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -2585,7 +2756,8 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSqlServerExcludedObjectsSchemaTableArgsDict(TypedDict):
     table: pulumi.Input[_builtins.str]
@@ -2619,7 +2791,8 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def columns(
@@ -2645,7 +2818,8 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamBackfillAllSqlServerExcludedObjectsSchemaTableColumnArgsDict(TypedDict):
     column: NotRequired[pulumi.Input[_builtins.str]]
@@ -2675,42 +2849,52 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaTableColumnArgs:
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamBackfillNoneArgsDict(TypedDict): ...
 
@@ -2744,7 +2928,10 @@ class StreamDestinationConfigArgs:
     @pulumi.getter(name="destinationConnectionProfile")
     def destination_connection_profile(self) -> pulumi.Input[_builtins.str]: ...
     @destination_connection_profile.setter
-    def destination_connection_profile(self, value: pulumi.Input[_builtins.str]): ...
+    def destination_connection_profile(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigqueryDestinationConfig")
     def bigquery_destination_config(
@@ -2758,7 +2945,8 @@ class StreamDestinationConfigArgs:
         value: Optional[
             pulumi.Input[StreamDestinationConfigBigqueryDestinationConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsDestinationConfig")
     def gcs_destination_config(
@@ -2768,7 +2956,8 @@ class StreamDestinationConfigArgs:
     def gcs_destination_config(
         self,
         value: Optional[pulumi.Input[StreamDestinationConfigGcsDestinationConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamDestinationConfigBigqueryDestinationConfigArgsDict(TypedDict):
     append_only: NotRequired[
@@ -2831,7 +3020,8 @@ class StreamDestinationConfigBigqueryDestinationConfigArgs:
         value: Optional[
             pulumi.Input[StreamDestinationConfigBigqueryDestinationConfigAppendOnlyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blmtConfig")
     def blmt_config(
@@ -2845,12 +3035,14 @@ class StreamDestinationConfigBigqueryDestinationConfigArgs:
         value: Optional[
             pulumi.Input[StreamDestinationConfigBigqueryDestinationConfigBlmtConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataFreshness")
     def data_freshness(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_freshness.setter
-    def data_freshness(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_freshness(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def merge(
@@ -2864,7 +3056,8 @@ class StreamDestinationConfigBigqueryDestinationConfigArgs:
         value: Optional[
             pulumi.Input[StreamDestinationConfigBigqueryDestinationConfigMergeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleTargetDataset")
     def single_target_dataset(
@@ -2882,7 +3075,8 @@ class StreamDestinationConfigBigqueryDestinationConfigArgs:
                 StreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceHierarchyDatasets")
     def source_hierarchy_datasets(
@@ -2900,7 +3094,8 @@ class StreamDestinationConfigBigqueryDestinationConfigArgs:
                 StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamDestinationConfigBigqueryDestinationConfigAppendOnlyArgsDict(TypedDict): ...
 
@@ -2930,27 +3125,32 @@ class StreamDestinationConfigBigqueryDestinationConfigBlmtConfigArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionName")
     def connection_name(self) -> pulumi.Input[_builtins.str]: ...
     @connection_name.setter
-    def connection_name(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileFormat")
     def file_format(self) -> pulumi.Input[_builtins.str]: ...
     @file_format.setter
-    def file_format(self, value: pulumi.Input[_builtins.str]): ...
+    def file_format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableFormat")
     def table_format(self) -> pulumi.Input[_builtins.str]: ...
     @table_format.setter
-    def table_format(self, value: pulumi.Input[_builtins.str]): ...
+    def table_format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootPath")
     def root_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @root_path.setter
-    def root_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def root_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamDestinationConfigBigqueryDestinationConfigMergeArgsDict(TypedDict): ...
 
@@ -2970,7 +3170,8 @@ class StreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetArgs:
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_id.setter
-    def dataset_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsArgsDict(
     TypedDict
@@ -3003,12 +3204,14 @@ class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsArg
         value: pulumi.Input[
             StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateArgsDict(
     TypedDict
@@ -3030,17 +3233,22 @@ class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDat
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datasetIdPrefix")
     def dataset_id_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset_id_prefix.setter
-    def dataset_id_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset_id_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamDestinationConfigGcsDestinationConfigArgsDict(TypedDict):
     avro_file_format: NotRequired[
@@ -3081,17 +3289,24 @@ class StreamDestinationConfigGcsDestinationConfigArgs:
         value: Optional[
             pulumi.Input[StreamDestinationConfigGcsDestinationConfigAvroFileFormatArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileRotationInterval")
     def file_rotation_interval(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_rotation_interval.setter
-    def file_rotation_interval(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_rotation_interval(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileRotationMb")
     def file_rotation_mb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @file_rotation_mb.setter
-    def file_rotation_mb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def file_rotation_mb(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonFileFormat")
     def json_file_format(
@@ -3105,12 +3320,14 @@ class StreamDestinationConfigGcsDestinationConfigArgs:
         value: Optional[
             pulumi.Input[StreamDestinationConfigGcsDestinationConfigJsonFileFormatArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamDestinationConfigGcsDestinationConfigAvroFileFormatArgsDict(TypedDict): ...
 
@@ -3134,12 +3351,16 @@ class StreamDestinationConfigGcsDestinationConfigJsonFileFormatArgs:
     @pulumi.getter
     def compression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compression.setter
-    def compression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compression(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaFileFormat")
     def schema_file_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_file_format.setter
-    def schema_file_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_file_format(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class StreamRuleSetArgsDict(TypedDict):
     customization_rules: pulumi.Input[
@@ -3166,12 +3387,16 @@ class StreamRuleSetArgs:
     def customization_rules(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[StreamRuleSetCustomizationRuleArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectFilter")
     def object_filter(self) -> pulumi.Input[StreamRuleSetObjectFilterArgs]: ...
     @object_filter.setter
-    def object_filter(self, value: pulumi.Input[StreamRuleSetObjectFilterArgs]): ...
+    def object_filter(
+        self, value: pulumi.Input[StreamRuleSetObjectFilterArgs]
+    ):  # -> None:
+        ...
 
 class StreamRuleSetCustomizationRuleArgsDict(TypedDict):
     bigquery_clustering: NotRequired[
@@ -3206,7 +3431,8 @@ class StreamRuleSetCustomizationRuleArgs:
         value: Optional[
             pulumi.Input[StreamRuleSetCustomizationRuleBigqueryClusteringArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigqueryPartitioning")
     def bigquery_partitioning(
@@ -3220,7 +3446,8 @@ class StreamRuleSetCustomizationRuleArgs:
         value: Optional[
             pulumi.Input[StreamRuleSetCustomizationRuleBigqueryPartitioningArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamRuleSetCustomizationRuleBigqueryClusteringArgsDict(TypedDict):
     columns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -3234,7 +3461,10 @@ class StreamRuleSetCustomizationRuleBigqueryClusteringArgs:
     @pulumi.getter
     def columns(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @columns.setter
-    def columns(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def columns(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class StreamRuleSetCustomizationRuleBigqueryPartitioningArgsDict(TypedDict):
     ingestion_time_partition: NotRequired[
@@ -3293,7 +3523,8 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningArgs:
                 StreamRuleSetCustomizationRuleBigqueryPartitioningIngestionTimePartitionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerRangePartition")
     def integer_range_partition(
@@ -3311,14 +3542,16 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningArgs:
                 StreamRuleSetCustomizationRuleBigqueryPartitioningIntegerRangePartitionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requirePartitionFilter")
     def require_partition_filter(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @require_partition_filter.setter
     def require_partition_filter(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeUnitPartition")
     def time_unit_partition(
@@ -3336,7 +3569,8 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningArgs:
                 StreamRuleSetCustomizationRuleBigqueryPartitioningTimeUnitPartitionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamRuleSetCustomizationRuleBigqueryPartitioningIngestionTimePartitionArgsDict(
     TypedDict
@@ -3358,7 +3592,8 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningIngestionTimePartitionAr
     @partitioning_time_granularity.setter
     def partitioning_time_granularity(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamRuleSetCustomizationRuleBigqueryPartitioningIntegerRangePartitionArgsDict(
     TypedDict
@@ -3382,22 +3617,26 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningIntegerRangePartitionArg
     @pulumi.getter
     def column(self) -> pulumi.Input[_builtins.str]: ...
     @column.setter
-    def column(self, value: pulumi.Input[_builtins.str]): ...
+    def column(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> pulumi.Input[_builtins.int]: ...
     @end.setter
-    def end(self, value: pulumi.Input[_builtins.int]): ...
+    def end(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interval(self) -> pulumi.Input[_builtins.int]: ...
     @interval.setter
-    def interval(self, value: pulumi.Input[_builtins.int]): ...
+    def interval(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> pulumi.Input[_builtins.int]: ...
     @start.setter
-    def start(self, value: pulumi.Input[_builtins.int]): ...
+    def start(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class StreamRuleSetCustomizationRuleBigqueryPartitioningTimeUnitPartitionArgsDict(
     TypedDict
@@ -3417,7 +3656,8 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningTimeUnitPartitionArgs:
     @pulumi.getter
     def column(self) -> pulumi.Input[_builtins.str]: ...
     @column.setter
-    def column(self, value: pulumi.Input[_builtins.str]): ...
+    def column(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partitioningTimeGranularity")
     def partitioning_time_granularity(
@@ -3426,7 +3666,8 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningTimeUnitPartitionArgs:
     @partitioning_time_granularity.setter
     def partitioning_time_granularity(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterArgsDict(TypedDict):
     source_object_identifier: NotRequired[
@@ -3455,7 +3696,8 @@ class StreamRuleSetObjectFilterArgs:
         value: Optional[
             pulumi.Input[StreamRuleSetObjectFilterSourceObjectIdentifierArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierArgsDict(TypedDict):
     mongodb_identifier: NotRequired[
@@ -3552,7 +3794,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
                 StreamRuleSetObjectFilterSourceObjectIdentifierMongodbIdentifierArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlIdentifier")
     def mysql_identifier(
@@ -3568,7 +3811,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
                 StreamRuleSetObjectFilterSourceObjectIdentifierMysqlIdentifierArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleIdentifier")
     def oracle_identifier(
@@ -3586,7 +3830,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
                 StreamRuleSetObjectFilterSourceObjectIdentifierOracleIdentifierArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlIdentifier")
     def postgresql_identifier(
@@ -3604,7 +3849,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
                 StreamRuleSetObjectFilterSourceObjectIdentifierPostgresqlIdentifierArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="salesforceIdentifier")
     def salesforce_identifier(
@@ -3622,7 +3868,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
                 StreamRuleSetObjectFilterSourceObjectIdentifierSalesforceIdentifierArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spannerIdentifier")
     def spanner_identifier(
@@ -3640,7 +3887,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
                 StreamRuleSetObjectFilterSourceObjectIdentifierSpannerIdentifierArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerIdentifier")
     def sql_server_identifier(
@@ -3658,7 +3906,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
                 StreamRuleSetObjectFilterSourceObjectIdentifierSqlServerIdentifierArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierMongodbIdentifierArgsDict(
     TypedDict
@@ -3678,12 +3927,14 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierMongodbIdentifierArgs:
     @pulumi.getter
     def collection(self) -> pulumi.Input[_builtins.str]: ...
     @collection.setter
-    def collection(self, value: pulumi.Input[_builtins.str]): ...
+    def collection(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierMysqlIdentifierArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -3701,12 +3952,14 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierMysqlIdentifierArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierOracleIdentifierArgsDict(
     TypedDict
@@ -3726,12 +3979,14 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierOracleIdentifierArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierPostgresqlIdentifierArgsDict(
     TypedDict
@@ -3751,12 +4006,14 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierPostgresqlIdentifierArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierSalesforceIdentifierArgsDict(
     TypedDict
@@ -3770,7 +4027,8 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierSalesforceIdentifierArgs:
     @pulumi.getter(name="objectName")
     def object_name(self) -> pulumi.Input[_builtins.str]: ...
     @object_name.setter
-    def object_name(self, value: pulumi.Input[_builtins.str]): ...
+    def object_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierSpannerIdentifierArgsDict(
     TypedDict
@@ -3790,12 +4048,14 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierSpannerIdentifierArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema.setter
-    def schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamRuleSetObjectFilterSourceObjectIdentifierSqlServerIdentifierArgsDict(
     TypedDict
@@ -3815,12 +4075,14 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierSqlServerIdentifierArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StreamSourceConfigArgsDict(TypedDict):
     source_connection_profile: pulumi.Input[_builtins.str]
@@ -3878,7 +4140,8 @@ class StreamSourceConfigArgs:
     @pulumi.getter(name="sourceConnectionProfile")
     def source_connection_profile(self) -> pulumi.Input[_builtins.str]: ...
     @source_connection_profile.setter
-    def source_connection_profile(self, value: pulumi.Input[_builtins.str]): ...
+    def source_connection_profile(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mongodbSourceConfig")
     def mongodb_source_config(
@@ -3887,7 +4150,8 @@ class StreamSourceConfigArgs:
     @mongodb_source_config.setter
     def mongodb_source_config(
         self, value: Optional[pulumi.Input[StreamSourceConfigMongodbSourceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlSourceConfig")
     def mysql_source_config(
@@ -3896,7 +4160,8 @@ class StreamSourceConfigArgs:
     @mysql_source_config.setter
     def mysql_source_config(
         self, value: Optional[pulumi.Input[StreamSourceConfigMysqlSourceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleSourceConfig")
     def oracle_source_config(
@@ -3905,7 +4170,8 @@ class StreamSourceConfigArgs:
     @oracle_source_config.setter
     def oracle_source_config(
         self, value: Optional[pulumi.Input[StreamSourceConfigOracleSourceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlSourceConfig")
     def postgresql_source_config(
@@ -3915,7 +4181,8 @@ class StreamSourceConfigArgs:
     def postgresql_source_config(
         self,
         value: Optional[pulumi.Input[StreamSourceConfigPostgresqlSourceConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="salesforceSourceConfig")
     def salesforce_source_config(
@@ -3925,7 +4192,8 @@ class StreamSourceConfigArgs:
     def salesforce_source_config(
         self,
         value: Optional[pulumi.Input[StreamSourceConfigSalesforceSourceConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spannerSourceConfig")
     def spanner_source_config(
@@ -3934,7 +4202,8 @@ class StreamSourceConfigArgs:
     @spanner_source_config.setter
     def spanner_source_config(
         self, value: Optional[pulumi.Input[StreamSourceConfigSpannerSourceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerSourceConfig")
     def sql_server_source_config(
@@ -3943,7 +4212,8 @@ class StreamSourceConfigArgs:
     @sql_server_source_config.setter
     def sql_server_source_config(
         self, value: Optional[pulumi.Input[StreamSourceConfigSqlServerSourceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigArgsDict(TypedDict):
     exclude_objects: NotRequired[
@@ -3980,7 +4250,8 @@ class StreamSourceConfigMongodbSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigMongodbSourceConfigExcludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeObjects")
     def include_objects(
@@ -3994,7 +4265,8 @@ class StreamSourceConfigMongodbSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigMongodbSourceConfigIncludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentBackfillTasks")
     def max_concurrent_backfill_tasks(
@@ -4003,7 +4275,8 @@ class StreamSourceConfigMongodbSourceConfigArgs:
     @max_concurrent_backfill_tasks.setter
     def max_concurrent_backfill_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsArgsDict(TypedDict):
     databases: NotRequired[
@@ -4056,7 +4329,8 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseArgsDict(TypedDict):
     collections: NotRequired[
@@ -4111,12 +4385,14 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def database(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database.setter
-    def database(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionArgsDict(
     TypedDict
@@ -4152,7 +4428,8 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionArgs:
     @pulumi.getter
     def collection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collection.setter
-    def collection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collection(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fields(
@@ -4178,7 +4455,8 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionFieldArgsDict(
     TypedDict
@@ -4194,7 +4472,8 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionField
     @pulumi.getter
     def field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field.setter
-    def field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsArgsDict(TypedDict):
     databases: NotRequired[
@@ -4247,7 +4526,8 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseArgsDict(TypedDict):
     collections: NotRequired[
@@ -4302,12 +4582,14 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def database(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database.setter
-    def database(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionArgsDict(
     TypedDict
@@ -4343,7 +4625,8 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionArgs:
     @pulumi.getter
     def collection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collection.setter
-    def collection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collection(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fields(
@@ -4369,7 +4652,8 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionFieldArgsDict(
     TypedDict
@@ -4385,7 +4669,8 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionField
     @pulumi.getter
     def field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field.setter
-    def field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigArgsDict(TypedDict):
     binary_log_position: NotRequired[
@@ -4432,7 +4717,8 @@ class StreamSourceConfigMysqlSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigMysqlSourceConfigBinaryLogPositionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeObjects")
     def exclude_objects(
@@ -4446,7 +4732,8 @@ class StreamSourceConfigMysqlSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigMysqlSourceConfigExcludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gtid(
@@ -4455,7 +4742,8 @@ class StreamSourceConfigMysqlSourceConfigArgs:
     @gtid.setter
     def gtid(
         self, value: Optional[pulumi.Input[StreamSourceConfigMysqlSourceConfigGtidArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeObjects")
     def include_objects(
@@ -4469,7 +4757,8 @@ class StreamSourceConfigMysqlSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigMysqlSourceConfigIncludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentBackfillTasks")
     def max_concurrent_backfill_tasks(
@@ -4478,14 +4767,16 @@ class StreamSourceConfigMysqlSourceConfigArgs:
     @max_concurrent_backfill_tasks.setter
     def max_concurrent_backfill_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentCdcTasks")
     def max_concurrent_cdc_tasks(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_concurrent_cdc_tasks.setter
     def max_concurrent_cdc_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigBinaryLogPositionArgsDict(TypedDict): ...
 
@@ -4536,7 +4827,8 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -4570,7 +4862,8 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlTables")
     def mysql_tables(
@@ -4596,7 +4889,8 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableArgsDict(
     TypedDict
@@ -4632,7 +4926,8 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableAr
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlColumns")
     def mysql_columns(
@@ -4658,7 +4953,8 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableAr
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableMysqlColumnArgsDict(
     TypedDict
@@ -4688,37 +4984,46 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableMy
     @pulumi.getter
     def collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collation.setter
-    def collation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigGtidArgsDict(TypedDict): ...
 
@@ -4769,7 +5074,8 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -4803,7 +5109,8 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlTables")
     def mysql_tables(
@@ -4829,7 +5136,8 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableArgsDict(
     TypedDict
@@ -4865,7 +5173,8 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableAr
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlColumns")
     def mysql_columns(
@@ -4891,7 +5200,8 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableAr
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableMysqlColumnArgsDict(
     TypedDict
@@ -4921,37 +5231,46 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableMy
     @pulumi.getter
     def collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collation.setter
-    def collation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigArgsDict(TypedDict):
     drop_large_objects: NotRequired[
@@ -5002,7 +5321,8 @@ class StreamSourceConfigOracleSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigOracleSourceConfigDropLargeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeObjects")
     def exclude_objects(
@@ -5016,7 +5336,8 @@ class StreamSourceConfigOracleSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigOracleSourceConfigExcludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeObjects")
     def include_objects(
@@ -5030,7 +5351,8 @@ class StreamSourceConfigOracleSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigOracleSourceConfigIncludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentBackfillTasks")
     def max_concurrent_backfill_tasks(
@@ -5039,14 +5361,16 @@ class StreamSourceConfigOracleSourceConfigArgs:
     @max_concurrent_backfill_tasks.setter
     def max_concurrent_backfill_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentCdcTasks")
     def max_concurrent_cdc_tasks(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_concurrent_cdc_tasks.setter
     def max_concurrent_cdc_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamLargeObjects")
     def stream_large_objects(
@@ -5060,7 +5384,8 @@ class StreamSourceConfigOracleSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigOracleSourceConfigStreamLargeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigDropLargeObjectsArgsDict(TypedDict): ...
 
@@ -5111,7 +5436,8 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -5145,7 +5471,8 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleTables")
     def oracle_tables(
@@ -5171,7 +5498,8 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableArgsDict(
     TypedDict
@@ -5207,7 +5535,8 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableA
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleColumns")
     def oracle_columns(
@@ -5233,7 +5562,8 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableOracleColumnArgsDict(
     TypedDict
@@ -5267,47 +5597,58 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableO
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encoding(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encoding.setter
-    def encoding(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encoding(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigIncludeObjectsArgsDict(TypedDict):
     oracle_schemas: pulumi.Input[
@@ -5352,7 +5693,8 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -5386,7 +5728,8 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleTables")
     def oracle_tables(
@@ -5412,7 +5755,8 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableArgsDict(
     TypedDict
@@ -5448,7 +5792,8 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableA
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleColumns")
     def oracle_columns(
@@ -5474,7 +5819,8 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableOracleColumnArgsDict(
     TypedDict
@@ -5508,47 +5854,58 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableO
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encoding(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encoding.setter
-    def encoding(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encoding(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamSourceConfigOracleSourceConfigStreamLargeObjectsArgsDict(TypedDict): ...
 
@@ -5586,12 +5943,14 @@ class StreamSourceConfigPostgresqlSourceConfigArgs:
     @pulumi.getter
     def publication(self) -> pulumi.Input[_builtins.str]: ...
     @publication.setter
-    def publication(self, value: pulumi.Input[_builtins.str]): ...
+    def publication(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationSlot")
     def replication_slot(self) -> pulumi.Input[_builtins.str]: ...
     @replication_slot.setter
-    def replication_slot(self, value: pulumi.Input[_builtins.str]): ...
+    def replication_slot(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeObjects")
     def exclude_objects(
@@ -5605,7 +5964,8 @@ class StreamSourceConfigPostgresqlSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigPostgresqlSourceConfigExcludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeObjects")
     def include_objects(
@@ -5619,7 +5979,8 @@ class StreamSourceConfigPostgresqlSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigPostgresqlSourceConfigIncludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentBackfillTasks")
     def max_concurrent_backfill_tasks(
@@ -5628,7 +5989,8 @@ class StreamSourceConfigPostgresqlSourceConfigArgs:
     @max_concurrent_backfill_tasks.setter
     def max_concurrent_backfill_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsArgsDict(TypedDict):
     postgresql_schemas: pulumi.Input[
@@ -5673,7 +6035,8 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaArgsDict(
     TypedDict
@@ -5709,7 +6072,8 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaArgs
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlTables")
     def postgresql_tables(
@@ -5735,7 +6099,8 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaArgs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPostgresqlTableArgsDict(
     TypedDict
@@ -5771,7 +6136,8 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPost
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlColumns")
     def postgresql_columns(
@@ -5797,7 +6163,8 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPost
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPostgresqlTablePostgresqlColumnArgsDict(
     TypedDict
@@ -5829,42 +6196,52 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPost
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsArgsDict(TypedDict):
     postgresql_schemas: pulumi.Input[
@@ -5909,7 +6286,8 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaArgsDict(
     TypedDict
@@ -5945,7 +6323,8 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaArgs
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlTables")
     def postgresql_tables(
@@ -5971,7 +6350,8 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaArgs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPostgresqlTableArgsDict(
     TypedDict
@@ -6007,7 +6387,8 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPost
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlColumns")
     def postgresql_columns(
@@ -6033,7 +6414,8 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPost
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPostgresqlTablePostgresqlColumnArgsDict(
     TypedDict
@@ -6065,42 +6447,52 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPost
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamSourceConfigSalesforceSourceConfigArgsDict(TypedDict):
     polling_interval: pulumi.Input[_builtins.str]
@@ -6128,7 +6520,8 @@ class StreamSourceConfigSalesforceSourceConfigArgs:
     @pulumi.getter(name="pollingInterval")
     def polling_interval(self) -> pulumi.Input[_builtins.str]: ...
     @polling_interval.setter
-    def polling_interval(self, value: pulumi.Input[_builtins.str]): ...
+    def polling_interval(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeObjects")
     def exclude_objects(
@@ -6142,7 +6535,8 @@ class StreamSourceConfigSalesforceSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSalesforceSourceConfigExcludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeObjects")
     def include_objects(
@@ -6156,7 +6550,8 @@ class StreamSourceConfigSalesforceSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSalesforceSourceConfigIncludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSalesforceSourceConfigExcludeObjectsArgsDict(TypedDict):
     objects: pulumi.Input[
@@ -6201,7 +6596,8 @@ class StreamSourceConfigSalesforceSourceConfigExcludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectArgsDict(TypedDict):
     fields: NotRequired[
@@ -6256,12 +6652,14 @@ class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectName")
     def object_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_name.setter
-    def object_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectFieldArgsDict(
     TypedDict
@@ -6277,7 +6675,8 @@ class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectFieldArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigSalesforceSourceConfigIncludeObjectsArgsDict(TypedDict):
     objects: pulumi.Input[
@@ -6322,7 +6721,8 @@ class StreamSourceConfigSalesforceSourceConfigIncludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectArgsDict(TypedDict):
     fields: NotRequired[
@@ -6377,12 +6777,14 @@ class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectName")
     def object_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_name.setter
-    def object_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectFieldArgsDict(
     TypedDict
@@ -6398,7 +6800,8 @@ class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectFieldArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigArgsDict(TypedDict):
     backfill_data_boost_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6438,12 +6841,16 @@ class StreamSourceConfigSpannerSourceConfigArgs:
     @backfill_data_boost_enabled.setter
     def backfill_data_boost_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="changeStreamName")
     def change_stream_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @change_stream_name.setter
-    def change_stream_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def change_stream_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeObjects")
     def exclude_objects(
@@ -6457,12 +6864,14 @@ class StreamSourceConfigSpannerSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSpannerSourceConfigExcludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fgacRole")
     def fgac_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fgac_role.setter
-    def fgac_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fgac_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeObjects")
     def include_objects(
@@ -6476,7 +6885,8 @@ class StreamSourceConfigSpannerSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSpannerSourceConfigIncludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentBackfillTasks")
     def max_concurrent_backfill_tasks(
@@ -6485,19 +6895,24 @@ class StreamSourceConfigSpannerSourceConfigArgs:
     @max_concurrent_backfill_tasks.setter
     def max_concurrent_backfill_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentCdcTasks")
     def max_concurrent_cdc_tasks(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_concurrent_cdc_tasks.setter
     def max_concurrent_cdc_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spannerRpcPriority")
     def spanner_rpc_priority(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spanner_rpc_priority.setter
-    def spanner_rpc_priority(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spanner_rpc_priority(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsArgsDict(TypedDict):
     schemas: pulumi.Input[
@@ -6540,7 +6955,8 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -6574,7 +6990,8 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -6600,7 +7017,8 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableArgsDict(TypedDict):
     table: pulumi.Input[_builtins.str]
@@ -6634,7 +7052,8 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def columns(
@@ -6660,7 +7079,8 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableColumnArgsDict(
     TypedDict
@@ -6684,22 +7104,28 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableColumnArgs:
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isPrimaryKey")
     def is_primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_primary_key.setter
-    def is_primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsArgsDict(TypedDict):
     schemas: pulumi.Input[
@@ -6742,7 +7168,8 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -6776,7 +7203,8 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -6802,7 +7230,8 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableArgsDict(TypedDict):
     table: pulumi.Input[_builtins.str]
@@ -6836,7 +7265,8 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def columns(
@@ -6862,7 +7292,8 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableColumnArgsDict(
     TypedDict
@@ -6886,22 +7317,28 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableColumnArgs:
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isPrimaryKey")
     def is_primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_primary_key.setter
-    def is_primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigArgsDict(TypedDict):
     change_tables: NotRequired[
@@ -6952,7 +7389,8 @@ class StreamSourceConfigSqlServerSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSqlServerSourceConfigChangeTablesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeObjects")
     def exclude_objects(
@@ -6966,7 +7404,8 @@ class StreamSourceConfigSqlServerSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSqlServerSourceConfigExcludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeObjects")
     def include_objects(
@@ -6980,7 +7419,8 @@ class StreamSourceConfigSqlServerSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSqlServerSourceConfigIncludeObjectsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentBackfillTasks")
     def max_concurrent_backfill_tasks(
@@ -6989,14 +7429,16 @@ class StreamSourceConfigSqlServerSourceConfigArgs:
     @max_concurrent_backfill_tasks.setter
     def max_concurrent_backfill_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrentCdcTasks")
     def max_concurrent_cdc_tasks(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_concurrent_cdc_tasks.setter
     def max_concurrent_cdc_tasks(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transactionLogs")
     def transaction_logs(
@@ -7010,7 +7452,8 @@ class StreamSourceConfigSqlServerSourceConfigArgs:
         value: Optional[
             pulumi.Input[StreamSourceConfigSqlServerSourceConfigTransactionLogsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigChangeTablesArgsDict(TypedDict): ...
 
@@ -7061,7 +7504,8 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -7095,7 +7539,8 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -7121,7 +7566,8 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableArgsDict(
     TypedDict
@@ -7157,7 +7603,8 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def columns(
@@ -7183,7 +7630,8 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableColumnArgsDict(
     TypedDict
@@ -7215,42 +7663,52 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableColumnArgs
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsArgsDict(TypedDict):
     schemas: pulumi.Input[
@@ -7295,7 +7753,8 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
@@ -7329,7 +7788,8 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[_builtins.str]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[_builtins.str]): ...
+    def schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -7355,7 +7815,8 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableArgsDict(
     TypedDict
@@ -7391,7 +7852,8 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableArgs:
     @pulumi.getter
     def table(self) -> pulumi.Input[_builtins.str]: ...
     @table.setter
-    def table(self, value: pulumi.Input[_builtins.str]): ...
+    def table(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def columns(
@@ -7417,7 +7879,8 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableColumnArgsDict(
     TypedDict
@@ -7449,42 +7912,52 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableColumnArgs
     @pulumi.getter
     def column(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @column.setter
-    def column(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def column(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def length(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def length(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nullable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @nullable.setter
-    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def nullable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ordinalPosition")
     def ordinal_position(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ordinal_position.setter
-    def ordinal_position(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ordinal_position(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def precision(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @precision.setter
-    def precision(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def precision(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKey")
     def primary_key(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary_key.setter
-    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary_key(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scale(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scale.setter
-    def scale(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scale(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StreamSourceConfigSqlServerSourceConfigTransactionLogsArgsDict(TypedDict): ...
 

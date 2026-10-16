@@ -44,7 +44,8 @@ class GetMonitoredResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMonitoredResourceResult(GetMonitoredResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMonitoredResourceResult]:
+        ...
 
 def get_monitored_resource(
     instance_name: Optional[_builtins.str] = ...,

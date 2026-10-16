@@ -65,7 +65,8 @@ class GetResourceShareResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetResourceShareResult(GetResourceShareResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceShareResult]:
+        ...
 
 def get_resource_share(
     filters: Optional[

@@ -24,7 +24,8 @@ class ListNodeTypeFaultSimulationResult:
     def value(self) -> Sequence[outputs.FaultSimulationResponse]: ...
 
 class AwaitableListNodeTypeFaultSimulationResult(ListNodeTypeFaultSimulationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListNodeTypeFaultSimulationResult]:
+        ...
 
 def list_node_type_fault_simulation(
     cluster_name: Optional[_builtins.str] = ...,

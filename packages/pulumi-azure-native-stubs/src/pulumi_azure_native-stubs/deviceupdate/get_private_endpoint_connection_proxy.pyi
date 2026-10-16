@@ -60,7 +60,10 @@ class GetPrivateEndpointConnectionProxyResult:
 class AwaitableGetPrivateEndpointConnectionProxyResult(
     GetPrivateEndpointConnectionProxyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionProxyResult]:
+        ...
 
 def get_private_endpoint_connection_proxy(
     account_name: Optional[_builtins.str] = ...,

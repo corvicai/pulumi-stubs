@@ -56,7 +56,8 @@ class GetDataControllerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataControllerResult(GetDataControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataControllerResult]:
+        ...
 
 def get_data_controller(
     data_controller_name: Optional[_builtins.str] = ...,

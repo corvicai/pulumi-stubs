@@ -24,7 +24,8 @@ class ListScheduleApplicableResult:
     def value(self) -> Sequence[outputs.ScheduleResponse]: ...
 
 class AwaitableListScheduleApplicableResult(ListScheduleApplicableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListScheduleApplicableResult]:
+        ...
 
 def list_schedule_applicable(
     lab_name: Optional[_builtins.str] = ...,

@@ -27,7 +27,8 @@ class ResourceShareAssociationsExclusiveArgs:
     @pulumi.getter(name="resourceShareArn")
     def resource_share_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_share_arn.setter
-    def resource_share_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_share_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principals(
@@ -36,12 +37,14 @@ class ResourceShareAssociationsExclusiveArgs:
     @principals.setter
     def principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArns")
     def resource_arns(
@@ -50,7 +53,8 @@ class ResourceShareAssociationsExclusiveArgs:
     @resource_arns.setter
     def resource_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sources(
@@ -59,7 +63,8 @@ class ResourceShareAssociationsExclusiveArgs:
     @sources.setter
     def sources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ResourceShareAssociationsExclusiveState:
@@ -82,12 +87,14 @@ class _ResourceShareAssociationsExclusiveState:
     @principals.setter
     def principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArns")
     def resource_arns(
@@ -96,12 +103,16 @@ class _ResourceShareAssociationsExclusiveState:
     @resource_arns.setter
     def resource_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceShareArn")
     def resource_share_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_share_arn.setter
-    def resource_share_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_share_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sources(
@@ -110,7 +121,8 @@ class _ResourceShareAssociationsExclusiveState:
     @sources.setter
     def sources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ResourceShareAssociationsExclusive(pulumi.CustomResource):

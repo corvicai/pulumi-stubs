@@ -24,7 +24,8 @@ class GetUserSettingsWithLocationResult:
     def properties(self) -> outputs.UserPropertiesResponse: ...
 
 class AwaitableGetUserSettingsWithLocationResult(GetUserSettingsWithLocationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserSettingsWithLocationResult]:
+        ...
 
 def get_user_settings_with_location(
     location: Optional[_builtins.str] = ...,

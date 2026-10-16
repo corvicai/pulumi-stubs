@@ -28,22 +28,30 @@ class GuestAgentArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineName")
     def virtual_machine_name(self) -> pulumi.Input[_builtins.str]: ...
     @virtual_machine_name.setter
-    def virtual_machine_name(self, value: pulumi.Input[_builtins.str]): ...
+    def virtual_machine_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def credentials(self) -> Optional[pulumi.Input[GuestCredentialArgs]]: ...
     @credentials.setter
-    def credentials(self, value: Optional[pulumi.Input[GuestCredentialArgs]]): ...
+    def credentials(
+        self, value: Optional[pulumi.Input[GuestCredentialArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guestAgentName")
     def guest_agent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @guest_agent_name.setter
-    def guest_agent_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def guest_agent_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpProxyConfig")
     def http_proxy_config(
@@ -52,7 +60,8 @@ class GuestAgentArgs:
     @http_proxy_config.setter
     def http_proxy_config(
         self, value: Optional[pulumi.Input[HttpProxyConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningAction")
     def provisioning_action(
@@ -61,7 +70,8 @@ class GuestAgentArgs:
     @provisioning_action.setter
     def provisioning_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningAction]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:scvmm:GuestAgent")
 class GuestAgent(pulumi.CustomResource):

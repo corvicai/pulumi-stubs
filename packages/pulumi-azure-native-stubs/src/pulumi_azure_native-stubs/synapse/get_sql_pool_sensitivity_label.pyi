@@ -75,7 +75,8 @@ class GetSqlPoolSensitivityLabelResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlPoolSensitivityLabelResult(GetSqlPoolSensitivityLabelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlPoolSensitivityLabelResult]:
+        ...
 
 def get_sql_pool_sensitivity_label(
     column_name: Optional[_builtins.str] = ...,

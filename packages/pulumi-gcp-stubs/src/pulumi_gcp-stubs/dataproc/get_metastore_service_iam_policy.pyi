@@ -43,7 +43,10 @@ class GetMetastoreServiceIamPolicyResult:
     def service_id(self) -> _builtins.str: ...
 
 class AwaitableGetMetastoreServiceIamPolicyResult(GetMetastoreServiceIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMetastoreServiceIamPolicyResult]:
+        ...
 
 def get_metastore_service_iam_policy(
     location: Optional[_builtins.str] = ...,

@@ -55,12 +55,14 @@ class AdministratorPropertiesArgs:
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ComputePropertiesArgsDict(TypedDict):
     tier: NotRequired[pulumi.Input[_builtins.str]]
@@ -74,7 +76,8 @@ class ComputePropertiesArgs:
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DatabaseRoleArgsDict(TypedDict):
     db: pulumi.Input[_builtins.str]
@@ -92,12 +95,14 @@ class DatabaseRoleArgs:
     @pulumi.getter
     def db(self) -> pulumi.Input[_builtins.str]: ...
     @db.setter
-    def db(self, value: pulumi.Input[_builtins.str]): ...
+    def db(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def role(self) -> pulumi.Input[Union[_builtins.str, UserRole]]: ...
     @role.setter
-    def role(self, value: pulumi.Input[Union[_builtins.str, UserRole]]): ...
+    def role(self, value: pulumi.Input[Union[_builtins.str, UserRole]]):  # -> None:
+        ...
 
 class EntraIdentityProviderPropertiesArgsDict(TypedDict):
     principal_type: pulumi.Input[Union[_builtins.str, EntraPrincipalType]]
@@ -117,7 +122,8 @@ class EntraIdentityProviderPropertiesArgs:
     @principal_type.setter
     def principal_type(
         self, value: pulumi.Input[Union[_builtins.str, EntraPrincipalType]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EntraIdentityProviderArgsDict(TypedDict):
     properties: pulumi.Input[EntraIdentityProviderPropertiesArgsDict]
@@ -135,12 +141,16 @@ class EntraIdentityProviderArgs:
     @pulumi.getter
     def properties(self) -> pulumi.Input[EntraIdentityProviderPropertiesArgs]: ...
     @properties.setter
-    def properties(self, value: pulumi.Input[EntraIdentityProviderPropertiesArgs]): ...
+    def properties(
+        self, value: pulumi.Input[EntraIdentityProviderPropertiesArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FirewallRulePropertiesArgsDict(TypedDict):
     end_ip_address: pulumi.Input[_builtins.str]
@@ -158,12 +168,14 @@ class FirewallRulePropertiesArgs:
     @pulumi.getter(name="endIpAddress")
     def end_ip_address(self) -> pulumi.Input[_builtins.str]: ...
     @end_ip_address.setter
-    def end_ip_address(self, value: pulumi.Input[_builtins.str]): ...
+    def end_ip_address(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startIpAddress")
     def start_ip_address(self) -> pulumi.Input[_builtins.str]: ...
     @start_ip_address.setter
-    def start_ip_address(self, value: pulumi.Input[_builtins.str]): ...
+    def start_ip_address(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class HighAvailabilityPropertiesArgsDict(TypedDict):
     target_mode: NotRequired[pulumi.Input[Union[_builtins.str, HighAvailabilityMode]]]
@@ -185,7 +197,8 @@ class HighAvailabilityPropertiesArgs:
     @target_mode.setter
     def target_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HighAvailabilityMode]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MongoClusterPropertiesArgsDict(TypedDict):
     administrator: NotRequired[pulumi.Input[AdministratorPropertiesArgsDict]]
@@ -235,12 +248,14 @@ class MongoClusterPropertiesArgs:
     @administrator.setter
     def administrator(
         self, value: Optional[pulumi.Input[AdministratorPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def compute(self) -> Optional[pulumi.Input[ComputePropertiesArgs]]: ...
     @compute.setter
-    def compute(self, value: Optional[pulumi.Input[ComputePropertiesArgs]]): ...
+    def compute(self, value: Optional[pulumi.Input[ComputePropertiesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -249,7 +264,8 @@ class MongoClusterPropertiesArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="highAvailability")
     def high_availability(
@@ -258,7 +274,8 @@ class MongoClusterPropertiesArgs:
     @high_availability.setter
     def high_availability(
         self, value: Optional[pulumi.Input[HighAvailabilityPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="previewFeatures")
     def preview_features(
@@ -272,7 +289,8 @@ class MongoClusterPropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, PreviewFeature]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -281,7 +299,8 @@ class MongoClusterPropertiesArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaParameters")
     def replica_parameters(
@@ -290,7 +309,8 @@ class MongoClusterPropertiesArgs:
     @replica_parameters.setter
     def replica_parameters(
         self, value: Optional[pulumi.Input[MongoClusterReplicaParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restoreParameters")
     def restore_parameters(
@@ -299,22 +319,28 @@ class MongoClusterPropertiesArgs:
     @restore_parameters.setter
     def restore_parameters(
         self, value: Optional[pulumi.Input[MongoClusterRestoreParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverVersion")
     def server_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_version.setter
-    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sharding(self) -> Optional[pulumi.Input[ShardingPropertiesArgs]]: ...
     @sharding.setter
-    def sharding(self, value: Optional[pulumi.Input[ShardingPropertiesArgs]]): ...
+    def sharding(
+        self, value: Optional[pulumi.Input[ShardingPropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def storage(self) -> Optional[pulumi.Input[StoragePropertiesArgs]]: ...
     @storage.setter
-    def storage(self, value: Optional[pulumi.Input[StoragePropertiesArgs]]): ...
+    def storage(self, value: Optional[pulumi.Input[StoragePropertiesArgs]]):  # -> None:
+        ...
 
 class MongoClusterReplicaParametersArgsDict(TypedDict):
     source_location: pulumi.Input[_builtins.str]
@@ -332,12 +358,14 @@ class MongoClusterReplicaParametersArgs:
     @pulumi.getter(name="sourceLocation")
     def source_location(self) -> pulumi.Input[_builtins.str]: ...
     @source_location.setter
-    def source_location(self, value: pulumi.Input[_builtins.str]): ...
+    def source_location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def source_resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MongoClusterRestoreParametersArgsDict(TypedDict):
     point_in_time_utc: NotRequired[pulumi.Input[_builtins.str]]
@@ -355,12 +383,18 @@ class MongoClusterRestoreParametersArgs:
     @pulumi.getter(name="pointInTimeUTC")
     def point_in_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @point_in_time_utc.setter
-    def point_in_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def point_in_time_utc(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesArgsDict(TypedDict):
     private_link_service_connection_state: pulumi.Input[
@@ -384,7 +418,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -408,12 +443,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -427,7 +466,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ShardingPropertiesArgsDict(TypedDict):
     shard_count: NotRequired[pulumi.Input[_builtins.int]]
@@ -441,7 +481,8 @@ class ShardingPropertiesArgs:
     @pulumi.getter(name="shardCount")
     def shard_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @shard_count.setter
-    def shard_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def shard_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class StoragePropertiesArgsDict(TypedDict):
     size_gb: NotRequired[pulumi.Input[_builtins.float]]
@@ -455,7 +496,8 @@ class StoragePropertiesArgs:
     @pulumi.getter(name="sizeGb")
     def size_gb(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @size_gb.setter
-    def size_gb(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def size_gb(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class UserPropertiesArgsDict(TypedDict):
     identity_provider: NotRequired[pulumi.Input[EntraIdentityProviderArgsDict]]
@@ -477,7 +519,8 @@ class UserPropertiesArgs:
     @identity_provider.setter
     def identity_provider(
         self, value: Optional[pulumi.Input[EntraIdentityProviderArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -486,4 +529,5 @@ class UserPropertiesArgs:
     @roles.setter
     def roles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DatabaseRoleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...

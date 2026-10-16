@@ -35,7 +35,8 @@ class GetRepositoriesResult:
     def repositories(self) -> Sequence[outputs.GetRepositoriesRepositoryResult]: ...
 
 class AwaitableGetRepositoriesResult(GetRepositoriesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRepositoriesResult]:
+        ...
 
 def get_repositories(
     location: Optional[_builtins.str] = ...,

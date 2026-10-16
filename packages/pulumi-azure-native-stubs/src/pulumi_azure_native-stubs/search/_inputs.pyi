@@ -47,7 +47,8 @@ class DataPlaneAadOrApiKeyAuthOptionArgs:
     @aad_auth_failure_mode.setter
     def aad_auth_failure_mode(
         self, value: Optional[pulumi.Input[AadAuthFailureMode]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataPlaneAuthOptionsArgsDict(TypedDict):
     aad_or_api_key: NotRequired[pulumi.Input[DataPlaneAadOrApiKeyAuthOptionArgsDict]]
@@ -71,12 +72,14 @@ class DataPlaneAuthOptionsArgs:
     @aad_or_api_key.setter
     def aad_or_api_key(
         self, value: Optional[pulumi.Input[DataPlaneAadOrApiKeyAuthOptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiKeyOnly")
     def api_key_only(self) -> Optional[Any]: ...
     @api_key_only.setter
-    def api_key_only(self, value: Optional[Any]): ...
+    def api_key_only(self, value: Optional[Any]):  # -> None:
+        ...
 
 class EncryptionWithCmkArgsDict(TypedDict):
     enforcement: NotRequired[pulumi.Input[SearchEncryptionWithCmk]]
@@ -90,7 +93,10 @@ class EncryptionWithCmkArgs:
     @pulumi.getter
     def enforcement(self) -> Optional[pulumi.Input[SearchEncryptionWithCmk]]: ...
     @enforcement.setter
-    def enforcement(self, value: Optional[pulumi.Input[SearchEncryptionWithCmk]]): ...
+    def enforcement(
+        self, value: Optional[pulumi.Input[SearchEncryptionWithCmk]]
+    ):  # -> None:
+        ...
 
 class IdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, IdentityType]]
@@ -112,7 +118,8 @@ class IdentityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, IdentityType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, IdentityType]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, IdentityType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -121,7 +128,8 @@ class IdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IpRuleArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[_builtins.str]]
@@ -135,7 +143,8 @@ class IpRuleArgs:
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class NetworkRuleSetArgsDict(TypedDict):
     bypass: NotRequired[pulumi.Input[Union[_builtins.str, SearchBypass]]]
@@ -155,7 +164,8 @@ class NetworkRuleSetArgs:
     @bypass.setter
     def bypass(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SearchBypass]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRules")
     def ip_rules(
@@ -164,7 +174,8 @@ class NetworkRuleSetArgs:
     @ip_rules.setter
     def ip_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IpRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesPrivateEndpointArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -178,7 +189,8 @@ class PrivateEndpointConnectionPropertiesPrivateEndpointArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesPrivateLinkServiceConnectionStateArgsDict(
     TypedDict
@@ -200,19 +212,24 @@ class PrivateEndpointConnectionPropertiesPrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[PrivateLinkServiceConnectionStatus]]: ...
     @status.setter
     def status(
         self, value: Optional[pulumi.Input[PrivateLinkServiceConnectionStatus]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesArgsDict(TypedDict):
     group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -254,7 +271,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     @pulumi.getter(name="groupId")
     def group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_id.setter
-    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpoint")
     def private_endpoint(
@@ -268,7 +286,8 @@ class PrivateEndpointConnectionPropertiesArgs:
         value: Optional[
             pulumi.Input[PrivateEndpointConnectionPropertiesPrivateEndpointArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -286,7 +305,8 @@ class PrivateEndpointConnectionPropertiesArgs:
                 PrivateEndpointConnectionPropertiesPrivateLinkServiceConnectionStateArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -304,7 +324,8 @@ class PrivateEndpointConnectionPropertiesArgs:
                 Union[_builtins.str, PrivateLinkServiceConnectionProvisioningState]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SharedPrivateLinkResourcePropertiesArgsDict(TypedDict):
     group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -340,14 +361,16 @@ class SharedPrivateLinkResourcePropertiesArgs:
     @pulumi.getter(name="groupId")
     def group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_id.setter
-    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkResourceId")
     def private_link_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_resource_id.setter
     def private_link_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -363,17 +386,20 @@ class SharedPrivateLinkResourcePropertiesArgs:
                 Union[_builtins.str, SharedPrivateLinkResourceProvisioningState]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestMessage")
     def request_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_message.setter
-    def request_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceRegion")
     def resource_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_region.setter
-    def resource_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -387,7 +413,8 @@ class SharedPrivateLinkResourcePropertiesArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SharedPrivateLinkResourceStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[Union[_builtins.str, SkuName]]]
@@ -401,4 +428,7 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuName]]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuName]]]): ...
+    def name(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, SkuName]]]
+    ):  # -> None:
+        ...

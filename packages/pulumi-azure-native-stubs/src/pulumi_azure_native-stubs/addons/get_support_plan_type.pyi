@@ -39,7 +39,8 @@ class GetSupportPlanTypeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSupportPlanTypeResult(GetSupportPlanTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSupportPlanTypeResult]:
+        ...
 
 def get_support_plan_type(
     plan_type_name: Optional[_builtins.str] = ...,

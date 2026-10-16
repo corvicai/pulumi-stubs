@@ -44,7 +44,10 @@ class GetPredictionTrainingResultsResult:
     def tenant_id(self) -> _builtins.str: ...
 
 class AwaitableGetPredictionTrainingResultsResult(GetPredictionTrainingResultsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPredictionTrainingResultsResult]:
+        ...
 
 def get_prediction_training_results(
     hub_name: Optional[_builtins.str] = ...,

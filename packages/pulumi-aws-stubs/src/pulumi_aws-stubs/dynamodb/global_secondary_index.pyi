@@ -36,12 +36,14 @@ class GlobalSecondaryIndexArgs:
     @pulumi.getter(name="indexName")
     def index_name(self) -> pulumi.Input[_builtins.str]: ...
     @index_name.setter
-    def index_name(self, value: pulumi.Input[_builtins.str]): ...
+    def index_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> pulumi.Input[_builtins.str]: ...
     @table_name.setter
-    def table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keySchemas")
     def key_schemas(
@@ -55,7 +57,8 @@ class GlobalSecondaryIndexArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GlobalSecondaryIndexKeySchemaArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandThroughput")
     def on_demand_throughput(
@@ -64,7 +67,8 @@ class GlobalSecondaryIndexArgs:
     @on_demand_throughput.setter
     def on_demand_throughput(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexOnDemandThroughputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def projection(
@@ -73,7 +77,8 @@ class GlobalSecondaryIndexArgs:
     @projection.setter
     def projection(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexProjectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedThroughput")
     def provisioned_throughput(
@@ -83,19 +88,22 @@ class GlobalSecondaryIndexArgs:
     def provisioned_throughput(
         self,
         value: Optional[pulumi.Input[GlobalSecondaryIndexProvisionedThroughputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[GlobalSecondaryIndexTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="warmThroughput")
     def warm_throughput(
@@ -104,7 +112,8 @@ class GlobalSecondaryIndexArgs:
     @warm_throughput.setter
     def warm_throughput(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexWarmThroughputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GlobalSecondaryIndexState:
@@ -134,12 +143,14 @@ class _GlobalSecondaryIndexState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="indexName")
     def index_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @index_name.setter
-    def index_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def index_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keySchemas")
     def key_schemas(
@@ -153,7 +164,8 @@ class _GlobalSecondaryIndexState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GlobalSecondaryIndexKeySchemaArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandThroughput")
     def on_demand_throughput(
@@ -162,7 +174,8 @@ class _GlobalSecondaryIndexState:
     @on_demand_throughput.setter
     def on_demand_throughput(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexOnDemandThroughputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def projection(
@@ -171,7 +184,8 @@ class _GlobalSecondaryIndexState:
     @projection.setter
     def projection(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexProjectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedThroughput")
     def provisioned_throughput(
@@ -181,24 +195,28 @@ class _GlobalSecondaryIndexState:
     def provisioned_throughput(
         self,
         value: Optional[pulumi.Input[GlobalSecondaryIndexProvisionedThroughputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_name.setter
-    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[GlobalSecondaryIndexTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="warmThroughput")
     def warm_throughput(
@@ -207,7 +225,8 @@ class _GlobalSecondaryIndexState:
     @warm_throughput.setter
     def warm_throughput(
         self, value: Optional[pulumi.Input[GlobalSecondaryIndexWarmThroughputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class GlobalSecondaryIndex(pulumi.CustomResource):

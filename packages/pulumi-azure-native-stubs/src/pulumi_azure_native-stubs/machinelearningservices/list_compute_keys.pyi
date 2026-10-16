@@ -20,7 +20,8 @@ class ListComputeKeysResult:
     def compute_type(self) -> _builtins.str: ...
 
 class AwaitableListComputeKeysResult(ListComputeKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListComputeKeysResult]:
+        ...
 
 def list_compute_keys(
     compute_name: Optional[_builtins.str] = ...,

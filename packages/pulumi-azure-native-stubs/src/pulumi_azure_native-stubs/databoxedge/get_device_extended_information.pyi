@@ -96,7 +96,10 @@ class GetDeviceExtendedInformationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeviceExtendedInformationResult(GetDeviceExtendedInformationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeviceExtendedInformationResult]:
+        ...
 
 def get_device_extended_information(
     device_name: Optional[_builtins.str] = ...,

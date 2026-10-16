@@ -206,7 +206,8 @@ class GetInstanceResult:
     def vpc_security_groups(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetInstanceResult(GetInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceResult]:
+        ...
 
 def get_instance(
     db_instance_identifier: Optional[_builtins.str] = ...,

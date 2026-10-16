@@ -24,7 +24,8 @@ class GetConsoleWithLocationResult:
     def properties(self) -> outputs.ConsolePropertiesResponse: ...
 
 class AwaitableGetConsoleWithLocationResult(GetConsoleWithLocationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConsoleWithLocationResult]:
+        ...
 
 def get_console_with_location(
     console_name: Optional[_builtins.str] = ...,

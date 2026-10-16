@@ -47,7 +47,8 @@ class ListWorkflowCallbackUrlResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableListWorkflowCallbackUrlResult(ListWorkflowCallbackUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWorkflowCallbackUrlResult]:
+        ...
 
 def list_workflow_callback_url(
     key_type: Optional[Union[_builtins.str, KeyType]] = ...,

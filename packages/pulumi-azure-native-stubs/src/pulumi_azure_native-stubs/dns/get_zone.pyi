@@ -83,7 +83,8 @@ class GetZoneResult:
     def zone_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetZoneResult(GetZoneResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetZoneResult]:
+        ...
 
 def get_zone(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -59,7 +59,10 @@ class GetPrivateLinkServicePrivateEndpointConnectionResult:
 class AwaitableGetPrivateLinkServicePrivateEndpointConnectionResult(
     GetPrivateLinkServicePrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateLinkServicePrivateEndpointConnectionResult]:
+        ...
 
 def get_private_link_service_private_endpoint_connection(
     expand: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class GetLongTermRetentionPolicyResult:
     def yearly_retention(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetLongTermRetentionPolicyResult(GetLongTermRetentionPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLongTermRetentionPolicyResult]:
+        ...
 
 def get_long_term_retention_policy(
     database_name: Optional[_builtins.str] = ...,

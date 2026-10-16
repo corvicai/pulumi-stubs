@@ -76,7 +76,8 @@ class GetFirmwareResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetFirmwareResult(GetFirmwareResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirmwareResult]:
+        ...
 
 def get_firmware(
     firmware_id: Optional[_builtins.str] = ...,

@@ -96,7 +96,8 @@ class GetConnectorMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectorMappingResult(GetConnectorMappingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectorMappingResult]:
+        ...
 
 def get_connector_mapping(
     connector_name: Optional[_builtins.str] = ...,

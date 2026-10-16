@@ -37,7 +37,8 @@ class GetApiWikiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiWikiResult(GetApiWikiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiWikiResult]:
+        ...
 
 def get_api_wiki(
     api_id: Optional[_builtins.str] = ...,

@@ -30,12 +30,14 @@ class HypervCollectorsOperationArgs:
     @pulumi.getter(name="projectName")
     def project_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_name.setter
-    def project_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentProperties")
     def agent_properties(
@@ -44,17 +46,24 @@ class HypervCollectorsOperationArgs:
     @agent_properties.setter
     def agent_properties(
         self, value: Optional[pulumi.Input[CollectorAgentPropertiesBaseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoverySiteId")
     def discovery_site_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @discovery_site_id.setter
-    def discovery_site_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def discovery_site_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hypervCollectorName")
     def hyperv_collector_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hyperv_collector_name.setter
-    def hyperv_collector_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hyperv_collector_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -63,7 +72,8 @@ class HypervCollectorsOperationArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:migrate:HypervCollectorsOperation")
 class HypervCollectorsOperation(pulumi.CustomResource):

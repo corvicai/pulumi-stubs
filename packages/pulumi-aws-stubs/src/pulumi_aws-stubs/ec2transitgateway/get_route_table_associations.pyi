@@ -43,7 +43,8 @@ class GetRouteTableAssociationsResult:
     def transit_gateway_route_table_id(self) -> _builtins.str: ...
 
 class AwaitableGetRouteTableAssociationsResult(GetRouteTableAssociationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteTableAssociationsResult]:
+        ...
 
 def get_route_table_associations(
     filters: Optional[

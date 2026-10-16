@@ -66,7 +66,8 @@ class GetCapacityReservationGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCapacityReservationGroupResult(GetCapacityReservationGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityReservationGroupResult]:
+        ...
 
 def get_capacity_reservation_group(
     group_id: Optional[_builtins.str] = ...,

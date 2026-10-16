@@ -39,7 +39,8 @@ class GetKMSSecretResult:
     def plaintext(self) -> _builtins.str: ...
 
 class AwaitableGetKMSSecretResult(GetKMSSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKMSSecretResult]:
+        ...
 
 def get_kms_secret(
     additional_authenticated_data: Optional[_builtins.str] = ...,

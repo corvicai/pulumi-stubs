@@ -47,7 +47,8 @@ class GetRegistryImageResult:
     def tag(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetRegistryImageResult(GetRegistryImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryImageResult]:
+        ...
 
 def get_registry_image(
     digest: Optional[_builtins.str] = ...,

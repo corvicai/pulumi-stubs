@@ -48,7 +48,8 @@ class GetSchemaReferenceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSchemaReferenceResult(GetSchemaReferenceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSchemaReferenceResult]:
+        ...
 
 def get_schema_reference(
     resource_uri: Optional[_builtins.str] = ...,

@@ -35,7 +35,8 @@ class GetAddressesResult:
     def region(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAddressesResult(GetAddressesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAddressesResult]:
+        ...
 
 def get_addresses(
     filter: Optional[_builtins.str] = ...,

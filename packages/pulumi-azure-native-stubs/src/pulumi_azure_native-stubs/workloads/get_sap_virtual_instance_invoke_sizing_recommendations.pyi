@@ -18,7 +18,10 @@ class GetSapVirtualInstanceInvokeSizingRecommendationsResult:
 class AwaitableGetSapVirtualInstanceInvokeSizingRecommendationsResult(
     GetSapVirtualInstanceInvokeSizingRecommendationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSapVirtualInstanceInvokeSizingRecommendationsResult]:
+        ...
 
 def get_sap_virtual_instance_invoke_sizing_recommendations(
     app_location: Optional[_builtins.str] = ...,

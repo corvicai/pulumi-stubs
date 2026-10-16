@@ -38,7 +38,8 @@ class CollectionVectorSchemaArgs:
     @pulumi.getter(name="fieldName")
     def field_name(self) -> pulumi.Input[_builtins.str]: ...
     @field_name.setter
-    def field_name(self, value: pulumi.Input[_builtins.str]): ...
+    def field_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="denseVector")
     def dense_vector(
@@ -47,7 +48,8 @@ class CollectionVectorSchemaArgs:
     @dense_vector.setter
     def dense_vector(
         self, value: Optional[pulumi.Input[CollectionVectorSchemaDenseVectorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparseVector")
     def sparse_vector(
@@ -56,7 +58,8 @@ class CollectionVectorSchemaArgs:
     @sparse_vector.setter
     def sparse_vector(
         self, value: Optional[pulumi.Input[CollectionVectorSchemaSparseVectorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CollectionVectorSchemaDenseVectorArgsDict(TypedDict):
     dimensions: NotRequired[pulumi.Input[_builtins.int]]
@@ -78,7 +81,8 @@ class CollectionVectorSchemaDenseVectorArgs:
     @pulumi.getter
     def dimensions(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @dimensions.setter
-    def dimensions(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def dimensions(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vertexEmbeddingConfig")
     def vertex_embedding_config(
@@ -92,7 +96,8 @@ class CollectionVectorSchemaDenseVectorArgs:
         value: Optional[
             pulumi.Input[CollectionVectorSchemaDenseVectorVertexEmbeddingConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CollectionVectorSchemaDenseVectorVertexEmbeddingConfigArgsDict(TypedDict):
     model_id: pulumi.Input[_builtins.str]
@@ -112,17 +117,20 @@ class CollectionVectorSchemaDenseVectorVertexEmbeddingConfigArgs:
     @pulumi.getter(name="modelId")
     def model_id(self) -> pulumi.Input[_builtins.str]: ...
     @model_id.setter
-    def model_id(self, value: pulumi.Input[_builtins.str]): ...
+    def model_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTemplate")
     def text_template(self) -> pulumi.Input[_builtins.str]: ...
     @text_template.setter
-    def text_template(self, value: pulumi.Input[_builtins.str]): ...
+    def text_template(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CollectionVectorSchemaSparseVectorArgsDict(TypedDict): ...
 

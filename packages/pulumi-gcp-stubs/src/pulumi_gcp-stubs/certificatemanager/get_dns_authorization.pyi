@@ -66,7 +66,8 @@ class GetDnsAuthorizationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDnsAuthorizationResult(GetDnsAuthorizationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnsAuthorizationResult]:
+        ...
 
 def get_dns_authorization(
     domain: Optional[_builtins.str] = ...,

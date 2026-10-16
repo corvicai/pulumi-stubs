@@ -25,12 +25,16 @@ class GuestAgentArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def credentials(self) -> Optional[pulumi.Input[GuestCredentialArgs]]: ...
     @credentials.setter
-    def credentials(self, value: Optional[pulumi.Input[GuestCredentialArgs]]): ...
+    def credentials(
+        self, value: Optional[pulumi.Input[GuestCredentialArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningAction")
     def provisioning_action(
@@ -39,7 +43,8 @@ class GuestAgentArgs:
     @provisioning_action.setter
     def provisioning_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningAction]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azurestackhci:GuestAgent")
 class GuestAgent(pulumi.CustomResource):

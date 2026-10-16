@@ -28,14 +28,18 @@ class SessionLoggerArgs:
     @pulumi.getter(name="eventFilter")
     def event_filter(self) -> pulumi.Input[SessionLoggerEventFilterArgs]: ...
     @event_filter.setter
-    def event_filter(self, value: pulumi.Input[SessionLoggerEventFilterArgs]): ...
+    def event_filter(
+        self, value: pulumi.Input[SessionLoggerEventFilterArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfiguration")
     def log_configuration(self) -> pulumi.Input[SessionLoggerLogConfigurationArgs]: ...
     @log_configuration.setter
     def log_configuration(
         self, value: pulumi.Input[SessionLoggerLogConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalEncryptionContext")
     def additional_encryption_context(
@@ -44,22 +48,28 @@ class SessionLoggerArgs:
     @additional_encryption_context.setter
     def additional_encryption_context(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedKey")
     def customer_managed_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_managed_key.setter
-    def customer_managed_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_managed_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -68,7 +78,8 @@ class SessionLoggerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SessionLoggerState:
@@ -102,7 +113,8 @@ class _SessionLoggerState:
     @additional_encryption_context.setter
     def additional_encryption_context(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedPortalArns")
     def associated_portal_arns(
@@ -111,24 +123,30 @@ class _SessionLoggerState:
     @associated_portal_arns.setter
     def associated_portal_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedKey")
     def customer_managed_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_managed_key.setter
-    def customer_managed_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_managed_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventFilter")
     def event_filter(self) -> Optional[pulumi.Input[SessionLoggerEventFilterArgs]]: ...
     @event_filter.setter
     def event_filter(
         self, value: Optional[pulumi.Input[SessionLoggerEventFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfiguration")
     def log_configuration(
@@ -137,17 +155,22 @@ class _SessionLoggerState:
     @log_configuration.setter
     def log_configuration(
         self, value: Optional[pulumi.Input[SessionLoggerLogConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionLoggerArn")
     def session_logger_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @session_logger_arn.setter
-    def session_logger_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def session_logger_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -156,7 +179,8 @@ class _SessionLoggerState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -165,7 +189,8 @@ class _SessionLoggerState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:workspacesweb/sessionLogger:SessionLogger")
 class SessionLogger(pulumi.CustomResource):

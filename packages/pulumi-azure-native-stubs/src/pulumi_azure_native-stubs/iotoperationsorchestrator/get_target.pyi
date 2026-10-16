@@ -80,7 +80,8 @@ class GetTargetResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetTargetResult(GetTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTargetResult]:
+        ...
 
 def get_target(
     name: Optional[_builtins.str] = ...,

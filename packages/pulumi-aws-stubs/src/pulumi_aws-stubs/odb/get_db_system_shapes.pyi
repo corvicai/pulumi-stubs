@@ -34,7 +34,8 @@ class GetDbSystemShapesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetDbSystemShapesResult(GetDbSystemShapesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDbSystemShapesResult]:
+        ...
 
 def get_db_system_shapes(
     availability_zone_id: Optional[_builtins.str] = ...,

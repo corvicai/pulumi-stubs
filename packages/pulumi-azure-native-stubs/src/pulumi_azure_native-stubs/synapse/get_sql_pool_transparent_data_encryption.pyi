@@ -45,7 +45,10 @@ class GetSqlPoolTransparentDataEncryptionResult:
 class AwaitableGetSqlPoolTransparentDataEncryptionResult(
     GetSqlPoolTransparentDataEncryptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlPoolTransparentDataEncryptionResult]:
+        ...
 
 def get_sql_pool_transparent_data_encryption(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -21,7 +21,8 @@ class ListDaprComponentSecretsResult:
     def value(self) -> Sequence[outputs.DaprSecretResponse]: ...
 
 class AwaitableListDaprComponentSecretsResult(ListDaprComponentSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDaprComponentSecretsResult]:
+        ...
 
 def list_dapr_component_secrets(
     component_name: Optional[_builtins.str] = ...,

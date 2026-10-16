@@ -64,7 +64,8 @@ class GetNspAssociationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNspAssociationResult(GetNspAssociationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNspAssociationResult]:
+        ...
 
 def get_nsp_association(
     association_name: Optional[_builtins.str] = ...,

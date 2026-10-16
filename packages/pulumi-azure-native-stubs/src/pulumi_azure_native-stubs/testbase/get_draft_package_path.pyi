@@ -39,7 +39,8 @@ class GetDraftPackagePathResult:
     def working_path(self) -> _builtins.str: ...
 
 class AwaitableGetDraftPackagePathResult(GetDraftPackagePathResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDraftPackagePathResult]:
+        ...
 
 def get_draft_package_path(
     draft_package_name: Optional[_builtins.str] = ...,

@@ -33,22 +33,26 @@ class SigningProfileArgs:
     @pulumi.getter(name="platformId")
     def platform_id(self) -> pulumi.Input[_builtins.str]: ...
     @platform_id.setter
-    def platform_id(self, value: pulumi.Input[_builtins.str]): ...
+    def platform_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signatureValidityPeriod")
     def signature_validity_period(
@@ -57,7 +61,8 @@ class SigningProfileArgs:
     @signature_validity_period.setter
     def signature_validity_period(
         self, value: Optional[pulumi.Input[SigningProfileSignatureValidityPeriodArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signingMaterial")
     def signing_material(
@@ -66,7 +71,8 @@ class SigningProfileArgs:
     @signing_material.setter
     def signing_material(
         self, value: Optional[pulumi.Input[SigningProfileSigningMaterialArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signingParameters")
     def signing_parameters(
@@ -75,7 +81,8 @@ class SigningProfileArgs:
     @signing_parameters.setter
     def signing_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -84,7 +91,8 @@ class SigningProfileArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SigningProfileState:
@@ -121,32 +129,40 @@ class _SigningProfileState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformDisplayName")
     def platform_display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_display_name.setter
-    def platform_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform_display_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformId")
     def platform_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_id.setter
-    def platform_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revocationRecords")
     def revocation_records(
@@ -160,7 +176,8 @@ class _SigningProfileState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SigningProfileRevocationRecordArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signatureValidityPeriod")
     def signature_validity_period(
@@ -169,7 +186,8 @@ class _SigningProfileState:
     @signature_validity_period.setter
     def signature_validity_period(
         self, value: Optional[pulumi.Input[SigningProfileSignatureValidityPeriodArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signingMaterial")
     def signing_material(
@@ -178,7 +196,8 @@ class _SigningProfileState:
     @signing_material.setter
     def signing_material(
         self, value: Optional[pulumi.Input[SigningProfileSigningMaterialArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signingParameters")
     def signing_parameters(
@@ -187,12 +206,14 @@ class _SigningProfileState:
     @signing_parameters.setter
     def signing_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -201,7 +222,8 @@ class _SigningProfileState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -210,17 +232,20 @@ class _SigningProfileState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionArn")
     def version_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_arn.setter
-    def version_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:signer/signingProfile:SigningProfile")
 class SigningProfile(pulumi.CustomResource):

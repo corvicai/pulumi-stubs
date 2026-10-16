@@ -24,7 +24,8 @@ class ListVMHostResult:
     def value(self) -> Optional[Sequence[outputs.VMResourcesResponse]]: ...
 
 class AwaitableListVMHostResult(ListVMHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListVMHostResult]:
+        ...
 
 def list_vm_host(
     monitor_name: Optional[_builtins.str] = ...,

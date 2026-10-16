@@ -88,7 +88,8 @@ class GetMaintenanceConfigurationResult:
     def visibility(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetMaintenanceConfigurationResult(GetMaintenanceConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMaintenanceConfigurationResult]:
+        ...
 
 def get_maintenance_configuration(
     resource_group_name: Optional[_builtins.str] = ...,

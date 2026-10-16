@@ -76,7 +76,8 @@ class GetDiagnosticSettingResult:
     def workspace_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDiagnosticSettingResult(GetDiagnosticSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiagnosticSettingResult]:
+        ...
 
 def get_diagnostic_setting(
     name: Optional[_builtins.str] = ...,

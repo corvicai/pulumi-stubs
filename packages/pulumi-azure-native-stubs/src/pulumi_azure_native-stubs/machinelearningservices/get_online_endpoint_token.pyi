@@ -35,7 +35,8 @@ class GetOnlineEndpointTokenResult:
     def token_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetOnlineEndpointTokenResult(GetOnlineEndpointTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOnlineEndpointTokenResult]:
+        ...
 
 def get_online_endpoint_token(
     endpoint_name: Optional[_builtins.str] = ...,

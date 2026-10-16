@@ -75,7 +75,8 @@ class GetOrderResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOrderResult(GetOrderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrderResult]:
+        ...
 
 def get_order(
     device_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetPureStoragePolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPureStoragePolicyResult(GetPureStoragePolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPureStoragePolicyResult]:
+        ...
 
 def get_pure_storage_policy(
     private_cloud_name: Optional[_builtins.str] = ...,

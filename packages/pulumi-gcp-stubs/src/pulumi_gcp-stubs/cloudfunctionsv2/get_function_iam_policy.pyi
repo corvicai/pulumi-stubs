@@ -43,7 +43,8 @@ class GetFunctionIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetFunctionIamPolicyResult(GetFunctionIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFunctionIamPolicyResult]:
+        ...
 
 def get_function_iam_policy(
     cloud_function: Optional[_builtins.str] = ...,

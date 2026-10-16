@@ -56,7 +56,8 @@ class GetFlowProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFlowProfileResult(GetFlowProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFlowProfileResult]:
+        ...
 
 def get_flow_profile(
     flow_profile_name: Optional[_builtins.str] = ...,

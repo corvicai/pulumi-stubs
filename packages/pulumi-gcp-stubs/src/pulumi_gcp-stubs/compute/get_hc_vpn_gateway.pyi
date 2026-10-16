@@ -80,7 +80,8 @@ class GetHcVpnGatewayResult:
     def vpn_interfaces(self) -> Sequence[outputs.GetHcVpnGatewayVpnInterfaceResult]: ...
 
 class AwaitableGetHcVpnGatewayResult(GetHcVpnGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHcVpnGatewayResult]:
+        ...
 
 def get_hc_vpn_gateway(
     name: Optional[_builtins.str] = ...,

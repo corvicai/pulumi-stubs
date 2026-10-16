@@ -120,7 +120,8 @@ class GetActionGroupResult:
     ) -> Optional[Sequence[outputs.WebhookReceiverResponse]]: ...
 
 class AwaitableGetActionGroupResult(GetActionGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActionGroupResult]:
+        ...
 
 def get_action_group(
     action_group_name: Optional[_builtins.str] = ...,

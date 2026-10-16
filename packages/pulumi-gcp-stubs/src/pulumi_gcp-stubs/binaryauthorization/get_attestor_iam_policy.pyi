@@ -34,7 +34,8 @@ class GetAttestorIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetAttestorIamPolicyResult(GetAttestorIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAttestorIamPolicyResult]:
+        ...
 
 def get_attestor_iam_policy(
     attestor: Optional[_builtins.str] = ...,

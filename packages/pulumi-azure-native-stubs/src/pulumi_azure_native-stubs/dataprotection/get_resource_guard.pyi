@@ -56,7 +56,8 @@ class GetResourceGuardResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetResourceGuardResult(GetResourceGuardResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceGuardResult]:
+        ...
 
 def get_resource_guard(
     resource_group_name: Optional[_builtins.str] = ...,

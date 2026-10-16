@@ -70,7 +70,8 @@ class AnalysisRuleAnnotatorSelectorArgs:
     @issue_models.setter
     def issue_models(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phraseMatchers")
     def phrase_matchers(
@@ -79,7 +80,8 @@ class AnalysisRuleAnnotatorSelectorArgs:
     @phrase_matchers.setter
     def phrase_matchers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="qaConfig")
     def qa_config(
@@ -88,31 +90,40 @@ class AnalysisRuleAnnotatorSelectorArgs:
     @qa_config.setter
     def qa_config(
         self, value: Optional[pulumi.Input[AnalysisRuleAnnotatorSelectorQaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runEntityAnnotator")
     def run_entity_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_entity_annotator.setter
-    def run_entity_annotator(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def run_entity_annotator(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runIntentAnnotator")
     def run_intent_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_intent_annotator.setter
-    def run_intent_annotator(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def run_intent_annotator(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runInterruptionAnnotator")
     def run_interruption_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_interruption_annotator.setter
     def run_interruption_annotator(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runIssueModelAnnotator")
     def run_issue_model_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_issue_model_annotator.setter
     def run_issue_model_annotator(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runPhraseMatcherAnnotator")
     def run_phrase_matcher_annotator(
@@ -121,31 +132,40 @@ class AnalysisRuleAnnotatorSelectorArgs:
     @run_phrase_matcher_annotator.setter
     def run_phrase_matcher_annotator(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runQaAnnotator")
     def run_qa_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_qa_annotator.setter
-    def run_qa_annotator(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def run_qa_annotator(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runSentimentAnnotator")
     def run_sentiment_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_sentiment_annotator.setter
     def run_sentiment_annotator(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runSilenceAnnotator")
     def run_silence_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_silence_annotator.setter
-    def run_silence_annotator(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def run_silence_annotator(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runSummarizationAnnotator")
     def run_summarization_annotator(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @run_summarization_annotator.setter
     def run_summarization_annotator(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="summarizationConfig")
     def summarization_config(
@@ -159,7 +179,8 @@ class AnalysisRuleAnnotatorSelectorArgs:
         value: Optional[
             pulumi.Input[AnalysisRuleAnnotatorSelectorSummarizationConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalysisRuleAnnotatorSelectorQaConfigArgsDict(TypedDict):
     scorecard_list: NotRequired[
@@ -188,7 +209,8 @@ class AnalysisRuleAnnotatorSelectorQaConfigArgs:
         value: Optional[
             pulumi.Input[AnalysisRuleAnnotatorSelectorQaConfigScorecardListArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalysisRuleAnnotatorSelectorQaConfigScorecardListArgsDict(TypedDict):
     qa_scorecard_revisions: NotRequired[
@@ -212,7 +234,8 @@ class AnalysisRuleAnnotatorSelectorQaConfigScorecardListArgs:
     @qa_scorecard_revisions.setter
     def qa_scorecard_revisions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalysisRuleAnnotatorSelectorSummarizationConfigArgsDict(TypedDict):
     conversation_profile: NotRequired[pulumi.Input[_builtins.str]]
@@ -230,12 +253,18 @@ class AnalysisRuleAnnotatorSelectorSummarizationConfigArgs:
     @pulumi.getter(name="conversationProfile")
     def conversation_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @conversation_profile.setter
-    def conversation_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def conversation_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="summarizationModel")
     def summarization_model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @summarization_model.setter
-    def summarization_model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def summarization_model(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AutoLabelingRuleConditionArgsDict(TypedDict):
     condition: NotRequired[pulumi.Input[_builtins.str]]
@@ -253,9 +282,11 @@ class AutoLabelingRuleConditionArgs:
     @pulumi.getter
     def condition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def condition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

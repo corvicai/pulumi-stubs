@@ -35,7 +35,8 @@ class ListDatabaseAccountKeysResult:
     def secondary_readonly_master_key(self) -> _builtins.str: ...
 
 class AwaitableListDatabaseAccountKeysResult(ListDatabaseAccountKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDatabaseAccountKeysResult]:
+        ...
 
 def list_database_account_keys(
     account_name: Optional[_builtins.str] = ...,

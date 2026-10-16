@@ -68,7 +68,10 @@ class GetDataCollectionRuleAssociationResult:
 class AwaitableGetDataCollectionRuleAssociationResult(
     GetDataCollectionRuleAssociationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDataCollectionRuleAssociationResult]:
+        ...
 
 def get_data_collection_rule_association(
     association_name: Optional[_builtins.str] = ...,

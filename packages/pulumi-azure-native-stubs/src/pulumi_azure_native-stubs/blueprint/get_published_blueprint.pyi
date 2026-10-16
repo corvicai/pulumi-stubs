@@ -72,7 +72,8 @@ class GetPublishedBlueprintResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPublishedBlueprintResult(GetPublishedBlueprintResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublishedBlueprintResult]:
+        ...
 
 def get_published_blueprint(
     blueprint_name: Optional[_builtins.str] = ...,

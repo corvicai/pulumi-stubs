@@ -88,7 +88,8 @@ class GetVirtualNetworkResult:
     def v_center_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVirtualNetworkResult(GetVirtualNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkResult]:
+        ...
 
 def get_virtual_network(
     resource_group_name: Optional[_builtins.str] = ...,

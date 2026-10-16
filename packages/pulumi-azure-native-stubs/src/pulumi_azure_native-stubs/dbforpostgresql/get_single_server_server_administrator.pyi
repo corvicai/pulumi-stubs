@@ -53,7 +53,10 @@ class GetSingleServerServerAdministratorResult:
 class AwaitableGetSingleServerServerAdministratorResult(
     GetSingleServerServerAdministratorResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSingleServerServerAdministratorResult]:
+        ...
 
 def get_single_server_server_administrator(
     resource_group_name: Optional[_builtins.str] = ...,

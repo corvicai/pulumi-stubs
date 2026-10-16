@@ -44,7 +44,8 @@ class GetJWTAuthenticatorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJWTAuthenticatorResult(GetJWTAuthenticatorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJWTAuthenticatorResult]:
+        ...
 
 def get_jwt_authenticator(
     jwt_authenticator_name: Optional[_builtins.str] = ...,

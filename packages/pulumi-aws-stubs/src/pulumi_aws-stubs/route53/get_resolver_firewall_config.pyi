@@ -39,7 +39,8 @@ class GetResolverFirewallConfigResult:
     def resource_id(self) -> _builtins.str: ...
 
 class AwaitableGetResolverFirewallConfigResult(GetResolverFirewallConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResolverFirewallConfigResult]:
+        ...
 
 def get_resolver_firewall_config(
     region: Optional[_builtins.str] = ...,

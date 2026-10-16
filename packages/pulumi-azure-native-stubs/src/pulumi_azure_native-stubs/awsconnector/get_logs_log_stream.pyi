@@ -52,7 +52,8 @@ class GetLogsLogStreamResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLogsLogStreamResult(GetLogsLogStreamResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogsLogStreamResult]:
+        ...
 
 def get_logs_log_stream(
     name: Optional[_builtins.str] = ...,

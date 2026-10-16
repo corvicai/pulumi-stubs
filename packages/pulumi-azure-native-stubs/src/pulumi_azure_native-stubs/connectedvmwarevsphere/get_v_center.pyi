@@ -96,7 +96,8 @@ class GetVCenterResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetVCenterResult(GetVCenterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVCenterResult]:
+        ...
 
 def get_v_center(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -58,7 +58,8 @@ class GetCryptoKeyLatestVersionResult:
     def version(self) -> _builtins.int: ...
 
 class AwaitableGetCryptoKeyLatestVersionResult(GetCryptoKeyLatestVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCryptoKeyLatestVersionResult]:
+        ...
 
 def get_crypto_key_latest_version(
     crypto_key: Optional[_builtins.str] = ...,

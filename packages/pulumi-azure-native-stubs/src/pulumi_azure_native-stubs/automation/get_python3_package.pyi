@@ -96,7 +96,8 @@ class GetPython3PackageResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPython3PackageResult(GetPython3PackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPython3PackageResult]:
+        ...
 
 def get_python3_package(
     automation_account_name: Optional[_builtins.str] = ...,

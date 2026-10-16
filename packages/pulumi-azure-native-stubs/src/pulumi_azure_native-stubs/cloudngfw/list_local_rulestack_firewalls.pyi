@@ -23,7 +23,8 @@ class ListLocalRulestackFirewallsResult:
     def value(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableListLocalRulestackFirewallsResult(ListLocalRulestackFirewallsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListLocalRulestackFirewallsResult]:
+        ...
 
 def list_local_rulestack_firewalls(
     local_rulestack_name: Optional[_builtins.str] = ...,

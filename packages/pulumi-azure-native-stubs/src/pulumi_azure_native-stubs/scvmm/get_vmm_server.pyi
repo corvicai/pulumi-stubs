@@ -86,7 +86,8 @@ class GetVmmServerResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetVmmServerResult(GetVmmServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVmmServerResult]:
+        ...
 
 def get_vmm_server(
     resource_group_name: Optional[_builtins.str] = ...,

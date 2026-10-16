@@ -39,7 +39,8 @@ class ListTenantAccessSecretsResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListTenantAccessSecretsResult(ListTenantAccessSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListTenantAccessSecretsResult]:
+        ...
 
 def list_tenant_access_secrets(
     access_name: Optional[_builtins.str] = ...,

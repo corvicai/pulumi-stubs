@@ -29,17 +29,20 @@ class SqlVirtualMachineGroupArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlImageOffer")
     def sql_image_offer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sql_image_offer.setter
-    def sql_image_offer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sql_image_offer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlImageSku")
     def sql_image_sku(
@@ -48,7 +51,8 @@ class SqlVirtualMachineGroupArgs:
     @sql_image_sku.setter
     def sql_image_sku(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlVmGroupImageSku]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlVirtualMachineGroupName")
     def sql_virtual_machine_group_name(
@@ -57,7 +61,8 @@ class SqlVirtualMachineGroupArgs:
     @sql_virtual_machine_group_name.setter
     def sql_virtual_machine_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -66,14 +71,16 @@ class SqlVirtualMachineGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wsfcDomainProfile")
     def wsfc_domain_profile(self) -> Optional[pulumi.Input[WsfcDomainProfileArgs]]: ...
     @wsfc_domain_profile.setter
     def wsfc_domain_profile(
         self, value: Optional[pulumi.Input[WsfcDomainProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SqlVirtualMachineGroup(pulumi.CustomResource):

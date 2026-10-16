@@ -86,7 +86,8 @@ class GetCommunityTrainingResult:
     def zone_redundancy_enabled(self) -> _builtins.bool: ...
 
 class AwaitableGetCommunityTrainingResult(GetCommunityTrainingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCommunityTrainingResult]:
+        ...
 
 def get_community_training(
     community_training_name: Optional[_builtins.str] = ...,

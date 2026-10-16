@@ -39,12 +39,18 @@ class ImageArgs:
     @pulumi.getter(name="infrastructureConfigurationArn")
     def infrastructure_configuration_arn(self) -> pulumi.Input[_builtins.str]: ...
     @infrastructure_configuration_arn.setter
-    def infrastructure_configuration_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def infrastructure_configuration_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerRecipeArn")
     def container_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_recipe_arn.setter
-    def container_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="distributionConfigurationArn")
     def distribution_configuration_arn(
@@ -53,7 +59,8 @@ class ImageArgs:
     @distribution_configuration_arn.setter
     def distribution_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedImageMetadataEnabled")
     def enhanced_image_metadata_enabled(
@@ -62,17 +69,22 @@ class ImageArgs:
     @enhanced_image_metadata_enabled.setter
     def enhanced_image_metadata_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageRecipeArn")
     def image_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_recipe_arn.setter
-    def image_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageScanningConfiguration")
     def image_scanning_configuration(
@@ -81,7 +93,8 @@ class ImageArgs:
     @image_scanning_configuration.setter
     def image_scanning_configuration(
         self, value: Optional[pulumi.Input[ImageImageScanningConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTestsConfiguration")
     def image_tests_configuration(
@@ -90,7 +103,8 @@ class ImageArgs:
     @image_tests_configuration.setter
     def image_tests_configuration(
         self, value: Optional[pulumi.Input[ImageImageTestsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfiguration")
     def logging_configuration(
@@ -99,12 +113,14 @@ class ImageArgs:
     @logging_configuration.setter
     def logging_configuration(
         self, value: Optional[pulumi.Input[ImageLoggingConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -113,7 +129,8 @@ class ImageArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def workflows(
@@ -122,7 +139,8 @@ class ImageArgs:
     @workflows.setter
     def workflows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ImageWorkflowArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ImageState:
@@ -166,17 +184,22 @@ class _ImageState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerRecipeArn")
     def container_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_recipe_arn.setter
-    def container_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateCreated")
     def date_created(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date_created.setter
-    def date_created(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date_created(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="distributionConfigurationArn")
     def distribution_configuration_arn(
@@ -185,7 +208,8 @@ class _ImageState:
     @distribution_configuration_arn.setter
     def distribution_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedImageMetadataEnabled")
     def enhanced_image_metadata_enabled(
@@ -194,17 +218,22 @@ class _ImageState:
     @enhanced_image_metadata_enabled.setter
     def enhanced_image_metadata_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageRecipeArn")
     def image_recipe_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_recipe_arn.setter
-    def image_recipe_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_recipe_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageScanningConfiguration")
     def image_scanning_configuration(
@@ -213,7 +242,8 @@ class _ImageState:
     @image_scanning_configuration.setter
     def image_scanning_configuration(
         self, value: Optional[pulumi.Input[ImageImageScanningConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageTestsConfiguration")
     def image_tests_configuration(
@@ -222,7 +252,8 @@ class _ImageState:
     @image_tests_configuration.setter
     def image_tests_configuration(
         self, value: Optional[pulumi.Input[ImageImageTestsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infrastructureConfigurationArn")
     def infrastructure_configuration_arn(
@@ -231,7 +262,8 @@ class _ImageState:
     @infrastructure_configuration_arn.setter
     def infrastructure_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfiguration")
     def logging_configuration(
@@ -240,17 +272,20 @@ class _ImageState:
     @logging_configuration.setter
     def logging_configuration(
         self, value: Optional[pulumi.Input[ImageLoggingConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
     def os_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_version.setter
-    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputResources")
     def output_resources(
@@ -260,17 +295,20 @@ class _ImageState:
     def output_resources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ImageOutputResourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform.setter
-    def platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -279,7 +317,8 @@ class _ImageState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -288,12 +327,14 @@ class _ImageState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def workflows(
@@ -302,7 +343,8 @@ class _ImageState:
     @workflows.setter
     def workflows(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ImageWorkflowArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:imagebuilder/image:Image")
 class Image(pulumi.CustomResource):

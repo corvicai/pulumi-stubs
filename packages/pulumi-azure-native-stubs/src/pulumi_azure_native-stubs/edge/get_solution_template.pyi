@@ -56,7 +56,8 @@ class GetSolutionTemplateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSolutionTemplateResult(GetSolutionTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSolutionTemplateResult]:
+        ...
 
 def get_solution_template(
     resource_group_name: Optional[_builtins.str] = ...,

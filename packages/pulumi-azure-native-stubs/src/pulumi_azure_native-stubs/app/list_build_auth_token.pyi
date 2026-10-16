@@ -23,7 +23,8 @@ class ListBuildAuthTokenResult:
     def token(self) -> _builtins.str: ...
 
 class AwaitableListBuildAuthTokenResult(ListBuildAuthTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListBuildAuthTokenResult]:
+        ...
 
 def list_build_auth_token(
     build_name: Optional[_builtins.str] = ...,

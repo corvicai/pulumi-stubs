@@ -48,7 +48,8 @@ class GetDataflowEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataflowEndpointResult(GetDataflowEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataflowEndpointResult]:
+        ...
 
 def get_dataflow_endpoint(
     dataflow_endpoint_name: Optional[_builtins.str] = ...,

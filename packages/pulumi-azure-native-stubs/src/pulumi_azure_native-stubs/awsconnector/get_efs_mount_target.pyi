@@ -52,7 +52,8 @@ class GetEfsMountTargetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEfsMountTargetResult(GetEfsMountTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEfsMountTargetResult]:
+        ...
 
 def get_efs_mount_target(
     name: Optional[_builtins.str] = ...,

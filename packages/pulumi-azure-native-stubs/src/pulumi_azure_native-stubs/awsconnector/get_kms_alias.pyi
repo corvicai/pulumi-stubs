@@ -52,7 +52,8 @@ class GetKmsAliasResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKmsAliasResult(GetKmsAliasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKmsAliasResult]:
+        ...
 
 def get_kms_alias(
     name: Optional[_builtins.str] = ...,

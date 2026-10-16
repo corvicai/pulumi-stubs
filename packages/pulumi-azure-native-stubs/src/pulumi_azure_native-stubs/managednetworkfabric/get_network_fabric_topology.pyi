@@ -27,7 +27,8 @@ class GetNetworkFabricTopologyResult:
     def url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNetworkFabricTopologyResult(GetNetworkFabricTopologyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkFabricTopologyResult]:
+        ...
 
 def get_network_fabric_topology(
     network_fabric_name: Optional[_builtins.str] = ...,

@@ -35,7 +35,8 @@ class GetLogicAppResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLogicAppResult(GetLogicAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogicAppResult]:
+        ...
 
 def get_logic_app(
     container_app_name: Optional[_builtins.str] = ...,

@@ -74,7 +74,8 @@ class GetConfigurationProfileResult:
     ) -> Sequence[outputs.GetConfigurationProfileValidatorResult]: ...
 
 class AwaitableGetConfigurationProfileResult(GetConfigurationProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationProfileResult]:
+        ...
 
 def get_configuration_profile(
     application_id: Optional[_builtins.str] = ...,

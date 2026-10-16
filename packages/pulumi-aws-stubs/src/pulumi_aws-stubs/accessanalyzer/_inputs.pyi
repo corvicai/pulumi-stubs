@@ -50,7 +50,8 @@ class AnalyzerConfigurationArgs:
     @internal_access.setter
     def internal_access(
         self, value: Optional[pulumi.Input[AnalyzerConfigurationInternalAccessArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unusedAccess")
     def unused_access(
@@ -59,7 +60,8 @@ class AnalyzerConfigurationArgs:
     @unused_access.setter
     def unused_access(
         self, value: Optional[pulumi.Input[AnalyzerConfigurationUnusedAccessArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyzerConfigurationInternalAccessArgsDict(TypedDict):
     analysis_rule: NotRequired[
@@ -88,7 +90,8 @@ class AnalyzerConfigurationInternalAccessArgs:
         value: Optional[
             pulumi.Input[AnalyzerConfigurationInternalAccessAnalysisRuleArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyzerConfigurationInternalAccessAnalysisRuleArgsDict(TypedDict):
     inclusions: NotRequired[
@@ -141,7 +144,8 @@ class AnalyzerConfigurationInternalAccessAnalysisRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyzerConfigurationInternalAccessAnalysisRuleInclusionArgsDict(TypedDict):
     account_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -171,7 +175,8 @@ class AnalyzerConfigurationInternalAccessAnalysisRuleInclusionArgs:
     @account_ids.setter
     def account_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArns")
     def resource_arns(
@@ -180,7 +185,8 @@ class AnalyzerConfigurationInternalAccessAnalysisRuleInclusionArgs:
     @resource_arns.setter
     def resource_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(
@@ -189,7 +195,8 @@ class AnalyzerConfigurationInternalAccessAnalysisRuleInclusionArgs:
     @resource_types.setter
     def resource_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyzerConfigurationUnusedAccessArgsDict(TypedDict):
     analysis_rule: NotRequired[
@@ -218,12 +225,16 @@ class AnalyzerConfigurationUnusedAccessArgs:
         value: Optional[
             pulumi.Input[AnalyzerConfigurationUnusedAccessAnalysisRuleArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unusedAccessAge")
     def unused_access_age(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @unused_access_age.setter
-    def unused_access_age(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def unused_access_age(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class AnalyzerConfigurationUnusedAccessAnalysisRuleArgsDict(TypedDict):
     exclusions: NotRequired[
@@ -274,7 +285,8 @@ class AnalyzerConfigurationUnusedAccessAnalysisRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyzerConfigurationUnusedAccessAnalysisRuleExclusionArgsDict(TypedDict):
     account_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -304,7 +316,8 @@ class AnalyzerConfigurationUnusedAccessAnalysisRuleExclusionArgs:
     @account_ids.setter
     def account_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -320,7 +333,8 @@ class AnalyzerConfigurationUnusedAccessAnalysisRuleExclusionArgs:
                 Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ArchiveRuleFilterArgsDict(TypedDict):
     criteria: pulumi.Input[_builtins.str]
@@ -344,7 +358,8 @@ class ArchiveRuleFilterArgs:
     @pulumi.getter
     def criteria(self) -> pulumi.Input[_builtins.str]: ...
     @criteria.setter
-    def criteria(self, value: pulumi.Input[_builtins.str]): ...
+    def criteria(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def contains(
@@ -353,23 +368,27 @@ class ArchiveRuleFilterArgs:
     @contains.setter
     def contains(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def eqs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @eqs.setter
     def eqs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def exists(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @exists.setter
-    def exists(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def exists(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def neqs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @neqs.setter
     def neqs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

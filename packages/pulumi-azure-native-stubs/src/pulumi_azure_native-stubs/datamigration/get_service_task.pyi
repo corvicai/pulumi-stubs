@@ -48,7 +48,8 @@ class GetServiceTaskResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceTaskResult(GetServiceTaskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceTaskResult]:
+        ...
 
 def get_service_task(
     expand: Optional[_builtins.str] = ...,

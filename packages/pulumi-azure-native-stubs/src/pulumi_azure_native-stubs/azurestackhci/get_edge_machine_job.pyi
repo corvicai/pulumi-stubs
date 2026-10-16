@@ -44,7 +44,8 @@ class GetEdgeMachineJobResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEdgeMachineJobResult(GetEdgeMachineJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEdgeMachineJobResult]:
+        ...
 
 def get_edge_machine_job(
     edge_machine_name: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class GetStaticCidrResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStaticCidrResult(GetStaticCidrResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStaticCidrResult]:
+        ...
 
 def get_static_cidr(
     network_manager_name: Optional[_builtins.str] = ...,

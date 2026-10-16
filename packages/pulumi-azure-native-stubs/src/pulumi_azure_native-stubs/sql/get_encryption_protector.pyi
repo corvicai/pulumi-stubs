@@ -67,7 +67,8 @@ class GetEncryptionProtectorResult:
     def uri(self) -> _builtins.str: ...
 
 class AwaitableGetEncryptionProtectorResult(GetEncryptionProtectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEncryptionProtectorResult]:
+        ...
 
 def get_encryption_protector(
     encryption_protector_name: Optional[_builtins.str] = ...,

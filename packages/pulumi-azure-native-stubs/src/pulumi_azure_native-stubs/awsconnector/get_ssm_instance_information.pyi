@@ -52,7 +52,8 @@ class GetSsmInstanceInformationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSsmInstanceInformationResult(GetSsmInstanceInformationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSsmInstanceInformationResult]:
+        ...
 
 def get_ssm_instance_information(
     name: Optional[_builtins.str] = ...,

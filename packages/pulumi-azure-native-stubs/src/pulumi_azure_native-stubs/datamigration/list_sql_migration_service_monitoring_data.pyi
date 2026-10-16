@@ -26,7 +26,10 @@ class ListSqlMigrationServiceMonitoringDataResult:
 class AwaitableListSqlMigrationServiceMonitoringDataResult(
     ListSqlMigrationServiceMonitoringDataResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSqlMigrationServiceMonitoringDataResult]:
+        ...
 
 def list_sql_migration_service_monitoring_data(
     resource_group_name: Optional[_builtins.str] = ...,

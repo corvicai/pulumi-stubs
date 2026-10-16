@@ -44,7 +44,8 @@ class GetTaskHubResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTaskHubResult(GetTaskHubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTaskHubResult]:
+        ...
 
 def get_task_hub(
     resource_group_name: Optional[_builtins.str] = ...,

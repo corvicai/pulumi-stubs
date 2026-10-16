@@ -150,7 +150,8 @@ class GetMigrationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMigrationResult(GetMigrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMigrationResult]:
+        ...
 
 def get_migration(
     migration_name: Optional[_builtins.str] = ...,

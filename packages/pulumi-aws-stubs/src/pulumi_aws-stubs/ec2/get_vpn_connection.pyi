@@ -99,7 +99,8 @@ class GetVpnConnectionResult:
     def vpn_gateway_id(self) -> _builtins.str: ...
 
 class AwaitableGetVpnConnectionResult(GetVpnConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnConnectionResult]:
+        ...
 
 def get_vpn_connection(
     filters: Optional[

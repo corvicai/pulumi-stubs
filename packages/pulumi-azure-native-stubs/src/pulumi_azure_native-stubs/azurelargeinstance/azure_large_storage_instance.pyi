@@ -29,7 +29,8 @@ class AzureLargeStorageInstanceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureLargeStorageInstanceName")
     def azure_large_storage_instance_name(
@@ -38,7 +39,8 @@ class AzureLargeStorageInstanceArgs:
     @azure_large_storage_instance_name.setter
     def azure_large_storage_instance_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureLargeStorageInstanceUniqueIdentifier")
     def azure_large_storage_instance_unique_identifier(
@@ -47,24 +49,30 @@ class AzureLargeStorageInstanceArgs:
     @azure_large_storage_instance_unique_identifier.setter
     def azure_large_storage_instance_unique_identifier(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageProperties")
     def storage_properties(self) -> Optional[pulumi.Input[StoragePropertiesArgs]]: ...
     @storage_properties.setter
     def storage_properties(
         self, value: Optional[pulumi.Input[StoragePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -73,7 +81,8 @@ class AzureLargeStorageInstanceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AzureLargeStorageInstance(pulumi.CustomResource):

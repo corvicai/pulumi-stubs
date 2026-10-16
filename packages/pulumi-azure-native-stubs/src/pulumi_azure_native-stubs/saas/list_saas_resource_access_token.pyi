@@ -23,7 +23,8 @@ class ListSaasResourceAccessTokenResult:
     def token(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListSaasResourceAccessTokenResult(ListSaasResourceAccessTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListSaasResourceAccessTokenResult]:
+        ...
 
 def list_saas_resource_access_token(
     resource_id: Optional[_builtins.str] = ...,

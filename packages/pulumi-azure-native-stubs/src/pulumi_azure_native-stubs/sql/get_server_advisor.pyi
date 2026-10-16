@@ -68,7 +68,8 @@ class GetServerAdvisorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerAdvisorResult(GetServerAdvisorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerAdvisorResult]:
+        ...
 
 def get_server_advisor(
     advisor_name: Optional[_builtins.str] = ...,

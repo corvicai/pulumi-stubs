@@ -66,7 +66,10 @@ class GetIntegrationAccountCertificateResult:
 class AwaitableGetIntegrationAccountCertificateResult(
     GetIntegrationAccountCertificateResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationAccountCertificateResult]:
+        ...
 
 def get_integration_account_certificate(
     certificate_name: Optional[_builtins.str] = ...,

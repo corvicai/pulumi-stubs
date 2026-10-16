@@ -172,7 +172,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateTimeTypeOptions")
     def date_time_type_options(
@@ -190,12 +191,14 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionDateTimeTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enumTypeOptions")
     def enum_type_options(
@@ -213,7 +216,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionEnumTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatTypeOptions")
     def float_type_options(
@@ -231,7 +235,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionFloatTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerTypeOptions")
     def integer_type_options(
@@ -249,32 +254,38 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionIntegerTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isFilterable")
     def is_filterable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_filterable.setter
-    def is_filterable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_filterable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isMetadata")
     def is_metadata(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_metadata.setter
-    def is_metadata(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_metadata(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRepeatable")
     def is_repeatable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_repeatable.setter
-    def is_repeatable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_repeatable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRequired")
     def is_required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_required.setter
-    def is_required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isSearchable")
     def is_searchable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_searchable.setter
-    def is_searchable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_searchable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mapTypeOptions")
     def map_type_options(
@@ -292,7 +303,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionMapTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertyTypeOptions")
     def property_type_options(
@@ -310,12 +322,16 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retrievalImportance")
     def retrieval_importance(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @retrieval_importance.setter
-    def retrieval_importance(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def retrieval_importance(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaSources")
     def schema_sources(
@@ -341,7 +357,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTypeOptions")
     def text_type_options(
@@ -359,7 +376,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionTextTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampTypeOptions")
     def timestamp_type_options(
@@ -377,7 +395,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionTimestampTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionDateTimeTypeOptionsArgsDict(
     TypedDict
@@ -409,14 +428,16 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionEnumTypeOptionsArgs:
     @possible_values.setter
     def possible_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationCheckDisabled")
     def validation_check_disabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @validation_check_disabled.setter
     def validation_check_disabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionFloatTypeOptionsArgsDict(
     TypedDict
@@ -487,7 +508,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsArgs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionArgsDict(
     TypedDict
@@ -607,7 +629,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateTimeTypeOptions")
     def date_time_type_options(
@@ -625,12 +648,14 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionDateTimeTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enumTypeOptions")
     def enum_type_options(
@@ -648,7 +673,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionEnumTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatTypeOptions")
     def float_type_options(
@@ -666,7 +692,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionFloatTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerTypeOptions")
     def integer_type_options(
@@ -684,32 +711,38 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionIntegerTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isFilterable")
     def is_filterable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_filterable.setter
-    def is_filterable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_filterable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isMetadata")
     def is_metadata(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_metadata.setter
-    def is_metadata(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_metadata(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRepeatable")
     def is_repeatable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_repeatable.setter
-    def is_repeatable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_repeatable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isRequired")
     def is_required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_required.setter
-    def is_required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isSearchable")
     def is_searchable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_searchable.setter
-    def is_searchable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_searchable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mapTypeOptions")
     def map_type_options(
@@ -727,12 +760,16 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionMapTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retrievalImportance")
     def retrieval_importance(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @retrieval_importance.setter
-    def retrieval_importance(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def retrieval_importance(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaSources")
     def schema_sources(
@@ -758,7 +795,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTypeOptions")
     def text_type_options(
@@ -776,7 +814,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionTextTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampTypeOptions")
     def timestamp_type_options(
@@ -794,7 +833,8 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
                 DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionTimestampTypeOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionDateTimeTypeOptionsArgsDict(
     TypedDict
@@ -826,14 +866,16 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
     @possible_values.setter
     def possible_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationCheckDisabled")
     def validation_check_disabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @validation_check_disabled.setter
     def validation_check_disabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionFloatTypeOptionsArgsDict(
     TypedDict
@@ -877,12 +919,14 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processorType")
     def processor_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @processor_type.setter
-    def processor_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def processor_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionTextTypeOptionsArgsDict(
     TypedDict
@@ -918,12 +962,14 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionSchemaSourceArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processorType")
     def processor_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @processor_type.setter
-    def processor_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def processor_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionTextTypeOptionsArgsDict(
     TypedDict

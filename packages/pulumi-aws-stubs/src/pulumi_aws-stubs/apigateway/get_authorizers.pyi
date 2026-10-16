@@ -29,7 +29,8 @@ class GetAuthorizersResult:
     def rest_api_id(self) -> _builtins.str: ...
 
 class AwaitableGetAuthorizersResult(GetAuthorizersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthorizersResult]:
+        ...
 
 def get_authorizers(
     region: Optional[_builtins.str] = ...,

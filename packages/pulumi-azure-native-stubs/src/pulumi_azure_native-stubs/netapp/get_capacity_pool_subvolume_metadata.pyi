@@ -73,7 +73,10 @@ class GetCapacityPoolSubvolumeMetadataResult:
 class AwaitableGetCapacityPoolSubvolumeMetadataResult(
     GetCapacityPoolSubvolumeMetadataResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCapacityPoolSubvolumeMetadataResult]:
+        ...
 
 def get_capacity_pool_subvolume_metadata(
     account_name: Optional[_builtins.str] = ...,

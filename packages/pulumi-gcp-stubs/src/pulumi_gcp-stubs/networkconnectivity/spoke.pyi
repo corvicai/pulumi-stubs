@@ -38,27 +38,32 @@ class SpokeArgs:
     @pulumi.getter
     def hub(self) -> pulumi.Input[_builtins.str]: ...
     @hub.setter
-    def hub(self, value: pulumi.Input[_builtins.str]): ...
+    def hub(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gateway(self) -> Optional[pulumi.Input[SpokeGatewayArgs]]: ...
     @gateway.setter
-    def gateway(self, value: Optional[pulumi.Input[SpokeGatewayArgs]]): ...
+    def gateway(self, value: Optional[pulumi.Input[SpokeGatewayArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group.setter
-    def group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -67,7 +72,8 @@ class SpokeArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedInterconnectAttachments")
     def linked_interconnect_attachments(
@@ -76,7 +82,8 @@ class SpokeArgs:
     @linked_interconnect_attachments.setter
     def linked_interconnect_attachments(
         self, value: Optional[pulumi.Input[SpokeLinkedInterconnectAttachmentsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedProducerVpcNetwork")
     def linked_producer_vpc_network(
@@ -85,7 +92,8 @@ class SpokeArgs:
     @linked_producer_vpc_network.setter
     def linked_producer_vpc_network(
         self, value: Optional[pulumi.Input[SpokeLinkedProducerVpcNetworkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedRouterApplianceInstances")
     def linked_router_appliance_instances(
@@ -94,7 +102,8 @@ class SpokeArgs:
     @linked_router_appliance_instances.setter
     def linked_router_appliance_instances(
         self, value: Optional[pulumi.Input[SpokeLinkedRouterApplianceInstancesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedVpcNetwork")
     def linked_vpc_network(
@@ -103,7 +112,8 @@ class SpokeArgs:
     @linked_vpc_network.setter
     def linked_vpc_network(
         self, value: Optional[pulumi.Input[SpokeLinkedVpcNetworkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedVpnTunnels")
     def linked_vpn_tunnels(
@@ -112,17 +122,20 @@ class SpokeArgs:
     @linked_vpn_tunnels.setter
     def linked_vpn_tunnels(
         self, value: Optional[pulumi.Input[SpokeLinkedVpnTunnelsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SpokeState:
@@ -164,12 +177,14 @@ class _SpokeState:
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -178,22 +193,26 @@ class _SpokeState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gateway(self) -> Optional[pulumi.Input[SpokeGatewayArgs]]: ...
     @gateway.setter
-    def gateway(self, value: Optional[pulumi.Input[SpokeGatewayArgs]]): ...
+    def gateway(self, value: Optional[pulumi.Input[SpokeGatewayArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group.setter
-    def group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hub(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hub.setter
-    def hub(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hub(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -202,7 +221,8 @@ class _SpokeState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedInterconnectAttachments")
     def linked_interconnect_attachments(
@@ -211,7 +231,8 @@ class _SpokeState:
     @linked_interconnect_attachments.setter
     def linked_interconnect_attachments(
         self, value: Optional[pulumi.Input[SpokeLinkedInterconnectAttachmentsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedProducerVpcNetwork")
     def linked_producer_vpc_network(
@@ -220,7 +241,8 @@ class _SpokeState:
     @linked_producer_vpc_network.setter
     def linked_producer_vpc_network(
         self, value: Optional[pulumi.Input[SpokeLinkedProducerVpcNetworkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedRouterApplianceInstances")
     def linked_router_appliance_instances(
@@ -229,7 +251,8 @@ class _SpokeState:
     @linked_router_appliance_instances.setter
     def linked_router_appliance_instances(
         self, value: Optional[pulumi.Input[SpokeLinkedRouterApplianceInstancesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedVpcNetwork")
     def linked_vpc_network(
@@ -238,7 +261,8 @@ class _SpokeState:
     @linked_vpc_network.setter
     def linked_vpc_network(
         self, value: Optional[pulumi.Input[SpokeLinkedVpcNetworkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedVpnTunnels")
     def linked_vpn_tunnels(
@@ -247,22 +271,26 @@ class _SpokeState:
     @linked_vpn_tunnels.setter
     def linked_vpn_tunnels(
         self, value: Optional[pulumi.Input[SpokeLinkedVpnTunnelsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -271,7 +299,8 @@ class _SpokeState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reasons(
@@ -280,22 +309,26 @@ class _SpokeState:
     @reasons.setter
     def reasons(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SpokeReasonArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uniqueId")
     def unique_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unique_id.setter
-    def unique_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unique_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:networkconnectivity/spoke:Spoke")
 class Spoke(pulumi.CustomResource):

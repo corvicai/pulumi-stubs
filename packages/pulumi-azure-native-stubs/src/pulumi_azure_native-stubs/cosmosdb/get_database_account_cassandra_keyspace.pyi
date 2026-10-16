@@ -45,7 +45,10 @@ class GetDatabaseAccountCassandraKeyspaceResult:
 class AwaitableGetDatabaseAccountCassandraKeyspaceResult(
     GetDatabaseAccountCassandraKeyspaceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseAccountCassandraKeyspaceResult]:
+        ...
 
 def get_database_account_cassandra_keyspace(
     account_name: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class GetDatabaseResult:
     def table_count(self) -> _builtins.int: ...
 
 class AwaitableGetDatabaseResult(GetDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseResult]:
+        ...
 
 def get_database(
     name: Optional[_builtins.str] = ...,

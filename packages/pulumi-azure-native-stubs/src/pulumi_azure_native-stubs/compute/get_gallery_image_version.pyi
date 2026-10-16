@@ -86,7 +86,8 @@ class GetGalleryImageVersionResult:
     def validations_profile(self) -> outputs.ValidationsProfileResponse: ...
 
 class AwaitableGetGalleryImageVersionResult(GetGalleryImageVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGalleryImageVersionResult]:
+        ...
 
 def get_gallery_image_version(
     expand: Optional[_builtins.str] = ...,

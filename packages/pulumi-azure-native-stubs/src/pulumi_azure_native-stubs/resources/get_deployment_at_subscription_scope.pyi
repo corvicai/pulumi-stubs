@@ -50,7 +50,10 @@ class GetDeploymentAtSubscriptionScopeResult:
 class AwaitableGetDeploymentAtSubscriptionScopeResult(
     GetDeploymentAtSubscriptionScopeResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeploymentAtSubscriptionScopeResult]:
+        ...
 
 def get_deployment_at_subscription_scope(
     deployment_name: Optional[_builtins.str] = ...,

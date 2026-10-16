@@ -36,7 +36,8 @@ class GetAttachmentsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetAttachmentsResult(GetAttachmentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAttachmentsResult]:
+        ...
 
 def get_attachments(
     filters: Optional[

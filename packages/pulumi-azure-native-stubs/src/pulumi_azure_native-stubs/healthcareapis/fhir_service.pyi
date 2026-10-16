@@ -49,12 +49,14 @@ class FhirServiceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="acrConfiguration")
     def acr_configuration(
@@ -63,7 +65,8 @@ class FhirServiceArgs:
     @acr_configuration.setter
     def acr_configuration(
         self, value: Optional[pulumi.Input[FhirServiceAcrConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authenticationConfiguration")
     def authentication_configuration(
@@ -72,7 +75,8 @@ class FhirServiceArgs:
     @authentication_configuration.setter
     def authentication_configuration(
         self, value: Optional[pulumi.Input[FhirServiceAuthenticationConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="corsConfiguration")
     def cors_configuration(
@@ -81,12 +85,14 @@ class FhirServiceArgs:
     @cors_configuration.setter
     def cors_configuration(
         self, value: Optional[pulumi.Input[FhirServiceCorsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[EncryptionArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]): ...
+    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exportConfiguration")
     def export_configuration(
@@ -95,12 +101,16 @@ class FhirServiceArgs:
     @export_configuration.setter
     def export_configuration(
         self, value: Optional[pulumi.Input[FhirServiceExportConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fhirServiceName")
     def fhir_service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fhir_service_name.setter
-    def fhir_service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fhir_service_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(
@@ -109,7 +119,8 @@ class FhirServiceArgs:
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[ServiceManagedIdentityIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="implementationGuidesConfiguration")
     def implementation_guides_configuration(
@@ -118,7 +129,8 @@ class FhirServiceArgs:
     @implementation_guides_configuration.setter
     def implementation_guides_configuration(
         self, value: Optional[pulumi.Input[ImplementationGuidesConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importConfiguration")
     def import_configuration(
@@ -127,19 +139,22 @@ class FhirServiceArgs:
     @import_configuration.setter
     def import_configuration(
         self, value: Optional[pulumi.Input[FhirServiceImportConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[Union[_builtins.str, FhirServiceKind]]]: ...
     @kind.setter
     def kind(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FhirServiceKind]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceVersionPolicyConfiguration")
     def resource_version_policy_configuration(
@@ -148,7 +163,8 @@ class FhirServiceArgs:
     @resource_version_policy_configuration.setter
     def resource_version_policy_configuration(
         self, value: Optional[pulumi.Input[ResourceVersionPolicyConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -157,7 +173,8 @@ class FhirServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:healthcareapis:FhirService")
 class FhirService(pulumi.CustomResource):

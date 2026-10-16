@@ -27,7 +27,10 @@ class ListPolicyFragmentReferencesResult:
     def value(self) -> Optional[Sequence[outputs.ResourceCollectionResponseValue]]: ...
 
 class AwaitableListPolicyFragmentReferencesResult(ListPolicyFragmentReferencesResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPolicyFragmentReferencesResult]:
+        ...
 
 def list_policy_fragment_references(
     id: Optional[_builtins.str] = ...,

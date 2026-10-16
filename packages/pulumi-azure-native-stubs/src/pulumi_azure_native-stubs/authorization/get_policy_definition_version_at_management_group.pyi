@@ -76,7 +76,10 @@ class GetPolicyDefinitionVersionAtManagementGroupResult:
 class AwaitableGetPolicyDefinitionVersionAtManagementGroupResult(
     GetPolicyDefinitionVersionAtManagementGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPolicyDefinitionVersionAtManagementGroupResult]:
+        ...
 
 def get_policy_definition_version_at_management_group(
     management_group_name: Optional[_builtins.str] = ...,

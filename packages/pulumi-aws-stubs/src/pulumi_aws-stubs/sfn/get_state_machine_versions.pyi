@@ -31,7 +31,8 @@ class GetStateMachineVersionsResult:
     def statemachine_versions(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetStateMachineVersionsResult(GetStateMachineVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStateMachineVersionsResult]:
+        ...
 
 def get_state_machine_versions(
     region: Optional[_builtins.str] = ...,

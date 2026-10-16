@@ -192,7 +192,8 @@ class GetRegionInstanceTemplateResult:
     def tags_fingerprint(self) -> _builtins.str: ...
 
 class AwaitableGetRegionInstanceTemplateResult(GetRegionInstanceTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionInstanceTemplateResult]:
+        ...
 
 def get_region_instance_template(
     filter: Optional[_builtins.str] = ...,

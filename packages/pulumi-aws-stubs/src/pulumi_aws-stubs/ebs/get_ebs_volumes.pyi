@@ -36,7 +36,8 @@ class GetEbsVolumesResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetEbsVolumesResult(GetEbsVolumesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEbsVolumesResult]:
+        ...
 
 def get_ebs_volumes(
     filters: Optional[

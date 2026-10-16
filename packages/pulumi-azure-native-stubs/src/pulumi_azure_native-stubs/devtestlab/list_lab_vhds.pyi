@@ -24,7 +24,8 @@ class ListLabVhdsResult:
     def value(self) -> Sequence[outputs.LabVhdResponse]: ...
 
 class AwaitableListLabVhdsResult(ListLabVhdsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListLabVhdsResult]:
+        ...
 
 def list_lab_vhds(
     name: Optional[_builtins.str] = ...,

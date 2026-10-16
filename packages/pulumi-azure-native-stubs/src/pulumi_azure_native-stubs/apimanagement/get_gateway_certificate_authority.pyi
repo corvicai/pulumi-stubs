@@ -36,7 +36,10 @@ class GetGatewayCertificateAuthorityResult:
 class AwaitableGetGatewayCertificateAuthorityResult(
     GetGatewayCertificateAuthorityResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGatewayCertificateAuthorityResult]:
+        ...
 
 def get_gateway_certificate_authority(
     certificate_id: Optional[_builtins.str] = ...,

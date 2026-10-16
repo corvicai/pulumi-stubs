@@ -47,7 +47,8 @@ class GetVirtualNetworkRuleResult:
     def virtual_network_subnet_id(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualNetworkRuleResult(GetVirtualNetworkRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkRuleResult]:
+        ...
 
 def get_virtual_network_rule(
     resource_group_name: Optional[_builtins.str] = ...,

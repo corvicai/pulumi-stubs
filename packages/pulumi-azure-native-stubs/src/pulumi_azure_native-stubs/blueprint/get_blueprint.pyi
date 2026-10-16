@@ -72,7 +72,8 @@ class GetBlueprintResult:
     def versions(self) -> Optional[Any]: ...
 
 class AwaitableGetBlueprintResult(GetBlueprintResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBlueprintResult]:
+        ...
 
 def get_blueprint(
     blueprint_name: Optional[_builtins.str] = ...,

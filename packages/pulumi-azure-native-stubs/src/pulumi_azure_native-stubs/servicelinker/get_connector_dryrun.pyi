@@ -60,7 +60,8 @@ class GetConnectorDryrunResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectorDryrunResult(GetConnectorDryrunResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectorDryrunResult]:
+        ...
 
 def get_connector_dryrun(
     dryrun_name: Optional[_builtins.str] = ...,

@@ -53,7 +53,10 @@ class ListWebAppSitePushSettingsSlotResult:
 class AwaitableListWebAppSitePushSettingsSlotResult(
     ListWebAppSitePushSettingsSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppSitePushSettingsSlotResult]:
+        ...
 
 def list_web_app_site_push_settings_slot(
     name: Optional[_builtins.str] = ...,

@@ -126,7 +126,10 @@ class GetDeploymentStackAtSubscriptionResult:
 class AwaitableGetDeploymentStackAtSubscriptionResult(
     GetDeploymentStackAtSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeploymentStackAtSubscriptionResult]:
+        ...
 
 def get_deployment_stack_at_subscription(
     deployment_stack_name: Optional[_builtins.str] = ...,

@@ -96,7 +96,8 @@ class GetMetricAlertResult:
     def window_size(self) -> _builtins.str: ...
 
 class AwaitableGetMetricAlertResult(GetMetricAlertResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMetricAlertResult]:
+        ...
 
 def get_metric_alert(
     resource_group_name: Optional[_builtins.str] = ...,

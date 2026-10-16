@@ -92,7 +92,10 @@ class GetDomainTopicEventSubscriptionResult:
 class AwaitableGetDomainTopicEventSubscriptionResult(
     GetDomainTopicEventSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDomainTopicEventSubscriptionResult]:
+        ...
 
 def get_domain_topic_event_subscription(
     domain_name: Optional[_builtins.str] = ...,

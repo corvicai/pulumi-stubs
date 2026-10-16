@@ -29,7 +29,8 @@ class AutoscalingPolicyArgs:
     @pulumi.getter(name="policyId")
     def policy_id(self) -> pulumi.Input[_builtins.str]: ...
     @policy_id.setter
-    def policy_id(self, value: pulumi.Input[_builtins.str]): ...
+    def policy_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="basicAlgorithm")
     def basic_algorithm(
@@ -38,17 +39,20 @@ class AutoscalingPolicyArgs:
     @basic_algorithm.setter
     def basic_algorithm(
         self, value: Optional[pulumi.Input[AutoscalingPolicyBasicAlgorithmArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryWorkerConfig")
     def secondary_worker_config(
@@ -57,7 +61,8 @@ class AutoscalingPolicyArgs:
     @secondary_worker_config.setter
     def secondary_worker_config(
         self, value: Optional[pulumi.Input[AutoscalingPolicySecondaryWorkerConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerConfig")
     def worker_config(
@@ -66,7 +71,8 @@ class AutoscalingPolicyArgs:
     @worker_config.setter
     def worker_config(
         self, value: Optional[pulumi.Input[AutoscalingPolicyWorkerConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AutoscalingPolicyState:
@@ -93,27 +99,32 @@ class _AutoscalingPolicyState:
     @basic_algorithm.setter
     def basic_algorithm(
         self, value: Optional[pulumi.Input[AutoscalingPolicyBasicAlgorithmArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyId")
     def policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_id.setter
-    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryWorkerConfig")
     def secondary_worker_config(
@@ -122,7 +133,8 @@ class _AutoscalingPolicyState:
     @secondary_worker_config.setter
     def secondary_worker_config(
         self, value: Optional[pulumi.Input[AutoscalingPolicySecondaryWorkerConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerConfig")
     def worker_config(
@@ -131,7 +143,8 @@ class _AutoscalingPolicyState:
     @worker_config.setter
     def worker_config(
         self, value: Optional[pulumi.Input[AutoscalingPolicyWorkerConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:dataproc/autoscalingPolicy:AutoscalingPolicy")
 class AutoscalingPolicy(pulumi.CustomResource):

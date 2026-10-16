@@ -43,7 +43,8 @@ class GetRegionalSecretIamPolicyResult:
     def secret_id(self) -> _builtins.str: ...
 
 class AwaitableGetRegionalSecretIamPolicyResult(GetRegionalSecretIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionalSecretIamPolicyResult]:
+        ...
 
 def get_regional_secret_iam_policy(
     location: Optional[_builtins.str] = ...,

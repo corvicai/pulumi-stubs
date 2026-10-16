@@ -27,7 +27,10 @@ class GetBusinessCaseOperationReportDownloadUrlResult:
 class AwaitableGetBusinessCaseOperationReportDownloadUrlResult(
     GetBusinessCaseOperationReportDownloadUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBusinessCaseOperationReportDownloadUrlResult]:
+        ...
 
 def get_business_case_operation_report_download_url(
     business_case_name: Optional[_builtins.str] = ...,

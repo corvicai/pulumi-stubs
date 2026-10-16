@@ -33,7 +33,10 @@ class ListCapacityPoolCachePeeringPassphrasesResult:
 class AwaitableListCapacityPoolCachePeeringPassphrasesResult(
     ListCapacityPoolCachePeeringPassphrasesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListCapacityPoolCachePeeringPassphrasesResult]:
+        ...
 
 def list_capacity_pool_cache_peering_passphrases(
     account_name: Optional[_builtins.str] = ...,

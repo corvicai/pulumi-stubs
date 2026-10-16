@@ -28,12 +28,14 @@ class DeploymentSafeguardArgs:
     @level.setter
     def level(
         self, value: pulumi.Input[Union[_builtins.str, DeploymentSafeguardsLevel]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedNamespaces")
     def excluded_namespaces(
@@ -42,7 +44,8 @@ class DeploymentSafeguardArgs:
     @excluded_namespaces.setter
     def excluded_namespaces(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:containerservice:DeploymentSafeguard")
 class DeploymentSafeguard(pulumi.CustomResource):

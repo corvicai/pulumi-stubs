@@ -62,7 +62,8 @@ class GetCommunityEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCommunityEndpointResult(GetCommunityEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCommunityEndpointResult]:
+        ...
 
 def get_community_endpoint(
     community_endpoint_name: Optional[_builtins.str] = ...,

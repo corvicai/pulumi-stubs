@@ -163,7 +163,8 @@ class GetObjectResult:
     def website_redirect_location(self) -> _builtins.str: ...
 
 class AwaitableGetObjectResult(GetObjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetObjectResult]:
+        ...
 
 def get_object(
     bucket: Optional[_builtins.str] = ...,

@@ -96,7 +96,8 @@ class GetPatchBaselineResult:
     def sources(self) -> Sequence[outputs.GetPatchBaselineSourceResult]: ...
 
 class AwaitableGetPatchBaselineResult(GetPatchBaselineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPatchBaselineResult]:
+        ...
 
 def get_patch_baseline(
     default_baseline: Optional[_builtins.bool] = ...,

@@ -34,37 +34,46 @@ class VpcAttachmentArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_id.setter
-    def vpc_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applianceModeSupport")
     def appliance_mode_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @appliance_mode_support.setter
-    def appliance_mode_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def appliance_mode_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSupport")
     def dns_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_support.setter
-    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Support")
     def ipv6_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ipv6_support.setter
-    def ipv6_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ipv6_support(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupReferencingSupport")
     def security_group_referencing_support(
@@ -73,7 +82,8 @@ class VpcAttachmentArgs:
     @security_group_referencing_support.setter
     def security_group_referencing_support(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -82,7 +92,8 @@ class VpcAttachmentArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTableAssociation")
     def transit_gateway_default_route_table_association(
@@ -91,7 +102,8 @@ class VpcAttachmentArgs:
     @transit_gateway_default_route_table_association.setter
     def transit_gateway_default_route_table_association(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTablePropagation")
     def transit_gateway_default_route_table_propagation(
@@ -100,7 +112,8 @@ class VpcAttachmentArgs:
     @transit_gateway_default_route_table_propagation.setter
     def transit_gateway_default_route_table_propagation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcAttachmentState:
@@ -132,27 +145,34 @@ class _VpcAttachmentState:
     @pulumi.getter(name="applianceModeSupport")
     def appliance_mode_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @appliance_mode_support.setter
-    def appliance_mode_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def appliance_mode_support(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSupport")
     def dns_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_support.setter
-    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_support(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Support")
     def ipv6_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ipv6_support.setter
-    def ipv6_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ipv6_support(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupReferencingSupport")
     def security_group_referencing_support(
@@ -161,7 +181,8 @@ class _VpcAttachmentState:
     @security_group_referencing_support.setter
     def security_group_referencing_support(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -170,7 +191,8 @@ class _VpcAttachmentState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -179,7 +201,8 @@ class _VpcAttachmentState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -188,7 +211,8 @@ class _VpcAttachmentState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTableAssociation")
     def transit_gateway_default_route_table_association(
@@ -197,7 +221,8 @@ class _VpcAttachmentState:
     @transit_gateway_default_route_table_association.setter
     def transit_gateway_default_route_table_association(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayDefaultRouteTablePropagation")
     def transit_gateway_default_route_table_propagation(
@@ -206,22 +231,28 @@ class _VpcAttachmentState:
     @transit_gateway_default_route_table_propagation.setter
     def transit_gateway_default_route_table_propagation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcOwnerId")
     def vpc_owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_owner_id.setter
-    def vpc_owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2transitgateway/vpcAttachment:VpcAttachment")
 class VpcAttachment(pulumi.CustomResource):

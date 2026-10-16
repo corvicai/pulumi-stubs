@@ -68,7 +68,8 @@ class GetWorkbookTemplateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkbookTemplateResult(GetWorkbookTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkbookTemplateResult]:
+        ...
 
 def get_workbook_template(
     resource_group_name: Optional[_builtins.str] = ...,

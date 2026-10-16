@@ -51,7 +51,10 @@ class GetReservedCacheNodeOfferingResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetReservedCacheNodeOfferingResult(GetReservedCacheNodeOfferingResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReservedCacheNodeOfferingResult]:
+        ...
 
 def get_reserved_cache_node_offering(
     cache_node_type: Optional[_builtins.str] = ...,

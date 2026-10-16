@@ -114,7 +114,8 @@ class GetHealthCheckResult:
     def unhealthy_threshold(self) -> _builtins.int: ...
 
 class AwaitableGetHealthCheckResult(GetHealthCheckResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHealthCheckResult]:
+        ...
 
 def get_health_check(
     name: Optional[_builtins.str] = ...,

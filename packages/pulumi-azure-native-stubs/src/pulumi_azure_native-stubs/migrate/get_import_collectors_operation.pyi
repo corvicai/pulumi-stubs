@@ -56,7 +56,10 @@ class GetImportCollectorsOperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetImportCollectorsOperationResult(GetImportCollectorsOperationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetImportCollectorsOperationResult]:
+        ...
 
 def get_import_collectors_operation(
     import_collector_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetGuestUsageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGuestUsageResult(GetGuestUsageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGuestUsageResult]:
+        ...
 
 def get_guest_usage(
     resource_group_name: Optional[_builtins.str] = ...,

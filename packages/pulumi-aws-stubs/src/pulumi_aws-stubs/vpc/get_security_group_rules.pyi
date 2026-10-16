@@ -38,7 +38,8 @@ class GetSecurityGroupRulesResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetSecurityGroupRulesResult(GetSecurityGroupRulesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityGroupRulesResult]:
+        ...
 
 def get_security_group_rules(
     filters: Optional[

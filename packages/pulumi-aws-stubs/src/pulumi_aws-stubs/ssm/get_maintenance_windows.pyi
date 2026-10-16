@@ -33,7 +33,8 @@ class GetMaintenanceWindowsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetMaintenanceWindowsResult(GetMaintenanceWindowsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMaintenanceWindowsResult]:
+        ...
 
 def get_maintenance_windows(
     filters: Optional[

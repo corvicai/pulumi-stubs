@@ -52,7 +52,8 @@ class GetS3BucketResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetS3BucketResult(GetS3BucketResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetS3BucketResult]:
+        ...
 
 def get_s3_bucket(
     name: Optional[_builtins.str] = ...,

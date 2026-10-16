@@ -35,7 +35,8 @@ class BatchOperationsJobArgs:
     @bucket_list.setter
     def bucket_list(
         self, value: Optional[pulumi.Input[BatchOperationsJobBucketListArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteObject")
     def delete_object(
@@ -44,22 +45,28 @@ class BatchOperationsJobArgs:
     @delete_object.setter
     def delete_object(
         self, value: Optional[pulumi.Input[BatchOperationsJobDeleteObjectArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteProtection")
     def delete_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_protection.setter
-    def delete_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def delete_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobId")
     def job_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_id.setter
-    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="putMetadata")
     def put_metadata(
@@ -68,7 +75,8 @@ class BatchOperationsJobArgs:
     @put_metadata.setter
     def put_metadata(
         self, value: Optional[pulumi.Input[BatchOperationsJobPutMetadataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="putObjectHold")
     def put_object_hold(
@@ -77,7 +85,8 @@ class BatchOperationsJobArgs:
     @put_object_hold.setter
     def put_object_hold(
         self, value: Optional[pulumi.Input[BatchOperationsJobPutObjectHoldArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rewriteObject")
     def rewrite_object(
@@ -86,7 +95,8 @@ class BatchOperationsJobArgs:
     @rewrite_object.setter
     def rewrite_object(
         self, value: Optional[pulumi.Input[BatchOperationsJobRewriteObjectArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BatchOperationsJobState:
@@ -119,17 +129,20 @@ class _BatchOperationsJobState:
     @bucket_list.setter
     def bucket_list(
         self, value: Optional[pulumi.Input[BatchOperationsJobBucketListArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="completeTime")
     def complete_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @complete_time.setter
-    def complete_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def complete_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteObject")
     def delete_object(
@@ -138,22 +151,28 @@ class _BatchOperationsJobState:
     @delete_object.setter
     def delete_object(
         self, value: Optional[pulumi.Input[BatchOperationsJobDeleteObjectArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteProtection")
     def delete_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_protection.setter
-    def delete_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def delete_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobId")
     def job_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_id.setter
-    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="putMetadata")
     def put_metadata(
@@ -162,7 +181,8 @@ class _BatchOperationsJobState:
     @put_metadata.setter
     def put_metadata(
         self, value: Optional[pulumi.Input[BatchOperationsJobPutMetadataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="putObjectHold")
     def put_object_hold(
@@ -171,7 +191,8 @@ class _BatchOperationsJobState:
     @put_object_hold.setter
     def put_object_hold(
         self, value: Optional[pulumi.Input[BatchOperationsJobPutObjectHoldArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rewriteObject")
     def rewrite_object(
@@ -180,22 +201,26 @@ class _BatchOperationsJobState:
     @rewrite_object.setter
     def rewrite_object(
         self, value: Optional[pulumi.Input[BatchOperationsJobRewriteObjectArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleTime")
     def schedule_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_time.setter
-    def schedule_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:storage/batchOperationsJob:BatchOperationsJob")
 class BatchOperationsJob(pulumi.CustomResource):

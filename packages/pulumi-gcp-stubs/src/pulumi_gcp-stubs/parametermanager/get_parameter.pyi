@@ -68,7 +68,8 @@ class GetParameterResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetParameterResult(GetParameterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetParameterResult]:
+        ...
 
 def get_parameter(
     parameter_id: Optional[_builtins.str] = ...,

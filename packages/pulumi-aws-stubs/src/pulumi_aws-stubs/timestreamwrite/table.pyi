@@ -30,12 +30,14 @@ class TableArgs:
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> pulumi.Input[_builtins.str]: ...
     @table_name.setter
-    def table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="magneticStoreWriteProperties")
     def magnetic_store_write_properties(
@@ -44,12 +46,14 @@ class TableArgs:
     @magnetic_store_write_properties.setter
     def magnetic_store_write_properties(
         self, value: Optional[pulumi.Input[TableMagneticStoreWritePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionProperties")
     def retention_properties(
@@ -58,12 +62,14 @@ class TableArgs:
     @retention_properties.setter
     def retention_properties(
         self, value: Optional[pulumi.Input[TableRetentionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schema(self) -> Optional[pulumi.Input[TableSchemaArgs]]: ...
     @schema.setter
-    def schema(self, value: Optional[pulumi.Input[TableSchemaArgs]]): ...
+    def schema(self, value: Optional[pulumi.Input[TableSchemaArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -72,7 +78,8 @@ class TableArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TableState:
@@ -99,12 +106,14 @@ class _TableState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="magneticStoreWriteProperties")
     def magnetic_store_write_properties(
@@ -113,12 +122,14 @@ class _TableState:
     @magnetic_store_write_properties.setter
     def magnetic_store_write_properties(
         self, value: Optional[pulumi.Input[TableMagneticStoreWritePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionProperties")
     def retention_properties(
@@ -127,17 +138,20 @@ class _TableState:
     @retention_properties.setter
     def retention_properties(
         self, value: Optional[pulumi.Input[TableRetentionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schema(self) -> Optional[pulumi.Input[TableSchemaArgs]]: ...
     @schema.setter
-    def schema(self, value: Optional[pulumi.Input[TableSchemaArgs]]): ...
+    def schema(self, value: Optional[pulumi.Input[TableSchemaArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_name.setter
-    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -146,7 +160,8 @@ class _TableState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -155,7 +170,8 @@ class _TableState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:timestreamwrite/table:Table")
 class Table(pulumi.CustomResource):

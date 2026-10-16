@@ -28,12 +28,14 @@ class ResponsePolicyArgs:
     @pulumi.getter(name="responsePolicyName")
     def response_policy_name(self) -> pulumi.Input[_builtins.str]: ...
     @response_policy_name.setter
-    def response_policy_name(self, value: pulumi.Input[_builtins.str]): ...
+    def response_policy_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gkeClusters")
     def gke_clusters(
@@ -47,7 +49,8 @@ class ResponsePolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ResponsePolicyGkeClusterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def networks(
@@ -59,12 +62,14 @@ class ResponsePolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ResponsePolicyNetworkArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ResponsePolicyState:
@@ -85,7 +90,8 @@ class _ResponsePolicyState:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gkeClusters")
     def gke_clusters(
@@ -99,7 +105,8 @@ class _ResponsePolicyState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ResponsePolicyGkeClusterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def networks(
@@ -111,17 +118,22 @@ class _ResponsePolicyState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ResponsePolicyNetworkArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responsePolicyName")
     def response_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @response_policy_name.setter
-    def response_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def response_policy_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:dns/responsePolicy:ResponsePolicy")
 class ResponsePolicy(pulumi.CustomResource):

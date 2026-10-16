@@ -38,7 +38,8 @@ class GetManagedPrefixListsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetManagedPrefixListsResult(GetManagedPrefixListsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedPrefixListsResult]:
+        ...
 
 def get_managed_prefix_lists(
     filters: Optional[

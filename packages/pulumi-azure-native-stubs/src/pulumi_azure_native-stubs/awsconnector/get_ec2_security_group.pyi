@@ -52,7 +52,8 @@ class GetEc2SecurityGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2SecurityGroupResult(GetEc2SecurityGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2SecurityGroupResult]:
+        ...
 
 def get_ec2_security_group(
     name: Optional[_builtins.str] = ...,

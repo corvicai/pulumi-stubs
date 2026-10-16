@@ -31,7 +31,8 @@ class GetQueuesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetQueuesResult(GetQueuesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueuesResult]:
+        ...
 
 def get_queues(
     queue_name_prefix: Optional[_builtins.str] = ...,

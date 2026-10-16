@@ -29,7 +29,8 @@ class GetConfigResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetConfigResult(GetConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigResult]:
+        ...
 
 def get_config(
     name: Optional[_builtins.str] = ...,

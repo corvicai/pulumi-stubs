@@ -170,7 +170,8 @@ class GetServiceResult:
     def task_sets(self) -> Sequence[outputs.GetServiceTaskSetResult]: ...
 
 class AwaitableGetServiceResult(GetServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceResult]:
+        ...
 
 def get_service(
     cluster_arn: Optional[_builtins.str] = ...,

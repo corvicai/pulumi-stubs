@@ -33,7 +33,10 @@ class ListIotHubResourceKeysForKeyNameResult:
 class AwaitableListIotHubResourceKeysForKeyNameResult(
     ListIotHubResourceKeysForKeyNameResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIotHubResourceKeysForKeyNameResult]:
+        ...
 
 def list_iot_hub_resource_keys_for_key_name(
     key_name: Optional[_builtins.str] = ...,

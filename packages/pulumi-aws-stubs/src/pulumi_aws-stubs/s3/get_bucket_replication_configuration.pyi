@@ -39,7 +39,10 @@ class GetBucketReplicationConfigurationResult:
 class AwaitableGetBucketReplicationConfigurationResult(
     GetBucketReplicationConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBucketReplicationConfigurationResult]:
+        ...
 
 def get_bucket_replication_configuration(
     bucket: Optional[_builtins.str] = ...,

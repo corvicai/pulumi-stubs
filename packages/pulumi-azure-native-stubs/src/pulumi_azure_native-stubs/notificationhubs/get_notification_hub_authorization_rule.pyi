@@ -86,7 +86,10 @@ class GetNotificationHubAuthorizationRuleResult:
 class AwaitableGetNotificationHubAuthorizationRuleResult(
     GetNotificationHubAuthorizationRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNotificationHubAuthorizationRuleResult]:
+        ...
 
 def get_notification_hub_authorization_rule(
     authorization_rule_name: Optional[_builtins.str] = ...,

@@ -155,7 +155,8 @@ class GetOrderableDbInstanceResult:
     def vpc(self) -> _builtins.bool: ...
 
 class AwaitableGetOrderableDbInstanceResult(GetOrderableDbInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrderableDbInstanceResult]:
+        ...
 
 def get_orderable_db_instance(
     availability_zone_group: Optional[_builtins.str] = ...,

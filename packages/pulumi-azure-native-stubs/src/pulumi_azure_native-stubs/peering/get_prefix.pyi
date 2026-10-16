@@ -64,7 +64,8 @@ class GetPrefixResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrefixResult(GetPrefixResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrefixResult]:
+        ...
 
 def get_prefix(
     expand: Optional[_builtins.str] = ...,

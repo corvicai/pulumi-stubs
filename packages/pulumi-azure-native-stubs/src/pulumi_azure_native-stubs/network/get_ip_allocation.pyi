@@ -76,7 +76,8 @@ class GetIpAllocationResult:
     def virtual_network(self) -> outputs.SubResourceResponse: ...
 
 class AwaitableGetIpAllocationResult(GetIpAllocationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpAllocationResult]:
+        ...
 
 def get_ip_allocation(
     expand: Optional[_builtins.str] = ...,

@@ -21,7 +21,8 @@ class GetUserSharedAccessTokenResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetUserSharedAccessTokenResult(GetUserSharedAccessTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserSharedAccessTokenResult]:
+        ...
 
 def get_user_shared_access_token(
     expiry: Optional[_builtins.str] = ...,

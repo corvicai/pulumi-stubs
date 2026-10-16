@@ -51,7 +51,8 @@ class ListWebAppSitePushSettingsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListWebAppSitePushSettingsResult(ListWebAppSitePushSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebAppSitePushSettingsResult]:
+        ...
 
 def list_web_app_site_push_settings(
     name: Optional[_builtins.str] = ...,

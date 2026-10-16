@@ -52,7 +52,8 @@ class GetSqsQueueResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqsQueueResult(GetSqsQueueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqsQueueResult]:
+        ...
 
 def get_sqs_queue(
     name: Optional[_builtins.str] = ...,

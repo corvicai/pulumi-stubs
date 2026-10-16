@@ -134,7 +134,8 @@ class GetCertificateResult:
     def valid(self) -> _builtins.bool: ...
 
 class AwaitableGetCertificateResult(GetCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateResult]:
+        ...
 
 def get_certificate(
     name: Optional[_builtins.str] = ...,

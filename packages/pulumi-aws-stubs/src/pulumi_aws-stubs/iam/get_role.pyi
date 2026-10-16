@@ -63,7 +63,8 @@ class GetRoleResult:
     def unique_id(self) -> _builtins.str: ...
 
 class AwaitableGetRoleResult(GetRoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoleResult]:
+        ...
 
 def get_role(
     name: Optional[_builtins.str] = ...,

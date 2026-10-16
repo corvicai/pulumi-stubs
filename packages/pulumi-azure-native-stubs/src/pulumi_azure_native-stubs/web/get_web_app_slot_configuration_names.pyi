@@ -53,7 +53,10 @@ class GetWebAppSlotConfigurationNamesResult:
 class AwaitableGetWebAppSlotConfigurationNamesResult(
     GetWebAppSlotConfigurationNamesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppSlotConfigurationNamesResult]:
+        ...
 
 def get_web_app_slot_configuration_names(
     name: Optional[_builtins.str] = ...,

@@ -25,7 +25,10 @@ class ListProviderActionInUseStorageAccountsResult:
 class AwaitableListProviderActionInUseStorageAccountsResult(
     ListProviderActionInUseStorageAccountsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListProviderActionInUseStorageAccountsResult]:
+        ...
 
 def list_provider_action_in_use_storage_accounts(
     subscription_ids: Optional[Sequence[_builtins.str]] = ...,

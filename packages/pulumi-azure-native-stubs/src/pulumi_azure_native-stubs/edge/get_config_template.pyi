@@ -56,7 +56,8 @@ class GetConfigTemplateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigTemplateResult(GetConfigTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigTemplateResult]:
+        ...
 
 def get_config_template(
     config_template_name: Optional[_builtins.str] = ...,

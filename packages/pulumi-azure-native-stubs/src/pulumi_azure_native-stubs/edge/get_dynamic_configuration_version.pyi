@@ -46,7 +46,10 @@ class GetDynamicConfigurationVersionResult:
 class AwaitableGetDynamicConfigurationVersionResult(
     GetDynamicConfigurationVersionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDynamicConfigurationVersionResult]:
+        ...
 
 def get_dynamic_configuration_version(
     configuration_name: Optional[_builtins.str] = ...,

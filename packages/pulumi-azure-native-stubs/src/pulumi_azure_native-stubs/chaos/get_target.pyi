@@ -48,7 +48,8 @@ class GetTargetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTargetResult(GetTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTargetResult]:
+        ...
 
 def get_target(
     parent_provider_namespace: Optional[_builtins.str] = ...,

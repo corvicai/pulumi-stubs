@@ -52,7 +52,8 @@ class GetDashboardResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDashboardResult(GetDashboardResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDashboardResult]:
+        ...
 
 def get_dashboard(
     dashboard_name: Optional[_builtins.str] = ...,

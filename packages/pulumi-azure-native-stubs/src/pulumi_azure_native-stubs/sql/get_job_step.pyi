@@ -62,7 +62,8 @@ class GetJobStepResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJobStepResult(GetJobStepResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobStepResult]:
+        ...
 
 def get_job_step(
     job_agent_name: Optional[_builtins.str] = ...,

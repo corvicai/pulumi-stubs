@@ -48,7 +48,8 @@ class EnvironmentLastUpdatedArgs:
     @pulumi.getter(name="createdAt")
     def created_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_at.setter
-    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def errors(
@@ -62,12 +63,14 @@ class EnvironmentLastUpdatedArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EnvironmentLastUpdatedErrorArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnvironmentLastUpdatedErrorArgsDict(TypedDict):
     error_code: NotRequired[pulumi.Input[_builtins.str]]
@@ -85,12 +88,14 @@ class EnvironmentLastUpdatedErrorArgs:
     @pulumi.getter(name="errorCode")
     def error_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_code.setter
-    def error_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorMessage")
     def error_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_message.setter
-    def error_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnvironmentLoggingConfigurationArgsDict(TypedDict):
     dag_processing_logs: NotRequired[
@@ -143,7 +148,8 @@ class EnvironmentLoggingConfigurationArgs:
         value: Optional[
             pulumi.Input[EnvironmentLoggingConfigurationDagProcessingLogsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schedulerLogs")
     def scheduler_logs(
@@ -153,7 +159,8 @@ class EnvironmentLoggingConfigurationArgs:
     def scheduler_logs(
         self,
         value: Optional[pulumi.Input[EnvironmentLoggingConfigurationSchedulerLogsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskLogs")
     def task_logs(
@@ -162,7 +169,8 @@ class EnvironmentLoggingConfigurationArgs:
     @task_logs.setter
     def task_logs(
         self, value: Optional[pulumi.Input[EnvironmentLoggingConfigurationTaskLogsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webserverLogs")
     def webserver_logs(
@@ -172,7 +180,8 @@ class EnvironmentLoggingConfigurationArgs:
     def webserver_logs(
         self,
         value: Optional[pulumi.Input[EnvironmentLoggingConfigurationWebserverLogsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerLogs")
     def worker_logs(
@@ -182,7 +191,8 @@ class EnvironmentLoggingConfigurationArgs:
     def worker_logs(
         self,
         value: Optional[pulumi.Input[EnvironmentLoggingConfigurationWorkerLogsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EnvironmentLoggingConfigurationDagProcessingLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -204,17 +214,20 @@ class EnvironmentLoggingConfigurationDagProcessingLogsArgs:
     @cloud_watch_log_group_arn.setter
     def cloud_watch_log_group_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLevel")
     def log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_level.setter
-    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnvironmentLoggingConfigurationSchedulerLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -236,17 +249,20 @@ class EnvironmentLoggingConfigurationSchedulerLogsArgs:
     @cloud_watch_log_group_arn.setter
     def cloud_watch_log_group_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLevel")
     def log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_level.setter
-    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnvironmentLoggingConfigurationTaskLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -268,17 +284,20 @@ class EnvironmentLoggingConfigurationTaskLogsArgs:
     @cloud_watch_log_group_arn.setter
     def cloud_watch_log_group_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLevel")
     def log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_level.setter
-    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnvironmentLoggingConfigurationWebserverLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -300,17 +319,20 @@ class EnvironmentLoggingConfigurationWebserverLogsArgs:
     @cloud_watch_log_group_arn.setter
     def cloud_watch_log_group_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLevel")
     def log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_level.setter
-    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnvironmentLoggingConfigurationWorkerLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -332,17 +354,20 @@ class EnvironmentLoggingConfigurationWorkerLogsArgs:
     @cloud_watch_log_group_arn.setter
     def cloud_watch_log_group_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLevel")
     def log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_level.setter
-    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_level(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnvironmentNetworkConfigurationArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -364,11 +389,13 @@ class EnvironmentNetworkConfigurationArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...

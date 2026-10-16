@@ -23,7 +23,8 @@ class GetClientOpenIdUserInfoResult:
     def id(self) -> _builtins.str: ...
 
 class AwaitableGetClientOpenIdUserInfoResult(GetClientOpenIdUserInfoResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClientOpenIdUserInfoResult]:
+        ...
 
 def get_client_open_id_user_info(
     opts: Optional[pulumi.InvokeOptions] = ...,

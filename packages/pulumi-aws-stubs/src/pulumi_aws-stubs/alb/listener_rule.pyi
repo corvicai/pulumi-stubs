@@ -32,7 +32,8 @@ class ListenerRuleArgs:
     @actions.setter
     def actions(
         self, value: pulumi.Input[Sequence[pulumi.Input[ListenerRuleActionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -41,22 +42,26 @@ class ListenerRuleArgs:
     @conditions.setter
     def conditions(
         self, value: pulumi.Input[Sequence[pulumi.Input[ListenerRuleConditionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listenerArn")
     def listener_arn(self) -> pulumi.Input[_builtins.str]: ...
     @listener_arn.setter
-    def listener_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def listener_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -65,7 +70,8 @@ class ListenerRuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -77,7 +83,8 @@ class ListenerRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ListenerRuleTransformArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ListenerRuleState:
@@ -111,12 +118,14 @@ class _ListenerRuleState:
     def actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ListenerRuleActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -128,22 +137,26 @@ class _ListenerRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ListenerRuleConditionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listenerArn")
     def listener_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @listener_arn.setter
-    def listener_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def listener_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -152,7 +165,8 @@ class _ListenerRuleState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -161,7 +175,8 @@ class _ListenerRuleState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -173,7 +188,8 @@ class _ListenerRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ListenerRuleTransformArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:alb/listenerRule:ListenerRule")
 class ListenerRule(pulumi.CustomResource):

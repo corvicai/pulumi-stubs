@@ -55,7 +55,8 @@ class GetVpcLinkResult:
     def target_arns(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetVpcLinkResult(GetVpcLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcLinkResult]:
+        ...
 
 def get_vpc_link(
     name: Optional[_builtins.str] = ...,

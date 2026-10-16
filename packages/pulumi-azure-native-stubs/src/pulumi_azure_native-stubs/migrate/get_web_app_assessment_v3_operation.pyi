@@ -46,7 +46,10 @@ class GetWebAppAssessmentV3OperationResult:
 class AwaitableGetWebAppAssessmentV3OperationResult(
     GetWebAppAssessmentV3OperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppAssessmentV3OperationResult]:
+        ...
 
 def get_web_app_assessment_v3_operation(
     assessment_name: Optional[_builtins.str] = ...,

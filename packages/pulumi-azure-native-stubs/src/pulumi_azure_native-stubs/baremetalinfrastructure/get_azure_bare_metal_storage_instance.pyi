@@ -66,7 +66,10 @@ class GetAzureBareMetalStorageInstanceResult:
 class AwaitableGetAzureBareMetalStorageInstanceResult(
     GetAzureBareMetalStorageInstanceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAzureBareMetalStorageInstanceResult]:
+        ...
 
 def get_azure_bare_metal_storage_instance(
     azure_bare_metal_storage_instance_name: Optional[_builtins.str] = ...,

@@ -43,7 +43,8 @@ class GetAccountPublicAccessBlockResult:
     def restrict_public_buckets(self) -> _builtins.bool: ...
 
 class AwaitableGetAccountPublicAccessBlockResult(GetAccountPublicAccessBlockResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountPublicAccessBlockResult]:
+        ...
 
 def get_account_public_access_block(
     account_id: Optional[_builtins.str] = ...,

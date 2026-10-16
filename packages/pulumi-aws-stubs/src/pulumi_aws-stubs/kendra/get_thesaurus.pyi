@@ -88,7 +88,8 @@ class GetThesaurusResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetThesaurusResult(GetThesaurusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetThesaurusResult]:
+        ...
 
 def get_thesaurus(
     index_id: Optional[_builtins.str] = ...,

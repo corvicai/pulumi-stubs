@@ -68,7 +68,8 @@ class GetIpCommunityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIpCommunityResult(GetIpCommunityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpCommunityResult]:
+        ...
 
 def get_ip_community(
     ip_community_name: Optional[_builtins.str] = ...,

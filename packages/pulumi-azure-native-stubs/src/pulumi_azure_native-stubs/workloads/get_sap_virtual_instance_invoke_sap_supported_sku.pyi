@@ -24,7 +24,10 @@ class GetSapVirtualInstanceInvokeSapSupportedSkuResult:
 class AwaitableGetSapVirtualInstanceInvokeSapSupportedSkuResult(
     GetSapVirtualInstanceInvokeSapSupportedSkuResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSapVirtualInstanceInvokeSapSupportedSkuResult]:
+        ...
 
 def get_sap_virtual_instance_invoke_sap_supported_sku(
     app_location: Optional[_builtins.str] = ...,

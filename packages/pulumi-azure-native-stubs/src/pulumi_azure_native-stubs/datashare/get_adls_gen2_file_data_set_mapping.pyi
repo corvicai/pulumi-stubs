@@ -80,7 +80,10 @@ class GetADLSGen2FileDataSetMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetADLSGen2FileDataSetMappingResult(GetADLSGen2FileDataSetMappingResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetADLSGen2FileDataSetMappingResult]:
+        ...
 
 def get_adls_gen2_file_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

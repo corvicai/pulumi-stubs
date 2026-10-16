@@ -22,7 +22,10 @@ class GetGetPrivateDnsZoneSuffixExecuteResult:
 class AwaitableGetGetPrivateDnsZoneSuffixExecuteResult(
     GetGetPrivateDnsZoneSuffixExecuteResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGetPrivateDnsZoneSuffixExecuteResult]:
+        ...
 
 def get_get_private_dns_zone_suffix_execute(
     opts: Optional[pulumi.InvokeOptions] = ...,

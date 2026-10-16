@@ -88,7 +88,8 @@ class GetWatcherResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWatcherResult(GetWatcherResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWatcherResult]:
+        ...
 
 def get_watcher(
     automation_account_name: Optional[_builtins.str] = ...,

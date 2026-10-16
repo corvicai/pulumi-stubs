@@ -34,7 +34,8 @@ class GetEndpointAssociationsResult:
     def vpc_endpoint_id(self) -> _builtins.str: ...
 
 class AwaitableGetEndpointAssociationsResult(GetEndpointAssociationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEndpointAssociationsResult]:
+        ...
 
 def get_endpoint_associations(
     region: Optional[_builtins.str] = ...,

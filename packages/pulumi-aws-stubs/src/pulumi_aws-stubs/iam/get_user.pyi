@@ -42,7 +42,8 @@ class GetUserResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetUserResult(GetUserResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserResult]:
+        ...
 
 def get_user(
     tags: Optional[Mapping[str, _builtins.str]] = ...,

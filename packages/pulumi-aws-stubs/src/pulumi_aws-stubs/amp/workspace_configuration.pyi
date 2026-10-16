@@ -28,7 +28,8 @@ class WorkspaceConfigurationArgs:
     @pulumi.getter(name="workspaceId")
     def workspace_id(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_id.setter
-    def workspace_id(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="limitsPerLabelSets")
     def limits_per_label_sets(
@@ -46,19 +47,22 @@ class WorkspaceConfigurationArgs:
                 Sequence[pulumi.Input[WorkspaceConfigurationLimitsPerLabelSetArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPeriodInDays")
     def retention_period_in_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retention_period_in_days.setter
     def retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -67,7 +71,8 @@ class WorkspaceConfigurationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[WorkspaceConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WorkspaceConfigurationState:
@@ -101,19 +106,22 @@ class _WorkspaceConfigurationState:
                 Sequence[pulumi.Input[WorkspaceConfigurationLimitsPerLabelSetArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPeriodInDays")
     def retention_period_in_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retention_period_in_days.setter
     def retention_period_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -122,12 +130,14 @@ class _WorkspaceConfigurationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[WorkspaceConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceId")
     def workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_id.setter
-    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class WorkspaceConfiguration(pulumi.CustomResource):

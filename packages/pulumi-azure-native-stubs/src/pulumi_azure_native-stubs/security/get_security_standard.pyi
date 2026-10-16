@@ -66,7 +66,8 @@ class GetSecurityStandardResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityStandardResult(GetSecurityStandardResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityStandardResult]:
+        ...
 
 def get_security_standard(
     scope: Optional[_builtins.str] = ...,

@@ -67,7 +67,8 @@ class GetNetworkPeeringConnectionResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetNetworkPeeringConnectionResult(GetNetworkPeeringConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkPeeringConnectionResult]:
+        ...
 
 def get_network_peering_connection(
     id: Optional[_builtins.str] = ...,

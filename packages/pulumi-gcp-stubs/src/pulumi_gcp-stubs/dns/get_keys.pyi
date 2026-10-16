@@ -35,7 +35,8 @@ class GetKeysResult:
     def zone_signing_keys(self) -> Sequence[outputs.GetKeysZoneSigningKeyResult]: ...
 
 class AwaitableGetKeysResult(GetKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeysResult]:
+        ...
 
 def get_keys(
     managed_zone: Optional[_builtins.str] = ...,

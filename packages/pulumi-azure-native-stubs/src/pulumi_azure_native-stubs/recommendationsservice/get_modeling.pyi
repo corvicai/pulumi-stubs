@@ -52,7 +52,8 @@ class GetModelingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetModelingResult(GetModelingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetModelingResult]:
+        ...
 
 def get_modeling(
     account_name: Optional[_builtins.str] = ...,

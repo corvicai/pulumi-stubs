@@ -54,27 +54,38 @@ class StandardAppVersionArgs:
     @pulumi.getter
     def deployment(self) -> pulumi.Input[StandardAppVersionDeploymentArgs]: ...
     @deployment.setter
-    def deployment(self, value: pulumi.Input[StandardAppVersionDeploymentArgs]): ...
+    def deployment(
+        self, value: pulumi.Input[StandardAppVersionDeploymentArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def entrypoint(self) -> pulumi.Input[StandardAppVersionEntrypointArgs]: ...
     @entrypoint.setter
-    def entrypoint(self, value: pulumi.Input[StandardAppVersionEntrypointArgs]): ...
+    def entrypoint(
+        self, value: pulumi.Input[StandardAppVersionEntrypointArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def runtime(self) -> pulumi.Input[_builtins.str]: ...
     @runtime.setter
-    def runtime(self, value: pulumi.Input[_builtins.str]): ...
+    def runtime(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def service(self) -> pulumi.Input[_builtins.str]: ...
     @service.setter
-    def service(self, value: pulumi.Input[_builtins.str]): ...
+    def service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appEngineApis")
     def app_engine_apis(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @app_engine_apis.setter
-    def app_engine_apis(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def app_engine_apis(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticScaling")
     def automatic_scaling(
@@ -83,7 +94,8 @@ class StandardAppVersionArgs:
     @automatic_scaling.setter
     def automatic_scaling(
         self, value: Optional[pulumi.Input[StandardAppVersionAutomaticScalingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="basicScaling")
     def basic_scaling(
@@ -92,14 +104,16 @@ class StandardAppVersionArgs:
     @basic_scaling.setter
     def basic_scaling(
         self, value: Optional[pulumi.Input[StandardAppVersionBasicScalingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteServiceOnDestroy")
     def delete_service_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_service_on_destroy.setter
     def delete_service_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="envVariables")
     def env_variables(
@@ -108,7 +122,8 @@ class StandardAppVersionArgs:
     @env_variables.setter
     def env_variables(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def handlers(
@@ -122,7 +137,8 @@ class StandardAppVersionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[StandardAppVersionHandlerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inboundServices")
     def inbound_services(
@@ -131,12 +147,14 @@ class StandardAppVersionArgs:
     @inbound_services.setter
     def inbound_services(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceClass")
     def instance_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_class.setter
-    def instance_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def libraries(
@@ -150,7 +168,8 @@ class StandardAppVersionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[StandardAppVersionLibraryArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manualScaling")
     def manual_scaling(
@@ -159,37 +178,48 @@ class StandardAppVersionArgs:
     @manual_scaling.setter
     def manual_scaling(
         self, value: Optional[pulumi.Input[StandardAppVersionManualScalingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noopOnDestroy")
     def noop_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @noop_on_destroy.setter
-    def noop_on_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def noop_on_destroy(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeApiVersion")
     def runtime_api_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @runtime_api_version.setter
-    def runtime_api_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def runtime_api_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccount")
     def service_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_account.setter
-    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def threadsafe(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @threadsafe.setter
-    def threadsafe(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def threadsafe(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionId")
     def version_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_id.setter
-    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcAccessConnector")
     def vpc_access_connector(
@@ -198,7 +228,8 @@ class StandardAppVersionArgs:
     @vpc_access_connector.setter
     def vpc_access_connector(
         self, value: Optional[pulumi.Input[StandardAppVersionVpcAccessConnectorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _StandardAppVersionState:
@@ -246,7 +277,10 @@ class _StandardAppVersionState:
     @pulumi.getter(name="appEngineApis")
     def app_engine_apis(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @app_engine_apis.setter
-    def app_engine_apis(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def app_engine_apis(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticScaling")
     def automatic_scaling(
@@ -255,7 +289,8 @@ class _StandardAppVersionState:
     @automatic_scaling.setter
     def automatic_scaling(
         self, value: Optional[pulumi.Input[StandardAppVersionAutomaticScalingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="basicScaling")
     def basic_scaling(
@@ -264,14 +299,16 @@ class _StandardAppVersionState:
     @basic_scaling.setter
     def basic_scaling(
         self, value: Optional[pulumi.Input[StandardAppVersionBasicScalingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteServiceOnDestroy")
     def delete_service_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_service_on_destroy.setter
     def delete_service_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deployment(
@@ -280,7 +317,8 @@ class _StandardAppVersionState:
     @deployment.setter
     def deployment(
         self, value: Optional[pulumi.Input[StandardAppVersionDeploymentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def entrypoint(
@@ -289,7 +327,8 @@ class _StandardAppVersionState:
     @entrypoint.setter
     def entrypoint(
         self, value: Optional[pulumi.Input[StandardAppVersionEntrypointArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="envVariables")
     def env_variables(
@@ -298,7 +337,8 @@ class _StandardAppVersionState:
     @env_variables.setter
     def env_variables(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def handlers(
@@ -312,7 +352,8 @@ class _StandardAppVersionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[StandardAppVersionHandlerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inboundServices")
     def inbound_services(
@@ -321,12 +362,14 @@ class _StandardAppVersionState:
     @inbound_services.setter
     def inbound_services(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceClass")
     def instance_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_class.setter
-    def instance_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def libraries(
@@ -340,7 +383,8 @@ class _StandardAppVersionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[StandardAppVersionLibraryArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manualScaling")
     def manual_scaling(
@@ -349,52 +393,66 @@ class _StandardAppVersionState:
     @manual_scaling.setter
     def manual_scaling(
         self, value: Optional[pulumi.Input[StandardAppVersionManualScalingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noopOnDestroy")
     def noop_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @noop_on_destroy.setter
-    def noop_on_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def noop_on_destroy(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def runtime(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @runtime.setter
-    def runtime(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def runtime(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeApiVersion")
     def runtime_api_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @runtime_api_version.setter
-    def runtime_api_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def runtime_api_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service.setter
-    def service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccount")
     def service_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_account.setter
-    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def threadsafe(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @threadsafe.setter
-    def threadsafe(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def threadsafe(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionId")
     def version_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_id.setter
-    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcAccessConnector")
     def vpc_access_connector(
@@ -403,7 +461,8 @@ class _StandardAppVersionState:
     @vpc_access_connector.setter
     def vpc_access_connector(
         self, value: Optional[pulumi.Input[StandardAppVersionVpcAccessConnectorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class StandardAppVersion(pulumi.CustomResource):

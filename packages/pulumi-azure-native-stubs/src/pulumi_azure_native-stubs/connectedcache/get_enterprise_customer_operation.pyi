@@ -54,7 +54,10 @@ class GetEnterpriseCustomerOperationResult:
 class AwaitableGetEnterpriseCustomerOperationResult(
     GetEnterpriseCustomerOperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetEnterpriseCustomerOperationResult]:
+        ...
 
 def get_enterprise_customer_operation(
     customer_resource_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class DomainArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoCreateTopicWithFirstSubscription")
     def auto_create_topic_with_first_subscription(
@@ -56,7 +57,8 @@ class DomainArgs:
     @auto_create_topic_with_first_subscription.setter
     def auto_create_topic_with_first_subscription(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoDeleteTopicWithLastSubscription")
     def auto_delete_topic_with_last_subscription(
@@ -65,7 +67,8 @@ class DomainArgs:
     @auto_delete_topic_with_last_subscription.setter
     def auto_delete_topic_with_last_subscription(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataResidencyBoundary")
     def data_residency_boundary(
@@ -74,27 +77,36 @@ class DomainArgs:
     @data_residency_boundary.setter
     def data_residency_boundary(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DataResidencyBoundary]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableLocalAuth")
     def disable_local_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_local_auth.setter
-    def disable_local_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_local_auth(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventTypeInfo")
     def event_type_info(self) -> Optional[pulumi.Input[EventTypeInfoArgs]]: ...
     @event_type_info.setter
-    def event_type_info(self, value: Optional[pulumi.Input[EventTypeInfoArgs]]): ...
+    def event_type_info(
+        self, value: Optional[pulumi.Input[EventTypeInfoArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityInfoArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityInfoArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityInfoArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inboundIpRules")
     def inbound_ip_rules(
@@ -103,7 +115,8 @@ class DomainArgs:
     @inbound_ip_rules.setter
     def inbound_ip_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[InboundIpRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSchema")
     def input_schema(
@@ -112,7 +125,8 @@ class DomainArgs:
     @input_schema.setter
     def input_schema(
         self, value: Optional[pulumi.Input[Union[_builtins.str, InputSchema]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSchemaMapping")
     def input_schema_mapping(
@@ -121,12 +135,14 @@ class DomainArgs:
     @input_schema_mapping.setter
     def input_schema_mapping(
         self, value: Optional[pulumi.Input[JsonInputSchemaMappingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumTlsVersionAllowed")
     def minimum_tls_version_allowed(
@@ -135,7 +151,8 @@ class DomainArgs:
     @minimum_tls_version_allowed.setter
     def minimum_tls_version_allowed(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TlsVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -144,7 +161,8 @@ class DomainArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -153,7 +171,8 @@ class DomainArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:eventgrid:Domain")
 class Domain(pulumi.CustomResource):

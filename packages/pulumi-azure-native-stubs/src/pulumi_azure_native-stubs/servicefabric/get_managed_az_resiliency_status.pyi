@@ -28,7 +28,10 @@ class GetManagedAzResiliencyStatusResult:
     def is_cluster_zone_resilient(self) -> _builtins.bool: ...
 
 class AwaitableGetManagedAzResiliencyStatusResult(GetManagedAzResiliencyStatusResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedAzResiliencyStatusResult]:
+        ...
 
 def get_managed_az_resiliency_status(
     cluster_name: Optional[_builtins.str] = ...,

@@ -136,7 +136,8 @@ class GetResourcePoolResult:
     def v_center_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetResourcePoolResult(GetResourcePoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourcePoolResult]:
+        ...
 
 def get_resource_pool(
     resource_group_name: Optional[_builtins.str] = ...,

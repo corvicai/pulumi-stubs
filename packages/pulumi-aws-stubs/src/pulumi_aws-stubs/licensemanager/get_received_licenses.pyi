@@ -33,7 +33,8 @@ class GetReceivedLicensesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetReceivedLicensesResult(GetReceivedLicensesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReceivedLicensesResult]:
+        ...
 
 def get_received_licenses(
     filters: Optional[

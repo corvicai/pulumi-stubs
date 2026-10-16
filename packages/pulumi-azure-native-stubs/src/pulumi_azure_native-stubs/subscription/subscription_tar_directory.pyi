@@ -25,12 +25,14 @@ class SubscriptionTarDirectoryArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[TargetDirectoryRequestPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscriptionId")
     def subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subscription_id.setter
-    def subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:subscription:SubscriptionTarDirectory")
 class SubscriptionTarDirectory(pulumi.CustomResource):

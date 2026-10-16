@@ -21,17 +21,22 @@ class AccessGrantsInstanceArgs:
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterArn")
     def identity_center_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_center_arn.setter
-    def identity_center_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_center_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -40,7 +45,8 @@ class AccessGrantsInstanceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccessGrantsInstanceState:
@@ -64,19 +70,22 @@ class _AccessGrantsInstanceState:
     @access_grants_instance_arn.setter
     def access_grants_instance_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessGrantsInstanceId")
     def access_grants_instance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_grants_instance_id.setter
     def access_grants_instance_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterApplicationArn")
     def identity_center_application_arn(
@@ -85,17 +94,22 @@ class _AccessGrantsInstanceState:
     @identity_center_application_arn.setter
     def identity_center_application_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterArn")
     def identity_center_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_center_arn.setter
-    def identity_center_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_center_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -104,7 +118,8 @@ class _AccessGrantsInstanceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -113,7 +128,8 @@ class _AccessGrantsInstanceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AccessGrantsInstance(pulumi.CustomResource):

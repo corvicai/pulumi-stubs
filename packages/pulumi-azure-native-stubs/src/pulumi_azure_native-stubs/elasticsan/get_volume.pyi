@@ -64,7 +64,8 @@ class GetVolumeResult:
     def volume_id(self) -> _builtins.str: ...
 
 class AwaitableGetVolumeResult(GetVolumeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVolumeResult]:
+        ...
 
 def get_volume(
     elastic_san_name: Optional[_builtins.str] = ...,

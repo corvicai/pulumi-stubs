@@ -37,12 +37,16 @@ class NatGatewayArgs:
     @pulumi.getter(name="allocationId")
     def allocation_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @allocation_id.setter
-    def allocation_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def allocation_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityMode")
     def availability_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_mode.setter
-    def availability_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneAddresses")
     def availability_zone_addresses(
@@ -56,22 +60,28 @@ class NatGatewayArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NatGatewayAvailabilityZoneAddressArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectivityType")
     def connectivity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connectivity_type.setter
-    def connectivity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connectivity_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIp")
     def private_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip.setter
-    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryAllocationIds")
     def secondary_allocation_ids(
@@ -80,7 +90,8 @@ class NatGatewayArgs:
     @secondary_allocation_ids.setter
     def secondary_allocation_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryPrivateIpAddressCount")
     def secondary_private_ip_address_count(
@@ -89,7 +100,8 @@ class NatGatewayArgs:
     @secondary_private_ip_address_count.setter
     def secondary_private_ip_address_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryPrivateIpAddresses")
     def secondary_private_ip_addresses(
@@ -98,12 +110,14 @@ class NatGatewayArgs:
     @secondary_private_ip_addresses.setter
     def secondary_private_ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -112,12 +126,14 @@ class NatGatewayArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _NatGatewayState:
@@ -162,27 +178,38 @@ class _NatGatewayState:
     @pulumi.getter(name="allocationId")
     def allocation_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @allocation_id.setter
-    def allocation_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def allocation_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associationId")
     def association_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @association_id.setter
-    def association_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def association_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoProvisionZones")
     def auto_provision_zones(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_provision_zones.setter
-    def auto_provision_zones(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_provision_zones(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingIps")
     def auto_scaling_ips(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_scaling_ips.setter
-    def auto_scaling_ips(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_scaling_ips(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityMode")
     def availability_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_mode.setter
-    def availability_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneAddresses")
     def availability_zone_addresses(
@@ -196,32 +223,42 @@ class _NatGatewayState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NatGatewayAvailabilityZoneAddressArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectivityType")
     def connectivity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connectivity_type.setter
-    def connectivity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connectivity_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceId")
     def network_interface_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_interface_id.setter
-    def network_interface_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network_interface_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIp")
     def private_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip.setter
-    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIp")
     def public_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_ip.setter
-    def public_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionalNatGatewayAddresses")
     def regional_nat_gateway_addresses(
@@ -237,7 +274,8 @@ class _NatGatewayState:
                 Sequence[pulumi.Input[NatGatewayRegionalNatGatewayAddressArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionalNatGatewayAutoMode")
     def regional_nat_gateway_auto_mode(
@@ -246,12 +284,14 @@ class _NatGatewayState:
     @regional_nat_gateway_auto_mode.setter
     def regional_nat_gateway_auto_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTableId")
     def route_table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @route_table_id.setter
-    def route_table_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def route_table_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryAllocationIds")
     def secondary_allocation_ids(
@@ -260,7 +300,8 @@ class _NatGatewayState:
     @secondary_allocation_ids.setter
     def secondary_allocation_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryPrivateIpAddressCount")
     def secondary_private_ip_address_count(
@@ -269,7 +310,8 @@ class _NatGatewayState:
     @secondary_private_ip_address_count.setter
     def secondary_private_ip_address_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryPrivateIpAddresses")
     def secondary_private_ip_addresses(
@@ -278,12 +320,14 @@ class _NatGatewayState:
     @secondary_private_ip_addresses.setter
     def secondary_private_ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -292,7 +336,8 @@ class _NatGatewayState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -301,12 +346,14 @@ class _NatGatewayState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/natGateway:NatGateway")
 class NatGateway(pulumi.CustomResource):

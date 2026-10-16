@@ -75,7 +75,8 @@ class GetThemeResult:
     def version_number(self) -> _builtins.int: ...
 
 class AwaitableGetThemeResult(GetThemeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetThemeResult]:
+        ...
 
 def get_theme(
     aws_account_id: Optional[_builtins.str] = ...,

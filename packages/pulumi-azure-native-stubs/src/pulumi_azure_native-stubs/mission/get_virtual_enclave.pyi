@@ -116,7 +116,8 @@ class GetVirtualEnclaveResult:
     ) -> Optional[Sequence[outputs.RoleAssignmentItemResponse]]: ...
 
 class AwaitableGetVirtualEnclaveResult(GetVirtualEnclaveResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualEnclaveResult]:
+        ...
 
 def get_virtual_enclave(
     resource_group_name: Optional[_builtins.str] = ...,

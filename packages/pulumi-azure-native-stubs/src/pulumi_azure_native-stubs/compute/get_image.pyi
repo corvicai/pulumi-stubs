@@ -63,7 +63,8 @@ class GetImageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetImageResult(GetImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImageResult]:
+        ...
 
 def get_image(
     expand: Optional[_builtins.str] = ...,

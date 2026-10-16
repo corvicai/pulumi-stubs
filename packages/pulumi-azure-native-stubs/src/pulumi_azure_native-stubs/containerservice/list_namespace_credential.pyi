@@ -21,7 +21,8 @@ class ListNamespaceCredentialResult:
     def kubeconfigs(self) -> Sequence[outputs.CredentialResultResponse]: ...
 
 class AwaitableListNamespaceCredentialResult(ListNamespaceCredentialResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListNamespaceCredentialResult]:
+        ...
 
 def list_namespace_credential(
     namespace_name: Optional[_builtins.str] = ...,

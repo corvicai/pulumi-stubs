@@ -115,7 +115,8 @@ class GetKeyResult:
     ) -> Sequence[outputs.GetKeyXksKeyConfigurationResult]: ...
 
 class AwaitableGetKeyResult(GetKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyResult]:
+        ...
 
 def get_key(
     grant_tokens: Optional[Sequence[_builtins.str]] = ...,

@@ -25,7 +25,10 @@ class GetAppServicePlanServerFarmRdpPasswordResult:
 class AwaitableGetAppServicePlanServerFarmRdpPasswordResult(
     GetAppServicePlanServerFarmRdpPasswordResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppServicePlanServerFarmRdpPasswordResult]:
+        ...
 
 def get_app_service_plan_server_farm_rdp_password(
     name: Optional[_builtins.str] = ...,

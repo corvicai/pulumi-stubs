@@ -51,7 +51,8 @@ class GetQuicksightGroupResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetQuicksightGroupResult(GetQuicksightGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQuicksightGroupResult]:
+        ...
 
 def get_quicksight_group(
     aws_account_id: Optional[_builtins.str] = ...,

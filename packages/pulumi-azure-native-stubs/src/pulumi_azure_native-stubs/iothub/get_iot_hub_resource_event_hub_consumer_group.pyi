@@ -45,7 +45,10 @@ class GetIotHubResourceEventHubConsumerGroupResult:
 class AwaitableGetIotHubResourceEventHubConsumerGroupResult(
     GetIotHubResourceEventHubConsumerGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIotHubResourceEventHubConsumerGroupResult]:
+        ...
 
 def get_iot_hub_resource_event_hub_consumer_group(
     event_hub_endpoint_name: Optional[_builtins.str] = ...,

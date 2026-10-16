@@ -28,7 +28,10 @@ class GetMonitorDefaultApplicationKeyResult:
 class AwaitableGetMonitorDefaultApplicationKeyResult(
     GetMonitorDefaultApplicationKeyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMonitorDefaultApplicationKeyResult]:
+        ...
 
 def get_monitor_default_application_key(
     monitor_name: Optional[_builtins.str] = ...,

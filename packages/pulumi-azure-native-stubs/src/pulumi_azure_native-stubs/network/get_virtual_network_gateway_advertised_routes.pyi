@@ -23,7 +23,10 @@ class GetVirtualNetworkGatewayAdvertisedRoutesResult:
 class AwaitableGetVirtualNetworkGatewayAdvertisedRoutesResult(
     GetVirtualNetworkGatewayAdvertisedRoutesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayAdvertisedRoutesResult]:
+        ...
 
 def get_virtual_network_gateway_advertised_routes(
     peer: Optional[_builtins.str] = ...,

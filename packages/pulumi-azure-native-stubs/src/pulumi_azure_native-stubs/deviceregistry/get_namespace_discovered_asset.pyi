@@ -160,7 +160,8 @@ class GetNamespaceDiscoveredAssetResult:
     def version(self) -> _builtins.float: ...
 
 class AwaitableGetNamespaceDiscoveredAssetResult(GetNamespaceDiscoveredAssetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNamespaceDiscoveredAssetResult]:
+        ...
 
 def get_namespace_discovered_asset(
     discovered_asset_name: Optional[_builtins.str] = ...,

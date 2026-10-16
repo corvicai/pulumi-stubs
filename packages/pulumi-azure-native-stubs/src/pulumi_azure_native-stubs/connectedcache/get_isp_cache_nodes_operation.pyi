@@ -52,7 +52,8 @@ class GetIspCacheNodesOperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIspCacheNodesOperationResult(GetIspCacheNodesOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIspCacheNodesOperationResult]:
+        ...
 
 def get_isp_cache_nodes_operation(
     cache_node_resource_name: Optional[_builtins.str] = ...,

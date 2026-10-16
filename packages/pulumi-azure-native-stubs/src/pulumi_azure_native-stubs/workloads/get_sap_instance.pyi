@@ -72,7 +72,8 @@ class GetSapInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSapInstanceResult(GetSapInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSapInstanceResult]:
+        ...
 
 def get_sap_instance(
     resource_group_name: Optional[_builtins.str] = ...,

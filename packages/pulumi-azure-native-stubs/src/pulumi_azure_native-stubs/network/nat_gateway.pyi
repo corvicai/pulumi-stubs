@@ -34,27 +34,36 @@ class NatGatewayInitArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeoutInMinutes")
     def idle_timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @idle_timeout_in_minutes.setter
-    def idle_timeout_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def idle_timeout_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natGatewayName")
     def nat_gateway_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @nat_gateway_name.setter
-    def nat_gateway_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def nat_gateway_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIpAddresses")
     def public_ip_addresses(
@@ -63,7 +72,8 @@ class NatGatewayInitArgs:
     @public_ip_addresses.setter
     def public_ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIpPrefixes")
     def public_ip_prefixes(
@@ -72,12 +82,14 @@ class NatGatewayInitArgs:
     @public_ip_prefixes.setter
     def public_ip_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[NatGatewaySkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[NatGatewaySkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[NatGatewaySkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -86,7 +98,8 @@ class NatGatewayInitArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -95,7 +108,8 @@ class NatGatewayInitArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:NatGateway")
 class NatGateway(pulumi.CustomResource):

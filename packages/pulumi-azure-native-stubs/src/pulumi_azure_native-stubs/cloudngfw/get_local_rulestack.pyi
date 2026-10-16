@@ -90,7 +90,8 @@ class GetLocalRulestackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLocalRulestackResult(GetLocalRulestackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalRulestackResult]:
+        ...
 
 def get_local_rulestack(
     local_rulestack_name: Optional[_builtins.str] = ...,

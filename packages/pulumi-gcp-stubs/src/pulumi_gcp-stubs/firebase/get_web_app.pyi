@@ -51,7 +51,8 @@ class GetWebAppResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebAppResult(GetWebAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppResult]:
+        ...
 
 def get_web_app(
     app_id: Optional[_builtins.str] = ...,

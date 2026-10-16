@@ -37,7 +37,8 @@ class ElseConditionArgs:
     @operations.setter
     def operations(
         self, value: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IfConditionArgsDict(TypedDict):
     condition: pulumi.Input[_builtins.str]
@@ -55,7 +56,8 @@ class IfConditionArgs:
     @pulumi.getter
     def condition(self) -> pulumi.Input[_builtins.str]: ...
     @condition.setter
-    def condition(self, value: pulumi.Input[_builtins.str]): ...
+    def condition(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operations(
@@ -64,7 +66,8 @@ class IfConditionArgs:
     @operations.setter
     def operations(
         self, value: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -90,7 +93,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -99,7 +103,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageTaskActionArgsDict(TypedDict):
     if_: pulumi.Input[IfConditionArgsDict]
@@ -117,12 +122,14 @@ class StorageTaskActionArgs:
     @pulumi.getter(name="if")
     def if_(self) -> pulumi.Input[IfConditionArgs]: ...
     @if_.setter
-    def if_(self, value: pulumi.Input[IfConditionArgs]): ...
+    def if_(self, value: pulumi.Input[IfConditionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="else")
     def else_(self) -> Optional[pulumi.Input[ElseConditionArgs]]: ...
     @else_.setter
-    def else_(self, value: Optional[pulumi.Input[ElseConditionArgs]]): ...
+    def else_(self, value: Optional[pulumi.Input[ElseConditionArgs]]):  # -> None:
+        ...
 
 class StorageTaskOperationArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, StorageTaskOperationName]]
@@ -148,21 +155,24 @@ class StorageTaskOperationArgs:
     @name.setter
     def name(
         self, value: pulumi.Input[Union[_builtins.str, StorageTaskOperationName]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onFailure")
     def on_failure(self) -> Optional[pulumi.Input[Union[_builtins.str, OnFailure]]]: ...
     @on_failure.setter
     def on_failure(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OnFailure]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onSuccess")
     def on_success(self) -> Optional[pulumi.Input[Union[_builtins.str, OnSuccess]]]: ...
     @on_success.setter
     def on_success(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OnSuccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -171,4 +181,5 @@ class StorageTaskOperationArgs:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

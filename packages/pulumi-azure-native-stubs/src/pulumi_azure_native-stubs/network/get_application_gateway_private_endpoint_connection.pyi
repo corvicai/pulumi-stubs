@@ -55,7 +55,10 @@ class GetApplicationGatewayPrivateEndpointConnectionResult:
 class AwaitableGetApplicationGatewayPrivateEndpointConnectionResult(
     GetApplicationGatewayPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetApplicationGatewayPrivateEndpointConnectionResult]:
+        ...
 
 def get_application_gateway_private_endpoint_connection(
     application_gateway_name: Optional[_builtins.str] = ...,

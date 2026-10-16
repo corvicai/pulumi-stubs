@@ -39,7 +39,8 @@ class GetImageRecipesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetImageRecipesResult(GetImageRecipesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImageRecipesResult]:
+        ...
 
 def get_image_recipes(
     filters: Optional[

@@ -53,7 +53,10 @@ class GetWebAppPublicCertificateSlotResult:
 class AwaitableGetWebAppPublicCertificateSlotResult(
     GetWebAppPublicCertificateSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppPublicCertificateSlotResult]:
+        ...
 
 def get_web_app_public_certificate_slot(
     name: Optional[_builtins.str] = ...,

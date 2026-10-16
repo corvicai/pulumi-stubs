@@ -63,7 +63,8 @@ class GetSSLPolicyResult:
     def self_link(self) -> _builtins.str: ...
 
 class AwaitableGetSSLPolicyResult(GetSSLPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSSLPolicyResult]:
+        ...
 
 def get_ssl_policy(
     name: Optional[_builtins.str] = ...,

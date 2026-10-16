@@ -76,7 +76,8 @@ class GetWorkspaceDiagnosticResult:
     def verbosity(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWorkspaceDiagnosticResult(GetWorkspaceDiagnosticResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceDiagnosticResult]:
+        ...
 
 def get_workspace_diagnostic(
     diagnostic_id: Optional[_builtins.str] = ...,

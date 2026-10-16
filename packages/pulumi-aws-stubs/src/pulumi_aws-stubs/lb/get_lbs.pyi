@@ -24,7 +24,8 @@ class GetLbsResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetLbsResult(GetLbsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLbsResult]:
+        ...
 
 def get_lbs(
     region: Optional[_builtins.str] = ...,

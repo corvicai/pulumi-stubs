@@ -33,7 +33,8 @@ class ClusterCapacityProvidersArgs:
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_name.setter
-    def cluster_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityProviders")
     def capacity_providers(
@@ -42,7 +43,8 @@ class ClusterCapacityProvidersArgs:
     @capacity_providers.setter
     def capacity_providers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCapacityProviderStrategies")
     def default_capacity_provider_strategies(
@@ -68,12 +70,14 @@ class ClusterCapacityProvidersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClusterCapacityProvidersState:
@@ -103,12 +107,14 @@ class _ClusterCapacityProvidersState:
     @capacity_providers.setter
     def capacity_providers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCapacityProviderStrategies")
     def default_capacity_provider_strategies(
@@ -134,12 +140,14 @@ class _ClusterCapacityProvidersState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ClusterCapacityProviders(pulumi.CustomResource):

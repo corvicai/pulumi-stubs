@@ -21,7 +21,8 @@ class ListEndpointKeysResult:
     def keys(self) -> Optional[outputs.AccountApiKeysResponse]: ...
 
 class AwaitableListEndpointKeysResult(ListEndpointKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListEndpointKeysResult]:
+        ...
 
 def list_endpoint_keys(
     endpoint_name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetApiVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiVersionResult(GetApiVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiVersionResult]:
+        ...
 
 def get_api_version(
     api_name: Optional[_builtins.str] = ...,

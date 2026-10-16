@@ -29,7 +29,8 @@ class AppliancePropertiesInfrastructureConfigArgs:
     @provider.setter
     def provider(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Provider]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, ResourceIdentityType]]]
@@ -49,4 +50,5 @@ class IdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ResourceIdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...

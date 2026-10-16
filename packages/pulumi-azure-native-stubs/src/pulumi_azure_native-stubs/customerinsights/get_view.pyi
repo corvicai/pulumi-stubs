@@ -58,7 +58,8 @@ class GetViewResult:
     def view_name(self) -> _builtins.str: ...
 
 class AwaitableGetViewResult(GetViewResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetViewResult]:
+        ...
 
 def get_view(
     hub_name: Optional[_builtins.str] = ...,

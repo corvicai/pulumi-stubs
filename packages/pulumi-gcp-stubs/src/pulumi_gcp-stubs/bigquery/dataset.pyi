@@ -47,7 +47,8 @@ class DatasetArgs:
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_id.setter
-    def dataset_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def accesses(
@@ -56,12 +57,16 @@ class DatasetArgs:
     @accesses.setter
     def accesses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DatasetAccessArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCollation")
     def default_collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_collation.setter
-    def default_collation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_collation(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultEncryptionConfiguration")
     def default_encryption_configuration(
@@ -70,7 +75,8 @@ class DatasetArgs:
     @default_encryption_configuration.setter
     def default_encryption_configuration(
         self, value: Optional[pulumi.Input[DatasetDefaultEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultPartitionExpirationMs")
     def default_partition_expiration_ms(
@@ -79,26 +85,30 @@ class DatasetArgs:
     @default_partition_expiration_ms.setter
     def default_partition_expiration_ms(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultTableExpirationMs")
     def default_table_expiration_ms(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_table_expiration_ms.setter
     def default_table_expiration_ms(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteContentsOnDestroy")
     def delete_contents_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_contents_on_destroy.setter
     def delete_contents_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalCatalogDatasetOptions")
     def external_catalog_dataset_options(
@@ -107,7 +117,8 @@ class DatasetArgs:
     @external_catalog_dataset_options.setter
     def external_catalog_dataset_options(
         self, value: Optional[pulumi.Input[DatasetExternalCatalogDatasetOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalDatasetReference")
     def external_dataset_reference(
@@ -116,17 +127,22 @@ class DatasetArgs:
     @external_dataset_reference.setter
     def external_dataset_reference(
         self, value: Optional[pulumi.Input[DatasetExternalDatasetReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCaseInsensitive")
     def is_case_insensitive(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_case_insensitive.setter
-    def is_case_insensitive(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_case_insensitive(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -135,22 +151,28 @@ class DatasetArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxTimeTravelHours")
     def max_time_travel_hours(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_time_travel_hours.setter
-    def max_time_travel_hours(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_time_travel_hours(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -159,12 +181,16 @@ class DatasetArgs:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageBillingModel")
     def storage_billing_model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_billing_model.setter
-    def storage_billing_model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_billing_model(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DatasetState:
@@ -218,22 +244,28 @@ class _DatasetState:
     @accesses.setter
     def accesses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DatasetAccessArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTime")
     def creation_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @creation_time.setter
-    def creation_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def creation_time(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset_id.setter
-    def dataset_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCollation")
     def default_collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_collation.setter
-    def default_collation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_collation(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultEncryptionConfiguration")
     def default_encryption_configuration(
@@ -242,7 +274,8 @@ class _DatasetState:
     @default_encryption_configuration.setter
     def default_encryption_configuration(
         self, value: Optional[pulumi.Input[DatasetDefaultEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultPartitionExpirationMs")
     def default_partition_expiration_ms(
@@ -251,26 +284,30 @@ class _DatasetState:
     @default_partition_expiration_ms.setter
     def default_partition_expiration_ms(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultTableExpirationMs")
     def default_table_expiration_ms(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_table_expiration_ms.setter
     def default_table_expiration_ms(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteContentsOnDestroy")
     def delete_contents_on_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_contents_on_destroy.setter
     def delete_contents_on_destroy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -279,12 +316,14 @@ class _DatasetState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalCatalogDatasetOptions")
     def external_catalog_dataset_options(
@@ -293,7 +332,8 @@ class _DatasetState:
     @external_catalog_dataset_options.setter
     def external_catalog_dataset_options(
         self, value: Optional[pulumi.Input[DatasetExternalCatalogDatasetOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalDatasetReference")
     def external_dataset_reference(
@@ -302,17 +342,22 @@ class _DatasetState:
     @external_dataset_reference.setter
     def external_dataset_reference(
         self, value: Optional[pulumi.Input[DatasetExternalDatasetReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCaseInsensitive")
     def is_case_insensitive(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_case_insensitive.setter
-    def is_case_insensitive(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_case_insensitive(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -321,27 +366,36 @@ class _DatasetState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedTime")
     def last_modified_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @last_modified_time.setter
-    def last_modified_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def last_modified_time(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxTimeTravelHours")
     def max_time_travel_hours(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_time_travel_hours.setter
-    def max_time_travel_hours(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_time_travel_hours(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -350,7 +404,8 @@ class _DatasetState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -359,17 +414,22 @@ class _DatasetState:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageBillingModel")
     def storage_billing_model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_billing_model.setter
-    def storage_billing_model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_billing_model(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:bigquery/dataset:Dataset")
 class Dataset(pulumi.CustomResource):

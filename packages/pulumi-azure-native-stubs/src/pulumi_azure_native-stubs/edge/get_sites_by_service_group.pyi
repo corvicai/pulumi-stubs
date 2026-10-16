@@ -44,7 +44,8 @@ class GetSitesByServiceGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSitesByServiceGroupResult(GetSitesByServiceGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSitesByServiceGroupResult]:
+        ...
 
 def get_sites_by_service_group(
     servicegroup_name: Optional[_builtins.str] = ...,

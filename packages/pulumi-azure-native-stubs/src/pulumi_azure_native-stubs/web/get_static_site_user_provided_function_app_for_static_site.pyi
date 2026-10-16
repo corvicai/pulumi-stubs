@@ -48,7 +48,10 @@ class GetStaticSiteUserProvidedFunctionAppForStaticSiteResult:
 class AwaitableGetStaticSiteUserProvidedFunctionAppForStaticSiteResult(
     GetStaticSiteUserProvidedFunctionAppForStaticSiteResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStaticSiteUserProvidedFunctionAppForStaticSiteResult]:
+        ...
 
 def get_static_site_user_provided_function_app_for_static_site(
     function_app_name: Optional[_builtins.str] = ...,

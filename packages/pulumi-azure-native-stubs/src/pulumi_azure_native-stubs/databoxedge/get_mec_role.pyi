@@ -62,7 +62,8 @@ class GetMECRoleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMECRoleResult(GetMECRoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMECRoleResult]:
+        ...
 
 def get_mec_role(
     device_name: Optional[_builtins.str] = ...,

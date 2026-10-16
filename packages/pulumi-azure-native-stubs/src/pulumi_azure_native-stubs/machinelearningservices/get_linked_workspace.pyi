@@ -35,7 +35,8 @@ class GetLinkedWorkspaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLinkedWorkspaceResult(GetLinkedWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkedWorkspaceResult]:
+        ...
 
 def get_linked_workspace(
     link_name: Optional[_builtins.str] = ...,

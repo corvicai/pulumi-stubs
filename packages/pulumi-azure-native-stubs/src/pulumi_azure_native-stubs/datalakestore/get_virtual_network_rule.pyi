@@ -34,7 +34,8 @@ class GetVirtualNetworkRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualNetworkRuleResult(GetVirtualNetworkRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkRuleResult]:
+        ...
 
 def get_virtual_network_rule(
     account_name: Optional[_builtins.str] = ...,

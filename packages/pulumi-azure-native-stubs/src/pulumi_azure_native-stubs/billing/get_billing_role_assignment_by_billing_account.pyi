@@ -50,7 +50,10 @@ class GetBillingRoleAssignmentByBillingAccountResult:
 class AwaitableGetBillingRoleAssignmentByBillingAccountResult(
     GetBillingRoleAssignmentByBillingAccountResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBillingRoleAssignmentByBillingAccountResult]:
+        ...
 
 def get_billing_role_assignment_by_billing_account(
     billing_account_name: Optional[_builtins.str] = ...,

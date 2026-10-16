@@ -23,7 +23,8 @@ class ListTopicSharedAccessKeysResult:
     def key2(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListTopicSharedAccessKeysResult(ListTopicSharedAccessKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListTopicSharedAccessKeysResult]:
+        ...
 
 def list_topic_shared_access_keys(
     resource_group_name: Optional[_builtins.str] = ...,

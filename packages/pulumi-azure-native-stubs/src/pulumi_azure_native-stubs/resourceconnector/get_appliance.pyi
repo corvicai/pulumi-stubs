@@ -78,7 +78,8 @@ class GetApplianceResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetApplianceResult(GetApplianceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplianceResult]:
+        ...
 
 def get_appliance(
     resource_group_name: Optional[_builtins.str] = ...,

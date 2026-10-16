@@ -59,7 +59,8 @@ class GetSecurityProfileResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetSecurityProfileResult(GetSecurityProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityProfileResult]:
+        ...
 
 def get_security_profile(
     instance_id: Optional[_builtins.str] = ...,

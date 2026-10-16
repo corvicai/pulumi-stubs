@@ -44,7 +44,8 @@ class GetSyncSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSyncSetResult(GetSyncSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSyncSetResult]:
+        ...
 
 def get_sync_set(
     child_resource_name: Optional[_builtins.str] = ...,

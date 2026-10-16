@@ -134,7 +134,8 @@ class GetServerResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetServerResult(GetServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerResult]:
+        ...
 
 def get_server(
     resource_group_name: Optional[_builtins.str] = ...,

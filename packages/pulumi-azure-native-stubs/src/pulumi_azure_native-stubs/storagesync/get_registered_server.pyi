@@ -148,7 +148,8 @@ class GetRegisteredServerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegisteredServerResult(GetRegisteredServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegisteredServerResult]:
+        ...
 
 def get_registered_server(
     resource_group_name: Optional[_builtins.str] = ...,

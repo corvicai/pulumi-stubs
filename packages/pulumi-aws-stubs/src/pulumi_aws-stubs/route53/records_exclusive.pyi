@@ -24,7 +24,8 @@ class RecordsExclusiveArgs:
     @pulumi.getter(name="zoneId")
     def zone_id(self) -> pulumi.Input[_builtins.str]: ...
     @zone_id.setter
-    def zone_id(self, value: pulumi.Input[_builtins.str]): ...
+    def zone_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceRecordSets")
     def resource_record_sets(
@@ -38,12 +39,16 @@ class RecordsExclusiveArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordsExclusiveResourceRecordSetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[RecordsExclusiveTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[RecordsExclusiveTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[RecordsExclusiveTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RecordsExclusiveState:
@@ -69,17 +74,22 @@ class _RecordsExclusiveState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordsExclusiveResourceRecordSetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[RecordsExclusiveTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[RecordsExclusiveTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[RecordsExclusiveTimeoutsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneId")
     def zone_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone_id.setter
-    def zone_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:route53/recordsExclusive:RecordsExclusive")
 class RecordsExclusive(pulumi.CustomResource):

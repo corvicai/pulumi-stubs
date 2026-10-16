@@ -30,7 +30,8 @@ class ClusterArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="billingType")
     def billing_type(
@@ -39,17 +40,22 @@ class ClusterArgs:
     @billing_type.setter
     def billing_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BillingType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isAvailabilityZonesEnabled")
     def is_availability_zones_enabled(
@@ -58,7 +64,8 @@ class ClusterArgs:
     @is_availability_zones_enabled.setter
     def is_availability_zones_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDoubleEncryptionEnabled")
     def is_double_encryption_enabled(
@@ -67,7 +74,8 @@ class ClusterArgs:
     @is_double_encryption_enabled.setter
     def is_double_encryption_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -76,17 +84,20 @@ class ClusterArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[KeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[ClusterSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[ClusterSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[ClusterSkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -95,7 +106,8 @@ class ClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:operationalinsights:Cluster")
 class Cluster(pulumi.CustomResource):

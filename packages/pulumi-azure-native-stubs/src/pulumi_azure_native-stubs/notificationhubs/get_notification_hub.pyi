@@ -102,7 +102,8 @@ class GetNotificationHubResult:
     def xiaomi_credential(self) -> Optional[outputs.XiaomiCredentialResponse]: ...
 
 class AwaitableGetNotificationHubResult(GetNotificationHubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNotificationHubResult]:
+        ...
 
 def get_notification_hub(
     namespace_name: Optional[_builtins.str] = ...,

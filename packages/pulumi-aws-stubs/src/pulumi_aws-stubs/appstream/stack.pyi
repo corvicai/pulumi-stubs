@@ -49,7 +49,8 @@ class StackArgs:
     def access_endpoints(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[StackAccessEndpointArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSettings")
     def application_settings(
@@ -58,17 +59,20 @@ class StackArgs:
     @application_settings.setter
     def application_settings(
         self, value: Optional[pulumi.Input[StackApplicationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="embedHostDomains")
     def embed_host_domains(
@@ -77,27 +81,32 @@ class StackArgs:
     @embed_host_domains.setter
     def embed_host_domains(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="feedbackUrl")
     def feedback_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @feedback_url.setter
-    def feedback_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def feedback_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUrl")
     def redirect_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_url.setter
-    def redirect_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConnectors")
     def storage_connectors(
@@ -109,7 +118,8 @@ class StackArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[StackStorageConnectorArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamingExperienceSettings")
     def streaming_experience_settings(
@@ -118,7 +128,8 @@ class StackArgs:
     @streaming_experience_settings.setter
     def streaming_experience_settings(
         self, value: Optional[pulumi.Input[StackStreamingExperienceSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -127,7 +138,8 @@ class StackArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userSettings")
     def user_settings(
@@ -137,7 +149,8 @@ class StackArgs:
     def user_settings(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[StackUserSettingArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _StackState:
@@ -184,7 +197,8 @@ class _StackState:
     def access_endpoints(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[StackAccessEndpointArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSettings")
     def application_settings(
@@ -193,27 +207,32 @@ class _StackState:
     @application_settings.setter
     def application_settings(
         self, value: Optional[pulumi.Input[StackApplicationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdTime")
     def created_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_time.setter
-    def created_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="embedHostDomains")
     def embed_host_domains(
@@ -222,27 +241,32 @@ class _StackState:
     @embed_host_domains.setter
     def embed_host_domains(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="feedbackUrl")
     def feedback_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @feedback_url.setter
-    def feedback_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def feedback_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUrl")
     def redirect_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_url.setter
-    def redirect_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConnectors")
     def storage_connectors(
@@ -254,7 +278,8 @@ class _StackState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[StackStorageConnectorArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streamingExperienceSettings")
     def streaming_experience_settings(
@@ -263,7 +288,8 @@ class _StackState:
     @streaming_experience_settings.setter
     def streaming_experience_settings(
         self, value: Optional[pulumi.Input[StackStreamingExperienceSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -272,7 +298,8 @@ class _StackState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -281,7 +308,8 @@ class _StackState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userSettings")
     def user_settings(
@@ -291,7 +319,8 @@ class _StackState:
     def user_settings(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[StackUserSettingArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:appstream/stack:Stack")
 class Stack(pulumi.CustomResource):

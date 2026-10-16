@@ -59,7 +59,8 @@ class GetServerKeyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerKeyResult(GetServerKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerKeyResult]:
+        ...
 
 def get_server_key(
     key_name: Optional[_builtins.str] = ...,

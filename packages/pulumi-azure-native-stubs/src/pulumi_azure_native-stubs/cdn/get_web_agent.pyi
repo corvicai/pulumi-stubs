@@ -68,7 +68,8 @@ class GetWebAgentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAgentResult(GetWebAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAgentResult]:
+        ...
 
 def get_web_agent(
     resource_group_name: Optional[_builtins.str] = ...,

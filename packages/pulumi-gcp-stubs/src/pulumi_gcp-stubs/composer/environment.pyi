@@ -25,7 +25,8 @@ class EnvironmentArgs:
     @pulumi.getter
     def config(self) -> Optional[pulumi.Input[EnvironmentConfigArgs]]: ...
     @config.setter
-    def config(self, value: Optional[pulumi.Input[EnvironmentConfigArgs]]): ...
+    def config(self, value: Optional[pulumi.Input[EnvironmentConfigArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -34,22 +35,26 @@ class EnvironmentArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfig")
     def storage_config(
@@ -58,7 +63,8 @@ class EnvironmentArgs:
     @storage_config.setter
     def storage_config(
         self, value: Optional[pulumi.Input[EnvironmentStorageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EnvironmentState:
@@ -82,7 +88,8 @@ class _EnvironmentState:
     @pulumi.getter
     def config(self) -> Optional[pulumi.Input[EnvironmentConfigArgs]]: ...
     @config.setter
-    def config(self, value: Optional[pulumi.Input[EnvironmentConfigArgs]]): ...
+    def config(self, value: Optional[pulumi.Input[EnvironmentConfigArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -91,7 +98,8 @@ class _EnvironmentState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -100,17 +108,20 @@ class _EnvironmentState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -119,12 +130,14 @@ class _EnvironmentState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfig")
     def storage_config(
@@ -133,7 +146,8 @@ class _EnvironmentState:
     @storage_config.setter
     def storage_config(
         self, value: Optional[pulumi.Input[EnvironmentStorageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:composer/environment:Environment")
 class Environment(pulumi.CustomResource):

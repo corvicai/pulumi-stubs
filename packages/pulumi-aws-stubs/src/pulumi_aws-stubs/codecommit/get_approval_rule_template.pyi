@@ -59,7 +59,8 @@ class GetApprovalRuleTemplateResult:
     def rule_content_sha256(self) -> _builtins.str: ...
 
 class AwaitableGetApprovalRuleTemplateResult(GetApprovalRuleTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApprovalRuleTemplateResult]:
+        ...
 
 def get_approval_rule_template(
     name: Optional[_builtins.str] = ...,

@@ -86,7 +86,8 @@ class GetNetworkAttachmentResult:
     def subnetworks(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetNetworkAttachmentResult(GetNetworkAttachmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkAttachmentResult]:
+        ...
 
 def get_network_attachment(
     name: Optional[_builtins.str] = ...,

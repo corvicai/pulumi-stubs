@@ -23,7 +23,10 @@ class GetTestResultVideoDownloadURLResult:
     def expiration_time(self) -> _builtins.str: ...
 
 class AwaitableGetTestResultVideoDownloadURLResult(GetTestResultVideoDownloadURLResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTestResultVideoDownloadURLResult]:
+        ...
 
 def get_test_result_video_download_url(
     package_name: Optional[_builtins.str] = ...,

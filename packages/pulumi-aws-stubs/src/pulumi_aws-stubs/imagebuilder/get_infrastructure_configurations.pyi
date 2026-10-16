@@ -40,7 +40,10 @@ class GetInfrastructureConfigurationsResult:
 class AwaitableGetInfrastructureConfigurationsResult(
     GetInfrastructureConfigurationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetInfrastructureConfigurationsResult]:
+        ...
 
 def get_infrastructure_configurations(
     filters: Optional[

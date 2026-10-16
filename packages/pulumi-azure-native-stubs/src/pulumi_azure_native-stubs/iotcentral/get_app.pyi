@@ -89,7 +89,8 @@ class GetAppResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAppResult(GetAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppResult]:
+        ...
 
 def get_app(
     resource_group_name: Optional[_builtins.str] = ...,

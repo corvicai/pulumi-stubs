@@ -24,7 +24,8 @@ class ListListPendingConnectionResult:
     def value(self) -> Optional[Sequence[outputs.PendingConnectionResponse]]: ...
 
 class AwaitableListListPendingConnectionResult(ListListPendingConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListListPendingConnectionResult]:
+        ...
 
 def list_list_pending_connection(
     connection_name: Optional[_builtins.str] = ...,

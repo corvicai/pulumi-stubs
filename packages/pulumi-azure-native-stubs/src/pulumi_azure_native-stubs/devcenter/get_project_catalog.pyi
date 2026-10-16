@@ -80,7 +80,8 @@ class GetProjectCatalogResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProjectCatalogResult(GetProjectCatalogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectCatalogResult]:
+        ...
 
 def get_project_catalog(
     catalog_name: Optional[_builtins.str] = ...,

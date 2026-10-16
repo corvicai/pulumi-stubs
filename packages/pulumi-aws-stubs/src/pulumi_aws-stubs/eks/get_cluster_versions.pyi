@@ -54,7 +54,8 @@ class GetClusterVersionsResult:
     def version_status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetClusterVersionsResult(GetClusterVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterVersionsResult]:
+        ...
 
 def get_cluster_versions(
     cluster_type: Optional[_builtins.str] = ...,

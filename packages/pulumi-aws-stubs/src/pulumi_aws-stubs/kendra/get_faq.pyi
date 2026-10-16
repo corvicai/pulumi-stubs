@@ -79,7 +79,8 @@ class GetFaqResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetFaqResult(GetFaqResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFaqResult]:
+        ...
 
 def get_faq(
     faq_id: Optional[_builtins.str] = ...,

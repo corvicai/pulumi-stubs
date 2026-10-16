@@ -26,7 +26,10 @@ class ListEndpointManagedProxyDetailsResult:
 class AwaitableListEndpointManagedProxyDetailsResult(
     ListEndpointManagedProxyDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListEndpointManagedProxyDetailsResult]:
+        ...
 
 def list_endpoint_managed_proxy_details(
     endpoint_name: Optional[_builtins.str] = ...,

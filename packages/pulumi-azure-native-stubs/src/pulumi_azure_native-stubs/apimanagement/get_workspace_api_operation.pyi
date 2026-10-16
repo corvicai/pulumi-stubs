@@ -70,7 +70,8 @@ class GetWorkspaceApiOperationResult:
     def url_template(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceApiOperationResult(GetWorkspaceApiOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceApiOperationResult]:
+        ...
 
 def get_workspace_api_operation(
     api_id: Optional[_builtins.str] = ...,

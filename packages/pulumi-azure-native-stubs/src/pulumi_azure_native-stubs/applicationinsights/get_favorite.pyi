@@ -67,7 +67,8 @@ class GetFavoriteResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetFavoriteResult(GetFavoriteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFavoriteResult]:
+        ...
 
 def get_favorite(
     favorite_id: Optional[_builtins.str] = ...,

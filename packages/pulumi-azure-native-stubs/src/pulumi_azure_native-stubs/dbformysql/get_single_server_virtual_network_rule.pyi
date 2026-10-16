@@ -49,7 +49,10 @@ class GetSingleServerVirtualNetworkRuleResult:
 class AwaitableGetSingleServerVirtualNetworkRuleResult(
     GetSingleServerVirtualNetworkRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSingleServerVirtualNetworkRuleResult]:
+        ...
 
 def get_single_server_virtual_network_rule(
     resource_group_name: Optional[_builtins.str] = ...,

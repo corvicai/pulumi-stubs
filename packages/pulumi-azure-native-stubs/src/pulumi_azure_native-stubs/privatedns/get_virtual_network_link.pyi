@@ -72,7 +72,8 @@ class GetVirtualNetworkLinkResult:
     def virtual_network_link_state(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualNetworkLinkResult(GetVirtualNetworkLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkLinkResult]:
+        ...
 
 def get_virtual_network_link(
     private_zone_name: Optional[_builtins.str] = ...,

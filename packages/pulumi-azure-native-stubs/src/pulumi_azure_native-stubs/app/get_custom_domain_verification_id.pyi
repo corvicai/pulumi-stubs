@@ -20,7 +20,10 @@ class GetCustomDomainVerificationIdResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetCustomDomainVerificationIdResult(GetCustomDomainVerificationIdResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCustomDomainVerificationIdResult]:
+        ...
 
 def get_custom_domain_verification_id(
     opts: Optional[pulumi.InvokeOptions] = ...,

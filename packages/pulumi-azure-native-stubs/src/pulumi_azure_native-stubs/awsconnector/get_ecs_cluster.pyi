@@ -52,7 +52,8 @@ class GetEcsClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEcsClusterResult(GetEcsClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEcsClusterResult]:
+        ...
 
 def get_ecs_cluster(
     name: Optional[_builtins.str] = ...,

@@ -32,24 +32,30 @@ class CryptoKeyArgs:
     @pulumi.getter(name="keyRing")
     def key_ring(self) -> pulumi.Input[_builtins.str]: ...
     @key_ring.setter
-    def key_ring(self, value: pulumi.Input[_builtins.str]): ...
+    def key_ring(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKeyBackend")
     def crypto_key_backend(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @crypto_key_backend.setter
-    def crypto_key_backend(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def crypto_key_backend(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destroyScheduledDuration")
     def destroy_scheduled_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destroy_scheduled_duration.setter
     def destroy_scheduled_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importOnly")
     def import_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @import_only.setter
-    def import_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def import_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyAccessJustificationsPolicy")
     def key_access_justifications_policy(
@@ -58,7 +64,8 @@ class CryptoKeyArgs:
     @key_access_justifications_policy.setter
     def key_access_justifications_policy(
         self, value: Optional[pulumi.Input[CryptoKeyKeyAccessJustificationsPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -67,22 +74,26 @@ class CryptoKeyArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def purpose(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @purpose.setter
-    def purpose(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def purpose(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rotationPeriod")
     def rotation_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rotation_period.setter
-    def rotation_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rotation_period(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipInitialVersionCreation")
     def skip_initial_version_creation(
@@ -91,7 +102,8 @@ class CryptoKeyArgs:
     @skip_initial_version_creation.setter
     def skip_initial_version_creation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionTemplate")
     def version_template(
@@ -100,7 +112,8 @@ class CryptoKeyArgs:
     @version_template.setter
     def version_template(
         self, value: Optional[pulumi.Input[CryptoKeyVersionTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CryptoKeyState:
@@ -134,14 +147,18 @@ class _CryptoKeyState:
     @pulumi.getter(name="cryptoKeyBackend")
     def crypto_key_backend(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @crypto_key_backend.setter
-    def crypto_key_backend(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def crypto_key_backend(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destroyScheduledDuration")
     def destroy_scheduled_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destroy_scheduled_duration.setter
     def destroy_scheduled_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -150,12 +167,14 @@ class _CryptoKeyState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importOnly")
     def import_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @import_only.setter
-    def import_only(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def import_only(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyAccessJustificationsPolicy")
     def key_access_justifications_policy(
@@ -164,12 +183,14 @@ class _CryptoKeyState:
     @key_access_justifications_policy.setter
     def key_access_justifications_policy(
         self, value: Optional[pulumi.Input[CryptoKeyKeyAccessJustificationsPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyRing")
     def key_ring(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_ring.setter
-    def key_ring(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_ring(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -178,12 +199,14 @@ class _CryptoKeyState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def primaries(
@@ -193,7 +216,8 @@ class _CryptoKeyState:
     def primaries(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CryptoKeyPrimaryArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -202,17 +226,20 @@ class _CryptoKeyState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def purpose(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @purpose.setter
-    def purpose(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def purpose(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rotationPeriod")
     def rotation_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rotation_period.setter
-    def rotation_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rotation_period(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipInitialVersionCreation")
     def skip_initial_version_creation(
@@ -221,7 +248,8 @@ class _CryptoKeyState:
     @skip_initial_version_creation.setter
     def skip_initial_version_creation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionTemplate")
     def version_template(
@@ -230,7 +258,8 @@ class _CryptoKeyState:
     @version_template.setter
     def version_template(
         self, value: Optional[pulumi.Input[CryptoKeyVersionTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:kms/cryptoKey:CryptoKey")
 class CryptoKey(pulumi.CustomResource):

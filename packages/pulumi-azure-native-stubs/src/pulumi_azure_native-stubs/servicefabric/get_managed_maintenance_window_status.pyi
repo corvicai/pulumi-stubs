@@ -49,7 +49,10 @@ class GetManagedMaintenanceWindowStatusResult:
 class AwaitableGetManagedMaintenanceWindowStatusResult(
     GetManagedMaintenanceWindowStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedMaintenanceWindowStatusResult]:
+        ...
 
 def get_managed_maintenance_window_status(
     cluster_name: Optional[_builtins.str] = ...,

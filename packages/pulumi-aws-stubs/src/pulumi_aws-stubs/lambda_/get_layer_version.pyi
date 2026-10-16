@@ -97,7 +97,8 @@ class GetLayerVersionResult:
     def version(self) -> _builtins.int: ...
 
 class AwaitableGetLayerVersionResult(GetLayerVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLayerVersionResult]:
+        ...
 
 def get_layer_version(
     compatible_architecture: Optional[_builtins.str] = ...,

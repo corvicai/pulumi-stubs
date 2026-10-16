@@ -23,7 +23,8 @@ class GetAppResourceUploadUrlResult:
     def upload_url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAppResourceUploadUrlResult(GetAppResourceUploadUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppResourceUploadUrlResult]:
+        ...
 
 def get_app_resource_upload_url(
     app_name: Optional[_builtins.str] = ...,

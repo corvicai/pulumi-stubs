@@ -80,7 +80,8 @@ class GetKubernetesClusterFeatureResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetKubernetesClusterFeatureResult(GetKubernetesClusterFeatureResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKubernetesClusterFeatureResult]:
+        ...
 
 def get_kubernetes_cluster_feature(
     feature_name: Optional[_builtins.str] = ...,

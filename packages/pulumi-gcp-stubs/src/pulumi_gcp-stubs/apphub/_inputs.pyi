@@ -119,7 +119,8 @@ class ApplicationAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationAttributesBusinessOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def criticality(
@@ -128,7 +129,8 @@ class ApplicationAttributesArgs:
     @criticality.setter
     def criticality(
         self, value: Optional[pulumi.Input[ApplicationAttributesCriticalityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="developerOwners")
     def developer_owners(
@@ -144,7 +146,8 @@ class ApplicationAttributesArgs:
                 Sequence[pulumi.Input[ApplicationAttributesDeveloperOwnerArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def environment(
@@ -153,7 +156,8 @@ class ApplicationAttributesArgs:
     @environment.setter
     def environment(
         self, value: Optional[pulumi.Input[ApplicationAttributesEnvironmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operatorOwners")
     def operator_owners(
@@ -167,7 +171,8 @@ class ApplicationAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationAttributesOperatorOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationAttributesBusinessOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -185,12 +190,14 @@ class ApplicationAttributesBusinessOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationAttributesCriticalityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -202,7 +209,8 @@ class ApplicationAttributesCriticalityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationAttributesDeveloperOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -220,12 +228,14 @@ class ApplicationAttributesDeveloperOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationAttributesEnvironmentArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -237,7 +247,8 @@ class ApplicationAttributesEnvironmentArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationAttributesOperatorOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -255,12 +266,14 @@ class ApplicationAttributesOperatorOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationScopeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -272,7 +285,8 @@ class ApplicationScopeArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ServiceAttributesArgsDict(TypedDict):
     business_owners: NotRequired[
@@ -317,7 +331,8 @@ class ServiceAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceAttributesBusinessOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def criticality(
@@ -326,7 +341,8 @@ class ServiceAttributesArgs:
     @criticality.setter
     def criticality(
         self, value: Optional[pulumi.Input[ServiceAttributesCriticalityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="developerOwners")
     def developer_owners(
@@ -340,7 +356,8 @@ class ServiceAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceAttributesDeveloperOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def environment(
@@ -349,7 +366,8 @@ class ServiceAttributesArgs:
     @environment.setter
     def environment(
         self, value: Optional[pulumi.Input[ServiceAttributesEnvironmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operatorOwners")
     def operator_owners(
@@ -363,7 +381,8 @@ class ServiceAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceAttributesOperatorOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceAttributesBusinessOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -381,12 +400,14 @@ class ServiceAttributesBusinessOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceAttributesCriticalityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -398,7 +419,8 @@ class ServiceAttributesCriticalityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ServiceAttributesDeveloperOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -416,12 +438,14 @@ class ServiceAttributesDeveloperOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceAttributesEnvironmentArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -433,7 +457,8 @@ class ServiceAttributesEnvironmentArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ServiceAttributesOperatorOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -451,12 +476,14 @@ class ServiceAttributesOperatorOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceServicePropertyArgsDict(TypedDict):
     extended_metadatas: NotRequired[
@@ -523,7 +550,8 @@ class ServiceServicePropertyArgs:
                 Sequence[pulumi.Input[ServiceServicePropertyExtendedMetadataArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionalTypes")
     def functional_types(
@@ -539,12 +567,14 @@ class ServiceServicePropertyArgs:
                 Sequence[pulumi.Input[ServiceServicePropertyFunctionalTypeArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcpProject")
     def gcp_project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gcp_project.setter
-    def gcp_project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gcp_project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identities(
@@ -558,12 +588,14 @@ class ServiceServicePropertyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceServicePropertyIdentityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationTypes")
     def registration_types(
@@ -579,12 +611,14 @@ class ServiceServicePropertyArgs:
                 Sequence[pulumi.Input[ServiceServicePropertyRegistrationTypeArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceServicePropertyExtendedMetadataArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -610,7 +644,8 @@ class ServiceServicePropertyExtendedMetadataArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -628,7 +663,8 @@ class ServiceServicePropertyExtendedMetadataArgs:
                 Sequence[pulumi.Input[ServiceServicePropertyExtendedMetadataValueArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceServicePropertyExtendedMetadataValueArgsDict(TypedDict):
     extended_metadata_schema: NotRequired[pulumi.Input[_builtins.str]]
@@ -648,12 +684,14 @@ class ServiceServicePropertyExtendedMetadataValueArgs:
     @extended_metadata_schema.setter
     def extended_metadata_schema(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataStruct")
     def metadata_struct(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata_struct.setter
-    def metadata_struct(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata_struct(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceServicePropertyFunctionalTypeArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -667,7 +705,8 @@ class ServiceServicePropertyFunctionalTypeArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceServicePropertyIdentityArgsDict(TypedDict):
     principal: NotRequired[pulumi.Input[_builtins.str]]
@@ -681,7 +720,8 @@ class ServiceServicePropertyIdentityArgs:
     @pulumi.getter
     def principal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal.setter
-    def principal(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceServicePropertyRegistrationTypeArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -695,7 +735,8 @@ class ServiceServicePropertyRegistrationTypeArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServiceServiceReferenceArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -709,7 +750,8 @@ class ServiceServiceReferenceArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadAttributesArgsDict(TypedDict):
     business_owners: NotRequired[
@@ -754,7 +796,8 @@ class WorkloadAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadAttributesBusinessOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def criticality(
@@ -763,7 +806,8 @@ class WorkloadAttributesArgs:
     @criticality.setter
     def criticality(
         self, value: Optional[pulumi.Input[WorkloadAttributesCriticalityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="developerOwners")
     def developer_owners(
@@ -777,7 +821,8 @@ class WorkloadAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadAttributesDeveloperOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def environment(
@@ -786,7 +831,8 @@ class WorkloadAttributesArgs:
     @environment.setter
     def environment(
         self, value: Optional[pulumi.Input[WorkloadAttributesEnvironmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operatorOwners")
     def operator_owners(
@@ -800,7 +846,8 @@ class WorkloadAttributesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadAttributesOperatorOwnerArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkloadAttributesBusinessOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -818,12 +865,14 @@ class WorkloadAttributesBusinessOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadAttributesCriticalityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -835,7 +884,8 @@ class WorkloadAttributesCriticalityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WorkloadAttributesDeveloperOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -853,12 +903,14 @@ class WorkloadAttributesDeveloperOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadAttributesEnvironmentArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -870,7 +922,8 @@ class WorkloadAttributesEnvironmentArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WorkloadAttributesOperatorOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
@@ -888,12 +941,14 @@ class WorkloadAttributesOperatorOwnerArgs:
     @pulumi.getter
     def email(self) -> pulumi.Input[_builtins.str]: ...
     @email.setter
-    def email(self, value: pulumi.Input[_builtins.str]): ...
+    def email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadWorkloadPropertyArgsDict(TypedDict):
     extended_metadatas: NotRequired[
@@ -952,7 +1007,8 @@ class WorkloadWorkloadPropertyArgs:
                 Sequence[pulumi.Input[WorkloadWorkloadPropertyExtendedMetadataArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionalTypes")
     def functional_types(
@@ -968,12 +1024,14 @@ class WorkloadWorkloadPropertyArgs:
                 Sequence[pulumi.Input[WorkloadWorkloadPropertyFunctionalTypeArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcpProject")
     def gcp_project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gcp_project.setter
-    def gcp_project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gcp_project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identities(
@@ -987,17 +1045,20 @@ class WorkloadWorkloadPropertyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkloadWorkloadPropertyIdentityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadWorkloadPropertyExtendedMetadataArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
@@ -1027,7 +1088,8 @@ class WorkloadWorkloadPropertyExtendedMetadataArgs:
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1047,7 +1109,8 @@ class WorkloadWorkloadPropertyExtendedMetadataArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkloadWorkloadPropertyExtendedMetadataValueArgsDict(TypedDict):
     extended_metadata_schema: NotRequired[pulumi.Input[_builtins.str]]
@@ -1067,12 +1130,14 @@ class WorkloadWorkloadPropertyExtendedMetadataValueArgs:
     @extended_metadata_schema.setter
     def extended_metadata_schema(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataStruct")
     def metadata_struct(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata_struct.setter
-    def metadata_struct(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata_struct(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadWorkloadPropertyFunctionalTypeArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -1086,7 +1151,8 @@ class WorkloadWorkloadPropertyFunctionalTypeArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadWorkloadPropertyIdentityArgsDict(TypedDict):
     principal: NotRequired[pulumi.Input[_builtins.str]]
@@ -1100,7 +1166,8 @@ class WorkloadWorkloadPropertyIdentityArgs:
     @pulumi.getter
     def principal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal.setter
-    def principal(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadWorkloadReferenceArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -1114,4 +1181,5 @@ class WorkloadWorkloadReferenceArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

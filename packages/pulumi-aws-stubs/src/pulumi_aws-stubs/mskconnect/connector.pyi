@@ -41,7 +41,8 @@ class ConnectorArgs:
     @pulumi.getter
     def capacity(self) -> pulumi.Input[ConnectorCapacityArgs]: ...
     @capacity.setter
-    def capacity(self, value: pulumi.Input[ConnectorCapacityArgs]): ...
+    def capacity(self, value: pulumi.Input[ConnectorCapacityArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorConfiguration")
     def connector_configuration(
@@ -50,12 +51,14 @@ class ConnectorArgs:
     @connector_configuration.setter
     def connector_configuration(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaCluster")
     def kafka_cluster(self) -> pulumi.Input[ConnectorKafkaClusterArgs]: ...
     @kafka_cluster.setter
-    def kafka_cluster(self, value: pulumi.Input[ConnectorKafkaClusterArgs]): ...
+    def kafka_cluster(self, value: pulumi.Input[ConnectorKafkaClusterArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaClusterClientAuthentication")
     def kafka_cluster_client_authentication(
@@ -64,7 +67,8 @@ class ConnectorArgs:
     @kafka_cluster_client_authentication.setter
     def kafka_cluster_client_authentication(
         self, value: pulumi.Input[ConnectorKafkaClusterClientAuthenticationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaClusterEncryptionInTransit")
     def kafka_cluster_encryption_in_transit(
@@ -73,44 +77,56 @@ class ConnectorArgs:
     @kafka_cluster_encryption_in_transit.setter
     def kafka_cluster_encryption_in_transit(
         self, value: pulumi.Input[ConnectorKafkaClusterEncryptionInTransitArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaconnectVersion")
     def kafkaconnect_version(self) -> pulumi.Input[_builtins.str]: ...
     @kafkaconnect_version.setter
-    def kafkaconnect_version(self, value: pulumi.Input[_builtins.str]): ...
+    def kafkaconnect_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def plugins(self) -> pulumi.Input[Sequence[pulumi.Input[ConnectorPluginArgs]]]: ...
     @plugins.setter
     def plugins(
         self, value: pulumi.Input[Sequence[pulumi.Input[ConnectorPluginArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceExecutionRoleArn")
     def service_execution_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @service_execution_role_arn.setter
-    def service_execution_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def service_execution_role_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logDelivery")
     def log_delivery(self) -> Optional[pulumi.Input[ConnectorLogDeliveryArgs]]: ...
     @log_delivery.setter
-    def log_delivery(self, value: Optional[pulumi.Input[ConnectorLogDeliveryArgs]]): ...
+    def log_delivery(
+        self, value: Optional[pulumi.Input[ConnectorLogDeliveryArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -119,7 +135,8 @@ class ConnectorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerConfiguration")
     def worker_configuration(
@@ -128,7 +145,8 @@ class ConnectorArgs:
     @worker_configuration.setter
     def worker_configuration(
         self, value: Optional[pulumi.Input[ConnectorWorkerConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConnectorState:
@@ -169,12 +187,16 @@ class _ConnectorState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[ConnectorCapacityArgs]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[ConnectorCapacityArgs]]): ...
+    def capacity(
+        self, value: Optional[pulumi.Input[ConnectorCapacityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorConfiguration")
     def connector_configuration(
@@ -183,19 +205,22 @@ class _ConnectorState:
     @connector_configuration.setter
     def connector_configuration(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaCluster")
     def kafka_cluster(self) -> Optional[pulumi.Input[ConnectorKafkaClusterArgs]]: ...
     @kafka_cluster.setter
     def kafka_cluster(
         self, value: Optional[pulumi.Input[ConnectorKafkaClusterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaClusterClientAuthentication")
     def kafka_cluster_client_authentication(
@@ -205,7 +230,8 @@ class _ConnectorState:
     def kafka_cluster_client_authentication(
         self,
         value: Optional[pulumi.Input[ConnectorKafkaClusterClientAuthenticationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaClusterEncryptionInTransit")
     def kafka_cluster_encryption_in_transit(
@@ -215,22 +241,30 @@ class _ConnectorState:
     def kafka_cluster_encryption_in_transit(
         self,
         value: Optional[pulumi.Input[ConnectorKafkaClusterEncryptionInTransitArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kafkaconnectVersion")
     def kafkaconnect_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kafkaconnect_version.setter
-    def kafkaconnect_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kafkaconnect_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logDelivery")
     def log_delivery(self) -> Optional[pulumi.Input[ConnectorLogDeliveryArgs]]: ...
     @log_delivery.setter
-    def log_delivery(self, value: Optional[pulumi.Input[ConnectorLogDeliveryArgs]]): ...
+    def log_delivery(
+        self, value: Optional[pulumi.Input[ConnectorLogDeliveryArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def plugins(
@@ -239,19 +273,22 @@ class _ConnectorState:
     @plugins.setter
     def plugins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ConnectorPluginArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceExecutionRoleArn")
     def service_execution_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_execution_role_arn.setter
     def service_execution_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -260,7 +297,8 @@ class _ConnectorState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -269,12 +307,14 @@ class _ConnectorState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerConfiguration")
     def worker_configuration(
@@ -283,7 +323,8 @@ class _ConnectorState:
     @worker_configuration.setter
     def worker_configuration(
         self, value: Optional[pulumi.Input[ConnectorWorkerConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:mskconnect/connector:Connector")
 class Connector(pulumi.CustomResource):

@@ -39,7 +39,10 @@ class ListManagedClusterAccessProfileResult:
 class AwaitableListManagedClusterAccessProfileResult(
     ListManagedClusterAccessProfileResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListManagedClusterAccessProfileResult]:
+        ...
 
 def list_managed_cluster_access_profile(
     resource_group_name: Optional[_builtins.str] = ...,

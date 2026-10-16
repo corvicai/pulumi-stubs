@@ -24,7 +24,10 @@ class GetSAPAvailabilityZoneDetailsResult:
     ) -> Optional[Sequence[outputs.SAPAvailabilityZonePairResponse]]: ...
 
 class AwaitableGetSAPAvailabilityZoneDetailsResult(GetSAPAvailabilityZoneDetailsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSAPAvailabilityZoneDetailsResult]:
+        ...
 
 def get_sap_availability_zone_details(
     app_location: Optional[_builtins.str] = ...,

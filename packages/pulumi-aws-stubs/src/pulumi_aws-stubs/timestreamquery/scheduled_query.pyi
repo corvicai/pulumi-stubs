@@ -44,12 +44,14 @@ class ScheduledQueryArgs:
     @error_report_configuration.setter
     def error_report_configuration(
         self, value: pulumi.Input[ScheduledQueryErrorReportConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRoleArn")
     def execution_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @execution_role_arn.setter
-    def execution_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def execution_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfiguration")
     def notification_configuration(
@@ -58,12 +60,14 @@ class ScheduledQueryArgs:
     @notification_configuration.setter
     def notification_configuration(
         self, value: pulumi.Input[ScheduledQueryNotificationConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(self) -> pulumi.Input[_builtins.str]: ...
     @query_string.setter
-    def query_string(self, value: pulumi.Input[_builtins.str]): ...
+    def query_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleConfiguration")
     def schedule_configuration(
@@ -72,7 +76,8 @@ class ScheduledQueryArgs:
     @schedule_configuration.setter
     def schedule_configuration(
         self, value: pulumi.Input[ScheduledQueryScheduleConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConfiguration")
     def target_configuration(
@@ -81,12 +86,14 @@ class ScheduledQueryArgs:
     @target_configuration.setter
     def target_configuration(
         self, value: pulumi.Input[ScheduledQueryTargetConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRunSummaries")
     def last_run_summaries(
@@ -100,12 +107,14 @@ class ScheduledQueryArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ScheduledQueryLastRunSummaryArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recentlyFailedRuns")
     def recently_failed_runs(
@@ -119,12 +128,14 @@ class ScheduledQueryArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ScheduledQueryRecentlyFailedRunArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -133,12 +144,16 @@ class ScheduledQueryArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ScheduledQueryTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ScheduledQueryTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ScheduledQueryTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ScheduledQueryState:
@@ -183,12 +198,14 @@ class _ScheduledQueryState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTime")
     def creation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_time.setter
-    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorReportConfiguration")
     def error_report_configuration(
@@ -197,17 +214,22 @@ class _ScheduledQueryState:
     @error_report_configuration.setter
     def error_report_configuration(
         self, value: Optional[pulumi.Input[ScheduledQueryErrorReportConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRoleArn")
     def execution_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role_arn.setter
-    def execution_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRunSummaries")
     def last_run_summaries(
@@ -221,17 +243,22 @@ class _ScheduledQueryState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ScheduledQueryLastRunSummaryArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nextInvocationTime")
     def next_invocation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @next_invocation_time.setter
-    def next_invocation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def next_invocation_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfiguration")
     def notification_configuration(
@@ -240,19 +267,22 @@ class _ScheduledQueryState:
     @notification_configuration.setter
     def notification_configuration(
         self, value: Optional[pulumi.Input[ScheduledQueryNotificationConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="previousInvocationTime")
     def previous_invocation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @previous_invocation_time.setter
     def previous_invocation_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @query_string.setter
-    def query_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def query_string(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recentlyFailedRuns")
     def recently_failed_runs(
@@ -266,12 +296,14 @@ class _ScheduledQueryState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ScheduledQueryRecentlyFailedRunArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleConfiguration")
     def schedule_configuration(
@@ -280,12 +312,14 @@ class _ScheduledQueryState:
     @schedule_configuration.setter
     def schedule_configuration(
         self, value: Optional[pulumi.Input[ScheduledQueryScheduleConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -294,7 +328,8 @@ class _ScheduledQueryState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -303,7 +338,8 @@ class _ScheduledQueryState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConfiguration")
     def target_configuration(
@@ -312,12 +348,16 @@ class _ScheduledQueryState:
     @target_configuration.setter
     def target_configuration(
         self, value: Optional[pulumi.Input[ScheduledQueryTargetConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ScheduledQueryTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ScheduledQueryTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ScheduledQueryTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:timestreamquery/scheduledQuery:ScheduledQuery")
 class ScheduledQuery(pulumi.CustomResource):

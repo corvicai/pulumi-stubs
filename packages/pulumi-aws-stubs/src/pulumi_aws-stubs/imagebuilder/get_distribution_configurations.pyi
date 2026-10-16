@@ -38,7 +38,10 @@ class GetDistributionConfigurationsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetDistributionConfigurationsResult(GetDistributionConfigurationsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDistributionConfigurationsResult]:
+        ...
 
 def get_distribution_configurations(
     filters: Optional[

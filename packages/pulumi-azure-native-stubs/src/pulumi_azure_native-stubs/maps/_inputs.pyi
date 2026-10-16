@@ -51,7 +51,8 @@ class CorsRulesArgs:
     @cors_rules.setter
     def cors_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CorsRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CorsRuleArgsDict(TypedDict):
     allowed_origins: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -71,7 +72,8 @@ class CorsRuleArgs:
     @allowed_origins.setter
     def allowed_origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CreatorPropertiesArgsDict(TypedDict):
     storage_units: pulumi.Input[_builtins.int]
@@ -93,7 +95,8 @@ class CreatorPropertiesArgs:
     @pulumi.getter(name="storageUnits")
     def storage_units(self) -> pulumi.Input[_builtins.int]: ...
     @storage_units.setter
-    def storage_units(self, value: pulumi.Input[_builtins.int]): ...
+    def storage_units(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consumedStorageUnitSizeInBytes")
     def consumed_storage_unit_size_in_bytes(
@@ -102,7 +105,8 @@ class CreatorPropertiesArgs:
     @consumed_storage_unit_size_in_bytes.setter
     def consumed_storage_unit_size_in_bytes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="totalStorageUnitSizeInBytes")
     def total_storage_unit_size_in_bytes(
@@ -111,7 +115,8 @@ class CreatorPropertiesArgs:
     @total_storage_unit_size_in_bytes.setter
     def total_storage_unit_size_in_bytes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionCustomerManagedKeyEncryptionArgsDict(TypedDict):
     key_encryption_key_identity: NotRequired[
@@ -137,12 +142,16 @@ class EncryptionCustomerManagedKeyEncryptionArgs:
     @key_encryption_key_identity.setter
     def key_encryption_key_identity(
         self, value: Optional[pulumi.Input[EncryptionKeyEncryptionKeyIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKeyUrl")
     def key_encryption_key_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_encryption_key_url.setter
-    def key_encryption_key_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_encryption_key_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class EncryptionKeyEncryptionKeyIdentityArgsDict(TypedDict):
     delegated_identity_client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -166,17 +175,22 @@ class EncryptionKeyEncryptionKeyIdentityArgs:
     @delegated_identity_client_id.setter
     def delegated_identity_client_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="federatedClientId")
     def federated_client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @federated_client_id.setter
-    def federated_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def federated_client_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityType")
     def identity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_type.setter
-    def identity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityResourceId")
     def user_assigned_identity_resource_id(
@@ -185,7 +199,8 @@ class EncryptionKeyEncryptionKeyIdentityArgs:
     @user_assigned_identity_resource_id.setter
     def user_assigned_identity_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionArgsDict(TypedDict):
     customer_managed_key_encryption: NotRequired[
@@ -215,7 +230,8 @@ class EncryptionArgs:
     @customer_managed_key_encryption.setter
     def customer_managed_key_encryption(
         self, value: Optional[pulumi.Input[EncryptionCustomerManagedKeyEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infrastructureEncryption")
     def infrastructure_encryption(
@@ -225,7 +241,8 @@ class EncryptionArgs:
     def infrastructure_encryption(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, InfrastructureEncryption]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LinkedResourceArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -243,12 +260,14 @@ class LinkedResourceArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uniqueName")
     def unique_name(self) -> pulumi.Input[_builtins.str]: ...
     @unique_name.setter
-    def unique_name(self, value: pulumi.Input[_builtins.str]): ...
+    def unique_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -274,7 +293,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -283,7 +303,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MapsAccountPropertiesLocationsArgsDict(TypedDict):
     location_name: pulumi.Input[_builtins.str]
@@ -295,7 +316,8 @@ class MapsAccountPropertiesLocationsArgs:
     @pulumi.getter(name="locationName")
     def location_name(self) -> pulumi.Input[_builtins.str]: ...
     @location_name.setter
-    def location_name(self, value: pulumi.Input[_builtins.str]): ...
+    def location_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MapsAccountPropertiesArgsDict(TypedDict):
     cors: NotRequired[pulumi.Input[CorsRulesArgsDict]]
@@ -327,17 +349,22 @@ class MapsAccountPropertiesArgs:
     @pulumi.getter
     def cors(self) -> Optional[pulumi.Input[CorsRulesArgs]]: ...
     @cors.setter
-    def cors(self, value: Optional[pulumi.Input[CorsRulesArgs]]): ...
+    def cors(self, value: Optional[pulumi.Input[CorsRulesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableLocalAuth")
     def disable_local_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_local_auth.setter
-    def disable_local_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_local_auth(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[EncryptionArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]): ...
+    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkedResources")
     def linked_resources(
@@ -346,7 +373,8 @@ class MapsAccountPropertiesArgs:
     @linked_resources.setter
     def linked_resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[LinkedResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locations(
@@ -360,7 +388,8 @@ class MapsAccountPropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[MapsAccountPropertiesLocationsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -384,12 +413,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -403,7 +436,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, Name]]
@@ -417,4 +451,5 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, Name]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, Name]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, Name]]):  # -> None:
+        ...

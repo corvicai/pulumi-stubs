@@ -39,7 +39,8 @@ class ListNotificationHubKeysResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListNotificationHubKeysResult(ListNotificationHubKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListNotificationHubKeysResult]:
+        ...
 
 def list_notification_hub_keys(
     authorization_rule_name: Optional[_builtins.str] = ...,

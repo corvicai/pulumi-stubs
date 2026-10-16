@@ -51,7 +51,8 @@ class GetBillingAccountResult:
     def project_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetBillingAccountResult(GetBillingAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBillingAccountResult]:
+        ...
 
 def get_billing_account(
     billing_account: Optional[_builtins.str] = ...,

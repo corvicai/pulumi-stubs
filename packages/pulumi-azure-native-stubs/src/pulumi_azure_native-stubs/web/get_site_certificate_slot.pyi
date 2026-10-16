@@ -134,7 +134,8 @@ class GetSiteCertificateSlotResult:
     def valid(self) -> _builtins.bool: ...
 
 class AwaitableGetSiteCertificateSlotResult(GetSiteCertificateSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSiteCertificateSlotResult]:
+        ...
 
 def get_site_certificate_slot(
     certificate_name: Optional[_builtins.str] = ...,

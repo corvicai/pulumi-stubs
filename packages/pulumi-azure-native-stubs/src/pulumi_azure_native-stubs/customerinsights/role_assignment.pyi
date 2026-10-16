@@ -44,7 +44,8 @@ class RoleAssignmentArgs:
     @pulumi.getter(name="hubName")
     def hub_name(self) -> pulumi.Input[_builtins.str]: ...
     @hub_name.setter
-    def hub_name(self, value: pulumi.Input[_builtins.str]): ...
+    def hub_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principals(
@@ -53,22 +54,26 @@ class RoleAssignmentArgs:
     @principals.setter
     def principals(
         self, value: pulumi.Input[Sequence[pulumi.Input[AssignmentPrincipalArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def role(self) -> pulumi.Input[RoleTypes]: ...
     @role.setter
-    def role(self, value: pulumi.Input[RoleTypes]): ...
+    def role(self, value: pulumi.Input[RoleTypes]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assignmentName")
     def assignment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assignment_name.setter
-    def assignment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assignment_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conflationPolicies")
     def conflation_policies(
@@ -77,12 +82,16 @@ class RoleAssignmentArgs:
     @conflation_policies.setter
     def conflation_policies(
         self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def connectors(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @connectors.setter
-    def connectors(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): ...
+    def connectors(
+        self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(
@@ -91,7 +100,8 @@ class RoleAssignmentArgs:
     @description.setter
     def description(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(
@@ -100,29 +110,40 @@ class RoleAssignmentArgs:
     @display_name.setter
     def display_name(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interactions(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @interactions.setter
     def interactions(
         self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kpis(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @kpis.setter
-    def kpis(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): ...
+    def kpis(
+        self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def links(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @links.setter
-    def links(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): ...
+    def links(
+        self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def profiles(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @profiles.setter
-    def profiles(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): ...
+    def profiles(
+        self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relationshipLinks")
     def relationship_links(
@@ -131,14 +152,16 @@ class RoleAssignmentArgs:
     @relationship_links.setter
     def relationship_links(
         self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def relationships(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @relationships.setter
     def relationships(
         self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleAssignments")
     def role_assignments(
@@ -147,31 +170,40 @@ class RoleAssignmentArgs:
     @role_assignments.setter
     def role_assignments(
         self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sasPolicies")
     def sas_policies(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @sas_policies.setter
     def sas_policies(
         self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def segments(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @segments.setter
-    def segments(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): ...
+    def segments(
+        self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def views(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @views.setter
-    def views(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): ...
+    def views(
+        self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="widgetTypes")
     def widget_types(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]: ...
     @widget_types.setter
     def widget_types(
         self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:customerinsights:RoleAssignment")
 class RoleAssignment(pulumi.CustomResource):

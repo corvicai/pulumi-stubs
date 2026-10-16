@@ -20,7 +20,8 @@ class GetFirewallGlobalRulestackResult:
     def azure_id(self) -> _builtins.str: ...
 
 class AwaitableGetFirewallGlobalRulestackResult(GetFirewallGlobalRulestackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirewallGlobalRulestackResult]:
+        ...
 
 def get_firewall_global_rulestack(
     firewall_name: Optional[_builtins.str] = ...,

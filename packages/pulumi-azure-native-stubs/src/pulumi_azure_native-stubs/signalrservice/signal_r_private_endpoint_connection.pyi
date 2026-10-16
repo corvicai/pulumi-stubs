@@ -27,17 +27,22 @@ class SignalRPrivateEndpointConnectionArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_name.setter
-    def resource_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpoint")
     def private_endpoint(self) -> Optional[pulumi.Input[PrivateEndpointArgs]]: ...
     @private_endpoint.setter
-    def private_endpoint(self, value: Optional[pulumi.Input[PrivateEndpointArgs]]): ...
+    def private_endpoint(
+        self, value: Optional[pulumi.Input[PrivateEndpointArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnectionName")
     def private_endpoint_connection_name(
@@ -46,7 +51,8 @@ class SignalRPrivateEndpointConnectionArgs:
     @private_endpoint_connection_name.setter
     def private_endpoint_connection_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -55,7 +61,8 @@ class SignalRPrivateEndpointConnectionArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: Optional[pulumi.Input[PrivateLinkServiceConnectionStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SignalRPrivateEndpointConnection(pulumi.CustomResource):

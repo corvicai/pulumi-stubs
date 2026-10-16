@@ -87,7 +87,8 @@ class ListGeodataByIpResult:
     def state_confidence_factor(self) -> Optional[_builtins.int]: ...
 
 class AwaitableListGeodataByIpResult(ListGeodataByIpResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListGeodataByIpResult]:
+        ...
 
 def list_geodata_by_ip(
     enrichment_type: Optional[_builtins.str] = ...,

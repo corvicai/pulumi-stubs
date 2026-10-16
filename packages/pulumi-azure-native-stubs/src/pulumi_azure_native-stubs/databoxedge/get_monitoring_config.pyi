@@ -46,7 +46,8 @@ class GetMonitoringConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMonitoringConfigResult(GetMonitoringConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMonitoringConfigResult]:
+        ...
 
 def get_monitoring_config(
     device_name: Optional[_builtins.str] = ...,

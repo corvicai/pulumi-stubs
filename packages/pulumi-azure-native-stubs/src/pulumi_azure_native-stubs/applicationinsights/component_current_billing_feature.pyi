@@ -27,12 +27,14 @@ class ComponentCurrentBillingFeatureArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_name.setter
-    def resource_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="currentBillingFeatures")
     def current_billing_features(
@@ -41,7 +43,8 @@ class ComponentCurrentBillingFeatureArgs:
     @current_billing_features.setter
     def current_billing_features(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataVolumeCap")
     def data_volume_cap(
@@ -51,7 +54,8 @@ class ComponentCurrentBillingFeatureArgs:
     def data_volume_cap(
         self,
         value: Optional[pulumi.Input[ApplicationInsightsComponentDataVolumeCapArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ComponentCurrentBillingFeature(pulumi.CustomResource):

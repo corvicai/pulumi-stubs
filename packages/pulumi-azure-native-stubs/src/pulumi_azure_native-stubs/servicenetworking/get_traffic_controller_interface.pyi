@@ -74,7 +74,10 @@ class GetTrafficControllerInterfaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTrafficControllerInterfaceResult(GetTrafficControllerInterfaceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTrafficControllerInterfaceResult]:
+        ...
 
 def get_traffic_controller_interface(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -23,7 +23,8 @@ class GetWebhookCallbackConfigResult:
     def service_uri(self) -> _builtins.str: ...
 
 class AwaitableGetWebhookCallbackConfigResult(GetWebhookCallbackConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebhookCallbackConfigResult]:
+        ...
 
 def get_webhook_callback_config(
     registry_name: Optional[_builtins.str] = ...,

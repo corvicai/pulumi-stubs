@@ -44,7 +44,8 @@ class GetConnectionDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionDeploymentResult(GetConnectionDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionDeploymentResult]:
+        ...
 
 def get_connection_deployment(
     connection_name: Optional[_builtins.str] = ...,

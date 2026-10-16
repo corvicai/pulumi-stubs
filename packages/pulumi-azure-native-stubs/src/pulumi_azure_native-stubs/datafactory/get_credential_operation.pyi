@@ -43,7 +43,8 @@ class GetCredentialOperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCredentialOperationResult(GetCredentialOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCredentialOperationResult]:
+        ...
 
 def get_credential_operation(
     credential_name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetRegionInstanceGroupResult:
     def size(self) -> _builtins.int: ...
 
 class AwaitableGetRegionInstanceGroupResult(GetRegionInstanceGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionInstanceGroupResult]:
+        ...
 
 def get_region_instance_group(
     name: Optional[_builtins.str] = ...,

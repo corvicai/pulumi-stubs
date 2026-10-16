@@ -24,12 +24,14 @@ class ApplicationLayerAutomaticResponseArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[_builtins.str]: ...
     @action.setter
-    def action(self, value: pulumi.Input[_builtins.str]): ...
+    def action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -39,7 +41,8 @@ class ApplicationLayerAutomaticResponseArgs:
     def timeouts(
         self,
         value: Optional[pulumi.Input[ApplicationLayerAutomaticResponseTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ApplicationLayerAutomaticResponseState:
@@ -56,12 +59,14 @@ class _ApplicationLayerAutomaticResponseState:
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_arn.setter
-    def resource_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -71,7 +76,8 @@ class _ApplicationLayerAutomaticResponseState:
     def timeouts(
         self,
         value: Optional[pulumi.Input[ApplicationLayerAutomaticResponseTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ApplicationLayerAutomaticResponse(pulumi.CustomResource):

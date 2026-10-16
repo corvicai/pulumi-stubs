@@ -21,7 +21,10 @@ class ListStorageAccountServiceSASResult:
     def service_sas_token(self) -> _builtins.str: ...
 
 class AwaitableListStorageAccountServiceSASResult(ListStorageAccountServiceSASResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListStorageAccountServiceSASResult]:
+        ...
 
 def list_storage_account_service_sas(
     account_name: Optional[_builtins.str] = ...,

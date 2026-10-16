@@ -25,7 +25,10 @@ class ListArtifactStoreNetworkFabricControllerPrivateEndPointsResult:
 class AwaitableListArtifactStoreNetworkFabricControllerPrivateEndPointsResult(
     ListArtifactStoreNetworkFabricControllerPrivateEndPointsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListArtifactStoreNetworkFabricControllerPrivateEndPointsResult]:
+        ...
 
 def list_artifact_store_network_fabric_controller_private_end_points(
     artifact_store_name: Optional[_builtins.str] = ...,

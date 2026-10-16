@@ -45,7 +45,8 @@ class GetPrefixListResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetPrefixListResult(GetPrefixListResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrefixListResult]:
+        ...
 
 def get_prefix_list(
     filters: Optional[

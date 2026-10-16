@@ -63,7 +63,8 @@ class GetTableResult:
     def table_status(self) -> _builtins.str: ...
 
 class AwaitableGetTableResult(GetTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableResult]:
+        ...
 
 def get_table(
     database_name: Optional[_builtins.str] = ...,

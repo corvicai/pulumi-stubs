@@ -67,7 +67,8 @@ class GetCapacityBlockOfferingResult:
     def upfront_fee(self) -> _builtins.str: ...
 
 class AwaitableGetCapacityBlockOfferingResult(GetCapacityBlockOfferingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityBlockOfferingResult]:
+        ...
 
 def get_capacity_block_offering(
     capacity_duration_hours: Optional[_builtins.int] = ...,

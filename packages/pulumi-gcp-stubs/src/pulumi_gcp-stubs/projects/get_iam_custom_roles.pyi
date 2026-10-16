@@ -35,7 +35,8 @@ class GetIamCustomRolesResult:
     def view(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetIamCustomRolesResult(GetIamCustomRolesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamCustomRolesResult]:
+        ...
 
 def get_iam_custom_roles(
     project: Optional[_builtins.str] = ...,

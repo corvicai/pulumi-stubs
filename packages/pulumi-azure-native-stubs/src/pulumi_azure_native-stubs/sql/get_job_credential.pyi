@@ -34,7 +34,8 @@ class GetJobCredentialResult:
     def username(self) -> _builtins.str: ...
 
 class AwaitableGetJobCredentialResult(GetJobCredentialResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobCredentialResult]:
+        ...
 
 def get_job_credential(
     credential_name: Optional[_builtins.str] = ...,

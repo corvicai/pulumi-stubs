@@ -46,7 +46,10 @@ class GetWorkspacePrivateEndpointConnectionResult:
 class AwaitableGetWorkspacePrivateEndpointConnectionResult(
     GetWorkspacePrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkspacePrivateEndpointConnectionResult]:
+        ...
 
 def get_workspace_private_endpoint_connection(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

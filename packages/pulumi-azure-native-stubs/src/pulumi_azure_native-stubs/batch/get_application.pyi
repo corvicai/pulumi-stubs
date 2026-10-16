@@ -60,7 +60,8 @@ class GetApplicationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationResult(GetApplicationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationResult]:
+        ...
 
 def get_application(
     account_name: Optional[_builtins.str] = ...,

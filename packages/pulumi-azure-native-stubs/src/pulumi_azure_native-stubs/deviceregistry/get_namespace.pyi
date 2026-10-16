@@ -64,7 +64,8 @@ class GetNamespaceResult:
     def uuid(self) -> _builtins.str: ...
 
 class AwaitableGetNamespaceResult(GetNamespaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNamespaceResult]:
+        ...
 
 def get_namespace(
     namespace_name: Optional[_builtins.str] = ...,

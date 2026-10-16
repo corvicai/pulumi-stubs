@@ -43,7 +43,8 @@ class GetWorkspacesResult:
     def workspace_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetWorkspacesResult(GetWorkspacesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspacesResult]:
+        ...
 
 def get_workspaces(
     alias_prefix: Optional[_builtins.str] = ...,

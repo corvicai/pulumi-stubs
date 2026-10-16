@@ -31,17 +31,22 @@ class EncryptionScopeArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionScopeName")
     def encryption_scope_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_scope_name.setter
-    def encryption_scope_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_scope_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -50,7 +55,8 @@ class EncryptionScopeArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[EncryptionScopeKeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireInfrastructureEncryption")
     def require_infrastructure_encryption(
@@ -59,7 +65,8 @@ class EncryptionScopeArgs:
     @require_infrastructure_encryption.setter
     def require_infrastructure_encryption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(
@@ -68,7 +75,8 @@ class EncryptionScopeArgs:
     @source.setter
     def source(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionScopeSource]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -77,7 +85,8 @@ class EncryptionScopeArgs:
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionScopeState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:storage:EncryptionScope")
 class EncryptionScope(pulumi.CustomResource):

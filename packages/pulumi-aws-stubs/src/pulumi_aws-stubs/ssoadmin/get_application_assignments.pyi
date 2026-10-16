@@ -34,7 +34,8 @@ class GetApplicationAssignmentsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationAssignmentsResult(GetApplicationAssignmentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationAssignmentsResult]:
+        ...
 
 def get_application_assignments(
     application_arn: Optional[_builtins.str] = ...,

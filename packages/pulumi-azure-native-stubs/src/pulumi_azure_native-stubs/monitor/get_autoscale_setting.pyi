@@ -52,7 +52,8 @@ class GetAutoscaleSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAutoscaleSettingResult(GetAutoscaleSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAutoscaleSettingResult]:
+        ...
 
 def get_autoscale_setting(
     autoscale_setting_name: Optional[_builtins.str] = ...,

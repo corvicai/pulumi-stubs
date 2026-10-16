@@ -60,7 +60,8 @@ class GetFqdnListLocalRulestackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFqdnListLocalRulestackResult(GetFqdnListLocalRulestackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFqdnListLocalRulestackResult]:
+        ...
 
 def get_fqdn_list_local_rulestack(
     local_rulestack_name: Optional[_builtins.str] = ...,

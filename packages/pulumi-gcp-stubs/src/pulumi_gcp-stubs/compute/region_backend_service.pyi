@@ -73,7 +73,10 @@ class RegionBackendServiceArgs:
     @pulumi.getter(name="affinityCookieTtlSec")
     def affinity_cookie_ttl_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @affinity_cookie_ttl_sec.setter
-    def affinity_cookie_ttl_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def affinity_cookie_ttl_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def backends(
@@ -87,7 +90,8 @@ class RegionBackendServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RegionBackendServiceBackendArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cdnPolicy")
     def cdn_policy(
@@ -96,7 +100,8 @@ class RegionBackendServiceArgs:
     @cdn_policy.setter
     def cdn_policy(
         self, value: Optional[pulumi.Input[RegionBackendServiceCdnPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="circuitBreakers")
     def circuit_breakers(
@@ -105,7 +110,8 @@ class RegionBackendServiceArgs:
     @circuit_breakers.setter
     def circuit_breakers(
         self, value: Optional[pulumi.Input[RegionBackendServiceCircuitBreakersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionDrainingTimeoutSec")
     def connection_draining_timeout_sec(
@@ -114,7 +120,8 @@ class RegionBackendServiceArgs:
     @connection_draining_timeout_sec.setter
     def connection_draining_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionTrackingPolicy")
     def connection_tracking_policy(
@@ -124,7 +131,8 @@ class RegionBackendServiceArgs:
     def connection_tracking_policy(
         self,
         value: Optional[pulumi.Input[RegionBackendServiceConnectionTrackingPolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consistentHash")
     def consistent_hash(
@@ -133,7 +141,8 @@ class RegionBackendServiceArgs:
     @consistent_hash.setter
     def consistent_hash(
         self, value: Optional[pulumi.Input[RegionBackendServiceConsistentHashArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customMetrics")
     def custom_metrics(
@@ -147,12 +156,14 @@ class RegionBackendServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RegionBackendServiceCustomMetricArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamicForwarding")
     def dynamic_forwarding(
@@ -161,12 +172,14 @@ class RegionBackendServiceArgs:
     @dynamic_forwarding.setter
     def dynamic_forwarding(
         self, value: Optional[pulumi.Input[RegionBackendServiceDynamicForwardingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableCdn")
     def enable_cdn(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_cdn.setter
-    def enable_cdn(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_cdn(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverPolicy")
     def failover_policy(
@@ -175,41 +188,54 @@ class RegionBackendServiceArgs:
     @failover_policy.setter
     def failover_policy(
         self, value: Optional[pulumi.Input[RegionBackendServiceFailoverPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="haPolicy")
     def ha_policy(self) -> Optional[pulumi.Input[RegionBackendServiceHaPolicyArgs]]: ...
     @ha_policy.setter
     def ha_policy(
         self, value: Optional[pulumi.Input[RegionBackendServiceHaPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthChecks")
     def health_checks(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_checks.setter
-    def health_checks(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_checks(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def iap(self) -> Optional[pulumi.Input[RegionBackendServiceIapArgs]]: ...
     @iap.setter
-    def iap(self, value: Optional[pulumi.Input[RegionBackendServiceIapArgs]]): ...
+    def iap(
+        self, value: Optional[pulumi.Input[RegionBackendServiceIapArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddressSelectionPolicy")
     def ip_address_selection_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_address_selection_policy.setter
     def ip_address_selection_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancingScheme")
     def load_balancing_scheme(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @load_balancing_scheme.setter
-    def load_balancing_scheme(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def load_balancing_scheme(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localityLbPolicy")
     def locality_lb_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @locality_lb_policy.setter
-    def locality_lb_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def locality_lb_policy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(
@@ -218,17 +244,20 @@ class RegionBackendServiceArgs:
     @log_config.setter
     def log_config(
         self, value: Optional[pulumi.Input[RegionBackendServiceLogConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network.setter
-    def network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkPassThroughLbTrafficPolicy")
     def network_pass_through_lb_traffic_policy(
@@ -242,7 +271,8 @@ class RegionBackendServiceArgs:
         value: Optional[
             pulumi.Input[RegionBackendServiceNetworkPassThroughLbTrafficPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outlierDetection")
     def outlier_detection(
@@ -251,42 +281,54 @@ class RegionBackendServiceArgs:
     @outlier_detection.setter
     def outlier_detection(
         self, value: Optional[pulumi.Input[RegionBackendServiceOutlierDetectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def params(self) -> Optional[pulumi.Input[RegionBackendServiceParamsArgs]]: ...
     @params.setter
-    def params(self, value: Optional[pulumi.Input[RegionBackendServiceParamsArgs]]): ...
+    def params(
+        self, value: Optional[pulumi.Input[RegionBackendServiceParamsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portName")
     def port_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @port_name.setter
-    def port_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def port_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityPolicy")
     def security_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_policy.setter
-    def security_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionAffinity")
     def session_affinity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @session_affinity.setter
-    def session_affinity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def session_affinity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="strongSessionAffinityCookie")
     def strong_session_affinity_cookie(
@@ -300,7 +342,8 @@ class RegionBackendServiceArgs:
         value: Optional[
             pulumi.Input[RegionBackendServiceStrongSessionAffinityCookieArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subsetting(
@@ -309,12 +352,14 @@ class RegionBackendServiceArgs:
     @subsetting.setter
     def subsetting(
         self, value: Optional[pulumi.Input[RegionBackendServiceSubsettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutSec")
     def timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_sec.setter
-    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsSettings")
     def tls_settings(
@@ -323,7 +368,8 @@ class RegionBackendServiceArgs:
     @tls_settings.setter
     def tls_settings(
         self, value: Optional[pulumi.Input[RegionBackendServiceTlsSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegionBackendServiceState:
@@ -393,7 +439,10 @@ class _RegionBackendServiceState:
     @pulumi.getter(name="affinityCookieTtlSec")
     def affinity_cookie_ttl_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @affinity_cookie_ttl_sec.setter
-    def affinity_cookie_ttl_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def affinity_cookie_ttl_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def backends(
@@ -407,7 +456,8 @@ class _RegionBackendServiceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RegionBackendServiceBackendArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cdnPolicy")
     def cdn_policy(
@@ -416,7 +466,8 @@ class _RegionBackendServiceState:
     @cdn_policy.setter
     def cdn_policy(
         self, value: Optional[pulumi.Input[RegionBackendServiceCdnPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="circuitBreakers")
     def circuit_breakers(
@@ -425,7 +476,8 @@ class _RegionBackendServiceState:
     @circuit_breakers.setter
     def circuit_breakers(
         self, value: Optional[pulumi.Input[RegionBackendServiceCircuitBreakersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionDrainingTimeoutSec")
     def connection_draining_timeout_sec(
@@ -434,7 +486,8 @@ class _RegionBackendServiceState:
     @connection_draining_timeout_sec.setter
     def connection_draining_timeout_sec(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionTrackingPolicy")
     def connection_tracking_policy(
@@ -444,7 +497,8 @@ class _RegionBackendServiceState:
     def connection_tracking_policy(
         self,
         value: Optional[pulumi.Input[RegionBackendServiceConnectionTrackingPolicyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consistentHash")
     def consistent_hash(
@@ -453,12 +507,16 @@ class _RegionBackendServiceState:
     @consistent_hash.setter
     def consistent_hash(
         self, value: Optional[pulumi.Input[RegionBackendServiceConsistentHashArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customMetrics")
     def custom_metrics(
@@ -472,12 +530,14 @@ class _RegionBackendServiceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RegionBackendServiceCustomMetricArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamicForwarding")
     def dynamic_forwarding(
@@ -486,12 +546,14 @@ class _RegionBackendServiceState:
     @dynamic_forwarding.setter
     def dynamic_forwarding(
         self, value: Optional[pulumi.Input[RegionBackendServiceDynamicForwardingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableCdn")
     def enable_cdn(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_cdn.setter
-    def enable_cdn(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_cdn(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverPolicy")
     def failover_policy(
@@ -500,51 +562,66 @@ class _RegionBackendServiceState:
     @failover_policy.setter
     def failover_policy(
         self, value: Optional[pulumi.Input[RegionBackendServiceFailoverPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fingerprint.setter
-    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generatedId")
     def generated_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @generated_id.setter
-    def generated_id(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def generated_id(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="haPolicy")
     def ha_policy(self) -> Optional[pulumi.Input[RegionBackendServiceHaPolicyArgs]]: ...
     @ha_policy.setter
     def ha_policy(
         self, value: Optional[pulumi.Input[RegionBackendServiceHaPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthChecks")
     def health_checks(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_checks.setter
-    def health_checks(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_checks(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def iap(self) -> Optional[pulumi.Input[RegionBackendServiceIapArgs]]: ...
     @iap.setter
-    def iap(self, value: Optional[pulumi.Input[RegionBackendServiceIapArgs]]): ...
+    def iap(
+        self, value: Optional[pulumi.Input[RegionBackendServiceIapArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddressSelectionPolicy")
     def ip_address_selection_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_address_selection_policy.setter
     def ip_address_selection_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancingScheme")
     def load_balancing_scheme(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @load_balancing_scheme.setter
-    def load_balancing_scheme(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def load_balancing_scheme(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localityLbPolicy")
     def locality_lb_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @locality_lb_policy.setter
-    def locality_lb_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def locality_lb_policy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(
@@ -553,17 +630,20 @@ class _RegionBackendServiceState:
     @log_config.setter
     def log_config(
         self, value: Optional[pulumi.Input[RegionBackendServiceLogConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network.setter
-    def network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkPassThroughLbTrafficPolicy")
     def network_pass_through_lb_traffic_policy(
@@ -577,7 +657,8 @@ class _RegionBackendServiceState:
         value: Optional[
             pulumi.Input[RegionBackendServiceNetworkPassThroughLbTrafficPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outlierDetection")
     def outlier_detection(
@@ -586,47 +667,60 @@ class _RegionBackendServiceState:
     @outlier_detection.setter
     def outlier_detection(
         self, value: Optional[pulumi.Input[RegionBackendServiceOutlierDetectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def params(self) -> Optional[pulumi.Input[RegionBackendServiceParamsArgs]]: ...
     @params.setter
-    def params(self, value: Optional[pulumi.Input[RegionBackendServiceParamsArgs]]): ...
+    def params(
+        self, value: Optional[pulumi.Input[RegionBackendServiceParamsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portName")
     def port_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @port_name.setter
-    def port_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def port_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityPolicy")
     def security_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_policy.setter
-    def security_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionAffinity")
     def session_affinity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @session_affinity.setter
-    def session_affinity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def session_affinity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="strongSessionAffinityCookie")
     def strong_session_affinity_cookie(
@@ -640,7 +734,8 @@ class _RegionBackendServiceState:
         value: Optional[
             pulumi.Input[RegionBackendServiceStrongSessionAffinityCookieArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subsetting(
@@ -649,12 +744,14 @@ class _RegionBackendServiceState:
     @subsetting.setter
     def subsetting(
         self, value: Optional[pulumi.Input[RegionBackendServiceSubsettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutSec")
     def timeout_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_sec.setter
-    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_sec(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsSettings")
     def tls_settings(
@@ -663,7 +760,8 @@ class _RegionBackendServiceState:
     @tls_settings.setter
     def tls_settings(
         self, value: Optional[pulumi.Input[RegionBackendServiceTlsSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RegionBackendService(pulumi.CustomResource):

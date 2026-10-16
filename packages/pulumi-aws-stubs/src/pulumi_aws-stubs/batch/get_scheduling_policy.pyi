@@ -46,7 +46,8 @@ class GetSchedulingPolicyResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetSchedulingPolicyResult(GetSchedulingPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSchedulingPolicyResult]:
+        ...
 
 def get_scheduling_policy(
     arn: Optional[_builtins.str] = ...,

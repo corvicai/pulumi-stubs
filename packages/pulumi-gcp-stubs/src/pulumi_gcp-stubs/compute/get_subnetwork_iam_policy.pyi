@@ -43,7 +43,8 @@ class GetSubnetworkIamPolicyResult:
     def subnetwork(self) -> _builtins.str: ...
 
 class AwaitableGetSubnetworkIamPolicyResult(GetSubnetworkIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetworkIamPolicyResult]:
+        ...
 
 def get_subnetwork_iam_policy(
     project: Optional[_builtins.str] = ...,

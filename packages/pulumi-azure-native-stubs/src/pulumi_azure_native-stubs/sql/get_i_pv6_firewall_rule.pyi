@@ -43,7 +43,8 @@ class GetIPv6FirewallRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIPv6FirewallRuleResult(GetIPv6FirewallRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIPv6FirewallRuleResult]:
+        ...
 
 def get_i_pv6_firewall_rule(
     firewall_rule_name: Optional[_builtins.str] = ...,

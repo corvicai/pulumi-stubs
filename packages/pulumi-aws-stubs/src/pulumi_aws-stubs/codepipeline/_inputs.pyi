@@ -118,37 +118,44 @@ class CustomActionTypeConfigurationPropertyArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.bool]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.bool]): ...
+    def key(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> pulumi.Input[_builtins.bool]: ...
     @required.setter
-    def required(self, value: pulumi.Input[_builtins.bool]): ...
+    def required(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def secret(self) -> pulumi.Input[_builtins.bool]: ...
     @secret.setter
-    def secret(self, value: pulumi.Input[_builtins.bool]): ...
+    def secret(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def queryable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @queryable.setter
-    def queryable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def queryable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomActionTypeInputArtifactDetailsArgsDict(TypedDict):
     maximum_count: pulumi.Input[_builtins.int]
@@ -166,12 +173,14 @@ class CustomActionTypeInputArtifactDetailsArgs:
     @pulumi.getter(name="maximumCount")
     def maximum_count(self) -> pulumi.Input[_builtins.int]: ...
     @maximum_count.setter
-    def maximum_count(self, value: pulumi.Input[_builtins.int]): ...
+    def maximum_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumCount")
     def minimum_count(self) -> pulumi.Input[_builtins.int]: ...
     @minimum_count.setter
-    def minimum_count(self, value: pulumi.Input[_builtins.int]): ...
+    def minimum_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class CustomActionTypeOutputArtifactDetailsArgsDict(TypedDict):
     maximum_count: pulumi.Input[_builtins.int]
@@ -189,12 +198,14 @@ class CustomActionTypeOutputArtifactDetailsArgs:
     @pulumi.getter(name="maximumCount")
     def maximum_count(self) -> pulumi.Input[_builtins.int]: ...
     @maximum_count.setter
-    def maximum_count(self, value: pulumi.Input[_builtins.int]): ...
+    def maximum_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumCount")
     def minimum_count(self) -> pulumi.Input[_builtins.int]: ...
     @minimum_count.setter
-    def minimum_count(self, value: pulumi.Input[_builtins.int]): ...
+    def minimum_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class CustomActionTypeSettingsArgsDict(TypedDict):
     entity_url_template: NotRequired[pulumi.Input[_builtins.str]]
@@ -216,17 +227,26 @@ class CustomActionTypeSettingsArgs:
     @pulumi.getter(name="entityUrlTemplate")
     def entity_url_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @entity_url_template.setter
-    def entity_url_template(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def entity_url_template(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionUrlTemplate")
     def execution_url_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_url_template.setter
-    def execution_url_template(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_url_template(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="revisionUrlTemplate")
     def revision_url_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @revision_url_template.setter
-    def revision_url_template(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def revision_url_template(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thirdPartyConfigurationUrl")
     def third_party_configuration_url(
@@ -235,7 +255,8 @@ class CustomActionTypeSettingsArgs:
     @third_party_configuration_url.setter
     def third_party_configuration_url(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineArtifactStoreArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
@@ -261,12 +282,14 @@ class PipelineArtifactStoreArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKey")
     def encryption_key(
@@ -275,12 +298,14 @@ class PipelineArtifactStoreArgs:
     @encryption_key.setter
     def encryption_key(
         self, value: Optional[pulumi.Input[PipelineArtifactStoreEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineArtifactStoreEncryptionKeyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -295,12 +320,14 @@ class PipelineArtifactStoreEncryptionKeyArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipelineStageArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[PipelineStageActionArgsDict]]]
@@ -328,29 +355,38 @@ class PipelineStageArgs:
     @actions.setter
     def actions(
         self, value: pulumi.Input[Sequence[pulumi.Input[PipelineStageActionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beforeEntry")
     def before_entry(self) -> Optional[pulumi.Input[PipelineStageBeforeEntryArgs]]: ...
     @before_entry.setter
     def before_entry(
         self, value: Optional[pulumi.Input[PipelineStageBeforeEntryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onFailure")
     def on_failure(self) -> Optional[pulumi.Input[PipelineStageOnFailureArgs]]: ...
     @on_failure.setter
-    def on_failure(self, value: Optional[pulumi.Input[PipelineStageOnFailureArgs]]): ...
+    def on_failure(
+        self, value: Optional[pulumi.Input[PipelineStageOnFailureArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onSuccess")
     def on_success(self) -> Optional[pulumi.Input[PipelineStageOnSuccessArgs]]: ...
     @on_success.setter
-    def on_success(self, value: Optional[pulumi.Input[PipelineStageOnSuccessArgs]]): ...
+    def on_success(
+        self, value: Optional[pulumi.Input[PipelineStageOnSuccessArgs]]
+    ):  # -> None:
+        ...
 
 class PipelineStageActionArgsDict(TypedDict):
     category: pulumi.Input[_builtins.str]
@@ -396,27 +432,32 @@ class PipelineStageActionArgs:
     @pulumi.getter
     def category(self) -> pulumi.Input[_builtins.str]: ...
     @category.setter
-    def category(self, value: pulumi.Input[_builtins.str]): ...
+    def category(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> pulumi.Input[_builtins.str]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[_builtins.str]): ...
+    def owner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def provider(self) -> pulumi.Input[_builtins.str]: ...
     @provider.setter
-    def provider(self, value: pulumi.Input[_builtins.str]): ...
+    def provider(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> pulumi.Input[_builtins.str]: ...
     @version.setter
-    def version(self, value: pulumi.Input[_builtins.str]): ...
+    def version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -425,7 +466,8 @@ class PipelineStageActionArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputArtifacts")
     def input_artifacts(
@@ -434,12 +476,14 @@ class PipelineStageActionArgs:
     @input_artifacts.setter
     def input_artifacts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace.setter
-    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputArtifacts")
     def output_artifacts(
@@ -448,27 +492,34 @@ class PipelineStageActionArgs:
     @output_artifacts.setter
     def output_artifacts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runOrder")
     def run_order(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @run_order.setter
-    def run_order(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def run_order(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutInMinutes")
     def timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_in_minutes.setter
-    def timeout_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class PipelineStageBeforeEntryArgsDict(TypedDict):
     condition: pulumi.Input[PipelineStageBeforeEntryConditionArgsDict]
@@ -482,7 +533,10 @@ class PipelineStageBeforeEntryArgs:
     @pulumi.getter
     def condition(self) -> pulumi.Input[PipelineStageBeforeEntryConditionArgs]: ...
     @condition.setter
-    def condition(self, value: pulumi.Input[PipelineStageBeforeEntryConditionArgs]): ...
+    def condition(
+        self, value: pulumi.Input[PipelineStageBeforeEntryConditionArgs]
+    ):  # -> None:
+        ...
 
 class PipelineStageBeforeEntryConditionArgsDict(TypedDict):
     rules: pulumi.Input[
@@ -513,12 +567,14 @@ class PipelineStageBeforeEntryConditionArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PipelineStageBeforeEntryConditionRuleArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def result(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @result.setter
-    def result(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def result(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineStageBeforeEntryConditionRuleArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -552,7 +608,8 @@ class PipelineStageBeforeEntryConditionRuleArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleTypeId")
     def rule_type_id(
@@ -561,7 +618,8 @@ class PipelineStageBeforeEntryConditionRuleArgs:
     @rule_type_id.setter
     def rule_type_id(
         self, value: pulumi.Input[PipelineStageBeforeEntryConditionRuleRuleTypeIdArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def commands(
@@ -570,7 +628,8 @@ class PipelineStageBeforeEntryConditionRuleArgs:
     @commands.setter
     def commands(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -579,7 +638,8 @@ class PipelineStageBeforeEntryConditionRuleArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputArtifacts")
     def input_artifacts(
@@ -588,22 +648,28 @@ class PipelineStageBeforeEntryConditionRuleArgs:
     @input_artifacts.setter
     def input_artifacts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutInMinutes")
     def timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_in_minutes.setter
-    def timeout_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class PipelineStageBeforeEntryConditionRuleRuleTypeIdArgsDict(TypedDict):
     category: pulumi.Input[_builtins.str]
@@ -625,22 +691,26 @@ class PipelineStageBeforeEntryConditionRuleRuleTypeIdArgs:
     @pulumi.getter
     def category(self) -> pulumi.Input[_builtins.str]: ...
     @category.setter
-    def category(self, value: pulumi.Input[_builtins.str]): ...
+    def category(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def provider(self) -> pulumi.Input[_builtins.str]: ...
     @provider.setter
-    def provider(self, value: pulumi.Input[_builtins.str]): ...
+    def provider(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner.setter
-    def owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineStageOnFailureArgsDict(TypedDict):
     condition: NotRequired[pulumi.Input[PipelineStageOnFailureConditionArgsDict]]
@@ -668,12 +738,14 @@ class PipelineStageOnFailureArgs:
     @condition.setter
     def condition(
         self, value: Optional[pulumi.Input[PipelineStageOnFailureConditionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def result(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @result.setter
-    def result(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def result(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryConfiguration")
     def retry_configuration(
@@ -683,7 +755,8 @@ class PipelineStageOnFailureArgs:
     def retry_configuration(
         self,
         value: Optional[pulumi.Input[PipelineStageOnFailureRetryConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineStageOnFailureConditionArgsDict(TypedDict):
     rules: pulumi.Input[
@@ -714,12 +787,14 @@ class PipelineStageOnFailureConditionArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PipelineStageOnFailureConditionRuleArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def result(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @result.setter
-    def result(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def result(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineStageOnFailureConditionRuleArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -753,7 +828,8 @@ class PipelineStageOnFailureConditionRuleArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleTypeId")
     def rule_type_id(
@@ -762,7 +838,8 @@ class PipelineStageOnFailureConditionRuleArgs:
     @rule_type_id.setter
     def rule_type_id(
         self, value: pulumi.Input[PipelineStageOnFailureConditionRuleRuleTypeIdArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def commands(
@@ -771,7 +848,8 @@ class PipelineStageOnFailureConditionRuleArgs:
     @commands.setter
     def commands(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -780,7 +858,8 @@ class PipelineStageOnFailureConditionRuleArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputArtifacts")
     def input_artifacts(
@@ -789,22 +868,28 @@ class PipelineStageOnFailureConditionRuleArgs:
     @input_artifacts.setter
     def input_artifacts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutInMinutes")
     def timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_in_minutes.setter
-    def timeout_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class PipelineStageOnFailureConditionRuleRuleTypeIdArgsDict(TypedDict):
     category: pulumi.Input[_builtins.str]
@@ -826,22 +911,26 @@ class PipelineStageOnFailureConditionRuleRuleTypeIdArgs:
     @pulumi.getter
     def category(self) -> pulumi.Input[_builtins.str]: ...
     @category.setter
-    def category(self, value: pulumi.Input[_builtins.str]): ...
+    def category(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def provider(self) -> pulumi.Input[_builtins.str]: ...
     @provider.setter
-    def provider(self, value: pulumi.Input[_builtins.str]): ...
+    def provider(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner.setter
-    def owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineStageOnFailureRetryConfigurationArgsDict(TypedDict):
     retry_mode: NotRequired[pulumi.Input[_builtins.str]]
@@ -855,7 +944,8 @@ class PipelineStageOnFailureRetryConfigurationArgs:
     @pulumi.getter(name="retryMode")
     def retry_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @retry_mode.setter
-    def retry_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def retry_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineStageOnSuccessArgsDict(TypedDict):
     condition: pulumi.Input[PipelineStageOnSuccessConditionArgsDict]
@@ -869,7 +959,10 @@ class PipelineStageOnSuccessArgs:
     @pulumi.getter
     def condition(self) -> pulumi.Input[PipelineStageOnSuccessConditionArgs]: ...
     @condition.setter
-    def condition(self, value: pulumi.Input[PipelineStageOnSuccessConditionArgs]): ...
+    def condition(
+        self, value: pulumi.Input[PipelineStageOnSuccessConditionArgs]
+    ):  # -> None:
+        ...
 
 class PipelineStageOnSuccessConditionArgsDict(TypedDict):
     rules: pulumi.Input[
@@ -900,12 +993,14 @@ class PipelineStageOnSuccessConditionArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PipelineStageOnSuccessConditionRuleArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def result(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @result.setter
-    def result(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def result(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineStageOnSuccessConditionRuleArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -939,7 +1034,8 @@ class PipelineStageOnSuccessConditionRuleArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleTypeId")
     def rule_type_id(
@@ -948,7 +1044,8 @@ class PipelineStageOnSuccessConditionRuleArgs:
     @rule_type_id.setter
     def rule_type_id(
         self, value: pulumi.Input[PipelineStageOnSuccessConditionRuleRuleTypeIdArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def commands(
@@ -957,7 +1054,8 @@ class PipelineStageOnSuccessConditionRuleArgs:
     @commands.setter
     def commands(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -966,7 +1064,8 @@ class PipelineStageOnSuccessConditionRuleArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputArtifacts")
     def input_artifacts(
@@ -975,22 +1074,28 @@ class PipelineStageOnSuccessConditionRuleArgs:
     @input_artifacts.setter
     def input_artifacts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutInMinutes")
     def timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_in_minutes.setter
-    def timeout_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class PipelineStageOnSuccessConditionRuleRuleTypeIdArgsDict(TypedDict):
     category: pulumi.Input[_builtins.str]
@@ -1012,22 +1117,26 @@ class PipelineStageOnSuccessConditionRuleRuleTypeIdArgs:
     @pulumi.getter
     def category(self) -> pulumi.Input[_builtins.str]: ...
     @category.setter
-    def category(self, value: pulumi.Input[_builtins.str]): ...
+    def category(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def provider(self) -> pulumi.Input[_builtins.str]: ...
     @provider.setter
-    def provider(self, value: pulumi.Input[_builtins.str]): ...
+    def provider(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner.setter
-    def owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineTriggerArgsDict(TypedDict):
     git_configuration: pulumi.Input[PipelineTriggerGitConfigurationArgsDict]
@@ -1049,12 +1158,14 @@ class PipelineTriggerArgs:
     @git_configuration.setter
     def git_configuration(
         self, value: pulumi.Input[PipelineTriggerGitConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerType")
     def provider_type(self) -> pulumi.Input[_builtins.str]: ...
     @provider_type.setter
-    def provider_type(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipelineTriggerAllArgsDict(TypedDict):
     git_configurations: NotRequired[
@@ -1085,12 +1196,14 @@ class PipelineTriggerAllArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PipelineTriggerAllGitConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerType")
     def provider_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provider_type.setter
-    def provider_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provider_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationArgsDict(TypedDict):
     pull_requests: NotRequired[
@@ -1145,7 +1258,8 @@ class PipelineTriggerAllGitConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pushes(
@@ -1161,12 +1275,16 @@ class PipelineTriggerAllGitConfigurationArgs:
                 Sequence[pulumi.Input[PipelineTriggerAllGitConfigurationPushArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceActionName")
     def source_action_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_action_name.setter
-    def source_action_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_action_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationPullRequestArgsDict(TypedDict):
     branches: NotRequired[
@@ -1237,7 +1355,8 @@ class PipelineTriggerAllGitConfigurationPullRequestArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def events(
@@ -1246,7 +1365,8 @@ class PipelineTriggerAllGitConfigurationPullRequestArgs:
     @events.setter
     def events(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filePaths")
     def file_paths(
@@ -1270,7 +1390,8 @@ class PipelineTriggerAllGitConfigurationPullRequestArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationPullRequestBranchArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1292,7 +1413,8 @@ class PipelineTriggerAllGitConfigurationPullRequestBranchArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1301,7 +1423,8 @@ class PipelineTriggerAllGitConfigurationPullRequestBranchArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationPullRequestFilePathArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1323,7 +1446,8 @@ class PipelineTriggerAllGitConfigurationPullRequestFilePathArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1332,7 +1456,8 @@ class PipelineTriggerAllGitConfigurationPullRequestFilePathArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationPushArgsDict(TypedDict):
     branches: NotRequired[
@@ -1393,7 +1518,8 @@ class PipelineTriggerAllGitConfigurationPushArgs:
                 Sequence[pulumi.Input[PipelineTriggerAllGitConfigurationPushBranchArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filePaths")
     def file_paths(
@@ -1413,7 +1539,8 @@ class PipelineTriggerAllGitConfigurationPushArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -1431,7 +1558,8 @@ class PipelineTriggerAllGitConfigurationPushArgs:
                 Sequence[pulumi.Input[PipelineTriggerAllGitConfigurationPushTagArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationPushBranchArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1453,7 +1581,8 @@ class PipelineTriggerAllGitConfigurationPushBranchArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1462,7 +1591,8 @@ class PipelineTriggerAllGitConfigurationPushBranchArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationPushFilePathArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1484,7 +1614,8 @@ class PipelineTriggerAllGitConfigurationPushFilePathArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1493,7 +1624,8 @@ class PipelineTriggerAllGitConfigurationPushFilePathArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerAllGitConfigurationPushTagArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1515,7 +1647,8 @@ class PipelineTriggerAllGitConfigurationPushTagArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1524,7 +1657,8 @@ class PipelineTriggerAllGitConfigurationPushTagArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationArgsDict(TypedDict):
     source_action_name: pulumi.Input[_builtins.str]
@@ -1560,7 +1694,8 @@ class PipelineTriggerGitConfigurationArgs:
     @pulumi.getter(name="sourceActionName")
     def source_action_name(self) -> pulumi.Input[_builtins.str]: ...
     @source_action_name.setter
-    def source_action_name(self, value: pulumi.Input[_builtins.str]): ...
+    def source_action_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pullRequests")
     def pull_requests(
@@ -1578,7 +1713,8 @@ class PipelineTriggerGitConfigurationArgs:
                 Sequence[pulumi.Input[PipelineTriggerGitConfigurationPullRequestArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pushes(
@@ -1594,7 +1730,8 @@ class PipelineTriggerGitConfigurationArgs:
                 Sequence[pulumi.Input[PipelineTriggerGitConfigurationPushArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationPullRequestArgsDict(TypedDict):
     branches: NotRequired[
@@ -1631,7 +1768,8 @@ class PipelineTriggerGitConfigurationPullRequestArgs:
         value: Optional[
             pulumi.Input[PipelineTriggerGitConfigurationPullRequestBranchesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def events(
@@ -1640,7 +1778,8 @@ class PipelineTriggerGitConfigurationPullRequestArgs:
     @events.setter
     def events(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filePaths")
     def file_paths(
@@ -1654,7 +1793,8 @@ class PipelineTriggerGitConfigurationPullRequestArgs:
         value: Optional[
             pulumi.Input[PipelineTriggerGitConfigurationPullRequestFilePathsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationPullRequestBranchesArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1676,7 +1816,8 @@ class PipelineTriggerGitConfigurationPullRequestBranchesArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1685,7 +1826,8 @@ class PipelineTriggerGitConfigurationPullRequestBranchesArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationPullRequestFilePathsArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1707,7 +1849,8 @@ class PipelineTriggerGitConfigurationPullRequestFilePathsArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1716,7 +1859,8 @@ class PipelineTriggerGitConfigurationPullRequestFilePathsArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationPushArgsDict(TypedDict):
     branches: NotRequired[
@@ -1749,7 +1893,8 @@ class PipelineTriggerGitConfigurationPushArgs:
     def branches(
         self,
         value: Optional[pulumi.Input[PipelineTriggerGitConfigurationPushBranchesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filePaths")
     def file_paths(
@@ -1759,7 +1904,8 @@ class PipelineTriggerGitConfigurationPushArgs:
     def file_paths(
         self,
         value: Optional[pulumi.Input[PipelineTriggerGitConfigurationPushFilePathsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -1768,7 +1914,8 @@ class PipelineTriggerGitConfigurationPushArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[PipelineTriggerGitConfigurationPushTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationPushBranchesArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1790,7 +1937,8 @@ class PipelineTriggerGitConfigurationPushBranchesArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1799,7 +1947,8 @@ class PipelineTriggerGitConfigurationPushBranchesArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationPushFilePathsArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1821,7 +1970,8 @@ class PipelineTriggerGitConfigurationPushFilePathsArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1830,7 +1980,8 @@ class PipelineTriggerGitConfigurationPushFilePathsArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineTriggerGitConfigurationPushTagsArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1852,7 +2003,8 @@ class PipelineTriggerGitConfigurationPushTagsArgs:
     @excludes.setter
     def excludes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -1861,7 +2013,8 @@ class PipelineTriggerGitConfigurationPushTagsArgs:
     @includes.setter
     def includes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipelineVariableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1881,17 +2034,20 @@ class PipelineVariableArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
     def default_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_value.setter
-    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebhookAuthenticationConfigurationArgsDict(TypedDict):
     allowed_ip_range: NotRequired[pulumi.Input[_builtins.str]]
@@ -1909,12 +2065,16 @@ class WebhookAuthenticationConfigurationArgs:
     @pulumi.getter(name="allowedIpRange")
     def allowed_ip_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @allowed_ip_range.setter
-    def allowed_ip_range(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def allowed_ip_range(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretToken")
     def secret_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_token.setter
-    def secret_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebhookFilterArgsDict(TypedDict):
     json_path: pulumi.Input[_builtins.str]
@@ -1932,9 +2092,11 @@ class WebhookFilterArgs:
     @pulumi.getter(name="jsonPath")
     def json_path(self) -> pulumi.Input[_builtins.str]: ...
     @json_path.setter
-    def json_path(self, value: pulumi.Input[_builtins.str]): ...
+    def json_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchEquals")
     def match_equals(self) -> pulumi.Input[_builtins.str]: ...
     @match_equals.setter
-    def match_equals(self, value: pulumi.Input[_builtins.str]): ...
+    def match_equals(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

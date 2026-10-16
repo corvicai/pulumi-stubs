@@ -128,7 +128,8 @@ class GetCreditResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCreditResult(GetCreditResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCreditResult]:
+        ...
 
 def get_credit(
     credit_name: Optional[_builtins.str] = ...,

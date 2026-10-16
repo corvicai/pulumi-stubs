@@ -35,7 +35,8 @@ class GetKeyRingsResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetKeyRingsResult(GetKeyRingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyRingsResult]:
+        ...
 
 def get_key_rings(
     filter: Optional[_builtins.str] = ...,

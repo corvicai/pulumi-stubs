@@ -104,7 +104,8 @@ class GetLaunchConfigurationResult:
     def user_data(self) -> _builtins.str: ...
 
 class AwaitableGetLaunchConfigurationResult(GetLaunchConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLaunchConfigurationResult]:
+        ...
 
 def get_launch_configuration(
     name: Optional[_builtins.str] = ...,

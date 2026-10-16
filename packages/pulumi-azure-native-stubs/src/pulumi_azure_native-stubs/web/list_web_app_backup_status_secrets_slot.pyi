@@ -92,7 +92,10 @@ class ListWebAppBackupStatusSecretsSlotResult:
 class AwaitableListWebAppBackupStatusSecretsSlotResult(
     ListWebAppBackupStatusSecretsSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppBackupStatusSecretsSlotResult]:
+        ...
 
 def list_web_app_backup_status_secrets_slot(
     backup_id: Optional[_builtins.str] = ...,

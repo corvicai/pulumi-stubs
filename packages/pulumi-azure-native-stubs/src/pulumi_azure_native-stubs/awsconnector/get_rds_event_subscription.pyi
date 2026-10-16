@@ -52,7 +52,8 @@ class GetRdsEventSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRdsEventSubscriptionResult(GetRdsEventSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRdsEventSubscriptionResult]:
+        ...
 
 def get_rds_event_subscription(
     name: Optional[_builtins.str] = ...,

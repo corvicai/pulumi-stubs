@@ -23,12 +23,16 @@ class SubscriptionRaiPolicyArgs:
     @pulumi.getter
     def properties(self) -> Optional[pulumi.Input[RaiPolicyPropertiesArgs]]: ...
     @properties.setter
-    def properties(self, value: Optional[pulumi.Input[RaiPolicyPropertiesArgs]]): ...
+    def properties(
+        self, value: Optional[pulumi.Input[RaiPolicyPropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="raiPolicyName")
     def rai_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rai_policy_name.setter
-    def rai_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rai_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -37,7 +41,8 @@ class SubscriptionRaiPolicyArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SubscriptionRaiPolicy(pulumi.CustomResource):

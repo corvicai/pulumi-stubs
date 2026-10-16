@@ -26,7 +26,10 @@ class ListPolicyDefinitionVersionAllBuiltinsResult:
 class AwaitableListPolicyDefinitionVersionAllBuiltinsResult(
     ListPolicyDefinitionVersionAllBuiltinsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPolicyDefinitionVersionAllBuiltinsResult]:
+        ...
 
 def list_policy_definition_version_all_builtins(
     opts: Optional[pulumi.InvokeOptions] = ...,

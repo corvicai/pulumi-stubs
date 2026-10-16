@@ -94,7 +94,8 @@ class GetAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAssignmentResult(GetAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssignmentResult]:
+        ...
 
 def get_assignment(
     assignment_id: Optional[_builtins.str] = ...,

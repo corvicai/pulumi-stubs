@@ -98,7 +98,8 @@ class GetClusterManagerResult:
     def vm_size(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetClusterManagerResult(GetClusterManagerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterManagerResult]:
+        ...
 
 def get_cluster_manager(
     cluster_manager_name: Optional[_builtins.str] = ...,

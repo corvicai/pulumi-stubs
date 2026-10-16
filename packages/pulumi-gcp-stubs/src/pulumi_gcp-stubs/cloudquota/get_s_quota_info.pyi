@@ -96,7 +96,8 @@ class GetSQuotaInfoResult:
     def service_request_quota_uri(self) -> _builtins.str: ...
 
 class AwaitableGetSQuotaInfoResult(GetSQuotaInfoResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSQuotaInfoResult]:
+        ...
 
 def get_s_quota_info(
     parent: Optional[_builtins.str] = ...,

@@ -63,7 +63,8 @@ class GetDataExportResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataExportResult(GetDataExportResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataExportResult]:
+        ...
 
 def get_data_export(
     data_export_name: Optional[_builtins.str] = ...,

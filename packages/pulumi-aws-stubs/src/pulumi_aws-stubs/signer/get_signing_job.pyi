@@ -94,7 +94,8 @@ class GetSigningJobResult:
     def status_reason(self) -> _builtins.str: ...
 
 class AwaitableGetSigningJobResult(GetSigningJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSigningJobResult]:
+        ...
 
 def get_signing_job(
     job_id: Optional[_builtins.str] = ...,

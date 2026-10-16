@@ -82,7 +82,10 @@ class GetNotificationHubPnsCredentialsResult:
 class AwaitableGetNotificationHubPnsCredentialsResult(
     GetNotificationHubPnsCredentialsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNotificationHubPnsCredentialsResult]:
+        ...
 
 def get_notification_hub_pns_credentials(
     namespace_name: Optional[_builtins.str] = ...,

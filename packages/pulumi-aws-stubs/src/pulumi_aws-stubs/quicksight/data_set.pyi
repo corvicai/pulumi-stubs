@@ -54,17 +54,20 @@ class DataSetArgs:
     @pulumi.getter(name="dataSetId")
     def data_set_id(self) -> pulumi.Input[_builtins.str]: ...
     @data_set_id.setter
-    def data_set_id(self, value: pulumi.Input[_builtins.str]): ...
+    def data_set_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importMode")
     def import_mode(self) -> pulumi.Input[_builtins.str]: ...
     @import_mode.setter
-    def import_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def import_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsAccountId")
     def aws_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_account_id.setter
-    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="columnGroups")
     def column_groups(
@@ -74,7 +77,8 @@ class DataSetArgs:
     def column_groups(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataSetColumnGroupArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="columnLevelPermissionRules")
     def column_level_permission_rules(
@@ -88,7 +92,8 @@ class DataSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DataSetColumnLevelPermissionRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSetUsageConfiguration")
     def data_set_usage_configuration(
@@ -97,7 +102,8 @@ class DataSetArgs:
     @data_set_usage_configuration.setter
     def data_set_usage_configuration(
         self, value: Optional[pulumi.Input[DataSetDataSetUsageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldFolders")
     def field_folders(
@@ -107,7 +113,8 @@ class DataSetArgs:
     def field_folders(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataSetFieldFolderArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logicalTableMaps")
     def logical_table_maps(
@@ -119,12 +126,14 @@ class DataSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DataSetLogicalTableMapArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(
@@ -134,7 +143,8 @@ class DataSetArgs:
     def permissions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataSetPermissionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="physicalTableMaps")
     def physical_table_maps(
@@ -148,7 +158,8 @@ class DataSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DataSetPhysicalTableMapArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshProperties")
     def refresh_properties(
@@ -157,12 +168,14 @@ class DataSetArgs:
     @refresh_properties.setter
     def refresh_properties(
         self, value: Optional[pulumi.Input[DataSetRefreshPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rowLevelPermissionDataSet")
     def row_level_permission_data_set(
@@ -171,7 +184,8 @@ class DataSetArgs:
     @row_level_permission_data_set.setter
     def row_level_permission_data_set(
         self, value: Optional[pulumi.Input[DataSetRowLevelPermissionDataSetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rowLevelPermissionTagConfiguration")
     def row_level_permission_tag_configuration(
@@ -181,7 +195,8 @@ class DataSetArgs:
     def row_level_permission_tag_configuration(
         self,
         value: Optional[pulumi.Input[DataSetRowLevelPermissionTagConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -190,12 +205,14 @@ class DataSetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useAs")
     def use_as(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @use_as.setter
-    def use_as(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def use_as(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DataSetState:
@@ -249,12 +266,14 @@ class _DataSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsAccountId")
     def aws_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_account_id.setter
-    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="columnGroups")
     def column_groups(
@@ -264,7 +283,8 @@ class _DataSetState:
     def column_groups(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataSetColumnGroupArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="columnLevelPermissionRules")
     def column_level_permission_rules(
@@ -278,12 +298,14 @@ class _DataSetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DataSetColumnLevelPermissionRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSetId")
     def data_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_set_id.setter
-    def data_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_set_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSetUsageConfiguration")
     def data_set_usage_configuration(
@@ -292,7 +314,8 @@ class _DataSetState:
     @data_set_usage_configuration.setter
     def data_set_usage_configuration(
         self, value: Optional[pulumi.Input[DataSetDataSetUsageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldFolders")
     def field_folders(
@@ -302,12 +325,14 @@ class _DataSetState:
     def field_folders(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataSetFieldFolderArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importMode")
     def import_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @import_mode.setter
-    def import_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def import_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logicalTableMaps")
     def logical_table_maps(
@@ -319,12 +344,14 @@ class _DataSetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DataSetLogicalTableMapArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputColumns")
     def output_columns(
@@ -334,7 +361,8 @@ class _DataSetState:
     def output_columns(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataSetOutputColumnArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(
@@ -344,7 +372,8 @@ class _DataSetState:
     def permissions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataSetPermissionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="physicalTableMaps")
     def physical_table_maps(
@@ -358,7 +387,8 @@ class _DataSetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DataSetPhysicalTableMapArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshProperties")
     def refresh_properties(
@@ -367,12 +397,14 @@ class _DataSetState:
     @refresh_properties.setter
     def refresh_properties(
         self, value: Optional[pulumi.Input[DataSetRefreshPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rowLevelPermissionDataSet")
     def row_level_permission_data_set(
@@ -381,7 +413,8 @@ class _DataSetState:
     @row_level_permission_data_set.setter
     def row_level_permission_data_set(
         self, value: Optional[pulumi.Input[DataSetRowLevelPermissionDataSetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rowLevelPermissionTagConfiguration")
     def row_level_permission_tag_configuration(
@@ -391,7 +424,8 @@ class _DataSetState:
     def row_level_permission_tag_configuration(
         self,
         value: Optional[pulumi.Input[DataSetRowLevelPermissionTagConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -400,7 +434,8 @@ class _DataSetState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -409,12 +444,14 @@ class _DataSetState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useAs")
     def use_as(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @use_as.setter
-    def use_as(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def use_as(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:quicksight/dataSet:DataSet")
 class DataSet(pulumi.CustomResource):

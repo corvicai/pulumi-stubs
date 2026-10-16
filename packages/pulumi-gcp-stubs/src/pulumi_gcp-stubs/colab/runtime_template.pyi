@@ -46,12 +46,14 @@ class RuntimeTemplateArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPersistentDiskSpec")
     def data_persistent_disk_spec(
@@ -60,12 +62,14 @@ class RuntimeTemplateArgs:
     @data_persistent_disk_spec.setter
     def data_persistent_disk_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateDataPersistentDiskSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSpec")
     def encryption_spec(
@@ -74,14 +78,16 @@ class RuntimeTemplateArgs:
     @encryption_spec.setter
     def encryption_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateEncryptionSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eucConfig")
     def euc_config(self) -> Optional[pulumi.Input[RuntimeTemplateEucConfigArgs]]: ...
     @euc_config.setter
     def euc_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateEucConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleShutdownConfig")
     def idle_shutdown_config(
@@ -90,7 +96,8 @@ class RuntimeTemplateArgs:
     @idle_shutdown_config.setter
     def idle_shutdown_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateIdleShutdownConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -99,7 +106,8 @@ class RuntimeTemplateArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineSpec")
     def machine_spec(
@@ -108,12 +116,14 @@ class RuntimeTemplateArgs:
     @machine_spec.setter
     def machine_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateMachineSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSpec")
     def network_spec(
@@ -122,7 +132,8 @@ class RuntimeTemplateArgs:
     @network_spec.setter
     def network_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateNetworkSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkTags")
     def network_tags(
@@ -131,12 +142,14 @@ class RuntimeTemplateArgs:
     @network_tags.setter
     def network_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shieldedVmConfig")
     def shielded_vm_config(
@@ -145,7 +158,8 @@ class RuntimeTemplateArgs:
     @shielded_vm_config.setter
     def shielded_vm_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateShieldedVmConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareConfig")
     def software_config(
@@ -154,7 +168,8 @@ class RuntimeTemplateArgs:
     @software_config.setter
     def software_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateSoftwareConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RuntimeTemplateState:
@@ -203,17 +218,20 @@ class _RuntimeTemplateState:
     @data_persistent_disk_spec.setter
     def data_persistent_disk_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateDataPersistentDiskSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -222,7 +240,8 @@ class _RuntimeTemplateState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSpec")
     def encryption_spec(
@@ -231,14 +250,16 @@ class _RuntimeTemplateState:
     @encryption_spec.setter
     def encryption_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateEncryptionSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eucConfig")
     def euc_config(self) -> Optional[pulumi.Input[RuntimeTemplateEucConfigArgs]]: ...
     @euc_config.setter
     def euc_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateEucConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleShutdownConfig")
     def idle_shutdown_config(
@@ -247,7 +268,8 @@ class _RuntimeTemplateState:
     @idle_shutdown_config.setter
     def idle_shutdown_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateIdleShutdownConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -256,12 +278,14 @@ class _RuntimeTemplateState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineSpec")
     def machine_spec(
@@ -270,12 +294,14 @@ class _RuntimeTemplateState:
     @machine_spec.setter
     def machine_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateMachineSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSpec")
     def network_spec(
@@ -284,7 +310,8 @@ class _RuntimeTemplateState:
     @network_spec.setter
     def network_spec(
         self, value: Optional[pulumi.Input[RuntimeTemplateNetworkSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkTags")
     def network_tags(
@@ -293,12 +320,14 @@ class _RuntimeTemplateState:
     @network_tags.setter
     def network_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -307,7 +336,8 @@ class _RuntimeTemplateState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shieldedVmConfig")
     def shielded_vm_config(
@@ -316,7 +346,8 @@ class _RuntimeTemplateState:
     @shielded_vm_config.setter
     def shielded_vm_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateShieldedVmConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareConfig")
     def software_config(
@@ -325,7 +356,8 @@ class _RuntimeTemplateState:
     @software_config.setter
     def software_config(
         self, value: Optional[pulumi.Input[RuntimeTemplateSoftwareConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:colab/runtimeTemplate:RuntimeTemplate")
 class RuntimeTemplate(pulumi.CustomResource):

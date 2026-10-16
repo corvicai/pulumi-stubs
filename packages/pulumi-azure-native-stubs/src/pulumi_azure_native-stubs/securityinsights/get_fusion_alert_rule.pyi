@@ -80,7 +80,8 @@ class GetFusionAlertRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFusionAlertRuleResult(GetFusionAlertRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFusionAlertRuleResult]:
+        ...
 
 def get_fusion_alert_rule(
     resource_group_name: Optional[_builtins.str] = ...,

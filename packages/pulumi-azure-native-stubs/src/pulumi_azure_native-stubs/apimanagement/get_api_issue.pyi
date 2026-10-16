@@ -59,7 +59,8 @@ class GetApiIssueResult:
     def user_id(self) -> _builtins.str: ...
 
 class AwaitableGetApiIssueResult(GetApiIssueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiIssueResult]:
+        ...
 
 def get_api_issue(
     api_id: Optional[_builtins.str] = ...,

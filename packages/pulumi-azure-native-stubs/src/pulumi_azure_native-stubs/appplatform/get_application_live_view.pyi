@@ -44,7 +44,8 @@ class GetApplicationLiveViewResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationLiveViewResult(GetApplicationLiveViewResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationLiveViewResult]:
+        ...
 
 def get_application_live_view(
     application_live_view_name: Optional[_builtins.str] = ...,

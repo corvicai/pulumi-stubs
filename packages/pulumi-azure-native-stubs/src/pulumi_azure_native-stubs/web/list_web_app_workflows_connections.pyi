@@ -40,7 +40,10 @@ class ListWebAppWorkflowsConnectionsResult:
 class AwaitableListWebAppWorkflowsConnectionsResult(
     ListWebAppWorkflowsConnectionsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppWorkflowsConnectionsResult]:
+        ...
 
 def list_web_app_workflows_connections(
     name: Optional[_builtins.str] = ...,

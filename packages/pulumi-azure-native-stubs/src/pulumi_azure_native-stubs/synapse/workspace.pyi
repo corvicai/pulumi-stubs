@@ -54,7 +54,8 @@ class WorkspaceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureADOnlyAuthentication")
     def azure_ad_only_authentication(
@@ -63,7 +64,8 @@ class WorkspaceArgs:
     @azure_ad_only_authentication.setter
     def azure_ad_only_authentication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cspWorkspaceAdminProperties")
     def csp_workspace_admin_properties(
@@ -72,7 +74,8 @@ class WorkspaceArgs:
     @csp_workspace_admin_properties.setter
     def csp_workspace_admin_properties(
         self, value: Optional[pulumi.Input[CspWorkspaceAdminPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultDataLakeStorage")
     def default_data_lake_storage(
@@ -81,34 +84,44 @@ class WorkspaceArgs:
     @default_data_lake_storage.setter
     def default_data_lake_storage(
         self, value: Optional[pulumi.Input[DataLakeStorageAccountDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[EncryptionDetailsArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[EncryptionDetailsArgs]]): ...
+    def encryption(
+        self, value: Optional[pulumi.Input[EncryptionDetailsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedIdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[ManagedIdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedResourceGroupName")
     def managed_resource_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_resource_group_name.setter
     def managed_resource_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedVirtualNetwork")
     def managed_virtual_network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_virtual_network.setter
-    def managed_virtual_network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def managed_virtual_network(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedVirtualNetworkSettings")
     def managed_virtual_network_settings(
@@ -117,7 +130,8 @@ class WorkspaceArgs:
     @managed_virtual_network_settings.setter
     def managed_virtual_network_settings(
         self, value: Optional[pulumi.Input[ManagedVirtualNetworkSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnections")
     def private_endpoint_connections(
@@ -131,7 +145,8 @@ class WorkspaceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -143,7 +158,8 @@ class WorkspaceArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, WorkspacePublicNetworkAccess]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="purviewConfiguration")
     def purview_configuration(
@@ -152,12 +168,16 @@ class WorkspaceArgs:
     @purview_configuration.setter
     def purview_configuration(
         self, value: Optional[pulumi.Input[PurviewConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlAdministratorLogin")
     def sql_administrator_login(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sql_administrator_login.setter
-    def sql_administrator_login(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sql_administrator_login(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlAdministratorLoginPassword")
     def sql_administrator_login_password(
@@ -166,7 +186,8 @@ class WorkspaceArgs:
     @sql_administrator_login_password.setter
     def sql_administrator_login_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -175,7 +196,8 @@ class WorkspaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedServiceBypassEnabled")
     def trusted_service_bypass_enabled(
@@ -184,7 +206,8 @@ class WorkspaceArgs:
     @trusted_service_bypass_enabled.setter
     def trusted_service_bypass_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkProfile")
     def virtual_network_profile(
@@ -193,12 +216,14 @@ class WorkspaceArgs:
     @virtual_network_profile.setter
     def virtual_network_profile(
         self, value: Optional[pulumi.Input[VirtualNetworkProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_name.setter
-    def workspace_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceRepositoryConfiguration")
     def workspace_repository_configuration(
@@ -207,7 +232,8 @@ class WorkspaceArgs:
     @workspace_repository_configuration.setter
     def workspace_repository_configuration(
         self, value: Optional[pulumi.Input[WorkspaceRepositoryConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:synapse:Workspace")
 class Workspace(pulumi.CustomResource):

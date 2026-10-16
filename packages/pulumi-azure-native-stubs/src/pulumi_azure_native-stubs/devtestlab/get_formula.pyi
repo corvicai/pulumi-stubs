@@ -82,7 +82,8 @@ class GetFormulaResult:
     def vm(self) -> Optional[outputs.FormulaPropertiesFromVmResponse]: ...
 
 class AwaitableGetFormulaResult(GetFormulaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFormulaResult]:
+        ...
 
 def get_formula(
     expand: Optional[_builtins.str] = ...,

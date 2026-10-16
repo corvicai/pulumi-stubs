@@ -43,7 +43,8 @@ class GetGlossaryIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetGlossaryIamPolicyResult(GetGlossaryIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlossaryIamPolicyResult]:
+        ...
 
 def get_glossary_iam_policy(
     glossary_id: Optional[_builtins.str] = ...,

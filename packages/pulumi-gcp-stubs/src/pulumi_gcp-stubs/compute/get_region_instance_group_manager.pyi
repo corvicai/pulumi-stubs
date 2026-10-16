@@ -180,7 +180,10 @@ class GetRegionInstanceGroupManagerResult:
     def wait_for_instances_status(self) -> _builtins.str: ...
 
 class AwaitableGetRegionInstanceGroupManagerResult(GetRegionInstanceGroupManagerResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegionInstanceGroupManagerResult]:
+        ...
 
 def get_region_instance_group_manager(
     name: Optional[_builtins.str] = ...,

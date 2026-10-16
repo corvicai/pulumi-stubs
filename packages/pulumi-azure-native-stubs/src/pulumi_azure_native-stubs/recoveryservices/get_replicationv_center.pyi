@@ -44,7 +44,8 @@ class GetReplicationvCenterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationvCenterResult(GetReplicationvCenterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationvCenterResult]:
+        ...
 
 def get_replicationv_center(
     fabric_name: Optional[_builtins.str] = ...,

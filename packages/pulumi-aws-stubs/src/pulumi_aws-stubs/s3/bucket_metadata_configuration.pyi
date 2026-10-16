@@ -27,7 +27,8 @@ class BucketMetadataConfigurationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataConfiguration")
     def metadata_configuration(
@@ -36,18 +37,23 @@ class BucketMetadataConfigurationArgs:
     @metadata_configuration.setter
     def metadata_configuration(
         self, value: pulumi.Input[BucketMetadataConfigurationMetadataConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
     def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expected_bucket_owner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -56,7 +62,8 @@ class BucketMetadataConfigurationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[BucketMetadataConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BucketMetadataConfigurationState:
@@ -75,13 +82,17 @@ class _BucketMetadataConfigurationState:
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
     def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expected_bucket_owner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataConfiguration")
     def metadata_configuration(
@@ -95,12 +106,14 @@ class _BucketMetadataConfigurationState:
         value: Optional[
             pulumi.Input[BucketMetadataConfigurationMetadataConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -109,7 +122,8 @@ class _BucketMetadataConfigurationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[BucketMetadataConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class BucketMetadataConfiguration(pulumi.CustomResource):

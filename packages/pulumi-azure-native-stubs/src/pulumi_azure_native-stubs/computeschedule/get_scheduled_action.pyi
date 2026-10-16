@@ -52,7 +52,8 @@ class GetScheduledActionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScheduledActionResult(GetScheduledActionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScheduledActionResult]:
+        ...
 
 def get_scheduled_action(
     resource_group_name: Optional[_builtins.str] = ...,

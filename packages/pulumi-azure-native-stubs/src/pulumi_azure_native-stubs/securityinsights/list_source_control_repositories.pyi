@@ -25,7 +25,10 @@ class ListSourceControlRepositoriesResult:
     def value(self) -> Sequence[outputs.RepoResponse]: ...
 
 class AwaitableListSourceControlRepositoriesResult(ListSourceControlRepositoriesResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSourceControlRepositoriesResult]:
+        ...
 
 def list_source_control_repositories(
     client_id: Optional[_builtins.str] = ...,

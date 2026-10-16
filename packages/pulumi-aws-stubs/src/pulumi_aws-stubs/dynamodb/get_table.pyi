@@ -122,7 +122,8 @@ class GetTableResult:
     def write_capacity(self) -> _builtins.int: ...
 
 class AwaitableGetTableResult(GetTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableResult]:
+        ...
 
 def get_table(
     name: Optional[_builtins.str] = ...,

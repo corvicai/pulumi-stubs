@@ -23,12 +23,14 @@ class PrivateLinkAssociationArgs:
     @pulumi.getter(name="groupId")
     def group_id(self) -> pulumi.Input[_builtins.str]: ...
     @group_id.setter
-    def group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="plaId")
     def pla_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pla_id.setter
-    def pla_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pla_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -37,7 +39,8 @@ class PrivateLinkAssociationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[PrivateLinkAssociationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:authorization:PrivateLinkAssociation")
 class PrivateLinkAssociation(pulumi.CustomResource):

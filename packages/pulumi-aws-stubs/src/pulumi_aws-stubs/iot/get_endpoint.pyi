@@ -31,7 +31,8 @@ class GetEndpointResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetEndpointResult(GetEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEndpointResult]:
+        ...
 
 def get_endpoint(
     endpoint_type: Optional[_builtins.str] = ...,

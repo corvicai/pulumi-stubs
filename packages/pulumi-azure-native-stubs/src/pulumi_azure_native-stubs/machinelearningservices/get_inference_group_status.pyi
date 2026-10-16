@@ -29,7 +29,8 @@ class GetInferenceGroupStatusResult:
     def requested_capacity(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetInferenceGroupStatusResult(GetInferenceGroupStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInferenceGroupStatusResult]:
+        ...
 
 def get_inference_group_status(
     group_name: Optional[_builtins.str] = ...,

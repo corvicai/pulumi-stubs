@@ -35,12 +35,14 @@ class PoolArgs:
     @pulumi.getter(name="poolType")
     def pool_type(self) -> pulumi.Input[PoolTypeArgs]: ...
     @pool_type.setter
-    def pool_type(self, value: pulumi.Input[PoolTypeArgs]): ...
+    def pool_type(self, value: pulumi.Input[PoolTypeArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def assignments(
@@ -49,17 +51,20 @@ class PoolArgs:
     @assignments.setter
     def assignments(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AssignmentArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="poolName")
     def pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pool_name.setter
-    def pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pool_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reclaimPolicy")
     def reclaim_policy(
@@ -68,12 +73,14 @@ class PoolArgs:
     @reclaim_policy.setter
     def reclaim_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReclaimPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(self) -> Optional[pulumi.Input[ResourcesArgs]]: ...
     @resources.setter
-    def resources(self, value: Optional[pulumi.Input[ResourcesArgs]]): ...
+    def resources(self, value: Optional[pulumi.Input[ResourcesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -82,7 +89,8 @@ class PoolArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -94,7 +102,8 @@ class PoolArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Zone]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:containerstorage:Pool")
 class Pool(pulumi.CustomResource):

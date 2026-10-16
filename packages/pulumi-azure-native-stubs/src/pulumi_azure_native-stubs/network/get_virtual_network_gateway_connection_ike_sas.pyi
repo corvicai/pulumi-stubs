@@ -22,7 +22,10 @@ class GetVirtualNetworkGatewayConnectionIkeSasResult:
 class AwaitableGetVirtualNetworkGatewayConnectionIkeSasResult(
     GetVirtualNetworkGatewayConnectionIkeSasResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayConnectionIkeSasResult]:
+        ...
 
 def get_virtual_network_gateway_connection_ike_sas(
     resource_group_name: Optional[_builtins.str] = ...,

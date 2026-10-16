@@ -268,7 +268,8 @@ class AFDDomainHttpsCustomizedCipherSuiteSetArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cipherSuiteSetForTls13")
     def cipher_suite_set_for_tls13(
@@ -290,7 +291,8 @@ class AFDDomainHttpsCustomizedCipherSuiteSetArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AFDDomainHttpsParametersArgsDict(TypedDict):
     certificate_type: pulumi.Input[Union[_builtins.str, AfdCertificateType]]
@@ -326,7 +328,8 @@ class AFDDomainHttpsParametersArgs:
     @certificate_type.setter
     def certificate_type(
         self, value: pulumi.Input[Union[_builtins.str, AfdCertificateType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cipherSuiteSetType")
     def cipher_suite_set_type(
@@ -335,7 +338,8 @@ class AFDDomainHttpsParametersArgs:
     @cipher_suite_set_type.setter
     def cipher_suite_set_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AfdCipherSuiteSetType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customizedCipherSuiteSet")
     def customized_cipher_suite_set(
@@ -344,19 +348,22 @@ class AFDDomainHttpsParametersArgs:
     @customized_cipher_suite_set.setter
     def customized_cipher_suite_set(
         self, value: Optional[pulumi.Input[AFDDomainHttpsCustomizedCipherSuiteSetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumTlsVersion")
     def minimum_tls_version(self) -> Optional[pulumi.Input[AfdMinimumTlsVersion]]: ...
     @minimum_tls_version.setter
     def minimum_tls_version(
         self, value: Optional[pulumi.Input[AfdMinimumTlsVersion]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def secret(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]: ...
     @secret.setter
-    def secret(self, value: Optional[pulumi.Input[ResourceReferenceArgs]]): ...
+    def secret(self, value: Optional[pulumi.Input[ResourceReferenceArgs]]):  # -> None:
+        ...
 
 class ActivatedResourceReferenceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -370,7 +377,8 @@ class ActivatedResourceReferenceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AfdRouteCacheConfigurationArgsDict(TypedDict):
     compression_settings: NotRequired[pulumi.Input[CompressionSettingsArgsDict]]
@@ -398,12 +406,16 @@ class AfdRouteCacheConfigurationArgs:
     @compression_settings.setter
     def compression_settings(
         self, value: Optional[pulumi.Input[CompressionSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryParameters")
     def query_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @query_parameters.setter
-    def query_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def query_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringCachingBehavior")
     def query_string_caching_behavior(
@@ -417,7 +429,8 @@ class AfdRouteCacheConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, AfdQueryStringCachingBehavior]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPathArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
@@ -435,12 +448,16 @@ class AgentPathArgs:
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, AgentPathType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, AgentPathType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, AgentPathType]]
+    ):  # -> None:
+        ...
 
 class AzureFirstPartyManagedCertificateParametersArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -462,7 +479,8 @@ class AzureFirstPartyManagedCertificateParametersArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subjectAlternativeNames")
     def subject_alternative_names(
@@ -471,7 +489,8 @@ class AzureFirstPartyManagedCertificateParametersArgs:
     @subject_alternative_names.setter
     def subject_alternative_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CacheConfigurationArgsDict(TypedDict):
     cache_behavior: NotRequired[pulumi.Input[Union[_builtins.str, RuleCacheBehavior]]]
@@ -509,12 +528,14 @@ class CacheConfigurationArgs:
     @cache_behavior.setter
     def cache_behavior(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RuleCacheBehavior]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheDuration")
     def cache_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_duration.setter
-    def cache_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_duration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCompressionEnabled")
     def is_compression_enabled(
@@ -524,12 +545,16 @@ class CacheConfigurationArgs:
     def is_compression_enabled(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, RuleIsCompressionEnabled]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryParameters")
     def query_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @query_parameters.setter
-    def query_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def query_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringCachingBehavior")
     def query_string_caching_behavior(
@@ -543,7 +568,8 @@ class CacheConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, RuleQueryStringCachingBehavior]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CacheExpirationActionParametersArgsDict(TypedDict):
     cache_behavior: pulumi.Input[Union[_builtins.str, CacheBehavior]]
@@ -567,22 +593,28 @@ class CacheExpirationActionParametersArgs:
     @cache_behavior.setter
     def cache_behavior(
         self, value: pulumi.Input[Union[_builtins.str, CacheBehavior]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheType")
     def cache_type(self) -> pulumi.Input[Union[_builtins.str, CacheType]]: ...
     @cache_type.setter
-    def cache_type(self, value: pulumi.Input[Union[_builtins.str, CacheType]]): ...
+    def cache_type(
+        self, value: pulumi.Input[Union[_builtins.str, CacheType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheDuration")
     def cache_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_duration.setter
-    def cache_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_duration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CacheKeyQueryStringActionParametersArgsDict(TypedDict):
     query_string_behavior: pulumi.Input[Union[_builtins.str, QueryStringBehavior]]
@@ -606,17 +638,22 @@ class CacheKeyQueryStringActionParametersArgs:
     @query_string_behavior.setter
     def query_string_behavior(
         self, value: pulumi.Input[Union[_builtins.str, QueryStringBehavior]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryParameters")
     def query_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @query_parameters.setter
-    def query_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def query_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ClientPortMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, ClientPortOperator]]
@@ -648,12 +685,14 @@ class ClientPortMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, ClientPortOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -662,12 +701,16 @@ class ClientPortMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -681,7 +724,8 @@ class ClientPortMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CompressionSettingsArgsDict(TypedDict):
     content_types_to_compress: NotRequired[
@@ -707,12 +751,16 @@ class CompressionSettingsArgs:
     @content_types_to_compress.setter
     def content_types_to_compress(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCompressionEnabled")
     def is_compression_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_compression_enabled.setter
-    def is_compression_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_compression_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CookiesMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, CookiesOperator]]
@@ -744,12 +792,16 @@ class CookiesMatchConditionParametersArgs:
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, CookiesOperator]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, CookiesOperator]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, CookiesOperator]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -758,17 +810,22 @@ class CookiesMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -782,7 +839,8 @@ class CookiesMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomRuleListArgsDict(TypedDict):
     rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[CustomRuleArgsDict]]]]
@@ -802,7 +860,8 @@ class CustomRuleListArgs:
     @rules.setter
     def rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CustomRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomRuleArgsDict(TypedDict):
     action: pulumi.Input[Union[_builtins.str, ActionType]]
@@ -830,7 +889,8 @@ class CustomRuleArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[Union[_builtins.str, ActionType]]: ...
     @action.setter
-    def action(self, value: pulumi.Input[Union[_builtins.str, ActionType]]): ...
+    def action(self, value: pulumi.Input[Union[_builtins.str, ActionType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchConditions")
     def match_conditions(
@@ -839,17 +899,20 @@ class CustomRuleArgs:
     @match_conditions.setter
     def match_conditions(
         self, value: pulumi.Input[Sequence[pulumi.Input[MatchConditionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -859,7 +922,8 @@ class CustomRuleArgs:
     def enabled_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, CustomRuleEnabledState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomerCertificateParametersArgsDict(TypedDict):
     secret_source: pulumi.Input[ResourceReferenceArgsDict]
@@ -881,22 +945,28 @@ class CustomerCertificateParametersArgs:
     @pulumi.getter(name="secretSource")
     def secret_source(self) -> pulumi.Input[ResourceReferenceArgs]: ...
     @secret_source.setter
-    def secret_source(self, value: pulumi.Input[ResourceReferenceArgs]): ...
+    def secret_source(self, value: pulumi.Input[ResourceReferenceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_version.setter
-    def secret_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useLatestVersion")
     def use_latest_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_latest_version.setter
-    def use_latest_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_latest_version(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class DeepCreatedOriginGroupArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -928,7 +998,8 @@ class DeepCreatedOriginGroupArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def origins(
@@ -937,7 +1008,8 @@ class DeepCreatedOriginGroupArgs:
     @origins.setter
     def origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[ResourceReferenceArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthProbeSettings")
     def health_probe_settings(
@@ -946,7 +1018,8 @@ class DeepCreatedOriginGroupArgs:
     @health_probe_settings.setter
     def health_probe_settings(
         self, value: Optional[pulumi.Input[HealthProbeParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseBasedOriginErrorDetectionSettings")
     def response_based_origin_error_detection_settings(
@@ -956,7 +1029,8 @@ class DeepCreatedOriginGroupArgs:
     def response_based_origin_error_detection_settings(
         self,
         value: Optional[pulumi.Input[ResponseBasedOriginErrorDetectionParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def traffic_restoration_time_to_healed_or_new_endpoints_in_minutes(
@@ -965,7 +1039,8 @@ class DeepCreatedOriginGroupArgs:
     @traffic_restoration_time_to_healed_or_new_endpoints_in_minutes.setter
     def traffic_restoration_time_to_healed_or_new_endpoints_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeepCreatedOriginArgsDict(TypedDict):
     host_name: pulumi.Input[_builtins.str]
@@ -1003,42 +1078,54 @@ class DeepCreatedOriginArgs:
     @pulumi.getter(name="hostName")
     def host_name(self) -> pulumi.Input[_builtins.str]: ...
     @host_name.setter
-    def host_name(self, value: pulumi.Input[_builtins.str]): ...
+    def host_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpPort")
     def http_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @http_port.setter
-    def http_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def http_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsPort")
     def https_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @https_port.setter
-    def https_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def https_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originHostHeader")
     def origin_host_header(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_host_header.setter
-    def origin_host_header(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_host_header(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkAlias")
     def private_link_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_alias.setter
-    def private_link_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_link_alias(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkApprovalMessage")
     def private_link_approval_message(
@@ -1047,24 +1134,30 @@ class DeepCreatedOriginArgs:
     @private_link_approval_message.setter
     def private_link_approval_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkLocation")
     def private_link_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_location.setter
-    def private_link_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_link_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkResourceId")
     def private_link_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_resource_id.setter
     def private_link_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def weight(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @weight.setter
-    def weight(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def weight(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeliveryRuleCacheExpirationActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1082,12 +1175,16 @@ class DeliveryRuleCacheExpirationActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[CacheExpirationActionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[CacheExpirationActionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[CacheExpirationActionParametersArgs]
+    ):  # -> None:
+        ...
 
 class DeliveryRuleCacheKeyQueryStringActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1105,14 +1202,16 @@ class DeliveryRuleCacheKeyQueryStringActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[CacheKeyQueryStringActionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[CacheKeyQueryStringActionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleClientPortConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1130,14 +1229,16 @@ class DeliveryRuleClientPortConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[ClientPortMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[ClientPortMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleCookiesConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1155,12 +1256,16 @@ class DeliveryRuleCookiesConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[CookiesMatchConditionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[CookiesMatchConditionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[CookiesMatchConditionParametersArgs]
+    ):  # -> None:
+        ...
 
 class DeliveryRuleHostNameConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1178,12 +1283,16 @@ class DeliveryRuleHostNameConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[HostNameMatchConditionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[HostNameMatchConditionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[HostNameMatchConditionParametersArgs]
+    ):  # -> None:
+        ...
 
 class DeliveryRuleHttpVersionConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1201,14 +1310,16 @@ class DeliveryRuleHttpVersionConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[HttpVersionMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[HttpVersionMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleIsDeviceConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1226,12 +1337,16 @@ class DeliveryRuleIsDeviceConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[IsDeviceMatchConditionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[IsDeviceMatchConditionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[IsDeviceMatchConditionParametersArgs]
+    ):  # -> None:
+        ...
 
 class DeliveryRulePostArgsConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1249,12 +1364,16 @@ class DeliveryRulePostArgsConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[PostArgsMatchConditionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[PostArgsMatchConditionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[PostArgsMatchConditionParametersArgs]
+    ):  # -> None:
+        ...
 
 class DeliveryRuleQueryStringConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1272,14 +1391,16 @@ class DeliveryRuleQueryStringConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[QueryStringMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[QueryStringMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleRemoteAddressConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1297,14 +1418,16 @@ class DeliveryRuleRemoteAddressConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[RemoteAddressMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[RemoteAddressMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleRequestBodyConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1322,14 +1445,16 @@ class DeliveryRuleRequestBodyConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[RequestBodyMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[RequestBodyMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleRequestHeaderActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1347,12 +1472,14 @@ class DeliveryRuleRequestHeaderActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[HeaderActionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[HeaderActionParametersArgs]): ...
+    def parameters(self, value: pulumi.Input[HeaderActionParametersArgs]):  # -> None:
+        ...
 
 class DeliveryRuleRequestHeaderConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1370,14 +1497,16 @@ class DeliveryRuleRequestHeaderConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[RequestHeaderMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[RequestHeaderMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleRequestMethodConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1395,14 +1524,16 @@ class DeliveryRuleRequestMethodConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[RequestMethodMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[RequestMethodMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleRequestSchemeConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1420,14 +1551,16 @@ class DeliveryRuleRequestSchemeConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[RequestSchemeMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[RequestSchemeMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleRequestUriConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1445,14 +1578,16 @@ class DeliveryRuleRequestUriConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[RequestUriMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[RequestUriMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleResponseHeaderActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1470,12 +1605,14 @@ class DeliveryRuleResponseHeaderActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[HeaderActionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[HeaderActionParametersArgs]): ...
+    def parameters(self, value: pulumi.Input[HeaderActionParametersArgs]):  # -> None:
+        ...
 
 class DeliveryRuleRouteConfigurationOverrideActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1493,7 +1630,8 @@ class DeliveryRuleRouteConfigurationOverrideActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -1502,7 +1640,8 @@ class DeliveryRuleRouteConfigurationOverrideActionArgs:
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[RouteConfigurationOverrideActionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleServerPortConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1520,14 +1659,16 @@ class DeliveryRuleServerPortConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[ServerPortMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[ServerPortMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleSocketAddrConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1545,14 +1686,16 @@ class DeliveryRuleSocketAddrConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[SocketAddrMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[SocketAddrMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleSslProtocolConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1570,14 +1713,16 @@ class DeliveryRuleSslProtocolConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[SslProtocolMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[SslProtocolMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleUrlFileExtensionConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1595,7 +1740,8 @@ class DeliveryRuleUrlFileExtensionConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -1604,7 +1750,8 @@ class DeliveryRuleUrlFileExtensionConditionArgs:
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[UrlFileExtensionMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleUrlFileNameConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1622,14 +1769,16 @@ class DeliveryRuleUrlFileNameConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[UrlFileNameMatchConditionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[UrlFileNameMatchConditionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryRuleUrlPathConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1647,12 +1796,16 @@ class DeliveryRuleUrlPathConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[UrlPathMatchConditionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[UrlPathMatchConditionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[UrlPathMatchConditionParametersArgs]
+    ):  # -> None:
+        ...
 
 class DeliveryRuleArgsDict(TypedDict):
     actions: pulumi.Input[
@@ -1799,12 +1952,14 @@ class DeliveryRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def order(self) -> pulumi.Input[_builtins.int]: ...
     @order.setter
-    def order(self, value: pulumi.Input[_builtins.int]): ...
+    def order(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -1870,12 +2025,14 @@ class DeliveryRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EndpointPropertiesUpdateParametersDeliveryPolicyArgsDict(TypedDict):
     rules: pulumi.Input[Sequence[pulumi.Input[DeliveryRuleArgsDict]]]
@@ -1893,12 +2050,16 @@ class EndpointPropertiesUpdateParametersDeliveryPolicyArgs:
     @pulumi.getter
     def rules(self) -> pulumi.Input[Sequence[pulumi.Input[DeliveryRuleArgs]]]: ...
     @rules.setter
-    def rules(self, value: pulumi.Input[Sequence[pulumi.Input[DeliveryRuleArgs]]]): ...
+    def rules(
+        self, value: pulumi.Input[Sequence[pulumi.Input[DeliveryRuleArgs]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EndpointPropertiesUpdateParametersWebApplicationFirewallPolicyLinkArgsDict(
     TypedDict
@@ -1914,7 +2075,8 @@ class EndpointPropertiesUpdateParametersWebApplicationFirewallPolicyLinkArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GeoFilterArgsDict(TypedDict):
     action: pulumi.Input[GeoFilterActions]
@@ -1934,19 +2096,22 @@ class GeoFilterArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[GeoFilterActions]: ...
     @action.setter
-    def action(self, value: pulumi.Input[GeoFilterActions]): ...
+    def action(self, value: pulumi.Input[GeoFilterActions]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="countryCodes")
     def country_codes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @country_codes.setter
     def country_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relativePath")
     def relative_path(self) -> pulumi.Input[_builtins.str]: ...
     @relative_path.setter
-    def relative_path(self, value: pulumi.Input[_builtins.str]): ...
+    def relative_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class HeaderActionParametersArgsDict(TypedDict):
     header_action: pulumi.Input[Union[_builtins.str, HeaderAction]]
@@ -1970,22 +2135,26 @@ class HeaderActionParametersArgs:
     @header_action.setter
     def header_action(
         self, value: pulumi.Input[Union[_builtins.str, HeaderAction]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class HealthProbeParametersArgsDict(TypedDict):
     probe_interval_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -2009,24 +2178,28 @@ class HealthProbeParametersArgs:
     @probe_interval_in_seconds.setter
     def probe_interval_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="probePath")
     def probe_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @probe_path.setter
-    def probe_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def probe_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="probeProtocol")
     def probe_protocol(self) -> Optional[pulumi.Input[ProbeProtocol]]: ...
     @probe_protocol.setter
-    def probe_protocol(self, value: Optional[pulumi.Input[ProbeProtocol]]): ...
+    def probe_protocol(self, value: Optional[pulumi.Input[ProbeProtocol]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="probeRequestType")
     def probe_request_type(self) -> Optional[pulumi.Input[HealthProbeRequestType]]: ...
     @probe_request_type.setter
     def probe_request_type(
         self, value: Optional[pulumi.Input[HealthProbeRequestType]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class HostNameMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, HostNameOperator]]
@@ -2056,12 +2229,16 @@ class HostNameMatchConditionParametersArgs:
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, HostNameOperator]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, HostNameOperator]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, HostNameOperator]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -2070,12 +2247,16 @@ class HostNameMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -2089,7 +2270,8 @@ class HostNameMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class HttpErrorRangeParametersArgsDict(TypedDict):
     begin: NotRequired[pulumi.Input[_builtins.int]]
@@ -2107,12 +2289,14 @@ class HttpErrorRangeParametersArgs:
     @pulumi.getter
     def begin(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @begin.setter
-    def begin(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def begin(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class HttpVersionMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, HttpVersionOperator]]
@@ -2144,12 +2328,14 @@ class HttpVersionMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, HttpVersionOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -2158,12 +2344,16 @@ class HttpVersionMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -2177,7 +2367,8 @@ class HttpVersionMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IsDeviceMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, IsDeviceOperator]]
@@ -2211,12 +2402,16 @@ class IsDeviceMatchConditionParametersArgs:
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, IsDeviceOperator]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, IsDeviceOperator]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, IsDeviceOperator]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -2232,12 +2427,16 @@ class IsDeviceMatchConditionParametersArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, IsDeviceMatchValue]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -2251,7 +2450,8 @@ class IsDeviceMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class KeyVaultSigningKeyParametersArgsDict(TypedDict):
     resource_group_name: pulumi.Input[_builtins.str]
@@ -2277,22 +2477,26 @@ class KeyVaultSigningKeyParametersArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretName")
     def secret_name(self) -> pulumi.Input[_builtins.str]: ...
     @secret_name.setter
-    def secret_name(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscriptionId")
     def subscription_id(self) -> pulumi.Input[_builtins.str]: ...
     @subscription_id.setter
-    def subscription_id(self, value: pulumi.Input[_builtins.str]): ...
+    def subscription_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(
@@ -2302,12 +2506,14 @@ class KeyVaultSigningKeyParametersArgs:
     def type_name(
         self,
         value: pulumi.Input[Union[_builtins.str, KeyVaultSigningKeyParametersType]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultName")
     def vault_name(self) -> pulumi.Input[_builtins.str]: ...
     @vault_name.setter
-    def vault_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vault_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class LoadBalancingSettingsParametersArgsDict(TypedDict):
     additional_latency_in_milliseconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -2331,19 +2537,22 @@ class LoadBalancingSettingsParametersArgs:
     @additional_latency_in_milliseconds.setter
     def additional_latency_in_milliseconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleSize")
     def sample_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @sample_size.setter
-    def sample_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def sample_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successfulSamplesRequired")
     def successful_samples_required(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @successful_samples_required.setter
     def successful_samples_required(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedCertificateParametersArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -2355,7 +2564,8 @@ class ManagedCertificateParametersArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ManagedRuleGroupOverrideArgsDict(TypedDict):
     rule_group_name: pulumi.Input[_builtins.str]
@@ -2377,7 +2587,8 @@ class ManagedRuleGroupOverrideArgs:
     @pulumi.getter(name="ruleGroupName")
     def rule_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_group_name.setter
-    def rule_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -2387,7 +2598,8 @@ class ManagedRuleGroupOverrideArgs:
     def rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ManagedRuleOverrideArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleOverrideArgsDict(TypedDict):
     rule_id: pulumi.Input[_builtins.str]
@@ -2411,14 +2623,16 @@ class ManagedRuleOverrideArgs:
     @pulumi.getter(name="ruleId")
     def rule_id(self) -> pulumi.Input[_builtins.str]: ...
     @rule_id.setter
-    def rule_id(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[Union[_builtins.str, ActionType]]]: ...
     @action.setter
     def action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -2428,7 +2642,8 @@ class ManagedRuleOverrideArgs:
     def enabled_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ManagedRuleEnabledState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleSetListArgsDict(TypedDict):
     managed_rule_sets: NotRequired[
@@ -2452,7 +2667,8 @@ class ManagedRuleSetListArgs:
     @managed_rule_sets.setter
     def managed_rule_sets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ManagedRuleSetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleSetArgsDict(TypedDict):
     rule_set_type: pulumi.Input[_builtins.str]
@@ -2478,17 +2694,20 @@ class ManagedRuleSetArgs:
     @pulumi.getter(name="ruleSetType")
     def rule_set_type(self) -> pulumi.Input[_builtins.str]: ...
     @rule_set_type.setter
-    def rule_set_type(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_set_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleSetVersion")
     def rule_set_version(self) -> pulumi.Input[_builtins.str]: ...
     @rule_set_version.setter
-    def rule_set_version(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_set_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="anomalyScore")
     def anomaly_score(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @anomaly_score.setter
-    def anomaly_score(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def anomaly_score(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleGroupOverrides")
     def rule_group_overrides(
@@ -2502,7 +2721,8 @@ class ManagedRuleSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ManagedRuleGroupOverrideArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -2528,7 +2748,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -2537,7 +2758,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MatchConditionArgsDict(TypedDict):
     match_value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -2569,7 +2791,8 @@ class MatchConditionArgs:
     @match_value.setter
     def match_value(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchVariable")
     def match_variable(
@@ -2578,22 +2801,28 @@ class MatchConditionArgs:
     @match_variable.setter
     def match_variable(
         self, value: pulumi.Input[Union[_builtins.str, WafMatchVariable]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, Operator]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, Operator]]): ...
+    def operator(self, value: pulumi.Input[Union[_builtins.str, Operator]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -2607,7 +2836,8 @@ class MatchConditionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TransformType]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginAuthenticationPropertiesArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
@@ -2629,7 +2859,8 @@ class OriginAuthenticationPropertiesArgs:
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -2639,7 +2870,8 @@ class OriginAuthenticationPropertiesArgs:
     def type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, OriginAuthenticationType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentity")
     def user_assigned_identity(
@@ -2648,7 +2880,8 @@ class OriginAuthenticationPropertiesArgs:
     @user_assigned_identity.setter
     def user_assigned_identity(
         self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginGroupOverrideActionParametersArgsDict(TypedDict):
     origin_group: pulumi.Input[ResourceReferenceArgsDict]
@@ -2666,12 +2899,14 @@ class OriginGroupOverrideActionParametersArgs:
     @pulumi.getter(name="originGroup")
     def origin_group(self) -> pulumi.Input[ResourceReferenceArgs]: ...
     @origin_group.setter
-    def origin_group(self, value: pulumi.Input[ResourceReferenceArgs]): ...
+    def origin_group(self, value: pulumi.Input[ResourceReferenceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OriginGroupOverrideActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2689,14 +2924,16 @@ class OriginGroupOverrideActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[OriginGroupOverrideActionParametersArgs]: ...
     @parameters.setter
     def parameters(
         self, value: pulumi.Input[OriginGroupOverrideActionParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OriginGroupOverrideArgsDict(TypedDict):
     forwarding_protocol: NotRequired[
@@ -2722,12 +2959,16 @@ class OriginGroupOverrideArgs:
     @forwarding_protocol.setter
     def forwarding_protocol(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ForwardingProtocol]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originGroup")
     def origin_group(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]: ...
     @origin_group.setter
-    def origin_group(self, value: Optional[pulumi.Input[ResourceReferenceArgs]]): ...
+    def origin_group(
+        self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
+    ):  # -> None:
+        ...
 
 class PolicySettingsArgsDict(TypedDict):
     default_custom_block_response_body: NotRequired[pulumi.Input[_builtins.str]]
@@ -2761,7 +3002,8 @@ class PolicySettingsArgs:
     @default_custom_block_response_body.setter
     def default_custom_block_response_body(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCustomBlockResponseStatusCode")
     def default_custom_block_response_status_code(
@@ -2770,12 +3012,16 @@ class PolicySettingsArgs:
     @default_custom_block_response_status_code.setter
     def default_custom_block_response_status_code(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRedirectUrl")
     def default_redirect_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_redirect_url.setter
-    def default_redirect_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_redirect_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -2784,12 +3030,16 @@ class PolicySettingsArgs:
     @enabled_state.setter
     def enabled_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyEnabledState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, PolicyMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyMode]]]): ...
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyMode]]]
+    ):  # -> None:
+        ...
 
 class PostArgsMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, PostArgsOperator]]
@@ -2821,12 +3071,16 @@ class PostArgsMatchConditionParametersArgs:
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, PostArgsOperator]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, PostArgsOperator]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, PostArgsOperator]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -2835,17 +3089,22 @@ class PostArgsMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -2859,7 +3118,8 @@ class PostArgsMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ProfileLogScrubbingArgsDict(TypedDict):
     scrubbing_rules: NotRequired[
@@ -2890,7 +3150,8 @@ class ProfileLogScrubbingArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ProfileScrubbingRulesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -2899,7 +3160,8 @@ class ProfileLogScrubbingArgs:
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProfileScrubbingState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ProfileScrubbingRulesArgsDict(TypedDict):
     match_variable: pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryMatchVariable]]
@@ -2933,7 +3195,8 @@ class ProfileScrubbingRulesArgs:
     @match_variable.setter
     def match_variable(
         self, value: pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryMatchVariable]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectorMatchOperator")
     def selector_match_operator(
@@ -2942,12 +3205,14 @@ class ProfileScrubbingRulesArgs:
     @selector_match_operator.setter
     def selector_match_operator(
         self, value: pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryMatchOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -2957,7 +3222,8 @@ class ProfileScrubbingRulesArgs:
     def state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class QueryStringMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, QueryStringOperator]]
@@ -2989,12 +3255,14 @@ class QueryStringMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, QueryStringOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3003,12 +3271,16 @@ class QueryStringMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3022,7 +3294,8 @@ class QueryStringMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RateLimitRuleListArgsDict(TypedDict):
     rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[RateLimitRuleArgsDict]]]]
@@ -3042,7 +3315,8 @@ class RateLimitRuleListArgs:
     @rules.setter
     def rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RateLimitRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RateLimitRuleArgsDict(TypedDict):
     action: pulumi.Input[Union[_builtins.str, ActionType]]
@@ -3074,7 +3348,8 @@ class RateLimitRuleArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[Union[_builtins.str, ActionType]]: ...
     @action.setter
-    def action(self, value: pulumi.Input[Union[_builtins.str, ActionType]]): ...
+    def action(self, value: pulumi.Input[Union[_builtins.str, ActionType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchConditions")
     def match_conditions(
@@ -3083,27 +3358,34 @@ class RateLimitRuleArgs:
     @match_conditions.setter
     def match_conditions(
         self, value: pulumi.Input[Sequence[pulumi.Input[MatchConditionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rateLimitDurationInMinutes")
     def rate_limit_duration_in_minutes(self) -> pulumi.Input[_builtins.int]: ...
     @rate_limit_duration_in_minutes.setter
-    def rate_limit_duration_in_minutes(self, value: pulumi.Input[_builtins.int]): ...
+    def rate_limit_duration_in_minutes(
+        self, value: pulumi.Input[_builtins.int]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rateLimitThreshold")
     def rate_limit_threshold(self) -> pulumi.Input[_builtins.int]: ...
     @rate_limit_threshold.setter
-    def rate_limit_threshold(self, value: pulumi.Input[_builtins.int]): ...
+    def rate_limit_threshold(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -3113,7 +3395,8 @@ class RateLimitRuleArgs:
     def enabled_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, CustomRuleEnabledState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RemoteAddressMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, RemoteAddressOperator]]
@@ -3145,12 +3428,14 @@ class RemoteAddressMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, RemoteAddressOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3159,12 +3444,16 @@ class RemoteAddressMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3178,7 +3467,8 @@ class RemoteAddressMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RequestBodyMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, RequestBodyOperator]]
@@ -3210,12 +3500,14 @@ class RequestBodyMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, RequestBodyOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3224,12 +3516,16 @@ class RequestBodyMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3243,7 +3539,8 @@ class RequestBodyMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RequestHeaderMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, RequestHeaderOperator]]
@@ -3277,12 +3574,14 @@ class RequestHeaderMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, RequestHeaderOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3291,17 +3590,22 @@ class RequestHeaderMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3315,7 +3619,8 @@ class RequestHeaderMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RequestMethodMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, RequestMethodOperator]]
@@ -3353,12 +3658,14 @@ class RequestMethodMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, RequestMethodOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3376,12 +3683,16 @@ class RequestMethodMatchConditionParametersArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, RequestMethodMatchValue]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3395,7 +3706,8 @@ class RequestMethodMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RequestSchemeMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[
@@ -3444,12 +3756,14 @@ class RequestSchemeMatchConditionParametersArgs:
         value: pulumi.Input[
             Union[_builtins.str, RequestSchemeMatchConditionParametersOperator]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3467,12 +3781,16 @@ class RequestSchemeMatchConditionParametersArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, RequestSchemeMatchValue]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3486,7 +3804,8 @@ class RequestSchemeMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RequestUriMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, RequestUriOperator]]
@@ -3518,12 +3837,14 @@ class RequestUriMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, RequestUriOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3532,12 +3853,16 @@ class RequestUriMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3551,7 +3876,8 @@ class RequestUriMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceReferenceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -3565,7 +3891,8 @@ class ResourceReferenceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ResponseBasedOriginErrorDetectionParametersArgsDict(TypedDict):
     http_error_ranges: NotRequired[
@@ -3606,7 +3933,8 @@ class ResponseBasedOriginErrorDetectionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[HttpErrorRangeParametersArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseBasedDetectedErrorTypes")
     def response_based_detected_error_types(
@@ -3615,7 +3943,8 @@ class ResponseBasedOriginErrorDetectionParametersArgs:
     @response_based_detected_error_types.setter
     def response_based_detected_error_types(
         self, value: Optional[pulumi.Input[ResponseBasedDetectedErrorTypes]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseBasedFailoverThresholdPercentage")
     def response_based_failover_threshold_percentage(
@@ -3624,7 +3953,8 @@ class ResponseBasedOriginErrorDetectionParametersArgs:
     @response_based_failover_threshold_percentage.setter
     def response_based_failover_threshold_percentage(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RouteConfigurationOverrideActionParametersArgsDict(TypedDict):
     type_name: pulumi.Input[_builtins.str]
@@ -3644,14 +3974,16 @@ class RouteConfigurationOverrideActionParametersArgs:
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheConfiguration")
     def cache_configuration(self) -> Optional[pulumi.Input[CacheConfigurationArgs]]: ...
     @cache_configuration.setter
     def cache_configuration(
         self, value: Optional[pulumi.Input[CacheConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originGroupOverride")
     def origin_group_override(
@@ -3660,7 +3992,8 @@ class RouteConfigurationOverrideActionParametersArgs:
     @origin_group_override.setter
     def origin_group_override(
         self, value: Optional[pulumi.Input[OriginGroupOverrideArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityPolicyWebApplicationFirewallAssociationArgsDict(TypedDict):
     domains: NotRequired[
@@ -3693,7 +4026,8 @@ class SecurityPolicyWebApplicationFirewallAssociationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ActivatedResourceReferenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patternsToMatch")
     def patterns_to_match(
@@ -3702,7 +4036,8 @@ class SecurityPolicyWebApplicationFirewallAssociationArgs:
     @patterns_to_match.setter
     def patterns_to_match(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityPolicyWebApplicationFirewallParametersArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -3734,7 +4069,8 @@ class SecurityPolicyWebApplicationFirewallParametersArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def associations(
@@ -3754,12 +4090,16 @@ class SecurityPolicyWebApplicationFirewallParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wafPolicy")
     def waf_policy(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]: ...
     @waf_policy.setter
-    def waf_policy(self, value: Optional[pulumi.Input[ResourceReferenceArgs]]): ...
+    def waf_policy(
+        self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
+    ):  # -> None:
+        ...
 
 class ServerPortMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, ServerPortOperator]]
@@ -3791,12 +4131,14 @@ class ServerPortMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, ServerPortOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3805,12 +4147,16 @@ class ServerPortMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3824,7 +4170,8 @@ class ServerPortMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SharedPrivateLinkResourcePropertiesArgsDict(TypedDict):
     group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -3848,29 +4195,38 @@ class SharedPrivateLinkResourcePropertiesArgs:
     @pulumi.getter(name="groupId")
     def group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_id.setter
-    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLink")
     def private_link(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]: ...
     @private_link.setter
-    def private_link(self, value: Optional[pulumi.Input[ResourceReferenceArgs]]): ...
+    def private_link(
+        self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkLocation")
     def private_link_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_location.setter
-    def private_link_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_link_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestMessage")
     def request_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_message.setter
-    def request_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[SharedPrivateLinkResourceStatus]]: ...
     @status.setter
     def status(
         self, value: Optional[pulumi.Input[SharedPrivateLinkResourceStatus]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuTypeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3888,12 +4244,14 @@ class SkuTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> pulumi.Input[_builtins.str]: ...
     @tier.setter
-    def tier(self, value: pulumi.Input[_builtins.str]): ...
+    def tier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[Union[_builtins.str, SkuName]]]
@@ -3907,7 +4265,10 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuName]]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuName]]]): ...
+    def name(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, SkuName]]]
+    ):  # -> None:
+        ...
 
 class SocketAddrMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, SocketAddrOperator]]
@@ -3939,12 +4300,14 @@ class SocketAddrMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, SocketAddrOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -3953,12 +4316,16 @@ class SocketAddrMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -3972,7 +4339,8 @@ class SocketAddrMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SslProtocolMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, SslProtocolOperator]]
@@ -4006,12 +4374,14 @@ class SslProtocolMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, SslProtocolOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -4025,12 +4395,16 @@ class SslProtocolMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, SslProtocol]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -4044,7 +4418,8 @@ class SslProtocolMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TargetEndpointArgsDict(TypedDict):
     ports: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
@@ -4066,12 +4441,14 @@ class TargetEndpointArgs:
     @ports.setter
     def ports(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFqdn")
     def target_fqdn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_fqdn.setter
-    def target_fqdn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_fqdn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UrlFileExtensionMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, UrlFileExtensionOperator]]
@@ -4105,12 +4482,14 @@ class UrlFileExtensionMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, UrlFileExtensionOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -4119,12 +4498,16 @@ class UrlFileExtensionMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -4138,7 +4521,8 @@ class UrlFileExtensionMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class UrlFileNameMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, UrlFileNameOperator]]
@@ -4170,12 +4554,14 @@ class UrlFileNameMatchConditionParametersArgs:
     @operator.setter
     def operator(
         self, value: pulumi.Input[Union[_builtins.str, UrlFileNameOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -4184,12 +4570,16 @@ class UrlFileNameMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -4203,7 +4593,8 @@ class UrlFileNameMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class UrlPathMatchConditionParametersArgsDict(TypedDict):
     operator: pulumi.Input[Union[_builtins.str, UrlPathOperator]]
@@ -4233,12 +4624,16 @@ class UrlPathMatchConditionParametersArgs:
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, UrlPathOperator]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, UrlPathOperator]]): ...
+    def operator(
+        self, value: pulumi.Input[Union[_builtins.str, UrlPathOperator]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchValues")
     def match_values(
@@ -4247,12 +4642,16 @@ class UrlPathMatchConditionParametersArgs:
     @match_values.setter
     def match_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -4266,7 +4665,8 @@ class UrlPathMatchConditionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class UrlRedirectActionParametersArgsDict(TypedDict):
     redirect_type: pulumi.Input[Union[_builtins.str, RedirectType]]
@@ -4300,32 +4700,40 @@ class UrlRedirectActionParametersArgs:
     @redirect_type.setter
     def redirect_type(
         self, value: pulumi.Input[Union[_builtins.str, RedirectType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customFragment")
     def custom_fragment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_fragment.setter
-    def custom_fragment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_fragment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customHostname")
     def custom_hostname(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_hostname.setter
-    def custom_hostname(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_hostname(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customPath")
     def custom_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_path.setter
-    def custom_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customQueryString")
     def custom_query_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_query_string.setter
-    def custom_query_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_query_string(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationProtocol")
     def destination_protocol(
@@ -4334,7 +4742,8 @@ class UrlRedirectActionParametersArgs:
     @destination_protocol.setter
     def destination_protocol(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DestinationProtocol]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UrlRedirectActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4352,12 +4761,16 @@ class UrlRedirectActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[UrlRedirectActionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[UrlRedirectActionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[UrlRedirectActionParametersArgs]
+    ):  # -> None:
+        ...
 
 class UrlRewriteActionParametersArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
@@ -4379,24 +4792,28 @@ class UrlRewriteActionParametersArgs:
     @pulumi.getter
     def destination(self) -> pulumi.Input[_builtins.str]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[_builtins.str]): ...
+    def destination(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourcePattern")
     def source_pattern(self) -> pulumi.Input[_builtins.str]: ...
     @source_pattern.setter
-    def source_pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def source_pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preserveUnmatchedPath")
     def preserve_unmatched_path(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @preserve_unmatched_path.setter
     def preserve_unmatched_path(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UrlRewriteActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4414,12 +4831,16 @@ class UrlRewriteActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[UrlRewriteActionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[UrlRewriteActionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[UrlRewriteActionParametersArgs]
+    ):  # -> None:
+        ...
 
 class UrlSigningActionParametersArgsDict(TypedDict):
     type_name: pulumi.Input[_builtins.str]
@@ -4443,14 +4864,16 @@ class UrlSigningActionParametersArgs:
     @pulumi.getter(name="typeName")
     def type_name(self) -> pulumi.Input[_builtins.str]: ...
     @type_name.setter
-    def type_name(self, value: pulumi.Input[_builtins.str]): ...
+    def type_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def algorithm(self) -> Optional[pulumi.Input[Union[_builtins.str, Algorithm]]]: ...
     @algorithm.setter
     def algorithm(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Algorithm]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterNameOverride")
     def parameter_name_override(
@@ -4464,7 +4887,8 @@ class UrlSigningActionParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UrlSigningParamIdentifierArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class UrlSigningActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4482,12 +4906,16 @@ class UrlSigningActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> pulumi.Input[UrlSigningActionParametersArgs]: ...
     @parameters.setter
-    def parameters(self, value: pulumi.Input[UrlSigningActionParametersArgs]): ...
+    def parameters(
+        self, value: pulumi.Input[UrlSigningActionParametersArgs]
+    ):  # -> None:
+        ...
 
 class UrlSigningKeyParametersArgsDict(TypedDict):
     key_id: pulumi.Input[_builtins.str]
@@ -4509,22 +4937,26 @@ class UrlSigningKeyParametersArgs:
     @pulumi.getter(name="keyId")
     def key_id(self) -> pulumi.Input[_builtins.str]: ...
     @key_id.setter
-    def key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretSource")
     def secret_source(self) -> pulumi.Input[ResourceReferenceArgs]: ...
     @secret_source.setter
-    def secret_source(self, value: pulumi.Input[ResourceReferenceArgs]): ...
+    def secret_source(self, value: pulumi.Input[ResourceReferenceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class UrlSigningKeyArgsDict(TypedDict):
     key_id: pulumi.Input[_builtins.str]
@@ -4542,7 +4974,8 @@ class UrlSigningKeyArgs:
     @pulumi.getter(name="keyId")
     def key_id(self) -> pulumi.Input[_builtins.str]: ...
     @key_id.setter
-    def key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keySourceParameters")
     def key_source_parameters(
@@ -4551,7 +4984,8 @@ class UrlSigningKeyArgs:
     @key_source_parameters.setter
     def key_source_parameters(
         self, value: pulumi.Input[KeyVaultSigningKeyParametersArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UrlSigningParamIdentifierArgsDict(TypedDict):
     param_indicator: pulumi.Input[Union[_builtins.str, ParamIndicator]]
@@ -4571,9 +5005,11 @@ class UrlSigningParamIdentifierArgs:
     @param_indicator.setter
     def param_indicator(
         self, value: pulumi.Input[Union[_builtins.str, ParamIndicator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="paramName")
     def param_name(self) -> pulumi.Input[_builtins.str]: ...
     @param_name.setter
-    def param_name(self, value: pulumi.Input[_builtins.str]): ...
+    def param_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

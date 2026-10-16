@@ -56,7 +56,8 @@ class GetScopeMapResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScopeMapResult(GetScopeMapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScopeMapResult]:
+        ...
 
 def get_scope_map(
     registry_name: Optional[_builtins.str] = ...,

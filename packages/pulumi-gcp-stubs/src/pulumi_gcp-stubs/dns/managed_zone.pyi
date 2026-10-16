@@ -41,7 +41,8 @@ class ManagedZoneArgs:
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> pulumi.Input[_builtins.str]: ...
     @dns_name.setter
-    def dns_name(self, value: pulumi.Input[_builtins.str]): ...
+    def dns_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudLoggingConfig")
     def cloud_logging_config(
@@ -50,24 +51,28 @@ class ManagedZoneArgs:
     @cloud_logging_config.setter
     def cloud_logging_config(
         self, value: Optional[pulumi.Input[ManagedZoneCloudLoggingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnssecConfig")
     def dnssec_config(self) -> Optional[pulumi.Input[ManagedZoneDnssecConfigArgs]]: ...
     @dnssec_config.setter
     def dnssec_config(
         self, value: Optional[pulumi.Input[ManagedZoneDnssecConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardingConfig")
     def forwarding_config(
@@ -76,7 +81,8 @@ class ManagedZoneArgs:
     @forwarding_config.setter
     def forwarding_config(
         self, value: Optional[pulumi.Input[ManagedZoneForwardingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -85,12 +91,14 @@ class ManagedZoneArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peeringConfig")
     def peering_config(
@@ -99,7 +107,8 @@ class ManagedZoneArgs:
     @peering_config.setter
     def peering_config(
         self, value: Optional[pulumi.Input[ManagedZonePeeringConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateVisibilityConfig")
     def private_visibility_config(
@@ -108,17 +117,20 @@ class ManagedZoneArgs:
     @private_visibility_config.setter
     def private_visibility_config(
         self, value: Optional[pulumi.Input[ManagedZonePrivateVisibilityConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseLookup")
     def reverse_lookup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reverse_lookup.setter
-    def reverse_lookup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reverse_lookup(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceDirectoryConfig")
     def service_directory_config(
@@ -127,12 +139,14 @@ class ManagedZoneArgs:
     @service_directory_config.setter
     def service_directory_config(
         self, value: Optional[pulumi.Input[ManagedZoneServiceDirectoryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def visibility(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @visibility.setter
-    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ManagedZoneState:
@@ -181,29 +195,34 @@ class _ManagedZoneState:
     @cloud_logging_config.setter
     def cloud_logging_config(
         self, value: Optional[pulumi.Input[ManagedZoneCloudLoggingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTime")
     def creation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_time.setter
-    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnssecConfig")
     def dnssec_config(self) -> Optional[pulumi.Input[ManagedZoneDnssecConfigArgs]]: ...
     @dnssec_config.setter
     def dnssec_config(
         self, value: Optional[pulumi.Input[ManagedZoneDnssecConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -212,12 +231,14 @@ class _ManagedZoneState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardingConfig")
     def forwarding_config(
@@ -226,7 +247,8 @@ class _ManagedZoneState:
     @forwarding_config.setter
     def forwarding_config(
         self, value: Optional[pulumi.Input[ManagedZoneForwardingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -235,17 +257,20 @@ class _ManagedZoneState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedZoneId")
     def managed_zone_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_zone_id.setter
-    def managed_zone_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def managed_zone_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nameServers")
     def name_servers(
@@ -254,7 +279,8 @@ class _ManagedZoneState:
     @name_servers.setter
     def name_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peeringConfig")
     def peering_config(
@@ -263,7 +289,8 @@ class _ManagedZoneState:
     @peering_config.setter
     def peering_config(
         self, value: Optional[pulumi.Input[ManagedZonePeeringConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateVisibilityConfig")
     def private_visibility_config(
@@ -272,12 +299,14 @@ class _ManagedZoneState:
     @private_visibility_config.setter
     def private_visibility_config(
         self, value: Optional[pulumi.Input[ManagedZonePrivateVisibilityConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -286,12 +315,14 @@ class _ManagedZoneState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseLookup")
     def reverse_lookup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reverse_lookup.setter
-    def reverse_lookup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reverse_lookup(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceDirectoryConfig")
     def service_directory_config(
@@ -300,12 +331,14 @@ class _ManagedZoneState:
     @service_directory_config.setter
     def service_directory_config(
         self, value: Optional[pulumi.Input[ManagedZoneServiceDirectoryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def visibility(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @visibility.setter
-    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:dns/managedZone:ManagedZone")
 class ManagedZone(pulumi.CustomResource):

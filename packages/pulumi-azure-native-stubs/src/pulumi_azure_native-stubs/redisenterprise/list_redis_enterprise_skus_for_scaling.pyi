@@ -23,7 +23,10 @@ class ListRedisEnterpriseSkusForScalingResult:
 class AwaitableListRedisEnterpriseSkusForScalingResult(
     ListRedisEnterpriseSkusForScalingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListRedisEnterpriseSkusForScalingResult]:
+        ...
 
 def list_redis_enterprise_skus_for_scaling(
     cluster_name: Optional[_builtins.str] = ...,

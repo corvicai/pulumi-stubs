@@ -63,7 +63,8 @@ class GetOpenIdConnectProviderResult:
     def use_in_test_console(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetOpenIdConnectProviderResult(GetOpenIdConnectProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOpenIdConnectProviderResult]:
+        ...
 
 def get_open_id_connect_provider(
     opid: Optional[_builtins.str] = ...,

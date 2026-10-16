@@ -78,7 +78,8 @@ class GetDigitalTwinResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDigitalTwinResult(GetDigitalTwinResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDigitalTwinResult]:
+        ...
 
 def get_digital_twin(
     resource_group_name: Optional[_builtins.str] = ...,

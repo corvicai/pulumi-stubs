@@ -116,7 +116,10 @@ class GetVirtualMachineScaleSetVMRunCommandResult:
 class AwaitableGetVirtualMachineScaleSetVMRunCommandResult(
     GetVirtualMachineScaleSetVMRunCommandResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualMachineScaleSetVMRunCommandResult]:
+        ...
 
 def get_virtual_machine_scale_set_vm_run_command(
     expand: Optional[_builtins.str] = ...,

@@ -24,7 +24,8 @@ class InstancePublicPortsArgs:
     @pulumi.getter(name="instanceName")
     def instance_name(self) -> pulumi.Input[_builtins.str]: ...
     @instance_name.setter
-    def instance_name(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portInfos")
     def port_infos(
@@ -34,12 +35,14 @@ class InstancePublicPortsArgs:
     def port_infos(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[InstancePublicPortsPortInfoArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InstancePublicPortsState:
@@ -56,7 +59,8 @@ class _InstancePublicPortsState:
     @pulumi.getter(name="instanceName")
     def instance_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_name.setter
-    def instance_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portInfos")
     def port_infos(
@@ -70,12 +74,14 @@ class _InstancePublicPortsState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstancePublicPortsPortInfoArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InstancePublicPorts(pulumi.CustomResource):

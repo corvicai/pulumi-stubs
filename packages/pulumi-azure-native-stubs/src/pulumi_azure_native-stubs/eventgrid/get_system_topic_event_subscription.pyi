@@ -92,7 +92,10 @@ class GetSystemTopicEventSubscriptionResult:
 class AwaitableGetSystemTopicEventSubscriptionResult(
     GetSystemTopicEventSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSystemTopicEventSubscriptionResult]:
+        ...
 
 def get_system_topic_event_subscription(
     event_subscription_name: Optional[_builtins.str] = ...,

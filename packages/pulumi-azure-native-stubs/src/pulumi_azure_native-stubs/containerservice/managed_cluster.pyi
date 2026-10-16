@@ -106,14 +106,16 @@ class ManagedClusterArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aadProfile")
     def aad_profile(self) -> Optional[pulumi.Input[ManagedClusterAADProfileArgs]]: ...
     @aad_profile.setter
     def aad_profile(
         self, value: Optional[pulumi.Input[ManagedClusterAADProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addonProfiles")
     def addon_profiles(
@@ -127,7 +129,8 @@ class ManagedClusterArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[ManagedClusterAddonProfileArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentPoolProfiles")
     def agent_pool_profiles(
@@ -141,7 +144,8 @@ class ManagedClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ManagedClusterAgentPoolProfileArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aiToolchainOperatorProfile")
     def ai_toolchain_operator_profile(
@@ -151,7 +155,8 @@ class ManagedClusterArgs:
     def ai_toolchain_operator_profile(
         self,
         value: Optional[pulumi.Input[ManagedClusterAIToolchainOperatorProfileArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiServerAccessProfile")
     def api_server_access_profile(
@@ -160,7 +165,8 @@ class ManagedClusterArgs:
     @api_server_access_profile.setter
     def api_server_access_profile(
         self, value: Optional[pulumi.Input[ManagedClusterAPIServerAccessProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalerProfile")
     def auto_scaler_profile(
@@ -170,7 +176,8 @@ class ManagedClusterArgs:
     def auto_scaler_profile(
         self,
         value: Optional[pulumi.Input[ManagedClusterPropertiesAutoScalerProfileArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoUpgradeProfile")
     def auto_upgrade_profile(
@@ -179,7 +186,8 @@ class ManagedClusterArgs:
     @auto_upgrade_profile.setter
     def auto_upgrade_profile(
         self, value: Optional[pulumi.Input[ManagedClusterAutoUpgradeProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureMonitorProfile")
     def azure_monitor_profile(
@@ -188,7 +196,8 @@ class ManagedClusterArgs:
     @azure_monitor_profile.setter
     def azure_monitor_profile(
         self, value: Optional[pulumi.Input[ManagedClusterAzureMonitorProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootstrapProfile")
     def bootstrap_profile(
@@ -197,39 +206,50 @@ class ManagedClusterArgs:
     @bootstrap_profile.setter
     def bootstrap_profile(
         self, value: Optional[pulumi.Input[ManagedClusterBootstrapProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableLocalAccounts")
     def disable_local_accounts(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_local_accounts.setter
-    def disable_local_accounts(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_local_accounts(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetID")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsPrefix")
     def dns_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_prefix.setter
-    def dns_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableRBAC")
     def enable_rbac(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_rbac.setter
-    def enable_rbac(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_rbac(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fqdnSubdomain")
     def fqdn_subdomain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fqdn_subdomain.setter
-    def fqdn_subdomain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fqdn_subdomain(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpProxyConfig")
     def http_proxy_config(
@@ -238,12 +258,16 @@ class ManagedClusterArgs:
     @http_proxy_config.setter
     def http_proxy_config(
         self, value: Optional[pulumi.Input[ManagedClusterHTTPProxyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedClusterIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedClusterIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedClusterIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityProfile")
     def identity_profile(
@@ -257,7 +281,8 @@ class ManagedClusterArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[UserAssignedIdentityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingressProfile")
     def ingress_profile(
@@ -266,17 +291,22 @@ class ManagedClusterArgs:
     @ingress_profile.setter
     def ingress_profile(
         self, value: Optional[pulumi.Input[ManagedClusterIngressProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kubernetesVersion")
     def kubernetes_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kubernetes_version.setter
-    def kubernetes_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kubernetes_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxProfile")
     def linux_profile(
@@ -285,12 +315,14 @@ class ManagedClusterArgs:
     @linux_profile.setter
     def linux_profile(
         self, value: Optional[pulumi.Input[ContainerServiceLinuxProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricsProfile")
     def metrics_profile(
@@ -299,7 +331,8 @@ class ManagedClusterArgs:
     @metrics_profile.setter
     def metrics_profile(
         self, value: Optional[pulumi.Input[ManagedClusterMetricsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkProfile")
     def network_profile(
@@ -308,7 +341,8 @@ class ManagedClusterArgs:
     @network_profile.setter
     def network_profile(
         self, value: Optional[pulumi.Input[ContainerServiceNetworkProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeProvisioningProfile")
     def node_provisioning_profile(
@@ -317,12 +351,16 @@ class ManagedClusterArgs:
     @node_provisioning_profile.setter
     def node_provisioning_profile(
         self, value: Optional[pulumi.Input[ManagedClusterNodeProvisioningProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeResourceGroup")
     def node_resource_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_resource_group.setter
-    def node_resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_resource_group(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeResourceGroupProfile")
     def node_resource_group_profile(
@@ -331,7 +369,8 @@ class ManagedClusterArgs:
     @node_resource_group_profile.setter
     def node_resource_group_profile(
         self, value: Optional[pulumi.Input[ManagedClusterNodeResourceGroupProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oidcIssuerProfile")
     def oidc_issuer_profile(
@@ -340,7 +379,8 @@ class ManagedClusterArgs:
     @oidc_issuer_profile.setter
     def oidc_issuer_profile(
         self, value: Optional[pulumi.Input[ManagedClusterOIDCIssuerProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="podIdentityProfile")
     def pod_identity_profile(
@@ -349,7 +389,8 @@ class ManagedClusterArgs:
     @pod_identity_profile.setter
     def pod_identity_profile(
         self, value: Optional[pulumi.Input[ManagedClusterPodIdentityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkResources")
     def private_link_resources(
@@ -359,7 +400,8 @@ class ManagedClusterArgs:
     def private_link_resources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PrivateLinkResourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -368,12 +410,14 @@ class ManagedClusterArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
     def security_profile(
@@ -382,7 +426,8 @@ class ManagedClusterArgs:
     @security_profile.setter
     def security_profile(
         self, value: Optional[pulumi.Input[ManagedClusterSecurityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceMeshProfile")
     def service_mesh_profile(
@@ -391,7 +436,8 @@ class ManagedClusterArgs:
     @service_mesh_profile.setter
     def service_mesh_profile(
         self, value: Optional[pulumi.Input[ServiceMeshProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servicePrincipalProfile")
     def service_principal_profile(
@@ -400,12 +446,14 @@ class ManagedClusterArgs:
     @service_principal_profile.setter
     def service_principal_profile(
         self, value: Optional[pulumi.Input[ManagedClusterServicePrincipalProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[ManagedClusterSKUArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[ManagedClusterSKUArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[ManagedClusterSKUArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageProfile")
     def storage_profile(
@@ -414,7 +462,8 @@ class ManagedClusterArgs:
     @storage_profile.setter
     def storage_profile(
         self, value: Optional[pulumi.Input[ManagedClusterStorageProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportPlan")
     def support_plan(
@@ -423,7 +472,8 @@ class ManagedClusterArgs:
     @support_plan.setter
     def support_plan(
         self, value: Optional[pulumi.Input[Union[_builtins.str, KubernetesSupportPlan]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -432,7 +482,8 @@ class ManagedClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradeSettings")
     def upgrade_settings(
@@ -441,7 +492,8 @@ class ManagedClusterArgs:
     @upgrade_settings.setter
     def upgrade_settings(
         self, value: Optional[pulumi.Input[ClusterUpgradeSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsProfile")
     def windows_profile(
@@ -450,7 +502,8 @@ class ManagedClusterArgs:
     @windows_profile.setter
     def windows_profile(
         self, value: Optional[pulumi.Input[ManagedClusterWindowsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadAutoScalerProfile")
     def workload_auto_scaler_profile(
@@ -459,7 +512,8 @@ class ManagedClusterArgs:
     @workload_auto_scaler_profile.setter
     def workload_auto_scaler_profile(
         self, value: Optional[pulumi.Input[ManagedClusterWorkloadAutoScalerProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:containerservice:ManagedCluster")
 class ManagedCluster(pulumi.CustomResource):

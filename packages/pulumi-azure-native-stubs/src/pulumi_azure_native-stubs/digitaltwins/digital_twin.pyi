@@ -31,17 +31,22 @@ class DigitalTwinArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[DigitalTwinsIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[DigitalTwinsIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[DigitalTwinsIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnections")
     def private_endpoint_connections(
@@ -55,7 +60,8 @@ class DigitalTwinArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -64,12 +70,14 @@ class DigitalTwinArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -78,7 +86,8 @@ class DigitalTwinArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:digitaltwins:DigitalTwin")
 class DigitalTwin(pulumi.CustomResource):

@@ -23,7 +23,8 @@ class PeeringConnectionOptionsArgs:
     @pulumi.getter(name="vpcPeeringConnectionId")
     def vpc_peering_connection_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_peering_connection_id.setter
-    def vpc_peering_connection_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_peering_connection_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def accepter(
@@ -32,12 +33,14 @@ class PeeringConnectionOptionsArgs:
     @accepter.setter
     def accepter(
         self, value: Optional[pulumi.Input[PeeringConnectionOptionsAccepterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def requester(
@@ -46,7 +49,8 @@ class PeeringConnectionOptionsArgs:
     @requester.setter
     def requester(
         self, value: Optional[pulumi.Input[PeeringConnectionOptionsRequesterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PeeringConnectionOptionsState:
@@ -66,12 +70,14 @@ class _PeeringConnectionOptionsState:
     @accepter.setter
     def accepter(
         self, value: Optional[pulumi.Input[PeeringConnectionOptionsAccepterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def requester(
@@ -80,14 +86,16 @@ class _PeeringConnectionOptionsState:
     @requester.setter
     def requester(
         self, value: Optional[pulumi.Input[PeeringConnectionOptionsRequesterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcPeeringConnectionId")
     def vpc_peering_connection_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_peering_connection_id.setter
     def vpc_peering_connection_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PeeringConnectionOptions(pulumi.CustomResource):

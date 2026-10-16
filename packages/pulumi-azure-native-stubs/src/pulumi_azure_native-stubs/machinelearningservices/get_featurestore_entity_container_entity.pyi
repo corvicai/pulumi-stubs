@@ -46,7 +46,10 @@ class GetFeaturestoreEntityContainerEntityResult:
 class AwaitableGetFeaturestoreEntityContainerEntityResult(
     GetFeaturestoreEntityContainerEntityResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFeaturestoreEntityContainerEntityResult]:
+        ...
 
 def get_featurestore_entity_container_entity(
     name: Optional[_builtins.str] = ...,

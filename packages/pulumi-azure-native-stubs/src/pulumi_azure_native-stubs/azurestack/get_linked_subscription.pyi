@@ -84,7 +84,8 @@ class GetLinkedSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLinkedSubscriptionResult(GetLinkedSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkedSubscriptionResult]:
+        ...
 
 def get_linked_subscription(
     linked_subscription_name: Optional[_builtins.str] = ...,

@@ -54,7 +54,8 @@ class GetCodeSigningConfigResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetCodeSigningConfigResult(GetCodeSigningConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCodeSigningConfigResult]:
+        ...
 
 def get_code_signing_config(
     arn: Optional[_builtins.str] = ...,

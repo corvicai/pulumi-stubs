@@ -34,7 +34,10 @@ class ListStaticSiteConfiguredRolesResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListStaticSiteConfiguredRolesResult(ListStaticSiteConfiguredRolesResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListStaticSiteConfiguredRolesResult]:
+        ...
 
 def list_static_site_configured_roles(
     name: Optional[_builtins.str] = ...,

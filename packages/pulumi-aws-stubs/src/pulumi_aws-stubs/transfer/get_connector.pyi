@@ -68,7 +68,8 @@ class GetConnectorResult:
     def url(self) -> _builtins.str: ...
 
 class AwaitableGetConnectorResult(GetConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectorResult]:
+        ...
 
 def get_connector(
     id: Optional[_builtins.str] = ...,

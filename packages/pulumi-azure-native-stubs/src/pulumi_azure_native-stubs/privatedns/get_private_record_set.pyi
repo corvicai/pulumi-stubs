@@ -92,7 +92,8 @@ class GetPrivateRecordSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateRecordSetResult(GetPrivateRecordSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateRecordSetResult]:
+        ...
 
 def get_private_record_set(
     private_zone_name: Optional[_builtins.str] = ...,

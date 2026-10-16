@@ -26,7 +26,10 @@ class ListFeaturesetVersionMaterializationJobsResult:
 class AwaitableListFeaturesetVersionMaterializationJobsResult(
     ListFeaturesetVersionMaterializationJobsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListFeaturesetVersionMaterializationJobsResult]:
+        ...
 
 def list_featureset_version_materialization_jobs(
     feature_window_end: Optional[_builtins.str] = ...,

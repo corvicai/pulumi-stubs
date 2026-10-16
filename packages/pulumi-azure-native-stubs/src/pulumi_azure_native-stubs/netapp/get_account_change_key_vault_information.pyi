@@ -40,7 +40,10 @@ class GetAccountChangeKeyVaultInformationResult:
 class AwaitableGetAccountChangeKeyVaultInformationResult(
     GetAccountChangeKeyVaultInformationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAccountChangeKeyVaultInformationResult]:
+        ...
 
 def get_account_change_key_vault_information(
     account_name: Optional[_builtins.str] = ...,

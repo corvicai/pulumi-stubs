@@ -58,7 +58,8 @@ class GetModelResult:
     def response_streaming_supported(self) -> _builtins.bool: ...
 
 class AwaitableGetModelResult(GetModelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetModelResult]:
+        ...
 
 def get_model(
     model_id: Optional[_builtins.str] = ...,

@@ -45,7 +45,10 @@ class GetWebCloudRunServiceIamPolicyResult:
 class AwaitableGetWebCloudRunServiceIamPolicyResult(
     GetWebCloudRunServiceIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebCloudRunServiceIamPolicyResult]:
+        ...
 
 def get_web_cloud_run_service_iam_policy(
     cloud_run_service_name: Optional[_builtins.str] = ...,

@@ -23,7 +23,8 @@ class ListActiveSecurityAdminRuleResult:
     def value(self) -> Optional[Sequence[Any]]: ...
 
 class AwaitableListActiveSecurityAdminRuleResult(ListActiveSecurityAdminRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListActiveSecurityAdminRuleResult]:
+        ...
 
 def list_active_security_admin_rule(
     network_manager_name: Optional[_builtins.str] = ...,

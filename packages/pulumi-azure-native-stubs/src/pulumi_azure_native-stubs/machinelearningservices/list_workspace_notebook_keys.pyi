@@ -25,7 +25,8 @@ class ListWorkspaceNotebookKeysResult:
     def secondary_access_key(self) -> _builtins.str: ...
 
 class AwaitableListWorkspaceNotebookKeysResult(ListWorkspaceNotebookKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWorkspaceNotebookKeysResult]:
+        ...
 
 def list_workspace_notebook_keys(
     resource_group_name: Optional[_builtins.str] = ...,

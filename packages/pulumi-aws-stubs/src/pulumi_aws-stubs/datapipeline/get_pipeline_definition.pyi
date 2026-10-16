@@ -51,7 +51,8 @@ class GetPipelineDefinitionResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetPipelineDefinitionResult(GetPipelineDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPipelineDefinitionResult]:
+        ...
 
 def get_pipeline_definition(
     parameter_values: Optional[

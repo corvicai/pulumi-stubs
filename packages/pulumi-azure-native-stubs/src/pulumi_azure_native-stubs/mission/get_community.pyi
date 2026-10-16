@@ -108,7 +108,8 @@ class GetCommunityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCommunityResult(GetCommunityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCommunityResult]:
+        ...
 
 def get_community(
     community_name: Optional[_builtins.str] = ...,

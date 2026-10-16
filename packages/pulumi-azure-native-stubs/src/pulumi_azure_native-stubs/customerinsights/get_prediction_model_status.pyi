@@ -63,7 +63,8 @@ class GetPredictionModelStatusResult:
     def validation_set_count(self) -> _builtins.int: ...
 
 class AwaitableGetPredictionModelStatusResult(GetPredictionModelStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPredictionModelStatusResult]:
+        ...
 
 def get_prediction_model_status(
     hub_name: Optional[_builtins.str] = ...,

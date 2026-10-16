@@ -120,7 +120,8 @@ class GetPostRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPostRuleResult(GetPostRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPostRuleResult]:
+        ...
 
 def get_post_rule(
     global_rulestack_name: Optional[_builtins.str] = ...,

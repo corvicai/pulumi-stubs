@@ -56,7 +56,10 @@ class GetDynamoDbContinuousBackupsDescriptionResult:
 class AwaitableGetDynamoDbContinuousBackupsDescriptionResult(
     GetDynamoDbContinuousBackupsDescriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDynamoDbContinuousBackupsDescriptionResult]:
+        ...
 
 def get_dynamo_db_continuous_backups_description(
     name: Optional[_builtins.str] = ...,

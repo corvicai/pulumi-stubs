@@ -21,7 +21,8 @@ class ListAllTrafficFilterResult:
     def rulesets(self) -> Optional[Sequence[outputs.ElasticTrafficFilterResponse]]: ...
 
 class AwaitableListAllTrafficFilterResult(ListAllTrafficFilterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAllTrafficFilterResult]:
+        ...
 
 def list_all_traffic_filter(
     monitor_name: Optional[_builtins.str] = ...,

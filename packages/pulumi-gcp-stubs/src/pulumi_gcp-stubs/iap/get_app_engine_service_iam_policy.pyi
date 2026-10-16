@@ -43,7 +43,10 @@ class GetAppEngineServiceIamPolicyResult:
     def service(self) -> _builtins.str: ...
 
 class AwaitableGetAppEngineServiceIamPolicyResult(GetAppEngineServiceIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppEngineServiceIamPolicyResult]:
+        ...
 
 def get_app_engine_service_iam_policy(
     app_id: Optional[_builtins.str] = ...,

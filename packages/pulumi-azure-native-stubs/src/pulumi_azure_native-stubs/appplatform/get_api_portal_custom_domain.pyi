@@ -44,7 +44,8 @@ class GetApiPortalCustomDomainResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiPortalCustomDomainResult(GetApiPortalCustomDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiPortalCustomDomainResult]:
+        ...
 
 def get_api_portal_custom_domain(
     api_portal_name: Optional[_builtins.str] = ...,

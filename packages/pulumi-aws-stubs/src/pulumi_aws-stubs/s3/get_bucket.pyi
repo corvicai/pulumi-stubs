@@ -59,7 +59,8 @@ class GetBucketResult:
     def website_endpoint(self) -> _builtins.str: ...
 
 class AwaitableGetBucketResult(GetBucketResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBucketResult]:
+        ...
 
 def get_bucket(
     bucket: Optional[_builtins.str] = ...,

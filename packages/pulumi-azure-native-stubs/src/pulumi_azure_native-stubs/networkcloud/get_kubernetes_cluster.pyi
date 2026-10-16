@@ -132,7 +132,8 @@ class GetKubernetesClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKubernetesClusterResult(GetKubernetesClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKubernetesClusterResult]:
+        ...
 
 def get_kubernetes_cluster(
     kubernetes_cluster_name: Optional[_builtins.str] = ...,

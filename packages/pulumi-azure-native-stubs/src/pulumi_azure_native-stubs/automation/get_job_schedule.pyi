@@ -56,7 +56,8 @@ class GetJobScheduleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJobScheduleResult(GetJobScheduleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobScheduleResult]:
+        ...
 
 def get_job_schedule(
     automation_account_name: Optional[_builtins.str] = ...,

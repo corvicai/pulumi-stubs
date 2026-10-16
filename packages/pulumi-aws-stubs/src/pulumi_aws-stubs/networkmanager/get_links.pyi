@@ -42,7 +42,8 @@ class GetLinksResult:
     def type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetLinksResult(GetLinksResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinksResult]:
+        ...
 
 def get_links(
     global_network_id: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class GetRepositoryResult:
     def repository_name(self) -> _builtins.str: ...
 
 class AwaitableGetRepositoryResult(GetRepositoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRepositoryResult]:
+        ...
 
 def get_repository(
     region: Optional[_builtins.str] = ...,

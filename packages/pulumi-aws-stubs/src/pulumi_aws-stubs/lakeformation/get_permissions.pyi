@@ -77,7 +77,8 @@ class GetPermissionsResult:
     def table_with_columns(self) -> outputs.GetPermissionsTableWithColumnsResult: ...
 
 class AwaitableGetPermissionsResult(GetPermissionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPermissionsResult]:
+        ...
 
 def get_permissions(
     catalog_id: Optional[_builtins.str] = ...,

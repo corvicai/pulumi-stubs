@@ -90,32 +90,38 @@ class NamespaceDiscoveredAssetArgs:
     @pulumi.getter(name="deviceRef")
     def device_ref(self) -> pulumi.Input[DeviceRefArgs]: ...
     @device_ref.setter
-    def device_ref(self, value: pulumi.Input[DeviceRefArgs]): ...
+    def device_ref(self, value: pulumi.Input[DeviceRefArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryId")
     def discovery_id(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_id.setter
-    def discovery_id(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]: ...
     @extended_location.setter
-    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): ...
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> pulumi.Input[_builtins.str]: ...
     @namespace_name.setter
-    def namespace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> pulumi.Input[_builtins.float]: ...
     @version.setter
-    def version(self, value: pulumi.Input[_builtins.float]): ...
+    def version(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assetTypeRefs")
     def asset_type_refs(
@@ -124,12 +130,14 @@ class NamespaceDiscoveredAssetArgs:
     @asset_type_refs.setter
     def asset_type_refs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def attributes(self) -> Optional[Any]: ...
     @attributes.setter
-    def attributes(self, value: Optional[Any]): ...
+    def attributes(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def datasets(
@@ -143,7 +151,8 @@ class NamespaceDiscoveredAssetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredDatasetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultDatasetsConfiguration")
     def default_datasets_configuration(
@@ -152,7 +161,8 @@ class NamespaceDiscoveredAssetArgs:
     @default_datasets_configuration.setter
     def default_datasets_configuration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultDatasetsDestinations")
     def default_datasets_destinations(
@@ -186,14 +196,16 @@ class NamespaceDiscoveredAssetArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultEventsConfiguration")
     def default_events_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_events_configuration.setter
     def default_events_configuration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultEventsDestinations")
     def default_events_destinations(
@@ -219,7 +231,8 @@ class NamespaceDiscoveredAssetArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultManagementGroupsConfiguration")
     def default_management_groups_configuration(
@@ -228,7 +241,8 @@ class NamespaceDiscoveredAssetArgs:
     @default_management_groups_configuration.setter
     def default_management_groups_configuration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultStreamsConfiguration")
     def default_streams_configuration(
@@ -237,7 +251,8 @@ class NamespaceDiscoveredAssetArgs:
     @default_streams_configuration.setter
     def default_streams_configuration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultStreamsDestinations")
     def default_streams_destinations(
@@ -263,17 +278,24 @@ class NamespaceDiscoveredAssetArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveredAssetName")
     def discovered_asset_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @discovered_asset_name.setter
-    def discovered_asset_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def discovered_asset_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentationUri")
     def documentation_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @documentation_uri.setter
-    def documentation_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def documentation_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def events(
@@ -287,17 +309,22 @@ class NamespaceDiscoveredAssetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredEventArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hardwareRevision")
     def hardware_revision(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hardware_revision.setter
-    def hardware_revision(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hardware_revision(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementGroups")
     def management_groups(
@@ -311,37 +338,48 @@ class NamespaceDiscoveredAssetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredManagementGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def manufacturer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @manufacturer.setter
-    def manufacturer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def manufacturer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manufacturerUri")
     def manufacturer_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @manufacturer_uri.setter
-    def manufacturer_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def manufacturer_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model.setter
-    def model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productCode")
     def product_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @product_code.setter
-    def product_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def product_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serialNumber")
     def serial_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @serial_number.setter
-    def serial_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def serial_number(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softwareRevision")
     def software_revision(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @software_revision.setter
-    def software_revision(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def software_revision(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def streams(
@@ -355,7 +393,8 @@ class NamespaceDiscoveredAssetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredStreamArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -364,7 +403,8 @@ class NamespaceDiscoveredAssetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class NamespaceDiscoveredAsset(pulumi.CustomResource):

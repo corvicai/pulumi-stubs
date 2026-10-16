@@ -76,7 +76,8 @@ class GetVirtualWanResult:
     def vpn_sites(self) -> Sequence[outputs.SubResourceResponse]: ...
 
 class AwaitableGetVirtualWanResult(GetVirtualWanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualWanResult]:
+        ...
 
 def get_virtual_wan(
     resource_group_name: Optional[_builtins.str] = ...,

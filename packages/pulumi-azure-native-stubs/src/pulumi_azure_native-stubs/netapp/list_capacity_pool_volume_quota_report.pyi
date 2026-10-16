@@ -26,7 +26,10 @@ class ListCapacityPoolVolumeQuotaReportResult:
 class AwaitableListCapacityPoolVolumeQuotaReportResult(
     ListCapacityPoolVolumeQuotaReportResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListCapacityPoolVolumeQuotaReportResult]:
+        ...
 
 def list_capacity_pool_volume_quota_report(
     account_name: Optional[_builtins.str] = ...,

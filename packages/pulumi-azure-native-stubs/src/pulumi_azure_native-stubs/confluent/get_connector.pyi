@@ -52,7 +52,8 @@ class GetConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectorResult(GetConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectorResult]:
+        ...
 
 def get_connector(
     cluster_id: Optional[_builtins.str] = ...,

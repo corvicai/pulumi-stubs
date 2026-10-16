@@ -60,7 +60,8 @@ class GetJobAgentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJobAgentResult(GetJobAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobAgentResult]:
+        ...
 
 def get_job_agent(
     job_agent_name: Optional[_builtins.str] = ...,

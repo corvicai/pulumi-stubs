@@ -31,7 +31,10 @@ class GatewayDetailsArgs:
     @pulumi.getter(name="gatewayResourceId")
     def gateway_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gateway_resource_id.setter
-    def gateway_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gateway_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class IPv4FirewallRuleArgsDict(TypedDict):
     firewall_rule_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -51,17 +54,22 @@ class IPv4FirewallRuleArgs:
     @pulumi.getter(name="firewallRuleName")
     def firewall_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @firewall_rule_name.setter
-    def firewall_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def firewall_rule_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rangeEnd")
     def range_end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @range_end.setter
-    def range_end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def range_end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rangeStart")
     def range_start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @range_start.setter
-    def range_start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def range_start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class IPv4FirewallSettingsArgsDict(TypedDict):
     enable_power_bi_service: NotRequired[pulumi.Input[_builtins.bool]]
@@ -85,7 +93,8 @@ class IPv4FirewallSettingsArgs:
     @enable_power_bi_service.setter
     def enable_power_bi_service(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallRules")
     def firewall_rules(
@@ -95,7 +104,8 @@ class IPv4FirewallSettingsArgs:
     def firewall_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[IPv4FirewallRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceSkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -115,17 +125,22 @@ class ResourceSkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]): ...
+    def tier(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]
+    ):  # -> None:
+        ...
 
 class ServerAdministratorsArgsDict(TypedDict):
     members: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -145,4 +160,5 @@ class ServerAdministratorsArgs:
     @members.setter
     def members(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

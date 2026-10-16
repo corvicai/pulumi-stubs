@@ -80,7 +80,8 @@ class GetCapacityPoolBackupResult:
     def volume_name(self) -> _builtins.str: ...
 
 class AwaitableGetCapacityPoolBackupResult(GetCapacityPoolBackupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityPoolBackupResult]:
+        ...
 
 def get_capacity_pool_backup(
     account_name: Optional[_builtins.str] = ...,

@@ -55,7 +55,8 @@ class GetPortfolioResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetPortfolioResult(GetPortfolioResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPortfolioResult]:
+        ...
 
 def get_portfolio(
     accept_language: Optional[_builtins.str] = ...,

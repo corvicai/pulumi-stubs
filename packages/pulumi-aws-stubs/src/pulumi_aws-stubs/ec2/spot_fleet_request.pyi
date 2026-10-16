@@ -61,22 +61,28 @@ class SpotFleetRequestArgs:
     @pulumi.getter(name="iamFleetRole")
     def iam_fleet_role(self) -> pulumi.Input[_builtins.str]: ...
     @iam_fleet_role.setter
-    def iam_fleet_role(self, value: pulumi.Input[_builtins.str]): ...
+    def iam_fleet_role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetCapacity")
     def target_capacity(self) -> pulumi.Input[_builtins.int]: ...
     @target_capacity.setter
-    def target_capacity(self, value: pulumi.Input[_builtins.int]): ...
+    def target_capacity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allocationStrategy")
     def allocation_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @allocation_strategy.setter
-    def allocation_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def allocation_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @context.setter
-    def context(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def context(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excessCapacityTerminationPolicy")
     def excess_capacity_termination_policy(
@@ -85,12 +91,14 @@ class SpotFleetRequestArgs:
     @excess_capacity_termination_policy.setter
     def excess_capacity_termination_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fleetType")
     def fleet_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fleet_type.setter
-    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceInterruptionBehaviour")
     def instance_interruption_behaviour(
@@ -99,14 +107,16 @@ class SpotFleetRequestArgs:
     @instance_interruption_behaviour.setter
     def instance_interruption_behaviour(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instancePoolsToUseCount")
     def instance_pools_to_use_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @instance_pools_to_use_count.setter
     def instance_pools_to_use_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchSpecifications")
     def launch_specifications(
@@ -122,7 +132,8 @@ class SpotFleetRequestArgs:
                 Sequence[pulumi.Input[SpotFleetRequestLaunchSpecificationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplateConfigs")
     def launch_template_configs(
@@ -138,7 +149,8 @@ class SpotFleetRequestArgs:
                 Sequence[pulumi.Input[SpotFleetRequestLaunchTemplateConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancers")
     def load_balancers(
@@ -147,7 +159,8 @@ class SpotFleetRequestArgs:
     @load_balancers.setter
     def load_balancers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandAllocationStrategy")
     def on_demand_allocation_strategy(
@@ -156,33 +169,38 @@ class SpotFleetRequestArgs:
     @on_demand_allocation_strategy.setter
     def on_demand_allocation_strategy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandMaxTotalPrice")
     def on_demand_max_total_price(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @on_demand_max_total_price.setter
     def on_demand_max_total_price(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandTargetCapacity")
     def on_demand_target_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @on_demand_target_capacity.setter
     def on_demand_target_capacity(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceUnhealthyInstances")
     def replace_unhealthy_instances(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @replace_unhealthy_instances.setter
     def replace_unhealthy_instances(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotMaintenanceStrategies")
     def spot_maintenance_strategies(
@@ -192,12 +210,14 @@ class SpotFleetRequestArgs:
     def spot_maintenance_strategies(
         self,
         value: Optional[pulumi.Input[SpotFleetRequestSpotMaintenanceStrategiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotPrice")
     def spot_price(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spot_price.setter
-    def spot_price(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spot_price(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -206,14 +226,16 @@ class SpotFleetRequestArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetCapacityUnitType")
     def target_capacity_unit_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_capacity_unit_type.setter
     def target_capacity_unit_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroupArns")
     def target_group_arns(
@@ -222,7 +244,8 @@ class SpotFleetRequestArgs:
     @target_group_arns.setter
     def target_group_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateInstancesOnDelete")
     def terminate_instances_on_delete(
@@ -231,7 +254,8 @@ class SpotFleetRequestArgs:
     @terminate_instances_on_delete.setter
     def terminate_instances_on_delete(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateInstancesWithExpiration")
     def terminate_instances_with_expiration(
@@ -240,22 +264,28 @@ class SpotFleetRequestArgs:
     @terminate_instances_with_expiration.setter
     def terminate_instances_with_expiration(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validFrom")
     def valid_from(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @valid_from.setter
-    def valid_from(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def valid_from(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validUntil")
     def valid_until(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @valid_until.setter
-    def valid_until(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def valid_until(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForFulfillment")
     def wait_for_fulfillment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_fulfillment.setter
-    def wait_for_fulfillment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_fulfillment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SpotFleetRequestState:
@@ -314,17 +344,22 @@ class _SpotFleetRequestState:
     @pulumi.getter(name="allocationStrategy")
     def allocation_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @allocation_strategy.setter
-    def allocation_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def allocation_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientToken")
     def client_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_token.setter
-    def client_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @context.setter
-    def context(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def context(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excessCapacityTerminationPolicy")
     def excess_capacity_termination_policy(
@@ -333,17 +368,20 @@ class _SpotFleetRequestState:
     @excess_capacity_termination_policy.setter
     def excess_capacity_termination_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fleetType")
     def fleet_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fleet_type.setter
-    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamFleetRole")
     def iam_fleet_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_fleet_role.setter
-    def iam_fleet_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_fleet_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceInterruptionBehaviour")
     def instance_interruption_behaviour(
@@ -352,14 +390,16 @@ class _SpotFleetRequestState:
     @instance_interruption_behaviour.setter
     def instance_interruption_behaviour(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instancePoolsToUseCount")
     def instance_pools_to_use_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @instance_pools_to_use_count.setter
     def instance_pools_to_use_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchSpecifications")
     def launch_specifications(
@@ -375,7 +415,8 @@ class _SpotFleetRequestState:
                 Sequence[pulumi.Input[SpotFleetRequestLaunchSpecificationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplateConfigs")
     def launch_template_configs(
@@ -391,7 +432,8 @@ class _SpotFleetRequestState:
                 Sequence[pulumi.Input[SpotFleetRequestLaunchTemplateConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancers")
     def load_balancers(
@@ -400,7 +442,8 @@ class _SpotFleetRequestState:
     @load_balancers.setter
     def load_balancers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandAllocationStrategy")
     def on_demand_allocation_strategy(
@@ -409,33 +452,38 @@ class _SpotFleetRequestState:
     @on_demand_allocation_strategy.setter
     def on_demand_allocation_strategy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandMaxTotalPrice")
     def on_demand_max_total_price(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @on_demand_max_total_price.setter
     def on_demand_max_total_price(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onDemandTargetCapacity")
     def on_demand_target_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @on_demand_target_capacity.setter
     def on_demand_target_capacity(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceUnhealthyInstances")
     def replace_unhealthy_instances(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @replace_unhealthy_instances.setter
     def replace_unhealthy_instances(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotMaintenanceStrategies")
     def spot_maintenance_strategies(
@@ -445,17 +493,22 @@ class _SpotFleetRequestState:
     def spot_maintenance_strategies(
         self,
         value: Optional[pulumi.Input[SpotFleetRequestSpotMaintenanceStrategiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotPrice")
     def spot_price(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spot_price.setter
-    def spot_price(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spot_price(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotRequestState")
     def spot_request_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spot_request_state.setter
-    def spot_request_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spot_request_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -464,7 +517,8 @@ class _SpotFleetRequestState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -473,19 +527,22 @@ class _SpotFleetRequestState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetCapacity")
     def target_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_capacity.setter
-    def target_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetCapacityUnitType")
     def target_capacity_unit_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_capacity_unit_type.setter
     def target_capacity_unit_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroupArns")
     def target_group_arns(
@@ -494,7 +551,8 @@ class _SpotFleetRequestState:
     @target_group_arns.setter
     def target_group_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateInstancesOnDelete")
     def terminate_instances_on_delete(
@@ -503,7 +561,8 @@ class _SpotFleetRequestState:
     @terminate_instances_on_delete.setter
     def terminate_instances_on_delete(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateInstancesWithExpiration")
     def terminate_instances_with_expiration(
@@ -512,22 +571,28 @@ class _SpotFleetRequestState:
     @terminate_instances_with_expiration.setter
     def terminate_instances_with_expiration(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validFrom")
     def valid_from(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @valid_from.setter
-    def valid_from(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def valid_from(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validUntil")
     def valid_until(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @valid_until.setter
-    def valid_until(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def valid_until(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForFulfillment")
     def wait_for_fulfillment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_fulfillment.setter
-    def wait_for_fulfillment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_fulfillment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/spotFleetRequest:SpotFleetRequest")
 class SpotFleetRequest(pulumi.CustomResource):

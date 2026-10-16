@@ -31,7 +31,8 @@ class FieldLevelEncryptionConfigArgs:
     def content_type_profile_config(
         self,
         value: pulumi.Input[FieldLevelEncryptionConfigContentTypeProfileConfigArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryArgProfileConfig")
     def query_arg_profile_config(
@@ -40,12 +41,14 @@ class FieldLevelEncryptionConfigArgs:
     @query_arg_profile_config.setter
     def query_arg_profile_config(
         self, value: pulumi.Input[FieldLevelEncryptionConfigQueryArgProfileConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FieldLevelEncryptionConfigState:
@@ -67,17 +70,22 @@ class _FieldLevelEncryptionConfigState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callerReference")
     def caller_reference(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @caller_reference.setter
-    def caller_reference(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def caller_reference(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentTypeProfileConfig")
     def content_type_profile_config(
@@ -91,12 +99,14 @@ class _FieldLevelEncryptionConfigState:
         value: Optional[
             pulumi.Input[FieldLevelEncryptionConfigContentTypeProfileConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryArgProfileConfig")
     def query_arg_profile_config(
@@ -110,7 +120,8 @@ class _FieldLevelEncryptionConfigState:
         value: Optional[
             pulumi.Input[FieldLevelEncryptionConfigQueryArgProfileConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class FieldLevelEncryptionConfig(pulumi.CustomResource):

@@ -23,7 +23,8 @@ class ListLinkerConfigurationsResult:
     ) -> Optional[Sequence[outputs.SourceConfigurationResponse]]: ...
 
 class AwaitableListLinkerConfigurationsResult(ListLinkerConfigurationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListLinkerConfigurationsResult]:
+        ...
 
 def list_linker_configurations(
     linker_name: Optional[_builtins.str] = ...,

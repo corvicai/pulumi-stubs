@@ -29,12 +29,14 @@ class PrivateEndpointConnectionProxyArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnectionProxyId")
     def private_endpoint_connection_proxy_id(
@@ -43,7 +45,8 @@ class PrivateEndpointConnectionProxyArgs:
     @private_endpoint_connection_proxy_id.setter
     def private_endpoint_connection_proxy_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remotePrivateEndpoint")
     def remote_private_endpoint(
@@ -52,12 +55,14 @@ class PrivateEndpointConnectionProxyArgs:
     @remote_private_endpoint.setter
     def remote_private_endpoint(
         self, value: Optional[pulumi.Input[RemotePrivateEndpointArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PrivateEndpointConnectionProxy(pulumi.CustomResource):

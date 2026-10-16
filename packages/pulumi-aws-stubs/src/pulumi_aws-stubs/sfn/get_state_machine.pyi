@@ -59,7 +59,8 @@ class GetStateMachineResult:
     def status(self) -> _builtins.str: ...
 
 class AwaitableGetStateMachineResult(GetStateMachineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStateMachineResult]:
+        ...
 
 def get_state_machine(
     name: Optional[_builtins.str] = ...,

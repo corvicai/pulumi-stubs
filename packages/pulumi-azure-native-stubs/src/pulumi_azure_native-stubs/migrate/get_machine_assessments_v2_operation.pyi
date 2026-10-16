@@ -46,7 +46,10 @@ class GetMachineAssessmentsV2OperationResult:
 class AwaitableGetMachineAssessmentsV2OperationResult(
     GetMachineAssessmentsV2OperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMachineAssessmentsV2OperationResult]:
+        ...
 
 def get_machine_assessments_v2_operation(
     assessment_name: Optional[_builtins.str] = ...,

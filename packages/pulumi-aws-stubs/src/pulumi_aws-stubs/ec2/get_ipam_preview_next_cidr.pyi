@@ -43,7 +43,8 @@ class GetIpamPreviewNextCidrResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetIpamPreviewNextCidrResult(GetIpamPreviewNextCidrResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpamPreviewNextCidrResult]:
+        ...
 
 def get_ipam_preview_next_cidr(
     disallowed_cidrs: Optional[Sequence[_builtins.str]] = ...,

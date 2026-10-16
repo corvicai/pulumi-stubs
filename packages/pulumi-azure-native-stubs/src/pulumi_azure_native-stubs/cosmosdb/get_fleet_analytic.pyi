@@ -52,7 +52,8 @@ class GetFleetAnalyticResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFleetAnalyticResult(GetFleetAnalyticResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetAnalyticResult]:
+        ...
 
 def get_fleet_analytic(
     fleet_analytics_name: Optional[_builtins.str] = ...,

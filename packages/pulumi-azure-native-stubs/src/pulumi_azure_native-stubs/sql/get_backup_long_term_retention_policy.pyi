@@ -53,7 +53,10 @@ class GetBackupLongTermRetentionPolicyResult:
 class AwaitableGetBackupLongTermRetentionPolicyResult(
     GetBackupLongTermRetentionPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBackupLongTermRetentionPolicyResult]:
+        ...
 
 def get_backup_long_term_retention_policy(
     database_name: Optional[_builtins.str] = ...,

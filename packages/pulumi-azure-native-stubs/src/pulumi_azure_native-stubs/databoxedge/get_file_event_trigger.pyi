@@ -56,7 +56,8 @@ class GetFileEventTriggerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFileEventTriggerResult(GetFileEventTriggerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileEventTriggerResult]:
+        ...
 
 def get_file_event_trigger(
     device_name: Optional[_builtins.str] = ...,

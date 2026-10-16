@@ -58,7 +58,10 @@ class GetControlFolderIntelligenceConfigResult:
 class AwaitableGetControlFolderIntelligenceConfigResult(
     GetControlFolderIntelligenceConfigResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetControlFolderIntelligenceConfigResult]:
+        ...
 
 def get_control_folder_intelligence_config(
     name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

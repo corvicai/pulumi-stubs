@@ -34,7 +34,8 @@ class GetTemplatesResult:
     def templates(self) -> Sequence[outputs.GetTemplatesTemplateResult]: ...
 
 class AwaitableGetTemplatesResult(GetTemplatesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTemplatesResult]:
+        ...
 
 def get_templates(
     aws_region: Optional[_builtins.str] = ...,

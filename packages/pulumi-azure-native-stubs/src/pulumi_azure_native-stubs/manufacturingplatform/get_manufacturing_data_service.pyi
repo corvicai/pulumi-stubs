@@ -60,7 +60,8 @@ class GetManufacturingDataServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManufacturingDataServiceResult(GetManufacturingDataServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManufacturingDataServiceResult]:
+        ...
 
 def get_manufacturing_data_service(
     mds_resource_name: Optional[_builtins.str] = ...,

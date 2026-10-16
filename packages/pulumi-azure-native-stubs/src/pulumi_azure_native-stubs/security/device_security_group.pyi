@@ -33,7 +33,8 @@ class DeviceSecurityGroupArgs:
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowlistRules")
     def allowlist_rules(
@@ -47,7 +48,8 @@ class DeviceSecurityGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AllowlistCustomAlertRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="denylistRules")
     def denylist_rules(
@@ -61,14 +63,16 @@ class DeviceSecurityGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DenylistCustomAlertRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceSecurityGroupName")
     def device_security_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_security_group_name.setter
     def device_security_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdRules")
     def threshold_rules(
@@ -82,7 +86,8 @@ class DeviceSecurityGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ThresholdCustomAlertRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeWindowRules")
     def time_window_rules(
@@ -96,7 +101,8 @@ class DeviceSecurityGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TimeWindowCustomAlertRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:security:DeviceSecurityGroup")
 class DeviceSecurityGroup(pulumi.CustomResource):

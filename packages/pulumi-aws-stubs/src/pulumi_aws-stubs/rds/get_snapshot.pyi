@@ -127,7 +127,8 @@ class GetSnapshotResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetSnapshotResult(GetSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotResult]:
+        ...
 
 def get_snapshot(
     db_instance_identifier: Optional[_builtins.str] = ...,

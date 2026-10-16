@@ -100,7 +100,8 @@ class GetCustomImageResult:
     def vm(self) -> Optional[outputs.CustomImagePropertiesFromVmResponse]: ...
 
 class AwaitableGetCustomImageResult(GetCustomImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomImageResult]:
+        ...
 
 def get_custom_image(
     expand: Optional[_builtins.str] = ...,

@@ -56,7 +56,10 @@ class GetGalleryInVMAccessControlProfileResult:
 class AwaitableGetGalleryInVMAccessControlProfileResult(
     GetGalleryInVMAccessControlProfileResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGalleryInVMAccessControlProfileResult]:
+        ...
 
 def get_gallery_in_vm_access_control_profile(
     gallery_name: Optional[_builtins.str] = ...,

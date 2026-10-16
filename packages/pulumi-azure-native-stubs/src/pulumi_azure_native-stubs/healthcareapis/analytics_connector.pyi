@@ -39,7 +39,8 @@ class AnalyticsConnectorArgs:
     @data_destination_configuration.setter
     def data_destination_configuration(
         self, value: pulumi.Input[AnalyticsConnectorDataLakeDataDestinationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataMappingConfiguration")
     def data_mapping_configuration(
@@ -48,7 +49,8 @@ class AnalyticsConnectorArgs:
     @data_mapping_configuration.setter
     def data_mapping_configuration(
         self, value: pulumi.Input[AnalyticsConnectorFhirToParquetMappingArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSourceConfiguration")
     def data_source_configuration(
@@ -57,24 +59,28 @@ class AnalyticsConnectorArgs:
     @data_source_configuration.setter
     def data_source_configuration(
         self, value: pulumi.Input[AnalyticsConnectorFhirServiceDataSourceArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="analyticsConnectorName")
     def analytics_connector_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @analytics_connector_name.setter
     def analytics_connector_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(
@@ -83,12 +89,14 @@ class AnalyticsConnectorArgs:
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[ServiceManagedIdentityIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -97,7 +105,8 @@ class AnalyticsConnectorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:healthcareapis:AnalyticsConnector")
 class AnalyticsConnector(pulumi.CustomResource):

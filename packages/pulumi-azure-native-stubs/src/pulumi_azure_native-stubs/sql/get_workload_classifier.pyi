@@ -59,7 +59,8 @@ class GetWorkloadClassifierResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadClassifierResult(GetWorkloadClassifierResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadClassifierResult]:
+        ...
 
 def get_workload_classifier(
     database_name: Optional[_builtins.str] = ...,

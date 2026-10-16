@@ -96,7 +96,10 @@ class GetLoadBalancerBackendAddressPoolResult:
 class AwaitableGetLoadBalancerBackendAddressPoolResult(
     GetLoadBalancerBackendAddressPoolResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLoadBalancerBackendAddressPoolResult]:
+        ...
 
 def get_load_balancer_backend_address_pool(
     backend_address_pool_name: Optional[_builtins.str] = ...,

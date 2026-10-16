@@ -24,7 +24,8 @@ class ListCatalogDeviceInsightsResult:
     def value(self) -> Sequence[outputs.DeviceInsightResponse]: ...
 
 class AwaitableListCatalogDeviceInsightsResult(ListCatalogDeviceInsightsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListCatalogDeviceInsightsResult]:
+        ...
 
 def list_catalog_device_insights(
     catalog_name: Optional[_builtins.str] = ...,

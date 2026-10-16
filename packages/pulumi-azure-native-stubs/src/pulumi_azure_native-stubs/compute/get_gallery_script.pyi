@@ -52,7 +52,8 @@ class GetGalleryScriptResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGalleryScriptResult(GetGalleryScriptResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGalleryScriptResult]:
+        ...
 
 def get_gallery_script(
     gallery_name: Optional[_builtins.str] = ...,

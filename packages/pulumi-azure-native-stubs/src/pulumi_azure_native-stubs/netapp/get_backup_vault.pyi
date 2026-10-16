@@ -52,7 +52,8 @@ class GetBackupVaultResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBackupVaultResult(GetBackupVaultResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackupVaultResult]:
+        ...
 
 def get_backup_vault(
     account_name: Optional[_builtins.str] = ...,

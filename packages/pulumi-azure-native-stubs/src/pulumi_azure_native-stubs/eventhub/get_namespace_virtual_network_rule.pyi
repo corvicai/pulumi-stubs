@@ -41,7 +41,10 @@ class GetNamespaceVirtualNetworkRuleResult:
 class AwaitableGetNamespaceVirtualNetworkRuleResult(
     GetNamespaceVirtualNetworkRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNamespaceVirtualNetworkRuleResult]:
+        ...
 
 def get_namespace_virtual_network_rule(
     namespace_name: Optional[_builtins.str] = ...,

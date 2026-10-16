@@ -37,7 +37,8 @@ class GetStoragePoolIamPolicyResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetStoragePoolIamPolicyResult(GetStoragePoolIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStoragePoolIamPolicyResult]:
+        ...
 
 def get_storage_pool_iam_policy(
     name: Optional[_builtins.str] = ...,

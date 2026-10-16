@@ -22,7 +22,10 @@ class GetCapacityPoolVolumeGroupIdForLdapUserResult:
 class AwaitableGetCapacityPoolVolumeGroupIdForLdapUserResult(
     GetCapacityPoolVolumeGroupIdForLdapUserResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCapacityPoolVolumeGroupIdForLdapUserResult]:
+        ...
 
 def get_capacity_pool_volume_group_id_for_ldap_user(
     account_name: Optional[_builtins.str] = ...,

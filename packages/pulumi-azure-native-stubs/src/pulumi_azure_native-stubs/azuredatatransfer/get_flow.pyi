@@ -55,7 +55,8 @@ class GetFlowResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFlowResult(GetFlowResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFlowResult]:
+        ...
 
 def get_flow(
     connection_name: Optional[_builtins.str] = ...,

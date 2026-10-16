@@ -72,7 +72,8 @@ class GetPrometheusRuleGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrometheusRuleGroupResult(GetPrometheusRuleGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrometheusRuleGroupResult]:
+        ...
 
 def get_prometheus_rule_group(
     resource_group_name: Optional[_builtins.str] = ...,

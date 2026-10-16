@@ -26,7 +26,8 @@ class ProjectArgs:
     @pulumi.getter(name="projectName")
     def project_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_name.setter
-    def project_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceCatalogProvisioningDetails")
     def service_catalog_provisioning_details(
@@ -35,17 +36,22 @@ class ProjectArgs:
     @service_catalog_provisioning_details.setter
     def service_catalog_provisioning_details(
         self, value: pulumi.Input[ProjectServiceCatalogProvisioningDetailsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectDescription")
     def project_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_description.setter
-    def project_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -54,7 +60,8 @@ class ProjectArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ProjectState:
@@ -78,27 +85,34 @@ class _ProjectState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectDescription")
     def project_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_description.setter
-    def project_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectName")
     def project_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_name.setter
-    def project_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceCatalogProvisioningDetails")
     def service_catalog_provisioning_details(
@@ -108,7 +122,8 @@ class _ProjectState:
     def service_catalog_provisioning_details(
         self,
         value: Optional[pulumi.Input[ProjectServiceCatalogProvisioningDetailsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -117,7 +132,8 @@ class _ProjectState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -126,7 +142,8 @@ class _ProjectState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/project:Project")
 class Project(pulumi.CustomResource):

@@ -52,7 +52,8 @@ class GetIntegrationFabricResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIntegrationFabricResult(GetIntegrationFabricResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIntegrationFabricResult]:
+        ...
 
 def get_integration_fabric(
     integration_fabric_name: Optional[_builtins.str] = ...,

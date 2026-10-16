@@ -44,7 +44,8 @@ class GetReachabilityAnalysisRunResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReachabilityAnalysisRunResult(GetReachabilityAnalysisRunResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReachabilityAnalysisRunResult]:
+        ...
 
 def get_reachability_analysis_run(
     network_manager_name: Optional[_builtins.str] = ...,

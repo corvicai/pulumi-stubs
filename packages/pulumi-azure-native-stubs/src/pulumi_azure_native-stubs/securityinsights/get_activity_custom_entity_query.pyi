@@ -96,7 +96,10 @@ class GetActivityCustomEntityQueryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetActivityCustomEntityQueryResult(GetActivityCustomEntityQueryResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetActivityCustomEntityQueryResult]:
+        ...
 
 def get_activity_custom_entity_query(
     entity_query_id: Optional[_builtins.str] = ...,

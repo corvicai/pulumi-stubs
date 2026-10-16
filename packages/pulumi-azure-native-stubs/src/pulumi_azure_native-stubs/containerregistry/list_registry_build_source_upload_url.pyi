@@ -25,7 +25,10 @@ class ListRegistryBuildSourceUploadUrlResult:
 class AwaitableListRegistryBuildSourceUploadUrlResult(
     ListRegistryBuildSourceUploadUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListRegistryBuildSourceUploadUrlResult]:
+        ...
 
 def list_registry_build_source_upload_url(
     registry_name: Optional[_builtins.str] = ...,

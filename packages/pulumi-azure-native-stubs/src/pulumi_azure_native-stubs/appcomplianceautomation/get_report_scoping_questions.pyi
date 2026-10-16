@@ -21,7 +21,8 @@ class GetReportScopingQuestionsResult:
     def questions(self) -> Optional[Sequence[outputs.ScopingQuestionResponse]]: ...
 
 class AwaitableGetReportScopingQuestionsResult(GetReportScopingQuestionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReportScopingQuestionsResult]:
+        ...
 
 def get_report_scoping_questions(
     report_name: Optional[_builtins.str] = ...,

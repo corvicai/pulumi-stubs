@@ -17,7 +17,10 @@ class GetVirtualNetworkGatewayVpnProfilePackageUrlResult:
 class AwaitableGetVirtualNetworkGatewayVpnProfilePackageUrlResult(
     GetVirtualNetworkGatewayVpnProfilePackageUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayVpnProfilePackageUrlResult]:
+        ...
 
 def get_virtual_network_gateway_vpn_profile_package_url(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -31,7 +31,10 @@ class GetLambdaFunctionAssociationResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetLambdaFunctionAssociationResult(GetLambdaFunctionAssociationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLambdaFunctionAssociationResult]:
+        ...
 
 def get_lambda_function_association(
     function_arn: Optional[_builtins.str] = ...,

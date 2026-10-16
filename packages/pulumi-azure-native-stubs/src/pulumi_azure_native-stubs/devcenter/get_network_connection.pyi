@@ -84,7 +84,8 @@ class GetNetworkConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkConnectionResult(GetNetworkConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkConnectionResult]:
+        ...
 
 def get_network_connection(
     network_connection_name: Optional[_builtins.str] = ...,

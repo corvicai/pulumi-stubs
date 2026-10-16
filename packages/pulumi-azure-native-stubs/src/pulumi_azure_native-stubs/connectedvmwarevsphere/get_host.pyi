@@ -107,7 +107,8 @@ class GetHostResult:
     def v_center_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetHostResult(GetHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHostResult]:
+        ...
 
 def get_host(
     host_name: Optional[_builtins.str] = ...,

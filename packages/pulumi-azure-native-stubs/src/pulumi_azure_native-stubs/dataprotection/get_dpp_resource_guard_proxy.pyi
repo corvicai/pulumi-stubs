@@ -44,7 +44,8 @@ class GetDppResourceGuardProxyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDppResourceGuardProxyResult(GetDppResourceGuardProxyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDppResourceGuardProxyResult]:
+        ...
 
 def get_dpp_resource_guard_proxy(
     resource_group_name: Optional[_builtins.str] = ...,

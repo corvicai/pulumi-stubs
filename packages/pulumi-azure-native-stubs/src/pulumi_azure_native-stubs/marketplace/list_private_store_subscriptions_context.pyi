@@ -22,7 +22,10 @@ class ListPrivateStoreSubscriptionsContextResult:
 class AwaitableListPrivateStoreSubscriptionsContextResult(
     ListPrivateStoreSubscriptionsContextResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPrivateStoreSubscriptionsContextResult]:
+        ...
 
 def list_private_store_subscriptions_context(
     private_store_id: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetEnvironmentBlueprintResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetEnvironmentBlueprintResult(GetEnvironmentBlueprintResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentBlueprintResult]:
+        ...
 
 def get_environment_blueprint(
     domain_id: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetEc2VpcPeeringConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2VpcPeeringConnectionResult(GetEc2VpcPeeringConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2VpcPeeringConnectionResult]:
+        ...
 
 def get_ec2_vpc_peering_connection(
     name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetHciEdgeDeviceJobResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHciEdgeDeviceJobResult(GetHciEdgeDeviceJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHciEdgeDeviceJobResult]:
+        ...
 
 def get_hci_edge_device_job(
     edge_device_name: Optional[_builtins.str] = ...,

@@ -62,7 +62,8 @@ class GetManagedClusterSnapshotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedClusterSnapshotResult(GetManagedClusterSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedClusterSnapshotResult]:
+        ...
 
 def get_managed_cluster_snapshot(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -76,7 +76,8 @@ class GetBusinessProcessResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetBusinessProcessResult(GetBusinessProcessResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBusinessProcessResult]:
+        ...
 
 def get_business_process(
     application_name: Optional[_builtins.str] = ...,

@@ -26,7 +26,10 @@ class ListDnsResolverByVirtualNetworkResult:
 class AwaitableListDnsResolverByVirtualNetworkResult(
     ListDnsResolverByVirtualNetworkResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListDnsResolverByVirtualNetworkResult]:
+        ...
 
 def list_dns_resolver_by_virtual_network(
     resource_group_name: Optional[_builtins.str] = ...,

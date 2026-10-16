@@ -51,7 +51,8 @@ class GetComputePolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetComputePolicyResult(GetComputePolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetComputePolicyResult]:
+        ...
 
 def get_compute_policy(
     account_name: Optional[_builtins.str] = ...,

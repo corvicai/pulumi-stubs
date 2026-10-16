@@ -20,7 +20,8 @@ class CellArgs:
     @pulumi.getter(name="cellName")
     def cell_name(self) -> pulumi.Input[_builtins.str]: ...
     @cell_name.setter
-    def cell_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cell_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cells(
@@ -29,7 +30,8 @@ class CellArgs:
     @cells.setter
     def cells(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -38,7 +40,8 @@ class CellArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CellState:
@@ -60,12 +63,14 @@ class _CellState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cellName")
     def cell_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cell_name.setter
-    def cell_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cell_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cells(
@@ -74,7 +79,8 @@ class _CellState:
     @cells.setter
     def cells(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentReadinessScopes")
     def parent_readiness_scopes(
@@ -83,7 +89,8 @@ class _CellState:
     @parent_readiness_scopes.setter
     def parent_readiness_scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -92,7 +99,8 @@ class _CellState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -101,7 +109,8 @@ class _CellState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:route53recoveryreadiness/cell:Cell")
 class Cell(pulumi.CustomResource):

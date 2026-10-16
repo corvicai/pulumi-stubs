@@ -59,7 +59,8 @@ class GetStaticSiteCustomDomainResult:
     def validation_token(self) -> _builtins.str: ...
 
 class AwaitableGetStaticSiteCustomDomainResult(GetStaticSiteCustomDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStaticSiteCustomDomainResult]:
+        ...
 
 def get_static_site_custom_domain(
     domain_name: Optional[_builtins.str] = ...,

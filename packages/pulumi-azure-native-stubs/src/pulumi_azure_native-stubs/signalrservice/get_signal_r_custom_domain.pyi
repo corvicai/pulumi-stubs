@@ -52,7 +52,8 @@ class GetSignalRCustomDomainResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSignalRCustomDomainResult(GetSignalRCustomDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSignalRCustomDomainResult]:
+        ...
 
 def get_signal_r_custom_domain(
     name: Optional[_builtins.str] = ...,

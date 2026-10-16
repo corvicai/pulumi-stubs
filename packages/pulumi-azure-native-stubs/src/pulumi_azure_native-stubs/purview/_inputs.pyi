@@ -37,14 +37,16 @@ class AccountSkuArgs:
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[Union[_builtins.str, AccountSkuName]]]: ...
     @name.setter
     def name(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AccountSkuName]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CredentialsArgsDict(TypedDict):
     identity_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -66,7 +68,8 @@ class CredentialsArgs:
     @pulumi.getter(name="identityId")
     def identity_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_id.setter
-    def identity_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -80,7 +83,8 @@ class CredentialsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, KafkaConfigurationIdentityType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, ManagedIdentityType]]]
@@ -106,7 +110,8 @@ class IdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedIdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -115,7 +120,8 @@ class IdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IngestionStorageArgsDict(TypedDict):
     public_network_access: NotRequired[
@@ -139,7 +145,8 @@ class IngestionStorageArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -153,7 +160,8 @@ class PrivateEndpointArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -177,12 +185,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -196,4 +208,5 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...

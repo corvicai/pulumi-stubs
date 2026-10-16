@@ -54,7 +54,10 @@ class GetSubscriptionNetworkManagerConnectionResult:
 class AwaitableGetSubscriptionNetworkManagerConnectionResult(
     GetSubscriptionNetworkManagerConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSubscriptionNetworkManagerConnectionResult]:
+        ...
 
 def get_subscription_network_manager_connection(
     network_manager_connection_name: Optional[_builtins.str] = ...,

@@ -64,7 +64,8 @@ class GetHuntRelationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHuntRelationResult(GetHuntRelationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHuntRelationResult]:
+        ...
 
 def get_hunt_relation(
     hunt_id: Optional[_builtins.str] = ...,

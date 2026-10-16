@@ -37,7 +37,8 @@ class GetQueueIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetQueueIamPolicyResult(GetQueueIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueueIamPolicyResult]:
+        ...
 
 def get_queue_iam_policy(
     location: Optional[_builtins.str] = ...,

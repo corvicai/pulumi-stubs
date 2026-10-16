@@ -48,7 +48,8 @@ class GetDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataConnectorResult(GetDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataConnectorResult]:
+        ...
 
 def get_data_connector(
     data_connector_name: Optional[_builtins.str] = ...,

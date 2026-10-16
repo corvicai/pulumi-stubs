@@ -44,7 +44,8 @@ class GetModelVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetModelVersionResult(GetModelVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetModelVersionResult]:
+        ...
 
 def get_model_version(
     name: Optional[_builtins.str] = ...,

@@ -59,7 +59,8 @@ class GetEventHubConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEventHubConnectionResult(GetEventHubConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventHubConnectionResult]:
+        ...
 
 def get_event_hub_connection(
     cluster_name: Optional[_builtins.str] = ...,

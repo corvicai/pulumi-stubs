@@ -37,7 +37,8 @@ class CxPageArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedSettings")
     def advanced_settings(
@@ -46,7 +47,8 @@ class CxPageArgs:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[CxPageAdvancedSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entryFulfillment")
     def entry_fulfillment(
@@ -55,7 +57,8 @@ class CxPageArgs:
     @entry_fulfillment.setter
     def entry_fulfillment(
         self, value: Optional[pulumi.Input[CxPageEntryFulfillmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHandlers")
     def event_handlers(
@@ -65,12 +68,14 @@ class CxPageArgs:
     def event_handlers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CxPageEventHandlerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def form(self) -> Optional[pulumi.Input[CxPageFormArgs]]: ...
     @form.setter
-    def form(self, value: Optional[pulumi.Input[CxPageFormArgs]]): ...
+    def form(self, value: Optional[pulumi.Input[CxPageFormArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeConnectorSettings")
     def knowledge_connector_settings(
@@ -79,17 +84,20 @@ class CxPageArgs:
     @knowledge_connector_settings.setter
     def knowledge_connector_settings(
         self, value: Optional[pulumi.Input[CxPageKnowledgeConnectorSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRouteGroups")
     def transition_route_groups(
@@ -98,7 +106,8 @@ class CxPageArgs:
     @transition_route_groups.setter
     def transition_route_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRoutes")
     def transition_routes(
@@ -110,7 +119,8 @@ class CxPageArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxPageTransitionRouteArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CxPageState:
@@ -145,12 +155,14 @@ class _CxPageState:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[CxPageAdvancedSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entryFulfillment")
     def entry_fulfillment(
@@ -159,7 +171,8 @@ class _CxPageState:
     @entry_fulfillment.setter
     def entry_fulfillment(
         self, value: Optional[pulumi.Input[CxPageEntryFulfillmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventHandlers")
     def event_handlers(
@@ -169,12 +182,14 @@ class _CxPageState:
     def event_handlers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CxPageEventHandlerArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def form(self) -> Optional[pulumi.Input[CxPageFormArgs]]: ...
     @form.setter
-    def form(self, value: Optional[pulumi.Input[CxPageFormArgs]]): ...
+    def form(self, value: Optional[pulumi.Input[CxPageFormArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeConnectorSettings")
     def knowledge_connector_settings(
@@ -183,22 +198,26 @@ class _CxPageState:
     @knowledge_connector_settings.setter
     def knowledge_connector_settings(
         self, value: Optional[pulumi.Input[CxPageKnowledgeConnectorSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRouteGroups")
     def transition_route_groups(
@@ -207,7 +226,8 @@ class _CxPageState:
     @transition_route_groups.setter
     def transition_route_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionRoutes")
     def transition_routes(
@@ -219,7 +239,8 @@ class _CxPageState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxPageTransitionRouteArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:diagflow/cxPage:CxPage")
 class CxPage(pulumi.CustomResource):

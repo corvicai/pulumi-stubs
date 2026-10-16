@@ -112,7 +112,8 @@ class GetVirtualMachineInstanceResult:
     def vm_id(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualMachineInstanceResult(GetVirtualMachineInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualMachineInstanceResult]:
+        ...
 
 def get_virtual_machine_instance(
     resource_uri: Optional[_builtins.str] = ...,

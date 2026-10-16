@@ -44,7 +44,8 @@ class GetCapabilityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCapabilityResult(GetCapabilityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapabilityResult]:
+        ...
 
 def get_capability(
     capability_name: Optional[_builtins.str] = ...,

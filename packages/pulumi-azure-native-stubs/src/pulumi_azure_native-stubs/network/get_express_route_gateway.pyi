@@ -74,7 +74,8 @@ class GetExpressRouteGatewayResult:
     def virtual_hub(self) -> outputs.VirtualHubIdResponse: ...
 
 class AwaitableGetExpressRouteGatewayResult(GetExpressRouteGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExpressRouteGatewayResult]:
+        ...
 
 def get_express_route_gateway(
     express_route_gateway_name: Optional[_builtins.str] = ...,

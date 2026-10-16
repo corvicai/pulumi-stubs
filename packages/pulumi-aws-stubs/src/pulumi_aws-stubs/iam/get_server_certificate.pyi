@@ -63,7 +63,8 @@ class GetServerCertificateResult:
     def upload_date(self) -> _builtins.str: ...
 
 class AwaitableGetServerCertificateResult(GetServerCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerCertificateResult]:
+        ...
 
 def get_server_certificate(
     latest: Optional[_builtins.bool] = ...,

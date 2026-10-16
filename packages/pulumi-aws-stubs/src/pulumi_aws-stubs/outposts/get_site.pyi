@@ -29,7 +29,8 @@ class GetSiteResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetSiteResult(GetSiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSiteResult]:
+        ...
 
 def get_site(
     id: Optional[_builtins.str] = ...,

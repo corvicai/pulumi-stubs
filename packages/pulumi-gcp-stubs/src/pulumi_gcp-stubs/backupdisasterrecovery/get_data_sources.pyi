@@ -48,7 +48,8 @@ class GetDataSourcesResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetDataSourcesResult(GetDataSourcesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataSourcesResult]:
+        ...
 
 def get_data_sources(
     backup_vault_id: Optional[_builtins.str] = ...,

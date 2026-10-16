@@ -35,7 +35,8 @@ class ListQnAMakerEndpointKeyResult:
     def secondary_endpoint_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListQnAMakerEndpointKeyResult(ListQnAMakerEndpointKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListQnAMakerEndpointKeyResult]:
+        ...
 
 def list_qn_a_maker_endpoint_key(
     authkey: Optional[_builtins.str] = ...,

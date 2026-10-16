@@ -56,7 +56,8 @@ class GetBundleResult:
     def user_storages(self) -> Sequence[outputs.GetBundleUserStorageResult]: ...
 
 class AwaitableGetBundleResult(GetBundleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBundleResult]:
+        ...
 
 def get_bundle(
     bundle_id: Optional[_builtins.str] = ...,

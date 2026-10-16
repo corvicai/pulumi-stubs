@@ -35,12 +35,14 @@ class NamespaceNetworkRuleSetArgs:
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> pulumi.Input[_builtins.str]: ...
     @namespace_name.setter
-    def namespace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultAction")
     def default_action(
@@ -49,7 +51,8 @@ class NamespaceNetworkRuleSetArgs:
     @default_action.setter
     def default_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DefaultAction]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRules")
     def ip_rules(
@@ -59,7 +62,8 @@ class NamespaceNetworkRuleSetArgs:
     def ip_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[NWRuleSetIpRulesArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -69,7 +73,8 @@ class NamespaceNetworkRuleSetArgs:
     def public_network_access(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccessFlag]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedServiceAccessEnabled")
     def trusted_service_access_enabled(
@@ -78,7 +83,8 @@ class NamespaceNetworkRuleSetArgs:
     @trusted_service_access_enabled.setter
     def trusted_service_access_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkRules")
     def virtual_network_rules(
@@ -92,7 +98,8 @@ class NamespaceNetworkRuleSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NWRuleSetVirtualNetworkRulesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:servicebus:NamespaceNetworkRuleSet")
 class NamespaceNetworkRuleSet(pulumi.CustomResource):

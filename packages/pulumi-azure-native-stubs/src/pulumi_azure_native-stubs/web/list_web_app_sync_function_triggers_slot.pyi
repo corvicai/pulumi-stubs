@@ -25,7 +25,10 @@ class ListWebAppSyncFunctionTriggersSlotResult:
 class AwaitableListWebAppSyncFunctionTriggersSlotResult(
     ListWebAppSyncFunctionTriggersSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppSyncFunctionTriggersSlotResult]:
+        ...
 
 def list_web_app_sync_function_triggers_slot(
     name: Optional[_builtins.str] = ...,

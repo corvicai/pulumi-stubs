@@ -44,24 +44,28 @@ class OntapFileSystemArgs:
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> pulumi.Input[_builtins.str]: ...
     @deployment_type.setter
-    def deployment_type(self, value: pulumi.Input[_builtins.str]): ...
+    def deployment_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredSubnetId")
     def preferred_subnet_id(self) -> pulumi.Input[_builtins.str]: ...
     @preferred_subnet_id.setter
-    def preferred_subnet_id(self, value: pulumi.Input[_builtins.str]): ...
+    def preferred_subnet_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> pulumi.Input[_builtins.int]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: pulumi.Input[_builtins.int]): ...
+    def storage_capacity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticBackupRetentionDays")
     def automatic_backup_retention_days(
@@ -70,7 +74,8 @@ class OntapFileSystemArgs:
     @automatic_backup_retention_days.setter
     def automatic_backup_retention_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailyAutomaticBackupStartTime")
     def daily_automatic_backup_start_time(
@@ -79,7 +84,8 @@ class OntapFileSystemArgs:
     @daily_automatic_backup_start_time.setter
     def daily_automatic_backup_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskIopsConfiguration")
     def disk_iops_configuration(
@@ -88,34 +94,42 @@ class OntapFileSystemArgs:
     @disk_iops_configuration.setter
     def disk_iops_configuration(
         self, value: Optional[pulumi.Input[OntapFileSystemDiskIopsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointIpAddressRange")
     def endpoint_ip_address_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_ip_address_range.setter
     def endpoint_ip_address_range(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fsxAdminPassword")
     def fsx_admin_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fsx_admin_password.setter
-    def fsx_admin_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fsx_admin_password(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="haPairs")
     def ha_pairs(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ha_pairs.setter
-    def ha_pairs(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ha_pairs(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTableIds")
     def route_table_ids(
@@ -124,7 +138,8 @@ class OntapFileSystemArgs:
     @route_table_ids.setter
     def route_table_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -133,12 +148,14 @@ class OntapFileSystemArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -147,12 +164,16 @@ class OntapFileSystemArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacity")
     def throughput_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @throughput_capacity.setter
-    def throughput_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def throughput_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacityPerHaPair")
     def throughput_capacity_per_ha_pair(
@@ -161,7 +182,8 @@ class OntapFileSystemArgs:
     @throughput_capacity_per_ha_pair.setter
     def throughput_capacity_per_ha_pair(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklyMaintenanceStartTime")
     def weekly_maintenance_start_time(
@@ -170,7 +192,8 @@ class OntapFileSystemArgs:
     @weekly_maintenance_start_time.setter
     def weekly_maintenance_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OntapFileSystemState:
@@ -220,7 +243,8 @@ class _OntapFileSystemState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticBackupRetentionDays")
     def automatic_backup_retention_days(
@@ -229,7 +253,8 @@ class _OntapFileSystemState:
     @automatic_backup_retention_days.setter
     def automatic_backup_retention_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailyAutomaticBackupStartTime")
     def daily_automatic_backup_start_time(
@@ -238,12 +263,14 @@ class _OntapFileSystemState:
     @daily_automatic_backup_start_time.setter
     def daily_automatic_backup_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_type.setter
-    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskIopsConfiguration")
     def disk_iops_configuration(
@@ -252,19 +279,22 @@ class _OntapFileSystemState:
     @disk_iops_configuration.setter
     def disk_iops_configuration(
         self, value: Optional[pulumi.Input[OntapFileSystemDiskIopsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointIpAddressRange")
     def endpoint_ip_address_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_ip_address_range.setter
     def endpoint_ip_address_range(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoints(
@@ -278,22 +308,28 @@ class _OntapFileSystemState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[OntapFileSystemEndpointArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fsxAdminPassword")
     def fsx_admin_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fsx_admin_password.setter
-    def fsx_admin_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fsx_admin_password(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="haPairs")
     def ha_pairs(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ha_pairs.setter
-    def ha_pairs(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ha_pairs(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceIds")
     def network_interface_ids(
@@ -302,22 +338,28 @@ class _OntapFileSystemState:
     @network_interface_ids.setter
     def network_interface_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredSubnetId")
     def preferred_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preferred_subnet_id.setter
-    def preferred_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preferred_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeTableIds")
     def route_table_ids(
@@ -326,7 +368,8 @@ class _OntapFileSystemState:
     @route_table_ids.setter
     def route_table_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -335,17 +378,22 @@ class _OntapFileSystemState:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def storage_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -354,7 +402,8 @@ class _OntapFileSystemState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -363,7 +412,8 @@ class _OntapFileSystemState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -372,12 +422,16 @@ class _OntapFileSystemState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacity")
     def throughput_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @throughput_capacity.setter
-    def throughput_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def throughput_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacityPerHaPair")
     def throughput_capacity_per_ha_pair(
@@ -386,12 +440,14 @@ class _OntapFileSystemState:
     @throughput_capacity_per_ha_pair.setter
     def throughput_capacity_per_ha_pair(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklyMaintenanceStartTime")
     def weekly_maintenance_start_time(
@@ -400,7 +456,8 @@ class _OntapFileSystemState:
     @weekly_maintenance_start_time.setter
     def weekly_maintenance_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:fsx/ontapFileSystem:OntapFileSystem")
 class OntapFileSystem(pulumi.CustomResource):

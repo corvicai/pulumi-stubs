@@ -67,7 +67,8 @@ class GetControllerDetailsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetControllerDetailsResult(GetControllerDetailsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetControllerDetailsResult]:
+        ...
 
 def get_controller_details(
     resource_group_name: Optional[_builtins.str] = ...,

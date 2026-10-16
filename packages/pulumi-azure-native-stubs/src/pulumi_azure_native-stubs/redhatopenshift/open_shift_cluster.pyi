@@ -40,19 +40,24 @@ class OpenShiftClusterArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiserverProfile")
     def apiserver_profile(self) -> Optional[pulumi.Input[APIServerProfileArgs]]: ...
     @apiserver_profile.setter
     def apiserver_profile(
         self, value: Optional[pulumi.Input[APIServerProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterProfile")
     def cluster_profile(self) -> Optional[pulumi.Input[ClusterProfileArgs]]: ...
     @cluster_profile.setter
-    def cluster_profile(self, value: Optional[pulumi.Input[ClusterProfileArgs]]): ...
+    def cluster_profile(
+        self, value: Optional[pulumi.Input[ClusterProfileArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingressProfiles")
     def ingress_profiles(
@@ -61,22 +66,30 @@ class OpenShiftClusterArgs:
     @ingress_profiles.setter
     def ingress_profiles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IngressProfileArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterProfile")
     def master_profile(self) -> Optional[pulumi.Input[MasterProfileArgs]]: ...
     @master_profile.setter
-    def master_profile(self, value: Optional[pulumi.Input[MasterProfileArgs]]): ...
+    def master_profile(
+        self, value: Optional[pulumi.Input[MasterProfileArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkProfile")
     def network_profile(self) -> Optional[pulumi.Input[NetworkProfileArgs]]: ...
     @network_profile.setter
-    def network_profile(self, value: Optional[pulumi.Input[NetworkProfileArgs]]): ...
+    def network_profile(
+        self, value: Optional[pulumi.Input[NetworkProfileArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -85,12 +98,14 @@ class OpenShiftClusterArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servicePrincipalProfile")
     def service_principal_profile(
@@ -99,7 +114,8 @@ class OpenShiftClusterArgs:
     @service_principal_profile.setter
     def service_principal_profile(
         self, value: Optional[pulumi.Input[ServicePrincipalProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -108,7 +124,8 @@ class OpenShiftClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerProfiles")
     def worker_profiles(
@@ -117,7 +134,8 @@ class OpenShiftClusterArgs:
     @worker_profiles.setter
     def worker_profiles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WorkerProfileArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:redhatopenshift:OpenShiftCluster")
 class OpenShiftCluster(pulumi.CustomResource):

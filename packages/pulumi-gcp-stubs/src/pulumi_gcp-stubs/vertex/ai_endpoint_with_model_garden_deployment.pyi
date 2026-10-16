@@ -35,7 +35,8 @@ class AiEndpointWithModelGardenDeploymentArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deployConfig")
     def deploy_config(
@@ -49,7 +50,8 @@ class AiEndpointWithModelGardenDeploymentArgs:
         value: Optional[
             pulumi.Input[AiEndpointWithModelGardenDeploymentDeployConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointConfig")
     def endpoint_config(
@@ -63,12 +65,16 @@ class AiEndpointWithModelGardenDeploymentArgs:
         value: Optional[
             pulumi.Input[AiEndpointWithModelGardenDeploymentEndpointConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="huggingFaceModelId")
     def hugging_face_model_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hugging_face_model_id.setter
-    def hugging_face_model_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hugging_face_model_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelConfig")
     def model_config(
@@ -80,17 +86,22 @@ class AiEndpointWithModelGardenDeploymentArgs:
         value: Optional[
             pulumi.Input[AiEndpointWithModelGardenDeploymentModelConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publisherModelName")
     def publisher_model_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher_model_name.setter
-    def publisher_model_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher_model_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AiEndpointWithModelGardenDeploymentState:
@@ -127,24 +138,30 @@ class _AiEndpointWithModelGardenDeploymentState:
         value: Optional[
             pulumi.Input[AiEndpointWithModelGardenDeploymentDeployConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deployedModelDisplayName")
     def deployed_model_display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployed_model_display_name.setter
     def deployed_model_display_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deployedModelId")
     def deployed_model_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployed_model_id.setter
-    def deployed_model_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployed_model_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointConfig")
     def endpoint_config(
@@ -158,17 +175,22 @@ class _AiEndpointWithModelGardenDeploymentState:
         value: Optional[
             pulumi.Input[AiEndpointWithModelGardenDeploymentEndpointConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="huggingFaceModelId")
     def hugging_face_model_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hugging_face_model_id.setter
-    def hugging_face_model_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hugging_face_model_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelConfig")
     def model_config(
@@ -180,17 +202,22 @@ class _AiEndpointWithModelGardenDeploymentState:
         value: Optional[
             pulumi.Input[AiEndpointWithModelGardenDeploymentModelConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publisherModelName")
     def publisher_model_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher_model_name.setter
-    def publisher_model_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher_model_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AiEndpointWithModelGardenDeployment(pulumi.CustomResource):

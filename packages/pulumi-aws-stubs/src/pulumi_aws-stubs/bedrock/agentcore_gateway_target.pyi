@@ -33,7 +33,8 @@ class AgentcoreGatewayTargetArgs:
     @pulumi.getter(name="gatewayIdentifier")
     def gateway_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @gateway_identifier.setter
-    def gateway_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def gateway_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConfiguration")
     def target_configuration(
@@ -42,7 +43,8 @@ class AgentcoreGatewayTargetArgs:
     @target_configuration.setter
     def target_configuration(
         self, value: pulumi.Input[AgentcoreGatewayTargetTargetConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialProviderConfiguration")
     def credential_provider_configuration(
@@ -56,12 +58,14 @@ class AgentcoreGatewayTargetArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetCredentialProviderConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataConfiguration")
     def metadata_configuration(
@@ -71,17 +75,20 @@ class AgentcoreGatewayTargetArgs:
     def metadata_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreGatewayTargetMetadataConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -90,7 +97,8 @@ class AgentcoreGatewayTargetArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[AgentcoreGatewayTargetTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AgentcoreGatewayTargetState:
@@ -126,17 +134,22 @@ class _AgentcoreGatewayTargetState:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetCredentialProviderConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayIdentifier")
     def gateway_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gateway_identifier.setter
-    def gateway_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gateway_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataConfiguration")
     def metadata_configuration(
@@ -146,17 +159,20 @@ class _AgentcoreGatewayTargetState:
     def metadata_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreGatewayTargetMetadataConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConfiguration")
     def target_configuration(
@@ -166,12 +182,14 @@ class _AgentcoreGatewayTargetState:
     def target_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreGatewayTargetTargetConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetId")
     def target_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_id.setter
-    def target_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -180,7 +198,8 @@ class _AgentcoreGatewayTargetState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[AgentcoreGatewayTargetTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AgentcoreGatewayTarget(pulumi.CustomResource):

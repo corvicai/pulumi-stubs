@@ -116,7 +116,8 @@ class GetTargetGroupResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetTargetGroupResult(GetTargetGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTargetGroupResult]:
+        ...
 
 def get_target_group(
     arn: Optional[_builtins.str] = ...,

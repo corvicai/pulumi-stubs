@@ -52,12 +52,14 @@ class ScalingPlanPooledScheduleArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPlanName")
     def scaling_plan_name(self) -> pulumi.Input[_builtins.str]: ...
     @scaling_plan_name.setter
-    def scaling_plan_name(self, value: pulumi.Input[_builtins.str]): ...
+    def scaling_plan_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysOfWeek")
     def days_of_week(
@@ -71,7 +73,8 @@ class ScalingPlanPooledScheduleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, DayOfWeek]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakLoadBalancingAlgorithm")
     def off_peak_load_balancing_algorithm(
@@ -85,12 +88,14 @@ class ScalingPlanPooledScheduleArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SessionHostLoadBalancingAlgorithm]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakStartTime")
     def off_peak_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @off_peak_start_time.setter
-    def off_peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def off_peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakLoadBalancingAlgorithm")
     def peak_load_balancing_algorithm(
@@ -104,12 +109,14 @@ class ScalingPlanPooledScheduleArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SessionHostLoadBalancingAlgorithm]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakStartTime")
     def peak_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @peak_start_time.setter
-    def peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownCapacityThresholdPct")
     def ramp_down_capacity_threshold_pct(
@@ -118,7 +125,8 @@ class ScalingPlanPooledScheduleArgs:
     @ramp_down_capacity_threshold_pct.setter
     def ramp_down_capacity_threshold_pct(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownForceLogoffUsers")
     def ramp_down_force_logoff_users(
@@ -127,7 +135,8 @@ class ScalingPlanPooledScheduleArgs:
     @ramp_down_force_logoff_users.setter
     def ramp_down_force_logoff_users(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownLoadBalancingAlgorithm")
     def ramp_down_load_balancing_algorithm(
@@ -141,14 +150,16 @@ class ScalingPlanPooledScheduleArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SessionHostLoadBalancingAlgorithm]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownMinimumHostsPct")
     def ramp_down_minimum_hosts_pct(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ramp_down_minimum_hosts_pct.setter
     def ramp_down_minimum_hosts_pct(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownNotificationMessage")
     def ramp_down_notification_message(
@@ -157,12 +168,14 @@ class ScalingPlanPooledScheduleArgs:
     @ramp_down_notification_message.setter
     def ramp_down_notification_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownStartTime")
     def ramp_down_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @ramp_down_start_time.setter
-    def ramp_down_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def ramp_down_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownStopHostsWhen")
     def ramp_down_stop_hosts_when(
@@ -171,14 +184,16 @@ class ScalingPlanPooledScheduleArgs:
     @ramp_down_stop_hosts_when.setter
     def ramp_down_stop_hosts_when(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StopHostsWhen]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownWaitTimeMinutes")
     def ramp_down_wait_time_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ramp_down_wait_time_minutes.setter
     def ramp_down_wait_time_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpCapacityThresholdPct")
     def ramp_up_capacity_threshold_pct(
@@ -187,7 +202,8 @@ class ScalingPlanPooledScheduleArgs:
     @ramp_up_capacity_threshold_pct.setter
     def ramp_up_capacity_threshold_pct(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpLoadBalancingAlgorithm")
     def ramp_up_load_balancing_algorithm(
@@ -201,26 +217,30 @@ class ScalingPlanPooledScheduleArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SessionHostLoadBalancingAlgorithm]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpMinimumHostsPct")
     def ramp_up_minimum_hosts_pct(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ramp_up_minimum_hosts_pct.setter
     def ramp_up_minimum_hosts_pct(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpStartTime")
     def ramp_up_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @ramp_up_start_time.setter
-    def ramp_up_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def ramp_up_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPlanScheduleName")
     def scaling_plan_schedule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scaling_plan_schedule_name.setter
     def scaling_plan_schedule_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ScalingPlanPooledSchedule(pulumi.CustomResource):

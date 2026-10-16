@@ -23,7 +23,10 @@ class GetVirtualNetworkGatewayBgpPeerStatusResult:
 class AwaitableGetVirtualNetworkGatewayBgpPeerStatusResult(
     GetVirtualNetworkGatewayBgpPeerStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayBgpPeerStatusResult]:
+        ...
 
 def get_virtual_network_gateway_bgp_peer_status(
     peer: Optional[_builtins.str] = ...,

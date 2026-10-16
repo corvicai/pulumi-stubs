@@ -48,7 +48,8 @@ class GetWorkloadInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadInstanceResult(GetWorkloadInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadInstanceResult]:
+        ...
 
 def get_workload_instance(
     modernize_project_name: Optional[_builtins.str] = ...,

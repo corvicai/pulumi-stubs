@@ -39,7 +39,8 @@ class GetAzureVersionsResult:
     def valid_versions(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetAzureVersionsResult(GetAzureVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureVersionsResult]:
+        ...
 
 def get_azure_versions(
     location: Optional[_builtins.str] = ...,

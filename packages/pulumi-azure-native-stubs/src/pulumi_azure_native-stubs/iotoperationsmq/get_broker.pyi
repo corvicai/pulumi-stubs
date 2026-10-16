@@ -108,7 +108,8 @@ class GetBrokerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBrokerResult(GetBrokerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBrokerResult]:
+        ...
 
 def get_broker(
     broker_name: Optional[_builtins.str] = ...,

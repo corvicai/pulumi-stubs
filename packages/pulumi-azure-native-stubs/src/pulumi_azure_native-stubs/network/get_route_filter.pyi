@@ -64,7 +64,8 @@ class GetRouteFilterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRouteFilterResult(GetRouteFilterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteFilterResult]:
+        ...
 
 def get_route_filter(
     expand: Optional[_builtins.str] = ...,

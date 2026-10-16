@@ -21,7 +21,10 @@ class ListPolicyDefinitionVersionAllAtManagementGroupResult:
 class AwaitableListPolicyDefinitionVersionAllAtManagementGroupResult(
     ListPolicyDefinitionVersionAllAtManagementGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPolicyDefinitionVersionAllAtManagementGroupResult]:
+        ...
 
 def list_policy_definition_version_all_at_management_group(
     management_group_name: Optional[_builtins.str] = ...,

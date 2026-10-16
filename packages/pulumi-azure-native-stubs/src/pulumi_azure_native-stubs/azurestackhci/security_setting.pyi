@@ -31,12 +31,14 @@ class SecuritySettingArgs:
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_name.setter
-    def cluster_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securedCoreComplianceAssignment")
     def secured_core_compliance_assignment(
@@ -46,12 +48,16 @@ class SecuritySettingArgs:
     def secured_core_compliance_assignment(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ComplianceAssignmentType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securitySettingsName")
     def security_settings_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_settings_name.setter
-    def security_settings_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_settings_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def smb_encryption_for_intra_cluster_traffic_compliance_assignment(
@@ -61,7 +67,8 @@ class SecuritySettingArgs:
     def smb_encryption_for_intra_cluster_traffic_compliance_assignment(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ComplianceAssignmentType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wdacComplianceAssignment")
     def wdac_compliance_assignment(
@@ -71,7 +78,8 @@ class SecuritySettingArgs:
     def wdac_compliance_assignment(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ComplianceAssignmentType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azurestackhci:SecuritySetting")
 class SecuritySetting(pulumi.CustomResource):

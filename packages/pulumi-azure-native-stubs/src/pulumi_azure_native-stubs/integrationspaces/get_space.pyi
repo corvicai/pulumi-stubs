@@ -51,7 +51,8 @@ class GetSpaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSpaceResult(GetSpaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSpaceResult]:
+        ...
 
 def get_space(
     resource_group_name: Optional[_builtins.str] = ...,

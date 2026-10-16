@@ -86,7 +86,8 @@ class GetPartnerNamespaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPartnerNamespaceResult(GetPartnerNamespaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPartnerNamespaceResult]:
+        ...
 
 def get_partner_namespace(
     partner_namespace_name: Optional[_builtins.str] = ...,

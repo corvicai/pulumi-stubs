@@ -55,7 +55,8 @@ class GetRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRuleResult(GetRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRuleResult]:
+        ...
 
 def get_rule(
     namespace_name: Optional[_builtins.str] = ...,

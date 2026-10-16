@@ -35,29 +35,36 @@ class ManagedNetworkGroupArgs:
     @pulumi.getter(name="managedNetworkName")
     def managed_network_name(self) -> pulumi.Input[_builtins.str]: ...
     @managed_network_name.setter
-    def managed_network_name(self, value: pulumi.Input[_builtins.str]): ...
+    def managed_network_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[Union[_builtins.str, Kind]]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[Union[_builtins.str, Kind]]]): ...
+    def kind(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Kind]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedNetworkGroupName")
     def managed_network_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_network_group_name.setter
     def managed_network_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementGroups")
     def management_groups(
@@ -66,7 +73,8 @@ class ManagedNetworkGroupArgs:
     @management_groups.setter
     def management_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -75,7 +83,8 @@ class ManagedNetworkGroupArgs:
     @subnets.setter
     def subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subscriptions(
@@ -84,7 +93,8 @@ class ManagedNetworkGroupArgs:
     @subscriptions.setter
     def subscriptions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworks")
     def virtual_networks(
@@ -93,7 +103,8 @@ class ManagedNetworkGroupArgs:
     @virtual_networks.setter
     def virtual_networks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:managednetwork:ManagedNetworkGroup")
 class ManagedNetworkGroup(pulumi.CustomResource):

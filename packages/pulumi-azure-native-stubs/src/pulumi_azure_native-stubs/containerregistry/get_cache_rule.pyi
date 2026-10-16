@@ -60,7 +60,8 @@ class GetCacheRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCacheRuleResult(GetCacheRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCacheRuleResult]:
+        ...
 
 def get_cache_rule(
     cache_rule_name: Optional[_builtins.str] = ...,

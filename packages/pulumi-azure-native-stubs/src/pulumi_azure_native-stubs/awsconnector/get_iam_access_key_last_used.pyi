@@ -52,7 +52,8 @@ class GetIamAccessKeyLastUsedResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamAccessKeyLastUsedResult(GetIamAccessKeyLastUsedResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamAccessKeyLastUsedResult]:
+        ...
 
 def get_iam_access_key_last_used(
     name: Optional[_builtins.str] = ...,

@@ -28,7 +28,8 @@ class GetGroupLookupResult:
     def name(self) -> _builtins.str: ...
 
 class AwaitableGetGroupLookupResult(GetGroupLookupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroupLookupResult]:
+        ...
 
 def get_group_lookup(
     group_key: Optional[

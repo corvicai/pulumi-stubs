@@ -100,7 +100,8 @@ class GetScriptExecutionResult:
     def warnings(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetScriptExecutionResult(GetScriptExecutionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScriptExecutionResult]:
+        ...
 
 def get_script_execution(
     private_cloud_name: Optional[_builtins.str] = ...,

@@ -76,7 +76,10 @@ class GetAzureKeyVaultSecretProviderClassResult:
 class AwaitableGetAzureKeyVaultSecretProviderClassResult(
     GetAzureKeyVaultSecretProviderClassResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAzureKeyVaultSecretProviderClassResult]:
+        ...
 
 def get_azure_key_vault_secret_provider_class(
     azure_key_vault_secret_provider_class_name: Optional[_builtins.str] = ...,

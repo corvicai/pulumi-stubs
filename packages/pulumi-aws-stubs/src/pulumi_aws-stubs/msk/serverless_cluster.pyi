@@ -30,7 +30,8 @@ class ServerlessClusterArgs:
     @client_authentication.setter
     def client_authentication(
         self, value: pulumi.Input[ServerlessClusterClientAuthenticationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfigs")
     def vpc_configs(
@@ -40,17 +41,20 @@ class ServerlessClusterArgs:
     def vpc_configs(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[ServerlessClusterVpcConfigArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -59,7 +63,8 @@ class ServerlessClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServerlessClusterState:
@@ -86,14 +91,16 @@ class _ServerlessClusterState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootstrapBrokersSaslIam")
     def bootstrap_brokers_sasl_iam(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bootstrap_brokers_sasl_iam.setter
     def bootstrap_brokers_sasl_iam(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientAuthentication")
     def client_authentication(
@@ -102,22 +109,26 @@ class _ServerlessClusterState:
     @client_authentication.setter
     def client_authentication(
         self, value: Optional[pulumi.Input[ServerlessClusterClientAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterUuid")
     def cluster_uuid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_uuid.setter
-    def cluster_uuid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_uuid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -126,7 +137,8 @@ class _ServerlessClusterState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -135,7 +147,8 @@ class _ServerlessClusterState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfigs")
     def vpc_configs(
@@ -149,7 +162,8 @@ class _ServerlessClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServerlessClusterVpcConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:msk/serverlessCluster:ServerlessCluster")
 class ServerlessCluster(pulumi.CustomResource):

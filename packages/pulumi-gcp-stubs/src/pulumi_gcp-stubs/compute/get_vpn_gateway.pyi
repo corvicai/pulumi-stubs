@@ -47,7 +47,8 @@ class GetVPNGatewayResult:
     def self_link(self) -> _builtins.str: ...
 
 class AwaitableGetVPNGatewayResult(GetVPNGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVPNGatewayResult]:
+        ...
 
 def get_vpn_gateway(
     name: Optional[_builtins.str] = ...,

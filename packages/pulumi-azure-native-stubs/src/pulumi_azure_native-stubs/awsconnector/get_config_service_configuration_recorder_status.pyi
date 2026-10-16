@@ -56,7 +56,10 @@ class GetConfigServiceConfigurationRecorderStatusResult:
 class AwaitableGetConfigServiceConfigurationRecorderStatusResult(
     GetConfigServiceConfigurationRecorderStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigServiceConfigurationRecorderStatusResult]:
+        ...
 
 def get_config_service_configuration_recorder_status(
     name: Optional[_builtins.str] = ...,

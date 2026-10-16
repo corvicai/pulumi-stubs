@@ -17,7 +17,10 @@ class GetPartnerTopicEventSubscriptionDeliveryAttributesResult:
 class AwaitableGetPartnerTopicEventSubscriptionDeliveryAttributesResult(
     GetPartnerTopicEventSubscriptionDeliveryAttributesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPartnerTopicEventSubscriptionDeliveryAttributesResult]:
+        ...
 
 def get_partner_topic_event_subscription_delivery_attributes(
     event_subscription_name: Optional[_builtins.str] = ...,

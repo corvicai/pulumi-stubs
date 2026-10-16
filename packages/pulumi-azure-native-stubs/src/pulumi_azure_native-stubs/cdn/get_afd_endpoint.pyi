@@ -72,7 +72,8 @@ class GetAFDEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAFDEndpointResult(GetAFDEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAFDEndpointResult]:
+        ...
 
 def get_afd_endpoint(
     endpoint_name: Optional[_builtins.str] = ...,

@@ -132,7 +132,8 @@ class GetAuthorityResult:
     ) -> Sequence[outputs.GetAuthorityUserDefinedAccessUrlResult]: ...
 
 class AwaitableGetAuthorityResult(GetAuthorityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthorityResult]:
+        ...
 
 def get_authority(
     certificate_authority_id: Optional[_builtins.str] = ...,

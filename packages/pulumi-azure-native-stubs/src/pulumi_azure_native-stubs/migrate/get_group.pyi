@@ -39,7 +39,8 @@ class GetGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGroupResult(GetGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroupResult]:
+        ...
 
 def get_group(
     group_name: Optional[_builtins.str] = ...,

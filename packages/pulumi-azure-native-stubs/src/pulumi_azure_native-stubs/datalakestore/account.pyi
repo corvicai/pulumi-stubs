@@ -51,29 +51,36 @@ class AccountArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountName")
     def account_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_name.setter
-    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultGroup")
     def default_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_group.setter
-    def default_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfig")
     def encryption_config(self) -> Optional[pulumi.Input[EncryptionConfigArgs]]: ...
     @encryption_config.setter
     def encryption_config(
         self, value: Optional[pulumi.Input[EncryptionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionState")
     def encryption_state(self) -> Optional[pulumi.Input[EncryptionState]]: ...
     @encryption_state.setter
-    def encryption_state(self, value: Optional[pulumi.Input[EncryptionState]]): ...
+    def encryption_state(
+        self, value: Optional[pulumi.Input[EncryptionState]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallAllowAzureIps")
     def firewall_allow_azure_ips(
@@ -82,7 +89,8 @@ class AccountArgs:
     @firewall_allow_azure_ips.setter
     def firewall_allow_azure_ips(
         self, value: Optional[pulumi.Input[FirewallAllowAzureIpsState]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallRules")
     def firewall_rules(
@@ -100,27 +108,34 @@ class AccountArgs:
                 Sequence[pulumi.Input[CreateFirewallRuleWithAccountParametersArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallState")
     def firewall_state(self) -> Optional[pulumi.Input[FirewallState]]: ...
     @firewall_state.setter
-    def firewall_state(self, value: Optional[pulumi.Input[FirewallState]]): ...
+    def firewall_state(self, value: Optional[pulumi.Input[FirewallState]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[EncryptionIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[EncryptionIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[EncryptionIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newTier")
     def new_tier(self) -> Optional[pulumi.Input[TierType]]: ...
     @new_tier.setter
-    def new_tier(self, value: Optional[pulumi.Input[TierType]]): ...
+    def new_tier(self, value: Optional[pulumi.Input[TierType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -129,7 +144,8 @@ class AccountArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedIdProviderState")
     def trusted_id_provider_state(
@@ -138,7 +154,8 @@ class AccountArgs:
     @trusted_id_provider_state.setter
     def trusted_id_provider_state(
         self, value: Optional[pulumi.Input[TrustedIdProviderState]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedIdProviders")
     def trusted_id_providers(
@@ -156,7 +173,8 @@ class AccountArgs:
                 Sequence[pulumi.Input[CreateTrustedIdProviderWithAccountParametersArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkRules")
     def virtual_network_rules(
@@ -176,7 +194,8 @@ class AccountArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:datalakestore:Account")
 class Account(pulumi.CustomResource):

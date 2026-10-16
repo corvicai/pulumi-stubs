@@ -37,7 +37,8 @@ class GetInstanceSerialPortResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceSerialPortResult(GetInstanceSerialPortResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceSerialPortResult]:
+        ...
 
 def get_instance_serial_port(
     instance: Optional[_builtins.str] = ...,

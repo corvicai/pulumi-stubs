@@ -80,7 +80,8 @@ class GetSnapshotResult:
     def vm_size(self) -> _builtins.str: ...
 
 class AwaitableGetSnapshotResult(GetSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotResult]:
+        ...
 
 def get_snapshot(
     resource_group_name: Optional[_builtins.str] = ...,

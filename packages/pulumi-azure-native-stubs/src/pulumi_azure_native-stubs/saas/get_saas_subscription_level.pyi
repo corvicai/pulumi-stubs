@@ -44,7 +44,8 @@ class GetSaasSubscriptionLevelResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSaasSubscriptionLevelResult(GetSaasSubscriptionLevelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSaasSubscriptionLevelResult]:
+        ...
 
 def get_saas_subscription_level(
     resource_group_name: Optional[_builtins.str] = ...,

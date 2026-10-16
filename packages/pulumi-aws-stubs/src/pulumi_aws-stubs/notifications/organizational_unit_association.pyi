@@ -19,12 +19,16 @@ class OrganizationalUnitAssociationArgs:
     @pulumi.getter(name="notificationConfigurationArn")
     def notification_configuration_arn(self) -> pulumi.Input[_builtins.str]: ...
     @notification_configuration_arn.setter
-    def notification_configuration_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def notification_configuration_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationalUnitId")
     def organizational_unit_id(self) -> pulumi.Input[_builtins.str]: ...
     @organizational_unit_id.setter
-    def organizational_unit_id(self, value: pulumi.Input[_builtins.str]): ...
+    def organizational_unit_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OrganizationalUnitAssociationState:
@@ -42,12 +46,16 @@ class _OrganizationalUnitAssociationState:
     @notification_configuration_arn.setter
     def notification_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationalUnitId")
     def organizational_unit_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organizational_unit_id.setter
-    def organizational_unit_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organizational_unit_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OrganizationalUnitAssociation(pulumi.CustomResource):

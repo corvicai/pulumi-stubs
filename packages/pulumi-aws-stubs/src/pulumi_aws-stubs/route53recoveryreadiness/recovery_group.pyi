@@ -20,7 +20,8 @@ class RecoveryGroupArgs:
     @pulumi.getter(name="recoveryGroupName")
     def recovery_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @recovery_group_name.setter
-    def recovery_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def recovery_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cells(
@@ -29,7 +30,8 @@ class RecoveryGroupArgs:
     @cells.setter
     def cells(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -38,7 +40,8 @@ class RecoveryGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RecoveryGroupState:
@@ -57,7 +60,8 @@ class _RecoveryGroupState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cells(
@@ -66,12 +70,16 @@ class _RecoveryGroupState:
     @cells.setter
     def cells(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryGroupName")
     def recovery_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recovery_group_name.setter
-    def recovery_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recovery_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -80,7 +88,8 @@ class _RecoveryGroupState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -89,7 +98,8 @@ class _RecoveryGroupState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RecoveryGroup(pulumi.CustomResource):

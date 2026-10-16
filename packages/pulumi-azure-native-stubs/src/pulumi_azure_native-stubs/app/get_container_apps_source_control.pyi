@@ -58,7 +58,10 @@ class GetContainerAppsSourceControlResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContainerAppsSourceControlResult(GetContainerAppsSourceControlResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetContainerAppsSourceControlResult]:
+        ...
 
 def get_container_apps_source_control(
     container_app_name: Optional[_builtins.str] = ...,

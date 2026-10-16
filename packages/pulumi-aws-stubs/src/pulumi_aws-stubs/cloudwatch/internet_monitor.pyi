@@ -32,7 +32,8 @@ class InternetMonitorArgs:
     @pulumi.getter(name="monitorName")
     def monitor_name(self) -> pulumi.Input[_builtins.str]: ...
     @monitor_name.setter
-    def monitor_name(self, value: pulumi.Input[_builtins.str]): ...
+    def monitor_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthEventsConfig")
     def health_events_config(
@@ -41,7 +42,8 @@ class InternetMonitorArgs:
     @health_events_config.setter
     def health_events_config(
         self, value: Optional[pulumi.Input[InternetMonitorHealthEventsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internetMeasurementsLogDelivery")
     def internet_measurements_log_delivery(
@@ -53,19 +55,22 @@ class InternetMonitorArgs:
         value: Optional[
             pulumi.Input[InternetMonitorInternetMeasurementsLogDeliveryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxCityNetworksToMonitor")
     def max_city_networks_to_monitor(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_city_networks_to_monitor.setter
     def max_city_networks_to_monitor(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -74,12 +79,14 @@ class InternetMonitorArgs:
     @resources.setter
     def resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -88,7 +95,8 @@ class InternetMonitorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficPercentageToMonitor")
     def traffic_percentage_to_monitor(
@@ -97,7 +105,8 @@ class InternetMonitorArgs:
     @traffic_percentage_to_monitor.setter
     def traffic_percentage_to_monitor(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InternetMonitorState:
@@ -126,7 +135,8 @@ class _InternetMonitorState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthEventsConfig")
     def health_events_config(
@@ -135,7 +145,8 @@ class _InternetMonitorState:
     @health_events_config.setter
     def health_events_config(
         self, value: Optional[pulumi.Input[InternetMonitorHealthEventsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internetMeasurementsLogDelivery")
     def internet_measurements_log_delivery(
@@ -147,24 +158,28 @@ class _InternetMonitorState:
         value: Optional[
             pulumi.Input[InternetMonitorInternetMeasurementsLogDeliveryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxCityNetworksToMonitor")
     def max_city_networks_to_monitor(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_city_networks_to_monitor.setter
     def max_city_networks_to_monitor(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitorName")
     def monitor_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @monitor_name.setter
-    def monitor_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def monitor_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -173,12 +188,14 @@ class _InternetMonitorState:
     @resources.setter
     def resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -187,7 +204,8 @@ class _InternetMonitorState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -196,7 +214,8 @@ class _InternetMonitorState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficPercentageToMonitor")
     def traffic_percentage_to_monitor(
@@ -205,7 +224,8 @@ class _InternetMonitorState:
     @traffic_percentage_to_monitor.setter
     def traffic_percentage_to_monitor(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cloudwatch/internetMonitor:InternetMonitor")
 class InternetMonitor(pulumi.CustomResource):

@@ -33,38 +33,46 @@ class AvailabilitySetArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilitySetName")
     def availability_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_set_name.setter
-    def availability_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_set_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformFaultDomainCount")
     def platform_fault_domain_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @platform_fault_domain_count.setter
     def platform_fault_domain_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformUpdateDomainCount")
     def platform_update_domain_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @platform_update_domain_count.setter
     def platform_update_domain_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="proximityPlacementGroup")
     def proximity_placement_group(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @proximity_placement_group.setter
     def proximity_placement_group(
         self, value: Optional[pulumi.Input[SubResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduledEventsPolicy")
     def scheduled_events_policy(
@@ -73,12 +81,14 @@ class AvailabilitySetArgs:
     @scheduled_events_policy.setter
     def scheduled_events_policy(
         self, value: Optional[pulumi.Input[ScheduledEventsPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[SkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -87,7 +97,8 @@ class AvailabilitySetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachines")
     def virtual_machines(
@@ -96,7 +107,8 @@ class AvailabilitySetArgs:
     @virtual_machines.setter
     def virtual_machines(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:compute:AvailabilitySet")
 class AvailabilitySet(pulumi.CustomResource):

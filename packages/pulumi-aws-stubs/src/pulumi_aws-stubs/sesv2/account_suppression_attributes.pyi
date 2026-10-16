@@ -23,12 +23,14 @@ class AccountSuppressionAttributesArgs:
     @suppressed_reasons.setter
     def suppressed_reasons(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccountSuppressionAttributesState:
@@ -44,7 +46,8 @@ class _AccountSuppressionAttributesState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suppressedReasons")
     def suppressed_reasons(
@@ -53,7 +56,8 @@ class _AccountSuppressionAttributesState:
     @suppressed_reasons.setter
     def suppressed_reasons(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AccountSuppressionAttributes(pulumi.CustomResource):

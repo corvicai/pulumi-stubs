@@ -23,7 +23,8 @@ class CostAllocationRuleArgs:
     @pulumi.getter(name="billingAccountId")
     def billing_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @billing_account_id.setter
-    def billing_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def billing_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -32,12 +33,14 @@ class CostAllocationRuleArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[CostAllocationRulePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rule_name.setter
-    def rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rule_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:costmanagement:CostAllocationRule")
 class CostAllocationRule(pulumi.CustomResource):

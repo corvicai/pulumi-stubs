@@ -76,7 +76,8 @@ class FrameworkControlArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputParameters")
     def input_parameters(
@@ -90,12 +91,16 @@ class FrameworkControlArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FrameworkControlInputParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[FrameworkControlScopeArgs]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[FrameworkControlScopeArgs]]): ...
+    def scope(
+        self, value: Optional[pulumi.Input[FrameworkControlScopeArgs]]
+    ):  # -> None:
+        ...
 
 class FrameworkControlInputParameterArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -113,12 +118,14 @@ class FrameworkControlInputParameterArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FrameworkControlScopeArgsDict(TypedDict):
     compliance_resource_ids: NotRequired[
@@ -150,7 +157,8 @@ class FrameworkControlScopeArgs:
     @compliance_resource_ids.setter
     def compliance_resource_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceResourceTypes")
     def compliance_resource_types(
@@ -159,7 +167,8 @@ class FrameworkControlScopeArgs:
     @compliance_resource_types.setter
     def compliance_resource_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -168,7 +177,8 @@ class FrameworkControlScopeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LogicallyAirGappedVaultTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -182,7 +192,8 @@ class LogicallyAirGappedVaultTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PlanAdvancedBackupSettingArgsDict(TypedDict):
     backup_options: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
@@ -204,12 +215,14 @@ class PlanAdvancedBackupSettingArgs:
     @backup_options.setter
     def backup_options(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> pulumi.Input[_builtins.str]: ...
     @resource_type.setter
-    def resource_type(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PlanRuleArgsDict(TypedDict):
     rule_name: pulumi.Input[_builtins.str]
@@ -263,17 +276,22 @@ class PlanRuleArgs:
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_name.setter
-    def rule_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetVaultName")
     def target_vault_name(self) -> pulumi.Input[_builtins.str]: ...
     @target_vault_name.setter
-    def target_vault_name(self, value: pulumi.Input[_builtins.str]): ...
+    def target_vault_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="completionWindow")
     def completion_window(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @completion_window.setter
-    def completion_window(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def completion_window(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyActions")
     def copy_actions(
@@ -283,19 +301,24 @@ class PlanRuleArgs:
     def copy_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanRuleCopyActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableContinuousBackup")
     def enable_continuous_backup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_continuous_backup.setter
     def enable_continuous_backup(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lifecycle(self) -> Optional[pulumi.Input[PlanRuleLifecycleArgs]]: ...
     @lifecycle.setter
-    def lifecycle(self, value: Optional[pulumi.Input[PlanRuleLifecycleArgs]]): ...
+    def lifecycle(
+        self, value: Optional[pulumi.Input[PlanRuleLifecycleArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointTags")
     def recovery_point_tags(
@@ -304,7 +327,8 @@ class PlanRuleArgs:
     @recovery_point_tags.setter
     def recovery_point_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scanActions")
     def scan_actions(
@@ -314,24 +338,28 @@ class PlanRuleArgs:
     def scan_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanRuleScanActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule.setter
-    def schedule(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleExpressionTimezone")
     def schedule_expression_timezone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_expression_timezone.setter
     def schedule_expression_timezone(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startWindow")
     def start_window(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @start_window.setter
-    def start_window(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def start_window(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetLogicallyAirGappedBackupVaultArn")
     def target_logically_air_gapped_backup_vault_arn(
@@ -340,7 +368,8 @@ class PlanRuleArgs:
     @target_logically_air_gapped_backup_vault_arn.setter
     def target_logically_air_gapped_backup_vault_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanRuleCopyActionArgsDict(TypedDict):
     destination_vault_arn: pulumi.Input[_builtins.str]
@@ -358,14 +387,16 @@ class PlanRuleCopyActionArgs:
     @pulumi.getter(name="destinationVaultArn")
     def destination_vault_arn(self) -> pulumi.Input[_builtins.str]: ...
     @destination_vault_arn.setter
-    def destination_vault_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def destination_vault_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lifecycle(self) -> Optional[pulumi.Input[PlanRuleCopyActionLifecycleArgs]]: ...
     @lifecycle.setter
     def lifecycle(
         self, value: Optional[pulumi.Input[PlanRuleCopyActionLifecycleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanRuleCopyActionLifecycleArgsDict(TypedDict):
     cold_storage_after: NotRequired[pulumi.Input[_builtins.int]]
@@ -387,12 +418,16 @@ class PlanRuleCopyActionLifecycleArgs:
     @pulumi.getter(name="coldStorageAfter")
     def cold_storage_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @cold_storage_after.setter
-    def cold_storage_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def cold_storage_after(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteAfter")
     def delete_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @delete_after.setter
-    def delete_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def delete_after(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optInToArchiveForSupportedResources")
     def opt_in_to_archive_for_supported_resources(
@@ -401,7 +436,8 @@ class PlanRuleCopyActionLifecycleArgs:
     @opt_in_to_archive_for_supported_resources.setter
     def opt_in_to_archive_for_supported_resources(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanRuleLifecycleArgsDict(TypedDict):
     cold_storage_after: NotRequired[pulumi.Input[_builtins.int]]
@@ -423,12 +459,16 @@ class PlanRuleLifecycleArgs:
     @pulumi.getter(name="coldStorageAfter")
     def cold_storage_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @cold_storage_after.setter
-    def cold_storage_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def cold_storage_after(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteAfter")
     def delete_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @delete_after.setter
-    def delete_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def delete_after(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optInToArchiveForSupportedResources")
     def opt_in_to_archive_for_supported_resources(
@@ -437,7 +477,8 @@ class PlanRuleLifecycleArgs:
     @opt_in_to_archive_for_supported_resources.setter
     def opt_in_to_archive_for_supported_resources(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanRuleScanActionArgsDict(TypedDict):
     malware_scanner: pulumi.Input[_builtins.str]
@@ -455,12 +496,14 @@ class PlanRuleScanActionArgs:
     @pulumi.getter(name="malwareScanner")
     def malware_scanner(self) -> pulumi.Input[_builtins.str]: ...
     @malware_scanner.setter
-    def malware_scanner(self, value: pulumi.Input[_builtins.str]): ...
+    def malware_scanner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scanMode")
     def scan_mode(self) -> pulumi.Input[_builtins.str]: ...
     @scan_mode.setter
-    def scan_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def scan_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PlanScanSettingArgsDict(TypedDict):
     malware_scanner: pulumi.Input[_builtins.str]
@@ -480,19 +523,22 @@ class PlanScanSettingArgs:
     @pulumi.getter(name="malwareScanner")
     def malware_scanner(self) -> pulumi.Input[_builtins.str]: ...
     @malware_scanner.setter
-    def malware_scanner(self, value: pulumi.Input[_builtins.str]): ...
+    def malware_scanner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @resource_types.setter
     def resource_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scannerRoleArn")
     def scanner_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @scanner_role_arn.setter
-    def scanner_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def scanner_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ReportPlanReportDeliveryChannelArgsDict(TypedDict):
     s3_bucket_name: pulumi.Input[_builtins.str]
@@ -512,7 +558,8 @@ class ReportPlanReportDeliveryChannelArgs:
     @pulumi.getter(name="s3BucketName")
     def s3_bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @s3_bucket_name.setter
-    def s3_bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def formats(
@@ -521,12 +568,14 @@ class ReportPlanReportDeliveryChannelArgs:
     @formats.setter
     def formats(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3KeyPrefix")
     def s3_key_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_key_prefix.setter
-    def s3_key_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_key_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ReportPlanReportSettingArgsDict(TypedDict):
     report_template: pulumi.Input[_builtins.str]
@@ -556,7 +605,8 @@ class ReportPlanReportSettingArgs:
     @pulumi.getter(name="reportTemplate")
     def report_template(self) -> pulumi.Input[_builtins.str]: ...
     @report_template.setter
-    def report_template(self, value: pulumi.Input[_builtins.str]): ...
+    def report_template(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def accounts(
@@ -565,7 +615,8 @@ class ReportPlanReportSettingArgs:
     @accounts.setter
     def accounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frameworkArns")
     def framework_arns(
@@ -574,12 +625,16 @@ class ReportPlanReportSettingArgs:
     @framework_arns.setter
     def framework_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberOfFrameworks")
     def number_of_frameworks(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_of_frameworks.setter
-    def number_of_frameworks(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def number_of_frameworks(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationUnits")
     def organization_units(
@@ -588,7 +643,8 @@ class ReportPlanReportSettingArgs:
     @organization_units.setter
     def organization_units(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -597,7 +653,8 @@ class ReportPlanReportSettingArgs:
     @regions.setter
     def regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestoreTestingPlanRecoveryPointSelectionArgsDict(TypedDict):
     algorithm: pulumi.Input[_builtins.str]
@@ -623,14 +680,16 @@ class RestoreTestingPlanRecoveryPointSelectionArgs:
     @pulumi.getter
     def algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @algorithm.setter
-    def algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeVaults")
     def include_vaults(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @include_vaults.setter
     def include_vaults(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryPointTypes")
     def recovery_point_types(
@@ -639,7 +698,8 @@ class RestoreTestingPlanRecoveryPointSelectionArgs:
     @recovery_point_types.setter
     def recovery_point_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeVaults")
     def exclude_vaults(
@@ -648,12 +708,16 @@ class RestoreTestingPlanRecoveryPointSelectionArgs:
     @exclude_vaults.setter
     def exclude_vaults(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectionWindowDays")
     def selection_window_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @selection_window_days.setter
-    def selection_window_days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def selection_window_days(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class RestoreTestingSelectionProtectedResourceConditionsArgsDict(TypedDict):
     string_equals: NotRequired[
@@ -724,7 +788,8 @@ class RestoreTestingSelectionProtectedResourceConditionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringNotEquals")
     def string_not_equals(
@@ -750,7 +815,8 @@ class RestoreTestingSelectionProtectedResourceConditionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestoreTestingSelectionProtectedResourceConditionsStringEqualArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -768,12 +834,14 @@ class RestoreTestingSelectionProtectedResourceConditionsStringEqualArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RestoreTestingSelectionProtectedResourceConditionsStringNotEqualArgsDict(
     TypedDict
@@ -793,12 +861,14 @@ class RestoreTestingSelectionProtectedResourceConditionsStringNotEqualArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SelectionConditionArgsDict(TypedDict):
     string_equals: NotRequired[
@@ -845,7 +915,8 @@ class SelectionConditionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SelectionConditionStringEqualArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringLikes")
     def string_likes(
@@ -859,7 +930,8 @@ class SelectionConditionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SelectionConditionStringLikeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringNotEquals")
     def string_not_equals(
@@ -873,7 +945,8 @@ class SelectionConditionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SelectionConditionStringNotEqualArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringNotLikes")
     def string_not_likes(
@@ -887,7 +960,8 @@ class SelectionConditionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SelectionConditionStringNotLikeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SelectionConditionStringEqualArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -905,12 +979,14 @@ class SelectionConditionStringEqualArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SelectionConditionStringLikeArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -928,12 +1004,14 @@ class SelectionConditionStringLikeArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SelectionConditionStringNotEqualArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -951,12 +1029,14 @@ class SelectionConditionStringNotEqualArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SelectionConditionStringNotLikeArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -974,12 +1054,14 @@ class SelectionConditionStringNotLikeArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SelectionSelectionTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -999,14 +1081,17 @@ class SelectionSelectionTagArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

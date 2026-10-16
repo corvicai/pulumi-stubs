@@ -34,7 +34,8 @@ class GetAccessPointsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetAccessPointsResult(GetAccessPointsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessPointsResult]:
+        ...
 
 def get_access_points(
     file_system_id: Optional[_builtins.str] = ...,

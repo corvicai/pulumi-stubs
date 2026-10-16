@@ -104,7 +104,10 @@ class GetIntegrationServiceEnvironmentManagedApiResult:
 class AwaitableGetIntegrationServiceEnvironmentManagedApiResult(
     GetIntegrationServiceEnvironmentManagedApiResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationServiceEnvironmentManagedApiResult]:
+        ...
 
 def get_integration_service_environment_managed_api(
     api_name: Optional[_builtins.str] = ...,

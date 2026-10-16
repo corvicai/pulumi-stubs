@@ -21,14 +21,18 @@ class TenantConfigurationArgs:
     @pulumi.getter(name="configurationName")
     def configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_name.setter
-    def configuration_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(self) -> Optional[pulumi.Input[ConfigurationPropertiesArgs]]: ...
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[ConfigurationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:portal:TenantConfiguration")
 class TenantConfiguration(pulumi.CustomResource):

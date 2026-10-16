@@ -26,7 +26,10 @@ class ListAutomationAccountDeletedRunbooksResult:
 class AwaitableListAutomationAccountDeletedRunbooksResult(
     ListAutomationAccountDeletedRunbooksResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListAutomationAccountDeletedRunbooksResult]:
+        ...
 
 def list_automation_account_deleted_runbooks(
     automation_account_name: Optional[_builtins.str] = ...,

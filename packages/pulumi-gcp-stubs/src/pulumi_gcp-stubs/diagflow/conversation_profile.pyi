@@ -48,12 +48,14 @@ class ConversationProfileArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automatedAgentConfig")
     def automated_agent_config(
@@ -62,7 +64,8 @@ class ConversationProfileArgs:
     @automated_agent_config.setter
     def automated_agent_config(
         self, value: Optional[pulumi.Input[ConversationProfileAutomatedAgentConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanAgentAssistantConfig")
     def human_agent_assistant_config(
@@ -72,7 +75,8 @@ class ConversationProfileArgs:
     def human_agent_assistant_config(
         self,
         value: Optional[pulumi.Input[ConversationProfileHumanAgentAssistantConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanAgentHandoffConfig")
     def human_agent_handoff_config(
@@ -82,12 +86,14 @@ class ConversationProfileArgs:
     def human_agent_handoff_config(
         self,
         value: Optional[pulumi.Input[ConversationProfileHumanAgentHandoffConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfig")
     def logging_config(
@@ -96,7 +102,8 @@ class ConversationProfileArgs:
     @logging_config.setter
     def logging_config(
         self, value: Optional[pulumi.Input[ConversationProfileLoggingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newMessageEventNotificationConfig")
     def new_message_event_notification_config(
@@ -110,7 +117,8 @@ class ConversationProfileArgs:
         value: Optional[
             pulumi.Input[ConversationProfileNewMessageEventNotificationConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newRecognitionResultNotificationConfig")
     def new_recognition_result_notification_config(
@@ -124,7 +132,8 @@ class ConversationProfileArgs:
         value: Optional[
             pulumi.Input[ConversationProfileNewRecognitionResultNotificationConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfig")
     def notification_config(
@@ -133,17 +142,22 @@ class ConversationProfileArgs:
     @notification_config.setter
     def notification_config(
         self, value: Optional[pulumi.Input[ConversationProfileNotificationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securitySettings")
     def security_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_settings.setter
-    def security_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sttConfig")
     def stt_config(
@@ -152,12 +166,14 @@ class ConversationProfileArgs:
     @stt_config.setter
     def stt_config(
         self, value: Optional[pulumi.Input[ConversationProfileSttConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ttsConfig")
     def tts_config(
@@ -166,7 +182,8 @@ class ConversationProfileArgs:
     @tts_config.setter
     def tts_config(
         self, value: Optional[pulumi.Input[ConversationProfileTtsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConversationProfileState:
@@ -212,12 +229,14 @@ class _ConversationProfileState:
     @automated_agent_config.setter
     def automated_agent_config(
         self, value: Optional[pulumi.Input[ConversationProfileAutomatedAgentConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanAgentAssistantConfig")
     def human_agent_assistant_config(
@@ -227,7 +246,8 @@ class _ConversationProfileState:
     def human_agent_assistant_config(
         self,
         value: Optional[pulumi.Input[ConversationProfileHumanAgentAssistantConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanAgentHandoffConfig")
     def human_agent_handoff_config(
@@ -237,17 +257,20 @@ class _ConversationProfileState:
     def human_agent_handoff_config(
         self,
         value: Optional[pulumi.Input[ConversationProfileHumanAgentHandoffConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingConfig")
     def logging_config(
@@ -256,12 +279,14 @@ class _ConversationProfileState:
     @logging_config.setter
     def logging_config(
         self, value: Optional[pulumi.Input[ConversationProfileLoggingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newMessageEventNotificationConfig")
     def new_message_event_notification_config(
@@ -275,7 +300,8 @@ class _ConversationProfileState:
         value: Optional[
             pulumi.Input[ConversationProfileNewMessageEventNotificationConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newRecognitionResultNotificationConfig")
     def new_recognition_result_notification_config(
@@ -289,7 +315,8 @@ class _ConversationProfileState:
         value: Optional[
             pulumi.Input[ConversationProfileNewRecognitionResultNotificationConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfig")
     def notification_config(
@@ -298,17 +325,22 @@ class _ConversationProfileState:
     @notification_config.setter
     def notification_config(
         self, value: Optional[pulumi.Input[ConversationProfileNotificationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securitySettings")
     def security_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_settings.setter
-    def security_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sttConfig")
     def stt_config(
@@ -317,12 +349,14 @@ class _ConversationProfileState:
     @stt_config.setter
     def stt_config(
         self, value: Optional[pulumi.Input[ConversationProfileSttConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ttsConfig")
     def tts_config(
@@ -331,7 +365,8 @@ class _ConversationProfileState:
     @tts_config.setter
     def tts_config(
         self, value: Optional[pulumi.Input[ConversationProfileTtsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ConversationProfile(pulumi.CustomResource):

@@ -39,7 +39,8 @@ class GetOutboundFirewallRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOutboundFirewallRuleResult(GetOutboundFirewallRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOutboundFirewallRuleResult]:
+        ...
 
 def get_outbound_firewall_rule(
     outbound_rule_fqdn: Optional[_builtins.str] = ...,

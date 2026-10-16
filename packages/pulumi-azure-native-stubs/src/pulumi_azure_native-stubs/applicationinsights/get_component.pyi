@@ -150,7 +150,8 @@ class GetComponentResult:
     def workspace_resource_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetComponentResult(GetComponentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetComponentResult]:
+        ...
 
 def get_component(
     resource_group_name: Optional[_builtins.str] = ...,

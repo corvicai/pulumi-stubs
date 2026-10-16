@@ -25,7 +25,10 @@ class ListSaasSubscriptionLevelAccessTokenResult:
 class AwaitableListSaasSubscriptionLevelAccessTokenResult(
     ListSaasSubscriptionLevelAccessTokenResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSaasSubscriptionLevelAccessTokenResult]:
+        ...
 
 def list_saas_subscription_level_access_token(
     resource_group_name: Optional[_builtins.str] = ...,

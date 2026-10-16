@@ -28,7 +28,8 @@ class GetProjectInheritedSettingsResult:
     ) -> outputs.DevCenterProjectCatalogSettingsResponse: ...
 
 class AwaitableGetProjectInheritedSettingsResult(GetProjectInheritedSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectInheritedSettingsResult]:
+        ...
 
 def get_project_inherited_settings(
     project_name: Optional[_builtins.str] = ...,

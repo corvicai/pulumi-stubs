@@ -31,7 +31,8 @@ class GetStaticIpsResult:
     def static_ips(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetStaticIpsResult(GetStaticIpsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStaticIpsResult]:
+        ...
 
 def get_static_ips(
     location: Optional[_builtins.str] = ...,

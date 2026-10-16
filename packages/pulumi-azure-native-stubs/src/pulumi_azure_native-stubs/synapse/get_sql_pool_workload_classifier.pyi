@@ -59,7 +59,10 @@ class GetSqlPoolWorkloadClassifierResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlPoolWorkloadClassifierResult(GetSqlPoolWorkloadClassifierResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlPoolWorkloadClassifierResult]:
+        ...
 
 def get_sql_pool_workload_classifier(
     resource_group_name: Optional[_builtins.str] = ...,

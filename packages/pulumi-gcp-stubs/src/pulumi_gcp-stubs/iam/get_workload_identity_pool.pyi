@@ -70,7 +70,8 @@ class GetWorkloadIdentityPoolResult:
     def workload_identity_pool_id(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadIdentityPoolResult(GetWorkloadIdentityPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadIdentityPoolResult]:
+        ...
 
 def get_workload_identity_pool(
     project: Optional[_builtins.str] = ...,

@@ -38,12 +38,14 @@ class L3IsolationDomainArgs:
     @pulumi.getter(name="networkFabricId")
     def network_fabric_id(self) -> pulumi.Input[_builtins.str]: ...
     @network_fabric_id.setter
-    def network_fabric_id(self, value: pulumi.Input[_builtins.str]): ...
+    def network_fabric_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aggregateRouteConfiguration")
     def aggregate_route_configuration(
@@ -52,12 +54,14 @@ class L3IsolationDomainArgs:
     @aggregate_route_configuration.setter
     def aggregate_route_configuration(
         self, value: Optional[pulumi.Input[AggregateRouteConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @annotation.setter
-    def annotation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def annotation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectedSubnetRoutePolicy")
     def connected_subnet_route_policy(
@@ -66,19 +70,22 @@ class L3IsolationDomainArgs:
     @connected_subnet_route_policy.setter
     def connected_subnet_route_policy(
         self, value: Optional[pulumi.Input[ConnectedSubnetRoutePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="l3IsolationDomainName")
     def l3_isolation_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @l3_isolation_domain_name.setter
     def l3_isolation_domain_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redistributeConnectedSubnets")
     def redistribute_connected_subnets(
@@ -90,7 +97,8 @@ class L3IsolationDomainArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, RedistributeConnectedSubnets]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redistributeStaticRoutes")
     def redistribute_static_routes(
@@ -100,7 +108,8 @@ class L3IsolationDomainArgs:
     def redistribute_static_routes(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, RedistributeStaticRoutes]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -109,7 +118,8 @@ class L3IsolationDomainArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class L3IsolationDomain(pulumi.CustomResource):

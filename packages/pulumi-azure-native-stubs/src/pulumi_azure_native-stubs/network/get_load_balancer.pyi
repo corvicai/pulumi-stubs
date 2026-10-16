@@ -102,7 +102,8 @@ class GetLoadBalancerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLoadBalancerResult(GetLoadBalancerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLoadBalancerResult]:
+        ...
 
 def get_load_balancer(
     expand: Optional[_builtins.str] = ...,

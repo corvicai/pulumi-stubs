@@ -22,7 +22,10 @@ class ListArtifactManifestCredentialResult:
 class AwaitableListArtifactManifestCredentialResult(
     ListArtifactManifestCredentialResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListArtifactManifestCredentialResult]:
+        ...
 
 def list_artifact_manifest_credential(
     artifact_manifest_name: Optional[_builtins.str] = ...,

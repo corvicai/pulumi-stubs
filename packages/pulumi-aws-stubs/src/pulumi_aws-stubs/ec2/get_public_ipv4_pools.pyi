@@ -36,7 +36,8 @@ class GetPublicIpv4PoolsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetPublicIpv4PoolsResult(GetPublicIpv4PoolsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublicIpv4PoolsResult]:
+        ...
 
 def get_public_ipv4_pools(
     filters: Optional[

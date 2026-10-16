@@ -23,7 +23,8 @@ class ListDomainSharedAccessKeysResult:
     def key2(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListDomainSharedAccessKeysResult(ListDomainSharedAccessKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDomainSharedAccessKeysResult]:
+        ...
 
 def list_domain_shared_access_keys(
     domain_name: Optional[_builtins.str] = ...,

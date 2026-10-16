@@ -48,7 +48,8 @@ class GetInvoiceSectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInvoiceSectionResult(GetInvoiceSectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInvoiceSectionResult]:
+        ...
 
 def get_invoice_section(
     billing_account_name: Optional[_builtins.str] = ...,

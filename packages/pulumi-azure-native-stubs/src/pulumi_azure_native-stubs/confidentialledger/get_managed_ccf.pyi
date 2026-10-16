@@ -52,7 +52,8 @@ class GetManagedCCFResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedCCFResult(GetManagedCCFResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedCCFResult]:
+        ...
 
 def get_managed_ccf(
     app_name: Optional[_builtins.str] = ...,

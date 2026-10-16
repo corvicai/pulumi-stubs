@@ -36,7 +36,10 @@ class ListStaticSiteFunctionAppSettingsResult:
 class AwaitableListStaticSiteFunctionAppSettingsResult(
     ListStaticSiteFunctionAppSettingsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListStaticSiteFunctionAppSettingsResult]:
+        ...
 
 def list_static_site_function_app_settings(
     name: Optional[_builtins.str] = ...,

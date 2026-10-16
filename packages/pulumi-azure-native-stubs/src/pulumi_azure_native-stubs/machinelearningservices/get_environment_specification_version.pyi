@@ -46,7 +46,10 @@ class GetEnvironmentSpecificationVersionResult:
 class AwaitableGetEnvironmentSpecificationVersionResult(
     GetEnvironmentSpecificationVersionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetEnvironmentSpecificationVersionResult]:
+        ...
 
 def get_environment_specification_version(
     name: Optional[_builtins.str] = ...,

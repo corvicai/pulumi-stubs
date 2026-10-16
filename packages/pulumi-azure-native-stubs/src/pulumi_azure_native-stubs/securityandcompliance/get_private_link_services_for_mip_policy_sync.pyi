@@ -66,7 +66,10 @@ class GetPrivateLinkServicesForMIPPolicySyncResult:
 class AwaitableGetPrivateLinkServicesForMIPPolicySyncResult(
     GetPrivateLinkServicesForMIPPolicySyncResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateLinkServicesForMIPPolicySyncResult]:
+        ...
 
 def get_private_link_services_for_mip_policy_sync(
     resource_group_name: Optional[_builtins.str] = ...,

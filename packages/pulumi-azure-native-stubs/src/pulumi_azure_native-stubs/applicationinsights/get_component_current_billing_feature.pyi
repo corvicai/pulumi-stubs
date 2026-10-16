@@ -36,7 +36,10 @@ class GetComponentCurrentBillingFeatureResult:
 class AwaitableGetComponentCurrentBillingFeatureResult(
     GetComponentCurrentBillingFeatureResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetComponentCurrentBillingFeatureResult]:
+        ...
 
 def get_component_current_billing_feature(
     resource_group_name: Optional[_builtins.str] = ...,

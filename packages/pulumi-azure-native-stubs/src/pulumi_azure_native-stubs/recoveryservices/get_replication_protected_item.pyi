@@ -44,7 +44,8 @@ class GetReplicationProtectedItemResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationProtectedItemResult(GetReplicationProtectedItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationProtectedItemResult]:
+        ...
 
 def get_replication_protected_item(
     fabric_name: Optional[_builtins.str] = ...,

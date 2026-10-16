@@ -95,7 +95,8 @@ class GetEventGridDataConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEventGridDataConnectionResult(GetEventGridDataConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventGridDataConnectionResult]:
+        ...
 
 def get_event_grid_data_connection(
     cluster_name: Optional[_builtins.str] = ...,

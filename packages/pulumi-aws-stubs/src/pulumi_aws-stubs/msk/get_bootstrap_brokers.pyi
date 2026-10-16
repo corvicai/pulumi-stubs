@@ -71,7 +71,8 @@ class GetBootstrapBrokersResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetBootstrapBrokersResult(GetBootstrapBrokersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBootstrapBrokersResult]:
+        ...
 
 def get_bootstrap_brokers(
     cluster_arn: Optional[_builtins.str] = ...,

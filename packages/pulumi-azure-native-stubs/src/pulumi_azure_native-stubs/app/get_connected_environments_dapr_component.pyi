@@ -88,7 +88,10 @@ class GetConnectedEnvironmentsDaprComponentResult:
 class AwaitableGetConnectedEnvironmentsDaprComponentResult(
     GetConnectedEnvironmentsDaprComponentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConnectedEnvironmentsDaprComponentResult]:
+        ...
 
 def get_connected_environments_dapr_component(
     component_name: Optional[_builtins.str] = ...,

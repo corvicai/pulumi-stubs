@@ -44,7 +44,8 @@ class GetFailoverGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFailoverGroupResult(GetFailoverGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFailoverGroupResult]:
+        ...
 
 def get_failover_group(
     failover_group_name: Optional[_builtins.str] = ...,

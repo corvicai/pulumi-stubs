@@ -29,7 +29,8 @@ class EnterpriseKeyArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="androidSettings")
     def android_settings(
@@ -38,14 +39,16 @@ class EnterpriseKeyArgs:
     @android_settings.setter
     def android_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyAndroidSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iosSettings")
     def ios_settings(self) -> Optional[pulumi.Input[EnterpriseKeyIosSettingsArgs]]: ...
     @ios_settings.setter
     def ios_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyIosSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -54,12 +57,14 @@ class EnterpriseKeyArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testingOptions")
     def testing_options(
@@ -68,21 +73,24 @@ class EnterpriseKeyArgs:
     @testing_options.setter
     def testing_options(
         self, value: Optional[pulumi.Input[EnterpriseKeyTestingOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wafSettings")
     def waf_settings(self) -> Optional[pulumi.Input[EnterpriseKeyWafSettingsArgs]]: ...
     @waf_settings.setter
     def waf_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyWafSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webSettings")
     def web_settings(self) -> Optional[pulumi.Input[EnterpriseKeyWebSettingsArgs]]: ...
     @web_settings.setter
     def web_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyWebSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EnterpriseKeyState:
@@ -116,17 +124,20 @@ class _EnterpriseKeyState:
     @android_settings.setter
     def android_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyAndroidSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -135,14 +146,16 @@ class _EnterpriseKeyState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iosSettings")
     def ios_settings(self) -> Optional[pulumi.Input[EnterpriseKeyIosSettingsArgs]]: ...
     @ios_settings.setter
     def ios_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyIosSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -151,17 +164,20 @@ class _EnterpriseKeyState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -170,7 +186,8 @@ class _EnterpriseKeyState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testingOptions")
     def testing_options(
@@ -179,21 +196,24 @@ class _EnterpriseKeyState:
     @testing_options.setter
     def testing_options(
         self, value: Optional[pulumi.Input[EnterpriseKeyTestingOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wafSettings")
     def waf_settings(self) -> Optional[pulumi.Input[EnterpriseKeyWafSettingsArgs]]: ...
     @waf_settings.setter
     def waf_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyWafSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webSettings")
     def web_settings(self) -> Optional[pulumi.Input[EnterpriseKeyWebSettingsArgs]]: ...
     @web_settings.setter
     def web_settings(
         self, value: Optional[pulumi.Input[EnterpriseKeyWebSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:recaptcha/enterpriseKey:EnterpriseKey")
 class EnterpriseKey(pulumi.CustomResource):

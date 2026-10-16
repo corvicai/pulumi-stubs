@@ -27,12 +27,14 @@ class ConfigurationProfileHCIAssignmentArgs:
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_name.setter
-    def cluster_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationProfileAssignmentName")
     def configuration_profile_assignment_name(
@@ -41,7 +43,8 @@ class ConfigurationProfileHCIAssignmentArgs:
     @configuration_profile_assignment_name.setter
     def configuration_profile_assignment_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -51,7 +54,8 @@ class ConfigurationProfileHCIAssignmentArgs:
     def properties(
         self,
         value: Optional[pulumi.Input[ConfigurationProfileAssignmentPropertiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ConfigurationProfileHCIAssignment(pulumi.CustomResource):

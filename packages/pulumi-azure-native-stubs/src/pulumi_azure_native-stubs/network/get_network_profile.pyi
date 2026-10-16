@@ -68,7 +68,8 @@ class GetNetworkProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkProfileResult(GetNetworkProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkProfileResult]:
+        ...
 
 def get_network_profile(
     expand: Optional[_builtins.str] = ...,

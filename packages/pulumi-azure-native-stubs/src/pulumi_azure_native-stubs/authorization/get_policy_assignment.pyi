@@ -118,7 +118,8 @@ class GetPolicyAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyAssignmentResult(GetPolicyAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyAssignmentResult]:
+        ...
 
 def get_policy_assignment(
     expand: Optional[_builtins.str] = ...,

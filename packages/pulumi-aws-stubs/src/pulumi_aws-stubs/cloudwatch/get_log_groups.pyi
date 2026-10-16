@@ -39,7 +39,8 @@ class GetLogGroupsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetLogGroupsResult(GetLogGroupsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogGroupsResult]:
+        ...
 
 def get_log_groups(
     log_group_name_prefix: Optional[_builtins.str] = ...,

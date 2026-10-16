@@ -58,7 +58,8 @@ class GetWebAppSitesControllerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppSitesControllerResult(GetWebAppSitesControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppSitesControllerResult]:
+        ...
 
 def get_web_app_sites_controller(
     resource_group_name: Optional[_builtins.str] = ...,

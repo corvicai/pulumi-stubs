@@ -425,27 +425,32 @@ class AccessControlRulesIdentityArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exePath")
     def exe_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @exe_path.setter
-    def exe_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def exe_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupName")
     def group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_name.setter
-    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processName")
     def process_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @process_name.setter
-    def process_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def process_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AccessControlRulesPrivilegeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -469,12 +474,14 @@ class AccessControlRulesPrivilegeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryParameters")
     def query_parameters(
@@ -483,7 +490,8 @@ class AccessControlRulesPrivilegeArgs:
     @query_parameters.setter
     def query_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AccessControlRulesRoleAssignmentArgsDict(TypedDict):
     identities: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -503,12 +511,14 @@ class AccessControlRulesRoleAssignmentArgs:
     @identities.setter
     def identities(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): ...
+    def role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AccessControlRulesRoleArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -526,14 +536,16 @@ class AccessControlRulesRoleArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def privileges(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @privileges.setter
     def privileges(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AccessControlRulesArgsDict(TypedDict):
     identities: NotRequired[
@@ -580,7 +592,8 @@ class AccessControlRulesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccessControlRulesIdentityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def privileges(
@@ -594,7 +607,8 @@ class AccessControlRulesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccessControlRulesPrivilegeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleAssignments")
     def role_assignments(
@@ -608,7 +622,8 @@ class AccessControlRulesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccessControlRulesRoleAssignmentArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roles(
@@ -620,7 +635,8 @@ class AccessControlRulesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccessControlRulesRoleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AdditionalCapabilitiesArgsDict(TypedDict):
     hibernation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -638,12 +654,18 @@ class AdditionalCapabilitiesArgs:
     @pulumi.getter(name="hibernationEnabled")
     def hibernation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @hibernation_enabled.setter
-    def hibernation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def hibernation_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ultraSSDEnabled")
     def ultra_ssd_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ultra_ssd_enabled.setter
-    def ultra_ssd_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ultra_ssd_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class AdditionalReplicaSetArgsDict(TypedDict):
     regional_replica_count: NotRequired[pulumi.Input[_builtins.int]]
@@ -665,7 +687,10 @@ class AdditionalReplicaSetArgs:
     @pulumi.getter(name="regionalReplicaCount")
     def regional_replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @regional_replica_count.setter
-    def regional_replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def regional_replica_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -674,7 +699,8 @@ class AdditionalReplicaSetArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AdditionalUnattendContentArgsDict(TypedDict):
     component_name: NotRequired[pulumi.Input[ComponentName]]
@@ -696,22 +722,26 @@ class AdditionalUnattendContentArgs:
     @pulumi.getter(name="componentName")
     def component_name(self) -> Optional[pulumi.Input[ComponentName]]: ...
     @component_name.setter
-    def component_name(self, value: Optional[pulumi.Input[ComponentName]]): ...
+    def component_name(self, value: Optional[pulumi.Input[ComponentName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def content(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content.setter
-    def content(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passName")
     def pass_name(self) -> Optional[pulumi.Input[PassName]]: ...
     @pass_name.setter
-    def pass_name(self, value: Optional[pulumi.Input[PassName]]): ...
+    def pass_name(self, value: Optional[pulumi.Input[PassName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="settingName")
     def setting_name(self) -> Optional[pulumi.Input[SettingNames]]: ...
     @setting_name.setter
-    def setting_name(self, value: Optional[pulumi.Input[SettingNames]]): ...
+    def setting_name(self, value: Optional[pulumi.Input[SettingNames]]):  # -> None:
+        ...
 
 class ApiEntityReferenceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -725,7 +755,8 @@ class ApiEntityReferenceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationProfileArgsDict(TypedDict):
     gallery_applications: NotRequired[
@@ -750,7 +781,8 @@ class ApplicationProfileArgs:
     def gallery_applications(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VMGalleryApplicationArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomaticOSUpgradePolicyArgsDict(TypedDict):
     disable_automatic_rollback: NotRequired[pulumi.Input[_builtins.bool]]
@@ -774,28 +806,32 @@ class AutomaticOSUpgradePolicyArgs:
     @disable_automatic_rollback.setter
     def disable_automatic_rollback(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticOSUpgrade")
     def enable_automatic_os_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_os_upgrade.setter
     def enable_automatic_os_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osRollingUpgradeDeferral")
     def os_rolling_upgrade_deferral(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @os_rolling_upgrade_deferral.setter
     def os_rolling_upgrade_deferral(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useRollingUpgradePolicy")
     def use_rolling_upgrade_policy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_rolling_upgrade_policy.setter
     def use_rolling_upgrade_policy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomaticRepairsPolicyArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -815,12 +851,14 @@ class AutomaticRepairsPolicyArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gracePeriod")
     def grace_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @grace_period.setter
-    def grace_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def grace_period(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repairAction")
     def repair_action(
@@ -829,7 +867,8 @@ class AutomaticRepairsPolicyArgs:
     @repair_action.setter
     def repair_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RepairAction]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomaticZoneRebalancingPolicyArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -857,7 +896,8 @@ class AutomaticZoneRebalancingPolicyArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rebalanceBehavior")
     def rebalance_behavior(
@@ -866,7 +906,8 @@ class AutomaticZoneRebalancingPolicyArgs:
     @rebalance_behavior.setter
     def rebalance_behavior(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RebalanceBehavior]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rebalanceStrategy")
     def rebalance_strategy(
@@ -875,7 +916,8 @@ class AutomaticZoneRebalancingPolicyArgs:
     @rebalance_strategy.setter
     def rebalance_strategy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RebalanceStrategy]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BillingProfileArgsDict(TypedDict):
     max_price: NotRequired[pulumi.Input[_builtins.float]]
@@ -889,7 +931,8 @@ class BillingProfileArgs:
     @pulumi.getter(name="maxPrice")
     def max_price(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max_price.setter
-    def max_price(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max_price(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class BootDiagnosticsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -907,12 +950,14 @@ class BootDiagnosticsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageUri")
     def storage_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_uri.setter
-    def storage_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CapacityReservationProfileArgsDict(TypedDict):
     capacity_reservation_group: NotRequired[pulumi.Input[SubResourceArgsDict]]
@@ -930,7 +975,8 @@ class CapacityReservationProfileArgs:
     @capacity_reservation_group.setter
     def capacity_reservation_group(
         self, value: Optional[pulumi.Input[SubResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudServiceExtensionProfileArgsDict(TypedDict):
     extensions: NotRequired[pulumi.Input[Sequence[pulumi.Input[ExtensionArgsDict]]]]
@@ -950,7 +996,8 @@ class CloudServiceExtensionProfileArgs:
     @extensions.setter
     def extensions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ExtensionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudServiceExtensionPropertiesArgsDict(TypedDict):
     auto_upgrade_minor_version: NotRequired[pulumi.Input[_builtins.bool]]
@@ -990,17 +1037,22 @@ class CloudServiceExtensionPropertiesArgs:
     @auto_upgrade_minor_version.setter
     def auto_upgrade_minor_version(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateTag")
     def force_update_tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @force_update_tag.setter
-    def force_update_tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def force_update_tag(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedSettings")
     def protected_settings(self) -> Optional[Any]: ...
     @protected_settings.setter
-    def protected_settings(self, value: Optional[Any]): ...
+    def protected_settings(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedSettingsFromKeyVault")
     def protected_settings_from_key_vault(
@@ -1009,12 +1061,14 @@ class CloudServiceExtensionPropertiesArgs:
     @protected_settings_from_key_vault.setter
     def protected_settings_from_key_vault(
         self, value: Optional[pulumi.Input[CloudServiceVaultAndSecretReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher.setter
-    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rolesAppliedTo")
     def roles_applied_to(
@@ -1023,22 +1077,28 @@ class CloudServiceExtensionPropertiesArgs:
     @roles_applied_to.setter
     def roles_applied_to(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[Any]: ...
     @settings.setter
-    def settings(self, value: Optional[Any]): ...
+    def settings(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
     def type_handler_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_handler_version.setter
-    def type_handler_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_handler_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CloudServiceNetworkProfileArgsDict(TypedDict):
     load_balancer_configurations: NotRequired[
@@ -1073,7 +1133,8 @@ class CloudServiceNetworkProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LoadBalancerConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="slotType")
     def slot_type(
@@ -1082,14 +1143,16 @@ class CloudServiceNetworkProfileArgs:
     @slot_type.setter
     def slot_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CloudServiceSlotType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="swappableCloudService")
     def swappable_cloud_service(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @swappable_cloud_service.setter
     def swappable_cloud_service(
         self, value: Optional[pulumi.Input[SubResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudServiceOsProfileArgsDict(TypedDict):
     secrets: NotRequired[
@@ -1118,7 +1181,8 @@ class CloudServiceOsProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CloudServiceVaultSecretGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudServicePropertiesArgsDict(TypedDict):
     allow_model_override: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1158,17 +1222,24 @@ class CloudServicePropertiesArgs:
     @pulumi.getter(name="allowModelOverride")
     def allow_model_override(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_model_override.setter
-    def allow_model_override(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_model_override(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration.setter
-    def configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationUrl")
     def configuration_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_url.setter
-    def configuration_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extensionProfile")
     def extension_profile(
@@ -1177,7 +1248,8 @@ class CloudServicePropertiesArgs:
     @extension_profile.setter
     def extension_profile(
         self, value: Optional[pulumi.Input[CloudServiceExtensionProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkProfile")
     def network_profile(
@@ -1186,29 +1258,38 @@ class CloudServicePropertiesArgs:
     @network_profile.setter
     def network_profile(
         self, value: Optional[pulumi.Input[CloudServiceNetworkProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osProfile")
     def os_profile(self) -> Optional[pulumi.Input[CloudServiceOsProfileArgs]]: ...
     @os_profile.setter
-    def os_profile(self, value: Optional[pulumi.Input[CloudServiceOsProfileArgs]]): ...
+    def os_profile(
+        self, value: Optional[pulumi.Input[CloudServiceOsProfileArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="packageUrl")
     def package_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @package_url.setter
-    def package_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def package_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleProfile")
     def role_profile(self) -> Optional[pulumi.Input[CloudServiceRoleProfileArgs]]: ...
     @role_profile.setter
     def role_profile(
         self, value: Optional[pulumi.Input[CloudServiceRoleProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startCloudService")
     def start_cloud_service(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @start_cloud_service.setter
-    def start_cloud_service(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def start_cloud_service(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradeMode")
     def upgrade_mode(
@@ -1218,7 +1299,8 @@ class CloudServicePropertiesArgs:
     def upgrade_mode(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, CloudServiceUpgradeMode]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudServiceRoleProfilePropertiesArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1236,12 +1318,14 @@ class CloudServiceRoleProfilePropertiesArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[CloudServiceRoleSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[CloudServiceRoleSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[CloudServiceRoleSkuArgs]]):  # -> None:
+        ...
 
 class CloudServiceRoleProfileArgsDict(TypedDict):
     roles: NotRequired[
@@ -1270,7 +1354,8 @@ class CloudServiceRoleProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CloudServiceRoleProfilePropertiesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudServiceRoleSkuArgsDict(TypedDict):
     capacity: NotRequired[pulumi.Input[_builtins.float]]
@@ -1290,17 +1375,20 @@ class CloudServiceRoleSkuArgs:
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudServiceVaultAndSecretReferenceArgsDict(TypedDict):
     secret_url: NotRequired[pulumi.Input[_builtins.str]]
@@ -1318,12 +1406,14 @@ class CloudServiceVaultAndSecretReferenceArgs:
     @pulumi.getter(name="secretUrl")
     def secret_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_url.setter
-    def secret_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @source_vault.setter
-    def source_vault(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def source_vault(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
 
 class CloudServiceVaultCertificateArgsDict(TypedDict):
     certificate_url: NotRequired[pulumi.Input[_builtins.str]]
@@ -1337,7 +1427,8 @@ class CloudServiceVaultCertificateArgs:
     @pulumi.getter(name="certificateUrl")
     def certificate_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_url.setter
-    def certificate_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudServiceVaultSecretGroupArgsDict(TypedDict):
     source_vault: NotRequired[pulumi.Input[SubResourceArgsDict]]
@@ -1359,7 +1450,8 @@ class CloudServiceVaultSecretGroupArgs:
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @source_vault.setter
-    def source_vault(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def source_vault(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultCertificates")
     def vault_certificates(
@@ -1373,7 +1465,8 @@ class CloudServiceVaultSecretGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CloudServiceVaultCertificateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CommunityGalleryInfoArgsDict(TypedDict):
     eula: NotRequired[pulumi.Input[_builtins.str]]
@@ -1395,22 +1488,30 @@ class CommunityGalleryInfoArgs:
     @pulumi.getter
     def eula(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eula.setter
-    def eula(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eula(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNamePrefix")
     def public_name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_name_prefix.setter
-    def public_name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_name_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publisherContact")
     def publisher_contact(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher_contact.setter
-    def publisher_contact(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher_contact(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publisherUri")
     def publisher_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher_uri.setter
-    def publisher_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CopyCompletionErrorArgsDict(TypedDict):
     error_code: pulumi.Input[Union[_builtins.str, CopyCompletionErrorReason]]
@@ -1432,12 +1533,14 @@ class CopyCompletionErrorArgs:
     @error_code.setter
     def error_code(
         self, value: pulumi.Input[Union[_builtins.str, CopyCompletionErrorReason]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorMessage")
     def error_message(self) -> pulumi.Input[_builtins.str]: ...
     @error_message.setter
-    def error_message(self, value: pulumi.Input[_builtins.str]): ...
+    def error_message(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CreationDataArgsDict(TypedDict):
     create_option: pulumi.Input[Union[_builtins.str, DiskCreateOption]]
@@ -1481,12 +1584,16 @@ class CreationDataArgs:
     @create_option.setter
     def create_option(
         self, value: pulumi.Input[Union[_builtins.str, DiskCreateOption]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticSanResourceId")
     def elastic_san_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @elastic_san_resource_id.setter
-    def elastic_san_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def elastic_san_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="galleryImageReference")
     def gallery_image_reference(
@@ -1495,24 +1602,32 @@ class CreationDataArgs:
     @gallery_image_reference.setter
     def gallery_image_reference(
         self, value: Optional[pulumi.Input[ImageDiskReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageReference")
     def image_reference(self) -> Optional[pulumi.Input[ImageDiskReferenceArgs]]: ...
     @image_reference.setter
     def image_reference(
         self, value: Optional[pulumi.Input[ImageDiskReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logicalSectorSize")
     def logical_sector_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @logical_sector_size.setter
-    def logical_sector_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def logical_sector_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performancePlus")
     def performance_plus(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @performance_plus.setter
-    def performance_plus(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def performance_plus(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedBandwidthCopySpeed")
     def provisioned_bandwidth_copy_speed(
@@ -1526,32 +1641,46 @@ class CreationDataArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ProvisionedBandwidthCopyOption]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityDataUri")
     def security_data_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_data_uri.setter
-    def security_data_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_data_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceUri")
     def source_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_uri.setter
-    def source_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
     def storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_id.setter
-    def storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uploadSizeBytes")
     def upload_size_bytes(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @upload_size_bytes.setter
-    def upload_size_bytes(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def upload_size_bytes(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
 
 class DataDiskImageEncryptionArgsDict(TypedDict):
     lun: pulumi.Input[_builtins.int]
@@ -1569,12 +1698,16 @@ class DataDiskImageEncryptionArgs:
     @pulumi.getter
     def lun(self) -> pulumi.Input[_builtins.int]: ...
     @lun.setter
-    def lun(self, value: pulumi.Input[_builtins.int]): ...
+    def lun(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DataDiskArgsDict(TypedDict):
     create_option: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
@@ -1626,17 +1759,20 @@ class DataDiskArgs:
     @create_option.setter
     def create_option(
         self, value: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lun(self) -> pulumi.Input[_builtins.int]: ...
     @lun.setter
-    def lun(self, value: pulumi.Input[_builtins.int]): ...
+    def lun(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def caching(self) -> Optional[pulumi.Input[CachingTypes]]: ...
     @caching.setter
-    def caching(self, value: Optional[pulumi.Input[CachingTypes]]): ...
+    def caching(self, value: Optional[pulumi.Input[CachingTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -1645,7 +1781,8 @@ class DataDiskArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskDeleteOptionTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="detachOption")
     def detach_option(
@@ -1654,53 +1791,62 @@ class DataDiskArgs:
     @detach_option.setter
     def detach_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskDetachOptionTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def image(self) -> Optional[pulumi.Input[VirtualHardDiskArgs]]: ...
     @image.setter
-    def image(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]): ...
+    def image(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(self) -> Optional[pulumi.Input[ManagedDiskParametersArgs]]: ...
     @managed_disk.setter
     def managed_disk(
         self, value: Optional[pulumi.Input[ManagedDiskParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResource")
     def source_resource(self) -> Optional[pulumi.Input[ApiEntityReferenceArgs]]: ...
     @source_resource.setter
     def source_resource(
         self, value: Optional[pulumi.Input[ApiEntityReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toBeDetached")
     def to_be_detached(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @to_be_detached.setter
-    def to_be_detached(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def to_be_detached(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vhd(self) -> Optional[pulumi.Input[VirtualHardDiskArgs]]: ...
     @vhd.setter
-    def vhd(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]): ...
+    def vhd(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
     def write_accelerator_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @write_accelerator_enabled.setter
     def write_accelerator_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DedicatedHostGroupPropertiesAdditionalCapabilitiesArgsDict(TypedDict):
     ultra_ssd_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1714,7 +1860,10 @@ class DedicatedHostGroupPropertiesAdditionalCapabilitiesArgs:
     @pulumi.getter(name="ultraSSDEnabled")
     def ultra_ssd_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ultra_ssd_enabled.setter
-    def ultra_ssd_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ultra_ssd_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class DiagnosticsProfileArgsDict(TypedDict):
     boot_diagnostics: NotRequired[pulumi.Input[BootDiagnosticsArgsDict]]
@@ -1728,7 +1877,10 @@ class DiagnosticsProfileArgs:
     @pulumi.getter(name="bootDiagnostics")
     def boot_diagnostics(self) -> Optional[pulumi.Input[BootDiagnosticsArgs]]: ...
     @boot_diagnostics.setter
-    def boot_diagnostics(self, value: Optional[pulumi.Input[BootDiagnosticsArgs]]): ...
+    def boot_diagnostics(
+        self, value: Optional[pulumi.Input[BootDiagnosticsArgs]]
+    ):  # -> None:
+        ...
 
 class DiffDiskSettingsArgsDict(TypedDict):
     option: NotRequired[pulumi.Input[Union[_builtins.str, DiffDiskOptions]]]
@@ -1752,7 +1904,8 @@ class DiffDiskSettingsArgs:
     @option.setter
     def option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiffDiskOptions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def placement(
@@ -1761,7 +1914,8 @@ class DiffDiskSettingsArgs:
     @placement.setter
     def placement(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiffDiskPlacement]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DisallowedArgsDict(TypedDict):
     disk_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1781,7 +1935,8 @@ class DisallowedArgs:
     @disk_types.setter
     def disk_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DiskEncryptionSetParametersArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1795,7 +1950,8 @@ class DiskEncryptionSetParametersArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DiskEncryptionSettingsArgsDict(TypedDict):
     disk_encryption_key: NotRequired[pulumi.Input[KeyVaultSecretReferenceArgsDict]]
@@ -1819,12 +1975,14 @@ class DiskEncryptionSettingsArgs:
     @disk_encryption_key.setter
     def disk_encryption_key(
         self, value: Optional[pulumi.Input[KeyVaultSecretReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
     def key_encryption_key(
@@ -1833,7 +1991,8 @@ class DiskEncryptionSettingsArgs:
     @key_encryption_key.setter
     def key_encryption_key(
         self, value: Optional[pulumi.Input[KeyVaultKeyReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DiskPurchasePlanArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1855,22 +2014,26 @@ class DiskPurchasePlanArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def product(self) -> pulumi.Input[_builtins.str]: ...
     @product.setter
-    def product(self, value: pulumi.Input[_builtins.str]): ...
+    def product(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> pulumi.Input[_builtins.str]: ...
     @publisher.setter
-    def publisher(self, value: pulumi.Input[_builtins.str]): ...
+    def publisher(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promotionCode")
     def promotion_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @promotion_code.setter
-    def promotion_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def promotion_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DiskRestorePointAttributesArgsDict(TypedDict):
     encryption: NotRequired[pulumi.Input[RestorePointEncryptionArgsDict]]
@@ -1888,7 +2051,10 @@ class DiskRestorePointAttributesArgs:
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[RestorePointEncryptionArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[RestorePointEncryptionArgs]]): ...
+    def encryption(
+        self, value: Optional[pulumi.Input[RestorePointEncryptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDiskRestorePoint")
     def source_disk_restore_point(
@@ -1897,7 +2063,8 @@ class DiskRestorePointAttributesArgs:
     @source_disk_restore_point.setter
     def source_disk_restore_point(
         self, value: Optional[pulumi.Input[ApiEntityReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DiskSecurityProfileArgsDict(TypedDict):
     secure_vm_disk_encryption_set_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1921,7 +2088,8 @@ class DiskSecurityProfileArgs:
     @secure_vm_disk_encryption_set_id.setter
     def secure_vm_disk_encryption_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityType")
     def security_type(
@@ -1930,7 +2098,8 @@ class DiskSecurityProfileArgs:
     @security_type.setter
     def security_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskSecurityTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DiskSkuArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[Union[_builtins.str, DiskStorageAccountTypes]]]
@@ -1953,7 +2122,8 @@ class DiskSkuArgs:
     def name(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DiskStorageAccountTypes]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionIdentityArgsDict(TypedDict):
     user_assigned_identity_resource_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1973,7 +2143,8 @@ class EncryptionIdentityArgs:
     @user_assigned_identity_resource_id.setter
     def user_assigned_identity_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionImagesArgsDict(TypedDict):
     data_disk_images: NotRequired[
@@ -2004,14 +2175,16 @@ class EncryptionImagesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DataDiskImageEncryptionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osDiskImage")
     def os_disk_image(self) -> Optional[pulumi.Input[OSDiskImageEncryptionArgs]]: ...
     @os_disk_image.setter
     def os_disk_image(
         self, value: Optional[pulumi.Input[OSDiskImageEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionSetIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, DiskEncryptionSetIdentityType]]]
@@ -2044,7 +2217,8 @@ class EncryptionSetIdentityArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, DiskEncryptionSetIdentityType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -2053,7 +2227,8 @@ class EncryptionSetIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionSettingsCollectionArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -2077,7 +2252,8 @@ class EncryptionSettingsCollectionArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettings")
     def encryption_settings(
@@ -2091,14 +2267,16 @@ class EncryptionSettingsCollectionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EncryptionSettingsElementArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettingsVersion")
     def encryption_settings_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_settings_version.setter
     def encryption_settings_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionSettingsElementArgsDict(TypedDict):
     disk_encryption_key: NotRequired[pulumi.Input[KeyVaultAndSecretReferenceArgsDict]]
@@ -2122,7 +2300,8 @@ class EncryptionSettingsElementArgs:
     @disk_encryption_key.setter
     def disk_encryption_key(
         self, value: Optional[pulumi.Input[KeyVaultAndSecretReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
     def key_encryption_key(
@@ -2131,7 +2310,8 @@ class EncryptionSettingsElementArgs:
     @key_encryption_key.setter
     def key_encryption_key(
         self, value: Optional[pulumi.Input[KeyVaultAndKeyReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionArgsDict(TypedDict):
     disk_encryption_set_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2149,14 +2329,18 @@ class EncryptionArgs:
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[Union[_builtins.str, EncryptionType]]]: ...
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventGridAndResourceGraphArgsDict(TypedDict):
     enable: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2170,7 +2354,8 @@ class EventGridAndResourceGraphArgs:
     @pulumi.getter
     def enable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable.setter
-    def enable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ExtendedLocationArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2188,7 +2373,8 @@ class ExtendedLocationArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -2197,7 +2383,8 @@ class ExtendedLocationArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ExtendedLocationTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExtensionArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2215,7 +2402,8 @@ class ExtensionArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -2224,7 +2412,8 @@ class ExtensionArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[CloudServiceExtensionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryApplicationCustomActionParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2248,22 +2437,26 @@ class GalleryApplicationCustomActionParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
     def default_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_value.setter
-    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -2272,7 +2465,8 @@ class GalleryApplicationCustomActionParameterArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[GalleryApplicationCustomActionParameterType]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryApplicationCustomActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2302,17 +2496,20 @@ class GalleryApplicationCustomActionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> pulumi.Input[_builtins.str]: ...
     @script.setter
-    def script(self, value: pulumi.Input[_builtins.str]): ...
+    def script(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -2330,7 +2527,8 @@ class GalleryApplicationCustomActionArgs:
                 Sequence[pulumi.Input[GalleryApplicationCustomActionParameterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryApplicationVersionPublishingProfileArgsDict(TypedDict):
     source: pulumi.Input[UserArtifactSourceArgsDict]
@@ -2392,7 +2590,8 @@ class GalleryApplicationVersionPublishingProfileArgs:
     @pulumi.getter
     def source(self) -> pulumi.Input[UserArtifactSourceArgs]: ...
     @source.setter
-    def source(self, value: pulumi.Input[UserArtifactSourceArgs]): ...
+    def source(self, value: pulumi.Input[UserArtifactSourceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedSettings")
     def advanced_settings(
@@ -2401,7 +2600,8 @@ class GalleryApplicationVersionPublishingProfileArgs:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customActions")
     def custom_actions(
@@ -2415,32 +2615,46 @@ class GalleryApplicationVersionPublishingProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GalleryApplicationCustomActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHealthCheck")
     def enable_health_check(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_health_check.setter
-    def enable_health_check(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_health_check(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endOfLifeDate")
     def end_of_life_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_of_life_date.setter
-    def end_of_life_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_of_life_date(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
     def exclude_from_latest(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_from_latest.setter
-    def exclude_from_latest(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def exclude_from_latest(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manageActions")
     def manage_actions(self) -> Optional[pulumi.Input[UserArtifactManageArgs]]: ...
     @manage_actions.setter
-    def manage_actions(self, value: Optional[pulumi.Input[UserArtifactManageArgs]]): ...
+    def manage_actions(
+        self, value: Optional[pulumi.Input[UserArtifactManageArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
     def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replica_count.setter
-    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationMode")
     def replication_mode(
@@ -2449,12 +2663,16 @@ class GalleryApplicationVersionPublishingProfileArgs:
     @replication_mode.setter
     def replication_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReplicationMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[pulumi.Input[UserArtifactSettingsArgs]]: ...
     @settings.setter
-    def settings(self, value: Optional[pulumi.Input[UserArtifactSettingsArgs]]): ...
+    def settings(
+        self, value: Optional[pulumi.Input[UserArtifactSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -2463,7 +2681,8 @@ class GalleryApplicationVersionPublishingProfileArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetExtendedLocations")
     def target_extended_locations(
@@ -2477,7 +2696,8 @@ class GalleryApplicationVersionPublishingProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GalleryTargetExtendedLocationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetRegions")
     def target_regions(
@@ -2486,7 +2706,8 @@ class GalleryApplicationVersionPublishingProfileArgs:
     @target_regions.setter
     def target_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TargetRegionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryApplicationVersionSafetyProfileArgsDict(TypedDict):
     allow_deletion_of_replicated_locations: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2508,7 +2729,8 @@ class GalleryApplicationVersionSafetyProfileArgs:
     @allow_deletion_of_replicated_locations.setter
     def allow_deletion_of_replicated_locations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryArtifactVersionFullSourceArgsDict(TypedDict):
     community_gallery_image_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2530,17 +2752,22 @@ class GalleryArtifactVersionFullSourceArgs:
     @community_gallery_image_id.setter
     def community_gallery_image_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineId")
     def virtual_machine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_id.setter
-    def virtual_machine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class GalleryDataDiskImageArgsDict(TypedDict):
     lun: pulumi.Input[_builtins.int]
@@ -2560,17 +2787,22 @@ class GalleryDataDiskImageArgs:
     @pulumi.getter
     def lun(self) -> pulumi.Input[_builtins.int]: ...
     @lun.setter
-    def lun(self, value: pulumi.Input[_builtins.int]): ...
+    def lun(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostCaching")
     def host_caching(self) -> Optional[pulumi.Input[HostCaching]]: ...
     @host_caching.setter
-    def host_caching(self, value: Optional[pulumi.Input[HostCaching]]): ...
+    def host_caching(self, value: Optional[pulumi.Input[HostCaching]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> Optional[pulumi.Input[GalleryDiskImageSourceArgs]]: ...
     @source.setter
-    def source(self, value: Optional[pulumi.Input[GalleryDiskImageSourceArgs]]): ...
+    def source(
+        self, value: Optional[pulumi.Input[GalleryDiskImageSourceArgs]]
+    ):  # -> None:
+        ...
 
 class GalleryDiskImageSourceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2590,17 +2822,22 @@ class GalleryDiskImageSourceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
     def storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_id.setter
-    def storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GalleryExtendedLocationArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2620,7 +2857,8 @@ class GalleryExtendedLocationArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -2632,7 +2870,8 @@ class GalleryExtendedLocationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, GalleryExtendedLocationType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[ResourceIdentityType]]
@@ -2654,7 +2893,8 @@ class GalleryIdentityArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): ...
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -2663,7 +2903,8 @@ class GalleryIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryImageFeatureArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2683,17 +2924,22 @@ class GalleryImageFeatureArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startsAtVersion")
     def starts_at_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starts_at_version.setter
-    def starts_at_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def starts_at_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GalleryImageIdentifierArgsDict(TypedDict):
     offer: pulumi.Input[_builtins.str]
@@ -2713,17 +2959,20 @@ class GalleryImageIdentifierArgs:
     @pulumi.getter
     def offer(self) -> pulumi.Input[_builtins.str]: ...
     @offer.setter
-    def offer(self, value: pulumi.Input[_builtins.str]): ...
+    def offer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> pulumi.Input[_builtins.str]: ...
     @publisher.setter
-    def publisher(self, value: pulumi.Input[_builtins.str]): ...
+    def publisher(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> pulumi.Input[_builtins.str]: ...
     @sku.setter
-    def sku(self, value: pulumi.Input[_builtins.str]): ...
+    def sku(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GalleryImageVersionPublishingProfileArgsDict(TypedDict):
     end_of_life_date: NotRequired[pulumi.Input[_builtins.str]]
@@ -2765,17 +3014,24 @@ class GalleryImageVersionPublishingProfileArgs:
     @pulumi.getter(name="endOfLifeDate")
     def end_of_life_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_of_life_date.setter
-    def end_of_life_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_of_life_date(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
     def exclude_from_latest(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_from_latest.setter
-    def exclude_from_latest(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def exclude_from_latest(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
     def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replica_count.setter
-    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationMode")
     def replication_mode(
@@ -2784,7 +3040,8 @@ class GalleryImageVersionPublishingProfileArgs:
     @replication_mode.setter
     def replication_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReplicationMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -2793,7 +3050,8 @@ class GalleryImageVersionPublishingProfileArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetExtendedLocations")
     def target_extended_locations(
@@ -2807,7 +3065,8 @@ class GalleryImageVersionPublishingProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GalleryTargetExtendedLocationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetRegions")
     def target_regions(
@@ -2816,7 +3075,8 @@ class GalleryImageVersionPublishingProfileArgs:
     @target_regions.setter
     def target_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TargetRegionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryImageVersionSafetyProfileArgsDict(TypedDict):
     allow_deletion_of_replicated_locations: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2840,7 +3100,8 @@ class GalleryImageVersionSafetyProfileArgs:
     @allow_deletion_of_replicated_locations.setter
     def allow_deletion_of_replicated_locations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockDeletionBeforeEndOfLife")
     def block_deletion_before_end_of_life(
@@ -2849,7 +3110,8 @@ class GalleryImageVersionSafetyProfileArgs:
     @block_deletion_before_end_of_life.setter
     def block_deletion_before_end_of_life(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryImageVersionStorageProfileArgsDict(TypedDict):
     data_disk_images: NotRequired[
@@ -2878,12 +3140,16 @@ class GalleryImageVersionStorageProfileArgs:
     def data_disk_images(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[GalleryDataDiskImageArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osDiskImage")
     def os_disk_image(self) -> Optional[pulumi.Input[GalleryOSDiskImageArgs]]: ...
     @os_disk_image.setter
-    def os_disk_image(self, value: Optional[pulumi.Input[GalleryOSDiskImageArgs]]): ...
+    def os_disk_image(
+        self, value: Optional[pulumi.Input[GalleryOSDiskImageArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(
@@ -2892,7 +3158,8 @@ class GalleryImageVersionStorageProfileArgs:
     @source.setter
     def source(
         self, value: Optional[pulumi.Input[GalleryArtifactVersionFullSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryImageVersionUefiSettingsArgsDict(TypedDict):
     additional_signatures: NotRequired[pulumi.Input[UefiKeySignaturesArgsDict]]
@@ -2922,7 +3189,8 @@ class GalleryImageVersionUefiSettingsArgs:
     @additional_signatures.setter
     def additional_signatures(
         self, value: Optional[pulumi.Input[UefiKeySignaturesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signatureTemplateNames")
     def signature_template_names(
@@ -2940,7 +3208,8 @@ class GalleryImageVersionUefiSettingsArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, UefiSignatureTemplateName]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryInVMAccessControlProfilePropertiesArgsDict(TypedDict):
     applicable_host_endpoint: pulumi.Input[EndpointTypes]
@@ -2960,17 +3229,20 @@ class GalleryInVMAccessControlProfilePropertiesArgs:
     @pulumi.getter(name="applicableHostEndpoint")
     def applicable_host_endpoint(self) -> pulumi.Input[EndpointTypes]: ...
     @applicable_host_endpoint.setter
-    def applicable_host_endpoint(self, value: pulumi.Input[EndpointTypes]): ...
+    def applicable_host_endpoint(self, value: pulumi.Input[EndpointTypes]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osType")
     def os_type(self) -> pulumi.Input[OperatingSystemTypes]: ...
     @os_type.setter
-    def os_type(self, value: pulumi.Input[OperatingSystemTypes]): ...
+    def os_type(self, value: pulumi.Input[OperatingSystemTypes]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GalleryOSDiskImageArgsDict(TypedDict):
     host_caching: NotRequired[pulumi.Input[HostCaching]]
@@ -2988,12 +3260,16 @@ class GalleryOSDiskImageArgs:
     @pulumi.getter(name="hostCaching")
     def host_caching(self) -> Optional[pulumi.Input[HostCaching]]: ...
     @host_caching.setter
-    def host_caching(self, value: Optional[pulumi.Input[HostCaching]]): ...
+    def host_caching(self, value: Optional[pulumi.Input[HostCaching]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> Optional[pulumi.Input[GalleryDiskImageSourceArgs]]: ...
     @source.setter
-    def source(self, value: Optional[pulumi.Input[GalleryDiskImageSourceArgs]]): ...
+    def source(
+        self, value: Optional[pulumi.Input[GalleryDiskImageSourceArgs]]
+    ):  # -> None:
+        ...
 
 class GalleryScriptParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3027,17 +3303,20 @@ class GalleryScriptParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
     def default_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_value.setter
-    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enumValues")
     def enum_values(
@@ -3046,22 +3325,26 @@ class GalleryScriptParameterArgs:
     @enum_values.setter
     def enum_values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxValue")
     def max_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_value.setter
-    def max_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minValue")
     def min_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_value.setter
-    def min_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -3071,7 +3354,8 @@ class GalleryScriptParameterArgs:
     def type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, GalleryScriptParameterType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryScriptPropertiesArgsDict(TypedDict):
     supported_os_type: pulumi.Input[OperatingSystemTypes]
@@ -3097,32 +3381,44 @@ class GalleryScriptPropertiesArgs:
     @pulumi.getter(name="supportedOSType")
     def supported_os_type(self) -> pulumi.Input[OperatingSystemTypes]: ...
     @supported_os_type.setter
-    def supported_os_type(self, value: pulumi.Input[OperatingSystemTypes]): ...
+    def supported_os_type(self, value: pulumi.Input[OperatingSystemTypes]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endOfLifeDate")
     def end_of_life_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_of_life_date.setter
-    def end_of_life_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_of_life_date(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def eula(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eula.setter
-    def eula(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eula(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privacyStatementUri")
     def privacy_statement_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @privacy_statement_uri.setter
-    def privacy_statement_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def privacy_statement_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseNoteUri")
     def release_note_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @release_note_uri.setter
-    def release_note_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def release_note_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class GalleryScriptVersionPropertiesArgsDict(TypedDict):
     publishing_profile: pulumi.Input[GalleryScriptVersionPublishingProfileArgsDict]
@@ -3146,7 +3442,8 @@ class GalleryScriptVersionPropertiesArgs:
     @publishing_profile.setter
     def publishing_profile(
         self, value: pulumi.Input[GalleryScriptVersionPublishingProfileArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="safetyProfile")
     def safety_profile(
@@ -3155,7 +3452,8 @@ class GalleryScriptVersionPropertiesArgs:
     @safety_profile.setter
     def safety_profile(
         self, value: Optional[pulumi.Input[GalleryScriptVersionSafetyProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryScriptVersionPublishingProfileArgsDict(TypedDict):
     source: pulumi.Input[ScriptSourceArgsDict]
@@ -3205,22 +3503,30 @@ class GalleryScriptVersionPublishingProfileArgs:
     @pulumi.getter
     def source(self) -> pulumi.Input[ScriptSourceArgs]: ...
     @source.setter
-    def source(self, value: pulumi.Input[ScriptSourceArgs]): ...
+    def source(self, value: pulumi.Input[ScriptSourceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endOfLifeDate")
     def end_of_life_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_of_life_date.setter
-    def end_of_life_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_of_life_date(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
     def exclude_from_latest(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_from_latest.setter
-    def exclude_from_latest(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def exclude_from_latest(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
     def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replica_count.setter
-    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationMode")
     def replication_mode(
@@ -3229,7 +3535,8 @@ class GalleryScriptVersionPublishingProfileArgs:
     @replication_mode.setter
     def replication_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReplicationMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountStrategy")
     def storage_account_strategy(
@@ -3239,7 +3546,8 @@ class GalleryScriptVersionPublishingProfileArgs:
     def storage_account_strategy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountStrategy]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -3248,7 +3556,8 @@ class GalleryScriptVersionPublishingProfileArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetExtendedLocations")
     def target_extended_locations(
@@ -3262,7 +3571,8 @@ class GalleryScriptVersionPublishingProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GalleryTargetExtendedLocationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetRegions")
     def target_regions(
@@ -3271,7 +3581,8 @@ class GalleryScriptVersionPublishingProfileArgs:
     @target_regions.setter
     def target_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TargetRegionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryScriptVersionSafetyProfileArgsDict(TypedDict):
     allow_deletion_of_replicated_locations: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3293,7 +3604,8 @@ class GalleryScriptVersionSafetyProfileArgs:
     @allow_deletion_of_replicated_locations.setter
     def allow_deletion_of_replicated_locations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GalleryTargetExtendedLocationArgsDict(TypedDict):
     encryption: NotRequired[pulumi.Input[EncryptionImagesArgsDict]]
@@ -3321,7 +3633,10 @@ class GalleryTargetExtendedLocationArgs:
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[EncryptionImagesArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[EncryptionImagesArgs]]): ...
+    def encryption(
+        self, value: Optional[pulumi.Input[EncryptionImagesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(
@@ -3330,7 +3645,8 @@ class GalleryTargetExtendedLocationArgs:
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[GalleryExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocationReplicaCount")
     def extended_location_replica_count(
@@ -3339,12 +3655,14 @@ class GalleryTargetExtendedLocationArgs:
     @extended_location_replica_count.setter
     def extended_location_replica_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -3354,7 +3672,8 @@ class GalleryTargetExtendedLocationArgs:
     def storage_account_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, EdgeZoneStorageAccountType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class HardwareProfileArgsDict(TypedDict):
     vm_size: NotRequired[pulumi.Input[Union[_builtins.str, VirtualMachineSizeTypes]]]
@@ -3379,14 +3698,16 @@ class HardwareProfileArgs:
     def vm_size(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, VirtualMachineSizeTypes]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSizeProperties")
     def vm_size_properties(self) -> Optional[pulumi.Input[VMSizePropertiesArgs]]: ...
     @vm_size_properties.setter
     def vm_size_properties(
         self, value: Optional[pulumi.Input[VMSizePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class HostEndpointSettingsArgsDict(TypedDict):
     in_vm_access_control_profile_reference_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -3410,12 +3731,16 @@ class HostEndpointSettingsArgs:
     @in_vm_access_control_profile_reference_id.setter
     def in_vm_access_control_profile_reference_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, Modes]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, Modes]]]): ...
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Modes]]]
+    ):  # -> None:
+        ...
 
 class ImageDataDiskArgsDict(TypedDict):
     lun: pulumi.Input[_builtins.int]
@@ -3451,17 +3776,20 @@ class ImageDataDiskArgs:
     @pulumi.getter
     def lun(self) -> pulumi.Input[_builtins.int]: ...
     @lun.setter
-    def lun(self, value: pulumi.Input[_builtins.int]): ...
+    def lun(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blobUri")
     def blob_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @blob_uri.setter
-    def blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def caching(self) -> Optional[pulumi.Input[CachingTypes]]: ...
     @caching.setter
-    def caching(self, value: Optional[pulumi.Input[CachingTypes]]): ...
+    def caching(self, value: Optional[pulumi.Input[CachingTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
     def disk_encryption_set(
@@ -3470,22 +3798,26 @@ class ImageDataDiskArgs:
     @disk_encryption_set.setter
     def disk_encryption_set(
         self, value: Optional[pulumi.Input[DiskEncryptionSetParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @managed_disk.setter
-    def managed_disk(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def managed_disk(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def snapshot(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @snapshot.setter
-    def snapshot(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def snapshot(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -3494,7 +3826,8 @@ class ImageDataDiskArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ImageDiskReferenceArgsDict(TypedDict):
     community_gallery_image_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -3518,22 +3851,28 @@ class ImageDiskReferenceArgs:
     @community_gallery_image_id.setter
     def community_gallery_image_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lun(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @lun.setter
-    def lun(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def lun(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharedGalleryImageId")
     def shared_gallery_image_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @shared_gallery_image_id.setter
-    def shared_gallery_image_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def shared_gallery_image_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ImageOSDiskArgsDict(TypedDict):
     os_state: pulumi.Input[OperatingSystemStateTypes]
@@ -3571,22 +3910,26 @@ class ImageOSDiskArgs:
     @pulumi.getter(name="osState")
     def os_state(self) -> pulumi.Input[OperatingSystemStateTypes]: ...
     @os_state.setter
-    def os_state(self, value: pulumi.Input[OperatingSystemStateTypes]): ...
+    def os_state(self, value: pulumi.Input[OperatingSystemStateTypes]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osType")
     def os_type(self) -> pulumi.Input[OperatingSystemTypes]: ...
     @os_type.setter
-    def os_type(self, value: pulumi.Input[OperatingSystemTypes]): ...
+    def os_type(self, value: pulumi.Input[OperatingSystemTypes]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blobUri")
     def blob_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @blob_uri.setter
-    def blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def caching(self) -> Optional[pulumi.Input[CachingTypes]]: ...
     @caching.setter
-    def caching(self, value: Optional[pulumi.Input[CachingTypes]]): ...
+    def caching(self, value: Optional[pulumi.Input[CachingTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
     def disk_encryption_set(
@@ -3595,22 +3938,26 @@ class ImageOSDiskArgs:
     @disk_encryption_set.setter
     def disk_encryption_set(
         self, value: Optional[pulumi.Input[DiskEncryptionSetParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @managed_disk.setter
-    def managed_disk(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def managed_disk(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def snapshot(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @snapshot.setter
-    def snapshot(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def snapshot(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -3619,7 +3966,8 @@ class ImageOSDiskArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ImagePurchasePlanArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -3639,17 +3987,20 @@ class ImagePurchasePlanArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def product(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @product.setter
-    def product(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def product(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher.setter
-    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ImageReferenceArgsDict(TypedDict):
     community_gallery_image_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -3679,37 +4030,46 @@ class ImageReferenceArgs:
     @community_gallery_image_id.setter
     def community_gallery_image_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def offer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @offer.setter
-    def offer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def offer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher.setter
-    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharedGalleryImageId")
     def shared_gallery_image_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @shared_gallery_image_id.setter
-    def shared_gallery_image_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def shared_gallery_image_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sku(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ImageStorageProfileArgsDict(TypedDict):
     data_disks: NotRequired[pulumi.Input[Sequence[pulumi.Input[ImageDataDiskArgsDict]]]]
@@ -3735,17 +4095,20 @@ class ImageStorageProfileArgs:
     @data_disks.setter
     def data_disks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ImageDataDiskArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
     def os_disk(self) -> Optional[pulumi.Input[ImageOSDiskArgs]]: ...
     @os_disk.setter
-    def os_disk(self, value: Optional[pulumi.Input[ImageOSDiskArgs]]): ...
+    def os_disk(self, value: Optional[pulumi.Input[ImageOSDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneResilient")
     def zone_resilient(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zone_resilient.setter
-    def zone_resilient(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def zone_resilient(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ImageVersionSecurityProfileArgsDict(TypedDict):
     uefi_settings: NotRequired[pulumi.Input[GalleryImageVersionUefiSettingsArgsDict]]
@@ -3767,7 +4130,8 @@ class ImageVersionSecurityProfileArgs:
     @uefi_settings.setter
     def uefi_settings(
         self, value: Optional[pulumi.Input[GalleryImageVersionUefiSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InstanceViewStatusArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
@@ -3791,27 +4155,32 @@ class InstanceViewStatusArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayStatus")
     def display_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_status.setter
-    def display_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def level(self) -> Optional[pulumi.Input[StatusLevelTypes]]: ...
     @level.setter
-    def level(self, value: Optional[pulumi.Input[StatusLevelTypes]]): ...
+    def level(self, value: Optional[pulumi.Input[StatusLevelTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time.setter
-    def time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class KeyForDiskEncryptionSetArgsDict(TypedDict):
     key_url: pulumi.Input[_builtins.str]
@@ -3829,12 +4198,14 @@ class KeyForDiskEncryptionSetArgs:
     @pulumi.getter(name="keyUrl")
     def key_url(self) -> pulumi.Input[_builtins.str]: ...
     @key_url.setter
-    def key_url(self, value: pulumi.Input[_builtins.str]): ...
+    def key_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> Optional[pulumi.Input[SourceVaultArgs]]: ...
     @source_vault.setter
-    def source_vault(self, value: Optional[pulumi.Input[SourceVaultArgs]]): ...
+    def source_vault(self, value: Optional[pulumi.Input[SourceVaultArgs]]):  # -> None:
+        ...
 
 class KeyVaultAndKeyReferenceArgsDict(TypedDict):
     key_url: pulumi.Input[_builtins.str]
@@ -3852,12 +4223,14 @@ class KeyVaultAndKeyReferenceArgs:
     @pulumi.getter(name="keyUrl")
     def key_url(self) -> pulumi.Input[_builtins.str]: ...
     @key_url.setter
-    def key_url(self, value: pulumi.Input[_builtins.str]): ...
+    def key_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> pulumi.Input[SourceVaultArgs]: ...
     @source_vault.setter
-    def source_vault(self, value: pulumi.Input[SourceVaultArgs]): ...
+    def source_vault(self, value: pulumi.Input[SourceVaultArgs]):  # -> None:
+        ...
 
 class KeyVaultAndSecretReferenceArgsDict(TypedDict):
     secret_url: pulumi.Input[_builtins.str]
@@ -3875,12 +4248,14 @@ class KeyVaultAndSecretReferenceArgs:
     @pulumi.getter(name="secretUrl")
     def secret_url(self) -> pulumi.Input[_builtins.str]: ...
     @secret_url.setter
-    def secret_url(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> pulumi.Input[SourceVaultArgs]: ...
     @source_vault.setter
-    def source_vault(self, value: pulumi.Input[SourceVaultArgs]): ...
+    def source_vault(self, value: pulumi.Input[SourceVaultArgs]):  # -> None:
+        ...
 
 class KeyVaultKeyReferenceArgsDict(TypedDict):
     key_url: pulumi.Input[_builtins.str]
@@ -3898,12 +4273,14 @@ class KeyVaultKeyReferenceArgs:
     @pulumi.getter(name="keyUrl")
     def key_url(self) -> pulumi.Input[_builtins.str]: ...
     @key_url.setter
-    def key_url(self, value: pulumi.Input[_builtins.str]): ...
+    def key_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> pulumi.Input[SubResourceArgs]: ...
     @source_vault.setter
-    def source_vault(self, value: pulumi.Input[SubResourceArgs]): ...
+    def source_vault(self, value: pulumi.Input[SubResourceArgs]):  # -> None:
+        ...
 
 class KeyVaultSecretReferenceArgsDict(TypedDict):
     secret_url: pulumi.Input[_builtins.str]
@@ -3921,12 +4298,14 @@ class KeyVaultSecretReferenceArgs:
     @pulumi.getter(name="secretUrl")
     def secret_url(self) -> pulumi.Input[_builtins.str]: ...
     @secret_url.setter
-    def secret_url(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> pulumi.Input[SubResourceArgs]: ...
     @source_vault.setter
-    def source_vault(self, value: pulumi.Input[SubResourceArgs]): ...
+    def source_vault(self, value: pulumi.Input[SubResourceArgs]):  # -> None:
+        ...
 
 class LinuxConfigurationArgsDict(TypedDict):
     disable_password_authentication: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3954,7 +4333,8 @@ class LinuxConfigurationArgs:
     @disable_password_authentication.setter
     def disable_password_authentication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableVMAgentPlatformUpdates")
     def enable_vm_agent_platform_updates(
@@ -3963,22 +4343,30 @@ class LinuxConfigurationArgs:
     @enable_vm_agent_platform_updates.setter
     def enable_vm_agent_platform_updates(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patchSettings")
     def patch_settings(self) -> Optional[pulumi.Input[LinuxPatchSettingsArgs]]: ...
     @patch_settings.setter
-    def patch_settings(self, value: Optional[pulumi.Input[LinuxPatchSettingsArgs]]): ...
+    def patch_settings(
+        self, value: Optional[pulumi.Input[LinuxPatchSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionVMAgent")
     def provision_vm_agent(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @provision_vm_agent.setter
-    def provision_vm_agent(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def provision_vm_agent(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssh(self) -> Optional[pulumi.Input[SshConfigurationArgs]]: ...
     @ssh.setter
-    def ssh(self, value: Optional[pulumi.Input[SshConfigurationArgs]]): ...
+    def ssh(self, value: Optional[pulumi.Input[SshConfigurationArgs]]):  # -> None:
+        ...
 
 class LinuxPatchSettingsArgsDict(TypedDict):
     assessment_mode: NotRequired[
@@ -4013,7 +4401,8 @@ class LinuxPatchSettingsArgs:
     def assessment_mode(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, LinuxPatchAssessmentMode]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticByPlatformSettings")
     def automatic_by_platform_settings(
@@ -4023,7 +4412,8 @@ class LinuxPatchSettingsArgs:
     def automatic_by_platform_settings(
         self,
         value: Optional[pulumi.Input[LinuxVMGuestPatchAutomaticByPlatformSettingsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patchMode")
     def patch_mode(
@@ -4032,7 +4422,8 @@ class LinuxPatchSettingsArgs:
     @patch_mode.setter
     def patch_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LinuxVMGuestPatchMode]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LinuxVMGuestPatchAutomaticByPlatformSettingsArgsDict(TypedDict):
     bypass_platform_safety_checks_on_user_schedule: NotRequired[
@@ -4066,7 +4457,8 @@ class LinuxVMGuestPatchAutomaticByPlatformSettingsArgs:
     @bypass_platform_safety_checks_on_user_schedule.setter
     def bypass_platform_safety_checks_on_user_schedule(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rebootSetting")
     def reboot_setting(
@@ -4084,7 +4476,8 @@ class LinuxVMGuestPatchAutomaticByPlatformSettingsArgs:
                 Union[_builtins.str, LinuxVMGuestPatchAutomaticByPlatformRebootSetting]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LoadBalancerConfigurationPropertiesArgsDict(TypedDict):
     frontend_ip_configurations: pulumi.Input[
@@ -4113,7 +4506,8 @@ class LoadBalancerConfigurationPropertiesArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[LoadBalancerFrontendIpConfigurationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LoadBalancerConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4133,19 +4527,22 @@ class LoadBalancerConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(self) -> pulumi.Input[LoadBalancerConfigurationPropertiesArgs]: ...
     @properties.setter
     def properties(
         self, value: pulumi.Input[LoadBalancerConfigurationPropertiesArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class LoadBalancerFrontendIpConfigurationPropertiesArgsDict(TypedDict):
     private_ip_address: NotRequired[pulumi.Input[_builtins.str]]
@@ -4165,17 +4562,24 @@ class LoadBalancerFrontendIpConfigurationPropertiesArgs:
     @pulumi.getter(name="privateIPAddress")
     def private_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip_address.setter
-    def private_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddress")
     def public_ip_address(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @public_ip_address.setter
-    def public_ip_address(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def public_ip_address(
+        self, value: Optional[pulumi.Input[SubResourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnet(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @subnet.setter
-    def subnet(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def subnet(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
 
 class LoadBalancerFrontendIpConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4193,7 +4597,8 @@ class LoadBalancerFrontendIpConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -4202,7 +4607,8 @@ class LoadBalancerFrontendIpConfigurationArgs:
     @properties.setter
     def properties(
         self, value: pulumi.Input[LoadBalancerFrontendIpConfigurationPropertiesArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedDiskParametersArgsDict(TypedDict):
     disk_encryption_set: NotRequired[pulumi.Input[DiskEncryptionSetParametersArgsDict]]
@@ -4234,19 +4640,22 @@ class ManagedDiskParametersArgs:
     @disk_encryption_set.setter
     def disk_encryption_set(
         self, value: Optional[pulumi.Input[DiskEncryptionSetParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
     def security_profile(self) -> Optional[pulumi.Input[VMDiskSecurityProfileArgs]]: ...
     @security_profile.setter
     def security_profile(
         self, value: Optional[pulumi.Input[VMDiskSecurityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -4255,7 +4664,8 @@ class ManagedDiskParametersArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NetworkInterfaceReferenceArgsDict(TypedDict):
     delete_option: NotRequired[pulumi.Input[Union[_builtins.str, DeleteOptions]]]
@@ -4281,17 +4691,20 @@ class NetworkInterfaceReferenceArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeleteOptions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def primary(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary.setter
-    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class NetworkProfileArgsDict(TypedDict):
     network_api_version: NotRequired[
@@ -4331,7 +4744,8 @@ class NetworkProfileArgs:
     @network_api_version.setter
     def network_api_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkApiVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceConfigurations")
     def network_interface_configurations(
@@ -4349,7 +4763,8 @@ class NetworkProfileArgs:
                 Sequence[pulumi.Input[VirtualMachineNetworkInterfaceConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
     def network_interfaces(
@@ -4363,7 +4778,8 @@ class NetworkProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NetworkInterfaceReferenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class OSDiskImageEncryptionArgsDict(TypedDict):
     disk_encryption_set_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -4381,7 +4797,10 @@ class OSDiskImageEncryptionArgs:
     @pulumi.getter(name="diskEncryptionSetId")
     def disk_encryption_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_id.setter
-    def disk_encryption_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_encryption_set_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
     def security_profile(
@@ -4390,7 +4809,8 @@ class OSDiskImageEncryptionArgs:
     @security_profile.setter
     def security_profile(
         self, value: Optional[pulumi.Input[OSDiskImageSecurityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OSDiskImageSecurityProfileArgsDict(TypedDict):
     confidential_vm_encryption_type: NotRequired[
@@ -4419,7 +4839,8 @@ class OSDiskImageSecurityProfileArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ConfidentialVMEncryptionType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secureVMDiskEncryptionSetId")
     def secure_vm_disk_encryption_set_id(
@@ -4428,7 +4849,8 @@ class OSDiskImageSecurityProfileArgs:
     @secure_vm_disk_encryption_set_id.setter
     def secure_vm_disk_encryption_set_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OSDiskArgsDict(TypedDict):
     create_option: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
@@ -4474,12 +4896,14 @@ class OSDiskArgs:
     @create_option.setter
     def create_option(
         self, value: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def caching(self) -> Optional[pulumi.Input[CachingTypes]]: ...
     @caching.setter
-    def caching(self, value: Optional[pulumi.Input[CachingTypes]]): ...
+    def caching(self, value: Optional[pulumi.Input[CachingTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -4488,19 +4912,22 @@ class OSDiskArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskDeleteOptionTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diffDiskSettings")
     def diff_disk_settings(self) -> Optional[pulumi.Input[DiffDiskSettingsArgs]]: ...
     @diff_disk_settings.setter
     def diff_disk_settings(
         self, value: Optional[pulumi.Input[DiffDiskSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettings")
     def encryption_settings(
@@ -4509,41 +4936,48 @@ class OSDiskArgs:
     @encryption_settings.setter
     def encryption_settings(
         self, value: Optional[pulumi.Input[DiskEncryptionSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def image(self) -> Optional[pulumi.Input[VirtualHardDiskArgs]]: ...
     @image.setter
-    def image(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]): ...
+    def image(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(self) -> Optional[pulumi.Input[ManagedDiskParametersArgs]]: ...
     @managed_disk.setter
     def managed_disk(
         self, value: Optional[pulumi.Input[ManagedDiskParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osType")
     def os_type(self) -> Optional[pulumi.Input[OperatingSystemTypes]]: ...
     @os_type.setter
-    def os_type(self, value: Optional[pulumi.Input[OperatingSystemTypes]]): ...
+    def os_type(self, value: Optional[pulumi.Input[OperatingSystemTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vhd(self) -> Optional[pulumi.Input[VirtualHardDiskArgs]]: ...
     @vhd.setter
-    def vhd(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]): ...
+    def vhd(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
     def write_accelerator_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @write_accelerator_enabled.setter
     def write_accelerator_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OSImageNotificationProfileArgsDict(TypedDict):
     enable: NotRequired[pulumi.Input[_builtins.bool]]
@@ -4561,12 +4995,16 @@ class OSImageNotificationProfileArgs:
     @pulumi.getter
     def enable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable.setter
-    def enable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notBeforeTimeout")
     def not_before_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @not_before_timeout.setter
-    def not_before_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def not_before_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class OSProfileArgsDict(TypedDict):
     admin_password: NotRequired[pulumi.Input[_builtins.str]]
@@ -4600,36 +5038,42 @@ class OSProfileArgs:
     @pulumi.getter(name="adminPassword")
     def admin_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @admin_password.setter
-    def admin_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def admin_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminUsername")
     def admin_username(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @admin_username.setter
-    def admin_username(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def admin_username(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowExtensionOperations")
     def allow_extension_operations(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_extension_operations.setter
     def allow_extension_operations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computerName")
     def computer_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @computer_name.setter
-    def computer_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def computer_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customData")
     def custom_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_data.setter
-    def custom_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxConfiguration")
     def linux_configuration(self) -> Optional[pulumi.Input[LinuxConfigurationArgs]]: ...
     @linux_configuration.setter
     def linux_configuration(
         self, value: Optional[pulumi.Input[LinuxConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireGuestProvisionSignal")
     def require_guest_provision_signal(
@@ -4638,7 +5082,8 @@ class OSProfileArgs:
     @require_guest_provision_signal.setter
     def require_guest_provision_signal(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def secrets(
@@ -4648,7 +5093,8 @@ class OSProfileArgs:
     def secrets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VaultSecretGroupArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsConfiguration")
     def windows_configuration(
@@ -4657,7 +5103,8 @@ class OSProfileArgs:
     @windows_configuration.setter
     def windows_configuration(
         self, value: Optional[pulumi.Input[WindowsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PatchSettingsArgsDict(TypedDict):
     assessment_mode: NotRequired[
@@ -4694,7 +5141,8 @@ class PatchSettingsArgs:
     def assessment_mode(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, WindowsPatchAssessmentMode]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticByPlatformSettings")
     def automatic_by_platform_settings(
@@ -4706,12 +5154,16 @@ class PatchSettingsArgs:
         value: Optional[
             pulumi.Input[WindowsVMGuestPatchAutomaticByPlatformSettingsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHotpatching")
     def enable_hotpatching(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_hotpatching.setter
-    def enable_hotpatching(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_hotpatching(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patchMode")
     def patch_mode(
@@ -4721,7 +5173,8 @@ class PatchSettingsArgs:
     def patch_mode(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, WindowsVMGuestPatchMode]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlacementArgsDict(TypedDict):
     exclude_zones: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4753,7 +5206,8 @@ class PlacementArgs:
     @exclude_zones.setter
     def exclude_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeZones")
     def include_zones(
@@ -4762,7 +5216,8 @@ class PlacementArgs:
     @include_zones.setter
     def include_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zonePlacementPolicy")
     def zone_placement_policy(
@@ -4772,7 +5227,8 @@ class PlacementArgs:
     def zone_placement_policy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ZonePlacementPolicyType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlanArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -4794,22 +5250,26 @@ class PlanArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def product(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @product.setter
-    def product(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def product(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promotionCode")
     def promotion_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @promotion_code.setter
-    def promotion_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def promotion_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher.setter
-    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PriorityMixPolicyArgsDict(TypedDict):
     base_regular_priority_count: NotRequired[pulumi.Input[_builtins.int]]
@@ -4831,7 +5291,8 @@ class PriorityMixPolicyArgs:
     @base_regular_priority_count.setter
     def base_regular_priority_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regularPriorityPercentageAboveBase")
     def regular_priority_percentage_above_base(
@@ -4840,7 +5301,8 @@ class PriorityMixPolicyArgs:
     @regular_priority_percentage_above_base.setter
     def regular_priority_percentage_above_base(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -4864,12 +5326,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -4883,7 +5349,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ProximityPlacementGroupPropertiesIntentArgsDict(TypedDict):
     vm_sizes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -4903,7 +5370,8 @@ class ProximityPlacementGroupPropertiesIntentArgs:
     @vm_sizes.setter
     def vm_sizes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ProxyAgentSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -4927,27 +5395,38 @@ class ProxyAgentSettingsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def imds(self) -> Optional[pulumi.Input[HostEndpointSettingsArgs]]: ...
     @imds.setter
-    def imds(self, value: Optional[pulumi.Input[HostEndpointSettingsArgs]]): ...
+    def imds(self, value: Optional[pulumi.Input[HostEndpointSettingsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyIncarnationId")
     def key_incarnation_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @key_incarnation_id.setter
-    def key_incarnation_id(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def key_incarnation_id(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, Mode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, Mode]]]): ...
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Mode]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wireServer")
     def wire_server(self) -> Optional[pulumi.Input[HostEndpointSettingsArgs]]: ...
     @wire_server.setter
-    def wire_server(self, value: Optional[pulumi.Input[HostEndpointSettingsArgs]]): ...
+    def wire_server(
+        self, value: Optional[pulumi.Input[HostEndpointSettingsArgs]]
+    ):  # -> None:
+        ...
 
 class PublicIPAddressSkuArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[Union[_builtins.str, PublicIPAddressSkuName]]]
@@ -4974,7 +5453,8 @@ class PublicIPAddressSkuArgs:
     def name(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PublicIPAddressSkuName]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(
@@ -4984,7 +5464,8 @@ class PublicIPAddressSkuArgs:
     def tier(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PublicIPAddressSkuTier]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RecommendedMachineConfigurationArgsDict(TypedDict):
     memory: NotRequired[pulumi.Input[ResourceRangeArgsDict]]
@@ -5002,12 +5483,14 @@ class RecommendedMachineConfigurationArgs:
     @pulumi.getter
     def memory(self) -> Optional[pulumi.Input[ResourceRangeArgs]]: ...
     @memory.setter
-    def memory(self, value: Optional[pulumi.Input[ResourceRangeArgs]]): ...
+    def memory(self, value: Optional[pulumi.Input[ResourceRangeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vCPUs")
     def v_cpus(self) -> Optional[pulumi.Input[ResourceRangeArgs]]: ...
     @v_cpus.setter
-    def v_cpus(self, value: Optional[pulumi.Input[ResourceRangeArgs]]): ...
+    def v_cpus(self, value: Optional[pulumi.Input[ResourceRangeArgs]]):  # -> None:
+        ...
 
 class ResiliencyPolicyArgsDict(TypedDict):
     automatic_zone_rebalancing_policy: NotRequired[
@@ -5043,7 +5526,8 @@ class ResiliencyPolicyArgs:
     @automatic_zone_rebalancing_policy.setter
     def automatic_zone_rebalancing_policy(
         self, value: Optional[pulumi.Input[AutomaticZoneRebalancingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resilientVMCreationPolicy")
     def resilient_vm_creation_policy(
@@ -5052,7 +5536,8 @@ class ResiliencyPolicyArgs:
     @resilient_vm_creation_policy.setter
     def resilient_vm_creation_policy(
         self, value: Optional[pulumi.Input[ResilientVMCreationPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resilientVMDeletionPolicy")
     def resilient_vm_deletion_policy(
@@ -5061,7 +5546,8 @@ class ResiliencyPolicyArgs:
     @resilient_vm_deletion_policy.setter
     def resilient_vm_deletion_policy(
         self, value: Optional[pulumi.Input[ResilientVMDeletionPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResilientVMCreationPolicyArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5075,7 +5561,8 @@ class ResilientVMCreationPolicyArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ResilientVMDeletionPolicyArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5089,7 +5576,8 @@ class ResilientVMDeletionPolicyArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ResourceRangeArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.int]]
@@ -5107,12 +5595,14 @@ class ResourceRangeArgs:
     @pulumi.getter
     def max(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max.setter
-    def max(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min.setter
-    def min(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ResourceSharingProfileArgsDict(TypedDict):
     subscription_ids: NotRequired[
@@ -5136,7 +5626,8 @@ class ResourceSharingProfileArgs:
     @subscription_ids.setter
     def subscription_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePointCollectionSourcePropertiesArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -5150,7 +5641,8 @@ class RestorePointCollectionSourcePropertiesArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RestorePointEncryptionArgsDict(TypedDict):
     disk_encryption_set: NotRequired[pulumi.Input[DiskEncryptionSetParametersArgsDict]]
@@ -5176,7 +5668,8 @@ class RestorePointEncryptionArgs:
     @disk_encryption_set.setter
     def disk_encryption_set(
         self, value: Optional[pulumi.Input[DiskEncryptionSetParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -5186,7 +5679,8 @@ class RestorePointEncryptionArgs:
     def type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, RestorePointEncryptionType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePointSourceMetadataArgsDict(TypedDict):
     storage_profile: NotRequired[
@@ -5210,7 +5704,8 @@ class RestorePointSourceMetadataArgs:
     @storage_profile.setter
     def storage_profile(
         self, value: Optional[pulumi.Input[RestorePointSourceVMStorageProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePointSourceVMDataDiskArgsDict(TypedDict):
     disk_restore_point: NotRequired[pulumi.Input[DiskRestorePointAttributesArgsDict]]
@@ -5234,14 +5729,16 @@ class RestorePointSourceVMDataDiskArgs:
     @disk_restore_point.setter
     def disk_restore_point(
         self, value: Optional[pulumi.Input[DiskRestorePointAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(self) -> Optional[pulumi.Input[ManagedDiskParametersArgs]]: ...
     @managed_disk.setter
     def managed_disk(
         self, value: Optional[pulumi.Input[ManagedDiskParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePointSourceVMOSDiskArgsDict(TypedDict):
     disk_restore_point: NotRequired[pulumi.Input[DiskRestorePointAttributesArgsDict]]
@@ -5265,14 +5762,16 @@ class RestorePointSourceVMOSDiskArgs:
     @disk_restore_point.setter
     def disk_restore_point(
         self, value: Optional[pulumi.Input[DiskRestorePointAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(self) -> Optional[pulumi.Input[ManagedDiskParametersArgs]]: ...
     @managed_disk.setter
     def managed_disk(
         self, value: Optional[pulumi.Input[ManagedDiskParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RestorePointSourceVMStorageProfileArgsDict(TypedDict):
     data_disks: NotRequired[
@@ -5303,14 +5802,16 @@ class RestorePointSourceVMStorageProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RestorePointSourceVMDataDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
     def os_disk(self) -> Optional[pulumi.Input[RestorePointSourceVMOSDiskArgs]]: ...
     @os_disk.setter
     def os_disk(
         self, value: Optional[pulumi.Input[RestorePointSourceVMOSDiskArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RollingUpgradePolicyArgsDict(TypedDict):
     enable_cross_zone_upgrade: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5348,19 +5849,22 @@ class RollingUpgradePolicyArgs:
     @enable_cross_zone_upgrade.setter
     def enable_cross_zone_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxBatchInstancePercent")
     def max_batch_instance_percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_batch_instance_percent.setter
     def max_batch_instance_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxSurge")
     def max_surge(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @max_surge.setter
-    def max_surge(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def max_surge(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxUnhealthyInstancePercent")
     def max_unhealthy_instance_percent(
@@ -5369,7 +5873,8 @@ class RollingUpgradePolicyArgs:
     @max_unhealthy_instance_percent.setter
     def max_unhealthy_instance_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxUnhealthyUpgradedInstancePercent")
     def max_unhealthy_upgraded_instance_percent(
@@ -5378,14 +5883,16 @@ class RollingUpgradePolicyArgs:
     @max_unhealthy_upgraded_instance_percent.setter
     def max_unhealthy_upgraded_instance_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pauseTimeBetweenBatches")
     def pause_time_between_batches(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pause_time_between_batches.setter
     def pause_time_between_batches(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prioritizeUnhealthyInstances")
     def prioritize_unhealthy_instances(
@@ -5394,7 +5901,8 @@ class RollingUpgradePolicyArgs:
     @prioritize_unhealthy_instances.setter
     def prioritize_unhealthy_instances(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rollbackFailedInstancesOnPolicyBreach")
     def rollback_failed_instances_on_policy_breach(
@@ -5403,7 +5911,8 @@ class RollingUpgradePolicyArgs:
     @rollback_failed_instances_on_policy_breach.setter
     def rollback_failed_instances_on_policy_breach(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RunCommandInputParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -5421,12 +5930,14 @@ class RunCommandInputParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RunCommandManagedIdentityArgsDict(TypedDict):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -5444,12 +5955,14 @@ class RunCommandManagedIdentityArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectId")
     def object_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_id.setter
-    def object_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ScaleInPolicyArgsDict(TypedDict):
     force_deletion: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5483,14 +5996,16 @@ class ScaleInPolicyArgs:
     @pulumi.getter(name="forceDeletion")
     def force_deletion(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_deletion.setter
-    def force_deletion(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_deletion(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prioritizeUnhealthyVMs")
     def prioritize_unhealthy_vms(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @prioritize_unhealthy_vms.setter
     def prioritize_unhealthy_vms(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -5514,7 +6029,8 @@ class ScaleInPolicyArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduledEventsAdditionalPublishingTargetsArgsDict(TypedDict):
     event_grid_and_resource_graph: NotRequired[
@@ -5538,7 +6054,8 @@ class ScheduledEventsAdditionalPublishingTargetsArgs:
     @event_grid_and_resource_graph.setter
     def event_grid_and_resource_graph(
         self, value: Optional[pulumi.Input[EventGridAndResourceGraphArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduledEventsPolicyArgsDict(TypedDict):
     scheduled_events_additional_publishing_targets: NotRequired[
@@ -5569,7 +6086,8 @@ class ScheduledEventsPolicyArgs:
     def scheduled_events_additional_publishing_targets(
         self,
         value: Optional[pulumi.Input[ScheduledEventsAdditionalPublishingTargetsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userInitiatedReboot")
     def user_initiated_reboot(
@@ -5578,7 +6096,8 @@ class ScheduledEventsPolicyArgs:
     @user_initiated_reboot.setter
     def user_initiated_reboot(
         self, value: Optional[pulumi.Input[UserInitiatedRebootArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userInitiatedRedeploy")
     def user_initiated_redeploy(
@@ -5587,7 +6106,8 @@ class ScheduledEventsPolicyArgs:
     @user_initiated_redeploy.setter
     def user_initiated_redeploy(
         self, value: Optional[pulumi.Input[UserInitiatedRedeployArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduledEventsProfileArgsDict(TypedDict):
     os_image_notification_profile: NotRequired[
@@ -5617,7 +6137,8 @@ class ScheduledEventsProfileArgs:
     @os_image_notification_profile.setter
     def os_image_notification_profile(
         self, value: Optional[pulumi.Input[OSImageNotificationProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminateNotificationProfile")
     def terminate_notification_profile(
@@ -5626,7 +6147,8 @@ class ScheduledEventsProfileArgs:
     @terminate_notification_profile.setter
     def terminate_notification_profile(
         self, value: Optional[pulumi.Input[TerminateNotificationProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScriptSourceArgsDict(TypedDict):
     script_link: pulumi.Input[_builtins.str]
@@ -5648,7 +6170,8 @@ class ScriptSourceArgs:
     @pulumi.getter(name="scriptLink")
     def script_link(self) -> pulumi.Input[_builtins.str]: ...
     @script_link.setter
-    def script_link(self, value: pulumi.Input[_builtins.str]): ...
+    def script_link(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -5660,7 +6183,8 @@ class ScriptSourceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GalleryScriptParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecurityPostureReferenceArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -5682,7 +6206,8 @@ class SecurityPostureReferenceArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeExtensions")
     def exclude_extensions(
@@ -5691,12 +6216,14 @@ class SecurityPostureReferenceArgs:
     @exclude_extensions.setter
     def exclude_extensions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isOverridable")
     def is_overridable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_overridable.setter
-    def is_overridable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_overridable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class SecurityProfileArgsDict(TypedDict):
     encryption_at_host: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5722,14 +6249,18 @@ class SecurityProfileArgs:
     @pulumi.getter(name="encryptionAtHost")
     def encryption_at_host(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encryption_at_host.setter
-    def encryption_at_host(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encryption_at_host(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionIdentity")
     def encryption_identity(self) -> Optional[pulumi.Input[EncryptionIdentityArgs]]: ...
     @encryption_identity.setter
     def encryption_identity(
         self, value: Optional[pulumi.Input[EncryptionIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="proxyAgentSettings")
     def proxy_agent_settings(
@@ -5738,7 +6269,8 @@ class SecurityProfileArgs:
     @proxy_agent_settings.setter
     def proxy_agent_settings(
         self, value: Optional[pulumi.Input[ProxyAgentSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityType")
     def security_type(
@@ -5747,12 +6279,16 @@ class SecurityProfileArgs:
     @security_type.setter
     def security_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uefiSettings")
     def uefi_settings(self) -> Optional[pulumi.Input[UefiSettingsArgs]]: ...
     @uefi_settings.setter
-    def uefi_settings(self, value: Optional[pulumi.Input[UefiSettingsArgs]]): ...
+    def uefi_settings(
+        self, value: Optional[pulumi.Input[UefiSettingsArgs]]
+    ):  # -> None:
+        ...
 
 class ServiceArtifactReferenceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -5766,7 +6302,8 @@ class ServiceArtifactReferenceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SharingProfileArgsDict(TypedDict):
     community_gallery_info: NotRequired[pulumi.Input[CommunityGalleryInfoArgsDict]]
@@ -5792,7 +6329,8 @@ class SharingProfileArgs:
     @community_gallery_info.setter
     def community_gallery_info(
         self, value: Optional[pulumi.Input[CommunityGalleryInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(
@@ -5806,7 +6344,8 @@ class SharingProfileArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, GallerySharingPermissionTypes]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuProfileVMSizeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -5824,12 +6363,14 @@ class SkuProfileVMSizeArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rank(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @rank.setter
-    def rank(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def rank(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class SkuProfileArgsDict(TypedDict):
     allocation_strategy: NotRequired[
@@ -5859,7 +6400,8 @@ class SkuProfileArgs:
     @allocation_strategy.setter
     def allocation_strategy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AllocationStrategy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSizes")
     def vm_sizes(
@@ -5869,7 +6411,8 @@ class SkuProfileArgs:
     def vm_sizes(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SkuProfileVMSizeArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     capacity: NotRequired[pulumi.Input[_builtins.float]]
@@ -5889,17 +6432,20 @@ class SkuArgs:
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SnapshotSkuArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[Union[_builtins.str, SnapshotStorageAccountTypes]]]
@@ -5924,7 +6470,8 @@ class SnapshotSkuArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SnapshotStorageAccountTypes]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SoftDeletePolicyArgsDict(TypedDict):
     is_soft_delete_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5940,7 +6487,10 @@ class SoftDeletePolicyArgs:
     @pulumi.getter(name="isSoftDeleteEnabled")
     def is_soft_delete_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_soft_delete_enabled.setter
-    def is_soft_delete_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_soft_delete_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class SourceVaultArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -5954,7 +6504,8 @@ class SourceVaultArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SpotRestorePolicyArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5972,12 +6523,14 @@ class SpotRestorePolicyArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restoreTimeout")
     def restore_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @restore_timeout.setter
-    def restore_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def restore_timeout(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SshConfigurationArgsDict(TypedDict):
     public_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[SshPublicKeyArgsDict]]]]
@@ -5999,7 +6552,8 @@ class SshConfigurationArgs:
     @public_keys.setter
     def public_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SshPublicKeyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SshPublicKeyArgsDict(TypedDict):
     key_data: NotRequired[pulumi.Input[_builtins.str]]
@@ -6017,12 +6571,14 @@ class SshPublicKeyArgs:
     @pulumi.getter(name="keyData")
     def key_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_data.setter
-    def key_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StorageProfileArgsDict(TypedDict):
     align_regional_disks_to_vm_zone: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6054,7 +6610,8 @@ class StorageProfileArgs:
     @align_regional_disks_to_vm_zone.setter
     def align_regional_disks_to_vm_zone(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataDisks")
     def data_disks(
@@ -6063,7 +6620,8 @@ class StorageProfileArgs:
     @data_disks.setter
     def data_disks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataDiskArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskControllerType")
     def disk_controller_type(
@@ -6072,17 +6630,22 @@ class StorageProfileArgs:
     @disk_controller_type.setter
     def disk_controller_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskControllerTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageReference")
     def image_reference(self) -> Optional[pulumi.Input[ImageReferenceArgs]]: ...
     @image_reference.setter
-    def image_reference(self, value: Optional[pulumi.Input[ImageReferenceArgs]]): ...
+    def image_reference(
+        self, value: Optional[pulumi.Input[ImageReferenceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
     def os_disk(self) -> Optional[pulumi.Input[OSDiskArgs]]: ...
     @os_disk.setter
-    def os_disk(self, value: Optional[pulumi.Input[OSDiskArgs]]): ...
+    def os_disk(self, value: Optional[pulumi.Input[OSDiskArgs]]):  # -> None:
+        ...
 
 class SubResourceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -6096,7 +6659,8 @@ class SubResourceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SupportedCapabilitiesArgsDict(TypedDict):
     accelerated_network: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6116,7 +6680,10 @@ class SupportedCapabilitiesArgs:
     @pulumi.getter(name="acceleratedNetwork")
     def accelerated_network(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @accelerated_network.setter
-    def accelerated_network(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def accelerated_network(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def architecture(
@@ -6125,12 +6692,16 @@ class SupportedCapabilitiesArgs:
     @architecture.setter
     def architecture(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Architecture]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskControllerTypes")
     def disk_controller_types(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_controller_types.setter
-    def disk_controller_types(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk_controller_types(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class TargetRegionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -6164,7 +6735,8 @@ class TargetRegionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalReplicaSets")
     def additional_replica_sets(
@@ -6174,22 +6746,32 @@ class TargetRegionArgs:
     def additional_replica_sets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AdditionalReplicaSetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[EncryptionImagesArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[EncryptionImagesArgs]]): ...
+    def encryption(
+        self, value: Optional[pulumi.Input[EncryptionImagesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
     def exclude_from_latest(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_from_latest.setter
-    def exclude_from_latest(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def exclude_from_latest(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionalReplicaCount")
     def regional_replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @regional_replica_count.setter
-    def regional_replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def regional_replica_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -6198,7 +6780,8 @@ class TargetRegionArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TerminateNotificationProfileArgsDict(TypedDict):
     enable: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6216,12 +6799,16 @@ class TerminateNotificationProfileArgs:
     @pulumi.getter
     def enable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable.setter
-    def enable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notBeforeTimeout")
     def not_before_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @not_before_timeout.setter
-    def not_before_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def not_before_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class UefiKeySignaturesArgsDict(TypedDict):
     db: NotRequired[pulumi.Input[Sequence[pulumi.Input[UefiKeyArgsDict]]]]
@@ -6245,26 +6832,30 @@ class UefiKeySignaturesArgs:
     @db.setter
     def db(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UefiKeyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dbx(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[UefiKeyArgs]]]]: ...
     @dbx.setter
     def dbx(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UefiKeyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kek(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[UefiKeyArgs]]]]: ...
     @kek.setter
     def kek(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UefiKeyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pk(self) -> Optional[pulumi.Input[UefiKeyArgs]]: ...
     @pk.setter
-    def pk(self, value: Optional[pulumi.Input[UefiKeyArgs]]): ...
+    def pk(self, value: Optional[pulumi.Input[UefiKeyArgs]]):  # -> None:
+        ...
 
 class UefiKeyArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, UefiKeyType]]]
@@ -6284,7 +6875,8 @@ class UefiKeyArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, UefiKeyType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(
@@ -6293,7 +6885,8 @@ class UefiKeyArgs:
     @value.setter
     def value(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UefiSettingsArgsDict(TypedDict):
     secure_boot_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6311,12 +6904,16 @@ class UefiSettingsArgs:
     @pulumi.getter(name="secureBootEnabled")
     def secure_boot_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @secure_boot_enabled.setter
-    def secure_boot_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def secure_boot_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vTpmEnabled")
     def v_tpm_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @v_tpm_enabled.setter
-    def v_tpm_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def v_tpm_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class UpgradePolicyArgsDict(TypedDict):
     automatic_os_upgrade_policy: NotRequired[
@@ -6344,12 +6941,14 @@ class UpgradePolicyArgs:
     @automatic_os_upgrade_policy.setter
     def automatic_os_upgrade_policy(
         self, value: Optional[pulumi.Input[AutomaticOSUpgradePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[UpgradeMode]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[UpgradeMode]]): ...
+    def mode(self, value: Optional[pulumi.Input[UpgradeMode]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rollingUpgradePolicy")
     def rolling_upgrade_policy(
@@ -6358,7 +6957,8 @@ class UpgradePolicyArgs:
     @rolling_upgrade_policy.setter
     def rolling_upgrade_policy(
         self, value: Optional[pulumi.Input[RollingUpgradePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UserArtifactManageArgsDict(TypedDict):
     install: pulumi.Input[_builtins.str]
@@ -6378,17 +6978,20 @@ class UserArtifactManageArgs:
     @pulumi.getter
     def install(self) -> pulumi.Input[_builtins.str]: ...
     @install.setter
-    def install(self, value: pulumi.Input[_builtins.str]): ...
+    def install(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def remove(self) -> pulumi.Input[_builtins.str]: ...
     @remove.setter
-    def remove(self, value: pulumi.Input[_builtins.str]): ...
+    def remove(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class UserArtifactSettingsArgsDict(TypedDict):
     config_file_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -6412,12 +7015,18 @@ class UserArtifactSettingsArgs:
     @pulumi.getter(name="configFileName")
     def config_file_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @config_file_name.setter
-    def config_file_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def config_file_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="packageFileName")
     def package_file_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @package_file_name.setter
-    def package_file_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def package_file_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptBehaviorAfterReboot")
     def script_behavior_after_reboot(
@@ -6431,7 +7040,8 @@ class UserArtifactSettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, GalleryApplicationScriptRebootBehavior]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class UserArtifactSourceArgsDict(TypedDict):
     media_link: pulumi.Input[_builtins.str]
@@ -6449,14 +7059,16 @@ class UserArtifactSourceArgs:
     @pulumi.getter(name="mediaLink")
     def media_link(self) -> pulumi.Input[_builtins.str]: ...
     @media_link.setter
-    def media_link(self, value: pulumi.Input[_builtins.str]): ...
+    def media_link(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultConfigurationLink")
     def default_configuration_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_configuration_link.setter
     def default_configuration_link(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UserInitiatedRebootArgsDict(TypedDict):
     automatically_approve: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6470,7 +7082,10 @@ class UserInitiatedRebootArgs:
     @pulumi.getter(name="automaticallyApprove")
     def automatically_approve(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @automatically_approve.setter
-    def automatically_approve(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def automatically_approve(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class UserInitiatedRedeployArgsDict(TypedDict):
     automatically_approve: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6484,7 +7099,10 @@ class UserInitiatedRedeployArgs:
     @pulumi.getter(name="automaticallyApprove")
     def automatically_approve(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @automatically_approve.setter
-    def automatically_approve(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def automatically_approve(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class VMDiskSecurityProfileArgsDict(TypedDict):
     disk_encryption_set: NotRequired[pulumi.Input[DiskEncryptionSetParametersArgsDict]]
@@ -6512,7 +7130,8 @@ class VMDiskSecurityProfileArgs:
     @disk_encryption_set.setter
     def disk_encryption_set(
         self, value: Optional[pulumi.Input[DiskEncryptionSetParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityEncryptionType")
     def security_encryption_type(
@@ -6522,7 +7141,8 @@ class VMDiskSecurityProfileArgs:
     def security_encryption_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SecurityEncryptionTypes]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VMGalleryApplicationArgsDict(TypedDict):
     package_reference_id: pulumi.Input[_builtins.str]
@@ -6550,29 +7170,36 @@ class VMGalleryApplicationArgs:
     @pulumi.getter(name="packageReferenceId")
     def package_reference_id(self) -> pulumi.Input[_builtins.str]: ...
     @package_reference_id.setter
-    def package_reference_id(self, value: pulumi.Input[_builtins.str]): ...
+    def package_reference_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationReference")
     def configuration_reference(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_reference.setter
-    def configuration_reference(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration_reference(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
     def enable_automatic_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_upgrade.setter
     def enable_automatic_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def order(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @order.setter
-    def order(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def order(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tags(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="treatFailureAsDeploymentFailure")
     def treat_failure_as_deployment_failure(
@@ -6581,7 +7208,8 @@ class VMGalleryApplicationArgs:
     @treat_failure_as_deployment_failure.setter
     def treat_failure_as_deployment_failure(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VMSizePropertiesArgsDict(TypedDict):
     v_cpus_available: NotRequired[pulumi.Input[_builtins.int]]
@@ -6599,12 +7227,16 @@ class VMSizePropertiesArgs:
     @pulumi.getter(name="vCPUsAvailable")
     def v_cpus_available(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @v_cpus_available.setter
-    def v_cpus_available(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def v_cpus_available(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vCPUsPerCore")
     def v_cpus_per_core(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @v_cpus_per_core.setter
-    def v_cpus_per_core(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def v_cpus_per_core(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class VaultCertificateArgsDict(TypedDict):
     certificate_store: NotRequired[pulumi.Input[_builtins.str]]
@@ -6622,12 +7254,16 @@ class VaultCertificateArgs:
     @pulumi.getter(name="certificateStore")
     def certificate_store(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_store.setter
-    def certificate_store(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_store(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateUrl")
     def certificate_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_url.setter
-    def certificate_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VaultSecretGroupArgsDict(TypedDict):
     source_vault: NotRequired[pulumi.Input[SubResourceArgsDict]]
@@ -6649,7 +7285,8 @@ class VaultSecretGroupArgs:
     @pulumi.getter(name="sourceVault")
     def source_vault(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @source_vault.setter
-    def source_vault(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def source_vault(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultCertificates")
     def vault_certificates(
@@ -6659,7 +7296,8 @@ class VaultSecretGroupArgs:
     def vault_certificates(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VaultCertificateArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualHardDiskArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -6673,7 +7311,8 @@ class VirtualHardDiskArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualMachineExtensionInstanceViewArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -6705,7 +7344,8 @@ class VirtualMachineExtensionInstanceViewArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statuses(
@@ -6715,7 +7355,8 @@ class VirtualMachineExtensionInstanceViewArgs:
     def statuses(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InstanceViewStatusArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def substatuses(
@@ -6725,17 +7366,22 @@ class VirtualMachineExtensionInstanceViewArgs:
     def substatuses(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InstanceViewStatusArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
     def type_handler_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_handler_version.setter
-    def type_handler_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_handler_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class VirtualMachineIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[ResourceIdentityType]]
@@ -6757,7 +7403,8 @@ class VirtualMachineIdentityArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): ...
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -6766,7 +7413,8 @@ class VirtualMachineIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineIpTagArgsDict(TypedDict):
     ip_tag_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -6784,12 +7432,14 @@ class VirtualMachineIpTagArgs:
     @pulumi.getter(name="ipTagType")
     def ip_tag_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_tag_type.setter
-    def ip_tag_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_tag_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualMachineNetworkInterfaceConfigurationArgsDict(TypedDict):
     ip_configurations: pulumi.Input[
@@ -6856,12 +7506,14 @@ class VirtualMachineNetworkInterfaceConfigurationArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[VirtualMachineNetworkInterfaceIPConfigurationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="auxiliaryMode")
     def auxiliary_mode(
@@ -6875,7 +7527,8 @@ class VirtualMachineNetworkInterfaceConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, NetworkInterfaceAuxiliaryMode]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="auxiliarySku")
     def auxiliary_sku(
@@ -6887,7 +7540,8 @@ class VirtualMachineNetworkInterfaceConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, NetworkInterfaceAuxiliarySku]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -6896,14 +7550,16 @@ class VirtualMachineNetworkInterfaceConfigurationArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeleteOptions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableTcpStateTracking")
     def disable_tcp_state_tracking(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_tcp_state_tracking.setter
     def disable_tcp_state_tracking(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
     def dns_settings(
@@ -6917,12 +7573,16 @@ class VirtualMachineNetworkInterfaceConfigurationArgs:
         value: Optional[
             pulumi.Input[VirtualMachineNetworkInterfaceDnsSettingsConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dscpConfiguration")
     def dscp_configuration(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @dscp_configuration.setter
-    def dscp_configuration(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def dscp_configuration(
+        self, value: Optional[pulumi.Input[SubResourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAcceleratedNetworking")
     def enable_accelerated_networking(
@@ -6931,29 +7591,36 @@ class VirtualMachineNetworkInterfaceConfigurationArgs:
     @enable_accelerated_networking.setter
     def enable_accelerated_networking(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableFpga")
     def enable_fpga(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_fpga.setter
-    def enable_fpga(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_fpga(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableIPForwarding")
     def enable_ip_forwarding(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_ip_forwarding.setter
-    def enable_ip_forwarding(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_ip_forwarding(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityGroup")
     def network_security_group(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @network_security_group.setter
     def network_security_group(
         self, value: Optional[pulumi.Input[SubResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def primary(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary.setter
-    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class VirtualMachineNetworkInterfaceDnsSettingsConfigurationArgsDict(TypedDict):
     dns_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -6975,7 +7642,8 @@ class VirtualMachineNetworkInterfaceDnsSettingsConfigurationArgs:
     @dns_servers.setter
     def dns_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineNetworkInterfaceIPConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -7025,7 +7693,8 @@ class VirtualMachineNetworkInterfaceIPConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationGatewayBackendAddressPools")
     def application_gateway_backend_address_pools(
@@ -7034,7 +7703,8 @@ class VirtualMachineNetworkInterfaceIPConfigurationArgs:
     @application_gateway_backend_address_pools.setter
     def application_gateway_backend_address_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSecurityGroups")
     def application_security_groups(
@@ -7043,7 +7713,8 @@ class VirtualMachineNetworkInterfaceIPConfigurationArgs:
     @application_security_groups.setter
     def application_security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerBackendAddressPools")
     def load_balancer_backend_address_pools(
@@ -7052,12 +7723,14 @@ class VirtualMachineNetworkInterfaceIPConfigurationArgs:
     @load_balancer_backend_address_pools.setter
     def load_balancer_backend_address_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def primary(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary.setter
-    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIPAddressVersion")
     def private_ip_address_version(
@@ -7066,7 +7739,8 @@ class VirtualMachineNetworkInterfaceIPConfigurationArgs:
     @private_ip_address_version.setter
     def private_ip_address_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IPVersions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressConfiguration")
     def public_ip_address_configuration(
@@ -7076,12 +7750,14 @@ class VirtualMachineNetworkInterfaceIPConfigurationArgs:
     def public_ip_address_configuration(
         self,
         value: Optional[pulumi.Input[VirtualMachinePublicIPAddressConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnet(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @subnet.setter
-    def subnet(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def subnet(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
 
 class VirtualMachinePublicIPAddressConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -7131,7 +7807,8 @@ class VirtualMachinePublicIPAddressConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -7140,7 +7817,8 @@ class VirtualMachinePublicIPAddressConfigurationArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeleteOptions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
     def dns_settings(
@@ -7154,12 +7832,16 @@ class VirtualMachinePublicIPAddressConfigurationArgs:
         value: Optional[
             pulumi.Input[VirtualMachinePublicIPAddressDnsSettingsConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeoutInMinutes")
     def idle_timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @idle_timeout_in_minutes.setter
-    def idle_timeout_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def idle_timeout_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipTags")
     def ip_tags(
@@ -7169,7 +7851,8 @@ class VirtualMachinePublicIPAddressConfigurationArgs:
     def ip_tags(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualMachineIpTagArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressVersion")
     def public_ip_address_version(
@@ -7178,7 +7861,8 @@ class VirtualMachinePublicIPAddressConfigurationArgs:
     @public_ip_address_version.setter
     def public_ip_address_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IPVersions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPAllocationMethod")
     def public_ip_allocation_method(
@@ -7188,17 +7872,22 @@ class VirtualMachinePublicIPAddressConfigurationArgs:
     def public_ip_allocation_method(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PublicIPAllocationMethod]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPPrefix")
     def public_ip_prefix(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @public_ip_prefix.setter
-    def public_ip_prefix(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def public_ip_prefix(
+        self, value: Optional[pulumi.Input[SubResourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[PublicIPAddressSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[PublicIPAddressSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[PublicIPAddressSkuArgs]]):  # -> None:
+        ...
 
 class VirtualMachinePublicIPAddressDnsSettingsConfigurationArgsDict(TypedDict):
     domain_name_label: pulumi.Input[_builtins.str]
@@ -7220,7 +7909,8 @@ class VirtualMachinePublicIPAddressDnsSettingsConfigurationArgs:
     @pulumi.getter(name="domainNameLabel")
     def domain_name_label(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name_label.setter
-    def domain_name_label(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name_label(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNameLabelScope")
     def domain_name_label_scope(
@@ -7230,7 +7920,8 @@ class VirtualMachinePublicIPAddressDnsSettingsConfigurationArgs:
     def domain_name_label_scope(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DomainNameLabelScopeTypes]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineRunCommandScriptSourceArgsDict(TypedDict):
     command_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -7256,17 +7947,20 @@ class VirtualMachineRunCommandScriptSourceArgs:
     @pulumi.getter(name="commandId")
     def command_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @command_id.setter
-    def command_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def command_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script.setter
-    def script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptUri")
     def script_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script_uri.setter
-    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptUriManagedIdentity")
     def script_uri_managed_identity(
@@ -7275,7 +7969,8 @@ class VirtualMachineRunCommandScriptSourceArgs:
     @script_uri_managed_identity.setter
     def script_uri_managed_identity(
         self, value: Optional[pulumi.Input[RunCommandManagedIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetDataDiskArgsDict(TypedDict):
     create_option: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
@@ -7321,17 +8016,20 @@ class VirtualMachineScaleSetDataDiskArgs:
     @create_option.setter
     def create_option(
         self, value: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lun(self) -> pulumi.Input[_builtins.int]: ...
     @lun.setter
-    def lun(self, value: pulumi.Input[_builtins.int]): ...
+    def lun(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def caching(self) -> Optional[pulumi.Input[CachingTypes]]: ...
     @caching.setter
-    def caching(self, value: Optional[pulumi.Input[CachingTypes]]): ...
+    def caching(self, value: Optional[pulumi.Input[CachingTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -7340,22 +8038,30 @@ class VirtualMachineScaleSetDataDiskArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskDeleteOptionTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskIOPSReadWrite")
     def disk_iops_read_write(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @disk_iops_read_write.setter
-    def disk_iops_read_write(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def disk_iops_read_write(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskMBpsReadWrite")
     def disk_m_bps_read_write(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @disk_m_bps_read_write.setter
-    def disk_m_bps_read_write(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def disk_m_bps_read_write(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(
@@ -7365,19 +8071,22 @@ class VirtualMachineScaleSetDataDiskArgs:
     def managed_disk(
         self,
         value: Optional[pulumi.Input[VirtualMachineScaleSetManagedDiskParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
     def write_accelerator_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @write_accelerator_enabled.setter
     def write_accelerator_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetExtensionProfileArgsDict(TypedDict):
     extensions: NotRequired[
@@ -7408,12 +8117,16 @@ class VirtualMachineScaleSetExtensionProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VirtualMachineScaleSetExtensionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extensionsTimeBudget")
     def extensions_time_budget(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @extensions_time_budget.setter
-    def extensions_time_budget(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def extensions_time_budget(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetExtensionArgsDict(TypedDict):
     auto_upgrade_minor_version: NotRequired[pulumi.Input[_builtins.bool]]
@@ -7461,29 +8174,36 @@ class VirtualMachineScaleSetExtensionArgs:
     @auto_upgrade_minor_version.setter
     def auto_upgrade_minor_version(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
     def enable_automatic_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_upgrade.setter
     def enable_automatic_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateTag")
     def force_update_tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @force_update_tag.setter
-    def force_update_tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def force_update_tag(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedSettings")
     def protected_settings(self) -> Optional[Any]: ...
     @protected_settings.setter
-    def protected_settings(self, value: Optional[Any]): ...
+    def protected_settings(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedSettingsFromKeyVault")
     def protected_settings_from_key_vault(
@@ -7492,7 +8212,8 @@ class VirtualMachineScaleSetExtensionArgs:
     @protected_settings_from_key_vault.setter
     def protected_settings_from_key_vault(
         self, value: Optional[pulumi.Input[KeyVaultSecretReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionAfterExtensions")
     def provision_after_extensions(
@@ -7501,32 +8222,42 @@ class VirtualMachineScaleSetExtensionArgs:
     @provision_after_extensions.setter
     def provision_after_extensions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def publisher(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @publisher.setter
-    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[Any]: ...
     @settings.setter
-    def settings(self, value: Optional[Any]): ...
+    def settings(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suppressFailures")
     def suppress_failures(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @suppress_failures.setter
-    def suppress_failures(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def suppress_failures(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
     def type_handler_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_handler_version.setter
-    def type_handler_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_handler_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetHardwareProfileArgsDict(TypedDict):
     vm_size_properties: NotRequired[pulumi.Input[VMSizePropertiesArgsDict]]
@@ -7544,7 +8275,8 @@ class VirtualMachineScaleSetHardwareProfileArgs:
     @vm_size_properties.setter
     def vm_size_properties(
         self, value: Optional[pulumi.Input[VMSizePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetIPConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -7600,7 +8332,8 @@ class VirtualMachineScaleSetIPConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationGatewayBackendAddressPools")
     def application_gateway_backend_address_pools(
@@ -7609,7 +8342,8 @@ class VirtualMachineScaleSetIPConfigurationArgs:
     @application_gateway_backend_address_pools.setter
     def application_gateway_backend_address_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSecurityGroups")
     def application_security_groups(
@@ -7618,7 +8352,8 @@ class VirtualMachineScaleSetIPConfigurationArgs:
     @application_security_groups.setter
     def application_security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerBackendAddressPools")
     def load_balancer_backend_address_pools(
@@ -7627,7 +8362,8 @@ class VirtualMachineScaleSetIPConfigurationArgs:
     @load_balancer_backend_address_pools.setter
     def load_balancer_backend_address_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerInboundNatPools")
     def load_balancer_inbound_nat_pools(
@@ -7636,12 +8372,14 @@ class VirtualMachineScaleSetIPConfigurationArgs:
     @load_balancer_inbound_nat_pools.setter
     def load_balancer_inbound_nat_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def primary(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary.setter
-    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIPAddressVersion")
     def private_ip_address_version(
@@ -7650,7 +8388,8 @@ class VirtualMachineScaleSetIPConfigurationArgs:
     @private_ip_address_version.setter
     def private_ip_address_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IPVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressConfiguration")
     def public_ip_address_configuration(
@@ -7664,12 +8403,14 @@ class VirtualMachineScaleSetIPConfigurationArgs:
         value: Optional[
             pulumi.Input[VirtualMachineScaleSetPublicIPAddressConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnet(self) -> Optional[pulumi.Input[ApiEntityReferenceArgs]]: ...
     @subnet.setter
-    def subnet(self, value: Optional[pulumi.Input[ApiEntityReferenceArgs]]): ...
+    def subnet(self, value: Optional[pulumi.Input[ApiEntityReferenceArgs]]):  # -> None:
+        ...
 
 class VirtualMachineScaleSetIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[ResourceIdentityType]]
@@ -7691,7 +8432,8 @@ class VirtualMachineScaleSetIdentityArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): ...
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -7700,7 +8442,8 @@ class VirtualMachineScaleSetIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetIpTagArgsDict(TypedDict):
     ip_tag_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -7718,12 +8461,14 @@ class VirtualMachineScaleSetIpTagArgs:
     @pulumi.getter(name="ipTagType")
     def ip_tag_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_tag_type.setter
-    def ip_tag_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_tag_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualMachineScaleSetManagedDiskParametersArgsDict(TypedDict):
     disk_encryption_set: NotRequired[pulumi.Input[DiskEncryptionSetParametersArgsDict]]
@@ -7753,14 +8498,16 @@ class VirtualMachineScaleSetManagedDiskParametersArgs:
     @disk_encryption_set.setter
     def disk_encryption_set(
         self, value: Optional[pulumi.Input[DiskEncryptionSetParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
     def security_profile(self) -> Optional[pulumi.Input[VMDiskSecurityProfileArgs]]: ...
     @security_profile.setter
     def security_profile(
         self, value: Optional[pulumi.Input[VMDiskSecurityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
     def storage_account_type(
@@ -7769,7 +8516,8 @@ class VirtualMachineScaleSetManagedDiskParametersArgs:
     @storage_account_type.setter
     def storage_account_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageAccountTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetNetworkConfigurationDnsSettingsArgsDict(TypedDict):
     dns_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -7791,7 +8539,8 @@ class VirtualMachineScaleSetNetworkConfigurationDnsSettingsArgs:
     @dns_servers.setter
     def dns_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetNetworkConfigurationArgsDict(TypedDict):
     ip_configurations: pulumi.Input[
@@ -7856,12 +8605,14 @@ class VirtualMachineScaleSetNetworkConfigurationArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[VirtualMachineScaleSetIPConfigurationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="auxiliaryMode")
     def auxiliary_mode(
@@ -7875,7 +8626,8 @@ class VirtualMachineScaleSetNetworkConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, NetworkInterfaceAuxiliaryMode]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="auxiliarySku")
     def auxiliary_sku(
@@ -7887,7 +8639,8 @@ class VirtualMachineScaleSetNetworkConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, NetworkInterfaceAuxiliarySku]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -7896,14 +8649,16 @@ class VirtualMachineScaleSetNetworkConfigurationArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeleteOptions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableTcpStateTracking")
     def disable_tcp_state_tracking(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_tcp_state_tracking.setter
     def disable_tcp_state_tracking(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
     def dns_settings(
@@ -7917,7 +8672,8 @@ class VirtualMachineScaleSetNetworkConfigurationArgs:
         value: Optional[
             pulumi.Input[VirtualMachineScaleSetNetworkConfigurationDnsSettingsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAcceleratedNetworking")
     def enable_accelerated_networking(
@@ -7926,29 +8682,36 @@ class VirtualMachineScaleSetNetworkConfigurationArgs:
     @enable_accelerated_networking.setter
     def enable_accelerated_networking(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableFpga")
     def enable_fpga(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_fpga.setter
-    def enable_fpga(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_fpga(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableIPForwarding")
     def enable_ip_forwarding(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_ip_forwarding.setter
-    def enable_ip_forwarding(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_ip_forwarding(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityGroup")
     def network_security_group(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @network_security_group.setter
     def network_security_group(
         self, value: Optional[pulumi.Input[SubResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def primary(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @primary.setter
-    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def primary(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class VirtualMachineScaleSetNetworkProfileArgsDict(TypedDict):
     health_probe: NotRequired[pulumi.Input[ApiEntityReferenceArgsDict]]
@@ -7980,7 +8743,10 @@ class VirtualMachineScaleSetNetworkProfileArgs:
     @pulumi.getter(name="healthProbe")
     def health_probe(self) -> Optional[pulumi.Input[ApiEntityReferenceArgs]]: ...
     @health_probe.setter
-    def health_probe(self, value: Optional[pulumi.Input[ApiEntityReferenceArgs]]): ...
+    def health_probe(
+        self, value: Optional[pulumi.Input[ApiEntityReferenceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkApiVersion")
     def network_api_version(
@@ -7989,7 +8755,8 @@ class VirtualMachineScaleSetNetworkProfileArgs:
     @network_api_version.setter
     def network_api_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkApiVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceConfigurations")
     def network_interface_configurations(
@@ -8007,7 +8774,8 @@ class VirtualMachineScaleSetNetworkProfileArgs:
                 Sequence[pulumi.Input[VirtualMachineScaleSetNetworkConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetOSDiskArgsDict(TypedDict):
     create_option: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
@@ -8057,12 +8825,14 @@ class VirtualMachineScaleSetOSDiskArgs:
     @create_option.setter
     def create_option(
         self, value: pulumi.Input[Union[_builtins.str, DiskCreateOptionTypes]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def caching(self) -> Optional[pulumi.Input[CachingTypes]]: ...
     @caching.setter
-    def caching(self, value: Optional[pulumi.Input[CachingTypes]]): ...
+    def caching(self, value: Optional[pulumi.Input[CachingTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -8071,24 +8841,28 @@ class VirtualMachineScaleSetOSDiskArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskDeleteOptionTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diffDiskSettings")
     def diff_disk_settings(self) -> Optional[pulumi.Input[DiffDiskSettingsArgs]]: ...
     @diff_disk_settings.setter
     def diff_disk_settings(
         self, value: Optional[pulumi.Input[DiffDiskSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def image(self) -> Optional[pulumi.Input[VirtualHardDiskArgs]]: ...
     @image.setter
-    def image(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]): ...
+    def image(self, value: Optional[pulumi.Input[VirtualHardDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
     def managed_disk(
@@ -8098,17 +8872,20 @@ class VirtualMachineScaleSetOSDiskArgs:
     def managed_disk(
         self,
         value: Optional[pulumi.Input[VirtualMachineScaleSetManagedDiskParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osType")
     def os_type(self) -> Optional[pulumi.Input[OperatingSystemTypes]]: ...
     @os_type.setter
-    def os_type(self, value: Optional[pulumi.Input[OperatingSystemTypes]]): ...
+    def os_type(self, value: Optional[pulumi.Input[OperatingSystemTypes]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vhdContainers")
     def vhd_containers(
@@ -8117,14 +8894,16 @@ class VirtualMachineScaleSetOSDiskArgs:
     @vhd_containers.setter
     def vhd_containers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
     def write_accelerator_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @write_accelerator_enabled.setter
     def write_accelerator_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetOSProfileArgsDict(TypedDict):
     admin_password: NotRequired[pulumi.Input[_builtins.str]]
@@ -8158,36 +8937,44 @@ class VirtualMachineScaleSetOSProfileArgs:
     @pulumi.getter(name="adminPassword")
     def admin_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @admin_password.setter
-    def admin_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def admin_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminUsername")
     def admin_username(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @admin_username.setter
-    def admin_username(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def admin_username(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowExtensionOperations")
     def allow_extension_operations(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_extension_operations.setter
     def allow_extension_operations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computerNamePrefix")
     def computer_name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @computer_name_prefix.setter
-    def computer_name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def computer_name_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customData")
     def custom_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_data.setter
-    def custom_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxConfiguration")
     def linux_configuration(self) -> Optional[pulumi.Input[LinuxConfigurationArgs]]: ...
     @linux_configuration.setter
     def linux_configuration(
         self, value: Optional[pulumi.Input[LinuxConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireGuestProvisionSignal")
     def require_guest_provision_signal(
@@ -8196,7 +8983,8 @@ class VirtualMachineScaleSetOSProfileArgs:
     @require_guest_provision_signal.setter
     def require_guest_provision_signal(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def secrets(
@@ -8206,7 +8994,8 @@ class VirtualMachineScaleSetOSProfileArgs:
     def secrets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VaultSecretGroupArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsConfiguration")
     def windows_configuration(
@@ -8215,7 +9004,8 @@ class VirtualMachineScaleSetOSProfileArgs:
     @windows_configuration.setter
     def windows_configuration(
         self, value: Optional[pulumi.Input[WindowsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsArgsDict(TypedDict):
     domain_name_label: pulumi.Input[_builtins.str]
@@ -8237,7 +9027,8 @@ class VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsArgs:
     @pulumi.getter(name="domainNameLabel")
     def domain_name_label(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name_label.setter
-    def domain_name_label(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name_label(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNameLabelScope")
     def domain_name_label_scope(
@@ -8247,7 +9038,8 @@ class VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsArgs:
     def domain_name_label_scope(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DomainNameLabelScopeTypes]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetPublicIPAddressConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -8295,7 +9087,8 @@ class VirtualMachineScaleSetPublicIPAddressConfigurationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
     def delete_option(
@@ -8304,7 +9097,8 @@ class VirtualMachineScaleSetPublicIPAddressConfigurationArgs:
     @delete_option.setter
     def delete_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeleteOptions]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
     def dns_settings(
@@ -8320,12 +9114,16 @@ class VirtualMachineScaleSetPublicIPAddressConfigurationArgs:
                 VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeoutInMinutes")
     def idle_timeout_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @idle_timeout_in_minutes.setter
-    def idle_timeout_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def idle_timeout_in_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipTags")
     def ip_tags(
@@ -8339,7 +9137,8 @@ class VirtualMachineScaleSetPublicIPAddressConfigurationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VirtualMachineScaleSetIpTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressVersion")
     def public_ip_address_version(
@@ -8348,17 +9147,22 @@ class VirtualMachineScaleSetPublicIPAddressConfigurationArgs:
     @public_ip_address_version.setter
     def public_ip_address_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IPVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPPrefix")
     def public_ip_prefix(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @public_ip_prefix.setter
-    def public_ip_prefix(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def public_ip_prefix(
+        self, value: Optional[pulumi.Input[SubResourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[PublicIPAddressSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[PublicIPAddressSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[PublicIPAddressSkuArgs]]):  # -> None:
+        ...
 
 class VirtualMachineScaleSetStorageProfileArgsDict(TypedDict):
     data_disks: NotRequired[
@@ -8397,7 +9201,8 @@ class VirtualMachineScaleSetStorageProfileArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VirtualMachineScaleSetDataDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskControllerType")
     def disk_controller_type(
@@ -8406,19 +9211,24 @@ class VirtualMachineScaleSetStorageProfileArgs:
     @disk_controller_type.setter
     def disk_controller_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskControllerTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageReference")
     def image_reference(self) -> Optional[pulumi.Input[ImageReferenceArgs]]: ...
     @image_reference.setter
-    def image_reference(self, value: Optional[pulumi.Input[ImageReferenceArgs]]): ...
+    def image_reference(
+        self, value: Optional[pulumi.Input[ImageReferenceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
     def os_disk(self) -> Optional[pulumi.Input[VirtualMachineScaleSetOSDiskArgs]]: ...
     @os_disk.setter
     def os_disk(
         self, value: Optional[pulumi.Input[VirtualMachineScaleSetOSDiskArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetVMNetworkProfileConfigurationArgsDict(TypedDict):
     network_interface_configurations: NotRequired[
@@ -8455,7 +9265,8 @@ class VirtualMachineScaleSetVMNetworkProfileConfigurationArgs:
                 Sequence[pulumi.Input[VirtualMachineScaleSetNetworkConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualMachineScaleSetVMProfileArgsDict(TypedDict):
     application_profile: NotRequired[pulumi.Input[ApplicationProfileArgsDict]]
@@ -8541,12 +9352,16 @@ class VirtualMachineScaleSetVMProfileArgs:
     @application_profile.setter
     def application_profile(
         self, value: Optional[pulumi.Input[ApplicationProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="billingProfile")
     def billing_profile(self) -> Optional[pulumi.Input[BillingProfileArgs]]: ...
     @billing_profile.setter
-    def billing_profile(self, value: Optional[pulumi.Input[BillingProfileArgs]]): ...
+    def billing_profile(
+        self, value: Optional[pulumi.Input[BillingProfileArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservation")
     def capacity_reservation(
@@ -8555,14 +9370,16 @@ class VirtualMachineScaleSetVMProfileArgs:
     @capacity_reservation.setter
     def capacity_reservation(
         self, value: Optional[pulumi.Input[CapacityReservationProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diagnosticsProfile")
     def diagnostics_profile(self) -> Optional[pulumi.Input[DiagnosticsProfileArgs]]: ...
     @diagnostics_profile.setter
     def diagnostics_profile(
         self, value: Optional[pulumi.Input[DiagnosticsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evictionPolicy")
     def eviction_policy(
@@ -8576,7 +9393,8 @@ class VirtualMachineScaleSetVMProfileArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, VirtualMachineEvictionPolicyTypes]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extensionProfile")
     def extension_profile(
@@ -8585,7 +9403,8 @@ class VirtualMachineScaleSetVMProfileArgs:
     @extension_profile.setter
     def extension_profile(
         self, value: Optional[pulumi.Input[VirtualMachineScaleSetExtensionProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hardwareProfile")
     def hardware_profile(
@@ -8594,12 +9413,14 @@ class VirtualMachineScaleSetVMProfileArgs:
     @hardware_profile.setter
     def hardware_profile(
         self, value: Optional[pulumi.Input[VirtualMachineScaleSetHardwareProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
     def license_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @license_type.setter
-    def license_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def license_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkProfile")
     def network_profile(
@@ -8608,7 +9429,8 @@ class VirtualMachineScaleSetVMProfileArgs:
     @network_profile.setter
     def network_profile(
         self, value: Optional[pulumi.Input[VirtualMachineScaleSetNetworkProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osProfile")
     def os_profile(
@@ -8617,7 +9439,8 @@ class VirtualMachineScaleSetVMProfileArgs:
     @os_profile.setter
     def os_profile(
         self, value: Optional[pulumi.Input[VirtualMachineScaleSetOSProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(
@@ -8629,7 +9452,8 @@ class VirtualMachineScaleSetVMProfileArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, VirtualMachinePriorityTypes]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduledEventsProfile")
     def scheduled_events_profile(
@@ -8638,7 +9462,8 @@ class VirtualMachineScaleSetVMProfileArgs:
     @scheduled_events_profile.setter
     def scheduled_events_profile(
         self, value: Optional[pulumi.Input[ScheduledEventsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityPostureReference")
     def security_posture_reference(
@@ -8647,12 +9472,16 @@ class VirtualMachineScaleSetVMProfileArgs:
     @security_posture_reference.setter
     def security_posture_reference(
         self, value: Optional[pulumi.Input[SecurityPostureReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
     def security_profile(self) -> Optional[pulumi.Input[SecurityProfileArgs]]: ...
     @security_profile.setter
-    def security_profile(self, value: Optional[pulumi.Input[SecurityProfileArgs]]): ...
+    def security_profile(
+        self, value: Optional[pulumi.Input[SecurityProfileArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceArtifactReference")
     def service_artifact_reference(
@@ -8661,7 +9490,8 @@ class VirtualMachineScaleSetVMProfileArgs:
     @service_artifact_reference.setter
     def service_artifact_reference(
         self, value: Optional[pulumi.Input[ServiceArtifactReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageProfile")
     def storage_profile(
@@ -8670,12 +9500,14 @@ class VirtualMachineScaleSetVMProfileArgs:
     @storage_profile.setter
     def storage_profile(
         self, value: Optional[pulumi.Input[VirtualMachineScaleSetStorageProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userData")
     def user_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data.setter
-    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualMachineScaleSetVMProtectionPolicyArgsDict(TypedDict):
     protect_from_scale_in: NotRequired[pulumi.Input[_builtins.bool]]
@@ -8693,7 +9525,10 @@ class VirtualMachineScaleSetVMProtectionPolicyArgs:
     @pulumi.getter(name="protectFromScaleIn")
     def protect_from_scale_in(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @protect_from_scale_in.setter
-    def protect_from_scale_in(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def protect_from_scale_in(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectFromScaleSetActions")
     def protect_from_scale_set_actions(
@@ -8702,7 +9537,8 @@ class VirtualMachineScaleSetVMProtectionPolicyArgs:
     @protect_from_scale_set_actions.setter
     def protect_from_scale_set_actions(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WinRMConfigurationArgsDict(TypedDict):
     listeners: NotRequired[pulumi.Input[Sequence[pulumi.Input[WinRMListenerArgsDict]]]]
@@ -8724,7 +9560,8 @@ class WinRMConfigurationArgs:
     @listeners.setter
     def listeners(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WinRMListenerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WinRMListenerArgsDict(TypedDict):
     certificate_url: NotRequired[pulumi.Input[_builtins.str]]
@@ -8742,12 +9579,14 @@ class WinRMListenerArgs:
     @pulumi.getter(name="certificateUrl")
     def certificate_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @certificate_url.setter
-    def certificate_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def certificate_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[ProtocolTypes]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[ProtocolTypes]]): ...
+    def protocol(self, value: Optional[pulumi.Input[ProtocolTypes]]):  # -> None:
+        ...
 
 class WindowsConfigurationArgsDict(TypedDict):
     additional_unattend_content: NotRequired[
@@ -8786,34 +9625,44 @@ class WindowsConfigurationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AdditionalUnattendContentArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpdates")
     def enable_automatic_updates(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_updates.setter
     def enable_automatic_updates(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patchSettings")
     def patch_settings(self) -> Optional[pulumi.Input[PatchSettingsArgs]]: ...
     @patch_settings.setter
-    def patch_settings(self, value: Optional[pulumi.Input[PatchSettingsArgs]]): ...
+    def patch_settings(
+        self, value: Optional[pulumi.Input[PatchSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionVMAgent")
     def provision_vm_agent(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @provision_vm_agent.setter
-    def provision_vm_agent(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def provision_vm_agent(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="winRM")
     def win_rm(self) -> Optional[pulumi.Input[WinRMConfigurationArgs]]: ...
     @win_rm.setter
-    def win_rm(self, value: Optional[pulumi.Input[WinRMConfigurationArgs]]): ...
+    def win_rm(self, value: Optional[pulumi.Input[WinRMConfigurationArgs]]):  # -> None:
+        ...
 
 class WindowsVMGuestPatchAutomaticByPlatformSettingsArgsDict(TypedDict):
     bypass_platform_safety_checks_on_user_schedule: NotRequired[
@@ -8849,7 +9698,8 @@ class WindowsVMGuestPatchAutomaticByPlatformSettingsArgs:
     @bypass_platform_safety_checks_on_user_schedule.setter
     def bypass_platform_safety_checks_on_user_schedule(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rebootSetting")
     def reboot_setting(
@@ -8869,4 +9719,5 @@ class WindowsVMGuestPatchAutomaticByPlatformSettingsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...

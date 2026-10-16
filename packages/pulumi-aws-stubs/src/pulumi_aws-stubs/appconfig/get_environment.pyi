@@ -60,7 +60,8 @@ class GetEnvironmentResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetEnvironmentResult(GetEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentResult]:
+        ...
 
 def get_environment(
     application_id: Optional[_builtins.str] = ...,

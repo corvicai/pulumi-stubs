@@ -29,17 +29,20 @@ class ManagedNetworkPeeringPolicyArgs:
     @pulumi.getter(name="managedNetworkName")
     def managed_network_name(self) -> pulumi.Input[_builtins.str]: ...
     @managed_network_name.setter
-    def managed_network_name(self, value: pulumi.Input[_builtins.str]): ...
+    def managed_network_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedNetworkPeeringPolicyName")
     def managed_network_peering_policy_name(
@@ -48,7 +51,8 @@ class ManagedNetworkPeeringPolicyArgs:
     @managed_network_peering_policy_name.setter
     def managed_network_peering_policy_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -57,7 +61,8 @@ class ManagedNetworkPeeringPolicyArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[ManagedNetworkPeeringPolicyPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ManagedNetworkPeeringPolicy(pulumi.CustomResource):

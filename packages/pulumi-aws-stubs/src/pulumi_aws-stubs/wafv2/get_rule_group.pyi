@@ -37,7 +37,8 @@ class GetRuleGroupResult:
     def scope(self) -> _builtins.str: ...
 
 class AwaitableGetRuleGroupResult(GetRuleGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRuleGroupResult]:
+        ...
 
 def get_rule_group(
     name: Optional[_builtins.str] = ...,

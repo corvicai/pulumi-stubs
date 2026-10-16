@@ -23,7 +23,8 @@ class ListFluidRelayServerKeysResult:
     def key2(self) -> _builtins.str: ...
 
 class AwaitableListFluidRelayServerKeysResult(ListFluidRelayServerKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListFluidRelayServerKeysResult]:
+        ...
 
 def list_fluid_relay_server_keys(
     fluid_relay_server_name: Optional[_builtins.str] = ...,

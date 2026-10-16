@@ -52,7 +52,8 @@ class GetBookshelfResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBookshelfResult(GetBookshelfResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBookshelfResult]:
+        ...
 
 def get_bookshelf(
     bookshelf_name: Optional[_builtins.str] = ...,

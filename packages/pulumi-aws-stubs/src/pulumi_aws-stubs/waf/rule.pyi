@@ -25,12 +25,14 @@ class RuleArgs:
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def predicates(
@@ -39,7 +41,8 @@ class RuleArgs:
     @predicates.setter
     def predicates(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RulePredicateArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -48,7 +51,8 @@ class RuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RuleState:
@@ -70,17 +74,20 @@ class _RuleState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricName")
     def metric_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metric_name.setter
-    def metric_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metric_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def predicates(
@@ -89,7 +96,8 @@ class _RuleState:
     @predicates.setter
     def predicates(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RulePredicateArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -98,7 +106,8 @@ class _RuleState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -107,7 +116,8 @@ class _RuleState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:waf/rule:Rule")
 class Rule(pulumi.CustomResource):

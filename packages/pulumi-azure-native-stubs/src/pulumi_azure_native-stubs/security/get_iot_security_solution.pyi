@@ -98,7 +98,8 @@ class GetIotSecuritySolutionResult:
     def workspace(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetIotSecuritySolutionResult(GetIotSecuritySolutionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIotSecuritySolutionResult]:
+        ...
 
 def get_iot_security_solution(
     resource_group_name: Optional[_builtins.str] = ...,

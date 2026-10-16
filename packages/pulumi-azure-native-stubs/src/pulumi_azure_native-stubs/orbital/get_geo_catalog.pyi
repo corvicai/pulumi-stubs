@@ -56,7 +56,8 @@ class GetGeoCatalogResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGeoCatalogResult(GetGeoCatalogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGeoCatalogResult]:
+        ...
 
 def get_geo_catalog(
     catalog_name: Optional[_builtins.str] = ...,

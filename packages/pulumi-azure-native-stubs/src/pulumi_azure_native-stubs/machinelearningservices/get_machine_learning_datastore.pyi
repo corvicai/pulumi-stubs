@@ -56,7 +56,8 @@ class GetMachineLearningDatastoreResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMachineLearningDatastoreResult(GetMachineLearningDatastoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMachineLearningDatastoreResult]:
+        ...
 
 def get_machine_learning_datastore(
     datastore_name: Optional[_builtins.str] = ...,

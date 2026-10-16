@@ -47,7 +47,8 @@ class GetApiIssueAttachmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiIssueAttachmentResult(GetApiIssueAttachmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiIssueAttachmentResult]:
+        ...
 
 def get_api_issue_attachment(
     api_id: Optional[_builtins.str] = ...,

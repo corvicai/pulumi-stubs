@@ -62,7 +62,8 @@ class GetAnalyticsItemResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetAnalyticsItemResult(GetAnalyticsItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAnalyticsItemResult]:
+        ...
 
 def get_analytics_item(
     id: Optional[_builtins.str] = ...,

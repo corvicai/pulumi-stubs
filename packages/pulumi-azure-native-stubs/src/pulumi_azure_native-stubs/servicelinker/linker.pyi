@@ -54,7 +54,8 @@ class LinkerArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authInfo")
     def auth_info(
@@ -90,7 +91,8 @@ class LinkerArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientType")
     def client_type(
@@ -99,19 +101,22 @@ class LinkerArgs:
     @client_type.setter
     def client_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ClientType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationInfo")
     def configuration_info(self) -> Optional[pulumi.Input[ConfigurationInfoArgs]]: ...
     @configuration_info.setter
     def configuration_info(
         self, value: Optional[pulumi.Input[ConfigurationInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linkerName")
     def linker_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @linker_name.setter
-    def linker_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def linker_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkSolution")
     def public_network_solution(
@@ -120,17 +125,20 @@ class LinkerArgs:
     @public_network_solution.setter
     def public_network_solution(
         self, value: Optional[pulumi.Input[PublicNetworkSolutionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretStore")
     def secret_store(self) -> Optional[pulumi.Input[SecretStoreArgs]]: ...
     @secret_store.setter
-    def secret_store(self, value: Optional[pulumi.Input[SecretStoreArgs]]): ...
+    def secret_store(self, value: Optional[pulumi.Input[SecretStoreArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetService")
     def target_service(
@@ -158,12 +166,16 @@ class LinkerArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vNetSolution")
     def v_net_solution(self) -> Optional[pulumi.Input[VNetSolutionArgs]]: ...
     @v_net_solution.setter
-    def v_net_solution(self, value: Optional[pulumi.Input[VNetSolutionArgs]]): ...
+    def v_net_solution(
+        self, value: Optional[pulumi.Input[VNetSolutionArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:servicelinker:Linker")
 class Linker(pulumi.CustomResource):

@@ -73,7 +73,10 @@ class GetDatabaseThreatDetectionPolicyResult:
 class AwaitableGetDatabaseThreatDetectionPolicyResult(
     GetDatabaseThreatDetectionPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseThreatDetectionPolicyResult]:
+        ...
 
 def get_database_threat_detection_policy(
     database_name: Optional[_builtins.str] = ...,

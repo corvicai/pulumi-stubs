@@ -15,7 +15,8 @@ class ManagementGroupSubscriptionArgs:
     @pulumi.getter(name="groupId")
     def group_id(self) -> pulumi.Input[_builtins.str]: ...
     @group_id.setter
-    def group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ManagementGroupSubscription(pulumi.CustomResource):

@@ -27,7 +27,8 @@ class GetEntityResult:
     def value(self) -> Sequence[outputs.EntityInfoResponse]: ...
 
 class AwaitableGetEntityResult(GetEntityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntityResult]:
+        ...
 
 def get_entity(
     filter: Optional[_builtins.str] = ...,

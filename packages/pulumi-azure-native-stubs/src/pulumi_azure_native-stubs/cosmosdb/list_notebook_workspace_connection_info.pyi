@@ -25,7 +25,10 @@ class ListNotebookWorkspaceConnectionInfoResult:
 class AwaitableListNotebookWorkspaceConnectionInfoResult(
     ListNotebookWorkspaceConnectionInfoResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListNotebookWorkspaceConnectionInfoResult]:
+        ...
 
 def list_notebook_workspace_connection_info(
     account_name: Optional[_builtins.str] = ...,

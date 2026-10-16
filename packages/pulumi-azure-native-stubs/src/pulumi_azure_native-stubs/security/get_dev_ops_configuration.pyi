@@ -44,7 +44,8 @@ class GetDevOpsConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDevOpsConfigurationResult(GetDevOpsConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDevOpsConfigurationResult]:
+        ...
 
 def get_dev_ops_configuration(
     resource_group_name: Optional[_builtins.str] = ...,

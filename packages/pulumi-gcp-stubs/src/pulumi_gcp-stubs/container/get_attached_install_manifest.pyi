@@ -43,7 +43,8 @@ class GetAttachedInstallManifestResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetAttachedInstallManifestResult(GetAttachedInstallManifestResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAttachedInstallManifestResult]:
+        ...
 
 def get_attached_install_manifest(
     cluster_id: Optional[_builtins.str] = ...,

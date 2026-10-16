@@ -34,7 +34,8 @@ class GetSnapshotIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetSnapshotIamPolicyResult(GetSnapshotIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotIamPolicyResult]:
+        ...
 
 def get_snapshot_iam_policy(
     name: Optional[_builtins.str] = ...,

@@ -55,7 +55,10 @@ class GetServerAzureADAdministratorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerAzureADAdministratorResult(GetServerAzureADAdministratorResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServerAzureADAdministratorResult]:
+        ...
 
 def get_server_azure_ad_administrator(
     administrator_name: Optional[_builtins.str] = ...,

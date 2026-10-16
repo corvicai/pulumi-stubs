@@ -40,17 +40,20 @@ class DataSourceArgs:
     @pulumi.getter(name="apiId")
     def api_id(self) -> pulumi.Input[_builtins.str]: ...
     @api_id.setter
-    def api_id(self, value: pulumi.Input[_builtins.str]): ...
+    def api_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamodbConfig")
     def dynamodb_config(
@@ -59,7 +62,8 @@ class DataSourceArgs:
     @dynamodb_config.setter
     def dynamodb_config(
         self, value: Optional[pulumi.Input[DataSourceDynamodbConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticsearchConfig")
     def elasticsearch_config(
@@ -68,7 +72,8 @@ class DataSourceArgs:
     @elasticsearch_config.setter
     def elasticsearch_config(
         self, value: Optional[pulumi.Input[DataSourceElasticsearchConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventBridgeConfig")
     def event_bridge_config(
@@ -77,24 +82,30 @@ class DataSourceArgs:
     @event_bridge_config.setter
     def event_bridge_config(
         self, value: Optional[pulumi.Input[DataSourceEventBridgeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpConfig")
     def http_config(self) -> Optional[pulumi.Input[DataSourceHttpConfigArgs]]: ...
     @http_config.setter
-    def http_config(self, value: Optional[pulumi.Input[DataSourceHttpConfigArgs]]): ...
+    def http_config(
+        self, value: Optional[pulumi.Input[DataSourceHttpConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConfig")
     def lambda_config(self) -> Optional[pulumi.Input[DataSourceLambdaConfigArgs]]: ...
     @lambda_config.setter
     def lambda_config(
         self, value: Optional[pulumi.Input[DataSourceLambdaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchserviceConfig")
     def opensearchservice_config(
@@ -103,12 +114,14 @@ class DataSourceArgs:
     @opensearchservice_config.setter
     def opensearchservice_config(
         self, value: Optional[pulumi.Input[DataSourceOpensearchserviceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relationalDatabaseConfig")
     def relational_database_config(
@@ -117,12 +130,16 @@ class DataSourceArgs:
     @relational_database_config.setter
     def relational_database_config(
         self, value: Optional[pulumi.Input[DataSourceRelationalDatabaseConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRoleArn")
     def service_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_role_arn.setter
-    def service_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DataSourceState:
@@ -156,17 +173,20 @@ class _DataSourceState:
     @pulumi.getter(name="apiId")
     def api_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_id.setter
-    def api_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamodbConfig")
     def dynamodb_config(
@@ -175,7 +195,8 @@ class _DataSourceState:
     @dynamodb_config.setter
     def dynamodb_config(
         self, value: Optional[pulumi.Input[DataSourceDynamodbConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticsearchConfig")
     def elasticsearch_config(
@@ -184,7 +205,8 @@ class _DataSourceState:
     @elasticsearch_config.setter
     def elasticsearch_config(
         self, value: Optional[pulumi.Input[DataSourceElasticsearchConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventBridgeConfig")
     def event_bridge_config(
@@ -193,24 +215,30 @@ class _DataSourceState:
     @event_bridge_config.setter
     def event_bridge_config(
         self, value: Optional[pulumi.Input[DataSourceEventBridgeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpConfig")
     def http_config(self) -> Optional[pulumi.Input[DataSourceHttpConfigArgs]]: ...
     @http_config.setter
-    def http_config(self, value: Optional[pulumi.Input[DataSourceHttpConfigArgs]]): ...
+    def http_config(
+        self, value: Optional[pulumi.Input[DataSourceHttpConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaConfig")
     def lambda_config(self) -> Optional[pulumi.Input[DataSourceLambdaConfigArgs]]: ...
     @lambda_config.setter
     def lambda_config(
         self, value: Optional[pulumi.Input[DataSourceLambdaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchserviceConfig")
     def opensearchservice_config(
@@ -219,12 +247,14 @@ class _DataSourceState:
     @opensearchservice_config.setter
     def opensearchservice_config(
         self, value: Optional[pulumi.Input[DataSourceOpensearchserviceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relationalDatabaseConfig")
     def relational_database_config(
@@ -233,17 +263,22 @@ class _DataSourceState:
     @relational_database_config.setter
     def relational_database_config(
         self, value: Optional[pulumi.Input[DataSourceRelationalDatabaseConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRoleArn")
     def service_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_role_arn.setter
-    def service_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:appsync/dataSource:DataSource")
 class DataSource(pulumi.CustomResource):

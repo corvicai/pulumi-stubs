@@ -67,7 +67,8 @@ class GetServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceResult(GetServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceResult]:
+        ...
 
 def get_service(
     device_name: Optional[_builtins.str] = ...,

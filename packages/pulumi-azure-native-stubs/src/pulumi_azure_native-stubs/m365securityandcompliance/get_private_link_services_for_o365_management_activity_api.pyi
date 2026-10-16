@@ -61,7 +61,10 @@ class GetPrivateLinkServicesForO365ManagementActivityAPIResult:
 class AwaitableGetPrivateLinkServicesForO365ManagementActivityAPIResult(
     GetPrivateLinkServicesForO365ManagementActivityAPIResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateLinkServicesForO365ManagementActivityAPIResult]:
+        ...
 
 def get_private_link_services_for_o365_management_activity_api(
     resource_group_name: Optional[_builtins.str] = ...,

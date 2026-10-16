@@ -52,7 +52,8 @@ class GetIamPolicyVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamPolicyVersionResult(GetIamPolicyVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamPolicyVersionResult]:
+        ...
 
 def get_iam_policy_version(
     name: Optional[_builtins.str] = ...,

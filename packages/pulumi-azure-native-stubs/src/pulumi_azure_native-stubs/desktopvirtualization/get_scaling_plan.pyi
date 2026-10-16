@@ -112,7 +112,8 @@ class GetScalingPlanResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScalingPlanResult(GetScalingPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScalingPlanResult]:
+        ...
 
 def get_scaling_plan(
     resource_group_name: Optional[_builtins.str] = ...,

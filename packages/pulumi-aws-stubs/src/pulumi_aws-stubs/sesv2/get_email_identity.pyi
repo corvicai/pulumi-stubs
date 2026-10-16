@@ -62,7 +62,8 @@ class GetEmailIdentityResult:
     def verified_for_sending_status(self) -> _builtins.bool: ...
 
 class AwaitableGetEmailIdentityResult(GetEmailIdentityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEmailIdentityResult]:
+        ...
 
 def get_email_identity(
     email_identity: Optional[_builtins.str] = ...,

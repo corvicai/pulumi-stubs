@@ -26,12 +26,14 @@ class GroupArgs:
     @pulumi.getter(name="filterExpression")
     def filter_expression(self) -> pulumi.Input[_builtins.str]: ...
     @filter_expression.setter
-    def filter_expression(self, value: pulumi.Input[_builtins.str]): ...
+    def filter_expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="insightsConfiguration")
     def insights_configuration(
@@ -40,12 +42,14 @@ class GroupArgs:
     @insights_configuration.setter
     def insights_configuration(
         self, value: Optional[pulumi.Input[GroupInsightsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -54,7 +58,8 @@ class GroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GroupState:
@@ -77,17 +82,22 @@ class _GroupState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterExpression")
     def filter_expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_expression.setter
-    def filter_expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_expression(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupName")
     def group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_name.setter
-    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="insightsConfiguration")
     def insights_configuration(
@@ -96,12 +106,14 @@ class _GroupState:
     @insights_configuration.setter
     def insights_configuration(
         self, value: Optional[pulumi.Input[GroupInsightsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -110,7 +122,8 @@ class _GroupState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -119,7 +132,8 @@ class _GroupState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:xray/group:Group")
 class Group(pulumi.CustomResource):

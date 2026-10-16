@@ -39,39 +39,46 @@ class PipelineArgs:
     @artifact_stores.setter
     def artifact_stores(
         self, value: pulumi.Input[Sequence[pulumi.Input[PipelineArtifactStoreArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def stages(self) -> pulumi.Input[Sequence[pulumi.Input[PipelineStageArgs]]]: ...
     @stages.setter
     def stages(
         self, value: pulumi.Input[Sequence[pulumi.Input[PipelineStageArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionMode")
     def execution_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_mode.setter
-    def execution_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineType")
     def pipeline_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_type.setter
-    def pipeline_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -80,7 +87,8 @@ class PipelineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -89,7 +97,8 @@ class PipelineArgs:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PipelineTriggerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def variables(
@@ -99,7 +108,8 @@ class PipelineArgs:
     def variables(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PipelineVariableArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PipelineState:
@@ -134,7 +144,8 @@ class _PipelineState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="artifactStores")
     def artifact_stores(
@@ -146,32 +157,38 @@ class _PipelineState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PipelineArtifactStoreArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionMode")
     def execution_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_mode.setter
-    def execution_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pipelineType")
     def pipeline_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pipeline_type.setter
-    def pipeline_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pipeline_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def stages(
@@ -180,7 +197,8 @@ class _PipelineState:
     @stages.setter
     def stages(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PipelineStageArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -189,7 +207,8 @@ class _PipelineState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -198,7 +217,8 @@ class _PipelineState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerAlls")
     def trigger_alls(
@@ -208,7 +228,8 @@ class _PipelineState:
     def trigger_alls(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PipelineTriggerAllArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -217,7 +238,8 @@ class _PipelineState:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PipelineTriggerArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def variables(
@@ -227,7 +249,8 @@ class _PipelineState:
     def variables(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[PipelineVariableArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:codepipeline/pipeline:Pipeline")
 class Pipeline(pulumi.CustomResource):

@@ -39,7 +39,8 @@ class GetServerDnsAliasResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerDnsAliasResult(GetServerDnsAliasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerDnsAliasResult]:
+        ...
 
 def get_server_dns_alias(
     dns_alias_name: Optional[_builtins.str] = ...,

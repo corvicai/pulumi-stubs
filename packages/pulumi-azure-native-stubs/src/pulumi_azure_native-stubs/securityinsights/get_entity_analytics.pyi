@@ -52,7 +52,8 @@ class GetEntityAnalyticsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEntityAnalyticsResult(GetEntityAnalyticsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntityAnalyticsResult]:
+        ...
 
 def get_entity_analytics(
     resource_group_name: Optional[_builtins.str] = ...,

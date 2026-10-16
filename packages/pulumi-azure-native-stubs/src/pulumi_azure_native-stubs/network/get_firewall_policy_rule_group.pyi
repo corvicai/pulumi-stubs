@@ -51,7 +51,8 @@ class GetFirewallPolicyRuleGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFirewallPolicyRuleGroupResult(GetFirewallPolicyRuleGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirewallPolicyRuleGroupResult]:
+        ...
 
 def get_firewall_policy_rule_group(
     firewall_policy_name: Optional[_builtins.str] = ...,

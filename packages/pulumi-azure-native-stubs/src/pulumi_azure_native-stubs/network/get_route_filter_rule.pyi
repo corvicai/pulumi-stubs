@@ -55,7 +55,8 @@ class GetRouteFilterRuleResult:
     def route_filter_rule_type(self) -> _builtins.str: ...
 
 class AwaitableGetRouteFilterRuleResult(GetRouteFilterRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteFilterRuleResult]:
+        ...
 
 def get_route_filter_rule(
     resource_group_name: Optional[_builtins.str] = ...,

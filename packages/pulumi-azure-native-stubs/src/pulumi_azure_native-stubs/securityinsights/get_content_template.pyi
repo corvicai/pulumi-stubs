@@ -152,7 +152,8 @@ class GetContentTemplateResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetContentTemplateResult(GetContentTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContentTemplateResult]:
+        ...
 
 def get_content_template(
     resource_group_name: Optional[_builtins.str] = ...,

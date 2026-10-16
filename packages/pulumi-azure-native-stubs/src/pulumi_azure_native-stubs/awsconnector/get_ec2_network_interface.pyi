@@ -52,7 +52,8 @@ class GetEc2NetworkInterfaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2NetworkInterfaceResult(GetEc2NetworkInterfaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2NetworkInterfaceResult]:
+        ...
 
 def get_ec2_network_interface(
     name: Optional[_builtins.str] = ...,

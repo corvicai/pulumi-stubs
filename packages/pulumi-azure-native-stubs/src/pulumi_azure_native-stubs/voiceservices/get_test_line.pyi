@@ -60,7 +60,8 @@ class GetTestLineResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTestLineResult(GetTestLineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTestLineResult]:
+        ...
 
 def get_test_line(
     communications_gateway_name: Optional[_builtins.str] = ...,

@@ -26,7 +26,10 @@ class ListVpnServerConfigurationRadiusSecretsResult:
 class AwaitableListVpnServerConfigurationRadiusSecretsResult(
     ListVpnServerConfigurationRadiusSecretsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListVpnServerConfigurationRadiusSecretsResult]:
+        ...
 
 def list_vpn_server_configuration_radius_secrets(
     resource_group_name: Optional[_builtins.str] = ...,

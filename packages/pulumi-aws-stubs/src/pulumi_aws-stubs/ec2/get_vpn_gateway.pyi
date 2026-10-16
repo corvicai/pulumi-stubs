@@ -57,7 +57,8 @@ class GetVpnGatewayResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVpnGatewayResult(GetVpnGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnGatewayResult]:
+        ...
 
 def get_vpn_gateway(
     amazon_side_asn: Optional[_builtins.str] = ...,

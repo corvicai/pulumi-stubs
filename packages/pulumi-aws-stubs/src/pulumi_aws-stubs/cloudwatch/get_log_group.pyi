@@ -59,7 +59,8 @@ class GetLogGroupResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetLogGroupResult(GetLogGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogGroupResult]:
+        ...
 
 def get_log_group(
     name: Optional[_builtins.str] = ...,

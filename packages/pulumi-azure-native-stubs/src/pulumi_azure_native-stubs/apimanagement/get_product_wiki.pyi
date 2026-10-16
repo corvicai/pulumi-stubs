@@ -37,7 +37,8 @@ class GetProductWikiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProductWikiResult(GetProductWikiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProductWikiResult]:
+        ...
 
 def get_product_wiki(
     product_id: Optional[_builtins.str] = ...,

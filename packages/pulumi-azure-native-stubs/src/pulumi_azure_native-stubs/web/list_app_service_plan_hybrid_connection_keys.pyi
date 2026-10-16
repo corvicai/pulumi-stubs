@@ -45,7 +45,10 @@ class ListAppServicePlanHybridConnectionKeysResult:
 class AwaitableListAppServicePlanHybridConnectionKeysResult(
     ListAppServicePlanHybridConnectionKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListAppServicePlanHybridConnectionKeysResult]:
+        ...
 
 def list_app_service_plan_hybrid_connection_keys(
     name: Optional[_builtins.str] = ...,

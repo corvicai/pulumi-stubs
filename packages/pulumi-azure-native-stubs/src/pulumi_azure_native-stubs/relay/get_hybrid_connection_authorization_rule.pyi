@@ -50,7 +50,10 @@ class GetHybridConnectionAuthorizationRuleResult:
 class AwaitableGetHybridConnectionAuthorizationRuleResult(
     GetHybridConnectionAuthorizationRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetHybridConnectionAuthorizationRuleResult]:
+        ...
 
 def get_hybrid_connection_authorization_rule(
     authorization_rule_name: Optional[_builtins.str] = ...,

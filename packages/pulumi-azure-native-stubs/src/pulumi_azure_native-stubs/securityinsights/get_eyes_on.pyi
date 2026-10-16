@@ -52,7 +52,8 @@ class GetEyesOnResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEyesOnResult(GetEyesOnResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEyesOnResult]:
+        ...
 
 def get_eyes_on(
     resource_group_name: Optional[_builtins.str] = ...,

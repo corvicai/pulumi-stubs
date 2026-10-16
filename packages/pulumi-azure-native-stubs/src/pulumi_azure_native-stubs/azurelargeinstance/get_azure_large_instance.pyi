@@ -84,7 +84,8 @@ class GetAzureLargeInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAzureLargeInstanceResult(GetAzureLargeInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureLargeInstanceResult]:
+        ...
 
 def get_azure_large_instance(
     azure_large_instance_name: Optional[_builtins.str] = ...,

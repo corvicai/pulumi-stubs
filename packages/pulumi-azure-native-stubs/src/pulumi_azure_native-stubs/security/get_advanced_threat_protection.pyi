@@ -34,7 +34,8 @@ class GetAdvancedThreatProtectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAdvancedThreatProtectionResult(GetAdvancedThreatProtectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAdvancedThreatProtectionResult]:
+        ...
 
 def get_advanced_threat_protection(
     resource_id: Optional[_builtins.str] = ...,

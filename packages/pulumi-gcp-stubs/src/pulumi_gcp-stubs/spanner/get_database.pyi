@@ -70,7 +70,8 @@ class GetDatabaseResult:
     def version_retention_period(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseResult(GetDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseResult]:
+        ...
 
 def get_database(
     instance: Optional[_builtins.str] = ...,

@@ -28,31 +28,38 @@ class PeeringServiceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peeringServiceLocation")
     def peering_service_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @peering_service_location.setter
     def peering_service_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peeringServiceName")
     def peering_service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @peering_service_name.setter
-    def peering_service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def peering_service_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peeringServiceProvider")
     def peering_service_provider(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @peering_service_provider.setter
     def peering_service_provider(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerBackupPeeringLocation")
     def provider_backup_peering_location(
@@ -61,7 +68,8 @@ class PeeringServiceArgs:
     @provider_backup_peering_location.setter
     def provider_backup_peering_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerPrimaryPeeringLocation")
     def provider_primary_peering_location(
@@ -70,12 +78,14 @@ class PeeringServiceArgs:
     @provider_primary_peering_location.setter
     def provider_primary_peering_location(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[PeeringServiceSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[PeeringServiceSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[PeeringServiceSkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -84,7 +94,8 @@ class PeeringServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:peering:PeeringService")
 class PeeringService(pulumi.CustomResource):

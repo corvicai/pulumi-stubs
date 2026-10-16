@@ -80,7 +80,8 @@ class GetDistributionTenantResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetDistributionTenantResult(GetDistributionTenantResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDistributionTenantResult]:
+        ...
 
 def get_distribution_tenant(
     arn: Optional[_builtins.str] = ...,

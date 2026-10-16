@@ -28,7 +28,10 @@ class ListActiveConnectivityConfigurationResult:
 class AwaitableListActiveConnectivityConfigurationResult(
     ListActiveConnectivityConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListActiveConnectivityConfigurationResult]:
+        ...
 
 def list_active_connectivity_configuration(
     network_manager_name: Optional[_builtins.str] = ...,

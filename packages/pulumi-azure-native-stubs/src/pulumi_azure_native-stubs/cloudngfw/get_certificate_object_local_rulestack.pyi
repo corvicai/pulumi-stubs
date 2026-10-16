@@ -66,7 +66,10 @@ class GetCertificateObjectLocalRulestackResult:
 class AwaitableGetCertificateObjectLocalRulestackResult(
     GetCertificateObjectLocalRulestackResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCertificateObjectLocalRulestackResult]:
+        ...
 
 def get_certificate_object_local_rulestack(
     local_rulestack_name: Optional[_builtins.str] = ...,

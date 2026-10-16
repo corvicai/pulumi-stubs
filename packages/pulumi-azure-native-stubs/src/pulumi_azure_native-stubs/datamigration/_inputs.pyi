@@ -239,24 +239,28 @@ class AzureActiveDirectoryAppArgs:
     @pulumi.getter(name="appKey")
     def app_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_key.setter
-    def app_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationId")
     def application_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @application_id.setter
-    def application_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def application_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ignoreAzurePermissions")
     def ignore_azure_permissions(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ignore_azure_permissions.setter
     def ignore_azure_permissions(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenant_id.setter
-    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AzureBlobArgsDict(TypedDict):
     account_key: NotRequired[pulumi.Input[_builtins.str]]
@@ -280,29 +284,38 @@ class AzureBlobArgs:
     @pulumi.getter(name="accountKey")
     def account_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_key.setter
-    def account_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authType")
     def auth_type(self) -> Optional[pulumi.Input[AuthType]]: ...
     @auth_type.setter
-    def auth_type(self, value: Optional[pulumi.Input[AuthType]]): ...
+    def auth_type(self, value: Optional[pulumi.Input[AuthType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blobContainerName")
     def blob_container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @blob_container_name.setter
-    def blob_container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def blob_container_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountResourceId")
     def storage_account_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_resource_id.setter
     def storage_account_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupConfigurationArgsDict(TypedDict):
     source_location: NotRequired[pulumi.Input[SourceLocationArgsDict]]
@@ -320,12 +333,18 @@ class BackupConfigurationArgs:
     @pulumi.getter(name="sourceLocation")
     def source_location(self) -> Optional[pulumi.Input[SourceLocationArgs]]: ...
     @source_location.setter
-    def source_location(self, value: Optional[pulumi.Input[SourceLocationArgs]]): ...
+    def source_location(
+        self, value: Optional[pulumi.Input[SourceLocationArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetLocation")
     def target_location(self) -> Optional[pulumi.Input[TargetLocationArgs]]: ...
     @target_location.setter
-    def target_location(self, value: Optional[pulumi.Input[TargetLocationArgs]]): ...
+    def target_location(
+        self, value: Optional[pulumi.Input[TargetLocationArgs]]
+    ):  # -> None:
+        ...
 
 class BlobShareArgsDict(TypedDict):
     sas_uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -339,7 +358,8 @@ class BlobShareArgs:
     @pulumi.getter(name="sasUri")
     def sas_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sas_uri.setter
-    def sas_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sas_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectToMongoDbTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -361,7 +381,8 @@ class ConnectToMongoDbTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -370,12 +391,16 @@ class ConnectToMongoDbTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[MongoDbConnectionInfoArgs]]: ...
     @input.setter
-    def input(self, value: Optional[pulumi.Input[MongoDbConnectionInfoArgs]]): ...
+    def input(
+        self, value: Optional[pulumi.Input[MongoDbConnectionInfoArgs]]
+    ):  # -> None:
+        ...
 
 class ConnectToSourceMySqlTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[MySqlConnectionInfoArgsDict]
@@ -405,7 +430,10 @@ class ConnectToSourceMySqlTaskInputArgs:
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[MySqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="checkPermissionsGroup")
     def check_permissions_group(
@@ -417,12 +445,16 @@ class ConnectToSourceMySqlTaskInputArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ServerLevelPermissionsGroup]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isOfflineMigration")
     def is_offline_migration(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_offline_migration.setter
-    def is_offline_migration(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_offline_migration(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPlatform")
     def target_platform(
@@ -432,7 +464,8 @@ class ConnectToSourceMySqlTaskInputArgs:
     def target_platform(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, MySqlTargetPlatformType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToSourceMySqlTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -454,7 +487,8 @@ class ConnectToSourceMySqlTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -463,14 +497,16 @@ class ConnectToSourceMySqlTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[ConnectToSourceMySqlTaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToSourceMySqlTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToSourceOracleSyncTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[OracleConnectionInfoArgsDict]
@@ -484,7 +520,10 @@ class ConnectToSourceOracleSyncTaskInputArgs:
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[OracleConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[OracleConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[OracleConnectionInfoArgs]
+    ):  # -> None:
+        ...
 
 class ConnectToSourceOracleSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -506,7 +545,8 @@ class ConnectToSourceOracleSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -515,7 +555,8 @@ class ConnectToSourceOracleSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -524,7 +565,8 @@ class ConnectToSourceOracleSyncTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToSourceOracleSyncTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToSourcePostgreSqlSyncTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[PostgreSqlConnectionInfoArgsDict]
@@ -540,7 +582,8 @@ class ConnectToSourcePostgreSqlSyncTaskInputArgs:
     @source_connection_info.setter
     def source_connection_info(
         self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToSourcePostgreSqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -562,7 +605,8 @@ class ConnectToSourcePostgreSqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -571,7 +615,8 @@ class ConnectToSourcePostgreSqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -580,7 +625,8 @@ class ConnectToSourcePostgreSqlSyncTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToSourcePostgreSqlSyncTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToSourceSqlServerSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -602,7 +648,8 @@ class ConnectToSourceSqlServerSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -611,7 +658,8 @@ class ConnectToSourceSqlServerSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -620,7 +668,8 @@ class ConnectToSourceSqlServerSyncTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToSourceSqlServerTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToSourceSqlServerTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[SqlConnectionInfoArgsDict]
@@ -654,7 +703,10 @@ class ConnectToSourceSqlServerTaskInputArgs:
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="checkPermissionsGroup")
     def check_permissions_group(
@@ -666,22 +718,30 @@ class ConnectToSourceSqlServerTaskInputArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ServerLevelPermissionsGroup]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectAgentJobs")
     def collect_agent_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @collect_agent_jobs.setter
-    def collect_agent_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def collect_agent_jobs(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectDatabases")
     def collect_databases(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @collect_databases.setter
-    def collect_databases(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def collect_databases(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectLogins")
     def collect_logins(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @collect_logins.setter
-    def collect_logins(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def collect_logins(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectTdeCertificateInfo")
     def collect_tde_certificate_info(
@@ -690,7 +750,8 @@ class ConnectToSourceSqlServerTaskInputArgs:
     @collect_tde_certificate_info.setter
     def collect_tde_certificate_info(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptedKeyForSecureFields")
     def encrypted_key_for_secure_fields(
@@ -699,14 +760,16 @@ class ConnectToSourceSqlServerTaskInputArgs:
     @encrypted_key_for_secure_fields.setter
     def encrypted_key_for_secure_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validateSsisCatalogOnly")
     def validate_ssis_catalog_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @validate_ssis_catalog_only.setter
     def validate_ssis_catalog_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToSourceSqlServerTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -730,7 +793,8 @@ class ConnectToSourceSqlServerTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -739,7 +803,8 @@ class ConnectToSourceSqlServerTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -748,12 +813,14 @@ class ConnectToSourceSqlServerTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToSourceSqlServerTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskId")
     def task_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_id.setter
-    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConnectToTargetAzureDbForMySqlTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[MySqlConnectionInfoArgsDict]
@@ -773,17 +840,26 @@ class ConnectToTargetAzureDbForMySqlTaskInputArgs:
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[MySqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[MySqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isOfflineMigration")
     def is_offline_migration(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_offline_migration.setter
-    def is_offline_migration(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_offline_migration(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ConnectToTargetAzureDbForMySqlTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -807,7 +883,8 @@ class ConnectToTargetAzureDbForMySqlTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -816,7 +893,8 @@ class ConnectToTargetAzureDbForMySqlTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -825,7 +903,8 @@ class ConnectToTargetAzureDbForMySqlTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToTargetAzureDbForMySqlTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetAzureDbForPostgreSqlSyncTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[PostgreSqlConnectionInfoArgsDict]
@@ -845,14 +924,16 @@ class ConnectToTargetAzureDbForPostgreSqlSyncTaskInputArgs:
     @source_connection_info.setter
     def source_connection_info(
         self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[PostgreSqlConnectionInfoArgs]: ...
     @target_connection_info.setter
     def target_connection_info(
         self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetAzureDbForPostgreSqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -878,7 +959,8 @@ class ConnectToTargetAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -887,7 +969,8 @@ class ConnectToTargetAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -901,7 +984,8 @@ class ConnectToTargetAzureDbForPostgreSqlSyncTaskPropertiesArgs:
         value: Optional[
             pulumi.Input[ConnectToTargetAzureDbForPostgreSqlSyncTaskInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetOracleAzureDbForPostgreSqlSyncTaskInputArgsDict(TypedDict):
     target_connection_info: pulumi.Input[PostgreSqlConnectionInfoArgsDict]
@@ -917,7 +1001,8 @@ class ConnectToTargetOracleAzureDbForPostgreSqlSyncTaskInputArgs:
     @target_connection_info.setter
     def target_connection_info(
         self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetOracleAzureDbForPostgreSqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -943,7 +1028,8 @@ class ConnectToTargetOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -952,7 +1038,8 @@ class ConnectToTargetOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -966,7 +1053,8 @@ class ConnectToTargetOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
         value: Optional[
             pulumi.Input[ConnectToTargetOracleAzureDbForPostgreSqlSyncTaskInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlDbTaskInputArgsDict(TypedDict):
     target_connection_info: pulumi.Input[SqlConnectionInfoArgsDict]
@@ -984,12 +1072,18 @@ class ConnectToTargetSqlDbTaskInputArgs:
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryObjectCounts")
     def query_object_counts(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @query_object_counts.setter
-    def query_object_counts(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def query_object_counts(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlDbTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1013,7 +1107,8 @@ class ConnectToTargetSqlDbTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1022,19 +1117,22 @@ class ConnectToTargetSqlDbTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdOn")
     def created_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_on.setter
-    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[ConnectToTargetSqlDbTaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToTargetSqlDbTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlMISyncTaskInputArgsDict(TypedDict):
     azure_app: pulumi.Input[AzureActiveDirectoryAppArgsDict]
@@ -1052,12 +1150,16 @@ class ConnectToTargetSqlMISyncTaskInputArgs:
     @pulumi.getter(name="azureApp")
     def azure_app(self) -> pulumi.Input[AzureActiveDirectoryAppArgs]: ...
     @azure_app.setter
-    def azure_app(self, value: pulumi.Input[AzureActiveDirectoryAppArgs]): ...
+    def azure_app(self, value: pulumi.Input[AzureActiveDirectoryAppArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[MiSqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[MiSqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[MiSqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlMISyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1079,7 +1181,8 @@ class ConnectToTargetSqlMISyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1088,7 +1191,8 @@ class ConnectToTargetSqlMISyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -1097,7 +1201,8 @@ class ConnectToTargetSqlMISyncTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToTargetSqlMISyncTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlMITaskInputArgsDict(TypedDict):
     target_connection_info: pulumi.Input[SqlConnectionInfoArgsDict]
@@ -1119,24 +1224,32 @@ class ConnectToTargetSqlMITaskInputArgs:
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectAgentJobs")
     def collect_agent_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @collect_agent_jobs.setter
-    def collect_agent_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def collect_agent_jobs(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectLogins")
     def collect_logins(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @collect_logins.setter
-    def collect_logins(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def collect_logins(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validateSsisCatalogOnly")
     def validate_ssis_catalog_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @validate_ssis_catalog_only.setter
     def validate_ssis_catalog_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlMITaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1158,7 +1271,8 @@ class ConnectToTargetSqlMITaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1167,14 +1281,16 @@ class ConnectToTargetSqlMITaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[ConnectToTargetSqlMITaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToTargetSqlMITaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlSqlDbSyncTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[SqlConnectionInfoArgsDict]
@@ -1192,12 +1308,18 @@ class ConnectToTargetSqlSqlDbSyncTaskInputArgs:
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
 
 class ConnectToTargetSqlSqlDbSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1219,7 +1341,8 @@ class ConnectToTargetSqlSqlDbSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1228,7 +1351,8 @@ class ConnectToTargetSqlSqlDbSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -1237,7 +1361,8 @@ class ConnectToTargetSqlSqlDbSyncTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[ConnectToTargetSqlSqlDbSyncTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DatabaseInfoArgsDict(TypedDict):
     source_database_name: pulumi.Input[_builtins.str]
@@ -1251,7 +1376,8 @@ class DatabaseInfoArgs:
     @pulumi.getter(name="sourceDatabaseName")
     def source_database_name(self) -> pulumi.Input[_builtins.str]: ...
     @source_database_name.setter
-    def source_database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def source_database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DatabaseMigrationPropertiesSqlDbArgsDict(TypedDict):
     kind: pulumi.Input[_builtins.str]
@@ -1289,32 +1415,46 @@ class DatabaseMigrationPropertiesSqlDbArgs:
     @pulumi.getter
     def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): ...
+    def kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationOperationId")
     def migration_operation_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @migration_operation_id.setter
-    def migration_operation_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def migration_operation_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationService")
     def migration_service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @migration_service.setter
-    def migration_service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def migration_service(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningError")
     def provisioning_error(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioning_error.setter
-    def provisioning_error(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provisioning_error(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDatabaseName")
     def source_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_database_name.setter
-    def source_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSqlConnection")
     def source_sql_connection(
@@ -1323,7 +1463,8 @@ class DatabaseMigrationPropertiesSqlDbArgs:
     @source_sql_connection.setter
     def source_sql_connection(
         self, value: Optional[pulumi.Input[SqlConnectionInformationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableList")
     def table_list(
@@ -1332,14 +1473,16 @@ class DatabaseMigrationPropertiesSqlDbArgs:
     @table_list.setter
     def table_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseCollation")
     def target_database_collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_collation.setter
     def target_database_collation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSqlConnection")
     def target_sql_connection(
@@ -1348,7 +1491,8 @@ class DatabaseMigrationPropertiesSqlDbArgs:
     @target_sql_connection.setter
     def target_sql_connection(
         self, value: Optional[pulumi.Input[SqlConnectionInformationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DatabaseMigrationPropertiesSqlMiArgsDict(TypedDict):
     kind: pulumi.Input[_builtins.str]
@@ -1384,7 +1528,8 @@ class DatabaseMigrationPropertiesSqlMiArgs:
     @pulumi.getter
     def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): ...
+    def kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupConfiguration")
     def backup_configuration(
@@ -1393,17 +1538,24 @@ class DatabaseMigrationPropertiesSqlMiArgs:
     @backup_configuration.setter
     def backup_configuration(
         self, value: Optional[pulumi.Input[BackupConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationOperationId")
     def migration_operation_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @migration_operation_id.setter
-    def migration_operation_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def migration_operation_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationService")
     def migration_service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @migration_service.setter
-    def migration_service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def migration_service(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offlineConfiguration")
     def offline_configuration(
@@ -1412,22 +1564,30 @@ class DatabaseMigrationPropertiesSqlMiArgs:
     @offline_configuration.setter
     def offline_configuration(
         self, value: Optional[pulumi.Input[OfflineConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningError")
     def provisioning_error(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioning_error.setter
-    def provisioning_error(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provisioning_error(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDatabaseName")
     def source_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_database_name.setter
-    def source_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSqlConnection")
     def source_sql_connection(
@@ -1436,14 +1596,16 @@ class DatabaseMigrationPropertiesSqlMiArgs:
     @source_sql_connection.setter
     def source_sql_connection(
         self, value: Optional[pulumi.Input[SqlConnectionInformationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseCollation")
     def target_database_collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_collation.setter
     def target_database_collation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DatabaseMigrationPropertiesSqlVmArgsDict(TypedDict):
     kind: pulumi.Input[_builtins.str]
@@ -1479,7 +1641,8 @@ class DatabaseMigrationPropertiesSqlVmArgs:
     @pulumi.getter
     def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): ...
+    def kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupConfiguration")
     def backup_configuration(
@@ -1488,17 +1651,24 @@ class DatabaseMigrationPropertiesSqlVmArgs:
     @backup_configuration.setter
     def backup_configuration(
         self, value: Optional[pulumi.Input[BackupConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationOperationId")
     def migration_operation_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @migration_operation_id.setter
-    def migration_operation_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def migration_operation_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationService")
     def migration_service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @migration_service.setter
-    def migration_service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def migration_service(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offlineConfiguration")
     def offline_configuration(
@@ -1507,22 +1677,30 @@ class DatabaseMigrationPropertiesSqlVmArgs:
     @offline_configuration.setter
     def offline_configuration(
         self, value: Optional[pulumi.Input[OfflineConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningError")
     def provisioning_error(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provisioning_error.setter
-    def provisioning_error(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provisioning_error(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDatabaseName")
     def source_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_database_name.setter
-    def source_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSqlConnection")
     def source_sql_connection(
@@ -1531,14 +1709,16 @@ class DatabaseMigrationPropertiesSqlVmArgs:
     @source_sql_connection.setter
     def source_sql_connection(
         self, value: Optional[pulumi.Input[SqlConnectionInformationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseCollation")
     def target_database_collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_collation.setter
     def target_database_collation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FileShareArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
@@ -1558,17 +1738,20 @@ class FileShareArgs:
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GetTdeCertificatesSqlTaskInputArgsDict(TypedDict):
     backup_file_share: pulumi.Input[FileShareArgsDict]
@@ -1592,12 +1775,14 @@ class GetTdeCertificatesSqlTaskInputArgs:
     @pulumi.getter(name="backupFileShare")
     def backup_file_share(self) -> pulumi.Input[FileShareArgs]: ...
     @backup_file_share.setter
-    def backup_file_share(self, value: pulumi.Input[FileShareArgs]): ...
+    def backup_file_share(self, value: pulumi.Input[FileShareArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionInfo")
     def connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @connection_info.setter
-    def connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedCertificates")
     def selected_certificates(
@@ -1606,7 +1791,8 @@ class GetTdeCertificatesSqlTaskInputArgs:
     @selected_certificates.setter
     def selected_certificates(
         self, value: pulumi.Input[Sequence[pulumi.Input[SelectedCertificateInputArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetTdeCertificatesSqlTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1628,7 +1814,8 @@ class GetTdeCertificatesSqlTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1637,14 +1824,16 @@ class GetTdeCertificatesSqlTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[GetTdeCertificatesSqlTaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[GetTdeCertificatesSqlTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesMySqlTaskInputArgsDict(TypedDict):
     connection_info: pulumi.Input[MySqlConnectionInfoArgsDict]
@@ -1662,7 +1851,8 @@ class GetUserTablesMySqlTaskInputArgs:
     @pulumi.getter(name="connectionInfo")
     def connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @connection_info.setter
-    def connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedDatabases")
     def selected_databases(
@@ -1671,7 +1861,8 @@ class GetUserTablesMySqlTaskInputArgs:
     @selected_databases.setter
     def selected_databases(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesMySqlTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1693,7 +1884,8 @@ class GetUserTablesMySqlTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1702,12 +1894,16 @@ class GetUserTablesMySqlTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[GetUserTablesMySqlTaskInputArgs]]: ...
     @input.setter
-    def input(self, value: Optional[pulumi.Input[GetUserTablesMySqlTaskInputArgs]]): ...
+    def input(
+        self, value: Optional[pulumi.Input[GetUserTablesMySqlTaskInputArgs]]
+    ):  # -> None:
+        ...
 
 class GetUserTablesOracleTaskInputArgsDict(TypedDict):
     connection_info: pulumi.Input[OracleConnectionInfoArgsDict]
@@ -1725,7 +1921,10 @@ class GetUserTablesOracleTaskInputArgs:
     @pulumi.getter(name="connectionInfo")
     def connection_info(self) -> pulumi.Input[OracleConnectionInfoArgs]: ...
     @connection_info.setter
-    def connection_info(self, value: pulumi.Input[OracleConnectionInfoArgs]): ...
+    def connection_info(
+        self, value: pulumi.Input[OracleConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedSchemas")
     def selected_schemas(
@@ -1734,7 +1933,8 @@ class GetUserTablesOracleTaskInputArgs:
     @selected_schemas.setter
     def selected_schemas(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesOracleTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1756,7 +1956,8 @@ class GetUserTablesOracleTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1765,14 +1966,16 @@ class GetUserTablesOracleTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[GetUserTablesOracleTaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[GetUserTablesOracleTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesPostgreSqlTaskInputArgsDict(TypedDict):
     connection_info: pulumi.Input[PostgreSqlConnectionInfoArgsDict]
@@ -1790,7 +1993,10 @@ class GetUserTablesPostgreSqlTaskInputArgs:
     @pulumi.getter(name="connectionInfo")
     def connection_info(self) -> pulumi.Input[PostgreSqlConnectionInfoArgs]: ...
     @connection_info.setter
-    def connection_info(self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]): ...
+    def connection_info(
+        self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedDatabases")
     def selected_databases(
@@ -1799,7 +2005,8 @@ class GetUserTablesPostgreSqlTaskInputArgs:
     @selected_databases.setter
     def selected_databases(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesPostgreSqlTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1821,7 +2028,8 @@ class GetUserTablesPostgreSqlTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1830,14 +2038,16 @@ class GetUserTablesPostgreSqlTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[GetUserTablesPostgreSqlTaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[GetUserTablesPostgreSqlTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesSqlSyncTaskInputArgsDict(TypedDict):
     selected_source_databases: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1863,7 +2073,8 @@ class GetUserTablesSqlSyncTaskInputArgs:
     @selected_source_databases.setter
     def selected_source_databases(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedTargetDatabases")
     def selected_target_databases(
@@ -1872,17 +2083,24 @@ class GetUserTablesSqlSyncTaskInputArgs:
     @selected_target_databases.setter
     def selected_target_databases(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
 
 class GetUserTablesSqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1904,7 +2122,8 @@ class GetUserTablesSqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1913,14 +2132,16 @@ class GetUserTablesSqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[GetUserTablesSqlSyncTaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[GetUserTablesSqlSyncTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesSqlTaskInputArgsDict(TypedDict):
     connection_info: pulumi.Input[SqlConnectionInfoArgsDict]
@@ -1940,7 +2161,8 @@ class GetUserTablesSqlTaskInputArgs:
     @pulumi.getter(name="connectionInfo")
     def connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @connection_info.setter
-    def connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedDatabases")
     def selected_databases(
@@ -1949,7 +2171,8 @@ class GetUserTablesSqlTaskInputArgs:
     @selected_databases.setter
     def selected_databases(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptedKeyForSecureFields")
     def encrypted_key_for_secure_fields(
@@ -1958,7 +2181,8 @@ class GetUserTablesSqlTaskInputArgs:
     @encrypted_key_for_secure_fields.setter
     def encrypted_key_for_secure_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetUserTablesSqlTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -1982,7 +2206,8 @@ class GetUserTablesSqlTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -1991,17 +2216,22 @@ class GetUserTablesSqlTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[GetUserTablesSqlTaskInputArgs]]: ...
     @input.setter
-    def input(self, value: Optional[pulumi.Input[GetUserTablesSqlTaskInputArgs]]): ...
+    def input(
+        self, value: Optional[pulumi.Input[GetUserTablesSqlTaskInputArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskId")
     def task_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_id.setter
-    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -2027,7 +2257,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -2036,7 +2267,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MiSqlConnectionInfoArgsDict(TypedDict):
     managed_instance_resource_id: pulumi.Input[_builtins.str]
@@ -2058,22 +2290,28 @@ class MiSqlConnectionInfoArgs:
     @pulumi.getter(name="managedInstanceResourceId")
     def managed_instance_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @managed_instance_resource_id.setter
-    def managed_instance_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def managed_instance_resource_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateMongoDbTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -2095,7 +2333,8 @@ class MigrateMongoDbTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -2104,12 +2343,16 @@ class MigrateMongoDbTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[MongoDbMigrationSettingsArgs]]: ...
     @input.setter
-    def input(self, value: Optional[pulumi.Input[MongoDbMigrationSettingsArgs]]): ...
+    def input(
+        self, value: Optional[pulumi.Input[MongoDbMigrationSettingsArgs]]
+    ):  # -> None:
+        ...
 
 class MigrateMySqlAzureDbForMySqlOfflineDatabaseInputArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2131,7 +2374,8 @@ class MigrateMySqlAzureDbForMySqlOfflineDatabaseInputArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableMap")
     def table_map(
@@ -2140,12 +2384,16 @@ class MigrateMySqlAzureDbForMySqlOfflineDatabaseInputArgs:
     @table_map.setter
     def table_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseName")
     def target_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_name.setter
-    def target_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MigrateMySqlAzureDbForMySqlOfflineTaskInputArgsDict(TypedDict):
     selected_databases: pulumi.Input[
@@ -2190,17 +2438,24 @@ class MigrateMySqlAzureDbForMySqlOfflineTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateMySqlAzureDbForMySqlOfflineDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[MySqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[MySqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptedKeyForSecureFields")
     def encrypted_key_for_secure_fields(
@@ -2209,7 +2464,8 @@ class MigrateMySqlAzureDbForMySqlOfflineTaskInputArgs:
     @encrypted_key_for_secure_fields.setter
     def encrypted_key_for_secure_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="makeSourceServerReadOnly")
     def make_source_server_read_only(
@@ -2218,7 +2474,8 @@ class MigrateMySqlAzureDbForMySqlOfflineTaskInputArgs:
     @make_source_server_read_only.setter
     def make_source_server_read_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optionalAgentSettings")
     def optional_agent_settings(
@@ -2227,12 +2484,14 @@ class MigrateMySqlAzureDbForMySqlOfflineTaskInputArgs:
     @optional_agent_settings.setter
     def optional_agent_settings(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startedOn")
     def started_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @started_on.setter
-    def started_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def started_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateMySqlAzureDbForMySqlOfflineTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -2262,7 +2521,8 @@ class MigrateMySqlAzureDbForMySqlOfflineTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -2271,7 +2531,8 @@ class MigrateMySqlAzureDbForMySqlOfflineTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -2281,17 +2542,20 @@ class MigrateMySqlAzureDbForMySqlOfflineTaskPropertiesArgs:
     def input(
         self,
         value: Optional[pulumi.Input[MigrateMySqlAzureDbForMySqlOfflineTaskInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCloneable")
     def is_cloneable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_cloneable.setter
-    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskId")
     def task_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_id.setter
-    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateMySqlAzureDbForMySqlSyncDatabaseInputArgsDict(TypedDict):
     migration_setting: NotRequired[
@@ -2331,12 +2595,14 @@ class MigrateMySqlAzureDbForMySqlSyncDatabaseInputArgs:
     @migration_setting.setter
     def migration_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSetting")
     def source_setting(
@@ -2345,7 +2611,8 @@ class MigrateMySqlAzureDbForMySqlSyncDatabaseInputArgs:
     @source_setting.setter
     def source_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableMap")
     def table_map(
@@ -2354,12 +2621,16 @@ class MigrateMySqlAzureDbForMySqlSyncDatabaseInputArgs:
     @table_map.setter
     def table_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseName")
     def target_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_name.setter
-    def target_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSetting")
     def target_setting(
@@ -2368,7 +2639,8 @@ class MigrateMySqlAzureDbForMySqlSyncDatabaseInputArgs:
     @target_setting.setter
     def target_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateMySqlAzureDbForMySqlSyncTaskInputArgsDict(TypedDict):
     selected_databases: pulumi.Input[
@@ -2401,17 +2673,24 @@ class MigrateMySqlAzureDbForMySqlSyncTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateMySqlAzureDbForMySqlSyncDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[MySqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[MySqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[MySqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[MySqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
 
 class MigrateMySqlAzureDbForMySqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -2435,7 +2714,8 @@ class MigrateMySqlAzureDbForMySqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -2444,7 +2724,8 @@ class MigrateMySqlAzureDbForMySqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -2454,7 +2735,8 @@ class MigrateMySqlAzureDbForMySqlSyncTaskPropertiesArgs:
     def input(
         self,
         value: Optional[pulumi.Input[MigrateMySqlAzureDbForMySqlSyncTaskInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -2480,7 +2762,8 @@ class MigrateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -2489,7 +2772,8 @@ class MigrateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -2499,7 +2783,8 @@ class MigrateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     def input(
         self,
         value: Optional[pulumi.Input[MigrateOracleAzureDbPostgreSqlSyncTaskInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateOracleAzureDbPostgreSqlSyncDatabaseInputArgsDict(TypedDict):
     case_manipulation: NotRequired[pulumi.Input[_builtins.str]]
@@ -2539,7 +2824,10 @@ class MigrateOracleAzureDbPostgreSqlSyncDatabaseInputArgs:
     @pulumi.getter(name="caseManipulation")
     def case_manipulation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @case_manipulation.setter
-    def case_manipulation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def case_manipulation(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationSetting")
     def migration_setting(
@@ -2548,17 +2836,20 @@ class MigrateOracleAzureDbPostgreSqlSyncDatabaseInputArgs:
     @migration_setting.setter
     def migration_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaName")
     def schema_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_name.setter
-    def schema_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSetting")
     def source_setting(
@@ -2567,7 +2858,8 @@ class MigrateOracleAzureDbPostgreSqlSyncDatabaseInputArgs:
     @source_setting.setter
     def source_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableMap")
     def table_map(
@@ -2576,12 +2868,16 @@ class MigrateOracleAzureDbPostgreSqlSyncDatabaseInputArgs:
     @table_map.setter
     def table_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseName")
     def target_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_name.setter
-    def target_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSetting")
     def target_setting(
@@ -2590,7 +2886,8 @@ class MigrateOracleAzureDbPostgreSqlSyncDatabaseInputArgs:
     @target_setting.setter
     def target_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateOracleAzureDbPostgreSqlSyncTaskInputArgsDict(TypedDict):
     selected_databases: pulumi.Input[
@@ -2623,19 +2920,24 @@ class MigrateOracleAzureDbPostgreSqlSyncTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateOracleAzureDbPostgreSqlSyncDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[OracleConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[OracleConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[OracleConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[PostgreSqlConnectionInfoArgs]: ...
     @target_connection_info.setter
     def target_connection_info(
         self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseInputArgsDict(TypedDict):
     migration_setting: NotRequired[Any]
@@ -2681,12 +2983,14 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseInputArgs:
     @pulumi.getter(name="migrationSetting")
     def migration_setting(self) -> Optional[Any]: ...
     @migration_setting.setter
-    def migration_setting(self, value: Optional[Any]): ...
+    def migration_setting(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedTables")
     def selected_tables(
@@ -2712,7 +3016,8 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseInputArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSetting")
     def source_setting(
@@ -2721,12 +3026,16 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseInputArgs:
     @source_setting.setter
     def source_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseName")
     def target_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_name.setter
-    def target_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSetting")
     def target_setting(
@@ -2735,7 +3044,8 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseInputArgs:
     @target_setting.setter
     def target_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseTableInputArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2749,7 +3059,8 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseTableInputArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigratePostgreSqlAzureDbForPostgreSqlSyncTaskInputArgsDict(TypedDict):
     selected_databases: pulumi.Input[
@@ -2792,21 +3103,24 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncTaskInputArgs:
                 pulumi.Input[MigratePostgreSqlAzureDbForPostgreSqlSyncDatabaseInputArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[PostgreSqlConnectionInfoArgs]: ...
     @source_connection_info.setter
     def source_connection_info(
         self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[PostgreSqlConnectionInfoArgs]: ...
     @target_connection_info.setter
     def target_connection_info(
         self, value: pulumi.Input[PostgreSqlConnectionInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptedKeyForSecureFields")
     def encrypted_key_for_secure_fields(
@@ -2815,7 +3129,8 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncTaskInputArgs:
     @encrypted_key_for_secure_fields.setter
     def encrypted_key_for_secure_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigratePostgreSqlAzureDbForPostgreSqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -2847,7 +3162,8 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -2856,12 +3172,14 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdOn")
     def created_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_on.setter
-    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -2875,17 +3193,20 @@ class MigratePostgreSqlAzureDbForPostgreSqlSyncTaskPropertiesArgs:
         value: Optional[
             pulumi.Input[MigratePostgreSqlAzureDbForPostgreSqlSyncTaskInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCloneable")
     def is_cloneable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_cloneable.setter
-    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskId")
     def task_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_id.setter
-    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateSqlServerSqlDbDatabaseInputArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2913,24 +3234,28 @@ class MigrateSqlServerSqlDbDatabaseInputArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="makeSourceDbReadOnly")
     def make_source_db_read_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @make_source_db_read_only.setter
     def make_source_db_read_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaSetting")
     def schema_setting(self) -> Optional[Any]: ...
     @schema_setting.setter
-    def schema_setting(self, value: Optional[Any]): ...
+    def schema_setting(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableMap")
     def table_map(
@@ -2939,12 +3264,16 @@ class MigrateSqlServerSqlDbDatabaseInputArgs:
     @table_map.setter
     def table_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseName")
     def target_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_name.setter
-    def target_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class MigrateSqlServerSqlDbSyncDatabaseInputArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2984,7 +3313,8 @@ class MigrateSqlServerSqlDbSyncDatabaseInputArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationSetting")
     def migration_setting(
@@ -2993,17 +3323,20 @@ class MigrateSqlServerSqlDbSyncDatabaseInputArgs:
     @migration_setting.setter
     def migration_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaName")
     def schema_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_name.setter
-    def schema_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSetting")
     def source_setting(
@@ -3012,7 +3345,8 @@ class MigrateSqlServerSqlDbSyncDatabaseInputArgs:
     @source_setting.setter
     def source_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableMap")
     def table_map(
@@ -3021,12 +3355,16 @@ class MigrateSqlServerSqlDbSyncDatabaseInputArgs:
     @table_map.setter
     def table_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabaseName")
     def target_database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database_name.setter
-    def target_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_database_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetSetting")
     def target_setting(
@@ -3035,7 +3373,8 @@ class MigrateSqlServerSqlDbSyncDatabaseInputArgs:
     @target_setting.setter
     def target_setting(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateSqlServerSqlDbSyncTaskInputArgsDict(TypedDict):
     selected_databases: pulumi.Input[
@@ -3072,17 +3411,24 @@ class MigrateSqlServerSqlDbSyncTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateSqlServerSqlDbSyncDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationOptions")
     def validation_options(
@@ -3091,7 +3437,8 @@ class MigrateSqlServerSqlDbSyncTaskInputArgs:
     @validation_options.setter
     def validation_options(
         self, value: Optional[pulumi.Input[MigrationValidationOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateSqlServerSqlDbSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -3113,7 +3460,8 @@ class MigrateSqlServerSqlDbSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -3122,7 +3470,8 @@ class MigrateSqlServerSqlDbSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -3131,7 +3480,8 @@ class MigrateSqlServerSqlDbSyncTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[MigrateSqlServerSqlDbSyncTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateSqlServerSqlDbTaskInputArgsDict(TypedDict):
     selected_databases: pulumi.Input[
@@ -3172,17 +3522,24 @@ class MigrateSqlServerSqlDbTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateSqlServerSqlDbDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptedKeyForSecureFields")
     def encrypted_key_for_secure_fields(
@@ -3191,12 +3548,14 @@ class MigrateSqlServerSqlDbTaskInputArgs:
     @encrypted_key_for_secure_fields.setter
     def encrypted_key_for_secure_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startedOn")
     def started_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @started_on.setter
-    def started_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def started_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationOptions")
     def validation_options(
@@ -3205,7 +3564,8 @@ class MigrateSqlServerSqlDbTaskInputArgs:
     @validation_options.setter
     def validation_options(
         self, value: Optional[pulumi.Input[MigrationValidationOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateSqlServerSqlDbTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -3233,7 +3593,8 @@ class MigrateSqlServerSqlDbTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -3242,29 +3603,34 @@ class MigrateSqlServerSqlDbTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdOn")
     def created_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_on.setter
-    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[MigrateSqlServerSqlDbTaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[MigrateSqlServerSqlDbTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCloneable")
     def is_cloneable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_cloneable.setter
-    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskId")
     def task_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_id.setter
-    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateSqlServerSqlMIDatabaseInputArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3290,12 +3656,14 @@ class MigrateSqlServerSqlMIDatabaseInputArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restoreDatabaseName")
     def restore_database_name(self) -> pulumi.Input[_builtins.str]: ...
     @restore_database_name.setter
-    def restore_database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def restore_database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupFilePaths")
     def backup_file_paths(
@@ -3304,17 +3672,22 @@ class MigrateSqlServerSqlMIDatabaseInputArgs:
     @backup_file_paths.setter
     def backup_file_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupFileShare")
     def backup_file_share(self) -> Optional[pulumi.Input[FileShareArgs]]: ...
     @backup_file_share.setter
-    def backup_file_share(self, value: Optional[pulumi.Input[FileShareArgs]]): ...
+    def backup_file_share(
+        self, value: Optional[pulumi.Input[FileShareArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateSqlServerSqlMISyncTaskInputArgsDict(TypedDict):
     azure_app: pulumi.Input[AzureActiveDirectoryAppArgsDict]
@@ -3348,7 +3721,8 @@ class MigrateSqlServerSqlMISyncTaskInputArgs:
     @pulumi.getter(name="azureApp")
     def azure_app(self) -> pulumi.Input[AzureActiveDirectoryAppArgs]: ...
     @azure_app.setter
-    def azure_app(self, value: pulumi.Input[AzureActiveDirectoryAppArgs]): ...
+    def azure_app(self, value: pulumi.Input[AzureActiveDirectoryAppArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedDatabases")
     def selected_databases(
@@ -3362,27 +3736,38 @@ class MigrateSqlServerSqlMISyncTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateSqlServerSqlMIDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageResourceId")
     def storage_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @storage_resource_id.setter
-    def storage_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[MiSqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[MiSqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[MiSqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupFileShare")
     def backup_file_share(self) -> Optional[pulumi.Input[FileShareArgs]]: ...
     @backup_file_share.setter
-    def backup_file_share(self, value: Optional[pulumi.Input[FileShareArgs]]): ...
+    def backup_file_share(
+        self, value: Optional[pulumi.Input[FileShareArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberOfParallelDatabaseMigrations")
     def number_of_parallel_database_migrations(
@@ -3391,7 +3776,8 @@ class MigrateSqlServerSqlMISyncTaskInputArgs:
     @number_of_parallel_database_migrations.setter
     def number_of_parallel_database_migrations(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateSqlServerSqlMISyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -3415,7 +3801,8 @@ class MigrateSqlServerSqlMISyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -3424,12 +3811,14 @@ class MigrateSqlServerSqlMISyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdOn")
     def created_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_on.setter
-    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -3438,7 +3827,8 @@ class MigrateSqlServerSqlMISyncTaskPropertiesArgs:
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[MigrateSqlServerSqlMISyncTaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MigrateSqlServerSqlMITaskInputArgsDict(TypedDict):
     backup_blob_share: pulumi.Input[BlobShareArgsDict]
@@ -3484,7 +3874,8 @@ class MigrateSqlServerSqlMITaskInputArgs:
     @pulumi.getter(name="backupBlobShare")
     def backup_blob_share(self) -> pulumi.Input[BlobShareArgs]: ...
     @backup_blob_share.setter
-    def backup_blob_share(self, value: pulumi.Input[BlobShareArgs]): ...
+    def backup_blob_share(self, value: pulumi.Input[BlobShareArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedDatabases")
     def selected_databases(
@@ -3498,27 +3889,38 @@ class MigrateSqlServerSqlMITaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateSqlServerSqlMIDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aadDomainName")
     def aad_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aad_domain_name.setter
-    def aad_domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aad_domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupFileShare")
     def backup_file_share(self) -> Optional[pulumi.Input[FileShareArgs]]: ...
     @backup_file_share.setter
-    def backup_file_share(self, value: Optional[pulumi.Input[FileShareArgs]]): ...
+    def backup_file_share(
+        self, value: Optional[pulumi.Input[FileShareArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupMode")
     def backup_mode(
@@ -3527,7 +3929,8 @@ class MigrateSqlServerSqlMITaskInputArgs:
     @backup_mode.setter
     def backup_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptedKeyForSecureFields")
     def encrypted_key_for_secure_fields(
@@ -3536,7 +3939,8 @@ class MigrateSqlServerSqlMITaskInputArgs:
     @encrypted_key_for_secure_fields.setter
     def encrypted_key_for_secure_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedAgentJobs")
     def selected_agent_jobs(
@@ -3545,7 +3949,8 @@ class MigrateSqlServerSqlMITaskInputArgs:
     @selected_agent_jobs.setter
     def selected_agent_jobs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedLogins")
     def selected_logins(
@@ -3554,12 +3959,14 @@ class MigrateSqlServerSqlMITaskInputArgs:
     @selected_logins.setter
     def selected_logins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startedOn")
     def started_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @started_on.setter
-    def started_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def started_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateSqlServerSqlMITaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -3589,7 +3996,8 @@ class MigrateSqlServerSqlMITaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -3598,34 +4006,40 @@ class MigrateSqlServerSqlMITaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdOn")
     def created_on(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_on.setter
-    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_on(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[MigrateSqlServerSqlMITaskInputArgs]]: ...
     @input.setter
     def input(
         self, value: Optional[pulumi.Input[MigrateSqlServerSqlMITaskInputArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCloneable")
     def is_cloneable(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_cloneable.setter
-    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_cloneable(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentTaskId")
     def parent_task_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_task_id.setter
-    def parent_task_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_task_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskId")
     def task_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_id.setter
-    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MigrateSsisTaskInputArgsDict(TypedDict):
     source_connection_info: pulumi.Input[SqlConnectionInfoArgsDict]
@@ -3645,17 +4059,26 @@ class MigrateSsisTaskInputArgs:
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ssisMigrationInfo")
     def ssis_migration_info(self) -> pulumi.Input[SsisMigrationInfoArgs]: ...
     @ssis_migration_info.setter
-    def ssis_migration_info(self, value: pulumi.Input[SsisMigrationInfoArgs]): ...
+    def ssis_migration_info(
+        self, value: pulumi.Input[SsisMigrationInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
 
 class MigrateSsisTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -3677,7 +4100,8 @@ class MigrateSsisTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -3686,12 +4110,16 @@ class MigrateSsisTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[MigrateSsisTaskInputArgs]]: ...
     @input.setter
-    def input(self, value: Optional[pulumi.Input[MigrateSsisTaskInputArgs]]): ...
+    def input(
+        self, value: Optional[pulumi.Input[MigrateSsisTaskInputArgs]]
+    ):  # -> None:
+        ...
 
 class MigrationValidationOptionsArgsDict(TypedDict):
     enable_data_integrity_validation: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3715,7 +4143,8 @@ class MigrationValidationOptionsArgs:
     @enable_data_integrity_validation.setter
     def enable_data_integrity_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableQueryAnalysisValidation")
     def enable_query_analysis_validation(
@@ -3724,14 +4153,16 @@ class MigrationValidationOptionsArgs:
     @enable_query_analysis_validation.setter
     def enable_query_analysis_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableSchemaValidation")
     def enable_schema_validation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_schema_validation.setter
     def enable_schema_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MongoConnectionInformationArgsDict(TypedDict):
     connection_string: NotRequired[pulumi.Input[_builtins.str]]
@@ -3757,32 +4188,40 @@ class MongoConnectionInformationArgs:
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_string.setter
-    def connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_string(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useSsl")
     def use_ssl(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_ssl.setter
-    def use_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MongoDbCollectionSettingsArgsDict(TypedDict):
     can_delete: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3802,17 +4241,22 @@ class MongoDbCollectionSettingsArgs:
     @pulumi.getter(name="canDelete")
     def can_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @can_delete.setter
-    def can_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def can_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shardKey")
     def shard_key(self) -> Optional[pulumi.Input[MongoDbShardKeySettingArgs]]: ...
     @shard_key.setter
-    def shard_key(self, value: Optional[pulumi.Input[MongoDbShardKeySettingArgs]]): ...
+    def shard_key(
+        self, value: Optional[pulumi.Input[MongoDbShardKeySettingArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetRUs")
     def target_rus(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_rus.setter
-    def target_rus(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_rus(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class MongoDbConnectionInfoArgsDict(TypedDict):
     connection_string: pulumi.Input[_builtins.str]
@@ -3856,17 +4300,22 @@ class MongoDbConnectionInfoArgs:
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> pulumi.Input[_builtins.str]: ...
     @connection_string.setter
-    def connection_string(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalSettings")
     def additional_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @additional_settings.setter
-    def additional_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def additional_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -3875,59 +4324,74 @@ class MongoDbConnectionInfoArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthenticationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSource")
     def data_source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_source.setter
-    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptConnection")
     def encrypt_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypt_connection.setter
-    def encrypt_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encrypt_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enforceSSL")
     def enforce_ssl(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enforce_ssl.setter
-    def enforce_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enforce_ssl(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverBrandVersion")
     def server_brand_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_brand_version.setter
-    def server_brand_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_brand_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverVersion")
     def server_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_version.setter
-    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustServerCertificate")
     def trust_server_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @trust_server_certificate.setter
     def trust_server_certificate(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MongoDbDatabaseSettingsArgsDict(TypedDict):
     collections: pulumi.Input[
@@ -3954,12 +4418,14 @@ class MongoDbDatabaseSettingsArgs:
     def collections(
         self,
         value: pulumi.Input[Mapping[str, pulumi.Input[MongoDbCollectionSettingsArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetRUs")
     def target_rus(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @target_rus.setter
-    def target_rus(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def target_rus(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class MongoDbMigrationSettingsArgsDict(TypedDict):
     databases: pulumi.Input[Mapping[str, pulumi.Input[MongoDbDatabaseSettingsArgsDict]]]
@@ -3994,22 +4460,26 @@ class MongoDbMigrationSettingsArgs:
     def databases(
         self,
         value: pulumi.Input[Mapping[str, pulumi.Input[MongoDbDatabaseSettingsArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> pulumi.Input[MongoDbConnectionInfoArgs]: ...
     @source.setter
-    def source(self, value: pulumi.Input[MongoDbConnectionInfoArgs]): ...
+    def source(self, value: pulumi.Input[MongoDbConnectionInfoArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> pulumi.Input[MongoDbConnectionInfoArgs]: ...
     @target.setter
-    def target(self, value: pulumi.Input[MongoDbConnectionInfoArgs]): ...
+    def target(self, value: pulumi.Input[MongoDbConnectionInfoArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="boostRUs")
     def boost_rus(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @boost_rus.setter
-    def boost_rus(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def boost_rus(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def replication(
@@ -4018,14 +4488,16 @@ class MongoDbMigrationSettingsArgs:
     @replication.setter
     def replication(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MongoDbReplication]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def throttling(self) -> Optional[pulumi.Input[MongoDbThrottlingSettingsArgs]]: ...
     @throttling.setter
     def throttling(
         self, value: Optional[pulumi.Input[MongoDbThrottlingSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MongoDbShardKeyFieldArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4043,14 +4515,16 @@ class MongoDbShardKeyFieldArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def order(self) -> pulumi.Input[Union[_builtins.str, MongoDbShardKeyOrder]]: ...
     @order.setter
     def order(
         self, value: pulumi.Input[Union[_builtins.str, MongoDbShardKeyOrder]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MongoDbShardKeySettingArgsDict(TypedDict):
     fields: pulumi.Input[Sequence[pulumi.Input[MongoDbShardKeyFieldArgsDict]]]
@@ -4072,12 +4546,14 @@ class MongoDbShardKeySettingArgs:
     @fields.setter
     def fields(
         self, value: pulumi.Input[Sequence[pulumi.Input[MongoDbShardKeyFieldArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isUnique")
     def is_unique(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_unique.setter
-    def is_unique(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_unique(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class MongoDbThrottlingSettingsArgsDict(TypedDict):
     max_parallelism: NotRequired[pulumi.Input[_builtins.int]]
@@ -4097,17 +4573,22 @@ class MongoDbThrottlingSettingsArgs:
     @pulumi.getter(name="maxParallelism")
     def max_parallelism(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_parallelism.setter
-    def max_parallelism(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_parallelism(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minFreeCpu")
     def min_free_cpu(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_free_cpu.setter
-    def min_free_cpu(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_free_cpu(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minFreeMemoryMb")
     def min_free_memory_mb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_free_memory_mb.setter
-    def min_free_memory_mb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_free_memory_mb(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class MongoMigrationCollectionArgsDict(TypedDict):
     source_collection: NotRequired[pulumi.Input[_builtins.str]]
@@ -4129,22 +4610,30 @@ class MongoMigrationCollectionArgs:
     @pulumi.getter(name="sourceCollection")
     def source_collection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_collection.setter
-    def source_collection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_collection(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDatabase")
     def source_database(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_database.setter
-    def source_database(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_database(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetCollection")
     def target_collection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_collection.setter
-    def target_collection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_collection(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabase")
     def target_database(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_database.setter
-    def target_database(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_database(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MySqlConnectionInfoArgsDict(TypedDict):
     port: pulumi.Input[_builtins.int]
@@ -4178,22 +4667,28 @@ class MySqlConnectionInfoArgs:
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): ...
+    def port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> pulumi.Input[_builtins.str]: ...
     @server_name.setter
-    def server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalSettings")
     def additional_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @additional_settings.setter
-    def additional_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def additional_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -4202,27 +4697,34 @@ class MySqlConnectionInfoArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthenticationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSource")
     def data_source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_source.setter
-    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptConnection")
     def encrypt_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypt_connection.setter
-    def encrypt_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encrypt_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OfflineConfigurationArgsDict(TypedDict):
     last_backup_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -4240,12 +4742,16 @@ class OfflineConfigurationArgs:
     @pulumi.getter(name="lastBackupName")
     def last_backup_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_name.setter
-    def last_backup_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def offline(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @offline.setter
-    def offline(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def offline(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class OracleConnectionInfoArgsDict(TypedDict):
     data_source: pulumi.Input[_builtins.str]
@@ -4277,12 +4783,14 @@ class OracleConnectionInfoArgs:
     @pulumi.getter(name="dataSource")
     def data_source(self) -> pulumi.Input[_builtins.str]: ...
     @data_source.setter
-    def data_source(self, value: pulumi.Input[_builtins.str]): ...
+    def data_source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -4291,32 +4799,38 @@ class OracleConnectionInfoArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthenticationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverVersion")
     def server_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_version.setter
-    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PostgreSqlConnectionInfoArgsDict(TypedDict):
     port: pulumi.Input[_builtins.int]
@@ -4358,22 +4872,28 @@ class PostgreSqlConnectionInfoArgs:
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): ...
+    def port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> pulumi.Input[_builtins.str]: ...
     @server_name.setter
-    def server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalSettings")
     def additional_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @additional_settings.setter
-    def additional_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def additional_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -4382,49 +4902,62 @@ class PostgreSqlConnectionInfoArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthenticationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSource")
     def data_source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_source.setter
-    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptConnection")
     def encrypt_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypt_connection.setter
-    def encrypt_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encrypt_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverBrandVersion")
     def server_brand_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_brand_version.setter
-    def server_brand_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_brand_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverVersion")
     def server_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_version.setter
-    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustServerCertificate")
     def trust_server_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @trust_server_certificate.setter
     def trust_server_certificate(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ProjectFilePropertiesArgsDict(TypedDict):
     extension: NotRequired[pulumi.Input[_builtins.str]]
@@ -4444,17 +4977,20 @@ class ProjectFilePropertiesArgs:
     @pulumi.getter
     def extension(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @extension.setter
-    def extension(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def extension(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filePath")
     def file_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_path.setter
-    def file_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mediaType")
     def media_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @media_type.setter
-    def media_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def media_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SelectedCertificateInputArgsDict(TypedDict):
     certificate_name: pulumi.Input[_builtins.str]
@@ -4472,12 +5008,14 @@ class SelectedCertificateInputArgs:
     @pulumi.getter(name="certificateName")
     def certificate_name(self) -> pulumi.Input[_builtins.str]: ...
     @certificate_name.setter
-    def certificate_name(self, value: pulumi.Input[_builtins.str]): ...
+    def certificate_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> pulumi.Input[_builtins.str]: ...
     @password.setter
-    def password(self, value: pulumi.Input[_builtins.str]): ...
+    def password(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ServiceSkuArgsDict(TypedDict):
     capacity: NotRequired[pulumi.Input[_builtins.int]]
@@ -4501,27 +5039,32 @@ class ServiceSkuArgs:
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @size.setter
-    def size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SourceLocationArgsDict(TypedDict):
     azure_blob: NotRequired[pulumi.Input[AzureBlobArgsDict]]
@@ -4539,12 +5082,14 @@ class SourceLocationArgs:
     @pulumi.getter(name="azureBlob")
     def azure_blob(self) -> Optional[pulumi.Input[AzureBlobArgs]]: ...
     @azure_blob.setter
-    def azure_blob(self, value: Optional[pulumi.Input[AzureBlobArgs]]): ...
+    def azure_blob(self, value: Optional[pulumi.Input[AzureBlobArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileShare")
     def file_share(self) -> Optional[pulumi.Input[SqlFileShareArgs]]: ...
     @file_share.setter
-    def file_share(self, value: Optional[pulumi.Input[SqlFileShareArgs]]): ...
+    def file_share(self, value: Optional[pulumi.Input[SqlFileShareArgs]]):  # -> None:
+        ...
 
 class SqlConnectionInformationArgsDict(TypedDict):
     authentication: NotRequired[pulumi.Input[_builtins.str]]
@@ -4570,34 +5115,42 @@ class SqlConnectionInformationArgs:
     @pulumi.getter
     def authentication(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authentication.setter
-    def authentication(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authentication(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSource")
     def data_source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_source.setter
-    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptConnection")
     def encrypt_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypt_connection.setter
-    def encrypt_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encrypt_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustServerCertificate")
     def trust_server_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @trust_server_certificate.setter
     def trust_server_certificate(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SqlConnectionInfoArgsDict(TypedDict):
     data_source: pulumi.Input[_builtins.str]
@@ -4641,17 +5194,22 @@ class SqlConnectionInfoArgs:
     @pulumi.getter(name="dataSource")
     def data_source(self) -> pulumi.Input[_builtins.str]: ...
     @data_source.setter
-    def data_source(self, value: pulumi.Input[_builtins.str]): ...
+    def data_source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalSettings")
     def additional_settings(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @additional_settings.setter
-    def additional_settings(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def additional_settings(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -4660,17 +5218,22 @@ class SqlConnectionInfoArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AuthenticationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptConnection")
     def encrypt_connection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypt_connection.setter
-    def encrypt_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def encrypt_connection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def platform(
@@ -4679,44 +5242,54 @@ class SqlConnectionInfoArgs:
     @platform.setter
     def platform(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlSourcePlatform]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverBrandVersion")
     def server_brand_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_brand_version.setter
-    def server_brand_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_brand_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverVersion")
     def server_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_version.setter
-    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustServerCertificate")
     def trust_server_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @trust_server_certificate.setter
     def trust_server_certificate(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SqlFileShareArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
@@ -4736,17 +5309,20 @@ class SqlFileShareArgs:
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @username.setter
-    def username(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SsisMigrationInfoArgsDict(TypedDict):
     environment_overwrite_option: NotRequired[
@@ -4783,7 +5359,8 @@ class SsisMigrationInfoArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SsisMigrationOverwriteOption]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectOverwriteOption")
     def project_overwrite_option(
@@ -4795,7 +5372,8 @@ class SsisMigrationInfoArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SsisMigrationOverwriteOption]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ssisStoreType")
     def ssis_store_type(
@@ -4804,7 +5382,8 @@ class SsisMigrationInfoArgs:
     @ssis_store_type.setter
     def ssis_store_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SsisStoreType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TargetLocationArgsDict(TypedDict):
     account_key: NotRequired[pulumi.Input[_builtins.str]]
@@ -4822,14 +5401,16 @@ class TargetLocationArgs:
     @pulumi.getter(name="accountKey")
     def account_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_key.setter
-    def account_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountResourceId")
     def storage_account_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_account_resource_id.setter
     def storage_account_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ValidateMigrationInputSqlServerSqlDbSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -4855,7 +5436,8 @@ class ValidateMigrationInputSqlServerSqlDbSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -4864,7 +5446,8 @@ class ValidateMigrationInputSqlServerSqlDbSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -4874,7 +5457,8 @@ class ValidateMigrationInputSqlServerSqlDbSyncTaskPropertiesArgs:
     def input(
         self,
         value: Optional[pulumi.Input[ValidateSyncMigrationInputSqlServerTaskInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ValidateMigrationInputSqlServerSqlMISyncTaskInputArgsDict(TypedDict):
     azure_app: pulumi.Input[AzureActiveDirectoryAppArgsDict]
@@ -4904,7 +5488,8 @@ class ValidateMigrationInputSqlServerSqlMISyncTaskInputArgs:
     @pulumi.getter(name="azureApp")
     def azure_app(self) -> pulumi.Input[AzureActiveDirectoryAppArgs]: ...
     @azure_app.setter
-    def azure_app(self, value: pulumi.Input[AzureActiveDirectoryAppArgs]): ...
+    def azure_app(self, value: pulumi.Input[AzureActiveDirectoryAppArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedDatabases")
     def selected_databases(
@@ -4918,27 +5503,38 @@ class ValidateMigrationInputSqlServerSqlMISyncTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateSqlServerSqlMIDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageResourceId")
     def storage_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @storage_resource_id.setter
-    def storage_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[MiSqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[MiSqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[MiSqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupFileShare")
     def backup_file_share(self) -> Optional[pulumi.Input[FileShareArgs]]: ...
     @backup_file_share.setter
-    def backup_file_share(self, value: Optional[pulumi.Input[FileShareArgs]]): ...
+    def backup_file_share(
+        self, value: Optional[pulumi.Input[FileShareArgs]]
+    ):  # -> None:
+        ...
 
 class ValidateMigrationInputSqlServerSqlMISyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -4964,7 +5560,8 @@ class ValidateMigrationInputSqlServerSqlMISyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -4973,7 +5570,8 @@ class ValidateMigrationInputSqlServerSqlMISyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -4987,7 +5585,8 @@ class ValidateMigrationInputSqlServerSqlMISyncTaskPropertiesArgs:
         value: Optional[
             pulumi.Input[ValidateMigrationInputSqlServerSqlMISyncTaskInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ValidateMigrationInputSqlServerSqlMITaskInputArgsDict(TypedDict):
     backup_blob_share: pulumi.Input[BlobShareArgsDict]
@@ -5021,7 +5620,8 @@ class ValidateMigrationInputSqlServerSqlMITaskInputArgs:
     @pulumi.getter(name="backupBlobShare")
     def backup_blob_share(self) -> pulumi.Input[BlobShareArgs]: ...
     @backup_blob_share.setter
-    def backup_blob_share(self, value: pulumi.Input[BlobShareArgs]): ...
+    def backup_blob_share(self, value: pulumi.Input[BlobShareArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedDatabases")
     def selected_databases(
@@ -5035,22 +5635,32 @@ class ValidateMigrationInputSqlServerSqlMITaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateSqlServerSqlMIDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupFileShare")
     def backup_file_share(self) -> Optional[pulumi.Input[FileShareArgs]]: ...
     @backup_file_share.setter
-    def backup_file_share(self, value: Optional[pulumi.Input[FileShareArgs]]): ...
+    def backup_file_share(
+        self, value: Optional[pulumi.Input[FileShareArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupMode")
     def backup_mode(
@@ -5059,7 +5669,8 @@ class ValidateMigrationInputSqlServerSqlMITaskInputArgs:
     @backup_mode.setter
     def backup_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackupMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedLogins")
     def selected_logins(
@@ -5068,7 +5679,8 @@ class ValidateMigrationInputSqlServerSqlMITaskInputArgs:
     @selected_logins.setter
     def selected_logins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ValidateMigrationInputSqlServerSqlMITaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -5094,7 +5706,8 @@ class ValidateMigrationInputSqlServerSqlMITaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -5103,7 +5716,8 @@ class ValidateMigrationInputSqlServerSqlMITaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -5115,7 +5729,8 @@ class ValidateMigrationInputSqlServerSqlMITaskPropertiesArgs:
         value: Optional[
             pulumi.Input[ValidateMigrationInputSqlServerSqlMITaskInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ValidateMongoDbTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -5137,7 +5752,8 @@ class ValidateMongoDbTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -5146,12 +5762,16 @@ class ValidateMongoDbTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[MongoDbMigrationSettingsArgs]]: ...
     @input.setter
-    def input(self, value: Optional[pulumi.Input[MongoDbMigrationSettingsArgs]]): ...
+    def input(
+        self, value: Optional[pulumi.Input[MongoDbMigrationSettingsArgs]]
+    ):  # -> None:
+        ...
 
 class ValidateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgsDict(TypedDict):
     task_type: pulumi.Input[_builtins.str]
@@ -5177,7 +5797,8 @@ class ValidateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @pulumi.getter(name="taskType")
     def task_type(self) -> pulumi.Input[_builtins.str]: ...
     @task_type.setter
-    def task_type(self, value: pulumi.Input[_builtins.str]): ...
+    def task_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientData")
     def client_data(
@@ -5186,7 +5807,8 @@ class ValidateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     @client_data.setter
     def client_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -5196,7 +5818,8 @@ class ValidateOracleAzureDbForPostgreSqlSyncTaskPropertiesArgs:
     def input(
         self,
         value: Optional[pulumi.Input[MigrateOracleAzureDbPostgreSqlSyncTaskInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ValidateSyncMigrationInputSqlServerTaskInputArgsDict(TypedDict):
     selected_databases: pulumi.Input[
@@ -5229,14 +5852,21 @@ class ValidateSyncMigrationInputSqlServerTaskInputArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MigrateSqlServerSqlDbSyncDatabaseInputArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @source_connection_info.setter
-    def source_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def source_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(self) -> pulumi.Input[SqlConnectionInfoArgs]: ...
     @target_connection_info.setter
-    def target_connection_info(self, value: pulumi.Input[SqlConnectionInfoArgs]): ...
+    def target_connection_info(
+        self, value: pulumi.Input[SqlConnectionInfoArgs]
+    ):  # -> None:
+        ...

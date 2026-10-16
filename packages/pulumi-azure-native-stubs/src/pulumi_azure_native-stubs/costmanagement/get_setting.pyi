@@ -52,7 +52,8 @@ class GetSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSettingResult(GetSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSettingResult]:
+        ...
 
 def get_setting(
     setting_name: Optional[_builtins.str] = ...,

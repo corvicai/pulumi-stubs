@@ -78,7 +78,8 @@ class GetDedicatedHsmResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetDedicatedHsmResult(GetDedicatedHsmResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDedicatedHsmResult]:
+        ...
 
 def get_dedicated_hsm(
     name: Optional[_builtins.str] = ...,

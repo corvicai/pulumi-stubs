@@ -72,7 +72,8 @@ class GetNetworkPacketBrokerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkPacketBrokerResult(GetNetworkPacketBrokerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkPacketBrokerResult]:
+        ...
 
 def get_network_packet_broker(
     network_packet_broker_name: Optional[_builtins.str] = ...,

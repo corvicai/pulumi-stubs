@@ -43,12 +43,14 @@ class FileShareArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessTier")
     def access_tier(
@@ -57,7 +59,8 @@ class FileShareArgs:
     @access_tier.setter
     def access_tier(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ShareAccessTier]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledProtocols")
     def enabled_protocols(
@@ -66,12 +69,14 @@ class FileShareArgs:
     @enabled_protocols.setter
     def enabled_protocols(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnabledProtocols]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expand(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expand.setter
-    def expand(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expand(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileSharePaidBursting")
     def file_share_paid_bursting(
@@ -81,7 +86,8 @@ class FileShareArgs:
     def file_share_paid_bursting(
         self,
         value: Optional[pulumi.Input[FileSharePropertiesFileSharePaidBurstingArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -90,19 +96,24 @@ class FileShareArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedBandwidthMibps")
     def provisioned_bandwidth_mibps(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @provisioned_bandwidth_mibps.setter
     def provisioned_bandwidth_mibps(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedIops")
     def provisioned_iops(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @provisioned_iops.setter
-    def provisioned_iops(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def provisioned_iops(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootSquash")
     def root_squash(
@@ -111,17 +122,20 @@ class FileShareArgs:
     @root_squash.setter
     def root_squash(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RootSquashType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shareName")
     def share_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @share_name.setter
-    def share_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def share_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shareQuota")
     def share_quota(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @share_quota.setter
-    def share_quota(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def share_quota(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signedIdentifiers")
     def signed_identifiers(
@@ -131,7 +145,8 @@ class FileShareArgs:
     def signed_identifiers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SignedIdentifierArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:storage:FileShare")
 class FileShare(pulumi.CustomResource):

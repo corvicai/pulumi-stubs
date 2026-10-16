@@ -63,7 +63,8 @@ class GetMavenArtifactResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetMavenArtifactResult(GetMavenArtifactResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMavenArtifactResult]:
+        ...
 
 def get_maven_artifact(
     artifact_id: Optional[_builtins.str] = ...,

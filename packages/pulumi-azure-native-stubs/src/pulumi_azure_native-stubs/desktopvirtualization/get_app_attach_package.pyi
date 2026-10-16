@@ -52,7 +52,8 @@ class GetAppAttachPackageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAppAttachPackageResult(GetAppAttachPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppAttachPackageResult]:
+        ...
 
 def get_app_attach_package(
     app_attach_package_name: Optional[_builtins.str] = ...,

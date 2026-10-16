@@ -54,7 +54,10 @@ class GetNetworkServiceDesignGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkServiceDesignGroupResult(GetNetworkServiceDesignGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkServiceDesignGroupResult]:
+        ...
 
 def get_network_service_design_group(
     network_service_design_group_name: Optional[_builtins.str] = ...,

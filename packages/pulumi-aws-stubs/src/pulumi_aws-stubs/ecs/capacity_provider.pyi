@@ -34,12 +34,14 @@ class CapacityProviderArgs:
     def auto_scaling_group_provider(
         self,
         value: Optional[pulumi.Input[CapacityProviderAutoScalingGroupProviderArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedInstancesProvider")
     def managed_instances_provider(
@@ -49,17 +51,20 @@ class CapacityProviderArgs:
     def managed_instances_provider(
         self,
         value: Optional[pulumi.Input[CapacityProviderManagedInstancesProviderArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -68,7 +73,8 @@ class CapacityProviderArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CapacityProviderState:
@@ -94,7 +100,8 @@ class _CapacityProviderState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingGroupProvider")
     def auto_scaling_group_provider(
@@ -104,12 +111,14 @@ class _CapacityProviderState:
     def auto_scaling_group_provider(
         self,
         value: Optional[pulumi.Input[CapacityProviderAutoScalingGroupProviderArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedInstancesProvider")
     def managed_instances_provider(
@@ -119,17 +128,20 @@ class _CapacityProviderState:
     def managed_instances_provider(
         self,
         value: Optional[pulumi.Input[CapacityProviderManagedInstancesProviderArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -138,7 +150,8 @@ class _CapacityProviderState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -147,7 +160,8 @@ class _CapacityProviderState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ecs/capacityProvider:CapacityProvider")
 class CapacityProvider(pulumi.CustomResource):

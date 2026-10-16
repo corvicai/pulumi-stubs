@@ -85,7 +85,8 @@ class GetInputResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInputResult(GetInputResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInputResult]:
+        ...
 
 def get_input(
     id: Optional[_builtins.str] = ...,

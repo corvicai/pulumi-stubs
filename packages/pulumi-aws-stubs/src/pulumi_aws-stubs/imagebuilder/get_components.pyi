@@ -39,7 +39,8 @@ class GetComponentsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetComponentsResult(GetComponentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetComponentsResult]:
+        ...
 
 def get_components(
     filters: Optional[

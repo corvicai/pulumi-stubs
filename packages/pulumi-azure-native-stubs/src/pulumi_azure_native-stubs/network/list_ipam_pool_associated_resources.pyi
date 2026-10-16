@@ -26,7 +26,10 @@ class ListIpamPoolAssociatedResourcesResult:
 class AwaitableListIpamPoolAssociatedResourcesResult(
     ListIpamPoolAssociatedResourcesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIpamPoolAssociatedResourcesResult]:
+        ...
 
 def list_ipam_pool_associated_resources(
     network_manager_name: Optional[_builtins.str] = ...,

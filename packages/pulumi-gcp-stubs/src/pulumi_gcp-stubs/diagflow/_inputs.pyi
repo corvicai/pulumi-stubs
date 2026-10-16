@@ -600,12 +600,14 @@ class ConversationProfileAutomatedAgentConfigArgs:
     @pulumi.getter
     def agent(self) -> pulumi.Input[_builtins.str]: ...
     @agent.setter
-    def agent(self, value: pulumi.Input[_builtins.str]): ...
+    def agent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionTtl")
     def session_ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @session_ttl.setter
-    def session_ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def session_ttl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigArgsDict(TypedDict):
     end_user_suggestion_config: NotRequired[
@@ -672,7 +674,8 @@ class ConversationProfileHumanAgentAssistantConfigArgs:
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanAgentSuggestionConfig")
     def human_agent_suggestion_config(
@@ -690,7 +693,8 @@ class ConversationProfileHumanAgentAssistantConfigArgs:
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageAnalysisConfig")
     def message_analysis_config(
@@ -708,7 +712,8 @@ class ConversationProfileHumanAgentAssistantConfigArgs:
                 ConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfig")
     def notification_config(
@@ -724,7 +729,8 @@ class ConversationProfileHumanAgentAssistantConfigArgs:
                 ConversationProfileHumanAgentAssistantConfigNotificationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigArgsDict(
     TypedDict
@@ -772,7 +778,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigArgs:
     @disable_high_latency_features_sync_delivery.setter
     def disable_high_latency_features_sync_delivery(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureConfigs")
     def feature_configs(
@@ -798,7 +805,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generators(
@@ -807,14 +815,16 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigArgs:
     @generators.setter
     def generators(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupSuggestionResponses")
     def group_suggestion_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @group_suggestion_responses.setter
     def group_suggestion_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigArgsDict(
     TypedDict
@@ -907,7 +917,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigConversationModelConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationProcessConfig")
     def conversation_process_config(
@@ -925,14 +936,16 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigConversationProcessConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableAgentQueryLogging")
     def disable_agent_query_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_agent_query_logging.setter
     def disable_agent_query_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableConversationAugmentedQuery")
     def enable_conversation_augmented_query(
@@ -941,7 +954,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @enable_conversation_augmented_query.setter
     def enable_conversation_augmented_query(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEventBasedSuggestion")
     def enable_event_based_suggestion(
@@ -950,7 +964,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @enable_event_based_suggestion.setter
     def enable_event_based_suggestion(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableQuerySuggestionOnly")
     def enable_query_suggestion_only(
@@ -959,7 +974,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @enable_query_suggestion_only.setter
     def enable_query_suggestion_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableQuerySuggestionWhenNoAnswer")
     def enable_query_suggestion_when_no_answer(
@@ -968,7 +984,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @enable_query_suggestion_when_no_answer.setter
     def enable_query_suggestion_when_no_answer(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryConfig")
     def query_config(
@@ -986,7 +1003,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suggestionFeature")
     def suggestion_feature(
@@ -1004,7 +1022,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigSuggestionFeatureArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suggestionTriggerSettings")
     def suggestion_trigger_settings(
@@ -1022,7 +1041,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigConversationModelConfigArgsDict(
     TypedDict
@@ -1042,12 +1062,16 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter(name="baselineModelVersion")
     def baseline_model_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @baseline_model_version.setter
-    def baseline_model_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def baseline_model_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model.setter
-    def model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigConversationProcessConfigArgsDict(
     TypedDict
@@ -1063,7 +1087,10 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter(name="recentSentencesCount")
     def recent_sentences_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recent_sentences_count.setter
-    def recent_sentences_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recent_sentences_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigArgsDict(
     TypedDict
@@ -1133,7 +1160,10 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter(name="confidenceThreshold")
     def confidence_threshold(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @confidence_threshold.setter
-    def confidence_threshold(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def confidence_threshold(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contextFilterSettings")
     def context_filter_settings(
@@ -1151,7 +1181,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigContextFilterSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dialogflowQuerySource")
     def dialogflow_query_source(
@@ -1169,7 +1200,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentQuerySource")
     def document_query_source(
@@ -1187,7 +1219,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDocumentQuerySourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeBaseQuerySource")
     def knowledge_base_query_source(
@@ -1205,12 +1238,14 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigKnowledgeBaseQuerySourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxResults")
     def max_results(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_results.setter
-    def max_results(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_results(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sections(
@@ -1228,7 +1263,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigSectionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigContextFilterSettingsArgsDict(
     TypedDict
@@ -1250,19 +1286,26 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter(name="dropHandoffMessages")
     def drop_handoff_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_handoff_messages.setter
-    def drop_handoff_messages(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def drop_handoff_messages(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dropIvrMessages")
     def drop_ivr_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_ivr_messages.setter
-    def drop_ivr_messages(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def drop_ivr_messages(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dropVirtualAgentMessages")
     def drop_virtual_agent_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_virtual_agent_messages.setter
     def drop_virtual_agent_messages(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceArgsDict(
     TypedDict
@@ -1290,7 +1333,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter
     def agent(self) -> pulumi.Input[_builtins.str]: ...
     @agent.setter
-    def agent(self, value: pulumi.Input[_builtins.str]): ...
+    def agent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanAgentSideConfig")
     def human_agent_side_config(
@@ -1308,7 +1352,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
                 ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgsDict(
     TypedDict
@@ -1324,7 +1369,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter
     def agent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent.setter
-    def agent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDocumentQuerySourceArgsDict(
     TypedDict
@@ -1340,7 +1386,10 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter
     def documents(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @documents.setter
-    def documents(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def documents(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigKnowledgeBaseQuerySourceArgsDict(
     TypedDict
@@ -1362,7 +1411,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @knowledge_bases.setter
     def knowledge_bases(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigSectionsArgsDict(
     TypedDict
@@ -1386,7 +1436,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @section_types.setter
     def section_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigSuggestionFeatureArgsDict(
     TypedDict
@@ -1402,7 +1453,8 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgsDict(
     TypedDict
@@ -1422,12 +1474,14 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     @pulumi.getter(name="noSmallTalk")
     def no_small_talk(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @no_small_talk.setter
-    def no_small_talk(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def no_small_talk(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlyEndUser")
     def only_end_user(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @only_end_user.setter
-    def only_end_user(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def only_end_user(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigArgsDict(
     TypedDict
@@ -1475,7 +1529,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigArgs
     @disable_high_latency_features_sync_delivery.setter
     def disable_high_latency_features_sync_delivery(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureConfigs")
     def feature_configs(
@@ -1501,7 +1556,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigArgs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def generators(
@@ -1510,14 +1566,16 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigArgs
     @generators.setter
     def generators(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupSuggestionResponses")
     def group_suggestion_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @group_suggestion_responses.setter
     def group_suggestion_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigArgsDict(
     TypedDict
@@ -1610,7 +1668,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigConversationModelConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationProcessConfig")
     def conversation_process_config(
@@ -1628,14 +1687,16 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigConversationProcessConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableAgentQueryLogging")
     def disable_agent_query_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_agent_query_logging.setter
     def disable_agent_query_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableConversationAugmentedQuery")
     def enable_conversation_augmented_query(
@@ -1644,7 +1705,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @enable_conversation_augmented_query.setter
     def enable_conversation_augmented_query(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEventBasedSuggestion")
     def enable_event_based_suggestion(
@@ -1653,7 +1715,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @enable_event_based_suggestion.setter
     def enable_event_based_suggestion(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableQuerySuggestionOnly")
     def enable_query_suggestion_only(
@@ -1662,7 +1725,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @enable_query_suggestion_only.setter
     def enable_query_suggestion_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableQuerySuggestionWhenNoAnswer")
     def enable_query_suggestion_when_no_answer(
@@ -1671,7 +1735,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @enable_query_suggestion_when_no_answer.setter
     def enable_query_suggestion_when_no_answer(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryConfig")
     def query_config(
@@ -1689,7 +1754,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suggestionFeature")
     def suggestion_feature(
@@ -1707,7 +1773,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigSuggestionFeatureArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suggestionTriggerSettings")
     def suggestion_trigger_settings(
@@ -1725,7 +1792,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigConversationModelConfigArgsDict(
     TypedDict
@@ -1745,12 +1813,16 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter(name="baselineModelVersion")
     def baseline_model_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @baseline_model_version.setter
-    def baseline_model_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def baseline_model_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model.setter
-    def model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigConversationProcessConfigArgsDict(
     TypedDict
@@ -1766,7 +1838,10 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter(name="recentSentencesCount")
     def recent_sentences_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @recent_sentences_count.setter
-    def recent_sentences_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def recent_sentences_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigArgsDict(
     TypedDict
@@ -1816,7 +1891,10 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter(name="confidenceThreshold")
     def confidence_threshold(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @confidence_threshold.setter
-    def confidence_threshold(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def confidence_threshold(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contextFilterSettings")
     def context_filter_settings(
@@ -1834,7 +1912,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigContextFilterSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dialogflowQuerySource")
     def dialogflow_query_source(
@@ -1852,12 +1931,14 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxResults")
     def max_results(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_results.setter
-    def max_results(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_results(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sections(
@@ -1875,7 +1956,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigSectionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigContextFilterSettingsArgsDict(
     TypedDict
@@ -1897,19 +1979,26 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter(name="dropHandoffMessages")
     def drop_handoff_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_handoff_messages.setter
-    def drop_handoff_messages(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def drop_handoff_messages(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dropIvrMessages")
     def drop_ivr_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_ivr_messages.setter
-    def drop_ivr_messages(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def drop_ivr_messages(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dropVirtualAgentMessages")
     def drop_virtual_agent_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_virtual_agent_messages.setter
     def drop_virtual_agent_messages(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceArgsDict(
     TypedDict
@@ -1937,7 +2026,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter
     def agent(self) -> pulumi.Input[_builtins.str]: ...
     @agent.setter
-    def agent(self, value: pulumi.Input[_builtins.str]): ...
+    def agent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanAgentSideConfig")
     def human_agent_side_config(
@@ -1955,7 +2045,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
                 ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgsDict(
     TypedDict
@@ -1971,7 +2062,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter
     def agent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent.setter
-    def agent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigSectionsArgsDict(
     TypedDict
@@ -1995,7 +2087,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @section_types.setter
     def section_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigSuggestionFeatureArgsDict(
     TypedDict
@@ -2011,7 +2104,8 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgsDict(
     TypedDict
@@ -2031,12 +2125,14 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     @pulumi.getter(name="noSmallTalk")
     def no_small_talk(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @no_small_talk.setter
-    def no_small_talk(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def no_small_talk(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onlyEndUser")
     def only_end_user(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @only_end_user.setter
-    def only_end_user(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def only_end_user(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigArgsDict(
     TypedDict
@@ -2058,14 +2154,16 @@ class ConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigArgs:
     @enable_entity_extraction.setter
     def enable_entity_extraction(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableSentimentAnalysis")
     def enable_sentiment_analysis(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_sentiment_analysis.setter
     def enable_sentiment_analysis(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentAssistantConfigNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
@@ -2083,12 +2181,14 @@ class ConversationProfileHumanAgentAssistantConfigNotificationConfigArgs:
     @pulumi.getter(name="messageFormat")
     def message_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_format.setter
-    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @topic.setter
-    def topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def topic(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentHandoffConfigArgsDict(TypedDict):
     live_person_config: NotRequired[
@@ -2117,7 +2217,8 @@ class ConversationProfileHumanAgentHandoffConfigArgs:
         value: Optional[
             pulumi.Input[ConversationProfileHumanAgentHandoffConfigLivePersonConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileHumanAgentHandoffConfigLivePersonConfigArgsDict(TypedDict):
     account_number: pulumi.Input[_builtins.str]
@@ -2129,7 +2230,8 @@ class ConversationProfileHumanAgentHandoffConfigLivePersonConfigArgs:
     @pulumi.getter(name="accountNumber")
     def account_number(self) -> pulumi.Input[_builtins.str]: ...
     @account_number.setter
-    def account_number(self, value: pulumi.Input[_builtins.str]): ...
+    def account_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConversationProfileLoggingConfigArgsDict(TypedDict):
     enable_stackdriver_logging: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2147,7 +2249,8 @@ class ConversationProfileLoggingConfigArgs:
     @enable_stackdriver_logging.setter
     def enable_stackdriver_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileNewMessageEventNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
@@ -2165,12 +2268,14 @@ class ConversationProfileNewMessageEventNotificationConfigArgs:
     @pulumi.getter(name="messageFormat")
     def message_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_format.setter
-    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @topic.setter
-    def topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def topic(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileNewRecognitionResultNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
@@ -2188,12 +2293,14 @@ class ConversationProfileNewRecognitionResultNotificationConfigArgs:
     @pulumi.getter(name="messageFormat")
     def message_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_format.setter
-    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @topic.setter
-    def topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def topic(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
@@ -2211,12 +2318,14 @@ class ConversationProfileNotificationConfigArgs:
     @pulumi.getter(name="messageFormat")
     def message_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_format.setter
-    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @topic.setter
-    def topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def topic(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConversationProfileSttConfigArgsDict(TypedDict):
     audio_encoding: NotRequired[pulumi.Input[_builtins.str]]
@@ -2244,32 +2353,44 @@ class ConversationProfileSttConfigArgs:
     @pulumi.getter(name="audioEncoding")
     def audio_encoding(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audio_encoding.setter
-    def audio_encoding(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audio_encoding(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableWordInfo")
     def enable_word_info(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_word_info.setter
-    def enable_word_info(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_word_info(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model.setter
-    def model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleRateHertz")
     def sample_rate_hertz(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @sample_rate_hertz.setter
-    def sample_rate_hertz(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def sample_rate_hertz(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speechModelVariant")
     def speech_model_variant(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @speech_model_variant.setter
-    def speech_model_variant(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def speech_model_variant(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useTimeoutBasedEndpointing")
     def use_timeout_based_endpointing(
@@ -2278,7 +2399,8 @@ class ConversationProfileSttConfigArgs:
     @use_timeout_based_endpointing.setter
     def use_timeout_based_endpointing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConversationProfileTtsConfigArgsDict(TypedDict):
     effects_profile_ids: NotRequired[
@@ -2310,17 +2432,20 @@ class ConversationProfileTtsConfigArgs:
     @effects_profile_ids.setter
     def effects_profile_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pitch(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @pitch.setter
-    def pitch(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def pitch(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speakingRate")
     def speaking_rate(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @speaking_rate.setter
-    def speaking_rate(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def speaking_rate(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def voice(
@@ -2329,12 +2454,16 @@ class ConversationProfileTtsConfigArgs:
     @voice.setter
     def voice(
         self, value: Optional[pulumi.Input[ConversationProfileTtsConfigVoiceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeGainDb")
     def volume_gain_db(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @volume_gain_db.setter
-    def volume_gain_db(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def volume_gain_db(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
 
 class ConversationProfileTtsConfigVoiceArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2352,12 +2481,14 @@ class ConversationProfileTtsConfigVoiceArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ssmlGender")
     def ssml_gender(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml_gender.setter
-    def ssml_gender(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml_gender(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxAgentAdvancedSettingsArgsDict(TypedDict):
     audio_export_gcs_destination: NotRequired[
@@ -2404,7 +2535,8 @@ class CxAgentAdvancedSettingsArgs:
         value: Optional[
             pulumi.Input[CxAgentAdvancedSettingsAudioExportGcsDestinationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dtmfSettings")
     def dtmf_settings(
@@ -2413,7 +2545,8 @@ class CxAgentAdvancedSettingsArgs:
     @dtmf_settings.setter
     def dtmf_settings(
         self, value: Optional[pulumi.Input[CxAgentAdvancedSettingsDtmfSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingSettings")
     def logging_settings(
@@ -2422,7 +2555,8 @@ class CxAgentAdvancedSettingsArgs:
     @logging_settings.setter
     def logging_settings(
         self, value: Optional[pulumi.Input[CxAgentAdvancedSettingsLoggingSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speechSettings")
     def speech_settings(
@@ -2431,7 +2565,8 @@ class CxAgentAdvancedSettingsArgs:
     @speech_settings.setter
     def speech_settings(
         self, value: Optional[pulumi.Input[CxAgentAdvancedSettingsSpeechSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxAgentAdvancedSettingsAudioExportGcsDestinationArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -2445,7 +2580,8 @@ class CxAgentAdvancedSettingsAudioExportGcsDestinationArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxAgentAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2465,17 +2601,20 @@ class CxAgentAdvancedSettingsDtmfSettingsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDigits")
     def max_digits(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_digits.setter
-    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CxAgentAdvancedSettingsLoggingSettingsArgsDict(TypedDict):
     enable_consent_based_redaction: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2499,21 +2638,24 @@ class CxAgentAdvancedSettingsLoggingSettingsArgs:
     @enable_consent_based_redaction.setter
     def enable_consent_based_redaction(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableInteractionLogging")
     def enable_interaction_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_interaction_logging.setter
     def enable_interaction_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableStackdriverLogging")
     def enable_stackdriver_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_stackdriver_logging.setter
     def enable_stackdriver_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxAgentAdvancedSettingsSpeechSettingsArgsDict(TypedDict):
     endpointer_sensitivity: NotRequired[pulumi.Input[_builtins.int]]
@@ -2535,7 +2677,10 @@ class CxAgentAdvancedSettingsSpeechSettingsArgs:
     @pulumi.getter(name="endpointerSensitivity")
     def endpointer_sensitivity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @endpointer_sensitivity.setter
-    def endpointer_sensitivity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def endpointer_sensitivity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def models(
@@ -2544,12 +2689,16 @@ class CxAgentAdvancedSettingsSpeechSettingsArgs:
     @models.setter
     def models(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noSpeechTimeout")
     def no_speech_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @no_speech_timeout.setter
-    def no_speech_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def no_speech_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useTimeoutBasedEndpointing")
     def use_timeout_based_endpointing(
@@ -2558,7 +2707,8 @@ class CxAgentAdvancedSettingsSpeechSettingsArgs:
     @use_timeout_based_endpointing.setter
     def use_timeout_based_endpointing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxAgentAnswerFeedbackSettingsArgsDict(TypedDict):
     enable_answer_feedback: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2574,7 +2724,10 @@ class CxAgentAnswerFeedbackSettingsArgs:
     @pulumi.getter(name="enableAnswerFeedback")
     def enable_answer_feedback(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_answer_feedback.setter
-    def enable_answer_feedback(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_answer_feedback(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CxAgentClientCertificateSettingsArgsDict(TypedDict):
     private_key: pulumi.Input[_builtins.str]
@@ -2594,17 +2747,20 @@ class CxAgentClientCertificateSettingsArgs:
     @pulumi.getter(name="privateKey")
     def private_key(self) -> pulumi.Input[_builtins.str]: ...
     @private_key.setter
-    def private_key(self, value: pulumi.Input[_builtins.str]): ...
+    def private_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslCertificate")
     def ssl_certificate(self) -> pulumi.Input[_builtins.str]: ...
     @ssl_certificate.setter
-    def ssl_certificate(self, value: pulumi.Input[_builtins.str]): ...
+    def ssl_certificate(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def passphrase(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @passphrase.setter
-    def passphrase(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def passphrase(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxAgentGenAppBuilderSettingsArgsDict(TypedDict):
     engine: pulumi.Input[_builtins.str]
@@ -2616,7 +2772,8 @@ class CxAgentGenAppBuilderSettingsArgs:
     @pulumi.getter
     def engine(self) -> pulumi.Input[_builtins.str]: ...
     @engine.setter
-    def engine(self, value: pulumi.Input[_builtins.str]): ...
+    def engine(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxAgentGitIntegrationSettingsArgsDict(TypedDict):
     github_settings: NotRequired[
@@ -2641,7 +2798,8 @@ class CxAgentGitIntegrationSettingsArgs:
     def github_settings(
         self,
         value: Optional[pulumi.Input[CxAgentGitIntegrationSettingsGithubSettingsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxAgentGitIntegrationSettingsGithubSettingsArgsDict(TypedDict):
     access_token: NotRequired[pulumi.Input[_builtins.str]]
@@ -2665,7 +2823,8 @@ class CxAgentGitIntegrationSettingsGithubSettingsArgs:
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def branches(
@@ -2674,22 +2833,26 @@ class CxAgentGitIntegrationSettingsGithubSettingsArgs:
     @branches.setter
     def branches(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repositoryUri")
     def repository_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @repository_uri.setter
-    def repository_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def repository_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trackingBranch")
     def tracking_branch(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tracking_branch.setter
-    def tracking_branch(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tracking_branch(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxAgentPersonalizationSettingsArgsDict(TypedDict):
     default_end_user_metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -2707,7 +2870,8 @@ class CxAgentPersonalizationSettingsArgs:
     @default_end_user_metadata.setter
     def default_end_user_metadata(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxAgentSpeechToTextSettingsArgsDict(TypedDict):
     enable_speech_adaptation: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2725,7 +2889,8 @@ class CxAgentSpeechToTextSettingsArgs:
     @enable_speech_adaptation.setter
     def enable_speech_adaptation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxAgentTextToSpeechSettingsArgsDict(TypedDict):
     synthesize_speech_configs: NotRequired[pulumi.Input[_builtins.str]]
@@ -2743,7 +2908,8 @@ class CxAgentTextToSpeechSettingsArgs:
     @synthesize_speech_configs.setter
     def synthesize_speech_configs(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxEntityTypeEntityArgsDict(TypedDict):
     synonyms: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2765,12 +2931,14 @@ class CxEntityTypeEntityArgs:
     @synonyms.setter
     def synonyms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxEntityTypeExcludedPhraseArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[_builtins.str]]
@@ -2784,7 +2952,8 @@ class CxEntityTypeExcludedPhraseArgs:
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxEnvironmentVersionConfigArgsDict(TypedDict):
     version: pulumi.Input[_builtins.str]
@@ -2796,7 +2965,8 @@ class CxEnvironmentVersionConfigArgs:
     @pulumi.getter
     def version(self) -> pulumi.Input[_builtins.str]: ...
     @version.setter
-    def version(self, value: pulumi.Input[_builtins.str]): ...
+    def version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxFlowAdvancedSettingsArgsDict(TypedDict):
     audio_export_gcs_destination: NotRequired[
@@ -2841,7 +3011,8 @@ class CxFlowAdvancedSettingsArgs:
         value: Optional[
             pulumi.Input[CxFlowAdvancedSettingsAudioExportGcsDestinationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dtmfSettings")
     def dtmf_settings(
@@ -2850,7 +3021,8 @@ class CxFlowAdvancedSettingsArgs:
     @dtmf_settings.setter
     def dtmf_settings(
         self, value: Optional[pulumi.Input[CxFlowAdvancedSettingsDtmfSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingSettings")
     def logging_settings(
@@ -2859,7 +3031,8 @@ class CxFlowAdvancedSettingsArgs:
     @logging_settings.setter
     def logging_settings(
         self, value: Optional[pulumi.Input[CxFlowAdvancedSettingsLoggingSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speechSettings")
     def speech_settings(
@@ -2868,7 +3041,8 @@ class CxFlowAdvancedSettingsArgs:
     @speech_settings.setter
     def speech_settings(
         self, value: Optional[pulumi.Input[CxFlowAdvancedSettingsSpeechSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowAdvancedSettingsAudioExportGcsDestinationArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -2882,7 +3056,8 @@ class CxFlowAdvancedSettingsAudioExportGcsDestinationArgs:
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2902,17 +3077,20 @@ class CxFlowAdvancedSettingsDtmfSettingsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDigits")
     def max_digits(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_digits.setter
-    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CxFlowAdvancedSettingsLoggingSettingsArgsDict(TypedDict):
     enable_consent_based_redaction: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2936,21 +3114,24 @@ class CxFlowAdvancedSettingsLoggingSettingsArgs:
     @enable_consent_based_redaction.setter
     def enable_consent_based_redaction(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableInteractionLogging")
     def enable_interaction_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_interaction_logging.setter
     def enable_interaction_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableStackdriverLogging")
     def enable_stackdriver_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_stackdriver_logging.setter
     def enable_stackdriver_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowAdvancedSettingsSpeechSettingsArgsDict(TypedDict):
     endpointer_sensitivity: NotRequired[pulumi.Input[_builtins.int]]
@@ -2972,7 +3153,10 @@ class CxFlowAdvancedSettingsSpeechSettingsArgs:
     @pulumi.getter(name="endpointerSensitivity")
     def endpointer_sensitivity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @endpointer_sensitivity.setter
-    def endpointer_sensitivity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def endpointer_sensitivity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def models(
@@ -2981,12 +3165,16 @@ class CxFlowAdvancedSettingsSpeechSettingsArgs:
     @models.setter
     def models(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noSpeechTimeout")
     def no_speech_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @no_speech_timeout.setter
-    def no_speech_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def no_speech_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useTimeoutBasedEndpointing")
     def use_timeout_based_endpointing(
@@ -2995,7 +3183,8 @@ class CxFlowAdvancedSettingsSpeechSettingsArgs:
     @use_timeout_based_endpointing.setter
     def use_timeout_based_endpointing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowEventHandlerArgsDict(TypedDict):
     event: NotRequired[pulumi.Input[_builtins.str]]
@@ -3023,22 +3212,26 @@ class CxFlowEventHandlerArgs:
     @pulumi.getter
     def event(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event.setter
-    def event(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFlow")
     def target_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_flow.setter
-    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPage")
     def target_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_page.setter
-    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerFulfillment")
     def trigger_fulfillment(
@@ -3047,7 +3240,8 @@ class CxFlowEventHandlerArgs:
     @trigger_fulfillment.setter
     def trigger_fulfillment(
         self, value: Optional[pulumi.Input[CxFlowEventHandlerTriggerFulfillmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentArgsDict(TypedDict):
     conditional_cases: NotRequired[
@@ -3134,14 +3328,16 @@ class CxFlowEventHandlerTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableGenerativeFallback")
     def enable_generative_fallback(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_generative_fallback.setter
     def enable_generative_fallback(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -3159,14 +3355,16 @@ class CxFlowEventHandlerTriggerFulfillmentArgs:
                 Sequence[pulumi.Input[CxFlowEventHandlerTriggerFulfillmentMessageArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -3190,17 +3388,20 @@ class CxFlowEventHandlerTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
@@ -3214,7 +3415,8 @@ class CxFlowEventHandlerTriggerFulfillmentConditionalCaseArgs:
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -3280,7 +3482,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -3296,7 +3499,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
                 CxFlowEventHandlerTriggerFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -3312,7 +3516,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
                 CxFlowEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -3326,12 +3531,14 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxFlowEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -3345,7 +3552,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxFlowEventHandlerTriggerFulfillmentMessagePlayAudioArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -3363,7 +3571,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
                 CxFlowEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -3377,7 +3586,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxFlowEventHandlerTriggerFulfillmentMessageTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentMessageConversationSuccessArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -3391,7 +3601,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageConversationSuccessArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -3405,7 +3616,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentMessageOutputAudioTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3427,17 +3639,20 @@ class CxFlowEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
@@ -3455,14 +3670,16 @@ class CxFlowEventHandlerTriggerFulfillmentMessagePlayAudioArgs:
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -3476,7 +3693,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs:
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3496,7 +3714,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -3505,7 +3724,8 @@ class CxFlowEventHandlerTriggerFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowEventHandlerTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
@@ -3523,12 +3743,14 @@ class CxFlowEventHandlerTriggerFulfillmentSetParameterActionArgs:
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsArgsDict(TypedDict):
     data_store_connections: NotRequired[
@@ -3591,22 +3813,26 @@ class CxFlowKnowledgeConnectorSettingsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFlow")
     def target_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_flow.setter
-    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPage")
     def target_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_page.setter
-    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerFulfillment")
     def trigger_fulfillment(
@@ -3620,7 +3846,8 @@ class CxFlowKnowledgeConnectorSettingsArgs:
         value: Optional[
             pulumi.Input[CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
@@ -3640,19 +3867,22 @@ class CxFlowKnowledgeConnectorSettingsDataStoreConnectionArgs:
     @pulumi.getter(name="dataStore")
     def data_store(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store.setter
-    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataStoreType")
     def data_store_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store_type.setter
-    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentProcessingMode")
     def document_processing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @document_processing_mode.setter
     def document_processing_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgsDict(TypedDict):
     advanced_settings: NotRequired[
@@ -3751,7 +3981,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionalCases")
     def conditional_cases(
@@ -3777,14 +4008,16 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableGenerativeFallback")
     def enable_generative_fallback(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_generative_fallback.setter
     def enable_generative_fallback(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -3810,14 +4043,16 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -3843,17 +4078,20 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgsDict(
     TypedDict
@@ -3912,7 +4150,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingSettings")
     def logging_settings(
@@ -3930,7 +4169,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speechSettings")
     def speech_settings(
@@ -3948,7 +4188,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsArgsDict(
     TypedDict
@@ -3974,31 +4215,36 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSett
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointingTimeoutDuration")
     def endpointing_timeout_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpointing_timeout_duration.setter
     def endpointing_timeout_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interdigitTimeoutDuration")
     def interdigit_timeout_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interdigit_timeout_duration.setter
     def interdigit_timeout_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDigits")
     def max_digits(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_digits.setter
-    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsArgsDict(
     TypedDict
@@ -4024,21 +4270,24 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingS
     @enable_consent_based_redaction.setter
     def enable_consent_based_redaction(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableInteractionLogging")
     def enable_interaction_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_interaction_logging.setter
     def enable_interaction_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableStackdriverLogging")
     def enable_stackdriver_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_stackdriver_logging.setter
     def enable_stackdriver_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgsDict(
     TypedDict
@@ -4062,7 +4311,10 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     @pulumi.getter(name="endpointerSensitivity")
     def endpointer_sensitivity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @endpointer_sensitivity.setter
-    def endpointer_sensitivity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def endpointer_sensitivity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def models(
@@ -4071,12 +4323,16 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     @models.setter
     def models(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noSpeechTimeout")
     def no_speech_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @no_speech_timeout.setter
-    def no_speech_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def no_speech_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useTimeoutBasedEndpointing")
     def use_timeout_based_endpointing(
@@ -4085,7 +4341,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     @use_timeout_based_endpointing.setter
     def use_timeout_based_endpointing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgsDict(
     TypedDict
@@ -4101,7 +4358,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgs:
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -4225,7 +4483,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -4243,7 +4502,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endInteractions")
     def end_interactions(
@@ -4269,7 +4529,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeInfoCard")
     def knowledge_info_card(
@@ -4287,7 +4548,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageKnowledgeInfoCardArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -4305,7 +4567,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mixedAudios")
     def mixed_audios(
@@ -4331,7 +4594,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -4349,12 +4613,14 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -4372,7 +4638,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -4390,7 +4657,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -4406,7 +4674,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
@@ -4422,7 +4691,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSucce
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageEndInteractionArgsDict(
     TypedDict
@@ -4454,7 +4724,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffA
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgsDict(
     TypedDict
@@ -4509,7 +4780,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegmentArgsDict(
     TypedDict
@@ -4533,17 +4805,20 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegment
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def audio(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audio.setter
-    def audio(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audio(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextArgsDict(
     TypedDict
@@ -4567,17 +4842,20 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextAr
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgsDict(
     TypedDict
@@ -4597,14 +4875,16 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgs:
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -4618,7 +4898,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransfer
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -4638,7 +4919,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -4647,7 +4929,8 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgsDict(
     TypedDict
@@ -4667,12 +4950,14 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgs:
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowNluSettingsArgsDict(TypedDict):
     classification_threshold: NotRequired[pulumi.Input[_builtins.float]]
@@ -4694,17 +4979,22 @@ class CxFlowNluSettingsArgs:
     @classification_threshold.setter
     def classification_threshold(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelTrainingMode")
     def model_training_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model_training_mode.setter
-    def model_training_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model_training_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelType")
     def model_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model_type.setter
-    def model_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowTransitionRouteArgsDict(TypedDict):
     condition: NotRequired[pulumi.Input[_builtins.str]]
@@ -4734,27 +5024,32 @@ class CxFlowTransitionRouteArgs:
     @pulumi.getter
     def condition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def condition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def intent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @intent.setter
-    def intent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def intent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFlow")
     def target_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_flow.setter
-    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPage")
     def target_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_page.setter
-    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerFulfillment")
     def trigger_fulfillment(
@@ -4763,7 +5058,8 @@ class CxFlowTransitionRouteArgs:
     @trigger_fulfillment.setter
     def trigger_fulfillment(
         self, value: Optional[pulumi.Input[CxFlowTransitionRouteTriggerFulfillmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentArgsDict(TypedDict):
     conditional_cases: NotRequired[
@@ -4852,7 +5148,8 @@ class CxFlowTransitionRouteTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -4872,14 +5169,16 @@ class CxFlowTransitionRouteTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -4905,17 +5204,20 @@ class CxFlowTransitionRouteTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
@@ -4929,7 +5231,8 @@ class CxFlowTransitionRouteTriggerFulfillmentConditionalCaseArgs:
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -4999,7 +5302,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -5017,7 +5321,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
                 CxFlowTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -5033,7 +5338,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
                 CxFlowTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -5049,12 +5355,14 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
                 CxFlowTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -5068,7 +5376,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxFlowTransitionRouteTriggerFulfillmentMessagePlayAudioArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -5086,7 +5395,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
                 CxFlowTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -5100,7 +5410,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxFlowTransitionRouteTriggerFulfillmentMessageTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
@@ -5116,7 +5427,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -5130,7 +5442,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5152,17 +5465,20 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
@@ -5180,14 +5496,16 @@ class CxFlowTransitionRouteTriggerFulfillmentMessagePlayAudioArgs:
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -5201,7 +5519,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs:
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5221,7 +5540,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -5230,7 +5550,8 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxFlowTransitionRouteTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
@@ -5248,12 +5569,14 @@ class CxFlowTransitionRouteTriggerFulfillmentSetParameterActionArgs:
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxGenerativeSettingsFallbackSettingsArgsDict(TypedDict):
     prompt_templates: NotRequired[
@@ -5300,12 +5623,14 @@ class CxGenerativeSettingsFallbackSettingsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedPrompt")
     def selected_prompt(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selected_prompt.setter
-    def selected_prompt(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selected_prompt(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxGenerativeSettingsFallbackSettingsPromptTemplateArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -5325,17 +5650,20 @@ class CxGenerativeSettingsFallbackSettingsPromptTemplateArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def frozen(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @frozen.setter
-    def frozen(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def frozen(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptText")
     def prompt_text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prompt_text.setter
-    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxGenerativeSettingsGenerativeSafetySettingsArgsDict(TypedDict):
     banned_phrases: NotRequired[
@@ -5392,7 +5720,8 @@ class CxGenerativeSettingsGenerativeSafetySettingsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultBannedPhraseMatchStrategy")
     def default_banned_phrase_match_strategy(
@@ -5401,7 +5730,8 @@ class CxGenerativeSettingsGenerativeSafetySettingsArgs:
     @default_banned_phrase_match_strategy.setter
     def default_banned_phrase_match_strategy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxGenerativeSettingsGenerativeSafetySettingsBannedPhraseArgsDict(TypedDict):
     language_code: pulumi.Input[_builtins.str]
@@ -5419,12 +5749,14 @@ class CxGenerativeSettingsGenerativeSafetySettingsBannedPhraseArgs:
     @pulumi.getter(name="languageCode")
     def language_code(self) -> pulumi.Input[_builtins.str]: ...
     @language_code.setter
-    def language_code(self, value: pulumi.Input[_builtins.str]): ...
+    def language_code(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxGenerativeSettingsKnowledgeConnectorSettingsArgsDict(TypedDict):
     agent: NotRequired[pulumi.Input[_builtins.str]]
@@ -5450,34 +5782,42 @@ class CxGenerativeSettingsKnowledgeConnectorSettingsArgs:
     @pulumi.getter
     def agent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent.setter
-    def agent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentIdentity")
     def agent_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_identity.setter
-    def agent_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_identity(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentScope")
     def agent_scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_scope.setter
-    def agent_scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def business(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @business.setter
-    def business(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def business(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="businessDescription")
     def business_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @business_description.setter
-    def business_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def business_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableDataStoreFallback")
     def disable_data_store_fallback(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_data_store_fallback.setter
     def disable_data_store_fallback(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxGenerativeSettingsLlmModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
@@ -5495,12 +5835,14 @@ class CxGenerativeSettingsLlmModelSettingsArgs:
     @pulumi.getter
     def model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model.setter
-    def model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptText")
     def prompt_text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prompt_text.setter
-    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxGeneratorLlmModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
@@ -5518,12 +5860,14 @@ class CxGeneratorLlmModelSettingsArgs:
     @pulumi.getter
     def model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model.setter
-    def model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptText")
     def prompt_text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prompt_text.setter
-    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxGeneratorModelParameterArgsDict(TypedDict):
     max_decode_steps: NotRequired[pulumi.Input[_builtins.int]]
@@ -5545,22 +5889,28 @@ class CxGeneratorModelParameterArgs:
     @pulumi.getter(name="maxDecodeSteps")
     def max_decode_steps(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_decode_steps.setter
-    def max_decode_steps(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_decode_steps(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def temperature(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @temperature.setter
-    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topK")
     def top_k(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @top_k.setter
-    def top_k(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def top_k(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topP")
     def top_p(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @top_p.setter
-    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class CxGeneratorPlaceholderArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -5578,12 +5928,14 @@ class CxGeneratorPlaceholderArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxGeneratorPromptTextArgsDict(TypedDict):
     text: NotRequired[pulumi.Input[_builtins.str]]
@@ -5597,7 +5949,8 @@ class CxGeneratorPromptTextArgs:
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxIntentParameterArgsDict(TypedDict):
     entity_type: pulumi.Input[_builtins.str]
@@ -5619,22 +5972,26 @@ class CxIntentParameterArgs:
     @pulumi.getter(name="entityType")
     def entity_type(self) -> pulumi.Input[_builtins.str]: ...
     @entity_type.setter
-    def entity_type(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isList")
     def is_list(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_list.setter
-    def is_list(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_list(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def redact(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @redact.setter
-    def redact(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def redact(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class CxIntentTrainingPhraseArgsDict(TypedDict):
     parts: pulumi.Input[Sequence[pulumi.Input[CxIntentTrainingPhrasePartArgsDict]]]
@@ -5659,17 +6016,20 @@ class CxIntentTrainingPhraseArgs:
     def parts(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[CxIntentTrainingPhrasePartArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repeatCount")
     def repeat_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @repeat_count.setter
-    def repeat_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def repeat_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CxIntentTrainingPhrasePartArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
@@ -5687,12 +6047,14 @@ class CxIntentTrainingPhrasePartArgs:
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterId")
     def parameter_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter_id.setter
-    def parameter_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageAdvancedSettingsArgsDict(TypedDict):
     dtmf_settings: NotRequired[pulumi.Input[CxPageAdvancedSettingsDtmfSettingsArgsDict]]
@@ -5714,7 +6076,8 @@ class CxPageAdvancedSettingsArgs:
     @dtmf_settings.setter
     def dtmf_settings(
         self, value: Optional[pulumi.Input[CxPageAdvancedSettingsDtmfSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5734,17 +6097,20 @@ class CxPageAdvancedSettingsDtmfSettingsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDigits")
     def max_digits(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_digits.setter
-    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentArgsDict(TypedDict):
     conditional_cases: NotRequired[
@@ -5801,7 +6167,8 @@ class CxPageEntryFulfillmentArgs:
                 Sequence[pulumi.Input[CxPageEntryFulfillmentConditionalCaseArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -5815,14 +6182,16 @@ class CxPageEntryFulfillmentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxPageEntryFulfillmentMessageArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -5840,17 +6209,20 @@ class CxPageEntryFulfillmentArgs:
                 Sequence[pulumi.Input[CxPageEntryFulfillmentSetParameterActionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
@@ -5864,7 +6236,8 @@ class CxPageEntryFulfillmentConditionalCaseArgs:
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -5914,7 +6287,8 @@ class CxPageEntryFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -5928,7 +6302,8 @@ class CxPageEntryFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageEntryFulfillmentMessageConversationSuccessArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -5940,7 +6315,8 @@ class CxPageEntryFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageEntryFulfillmentMessageLiveAgentHandoffArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -5950,12 +6326,14 @@ class CxPageEntryFulfillmentMessageArgs:
     def output_audio_text(
         self,
         value: Optional[pulumi.Input[CxPageEntryFulfillmentMessageOutputAudioTextArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -5964,7 +6342,8 @@ class CxPageEntryFulfillmentMessageArgs:
     @play_audio.setter
     def play_audio(
         self, value: Optional[pulumi.Input[CxPageEntryFulfillmentMessagePlayAudioArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -5978,14 +6357,16 @@ class CxPageEntryFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageEntryFulfillmentMessageTelephonyTransferCallArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[CxPageEntryFulfillmentMessageTextArgs]]: ...
     @text.setter
     def text(
         self, value: Optional[pulumi.Input[CxPageEntryFulfillmentMessageTextArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentMessageConversationSuccessArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -5999,7 +6380,8 @@ class CxPageEntryFulfillmentMessageConversationSuccessArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -6013,7 +6395,8 @@ class CxPageEntryFulfillmentMessageLiveAgentHandoffArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentMessageOutputAudioTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6035,17 +6418,20 @@ class CxPageEntryFulfillmentMessageOutputAudioTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
@@ -6063,14 +6449,16 @@ class CxPageEntryFulfillmentMessagePlayAudioArgs:
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentMessageTelephonyTransferCallArgsDict(TypedDict):
     phone_number: pulumi.Input[_builtins.str]
@@ -6082,7 +6470,8 @@ class CxPageEntryFulfillmentMessageTelephonyTransferCallArgs:
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6102,7 +6491,8 @@ class CxPageEntryFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -6111,7 +6501,8 @@ class CxPageEntryFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageEntryFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
@@ -6129,12 +6520,14 @@ class CxPageEntryFulfillmentSetParameterActionArgs:
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEventHandlerArgsDict(TypedDict):
     event: NotRequired[pulumi.Input[_builtins.str]]
@@ -6162,22 +6555,26 @@ class CxPageEventHandlerArgs:
     @pulumi.getter
     def event(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event.setter
-    def event(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFlow")
     def target_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_flow.setter
-    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPage")
     def target_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_page.setter
-    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerFulfillment")
     def trigger_fulfillment(
@@ -6186,7 +6583,8 @@ class CxPageEventHandlerArgs:
     @trigger_fulfillment.setter
     def trigger_fulfillment(
         self, value: Optional[pulumi.Input[CxPageEventHandlerTriggerFulfillmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentArgsDict(TypedDict):
     conditional_cases: NotRequired[
@@ -6271,7 +6669,8 @@ class CxPageEventHandlerTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -6289,14 +6688,16 @@ class CxPageEventHandlerTriggerFulfillmentArgs:
                 Sequence[pulumi.Input[CxPageEventHandlerTriggerFulfillmentMessageArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -6320,17 +6721,20 @@ class CxPageEventHandlerTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
@@ -6344,7 +6748,8 @@ class CxPageEventHandlerTriggerFulfillmentConditionalCaseArgs:
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -6410,7 +6815,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -6426,7 +6832,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
                 CxPageEventHandlerTriggerFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -6442,7 +6849,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
                 CxPageEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -6456,12 +6864,14 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -6475,7 +6885,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageEventHandlerTriggerFulfillmentMessagePlayAudioArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -6493,7 +6904,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
                 CxPageEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -6507,7 +6919,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageEventHandlerTriggerFulfillmentMessageTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentMessageConversationSuccessArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -6521,7 +6934,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageConversationSuccessArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -6535,7 +6949,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentMessageOutputAudioTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6557,17 +6972,20 @@ class CxPageEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
@@ -6585,14 +7003,16 @@ class CxPageEventHandlerTriggerFulfillmentMessagePlayAudioArgs:
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -6606,7 +7026,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs:
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6626,7 +7047,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -6635,7 +7057,8 @@ class CxPageEventHandlerTriggerFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageEventHandlerTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
@@ -6653,12 +7076,14 @@ class CxPageEventHandlerTriggerFulfillmentSetParameterActionArgs:
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormArgsDict(TypedDict):
     parameters: NotRequired[
@@ -6683,7 +7108,8 @@ class CxPageFormArgs:
     def parameters(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CxPageFormParameterArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterArgsDict(TypedDict):
     advanced_settings: NotRequired[
@@ -6723,22 +7149,26 @@ class CxPageFormParameterArgs:
     @advanced_settings.setter
     def advanced_settings(
         self, value: Optional[pulumi.Input[CxPageFormParameterAdvancedSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
     def default_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_value.setter
-    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityType")
     def entity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @entity_type.setter
-    def entity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def entity_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fillBehavior")
     def fill_behavior(
@@ -6747,22 +7177,26 @@ class CxPageFormParameterArgs:
     @fill_behavior.setter
     def fill_behavior(
         self, value: Optional[pulumi.Input[CxPageFormParameterFillBehaviorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isList")
     def is_list(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_list.setter
-    def is_list(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_list(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def redact(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @redact.setter
-    def redact(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def redact(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class CxPageFormParameterAdvancedSettingsArgsDict(TypedDict):
     dtmf_settings: NotRequired[
@@ -6791,7 +7225,8 @@ class CxPageFormParameterAdvancedSettingsArgs:
         value: Optional[
             pulumi.Input[CxPageFormParameterAdvancedSettingsDtmfSettingsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -6811,17 +7246,20 @@ class CxPageFormParameterAdvancedSettingsDtmfSettingsArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDigits")
     def max_digits(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_digits.setter
-    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorArgsDict(TypedDict):
     initial_prompt_fulfillment: NotRequired[
@@ -6868,7 +7306,8 @@ class CxPageFormParameterFillBehaviorArgs:
         value: Optional[
             pulumi.Input[CxPageFormParameterFillBehaviorInitialPromptFulfillmentArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repromptEventHandlers")
     def reprompt_event_handlers(
@@ -6892,7 +7331,8 @@ class CxPageFormParameterFillBehaviorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentArgsDict(TypedDict):
     conditional_cases: NotRequired[
@@ -6987,7 +7427,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -7013,14 +7454,16 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -7046,17 +7489,20 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentConditionalCaseArgsDict(
     TypedDict
@@ -7072,7 +7518,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentConditionalCaseArgs
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -7150,7 +7597,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -7168,7 +7616,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
                 CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -7186,7 +7635,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
                 CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -7204,12 +7654,14 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
                 CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageOutputAudioTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -7227,7 +7679,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
                 CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessagePlayAudioArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -7245,7 +7698,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
                 CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -7263,7 +7717,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
                 CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
@@ -7279,7 +7734,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageConversation
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageLiveAgentHandoffArgsDict(
     TypedDict
@@ -7295,7 +7751,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageLiveAgentHan
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageOutputAudioTextArgsDict(
     TypedDict
@@ -7319,17 +7776,20 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageOutputAudioT
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessagePlayAudioArgsDict(
     TypedDict
@@ -7349,14 +7809,16 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessagePlayAudioArg
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -7370,7 +7832,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTelephonyTra
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTextArgsDict(
     TypedDict
@@ -7392,7 +7855,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -7401,7 +7865,8 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentSetParameterActionArgsDict(
     TypedDict
@@ -7421,12 +7886,14 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentSetParameterActionA
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerArgsDict(TypedDict):
     event: NotRequired[pulumi.Input[_builtins.str]]
@@ -7458,22 +7925,26 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerArgs:
     @pulumi.getter
     def event(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event.setter
-    def event(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFlow")
     def target_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_flow.setter
-    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPage")
     def target_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_page.setter
-    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerFulfillment")
     def trigger_fulfillment(
@@ -7491,7 +7962,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerArgs:
                 CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgsDict(
     TypedDict
@@ -7588,7 +8060,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -7614,14 +8087,16 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -7647,17 +8122,20 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentConditionalCaseArgsDict(
     TypedDict
@@ -7673,7 +8151,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentCondi
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageArgsDict(
     TypedDict
@@ -7753,7 +8232,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -7771,7 +8251,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
                 CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -7789,7 +8270,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
                 CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -7807,12 +8289,14 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
                 CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -7830,7 +8314,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
                 CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessagePlayAudioArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -7848,7 +8333,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
                 CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -7866,7 +8352,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
                 CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
@@ -7882,7 +8369,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgsDict(
     TypedDict
@@ -7898,7 +8386,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageOutputAudioTextArgsDict(
     TypedDict
@@ -7922,17 +8411,20 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessagePlayAudioArgsDict(
     TypedDict
@@ -7952,14 +8444,16 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -7973,7 +8467,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageTextArgsDict(
     TypedDict
@@ -7995,7 +8490,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -8004,7 +8500,8 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentSetParameterActionArgsDict(
     TypedDict
@@ -8024,12 +8521,14 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentSetPa
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsArgsDict(TypedDict):
     data_store_connections: NotRequired[
@@ -8092,22 +8591,26 @@ class CxPageKnowledgeConnectorSettingsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFlow")
     def target_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_flow.setter
-    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPage")
     def target_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_page.setter
-    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerFulfillment")
     def trigger_fulfillment(
@@ -8121,7 +8624,8 @@ class CxPageKnowledgeConnectorSettingsArgs:
         value: Optional[
             pulumi.Input[CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
@@ -8141,19 +8645,22 @@ class CxPageKnowledgeConnectorSettingsDataStoreConnectionArgs:
     @pulumi.getter(name="dataStore")
     def data_store(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store.setter
-    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataStoreType")
     def data_store_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store_type.setter
-    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentProcessingMode")
     def document_processing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @document_processing_mode.setter
     def document_processing_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgsDict(TypedDict):
     advanced_settings: NotRequired[
@@ -8252,7 +8759,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conditionalCases")
     def conditional_cases(
@@ -8278,14 +8786,16 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableGenerativeFallback")
     def enable_generative_fallback(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_generative_fallback.setter
     def enable_generative_fallback(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -8311,14 +8821,16 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -8344,17 +8856,20 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgsDict(
     TypedDict
@@ -8413,7 +8928,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingSettings")
     def logging_settings(
@@ -8431,7 +8947,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="speechSettings")
     def speech_settings(
@@ -8449,7 +8966,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsArgsDict(
     TypedDict
@@ -8475,31 +8993,36 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSett
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointingTimeoutDuration")
     def endpointing_timeout_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpointing_timeout_duration.setter
     def endpointing_timeout_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interdigitTimeoutDuration")
     def interdigit_timeout_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interdigit_timeout_duration.setter
     def interdigit_timeout_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDigits")
     def max_digits(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_digits.setter
-    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_digits(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsArgsDict(
     TypedDict
@@ -8525,21 +9048,24 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingS
     @enable_consent_based_redaction.setter
     def enable_consent_based_redaction(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableInteractionLogging")
     def enable_interaction_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_interaction_logging.setter
     def enable_interaction_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableStackdriverLogging")
     def enable_stackdriver_logging(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_stackdriver_logging.setter
     def enable_stackdriver_logging(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgsDict(
     TypedDict
@@ -8563,7 +9089,10 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     @pulumi.getter(name="endpointerSensitivity")
     def endpointer_sensitivity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @endpointer_sensitivity.setter
-    def endpointer_sensitivity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def endpointer_sensitivity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def models(
@@ -8572,12 +9101,16 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     @models.setter
     def models(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noSpeechTimeout")
     def no_speech_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @no_speech_timeout.setter
-    def no_speech_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def no_speech_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useTimeoutBasedEndpointing")
     def use_timeout_based_endpointing(
@@ -8586,7 +9119,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     @use_timeout_based_endpointing.setter
     def use_timeout_based_endpointing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgsDict(
     TypedDict
@@ -8602,7 +9136,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgs:
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -8726,7 +9261,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -8744,7 +9280,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endInteractions")
     def end_interactions(
@@ -8770,7 +9307,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeInfoCard")
     def knowledge_info_card(
@@ -8788,7 +9326,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageKnowledgeInfoCardArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -8806,7 +9345,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mixedAudios")
     def mixed_audios(
@@ -8832,7 +9372,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -8850,12 +9391,14 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -8873,7 +9416,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -8891,7 +9435,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -8907,7 +9452,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
                 CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
@@ -8923,7 +9469,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSucce
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageEndInteractionArgsDict(
     TypedDict
@@ -8955,7 +9502,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffA
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgsDict(
     TypedDict
@@ -9010,7 +9558,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegmentArgsDict(
     TypedDict
@@ -9034,17 +9583,20 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegment
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def audio(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audio.setter
-    def audio(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audio(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextArgsDict(
     TypedDict
@@ -9068,17 +9620,20 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextAr
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgsDict(
     TypedDict
@@ -9098,14 +9653,16 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgs:
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -9119,7 +9676,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransfer
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -9139,7 +9697,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -9148,7 +9707,8 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgsDict(
     TypedDict
@@ -9168,12 +9728,14 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgs:
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageTransitionRouteArgsDict(TypedDict):
     condition: NotRequired[pulumi.Input[_builtins.str]]
@@ -9203,27 +9765,32 @@ class CxPageTransitionRouteArgs:
     @pulumi.getter
     def condition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def condition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def intent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @intent.setter
-    def intent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def intent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetFlow")
     def target_flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_flow.setter
-    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPage")
     def target_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_page.setter
-    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerFulfillment")
     def trigger_fulfillment(
@@ -9232,7 +9799,8 @@ class CxPageTransitionRouteArgs:
     @trigger_fulfillment.setter
     def trigger_fulfillment(
         self, value: Optional[pulumi.Input[CxPageTransitionRouteTriggerFulfillmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentArgsDict(TypedDict):
     conditional_cases: NotRequired[
@@ -9321,7 +9889,8 @@ class CxPageTransitionRouteTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def messages(
@@ -9341,14 +9910,16 @@ class CxPageTransitionRouteTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPartialResponses")
     def return_partial_responses(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_partial_responses.setter
     def return_partial_responses(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setParameterActions")
     def set_parameter_actions(
@@ -9374,17 +9945,20 @@ class CxPageTransitionRouteTriggerFulfillmentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag.setter
-    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def webhook(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook.setter
-    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
@@ -9398,7 +9972,8 @@ class CxPageTransitionRouteTriggerFulfillmentConditionalCaseArgs:
     @pulumi.getter
     def cases(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cases.setter
-    def cases(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cases(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentMessageArgsDict(TypedDict):
     channel: NotRequired[pulumi.Input[_builtins.str]]
@@ -9468,7 +10043,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
     @pulumi.getter
     def channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel.setter
-    def channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationSuccess")
     def conversation_success(
@@ -9486,7 +10062,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
                 CxPageTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="liveAgentHandoff")
     def live_agent_handoff(
@@ -9502,7 +10079,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
                 CxPageTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAudioText")
     def output_audio_text(
@@ -9518,12 +10096,14 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
                 CxPageTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="playAudio")
     def play_audio(
@@ -9537,7 +10117,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageTransitionRouteTriggerFulfillmentMessagePlayAudioArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telephonyTransferCall")
     def telephony_transfer_call(
@@ -9555,7 +10136,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
                 CxPageTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -9569,7 +10151,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
         value: Optional[
             pulumi.Input[CxPageTransitionRouteTriggerFulfillmentMessageTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
@@ -9585,7 +10168,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
@@ -9599,7 +10183,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgs:
     @pulumi.getter
     def metadata(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata.setter
-    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -9621,17 +10206,20 @@ class CxPageTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ssml(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ssml.setter
-    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ssml(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
@@ -9649,14 +10237,16 @@ class CxPageTransitionRouteTriggerFulfillmentMessagePlayAudioArgs:
     @pulumi.getter(name="audioUri")
     def audio_uri(self) -> pulumi.Input[_builtins.str]: ...
     @audio_uri.setter
-    def audio_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def audio_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowPlaybackInterruption")
     def allow_playback_interruption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
@@ -9670,7 +10260,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs:
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> pulumi.Input[_builtins.str]: ...
     @phone_number.setter
-    def phone_number(self, value: pulumi.Input[_builtins.str]): ...
+    def phone_number(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
@@ -9690,7 +10281,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageTextArgs:
     @allow_playback_interruption.setter
     def allow_playback_interruption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def texts(
@@ -9699,7 +10291,8 @@ class CxPageTransitionRouteTriggerFulfillmentMessageTextArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPageTransitionRouteTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
@@ -9717,12 +10310,14 @@ class CxPageTransitionRouteTriggerFulfillmentSetParameterActionArgs:
     @pulumi.getter
     def parameter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parameter.setter
-    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parameter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPlaybookInstructionArgsDict(TypedDict):
     guidelines: NotRequired[pulumi.Input[_builtins.str]]
@@ -9744,7 +10339,8 @@ class CxPlaybookInstructionArgs:
     @pulumi.getter
     def guidelines(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @guidelines.setter
-    def guidelines(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def guidelines(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def steps(
@@ -9758,7 +10354,8 @@ class CxPlaybookInstructionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CxPlaybookInstructionStepArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxPlaybookInstructionStepArgsDict(TypedDict):
     steps: NotRequired[pulumi.Input[_builtins.str]]
@@ -9776,12 +10373,14 @@ class CxPlaybookInstructionStepArgs:
     @pulumi.getter
     def steps(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @steps.setter
-    def steps(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def steps(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxPlaybookLlmModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
@@ -9799,12 +10398,14 @@ class CxPlaybookLlmModelSettingsArgs:
     @pulumi.getter
     def model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model.setter
-    def model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptText")
     def prompt_text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prompt_text.setter
-    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prompt_text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxSecuritySettingsAudioExportSettingsArgsDict(TypedDict):
     audio_export_pattern: NotRequired[pulumi.Input[_builtins.str]]
@@ -9826,22 +10427,30 @@ class CxSecuritySettingsAudioExportSettingsArgs:
     @pulumi.getter(name="audioExportPattern")
     def audio_export_pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audio_export_pattern.setter
-    def audio_export_pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audio_export_pattern(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="audioFormat")
     def audio_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audio_format.setter
-    def audio_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audio_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAudioRedaction")
     def enable_audio_redaction(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_audio_redaction.setter
-    def enable_audio_redaction(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_audio_redaction(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsBucket")
     def gcs_bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gcs_bucket.setter
-    def gcs_bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gcs_bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxSecuritySettingsInsightsExportSettingsArgsDict(TypedDict):
     enable_insights_export: pulumi.Input[_builtins.bool]
@@ -9855,7 +10464,8 @@ class CxSecuritySettingsInsightsExportSettingsArgs:
     @pulumi.getter(name="enableInsightsExport")
     def enable_insights_export(self) -> pulumi.Input[_builtins.bool]: ...
     @enable_insights_export.setter
-    def enable_insights_export(self, value: pulumi.Input[_builtins.bool]): ...
+    def enable_insights_export(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultArgsDict(TypedDict):
     conversation_turns: NotRequired[
@@ -9900,27 +10510,32 @@ class CxTestCaseLastTestResultArgs:
                 Sequence[pulumi.Input[CxTestCaseLastTestResultConversationTurnArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def environment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @environment.setter
-    def environment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def environment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testResult")
     def test_result(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_result.setter
-    def test_result(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_result(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testTime")
     def test_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_time.setter
-    def test_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnArgsDict(TypedDict):
     user_input: NotRequired[
@@ -9955,7 +10570,8 @@ class CxTestCaseLastTestResultConversationTurnArgs:
         value: Optional[
             pulumi.Input[CxTestCaseLastTestResultConversationTurnUserInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualAgentOutput")
     def virtual_agent_output(
@@ -9969,7 +10585,8 @@ class CxTestCaseLastTestResultConversationTurnArgs:
         value: Optional[
             pulumi.Input[CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnUserInputArgsDict(TypedDict):
     enable_sentiment_analysis: NotRequired[pulumi.Input[_builtins.bool]]
@@ -9997,12 +10614,16 @@ class CxTestCaseLastTestResultConversationTurnUserInputArgs:
     @enable_sentiment_analysis.setter
     def enable_sentiment_analysis(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="injectedParameters")
     def injected_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @injected_parameters.setter
-    def injected_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def injected_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -10016,12 +10637,16 @@ class CxTestCaseLastTestResultConversationTurnUserInputArgs:
         value: Optional[
             pulumi.Input[CxTestCaseLastTestResultConversationTurnUserInputInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isWebhookEnabled")
     def is_webhook_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_webhook_enabled.setter
-    def is_webhook_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_webhook_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnUserInputInputArgsDict(TypedDict):
     dtmf: NotRequired[
@@ -10068,7 +10693,8 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputArgs:
         value: Optional[
             pulumi.Input[CxTestCaseLastTestResultConversationTurnUserInputInputDtmfArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def event(
@@ -10084,12 +10710,14 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputArgs:
                 CxTestCaseLastTestResultConversationTurnUserInputInputEventArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -10103,7 +10731,8 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputArgs:
         value: Optional[
             pulumi.Input[CxTestCaseLastTestResultConversationTurnUserInputInputTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnUserInputInputDtmfArgsDict(TypedDict):
     digits: NotRequired[pulumi.Input[_builtins.str]]
@@ -10121,12 +10750,14 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputDtmfArgs:
     @pulumi.getter
     def digits(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @digits.setter
-    def digits(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def digits(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnUserInputInputEventArgsDict(TypedDict):
     event: pulumi.Input[_builtins.str]
@@ -10138,7 +10769,8 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputEventArgs:
     @pulumi.getter
     def event(self) -> pulumi.Input[_builtins.str]: ...
     @event.setter
-    def event(self, value: pulumi.Input[_builtins.str]): ...
+    def event(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnUserInputInputTextArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
@@ -10150,7 +10782,8 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputTextArgs:
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgsDict(TypedDict):
     current_page: NotRequired[
@@ -10245,7 +10878,8 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgs:
                 CxTestCaseLastTestResultConversationTurnVirtualAgentOutputCurrentPageArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def differences(
@@ -10271,12 +10905,16 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionParameters")
     def session_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @session_parameters.setter
-    def session_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def session_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -10294,7 +10932,8 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgs:
                 CxTestCaseLastTestResultConversationTurnVirtualAgentOutputStatusArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textResponses")
     def text_responses(
@@ -10320,7 +10959,8 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggeredIntent")
     def triggered_intent(
@@ -10338,7 +10978,8 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgs:
                 CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTriggeredIntentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputCurrentPageArgsDict(
     TypedDict
@@ -10358,12 +10999,14 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputCurrentPageArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputDifferenceArgsDict(
     TypedDict
@@ -10383,12 +11026,14 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputDifferenceArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputStatusArgsDict(
     TypedDict
@@ -10410,17 +11055,20 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputStatusArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @details.setter
-    def details(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def details(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTextResponseArgsDict(
     TypedDict
@@ -10442,7 +11090,8 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTextResponseArgs
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTriggeredIntentArgsDict(
     TypedDict
@@ -10462,12 +11111,14 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTriggeredIntentA
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnArgsDict(TypedDict):
     user_input: NotRequired[
@@ -10498,7 +11149,8 @@ class CxTestCaseTestCaseConversationTurnArgs:
     def user_input(
         self,
         value: Optional[pulumi.Input[CxTestCaseTestCaseConversationTurnUserInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualAgentOutput")
     def virtual_agent_output(
@@ -10512,7 +11164,8 @@ class CxTestCaseTestCaseConversationTurnArgs:
         value: Optional[
             pulumi.Input[CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnUserInputArgsDict(TypedDict):
     enable_sentiment_analysis: NotRequired[pulumi.Input[_builtins.bool]]
@@ -10540,12 +11193,16 @@ class CxTestCaseTestCaseConversationTurnUserInputArgs:
     @enable_sentiment_analysis.setter
     def enable_sentiment_analysis(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="injectedParameters")
     def injected_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @injected_parameters.setter
-    def injected_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def injected_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -10559,12 +11216,16 @@ class CxTestCaseTestCaseConversationTurnUserInputArgs:
         value: Optional[
             pulumi.Input[CxTestCaseTestCaseConversationTurnUserInputInputArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isWebhookEnabled")
     def is_webhook_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_webhook_enabled.setter
-    def is_webhook_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_webhook_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnUserInputInputArgsDict(TypedDict):
     dtmf: NotRequired[
@@ -10607,7 +11268,8 @@ class CxTestCaseTestCaseConversationTurnUserInputInputArgs:
         value: Optional[
             pulumi.Input[CxTestCaseTestCaseConversationTurnUserInputInputDtmfArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def event(
@@ -10621,12 +11283,14 @@ class CxTestCaseTestCaseConversationTurnUserInputInputArgs:
         value: Optional[
             pulumi.Input[CxTestCaseTestCaseConversationTurnUserInputInputEventArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -10640,7 +11304,8 @@ class CxTestCaseTestCaseConversationTurnUserInputInputArgs:
         value: Optional[
             pulumi.Input[CxTestCaseTestCaseConversationTurnUserInputInputTextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnUserInputInputDtmfArgsDict(TypedDict):
     digits: NotRequired[pulumi.Input[_builtins.str]]
@@ -10658,12 +11323,14 @@ class CxTestCaseTestCaseConversationTurnUserInputInputDtmfArgs:
     @pulumi.getter
     def digits(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @digits.setter
-    def digits(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def digits(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finishDigit")
     def finish_digit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @finish_digit.setter
-    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def finish_digit(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnUserInputInputEventArgsDict(TypedDict):
     event: pulumi.Input[_builtins.str]
@@ -10675,7 +11342,8 @@ class CxTestCaseTestCaseConversationTurnUserInputInputEventArgs:
     @pulumi.getter
     def event(self) -> pulumi.Input[_builtins.str]: ...
     @event.setter
-    def event(self, value: pulumi.Input[_builtins.str]): ...
+    def event(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnUserInputInputTextArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
@@ -10687,7 +11355,8 @@ class CxTestCaseTestCaseConversationTurnUserInputInputTextArgs:
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgsDict(TypedDict):
     current_page: NotRequired[
@@ -10754,12 +11423,16 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgs:
                 CxTestCaseTestCaseConversationTurnVirtualAgentOutputCurrentPageArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionParameters")
     def session_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @session_parameters.setter
-    def session_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def session_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textResponses")
     def text_responses(
@@ -10785,7 +11458,8 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggeredIntent")
     def triggered_intent(
@@ -10803,7 +11477,8 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgs:
                 CxTestCaseTestCaseConversationTurnVirtualAgentOutputTriggeredIntentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputCurrentPageArgsDict(
     TypedDict
@@ -10823,12 +11498,14 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputCurrentPageArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTextResponseArgsDict(
     TypedDict
@@ -10850,7 +11527,8 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTextResponseArgs:
     @texts.setter
     def texts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTriggeredIntentArgsDict(
     TypedDict
@@ -10870,12 +11548,14 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTriggeredIntentArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxTestCaseTestConfigArgsDict(TypedDict):
     flow: NotRequired[pulumi.Input[_builtins.str]]
@@ -10899,12 +11579,14 @@ class CxTestCaseTestConfigArgs:
     @pulumi.getter
     def flow(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @flow.setter
-    def flow(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def flow(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @page.setter
-    def page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trackingParameters")
     def tracking_parameters(
@@ -10913,7 +11595,8 @@ class CxTestCaseTestConfigArgs:
     @tracking_parameters.setter
     def tracking_parameters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolConnectorSpecArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[CxToolConnectorSpecActionArgsDict]]]
@@ -10941,12 +11624,14 @@ class CxToolConnectorSpecArgs:
     @actions.setter
     def actions(
         self, value: pulumi.Input[Sequence[pulumi.Input[CxToolConnectorSpecActionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endUserAuthConfig")
     def end_user_auth_config(
@@ -10955,7 +11640,8 @@ class CxToolConnectorSpecArgs:
     @end_user_auth_config.setter
     def end_user_auth_config(
         self, value: Optional[pulumi.Input[CxToolConnectorSpecEndUserAuthConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolConnectorSpecActionArgsDict(TypedDict):
     connection_action_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -10985,7 +11671,10 @@ class CxToolConnectorSpecActionArgs:
     @pulumi.getter(name="connectionActionId")
     def connection_action_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_action_id.setter
-    def connection_action_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_action_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityOperation")
     def entity_operation(
@@ -10995,7 +11684,8 @@ class CxToolConnectorSpecActionArgs:
     def entity_operation(
         self,
         value: Optional[pulumi.Input[CxToolConnectorSpecActionEntityOperationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputFields")
     def input_fields(
@@ -11004,7 +11694,8 @@ class CxToolConnectorSpecActionArgs:
     @input_fields.setter
     def input_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFields")
     def output_fields(
@@ -11013,7 +11704,8 @@ class CxToolConnectorSpecActionArgs:
     @output_fields.setter
     def output_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolConnectorSpecActionEntityOperationArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
@@ -11031,12 +11723,14 @@ class CxToolConnectorSpecActionEntityOperationArgs:
     @pulumi.getter(name="entityId")
     def entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @entity_id.setter
-    def entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operation(self) -> pulumi.Input[_builtins.str]: ...
     @operation.setter
-    def operation(self, value: pulumi.Input[_builtins.str]): ...
+    def operation(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolConnectorSpecEndUserAuthConfigArgsDict(TypedDict):
     oauth2_auth_code_config: NotRequired[
@@ -11071,7 +11765,8 @@ class CxToolConnectorSpecEndUserAuthConfigArgs:
         value: Optional[
             pulumi.Input[CxToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2JwtBearerConfig")
     def oauth2_jwt_bearer_config(
@@ -11085,7 +11780,8 @@ class CxToolConnectorSpecEndUserAuthConfigArgs:
         value: Optional[
             pulumi.Input[CxToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgsDict(TypedDict):
     oauth_token: pulumi.Input[_builtins.str]
@@ -11097,7 +11793,8 @@ class CxToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgs:
     @pulumi.getter(name="oauthToken")
     def oauth_token(self) -> pulumi.Input[_builtins.str]: ...
     @oauth_token.setter
-    def oauth_token(self, value: pulumi.Input[_builtins.str]): ...
+    def oauth_token(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgsDict(TypedDict):
     client_key: pulumi.Input[_builtins.str]
@@ -11117,17 +11814,20 @@ class CxToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgs:
     @pulumi.getter(name="clientKey")
     def client_key(self) -> pulumi.Input[_builtins.str]: ...
     @client_key.setter
-    def client_key(self, value: pulumi.Input[_builtins.str]): ...
+    def client_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subject(self) -> pulumi.Input[_builtins.str]: ...
     @subject.setter
-    def subject(self, value: pulumi.Input[_builtins.str]): ...
+    def subject(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolDataStoreSpecArgsDict(TypedDict):
     data_store_connections: pulumi.Input[
@@ -11158,7 +11858,8 @@ class CxToolDataStoreSpecArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[CxToolDataStoreSpecDataStoreConnectionArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fallbackPrompt")
     def fallback_prompt(
@@ -11167,7 +11868,8 @@ class CxToolDataStoreSpecArgs:
     @fallback_prompt.setter
     def fallback_prompt(
         self, value: pulumi.Input[CxToolDataStoreSpecFallbackPromptArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolDataStoreSpecDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
@@ -11187,19 +11889,22 @@ class CxToolDataStoreSpecDataStoreConnectionArgs:
     @pulumi.getter(name="dataStore")
     def data_store(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store.setter
-    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataStoreType")
     def data_store_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store_type.setter
-    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentProcessingMode")
     def document_processing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @document_processing_mode.setter
     def document_processing_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolDataStoreSpecFallbackPromptArgsDict(TypedDict): ...
 
@@ -11223,12 +11928,14 @@ class CxToolFunctionSpecArgs:
     @pulumi.getter(name="inputSchema")
     def input_schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_schema.setter
-    def input_schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputSchema")
     def output_schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_schema.setter
-    def output_schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxToolOpenApiSpecArgsDict(TypedDict):
     text_schema: pulumi.Input[_builtins.str]
@@ -11256,7 +11963,8 @@ class CxToolOpenApiSpecArgs:
     @pulumi.getter(name="textSchema")
     def text_schema(self) -> pulumi.Input[_builtins.str]: ...
     @text_schema.setter
-    def text_schema(self, value: pulumi.Input[_builtins.str]): ...
+    def text_schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -11265,7 +11973,8 @@ class CxToolOpenApiSpecArgs:
     @authentication.setter
     def authentication(
         self, value: Optional[pulumi.Input[CxToolOpenApiSpecAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceDirectoryConfig")
     def service_directory_config(
@@ -11274,14 +11983,16 @@ class CxToolOpenApiSpecArgs:
     @service_directory_config.setter
     def service_directory_config(
         self, value: Optional[pulumi.Input[CxToolOpenApiSpecServiceDirectoryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsConfig")
     def tls_config(self) -> Optional[pulumi.Input[CxToolOpenApiSpecTlsConfigArgs]]: ...
     @tls_config.setter
     def tls_config(
         self, value: Optional[pulumi.Input[CxToolOpenApiSpecTlsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolOpenApiSpecAuthenticationArgsDict(TypedDict):
     api_key_config: NotRequired[
@@ -11324,7 +12035,8 @@ class CxToolOpenApiSpecAuthenticationArgs:
     def api_key_config(
         self,
         value: Optional[pulumi.Input[CxToolOpenApiSpecAuthenticationApiKeyConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bearerTokenConfig")
     def bearer_token_config(
@@ -11338,7 +12050,8 @@ class CxToolOpenApiSpecAuthenticationArgs:
         value: Optional[
             pulumi.Input[CxToolOpenApiSpecAuthenticationBearerTokenConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthConfig")
     def oauth_config(
@@ -11348,7 +12061,8 @@ class CxToolOpenApiSpecAuthenticationArgs:
     def oauth_config(
         self,
         value: Optional[pulumi.Input[CxToolOpenApiSpecAuthenticationOauthConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAgentAuthConfig")
     def service_agent_auth_config(
@@ -11362,7 +12076,8 @@ class CxToolOpenApiSpecAuthenticationArgs:
         value: Optional[
             pulumi.Input[CxToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolOpenApiSpecAuthenticationApiKeyConfigArgsDict(TypedDict):
     key_name: pulumi.Input[_builtins.str]
@@ -11384,24 +12099,28 @@ class CxToolOpenApiSpecAuthenticationApiKeyConfigArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> pulumi.Input[_builtins.str]: ...
     @key_name.setter
-    def key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestLocation")
     def request_location(self) -> pulumi.Input[_builtins.str]: ...
     @request_location.setter
-    def request_location(self, value: pulumi.Input[_builtins.str]): ...
+    def request_location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiKey")
     def api_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_key.setter
-    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForApiKey")
     def secret_version_for_api_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_version_for_api_key.setter
     def secret_version_for_api_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolOpenApiSpecAuthenticationBearerTokenConfigArgsDict(TypedDict):
     secret_version_for_token: NotRequired[pulumi.Input[_builtins.str]]
@@ -11421,12 +12140,14 @@ class CxToolOpenApiSpecAuthenticationBearerTokenConfigArgs:
     @secret_version_for_token.setter
     def secret_version_for_token(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @token.setter
-    def token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxToolOpenApiSpecAuthenticationOauthConfigArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
@@ -11452,22 +12173,26 @@ class CxToolOpenApiSpecAuthenticationOauthConfigArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthGrantType")
     def oauth_grant_type(self) -> pulumi.Input[_builtins.str]: ...
     @oauth_grant_type.setter
-    def oauth_grant_type(self, value: pulumi.Input[_builtins.str]): ...
+    def oauth_grant_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -11476,7 +12201,8 @@ class CxToolOpenApiSpecAuthenticationOauthConfigArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForClientSecret")
     def secret_version_for_client_secret(
@@ -11485,7 +12211,8 @@ class CxToolOpenApiSpecAuthenticationOauthConfigArgs:
     @secret_version_for_client_secret.setter
     def secret_version_for_client_secret(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgsDict(TypedDict):
     service_agent_auth: NotRequired[pulumi.Input[_builtins.str]]
@@ -11499,7 +12226,10 @@ class CxToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs:
     @pulumi.getter(name="serviceAgentAuth")
     def service_agent_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_agent_auth.setter
-    def service_agent_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_agent_auth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CxToolOpenApiSpecServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
@@ -11511,7 +12241,8 @@ class CxToolOpenApiSpecServiceDirectoryConfigArgs:
     @pulumi.getter
     def service(self) -> pulumi.Input[_builtins.str]: ...
     @service.setter
-    def service(self, value: pulumi.Input[_builtins.str]): ...
+    def service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolOpenApiSpecTlsConfigArgsDict(TypedDict):
     ca_certs: pulumi.Input[
@@ -11538,7 +12269,8 @@ class CxToolOpenApiSpecTlsConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[CxToolOpenApiSpecTlsConfigCaCertArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolOpenApiSpecTlsConfigCaCertArgsDict(TypedDict):
     cert: pulumi.Input[_builtins.str]
@@ -11556,12 +12288,14 @@ class CxToolOpenApiSpecTlsConfigCaCertArgs:
     @pulumi.getter
     def cert(self) -> pulumi.Input[_builtins.str]: ...
     @cert.setter
-    def cert(self, value: pulumi.Input[_builtins.str]): ...
+    def cert(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolVersionToolArgsDict(TypedDict):
     description: pulumi.Input[_builtins.str]
@@ -11595,12 +12329,14 @@ class CxToolVersionToolArgs:
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorSpec")
     def connector_spec(
@@ -11609,7 +12345,8 @@ class CxToolVersionToolArgs:
     @connector_spec.setter
     def connector_spec(
         self, value: Optional[pulumi.Input[CxToolVersionToolConnectorSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataStoreSpec")
     def data_store_spec(
@@ -11618,7 +12355,8 @@ class CxToolVersionToolArgs:
     @data_store_spec.setter
     def data_store_spec(
         self, value: Optional[pulumi.Input[CxToolVersionToolDataStoreSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionSpec")
     def function_spec(
@@ -11627,12 +12365,14 @@ class CxToolVersionToolArgs:
     @function_spec.setter
     def function_spec(
         self, value: Optional[pulumi.Input[CxToolVersionToolFunctionSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openApiSpec")
     def open_api_spec(
@@ -11641,12 +12381,14 @@ class CxToolVersionToolArgs:
     @open_api_spec.setter
     def open_api_spec(
         self, value: Optional[pulumi.Input[CxToolVersionToolOpenApiSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolType")
     def tool_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tool_type.setter
-    def tool_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tool_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxToolVersionToolConnectorSpecArgsDict(TypedDict):
     actions: pulumi.Input[
@@ -11683,12 +12425,14 @@ class CxToolVersionToolConnectorSpecArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[CxToolVersionToolConnectorSpecActionArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endUserAuthConfig")
     def end_user_auth_config(
@@ -11702,7 +12446,8 @@ class CxToolVersionToolConnectorSpecArgs:
         value: Optional[
             pulumi.Input[CxToolVersionToolConnectorSpecEndUserAuthConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolConnectorSpecActionArgsDict(TypedDict):
     connection_action_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11732,7 +12477,10 @@ class CxToolVersionToolConnectorSpecActionArgs:
     @pulumi.getter(name="connectionActionId")
     def connection_action_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_action_id.setter
-    def connection_action_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_action_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityOperation")
     def entity_operation(
@@ -11746,7 +12494,8 @@ class CxToolVersionToolConnectorSpecActionArgs:
         value: Optional[
             pulumi.Input[CxToolVersionToolConnectorSpecActionEntityOperationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputFields")
     def input_fields(
@@ -11755,7 +12504,8 @@ class CxToolVersionToolConnectorSpecActionArgs:
     @input_fields.setter
     def input_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFields")
     def output_fields(
@@ -11764,7 +12514,8 @@ class CxToolVersionToolConnectorSpecActionArgs:
     @output_fields.setter
     def output_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolConnectorSpecActionEntityOperationArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
@@ -11782,12 +12533,14 @@ class CxToolVersionToolConnectorSpecActionEntityOperationArgs:
     @pulumi.getter(name="entityId")
     def entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @entity_id.setter
-    def entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operation(self) -> pulumi.Input[_builtins.str]: ...
     @operation.setter
-    def operation(self, value: pulumi.Input[_builtins.str]): ...
+    def operation(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolVersionToolConnectorSpecEndUserAuthConfigArgsDict(TypedDict):
     oauth2_auth_code_config: NotRequired[
@@ -11834,7 +12587,8 @@ class CxToolVersionToolConnectorSpecEndUserAuthConfigArgs:
                 CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauth2JwtBearerConfig")
     def oauth2_jwt_bearer_config(
@@ -11852,7 +12606,8 @@ class CxToolVersionToolConnectorSpecEndUserAuthConfigArgs:
                 CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgsDict(
     TypedDict
@@ -11866,7 +12621,8 @@ class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgs:
     @pulumi.getter(name="oauthToken")
     def oauth_token(self) -> pulumi.Input[_builtins.str]: ...
     @oauth_token.setter
-    def oauth_token(self, value: pulumi.Input[_builtins.str]): ...
+    def oauth_token(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgsDict(
     TypedDict
@@ -11888,17 +12644,20 @@ class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgs:
     @pulumi.getter(name="clientKey")
     def client_key(self) -> pulumi.Input[_builtins.str]: ...
     @client_key.setter
-    def client_key(self, value: pulumi.Input[_builtins.str]): ...
+    def client_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subject(self) -> pulumi.Input[_builtins.str]: ...
     @subject.setter
-    def subject(self, value: pulumi.Input[_builtins.str]): ...
+    def subject(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolVersionToolDataStoreSpecArgsDict(TypedDict):
     data_store_connections: pulumi.Input[
@@ -11935,7 +12694,8 @@ class CxToolVersionToolDataStoreSpecArgs:
                 pulumi.Input[CxToolVersionToolDataStoreSpecDataStoreConnectionArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fallbackPrompt")
     def fallback_prompt(
@@ -11944,7 +12704,8 @@ class CxToolVersionToolDataStoreSpecArgs:
     @fallback_prompt.setter
     def fallback_prompt(
         self, value: pulumi.Input[CxToolVersionToolDataStoreSpecFallbackPromptArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolDataStoreSpecDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
@@ -11964,19 +12725,22 @@ class CxToolVersionToolDataStoreSpecDataStoreConnectionArgs:
     @pulumi.getter(name="dataStore")
     def data_store(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store.setter
-    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataStoreType")
     def data_store_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_store_type.setter
-    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_store_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentProcessingMode")
     def document_processing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @document_processing_mode.setter
     def document_processing_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolDataStoreSpecFallbackPromptArgsDict(TypedDict): ...
 
@@ -12000,12 +12764,14 @@ class CxToolVersionToolFunctionSpecArgs:
     @pulumi.getter(name="inputSchema")
     def input_schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_schema.setter
-    def input_schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputSchema")
     def output_schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_schema.setter
-    def output_schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecArgsDict(TypedDict):
     text_schema: pulumi.Input[_builtins.str]
@@ -12037,7 +12803,8 @@ class CxToolVersionToolOpenApiSpecArgs:
     @pulumi.getter(name="textSchema")
     def text_schema(self) -> pulumi.Input[_builtins.str]: ...
     @text_schema.setter
-    def text_schema(self, value: pulumi.Input[_builtins.str]): ...
+    def text_schema(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authentication(
@@ -12047,7 +12814,8 @@ class CxToolVersionToolOpenApiSpecArgs:
     def authentication(
         self,
         value: Optional[pulumi.Input[CxToolVersionToolOpenApiSpecAuthenticationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceDirectoryConfig")
     def service_directory_config(
@@ -12061,7 +12829,8 @@ class CxToolVersionToolOpenApiSpecArgs:
         value: Optional[
             pulumi.Input[CxToolVersionToolOpenApiSpecServiceDirectoryConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsConfig")
     def tls_config(
@@ -12070,7 +12839,8 @@ class CxToolVersionToolOpenApiSpecArgs:
     @tls_config.setter
     def tls_config(
         self, value: Optional[pulumi.Input[CxToolVersionToolOpenApiSpecTlsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecAuthenticationArgsDict(TypedDict):
     api_key_config: NotRequired[
@@ -12125,7 +12895,8 @@ class CxToolVersionToolOpenApiSpecAuthenticationArgs:
         value: Optional[
             pulumi.Input[CxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bearerTokenConfig")
     def bearer_token_config(
@@ -12141,7 +12912,8 @@ class CxToolVersionToolOpenApiSpecAuthenticationArgs:
                 CxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthConfig")
     def oauth_config(
@@ -12155,7 +12927,8 @@ class CxToolVersionToolOpenApiSpecAuthenticationArgs:
         value: Optional[
             pulumi.Input[CxToolVersionToolOpenApiSpecAuthenticationOauthConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAgentAuthConfig")
     def service_agent_auth_config(
@@ -12173,7 +12946,8 @@ class CxToolVersionToolOpenApiSpecAuthenticationArgs:
                 CxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigArgsDict(TypedDict):
     key_name: pulumi.Input[_builtins.str]
@@ -12195,24 +12969,28 @@ class CxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> pulumi.Input[_builtins.str]: ...
     @key_name.setter
-    def key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestLocation")
     def request_location(self) -> pulumi.Input[_builtins.str]: ...
     @request_location.setter
-    def request_location(self, value: pulumi.Input[_builtins.str]): ...
+    def request_location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiKey")
     def api_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_key.setter
-    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForApiKey")
     def secret_version_for_api_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_version_for_api_key.setter
     def secret_version_for_api_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigArgsDict(TypedDict):
     secret_version_for_token: NotRequired[pulumi.Input[_builtins.str]]
@@ -12232,12 +13010,14 @@ class CxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigArgs:
     @secret_version_for_token.setter
     def secret_version_for_token(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @token.setter
-    def token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecAuthenticationOauthConfigArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
@@ -12263,22 +13043,26 @@ class CxToolVersionToolOpenApiSpecAuthenticationOauthConfigArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthGrantType")
     def oauth_grant_type(self) -> pulumi.Input[_builtins.str]: ...
     @oauth_grant_type.setter
-    def oauth_grant_type(self, value: pulumi.Input[_builtins.str]): ...
+    def oauth_grant_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -12287,7 +13071,8 @@ class CxToolVersionToolOpenApiSpecAuthenticationOauthConfigArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForClientSecret")
     def secret_version_for_client_secret(
@@ -12296,7 +13081,8 @@ class CxToolVersionToolOpenApiSpecAuthenticationOauthConfigArgs:
     @secret_version_for_client_secret.setter
     def secret_version_for_client_secret(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgsDict(
     TypedDict
@@ -12312,7 +13098,10 @@ class CxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs:
     @pulumi.getter(name="serviceAgentAuth")
     def service_agent_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_agent_auth.setter
-    def service_agent_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_agent_auth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
@@ -12324,7 +13113,8 @@ class CxToolVersionToolOpenApiSpecServiceDirectoryConfigArgs:
     @pulumi.getter
     def service(self) -> pulumi.Input[_builtins.str]: ...
     @service.setter
-    def service(self, value: pulumi.Input[_builtins.str]): ...
+    def service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecTlsConfigArgsDict(TypedDict):
     ca_certs: pulumi.Input[
@@ -12353,7 +13143,8 @@ class CxToolVersionToolOpenApiSpecTlsConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[CxToolVersionToolOpenApiSpecTlsConfigCaCertArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxToolVersionToolOpenApiSpecTlsConfigCaCertArgsDict(TypedDict):
     cert: pulumi.Input[_builtins.str]
@@ -12371,12 +13162,14 @@ class CxToolVersionToolOpenApiSpecTlsConfigCaCertArgs:
     @pulumi.getter
     def cert(self) -> pulumi.Input[_builtins.str]: ...
     @cert.setter
-    def cert(self, value: pulumi.Input[_builtins.str]): ...
+    def cert(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxVersionNluSettingArgsDict(TypedDict):
     classification_threshold: NotRequired[pulumi.Input[_builtins.float]]
@@ -12398,17 +13191,22 @@ class CxVersionNluSettingArgs:
     @classification_threshold.setter
     def classification_threshold(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelTrainingMode")
     def model_training_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model_training_mode.setter
-    def model_training_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model_training_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelType")
     def model_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model_type.setter
-    def model_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxWebhookGenericWebServiceArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
@@ -12482,7 +13280,8 @@ class CxWebhookGenericWebServiceArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedCaCerts")
     def allowed_ca_certs(
@@ -12491,12 +13290,14 @@ class CxWebhookGenericWebServiceArgs:
     @allowed_ca_certs.setter
     def allowed_ca_certs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpMethod")
     def http_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @http_method.setter
-    def http_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def http_method(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthConfig")
     def oauth_config(
@@ -12505,7 +13306,8 @@ class CxWebhookGenericWebServiceArgs:
     @oauth_config.setter
     def oauth_config(
         self, value: Optional[pulumi.Input[CxWebhookGenericWebServiceOauthConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterMapping")
     def parameter_mapping(
@@ -12514,12 +13316,14 @@ class CxWebhookGenericWebServiceArgs:
     @parameter_mapping.setter
     def parameter_mapping(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestBody")
     def request_body(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_body.setter
-    def request_body(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_body(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestHeaders")
     def request_headers(
@@ -12528,7 +13332,8 @@ class CxWebhookGenericWebServiceArgs:
     @request_headers.setter
     def request_headers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForUsernamePassword")
     def secret_version_for_username_password(
@@ -12537,7 +13342,8 @@ class CxWebhookGenericWebServiceArgs:
     @secret_version_for_username_password.setter
     def secret_version_for_username_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionsForRequestHeaders")
     def secret_versions_for_request_headers(
@@ -12563,7 +13369,8 @@ class CxWebhookGenericWebServiceArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountAuthConfig")
     def service_account_auth_config(
@@ -12577,17 +13384,22 @@ class CxWebhookGenericWebServiceArgs:
         value: Optional[
             pulumi.Input[CxWebhookGenericWebServiceServiceAccountAuthConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAgentAuth")
     def service_agent_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_agent_auth.setter
-    def service_agent_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_agent_auth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webhookType")
     def webhook_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook_type.setter
-    def webhook_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxWebhookGenericWebServiceOauthConfigArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
@@ -12611,17 +13423,20 @@ class CxWebhookGenericWebServiceOauthConfigArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -12630,7 +13445,8 @@ class CxWebhookGenericWebServiceOauthConfigArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForClientSecret")
     def secret_version_for_client_secret(
@@ -12639,7 +13455,8 @@ class CxWebhookGenericWebServiceOauthConfigArgs:
     @secret_version_for_client_secret.setter
     def secret_version_for_client_secret(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxWebhookGenericWebServiceSecretVersionsForRequestHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -12657,12 +13474,14 @@ class CxWebhookGenericWebServiceSecretVersionsForRequestHeaderArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxWebhookGenericWebServiceServiceAccountAuthConfigArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
@@ -12674,7 +13493,8 @@ class CxWebhookGenericWebServiceServiceAccountAuthConfigArgs:
     @pulumi.getter(name="serviceAccount")
     def service_account(self) -> pulumi.Input[_builtins.str]: ...
     @service_account.setter
-    def service_account(self, value: pulumi.Input[_builtins.str]): ...
+    def service_account(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxWebhookServiceDirectoryArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
@@ -12696,7 +13516,8 @@ class CxWebhookServiceDirectoryArgs:
     @pulumi.getter
     def service(self) -> pulumi.Input[_builtins.str]: ...
     @service.setter
-    def service(self, value: pulumi.Input[_builtins.str]): ...
+    def service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="genericWebService")
     def generic_web_service(
@@ -12706,7 +13527,8 @@ class CxWebhookServiceDirectoryArgs:
     def generic_web_service(
         self,
         value: Optional[pulumi.Input[CxWebhookServiceDirectoryGenericWebServiceArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxWebhookServiceDirectoryGenericWebServiceArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
@@ -12784,7 +13606,8 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedCaCerts")
     def allowed_ca_certs(
@@ -12793,12 +13616,14 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
     @allowed_ca_certs.setter
     def allowed_ca_certs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpMethod")
     def http_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @http_method.setter
-    def http_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def http_method(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthConfig")
     def oauth_config(
@@ -12812,7 +13637,8 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
         value: Optional[
             pulumi.Input[CxWebhookServiceDirectoryGenericWebServiceOauthConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterMapping")
     def parameter_mapping(
@@ -12821,12 +13647,14 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
     @parameter_mapping.setter
     def parameter_mapping(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestBody")
     def request_body(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_body.setter
-    def request_body(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_body(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestHeaders")
     def request_headers(
@@ -12835,7 +13663,8 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
     @request_headers.setter
     def request_headers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForUsernamePassword")
     def secret_version_for_username_password(
@@ -12844,7 +13673,8 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
     @secret_version_for_username_password.setter
     def secret_version_for_username_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionsForRequestHeaders")
     def secret_versions_for_request_headers(
@@ -12870,7 +13700,8 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountAuthConfig")
     def service_account_auth_config(
@@ -12888,17 +13719,22 @@ class CxWebhookServiceDirectoryGenericWebServiceArgs:
                 CxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAgentAuth")
     def service_agent_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_agent_auth.setter
-    def service_agent_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_agent_auth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webhookType")
     def webhook_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @webhook_type.setter
-    def webhook_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def webhook_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CxWebhookServiceDirectoryGenericWebServiceOauthConfigArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
@@ -12922,17 +13758,20 @@ class CxWebhookServiceDirectoryGenericWebServiceOauthConfigArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -12941,7 +13780,8 @@ class CxWebhookServiceDirectoryGenericWebServiceOauthConfigArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersionForClientSecret")
     def secret_version_for_client_secret(
@@ -12950,7 +13790,8 @@ class CxWebhookServiceDirectoryGenericWebServiceOauthConfigArgs:
     @secret_version_for_client_secret.setter
     def secret_version_for_client_secret(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaderArgsDict(
     TypedDict
@@ -12970,12 +13811,14 @@ class CxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaderAr
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretVersion")
     def secret_version(self) -> pulumi.Input[_builtins.str]: ...
     @secret_version.setter
-    def secret_version(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigArgsDict(
     TypedDict
@@ -12989,7 +13832,8 @@ class CxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigArgs:
     @pulumi.getter(name="serviceAccount")
     def service_account(self) -> pulumi.Input[_builtins.str]: ...
     @service_account.setter
-    def service_account(self, value: pulumi.Input[_builtins.str]): ...
+    def service_account(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class EncryptionSpecEncryptionSpecArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
@@ -13001,7 +13845,8 @@ class EncryptionSpecEncryptionSpecArgs:
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key.setter
-    def kms_key(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class EntityTypeEntityArgsDict(TypedDict):
     synonyms: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -13019,12 +13864,16 @@ class EntityTypeEntityArgs:
     @pulumi.getter
     def synonyms(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @synonyms.setter
-    def synonyms(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def synonyms(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FulfillmentFeatureArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -13036,7 +13885,8 @@ class FulfillmentFeatureArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FulfillmentGenericWebServiceArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
@@ -13062,12 +13912,14 @@ class FulfillmentGenericWebServiceArgs:
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password.setter
-    def password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestHeaders")
     def request_headers(
@@ -13076,12 +13928,14 @@ class FulfillmentGenericWebServiceArgs:
     @request_headers.setter
     def request_headers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def username(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @username.setter
-    def username(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GeneratorInferenceParameterArgsDict(TypedDict):
     max_output_tokens: NotRequired[pulumi.Input[_builtins.int]]
@@ -13103,22 +13957,28 @@ class GeneratorInferenceParameterArgs:
     @pulumi.getter(name="maxOutputTokens")
     def max_output_tokens(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_output_tokens.setter
-    def max_output_tokens(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_output_tokens(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def temperature(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @temperature.setter
-    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topK")
     def top_k(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @top_k.setter
-    def top_k(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def top_k(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topP")
     def top_p(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @top_p.setter
-    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class GeneratorSummarizationContextArgsDict(TypedDict):
     few_shot_examples: NotRequired[
@@ -13173,12 +14033,16 @@ class GeneratorSummarizationContextArgs:
                 Sequence[pulumi.Input[GeneratorSummarizationContextFewShotExampleArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputLanguageCode")
     def output_language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_language_code.setter
-    def output_language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_language_code(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="summarizationSections")
     def summarization_sections(
@@ -13200,12 +14064,14 @@ class GeneratorSummarizationContextArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleArgsDict(TypedDict):
     output: pulumi.Input[GeneratorSummarizationContextFewShotExampleOutputArgsDict]
@@ -13249,7 +14115,8 @@ class GeneratorSummarizationContextFewShotExampleArgs:
     @output.setter
     def output(
         self, value: pulumi.Input[GeneratorSummarizationContextFewShotExampleOutputArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="conversationContext")
     def conversation_context(
@@ -13265,7 +14132,8 @@ class GeneratorSummarizationContextFewShotExampleArgs:
                 GeneratorSummarizationContextFewShotExampleConversationContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extraInfo")
     def extra_info(
@@ -13274,7 +14142,8 @@ class GeneratorSummarizationContextFewShotExampleArgs:
     @extra_info.setter
     def extra_info(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="summarizationSectionList")
     def summarization_section_list(
@@ -13292,7 +14161,8 @@ class GeneratorSummarizationContextFewShotExampleArgs:
                 GeneratorSummarizationContextFewShotExampleSummarizationSectionListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleConversationContextArgsDict(TypedDict):
     message_entries: NotRequired[
@@ -13345,7 +14215,8 @@ class GeneratorSummarizationContextFewShotExampleConversationContextArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleConversationContextMessageEntryArgsDict(
     TypedDict
@@ -13369,22 +14240,26 @@ class GeneratorSummarizationContextFewShotExampleConversationContextMessageEntry
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageCode")
     def language_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_code.setter
-    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role.setter
-    def role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleOutputArgsDict(TypedDict):
     summary_suggestion: NotRequired[
@@ -13421,7 +14296,8 @@ class GeneratorSummarizationContextFewShotExampleOutputArgs:
                 GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionArgsDict(
     TypedDict
@@ -13468,7 +14344,8 @@ class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionSummarySectionArgsDict(
     TypedDict
@@ -13488,12 +14365,14 @@ class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionSummaryS
     @pulumi.getter
     def section(self) -> pulumi.Input[_builtins.str]: ...
     @section.setter
-    def section(self, value: pulumi.Input[_builtins.str]): ...
+    def section(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def summary(self) -> pulumi.Input[_builtins.str]: ...
     @summary.setter
-    def summary(self, value: pulumi.Input[_builtins.str]): ...
+    def summary(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleSummarizationSectionListArgsDict(
     TypedDict
@@ -13548,7 +14427,8 @@ class GeneratorSummarizationContextFewShotExampleSummarizationSectionListArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GeneratorSummarizationContextFewShotExampleSummarizationSectionListSummarizationSectionArgsDict(
     TypedDict
@@ -13570,17 +14450,20 @@ class GeneratorSummarizationContextFewShotExampleSummarizationSectionListSummari
     @pulumi.getter
     def definition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @definition.setter
-    def definition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def definition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GeneratorSummarizationContextSummarizationSectionArgsDict(TypedDict):
     definition: NotRequired[pulumi.Input[_builtins.str]]
@@ -13600,17 +14483,20 @@ class GeneratorSummarizationContextSummarizationSectionArgs:
     @pulumi.getter
     def definition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @definition.setter
-    def definition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def definition(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class IntentFollowupIntentInfoArgsDict(TypedDict):
     followup_intent_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -13628,11 +14514,15 @@ class IntentFollowupIntentInfoArgs:
     @pulumi.getter(name="followupIntentName")
     def followup_intent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @followup_intent_name.setter
-    def followup_intent_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def followup_intent_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentFollowupIntentName")
     def parent_followup_intent_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_followup_intent_name.setter
     def parent_followup_intent_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...

@@ -77,7 +77,8 @@ class GetApiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiResult(GetApiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiResult]:
+        ...
 
 def get_api(
     api_name: Optional[_builtins.str] = ...,

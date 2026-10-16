@@ -68,7 +68,8 @@ class GetVMInstanceGuestAgentResult:
     def uuid(self) -> _builtins.str: ...
 
 class AwaitableGetVMInstanceGuestAgentResult(GetVMInstanceGuestAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVMInstanceGuestAgentResult]:
+        ...
 
 def get_vm_instance_guest_agent(
     resource_uri: Optional[_builtins.str] = ...,

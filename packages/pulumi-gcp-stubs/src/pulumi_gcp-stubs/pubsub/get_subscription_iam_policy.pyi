@@ -34,7 +34,8 @@ class GetSubscriptionIamPolicyResult:
     def subscription(self) -> _builtins.str: ...
 
 class AwaitableGetSubscriptionIamPolicyResult(GetSubscriptionIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubscriptionIamPolicyResult]:
+        ...
 
 def get_subscription_iam_policy(
     project: Optional[_builtins.str] = ...,

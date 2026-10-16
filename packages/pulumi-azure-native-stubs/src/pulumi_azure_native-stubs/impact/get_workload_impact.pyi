@@ -44,7 +44,8 @@ class GetWorkloadImpactResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadImpactResult(GetWorkloadImpactResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadImpactResult]:
+        ...
 
 def get_workload_impact(
     workload_impact_name: Optional[_builtins.str] = ...,

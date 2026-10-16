@@ -68,7 +68,8 @@ class GetAddressResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAddressResult(GetAddressResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAddressResult]:
+        ...
 
 def get_address(
     address_name: Optional[_builtins.str] = ...,

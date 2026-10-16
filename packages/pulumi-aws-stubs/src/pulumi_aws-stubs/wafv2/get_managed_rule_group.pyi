@@ -72,7 +72,8 @@ class GetManagedRuleGroupResult:
     def version_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetManagedRuleGroupResult(GetManagedRuleGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedRuleGroupResult]:
+        ...
 
 def get_managed_rule_group(
     name: Optional[_builtins.str] = ...,

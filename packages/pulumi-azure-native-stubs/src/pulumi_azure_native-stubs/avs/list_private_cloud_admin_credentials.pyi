@@ -37,7 +37,10 @@ class ListPrivateCloudAdminCredentialsResult:
 class AwaitableListPrivateCloudAdminCredentialsResult(
     ListPrivateCloudAdminCredentialsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPrivateCloudAdminCredentialsResult]:
+        ...
 
 def list_private_cloud_admin_credentials(
     private_cloud_name: Optional[_builtins.str] = ...,

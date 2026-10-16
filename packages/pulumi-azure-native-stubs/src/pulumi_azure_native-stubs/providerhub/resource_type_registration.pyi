@@ -28,7 +28,8 @@ class ResourceTypeRegistrationInitArgs:
     @pulumi.getter(name="providerNamespace")
     def provider_namespace(self) -> pulumi.Input[_builtins.str]: ...
     @provider_namespace.setter
-    def provider_namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(
@@ -40,7 +41,8 @@ class ResourceTypeRegistrationInitArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ResourceTypeRegistrationKind]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -49,12 +51,14 @@ class ResourceTypeRegistrationInitArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[ResourceTypeRegistrationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:providerhub:ResourceTypeRegistration")
 class ResourceTypeRegistration(pulumi.CustomResource):

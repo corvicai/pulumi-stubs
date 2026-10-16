@@ -23,7 +23,8 @@ class GetGitHubOAuthResult:
     def token(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetGitHubOAuthResult(GetGitHubOAuthResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGitHubOAuthResult]:
+        ...
 
 def get_git_hub_o_auth(
     location: Optional[_builtins.str] = ...,

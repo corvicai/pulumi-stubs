@@ -60,7 +60,8 @@ class GetIncidentCommentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIncidentCommentResult(GetIncidentCommentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIncidentCommentResult]:
+        ...
 
 def get_incident_comment(
     incident_comment_id: Optional[_builtins.str] = ...,

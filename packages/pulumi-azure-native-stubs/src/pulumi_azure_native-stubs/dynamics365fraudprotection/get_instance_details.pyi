@@ -56,7 +56,8 @@ class GetInstanceDetailsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceDetailsResult(GetInstanceDetailsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceDetailsResult]:
+        ...
 
 def get_instance_details(
     instance_name: Optional[_builtins.str] = ...,

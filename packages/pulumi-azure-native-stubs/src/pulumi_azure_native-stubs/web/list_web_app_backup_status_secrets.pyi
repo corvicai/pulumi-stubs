@@ -90,7 +90,10 @@ class ListWebAppBackupStatusSecretsResult:
     def website_size_in_bytes(self) -> _builtins.float: ...
 
 class AwaitableListWebAppBackupStatusSecretsResult(ListWebAppBackupStatusSecretsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppBackupStatusSecretsResult]:
+        ...
 
 def list_web_app_backup_status_secrets(
     backup_id: Optional[_builtins.str] = ...,

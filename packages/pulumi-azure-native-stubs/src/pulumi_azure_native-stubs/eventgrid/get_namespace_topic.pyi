@@ -56,7 +56,8 @@ class GetNamespaceTopicResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNamespaceTopicResult(GetNamespaceTopicResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNamespaceTopicResult]:
+        ...
 
 def get_namespace_topic(
     namespace_name: Optional[_builtins.str] = ...,

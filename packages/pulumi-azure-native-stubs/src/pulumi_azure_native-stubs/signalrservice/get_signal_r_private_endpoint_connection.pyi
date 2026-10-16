@@ -60,7 +60,10 @@ class GetSignalRPrivateEndpointConnectionResult:
 class AwaitableGetSignalRPrivateEndpointConnectionResult(
     GetSignalRPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSignalRPrivateEndpointConnectionResult]:
+        ...
 
 def get_signal_r_private_endpoint_connection(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

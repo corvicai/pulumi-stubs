@@ -71,7 +71,8 @@ class GetDockerImageResult:
     def upload_time(self) -> _builtins.str: ...
 
 class AwaitableGetDockerImageResult(GetDockerImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDockerImageResult]:
+        ...
 
 def get_docker_image(
     image_name: Optional[_builtins.str] = ...,

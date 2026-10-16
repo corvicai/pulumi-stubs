@@ -34,7 +34,8 @@ class GetUserPoolClientsResult:
     def user_pool_id(self) -> _builtins.str: ...
 
 class AwaitableGetUserPoolClientsResult(GetUserPoolClientsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserPoolClientsResult]:
+        ...
 
 def get_user_pool_clients(
     region: Optional[_builtins.str] = ...,

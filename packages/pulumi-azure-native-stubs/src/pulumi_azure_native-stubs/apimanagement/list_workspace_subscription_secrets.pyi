@@ -25,7 +25,10 @@ class ListWorkspaceSubscriptionSecretsResult:
 class AwaitableListWorkspaceSubscriptionSecretsResult(
     ListWorkspaceSubscriptionSecretsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkspaceSubscriptionSecretsResult]:
+        ...
 
 def list_workspace_subscription_secrets(
     resource_group_name: Optional[_builtins.str] = ...,

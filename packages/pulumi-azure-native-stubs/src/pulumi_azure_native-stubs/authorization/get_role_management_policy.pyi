@@ -72,7 +72,8 @@ class GetRoleManagementPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRoleManagementPolicyResult(GetRoleManagementPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoleManagementPolicyResult]:
+        ...
 
 def get_role_management_policy(
     role_management_policy_name: Optional[_builtins.str] = ...,

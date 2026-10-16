@@ -52,7 +52,8 @@ class GetAccessAnalyzerAnalyzerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAccessAnalyzerAnalyzerResult(GetAccessAnalyzerAnalyzerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessAnalyzerAnalyzerResult]:
+        ...
 
 def get_access_analyzer_analyzer(
     name: Optional[_builtins.str] = ...,

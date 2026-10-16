@@ -66,7 +66,10 @@ class GetStandbyVirtualMachinePoolResult:
     def virtual_machine_state(self) -> _builtins.str: ...
 
 class AwaitableGetStandbyVirtualMachinePoolResult(GetStandbyVirtualMachinePoolResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStandbyVirtualMachinePoolResult]:
+        ...
 
 def get_standby_virtual_machine_pool(
     resource_group_name: Optional[_builtins.str] = ...,

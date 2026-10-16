@@ -37,7 +37,8 @@ class GetStreamKeyResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableGetStreamKeyResult(GetStreamKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStreamKeyResult]:
+        ...
 
 def get_stream_key(
     channel_arn: Optional[_builtins.str] = ...,

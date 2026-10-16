@@ -69,7 +69,10 @@ class GetWebAppRelayServiceConnectionSlotResult:
 class AwaitableGetWebAppRelayServiceConnectionSlotResult(
     GetWebAppRelayServiceConnectionSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppRelayServiceConnectionSlotResult]:
+        ...
 
 def get_web_app_relay_service_connection_slot(
     entity_name: Optional[_builtins.str] = ...,

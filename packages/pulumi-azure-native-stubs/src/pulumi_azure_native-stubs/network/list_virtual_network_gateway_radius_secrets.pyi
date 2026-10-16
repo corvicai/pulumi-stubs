@@ -26,7 +26,10 @@ class ListVirtualNetworkGatewayRadiusSecretsResult:
 class AwaitableListVirtualNetworkGatewayRadiusSecretsResult(
     ListVirtualNetworkGatewayRadiusSecretsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListVirtualNetworkGatewayRadiusSecretsResult]:
+        ...
 
 def list_virtual_network_gateway_radius_secrets(
     resource_group_name: Optional[_builtins.str] = ...,

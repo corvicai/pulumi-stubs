@@ -31,7 +31,8 @@ class GetFhirStoreIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetFhirStoreIamPolicyResult(GetFhirStoreIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFhirStoreIamPolicyResult]:
+        ...
 
 def get_fhir_store_iam_policy(
     fhir_store_id: Optional[_builtins.str] = ...,

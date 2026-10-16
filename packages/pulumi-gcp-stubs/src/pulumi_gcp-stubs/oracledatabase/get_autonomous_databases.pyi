@@ -34,7 +34,8 @@ class GetAutonomousDatabasesResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAutonomousDatabasesResult(GetAutonomousDatabasesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAutonomousDatabasesResult]:
+        ...
 
 def get_autonomous_databases(
     location: Optional[_builtins.str] = ...,

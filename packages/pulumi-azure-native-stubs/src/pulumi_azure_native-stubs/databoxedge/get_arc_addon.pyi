@@ -76,7 +76,8 @@ class GetArcAddonResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetArcAddonResult(GetArcAddonResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetArcAddonResult]:
+        ...
 
 def get_arc_addon(
     addon_name: Optional[_builtins.str] = ...,

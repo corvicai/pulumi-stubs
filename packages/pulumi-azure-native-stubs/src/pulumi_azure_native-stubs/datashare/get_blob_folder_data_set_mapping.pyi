@@ -76,7 +76,8 @@ class GetBlobFolderDataSetMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBlobFolderDataSetMappingResult(GetBlobFolderDataSetMappingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBlobFolderDataSetMappingResult]:
+        ...
 
 def get_blob_folder_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

@@ -34,7 +34,8 @@ class GetProjectConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProjectConnectionResult(GetProjectConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectConnectionResult]:
+        ...
 
 def get_project_connection(
     account_name: Optional[_builtins.str] = ...,

@@ -49,7 +49,10 @@ class GetSecurityConnectorApplicationResult:
 class AwaitableGetSecurityConnectorApplicationResult(
     GetSecurityConnectorApplicationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSecurityConnectorApplicationResult]:
+        ...
 
 def get_security_connector_application(
     application_id: Optional[_builtins.str] = ...,

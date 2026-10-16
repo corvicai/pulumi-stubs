@@ -43,7 +43,8 @@ class GetDatasetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDatasetResult(GetDatasetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatasetResult]:
+        ...
 
 def get_dataset(
     dataset_name: Optional[_builtins.str] = ...,

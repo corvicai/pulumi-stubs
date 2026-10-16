@@ -26,12 +26,14 @@ class HybridRunbookWorkerGroupArgs:
     @pulumi.getter(name="automationAccountName")
     def automation_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @automation_account_name.setter
-    def automation_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def automation_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def credential(
@@ -40,7 +42,8 @@ class HybridRunbookWorkerGroupArgs:
     @credential.setter
     def credential(
         self, value: Optional[pulumi.Input[RunAsCredentialAssociationPropertyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hybridRunbookWorkerGroupName")
     def hybrid_runbook_worker_group_name(
@@ -49,12 +52,14 @@ class HybridRunbookWorkerGroupArgs:
     @hybrid_runbook_worker_group_name.setter
     def hybrid_runbook_worker_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:automation:HybridRunbookWorkerGroup")
 class HybridRunbookWorkerGroup(pulumi.CustomResource):

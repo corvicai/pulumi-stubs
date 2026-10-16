@@ -22,7 +22,8 @@ class UserSolutionArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def products(
@@ -31,12 +32,14 @@ class UserSolutionArgs:
     @products.setter
     def products(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ProductArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="solutionId")
     def solution_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @solution_id.setter
-    def solution_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def solution_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:marketplace:UserSolution")
 class UserSolution(pulumi.CustomResource):

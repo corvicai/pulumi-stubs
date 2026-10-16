@@ -160,7 +160,8 @@ class GetVirtualMachineScaleSetVMResult:
     def zones(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetVirtualMachineScaleSetVMResult(GetVirtualMachineScaleSetVMResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualMachineScaleSetVMResult]:
+        ...
 
 def get_virtual_machine_scale_set_vm(
     expand: Optional[_builtins.str] = ...,

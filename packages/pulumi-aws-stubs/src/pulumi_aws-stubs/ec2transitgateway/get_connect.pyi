@@ -53,7 +53,8 @@ class GetConnectResult:
     def transport_attachment_id(self) -> _builtins.str: ...
 
 class AwaitableGetConnectResult(GetConnectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectResult]:
+        ...
 
 def get_connect(
     filters: Optional[

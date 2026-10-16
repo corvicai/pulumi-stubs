@@ -83,7 +83,8 @@ class GetServerResult:
     def url(self) -> _builtins.str: ...
 
 class AwaitableGetServerResult(GetServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerResult]:
+        ...
 
 def get_server(
     region: Optional[_builtins.str] = ...,

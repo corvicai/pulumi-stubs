@@ -124,7 +124,8 @@ class GetVirtualMachineTemplateResult:
     def vmm_server_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVirtualMachineTemplateResult(GetVirtualMachineTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualMachineTemplateResult]:
+        ...
 
 def get_virtual_machine_template(
     resource_group_name: Optional[_builtins.str] = ...,

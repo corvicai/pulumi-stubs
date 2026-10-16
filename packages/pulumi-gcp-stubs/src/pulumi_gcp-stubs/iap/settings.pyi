@@ -26,7 +26,8 @@ class SettingsArgs:
     @access_settings.setter
     def access_settings(
         self, value: Optional[pulumi.Input[SettingsAccessSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSettings")
     def application_settings(
@@ -35,12 +36,14 @@ class SettingsArgs:
     @application_settings.setter
     def application_settings(
         self, value: Optional[pulumi.Input[SettingsApplicationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SettingsState:
@@ -59,7 +62,8 @@ class _SettingsState:
     @access_settings.setter
     def access_settings(
         self, value: Optional[pulumi.Input[SettingsAccessSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSettings")
     def application_settings(
@@ -68,12 +72,14 @@ class _SettingsState:
     @application_settings.setter
     def application_settings(
         self, value: Optional[pulumi.Input[SettingsApplicationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:iap/settings:Settings")
 class Settings(pulumi.CustomResource):

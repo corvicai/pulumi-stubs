@@ -156,7 +156,8 @@ class GetMetastoreServiceResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetMetastoreServiceResult(GetMetastoreServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMetastoreServiceResult]:
+        ...
 
 def get_metastore_service(
     location: Optional[_builtins.str] = ...,

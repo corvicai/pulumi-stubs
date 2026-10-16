@@ -62,7 +62,10 @@ class GetWebAppAuthSettingsV2WithoutSecretsSlotResult:
 class AwaitableGetWebAppAuthSettingsV2WithoutSecretsSlotResult(
     GetWebAppAuthSettingsV2WithoutSecretsSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppAuthSettingsV2WithoutSecretsSlotResult]:
+        ...
 
 def get_web_app_auth_settings_v2_without_secrets_slot(
     name: Optional[_builtins.str] = ...,

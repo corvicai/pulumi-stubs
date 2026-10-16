@@ -39,27 +39,32 @@ class UserSettingsArgs:
     @pulumi.getter(name="copyAllowed")
     def copy_allowed(self) -> pulumi.Input[_builtins.str]: ...
     @copy_allowed.setter
-    def copy_allowed(self, value: pulumi.Input[_builtins.str]): ...
+    def copy_allowed(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="downloadAllowed")
     def download_allowed(self) -> pulumi.Input[_builtins.str]: ...
     @download_allowed.setter
-    def download_allowed(self, value: pulumi.Input[_builtins.str]): ...
+    def download_allowed(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pasteAllowed")
     def paste_allowed(self) -> pulumi.Input[_builtins.str]: ...
     @paste_allowed.setter
-    def paste_allowed(self, value: pulumi.Input[_builtins.str]): ...
+    def paste_allowed(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="printAllowed")
     def print_allowed(self) -> pulumi.Input[_builtins.str]: ...
     @print_allowed.setter
-    def print_allowed(self, value: pulumi.Input[_builtins.str]): ...
+    def print_allowed(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uploadAllowed")
     def upload_allowed(self) -> pulumi.Input[_builtins.str]: ...
     @upload_allowed.setter
-    def upload_allowed(self, value: pulumi.Input[_builtins.str]): ...
+    def upload_allowed(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalEncryptionContext")
     def additional_encryption_context(
@@ -68,7 +73,8 @@ class UserSettingsArgs:
     @additional_encryption_context.setter
     def additional_encryption_context(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cookieSynchronizationConfiguration")
     def cookie_synchronization_configuration(
@@ -80,17 +86,24 @@ class UserSettingsArgs:
         value: Optional[
             pulumi.Input[UserSettingsCookieSynchronizationConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedKey")
     def customer_managed_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_managed_key.setter
-    def customer_managed_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_managed_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deepLinkAllowed")
     def deep_link_allowed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deep_link_allowed.setter
-    def deep_link_allowed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deep_link_allowed(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disconnectTimeoutInMinutes")
     def disconnect_timeout_in_minutes(
@@ -99,7 +112,8 @@ class UserSettingsArgs:
     @disconnect_timeout_in_minutes.setter
     def disconnect_timeout_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleDisconnectTimeoutInMinutes")
     def idle_disconnect_timeout_in_minutes(
@@ -108,12 +122,14 @@ class UserSettingsArgs:
     @idle_disconnect_timeout_in_minutes.setter
     def idle_disconnect_timeout_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -122,7 +138,8 @@ class UserSettingsArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolbarConfiguration")
     def toolbar_configuration(
@@ -131,7 +148,8 @@ class UserSettingsArgs:
     @toolbar_configuration.setter
     def toolbar_configuration(
         self, value: Optional[pulumi.Input[UserSettingsToolbarConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _UserSettingsState:
@@ -174,7 +192,8 @@ class _UserSettingsState:
     @additional_encryption_context.setter
     def additional_encryption_context(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedPortalArns")
     def associated_portal_arns(
@@ -183,7 +202,8 @@ class _UserSettingsState:
     @associated_portal_arns.setter
     def associated_portal_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cookieSynchronizationConfiguration")
     def cookie_synchronization_configuration(
@@ -195,22 +215,30 @@ class _UserSettingsState:
         value: Optional[
             pulumi.Input[UserSettingsCookieSynchronizationConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyAllowed")
     def copy_allowed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @copy_allowed.setter
-    def copy_allowed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def copy_allowed(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedKey")
     def customer_managed_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_managed_key.setter
-    def customer_managed_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_managed_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deepLinkAllowed")
     def deep_link_allowed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deep_link_allowed.setter
-    def deep_link_allowed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deep_link_allowed(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disconnectTimeoutInMinutes")
     def disconnect_timeout_in_minutes(
@@ -219,12 +247,16 @@ class _UserSettingsState:
     @disconnect_timeout_in_minutes.setter
     def disconnect_timeout_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="downloadAllowed")
     def download_allowed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @download_allowed.setter
-    def download_allowed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def download_allowed(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleDisconnectTimeoutInMinutes")
     def idle_disconnect_timeout_in_minutes(
@@ -233,22 +265,26 @@ class _UserSettingsState:
     @idle_disconnect_timeout_in_minutes.setter
     def idle_disconnect_timeout_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pasteAllowed")
     def paste_allowed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @paste_allowed.setter
-    def paste_allowed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def paste_allowed(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="printAllowed")
     def print_allowed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @print_allowed.setter
-    def print_allowed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def print_allowed(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -257,7 +293,8 @@ class _UserSettingsState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -266,7 +303,8 @@ class _UserSettingsState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolbarConfiguration")
     def toolbar_configuration(
@@ -275,17 +313,22 @@ class _UserSettingsState:
     @toolbar_configuration.setter
     def toolbar_configuration(
         self, value: Optional[pulumi.Input[UserSettingsToolbarConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uploadAllowed")
     def upload_allowed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @upload_allowed.setter
-    def upload_allowed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def upload_allowed(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userSettingsArn")
     def user_settings_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_settings_arn.setter
-    def user_settings_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_settings_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:workspacesweb/userSettings:UserSettings")
 class UserSettings(pulumi.CustomResource):

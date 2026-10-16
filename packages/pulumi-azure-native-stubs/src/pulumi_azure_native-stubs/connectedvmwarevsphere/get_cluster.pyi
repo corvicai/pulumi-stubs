@@ -112,7 +112,8 @@ class GetClusterResult:
     def v_center_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetClusterResult(GetClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterResult]:
+        ...
 
 def get_cluster(
     cluster_name: Optional[_builtins.str] = ...,

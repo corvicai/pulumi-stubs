@@ -192,7 +192,8 @@ class GetInstanceTemplateResult:
     def tags_fingerprint(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceTemplateResult(GetInstanceTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceTemplateResult]:
+        ...
 
 def get_instance_template(
     filter: Optional[_builtins.str] = ...,

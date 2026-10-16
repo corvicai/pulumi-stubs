@@ -70,7 +70,8 @@ class GetDaprSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDaprSubscriptionResult(GetDaprSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDaprSubscriptionResult]:
+        ...
 
 def get_dapr_subscription(
     environment_name: Optional[_builtins.str] = ...,

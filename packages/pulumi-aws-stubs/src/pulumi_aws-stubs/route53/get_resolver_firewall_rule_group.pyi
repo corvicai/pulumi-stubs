@@ -71,7 +71,10 @@ class GetResolverFirewallRuleGroupResult:
     def status_message(self) -> _builtins.str: ...
 
 class AwaitableGetResolverFirewallRuleGroupResult(GetResolverFirewallRuleGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetResolverFirewallRuleGroupResult]:
+        ...
 
 def get_resolver_firewall_rule_group(
     firewall_rule_group_id: Optional[_builtins.str] = ...,

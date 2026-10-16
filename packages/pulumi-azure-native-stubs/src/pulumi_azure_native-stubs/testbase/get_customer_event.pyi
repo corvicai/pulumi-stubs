@@ -48,7 +48,8 @@ class GetCustomerEventResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCustomerEventResult(GetCustomerEventResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomerEventResult]:
+        ...
 
 def get_customer_event(
     customer_event_name: Optional[_builtins.str] = ...,

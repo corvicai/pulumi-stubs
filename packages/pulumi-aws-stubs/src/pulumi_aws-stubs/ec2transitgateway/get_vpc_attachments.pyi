@@ -31,7 +31,8 @@ class GetVpcAttachmentsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetVpcAttachmentsResult(GetVpcAttachmentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcAttachmentsResult]:
+        ...
 
 def get_vpc_attachments(
     filters: Optional[

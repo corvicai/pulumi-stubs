@@ -52,7 +52,8 @@ class GetVirtualEndpointResult:
     def virtual_endpoints(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetVirtualEndpointResult(GetVirtualEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualEndpointResult]:
+        ...
 
 def get_virtual_endpoint(
     resource_group_name: Optional[_builtins.str] = ...,

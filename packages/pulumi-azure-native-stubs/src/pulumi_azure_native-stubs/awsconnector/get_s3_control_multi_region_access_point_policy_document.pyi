@@ -51,7 +51,10 @@ class GetS3ControlMultiRegionAccessPointPolicyDocumentResult:
 class AwaitableGetS3ControlMultiRegionAccessPointPolicyDocumentResult(
     GetS3ControlMultiRegionAccessPointPolicyDocumentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetS3ControlMultiRegionAccessPointPolicyDocumentResult]:
+        ...
 
 def get_s3_control_multi_region_access_point_policy_document(
     name: Optional[_builtins.str] = ...,

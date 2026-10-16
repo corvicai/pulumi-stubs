@@ -36,7 +36,8 @@ class SecretArgs:
     @pulumi.getter
     def replication(self) -> pulumi.Input[SecretReplicationArgs]: ...
     @replication.setter
-    def replication(self, value: pulumi.Input[SecretReplicationArgs]): ...
+    def replication(self, value: pulumi.Input[SecretReplicationArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -45,17 +46,22 @@ class SecretArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -64,22 +70,26 @@ class SecretArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rotation(self) -> Optional[pulumi.Input[SecretRotationArgs]]: ...
     @rotation.setter
-    def rotation(self, value: Optional[pulumi.Input[SecretRotationArgs]]): ...
+    def rotation(self, value: Optional[pulumi.Input[SecretRotationArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretId")
     def secret_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_id.setter
-    def secret_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -88,7 +98,8 @@ class SecretArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -97,12 +108,14 @@ class SecretArgs:
     @topics.setter
     def topics(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SecretTopicArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionAliases")
     def version_aliases(
@@ -111,12 +124,16 @@ class SecretArgs:
     @version_aliases.setter
     def version_aliases(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionDestroyTtl")
     def version_destroy_ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_destroy_ttl.setter
-    def version_destroy_ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_destroy_ttl(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SecretState:
@@ -160,17 +177,22 @@ class _SecretState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -179,7 +201,8 @@ class _SecretState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -188,12 +211,14 @@ class _SecretState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -202,17 +227,20 @@ class _SecretState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -221,22 +249,28 @@ class _SecretState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def replication(self) -> Optional[pulumi.Input[SecretReplicationArgs]]: ...
     @replication.setter
-    def replication(self, value: Optional[pulumi.Input[SecretReplicationArgs]]): ...
+    def replication(
+        self, value: Optional[pulumi.Input[SecretReplicationArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rotation(self) -> Optional[pulumi.Input[SecretRotationArgs]]: ...
     @rotation.setter
-    def rotation(self, value: Optional[pulumi.Input[SecretRotationArgs]]): ...
+    def rotation(self, value: Optional[pulumi.Input[SecretRotationArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretId")
     def secret_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_id.setter
-    def secret_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -245,7 +279,8 @@ class _SecretState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -254,12 +289,14 @@ class _SecretState:
     @topics.setter
     def topics(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SecretTopicArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionAliases")
     def version_aliases(
@@ -268,12 +305,16 @@ class _SecretState:
     @version_aliases.setter
     def version_aliases(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionDestroyTtl")
     def version_destroy_ttl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_destroy_ttl.setter
-    def version_destroy_ttl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_destroy_ttl(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:secretmanager/secret:Secret")
 class Secret(pulumi.CustomResource):

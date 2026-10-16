@@ -57,7 +57,8 @@ class GetResourcesResult:
     ) -> Optional[Sequence[outputs.GetResourcesTagFilterResult]]: ...
 
 class AwaitableGetResourcesResult(GetResourcesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourcesResult]:
+        ...
 
 def get_resources(
     exclude_compliant_resources: Optional[_builtins.bool] = ...,

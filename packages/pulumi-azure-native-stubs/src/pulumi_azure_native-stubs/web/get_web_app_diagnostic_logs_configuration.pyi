@@ -58,7 +58,10 @@ class GetWebAppDiagnosticLogsConfigurationResult:
 class AwaitableGetWebAppDiagnosticLogsConfigurationResult(
     GetWebAppDiagnosticLogsConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppDiagnosticLogsConfigurationResult]:
+        ...
 
 def get_web_app_diagnostic_logs_configuration(
     name: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class GetDnsNamespaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDnsNamespaceResult(GetDnsNamespaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnsNamespaceResult]:
+        ...
 
 def get_dns_namespace(
     name: Optional[_builtins.str] = ...,

@@ -34,7 +34,8 @@ class StackInstancesArgs:
     @pulumi.getter(name="stackSetName")
     def stack_set_name(self) -> pulumi.Input[_builtins.str]: ...
     @stack_set_name.setter
-    def stack_set_name(self, value: pulumi.Input[_builtins.str]): ...
+    def stack_set_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def accounts(
@@ -43,12 +44,14 @@ class StackInstancesArgs:
     @accounts.setter
     def accounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callAs")
     def call_as(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @call_as.setter
-    def call_as(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def call_as(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentTargets")
     def deployment_targets(
@@ -57,7 +60,8 @@ class StackInstancesArgs:
     @deployment_targets.setter
     def deployment_targets(
         self, value: Optional[pulumi.Input[StackInstancesDeploymentTargetsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operationPreferences")
     def operation_preferences(
@@ -66,7 +70,8 @@ class StackInstancesArgs:
     @operation_preferences.setter
     def operation_preferences(
         self, value: Optional[pulumi.Input[StackInstancesOperationPreferencesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterOverrides")
     def parameter_overrides(
@@ -75,12 +80,14 @@ class StackInstancesArgs:
     @parameter_overrides.setter
     def parameter_overrides(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -89,12 +96,14 @@ class StackInstancesArgs:
     @regions.setter
     def regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retainStacks")
     def retain_stacks(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @retain_stacks.setter
-    def retain_stacks(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def retain_stacks(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _StackInstancesState:
@@ -129,12 +138,14 @@ class _StackInstancesState:
     @accounts.setter
     def accounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callAs")
     def call_as(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @call_as.setter
-    def call_as(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def call_as(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentTargets")
     def deployment_targets(
@@ -143,7 +154,8 @@ class _StackInstancesState:
     @deployment_targets.setter
     def deployment_targets(
         self, value: Optional[pulumi.Input[StackInstancesDeploymentTargetsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operationPreferences")
     def operation_preferences(
@@ -152,7 +164,8 @@ class _StackInstancesState:
     @operation_preferences.setter
     def operation_preferences(
         self, value: Optional[pulumi.Input[StackInstancesOperationPreferencesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterOverrides")
     def parameter_overrides(
@@ -161,12 +174,14 @@ class _StackInstancesState:
     @parameter_overrides.setter
     def parameter_overrides(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -175,12 +190,14 @@ class _StackInstancesState:
     @regions.setter
     def regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retainStacks")
     def retain_stacks(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @retain_stacks.setter
-    def retain_stacks(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def retain_stacks(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stackInstanceSummaries")
     def stack_instance_summaries(
@@ -194,17 +211,20 @@ class _StackInstancesState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[StackInstancesStackInstanceSummaryArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stackSetId")
     def stack_set_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @stack_set_id.setter
-    def stack_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def stack_set_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stackSetName")
     def stack_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @stack_set_name.setter
-    def stack_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def stack_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cloudformation/stackInstances:StackInstances")
 class StackInstances(pulumi.CustomResource):

@@ -23,12 +23,14 @@ class ConnectionAliasArgs:
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> pulumi.Input[_builtins.str]: ...
     @connection_string.setter
-    def connection_string(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -37,12 +39,16 @@ class ConnectionAliasArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ConnectionAliasTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ConnectionAliasTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ConnectionAliasTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConnectionAliasState:
@@ -63,22 +69,30 @@ class _ConnectionAliasState:
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_string.setter
-    def connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_string(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerAccountId")
     def owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_account_id.setter
-    def owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -87,7 +101,8 @@ class _ConnectionAliasState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -96,12 +111,16 @@ class _ConnectionAliasState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ConnectionAliasTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ConnectionAliasTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[ConnectionAliasTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:workspaces/connectionAlias:ConnectionAlias")
 class ConnectionAlias(pulumi.CustomResource):

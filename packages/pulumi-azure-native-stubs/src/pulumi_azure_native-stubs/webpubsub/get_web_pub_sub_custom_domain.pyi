@@ -52,7 +52,8 @@ class GetWebPubSubCustomDomainResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebPubSubCustomDomainResult(GetWebPubSubCustomDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebPubSubCustomDomainResult]:
+        ...
 
 def get_web_pub_sub_custom_domain(
     name: Optional[_builtins.str] = ...,

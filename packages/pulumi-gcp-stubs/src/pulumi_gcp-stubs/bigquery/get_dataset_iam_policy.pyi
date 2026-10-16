@@ -34,7 +34,8 @@ class GetDatasetIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetDatasetIamPolicyResult(GetDatasetIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatasetIamPolicyResult]:
+        ...
 
 def get_dataset_iam_policy(
     dataset_id: Optional[_builtins.str] = ...,

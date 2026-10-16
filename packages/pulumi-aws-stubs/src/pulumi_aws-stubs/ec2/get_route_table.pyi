@@ -69,7 +69,8 @@ class GetRouteTableResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetRouteTableResult(GetRouteTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteTableResult]:
+        ...
 
 def get_route_table(
     filters: Optional[

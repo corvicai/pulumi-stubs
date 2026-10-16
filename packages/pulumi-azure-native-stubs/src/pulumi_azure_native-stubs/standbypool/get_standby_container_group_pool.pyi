@@ -64,7 +64,10 @@ class GetStandbyContainerGroupPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStandbyContainerGroupPoolResult(GetStandbyContainerGroupPoolResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStandbyContainerGroupPoolResult]:
+        ...
 
 def get_standby_container_group_pool(
     resource_group_name: Optional[_builtins.str] = ...,

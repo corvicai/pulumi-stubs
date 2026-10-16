@@ -56,7 +56,8 @@ class GetMDATPDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMDATPDataConnectorResult(GetMDATPDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMDATPDataConnectorResult]:
+        ...
 
 def get_mdatp_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

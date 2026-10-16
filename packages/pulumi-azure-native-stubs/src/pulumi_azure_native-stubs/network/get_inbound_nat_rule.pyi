@@ -90,7 +90,8 @@ class GetInboundNatRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInboundNatRuleResult(GetInboundNatRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInboundNatRuleResult]:
+        ...
 
 def get_inbound_nat_rule(
     expand: Optional[_builtins.str] = ...,

@@ -34,12 +34,14 @@ class ResponsePlanArgs:
     @incident_template.setter
     def incident_template(
         self, value: pulumi.Input[ResponsePlanIncidentTemplateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[ResponsePlanActionArgs]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[ResponsePlanActionArgs]]): ...
+    def action(self, value: Optional[pulumi.Input[ResponsePlanActionArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="chatChannels")
     def chat_channels(
@@ -48,12 +50,14 @@ class ResponsePlanArgs:
     @chat_channels.setter
     def chat_channels(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def engagements(
@@ -62,24 +66,28 @@ class ResponsePlanArgs:
     @engagements.setter
     def engagements(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def integration(self) -> Optional[pulumi.Input[ResponsePlanIntegrationArgs]]: ...
     @integration.setter
     def integration(
         self, value: Optional[pulumi.Input[ResponsePlanIntegrationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -88,7 +96,8 @@ class ResponsePlanArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ResponsePlanState:
@@ -119,12 +128,14 @@ class _ResponsePlanState:
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[ResponsePlanActionArgs]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[ResponsePlanActionArgs]]): ...
+    def action(self, value: Optional[pulumi.Input[ResponsePlanActionArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="chatChannels")
     def chat_channels(
@@ -133,12 +144,14 @@ class _ResponsePlanState:
     @chat_channels.setter
     def chat_channels(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def engagements(
@@ -147,7 +160,8 @@ class _ResponsePlanState:
     @engagements.setter
     def engagements(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="incidentTemplate")
     def incident_template(
@@ -156,24 +170,28 @@ class _ResponsePlanState:
     @incident_template.setter
     def incident_template(
         self, value: Optional[pulumi.Input[ResponsePlanIncidentTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def integration(self) -> Optional[pulumi.Input[ResponsePlanIntegrationArgs]]: ...
     @integration.setter
     def integration(
         self, value: Optional[pulumi.Input[ResponsePlanIntegrationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -182,7 +200,8 @@ class _ResponsePlanState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -191,7 +210,8 @@ class _ResponsePlanState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ssmincidents/responsePlan:ResponsePlan")
 class ResponsePlan(pulumi.CustomResource):

@@ -86,22 +86,26 @@ class SqlAssessmentV2OperationArgs:
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectName")
     def project_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_name.setter
-    def project_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentName")
     def assessment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assessment_name.setter
-    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentType")
     def assessment_type(
@@ -110,7 +114,8 @@ class SqlAssessmentV2OperationArgs:
     @assessment_type.setter
     def assessment_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AssessmentType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="asyncCommitModeIntent")
     def async_commit_mode_intent(
@@ -119,12 +124,14 @@ class SqlAssessmentV2OperationArgs:
     @async_commit_mode_intent.setter
     def async_commit_mode_intent(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AsyncCommitModeIntent]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureLocation")
     def azure_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @azure_location.setter
-    def azure_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def azure_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureOfferCode")
     def azure_offer_code(
@@ -133,7 +140,8 @@ class SqlAssessmentV2OperationArgs:
     @azure_offer_code.setter
     def azure_offer_code(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureOfferCode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureOfferCodeForVm")
     def azure_offer_code_for_vm(
@@ -142,7 +150,8 @@ class SqlAssessmentV2OperationArgs:
     @azure_offer_code_for_vm.setter
     def azure_offer_code_for_vm(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureOfferCode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureSecurityOfferingType")
     def azure_security_offering_type(
@@ -152,7 +161,8 @@ class SqlAssessmentV2OperationArgs:
     def azure_security_offering_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AzureSecurityOfferingType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureSqlDatabaseSettings")
     def azure_sql_database_settings(
@@ -161,7 +171,8 @@ class SqlAssessmentV2OperationArgs:
     @azure_sql_database_settings.setter
     def azure_sql_database_settings(
         self, value: Optional[pulumi.Input[SqlDbSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureSqlManagedInstanceSettings")
     def azure_sql_managed_instance_settings(
@@ -170,14 +181,16 @@ class SqlAssessmentV2OperationArgs:
     @azure_sql_managed_instance_settings.setter
     def azure_sql_managed_instance_settings(
         self, value: Optional[pulumi.Input[SqlMiSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureSqlVmSettings")
     def azure_sql_vm_settings(self) -> Optional[pulumi.Input[SqlVmSettingsArgs]]: ...
     @azure_sql_vm_settings.setter
     def azure_sql_vm_settings(
         self, value: Optional[pulumi.Input[SqlVmSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confidenceRatingInPercentage")
     def confidence_rating_in_percentage(
@@ -186,7 +199,8 @@ class SqlAssessmentV2OperationArgs:
     @confidence_rating_in_percentage.setter
     def confidence_rating_in_percentage(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def currency(
@@ -195,7 +209,8 @@ class SqlAssessmentV2OperationArgs:
     @currency.setter
     def currency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureCurrency]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disasterRecoveryLocation")
     def disaster_recovery_location(
@@ -204,27 +219,40 @@ class SqlAssessmentV2OperationArgs:
     @disaster_recovery_location.setter
     def disaster_recovery_location(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureLocation]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discountPercentage")
     def discount_percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @discount_percentage.setter
-    def discount_percentage(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def discount_percentage(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eaSubscriptionId")
     def ea_subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ea_subscription_id.setter
-    def ea_subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ea_subscription_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHadrAssessment")
     def enable_hadr_assessment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_hadr_assessment.setter
-    def enable_hadr_assessment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_hadr_assessment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityUptime")
     def entity_uptime(self) -> Optional[pulumi.Input[EntityUptimeArgs]]: ...
     @entity_uptime.setter
-    def entity_uptime(self, value: Optional[pulumi.Input[EntityUptimeArgs]]): ...
+    def entity_uptime(
+        self, value: Optional[pulumi.Input[EntityUptimeArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentType")
     def environment_type(
@@ -233,14 +261,16 @@ class SqlAssessmentV2OperationArgs:
     @environment_type.setter
     def environment_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnvironmentType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupType")
     def group_type(self) -> Optional[pulumi.Input[Union[_builtins.str, GroupType]]]: ...
     @group_type.setter
     def group_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, GroupType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isInternetAccessAvailable")
     def is_internet_access_available(
@@ -249,7 +279,8 @@ class SqlAssessmentV2OperationArgs:
     @is_internet_access_available.setter
     def is_internet_access_available(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multiSubnetIntent")
     def multi_subnet_intent(
@@ -258,7 +289,8 @@ class SqlAssessmentV2OperationArgs:
     @multi_subnet_intent.setter
     def multi_subnet_intent(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MultiSubnetIntent]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optimizationLogic")
     def optimization_logic(
@@ -267,14 +299,16 @@ class SqlAssessmentV2OperationArgs:
     @optimization_logic.setter
     def optimization_logic(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OptimizationLogic]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osLicense")
     def os_license(self) -> Optional[pulumi.Input[Union[_builtins.str, OsLicense]]]: ...
     @os_license.setter
     def os_license(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OsLicense]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentile(
@@ -283,17 +317,24 @@ class SqlAssessmentV2OperationArgs:
     @percentile.setter
     def percentile(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Percentile]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataEndTime")
     def perf_data_end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_end_time.setter
-    def perf_data_end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_end_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataStartTime")
     def perf_data_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_start_time.setter
-    def perf_data_start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_start_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -302,7 +343,8 @@ class SqlAssessmentV2OperationArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservedInstance")
     def reserved_instance(
@@ -311,7 +353,8 @@ class SqlAssessmentV2OperationArgs:
     @reserved_instance.setter
     def reserved_instance(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureReservedInstance]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservedInstanceForVm")
     def reserved_instance_for_vm(
@@ -320,12 +363,16 @@ class SqlAssessmentV2OperationArgs:
     @reserved_instance_for_vm.setter
     def reserved_instance_for_vm(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureReservedInstance]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingFactor")
     def scaling_factor(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @scaling_factor.setter
-    def scaling_factor(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def scaling_factor(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizingCriterion")
     def sizing_criterion(
@@ -335,7 +382,8 @@ class SqlAssessmentV2OperationArgs:
     def sizing_criterion(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AssessmentSizingCriterion]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerLicense")
     def sql_server_license(
@@ -344,14 +392,16 @@ class SqlAssessmentV2OperationArgs:
     @sql_server_license.setter
     def sql_server_license(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlServerLicense]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeRange")
     def time_range(self) -> Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]: ...
     @time_range.setter
     def time_range(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:migrate:SqlAssessmentV2Operation")
 class SqlAssessmentV2Operation(pulumi.CustomResource):

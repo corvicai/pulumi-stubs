@@ -75,7 +75,8 @@ class GetWebAppDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppDeploymentResult(GetWebAppDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppDeploymentResult]:
+        ...
 
 def get_web_app_deployment(
     id: Optional[_builtins.str] = ...,

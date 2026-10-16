@@ -76,7 +76,8 @@ class GetSmartDetectorAlertRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSmartDetectorAlertRuleResult(GetSmartDetectorAlertRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSmartDetectorAlertRuleResult]:
+        ...
 
 def get_smart_detector_alert_rule(
     alert_rule_name: Optional[_builtins.str] = ...,

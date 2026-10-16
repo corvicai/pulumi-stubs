@@ -44,7 +44,8 @@ class GetFabricAgentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFabricAgentResult(GetFabricAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFabricAgentResult]:
+        ...
 
 def get_fabric_agent(
     fabric_agent_name: Optional[_builtins.str] = ...,

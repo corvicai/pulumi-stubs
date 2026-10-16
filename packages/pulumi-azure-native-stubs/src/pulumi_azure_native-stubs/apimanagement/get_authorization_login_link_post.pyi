@@ -20,7 +20,10 @@ class GetAuthorizationLoginLinkPostResult:
     def login_link(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAuthorizationLoginLinkPostResult(GetAuthorizationLoginLinkPostResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAuthorizationLoginLinkPostResult]:
+        ...
 
 def get_authorization_login_link_post(
     authorization_id: Optional[_builtins.str] = ...,

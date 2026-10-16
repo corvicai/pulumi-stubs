@@ -94,7 +94,8 @@ class GetAFDOriginResult:
     def weight(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetAFDOriginResult(GetAFDOriginResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAFDOriginResult]:
+        ...
 
 def get_afd_origin(
     origin_group_name: Optional[_builtins.str] = ...,

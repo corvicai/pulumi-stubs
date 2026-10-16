@@ -106,7 +106,8 @@ class GetPrivateLinkServiceResult:
     ) -> Optional[outputs.PrivateLinkServicePropertiesResponseVisibility]: ...
 
 class AwaitableGetPrivateLinkServiceResult(GetPrivateLinkServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateLinkServiceResult]:
+        ...
 
 def get_private_link_service(
     expand: Optional[_builtins.str] = ...,

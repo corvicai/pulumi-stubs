@@ -22,7 +22,10 @@ class ListServiceGloballyEnabledApmsResult:
 class AwaitableListServiceGloballyEnabledApmsResult(
     ListServiceGloballyEnabledApmsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListServiceGloballyEnabledApmsResult]:
+        ...
 
 def list_service_globally_enabled_apms(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -55,7 +55,8 @@ class ApiBridgePropertiesArgs:
     @allowed_address_prefixes.setter
     def allowed_address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configureApiBridge")
     def configure_api_bridge(
@@ -65,7 +66,8 @@ class ApiBridgePropertiesArgs:
     def configure_api_bridge(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ApiBridgeActivationState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomSipHeadersPropertiesArgsDict(TypedDict):
     headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[CustomSipHeaderArgsDict]]]]
@@ -87,7 +89,8 @@ class CustomSipHeadersPropertiesArgs:
     @headers.setter
     def headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CustomSipHeaderArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomSipHeaderArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -101,7 +104,8 @@ class CustomSipHeaderArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DnsDelegationPropertiesArgsDict(TypedDict):
     domain: NotRequired[pulumi.Input[_builtins.str]]
@@ -115,7 +119,8 @@ class DnsDelegationPropertiesArgs:
     @pulumi.getter
     def domain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain.setter
-    def domain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DnsDelegationsPropertiesArgsDict(TypedDict):
     delegations: NotRequired[
@@ -144,7 +149,8 @@ class DnsDelegationsPropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DnsDelegationPropertiesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -170,7 +176,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -179,7 +186,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrimaryRegionPropertiesArgsDict(TypedDict):
     operator_addresses: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -215,7 +223,8 @@ class PrimaryRegionPropertiesArgs:
     @operator_addresses.setter
     def operator_addresses(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedMediaSourceAddressPrefixes")
     def allowed_media_source_address_prefixes(
@@ -224,7 +233,8 @@ class PrimaryRegionPropertiesArgs:
     @allowed_media_source_address_prefixes.setter
     def allowed_media_source_address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedSignalingSourceAddressPrefixes")
     def allowed_signaling_source_address_prefixes(
@@ -233,7 +243,8 @@ class PrimaryRegionPropertiesArgs:
     @allowed_signaling_source_address_prefixes.setter
     def allowed_signaling_source_address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="esrpAddresses")
     def esrp_addresses(
@@ -242,7 +253,8 @@ class PrimaryRegionPropertiesArgs:
     @esrp_addresses.setter
     def esrp_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceRegionPropertiesArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -260,7 +272,8 @@ class ServiceRegionPropertiesArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryRegionProperties")
     def primary_region_properties(
@@ -269,7 +282,8 @@ class ServiceRegionPropertiesArgs:
     @primary_region_properties.setter
     def primary_region_properties(
         self, value: pulumi.Input[PrimaryRegionPropertiesArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -293,24 +307,29 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @size.setter
-    def size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[SkuTier]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[SkuTier]]): ...
+    def tier(self, value: Optional[pulumi.Input[SkuTier]]):  # -> None:
+        ...

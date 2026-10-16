@@ -52,7 +52,8 @@ class GetPrivateLinkScopeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateLinkScopeResult(GetPrivateLinkScopeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateLinkScopeResult]:
+        ...
 
 def get_private_link_scope(
     resource_group_name: Optional[_builtins.str] = ...,

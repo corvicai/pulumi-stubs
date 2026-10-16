@@ -60,7 +60,8 @@ class GetAgriServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAgriServiceResult(GetAgriServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAgriServiceResult]:
+        ...
 
 def get_agri_service(
     agri_service_resource_name: Optional[_builtins.str] = ...,

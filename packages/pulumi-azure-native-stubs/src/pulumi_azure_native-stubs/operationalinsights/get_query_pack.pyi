@@ -64,7 +64,8 @@ class GetQueryPackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetQueryPackResult(GetQueryPackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueryPackResult]:
+        ...
 
 def get_query_pack(
     query_pack_name: Optional[_builtins.str] = ...,

@@ -60,7 +60,8 @@ class GetCertificateMapResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetCertificateMapResult(GetCertificateMapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateMapResult]:
+        ...
 
 def get_certificate_map(
     name: Optional[_builtins.str] = ...,

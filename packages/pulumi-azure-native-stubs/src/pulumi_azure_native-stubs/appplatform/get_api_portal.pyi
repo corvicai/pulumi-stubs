@@ -48,7 +48,8 @@ class GetApiPortalResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiPortalResult(GetApiPortalResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiPortalResult]:
+        ...
 
 def get_api_portal(
     api_portal_name: Optional[_builtins.str] = ...,

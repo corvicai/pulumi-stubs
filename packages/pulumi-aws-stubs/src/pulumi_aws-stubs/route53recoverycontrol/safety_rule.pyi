@@ -33,17 +33,20 @@ class SafetyRuleArgs:
     @pulumi.getter(name="controlPanelArn")
     def control_panel_arn(self) -> pulumi.Input[_builtins.str]: ...
     @control_panel_arn.setter
-    def control_panel_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def control_panel_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleConfig")
     def rule_config(self) -> pulumi.Input[SafetyRuleRuleConfigArgs]: ...
     @rule_config.setter
-    def rule_config(self, value: pulumi.Input[SafetyRuleRuleConfigArgs]): ...
+    def rule_config(self, value: pulumi.Input[SafetyRuleRuleConfigArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitPeriodMs")
     def wait_period_ms(self) -> pulumi.Input[_builtins.int]: ...
     @wait_period_ms.setter
-    def wait_period_ms(self, value: pulumi.Input[_builtins.int]): ...
+    def wait_period_ms(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assertedControls")
     def asserted_controls(
@@ -52,7 +55,8 @@ class SafetyRuleArgs:
     @asserted_controls.setter
     def asserted_controls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatingControls")
     def gating_controls(
@@ -61,12 +65,14 @@ class SafetyRuleArgs:
     @gating_controls.setter
     def gating_controls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -75,7 +81,8 @@ class SafetyRuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetControls")
     def target_controls(
@@ -84,7 +91,8 @@ class SafetyRuleArgs:
     @target_controls.setter
     def target_controls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SafetyRuleState:
@@ -115,7 +123,8 @@ class _SafetyRuleState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assertedControls")
     def asserted_controls(
@@ -124,12 +133,16 @@ class _SafetyRuleState:
     @asserted_controls.setter
     def asserted_controls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="controlPanelArn")
     def control_panel_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @control_panel_arn.setter
-    def control_panel_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def control_panel_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatingControls")
     def gating_controls(
@@ -138,22 +151,28 @@ class _SafetyRuleState:
     @gating_controls.setter
     def gating_controls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleConfig")
     def rule_config(self) -> Optional[pulumi.Input[SafetyRuleRuleConfigArgs]]: ...
     @rule_config.setter
-    def rule_config(self, value: Optional[pulumi.Input[SafetyRuleRuleConfigArgs]]): ...
+    def rule_config(
+        self, value: Optional[pulumi.Input[SafetyRuleRuleConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -162,7 +181,8 @@ class _SafetyRuleState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -171,7 +191,8 @@ class _SafetyRuleState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetControls")
     def target_controls(
@@ -180,12 +201,14 @@ class _SafetyRuleState:
     @target_controls.setter
     def target_controls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitPeriodMs")
     def wait_period_ms(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @wait_period_ms.setter
-    def wait_period_ms(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def wait_period_ms(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:route53recoverycontrol/safetyRule:SafetyRule")
 class SafetyRule(pulumi.CustomResource):

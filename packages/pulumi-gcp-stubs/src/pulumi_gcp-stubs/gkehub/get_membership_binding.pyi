@@ -80,7 +80,8 @@ class GetMembershipBindingResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetMembershipBindingResult(GetMembershipBindingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMembershipBindingResult]:
+        ...
 
 def get_membership_binding(
     location: Optional[_builtins.str] = ...,

@@ -20,7 +20,8 @@ class ListWorkspaceNamedValueResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListWorkspaceNamedValueResult(ListWorkspaceNamedValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWorkspaceNamedValueResult]:
+        ...
 
 def list_workspace_named_value(
     named_value_id: Optional[_builtins.str] = ...,

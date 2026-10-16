@@ -54,7 +54,8 @@ class GetCassandraClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCassandraClusterResult(GetCassandraClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCassandraClusterResult]:
+        ...
 
 def get_cassandra_cluster(
     cluster_name: Optional[_builtins.str] = ...,

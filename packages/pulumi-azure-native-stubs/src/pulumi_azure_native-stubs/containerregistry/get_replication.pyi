@@ -64,7 +64,8 @@ class GetReplicationResult:
     def zone_redundancy(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetReplicationResult(GetReplicationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationResult]:
+        ...
 
 def get_replication(
     registry_name: Optional[_builtins.str] = ...,

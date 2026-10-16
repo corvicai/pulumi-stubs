@@ -40,7 +40,10 @@ class GetWorkloadDeploymentSecretConfigurationsResult:
 class AwaitableGetWorkloadDeploymentSecretConfigurationsResult(
     GetWorkloadDeploymentSecretConfigurationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkloadDeploymentSecretConfigurationsResult]:
+        ...
 
 def get_workload_deployment_secret_configurations(
     modernize_project_name: Optional[_builtins.str] = ...,

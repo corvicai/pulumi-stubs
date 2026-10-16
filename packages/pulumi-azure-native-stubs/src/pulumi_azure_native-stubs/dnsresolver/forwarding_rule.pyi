@@ -31,17 +31,22 @@ class ForwardingRuleArgs:
     @pulumi.getter(name="dnsForwardingRulesetName")
     def dns_forwarding_ruleset_name(self) -> pulumi.Input[_builtins.str]: ...
     @dns_forwarding_ruleset_name.setter
-    def dns_forwarding_ruleset_name(self, value: pulumi.Input[_builtins.str]): ...
+    def dns_forwarding_ruleset_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDnsServers")
     def target_dns_servers(
@@ -50,12 +55,16 @@ class ForwardingRuleArgs:
     @target_dns_servers.setter
     def target_dns_servers(
         self, value: pulumi.Input[Sequence[pulumi.Input[TargetDnsServerArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardingRuleName")
     def forwarding_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @forwarding_rule_name.setter
-    def forwarding_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def forwarding_rule_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardingRuleState")
     def forwarding_rule_state(
@@ -64,7 +73,8 @@ class ForwardingRuleArgs:
     @forwarding_rule_state.setter
     def forwarding_rule_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ForwardingRuleState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -73,7 +83,8 @@ class ForwardingRuleArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:dnsresolver:ForwardingRule")
 class ForwardingRule(pulumi.CustomResource):

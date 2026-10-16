@@ -60,7 +60,8 @@ class GetGrafanaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGrafanaResult(GetGrafanaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGrafanaResult]:
+        ...
 
 def get_grafana(
     resource_group_name: Optional[_builtins.str] = ...,

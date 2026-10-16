@@ -24,7 +24,8 @@ class ListClusterCalloutPoliciesResult:
     def value(self) -> Optional[Sequence[outputs.CalloutPolicyResponse]]: ...
 
 class AwaitableListClusterCalloutPoliciesResult(ListClusterCalloutPoliciesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListClusterCalloutPoliciesResult]:
+        ...
 
 def list_cluster_callout_policies(
     cluster_name: Optional[_builtins.str] = ...,

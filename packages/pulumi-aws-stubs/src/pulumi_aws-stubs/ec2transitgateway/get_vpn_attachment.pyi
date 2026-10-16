@@ -45,7 +45,8 @@ class GetVpnAttachmentResult:
     def vpn_connection_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVpnAttachmentResult(GetVpnAttachmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnAttachmentResult]:
+        ...
 
 def get_vpn_attachment(
     filters: Optional[

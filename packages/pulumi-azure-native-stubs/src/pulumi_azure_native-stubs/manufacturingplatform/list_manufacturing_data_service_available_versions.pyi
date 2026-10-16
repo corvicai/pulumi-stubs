@@ -18,7 +18,10 @@ class ListManufacturingDataServiceAvailableVersionsResult:
 class AwaitableListManufacturingDataServiceAvailableVersionsResult(
     ListManufacturingDataServiceAvailableVersionsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListManufacturingDataServiceAvailableVersionsResult]:
+        ...
 
 def list_manufacturing_data_service_available_versions(
     mds_resource_name: Optional[_builtins.str] = ...,

@@ -56,7 +56,10 @@ class GetPeriodicTimerEventTriggerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPeriodicTimerEventTriggerResult(GetPeriodicTimerEventTriggerResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPeriodicTimerEventTriggerResult]:
+        ...
 
 def get_periodic_timer_event_trigger(
     device_name: Optional[_builtins.str] = ...,

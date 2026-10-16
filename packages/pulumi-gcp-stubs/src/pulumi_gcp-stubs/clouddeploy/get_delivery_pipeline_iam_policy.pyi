@@ -37,7 +37,10 @@ class GetDeliveryPipelineIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetDeliveryPipelineIamPolicyResult(GetDeliveryPipelineIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeliveryPipelineIamPolicyResult]:
+        ...
 
 def get_delivery_pipeline_iam_policy(
     location: Optional[_builtins.str] = ...,

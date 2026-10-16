@@ -57,7 +57,10 @@ class GetServiceEndpointPolicyDefinitionResult:
 class AwaitableGetServiceEndpointPolicyDefinitionResult(
     GetServiceEndpointPolicyDefinitionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServiceEndpointPolicyDefinitionResult]:
+        ...
 
 def get_service_endpoint_policy_definition(
     resource_group_name: Optional[_builtins.str] = ...,

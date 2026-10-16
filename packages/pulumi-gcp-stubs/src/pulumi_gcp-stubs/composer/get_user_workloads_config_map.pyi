@@ -37,7 +37,8 @@ class GetUserWorkloadsConfigMapResult:
     def region(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetUserWorkloadsConfigMapResult(GetUserWorkloadsConfigMapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserWorkloadsConfigMapResult]:
+        ...
 
 def get_user_workloads_config_map(
     environment: Optional[_builtins.str] = ...,

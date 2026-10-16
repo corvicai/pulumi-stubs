@@ -84,7 +84,8 @@ class GetSyncGroupResult:
     def use_private_link_connection(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetSyncGroupResult(GetSyncGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSyncGroupResult]:
+        ...
 
 def get_sync_group(
     database_name: Optional[_builtins.str] = ...,

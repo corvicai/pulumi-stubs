@@ -43,7 +43,10 @@ class GetPrivateLinkScopedResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateLinkScopedResourceResult(GetPrivateLinkScopedResourceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateLinkScopedResourceResult]:
+        ...
 
 def get_private_link_scoped_resource(
     name: Optional[_builtins.str] = ...,

@@ -81,7 +81,10 @@ class GetManagedDatabaseSensitivityLabelResult:
 class AwaitableGetManagedDatabaseSensitivityLabelResult(
     GetManagedDatabaseSensitivityLabelResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedDatabaseSensitivityLabelResult]:
+        ...
 
 def get_managed_database_sensitivity_label(
     column_name: Optional[_builtins.str] = ...,

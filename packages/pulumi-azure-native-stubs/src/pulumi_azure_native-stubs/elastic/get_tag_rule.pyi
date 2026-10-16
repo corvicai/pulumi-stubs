@@ -44,7 +44,8 @@ class GetTagRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTagRuleResult(GetTagRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagRuleResult]:
+        ...
 
 def get_tag_rule(
     monitor_name: Optional[_builtins.str] = ...,

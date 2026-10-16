@@ -84,7 +84,8 @@ class GetDiskEncryptionSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDiskEncryptionSetResult(GetDiskEncryptionSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiskEncryptionSetResult]:
+        ...
 
 def get_disk_encryption_set(
     disk_encryption_set_name: Optional[_builtins.str] = ...,

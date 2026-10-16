@@ -98,7 +98,8 @@ class GetVpcIpamResult:
     def tier(self) -> _builtins.str: ...
 
 class AwaitableGetVpcIpamResult(GetVpcIpamResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcIpamResult]:
+        ...
 
 def get_vpc_ipam(
     id: Optional[_builtins.str] = ...,

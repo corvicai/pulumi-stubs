@@ -41,7 +41,8 @@ class GetContainerRecipesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetContainerRecipesResult(GetContainerRecipesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerRecipesResult]:
+        ...
 
 def get_container_recipes(
     filters: Optional[

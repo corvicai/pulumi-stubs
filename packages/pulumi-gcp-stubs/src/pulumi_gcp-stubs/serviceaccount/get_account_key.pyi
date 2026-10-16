@@ -39,7 +39,8 @@ class GetAccountKeyResult:
     def public_key_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAccountKeyResult(GetAccountKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountKeyResult]:
+        ...
 
 def get_account_key(
     name: Optional[_builtins.str] = ...,

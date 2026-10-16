@@ -108,7 +108,8 @@ class GetMachineRunCommandResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMachineRunCommandResult(GetMachineRunCommandResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMachineRunCommandResult]:
+        ...
 
 def get_machine_run_command(
     machine_name: Optional[_builtins.str] = ...,

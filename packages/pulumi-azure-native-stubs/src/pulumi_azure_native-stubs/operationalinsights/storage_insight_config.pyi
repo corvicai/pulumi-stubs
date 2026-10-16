@@ -27,17 +27,20 @@ class StorageInsightConfigArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccount")
     def storage_account(self) -> pulumi.Input[StorageAccountArgs]: ...
     @storage_account.setter
-    def storage_account(self, value: pulumi.Input[StorageAccountArgs]): ...
+    def storage_account(self, value: pulumi.Input[StorageAccountArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def containers(
@@ -46,17 +49,22 @@ class StorageInsightConfigArgs:
     @containers.setter
     def containers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eTag")
     def e_tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @e_tag.setter
-    def e_tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def e_tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageInsightName")
     def storage_insight_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_insight_name.setter
-    def storage_insight_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_insight_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -65,7 +73,8 @@ class StorageInsightConfigArgs:
     @tables.setter
     def tables(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -74,7 +83,8 @@ class StorageInsightConfigArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class StorageInsightConfig(pulumi.CustomResource):

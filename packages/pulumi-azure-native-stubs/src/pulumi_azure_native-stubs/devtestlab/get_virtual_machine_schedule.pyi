@@ -94,7 +94,8 @@ class GetVirtualMachineScheduleResult:
     def weekly_recurrence(self) -> Optional[outputs.WeekDetailsResponse]: ...
 
 class AwaitableGetVirtualMachineScheduleResult(GetVirtualMachineScheduleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualMachineScheduleResult]:
+        ...
 
 def get_virtual_machine_schedule(
     expand: Optional[_builtins.str] = ...,

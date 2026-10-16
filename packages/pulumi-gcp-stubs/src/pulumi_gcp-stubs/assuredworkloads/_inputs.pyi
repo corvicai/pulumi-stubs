@@ -52,7 +52,8 @@ class WorkloadComplianceStatusArgs:
     @acknowledged_violation_counts.setter
     def acknowledged_violation_counts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activeViolationCounts")
     def active_violation_counts(
@@ -61,7 +62,8 @@ class WorkloadComplianceStatusArgs:
     @active_violation_counts.setter
     def active_violation_counts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkloadEkmProvisioningResponseArgsDict(TypedDict):
     ekm_provisioning_error_domain: NotRequired[pulumi.Input[_builtins.str]]
@@ -85,7 +87,8 @@ class WorkloadEkmProvisioningResponseArgs:
     @ekm_provisioning_error_domain.setter
     def ekm_provisioning_error_domain(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ekmProvisioningErrorMapping")
     def ekm_provisioning_error_mapping(
@@ -94,12 +97,16 @@ class WorkloadEkmProvisioningResponseArgs:
     @ekm_provisioning_error_mapping.setter
     def ekm_provisioning_error_mapping(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ekmProvisioningState")
     def ekm_provisioning_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ekm_provisioning_state.setter
-    def ekm_provisioning_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ekm_provisioning_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WorkloadKmsSettingsArgsDict(TypedDict):
     next_rotation_time: pulumi.Input[_builtins.str]
@@ -117,12 +124,14 @@ class WorkloadKmsSettingsArgs:
     @pulumi.getter(name="nextRotationTime")
     def next_rotation_time(self) -> pulumi.Input[_builtins.str]: ...
     @next_rotation_time.setter
-    def next_rotation_time(self, value: pulumi.Input[_builtins.str]): ...
+    def next_rotation_time(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rotationPeriod")
     def rotation_period(self) -> pulumi.Input[_builtins.str]: ...
     @rotation_period.setter
-    def rotation_period(self, value: pulumi.Input[_builtins.str]): ...
+    def rotation_period(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WorkloadPartnerPermissionsArgsDict(TypedDict):
     assured_workloads_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
@@ -146,19 +155,24 @@ class WorkloadPartnerPermissionsArgs:
     @assured_workloads_monitoring.setter
     def assured_workloads_monitoring(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataLogsViewer")
     def data_logs_viewer(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @data_logs_viewer.setter
-    def data_logs_viewer(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def data_logs_viewer(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccessApprover")
     def service_access_approver(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @service_access_approver.setter
     def service_access_approver(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkloadResourceArgsDict(TypedDict):
     resource_id: NotRequired[pulumi.Input[_builtins.int]]
@@ -176,12 +190,14 @@ class WorkloadResourceArgs:
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadResourceSettingArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -201,17 +217,20 @@ class WorkloadResourceSettingArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadSaaEnrollmentResponseArgsDict(TypedDict):
     setup_errors: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -235,12 +254,14 @@ class WorkloadSaaEnrollmentResponseArgs:
     @setup_errors.setter
     def setup_errors(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setupStatus")
     def setup_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @setup_status.setter
-    def setup_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def setup_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkloadWorkloadOptionsArgsDict(TypedDict):
     kaj_enrollment_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -254,4 +275,7 @@ class WorkloadWorkloadOptionsArgs:
     @pulumi.getter(name="kajEnrollmentType")
     def kaj_enrollment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kaj_enrollment_type.setter
-    def kaj_enrollment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kaj_enrollment_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...

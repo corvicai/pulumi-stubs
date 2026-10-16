@@ -53,7 +53,10 @@ class ListWorkspaceNotebookAccessTokenResult:
 class AwaitableListWorkspaceNotebookAccessTokenResult(
     ListWorkspaceNotebookAccessTokenResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkspaceNotebookAccessTokenResult]:
+        ...
 
 def list_workspace_notebook_access_token(
     resource_group_name: Optional[_builtins.str] = ...,

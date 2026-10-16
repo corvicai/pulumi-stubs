@@ -122,7 +122,8 @@ class GetInternalNetworkResult:
     def vlan_id(self) -> _builtins.int: ...
 
 class AwaitableGetInternalNetworkResult(GetInternalNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInternalNetworkResult]:
+        ...
 
 def get_internal_network(
     internal_network_name: Optional[_builtins.str] = ...,

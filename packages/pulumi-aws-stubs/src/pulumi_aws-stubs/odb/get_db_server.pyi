@@ -110,7 +110,8 @@ class GetDbServerResult:
     def vm_cluster_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetDbServerResult(GetDbServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDbServerResult]:
+        ...
 
 def get_db_server(
     cloud_exadata_infrastructure_id: Optional[_builtins.str] = ...,

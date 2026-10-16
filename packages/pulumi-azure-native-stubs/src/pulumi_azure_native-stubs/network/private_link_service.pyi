@@ -41,7 +41,8 @@ class PrivateLinkServiceInitArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoApproval")
     def auto_approval(
@@ -51,24 +52,32 @@ class PrivateLinkServiceInitArgs:
     def auto_approval(
         self,
         value: Optional[pulumi.Input[PrivateLinkServicePropertiesAutoApprovalArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationIPAddress")
     def destination_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_ip_address.setter
-    def destination_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableProxyProtocol")
     def enable_proxy_protocol(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_proxy_protocol.setter
-    def enable_proxy_protocol(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_proxy_protocol(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fqdns(
@@ -77,12 +86,14 @@ class PrivateLinkServiceInitArgs:
     @fqdns.setter
     def fqdns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipConfigurations")
     def ip_configurations(
@@ -96,7 +107,8 @@ class PrivateLinkServiceInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateLinkServiceIpConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerFrontendIpConfigurations")
     def load_balancer_frontend_ip_configurations(
@@ -110,17 +122,20 @@ class PrivateLinkServiceInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FrontendIPConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
     def service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_name.setter
-    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -129,7 +144,8 @@ class PrivateLinkServiceInitArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def visibility(
@@ -138,7 +154,8 @@ class PrivateLinkServiceInitArgs:
     @visibility.setter
     def visibility(
         self, value: Optional[pulumi.Input[PrivateLinkServicePropertiesVisibilityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:PrivateLinkService")
 class PrivateLinkService(pulumi.CustomResource):

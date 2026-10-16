@@ -60,7 +60,8 @@ class GetAssociationsInterfaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAssociationsInterfaceResult(GetAssociationsInterfaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssociationsInterfaceResult]:
+        ...
 
 def get_associations_interface(
     association_name: Optional[_builtins.str] = ...,

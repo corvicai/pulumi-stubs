@@ -24,7 +24,8 @@ class ListLocalRulestackCountriesResult:
     def value(self) -> Sequence[outputs.CountryResponse]: ...
 
 class AwaitableListLocalRulestackCountriesResult(ListLocalRulestackCountriesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListLocalRulestackCountriesResult]:
+        ...
 
 def list_local_rulestack_countries(
     local_rulestack_name: Optional[_builtins.str] = ...,

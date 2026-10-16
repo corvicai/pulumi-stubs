@@ -43,7 +43,8 @@ class GetIntegrationRuntimeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIntegrationRuntimeResult(GetIntegrationRuntimeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIntegrationRuntimeResult]:
+        ...
 
 def get_integration_runtime(
     integration_runtime_name: Optional[_builtins.str] = ...,

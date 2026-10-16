@@ -68,7 +68,8 @@ class GetDeviceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeviceResult(GetDeviceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeviceResult]:
+        ...
 
 def get_device(
     catalog_name: Optional[_builtins.str] = ...,

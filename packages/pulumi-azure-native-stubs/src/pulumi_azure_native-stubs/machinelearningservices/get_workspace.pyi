@@ -210,7 +210,8 @@ class GetWorkspaceResult:
     def workspace_id(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceResult(GetWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceResult]:
+        ...
 
 def get_workspace(
     resource_group_name: Optional[_builtins.str] = ...,

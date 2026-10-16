@@ -64,7 +64,8 @@ class GetVirtualGatewayResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVirtualGatewayResult(GetVirtualGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualGatewayResult]:
+        ...
 
 def get_virtual_gateway(
     mesh_name: Optional[_builtins.str] = ...,

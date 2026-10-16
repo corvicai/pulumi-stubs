@@ -51,7 +51,8 @@ class GetResolverRulesResult:
     def share_status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetResolverRulesResult(GetResolverRulesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResolverRulesResult]:
+        ...
 
 def get_resolver_rules(
     name_regex: Optional[_builtins.str] = ...,

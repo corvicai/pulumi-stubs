@@ -38,7 +38,8 @@ class AiFeatureOnlineStoreArgs:
     @bigtable.setter
     def bigtable(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreBigtableArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dedicatedServingEndpoint")
     def dedicated_serving_endpoint(
@@ -48,7 +49,8 @@ class AiFeatureOnlineStoreArgs:
     def dedicated_serving_endpoint(
         self,
         value: Optional[pulumi.Input[AiFeatureOnlineStoreDedicatedServingEndpointArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="embeddingManagement")
     @_utilities.deprecated(...)
@@ -58,7 +60,8 @@ class AiFeatureOnlineStoreArgs:
     @embedding_management.setter
     def embedding_management(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreEmbeddingManagementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSpec")
     def encryption_spec(
@@ -67,12 +70,14 @@ class AiFeatureOnlineStoreArgs:
     @encryption_spec.setter
     def encryption_spec(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreEncryptionSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -81,12 +86,14 @@ class AiFeatureOnlineStoreArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def optimized(
@@ -95,17 +102,20 @@ class AiFeatureOnlineStoreArgs:
     @optimized.setter
     def optimized(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreOptimizedArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AiFeatureOnlineStoreState:
@@ -145,12 +155,14 @@ class _AiFeatureOnlineStoreState:
     @bigtable.setter
     def bigtable(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreBigtableArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dedicatedServingEndpoint")
     def dedicated_serving_endpoint(
@@ -160,7 +172,8 @@ class _AiFeatureOnlineStoreState:
     def dedicated_serving_endpoint(
         self,
         value: Optional[pulumi.Input[AiFeatureOnlineStoreDedicatedServingEndpointArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -169,7 +182,8 @@ class _AiFeatureOnlineStoreState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="embeddingManagement")
     @_utilities.deprecated(...)
@@ -179,7 +193,8 @@ class _AiFeatureOnlineStoreState:
     @embedding_management.setter
     def embedding_management(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreEmbeddingManagementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSpec")
     def encryption_spec(
@@ -188,17 +203,20 @@ class _AiFeatureOnlineStoreState:
     @encryption_spec.setter
     def encryption_spec(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreEncryptionSpecArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -207,12 +225,14 @@ class _AiFeatureOnlineStoreState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def optimized(
@@ -221,12 +241,14 @@ class _AiFeatureOnlineStoreState:
     @optimized.setter
     def optimized(
         self, value: Optional[pulumi.Input[AiFeatureOnlineStoreOptimizedArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -235,22 +257,26 @@ class _AiFeatureOnlineStoreState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AiFeatureOnlineStore(pulumi.CustomResource):

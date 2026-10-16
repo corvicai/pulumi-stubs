@@ -82,7 +82,8 @@ class GetBlobServicePropertiesResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBlobServicePropertiesResult(GetBlobServicePropertiesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBlobServicePropertiesResult]:
+        ...
 
 def get_blob_service_properties(
     account_name: Optional[_builtins.str] = ...,

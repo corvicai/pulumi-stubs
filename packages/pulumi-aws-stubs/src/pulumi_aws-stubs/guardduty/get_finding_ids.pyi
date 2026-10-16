@@ -34,7 +34,8 @@ class GetFindingIdsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetFindingIdsResult(GetFindingIdsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFindingIdsResult]:
+        ...
 
 def get_finding_ids(
     detector_id: Optional[_builtins.str] = ...,

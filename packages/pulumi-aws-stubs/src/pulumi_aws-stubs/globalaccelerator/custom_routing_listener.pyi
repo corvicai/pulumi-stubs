@@ -23,7 +23,8 @@ class CustomRoutingListenerArgs:
     @pulumi.getter(name="acceleratorArn")
     def accelerator_arn(self) -> pulumi.Input[_builtins.str]: ...
     @accelerator_arn.setter
-    def accelerator_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def accelerator_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portRanges")
     def port_ranges(
@@ -33,7 +34,8 @@ class CustomRoutingListenerArgs:
     def port_ranges(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[CustomRoutingListenerPortRangeArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CustomRoutingListenerState:
@@ -50,12 +52,14 @@ class _CustomRoutingListenerState:
     @pulumi.getter(name="acceleratorArn")
     def accelerator_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @accelerator_arn.setter
-    def accelerator_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def accelerator_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portRanges")
     def port_ranges(
@@ -69,7 +73,8 @@ class _CustomRoutingListenerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomRoutingListenerPortRangeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CustomRoutingListener(pulumi.CustomResource):

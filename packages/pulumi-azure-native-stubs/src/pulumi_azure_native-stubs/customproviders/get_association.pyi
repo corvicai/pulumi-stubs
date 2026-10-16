@@ -43,7 +43,8 @@ class GetAssociationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAssociationResult(GetAssociationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssociationResult]:
+        ...
 
 def get_association(
     association_name: Optional[_builtins.str] = ...,

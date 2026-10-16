@@ -27,7 +27,8 @@ class DomainNameArgs:
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNameConfiguration")
     def domain_name_configuration(
@@ -36,7 +37,8 @@ class DomainNameArgs:
     @domain_name_configuration.setter
     def domain_name_configuration(
         self, value: pulumi.Input[DomainNameDomainNameConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mutualTlsAuthentication")
     def mutual_tls_authentication(
@@ -45,17 +47,20 @@ class DomainNameArgs:
     @mutual_tls_authentication.setter
     def mutual_tls_authentication(
         self, value: Optional[pulumi.Input[DomainNameMutualTlsAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingMode")
     def routing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @routing_mode.setter
-    def routing_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def routing_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -64,7 +69,8 @@ class DomainNameArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DomainNameState:
@@ -95,17 +101,20 @@ class _DomainNameState:
     @api_mapping_selection_expression.setter
     def api_mapping_selection_expression(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNameConfiguration")
     def domain_name_configuration(
@@ -114,7 +123,8 @@ class _DomainNameState:
     @domain_name_configuration.setter
     def domain_name_configuration(
         self, value: Optional[pulumi.Input[DomainNameDomainNameConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mutualTlsAuthentication")
     def mutual_tls_authentication(
@@ -123,17 +133,20 @@ class _DomainNameState:
     @mutual_tls_authentication.setter
     def mutual_tls_authentication(
         self, value: Optional[pulumi.Input[DomainNameMutualTlsAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingMode")
     def routing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @routing_mode.setter
-    def routing_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def routing_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -142,7 +155,8 @@ class _DomainNameState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -151,7 +165,8 @@ class _DomainNameState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:apigatewayv2/domainName:DomainName")
 class DomainName(pulumi.CustomResource):

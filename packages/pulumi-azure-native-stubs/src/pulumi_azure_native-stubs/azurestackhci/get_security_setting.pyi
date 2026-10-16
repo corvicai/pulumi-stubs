@@ -64,7 +64,8 @@ class GetSecuritySettingResult:
     def wdac_compliance_assignment(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSecuritySettingResult(GetSecuritySettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecuritySettingResult]:
+        ...
 
 def get_security_setting(
     cluster_name: Optional[_builtins.str] = ...,

@@ -68,7 +68,8 @@ class GetResolverRuleResult:
     def target_ips(self) -> Sequence[outputs.GetResolverRuleTargetIpResult]: ...
 
 class AwaitableGetResolverRuleResult(GetResolverRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResolverRuleResult]:
+        ...
 
 def get_resolver_rule(
     domain_name: Optional[_builtins.str] = ...,

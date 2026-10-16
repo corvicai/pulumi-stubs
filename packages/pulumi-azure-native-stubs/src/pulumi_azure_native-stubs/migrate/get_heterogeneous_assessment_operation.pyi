@@ -46,7 +46,10 @@ class GetHeterogeneousAssessmentOperationResult:
 class AwaitableGetHeterogeneousAssessmentOperationResult(
     GetHeterogeneousAssessmentOperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetHeterogeneousAssessmentOperationResult]:
+        ...
 
 def get_heterogeneous_assessment_operation(
     assessment_name: Optional[_builtins.str] = ...,

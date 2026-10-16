@@ -96,7 +96,8 @@ class ListTaskDetailsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListTaskDetailsResult(ListTaskDetailsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListTaskDetailsResult]:
+        ...
 
 def list_task_details(
     registry_name: Optional[_builtins.str] = ...,

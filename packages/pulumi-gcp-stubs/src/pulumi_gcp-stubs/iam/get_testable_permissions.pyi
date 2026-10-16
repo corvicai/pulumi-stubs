@@ -42,7 +42,8 @@ class GetTestablePermissionsResult:
     def stages(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetTestablePermissionsResult(GetTestablePermissionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTestablePermissionsResult]:
+        ...
 
 def get_testable_permissions(
     custom_support_level: Optional[_builtins.str] = ...,

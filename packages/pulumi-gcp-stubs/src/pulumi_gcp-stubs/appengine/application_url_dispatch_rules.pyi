@@ -32,12 +32,14 @@ class ApplicationUrlDispatchRulesArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ApplicationUrlDispatchRulesDispatchRuleArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ApplicationUrlDispatchRulesState:
@@ -68,12 +70,14 @@ class _ApplicationUrlDispatchRulesState:
                 Sequence[pulumi.Input[ApplicationUrlDispatchRulesDispatchRuleArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ApplicationUrlDispatchRules(pulumi.CustomResource):

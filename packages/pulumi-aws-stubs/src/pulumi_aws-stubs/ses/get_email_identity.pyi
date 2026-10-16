@@ -29,7 +29,8 @@ class GetEmailIdentityResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetEmailIdentityResult(GetEmailIdentityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEmailIdentityResult]:
+        ...
 
 def get_email_identity(
     email: Optional[_builtins.str] = ...,

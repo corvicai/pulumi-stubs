@@ -68,7 +68,8 @@ class GetWebAppVnetConnectionResult:
     def vnet_resource_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebAppVnetConnectionResult(GetWebAppVnetConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppVnetConnectionResult]:
+        ...
 
 def get_web_app_vnet_connection(
     name: Optional[_builtins.str] = ...,

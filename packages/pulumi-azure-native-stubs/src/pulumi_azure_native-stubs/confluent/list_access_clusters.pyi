@@ -27,7 +27,8 @@ class ListAccessClustersResult:
     def metadata(self) -> Optional[outputs.ConfluentListMetadataResponse]: ...
 
 class AwaitableListAccessClustersResult(ListAccessClustersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccessClustersResult]:
+        ...
 
 def list_access_clusters(
     organization_name: Optional[_builtins.str] = ...,

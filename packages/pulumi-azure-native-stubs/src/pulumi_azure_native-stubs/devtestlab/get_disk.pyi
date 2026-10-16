@@ -87,7 +87,8 @@ class GetDiskResult:
     def unique_identifier(self) -> _builtins.str: ...
 
 class AwaitableGetDiskResult(GetDiskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiskResult]:
+        ...
 
 def get_disk(
     expand: Optional[_builtins.str] = ...,

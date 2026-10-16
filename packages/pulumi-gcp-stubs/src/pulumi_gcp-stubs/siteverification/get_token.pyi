@@ -29,7 +29,8 @@ class GetTokenResult:
     def verification_method(self) -> _builtins.str: ...
 
 class AwaitableGetTokenResult(GetTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTokenResult]:
+        ...
 
 def get_token(
     identifier: Optional[_builtins.str] = ...,

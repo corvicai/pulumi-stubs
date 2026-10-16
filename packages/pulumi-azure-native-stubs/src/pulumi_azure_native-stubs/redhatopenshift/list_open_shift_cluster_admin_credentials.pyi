@@ -22,7 +22,10 @@ class ListOpenShiftClusterAdminCredentialsResult:
 class AwaitableListOpenShiftClusterAdminCredentialsResult(
     ListOpenShiftClusterAdminCredentialsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListOpenShiftClusterAdminCredentialsResult]:
+        ...
 
 def list_open_shift_cluster_admin_credentials(
     resource_group_name: Optional[_builtins.str] = ...,

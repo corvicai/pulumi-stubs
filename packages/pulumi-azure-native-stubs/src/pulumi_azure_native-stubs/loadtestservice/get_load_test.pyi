@@ -68,7 +68,8 @@ class GetLoadTestResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLoadTestResult(GetLoadTestResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLoadTestResult]:
+        ...
 
 def get_load_test(
     load_test_name: Optional[_builtins.str] = ...,

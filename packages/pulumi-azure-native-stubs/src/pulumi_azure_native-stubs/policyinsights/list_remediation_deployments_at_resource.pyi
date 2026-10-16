@@ -26,7 +26,10 @@ class ListRemediationDeploymentsAtResourceResult:
 class AwaitableListRemediationDeploymentsAtResourceResult(
     ListRemediationDeploymentsAtResourceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListRemediationDeploymentsAtResourceResult]:
+        ...
 
 def list_remediation_deployments_at_resource(
     remediation_name: Optional[_builtins.str] = ...,

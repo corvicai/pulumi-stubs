@@ -78,7 +78,8 @@ class GetConnectedEnvironmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectedEnvironmentResult(GetConnectedEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectedEnvironmentResult]:
+        ...
 
 def get_connected_environment(
     connected_environment_name: Optional[_builtins.str] = ...,

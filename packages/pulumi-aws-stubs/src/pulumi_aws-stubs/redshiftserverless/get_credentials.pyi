@@ -51,7 +51,8 @@ class GetCredentialsResult:
     def workgroup_name(self) -> _builtins.str: ...
 
 class AwaitableGetCredentialsResult(GetCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCredentialsResult]:
+        ...
 
 def get_credentials(
     db_name: Optional[_builtins.str] = ...,

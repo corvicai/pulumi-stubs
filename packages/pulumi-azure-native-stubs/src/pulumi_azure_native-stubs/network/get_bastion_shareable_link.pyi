@@ -25,7 +25,8 @@ class GetBastionShareableLinkResult:
     def value(self) -> Optional[Sequence[outputs.BastionShareableLinkResponse]]: ...
 
 class AwaitableGetBastionShareableLinkResult(GetBastionShareableLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBastionShareableLinkResult]:
+        ...
 
 def get_bastion_shareable_link(
     bastion_host_name: Optional[_builtins.str] = ...,

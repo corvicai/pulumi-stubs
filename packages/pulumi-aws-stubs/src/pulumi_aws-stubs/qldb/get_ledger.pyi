@@ -51,7 +51,8 @@ class GetLedgerResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetLedgerResult(GetLedgerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLedgerResult]:
+        ...
 
 def get_ledger(
     name: Optional[_builtins.str] = ...,

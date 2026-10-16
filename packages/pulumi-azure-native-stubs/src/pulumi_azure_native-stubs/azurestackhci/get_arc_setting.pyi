@@ -84,7 +84,8 @@ class GetArcSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetArcSettingResult(GetArcSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetArcSettingResult]:
+        ...
 
 def get_arc_setting(
     arc_setting_name: Optional[_builtins.str] = ...,

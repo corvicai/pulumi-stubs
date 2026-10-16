@@ -80,7 +80,8 @@ class GetSecurityUserRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityUserRuleResult(GetSecurityUserRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityUserRuleResult]:
+        ...
 
 def get_security_user_rule(
     configuration_name: Optional[_builtins.str] = ...,

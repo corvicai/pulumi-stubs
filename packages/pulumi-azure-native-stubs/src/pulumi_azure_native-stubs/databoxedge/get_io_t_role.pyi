@@ -76,7 +76,8 @@ class GetIoTRoleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIoTRoleResult(GetIoTRoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIoTRoleResult]:
+        ...
 
 def get_io_t_role(
     device_name: Optional[_builtins.str] = ...,

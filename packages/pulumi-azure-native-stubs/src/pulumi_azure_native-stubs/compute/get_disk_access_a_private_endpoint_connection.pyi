@@ -56,7 +56,10 @@ class GetDiskAccessAPrivateEndpointConnectionResult:
 class AwaitableGetDiskAccessAPrivateEndpointConnectionResult(
     GetDiskAccessAPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDiskAccessAPrivateEndpointConnectionResult]:
+        ...
 
 def get_disk_access_a_private_endpoint_connection(
     disk_access_name: Optional[_builtins.str] = ...,

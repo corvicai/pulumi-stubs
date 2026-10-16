@@ -41,7 +41,8 @@ class DnsSecurityRuleActionArgs:
     @action_type.setter
     def action_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockResponseCode")
     def block_response_code(
@@ -50,7 +51,8 @@ class DnsSecurityRuleActionArgs:
     @block_response_code.setter
     def block_response_code(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BlockResponseCode]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IpConfigurationArgsDict(TypedDict):
     subnet: pulumi.Input[SubResourceArgsDict]
@@ -74,12 +76,16 @@ class IpConfigurationArgs:
     @pulumi.getter
     def subnet(self) -> pulumi.Input[SubResourceArgs]: ...
     @subnet.setter
-    def subnet(self, value: pulumi.Input[SubResourceArgs]): ...
+    def subnet(self, value: pulumi.Input[SubResourceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpAddress")
     def private_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip_address.setter
-    def private_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip_address(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpAllocationMethod")
     def private_ip_allocation_method(
@@ -88,7 +94,8 @@ class IpConfigurationArgs:
     @private_ip_allocation_method.setter
     def private_ip_allocation_method(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IpAllocationMethod]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SubResourceArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -100,7 +107,8 @@ class SubResourceArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TargetDnsServerArgsDict(TypedDict):
     ip_address: pulumi.Input[_builtins.str]
@@ -118,9 +126,11 @@ class TargetDnsServerArgs:
     @pulumi.getter(name="ipAddress")
     def ip_address(self) -> pulumi.Input[_builtins.str]: ...
     @ip_address.setter
-    def ip_address(self, value: pulumi.Input[_builtins.str]): ...
+    def ip_address(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...

@@ -29,17 +29,20 @@ class IotDpsResourcePrivateEndpointConnectionArgs:
     @properties.setter
     def properties(
         self, value: pulumi.Input[PrivateEndpointConnectionPropertiesArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_name.setter
-    def resource_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnectionName")
     def private_endpoint_connection_name(
@@ -48,7 +51,8 @@ class IotDpsResourcePrivateEndpointConnectionArgs:
     @private_endpoint_connection_name.setter
     def private_endpoint_connection_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class IotDpsResourcePrivateEndpointConnection(pulumi.CustomResource):

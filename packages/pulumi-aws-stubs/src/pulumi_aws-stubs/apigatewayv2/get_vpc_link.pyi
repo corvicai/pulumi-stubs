@@ -51,7 +51,8 @@ class GetVpcLinkResult:
     def vpc_link_id(self) -> _builtins.str: ...
 
 class AwaitableGetVpcLinkResult(GetVpcLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcLinkResult]:
+        ...
 
 def get_vpc_link(
     region: Optional[_builtins.str] = ...,

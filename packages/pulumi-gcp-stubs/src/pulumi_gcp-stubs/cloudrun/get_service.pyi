@@ -56,7 +56,8 @@ class GetServiceResult:
     def traffics(self) -> Sequence[outputs.GetServiceTrafficResult]: ...
 
 class AwaitableGetServiceResult(GetServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceResult]:
+        ...
 
 def get_service(
     location: Optional[_builtins.str] = ...,

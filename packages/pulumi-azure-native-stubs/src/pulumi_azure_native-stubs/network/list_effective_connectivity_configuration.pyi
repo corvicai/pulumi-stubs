@@ -28,7 +28,10 @@ class ListEffectiveConnectivityConfigurationResult:
 class AwaitableListEffectiveConnectivityConfigurationResult(
     ListEffectiveConnectivityConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListEffectiveConnectivityConfigurationResult]:
+        ...
 
 def list_effective_connectivity_configuration(
     resource_group_name: Optional[_builtins.str] = ...,

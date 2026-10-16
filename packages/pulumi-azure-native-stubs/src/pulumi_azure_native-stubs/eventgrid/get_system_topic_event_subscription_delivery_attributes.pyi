@@ -17,7 +17,10 @@ class GetSystemTopicEventSubscriptionDeliveryAttributesResult:
 class AwaitableGetSystemTopicEventSubscriptionDeliveryAttributesResult(
     GetSystemTopicEventSubscriptionDeliveryAttributesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSystemTopicEventSubscriptionDeliveryAttributesResult]:
+        ...
 
 def get_system_topic_event_subscription_delivery_attributes(
     event_subscription_name: Optional[_builtins.str] = ...,

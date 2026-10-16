@@ -130,7 +130,10 @@ class GetExpressRouteCircuitPeeringResult:
     def vlan_id(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetExpressRouteCircuitPeeringResult(GetExpressRouteCircuitPeeringResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExpressRouteCircuitPeeringResult]:
+        ...
 
 def get_express_route_circuit_peering(
     circuit_name: Optional[_builtins.str] = ...,

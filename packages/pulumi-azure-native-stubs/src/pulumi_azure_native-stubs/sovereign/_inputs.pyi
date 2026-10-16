@@ -51,14 +51,16 @@ class CustomNamingConventionArgs:
     @pulumi.getter
     def formula(self) -> pulumi.Input[_builtins.str]: ...
     @formula.setter
-    def formula(self, value: pulumi.Input[_builtins.str]): ...
+    def formula(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> pulumi.Input[Union[_builtins.str, ResourceType]]: ...
     @resource_type.setter
     def resource_type(
         self, value: pulumi.Input[Union[_builtins.str, ResourceType]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DecommissionedManagementGroupPropertiesArgsDict(TypedDict):
     create: pulumi.Input[_builtins.bool]
@@ -80,7 +82,8 @@ class DecommissionedManagementGroupPropertiesArgs:
     @pulumi.getter
     def create(self) -> pulumi.Input[_builtins.bool]: ...
     @create.setter
-    def create(self, value: pulumi.Input[_builtins.bool]): ...
+    def create(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyInitiativesAssignmentProperties")
     def policy_initiatives_assignment_properties(
@@ -94,7 +97,8 @@ class DecommissionedManagementGroupPropertiesArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LandingZoneAccountResourcePropertiesArgsDict(TypedDict):
     storage_account: pulumi.Input[_builtins.str]
@@ -106,7 +110,8 @@ class LandingZoneAccountResourcePropertiesArgs:
     @pulumi.getter(name="storageAccount")
     def storage_account(self) -> pulumi.Input[_builtins.str]: ...
     @storage_account.setter
-    def storage_account(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_account(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class LandingZoneConfigurationResourcePropertiesArgsDict(TypedDict):
     azure_bastion_creation_option: pulumi.Input[
@@ -238,7 +243,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @azure_bastion_creation_option.setter
     def azure_bastion_creation_option(
         self, value: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ddosProtectionCreationOption")
     def ddos_protection_creation_option(
@@ -247,7 +253,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @ddos_protection_creation_option.setter
     def ddos_protection_creation_option(
         self, value: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallCreationOption")
     def firewall_creation_option(
@@ -256,17 +263,20 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @firewall_creation_option.setter
     def firewall_creation_option(
         self, value: pulumi.Input[Union[_builtins.str, FirewallCreationOptions]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewaySubnetCidrBlock")
     def gateway_subnet_cidr_block(self) -> pulumi.Input[_builtins.str]: ...
     @gateway_subnet_cidr_block.setter
-    def gateway_subnet_cidr_block(self, value: pulumi.Input[_builtins.str]): ...
+    def gateway_subnet_cidr_block(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hubNetworkCidrBlock")
     def hub_network_cidr_block(self) -> pulumi.Input[_builtins.str]: ...
     @hub_network_cidr_block.setter
-    def hub_network_cidr_block(self, value: pulumi.Input[_builtins.str]): ...
+    def hub_network_cidr_block(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logAnalyticsWorkspaceCreationOption")
     def log_analytics_workspace_creation_option(
@@ -275,17 +285,22 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @log_analytics_workspace_creation_option.setter
     def log_analytics_workspace_creation_option(
         self, value: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logRetentionInDays")
     def log_retention_in_days(self) -> pulumi.Input[_builtins.float]: ...
     @log_retention_in_days.setter
-    def log_retention_in_days(self, value: pulumi.Input[_builtins.float]): ...
+    def log_retention_in_days(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedIdentity")
     def managed_identity(self) -> pulumi.Input[ManagedIdentityPropertiesArgs]: ...
     @managed_identity.setter
-    def managed_identity(self, value: pulumi.Input[ManagedIdentityPropertiesArgs]): ...
+    def managed_identity(
+        self, value: pulumi.Input[ManagedIdentityPropertiesArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureBastionSubnetCidrBlock")
     def azure_bastion_subnet_cidr_block(
@@ -294,7 +309,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @azure_bastion_subnet_cidr_block.setter
     def azure_bastion_subnet_cidr_block(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customNamingConvention")
     def custom_naming_convention(
@@ -306,7 +322,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomNamingConventionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="decommissionedMgMetadata")
     def decommissioned_mg_metadata(
@@ -315,21 +332,24 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @decommissioned_mg_metadata.setter
     def decommissioned_mg_metadata(
         self, value: Optional[pulumi.Input[DecommissionedManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="existingAzureBastionId")
     def existing_azure_bastion_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @existing_azure_bastion_id.setter
     def existing_azure_bastion_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="existingDdosProtectionId")
     def existing_ddos_protection_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @existing_ddos_protection_id.setter
     def existing_ddos_protection_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="existingLogAnalyticsWorkspaceId")
     def existing_log_analytics_workspace_id(
@@ -338,14 +358,16 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @existing_log_analytics_workspace_id.setter
     def existing_log_analytics_workspace_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallSubnetCidrBlock")
     def firewall_subnet_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @firewall_subnet_cidr_block.setter
     def firewall_subnet_cidr_block(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="landingZonesMgChildren")
     def landing_zones_mg_children(
@@ -361,7 +383,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
                 Sequence[pulumi.Input[LandingZoneManagementGroupPropertiesArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="landingZonesMgMetadata")
     def landing_zones_mg_metadata(
@@ -370,14 +393,16 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @landing_zones_mg_metadata.setter
     def landing_zones_mg_metadata(
         self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namingConventionFormula")
     def naming_convention_formula(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @naming_convention_formula.setter
     def naming_convention_formula(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformConnectivityMgMetadata")
     def platform_connectivity_mg_metadata(
@@ -386,7 +411,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @platform_connectivity_mg_metadata.setter
     def platform_connectivity_mg_metadata(
         self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformIdentityMgMetadata")
     def platform_identity_mg_metadata(
@@ -395,7 +421,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @platform_identity_mg_metadata.setter
     def platform_identity_mg_metadata(
         self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformManagementMgMetadata")
     def platform_management_mg_metadata(
@@ -404,7 +431,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @platform_management_mg_metadata.setter
     def platform_management_mg_metadata(
         self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformMgChildren")
     def platform_mg_children(
@@ -418,7 +446,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PlatformManagementGroupPropertiesArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformMgMetadata")
     def platform_mg_metadata(
@@ -427,7 +456,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @platform_mg_metadata.setter
     def platform_mg_metadata(
         self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sandboxMgMetadata")
     def sandbox_mg_metadata(
@@ -436,12 +466,16 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @sandbox_mg_metadata.setter
     def sandbox_mg_metadata(
         self, value: Optional[pulumi.Input[SandboxManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TagsArgs]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TagsArgs]]]]): ...
+    def tags(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TagsArgs]]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topLevelMgMetadata")
     def top_level_mg_metadata(
@@ -450,7 +484,8 @@ class LandingZoneConfigurationResourcePropertiesArgs:
     @top_level_mg_metadata.setter
     def top_level_mg_metadata(
         self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LandingZoneManagementGroupPropertiesArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -472,7 +507,8 @@ class LandingZoneManagementGroupPropertiesArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyInitiativesAssignmentProperties")
     def policy_initiatives_assignment_properties(
@@ -486,7 +522,8 @@ class LandingZoneManagementGroupPropertiesArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LandingZoneRegistrationResourcePropertiesArgsDict(TypedDict):
     existing_landing_zone_configuration_id: pulumi.Input[_builtins.str]
@@ -508,12 +545,14 @@ class LandingZoneRegistrationResourcePropertiesArgs:
     @existing_landing_zone_configuration_id.setter
     def existing_landing_zone_configuration_id(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="existingTopLevelMgId")
     def existing_top_level_mg_id(self) -> pulumi.Input[_builtins.str]: ...
     @existing_top_level_mg_id.setter
-    def existing_top_level_mg_id(self, value: pulumi.Input[_builtins.str]): ...
+    def existing_top_level_mg_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedIdentity")
     def managed_identity(
@@ -522,7 +561,8 @@ class LandingZoneRegistrationResourcePropertiesArgs:
     @managed_identity.setter
     def managed_identity(
         self, value: Optional[pulumi.Input[ManagedIdentityPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedIdentityPropertiesArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedIdentityResourceType]]
@@ -544,7 +584,8 @@ class ManagedIdentityPropertiesArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedIdentityResourceType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityResourceId")
     def user_assigned_identity_resource_id(
@@ -553,7 +594,8 @@ class ManagedIdentityPropertiesArgs:
     @user_assigned_identity_resource_id.setter
     def user_assigned_identity_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -579,7 +621,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -588,7 +631,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagementGroupPropertiesArgsDict(TypedDict):
     policy_initiatives_assignment_properties: pulumi.Input[
@@ -617,7 +661,8 @@ class ManagementGroupPropertiesArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PlatformManagementGroupPropertiesArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -639,7 +684,8 @@ class PlatformManagementGroupPropertiesArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyInitiativesAssignmentProperties")
     def policy_initiatives_assignment_properties(
@@ -653,7 +699,8 @@ class PlatformManagementGroupPropertiesArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicyInitiativeAssignmentPropertiesArgsDict(TypedDict):
     assignment_parameters: Any
@@ -671,12 +718,14 @@ class PolicyInitiativeAssignmentPropertiesArgs:
     @pulumi.getter(name="assignmentParameters")
     def assignment_parameters(self) -> Any: ...
     @assignment_parameters.setter
-    def assignment_parameters(self, value: Any): ...
+    def assignment_parameters(self, value: Any):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyInitiativeId")
     def policy_initiative_id(self) -> pulumi.Input[_builtins.str]: ...
     @policy_initiative_id.setter
-    def policy_initiative_id(self, value: pulumi.Input[_builtins.str]): ...
+    def policy_initiative_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class SandboxManagementGroupPropertiesArgsDict(TypedDict):
     create: pulumi.Input[_builtins.bool]
@@ -698,7 +747,8 @@ class SandboxManagementGroupPropertiesArgs:
     @pulumi.getter
     def create(self) -> pulumi.Input[_builtins.bool]: ...
     @create.setter
-    def create(self, value: pulumi.Input[_builtins.bool]): ...
+    def create(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyInitiativesAssignmentProperties")
     def policy_initiatives_assignment_properties(
@@ -712,7 +762,8 @@ class SandboxManagementGroupPropertiesArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TagsArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -730,9 +781,11 @@ class TagsArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

@@ -27,12 +27,14 @@ class PrivateLinkScopeArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -46,12 +48,14 @@ class PrivateLinkScopeArgs:
         value: Optional[
             pulumi.Input[KubernetesConfigurationPrivateLinkScopePropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scopeName")
     def scope_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope_name.setter
-    def scope_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -60,7 +64,8 @@ class PrivateLinkScopeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PrivateLinkScope(pulumi.CustomResource):

@@ -44,7 +44,8 @@ class GetDependencyOfRelationshipResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDependencyOfRelationshipResult(GetDependencyOfRelationshipResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDependencyOfRelationshipResult]:
+        ...
 
 def get_dependency_of_relationship(
     name: Optional[_builtins.str] = ...,

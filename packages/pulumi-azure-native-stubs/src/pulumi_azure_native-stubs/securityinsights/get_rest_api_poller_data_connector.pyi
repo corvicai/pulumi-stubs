@@ -84,7 +84,10 @@ class GetRestApiPollerDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRestApiPollerDataConnectorResult(GetRestApiPollerDataConnectorResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRestApiPollerDataConnectorResult]:
+        ...
 
 def get_rest_api_poller_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

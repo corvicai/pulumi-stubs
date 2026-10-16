@@ -26,12 +26,16 @@ class CustomLogSourceArgs:
     @pulumi.getter
     def configuration(self) -> pulumi.Input[CustomLogSourceConfigurationArgs]: ...
     @configuration.setter
-    def configuration(self, value: pulumi.Input[CustomLogSourceConfigurationArgs]): ...
+    def configuration(
+        self, value: pulumi.Input[CustomLogSourceConfigurationArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceName")
     def source_name(self) -> pulumi.Input[_builtins.str]: ...
     @source_name.setter
-    def source_name(self, value: pulumi.Input[_builtins.str]): ...
+    def source_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventClasses")
     def event_classes(
@@ -40,17 +44,20 @@ class CustomLogSourceArgs:
     @event_classes.setter
     def event_classes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVersion")
     def source_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_version.setter
-    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CustomLogSourceState:
@@ -84,7 +91,8 @@ class _CustomLogSourceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomLogSourceAttributeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -93,7 +101,8 @@ class _CustomLogSourceState:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[CustomLogSourceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventClasses")
     def event_classes(
@@ -102,7 +111,8 @@ class _CustomLogSourceState:
     @event_classes.setter
     def event_classes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerDetails")
     def provider_details(
@@ -116,22 +126,26 @@ class _CustomLogSourceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomLogSourceProviderDetailArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceName")
     def source_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_name.setter
-    def source_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceVersion")
     def source_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_version.setter
-    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:securitylake/customLogSource:CustomLogSource")
 class CustomLogSource(pulumi.CustomResource):

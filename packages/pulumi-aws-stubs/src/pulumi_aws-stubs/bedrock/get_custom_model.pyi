@@ -102,7 +102,8 @@ class GetCustomModelResult:
     ) -> Sequence[outputs.GetCustomModelValidationMetricResult]: ...
 
 class AwaitableGetCustomModelResult(GetCustomModelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomModelResult]:
+        ...
 
 def get_custom_model(
     model_id: Optional[_builtins.str] = ...,

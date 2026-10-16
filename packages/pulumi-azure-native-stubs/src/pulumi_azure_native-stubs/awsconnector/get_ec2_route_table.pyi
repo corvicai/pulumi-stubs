@@ -52,7 +52,8 @@ class GetEc2RouteTableResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2RouteTableResult(GetEc2RouteTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2RouteTableResult]:
+        ...
 
 def get_ec2_route_table(
     name: Optional[_builtins.str] = ...,

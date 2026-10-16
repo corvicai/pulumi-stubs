@@ -49,17 +49,22 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmName")
     def vm_name(self) -> pulumi.Input[_builtins.str]: ...
     @vm_name.setter
-    def vm_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vm_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="asyncExecution")
     def async_execution(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @async_execution.setter
-    def async_execution(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def async_execution(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorBlobManagedIdentity")
     def error_blob_managed_identity(
@@ -68,17 +73,20 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
     @error_blob_managed_identity.setter
     def error_blob_managed_identity(
         self, value: Optional[pulumi.Input[RunCommandManagedIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorBlobUri")
     def error_blob_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_blob_uri.setter
-    def error_blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputBlobManagedIdentity")
     def output_blob_managed_identity(
@@ -87,12 +95,14 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
     @output_blob_managed_identity.setter
     def output_blob_managed_identity(
         self, value: Optional[pulumi.Input[RunCommandManagedIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputBlobUri")
     def output_blob_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_blob_uri.setter
-    def output_blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_blob_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -106,7 +116,8 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RunCommandInputParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protectedParameters")
     def protected_parameters(
@@ -120,22 +131,28 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RunCommandInputParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runAsPassword")
     def run_as_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @run_as_password.setter
-    def run_as_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def run_as_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runAsUser")
     def run_as_user(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @run_as_user.setter
-    def run_as_user(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def run_as_user(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runCommandName")
     def run_command_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @run_command_name.setter
-    def run_command_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def run_command_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(
@@ -144,7 +161,8 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
     @source.setter
     def source(
         self, value: Optional[pulumi.Input[VirtualMachineRunCommandScriptSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -153,12 +171,16 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutInSeconds")
     def timeout_in_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_in_seconds.setter
-    def timeout_in_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_in_seconds(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="treatFailureAsDeploymentFailure")
     def treat_failure_as_deployment_failure(
@@ -167,7 +189,8 @@ class VirtualMachineRunCommandByVirtualMachineArgs:
     @treat_failure_as_deployment_failure.setter
     def treat_failure_as_deployment_failure(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class VirtualMachineRunCommandByVirtualMachine(pulumi.CustomResource):

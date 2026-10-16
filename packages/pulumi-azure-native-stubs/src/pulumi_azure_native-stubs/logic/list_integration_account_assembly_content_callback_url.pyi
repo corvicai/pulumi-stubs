@@ -43,7 +43,10 @@ class ListIntegrationAccountAssemblyContentCallbackUrlResult:
 class AwaitableListIntegrationAccountAssemblyContentCallbackUrlResult(
     ListIntegrationAccountAssemblyContentCallbackUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIntegrationAccountAssemblyContentCallbackUrlResult]:
+        ...
 
 def list_integration_account_assembly_content_callback_url(
     assembly_artifact_name: Optional[_builtins.str] = ...,

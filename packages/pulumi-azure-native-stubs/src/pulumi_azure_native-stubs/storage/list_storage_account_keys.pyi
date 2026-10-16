@@ -21,7 +21,8 @@ class ListStorageAccountKeysResult:
     def keys(self) -> Sequence[outputs.StorageAccountKeyResponse]: ...
 
 class AwaitableListStorageAccountKeysResult(ListStorageAccountKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListStorageAccountKeysResult]:
+        ...
 
 def list_storage_account_keys(
     account_name: Optional[_builtins.str] = ...,

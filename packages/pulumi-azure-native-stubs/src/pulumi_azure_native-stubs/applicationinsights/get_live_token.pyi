@@ -20,7 +20,8 @@ class GetLiveTokenResult:
     def live_token(self) -> _builtins.str: ...
 
 class AwaitableGetLiveTokenResult(GetLiveTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLiveTokenResult]:
+        ...
 
 def get_live_token(
     resource_uri: Optional[_builtins.str] = ...,

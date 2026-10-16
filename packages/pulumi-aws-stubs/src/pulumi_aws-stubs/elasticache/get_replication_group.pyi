@@ -112,7 +112,8 @@ class GetReplicationGroupResult:
     def snapshot_window(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationGroupResult(GetReplicationGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationGroupResult]:
+        ...
 
 def get_replication_group(
     region: Optional[_builtins.str] = ...,

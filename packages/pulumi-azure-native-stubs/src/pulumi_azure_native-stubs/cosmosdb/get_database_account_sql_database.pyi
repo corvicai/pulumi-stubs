@@ -63,7 +63,10 @@ class GetDatabaseAccountSqlDatabaseResult:
     def users(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDatabaseAccountSqlDatabaseResult(GetDatabaseAccountSqlDatabaseResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseAccountSqlDatabaseResult]:
+        ...
 
 def get_database_account_sql_database(
     account_name: Optional[_builtins.str] = ...,

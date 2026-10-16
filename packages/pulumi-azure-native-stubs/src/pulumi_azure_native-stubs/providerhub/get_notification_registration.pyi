@@ -44,7 +44,8 @@ class GetNotificationRegistrationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNotificationRegistrationResult(GetNotificationRegistrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNotificationRegistrationResult]:
+        ...
 
 def get_notification_registration(
     notification_registration_name: Optional[_builtins.str] = ...,

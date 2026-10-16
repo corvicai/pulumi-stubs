@@ -76,17 +76,20 @@ class TopicRuleArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sql(self) -> pulumi.Input[_builtins.str]: ...
     @sql.setter
-    def sql(self, value: pulumi.Input[_builtins.str]): ...
+    def sql(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlVersion")
     def sql_version(self) -> pulumi.Input[_builtins.str]: ...
     @sql_version.setter
-    def sql_version(self, value: pulumi.Input[_builtins.str]): ...
+    def sql_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchAlarms")
     def cloudwatch_alarms(
@@ -100,7 +103,8 @@ class TopicRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleCloudwatchAlarmArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchLogs")
     def cloudwatch_logs(
@@ -112,7 +116,8 @@ class TopicRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleCloudwatchLogArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchMetrics")
     def cloudwatch_metrics(
@@ -126,12 +131,14 @@ class TopicRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleCloudwatchMetricArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynamodbs(
@@ -141,7 +148,8 @@ class TopicRuleArgs:
     def dynamodbs(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleDynamodbArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynamodbv2s(
@@ -151,7 +159,8 @@ class TopicRuleArgs:
     def dynamodbv2s(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleDynamodbv2Args]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def elasticsearch(
@@ -163,12 +172,16 @@ class TopicRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleElasticsearchArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorAction")
     def error_action(self) -> Optional[pulumi.Input[TopicRuleErrorActionArgs]]: ...
     @error_action.setter
-    def error_action(self, value: Optional[pulumi.Input[TopicRuleErrorActionArgs]]): ...
+    def error_action(
+        self, value: Optional[pulumi.Input[TopicRuleErrorActionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def firehoses(
@@ -178,7 +191,8 @@ class TopicRuleArgs:
     def firehoses(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleFirehoseArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def https(
@@ -187,7 +201,8 @@ class TopicRuleArgs:
     @https.setter
     def https(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleHttpArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iotAnalytics")
     def iot_analytics(
@@ -197,7 +212,8 @@ class TopicRuleArgs:
     def iot_analytics(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleIotAnalyticArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iotEvents")
     def iot_events(
@@ -207,7 +223,8 @@ class TopicRuleArgs:
     def iot_events(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleIotEventArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kafkas(
@@ -216,7 +233,8 @@ class TopicRuleArgs:
     @kafkas.setter
     def kafkas(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleKafkaArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kineses(
@@ -226,7 +244,8 @@ class TopicRuleArgs:
     def kineses(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleKinesisArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lambdas(
@@ -235,17 +254,20 @@ class TopicRuleArgs:
     @lambdas.setter
     def lambdas(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleLambdaArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def republishes(
@@ -255,14 +277,16 @@ class TopicRuleArgs:
     def republishes(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleRepublishArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleS3Args]]]]: ...
     @s3.setter
     def s3(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleS3Args]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sns(
@@ -271,7 +295,8 @@ class TopicRuleArgs:
     @sns.setter
     def sns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleSnsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sqs(
@@ -280,7 +305,8 @@ class TopicRuleArgs:
     @sqs.setter
     def sqs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleSqsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stepFunctions")
     def step_functions(
@@ -292,7 +318,8 @@ class TopicRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleStepFunctionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -301,7 +328,8 @@ class TopicRuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timestreams(
@@ -311,7 +339,8 @@ class TopicRuleArgs:
     def timestreams(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleTimestreamArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TopicRuleState:
@@ -384,7 +413,8 @@ class _TopicRuleState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchAlarms")
     def cloudwatch_alarms(
@@ -398,7 +428,8 @@ class _TopicRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleCloudwatchAlarmArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchLogs")
     def cloudwatch_logs(
@@ -410,7 +441,8 @@ class _TopicRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleCloudwatchLogArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchMetrics")
     def cloudwatch_metrics(
@@ -424,12 +456,14 @@ class _TopicRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleCloudwatchMetricArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynamodbs(
@@ -439,7 +473,8 @@ class _TopicRuleState:
     def dynamodbs(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleDynamodbArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dynamodbv2s(
@@ -449,7 +484,8 @@ class _TopicRuleState:
     def dynamodbv2s(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleDynamodbv2Args]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def elasticsearch(
@@ -461,17 +497,22 @@ class _TopicRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleElasticsearchArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="errorAction")
     def error_action(self) -> Optional[pulumi.Input[TopicRuleErrorActionArgs]]: ...
     @error_action.setter
-    def error_action(self, value: Optional[pulumi.Input[TopicRuleErrorActionArgs]]): ...
+    def error_action(
+        self, value: Optional[pulumi.Input[TopicRuleErrorActionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def firehoses(
@@ -481,7 +522,8 @@ class _TopicRuleState:
     def firehoses(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleFirehoseArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def https(
@@ -490,7 +532,8 @@ class _TopicRuleState:
     @https.setter
     def https(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleHttpArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iotAnalytics")
     def iot_analytics(
@@ -500,7 +543,8 @@ class _TopicRuleState:
     def iot_analytics(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleIotAnalyticArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iotEvents")
     def iot_events(
@@ -510,7 +554,8 @@ class _TopicRuleState:
     def iot_events(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleIotEventArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kafkas(
@@ -519,7 +564,8 @@ class _TopicRuleState:
     @kafkas.setter
     def kafkas(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleKafkaArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kineses(
@@ -529,7 +575,8 @@ class _TopicRuleState:
     def kineses(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleKinesisArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lambdas(
@@ -538,17 +585,20 @@ class _TopicRuleState:
     @lambdas.setter
     def lambdas(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleLambdaArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def republishes(
@@ -558,14 +608,16 @@ class _TopicRuleState:
     def republishes(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleRepublishArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleS3Args]]]]: ...
     @s3.setter
     def s3(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleS3Args]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sns(
@@ -574,17 +626,20 @@ class _TopicRuleState:
     @sns.setter
     def sns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleSnsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sql(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sql.setter
-    def sql(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sql(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlVersion")
     def sql_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sql_version.setter
-    def sql_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sql_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sqs(
@@ -593,7 +648,8 @@ class _TopicRuleState:
     @sqs.setter
     def sqs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleSqsArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stepFunctions")
     def step_functions(
@@ -605,7 +661,8 @@ class _TopicRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicRuleStepFunctionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -614,7 +671,8 @@ class _TopicRuleState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -623,7 +681,8 @@ class _TopicRuleState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timestreams(
@@ -633,7 +692,8 @@ class _TopicRuleState:
     def timestreams(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TopicRuleTimestreamArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:iot/topicRule:TopicRule")
 class TopicRule(pulumi.CustomResource):

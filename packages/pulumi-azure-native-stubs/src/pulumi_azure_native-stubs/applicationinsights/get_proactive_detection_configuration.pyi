@@ -48,7 +48,10 @@ class GetProactiveDetectionConfigurationResult:
 class AwaitableGetProactiveDetectionConfigurationResult(
     GetProactiveDetectionConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProactiveDetectionConfigurationResult]:
+        ...
 
 def get_proactive_detection_configuration(
     configuration_id: Optional[_builtins.str] = ...,

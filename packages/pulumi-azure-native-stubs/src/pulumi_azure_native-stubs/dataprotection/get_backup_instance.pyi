@@ -48,7 +48,8 @@ class GetBackupInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBackupInstanceResult(GetBackupInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackupInstanceResult]:
+        ...
 
 def get_backup_instance(
     backup_instance_name: Optional[_builtins.str] = ...,

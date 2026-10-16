@@ -52,7 +52,8 @@ class GetLoadTestProfileMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLoadTestProfileMappingResult(GetLoadTestProfileMappingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLoadTestProfileMappingResult]:
+        ...
 
 def get_load_test_profile_mapping(
     load_test_profile_mapping_name: Optional[_builtins.str] = ...,

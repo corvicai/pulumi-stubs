@@ -58,7 +58,8 @@ class GetConfigurationAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationAssignmentResult(GetConfigurationAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationAssignmentResult]:
+        ...
 
 def get_configuration_assignment(
     configuration_assignment_name: Optional[_builtins.str] = ...,

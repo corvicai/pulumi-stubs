@@ -58,7 +58,10 @@ class ListEndpointIngressGatewayCredentialsResult:
 class AwaitableListEndpointIngressGatewayCredentialsResult(
     ListEndpointIngressGatewayCredentialsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListEndpointIngressGatewayCredentialsResult]:
+        ...
 
 def list_endpoint_ingress_gateway_credentials(
     endpoint_name: Optional[_builtins.str] = ...,

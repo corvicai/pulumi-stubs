@@ -150,7 +150,8 @@ class GetBucketObjectContentResult:
     def temporary_hold(self) -> _builtins.bool: ...
 
 class AwaitableGetBucketObjectContentResult(GetBucketObjectContentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBucketObjectContentResult]:
+        ...
 
 def get_bucket_object_content(
     bucket: Optional[_builtins.str] = ...,

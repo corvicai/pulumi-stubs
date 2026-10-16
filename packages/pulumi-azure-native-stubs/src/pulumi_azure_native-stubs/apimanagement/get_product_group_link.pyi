@@ -34,7 +34,8 @@ class GetProductGroupLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProductGroupLinkResult(GetProductGroupLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProductGroupLinkResult]:
+        ...
 
 def get_product_group_link(
     group_link_id: Optional[_builtins.str] = ...,

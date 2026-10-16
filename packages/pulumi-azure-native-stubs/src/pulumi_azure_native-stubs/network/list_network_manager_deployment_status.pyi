@@ -29,7 +29,10 @@ class ListNetworkManagerDeploymentStatusResult:
 class AwaitableListNetworkManagerDeploymentStatusResult(
     ListNetworkManagerDeploymentStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListNetworkManagerDeploymentStatusResult]:
+        ...
 
 def list_network_manager_deployment_status(
     deployment_types: Optional[Sequence[Union[_builtins.str, ConfigurationType]]] = ...,

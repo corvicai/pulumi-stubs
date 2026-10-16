@@ -68,7 +68,8 @@ class GetCollectorPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCollectorPolicyResult(GetCollectorPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCollectorPolicyResult]:
+        ...
 
 def get_collector_policy(
     azure_traffic_collector_name: Optional[_builtins.str] = ...,

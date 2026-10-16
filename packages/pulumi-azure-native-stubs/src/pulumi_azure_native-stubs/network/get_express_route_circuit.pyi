@@ -126,7 +126,8 @@ class GetExpressRouteCircuitResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetExpressRouteCircuitResult(GetExpressRouteCircuitResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExpressRouteCircuitResult]:
+        ...
 
 def get_express_route_circuit(
     circuit_name: Optional[_builtins.str] = ...,

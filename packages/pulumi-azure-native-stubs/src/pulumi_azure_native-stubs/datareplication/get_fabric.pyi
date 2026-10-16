@@ -52,7 +52,8 @@ class GetFabricResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFabricResult(GetFabricResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFabricResult]:
+        ...
 
 def get_fabric(
     fabric_name: Optional[_builtins.str] = ...,

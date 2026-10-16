@@ -44,7 +44,8 @@ class GetServiceRegistryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceRegistryResult(GetServiceRegistryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceRegistryResult]:
+        ...
 
 def get_service_registry(
     resource_group_name: Optional[_builtins.str] = ...,

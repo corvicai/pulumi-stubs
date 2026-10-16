@@ -140,7 +140,8 @@ class GetStreamingJobResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStreamingJobResult(GetStreamingJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStreamingJobResult]:
+        ...
 
 def get_streaming_job(
     expand: Optional[_builtins.str] = ...,

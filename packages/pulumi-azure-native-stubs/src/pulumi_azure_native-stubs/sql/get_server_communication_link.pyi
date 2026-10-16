@@ -51,7 +51,8 @@ class GetServerCommunicationLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerCommunicationLinkResult(GetServerCommunicationLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerCommunicationLinkResult]:
+        ...
 
 def get_server_communication_link(
     communication_link_name: Optional[_builtins.str] = ...,

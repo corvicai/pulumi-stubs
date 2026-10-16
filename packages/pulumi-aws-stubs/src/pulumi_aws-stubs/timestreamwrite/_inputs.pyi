@@ -48,7 +48,8 @@ class TableMagneticStoreWritePropertiesArgs:
     @enable_magnetic_store_writes.setter
     def enable_magnetic_store_writes(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="magneticStoreRejectedDataLocation")
     def magnetic_store_rejected_data_location(
@@ -66,7 +67,8 @@ class TableMagneticStoreWritePropertiesArgs:
                 TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationArgsDict(
     TypedDict
@@ -105,7 +107,8 @@ class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationArgs:
                 TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationArgsDict(
     TypedDict
@@ -129,22 +132,30 @@ class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Config
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionOption")
     def encryption_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_option.setter
-    def encryption_option(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_option(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectKeyPrefix")
     def object_key_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_key_prefix.setter
-    def object_key_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_key_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class TableRetentionPropertiesArgsDict(TypedDict):
     magnetic_store_retention_period_in_days: pulumi.Input[_builtins.int]
@@ -166,14 +177,16 @@ class TableRetentionPropertiesArgs:
     @magnetic_store_retention_period_in_days.setter
     def magnetic_store_retention_period_in_days(
         self, value: pulumi.Input[_builtins.int]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memoryStoreRetentionPeriodInHours")
     def memory_store_retention_period_in_hours(self) -> pulumi.Input[_builtins.int]: ...
     @memory_store_retention_period_in_hours.setter
     def memory_store_retention_period_in_hours(
         self, value: pulumi.Input[_builtins.int]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableSchemaArgsDict(TypedDict):
     composite_partition_key: NotRequired[
@@ -197,7 +210,8 @@ class TableSchemaArgs:
     @composite_partition_key.setter
     def composite_partition_key(
         self, value: Optional[pulumi.Input[TableSchemaCompositePartitionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableSchemaCompositePartitionKeyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -217,14 +231,19 @@ class TableSchemaCompositePartitionKeyArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enforcementInRecord")
     def enforcement_in_record(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enforcement_in_record.setter
-    def enforcement_in_record(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enforcement_in_record(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

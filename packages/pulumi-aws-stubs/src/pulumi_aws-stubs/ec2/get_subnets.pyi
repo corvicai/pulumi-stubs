@@ -36,7 +36,8 @@ class GetSubnetsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetSubnetsResult(GetSubnetsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetsResult]:
+        ...
 
 def get_subnets(
     filters: Optional[

@@ -49,12 +49,16 @@ class CustomerManagedKeyEncryptionArgs:
     @key_encryption_key_identity.setter
     def key_encryption_key_identity(
         self, value: Optional[pulumi.Input[KeyEncryptionKeyIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKeyUrl")
     def key_encryption_key_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_encryption_key_url.setter
-    def key_encryption_key_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_encryption_key_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class KeyEncryptionKeyIdentityArgsDict(TypedDict):
     federated_client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -78,7 +82,10 @@ class KeyEncryptionKeyIdentityArgs:
     @pulumi.getter(name="federatedClientId")
     def federated_client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @federated_client_id.setter
-    def federated_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def federated_client_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityType")
     def identity_type(
@@ -90,7 +97,8 @@ class KeyEncryptionKeyIdentityArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, KeyEncryptionKeyIdentityType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityResourceId")
     def user_assigned_identity_resource_id(
@@ -99,7 +107,8 @@ class KeyEncryptionKeyIdentityArgs:
     @user_assigned_identity_resource_id.setter
     def user_assigned_identity_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -125,7 +134,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -134,7 +144,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OnlineExperimentationWorkspacePropertiesArgsDict(TypedDict):
     app_configuration_resource_id: pulumi.Input[_builtins.str]
@@ -156,14 +167,18 @@ class OnlineExperimentationWorkspacePropertiesArgs:
     @pulumi.getter(name="appConfigurationResourceId")
     def app_configuration_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @app_configuration_resource_id.setter
-    def app_configuration_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def app_configuration_resource_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logAnalyticsWorkspaceResourceId")
     def log_analytics_workspace_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @log_analytics_workspace_resource_id.setter
     def log_analytics_workspace_resource_id(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logsExporterStorageAccountResourceId")
     def logs_exporter_storage_account_resource_id(
@@ -172,7 +187,8 @@ class OnlineExperimentationWorkspacePropertiesArgs:
     @logs_exporter_storage_account_resource_id.setter
     def logs_exporter_storage_account_resource_id(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(
@@ -181,7 +197,8 @@ class OnlineExperimentationWorkspacePropertiesArgs:
     @encryption.setter
     def encryption(
         self, value: Optional[pulumi.Input[ResourceEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OnlineExperimentationWorkspaceSkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, OnlineExperimentationWorkspaceSkuName]]
@@ -204,7 +221,8 @@ class OnlineExperimentationWorkspaceSkuArgs:
         value: pulumi.Input[
             Union[_builtins.str, OnlineExperimentationWorkspaceSkuName]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionPropertiesArgsDict(TypedDict):
     private_link_service_connection_state: pulumi.Input[
@@ -228,7 +246,8 @@ class PrivateEndpointConnectionPropertiesArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -252,12 +271,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -271,7 +294,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceEncryptionConfigurationArgsDict(TypedDict):
     customer_managed_key_encryption: NotRequired[
@@ -295,4 +319,5 @@ class ResourceEncryptionConfigurationArgs:
     @customer_managed_key_encryption.setter
     def customer_managed_key_encryption(
         self, value: Optional[pulumi.Input[CustomerManagedKeyEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...

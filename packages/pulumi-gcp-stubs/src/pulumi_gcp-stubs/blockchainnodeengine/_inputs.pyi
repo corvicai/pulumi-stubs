@@ -57,12 +57,16 @@ class BlockchainNodesConnectionInfoArgs:
                 Sequence[pulumi.Input[BlockchainNodesConnectionInfoEndpointInfoArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAttachment")
     def service_attachment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_attachment.setter
-    def service_attachment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_attachment(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BlockchainNodesConnectionInfoEndpointInfoArgsDict(TypedDict):
     json_rpc_api_endpoint: NotRequired[pulumi.Input[_builtins.str]]
@@ -80,12 +84,18 @@ class BlockchainNodesConnectionInfoEndpointInfoArgs:
     @pulumi.getter(name="jsonRpcApiEndpoint")
     def json_rpc_api_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @json_rpc_api_endpoint.setter
-    def json_rpc_api_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def json_rpc_api_endpoint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="websocketsApiEndpoint")
     def websockets_api_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @websockets_api_endpoint.setter
-    def websockets_api_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def websockets_api_endpoint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BlockchainNodesEthereumDetailsArgsDict(TypedDict):
     additional_endpoints: NotRequired[
@@ -152,27 +162,40 @@ class BlockchainNodesEthereumDetailsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiEnableAdmin")
     def api_enable_admin(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @api_enable_admin.setter
-    def api_enable_admin(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def api_enable_admin(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiEnableDebug")
     def api_enable_debug(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @api_enable_debug.setter
-    def api_enable_debug(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def api_enable_debug(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consensusClient")
     def consensus_client(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @consensus_client.setter
-    def consensus_client(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def consensus_client(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionClient")
     def execution_client(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_client.setter
-    def execution_client(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_client(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gethDetails")
     def geth_details(
@@ -182,17 +205,20 @@ class BlockchainNodesEthereumDetailsArgs:
     def geth_details(
         self,
         value: Optional[pulumi.Input[BlockchainNodesEthereumDetailsGethDetailsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network.setter
-    def network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
     def node_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_type.setter
-    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validatorConfig")
     def validator_config(
@@ -204,7 +230,8 @@ class BlockchainNodesEthereumDetailsArgs:
         value: Optional[
             pulumi.Input[BlockchainNodesEthereumDetailsValidatorConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BlockchainNodesEthereumDetailsAdditionalEndpointArgsDict(TypedDict):
     beacon_api_endpoint: NotRequired[pulumi.Input[_builtins.str]]
@@ -230,7 +257,10 @@ class BlockchainNodesEthereumDetailsAdditionalEndpointArgs:
     @pulumi.getter(name="beaconApiEndpoint")
     def beacon_api_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @beacon_api_endpoint.setter
-    def beacon_api_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def beacon_api_endpoint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beaconPrometheusMetricsApiEndpoint")
     def beacon_prometheus_metrics_api_endpoint(
@@ -239,7 +269,8 @@ class BlockchainNodesEthereumDetailsAdditionalEndpointArgs:
     @beacon_prometheus_metrics_api_endpoint.setter
     def beacon_prometheus_metrics_api_endpoint(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionClientPrometheusMetricsApiEndpoint")
     def execution_client_prometheus_metrics_api_endpoint(
@@ -248,7 +279,8 @@ class BlockchainNodesEthereumDetailsAdditionalEndpointArgs:
     @execution_client_prometheus_metrics_api_endpoint.setter
     def execution_client_prometheus_metrics_api_endpoint(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BlockchainNodesEthereumDetailsGethDetailsArgsDict(TypedDict):
     garbage_collection_mode: NotRequired[pulumi.Input[_builtins.str]]
@@ -264,7 +296,10 @@ class BlockchainNodesEthereumDetailsGethDetailsArgs:
     @pulumi.getter(name="garbageCollectionMode")
     def garbage_collection_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @garbage_collection_mode.setter
-    def garbage_collection_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def garbage_collection_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BlockchainNodesEthereumDetailsValidatorConfigArgsDict(TypedDict):
     mev_relay_urls: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -286,4 +321,5 @@ class BlockchainNodesEthereumDetailsValidatorConfigArgs:
     @mev_relay_urls.setter
     def mev_relay_urls(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

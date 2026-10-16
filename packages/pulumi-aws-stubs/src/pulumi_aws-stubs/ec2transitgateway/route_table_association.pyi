@@ -21,17 +21,24 @@ class RouteTableAssociationArgs:
     @pulumi.getter(name="transitGatewayAttachmentId")
     def transit_gateway_attachment_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_attachment_id.setter
-    def transit_gateway_attachment_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_attachment_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayRouteTableId")
     def transit_gateway_route_table_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_route_table_id.setter
-    def transit_gateway_route_table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_route_table_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceExistingAssociation")
     def replace_existing_association(
@@ -40,7 +47,8 @@ class RouteTableAssociationArgs:
     @replace_existing_association.setter
     def replace_existing_association(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RouteTableAssociationState:
@@ -58,7 +66,8 @@ class _RouteTableAssociationState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceExistingAssociation")
     def replace_existing_association(
@@ -67,17 +76,20 @@ class _RouteTableAssociationState:
     @replace_existing_association.setter
     def replace_existing_association(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayAttachmentId")
     def transit_gateway_attachment_id(
@@ -86,7 +98,8 @@ class _RouteTableAssociationState:
     @transit_gateway_attachment_id.setter
     def transit_gateway_attachment_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayRouteTableId")
     def transit_gateway_route_table_id(
@@ -95,7 +108,8 @@ class _RouteTableAssociationState:
     @transit_gateway_route_table_id.setter
     def transit_gateway_route_table_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RouteTableAssociation(pulumi.CustomResource):

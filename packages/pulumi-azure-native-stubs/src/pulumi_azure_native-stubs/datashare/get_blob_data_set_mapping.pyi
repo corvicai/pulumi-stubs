@@ -80,7 +80,8 @@ class GetBlobDataSetMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBlobDataSetMappingResult(GetBlobDataSetMappingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBlobDataSetMappingResult]:
+        ...
 
 def get_blob_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

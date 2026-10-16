@@ -60,7 +60,8 @@ class GetKustoDatabaseDataSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKustoDatabaseDataSetResult(GetKustoDatabaseDataSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKustoDatabaseDataSetResult]:
+        ...
 
 def get_kusto_database_data_set(
     account_name: Optional[_builtins.str] = ...,

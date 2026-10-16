@@ -53,14 +53,16 @@ class AccountResourcePropertiesArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AccountConfiguration]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cors(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[CorsRuleArgs]]]]: ...
     @cors.setter
     def cors(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CorsRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointAuthentications")
     def endpoint_authentications(
@@ -72,14 +74,16 @@ class AccountResourcePropertiesArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EndpointAuthenticationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reportsConnectionString")
     def reports_connection_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reports_connection_string.setter
     def reports_connection_string(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CorsRuleArgsDict(TypedDict):
     allowed_origins: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -113,7 +117,8 @@ class CorsRuleArgs:
     @allowed_origins.setter
     def allowed_origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedHeaders")
     def allowed_headers(
@@ -122,7 +127,8 @@ class CorsRuleArgs:
     @allowed_headers.setter
     def allowed_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedMethods")
     def allowed_methods(
@@ -131,7 +137,8 @@ class CorsRuleArgs:
     @allowed_methods.setter
     def allowed_methods(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exposedHeaders")
     def exposed_headers(
@@ -140,12 +147,16 @@ class CorsRuleArgs:
     @exposed_headers.setter
     def exposed_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxAgeInSeconds")
     def max_age_in_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_age_in_seconds.setter
-    def max_age_in_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_age_in_seconds(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class EndpointAuthenticationArgsDict(TypedDict):
     aad_tenant_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -167,12 +178,14 @@ class EndpointAuthenticationArgs:
     @pulumi.getter(name="aadTenantID")
     def aad_tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aad_tenant_id.setter
-    def aad_tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aad_tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalID")
     def principal_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal_id.setter
-    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalType")
     def principal_type(
@@ -181,7 +194,8 @@ class EndpointAuthenticationArgs:
     @principal_type.setter
     def principal_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PrincipalType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -207,7 +221,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -216,7 +231,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ModelingInputDataArgsDict(TypedDict):
     connection_string: NotRequired[pulumi.Input[_builtins.str]]
@@ -230,7 +246,10 @@ class ModelingInputDataArgs:
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_string.setter
-    def connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_string(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ModelingResourcePropertiesArgsDict(TypedDict):
     features: NotRequired[pulumi.Input[Union[_builtins.str, ModelingFeatures]]]
@@ -258,7 +277,8 @@ class ModelingResourcePropertiesArgs:
     @features.setter
     def features(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ModelingFeatures]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def frequency(
@@ -267,19 +287,24 @@ class ModelingResourcePropertiesArgs:
     @frequency.setter
     def frequency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ModelingFrequency]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputData")
     def input_data(self) -> Optional[pulumi.Input[ModelingInputDataArgs]]: ...
     @input_data.setter
-    def input_data(self, value: Optional[pulumi.Input[ModelingInputDataArgs]]): ...
+    def input_data(
+        self, value: Optional[pulumi.Input[ModelingInputDataArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[Union[_builtins.str, ModelingSize]]]: ...
     @size.setter
     def size(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ModelingSize]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ServiceEndpointResourcePropertiesArgsDict(TypedDict):
     pre_allocated_capacity: NotRequired[pulumi.Input[_builtins.int]]
@@ -293,4 +318,7 @@ class ServiceEndpointResourcePropertiesArgs:
     @pulumi.getter(name="preAllocatedCapacity")
     def pre_allocated_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @pre_allocated_capacity.setter
-    def pre_allocated_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def pre_allocated_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...

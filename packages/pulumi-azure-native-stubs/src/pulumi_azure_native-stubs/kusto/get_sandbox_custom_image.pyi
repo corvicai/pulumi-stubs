@@ -55,7 +55,8 @@ class GetSandboxCustomImageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSandboxCustomImageResult(GetSandboxCustomImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSandboxCustomImageResult]:
+        ...
 
 def get_sandbox_custom_image(
     cluster_name: Optional[_builtins.str] = ...,

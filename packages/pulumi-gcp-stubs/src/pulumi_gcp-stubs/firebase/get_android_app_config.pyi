@@ -39,7 +39,8 @@ class GetAndroidAppConfigResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAndroidAppConfigResult(GetAndroidAppConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAndroidAppConfigResult]:
+        ...
 
 def get_android_app_config(
     app_id: Optional[_builtins.str] = ...,

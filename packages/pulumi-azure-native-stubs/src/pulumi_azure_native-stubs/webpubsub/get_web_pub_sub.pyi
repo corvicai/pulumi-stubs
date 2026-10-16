@@ -144,7 +144,8 @@ class GetWebPubSubResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetWebPubSubResult(GetWebPubSubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebPubSubResult]:
+        ...
 
 def get_web_pub_sub(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -81,7 +81,10 @@ class GetNetworkSecurityPerimeterLinkResult:
 class AwaitableGetNetworkSecurityPerimeterLinkResult(
     GetNetworkSecurityPerimeterLinkResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkSecurityPerimeterLinkResult]:
+        ...
 
 def get_network_security_perimeter_link(
     link_name: Optional[_builtins.str] = ...,

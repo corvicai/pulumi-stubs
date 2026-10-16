@@ -66,7 +66,8 @@ class GetDiskAccessResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDiskAccessResult(GetDiskAccessResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiskAccessResult]:
+        ...
 
 def get_disk_access(
     disk_access_name: Optional[_builtins.str] = ...,

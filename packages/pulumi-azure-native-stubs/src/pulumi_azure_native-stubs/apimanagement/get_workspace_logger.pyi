@@ -55,7 +55,8 @@ class GetWorkspaceLoggerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceLoggerResult(GetWorkspaceLoggerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceLoggerResult]:
+        ...
 
 def get_workspace_logger(
     logger_id: Optional[_builtins.str] = ...,

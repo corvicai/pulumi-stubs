@@ -54,7 +54,8 @@ class GetEventIntegrationResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetEventIntegrationResult(GetEventIntegrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventIntegrationResult]:
+        ...
 
 def get_event_integration(
     name: Optional[_builtins.str] = ...,

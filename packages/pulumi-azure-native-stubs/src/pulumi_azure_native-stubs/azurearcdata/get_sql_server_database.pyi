@@ -52,7 +52,8 @@ class GetSqlServerDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlServerDatabaseResult(GetSqlServerDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlServerDatabaseResult]:
+        ...
 
 def get_sql_server_database(
     database_name: Optional[_builtins.str] = ...,

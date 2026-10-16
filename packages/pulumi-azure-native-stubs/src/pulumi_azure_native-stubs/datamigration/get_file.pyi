@@ -43,7 +43,8 @@ class GetFileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFileResult(GetFileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileResult]:
+        ...
 
 def get_file(
     file_name: Optional[_builtins.str] = ...,

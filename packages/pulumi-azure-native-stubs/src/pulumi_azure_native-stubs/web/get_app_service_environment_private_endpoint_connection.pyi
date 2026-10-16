@@ -55,7 +55,10 @@ class GetAppServiceEnvironmentPrivateEndpointConnectionResult:
 class AwaitableGetAppServiceEnvironmentPrivateEndpointConnectionResult(
     GetAppServiceEnvironmentPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppServiceEnvironmentPrivateEndpointConnectionResult]:
+        ...
 
 def get_app_service_environment_private_endpoint_connection(
     name: Optional[_builtins.str] = ...,

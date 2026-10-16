@@ -59,7 +59,8 @@ class GetSecretResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetSecretResult(GetSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretResult]:
+        ...
 
 def get_secret(
     arn: Optional[_builtins.str] = ...,

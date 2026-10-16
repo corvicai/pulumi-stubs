@@ -31,17 +31,22 @@ class RuleArgs:
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> pulumi.Input[_builtins.str]: ...
     @resource_type.setter
-    def resource_type(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPeriod")
     def retention_period(self) -> pulumi.Input[RuleRetentionPeriodArgs]: ...
     @retention_period.setter
-    def retention_period(self, value: pulumi.Input[RuleRetentionPeriodArgs]): ...
+    def retention_period(
+        self, value: pulumi.Input[RuleRetentionPeriodArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeResourceTags")
     def exclude_resource_tags(
@@ -53,7 +58,8 @@ class RuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RuleExcludeResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lockConfiguration")
     def lock_configuration(
@@ -62,12 +68,14 @@ class RuleArgs:
     @lock_configuration.setter
     def lock_configuration(
         self, value: Optional[pulumi.Input[RuleLockConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -76,7 +84,8 @@ class RuleArgs:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RuleResourceTagArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -85,7 +94,8 @@ class RuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RuleState:
@@ -116,12 +126,14 @@ class _RuleState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeResourceTags")
     def exclude_resource_tags(
@@ -133,7 +145,8 @@ class _RuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RuleExcludeResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lockConfiguration")
     def lock_configuration(
@@ -142,22 +155,26 @@ class _RuleState:
     @lock_configuration.setter
     def lock_configuration(
         self, value: Optional[pulumi.Input[RuleLockConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lockEndTime")
     def lock_end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lock_end_time.setter
-    def lock_end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lock_end_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lockState")
     def lock_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lock_state.setter
-    def lock_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lock_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -166,24 +183,28 @@ class _RuleState:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RuleResourceTagArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPeriod")
     def retention_period(self) -> Optional[pulumi.Input[RuleRetentionPeriodArgs]]: ...
     @retention_period.setter
     def retention_period(
         self, value: Optional[pulumi.Input[RuleRetentionPeriodArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -192,7 +213,8 @@ class _RuleState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -201,7 +223,8 @@ class _RuleState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:rbin/rule:Rule")
 class Rule(pulumi.CustomResource):

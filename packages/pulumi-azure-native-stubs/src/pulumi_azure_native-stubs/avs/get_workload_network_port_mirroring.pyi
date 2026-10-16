@@ -70,7 +70,10 @@ class GetWorkloadNetworkPortMirroringResult:
 class AwaitableGetWorkloadNetworkPortMirroringResult(
     GetWorkloadNetworkPortMirroringResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkloadNetworkPortMirroringResult]:
+        ...
 
 def get_workload_network_port_mirroring(
     port_mirroring_id: Optional[_builtins.str] = ...,

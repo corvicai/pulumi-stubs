@@ -37,7 +37,8 @@ class GetUserWorkloadsSecretResult:
     def region(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetUserWorkloadsSecretResult(GetUserWorkloadsSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserWorkloadsSecretResult]:
+        ...
 
 def get_user_workloads_secret(
     environment: Optional[_builtins.str] = ...,

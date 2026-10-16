@@ -56,7 +56,8 @@ class GetWorkloadNetworkPublicIPResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadNetworkPublicIPResult(GetWorkloadNetworkPublicIPResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadNetworkPublicIPResult]:
+        ...
 
 def get_workload_network_public_ip(
     private_cloud_name: Optional[_builtins.str] = ...,

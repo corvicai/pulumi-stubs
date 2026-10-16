@@ -38,7 +38,8 @@ class GetVpcPeeringConnectionsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVpcPeeringConnectionsResult(GetVpcPeeringConnectionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcPeeringConnectionsResult]:
+        ...
 
 def get_vpc_peering_connections(
     filters: Optional[

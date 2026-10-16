@@ -36,22 +36,32 @@ class RemediationAtSubscriptionArgs:
     @failure_threshold.setter
     def failure_threshold(
         self, value: Optional[pulumi.Input[RemediationPropertiesFailureThresholdArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filters(self) -> Optional[pulumi.Input[RemediationFiltersArgs]]: ...
     @filters.setter
-    def filters(self, value: Optional[pulumi.Input[RemediationFiltersArgs]]): ...
+    def filters(
+        self, value: Optional[pulumi.Input[RemediationFiltersArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelDeployments")
     def parallel_deployments(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @parallel_deployments.setter
-    def parallel_deployments(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def parallel_deployments(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyAssignmentId")
     def policy_assignment_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_assignment_id.setter
-    def policy_assignment_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_assignment_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyDefinitionReferenceId")
     def policy_definition_reference_id(
@@ -60,17 +70,22 @@ class RemediationAtSubscriptionArgs:
     @policy_definition_reference_id.setter
     def policy_definition_reference_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remediationName")
     def remediation_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remediation_name.setter
-    def remediation_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def remediation_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceCount")
     def resource_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @resource_count.setter
-    def resource_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def resource_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceDiscoveryMode")
     def resource_discovery_mode(
@@ -79,7 +94,8 @@ class RemediationAtSubscriptionArgs:
     @resource_discovery_mode.setter
     def resource_discovery_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ResourceDiscoveryMode]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RemediationAtSubscription(pulumi.CustomResource):

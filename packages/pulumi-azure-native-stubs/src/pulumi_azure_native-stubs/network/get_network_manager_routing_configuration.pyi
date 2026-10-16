@@ -58,7 +58,10 @@ class GetNetworkManagerRoutingConfigurationResult:
 class AwaitableGetNetworkManagerRoutingConfigurationResult(
     GetNetworkManagerRoutingConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkManagerRoutingConfigurationResult]:
+        ...
 
 def get_network_manager_routing_configuration(
     configuration_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetRuleSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRuleSetResult(GetRuleSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRuleSetResult]:
+        ...
 
 def get_rule_set(
     profile_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class ListNamespaceKeysResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListNamespaceKeysResult(ListNamespaceKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListNamespaceKeysResult]:
+        ...
 
 def list_namespace_keys(
     authorization_rule_name: Optional[_builtins.str] = ...,

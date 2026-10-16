@@ -72,7 +72,8 @@ class GetReadWriteDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReadWriteDatabaseResult(GetReadWriteDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReadWriteDatabaseResult]:
+        ...
 
 def get_read_write_database(
     cluster_name: Optional[_builtins.str] = ...,

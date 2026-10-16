@@ -54,7 +54,8 @@ class GetConfigurationGroupSchemaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationGroupSchemaResult(GetConfigurationGroupSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationGroupSchemaResult]:
+        ...
 
 def get_configuration_group_schema(
     configuration_group_schema_name: Optional[_builtins.str] = ...,

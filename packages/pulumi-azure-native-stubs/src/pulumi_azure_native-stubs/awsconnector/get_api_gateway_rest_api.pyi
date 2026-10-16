@@ -52,7 +52,8 @@ class GetApiGatewayRestApiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiGatewayRestApiResult(GetApiGatewayRestApiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiGatewayRestApiResult]:
+        ...
 
 def get_api_gateway_rest_api(
     name: Optional[_builtins.str] = ...,

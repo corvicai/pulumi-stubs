@@ -88,7 +88,8 @@ class GetVpnSiteResult:
     def vpn_site_links(self) -> Optional[Sequence[outputs.VpnSiteLinkResponse]]: ...
 
 class AwaitableGetVpnSiteResult(GetVpnSiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnSiteResult]:
+        ...
 
 def get_vpn_site(
     resource_group_name: Optional[_builtins.str] = ...,

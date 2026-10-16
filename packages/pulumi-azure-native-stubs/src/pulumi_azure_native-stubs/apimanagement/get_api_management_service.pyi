@@ -208,7 +208,8 @@ class GetApiManagementServiceResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetApiManagementServiceResult(GetApiManagementServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiManagementServiceResult]:
+        ...
 
 def get_api_management_service(
     resource_group_name: Optional[_builtins.str] = ...,

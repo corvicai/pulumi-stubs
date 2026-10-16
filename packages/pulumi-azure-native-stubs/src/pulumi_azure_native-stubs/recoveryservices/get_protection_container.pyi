@@ -51,7 +51,8 @@ class GetProtectionContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProtectionContainerResult(GetProtectionContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProtectionContainerResult]:
+        ...
 
 def get_protection_container(
     container_name: Optional[_builtins.str] = ...,

@@ -25,17 +25,22 @@ class DefaultRouteTableAssociationArgs:
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayRouteTableId")
     def transit_gateway_route_table_id(self) -> pulumi.Input[_builtins.str]: ...
     @transit_gateway_route_table_id.setter
-    def transit_gateway_route_table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def transit_gateway_route_table_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -44,7 +49,8 @@ class DefaultRouteTableAssociationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DefaultRouteTableAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DefaultRouteTableAssociationState:
@@ -67,12 +73,14 @@ class _DefaultRouteTableAssociationState:
     @original_default_route_table_id.setter
     def original_default_route_table_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -81,12 +89,16 @@ class _DefaultRouteTableAssociationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DefaultRouteTableAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayRouteTableId")
     def transit_gateway_route_table_id(
@@ -95,7 +107,8 @@ class _DefaultRouteTableAssociationState:
     @transit_gateway_route_table_id.setter
     def transit_gateway_route_table_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DefaultRouteTableAssociation(pulumi.CustomResource):

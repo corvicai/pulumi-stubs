@@ -80,7 +80,8 @@ class GetConnectorResult:
     def subnets(self) -> Sequence[outputs.GetConnectorSubnetResult]: ...
 
 class AwaitableGetConnectorResult(GetConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectorResult]:
+        ...
 
 def get_connector(
     name: Optional[_builtins.str] = ...,

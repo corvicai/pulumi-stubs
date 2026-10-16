@@ -72,7 +72,8 @@ class GetNetworkInterfaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkInterfaceResult(GetNetworkInterfaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkInterfaceResult]:
+        ...
 
 def get_network_interface(
     network_device_name: Optional[_builtins.str] = ...,

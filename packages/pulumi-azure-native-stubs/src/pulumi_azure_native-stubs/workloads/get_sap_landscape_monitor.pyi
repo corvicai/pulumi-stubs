@@ -56,7 +56,8 @@ class GetSapLandscapeMonitorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSapLandscapeMonitorResult(GetSapLandscapeMonitorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSapLandscapeMonitorResult]:
+        ...
 
 def get_sap_landscape_monitor(
     monitor_name: Optional[_builtins.str] = ...,

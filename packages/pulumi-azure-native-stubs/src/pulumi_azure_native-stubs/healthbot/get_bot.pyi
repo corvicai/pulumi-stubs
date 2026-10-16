@@ -55,7 +55,8 @@ class GetBotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBotResult(GetBotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBotResult]:
+        ...
 
 def get_bot(
     bot_name: Optional[_builtins.str] = ...,

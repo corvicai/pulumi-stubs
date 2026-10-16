@@ -43,7 +43,8 @@ class GetCaPoolIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetCaPoolIamPolicyResult(GetCaPoolIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCaPoolIamPolicyResult]:
+        ...
 
 def get_ca_pool_iam_policy(
     ca_pool: Optional[_builtins.str] = ...,

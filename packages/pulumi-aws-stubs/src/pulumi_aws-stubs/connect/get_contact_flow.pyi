@@ -59,7 +59,8 @@ class GetContactFlowResult:
     def type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetContactFlowResult(GetContactFlowResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContactFlowResult]:
+        ...
 
 def get_contact_flow(
     contact_flow_id: Optional[_builtins.str] = ...,

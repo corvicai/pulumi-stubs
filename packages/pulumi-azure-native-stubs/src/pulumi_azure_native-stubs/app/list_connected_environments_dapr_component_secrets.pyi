@@ -18,7 +18,10 @@ class ListConnectedEnvironmentsDaprComponentSecretsResult:
 class AwaitableListConnectedEnvironmentsDaprComponentSecretsResult(
     ListConnectedEnvironmentsDaprComponentSecretsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListConnectedEnvironmentsDaprComponentSecretsResult]:
+        ...
 
 def list_connected_environments_dapr_component_secrets(
     component_name: Optional[_builtins.str] = ...,

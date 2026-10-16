@@ -84,7 +84,8 @@ class GetSecretSyncResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecretSyncResult(GetSecretSyncResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretSyncResult]:
+        ...
 
 def get_secret_sync(
     resource_group_name: Optional[_builtins.str] = ...,

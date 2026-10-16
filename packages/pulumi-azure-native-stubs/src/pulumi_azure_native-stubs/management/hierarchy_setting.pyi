@@ -23,14 +23,16 @@ class HierarchySettingArgs:
     @pulumi.getter(name="groupId")
     def group_id(self) -> pulumi.Input[_builtins.str]: ...
     @group_id.setter
-    def group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultManagementGroup")
     def default_management_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_management_group.setter
     def default_management_group(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requireAuthorizationForGroupCreation")
     def require_authorization_for_group_creation(
@@ -39,7 +41,8 @@ class HierarchySettingArgs:
     @require_authorization_for_group_creation.setter
     def require_authorization_for_group_creation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:management:HierarchySetting")
 class HierarchySetting(pulumi.CustomResource):

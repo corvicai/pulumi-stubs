@@ -68,7 +68,8 @@ class GetNetworkResult:
     def vpc_networks(self) -> Sequence[outputs.GetNetworkVpcNetworkResult]: ...
 
 class AwaitableGetNetworkResult(GetNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkResult]:
+        ...
 
 def get_network(
     location: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetDetectorResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetDetectorResult(GetDetectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDetectorResult]:
+        ...
 
 def get_detector(
     id: Optional[_builtins.str] = ...,

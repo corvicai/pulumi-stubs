@@ -62,17 +62,20 @@ class CapacityReservationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DatabaseAclConfigurationArgsDict(TypedDict):
     s3_acl_option: pulumi.Input[_builtins.str]
@@ -84,7 +87,8 @@ class DatabaseAclConfigurationArgs:
     @pulumi.getter(name="s3AclOption")
     def s3_acl_option(self) -> pulumi.Input[_builtins.str]: ...
     @s3_acl_option.setter
-    def s3_acl_option(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_acl_option(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DatabaseEncryptionConfigurationArgsDict(TypedDict):
     encryption_option: pulumi.Input[_builtins.str]
@@ -102,12 +106,14 @@ class DatabaseEncryptionConfigurationArgs:
     @pulumi.getter(name="encryptionOption")
     def encryption_option(self) -> pulumi.Input[_builtins.str]: ...
     @encryption_option.setter
-    def encryption_option(self, value: pulumi.Input[_builtins.str]): ...
+    def encryption_option(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkgroupConfigurationArgsDict(TypedDict):
     bytes_scanned_cutoff_per_query: NotRequired[pulumi.Input[_builtins.int]]
@@ -191,7 +197,8 @@ class WorkgroupConfigurationArgs:
     @bytes_scanned_cutoff_per_query.setter
     def bytes_scanned_cutoff_per_query(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerContentEncryptionConfiguration")
     def customer_content_encryption_configuration(
@@ -207,7 +214,8 @@ class WorkgroupConfigurationArgs:
                 WorkgroupConfigurationCustomerContentEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMinimumEncryptionConfiguration")
     def enable_minimum_encryption_configuration(
@@ -216,7 +224,8 @@ class WorkgroupConfigurationArgs:
     @enable_minimum_encryption_configuration.setter
     def enable_minimum_encryption_configuration(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enforceWorkgroupConfiguration")
     def enforce_workgroup_configuration(
@@ -225,7 +234,8 @@ class WorkgroupConfigurationArgs:
     @enforce_workgroup_configuration.setter
     def enforce_workgroup_configuration(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="engineVersion")
     def engine_version(
@@ -234,12 +244,14 @@ class WorkgroupConfigurationArgs:
     @engine_version.setter
     def engine_version(
         self, value: Optional[pulumi.Input[WorkgroupConfigurationEngineVersionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterConfiguration")
     def identity_center_configuration(
@@ -253,7 +265,8 @@ class WorkgroupConfigurationArgs:
         value: Optional[
             pulumi.Input[WorkgroupConfigurationIdentityCenterConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedQueryResultsConfiguration")
     def managed_query_results_configuration(
@@ -267,7 +280,8 @@ class WorkgroupConfigurationArgs:
         value: Optional[
             pulumi.Input[WorkgroupConfigurationManagedQueryResultsConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringConfiguration")
     def monitoring_configuration(
@@ -279,7 +293,8 @@ class WorkgroupConfigurationArgs:
         value: Optional[
             pulumi.Input[WorkgroupConfigurationMonitoringConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishCloudwatchMetricsEnabled")
     def publish_cloudwatch_metrics_enabled(
@@ -288,7 +303,8 @@ class WorkgroupConfigurationArgs:
     @publish_cloudwatch_metrics_enabled.setter
     def publish_cloudwatch_metrics_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryResultsS3AccessGrantsConfiguration")
     def query_results_s3_access_grants_configuration(
@@ -304,12 +320,16 @@ class WorkgroupConfigurationArgs:
                 WorkgroupConfigurationQueryResultsS3AccessGrantsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requesterPaysEnabled")
     def requester_pays_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @requester_pays_enabled.setter
-    def requester_pays_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def requester_pays_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resultConfiguration")
     def result_configuration(
@@ -319,7 +339,8 @@ class WorkgroupConfigurationArgs:
     def result_configuration(
         self,
         value: Optional[pulumi.Input[WorkgroupConfigurationResultConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationCustomerContentEncryptionConfigurationArgsDict(TypedDict):
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
@@ -333,7 +354,8 @@ class WorkgroupConfigurationCustomerContentEncryptionConfigurationArgs:
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkgroupConfigurationEngineVersionArgsDict(TypedDict):
     effective_engine_version: NotRequired[pulumi.Input[_builtins.str]]
@@ -353,12 +375,16 @@ class WorkgroupConfigurationEngineVersionArgs:
     @effective_engine_version.setter
     def effective_engine_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedEngineVersion")
     def selected_engine_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selected_engine_version.setter
-    def selected_engine_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selected_engine_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationIdentityCenterConfigurationArgsDict(TypedDict):
     enable_identity_center: NotRequired[pulumi.Input[_builtins.bool]]
@@ -376,14 +402,18 @@ class WorkgroupConfigurationIdentityCenterConfigurationArgs:
     @pulumi.getter(name="enableIdentityCenter")
     def enable_identity_center(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_identity_center.setter
-    def enable_identity_center(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_identity_center(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityCenterInstanceArn")
     def identity_center_instance_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_center_instance_arn.setter
     def identity_center_instance_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationManagedQueryResultsConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -409,7 +439,8 @@ class WorkgroupConfigurationManagedQueryResultsConfigurationArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -427,7 +458,8 @@ class WorkgroupConfigurationManagedQueryResultsConfigurationArgs:
                 WorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationArgsDict(
     TypedDict
@@ -443,7 +475,8 @@ class WorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurat
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkgroupConfigurationMonitoringConfigurationArgsDict(TypedDict):
     cloud_watch_logging_configuration: NotRequired[
@@ -500,7 +533,8 @@ class WorkgroupConfigurationMonitoringConfigurationArgs:
                 WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedLoggingConfiguration")
     def managed_logging_configuration(
@@ -518,7 +552,8 @@ class WorkgroupConfigurationMonitoringConfigurationArgs:
                 WorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3LoggingConfiguration")
     def s3_logging_configuration(
@@ -536,7 +571,8 @@ class WorkgroupConfigurationMonitoringConfigurationArgs:
                 WorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationArgsDict(
     TypedDict
@@ -576,17 +612,22 @@ class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguratio
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logGroup")
     def log_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_group.setter
-    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStreamNamePrefix")
     def log_stream_name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_stream_name_prefix.setter
-    def log_stream_name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_stream_name_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logTypes")
     def log_types(
@@ -612,7 +653,8 @@ class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguratio
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeArgsDict(
     TypedDict
@@ -632,12 +674,16 @@ class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguratio
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationArgsDict(
     TypedDict
@@ -657,12 +703,14 @@ class WorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationAr
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationArgsDict(
     TypedDict
@@ -684,17 +732,20 @@ class WorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logLocation")
     def log_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_location.setter
-    def log_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkgroupConfigurationQueryResultsS3AccessGrantsConfigurationArgsDict(TypedDict):
     authentication_type: pulumi.Input[_builtins.str]
@@ -714,19 +765,22 @@ class WorkgroupConfigurationQueryResultsS3AccessGrantsConfigurationArgs:
     @pulumi.getter(name="authenticationType")
     def authentication_type(self) -> pulumi.Input[_builtins.str]: ...
     @authentication_type.setter
-    def authentication_type(self, value: pulumi.Input[_builtins.str]): ...
+    def authentication_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableS3AccessGrants")
     def enable_s3_access_grants(self) -> pulumi.Input[_builtins.bool]: ...
     @enable_s3_access_grants.setter
-    def enable_s3_access_grants(self, value: pulumi.Input[_builtins.bool]): ...
+    def enable_s3_access_grants(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createUserLevelPrefix")
     def create_user_level_prefix(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_user_level_prefix.setter
     def create_user_level_prefix(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WorkgroupConfigurationResultConfigurationArgsDict(TypedDict):
     acl_configuration: NotRequired[
@@ -769,7 +823,8 @@ class WorkgroupConfigurationResultConfigurationArgs:
         value: Optional[
             pulumi.Input[WorkgroupConfigurationResultConfigurationAclConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -787,17 +842,22 @@ class WorkgroupConfigurationResultConfigurationArgs:
                 WorkgroupConfigurationResultConfigurationEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expected_bucket_owner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputLocation")
     def output_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_location.setter
-    def output_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WorkgroupConfigurationResultConfigurationAclConfigurationArgsDict(TypedDict):
     s3_acl_option: pulumi.Input[_builtins.str]
@@ -809,7 +869,8 @@ class WorkgroupConfigurationResultConfigurationAclConfigurationArgs:
     @pulumi.getter(name="s3AclOption")
     def s3_acl_option(self) -> pulumi.Input[_builtins.str]: ...
     @s3_acl_option.setter
-    def s3_acl_option(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_acl_option(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WorkgroupConfigurationResultConfigurationEncryptionConfigurationArgsDict(
     TypedDict
@@ -829,9 +890,13 @@ class WorkgroupConfigurationResultConfigurationEncryptionConfigurationArgs:
     @pulumi.getter(name="encryptionOption")
     def encryption_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_option.setter
-    def encryption_option(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_option(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

@@ -66,7 +66,10 @@ class GetNetworkSecurityPerimeterAssociationResult:
 class AwaitableGetNetworkSecurityPerimeterAssociationResult(
     GetNetworkSecurityPerimeterAssociationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkSecurityPerimeterAssociationResult]:
+        ...
 
 def get_network_security_perimeter_association(
     association_name: Optional[_builtins.str] = ...,

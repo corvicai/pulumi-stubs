@@ -29,7 +29,8 @@ class GetNodeTypesResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetNodeTypesResult(GetNodeTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNodeTypesResult]:
+        ...
 
 def get_node_types(
     project: Optional[_builtins.str] = ...,

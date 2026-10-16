@@ -84,7 +84,8 @@ class GetConfigurationResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetConfigurationResult(GetConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationResult]:
+        ...
 
 def get_configuration(
     configuration_name: Optional[_builtins.str] = ...,

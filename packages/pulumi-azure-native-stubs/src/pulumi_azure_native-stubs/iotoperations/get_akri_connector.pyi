@@ -48,7 +48,8 @@ class GetAkriConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAkriConnectorResult(GetAkriConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAkriConnectorResult]:
+        ...
 
 def get_akri_connector(
     akri_connector_template_name: Optional[_builtins.str] = ...,

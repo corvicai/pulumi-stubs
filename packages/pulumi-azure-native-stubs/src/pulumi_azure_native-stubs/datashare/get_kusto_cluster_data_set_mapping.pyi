@@ -64,7 +64,10 @@ class GetKustoClusterDataSetMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKustoClusterDataSetMappingResult(GetKustoClusterDataSetMappingResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetKustoClusterDataSetMappingResult]:
+        ...
 
 def get_kusto_cluster_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

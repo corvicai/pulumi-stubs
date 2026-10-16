@@ -60,7 +60,8 @@ class GetElasticAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetElasticAccountResult(GetElasticAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetElasticAccountResult]:
+        ...
 
 def get_elastic_account(
     account_name: Optional[_builtins.str] = ...,

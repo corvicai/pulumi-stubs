@@ -60,7 +60,8 @@ class GetMarkupRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMarkupRuleResult(GetMarkupRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMarkupRuleResult]:
+        ...
 
 def get_markup_rule(
     billing_account_id: Optional[_builtins.str] = ...,

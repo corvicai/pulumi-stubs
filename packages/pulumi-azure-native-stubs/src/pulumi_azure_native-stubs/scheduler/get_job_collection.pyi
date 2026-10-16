@@ -48,7 +48,8 @@ class GetJobCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJobCollectionResult(GetJobCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobCollectionResult]:
+        ...
 
 def get_job_collection(
     job_collection_name: Optional[_builtins.str] = ...,

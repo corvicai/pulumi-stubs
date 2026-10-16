@@ -23,7 +23,8 @@ class RegexMatchSetArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexMatchTuples")
     def regex_match_tuples(
@@ -37,7 +38,8 @@ class RegexMatchSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegexMatchSetState:
@@ -54,12 +56,14 @@ class _RegexMatchSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexMatchTuples")
     def regex_match_tuples(
@@ -73,7 +77,8 @@ class _RegexMatchSetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:waf/regexMatchSet:RegexMatchSet")
 class RegexMatchSet(pulumi.CustomResource):

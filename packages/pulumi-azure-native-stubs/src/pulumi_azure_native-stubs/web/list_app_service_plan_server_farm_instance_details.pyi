@@ -31,7 +31,10 @@ class ListAppServicePlanServerFarmInstanceDetailsResult:
 class AwaitableListAppServicePlanServerFarmInstanceDetailsResult(
     ListAppServicePlanServerFarmInstanceDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListAppServicePlanServerFarmInstanceDetailsResult]:
+        ...
 
 def list_app_service_plan_server_farm_instance_details(
     name: Optional[_builtins.str] = ...,

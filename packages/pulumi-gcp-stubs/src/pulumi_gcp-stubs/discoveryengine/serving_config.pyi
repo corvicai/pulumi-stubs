@@ -37,12 +37,14 @@ class ServingConfigArgs:
     @pulumi.getter(name="engineId")
     def engine_id(self) -> pulumi.Input[_builtins.str]: ...
     @engine_id.setter
-    def engine_id(self, value: pulumi.Input[_builtins.str]): ...
+    def engine_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="boostControlIds")
     def boost_control_ids(
@@ -51,12 +53,14 @@ class ServingConfigArgs:
     @boost_control_ids.setter
     def boost_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectionId")
     def collection_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collection_id.setter
-    def collection_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collection_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterControlIds")
     def filter_control_ids(
@@ -65,12 +69,14 @@ class ServingConfigArgs:
     @filter_control_ids.setter
     def filter_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promoteControlIds")
     def promote_control_ids(
@@ -79,7 +85,8 @@ class ServingConfigArgs:
     @promote_control_ids.setter
     def promote_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectControlIds")
     def redirect_control_ids(
@@ -88,12 +95,16 @@ class ServingConfigArgs:
     @redirect_control_ids.setter
     def redirect_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servingConfigId")
     def serving_config_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @serving_config_id.setter
-    def serving_config_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def serving_config_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="synonymsControlIds")
     def synonyms_control_ids(
@@ -102,7 +113,8 @@ class ServingConfigArgs:
     @synonyms_control_ids.setter
     def synonyms_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServingConfigState:
@@ -139,17 +151,20 @@ class _ServingConfigState:
     @boost_control_ids.setter
     def boost_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectionId")
     def collection_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collection_id.setter
-    def collection_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collection_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="engineId")
     def engine_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @engine_id.setter
-    def engine_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def engine_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterControlIds")
     def filter_control_ids(
@@ -158,22 +173,26 @@ class _ServingConfigState:
     @filter_control_ids.setter
     def filter_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promoteControlIds")
     def promote_control_ids(
@@ -182,7 +201,8 @@ class _ServingConfigState:
     @promote_control_ids.setter
     def promote_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectControlIds")
     def redirect_control_ids(
@@ -191,12 +211,16 @@ class _ServingConfigState:
     @redirect_control_ids.setter
     def redirect_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="servingConfigId")
     def serving_config_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @serving_config_id.setter
-    def serving_config_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def serving_config_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="synonymsControlIds")
     def synonyms_control_ids(
@@ -205,7 +229,8 @@ class _ServingConfigState:
     @synonyms_control_ids.setter
     def synonyms_control_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:discoveryengine/servingConfig:ServingConfig")
 class ServingConfig(pulumi.CustomResource):

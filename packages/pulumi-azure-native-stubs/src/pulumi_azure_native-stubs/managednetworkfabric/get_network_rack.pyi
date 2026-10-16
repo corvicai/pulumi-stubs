@@ -68,7 +68,8 @@ class GetNetworkRackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkRackResult(GetNetworkRackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkRackResult]:
+        ...
 
 def get_network_rack(
     network_rack_name: Optional[_builtins.str] = ...,

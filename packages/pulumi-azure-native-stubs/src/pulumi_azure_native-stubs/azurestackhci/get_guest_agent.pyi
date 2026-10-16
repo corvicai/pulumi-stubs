@@ -56,7 +56,8 @@ class GetGuestAgentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGuestAgentResult(GetGuestAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGuestAgentResult]:
+        ...
 
 def get_guest_agent(
     resource_uri: Optional[_builtins.str] = ...,

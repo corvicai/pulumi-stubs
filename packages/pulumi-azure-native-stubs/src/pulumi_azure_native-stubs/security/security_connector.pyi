@@ -69,7 +69,8 @@ class SecurityConnectorArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentData")
     def environment_data(
@@ -103,7 +104,8 @@ class SecurityConnectorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentName")
     def environment_name(
@@ -112,22 +114,28 @@ class SecurityConnectorArgs:
     @environment_name.setter
     def environment_name(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CloudName]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hierarchyIdentifier")
     def hierarchy_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hierarchy_identifier.setter
-    def hierarchy_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hierarchy_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def offerings(
@@ -193,12 +201,16 @@ class SecurityConnectorArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConnectorName")
     def security_connector_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_connector_name.setter
-    def security_connector_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_connector_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -207,7 +219,8 @@ class SecurityConnectorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:security:SecurityConnector")
 class SecurityConnector(pulumi.CustomResource):

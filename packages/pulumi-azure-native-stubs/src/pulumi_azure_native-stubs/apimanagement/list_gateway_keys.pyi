@@ -23,7 +23,8 @@ class ListGatewayKeysResult:
     def secondary(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListGatewayKeysResult(ListGatewayKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListGatewayKeysResult]:
+        ...
 
 def list_gateway_keys(
     gateway_id: Optional[_builtins.str] = ...,

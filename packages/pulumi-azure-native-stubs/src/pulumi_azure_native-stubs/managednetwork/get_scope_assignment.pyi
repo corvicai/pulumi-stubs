@@ -51,7 +51,8 @@ class GetScopeAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScopeAssignmentResult(GetScopeAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScopeAssignmentResult]:
+        ...
 
 def get_scope_assignment(
     scope: Optional[_builtins.str] = ...,

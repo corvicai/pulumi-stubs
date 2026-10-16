@@ -86,7 +86,8 @@ class GetStorageSyncServiceResult:
     def use_identity(self) -> _builtins.bool: ...
 
 class AwaitableGetStorageSyncServiceResult(GetStorageSyncServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageSyncServiceResult]:
+        ...
 
 def get_storage_sync_service(
     resource_group_name: Optional[_builtins.str] = ...,

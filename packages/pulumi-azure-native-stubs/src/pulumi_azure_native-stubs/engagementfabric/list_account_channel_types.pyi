@@ -21,7 +21,8 @@ class ListAccountChannelTypesResult:
     def value(self) -> Optional[Sequence[outputs.ChannelTypeDescriptionResponse]]: ...
 
 class AwaitableListAccountChannelTypesResult(ListAccountChannelTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccountChannelTypesResult]:
+        ...
 
 def list_account_channel_types(
     account_name: Optional[_builtins.str] = ...,

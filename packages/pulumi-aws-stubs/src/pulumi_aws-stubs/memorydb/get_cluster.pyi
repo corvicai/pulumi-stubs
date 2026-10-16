@@ -142,7 +142,8 @@ class GetClusterResult:
     def tls_enabled(self) -> _builtins.bool: ...
 
 class AwaitableGetClusterResult(GetClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterResult]:
+        ...
 
 def get_cluster(
     name: Optional[_builtins.str] = ...,

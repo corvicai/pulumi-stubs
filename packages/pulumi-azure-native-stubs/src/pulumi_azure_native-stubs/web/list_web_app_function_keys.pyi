@@ -34,7 +34,8 @@ class ListWebAppFunctionKeysResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListWebAppFunctionKeysResult(ListWebAppFunctionKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebAppFunctionKeysResult]:
+        ...
 
 def list_web_app_function_keys(
     function_name: Optional[_builtins.str] = ...,

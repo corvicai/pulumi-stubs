@@ -68,7 +68,8 @@ class GetServiceFabricResult:
     def unique_identifier(self) -> _builtins.str: ...
 
 class AwaitableGetServiceFabricResult(GetServiceFabricResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceFabricResult]:
+        ...
 
 def get_service_fabric(
     expand: Optional[_builtins.str] = ...,

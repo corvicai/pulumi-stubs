@@ -63,12 +63,14 @@ class PoolArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationLicenses")
     def application_licenses(
@@ -77,7 +79,8 @@ class PoolArgs:
     @application_licenses.setter
     def application_licenses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationPackages")
     def application_packages(
@@ -91,7 +94,8 @@ class PoolArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationPackageReferenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def certificates(
@@ -101,7 +105,8 @@ class PoolArgs:
     def certificates(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CertificateReferenceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfiguration")
     def deployment_configuration(
@@ -110,17 +115,22 @@ class PoolArgs:
     @deployment_configuration.setter
     def deployment_configuration(
         self, value: Optional[pulumi.Input[DeploymentConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[BatchPoolIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[BatchPoolIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[BatchPoolIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interNodeCommunication")
     def inter_node_communication(
@@ -129,7 +139,8 @@ class PoolArgs:
     @inter_node_communication.setter
     def inter_node_communication(
         self, value: Optional[pulumi.Input[InterNodeCommunicationState]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -138,7 +149,8 @@ class PoolArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MetadataItemArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mountConfiguration")
     def mount_configuration(
@@ -148,7 +160,8 @@ class PoolArgs:
     def mount_configuration(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[MountConfigurationArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -157,12 +170,14 @@ class PoolArgs:
     @network_configuration.setter
     def network_configuration(
         self, value: Optional[pulumi.Input[NetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="poolName")
     def pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pool_name.setter
-    def pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pool_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -171,17 +186,22 @@ class PoolArgs:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleSettings")
     def scale_settings(self) -> Optional[pulumi.Input[ScaleSettingsArgs]]: ...
     @scale_settings.setter
-    def scale_settings(self, value: Optional[pulumi.Input[ScaleSettingsArgs]]): ...
+    def scale_settings(
+        self, value: Optional[pulumi.Input[ScaleSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTask")
     def start_task(self) -> Optional[pulumi.Input[StartTaskArgs]]: ...
     @start_task.setter
-    def start_task(self, value: Optional[pulumi.Input[StartTaskArgs]]): ...
+    def start_task(self, value: Optional[pulumi.Input[StartTaskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -190,7 +210,8 @@ class PoolArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetNodeCommunicationMode")
     def target_node_communication_mode(
@@ -199,7 +220,8 @@ class PoolArgs:
     @target_node_communication_mode.setter
     def target_node_communication_mode(
         self, value: Optional[pulumi.Input[NodeCommunicationMode]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskSchedulingPolicy")
     def task_scheduling_policy(
@@ -208,17 +230,24 @@ class PoolArgs:
     @task_scheduling_policy.setter
     def task_scheduling_policy(
         self, value: Optional[pulumi.Input[TaskSchedulingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskSlotsPerNode")
     def task_slots_per_node(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @task_slots_per_node.setter
-    def task_slots_per_node(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def task_slots_per_node(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradePolicy")
     def upgrade_policy(self) -> Optional[pulumi.Input[UpgradePolicyArgs]]: ...
     @upgrade_policy.setter
-    def upgrade_policy(self, value: Optional[pulumi.Input[UpgradePolicyArgs]]): ...
+    def upgrade_policy(
+        self, value: Optional[pulumi.Input[UpgradePolicyArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAccounts")
     def user_accounts(
@@ -227,12 +256,14 @@ class PoolArgs:
     @user_accounts.setter
     def user_accounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UserAccountArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSize")
     def vm_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vm_size.setter
-    def vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vm_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:batch:Pool")
 class Pool(pulumi.CustomResource):

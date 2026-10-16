@@ -23,7 +23,10 @@ class ListClientApplicationSecretsResult:
     ) -> Optional[outputs.ClientApplicationSecretsContractResponseEntra]: ...
 
 class AwaitableListClientApplicationSecretsResult(ListClientApplicationSecretsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListClientApplicationSecretsResult]:
+        ...
 
 def list_client_application_secrets(
     client_application_id: Optional[_builtins.str] = ...,

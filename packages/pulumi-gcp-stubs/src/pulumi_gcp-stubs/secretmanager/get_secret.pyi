@@ -96,7 +96,8 @@ class GetSecretResult:
     def version_destroy_ttl(self) -> _builtins.str: ...
 
 class AwaitableGetSecretResult(GetSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretResult]:
+        ...
 
 def get_secret(
     project: Optional[_builtins.str] = ...,

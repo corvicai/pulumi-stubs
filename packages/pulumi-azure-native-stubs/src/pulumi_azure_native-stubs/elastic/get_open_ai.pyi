@@ -35,7 +35,8 @@ class GetOpenAIResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOpenAIResult(GetOpenAIResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOpenAIResult]:
+        ...
 
 def get_open_ai(
     integration_name: Optional[_builtins.str] = ...,

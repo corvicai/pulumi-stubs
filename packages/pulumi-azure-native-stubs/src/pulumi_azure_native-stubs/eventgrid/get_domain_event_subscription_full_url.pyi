@@ -22,7 +22,10 @@ class GetDomainEventSubscriptionFullUrlResult:
 class AwaitableGetDomainEventSubscriptionFullUrlResult(
     GetDomainEventSubscriptionFullUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDomainEventSubscriptionFullUrlResult]:
+        ...
 
 def get_domain_event_subscription_full_url(
     domain_name: Optional[_builtins.str] = ...,

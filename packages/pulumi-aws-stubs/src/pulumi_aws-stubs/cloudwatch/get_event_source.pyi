@@ -47,7 +47,8 @@ class GetEventSourceResult:
     def state(self) -> _builtins.str: ...
 
 class AwaitableGetEventSourceResult(GetEventSourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventSourceResult]:
+        ...
 
 def get_event_source(
     name_prefix: Optional[_builtins.str] = ...,

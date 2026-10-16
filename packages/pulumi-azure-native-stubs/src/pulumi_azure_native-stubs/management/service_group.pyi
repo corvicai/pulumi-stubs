@@ -23,17 +23,24 @@ class ServiceGroupArgs:
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(self) -> Optional[pulumi.Input[ServiceGroupPropertiesArgs]]: ...
     @properties.setter
-    def properties(self, value: Optional[pulumi.Input[ServiceGroupPropertiesArgs]]): ...
+    def properties(
+        self, value: Optional[pulumi.Input[ServiceGroupPropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceGroupName")
     def service_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_group_name.setter
-    def service_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -42,7 +49,8 @@ class ServiceGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:management:ServiceGroup")
 class ServiceGroup(pulumi.CustomResource):

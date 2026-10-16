@@ -60,7 +60,8 @@ class GetNetworkFunctionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkFunctionResult(GetNetworkFunctionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkFunctionResult]:
+        ...
 
 def get_network_function(
     network_function_name: Optional[_builtins.str] = ...,

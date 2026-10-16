@@ -48,7 +48,8 @@ class ContainerAppsSessionPoolArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerType")
     def container_type(
@@ -57,7 +58,8 @@ class ContainerAppsSessionPoolArgs:
     @container_type.setter
     def container_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ContainerType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customContainerTemplate")
     def custom_container_template(
@@ -66,7 +68,8 @@ class ContainerAppsSessionPoolArgs:
     @custom_container_template.setter
     def custom_container_template(
         self, value: Optional[pulumi.Input[CustomContainerTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamicPoolConfiguration")
     def dynamic_pool_configuration(
@@ -75,22 +78,28 @@ class ContainerAppsSessionPoolArgs:
     @dynamic_pool_configuration.setter
     def dynamic_pool_configuration(
         self, value: Optional[pulumi.Input[DynamicPoolConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentId")
     def environment_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @environment_id.setter
-    def environment_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def environment_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedIdentitySettings")
     def managed_identity_settings(
@@ -102,7 +111,8 @@ class ContainerAppsSessionPoolArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ManagedIdentitySettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="poolManagementType")
     def pool_management_type(
@@ -111,14 +121,16 @@ class ContainerAppsSessionPoolArgs:
     @pool_management_type.setter
     def pool_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PoolManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleConfiguration")
     def scale_configuration(self) -> Optional[pulumi.Input[ScaleConfigurationArgs]]: ...
     @scale_configuration.setter
     def scale_configuration(
         self, value: Optional[pulumi.Input[ScaleConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def secrets(
@@ -128,7 +140,8 @@ class ContainerAppsSessionPoolArgs:
     def secrets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SessionPoolSecretArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionNetworkConfiguration")
     def session_network_configuration(
@@ -137,12 +150,16 @@ class ContainerAppsSessionPoolArgs:
     @session_network_configuration.setter
     def session_network_configuration(
         self, value: Optional[pulumi.Input[SessionNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionPoolName")
     def session_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @session_pool_name.setter
-    def session_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def session_pool_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -151,7 +168,8 @@ class ContainerAppsSessionPoolArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:app:ContainerAppsSessionPool")
 class ContainerAppsSessionPool(pulumi.CustomResource):

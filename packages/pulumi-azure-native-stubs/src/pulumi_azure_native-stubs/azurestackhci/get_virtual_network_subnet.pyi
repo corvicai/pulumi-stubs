@@ -48,7 +48,8 @@ class GetVirtualNetworkSubnetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualNetworkSubnetResult(GetVirtualNetworkSubnetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkSubnetResult]:
+        ...
 
 def get_virtual_network_subnet(
     resource_group_name: Optional[_builtins.str] = ...,

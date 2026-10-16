@@ -26,7 +26,8 @@ class GetOfferAccessTokenResult:
     def status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetOfferAccessTokenResult(GetOfferAccessTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOfferAccessTokenResult]:
+        ...
 
 def get_offer_access_token(
     offer_id: Optional[_builtins.str] = ...,

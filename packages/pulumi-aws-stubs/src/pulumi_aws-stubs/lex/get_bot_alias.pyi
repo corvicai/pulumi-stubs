@@ -59,7 +59,8 @@ class GetBotAliasResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetBotAliasResult(GetBotAliasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBotAliasResult]:
+        ...
 
 def get_bot_alias(
     bot_name: Optional[_builtins.str] = ...,

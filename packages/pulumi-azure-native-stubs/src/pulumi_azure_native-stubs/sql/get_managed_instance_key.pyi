@@ -51,7 +51,8 @@ class GetManagedInstanceKeyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedInstanceKeyResult(GetManagedInstanceKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedInstanceKeyResult]:
+        ...
 
 def get_managed_instance_key(
     key_name: Optional[_builtins.str] = ...,

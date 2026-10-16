@@ -32,7 +32,8 @@ class GetGroupsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetGroupsResult(GetGroupsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroupsResult]:
+        ...
 
 def get_groups(
     identity_store_id: Optional[_builtins.str] = ...,

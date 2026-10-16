@@ -94,7 +94,8 @@ class GetAccessBridgeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAccessBridgeResult(GetAccessBridgeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessBridgeResult]:
+        ...
 
 def get_access_bridge(
     access_bridge_name: Optional[_builtins.str] = ...,

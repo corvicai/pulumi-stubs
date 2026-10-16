@@ -62,19 +62,22 @@ class JobTemplateJobTemplateDataArgs:
     @pulumi.getter(name="executionRoleArn")
     def execution_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @execution_role_arn.setter
-    def execution_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def execution_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobDriver")
     def job_driver(self) -> pulumi.Input[JobTemplateJobTemplateDataJobDriverArgs]: ...
     @job_driver.setter
     def job_driver(
         self, value: pulumi.Input[JobTemplateJobTemplateDataJobDriverArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseLabel")
     def release_label(self) -> pulumi.Input[_builtins.str]: ...
     @release_label.setter
-    def release_label(self, value: pulumi.Input[_builtins.str]): ...
+    def release_label(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationOverrides")
     def configuration_overrides(
@@ -88,7 +91,8 @@ class JobTemplateJobTemplateDataArgs:
         value: Optional[
             pulumi.Input[JobTemplateJobTemplateDataConfigurationOverridesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobTags")
     def job_tags(
@@ -97,7 +101,8 @@ class JobTemplateJobTemplateDataArgs:
     @job_tags.setter
     def job_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataConfigurationOverridesArgsDict(TypedDict):
     application_configurations: NotRequired[
@@ -160,7 +165,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringConfiguration")
     def monitoring_configuration(
@@ -178,7 +184,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesArgs:
                 JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationArgsDict(
     TypedDict
@@ -218,7 +225,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationAr
     @pulumi.getter
     def classification(self) -> pulumi.Input[_builtins.str]: ...
     @classification.setter
-    def classification(self, value: pulumi.Input[_builtins.str]): ...
+    def classification(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configurations(
@@ -244,7 +252,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationAr
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -253,7 +262,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationAr
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationArgsDict(
     TypedDict
@@ -275,7 +285,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationCo
     @pulumi.getter
     def classification(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @classification.setter
-    def classification(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def classification(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -284,7 +295,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationCo
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationArgsDict(
     TypedDict
@@ -335,12 +347,16 @@ class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationArg
                 JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="persistentAppUi")
     def persistent_app_ui(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @persistent_app_ui.setter
-    def persistent_app_ui(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def persistent_app_ui(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3MonitoringConfiguration")
     def s3_monitoring_configuration(
@@ -358,7 +374,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationArg
                 JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfigurationArgsDict(
     TypedDict
@@ -378,12 +395,16 @@ class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationClo
     @pulumi.getter(name="logGroupName")
     def log_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @log_group_name.setter
-    def log_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStreamNamePrefix")
     def log_stream_name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_stream_name_prefix.setter
-    def log_stream_name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_stream_name_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfigurationArgsDict(
     TypedDict
@@ -397,7 +418,8 @@ class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3M
     @pulumi.getter(name="logUri")
     def log_uri(self) -> pulumi.Input[_builtins.str]: ...
     @log_uri.setter
-    def log_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def log_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataJobDriverArgsDict(TypedDict):
     spark_sql_job_driver: NotRequired[
@@ -432,7 +454,8 @@ class JobTemplateJobTemplateDataJobDriverArgs:
         value: Optional[
             pulumi.Input[JobTemplateJobTemplateDataJobDriverSparkSqlJobDriverArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkSubmitJobDriver")
     def spark_submit_job_driver(
@@ -446,7 +469,8 @@ class JobTemplateJobTemplateDataJobDriverArgs:
         value: Optional[
             pulumi.Input[JobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataJobDriverSparkSqlJobDriverArgsDict(TypedDict):
     entry_point: NotRequired[pulumi.Input[_builtins.str]]
@@ -464,12 +488,16 @@ class JobTemplateJobTemplateDataJobDriverSparkSqlJobDriverArgs:
     @pulumi.getter(name="entryPoint")
     def entry_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @entry_point.setter
-    def entry_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def entry_point(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkSqlParameters")
     def spark_sql_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spark_sql_parameters.setter
-    def spark_sql_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spark_sql_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class JobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverArgsDict(TypedDict):
     entry_point: pulumi.Input[_builtins.str]
@@ -493,7 +521,8 @@ class JobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverArgs:
     @pulumi.getter(name="entryPoint")
     def entry_point(self) -> pulumi.Input[_builtins.str]: ...
     @entry_point.setter
-    def entry_point(self, value: pulumi.Input[_builtins.str]): ...
+    def entry_point(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entryPointArguments")
     def entry_point_arguments(
@@ -502,12 +531,16 @@ class JobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverArgs:
     @entry_point_arguments.setter
     def entry_point_arguments(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sparkSubmitParameters")
     def spark_submit_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spark_submit_parameters.setter
-    def spark_submit_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spark_submit_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class VirtualClusterContainerProviderArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -527,17 +560,22 @@ class VirtualClusterContainerProviderArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def info(self) -> pulumi.Input[VirtualClusterContainerProviderInfoArgs]: ...
     @info.setter
-    def info(self, value: pulumi.Input[VirtualClusterContainerProviderInfoArgs]): ...
+    def info(
+        self, value: pulumi.Input[VirtualClusterContainerProviderInfoArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class VirtualClusterContainerProviderInfoArgsDict(TypedDict):
     eks_info: pulumi.Input[VirtualClusterContainerProviderInfoEksInfoArgsDict]
@@ -557,7 +595,8 @@ class VirtualClusterContainerProviderInfoArgs:
     @eks_info.setter
     def eks_info(
         self, value: pulumi.Input[VirtualClusterContainerProviderInfoEksInfoArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VirtualClusterContainerProviderInfoEksInfoArgsDict(TypedDict):
     namespace: NotRequired[pulumi.Input[_builtins.str]]
@@ -571,4 +610,5 @@ class VirtualClusterContainerProviderInfoEksInfoArgs:
     @pulumi.getter
     def namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace.setter
-    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

@@ -23,7 +23,8 @@ class ListDatabaseKeysResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListDatabaseKeysResult(ListDatabaseKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDatabaseKeysResult]:
+        ...
 
 def list_database_keys(
     cluster_name: Optional[_builtins.str] = ...,

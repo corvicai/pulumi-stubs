@@ -48,7 +48,10 @@ class GetResourceManagementPrivateLinkResult:
 class AwaitableGetResourceManagementPrivateLinkResult(
     GetResourceManagementPrivateLinkResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetResourceManagementPrivateLinkResult]:
+        ...
 
 def get_resource_management_private_link(
     resource_group_name: Optional[_builtins.str] = ...,

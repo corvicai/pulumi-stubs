@@ -60,7 +60,8 @@ class GetVolumeResult:
     def volume_type(self) -> outputs.VolumeTypeResponse: ...
 
 class AwaitableGetVolumeResult(GetVolumeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVolumeResult]:
+        ...
 
 def get_volume(
     pool_name: Optional[_builtins.str] = ...,

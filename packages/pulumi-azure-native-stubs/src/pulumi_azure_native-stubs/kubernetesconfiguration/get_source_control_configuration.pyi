@@ -96,7 +96,10 @@ class GetSourceControlConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSourceControlConfigurationResult(GetSourceControlConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSourceControlConfigurationResult]:
+        ...
 
 def get_source_control_configuration(
     cluster_name: Optional[_builtins.str] = ...,

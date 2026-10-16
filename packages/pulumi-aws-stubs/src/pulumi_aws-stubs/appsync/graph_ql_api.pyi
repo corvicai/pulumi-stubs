@@ -47,7 +47,8 @@ class GraphQLApiArgs:
     @pulumi.getter(name="authenticationType")
     def authentication_type(self) -> pulumi.Input[_builtins.str]: ...
     @authentication_type.setter
-    def authentication_type(self, value: pulumi.Input[_builtins.str]): ...
+    def authentication_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalAuthenticationProviders")
     def additional_authentication_providers(
@@ -65,12 +66,14 @@ class GraphQLApiArgs:
                 Sequence[pulumi.Input[GraphQLApiAdditionalAuthenticationProviderArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiType")
     def api_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_type.setter
-    def api_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedMetricsConfig")
     def enhanced_metrics_config(
@@ -79,12 +82,16 @@ class GraphQLApiArgs:
     @enhanced_metrics_config.setter
     def enhanced_metrics_config(
         self, value: Optional[pulumi.Input[GraphQLApiEnhancedMetricsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="introspectionConfig")
     def introspection_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @introspection_config.setter
-    def introspection_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def introspection_config(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaAuthorizerConfig")
     def lambda_authorizer_config(
@@ -93,12 +100,16 @@ class GraphQLApiArgs:
     @lambda_authorizer_config.setter
     def lambda_authorizer_config(
         self, value: Optional[pulumi.Input[GraphQLApiLambdaAuthorizerConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(self) -> Optional[pulumi.Input[GraphQLApiLogConfigArgs]]: ...
     @log_config.setter
-    def log_config(self, value: Optional[pulumi.Input[GraphQLApiLogConfigArgs]]): ...
+    def log_config(
+        self, value: Optional[pulumi.Input[GraphQLApiLogConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mergedApiExecutionRoleArn")
     def merged_api_execution_role_arn(
@@ -107,12 +118,14 @@ class GraphQLApiArgs:
     @merged_api_execution_role_arn.setter
     def merged_api_execution_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openidConnectConfig")
     def openid_connect_config(
@@ -121,27 +134,36 @@ class GraphQLApiArgs:
     @openid_connect_config.setter
     def openid_connect_config(
         self, value: Optional[pulumi.Input[GraphQLApiOpenidConnectConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryDepthLimit")
     def query_depth_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @query_depth_limit.setter
-    def query_depth_limit(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def query_depth_limit(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resolverCountLimit")
     def resolver_count_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @resolver_count_limit.setter
-    def resolver_count_limit(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def resolver_count_limit(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema.setter
-    def schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -150,7 +172,8 @@ class GraphQLApiArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolConfig")
     def user_pool_config(
@@ -159,17 +182,20 @@ class GraphQLApiArgs:
     @user_pool_config.setter
     def user_pool_config(
         self, value: Optional[pulumi.Input[GraphQLApiUserPoolConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def visibility(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @visibility.setter
-    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xrayEnabled")
     def xray_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @xray_enabled.setter
-    def xray_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def xray_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GraphQLApiState:
@@ -227,22 +253,28 @@ class _GraphQLApiState:
                 Sequence[pulumi.Input[GraphQLApiAdditionalAuthenticationProviderArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiType")
     def api_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_type.setter
-    def api_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authenticationType")
     def authentication_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authentication_type.setter
-    def authentication_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authentication_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedMetricsConfig")
     def enhanced_metrics_config(
@@ -251,12 +283,16 @@ class _GraphQLApiState:
     @enhanced_metrics_config.setter
     def enhanced_metrics_config(
         self, value: Optional[pulumi.Input[GraphQLApiEnhancedMetricsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="introspectionConfig")
     def introspection_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @introspection_config.setter
-    def introspection_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def introspection_config(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaAuthorizerConfig")
     def lambda_authorizer_config(
@@ -265,12 +301,16 @@ class _GraphQLApiState:
     @lambda_authorizer_config.setter
     def lambda_authorizer_config(
         self, value: Optional[pulumi.Input[GraphQLApiLambdaAuthorizerConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(self) -> Optional[pulumi.Input[GraphQLApiLogConfigArgs]]: ...
     @log_config.setter
-    def log_config(self, value: Optional[pulumi.Input[GraphQLApiLogConfigArgs]]): ...
+    def log_config(
+        self, value: Optional[pulumi.Input[GraphQLApiLogConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mergedApiExecutionRoleArn")
     def merged_api_execution_role_arn(
@@ -279,12 +319,14 @@ class _GraphQLApiState:
     @merged_api_execution_role_arn.setter
     def merged_api_execution_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openidConnectConfig")
     def openid_connect_config(
@@ -293,27 +335,36 @@ class _GraphQLApiState:
     @openid_connect_config.setter
     def openid_connect_config(
         self, value: Optional[pulumi.Input[GraphQLApiOpenidConnectConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryDepthLimit")
     def query_depth_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @query_depth_limit.setter
-    def query_depth_limit(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def query_depth_limit(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resolverCountLimit")
     def resolver_count_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @resolver_count_limit.setter
-    def resolver_count_limit(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def resolver_count_limit(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema.setter
-    def schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -322,7 +373,8 @@ class _GraphQLApiState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -331,7 +383,8 @@ class _GraphQLApiState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uris(
@@ -340,7 +393,8 @@ class _GraphQLApiState:
     @uris.setter
     def uris(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userPoolConfig")
     def user_pool_config(
@@ -349,17 +403,20 @@ class _GraphQLApiState:
     @user_pool_config.setter
     def user_pool_config(
         self, value: Optional[pulumi.Input[GraphQLApiUserPoolConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def visibility(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @visibility.setter
-    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def visibility(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xrayEnabled")
     def xray_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @xray_enabled.setter
-    def xray_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def xray_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:appsync/graphQLApi:GraphQLApi")
 class GraphQLApi(pulumi.CustomResource):

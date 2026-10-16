@@ -43,7 +43,8 @@ class GetAPICollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAPICollectionResult(GetAPICollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAPICollectionResult]:
+        ...
 
 def get_api_collection(
     api_collection_id: Optional[_builtins.str] = ...,

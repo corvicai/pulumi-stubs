@@ -64,7 +64,8 @@ class GetIpGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIpGroupResult(GetIpGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpGroupResult]:
+        ...
 
 def get_ip_group(
     expand: Optional[_builtins.str] = ...,

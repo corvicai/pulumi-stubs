@@ -52,7 +52,8 @@ class GetSecretsManagerSecretResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecretsManagerSecretResult(GetSecretsManagerSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretsManagerSecretResult]:
+        ...
 
 def get_secrets_manager_secret(
     name: Optional[_builtins.str] = ...,

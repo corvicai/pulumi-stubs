@@ -52,7 +52,8 @@ class GetSqlServerEsuLicenseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlServerEsuLicenseResult(GetSqlServerEsuLicenseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlServerEsuLicenseResult]:
+        ...
 
 def get_sql_server_esu_license(
     resource_group_name: Optional[_builtins.str] = ...,

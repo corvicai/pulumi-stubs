@@ -31,12 +31,14 @@ class BucketNotificationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def eventbridge(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @eventbridge.setter
-    def eventbridge(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def eventbridge(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctions")
     def lambda_functions(
@@ -50,7 +52,8 @@ class BucketNotificationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketNotificationLambdaFunctionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def queues(
@@ -64,12 +67,14 @@ class BucketNotificationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketNotificationQueueArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -83,7 +88,8 @@ class BucketNotificationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketNotificationTopicArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BucketNotificationState:
@@ -107,12 +113,14 @@ class _BucketNotificationState:
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def eventbridge(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @eventbridge.setter
-    def eventbridge(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def eventbridge(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctions")
     def lambda_functions(
@@ -126,7 +134,8 @@ class _BucketNotificationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketNotificationLambdaFunctionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def queues(
@@ -140,12 +149,14 @@ class _BucketNotificationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketNotificationQueueArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topics(
@@ -159,7 +170,8 @@ class _BucketNotificationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketNotificationTopicArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:s3/bucketNotification:BucketNotification")
 class BucketNotification(pulumi.CustomResource):

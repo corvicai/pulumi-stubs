@@ -94,7 +94,8 @@ class GetDataSourceResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetDataSourceResult(GetDataSourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataSourceResult]:
+        ...
 
 def get_data_source(
     backup_vault_id: Optional[_builtins.str] = ...,

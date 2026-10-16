@@ -102,7 +102,8 @@ class GetDicomServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDicomServiceResult(GetDicomServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDicomServiceResult]:
+        ...
 
 def get_dicom_service(
     dicom_service_name: Optional[_builtins.str] = ...,

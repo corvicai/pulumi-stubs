@@ -26,17 +26,22 @@ class ProjectPolicyArgs:
     @pulumi.getter(name="devCenterName")
     def dev_center_name(self) -> pulumi.Input[_builtins.str]: ...
     @dev_center_name.setter
-    def dev_center_name(self, value: pulumi.Input[_builtins.str]): ...
+    def dev_center_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectPolicyName")
     def project_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_policy_name.setter
-    def project_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_policy_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePolicies")
     def resource_policies(
@@ -45,7 +50,8 @@ class ProjectPolicyArgs:
     @resource_policies.setter
     def resource_policies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourcePolicyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -54,7 +60,8 @@ class ProjectPolicyArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:devcenter:ProjectPolicy")
 class ProjectPolicy(pulumi.CustomResource):

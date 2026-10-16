@@ -52,7 +52,8 @@ class GetMeshMembershipResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMeshMembershipResult(GetMeshMembershipResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMeshMembershipResult]:
+        ...
 
 def get_mesh_membership(
     mesh_membership_name: Optional[_builtins.str] = ...,

@@ -186,7 +186,8 @@ class AutomationRuleArgs:
     @advance_rollout_rule.setter
     def advance_rollout_rule(
         self, value: Optional[pulumi.Input[AutomationRuleAdvanceRolloutRuleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promoteReleaseRule")
     def promote_release_rule(
@@ -195,7 +196,8 @@ class AutomationRuleArgs:
     @promote_release_rule.setter
     def promote_release_rule(
         self, value: Optional[pulumi.Input[AutomationRulePromoteReleaseRuleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repairRolloutRule")
     def repair_rollout_rule(
@@ -204,7 +206,8 @@ class AutomationRuleArgs:
     @repair_rollout_rule.setter
     def repair_rollout_rule(
         self, value: Optional[pulumi.Input[AutomationRuleRepairRolloutRuleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timedPromoteReleaseRule")
     def timed_promote_release_rule(
@@ -213,7 +216,8 @@ class AutomationRuleArgs:
     @timed_promote_release_rule.setter
     def timed_promote_release_rule(
         self, value: Optional[pulumi.Input[AutomationRuleTimedPromoteReleaseRuleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomationRuleAdvanceRolloutRuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -235,7 +239,8 @@ class AutomationRuleAdvanceRolloutRuleArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourcePhases")
     def source_phases(
@@ -244,12 +249,14 @@ class AutomationRuleAdvanceRolloutRuleArgs:
     @source_phases.setter
     def source_phases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def wait(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wait.setter
-    def wait(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def wait(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRulePromoteReleaseRuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -271,22 +278,30 @@ class AutomationRulePromoteReleaseRuleArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationPhase")
     def destination_phase(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_phase.setter
-    def destination_phase(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_phase(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationTargetId")
     def destination_target_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_target_id.setter
-    def destination_target_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_target_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def wait(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wait.setter
-    def wait(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def wait(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleRepairRolloutRuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -316,14 +331,16 @@ class AutomationRuleRepairRolloutRuleArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def jobs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @jobs.setter
     def jobs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def phases(
@@ -332,7 +349,8 @@ class AutomationRuleRepairRolloutRuleArgs:
     @phases.setter
     def phases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repairPhases")
     def repair_phases(
@@ -350,7 +368,8 @@ class AutomationRuleRepairRolloutRuleArgs:
                 Sequence[pulumi.Input[AutomationRuleRepairRolloutRuleRepairPhaseArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomationRuleRepairRolloutRuleRepairPhaseArgsDict(TypedDict):
     retry: NotRequired[
@@ -385,7 +404,8 @@ class AutomationRuleRepairRolloutRuleRepairPhaseArgs:
         value: Optional[
             pulumi.Input[AutomationRuleRepairRolloutRuleRepairPhaseRetryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rollback(
@@ -399,7 +419,8 @@ class AutomationRuleRepairRolloutRuleRepairPhaseArgs:
         value: Optional[
             pulumi.Input[AutomationRuleRepairRolloutRuleRepairPhaseRollbackArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomationRuleRepairRolloutRuleRepairPhaseRetryArgsDict(TypedDict):
     attempts: pulumi.Input[_builtins.str]
@@ -419,17 +440,20 @@ class AutomationRuleRepairRolloutRuleRepairPhaseRetryArgs:
     @pulumi.getter
     def attempts(self) -> pulumi.Input[_builtins.str]: ...
     @attempts.setter
-    def attempts(self, value: pulumi.Input[_builtins.str]): ...
+    def attempts(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backoffMode")
     def backoff_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backoff_mode.setter
-    def backoff_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backoff_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def wait(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wait.setter
-    def wait(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def wait(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleRepairRolloutRuleRepairPhaseRollbackArgsDict(TypedDict):
     destination_phase: NotRequired[pulumi.Input[_builtins.str]]
@@ -449,7 +473,10 @@ class AutomationRuleRepairRolloutRuleRepairPhaseRollbackArgs:
     @pulumi.getter(name="destinationPhase")
     def destination_phase(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_phase.setter
-    def destination_phase(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_phase(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableRollbackIfRolloutPending")
     def disable_rollback_if_rollout_pending(
@@ -458,7 +485,8 @@ class AutomationRuleRepairRolloutRuleRepairPhaseRollbackArgs:
     @disable_rollback_if_rollout_pending.setter
     def disable_rollback_if_rollout_pending(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomationRuleTimedPromoteReleaseRuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -482,27 +510,36 @@ class AutomationRuleTimedPromoteReleaseRuleArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> pulumi.Input[_builtins.str]: ...
     @schedule.setter
-    def schedule(self, value: pulumi.Input[_builtins.str]): ...
+    def schedule(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> pulumi.Input[_builtins.str]: ...
     @time_zone.setter
-    def time_zone(self, value: pulumi.Input[_builtins.str]): ...
+    def time_zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationPhase")
     def destination_phase(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_phase.setter
-    def destination_phase(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_phase(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationTargetId")
     def destination_target_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_target_id.setter
-    def destination_target_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_target_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AutomationSelectorArgsDict(TypedDict):
     targets: pulumi.Input[Sequence[pulumi.Input[AutomationSelectorTargetArgsDict]]]
@@ -522,7 +559,8 @@ class AutomationSelectorArgs:
     @targets.setter
     def targets(
         self, value: pulumi.Input[Sequence[pulumi.Input[AutomationSelectorTargetArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomationSelectorTargetArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -540,7 +578,8 @@ class AutomationSelectorTargetArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -549,7 +588,8 @@ class AutomationSelectorTargetArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomTargetTypeCustomActionsArgsDict(TypedDict):
     deploy_action: pulumi.Input[_builtins.str]
@@ -581,7 +621,8 @@ class CustomTargetTypeCustomActionsArgs:
     @pulumi.getter(name="deployAction")
     def deploy_action(self) -> pulumi.Input[_builtins.str]: ...
     @deploy_action.setter
-    def deploy_action(self, value: pulumi.Input[_builtins.str]): ...
+    def deploy_action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeSkaffoldModules")
     def include_skaffold_modules(
@@ -603,12 +644,14 @@ class CustomTargetTypeCustomActionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="renderAction")
     def render_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @render_action.setter
-    def render_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def render_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleArgsDict(TypedDict):
     configs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -654,7 +697,8 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleArgs:
     @configs.setter
     def configs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def git(
@@ -668,7 +712,8 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleArgs:
         value: Optional[
             pulumi.Input[CustomTargetTypeCustomActionsIncludeSkaffoldModuleGitArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleCloudBuildRepo")
     def google_cloud_build_repo(
@@ -686,7 +731,8 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleArgs:
                 CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudBuildRepoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleCloudStorage")
     def google_cloud_storage(
@@ -704,7 +750,8 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleArgs:
                 CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudStorageArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGitArgsDict(TypedDict):
     repo: pulumi.Input[_builtins.str]
@@ -724,17 +771,20 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGitArgs:
     @pulumi.getter
     def repo(self) -> pulumi.Input[_builtins.str]: ...
     @repo.setter
-    def repo(self, value: pulumi.Input[_builtins.str]): ...
+    def repo(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ref.setter
-    def ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ref(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudBuildRepoArgsDict(
     TypedDict
@@ -756,17 +806,20 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudBuildRepoArgs
     @pulumi.getter
     def repository(self) -> pulumi.Input[_builtins.str]: ...
     @repository.setter
-    def repository(self, value: pulumi.Input[_builtins.str]): ...
+    def repository(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ref.setter
-    def ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ref(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudStorageArgsDict(
     TypedDict
@@ -786,12 +839,14 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudStorageArgs:
     @pulumi.getter
     def source(self) -> pulumi.Input[_builtins.str]: ...
     @source.setter
-    def source(self, value: pulumi.Input[_builtins.str]): ...
+    def source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomTargetTypeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -811,17 +866,20 @@ class CustomTargetTypeIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomTargetTypeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -841,17 +899,20 @@ class CustomTargetTypeIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeliveryPipelineConditionArgsDict(TypedDict):
     pipeline_ready_conditions: NotRequired[
@@ -922,7 +983,8 @@ class DeliveryPipelineConditionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetsPresentConditions")
     def targets_present_conditions(
@@ -942,7 +1004,8 @@ class DeliveryPipelineConditionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetsTypeConditions")
     def targets_type_conditions(
@@ -962,7 +1025,8 @@ class DeliveryPipelineConditionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineConditionPipelineReadyConditionArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.bool]]
@@ -980,12 +1044,14 @@ class DeliveryPipelineConditionPipelineReadyConditionArgs:
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeliveryPipelineConditionTargetsPresentConditionArgsDict(TypedDict):
     missing_targets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1011,17 +1077,20 @@ class DeliveryPipelineConditionTargetsPresentConditionArgs:
     @missing_targets.setter
     def missing_targets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeliveryPipelineConditionTargetsTypeConditionArgsDict(TypedDict):
     error_details: NotRequired[pulumi.Input[_builtins.str]]
@@ -1039,12 +1108,14 @@ class DeliveryPipelineConditionTargetsTypeConditionArgs:
     @pulumi.getter(name="errorDetails")
     def error_details(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_details.setter
-    def error_details(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_details(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DeliveryPipelineIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -1064,17 +1135,20 @@ class DeliveryPipelineIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeliveryPipelineIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -1094,17 +1168,20 @@ class DeliveryPipelineIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineArgsDict(TypedDict):
     stages: NotRequired[
@@ -1139,7 +1216,8 @@ class DeliveryPipelineSerialPipelineArgs:
                 Sequence[pulumi.Input[DeliveryPipelineSerialPipelineStageArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageArgsDict(TypedDict):
     deploy_parameters: NotRequired[
@@ -1194,7 +1272,8 @@ class DeliveryPipelineSerialPipelineStageArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def profiles(
@@ -1203,7 +1282,8 @@ class DeliveryPipelineSerialPipelineStageArgs:
     @profiles.setter
     def profiles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def strategy(
@@ -1213,12 +1293,14 @@ class DeliveryPipelineSerialPipelineStageArgs:
     def strategy(
         self,
         value: Optional[pulumi.Input[DeliveryPipelineSerialPipelineStageStrategyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetId")
     def target_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_id.setter
-    def target_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageDeployParameterArgsDict(TypedDict):
     values: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
@@ -1242,7 +1324,8 @@ class DeliveryPipelineSerialPipelineStageDeployParameterArgs:
     @values.setter
     def values(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchTargetLabels")
     def match_target_labels(
@@ -1251,7 +1334,8 @@ class DeliveryPipelineSerialPipelineStageDeployParameterArgs:
     @match_target_labels.setter
     def match_target_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyArgsDict(TypedDict):
     canary: NotRequired[
@@ -1286,7 +1370,8 @@ class DeliveryPipelineSerialPipelineStageStrategyArgs:
         value: Optional[
             pulumi.Input[DeliveryPipelineSerialPipelineStageStrategyCanaryArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def standard(
@@ -1300,7 +1385,8 @@ class DeliveryPipelineSerialPipelineStageStrategyArgs:
         value: Optional[
             pulumi.Input[DeliveryPipelineSerialPipelineStageStrategyStandardArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryArgsDict(TypedDict):
     canary_deployment: NotRequired[
@@ -1357,7 +1443,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryArgs:
                 DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customCanaryDeployment")
     def custom_canary_deployment(
@@ -1375,7 +1462,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryArgs:
                 DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfig")
     def runtime_config(
@@ -1391,7 +1479,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryArgs:
                 DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentArgsDict(
     TypedDict
@@ -1433,7 +1522,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentArgs:
     @percentages.setter
     def percentages(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def postdeploy(
@@ -1451,7 +1541,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentArgs:
                 DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPostdeployArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def predeploy(
@@ -1469,12 +1560,14 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentArgs:
                 DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPredeployArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def verify(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @verify.setter
-    def verify(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def verify(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPostdeployArgsDict(
     TypedDict
@@ -1496,7 +1589,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPostdeplo
     @actions.setter
     def actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPredeployArgsDict(
     TypedDict
@@ -1518,7 +1612,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPredeploy
     @actions.setter
     def actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentArgsDict(
     TypedDict
@@ -1565,7 +1660,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentArg
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigArgsDict(
     TypedDict
@@ -1609,12 +1705,14 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
     @pulumi.getter
     def percentage(self) -> pulumi.Input[_builtins.int]: ...
     @percentage.setter
-    def percentage(self, value: pulumi.Input[_builtins.int]): ...
+    def percentage(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phaseId")
     def phase_id(self) -> pulumi.Input[_builtins.str]: ...
     @phase_id.setter
-    def phase_id(self, value: pulumi.Input[_builtins.str]): ...
+    def phase_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def postdeploy(
@@ -1632,7 +1730,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
                 DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigPostdeployArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def predeploy(
@@ -1650,7 +1749,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
                 DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigPredeployArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def profiles(
@@ -1659,12 +1759,14 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
     @profiles.setter
     def profiles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def verify(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @verify.setter
-    def verify(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def verify(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigPostdeployArgsDict(
     TypedDict
@@ -1686,7 +1788,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
     @actions.setter
     def actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigPredeployArgsDict(
     TypedDict
@@ -1708,7 +1811,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
     @actions.setter
     def actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigArgsDict(TypedDict):
     cloud_run: NotRequired[
@@ -1755,7 +1859,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigArgs:
                 DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kubernetes(
@@ -1773,7 +1878,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigArgs:
                 DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgsDict(
     TypedDict
@@ -1811,7 +1917,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgs
     @automatic_traffic_control.setter
     def automatic_traffic_control(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="canaryRevisionTags")
     def canary_revision_tags(
@@ -1820,7 +1927,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgs
     @canary_revision_tags.setter
     def canary_revision_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="priorRevisionTags")
     def prior_revision_tags(
@@ -1829,7 +1937,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgs
     @prior_revision_tags.setter
     def prior_revision_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stableRevisionTags")
     def stable_revision_tags(
@@ -1838,7 +1947,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgs
     @stable_revision_tags.setter
     def stable_revision_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesArgsDict(
     TypedDict
@@ -1887,7 +1997,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesAr
                 DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNetworking")
     def service_networking(
@@ -1905,7 +2016,8 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesAr
                 DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesServiceNetworkingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshArgsDict(
     TypedDict
@@ -1943,22 +2055,28 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGa
     @pulumi.getter
     def deployment(self) -> pulumi.Input[_builtins.str]: ...
     @deployment.setter
-    def deployment(self, value: pulumi.Input[_builtins.str]): ...
+    def deployment(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpRoute")
     def http_route(self) -> pulumi.Input[_builtins.str]: ...
     @http_route.setter
-    def http_route(self, value: pulumi.Input[_builtins.str]): ...
+    def http_route(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def service(self) -> pulumi.Input[_builtins.str]: ...
     @service.setter
-    def service(self, value: pulumi.Input[_builtins.str]): ...
+    def service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="podSelectorLabel")
     def pod_selector_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pod_selector_label.setter
-    def pod_selector_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pod_selector_label(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeDestinations")
     def route_destinations(
@@ -1976,17 +2094,24 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGa
                 DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeUpdateWaitTime")
     def route_update_wait_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @route_update_wait_time.setter
-    def route_update_wait_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def route_update_wait_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stableCutbackDuration")
     def stable_cutback_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @stable_cutback_duration.setter
-    def stable_cutback_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def stable_cutback_duration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsArgsDict(
     TypedDict
@@ -2010,12 +2135,16 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGa
     @destination_ids.setter
     def destination_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagateService")
     def propagate_service(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @propagate_service.setter
-    def propagate_service(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def propagate_service(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesServiceNetworkingArgsDict(
     TypedDict
@@ -2039,12 +2168,14 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesSe
     @pulumi.getter
     def deployment(self) -> pulumi.Input[_builtins.str]: ...
     @deployment.setter
-    def deployment(self, value: pulumi.Input[_builtins.str]): ...
+    def deployment(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def service(self) -> pulumi.Input[_builtins.str]: ...
     @service.setter
-    def service(self, value: pulumi.Input[_builtins.str]): ...
+    def service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disablePodOverprovisioning")
     def disable_pod_overprovisioning(
@@ -2053,12 +2184,16 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesSe
     @disable_pod_overprovisioning.setter
     def disable_pod_overprovisioning(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="podSelectorLabel")
     def pod_selector_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pod_selector_label.setter
-    def pod_selector_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pod_selector_label(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyStandardArgsDict(TypedDict):
     postdeploy: NotRequired[
@@ -2105,7 +2240,8 @@ class DeliveryPipelineSerialPipelineStageStrategyStandardArgs:
                 DeliveryPipelineSerialPipelineStageStrategyStandardPostdeployArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def predeploy(
@@ -2121,12 +2257,14 @@ class DeliveryPipelineSerialPipelineStageStrategyStandardArgs:
                 DeliveryPipelineSerialPipelineStageStrategyStandardPredeployArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def verify(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @verify.setter
-    def verify(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def verify(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyStandardPostdeployArgsDict(TypedDict):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2146,7 +2284,8 @@ class DeliveryPipelineSerialPipelineStageStrategyStandardPostdeployArgs:
     @actions.setter
     def actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeliveryPipelineSerialPipelineStageStrategyStandardPredeployArgsDict(TypedDict):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2166,7 +2305,8 @@ class DeliveryPipelineSerialPipelineStageStrategyStandardPredeployArgs:
     @actions.setter
     def actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeployPolicyRuleArgsDict(TypedDict):
     rollout_restriction: NotRequired[
@@ -2190,7 +2330,8 @@ class DeployPolicyRuleArgs:
     @rollout_restriction.setter
     def rollout_restriction(
         self, value: Optional[pulumi.Input[DeployPolicyRuleRolloutRestrictionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -2216,7 +2357,8 @@ class DeployPolicyRuleRolloutRestrictionArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def actions(
@@ -2225,7 +2367,8 @@ class DeployPolicyRuleRolloutRestrictionArgs:
     @actions.setter
     def actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def invokers(
@@ -2234,7 +2377,8 @@ class DeployPolicyRuleRolloutRestrictionArgs:
     @invokers.setter
     def invokers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeWindows")
     def time_windows(
@@ -2246,7 +2390,8 @@ class DeployPolicyRuleRolloutRestrictionArgs:
         value: Optional[
             pulumi.Input[DeployPolicyRuleRolloutRestrictionTimeWindowsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsArgsDict(TypedDict):
     time_zone: pulumi.Input[_builtins.str]
@@ -2298,7 +2443,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsArgs:
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> pulumi.Input[_builtins.str]: ...
     @time_zone.setter
-    def time_zone(self, value: pulumi.Input[_builtins.str]): ...
+    def time_zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oneTimeWindows")
     def one_time_windows(
@@ -2324,7 +2470,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklyWindows")
     def weekly_windows(
@@ -2350,7 +2497,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowArgsDict(TypedDict):
     end_date: pulumi.Input[
@@ -2397,7 +2545,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowArgs:
         value: pulumi.Input[
             DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndDateArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endTime")
     def end_time(
@@ -2411,7 +2560,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowArgs:
         value: pulumi.Input[
             DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndTimeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startDate")
     def start_date(
@@ -2425,7 +2575,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowArgs:
         value: pulumi.Input[
             DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartDateArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(
@@ -2439,7 +2590,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowArgs:
         value: pulumi.Input[
             DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartTimeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndDateArgsDict(
     TypedDict
@@ -2461,17 +2613,20 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndDateArgs:
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndTimeArgsDict(
     TypedDict
@@ -2495,22 +2650,26 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndTimeArgs:
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartDateArgsDict(
     TypedDict
@@ -2532,17 +2691,20 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartDateArgs:
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartTimeArgsDict(
     TypedDict
@@ -2566,22 +2728,26 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartTimeArgs:
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowArgsDict(TypedDict):
     days_of_weeks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2623,7 +2789,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowArgs:
     @days_of_weeks.setter
     def days_of_weeks(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endTime")
     def end_time(
@@ -2641,7 +2808,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowArgs:
                 DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowEndTimeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(
@@ -2659,7 +2827,8 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowArgs:
                 DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowStartTimeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowEndTimeArgsDict(
     TypedDict
@@ -2683,22 +2852,26 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowEndTimeArgs:
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowStartTimeArgsDict(
     TypedDict
@@ -2722,22 +2895,26 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowStartTimeArgs:
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class DeployPolicySelectorArgsDict(TypedDict):
     delivery_pipeline: NotRequired[
@@ -2763,12 +2940,16 @@ class DeployPolicySelectorArgs:
     @delivery_pipeline.setter
     def delivery_pipeline(
         self, value: Optional[pulumi.Input[DeployPolicySelectorDeliveryPipelineArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> Optional[pulumi.Input[DeployPolicySelectorTargetArgs]]: ...
     @target.setter
-    def target(self, value: Optional[pulumi.Input[DeployPolicySelectorTargetArgs]]): ...
+    def target(
+        self, value: Optional[pulumi.Input[DeployPolicySelectorTargetArgs]]
+    ):  # -> None:
+        ...
 
 class DeployPolicySelectorDeliveryPipelineArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2786,7 +2967,8 @@ class DeployPolicySelectorDeliveryPipelineArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -2795,7 +2977,8 @@ class DeployPolicySelectorDeliveryPipelineArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DeployPolicySelectorTargetArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2813,7 +2996,8 @@ class DeployPolicySelectorTargetArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -2822,7 +3006,8 @@ class DeployPolicySelectorTargetArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TargetAnthosClusterArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
@@ -2836,7 +3021,8 @@ class TargetAnthosClusterArgs:
     @pulumi.getter
     def membership(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @membership.setter
-    def membership(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def membership(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TargetAssociatedEntityArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
@@ -2868,7 +3054,8 @@ class TargetAssociatedEntityArgs:
     @pulumi.getter(name="entityId")
     def entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @entity_id.setter
-    def entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="anthosClusters")
     def anthos_clusters(
@@ -2884,7 +3071,8 @@ class TargetAssociatedEntityArgs:
                 Sequence[pulumi.Input[TargetAssociatedEntityAnthosClusterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gkeClusters")
     def gke_clusters(
@@ -2898,7 +3086,8 @@ class TargetAssociatedEntityArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TargetAssociatedEntityGkeClusterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TargetAssociatedEntityAnthosClusterArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
@@ -2912,7 +3101,8 @@ class TargetAssociatedEntityAnthosClusterArgs:
     @pulumi.getter
     def membership(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @membership.setter
-    def membership(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def membership(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TargetAssociatedEntityGkeClusterArgsDict(TypedDict):
     cluster: NotRequired[pulumi.Input[_builtins.str]]
@@ -2932,17 +3122,20 @@ class TargetAssociatedEntityGkeClusterArgs:
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internalIp")
     def internal_ip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @internal_ip.setter
-    def internal_ip(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def internal_ip(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="proxyUrl")
     def proxy_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @proxy_url.setter
-    def proxy_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def proxy_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TargetCustomTargetArgsDict(TypedDict):
     custom_target_type: pulumi.Input[_builtins.str]
@@ -2956,7 +3149,8 @@ class TargetCustomTargetArgs:
     @pulumi.getter(name="customTargetType")
     def custom_target_type(self) -> pulumi.Input[_builtins.str]: ...
     @custom_target_type.setter
-    def custom_target_type(self, value: pulumi.Input[_builtins.str]): ...
+    def custom_target_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TargetExecutionConfigArgsDict(TypedDict):
     usages: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -2982,32 +3176,44 @@ class TargetExecutionConfigArgs:
     @pulumi.getter
     def usages(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @usages.setter
-    def usages(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def usages(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="artifactStorage")
     def artifact_storage(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @artifact_storage.setter
-    def artifact_storage(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def artifact_storage(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionTimeout")
     def execution_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_timeout.setter
-    def execution_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_timeout(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccount")
     def service_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_account.setter
-    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def verbose(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @verbose.setter
-    def verbose(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def verbose(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerPool")
     def worker_pool(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @worker_pool.setter
-    def worker_pool(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def worker_pool(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TargetGkeArgsDict(TypedDict):
     cluster: NotRequired[pulumi.Input[_builtins.str]]
@@ -3029,22 +3235,26 @@ class TargetGkeArgs:
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsEndpoint")
     def dns_endpoint(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @dns_endpoint.setter
-    def dns_endpoint(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def dns_endpoint(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internalIp")
     def internal_ip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @internal_ip.setter
-    def internal_ip(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def internal_ip(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="proxyUrl")
     def proxy_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @proxy_url.setter
-    def proxy_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def proxy_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TargetIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -3064,17 +3274,20 @@ class TargetIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TargetIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -3094,17 +3307,20 @@ class TargetIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TargetMultiTargetArgsDict(TypedDict):
     target_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -3120,7 +3336,8 @@ class TargetMultiTargetArgs:
     @target_ids.setter
     def target_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TargetRunArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
@@ -3132,4 +3349,5 @@ class TargetRunArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

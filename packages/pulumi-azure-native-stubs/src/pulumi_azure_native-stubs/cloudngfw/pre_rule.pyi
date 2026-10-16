@@ -47,12 +47,14 @@ class PreRuleArgs:
     @pulumi.getter(name="globalRulestackName")
     def global_rulestack_name(self) -> pulumi.Input[_builtins.str]: ...
     @global_rulestack_name.setter
-    def global_rulestack_name(self, value: pulumi.Input[_builtins.str]): ...
+    def global_rulestack_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_name.setter
-    def rule_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionType")
     def action_type(
@@ -61,7 +63,8 @@ class PreRuleArgs:
     @action_type.setter
     def action_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionEnum]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def applications(
@@ -70,17 +73,20 @@ class PreRuleArgs:
     @applications.setter
     def applications(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="auditComment")
     def audit_comment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audit_comment.setter
-    def audit_comment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def audit_comment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def category(self) -> Optional[pulumi.Input[CategoryArgs]]: ...
     @category.setter
-    def category(self, value: Optional[pulumi.Input[CategoryArgs]]): ...
+    def category(self, value: Optional[pulumi.Input[CategoryArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="decryptionRuleType")
     def decryption_rule_type(
@@ -90,17 +96,22 @@ class PreRuleArgs:
     def decryption_rule_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DecryptionRuleTypeEnum]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destination(self) -> Optional[pulumi.Input[DestinationAddrArgs]]: ...
     @destination.setter
-    def destination(self, value: Optional[pulumi.Input[DestinationAddrArgs]]): ...
+    def destination(
+        self, value: Optional[pulumi.Input[DestinationAddrArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableLogging")
     def enable_logging(
@@ -109,7 +120,8 @@ class PreRuleArgs:
     @enable_logging.setter
     def enable_logging(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inboundInspectionCertificate")
     def inbound_inspection_certificate(
@@ -118,7 +130,8 @@ class PreRuleArgs:
     @inbound_inspection_certificate.setter
     def inbound_inspection_certificate(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateDestination")
     def negate_destination(
@@ -127,7 +140,8 @@ class PreRuleArgs:
     @negate_destination.setter
     def negate_destination(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateSource")
     def negate_source(
@@ -136,17 +150,20 @@ class PreRuleArgs:
     @negate_source.setter
     def negate_source(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protocolPortList")
     def protocol_port_list(
@@ -155,26 +172,30 @@ class PreRuleArgs:
     @protocol_port_list.setter
     def protocol_port_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleState")
     def rule_state(self) -> Optional[pulumi.Input[Union[_builtins.str, StateEnum]]]: ...
     @rule_state.setter
     def rule_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> Optional[pulumi.Input[SourceAddrArgs]]: ...
     @source.setter
-    def source(self, value: Optional[pulumi.Input[SourceAddrArgs]]): ...
+    def source(self, value: Optional[pulumi.Input[SourceAddrArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TagInfoArgs]]]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TagInfoArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cloudngfw:PreRule")
 class PreRule(pulumi.CustomResource):

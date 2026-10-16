@@ -170,7 +170,8 @@ class GetForwardingRuleResult:
     def target(self) -> _builtins.str: ...
 
 class AwaitableGetForwardingRuleResult(GetForwardingRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetForwardingRuleResult]:
+        ...
 
 def get_forwarding_rule(
     name: Optional[_builtins.str] = ...,

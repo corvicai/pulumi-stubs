@@ -51,7 +51,8 @@ class GetWorkerConfigurationResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetWorkerConfigurationResult(GetWorkerConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkerConfigurationResult]:
+        ...
 
 def get_worker_configuration(
     name: Optional[_builtins.str] = ...,

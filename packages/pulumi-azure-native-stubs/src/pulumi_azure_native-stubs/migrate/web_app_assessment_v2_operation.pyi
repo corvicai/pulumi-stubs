@@ -61,17 +61,20 @@ class WebAppAssessmentV2OperationArgs:
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectName")
     def project_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_name.setter
-    def project_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appSvcContainerSettings")
     def app_svc_container_settings(
@@ -80,7 +83,8 @@ class WebAppAssessmentV2OperationArgs:
     @app_svc_container_settings.setter
     def app_svc_container_settings(
         self, value: Optional[pulumi.Input[AppSvcContainerSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appSvcNativeSettings")
     def app_svc_native_settings(
@@ -89,12 +93,14 @@ class WebAppAssessmentV2OperationArgs:
     @app_svc_native_settings.setter
     def app_svc_native_settings(
         self, value: Optional[pulumi.Input[AppSvcNativeSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentName")
     def assessment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assessment_name.setter
-    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentType")
     def assessment_type(
@@ -103,12 +109,14 @@ class WebAppAssessmentV2OperationArgs:
     @assessment_type.setter
     def assessment_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AssessmentType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureLocation")
     def azure_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @azure_location.setter
-    def azure_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def azure_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureOfferCode")
     def azure_offer_code(
@@ -117,7 +125,8 @@ class WebAppAssessmentV2OperationArgs:
     @azure_offer_code.setter
     def azure_offer_code(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureOfferCode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureSecurityOfferingType")
     def azure_security_offering_type(
@@ -127,7 +136,8 @@ class WebAppAssessmentV2OperationArgs:
     def azure_security_offering_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AzureSecurityOfferingType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confidenceRatingInPercentage")
     def confidence_rating_in_percentage(
@@ -136,7 +146,8 @@ class WebAppAssessmentV2OperationArgs:
     @confidence_rating_in_percentage.setter
     def confidence_rating_in_percentage(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def currency(
@@ -145,12 +156,16 @@ class WebAppAssessmentV2OperationArgs:
     @currency.setter
     def currency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureCurrency]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discountPercentage")
     def discount_percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @discount_percentage.setter
-    def discount_percentage(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def discount_percentage(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveredEntityLightSummary")
     def discovered_entity_light_summary(
@@ -159,17 +174,24 @@ class WebAppAssessmentV2OperationArgs:
     @discovered_entity_light_summary.setter
     def discovered_entity_light_summary(
         self, value: Optional[pulumi.Input[DiscoveredEntityLightSummaryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eaSubscriptionId")
     def ea_subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ea_subscription_id.setter
-    def ea_subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ea_subscription_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entityUptime")
     def entity_uptime(self) -> Optional[pulumi.Input[EntityUptimeArgs]]: ...
     @entity_uptime.setter
-    def entity_uptime(self, value: Optional[pulumi.Input[EntityUptimeArgs]]): ...
+    def entity_uptime(
+        self, value: Optional[pulumi.Input[EntityUptimeArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentType")
     def environment_type(
@@ -178,14 +200,16 @@ class WebAppAssessmentV2OperationArgs:
     @environment_type.setter
     def environment_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnvironmentType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupType")
     def group_type(self) -> Optional[pulumi.Input[Union[_builtins.str, GroupType]]]: ...
     @group_type.setter
     def group_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, GroupType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentile(
@@ -194,17 +218,24 @@ class WebAppAssessmentV2OperationArgs:
     @percentile.setter
     def percentile(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Percentile]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataEndTime")
     def perf_data_end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_end_time.setter
-    def perf_data_end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_end_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataStartTime")
     def perf_data_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_start_time.setter
-    def perf_data_start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_start_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservedInstance")
     def reserved_instance(
@@ -213,12 +244,16 @@ class WebAppAssessmentV2OperationArgs:
     @reserved_instance.setter
     def reserved_instance(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureReservedInstance]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingFactor")
     def scaling_factor(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @scaling_factor.setter
-    def scaling_factor(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def scaling_factor(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizingCriterion")
     def sizing_criterion(
@@ -228,14 +263,16 @@ class WebAppAssessmentV2OperationArgs:
     def sizing_criterion(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AssessmentSizingCriterion]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeRange")
     def time_range(self) -> Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]: ...
     @time_range.setter
     def time_range(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:migrate:WebAppAssessmentV2Operation")
 class WebAppAssessmentV2Operation(pulumi.CustomResource):

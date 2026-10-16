@@ -52,7 +52,8 @@ class GetEcsServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEcsServiceResult(GetEcsServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEcsServiceResult]:
+        ...
 
 def get_ecs_service(
     name: Optional[_builtins.str] = ...,

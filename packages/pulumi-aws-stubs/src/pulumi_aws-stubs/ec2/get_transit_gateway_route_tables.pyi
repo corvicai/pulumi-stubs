@@ -38,7 +38,10 @@ class GetTransitGatewayRouteTablesResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetTransitGatewayRouteTablesResult(GetTransitGatewayRouteTablesResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTransitGatewayRouteTablesResult]:
+        ...
 
 def get_transit_gateway_route_tables(
     filters: Optional[

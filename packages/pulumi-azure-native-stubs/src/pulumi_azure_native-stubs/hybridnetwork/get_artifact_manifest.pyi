@@ -52,7 +52,8 @@ class GetArtifactManifestResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetArtifactManifestResult(GetArtifactManifestResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetArtifactManifestResult]:
+        ...
 
 def get_artifact_manifest(
     artifact_manifest_name: Optional[_builtins.str] = ...,

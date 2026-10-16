@@ -86,7 +86,10 @@ class GetQuerySuggestionsBlockListResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetQuerySuggestionsBlockListResult(GetQuerySuggestionsBlockListResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetQuerySuggestionsBlockListResult]:
+        ...
 
 def get_query_suggestions_block_list(
     index_id: Optional[_builtins.str] = ...,

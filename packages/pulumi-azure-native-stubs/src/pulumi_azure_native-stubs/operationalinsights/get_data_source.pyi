@@ -51,7 +51,8 @@ class GetDataSourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataSourceResult(GetDataSourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataSourceResult]:
+        ...
 
 def get_data_source(
     data_source_name: Optional[_builtins.str] = ...,

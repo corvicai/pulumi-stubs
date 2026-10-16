@@ -75,7 +75,8 @@ class GetTopicResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTopicResult(GetTopicResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTopicResult]:
+        ...
 
 def get_topic(
     cluster_id: Optional[_builtins.str] = ...,

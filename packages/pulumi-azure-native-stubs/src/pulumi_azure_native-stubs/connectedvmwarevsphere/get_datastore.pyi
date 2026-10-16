@@ -96,7 +96,8 @@ class GetDatastoreResult:
     def v_center_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDatastoreResult(GetDatastoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatastoreResult]:
+        ...
 
 def get_datastore(
     datastore_name: Optional[_builtins.str] = ...,

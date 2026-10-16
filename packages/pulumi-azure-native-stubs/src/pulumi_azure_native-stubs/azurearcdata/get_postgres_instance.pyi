@@ -60,7 +60,8 @@ class GetPostgresInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPostgresInstanceResult(GetPostgresInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPostgresInstanceResult]:
+        ...
 
 def get_postgres_instance(
     postgres_instance_name: Optional[_builtins.str] = ...,

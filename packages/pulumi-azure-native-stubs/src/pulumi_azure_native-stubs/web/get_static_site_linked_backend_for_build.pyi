@@ -57,7 +57,10 @@ class GetStaticSiteLinkedBackendForBuildResult:
 class AwaitableGetStaticSiteLinkedBackendForBuildResult(
     GetStaticSiteLinkedBackendForBuildResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetStaticSiteLinkedBackendForBuildResult]:
+        ...
 
 def get_static_site_linked_backend_for_build(
     environment_name: Optional[_builtins.str] = ...,

@@ -73,7 +73,8 @@ class GetVpcAttachmentResult:
     def vpc_owner_id(self) -> _builtins.str: ...
 
 class AwaitableGetVpcAttachmentResult(GetVpcAttachmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcAttachmentResult]:
+        ...
 
 def get_vpc_attachment(
     filters: Optional[

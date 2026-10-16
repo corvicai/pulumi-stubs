@@ -31,7 +31,10 @@ class GetOrganizationalUnitDescendantAccountsResult:
 class AwaitableGetOrganizationalUnitDescendantAccountsResult(
     GetOrganizationalUnitDescendantAccountsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOrganizationalUnitDescendantAccountsResult]:
+        ...
 
 def get_organizational_unit_descendant_accounts(
     parent_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

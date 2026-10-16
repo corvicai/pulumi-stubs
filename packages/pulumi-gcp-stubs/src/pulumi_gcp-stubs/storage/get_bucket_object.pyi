@@ -138,7 +138,8 @@ class GetBucketObjectResult:
     def temporary_hold(self) -> _builtins.bool: ...
 
 class AwaitableGetBucketObjectResult(GetBucketObjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBucketObjectResult]:
+        ...
 
 def get_bucket_object(
     bucket: Optional[_builtins.str] = ...,

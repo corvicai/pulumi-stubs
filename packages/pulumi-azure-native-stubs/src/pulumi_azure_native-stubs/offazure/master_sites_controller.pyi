@@ -29,12 +29,16 @@ class MasterSitesControllerArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowMultipleSites")
     def allow_multiple_sites(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_multiple_sites.setter
-    def allow_multiple_sites(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_multiple_sites(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerStorageAccountArmId")
     def customer_storage_account_arm_id(
@@ -43,12 +47,14 @@ class MasterSitesControllerArgs:
     @customer_storage_account_arm_id.setter
     def customer_storage_account_arm_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -62,12 +68,14 @@ class MasterSitesControllerArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, MasterSitePropertiesPublicNetworkAccess]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="siteName")
     def site_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @site_name.setter
-    def site_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def site_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sites(
@@ -76,7 +84,8 @@ class MasterSitesControllerArgs:
     @sites.setter
     def sites(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -85,7 +94,8 @@ class MasterSitesControllerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:offazure:MasterSitesController")
 class MasterSitesController(pulumi.CustomResource):

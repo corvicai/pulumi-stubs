@@ -26,7 +26,10 @@ class ListEffectiveVirtualNetworkByNetworkManagerResult:
 class AwaitableListEffectiveVirtualNetworkByNetworkManagerResult(
     ListEffectiveVirtualNetworkByNetworkManagerResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListEffectiveVirtualNetworkByNetworkManagerResult]:
+        ...
 
 def list_effective_virtual_network_by_network_manager(
     conditional_members: Optional[_builtins.str] = ...,

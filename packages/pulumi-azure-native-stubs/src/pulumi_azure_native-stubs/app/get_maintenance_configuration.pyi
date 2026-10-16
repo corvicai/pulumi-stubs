@@ -44,7 +44,8 @@ class GetMaintenanceConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMaintenanceConfigurationResult(GetMaintenanceConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMaintenanceConfigurationResult]:
+        ...
 
 def get_maintenance_configuration(
     config_name: Optional[_builtins.str] = ...,

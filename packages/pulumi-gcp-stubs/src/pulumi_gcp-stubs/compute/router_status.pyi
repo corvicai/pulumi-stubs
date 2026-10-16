@@ -50,7 +50,8 @@ class RouterStatusResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableRouterStatusResult(RouterStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, RouterStatusResult]:
+        ...
 
 def router_status(
     name: Optional[_builtins.str] = ...,

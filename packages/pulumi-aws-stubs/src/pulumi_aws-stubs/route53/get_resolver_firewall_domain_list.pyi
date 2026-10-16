@@ -67,7 +67,10 @@ class GetResolverFirewallDomainListResult:
     def status_message(self) -> _builtins.str: ...
 
 class AwaitableGetResolverFirewallDomainListResult(GetResolverFirewallDomainListResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetResolverFirewallDomainListResult]:
+        ...
 
 def get_resolver_firewall_domain_list(
     firewall_domain_list_id: Optional[_builtins.str] = ...,

@@ -16,7 +16,8 @@ class PartnerArgs:
     @pulumi.getter(name="partnerId")
     def partner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partner_id.setter
-    def partner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def partner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:managementpartner:Partner")
 class Partner(pulumi.CustomResource):

@@ -55,7 +55,8 @@ class GetSqlServerResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSqlServerResult(GetSqlServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlServerResult]:
+        ...
 
 def get_sql_server(
     expand: Optional[_builtins.str] = ...,

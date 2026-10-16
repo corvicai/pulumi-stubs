@@ -51,7 +51,10 @@ class GetDatabaseMigrationServiceReplicationInstanceResult:
 class AwaitableGetDatabaseMigrationServiceReplicationInstanceResult(
     GetDatabaseMigrationServiceReplicationInstanceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseMigrationServiceReplicationInstanceResult]:
+        ...
 
 def get_database_migration_service_replication_instance(
     name: Optional[_builtins.str] = ...,

@@ -22,7 +22,10 @@ class GetNetworkVirtualApplianceBootDiagnosticLogsResult:
 class AwaitableGetNetworkVirtualApplianceBootDiagnosticLogsResult(
     GetNetworkVirtualApplianceBootDiagnosticLogsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkVirtualApplianceBootDiagnosticLogsResult]:
+        ...
 
 def get_network_virtual_appliance_boot_diagnostic_logs(
     console_screenshot_storage_sas_url: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetWorkspaceCollectionResult:
     def type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWorkspaceCollectionResult(GetWorkspaceCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceCollectionResult]:
+        ...
 
 def get_workspace_collection(
     resource_group_name: Optional[_builtins.str] = ...,

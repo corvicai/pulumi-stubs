@@ -37,7 +37,10 @@ class ListWebAppAzureStorageAccountsSlotResult:
 class AwaitableListWebAppAzureStorageAccountsSlotResult(
     ListWebAppAzureStorageAccountsSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppAzureStorageAccountsSlotResult]:
+        ...
 
 def list_web_app_azure_storage_accounts_slot(
     name: Optional[_builtins.str] = ...,

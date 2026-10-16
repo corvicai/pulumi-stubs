@@ -52,7 +52,8 @@ class GetTableResourceTableResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTableResourceTableResult(GetTableResourceTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableResourceTableResult]:
+        ...
 
 def get_table_resource_table(
     account_name: Optional[_builtins.str] = ...,

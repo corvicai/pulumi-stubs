@@ -24,7 +24,8 @@ class ListListPendingFlowResult:
     def value(self) -> Optional[Sequence[outputs.PendingFlowResponse]]: ...
 
 class AwaitableListListPendingFlowResult(ListListPendingFlowResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListListPendingFlowResult]:
+        ...
 
 def list_list_pending_flow(
     connection_name: Optional[_builtins.str] = ...,

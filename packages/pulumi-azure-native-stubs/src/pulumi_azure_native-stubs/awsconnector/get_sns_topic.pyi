@@ -52,7 +52,8 @@ class GetSnsTopicResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSnsTopicResult(GetSnsTopicResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnsTopicResult]:
+        ...
 
 def get_sns_topic(
     name: Optional[_builtins.str] = ...,

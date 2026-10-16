@@ -26,17 +26,20 @@ class TrustAnchorArgs:
     @pulumi.getter
     def source(self) -> pulumi.Input[TrustAnchorSourceArgs]: ...
     @source.setter
-    def source(self, value: pulumi.Input[TrustAnchorSourceArgs]): ...
+    def source(self, value: pulumi.Input[TrustAnchorSourceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationSettings")
     def notification_settings(
@@ -50,7 +53,8 @@ class TrustAnchorArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TrustAnchorNotificationSettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -59,7 +63,8 @@ class TrustAnchorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TrustAnchorState:
@@ -82,17 +87,20 @@ class _TrustAnchorState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationSettings")
     def notification_settings(
@@ -106,12 +114,14 @@ class _TrustAnchorState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TrustAnchorNotificationSettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> Optional[pulumi.Input[TrustAnchorSourceArgs]]: ...
     @source.setter
-    def source(self, value: Optional[pulumi.Input[TrustAnchorSourceArgs]]): ...
+    def source(self, value: Optional[pulumi.Input[TrustAnchorSourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -120,7 +130,8 @@ class _TrustAnchorState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -129,7 +140,8 @@ class _TrustAnchorState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:rolesanywhere/trustAnchor:TrustAnchor")
 class TrustAnchor(pulumi.CustomResource):

@@ -59,7 +59,8 @@ class GetExternalAddressResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetExternalAddressResult(GetExternalAddressResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExternalAddressResult]:
+        ...
 
 def get_external_address(
     name: Optional[_builtins.str] = ...,

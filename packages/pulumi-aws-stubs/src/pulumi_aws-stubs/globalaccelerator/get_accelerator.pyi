@@ -64,7 +64,8 @@ class GetAcceleratorResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetAcceleratorResult(GetAcceleratorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAcceleratorResult]:
+        ...
 
 def get_accelerator(
     arn: Optional[_builtins.str] = ...,

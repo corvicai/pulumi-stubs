@@ -47,7 +47,10 @@ class GetAppEngineVersionIamPolicyResult:
     def version_id(self) -> _builtins.str: ...
 
 class AwaitableGetAppEngineVersionIamPolicyResult(GetAppEngineVersionIamPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppEngineVersionIamPolicyResult]:
+        ...
 
 def get_app_engine_version_iam_policy(
     app_id: Optional[_builtins.str] = ...,

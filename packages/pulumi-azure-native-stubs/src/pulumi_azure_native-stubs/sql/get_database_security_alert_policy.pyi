@@ -74,7 +74,10 @@ class GetDatabaseSecurityAlertPolicyResult:
 class AwaitableGetDatabaseSecurityAlertPolicyResult(
     GetDatabaseSecurityAlertPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseSecurityAlertPolicyResult]:
+        ...
 
 def get_database_security_alert_policy(
     database_name: Optional[_builtins.str] = ...,

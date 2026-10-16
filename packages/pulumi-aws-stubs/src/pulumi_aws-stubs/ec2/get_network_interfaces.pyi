@@ -38,7 +38,8 @@ class GetNetworkInterfacesResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetNetworkInterfacesResult(GetNetworkInterfacesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkInterfacesResult]:
+        ...
 
 def get_network_interfaces(
     filters: Optional[

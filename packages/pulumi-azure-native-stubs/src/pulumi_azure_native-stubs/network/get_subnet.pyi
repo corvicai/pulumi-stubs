@@ -144,7 +144,8 @@ class GetSubnetResult:
     def type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSubnetResult(GetSubnetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetResult]:
+        ...
 
 def get_subnet(
     expand: Optional[_builtins.str] = ...,

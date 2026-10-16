@@ -58,17 +58,20 @@ class V2modelsIntentArgs:
     @pulumi.getter(name="botId")
     def bot_id(self) -> pulumi.Input[_builtins.str]: ...
     @bot_id.setter
-    def bot_id(self, value: pulumi.Input[_builtins.str]): ...
+    def bot_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="botVersion")
     def bot_version(self) -> pulumi.Input[_builtins.str]: ...
     @bot_version.setter
-    def bot_version(self, value: pulumi.Input[_builtins.str]): ...
+    def bot_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localeId")
     def locale_id(self) -> pulumi.Input[_builtins.str]: ...
     @locale_id.setter
-    def locale_id(self, value: pulumi.Input[_builtins.str]): ...
+    def locale_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="closingSetting")
     def closing_setting(
@@ -77,7 +80,8 @@ class V2modelsIntentArgs:
     @closing_setting.setter
     def closing_setting(
         self, value: Optional[pulumi.Input[V2modelsIntentClosingSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confirmationSetting")
     def confirmation_setting(
@@ -86,12 +90,14 @@ class V2modelsIntentArgs:
     @confirmation_setting.setter
     def confirmation_setting(
         self, value: Optional[pulumi.Input[V2modelsIntentConfirmationSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dialogCodeHook")
     def dialog_code_hook(
@@ -100,7 +106,8 @@ class V2modelsIntentArgs:
     @dialog_code_hook.setter
     def dialog_code_hook(
         self, value: Optional[pulumi.Input[V2modelsIntentDialogCodeHookArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fulfillmentCodeHook")
     def fulfillment_code_hook(
@@ -109,7 +116,8 @@ class V2modelsIntentArgs:
     @fulfillment_code_hook.setter
     def fulfillment_code_hook(
         self, value: Optional[pulumi.Input[V2modelsIntentFulfillmentCodeHookArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialResponseSetting")
     def initial_response_setting(
@@ -118,7 +126,8 @@ class V2modelsIntentArgs:
     @initial_response_setting.setter
     def initial_response_setting(
         self, value: Optional[pulumi.Input[V2modelsIntentInitialResponseSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputContexts")
     def input_contexts(
@@ -132,7 +141,8 @@ class V2modelsIntentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentInputContextArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kendraConfiguration")
     def kendra_configuration(
@@ -141,12 +151,14 @@ class V2modelsIntentArgs:
     @kendra_configuration.setter
     def kendra_configuration(
         self, value: Optional[pulumi.Input[V2modelsIntentKendraConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputContexts")
     def output_contexts(
@@ -160,12 +172,16 @@ class V2modelsIntentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentOutputContextArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentIntentSignature")
     def parent_intent_signature(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_intent_signature.setter
-    def parent_intent_signature(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_intent_signature(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="qnaIntentConfiguration")
     def qna_intent_configuration(
@@ -174,12 +190,14 @@ class V2modelsIntentArgs:
     @qna_intent_configuration.setter
     def qna_intent_configuration(
         self, value: Optional[pulumi.Input[V2modelsIntentQnaIntentConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleUtterances")
     def sample_utterances(
@@ -193,7 +211,8 @@ class V2modelsIntentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentSampleUtteranceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="slotPriorities")
     def slot_priorities(
@@ -207,12 +226,16 @@ class V2modelsIntentArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentSlotPriorityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[V2modelsIntentTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[V2modelsIntentTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[V2modelsIntentTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _V2modelsIntentState:
@@ -266,12 +289,14 @@ class _V2modelsIntentState:
     @pulumi.getter(name="botId")
     def bot_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bot_id.setter
-    def bot_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bot_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="botVersion")
     def bot_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bot_version.setter
-    def bot_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bot_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="closingSetting")
     def closing_setting(
@@ -280,7 +305,8 @@ class _V2modelsIntentState:
     @closing_setting.setter
     def closing_setting(
         self, value: Optional[pulumi.Input[V2modelsIntentClosingSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confirmationSetting")
     def confirmation_setting(
@@ -289,17 +315,22 @@ class _V2modelsIntentState:
     @confirmation_setting.setter
     def confirmation_setting(
         self, value: Optional[pulumi.Input[V2modelsIntentConfirmationSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationDateTime")
     def creation_date_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_date_time.setter
-    def creation_date_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_date_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dialogCodeHook")
     def dialog_code_hook(
@@ -308,7 +339,8 @@ class _V2modelsIntentState:
     @dialog_code_hook.setter
     def dialog_code_hook(
         self, value: Optional[pulumi.Input[V2modelsIntentDialogCodeHookArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fulfillmentCodeHook")
     def fulfillment_code_hook(
@@ -317,7 +349,8 @@ class _V2modelsIntentState:
     @fulfillment_code_hook.setter
     def fulfillment_code_hook(
         self, value: Optional[pulumi.Input[V2modelsIntentFulfillmentCodeHookArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialResponseSetting")
     def initial_response_setting(
@@ -326,7 +359,8 @@ class _V2modelsIntentState:
     @initial_response_setting.setter
     def initial_response_setting(
         self, value: Optional[pulumi.Input[V2modelsIntentInitialResponseSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputContexts")
     def input_contexts(
@@ -340,12 +374,14 @@ class _V2modelsIntentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentInputContextArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intentId")
     def intent_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @intent_id.setter
-    def intent_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def intent_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kendraConfiguration")
     def kendra_configuration(
@@ -354,22 +390,28 @@ class _V2modelsIntentState:
     @kendra_configuration.setter
     def kendra_configuration(
         self, value: Optional[pulumi.Input[V2modelsIntentKendraConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedDateTime")
     def last_updated_date_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_date_time.setter
-    def last_updated_date_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_date_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localeId")
     def locale_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @locale_id.setter
-    def locale_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def locale_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputContexts")
     def output_contexts(
@@ -383,12 +425,16 @@ class _V2modelsIntentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentOutputContextArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parentIntentSignature")
     def parent_intent_signature(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent_intent_signature.setter
-    def parent_intent_signature(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent_intent_signature(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="qnaIntentConfiguration")
     def qna_intent_configuration(
@@ -397,12 +443,14 @@ class _V2modelsIntentState:
     @qna_intent_configuration.setter
     def qna_intent_configuration(
         self, value: Optional[pulumi.Input[V2modelsIntentQnaIntentConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleUtterances")
     def sample_utterances(
@@ -416,7 +464,8 @@ class _V2modelsIntentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentSampleUtteranceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="slotPriorities")
     def slot_priorities(
@@ -430,12 +479,16 @@ class _V2modelsIntentState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[V2modelsIntentSlotPriorityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[V2modelsIntentTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[V2modelsIntentTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[V2modelsIntentTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:lex/v2modelsIntent:V2modelsIntent")
 class V2modelsIntent(pulumi.CustomResource):

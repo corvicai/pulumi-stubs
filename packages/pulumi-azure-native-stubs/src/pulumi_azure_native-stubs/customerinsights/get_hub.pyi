@@ -59,7 +59,8 @@ class GetHubResult:
     def web_endpoint(self) -> _builtins.str: ...
 
 class AwaitableGetHubResult(GetHubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHubResult]:
+        ...
 
 def get_hub(
     hub_name: Optional[_builtins.str] = ...,

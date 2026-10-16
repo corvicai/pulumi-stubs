@@ -32,7 +32,8 @@ class GetRegionsResult:
     def regions(self) -> Sequence[outputs.GetRegionsRegionResult]: ...
 
 class AwaitableGetRegionsResult(GetRegionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionsResult]:
+        ...
 
 def get_regions(
     account_id: Optional[_builtins.str] = ...,

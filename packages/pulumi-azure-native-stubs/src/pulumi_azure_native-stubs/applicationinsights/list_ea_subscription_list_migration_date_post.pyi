@@ -27,7 +27,10 @@ class ListEASubscriptionListMigrationDatePostResult:
 class AwaitableListEASubscriptionListMigrationDatePostResult(
     ListEASubscriptionListMigrationDatePostResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListEASubscriptionListMigrationDatePostResult]:
+        ...
 
 def list_ea_subscription_list_migration_date_post(
     opts: Optional[pulumi.InvokeOptions] = ...,

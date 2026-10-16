@@ -52,7 +52,10 @@ class GetConfigurationProfileHCRPAssignmentResult:
 class AwaitableGetConfigurationProfileHCRPAssignmentResult(
     GetConfigurationProfileHCRPAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigurationProfileHCRPAssignmentResult]:
+        ...
 
 def get_configuration_profile_hcrpassignment(
     configuration_profile_assignment_name: Optional[_builtins.str] = ...,

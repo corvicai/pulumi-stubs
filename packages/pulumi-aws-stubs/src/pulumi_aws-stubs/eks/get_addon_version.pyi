@@ -43,7 +43,8 @@ class GetAddonVersionResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetAddonVersionResult(GetAddonVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAddonVersionResult]:
+        ...
 
 def get_addon_version(
     addon_name: Optional[_builtins.str] = ...,

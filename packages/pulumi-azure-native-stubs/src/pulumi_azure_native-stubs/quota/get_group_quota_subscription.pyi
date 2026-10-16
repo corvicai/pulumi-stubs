@@ -44,7 +44,8 @@ class GetGroupQuotaSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGroupQuotaSubscriptionResult(GetGroupQuotaSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroupQuotaSubscriptionResult]:
+        ...
 
 def get_group_quota_subscription(
     group_quota_name: Optional[_builtins.str] = ...,

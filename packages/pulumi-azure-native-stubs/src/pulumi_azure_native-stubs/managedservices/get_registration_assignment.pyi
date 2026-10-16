@@ -44,7 +44,8 @@ class GetRegistrationAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistrationAssignmentResult(GetRegistrationAssignmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistrationAssignmentResult]:
+        ...
 
 def get_registration_assignment(
     expand_registration_definition: Optional[_builtins.bool] = ...,

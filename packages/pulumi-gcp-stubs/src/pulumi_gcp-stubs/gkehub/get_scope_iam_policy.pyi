@@ -34,7 +34,8 @@ class GetScopeIamPolicyResult:
     def scope_id(self) -> _builtins.str: ...
 
 class AwaitableGetScopeIamPolicyResult(GetScopeIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScopeIamPolicyResult]:
+        ...
 
 def get_scope_iam_policy(
     project: Optional[_builtins.str] = ...,

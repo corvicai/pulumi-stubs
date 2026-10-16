@@ -44,7 +44,8 @@ class GetDefaultRolloutResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDefaultRolloutResult(GetDefaultRolloutResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDefaultRolloutResult]:
+        ...
 
 def get_default_rollout(
     provider_namespace: Optional[_builtins.str] = ...,

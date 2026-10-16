@@ -62,7 +62,8 @@ class GetAdminRuleCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAdminRuleCollectionResult(GetAdminRuleCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAdminRuleCollectionResult]:
+        ...
 
 def get_admin_rule_collection(
     configuration_name: Optional[_builtins.str] = ...,

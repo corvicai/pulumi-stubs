@@ -21,7 +21,8 @@ class ListApplicationTokensResult:
     def value(self) -> Optional[Sequence[outputs.ManagedIdentityTokenResponse]]: ...
 
 class AwaitableListApplicationTokensResult(ListApplicationTokensResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListApplicationTokensResult]:
+        ...
 
 def list_application_tokens(
     application_name: Optional[_builtins.str] = ...,

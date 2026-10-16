@@ -48,7 +48,8 @@ class GetRouterConfigurationResult:
     def virtual_interface_name(self) -> _builtins.str: ...
 
 class AwaitableGetRouterConfigurationResult(GetRouterConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouterConfigurationResult]:
+        ...
 
 def get_router_configuration(
     region: Optional[_builtins.str] = ...,

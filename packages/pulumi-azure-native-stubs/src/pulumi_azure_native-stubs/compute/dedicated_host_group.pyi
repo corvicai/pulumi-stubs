@@ -29,12 +29,16 @@ class DedicatedHostGroupArgs:
     @pulumi.getter(name="platformFaultDomainCount")
     def platform_fault_domain_count(self) -> pulumi.Input[_builtins.int]: ...
     @platform_fault_domain_count.setter
-    def platform_fault_domain_count(self, value: pulumi.Input[_builtins.int]): ...
+    def platform_fault_domain_count(
+        self, value: pulumi.Input[_builtins.int]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalCapabilities")
     def additional_capabilities(
@@ -48,24 +52,28 @@ class DedicatedHostGroupArgs:
         value: Optional[
             pulumi.Input[DedicatedHostGroupPropertiesAdditionalCapabilitiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostGroupName")
     def host_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_group_name.setter
-    def host_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_group_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportAutomaticPlacement")
     def support_automatic_placement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @support_automatic_placement.setter
     def support_automatic_placement(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -74,7 +82,8 @@ class DedicatedHostGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -83,7 +92,8 @@ class DedicatedHostGroupArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:compute:DedicatedHostGroup")
 class DedicatedHostGroup(pulumi.CustomResource):

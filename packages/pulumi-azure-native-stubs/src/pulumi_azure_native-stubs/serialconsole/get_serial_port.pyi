@@ -34,7 +34,8 @@ class GetSerialPortResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSerialPortResult(GetSerialPortResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSerialPortResult]:
+        ...
 
 def get_serial_port(
     parent_resource: Optional[_builtins.str] = ...,

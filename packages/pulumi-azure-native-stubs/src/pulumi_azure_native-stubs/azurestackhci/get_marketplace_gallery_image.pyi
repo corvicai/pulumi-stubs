@@ -84,7 +84,8 @@ class GetMarketplaceGalleryImageResult:
     def version(self) -> Optional[outputs.GalleryImageVersionResponse]: ...
 
 class AwaitableGetMarketplaceGalleryImageResult(GetMarketplaceGalleryImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMarketplaceGalleryImageResult]:
+        ...
 
 def get_marketplace_gallery_image(
     marketplace_gallery_image_name: Optional[_builtins.str] = ...,

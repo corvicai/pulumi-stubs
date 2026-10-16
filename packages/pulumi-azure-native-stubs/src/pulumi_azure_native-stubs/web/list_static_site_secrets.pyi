@@ -34,7 +34,8 @@ class ListStaticSiteSecretsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListStaticSiteSecretsResult(ListStaticSiteSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListStaticSiteSecretsResult]:
+        ...
 
 def list_static_site_secrets(
     name: Optional[_builtins.str] = ...,

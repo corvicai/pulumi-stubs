@@ -81,7 +81,10 @@ class GetAssessmentsMetadataSubscriptionResult:
 class AwaitableGetAssessmentsMetadataSubscriptionResult(
     GetAssessmentsMetadataSubscriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAssessmentsMetadataSubscriptionResult]:
+        ...
 
 def get_assessments_metadata_subscription(
     assessment_metadata_name: Optional[_builtins.str] = ...,

@@ -182,7 +182,8 @@ class GetServerGroupClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerGroupClusterResult(GetServerGroupClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerGroupClusterResult]:
+        ...
 
 def get_server_group_cluster(
     cluster_name: Optional[_builtins.str] = ...,

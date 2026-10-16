@@ -50,12 +50,16 @@ class MetastoreServiceArgs:
     @pulumi.getter(name="databaseType")
     def database_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_type.setter
-    def database_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfig")
     def encryption_config(
@@ -64,7 +68,8 @@ class MetastoreServiceArgs:
     @encryption_config.setter
     def encryption_config(
         self, value: Optional[pulumi.Input[MetastoreServiceEncryptionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hiveMetastoreConfig")
     def hive_metastore_config(
@@ -73,7 +78,8 @@ class MetastoreServiceArgs:
     @hive_metastore_config.setter
     def hive_metastore_config(
         self, value: Optional[pulumi.Input[MetastoreServiceHiveMetastoreConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -82,12 +88,14 @@ class MetastoreServiceArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceWindow")
     def maintenance_window(
@@ -96,7 +104,8 @@ class MetastoreServiceArgs:
     @maintenance_window.setter
     def maintenance_window(
         self, value: Optional[pulumi.Input[MetastoreServiceMaintenanceWindowArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataIntegration")
     def metadata_integration(
@@ -105,12 +114,14 @@ class MetastoreServiceArgs:
     @metadata_integration.setter
     def metadata_integration(
         self, value: Optional[pulumi.Input[MetastoreServiceMetadataIntegrationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network.setter
-    def network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -119,22 +130,26 @@ class MetastoreServiceArgs:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[MetastoreServiceNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseChannel")
     def release_channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @release_channel.setter
-    def release_channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def release_channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingConfig")
     def scaling_config(
@@ -143,7 +158,8 @@ class MetastoreServiceArgs:
     @scaling_config.setter
     def scaling_config(
         self, value: Optional[pulumi.Input[MetastoreServiceScalingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduledBackup")
     def scheduled_backup(
@@ -152,12 +168,14 @@ class MetastoreServiceArgs:
     @scheduled_backup.setter
     def scheduled_backup(
         self, value: Optional[pulumi.Input[MetastoreServiceScheduledBackupArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceId")
     def service_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_id.setter
-    def service_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -166,7 +184,8 @@ class MetastoreServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telemetryConfig")
     def telemetry_config(
@@ -175,12 +194,14 @@ class MetastoreServiceArgs:
     @telemetry_config.setter
     def telemetry_config(
         self, value: Optional[pulumi.Input[MetastoreServiceTelemetryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _MetastoreServiceState:
@@ -237,22 +258,30 @@ class _MetastoreServiceState:
     @pulumi.getter(name="artifactGcsUri")
     def artifact_gcs_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @artifact_gcs_uri.setter
-    def artifact_gcs_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def artifact_gcs_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseType")
     def database_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_type.setter
-    def database_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -261,7 +290,8 @@ class _MetastoreServiceState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfig")
     def encryption_config(
@@ -270,12 +300,14 @@ class _MetastoreServiceState:
     @encryption_config.setter
     def encryption_config(
         self, value: Optional[pulumi.Input[MetastoreServiceEncryptionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointUri")
     def endpoint_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_uri.setter
-    def endpoint_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hiveMetastoreConfig")
     def hive_metastore_config(
@@ -284,7 +316,8 @@ class _MetastoreServiceState:
     @hive_metastore_config.setter
     def hive_metastore_config(
         self, value: Optional[pulumi.Input[MetastoreServiceHiveMetastoreConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -293,12 +326,14 @@ class _MetastoreServiceState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceWindow")
     def maintenance_window(
@@ -307,7 +342,8 @@ class _MetastoreServiceState:
     @maintenance_window.setter
     def maintenance_window(
         self, value: Optional[pulumi.Input[MetastoreServiceMaintenanceWindowArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataIntegration")
     def metadata_integration(
@@ -316,17 +352,20 @@ class _MetastoreServiceState:
     @metadata_integration.setter
     def metadata_integration(
         self, value: Optional[pulumi.Input[MetastoreServiceMetadataIntegrationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network.setter
-    def network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -335,17 +374,20 @@ class _MetastoreServiceState:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[MetastoreServiceNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -354,12 +396,14 @@ class _MetastoreServiceState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseChannel")
     def release_channel(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @release_channel.setter
-    def release_channel(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def release_channel(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingConfig")
     def scaling_config(
@@ -368,7 +412,8 @@ class _MetastoreServiceState:
     @scaling_config.setter
     def scaling_config(
         self, value: Optional[pulumi.Input[MetastoreServiceScalingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduledBackup")
     def scheduled_backup(
@@ -377,22 +422,26 @@ class _MetastoreServiceState:
     @scheduled_backup.setter
     def scheduled_backup(
         self, value: Optional[pulumi.Input[MetastoreServiceScheduledBackupArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceId")
     def service_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_id.setter
-    def service_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stateMessage")
     def state_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state_message.setter
-    def state_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -401,7 +450,8 @@ class _MetastoreServiceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="telemetryConfig")
     def telemetry_config(
@@ -410,22 +460,26 @@ class _MetastoreServiceState:
     @telemetry_config.setter
     def telemetry_config(
         self, value: Optional[pulumi.Input[MetastoreServiceTelemetryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:dataproc/metastoreService:MetastoreService")
 class MetastoreService(pulumi.CustomResource):

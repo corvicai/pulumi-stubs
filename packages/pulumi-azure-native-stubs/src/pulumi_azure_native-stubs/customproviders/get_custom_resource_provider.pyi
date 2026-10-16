@@ -66,7 +66,8 @@ class GetCustomResourceProviderResult:
     ) -> Optional[Sequence[outputs.CustomRPValidationsResponse]]: ...
 
 class AwaitableGetCustomResourceProviderResult(GetCustomResourceProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomResourceProviderResult]:
+        ...
 
 def get_custom_resource_provider(
     resource_group_name: Optional[_builtins.str] = ...,

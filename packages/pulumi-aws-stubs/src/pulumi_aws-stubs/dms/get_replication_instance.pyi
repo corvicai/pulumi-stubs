@@ -95,7 +95,8 @@ class GetReplicationInstanceResult:
     def vpc_security_group_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetReplicationInstanceResult(GetReplicationInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationInstanceResult]:
+        ...
 
 def get_replication_instance(
     region: Optional[_builtins.str] = ...,

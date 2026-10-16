@@ -56,7 +56,8 @@ class GetPublicIPAddressResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPublicIPAddressResult(GetPublicIPAddressResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPublicIPAddressResult]:
+        ...
 
 def get_public_ip_address(
     public_ip_address_name: Optional[_builtins.str] = ...,

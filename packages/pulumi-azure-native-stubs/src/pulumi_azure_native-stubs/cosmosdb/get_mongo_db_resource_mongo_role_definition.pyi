@@ -54,7 +54,10 @@ class GetMongoDBResourceMongoRoleDefinitionResult:
 class AwaitableGetMongoDBResourceMongoRoleDefinitionResult(
     GetMongoDBResourceMongoRoleDefinitionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMongoDBResourceMongoRoleDefinitionResult]:
+        ...
 
 def get_mongo_db_resource_mongo_role_definition(
     account_name: Optional[_builtins.str] = ...,

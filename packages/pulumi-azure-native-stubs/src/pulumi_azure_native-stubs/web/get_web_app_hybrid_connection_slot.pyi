@@ -71,7 +71,10 @@ class GetWebAppHybridConnectionSlotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppHybridConnectionSlotResult(GetWebAppHybridConnectionSlotResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppHybridConnectionSlotResult]:
+        ...
 
 def get_web_app_hybrid_connection_slot(
     name: Optional[_builtins.str] = ...,

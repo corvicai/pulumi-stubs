@@ -52,7 +52,10 @@ class GetPrivateEndpointConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateEndpointConnectionResult(GetPrivateEndpointConnectionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionResult]:
+        ...
 
 def get_private_endpoint_connection(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

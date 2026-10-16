@@ -85,12 +85,14 @@ class ScalingPlanPersonalScheduleArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPlanName")
     def scaling_plan_name(self) -> pulumi.Input[_builtins.str]: ...
     @scaling_plan_name.setter
-    def scaling_plan_name(self, value: pulumi.Input[_builtins.str]): ...
+    def scaling_plan_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysOfWeek")
     def days_of_week(
@@ -104,7 +106,8 @@ class ScalingPlanPersonalScheduleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, DayOfWeek]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakActionOnDisconnect")
     def off_peak_action_on_disconnect(
@@ -114,7 +117,8 @@ class ScalingPlanPersonalScheduleArgs:
     def off_peak_action_on_disconnect(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakActionOnLogoff")
     def off_peak_action_on_logoff(
@@ -124,7 +128,8 @@ class ScalingPlanPersonalScheduleArgs:
     def off_peak_action_on_logoff(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakMinutesToWaitOnDisconnect")
     def off_peak_minutes_to_wait_on_disconnect(
@@ -133,7 +138,8 @@ class ScalingPlanPersonalScheduleArgs:
     @off_peak_minutes_to_wait_on_disconnect.setter
     def off_peak_minutes_to_wait_on_disconnect(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakMinutesToWaitOnLogoff")
     def off_peak_minutes_to_wait_on_logoff(
@@ -142,12 +148,14 @@ class ScalingPlanPersonalScheduleArgs:
     @off_peak_minutes_to_wait_on_logoff.setter
     def off_peak_minutes_to_wait_on_logoff(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakStartTime")
     def off_peak_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @off_peak_start_time.setter
-    def off_peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def off_peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offPeakStartVMOnConnect")
     def off_peak_start_vm_on_connect(
@@ -156,7 +164,8 @@ class ScalingPlanPersonalScheduleArgs:
     @off_peak_start_vm_on_connect.setter
     def off_peak_start_vm_on_connect(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SetStartVMOnConnect]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakActionOnDisconnect")
     def peak_action_on_disconnect(
@@ -166,7 +175,8 @@ class ScalingPlanPersonalScheduleArgs:
     def peak_action_on_disconnect(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakActionOnLogoff")
     def peak_action_on_logoff(
@@ -176,7 +186,8 @@ class ScalingPlanPersonalScheduleArgs:
     def peak_action_on_logoff(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakMinutesToWaitOnDisconnect")
     def peak_minutes_to_wait_on_disconnect(
@@ -185,7 +196,8 @@ class ScalingPlanPersonalScheduleArgs:
     @peak_minutes_to_wait_on_disconnect.setter
     def peak_minutes_to_wait_on_disconnect(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakMinutesToWaitOnLogoff")
     def peak_minutes_to_wait_on_logoff(
@@ -194,12 +206,14 @@ class ScalingPlanPersonalScheduleArgs:
     @peak_minutes_to_wait_on_logoff.setter
     def peak_minutes_to_wait_on_logoff(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakStartTime")
     def peak_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @peak_start_time.setter
-    def peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def peak_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peakStartVMOnConnect")
     def peak_start_vm_on_connect(
@@ -208,7 +222,8 @@ class ScalingPlanPersonalScheduleArgs:
     @peak_start_vm_on_connect.setter
     def peak_start_vm_on_connect(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SetStartVMOnConnect]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownActionOnDisconnect")
     def ramp_down_action_on_disconnect(
@@ -218,7 +233,8 @@ class ScalingPlanPersonalScheduleArgs:
     def ramp_down_action_on_disconnect(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownActionOnLogoff")
     def ramp_down_action_on_logoff(
@@ -228,7 +244,8 @@ class ScalingPlanPersonalScheduleArgs:
     def ramp_down_action_on_logoff(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownMinutesToWaitOnDisconnect")
     def ramp_down_minutes_to_wait_on_disconnect(
@@ -237,7 +254,8 @@ class ScalingPlanPersonalScheduleArgs:
     @ramp_down_minutes_to_wait_on_disconnect.setter
     def ramp_down_minutes_to_wait_on_disconnect(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownMinutesToWaitOnLogoff")
     def ramp_down_minutes_to_wait_on_logoff(
@@ -246,12 +264,14 @@ class ScalingPlanPersonalScheduleArgs:
     @ramp_down_minutes_to_wait_on_logoff.setter
     def ramp_down_minutes_to_wait_on_logoff(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownStartTime")
     def ramp_down_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @ramp_down_start_time.setter
-    def ramp_down_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def ramp_down_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampDownStartVMOnConnect")
     def ramp_down_start_vm_on_connect(
@@ -260,7 +280,8 @@ class ScalingPlanPersonalScheduleArgs:
     @ramp_down_start_vm_on_connect.setter
     def ramp_down_start_vm_on_connect(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SetStartVMOnConnect]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpActionOnDisconnect")
     def ramp_up_action_on_disconnect(
@@ -270,7 +291,8 @@ class ScalingPlanPersonalScheduleArgs:
     def ramp_up_action_on_disconnect(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpActionOnLogoff")
     def ramp_up_action_on_logoff(
@@ -280,7 +302,8 @@ class ScalingPlanPersonalScheduleArgs:
     def ramp_up_action_on_logoff(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, SessionHandlingOperation]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpAutoStartHosts")
     def ramp_up_auto_start_hosts(
@@ -289,7 +312,8 @@ class ScalingPlanPersonalScheduleArgs:
     @ramp_up_auto_start_hosts.setter
     def ramp_up_auto_start_hosts(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StartupBehavior]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpMinutesToWaitOnDisconnect")
     def ramp_up_minutes_to_wait_on_disconnect(
@@ -298,7 +322,8 @@ class ScalingPlanPersonalScheduleArgs:
     @ramp_up_minutes_to_wait_on_disconnect.setter
     def ramp_up_minutes_to_wait_on_disconnect(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpMinutesToWaitOnLogoff")
     def ramp_up_minutes_to_wait_on_logoff(
@@ -307,12 +332,14 @@ class ScalingPlanPersonalScheduleArgs:
     @ramp_up_minutes_to_wait_on_logoff.setter
     def ramp_up_minutes_to_wait_on_logoff(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpStartTime")
     def ramp_up_start_time(self) -> Optional[pulumi.Input[TimeArgs]]: ...
     @ramp_up_start_time.setter
-    def ramp_up_start_time(self, value: Optional[pulumi.Input[TimeArgs]]): ...
+    def ramp_up_start_time(self, value: Optional[pulumi.Input[TimeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rampUpStartVMOnConnect")
     def ramp_up_start_vm_on_connect(
@@ -321,14 +348,16 @@ class ScalingPlanPersonalScheduleArgs:
     @ramp_up_start_vm_on_connect.setter
     def ramp_up_start_vm_on_connect(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SetStartVMOnConnect]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPlanScheduleName")
     def scaling_plan_schedule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scaling_plan_schedule_name.setter
     def scaling_plan_schedule_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ScalingPlanPersonalSchedule(pulumi.CustomResource):

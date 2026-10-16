@@ -28,7 +28,8 @@ class GetSecretResult:
     def secrets(self) -> Sequence[outputs.GetSecretSecretResult]: ...
 
 class AwaitableGetSecretResult(GetSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretResult]:
+        ...
 
 def get_secret(
     region: Optional[_builtins.str] = ...,

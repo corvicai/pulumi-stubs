@@ -26,7 +26,8 @@ class ListLocalUserKeysResult:
     ) -> Optional[Sequence[outputs.SshPublicKeyResponse]]: ...
 
 class AwaitableListLocalUserKeysResult(ListLocalUserKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListLocalUserKeysResult]:
+        ...
 
 def list_local_user_keys(
     account_name: Optional[_builtins.str] = ...,

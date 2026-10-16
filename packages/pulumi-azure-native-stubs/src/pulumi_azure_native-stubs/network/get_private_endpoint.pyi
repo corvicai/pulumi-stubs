@@ -98,7 +98,8 @@ class GetPrivateEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateEndpointResult(GetPrivateEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateEndpointResult]:
+        ...
 
 def get_private_endpoint(
     expand: Optional[_builtins.str] = ...,

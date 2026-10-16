@@ -56,7 +56,10 @@ class GetOrganizationEnvironmentByIdResult:
 class AwaitableGetOrganizationEnvironmentByIdResult(
     GetOrganizationEnvironmentByIdResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOrganizationEnvironmentByIdResult]:
+        ...
 
 def get_organization_environment_by_id(
     environment_id: Optional[_builtins.str] = ...,

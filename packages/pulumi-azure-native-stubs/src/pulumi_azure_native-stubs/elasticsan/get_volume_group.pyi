@@ -76,7 +76,8 @@ class GetVolumeGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVolumeGroupResult(GetVolumeGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVolumeGroupResult]:
+        ...
 
 def get_volume_group(
     elastic_san_name: Optional[_builtins.str] = ...,

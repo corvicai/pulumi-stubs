@@ -22,7 +22,10 @@ class ListFirewallPolicyIdpsSignaturesFilterValueResult:
 class AwaitableListFirewallPolicyIdpsSignaturesFilterValueResult(
     ListFirewallPolicyIdpsSignaturesFilterValueResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListFirewallPolicyIdpsSignaturesFilterValueResult]:
+        ...
 
 def list_firewall_policy_idps_signatures_filter_value(
     filter_name: Optional[_builtins.str] = ...,

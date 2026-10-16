@@ -76,7 +76,8 @@ class GetDiscountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDiscountResult(GetDiscountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiscountResult]:
+        ...
 
 def get_discount(
     discount_name: Optional[_builtins.str] = ...,

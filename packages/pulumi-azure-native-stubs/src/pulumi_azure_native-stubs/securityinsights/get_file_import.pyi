@@ -92,7 +92,8 @@ class GetFileImportResult:
     def valid_record_count(self) -> _builtins.int: ...
 
 class AwaitableGetFileImportResult(GetFileImportResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileImportResult]:
+        ...
 
 def get_file_import(
     file_import_id: Optional[_builtins.str] = ...,

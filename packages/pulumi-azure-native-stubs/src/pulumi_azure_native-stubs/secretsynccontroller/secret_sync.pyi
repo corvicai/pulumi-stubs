@@ -40,7 +40,8 @@ class SecretSyncArgs:
     @kubernetes_secret_type.setter
     def kubernetes_secret_type(
         self, value: pulumi.Input[Union[_builtins.str, KubernetesSecretType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectSecretMapping")
     def object_secret_mapping(
@@ -50,22 +51,28 @@ class SecretSyncArgs:
     def object_secret_mapping(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[KubernetesSecretObjectMappingArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretProviderClassName")
     def secret_provider_class_name(self) -> pulumi.Input[_builtins.str]: ...
     @secret_provider_class_name.setter
-    def secret_provider_class_name(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_provider_class_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountName")
     def service_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @service_account_name.setter
-    def service_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def service_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(
@@ -79,22 +86,30 @@ class SecretSyncArgs:
         value: Optional[
             pulumi.Input[AzureResourceManagerCommonTypesExtendedLocationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceSynchronization")
     def force_synchronization(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @force_synchronization.setter
-    def force_synchronization(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def force_synchronization(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretSyncName")
     def secret_sync_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_sync_name.setter
-    def secret_sync_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_sync_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -103,7 +118,8 @@ class SecretSyncArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:secretsynccontroller:SecretSync")
 class SecretSync(pulumi.CustomResource):

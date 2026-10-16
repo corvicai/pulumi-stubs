@@ -52,7 +52,8 @@ class GetDiscoveredServiceResult:
     def service_uri(self) -> _builtins.str: ...
 
 class AwaitableGetDiscoveredServiceResult(GetDiscoveredServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiscoveredServiceResult]:
+        ...
 
 def get_discovered_service(
     location: Optional[_builtins.str] = ...,

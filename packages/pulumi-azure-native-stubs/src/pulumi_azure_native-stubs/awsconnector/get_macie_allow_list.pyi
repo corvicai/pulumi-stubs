@@ -52,7 +52,8 @@ class GetMacieAllowListResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMacieAllowListResult(GetMacieAllowListResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMacieAllowListResult]:
+        ...
 
 def get_macie_allow_list(
     name: Optional[_builtins.str] = ...,

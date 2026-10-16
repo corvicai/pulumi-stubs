@@ -32,7 +32,8 @@ class GetBrokerNodesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetBrokerNodesResult(GetBrokerNodesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBrokerNodesResult]:
+        ...
 
 def get_broker_nodes(
     cluster_arn: Optional[_builtins.str] = ...,

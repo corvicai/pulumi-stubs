@@ -70,7 +70,8 @@ class GetAppConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAppConnectionResult(GetAppConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppConnectionResult]:
+        ...
 
 def get_app_connection(
     name: Optional[_builtins.str] = ...,

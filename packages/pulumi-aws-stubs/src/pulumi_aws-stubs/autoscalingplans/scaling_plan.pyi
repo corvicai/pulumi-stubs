@@ -27,7 +27,8 @@ class ScalingPlanArgs:
     @application_source.setter
     def application_source(
         self, value: pulumi.Input[ScalingPlanApplicationSourceArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingInstructions")
     def scaling_instructions(
@@ -37,17 +38,20 @@ class ScalingPlanArgs:
     def scaling_instructions(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[ScalingPlanScalingInstructionArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ScalingPlanState:
@@ -72,17 +76,20 @@ class _ScalingPlanState:
     @application_source.setter
     def application_source(
         self, value: Optional[pulumi.Input[ScalingPlanApplicationSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingInstructions")
     def scaling_instructions(
@@ -96,12 +103,16 @@ class _ScalingPlanState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ScalingPlanScalingInstructionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPlanVersion")
     def scaling_plan_version(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @scaling_plan_version.setter
-    def scaling_plan_version(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def scaling_plan_version(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:autoscalingplans/scalingPlan:ScalingPlan")
 class ScalingPlan(pulumi.CustomResource):

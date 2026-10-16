@@ -44,7 +44,8 @@ class GetImportCollectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetImportCollectorResult(GetImportCollectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImportCollectorResult]:
+        ...
 
 def get_import_collector(
     import_collector_name: Optional[_builtins.str] = ...,

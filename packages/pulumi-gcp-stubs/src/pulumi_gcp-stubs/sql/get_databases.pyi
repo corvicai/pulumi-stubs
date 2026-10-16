@@ -32,7 +32,8 @@ class GetDatabasesResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDatabasesResult(GetDatabasesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabasesResult]:
+        ...
 
 def get_databases(
     instance: Optional[_builtins.str] = ...,

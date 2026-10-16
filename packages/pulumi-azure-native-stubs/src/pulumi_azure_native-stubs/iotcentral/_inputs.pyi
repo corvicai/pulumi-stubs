@@ -31,7 +31,8 @@ class AppSkuInfoArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, AppSku]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, AppSku]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, AppSku]]):  # -> None:
+        ...
 
 class NetworkRuleSetIpRuleArgsDict(TypedDict):
     filter_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -49,12 +50,14 @@ class NetworkRuleSetIpRuleArgs:
     @pulumi.getter(name="filterName")
     def filter_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_name.setter
-    def filter_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipMask")
     def ip_mask(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ip_mask.setter
-    def ip_mask(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ip_mask(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class NetworkRuleSetsArgsDict(TypedDict):
     apply_to_devices: NotRequired[pulumi.Input[_builtins.bool]]
@@ -82,12 +85,18 @@ class NetworkRuleSetsArgs:
     @pulumi.getter(name="applyToDevices")
     def apply_to_devices(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @apply_to_devices.setter
-    def apply_to_devices(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def apply_to_devices(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applyToIoTCentral")
     def apply_to_io_t_central(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @apply_to_io_t_central.setter
-    def apply_to_io_t_central(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def apply_to_io_t_central(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultAction")
     def default_action(
@@ -96,7 +105,8 @@ class NetworkRuleSetsArgs:
     @default_action.setter
     def default_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkAction]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRules")
     def ip_rules(
@@ -106,7 +116,8 @@ class NetworkRuleSetsArgs:
     def ip_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[NetworkRuleSetIpRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -130,12 +141,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -149,7 +164,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SystemAssignedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, SystemAssignedServiceIdentityType]]
@@ -170,4 +186,5 @@ class SystemAssignedServiceIdentityArgs:
     def type(
         self,
         value: pulumi.Input[Union[_builtins.str, SystemAssignedServiceIdentityType]],
-    ): ...
+    ):  # -> None:
+        ...

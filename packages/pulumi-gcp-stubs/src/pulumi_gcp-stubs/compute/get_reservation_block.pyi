@@ -100,7 +100,8 @@ class GetReservationBlockResult:
     def zone(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetReservationBlockResult(GetReservationBlockResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReservationBlockResult]:
+        ...
 
 def get_reservation_block(
     name: Optional[_builtins.str] = ...,

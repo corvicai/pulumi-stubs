@@ -48,12 +48,14 @@ class WorkspaceArgs:
     @pulumi.getter(name="managedResourceGroupId")
     def managed_resource_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @managed_resource_group_id.setter
-    def managed_resource_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def managed_resource_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessConnector")
     def access_connector(
@@ -62,7 +64,8 @@ class WorkspaceArgs:
     @access_connector.setter
     def access_connector(
         self, value: Optional[pulumi.Input[WorkspacePropertiesAccessConnectorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authorizations(
@@ -76,7 +79,8 @@ class WorkspaceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkspaceProviderAuthorizationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCatalog")
     def default_catalog(
@@ -85,7 +89,8 @@ class WorkspaceArgs:
     @default_catalog.setter
     def default_catalog(
         self, value: Optional[pulumi.Input[DefaultCatalogPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultStorageFirewall")
     def default_storage_firewall(
@@ -95,7 +100,8 @@ class WorkspaceArgs:
     def default_storage_firewall(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DefaultStorageFirewall]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(
@@ -104,7 +110,8 @@ class WorkspaceArgs:
     @encryption.setter
     def encryption(
         self, value: Optional[pulumi.Input[WorkspacePropertiesEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedSecurityCompliance")
     def enhanced_security_compliance(
@@ -113,19 +120,22 @@ class WorkspaceArgs:
     @enhanced_security_compliance.setter
     def enhanced_security_compliance(
         self, value: Optional[pulumi.Input[EnhancedSecurityComplianceDefinitionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(self) -> Optional[pulumi.Input[WorkspaceCustomParametersArgs]]: ...
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[WorkspaceCustomParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -134,7 +144,8 @@ class WorkspaceArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requiredNsgRules")
     def required_nsg_rules(
@@ -143,12 +154,14 @@ class WorkspaceArgs:
     @required_nsg_rules.setter
     def required_nsg_rules(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RequiredNsgRules]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[SkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -157,17 +170,22 @@ class WorkspaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uiDefinitionUri")
     def ui_definition_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ui_definition_uri.setter
-    def ui_definition_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ui_definition_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_name.setter
-    def workspace_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:databricks:Workspace")
 class Workspace(pulumi.CustomResource):

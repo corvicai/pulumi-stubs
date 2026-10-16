@@ -32,17 +32,20 @@ class PrivateStoreCollectionOfferArgs:
     @pulumi.getter(name="collectionId")
     def collection_id(self) -> pulumi.Input[_builtins.str]: ...
     @collection_id.setter
-    def collection_id(self, value: pulumi.Input[_builtins.str]): ...
+    def collection_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateStoreId")
     def private_store_id(self) -> pulumi.Input[_builtins.str]: ...
     @private_store_id.setter
-    def private_store_id(self, value: pulumi.Input[_builtins.str]): ...
+    def private_store_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eTag")
     def e_tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @e_tag.setter
-    def e_tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def e_tag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iconFileUris")
     def icon_file_uris(
@@ -51,19 +54,22 @@ class PrivateStoreCollectionOfferArgs:
     @icon_file_uris.setter
     def icon_file_uris(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="offerId")
     def offer_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @offer_id.setter
-    def offer_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def offer_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def plans(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[PlanArgs]]]]: ...
     @plans.setter
     def plans(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specificPlanIdsLimitation")
     def specific_plan_ids_limitation(
@@ -72,7 +78,8 @@ class PrivateStoreCollectionOfferArgs:
     @specific_plan_ids_limitation.setter
     def specific_plan_ids_limitation(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateSuppressedDueIdempotence")
     def update_suppressed_due_idempotence(
@@ -81,7 +88,8 @@ class PrivateStoreCollectionOfferArgs:
     @update_suppressed_due_idempotence.setter
     def update_suppressed_due_idempotence(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PrivateStoreCollectionOffer(pulumi.CustomResource):

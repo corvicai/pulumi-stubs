@@ -44,7 +44,8 @@ class GetComponentContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetComponentContainerResult(GetComponentContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetComponentContainerResult]:
+        ...
 
 def get_component_container(
     name: Optional[_builtins.str] = ...,

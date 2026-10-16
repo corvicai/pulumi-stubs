@@ -64,7 +64,8 @@ class GetOutboundEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOutboundEndpointResult(GetOutboundEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOutboundEndpointResult]:
+        ...
 
 def get_outbound_endpoint(
     dns_resolver_name: Optional[_builtins.str] = ...,

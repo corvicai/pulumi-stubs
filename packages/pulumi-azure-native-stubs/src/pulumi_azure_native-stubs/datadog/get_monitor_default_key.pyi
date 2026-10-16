@@ -29,7 +29,8 @@ class GetMonitorDefaultKeyResult:
     def name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetMonitorDefaultKeyResult(GetMonitorDefaultKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMonitorDefaultKeyResult]:
+        ...
 
 def get_monitor_default_key(
     monitor_name: Optional[_builtins.str] = ...,

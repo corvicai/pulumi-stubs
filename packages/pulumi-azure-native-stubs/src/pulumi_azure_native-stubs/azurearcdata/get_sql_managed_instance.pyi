@@ -60,7 +60,8 @@ class GetSqlManagedInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlManagedInstanceResult(GetSqlManagedInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlManagedInstanceResult]:
+        ...
 
 def get_sql_managed_instance(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -24,7 +24,8 @@ class ListStaticSiteUsersResult:
     def value(self) -> Sequence[outputs.StaticSiteUserARMResourceResponse]: ...
 
 class AwaitableListStaticSiteUsersResult(ListStaticSiteUsersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListStaticSiteUsersResult]:
+        ...
 
 def list_static_site_users(
     authprovider: Optional[_builtins.str] = ...,

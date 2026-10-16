@@ -39,7 +39,8 @@ class CatalogDatabaseArgs:
     @pulumi.getter(name="catalogId")
     def catalog_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @catalog_id.setter
-    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTableDefaultPermissions")
     def create_table_default_permissions(
@@ -57,12 +58,14 @@ class CatalogDatabaseArgs:
                 Sequence[pulumi.Input[CatalogDatabaseCreateTableDefaultPermissionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="federatedDatabase")
     def federated_database(
@@ -71,17 +74,20 @@ class CatalogDatabaseArgs:
     @federated_database.setter
     def federated_database(
         self, value: Optional[pulumi.Input[CatalogDatabaseFederatedDatabaseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="locationUri")
     def location_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location_uri.setter
-    def location_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -90,12 +96,14 @@ class CatalogDatabaseArgs:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -104,7 +112,8 @@ class CatalogDatabaseArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabase")
     def target_database(
@@ -113,7 +122,8 @@ class CatalogDatabaseArgs:
     @target_database.setter
     def target_database(
         self, value: Optional[pulumi.Input[CatalogDatabaseTargetDatabaseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CatalogDatabaseState:
@@ -149,12 +159,14 @@ class _CatalogDatabaseState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogId")
     def catalog_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @catalog_id.setter
-    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def catalog_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTableDefaultPermissions")
     def create_table_default_permissions(
@@ -172,12 +184,14 @@ class _CatalogDatabaseState:
                 Sequence[pulumi.Input[CatalogDatabaseCreateTableDefaultPermissionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="federatedDatabase")
     def federated_database(
@@ -186,17 +200,20 @@ class _CatalogDatabaseState:
     @federated_database.setter
     def federated_database(
         self, value: Optional[pulumi.Input[CatalogDatabaseFederatedDatabaseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="locationUri")
     def location_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location_uri.setter
-    def location_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -205,12 +222,14 @@ class _CatalogDatabaseState:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -219,7 +238,8 @@ class _CatalogDatabaseState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -228,7 +248,8 @@ class _CatalogDatabaseState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDatabase")
     def target_database(
@@ -237,7 +258,8 @@ class _CatalogDatabaseState:
     @target_database.setter
     def target_database(
         self, value: Optional[pulumi.Input[CatalogDatabaseTargetDatabaseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:glue/catalogDatabase:CatalogDatabase")
 class CatalogDatabase(pulumi.CustomResource):

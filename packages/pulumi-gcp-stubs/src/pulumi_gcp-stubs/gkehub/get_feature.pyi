@@ -78,7 +78,8 @@ class GetFeatureResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetFeatureResult(GetFeatureResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFeatureResult]:
+        ...
 
 def get_feature(
     location: Optional[_builtins.str] = ...,

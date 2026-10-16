@@ -64,7 +64,8 @@ class GetEvidenceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEvidenceResult(GetEvidenceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEvidenceResult]:
+        ...
 
 def get_evidence(
     evidence_name: Optional[_builtins.str] = ...,

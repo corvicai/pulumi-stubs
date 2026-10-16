@@ -56,7 +56,8 @@ class GetHybridIdentityMetadatumResult:
     def vm_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetHybridIdentityMetadatumResult(GetHybridIdentityMetadatumResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHybridIdentityMetadatumResult]:
+        ...
 
 def get_hybrid_identity_metadatum(
     metadata_name: Optional[_builtins.str] = ...,

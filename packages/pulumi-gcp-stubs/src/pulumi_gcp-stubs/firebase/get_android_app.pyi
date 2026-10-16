@@ -63,7 +63,8 @@ class GetAndroidAppResult:
     def sha256_hashes(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetAndroidAppResult(GetAndroidAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAndroidAppResult]:
+        ...
 
 def get_android_app(
     app_id: Optional[_builtins.str] = ...,

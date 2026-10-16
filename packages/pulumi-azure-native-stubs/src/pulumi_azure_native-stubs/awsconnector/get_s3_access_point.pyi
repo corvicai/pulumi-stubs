@@ -52,7 +52,8 @@ class GetS3AccessPointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetS3AccessPointResult(GetS3AccessPointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetS3AccessPointResult]:
+        ...
 
 def get_s3_access_point(
     name: Optional[_builtins.str] = ...,

@@ -72,7 +72,8 @@ class GetFluidRelayServerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFluidRelayServerResult(GetFluidRelayServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFluidRelayServerResult]:
+        ...
 
 def get_fluid_relay_server(
     fluid_relay_server_name: Optional[_builtins.str] = ...,

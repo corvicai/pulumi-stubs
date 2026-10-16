@@ -66,7 +66,8 @@ class GetRoutingProfileResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetRoutingProfileResult(GetRoutingProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoutingProfileResult]:
+        ...
 
 def get_routing_profile(
     instance_id: Optional[_builtins.str] = ...,

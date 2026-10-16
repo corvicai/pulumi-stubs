@@ -44,7 +44,8 @@ class URLMapArgs:
     @default_custom_error_response_policy.setter
     def default_custom_error_response_policy(
         self, value: Optional[pulumi.Input[URLMapDefaultCustomErrorResponsePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteAction")
     def default_route_action(
@@ -53,12 +54,14 @@ class URLMapArgs:
     @default_route_action.setter
     def default_route_action(
         self, value: Optional[pulumi.Input[URLMapDefaultRouteActionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultService")
     def default_service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_service.setter
-    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultUrlRedirect")
     def default_url_redirect(
@@ -67,17 +70,22 @@ class URLMapArgs:
     @default_url_redirect.setter
     def default_url_redirect(
         self, value: Optional[pulumi.Input[URLMapDefaultUrlRedirectArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerAction")
     def header_action(self) -> Optional[pulumi.Input[URLMapHeaderActionArgs]]: ...
     @header_action.setter
-    def header_action(self, value: Optional[pulumi.Input[URLMapHeaderActionArgs]]): ...
+    def header_action(
+        self, value: Optional[pulumi.Input[URLMapHeaderActionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostRules")
     def host_rules(
@@ -86,12 +94,14 @@ class URLMapArgs:
     @host_rules.setter
     def host_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[URLMapHostRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pathMatchers")
     def path_matchers(
@@ -101,12 +111,14 @@ class URLMapArgs:
     def path_matchers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[URLMapPathMatcherArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tests(
@@ -115,7 +127,8 @@ class URLMapArgs:
     @tests.setter
     def tests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[URLMapTestArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _URLMapState:
@@ -152,7 +165,10 @@ class _URLMapState:
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultCustomErrorResponsePolicy")
     def default_custom_error_response_policy(
@@ -161,7 +177,8 @@ class _URLMapState:
     @default_custom_error_response_policy.setter
     def default_custom_error_response_policy(
         self, value: Optional[pulumi.Input[URLMapDefaultCustomErrorResponsePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteAction")
     def default_route_action(
@@ -170,12 +187,14 @@ class _URLMapState:
     @default_route_action.setter
     def default_route_action(
         self, value: Optional[pulumi.Input[URLMapDefaultRouteActionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultService")
     def default_service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_service.setter
-    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultUrlRedirect")
     def default_url_redirect(
@@ -184,22 +203,28 @@ class _URLMapState:
     @default_url_redirect.setter
     def default_url_redirect(
         self, value: Optional[pulumi.Input[URLMapDefaultUrlRedirectArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fingerprint.setter
-    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerAction")
     def header_action(self) -> Optional[pulumi.Input[URLMapHeaderActionArgs]]: ...
     @header_action.setter
-    def header_action(self, value: Optional[pulumi.Input[URLMapHeaderActionArgs]]): ...
+    def header_action(
+        self, value: Optional[pulumi.Input[URLMapHeaderActionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostRules")
     def host_rules(
@@ -208,17 +233,20 @@ class _URLMapState:
     @host_rules.setter
     def host_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[URLMapHostRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mapId")
     def map_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @map_id.setter
-    def map_id(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def map_id(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pathMatchers")
     def path_matchers(
@@ -228,17 +256,20 @@ class _URLMapState:
     def path_matchers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[URLMapPathMatcherArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tests(
@@ -247,7 +278,8 @@ class _URLMapState:
     @tests.setter
     def tests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[URLMapTestArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/uRLMap:URLMap")
 class URLMap(pulumi.CustomResource):

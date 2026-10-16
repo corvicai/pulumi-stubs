@@ -27,12 +27,14 @@ class ClassificationExportConfigurationArgs:
     @s3_destination.setter
     def s3_destination(
         self, value: pulumi.Input[ClassificationExportConfigurationS3DestinationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClassificationExportConfigurationState:
@@ -48,7 +50,8 @@ class _ClassificationExportConfigurationState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Destination")
     def s3_destination(
@@ -60,7 +63,8 @@ class _ClassificationExportConfigurationState:
         value: Optional[
             pulumi.Input[ClassificationExportConfigurationS3DestinationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ClassificationExportConfiguration(pulumi.CustomResource):

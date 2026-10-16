@@ -36,7 +36,8 @@ class GetCoipPoolsResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetCoipPoolsResult(GetCoipPoolsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCoipPoolsResult]:
+        ...
 
 def get_coip_pools(
     filters: Optional[

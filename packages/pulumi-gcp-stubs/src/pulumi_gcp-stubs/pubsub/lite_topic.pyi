@@ -28,7 +28,8 @@ class LiteTopicArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partitionConfig")
     def partition_config(
@@ -37,17 +38,20 @@ class LiteTopicArgs:
     @partition_config.setter
     def partition_config(
         self, value: Optional[pulumi.Input[LiteTopicPartitionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationConfig")
     def reservation_config(
@@ -56,7 +60,8 @@ class LiteTopicArgs:
     @reservation_config.setter
     def reservation_config(
         self, value: Optional[pulumi.Input[LiteTopicReservationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionConfig")
     def retention_config(
@@ -65,12 +70,14 @@ class LiteTopicArgs:
     @retention_config.setter
     def retention_config(
         self, value: Optional[pulumi.Input[LiteTopicRetentionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LiteTopicState:
@@ -91,7 +98,8 @@ class _LiteTopicState:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partitionConfig")
     def partition_config(
@@ -100,17 +108,20 @@ class _LiteTopicState:
     @partition_config.setter
     def partition_config(
         self, value: Optional[pulumi.Input[LiteTopicPartitionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationConfig")
     def reservation_config(
@@ -119,7 +130,8 @@ class _LiteTopicState:
     @reservation_config.setter
     def reservation_config(
         self, value: Optional[pulumi.Input[LiteTopicReservationConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionConfig")
     def retention_config(
@@ -128,12 +140,14 @@ class _LiteTopicState:
     @retention_config.setter
     def retention_config(
         self, value: Optional[pulumi.Input[LiteTopicRetentionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:pubsub/liteTopic:LiteTopic")
 class LiteTopic(pulumi.CustomResource):

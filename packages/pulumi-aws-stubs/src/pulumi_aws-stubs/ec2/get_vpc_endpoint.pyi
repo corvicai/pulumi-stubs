@@ -113,7 +113,8 @@ class GetVpcEndpointResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetVpcEndpointResult(GetVpcEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcEndpointResult]:
+        ...
 
 def get_vpc_endpoint(
     filters: Optional[

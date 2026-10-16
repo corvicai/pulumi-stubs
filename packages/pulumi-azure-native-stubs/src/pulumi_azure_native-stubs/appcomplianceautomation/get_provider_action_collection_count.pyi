@@ -22,7 +22,10 @@ class GetProviderActionCollectionCountResult:
 class AwaitableGetProviderActionCollectionCountResult(
     GetProviderActionCollectionCountResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProviderActionCollectionCountResult]:
+        ...
 
 def get_provider_action_collection_count(
     type: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

@@ -64,7 +64,8 @@ class GetADLSGen1FolderDataSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetADLSGen1FolderDataSetResult(GetADLSGen1FolderDataSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetADLSGen1FolderDataSetResult]:
+        ...
 
 def get_adls_gen1_folder_data_set(
     account_name: Optional[_builtins.str] = ...,

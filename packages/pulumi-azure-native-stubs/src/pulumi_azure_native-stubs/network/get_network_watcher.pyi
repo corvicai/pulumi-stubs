@@ -51,7 +51,8 @@ class GetNetworkWatcherResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkWatcherResult(GetNetworkWatcherResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkWatcherResult]:
+        ...
 
 def get_network_watcher(
     network_watcher_name: Optional[_builtins.str] = ...,

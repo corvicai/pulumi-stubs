@@ -35,7 +35,10 @@ class GetOntapStorageVirtualMachinesResult:
 class AwaitableGetOntapStorageVirtualMachinesResult(
     GetOntapStorageVirtualMachinesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOntapStorageVirtualMachinesResult]:
+        ...
 
 def get_ontap_storage_virtual_machines(
     filters: Optional[

@@ -44,12 +44,14 @@ class FleetArgs:
     @pulumi.getter(name="ec2InstanceType")
     def ec2_instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @ec2_instance_type.setter
-    def ec2_instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def ec2_instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="buildId")
     def build_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @build_id.setter
-    def build_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def build_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateConfiguration")
     def certificate_configuration(
@@ -58,12 +60,14 @@ class FleetArgs:
     @certificate_configuration.setter
     def certificate_configuration(
         self, value: Optional[pulumi.Input[FleetCertificateConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2InboundPermissions")
     def ec2_inbound_permissions(
@@ -77,17 +81,22 @@ class FleetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FleetEc2InboundPermissionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fleetType")
     def fleet_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fleet_type.setter
-    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceRoleArn")
     def instance_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_role_arn.setter
-    def instance_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricGroups")
     def metric_groups(
@@ -96,12 +105,14 @@ class FleetArgs:
     @metric_groups.setter
     def metric_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newGameSessionProtectionPolicy")
     def new_game_session_protection_policy(
@@ -110,12 +121,14 @@ class FleetArgs:
     @new_game_session_protection_policy.setter
     def new_game_session_protection_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceCreationLimitPolicy")
     def resource_creation_limit_policy(
@@ -124,7 +137,8 @@ class FleetArgs:
     @resource_creation_limit_policy.setter
     def resource_creation_limit_policy(
         self, value: Optional[pulumi.Input[FleetResourceCreationLimitPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfiguration")
     def runtime_configuration(
@@ -133,12 +147,14 @@ class FleetArgs:
     @runtime_configuration.setter
     def runtime_configuration(
         self, value: Optional[pulumi.Input[FleetRuntimeConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptId")
     def script_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script_id.setter
-    def script_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -147,7 +163,8 @@ class FleetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FleetState:
@@ -192,17 +209,20 @@ class _FleetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="buildArn")
     def build_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @build_arn.setter
-    def build_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def build_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="buildId")
     def build_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @build_id.setter
-    def build_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def build_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateConfiguration")
     def certificate_configuration(
@@ -211,12 +231,14 @@ class _FleetState:
     @certificate_configuration.setter
     def certificate_configuration(
         self, value: Optional[pulumi.Input[FleetCertificateConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2InboundPermissions")
     def ec2_inbound_permissions(
@@ -230,22 +252,30 @@ class _FleetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FleetEc2InboundPermissionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2InstanceType")
     def ec2_instance_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ec2_instance_type.setter
-    def ec2_instance_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ec2_instance_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fleetType")
     def fleet_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fleet_type.setter
-    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fleet_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceRoleArn")
     def instance_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_role_arn.setter
-    def instance_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logPaths")
     def log_paths(
@@ -254,7 +284,8 @@ class _FleetState:
     @log_paths.setter
     def log_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricGroups")
     def metric_groups(
@@ -263,12 +294,14 @@ class _FleetState:
     @metric_groups.setter
     def metric_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newGameSessionProtectionPolicy")
     def new_game_session_protection_policy(
@@ -277,17 +310,22 @@ class _FleetState:
     @new_game_session_protection_policy.setter
     def new_game_session_protection_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="operatingSystem")
     def operating_system(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @operating_system.setter
-    def operating_system(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def operating_system(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceCreationLimitPolicy")
     def resource_creation_limit_policy(
@@ -296,7 +334,8 @@ class _FleetState:
     @resource_creation_limit_policy.setter
     def resource_creation_limit_policy(
         self, value: Optional[pulumi.Input[FleetResourceCreationLimitPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfiguration")
     def runtime_configuration(
@@ -305,17 +344,20 @@ class _FleetState:
     @runtime_configuration.setter
     def runtime_configuration(
         self, value: Optional[pulumi.Input[FleetRuntimeConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptArn")
     def script_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script_arn.setter
-    def script_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scriptId")
     def script_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @script_id.setter
-    def script_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def script_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -324,7 +366,8 @@ class _FleetState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -333,7 +376,8 @@ class _FleetState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:gamelift/fleet:Fleet")
 class Fleet(pulumi.CustomResource):

@@ -64,7 +64,8 @@ class GetInferenceProfileResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetInferenceProfileResult(GetInferenceProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInferenceProfileResult]:
+        ...
 
 def get_inference_profile(
     inference_profile_id: Optional[_builtins.str] = ...,

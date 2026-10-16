@@ -84,7 +84,8 @@ class GetBackupPolicyResult:
     def weekly_backups_to_keep(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetBackupPolicyResult(GetBackupPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackupPolicyResult]:
+        ...
 
 def get_backup_policy(
     account_name: Optional[_builtins.str] = ...,

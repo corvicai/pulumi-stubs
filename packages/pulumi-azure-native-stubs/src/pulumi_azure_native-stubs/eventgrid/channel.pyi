@@ -35,17 +35,20 @@ class ChannelArgs:
     @pulumi.getter(name="partnerNamespaceName")
     def partner_namespace_name(self) -> pulumi.Input[_builtins.str]: ...
     @partner_namespace_name.setter
-    def partner_namespace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def partner_namespace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="channelName")
     def channel_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @channel_name.setter
-    def channel_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def channel_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="channelType")
     def channel_type(
@@ -54,7 +57,8 @@ class ChannelArgs:
     @channel_type.setter
     def channel_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ChannelType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirationTimeIfNotActivatedUtc")
     def expiration_time_if_not_activated_utc(
@@ -63,19 +67,24 @@ class ChannelArgs:
     @expiration_time_if_not_activated_utc.setter
     def expiration_time_if_not_activated_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageForActivation")
     def message_for_activation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_for_activation.setter
-    def message_for_activation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_for_activation(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerTopicInfo")
     def partner_topic_info(self) -> Optional[pulumi.Input[PartnerTopicInfoArgs]]: ...
     @partner_topic_info.setter
     def partner_topic_info(
         self, value: Optional[pulumi.Input[PartnerTopicInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -85,7 +94,8 @@ class ChannelArgs:
     def provisioning_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ChannelProvisioningState]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readinessState")
     def readiness_state(
@@ -94,7 +104,8 @@ class ChannelArgs:
     @readiness_state.setter
     def readiness_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ReadinessState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:eventgrid:Channel")
 class Channel(pulumi.CustomResource):

@@ -104,7 +104,8 @@ class GetDataCollectionRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataCollectionRuleResult(GetDataCollectionRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataCollectionRuleResult]:
+        ...
 
 def get_data_collection_rule(
     data_collection_rule_name: Optional[_builtins.str] = ...,

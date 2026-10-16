@@ -35,7 +35,8 @@ class GetProducerDataSharesResult:
     def status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetProducerDataSharesResult(GetProducerDataSharesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProducerDataSharesResult]:
+        ...
 
 def get_producer_data_shares(
     producer_arn: Optional[_builtins.str] = ...,

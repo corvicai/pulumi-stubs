@@ -53,7 +53,8 @@ class GetInternetGatewayResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetInternetGatewayResult(GetInternetGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInternetGatewayResult]:
+        ...
 
 def get_internet_gateway(
     filters: Optional[

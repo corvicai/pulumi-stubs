@@ -86,7 +86,8 @@ class GetPrivateZoneResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateZoneResult(GetPrivateZoneResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateZoneResult]:
+        ...
 
 def get_private_zone(
     private_zone_name: Optional[_builtins.str] = ...,

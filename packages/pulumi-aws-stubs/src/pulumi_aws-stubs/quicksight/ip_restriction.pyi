@@ -29,12 +29,14 @@ class IpRestrictionArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsAccountId")
     def aws_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_account_id.setter
-    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRestrictionRuleMap")
     def ip_restriction_rule_map(
@@ -43,12 +45,14 @@ class IpRestrictionArgs:
     @ip_restriction_rule_map.setter
     def ip_restriction_rule_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcEndpointIdRestrictionRuleMap")
     def vpc_endpoint_id_restriction_rule_map(
@@ -57,7 +61,8 @@ class IpRestrictionArgs:
     @vpc_endpoint_id_restriction_rule_map.setter
     def vpc_endpoint_id_restriction_rule_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcIdRestrictionRuleMap")
     def vpc_id_restriction_rule_map(
@@ -66,7 +71,8 @@ class IpRestrictionArgs:
     @vpc_id_restriction_rule_map.setter
     def vpc_id_restriction_rule_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IpRestrictionState:
@@ -90,12 +96,14 @@ class _IpRestrictionState:
     @pulumi.getter(name="awsAccountId")
     def aws_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_account_id.setter
-    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aws_account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRestrictionRuleMap")
     def ip_restriction_rule_map(
@@ -104,12 +112,14 @@ class _IpRestrictionState:
     @ip_restriction_rule_map.setter
     def ip_restriction_rule_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcEndpointIdRestrictionRuleMap")
     def vpc_endpoint_id_restriction_rule_map(
@@ -118,7 +128,8 @@ class _IpRestrictionState:
     @vpc_endpoint_id_restriction_rule_map.setter
     def vpc_endpoint_id_restriction_rule_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcIdRestrictionRuleMap")
     def vpc_id_restriction_rule_map(
@@ -127,7 +138,8 @@ class _IpRestrictionState:
     @vpc_id_restriction_rule_map.setter
     def vpc_id_restriction_rule_map(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:quicksight/ipRestriction:IpRestriction")
 class IpRestriction(pulumi.CustomResource):

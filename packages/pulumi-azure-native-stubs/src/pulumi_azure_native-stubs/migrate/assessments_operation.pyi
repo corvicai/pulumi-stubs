@@ -64,22 +64,26 @@ class AssessmentsOperationArgs:
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectName")
     def project_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_name.setter
-    def project_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentName")
     def assessment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assessment_name.setter
-    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureDiskTypes")
     def azure_disk_types(
@@ -93,7 +97,8 @@ class AssessmentsOperationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AzureDiskType]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureHybridUseBenefit")
     def azure_hybrid_use_benefit(
@@ -102,12 +107,14 @@ class AssessmentsOperationArgs:
     @azure_hybrid_use_benefit.setter
     def azure_hybrid_use_benefit(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureHybridUseBenefit]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureLocation")
     def azure_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @azure_location.setter
-    def azure_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def azure_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureOfferCode")
     def azure_offer_code(
@@ -116,7 +123,8 @@ class AssessmentsOperationArgs:
     @azure_offer_code.setter
     def azure_offer_code(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureOfferCode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azurePricingTier")
     def azure_pricing_tier(
@@ -125,7 +133,8 @@ class AssessmentsOperationArgs:
     @azure_pricing_tier.setter
     def azure_pricing_tier(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzurePricingTier]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureStorageRedundancy")
     def azure_storage_redundancy(
@@ -135,7 +144,8 @@ class AssessmentsOperationArgs:
     def azure_storage_redundancy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AzureStorageRedundancy]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureVmFamilies")
     def azure_vm_families(
@@ -149,7 +159,8 @@ class AssessmentsOperationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AzureVmFamily]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def currency(
@@ -158,17 +169,24 @@ class AssessmentsOperationArgs:
     @currency.setter
     def currency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureCurrency]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discountPercentage")
     def discount_percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @discount_percentage.setter
-    def discount_percentage(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def discount_percentage(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eaSubscriptionId")
     def ea_subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ea_subscription_id.setter
-    def ea_subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ea_subscription_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="linuxAzureHybridUseBenefit")
     def linux_azure_hybrid_use_benefit(
@@ -177,7 +195,8 @@ class AssessmentsOperationArgs:
     @linux_azure_hybrid_use_benefit.setter
     def linux_azure_hybrid_use_benefit(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureHybridUseBenefit]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentile(
@@ -186,17 +205,24 @@ class AssessmentsOperationArgs:
     @percentile.setter
     def percentile(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Percentile]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataEndTime")
     def perf_data_end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_end_time.setter
-    def perf_data_end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_end_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataStartTime")
     def perf_data_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_start_time.setter
-    def perf_data_start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_start_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -205,7 +231,8 @@ class AssessmentsOperationArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservedInstance")
     def reserved_instance(
@@ -214,12 +241,16 @@ class AssessmentsOperationArgs:
     @reserved_instance.setter
     def reserved_instance(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureReservedInstance]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingFactor")
     def scaling_factor(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @scaling_factor.setter
-    def scaling_factor(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def scaling_factor(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizingCriterion")
     def sizing_criterion(
@@ -229,19 +260,22 @@ class AssessmentsOperationArgs:
     def sizing_criterion(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AssessmentSizingCriterion]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeRange")
     def time_range(self) -> Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]: ...
     @time_range.setter
     def time_range(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmUptime")
     def vm_uptime(self) -> Optional[pulumi.Input[VmUptimeArgs]]: ...
     @vm_uptime.setter
-    def vm_uptime(self, value: Optional[pulumi.Input[VmUptimeArgs]]): ...
+    def vm_uptime(self, value: Optional[pulumi.Input[VmUptimeArgs]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:migrate:AssessmentsOperation")
 class AssessmentsOperation(pulumi.CustomResource):

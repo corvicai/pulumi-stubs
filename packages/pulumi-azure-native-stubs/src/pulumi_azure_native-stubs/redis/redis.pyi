@@ -53,12 +53,14 @@ class RedisArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> pulumi.Input[SkuArgs]: ...
     @sku.setter
-    def sku(self, value: pulumi.Input[SkuArgs]): ...
+    def sku(self, value: pulumi.Input[SkuArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableAccessKeyAuthentication")
     def disable_access_key_authentication(
@@ -67,22 +69,30 @@ class RedisArgs:
     @disable_access_key_authentication.setter
     def disable_access_key_authentication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableNonSslPort")
     def enable_non_ssl_port(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_non_ssl_port.setter
-    def enable_non_ssl_port(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_non_ssl_port(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumTlsVersion")
     def minimum_tls_version(
@@ -91,12 +101,14 @@ class RedisArgs:
     @minimum_tls_version.setter
     def minimum_tls_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TlsVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -105,7 +117,8 @@ class RedisArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redisConfiguration")
     def redis_configuration(
@@ -114,37 +127,48 @@ class RedisArgs:
     @redis_configuration.setter
     def redis_configuration(
         self, value: Optional[pulumi.Input[RedisCommonPropertiesRedisConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redisVersion")
     def redis_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redis_version.setter
-    def redis_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redis_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicasPerMaster")
     def replicas_per_master(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replicas_per_master.setter
-    def replicas_per_master(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replicas_per_master(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicasPerPrimary")
     def replicas_per_primary(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replicas_per_primary.setter
-    def replicas_per_primary(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def replicas_per_primary(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shardCount")
     def shard_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @shard_count.setter
-    def shard_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def shard_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="staticIP")
     def static_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @static_ip.setter
-    def static_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def static_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -153,7 +177,8 @@ class RedisArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantSettings")
     def tenant_settings(
@@ -162,7 +187,8 @@ class RedisArgs:
     @tenant_settings.setter
     def tenant_settings(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateChannel")
     def update_channel(
@@ -171,7 +197,8 @@ class RedisArgs:
     @update_channel.setter
     def update_channel(
         self, value: Optional[pulumi.Input[Union[_builtins.str, UpdateChannel]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zonalAllocationPolicy")
     def zonal_allocation_policy(
@@ -180,7 +207,8 @@ class RedisArgs:
     @zonal_allocation_policy.setter
     def zonal_allocation_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ZonalAllocationPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -189,7 +217,8 @@ class RedisArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:redis:Redis")
 class Redis(pulumi.CustomResource):

@@ -33,7 +33,8 @@ class WorkteamArgs:
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memberDefinitions")
     def member_definitions(
@@ -42,12 +43,14 @@ class WorkteamArgs:
     @member_definitions.setter
     def member_definitions(
         self, value: pulumi.Input[Sequence[pulumi.Input[WorkteamMemberDefinitionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workteamName")
     def workteam_name(self) -> pulumi.Input[_builtins.str]: ...
     @workteam_name.setter
-    def workteam_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workteam_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfiguration")
     def notification_configuration(
@@ -56,12 +59,14 @@ class WorkteamArgs:
     @notification_configuration.setter
     def notification_configuration(
         self, value: Optional[pulumi.Input[WorkteamNotificationConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -70,7 +75,8 @@ class WorkteamArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerAccessConfiguration")
     def worker_access_configuration(
@@ -79,12 +85,14 @@ class WorkteamArgs:
     @worker_access_configuration.setter
     def worker_access_configuration(
         self, value: Optional[pulumi.Input[WorkteamWorkerAccessConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workforceName")
     def workforce_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workforce_name.setter
-    def workforce_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workforce_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WorkteamState:
@@ -115,12 +123,14 @@ class _WorkteamState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memberDefinitions")
     def member_definitions(
@@ -134,7 +144,8 @@ class _WorkteamState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkteamMemberDefinitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationConfiguration")
     def notification_configuration(
@@ -143,17 +154,20 @@ class _WorkteamState:
     @notification_configuration.setter
     def notification_configuration(
         self, value: Optional[pulumi.Input[WorkteamNotificationConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subdomain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subdomain.setter
-    def subdomain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subdomain(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -162,7 +176,8 @@ class _WorkteamState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -171,7 +186,8 @@ class _WorkteamState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerAccessConfiguration")
     def worker_access_configuration(
@@ -180,17 +196,20 @@ class _WorkteamState:
     @worker_access_configuration.setter
     def worker_access_configuration(
         self, value: Optional[pulumi.Input[WorkteamWorkerAccessConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workforceName")
     def workforce_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workforce_name.setter
-    def workforce_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workforce_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workteamName")
     def workteam_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workteam_name.setter
-    def workteam_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workteam_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/workteam:Workteam")
 class Workteam(pulumi.CustomResource):

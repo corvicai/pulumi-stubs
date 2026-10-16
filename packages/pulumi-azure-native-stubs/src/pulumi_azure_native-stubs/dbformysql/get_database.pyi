@@ -48,7 +48,8 @@ class GetDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseResult(GetDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseResult]:
+        ...
 
 def get_database(
     database_name: Optional[_builtins.str] = ...,

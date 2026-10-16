@@ -57,7 +57,10 @@ class ListWebAppPublishingCredentialsResult:
 class AwaitableListWebAppPublishingCredentialsResult(
     ListWebAppPublishingCredentialsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppPublishingCredentialsResult]:
+        ...
 
 def list_web_app_publishing_credentials(
     name: Optional[_builtins.str] = ...,

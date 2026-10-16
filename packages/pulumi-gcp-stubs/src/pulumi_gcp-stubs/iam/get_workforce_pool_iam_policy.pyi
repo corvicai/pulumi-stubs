@@ -34,7 +34,8 @@ class GetWorkforcePoolIamPolicyResult:
     def workforce_pool_id(self) -> _builtins.str: ...
 
 class AwaitableGetWorkforcePoolIamPolicyResult(GetWorkforcePoolIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkforcePoolIamPolicyResult]:
+        ...
 
 def get_workforce_pool_iam_policy(
     location: Optional[_builtins.str] = ...,

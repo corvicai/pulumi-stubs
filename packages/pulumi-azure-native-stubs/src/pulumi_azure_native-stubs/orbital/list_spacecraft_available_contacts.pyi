@@ -27,7 +27,10 @@ class ListSpacecraftAvailableContactsResult:
 class AwaitableListSpacecraftAvailableContactsResult(
     ListSpacecraftAvailableContactsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSpacecraftAvailableContactsResult]:
+        ...
 
 def list_spacecraft_available_contacts(
     contact_profile: Optional[

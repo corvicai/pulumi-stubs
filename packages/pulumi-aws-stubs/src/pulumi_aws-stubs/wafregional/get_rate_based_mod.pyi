@@ -26,7 +26,8 @@ class GetRateBasedModResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetRateBasedModResult(GetRateBasedModResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRateBasedModResult]:
+        ...
 
 def get_rate_based_mod(
     name: Optional[_builtins.str] = ...,

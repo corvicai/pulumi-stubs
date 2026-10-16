@@ -68,7 +68,8 @@ class GetWorkloadNetworkSegmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadNetworkSegmentResult(GetWorkloadNetworkSegmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadNetworkSegmentResult]:
+        ...
 
 def get_workload_network_segment(
     private_cloud_name: Optional[_builtins.str] = ...,

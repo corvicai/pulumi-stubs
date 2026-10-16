@@ -43,7 +43,8 @@ class GetProjectCmekSettingsResult:
     def service_account_id(self) -> _builtins.str: ...
 
 class AwaitableGetProjectCmekSettingsResult(GetProjectCmekSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectCmekSettingsResult]:
+        ...
 
 def get_project_cmek_settings(
     kms_key_name: Optional[_builtins.str] = ...,

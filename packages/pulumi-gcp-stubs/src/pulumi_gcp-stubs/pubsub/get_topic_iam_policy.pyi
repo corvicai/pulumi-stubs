@@ -34,7 +34,8 @@ class GetTopicIamPolicyResult:
     def topic(self) -> _builtins.str: ...
 
 class AwaitableGetTopicIamPolicyResult(GetTopicIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTopicIamPolicyResult]:
+        ...
 
 def get_topic_iam_policy(
     project: Optional[_builtins.str] = ...,

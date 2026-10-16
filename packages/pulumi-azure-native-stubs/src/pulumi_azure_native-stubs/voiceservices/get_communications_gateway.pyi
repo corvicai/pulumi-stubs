@@ -132,7 +132,8 @@ class GetCommunicationsGatewayResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCommunicationsGatewayResult(GetCommunicationsGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCommunicationsGatewayResult]:
+        ...
 
 def get_communications_gateway(
     communications_gateway_name: Optional[_builtins.str] = ...,

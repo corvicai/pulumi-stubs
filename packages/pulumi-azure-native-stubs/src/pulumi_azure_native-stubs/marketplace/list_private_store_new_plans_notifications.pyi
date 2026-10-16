@@ -25,7 +25,10 @@ class ListPrivateStoreNewPlansNotificationsResult:
 class AwaitableListPrivateStoreNewPlansNotificationsResult(
     ListPrivateStoreNewPlansNotificationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPrivateStoreNewPlansNotificationsResult]:
+        ...
 
 def list_private_store_new_plans_notifications(
     private_store_id: Optional[_builtins.str] = ...,

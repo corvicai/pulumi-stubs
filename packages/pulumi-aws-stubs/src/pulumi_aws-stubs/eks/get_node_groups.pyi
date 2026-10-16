@@ -29,7 +29,8 @@ class GetNodeGroupsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetNodeGroupsResult(GetNodeGroupsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNodeGroupsResult]:
+        ...
 
 def get_node_groups(
     cluster_name: Optional[_builtins.str] = ...,

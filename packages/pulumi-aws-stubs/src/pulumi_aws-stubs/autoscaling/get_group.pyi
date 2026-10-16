@@ -147,7 +147,8 @@ class GetGroupResult:
     def warm_pools(self) -> Sequence[outputs.GetGroupWarmPoolResult]: ...
 
 class AwaitableGetGroupResult(GetGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroupResult]:
+        ...
 
 def get_group(
     name: Optional[_builtins.str] = ...,

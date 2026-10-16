@@ -49,17 +49,22 @@ class AccessReviewHistoryDefinitionByIdArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, AccessReviewResult]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="historyDefinitionId")
     def history_definition_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @history_definition_id.setter
-    def history_definition_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def history_definition_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instances(
@@ -73,17 +78,22 @@ class AccessReviewHistoryDefinitionByIdArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccessReviewHistoryInstanceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interval(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval.setter
-    def interval(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def interval(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def range(self) -> Optional[pulumi.Input[AccessReviewRecurrenceRangeArgs]]: ...
     @range.setter
-    def range(self, value: Optional[pulumi.Input[AccessReviewRecurrenceRangeArgs]]): ...
+    def range(
+        self, value: Optional[pulumi.Input[AccessReviewRecurrenceRangeArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -93,7 +103,8 @@ class AccessReviewHistoryDefinitionByIdArgs:
     def scopes(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AccessReviewScopeArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -107,7 +118,8 @@ class AccessReviewHistoryDefinitionByIdArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, AccessReviewRecurrencePatternType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AccessReviewHistoryDefinitionById(pulumi.CustomResource):

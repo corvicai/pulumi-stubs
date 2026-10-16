@@ -70,7 +70,8 @@ class GetComputeEnvironmentResult:
     ) -> Sequence[outputs.GetComputeEnvironmentUpdatePolicyResult]: ...
 
 class AwaitableGetComputeEnvironmentResult(GetComputeEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetComputeEnvironmentResult]:
+        ...
 
 def get_compute_environment(
     name: Optional[_builtins.str] = ...,

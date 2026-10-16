@@ -130,7 +130,8 @@ class GetDomainServiceResult:
     def version(self) -> _builtins.int: ...
 
 class AwaitableGetDomainServiceResult(GetDomainServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDomainServiceResult]:
+        ...
 
 def get_domain_service(
     domain_service_name: Optional[_builtins.str] = ...,

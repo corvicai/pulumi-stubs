@@ -80,17 +80,20 @@ class ClassificationExportConfigurationS3DestinationArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPrefix")
     def key_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_prefix.setter
-    def key_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionArgsDict(TypedDict):
     bucket_criteria: NotRequired[
@@ -135,7 +138,8 @@ class ClassificationJobS3JobDefinitionArgs:
         value: Optional[
             pulumi.Input[ClassificationJobS3JobDefinitionBucketCriteriaArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketDefinitions")
     def bucket_definitions(
@@ -155,7 +159,8 @@ class ClassificationJobS3JobDefinitionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scoping(
@@ -164,7 +169,8 @@ class ClassificationJobS3JobDefinitionArgs:
     @scoping.setter
     def scoping(
         self, value: Optional[pulumi.Input[ClassificationJobS3JobDefinitionScopingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaArgsDict(TypedDict):
     excludes: NotRequired[
@@ -199,7 +205,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaArgs:
         value: Optional[
             pulumi.Input[ClassificationJobS3JobDefinitionBucketCriteriaExcludesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -213,7 +220,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaArgs:
         value: Optional[
             pulumi.Input[ClassificationJobS3JobDefinitionBucketCriteriaIncludesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesArgsDict(TypedDict):
     ands: NotRequired[
@@ -266,7 +274,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndArgsDict(TypedDict):
     simple_criterion: NotRequired[
@@ -313,7 +322,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndArgs:
                 ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagCriterion")
     def tag_criterion(
@@ -331,7 +341,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndArgs:
                 ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionArgsDict(
     TypedDict
@@ -353,12 +364,14 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionAr
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -367,7 +380,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionAr
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionArgsDict(
     TypedDict
@@ -403,7 +417,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionArgs:
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagValues")
     def tag_values(
@@ -429,7 +444,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValueArgsDict(
     TypedDict
@@ -449,12 +465,14 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagVa
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesArgsDict(TypedDict):
     ands: NotRequired[
@@ -507,7 +525,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndArgsDict(TypedDict):
     simple_criterion: NotRequired[
@@ -554,7 +573,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndArgs:
                 ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagCriterion")
     def tag_criterion(
@@ -572,7 +592,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndArgs:
                 ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionArgsDict(
     TypedDict
@@ -594,12 +615,14 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionAr
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -608,7 +631,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionAr
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionArgsDict(
     TypedDict
@@ -644,7 +668,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionArgs:
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagValues")
     def tag_values(
@@ -670,7 +695,8 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValueArgsDict(
     TypedDict
@@ -690,12 +716,14 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagVa
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionBucketDefinitionArgsDict(TypedDict):
     account_id: pulumi.Input[_builtins.str]
@@ -713,12 +741,16 @@ class ClassificationJobS3JobDefinitionBucketDefinitionArgs:
     @pulumi.getter(name="accountId")
     def account_id(self) -> pulumi.Input[_builtins.str]: ...
     @account_id.setter
-    def account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def buckets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @buckets.setter
-    def buckets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def buckets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingArgsDict(TypedDict):
     excludes: NotRequired[
@@ -753,7 +785,8 @@ class ClassificationJobS3JobDefinitionScopingArgs:
         value: Optional[
             pulumi.Input[ClassificationJobS3JobDefinitionScopingExcludesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def includes(
@@ -767,7 +800,8 @@ class ClassificationJobS3JobDefinitionScopingArgs:
         value: Optional[
             pulumi.Input[ClassificationJobS3JobDefinitionScopingIncludesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingExcludesArgsDict(TypedDict):
     ands: NotRequired[
@@ -812,7 +846,8 @@ class ClassificationJobS3JobDefinitionScopingExcludesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingExcludesAndArgsDict(TypedDict):
     simple_scope_term: NotRequired[
@@ -859,7 +894,8 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndArgs:
                 ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagScopeTerm")
     def tag_scope_term(
@@ -875,7 +911,8 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndArgs:
                 ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermArgsDict(
     TypedDict
@@ -897,12 +934,14 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermArgs:
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -911,7 +950,8 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermArgsDict(TypedDict):
     comparator: NotRequired[pulumi.Input[_builtins.str]]
@@ -949,12 +989,14 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermArgs:
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagValues")
     def tag_values(
@@ -980,12 +1022,14 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target.setter
-    def target(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValueArgsDict(
     TypedDict
@@ -1005,12 +1049,14 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValueArgs
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingIncludesArgsDict(TypedDict):
     ands: NotRequired[
@@ -1055,7 +1101,8 @@ class ClassificationJobS3JobDefinitionScopingIncludesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingIncludesAndArgsDict(TypedDict):
     simple_scope_term: NotRequired[
@@ -1102,7 +1149,8 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndArgs:
                 ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagScopeTerm")
     def tag_scope_term(
@@ -1118,7 +1166,8 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndArgs:
                 ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermArgsDict(
     TypedDict
@@ -1140,12 +1189,14 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermArgs:
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -1154,7 +1205,8 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermArgsDict(TypedDict):
     comparator: NotRequired[pulumi.Input[_builtins.str]]
@@ -1192,12 +1244,14 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermArgs:
     @pulumi.getter
     def comparator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @comparator.setter
-    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def comparator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagValues")
     def tag_values(
@@ -1223,12 +1277,14 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target.setter
-    def target(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValueArgsDict(
     TypedDict
@@ -1248,12 +1304,14 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValueArgs
     @pulumi.getter
     def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobScheduleFrequencyArgsDict(TypedDict):
     daily_schedule: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1273,17 +1331,22 @@ class ClassificationJobScheduleFrequencyArgs:
     @pulumi.getter(name="dailySchedule")
     def daily_schedule(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @daily_schedule.setter
-    def daily_schedule(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def daily_schedule(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monthlySchedule")
     def monthly_schedule(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @monthly_schedule.setter
-    def monthly_schedule(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def monthly_schedule(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklySchedule")
     def weekly_schedule(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @weekly_schedule.setter
-    def weekly_schedule(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def weekly_schedule(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClassificationJobUserPausedDetailArgsDict(TypedDict):
     job_expires_at: NotRequired[pulumi.Input[_builtins.str]]
@@ -1305,7 +1368,8 @@ class ClassificationJobUserPausedDetailArgs:
     @pulumi.getter(name="jobExpiresAt")
     def job_expires_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_expires_at.setter
-    def job_expires_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_expires_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobImminentExpirationHealthEventArn")
     def job_imminent_expiration_health_event_arn(
@@ -1314,9 +1378,11 @@ class ClassificationJobUserPausedDetailArgs:
     @job_imminent_expiration_health_event_arn.setter
     def job_imminent_expiration_health_event_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobPausedAt")
     def job_paused_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_paused_at.setter
-    def job_paused_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_paused_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

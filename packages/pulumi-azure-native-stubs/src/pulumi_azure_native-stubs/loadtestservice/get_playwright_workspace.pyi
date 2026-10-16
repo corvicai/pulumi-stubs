@@ -68,7 +68,8 @@ class GetPlaywrightWorkspaceResult:
     def workspace_id(self) -> _builtins.str: ...
 
 class AwaitableGetPlaywrightWorkspaceResult(GetPlaywrightWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPlaywrightWorkspaceResult]:
+        ...
 
 def get_playwright_workspace(
     playwright_workspace_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetServerGroupFirewallRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerGroupFirewallRuleResult(GetServerGroupFirewallRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerGroupFirewallRuleResult]:
+        ...
 
 def get_server_group_firewall_rule(
     cluster_name: Optional[_builtins.str] = ...,

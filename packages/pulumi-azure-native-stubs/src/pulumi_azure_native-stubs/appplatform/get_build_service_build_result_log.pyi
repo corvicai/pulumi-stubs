@@ -20,7 +20,10 @@ class GetBuildServiceBuildResultLogResult:
     def blob_url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetBuildServiceBuildResultLogResult(GetBuildServiceBuildResultLogResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBuildServiceBuildResultLogResult]:
+        ...
 
 def get_build_service_build_result_log(
     build_name: Optional[_builtins.str] = ...,

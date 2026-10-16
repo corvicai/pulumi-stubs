@@ -58,7 +58,10 @@ class GetPrivateResolverVirtualNetworkLinkResult:
 class AwaitableGetPrivateResolverVirtualNetworkLinkResult(
     GetPrivateResolverVirtualNetworkLinkResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateResolverVirtualNetworkLinkResult]:
+        ...
 
 def get_private_resolver_virtual_network_link(
     dns_forwarding_ruleset_name: Optional[_builtins.str] = ...,

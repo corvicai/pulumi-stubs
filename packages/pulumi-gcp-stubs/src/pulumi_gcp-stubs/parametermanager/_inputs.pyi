@@ -30,14 +30,16 @@ class ParameterPolicyMemberArgs:
     @iam_policy_name_principal.setter
     def iam_policy_name_principal(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamPolicyUidPrincipal")
     def iam_policy_uid_principal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_policy_uid_principal.setter
     def iam_policy_uid_principal(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RegionalParameterPolicyMemberArgsDict(TypedDict):
     iam_policy_name_principal: NotRequired[pulumi.Input[_builtins.str]]
@@ -57,11 +59,13 @@ class RegionalParameterPolicyMemberArgs:
     @iam_policy_name_principal.setter
     def iam_policy_name_principal(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamPolicyUidPrincipal")
     def iam_policy_uid_principal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_policy_uid_principal.setter
     def iam_policy_uid_principal(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...

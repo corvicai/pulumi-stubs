@@ -56,7 +56,8 @@ class GetBusinessCaseOperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBusinessCaseOperationResult(GetBusinessCaseOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBusinessCaseOperationResult]:
+        ...
 
 def get_business_case_operation(
     business_case_name: Optional[_builtins.str] = ...,

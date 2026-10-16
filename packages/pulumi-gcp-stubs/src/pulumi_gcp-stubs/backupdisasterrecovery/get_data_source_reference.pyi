@@ -67,7 +67,8 @@ class GetDataSourceReferenceResult:
     def resource_type(self) -> _builtins.str: ...
 
 class AwaitableGetDataSourceReferenceResult(GetDataSourceReferenceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataSourceReferenceResult]:
+        ...
 
 def get_data_source_reference(
     data_source_reference_id: Optional[_builtins.str] = ...,

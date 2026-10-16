@@ -56,7 +56,8 @@ class ApplicationAutoStartConfigurationArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ApplicationAutoStopConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -74,12 +75,16 @@ class ApplicationAutoStopConfigurationArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeoutMinutes")
     def idle_timeout_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @idle_timeout_minutes.setter
-    def idle_timeout_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def idle_timeout_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ApplicationImageConfigurationArgsDict(TypedDict):
     image_uri: pulumi.Input[_builtins.str]
@@ -91,7 +96,8 @@ class ApplicationImageConfigurationArgs:
     @pulumi.getter(name="imageUri")
     def image_uri(self) -> pulumi.Input[_builtins.str]: ...
     @image_uri.setter
-    def image_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def image_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApplicationInitialCapacityArgsDict(TypedDict):
     initial_capacity_type: pulumi.Input[_builtins.str]
@@ -113,7 +119,8 @@ class ApplicationInitialCapacityArgs:
     @pulumi.getter(name="initialCapacityType")
     def initial_capacity_type(self) -> pulumi.Input[_builtins.str]: ...
     @initial_capacity_type.setter
-    def initial_capacity_type(self, value: pulumi.Input[_builtins.str]): ...
+    def initial_capacity_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialCapacityConfig")
     def initial_capacity_config(
@@ -127,7 +134,8 @@ class ApplicationInitialCapacityArgs:
         value: Optional[
             pulumi.Input[ApplicationInitialCapacityInitialCapacityConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationInitialCapacityInitialCapacityConfigArgsDict(TypedDict):
     worker_count: pulumi.Input[_builtins.int]
@@ -153,7 +161,8 @@ class ApplicationInitialCapacityInitialCapacityConfigArgs:
     @pulumi.getter(name="workerCount")
     def worker_count(self) -> pulumi.Input[_builtins.int]: ...
     @worker_count.setter
-    def worker_count(self, value: pulumi.Input[_builtins.int]): ...
+    def worker_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workerConfiguration")
     def worker_configuration(
@@ -171,7 +180,8 @@ class ApplicationInitialCapacityInitialCapacityConfigArgs:
                 ApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationArgsDict(
     TypedDict
@@ -193,17 +203,20 @@ class ApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationArgs:
     @pulumi.getter
     def cpu(self) -> pulumi.Input[_builtins.str]: ...
     @cpu.setter
-    def cpu(self, value: pulumi.Input[_builtins.str]): ...
+    def cpu(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def memory(self) -> pulumi.Input[_builtins.str]: ...
     @memory.setter
-    def memory(self, value: pulumi.Input[_builtins.str]): ...
+    def memory(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disk(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk.setter
-    def disk(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationInteractiveConfigurationArgsDict(TypedDict):
     livy_endpoint_enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -221,12 +234,16 @@ class ApplicationInteractiveConfigurationArgs:
     @pulumi.getter(name="livyEndpointEnabled")
     def livy_endpoint_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @livy_endpoint_enabled.setter
-    def livy_endpoint_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def livy_endpoint_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="studioEnabled")
     def studio_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @studio_enabled.setter
-    def studio_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def studio_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ApplicationJobLevelCostAllocationConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -240,7 +257,8 @@ class ApplicationJobLevelCostAllocationConfigurationArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ApplicationMaximumCapacityArgsDict(TypedDict):
     cpu: pulumi.Input[_builtins.str]
@@ -260,17 +278,20 @@ class ApplicationMaximumCapacityArgs:
     @pulumi.getter
     def cpu(self) -> pulumi.Input[_builtins.str]: ...
     @cpu.setter
-    def cpu(self, value: pulumi.Input[_builtins.str]): ...
+    def cpu(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def memory(self) -> pulumi.Input[_builtins.str]: ...
     @memory.setter
-    def memory(self, value: pulumi.Input[_builtins.str]): ...
+    def memory(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disk(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk.setter
-    def disk(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def disk(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationMonitoringConfigurationArgsDict(TypedDict):
     cloudwatch_logging_configuration: NotRequired[
@@ -337,7 +358,8 @@ class ApplicationMonitoringConfigurationArgs:
                 ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedPersistenceMonitoringConfiguration")
     def managed_persistence_monitoring_configuration(
@@ -355,7 +377,8 @@ class ApplicationMonitoringConfigurationArgs:
                 ApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prometheusMonitoringConfiguration")
     def prometheus_monitoring_configuration(
@@ -373,7 +396,8 @@ class ApplicationMonitoringConfigurationArgs:
                 ApplicationMonitoringConfigurationPrometheusMonitoringConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3MonitoringConfiguration")
     def s3_monitoring_configuration(
@@ -389,7 +413,8 @@ class ApplicationMonitoringConfigurationArgs:
                 ApplicationMonitoringConfigurationS3MonitoringConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationArgsDict(
     TypedDict
@@ -431,22 +456,30 @@ class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeyArn")
     def encryption_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_key_arn.setter
-    def encryption_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_key_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logGroupName")
     def log_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_group_name.setter
-    def log_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_group_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logStreamNamePrefix")
     def log_stream_name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_stream_name_prefix.setter
-    def log_stream_name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_stream_name_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logTypes")
     def log_types(
@@ -472,7 +505,8 @@ class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypeArgsDict(
     TypedDict
@@ -492,12 +526,16 @@ class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypeArg
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationArgsDict(
     TypedDict
@@ -517,12 +555,16 @@ class ApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguratio
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKeyArn")
     def encryption_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_key_arn.setter
-    def encryption_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_key_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ApplicationMonitoringConfigurationPrometheusMonitoringConfigurationArgsDict(
     TypedDict
@@ -538,7 +580,10 @@ class ApplicationMonitoringConfigurationPrometheusMonitoringConfigurationArgs:
     @pulumi.getter(name="remoteWriteUrl")
     def remote_write_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remote_write_url.setter
-    def remote_write_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def remote_write_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ApplicationMonitoringConfigurationS3MonitoringConfigurationArgsDict(TypedDict):
     encryption_key_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -556,12 +601,16 @@ class ApplicationMonitoringConfigurationS3MonitoringConfigurationArgs:
     @pulumi.getter(name="encryptionKeyArn")
     def encryption_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_key_arn.setter
-    def encryption_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_key_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logUri")
     def log_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_uri.setter
-    def log_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ApplicationNetworkConfigurationArgsDict(TypedDict):
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -585,7 +634,8 @@ class ApplicationNetworkConfigurationArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -594,7 +644,8 @@ class ApplicationNetworkConfigurationArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationRuntimeConfigurationArgsDict(TypedDict):
     classification: pulumi.Input[_builtins.str]
@@ -614,7 +665,8 @@ class ApplicationRuntimeConfigurationArgs:
     @pulumi.getter
     def classification(self) -> pulumi.Input[_builtins.str]: ...
     @classification.setter
-    def classification(self, value: pulumi.Input[_builtins.str]): ...
+    def classification(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -623,7 +675,8 @@ class ApplicationRuntimeConfigurationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApplicationSchedulerConfigurationArgsDict(TypedDict):
     max_concurrent_runs: NotRequired[pulumi.Input[_builtins.int]]
@@ -641,9 +694,15 @@ class ApplicationSchedulerConfigurationArgs:
     @pulumi.getter(name="maxConcurrentRuns")
     def max_concurrent_runs(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_concurrent_runs.setter
-    def max_concurrent_runs(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_concurrent_runs(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queueTimeoutMinutes")
     def queue_timeout_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @queue_timeout_minutes.setter
-    def queue_timeout_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def queue_timeout_minutes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...

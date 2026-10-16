@@ -34,7 +34,8 @@ class GetActiveFolderResult:
     def parent(self) -> _builtins.str: ...
 
 class AwaitableGetActiveFolderResult(GetActiveFolderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActiveFolderResult]:
+        ...
 
 def get_active_folder(
     api_method: Optional[_builtins.str] = ...,

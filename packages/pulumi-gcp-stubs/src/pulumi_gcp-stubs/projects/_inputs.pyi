@@ -56,12 +56,16 @@ class AccessApprovalSettingsEnrolledServiceArgs:
     @pulumi.getter(name="cloudProduct")
     def cloud_product(self) -> pulumi.Input[_builtins.str]: ...
     @cloud_product.setter
-    def cloud_product(self, value: pulumi.Input[_builtins.str]): ...
+    def cloud_product(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enrollmentLevel")
     def enrollment_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enrollment_level.setter
-    def enrollment_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enrollment_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ApiKeyRestrictionsArgsDict(TypedDict):
     android_key_restrictions: NotRequired[
@@ -110,7 +114,8 @@ class ApiKeyRestrictionsArgs:
     def android_key_restrictions(
         self,
         value: Optional[pulumi.Input[ApiKeyRestrictionsAndroidKeyRestrictionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiTargets")
     def api_targets(
@@ -124,7 +129,8 @@ class ApiKeyRestrictionsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApiKeyRestrictionsApiTargetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="browserKeyRestrictions")
     def browser_key_restrictions(
@@ -134,7 +140,8 @@ class ApiKeyRestrictionsArgs:
     def browser_key_restrictions(
         self,
         value: Optional[pulumi.Input[ApiKeyRestrictionsBrowserKeyRestrictionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iosKeyRestrictions")
     def ios_key_restrictions(
@@ -143,7 +150,8 @@ class ApiKeyRestrictionsArgs:
     @ios_key_restrictions.setter
     def ios_key_restrictions(
         self, value: Optional[pulumi.Input[ApiKeyRestrictionsIosKeyRestrictionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverKeyRestrictions")
     def server_key_restrictions(
@@ -152,7 +160,8 @@ class ApiKeyRestrictionsArgs:
     @server_key_restrictions.setter
     def server_key_restrictions(
         self, value: Optional[pulumi.Input[ApiKeyRestrictionsServerKeyRestrictionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiKeyRestrictionsAndroidKeyRestrictionsArgsDict(TypedDict):
     allowed_applications: pulumi.Input[
@@ -195,7 +204,8 @@ class ApiKeyRestrictionsAndroidKeyRestrictionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationArgsDict(TypedDict):
     package_name: pulumi.Input[_builtins.str]
@@ -213,12 +223,14 @@ class ApiKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationArgs:
     @pulumi.getter(name="packageName")
     def package_name(self) -> pulumi.Input[_builtins.str]: ...
     @package_name.setter
-    def package_name(self, value: pulumi.Input[_builtins.str]): ...
+    def package_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sha1Fingerprint")
     def sha1_fingerprint(self) -> pulumi.Input[_builtins.str]: ...
     @sha1_fingerprint.setter
-    def sha1_fingerprint(self, value: pulumi.Input[_builtins.str]): ...
+    def sha1_fingerprint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ApiKeyRestrictionsApiTargetArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
@@ -236,7 +248,8 @@ class ApiKeyRestrictionsApiTargetArgs:
     @pulumi.getter
     def service(self) -> pulumi.Input[_builtins.str]: ...
     @service.setter
-    def service(self, value: pulumi.Input[_builtins.str]): ...
+    def service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def methods(
@@ -245,7 +258,8 @@ class ApiKeyRestrictionsApiTargetArgs:
     @methods.setter
     def methods(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiKeyRestrictionsBrowserKeyRestrictionsArgsDict(TypedDict):
     allowed_referrers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -265,7 +279,8 @@ class ApiKeyRestrictionsBrowserKeyRestrictionsArgs:
     @allowed_referrers.setter
     def allowed_referrers(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiKeyRestrictionsIosKeyRestrictionsArgsDict(TypedDict):
     allowed_bundle_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -285,7 +300,8 @@ class ApiKeyRestrictionsIosKeyRestrictionsArgs:
     @allowed_bundle_ids.setter
     def allowed_bundle_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApiKeyRestrictionsServerKeyRestrictionsArgsDict(TypedDict):
     allowed_ips: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -301,7 +317,8 @@ class ApiKeyRestrictionsServerKeyRestrictionsArgs:
     @allowed_ips.setter
     def allowed_ips(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IAMAuditConfigAuditLogConfigArgsDict(TypedDict):
     log_type: pulumi.Input[_builtins.str]
@@ -321,7 +338,8 @@ class IAMAuditConfigAuditLogConfigArgs:
     @pulumi.getter(name="logType")
     def log_type(self) -> pulumi.Input[_builtins.str]: ...
     @log_type.setter
-    def log_type(self, value: pulumi.Input[_builtins.str]): ...
+    def log_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exemptedMembers")
     def exempted_members(
@@ -330,7 +348,8 @@ class IAMAuditConfigAuditLogConfigArgs:
     @exempted_members.setter
     def exempted_members(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -350,17 +369,20 @@ class IAMBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class IAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -380,17 +402,20 @@ class IAMMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OrganizationPolicyBooleanPolicyArgsDict(TypedDict):
     enforced: pulumi.Input[_builtins.bool]
@@ -402,7 +427,8 @@ class OrganizationPolicyBooleanPolicyArgs:
     @pulumi.getter
     def enforced(self) -> pulumi.Input[_builtins.bool]: ...
     @enforced.setter
-    def enforced(self, value: pulumi.Input[_builtins.bool]): ...
+    def enforced(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class OrganizationPolicyListPolicyArgsDict(TypedDict):
     allow: NotRequired[pulumi.Input[OrganizationPolicyListPolicyAllowArgsDict]]
@@ -428,24 +454,30 @@ class OrganizationPolicyListPolicyArgs:
     @allow.setter
     def allow(
         self, value: Optional[pulumi.Input[OrganizationPolicyListPolicyAllowArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def deny(self) -> Optional[pulumi.Input[OrganizationPolicyListPolicyDenyArgs]]: ...
     @deny.setter
     def deny(
         self, value: Optional[pulumi.Input[OrganizationPolicyListPolicyDenyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inheritFromParent")
     def inherit_from_parent(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @inherit_from_parent.setter
-    def inherit_from_parent(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def inherit_from_parent(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="suggestedValue")
     def suggested_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @suggested_value.setter
-    def suggested_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def suggested_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class OrganizationPolicyListPolicyAllowArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
@@ -463,7 +495,8 @@ class OrganizationPolicyListPolicyAllowArgs:
     @pulumi.getter
     def all(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all.setter
-    def all(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -472,7 +505,8 @@ class OrganizationPolicyListPolicyAllowArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OrganizationPolicyListPolicyDenyArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
@@ -490,7 +524,8 @@ class OrganizationPolicyListPolicyDenyArgs:
     @pulumi.getter
     def all(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all.setter
-    def all(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def all(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(
@@ -499,7 +534,8 @@ class OrganizationPolicyListPolicyDenyArgs:
     @values.setter
     def values(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OrganizationPolicyRestorePolicyArgsDict(TypedDict):
     default: pulumi.Input[_builtins.bool]
@@ -511,4 +547,5 @@ class OrganizationPolicyRestorePolicyArgs:
     @pulumi.getter
     def default(self) -> pulumi.Input[_builtins.bool]: ...
     @default.setter
-    def default(self, value: pulumi.Input[_builtins.bool]): ...
+    def default(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...

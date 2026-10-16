@@ -67,7 +67,8 @@ class GetEngineVersionsResult:
     def version_prefix(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetEngineVersionsResult(GetEngineVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEngineVersionsResult]:
+        ...
 
 def get_engine_versions(
     location: Optional[_builtins.str] = ...,

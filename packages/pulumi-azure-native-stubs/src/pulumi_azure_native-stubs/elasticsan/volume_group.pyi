@@ -33,12 +33,14 @@ class VolumeGroupArgs:
     @pulumi.getter(name="elasticSanName")
     def elastic_san_name(self) -> pulumi.Input[_builtins.str]: ...
     @elastic_san_name.setter
-    def elastic_san_name(self, value: pulumi.Input[_builtins.str]): ...
+    def elastic_san_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(
@@ -47,7 +49,8 @@ class VolumeGroupArgs:
     @encryption.setter
     def encryption(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionProperties")
     def encryption_properties(
@@ -56,7 +59,8 @@ class VolumeGroupArgs:
     @encryption_properties.setter
     def encryption_properties(
         self, value: Optional[pulumi.Input[EncryptionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enforceDataIntegrityCheckForIscsi")
     def enforce_data_integrity_check_for_iscsi(
@@ -65,17 +69,22 @@ class VolumeGroupArgs:
     @enforce_data_integrity_check_for_iscsi.setter
     def enforce_data_integrity_check_for_iscsi(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkAcls")
     def network_acls(self) -> Optional[pulumi.Input[NetworkRuleSetArgs]]: ...
     @network_acls.setter
-    def network_acls(self, value: Optional[pulumi.Input[NetworkRuleSetArgs]]): ...
+    def network_acls(
+        self, value: Optional[pulumi.Input[NetworkRuleSetArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protocolType")
     def protocol_type(
@@ -84,12 +93,16 @@ class VolumeGroupArgs:
     @protocol_type.setter
     def protocol_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageTargetType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeGroupName")
     def volume_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_group_name.setter
-    def volume_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def volume_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:elasticsan:VolumeGroup")
 class VolumeGroup(pulumi.CustomResource):

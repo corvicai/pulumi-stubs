@@ -51,7 +51,8 @@ class GetPlanResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPlanResult(GetPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPlanResult]:
+        ...
 
 def get_plan(
     plan_name: Optional[_builtins.str] = ...,

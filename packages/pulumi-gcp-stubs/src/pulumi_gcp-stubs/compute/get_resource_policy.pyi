@@ -74,7 +74,8 @@ class GetResourcePolicyResult:
     ) -> Sequence[outputs.GetResourcePolicyWorkloadPolicyResult]: ...
 
 class AwaitableGetResourcePolicyResult(GetResourcePolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourcePolicyResult]:
+        ...
 
 def get_resource_policy(
     name: Optional[_builtins.str] = ...,

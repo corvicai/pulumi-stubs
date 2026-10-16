@@ -31,12 +31,14 @@ class AutoExportJobArgs:
     @pulumi.getter(name="amlFilesystemName")
     def aml_filesystem_name(self) -> pulumi.Input[_builtins.str]: ...
     @aml_filesystem_name.setter
-    def aml_filesystem_name(self, value: pulumi.Input[_builtins.str]): ...
+    def aml_filesystem_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminStatus")
     def admin_status(
@@ -46,12 +48,16 @@ class AutoExportJobArgs:
     def admin_status(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AutoExportJobAdminStatus]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoExportJobName")
     def auto_export_job_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auto_export_job_name.setter
-    def auto_export_job_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auto_export_job_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoExportPrefixes")
     def auto_export_prefixes(
@@ -60,12 +66,14 @@ class AutoExportJobArgs:
     @auto_export_prefixes.setter
     def auto_export_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -74,7 +82,8 @@ class AutoExportJobArgs:
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AutoExportStatusType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -83,7 +92,8 @@ class AutoExportJobArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:storagecache:AutoExportJob")
 class AutoExportJob(pulumi.CustomResource):

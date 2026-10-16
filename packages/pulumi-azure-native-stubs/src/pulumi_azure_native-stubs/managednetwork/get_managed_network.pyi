@@ -60,7 +60,8 @@ class GetManagedNetworkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedNetworkResult(GetManagedNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedNetworkResult]:
+        ...
 
 def get_managed_network(
     managed_network_name: Optional[_builtins.str] = ...,

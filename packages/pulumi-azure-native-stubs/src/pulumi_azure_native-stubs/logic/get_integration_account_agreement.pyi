@@ -82,7 +82,10 @@ class GetIntegrationAccountAgreementResult:
 class AwaitableGetIntegrationAccountAgreementResult(
     GetIntegrationAccountAgreementResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationAccountAgreementResult]:
+        ...
 
 def get_integration_account_agreement(
     agreement_name: Optional[_builtins.str] = ...,

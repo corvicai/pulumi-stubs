@@ -76,7 +76,10 @@ class ListPaloAltoNetworksCloudngfwOperationSupportInfoResult:
 class AwaitableListPaloAltoNetworksCloudngfwOperationSupportInfoResult(
     ListPaloAltoNetworksCloudngfwOperationSupportInfoResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListPaloAltoNetworksCloudngfwOperationSupportInfoResult]:
+        ...
 
 def list_palo_alto_networks_cloudngfw_operation_support_info(
     opts: Optional[pulumi.InvokeOptions] = ...,

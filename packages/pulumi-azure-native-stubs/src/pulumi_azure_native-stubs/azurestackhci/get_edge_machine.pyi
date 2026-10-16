@@ -56,7 +56,8 @@ class GetEdgeMachineResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEdgeMachineResult(GetEdgeMachineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEdgeMachineResult]:
+        ...
 
 def get_edge_machine(
     edge_machine_name: Optional[_builtins.str] = ...,

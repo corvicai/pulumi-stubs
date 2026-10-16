@@ -59,7 +59,8 @@ class GetPolicyResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetPolicyResult(GetPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyResult]:
+        ...
 
 def get_policy(
     arn: Optional[_builtins.str] = ...,

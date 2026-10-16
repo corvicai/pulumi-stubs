@@ -48,7 +48,8 @@ class GetSentinelOnboardingStateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSentinelOnboardingStateResult(GetSentinelOnboardingStateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSentinelOnboardingStateResult]:
+        ...
 
 def get_sentinel_onboarding_state(
     resource_group_name: Optional[_builtins.str] = ...,

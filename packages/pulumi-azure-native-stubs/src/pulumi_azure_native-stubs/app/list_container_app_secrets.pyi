@@ -21,7 +21,8 @@ class ListContainerAppSecretsResult:
     def value(self) -> Sequence[outputs.ContainerAppSecretResponse]: ...
 
 class AwaitableListContainerAppSecretsResult(ListContainerAppSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListContainerAppSecretsResult]:
+        ...
 
 def list_container_app_secrets(
     container_app_name: Optional[_builtins.str] = ...,

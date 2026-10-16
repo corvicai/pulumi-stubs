@@ -64,7 +64,10 @@ class ListBotConnectionWithSecretsResult:
     def zones(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableListBotConnectionWithSecretsResult(ListBotConnectionWithSecretsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListBotConnectionWithSecretsResult]:
+        ...
 
 def list_bot_connection_with_secrets(
     connection_name: Optional[_builtins.str] = ...,

@@ -37,22 +37,28 @@ class RegistrationArgs:
     @contact_settings.setter
     def contact_settings(
         self, value: pulumi.Input[RegistrationContactSettingsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> pulumi.Input[_builtins.str]: ...
     @domain_name.setter
-    def domain_name(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="yearlyPrice")
     def yearly_price(self) -> pulumi.Input[RegistrationYearlyPriceArgs]: ...
     @yearly_price.setter
-    def yearly_price(self, value: pulumi.Input[RegistrationYearlyPriceArgs]): ...
+    def yearly_price(
+        self, value: pulumi.Input[RegistrationYearlyPriceArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactNotices")
     def contact_notices(
@@ -61,14 +67,16 @@ class RegistrationArgs:
     @contact_notices.setter
     def contact_notices(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
     def dns_settings(self) -> Optional[pulumi.Input[RegistrationDnsSettingsArgs]]: ...
     @dns_settings.setter
     def dns_settings(
         self, value: Optional[pulumi.Input[RegistrationDnsSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNotices")
     def domain_notices(
@@ -77,7 +85,8 @@ class RegistrationArgs:
     @domain_notices.setter
     def domain_notices(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -86,7 +95,8 @@ class RegistrationArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementSettings")
     def management_settings(
@@ -95,12 +105,14 @@ class RegistrationArgs:
     @management_settings.setter
     def management_settings(
         self, value: Optional[pulumi.Input[RegistrationManagementSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegistrationState:
@@ -147,7 +159,8 @@ class _RegistrationState:
     @contact_notices.setter
     def contact_notices(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contactSettings")
     def contact_settings(
@@ -156,24 +169,28 @@ class _RegistrationState:
     @contact_settings.setter
     def contact_settings(
         self, value: Optional[pulumi.Input[RegistrationContactSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
     def dns_settings(self) -> Optional[pulumi.Input[RegistrationDnsSettingsArgs]]: ...
     @dns_settings.setter
     def dns_settings(
         self, value: Optional[pulumi.Input[RegistrationDnsSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNotices")
     def domain_notices(
@@ -182,7 +199,8 @@ class _RegistrationState:
     @domain_notices.setter
     def domain_notices(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -191,12 +209,14 @@ class _RegistrationState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issues(
@@ -205,7 +225,8 @@ class _RegistrationState:
     @issues.setter
     def issues(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -214,12 +235,14 @@ class _RegistrationState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementSettings")
     def management_settings(
@@ -228,17 +251,20 @@ class _RegistrationState:
     @management_settings.setter
     def management_settings(
         self, value: Optional[pulumi.Input[RegistrationManagementSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -247,17 +273,22 @@ class _RegistrationState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registerFailureReason")
     def register_failure_reason(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @register_failure_reason.setter
-    def register_failure_reason(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def register_failure_reason(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedPrivacies")
     def supported_privacies(
@@ -266,14 +297,16 @@ class _RegistrationState:
     @supported_privacies.setter
     def supported_privacies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="yearlyPrice")
     def yearly_price(self) -> Optional[pulumi.Input[RegistrationYearlyPriceArgs]]: ...
     @yearly_price.setter
     def yearly_price(
         self, value: Optional[pulumi.Input[RegistrationYearlyPriceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:clouddomains/registration:Registration")
 class Registration(pulumi.CustomResource):

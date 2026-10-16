@@ -26,17 +26,22 @@ class DynamicConfigurationVersionArgs:
     @pulumi.getter(name="configurationName")
     def configuration_name(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_name.setter
-    def configuration_name(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamicConfigurationName")
     def dynamic_configuration_name(self) -> pulumi.Input[_builtins.str]: ...
     @dynamic_configuration_name.setter
-    def dynamic_configuration_name(self, value: pulumi.Input[_builtins.str]): ...
+    def dynamic_configuration_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamicConfigurationVersionName")
     def dynamic_configuration_version_name(
@@ -45,7 +50,8 @@ class DynamicConfigurationVersionArgs:
     @dynamic_configuration_version_name.setter
     def dynamic_configuration_version_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -54,7 +60,8 @@ class DynamicConfigurationVersionArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[DynamicConfigurationVersionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:edge:DynamicConfigurationVersion")
 class DynamicConfigurationVersion(pulumi.CustomResource):

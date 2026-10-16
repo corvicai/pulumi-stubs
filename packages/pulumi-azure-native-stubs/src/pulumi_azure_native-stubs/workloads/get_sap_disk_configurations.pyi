@@ -24,7 +24,8 @@ class GetSAPDiskConfigurationsResult:
     ) -> Optional[Mapping[str, outputs.SAPDiskConfigurationResponse]]: ...
 
 class AwaitableGetSAPDiskConfigurationsResult(GetSAPDiskConfigurationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSAPDiskConfigurationsResult]:
+        ...
 
 def get_sap_disk_configurations(
     app_location: Optional[_builtins.str] = ...,

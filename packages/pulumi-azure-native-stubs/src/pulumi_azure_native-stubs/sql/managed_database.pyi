@@ -52,17 +52,22 @@ class ManagedDatabaseArgs:
     @pulumi.getter(name="managedInstanceName")
     def managed_instance_name(self) -> pulumi.Input[_builtins.str]: ...
     @managed_instance_name.setter
-    def managed_instance_name(self, value: pulumi.Input[_builtins.str]): ...
+    def managed_instance_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoCompleteRestore")
     def auto_complete_restore(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @auto_complete_restore.setter
-    def auto_complete_restore(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def auto_complete_restore(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogCollation")
     def catalog_collation(
@@ -71,12 +76,14 @@ class ManagedDatabaseArgs:
     @catalog_collation.setter
     def catalog_collation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CatalogCollationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collation.setter
-    def collation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -86,7 +93,8 @@ class ManagedDatabaseArgs:
     def create_mode(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ManagedDatabaseCreateMode]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSubscriptionRestorableDroppedDatabaseId")
     def cross_subscription_restorable_dropped_database_id(
@@ -95,7 +103,8 @@ class ManagedDatabaseArgs:
     @cross_subscription_restorable_dropped_database_id.setter
     def cross_subscription_restorable_dropped_database_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSubscriptionSourceDatabaseId")
     def cross_subscription_source_database_id(
@@ -104,7 +113,8 @@ class ManagedDatabaseArgs:
     @cross_subscription_source_database_id.setter
     def cross_subscription_source_database_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSubscriptionTargetManagedInstanceId")
     def cross_subscription_target_managed_instance_id(
@@ -113,27 +123,34 @@ class ManagedDatabaseArgs:
     @cross_subscription_target_managed_instance_id.setter
     def cross_subscription_target_managed_instance_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isLedgerOn")
     def is_ledger_on(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_ledger_on.setter
-    def is_ledger_on(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_ledger_on(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastBackupName")
     def last_backup_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_backup_name.setter
-    def last_backup_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_backup_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="longTermRetentionBackupResourceId")
     def long_term_retention_backup_resource_id(
@@ -142,12 +159,16 @@ class ManagedDatabaseArgs:
     @long_term_retention_backup_resource_id.setter
     def long_term_retention_backup_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoverableDatabaseId")
     def recoverable_database_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recoverable_database_id.setter
-    def recoverable_database_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recoverable_database_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restorableDroppedDatabaseId")
     def restorable_dropped_database_id(
@@ -156,36 +177,48 @@ class ManagedDatabaseArgs:
     @restorable_dropped_database_id.setter
     def restorable_dropped_database_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restorePointInTime")
     def restore_point_in_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @restore_point_in_time.setter
-    def restore_point_in_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def restore_point_in_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDatabaseId")
     def source_database_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_database_id.setter
-    def source_database_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_database_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageContainerIdentity")
     def storage_container_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_container_identity.setter
     def storage_container_identity(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageContainerSasToken")
     def storage_container_sas_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_container_sas_token.setter
     def storage_container_sas_token(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageContainerUri")
     def storage_container_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_container_uri.setter
-    def storage_container_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_container_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -194,7 +227,8 @@ class ManagedDatabaseArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:sql:ManagedDatabase")
 class ManagedDatabase(pulumi.CustomResource):

@@ -51,7 +51,8 @@ class GetApiReleaseResult:
     def updated_date_time(self) -> _builtins.str: ...
 
 class AwaitableGetApiReleaseResult(GetApiReleaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiReleaseResult]:
+        ...
 
 def get_api_release(
     api_id: Optional[_builtins.str] = ...,

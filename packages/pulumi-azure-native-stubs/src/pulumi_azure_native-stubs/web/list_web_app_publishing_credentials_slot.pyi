@@ -57,7 +57,10 @@ class ListWebAppPublishingCredentialsSlotResult:
 class AwaitableListWebAppPublishingCredentialsSlotResult(
     ListWebAppPublishingCredentialsSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppPublishingCredentialsSlotResult]:
+        ...
 
 def list_web_app_publishing_credentials_slot(
     name: Optional[_builtins.str] = ...,

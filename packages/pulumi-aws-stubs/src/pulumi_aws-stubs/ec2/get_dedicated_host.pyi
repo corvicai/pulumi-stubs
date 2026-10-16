@@ -89,7 +89,8 @@ class GetDedicatedHostResult:
     def total_vcpus(self) -> _builtins.int: ...
 
 class AwaitableGetDedicatedHostResult(GetDedicatedHostResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDedicatedHostResult]:
+        ...
 
 def get_dedicated_host(
     filters: Optional[

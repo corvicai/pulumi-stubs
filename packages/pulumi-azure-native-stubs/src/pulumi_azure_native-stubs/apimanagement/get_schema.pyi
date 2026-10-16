@@ -47,7 +47,8 @@ class GetSchemaResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSchemaResult(GetSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSchemaResult]:
+        ...
 
 def get_schema(
     resource_group_name: Optional[_builtins.str] = ...,

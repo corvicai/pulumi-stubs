@@ -97,7 +97,8 @@ class DatabaseIdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DatabaseIdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -106,7 +107,8 @@ class DatabaseIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DatabaseVulnerabilityAssessmentRuleBaselineItemArgsDict(TypedDict):
     result: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -120,7 +122,10 @@ class DatabaseVulnerabilityAssessmentRuleBaselineItemArgs:
     @pulumi.getter
     def result(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @result.setter
-    def result(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def result(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class DistributedAvailabilityGroupDatabaseArgsDict(TypedDict):
     database_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -134,7 +139,8 @@ class DistributedAvailabilityGroupDatabaseArgs:
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ElasticPoolPerDatabaseSettingsArgsDict(TypedDict):
     auto_pause_delay: NotRequired[pulumi.Input[_builtins.int]]
@@ -154,17 +160,22 @@ class ElasticPoolPerDatabaseSettingsArgs:
     @pulumi.getter(name="autoPauseDelay")
     def auto_pause_delay(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @auto_pause_delay.setter
-    def auto_pause_delay(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def auto_pause_delay(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxCapacity")
     def max_capacity(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max_capacity.setter
-    def max_capacity(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max_capacity(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minCapacity")
     def min_capacity(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @min_capacity.setter
-    def min_capacity(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def min_capacity(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class FailoverGroupReadOnlyEndpointArgsDict(TypedDict):
     failover_policy: NotRequired[
@@ -195,12 +206,14 @@ class FailoverGroupReadOnlyEndpointArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ReadOnlyEndpointFailoverPolicy]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetServer")
     def target_server(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_server.setter
-    def target_server(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_server(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FailoverGroupReadWriteEndpointArgsDict(TypedDict):
     failover_policy: pulumi.Input[Union[_builtins.str, ReadWriteEndpointFailoverPolicy]]
@@ -228,7 +241,8 @@ class FailoverGroupReadWriteEndpointArgs:
     @failover_policy.setter
     def failover_policy(
         self, value: pulumi.Input[Union[_builtins.str, ReadWriteEndpointFailoverPolicy]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverWithDataLossGracePeriodMinutes")
     def failover_with_data_loss_grace_period_minutes(
@@ -237,7 +251,8 @@ class FailoverGroupReadWriteEndpointArgs:
     @failover_with_data_loss_grace_period_minutes.setter
     def failover_with_data_loss_grace_period_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InstanceFailoverGroupReadOnlyEndpointArgsDict(TypedDict):
     failover_policy: NotRequired[
@@ -266,7 +281,8 @@ class InstanceFailoverGroupReadOnlyEndpointArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ReadOnlyEndpointFailoverPolicy]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class InstanceFailoverGroupReadWriteEndpointArgsDict(TypedDict):
     failover_policy: pulumi.Input[Union[_builtins.str, ReadWriteEndpointFailoverPolicy]]
@@ -294,7 +310,8 @@ class InstanceFailoverGroupReadWriteEndpointArgs:
     @failover_policy.setter
     def failover_policy(
         self, value: pulumi.Input[Union[_builtins.str, ReadWriteEndpointFailoverPolicy]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverWithDataLossGracePeriodMinutes")
     def failover_with_data_loss_grace_period_minutes(
@@ -303,7 +320,8 @@ class InstanceFailoverGroupReadWriteEndpointArgs:
     @failover_with_data_loss_grace_period_minutes.setter
     def failover_with_data_loss_grace_period_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobAgentIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, JobAgentIdentityType]]
@@ -327,12 +345,16 @@ class JobAgentIdentityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, JobAgentIdentityType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, JobAgentIdentityType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, JobAgentIdentityType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenant_id.setter
-    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -341,7 +363,8 @@ class JobAgentIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobScheduleArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -365,27 +388,32 @@ class JobScheduleArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endTime")
     def end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_time.setter
-    def end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interval(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interval.setter
-    def interval(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interval(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[JobScheduleType]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[JobScheduleType]]): ...
+    def type(self, value: Optional[pulumi.Input[JobScheduleType]]):  # -> None:
+        ...
 
 class JobStepActionArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
@@ -405,7 +433,8 @@ class JobStepActionArgs:
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(
@@ -414,7 +443,8 @@ class JobStepActionArgs:
     @source.setter
     def source(
         self, value: Optional[pulumi.Input[Union[_builtins.str, JobStepActionSource]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -423,7 +453,8 @@ class JobStepActionArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, JobStepActionType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobStepExecutionOptionsArgsDict(TypedDict):
     initial_retry_interval_seconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -453,7 +484,8 @@ class JobStepExecutionOptionsArgs:
     @initial_retry_interval_seconds.setter
     def initial_retry_interval_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRetryIntervalSeconds")
     def maximum_retry_interval_seconds(
@@ -462,12 +494,14 @@ class JobStepExecutionOptionsArgs:
     @maximum_retry_interval_seconds.setter
     def maximum_retry_interval_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryAttempts")
     def retry_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retry_attempts.setter
-    def retry_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def retry_attempts(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryIntervalBackoffMultiplier")
     def retry_interval_backoff_multiplier(
@@ -476,12 +510,14 @@ class JobStepExecutionOptionsArgs:
     @retry_interval_backoff_multiplier.setter
     def retry_interval_backoff_multiplier(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeoutSeconds")
     def timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_seconds.setter
-    def timeout_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def timeout_seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class JobStepOutputArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
@@ -511,37 +547,46 @@ class JobStepOutputArgs:
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> pulumi.Input[_builtins.str]: ...
     @server_name.setter
-    def server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> pulumi.Input[_builtins.str]: ...
     @table_name.setter
-    def table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def credential(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credential.setter
-    def credential(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credential(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaName")
     def schema_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_name.setter
-    def schema_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subscriptionId")
     def subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subscription_id.setter
-    def subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -550,7 +595,8 @@ class JobStepOutputArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, JobStepOutputType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class JobTargetArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, JobTargetType]]
@@ -578,17 +624,24 @@ class JobTargetArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, JobTargetType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, JobTargetType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, JobTargetType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticPoolName")
     def elastic_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @elastic_pool_name.setter
-    def elastic_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def elastic_pool_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="membershipType")
     def membership_type(
@@ -597,22 +650,28 @@ class JobTargetArgs:
     @membership_type.setter
     def membership_type(
         self, value: Optional[pulumi.Input[JobTargetGroupMembershipType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshCredential")
     def refresh_credential(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_credential.setter
-    def refresh_credential(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_credential(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_name.setter
-    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shardMapName")
     def shard_map_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @shard_map_name.setter
-    def shard_map_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def shard_map_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedInstanceExternalAdministratorArgsDict(TypedDict):
     administrator_type: NotRequired[
@@ -648,7 +707,8 @@ class ManagedInstanceExternalAdministratorArgs:
     @administrator_type.setter
     def administrator_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AdministratorType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureADOnlyAuthentication")
     def azure_ad_only_authentication(
@@ -657,12 +717,14 @@ class ManagedInstanceExternalAdministratorArgs:
     @azure_ad_only_authentication.setter
     def azure_ad_only_authentication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def login(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @login.setter
-    def login(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def login(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalType")
     def principal_type(
@@ -671,17 +733,20 @@ class ManagedInstanceExternalAdministratorArgs:
     @principal_type.setter
     def principal_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PrincipalType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sid.setter
-    def sid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenant_id.setter
-    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedInstancePairInfoArgsDict(TypedDict):
     partner_managed_instance_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -701,14 +766,16 @@ class ManagedInstancePairInfoArgs:
     @partner_managed_instance_id.setter
     def partner_managed_instance_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryManagedInstanceId")
     def primary_managed_instance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_managed_instance_id.setter
     def primary_managed_instance_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedInstancePrivateEndpointPropertyArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -722,7 +789,8 @@ class ManagedInstancePrivateEndpointPropertyArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedInstancePrivateLinkServiceConnectionStatePropertyArgsDict(TypedDict):
     description: pulumi.Input[_builtins.str]
@@ -740,12 +808,14 @@ class ManagedInstancePrivateLinkServiceConnectionStatePropertyArgs:
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PartnerInfoArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -757,7 +827,8 @@ class PartnerInfoArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PartnerRegionInfoArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
@@ -771,7 +842,8 @@ class PartnerRegionInfoArgs:
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateEndpointPropertyArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -785,7 +857,8 @@ class PrivateEndpointPropertyArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStatePropertyArgsDict(TypedDict):
     description: pulumi.Input[_builtins.str]
@@ -805,7 +878,8 @@ class PrivateLinkServiceConnectionStatePropertyArgs:
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -819,7 +893,8 @@ class PrivateLinkServiceConnectionStatePropertyArgs:
         value: pulumi.Input[
             Union[_builtins.str, PrivateLinkServiceConnectionStateStatus]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, IdentityType]]]
@@ -843,7 +918,8 @@ class ResourceIdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -852,7 +928,8 @@ class ResourceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduleItemArgsDict(TypedDict):
     start_day: pulumi.Input[Union[_builtins.str, DayOfWeek]]
@@ -874,22 +951,30 @@ class ScheduleItemArgs:
     @pulumi.getter(name="startDay")
     def start_day(self) -> pulumi.Input[Union[_builtins.str, DayOfWeek]]: ...
     @start_day.setter
-    def start_day(self, value: pulumi.Input[Union[_builtins.str, DayOfWeek]]): ...
+    def start_day(
+        self, value: pulumi.Input[Union[_builtins.str, DayOfWeek]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> pulumi.Input[_builtins.str]: ...
     @start_time.setter
-    def start_time(self, value: pulumi.Input[_builtins.str]): ...
+    def start_time(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopDay")
     def stop_day(self) -> pulumi.Input[Union[_builtins.str, DayOfWeek]]: ...
     @stop_day.setter
-    def stop_day(self, value: pulumi.Input[Union[_builtins.str, DayOfWeek]]): ...
+    def stop_day(
+        self, value: pulumi.Input[Union[_builtins.str, DayOfWeek]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopTime")
     def stop_time(self) -> pulumi.Input[_builtins.str]: ...
     @stop_time.setter
-    def stop_time(self, value: pulumi.Input[_builtins.str]): ...
+    def stop_time(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ServerExternalAdministratorArgsDict(TypedDict):
     administrator_type: NotRequired[
@@ -925,7 +1010,8 @@ class ServerExternalAdministratorArgs:
     @administrator_type.setter
     def administrator_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AdministratorType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureADOnlyAuthentication")
     def azure_ad_only_authentication(
@@ -934,12 +1020,14 @@ class ServerExternalAdministratorArgs:
     @azure_ad_only_authentication.setter
     def azure_ad_only_authentication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def login(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @login.setter
-    def login(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def login(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalType")
     def principal_type(
@@ -948,17 +1036,20 @@ class ServerExternalAdministratorArgs:
     @principal_type.setter
     def principal_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PrincipalType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sid.setter
-    def sid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenant_id.setter
-    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ServerInfoArgsDict(TypedDict):
     server_id: pulumi.Input[_builtins.str]
@@ -970,7 +1061,8 @@ class ServerInfoArgs:
     @pulumi.getter(name="serverId")
     def server_id(self) -> pulumi.Input[_builtins.str]: ...
     @server_id.setter
-    def server_id(self, value: pulumi.Input[_builtins.str]): ...
+    def server_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ServicePrincipalArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, ServicePrincipalType]]]
@@ -990,7 +1082,8 @@ class ServicePrincipalArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ServicePrincipalType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1014,27 +1107,32 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @size.setter
-    def size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SyncGroupSchemaTableColumnArgsDict(TypedDict):
     data_size: NotRequired[pulumi.Input[_builtins.str]]
@@ -1054,17 +1152,20 @@ class SyncGroupSchemaTableColumnArgs:
     @pulumi.getter(name="dataSize")
     def data_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_size.setter
-    def data_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataType")
     def data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_type.setter
-    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="quotedName")
     def quoted_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @quoted_name.setter
-    def quoted_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def quoted_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SyncGroupSchemaTableArgsDict(TypedDict):
     columns: NotRequired[
@@ -1095,12 +1196,14 @@ class SyncGroupSchemaTableArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SyncGroupSchemaTableColumnArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="quotedName")
     def quoted_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @quoted_name.setter
-    def quoted_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def quoted_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SyncGroupSchemaArgsDict(TypedDict):
     master_sync_member_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1122,7 +1225,10 @@ class SyncGroupSchemaArgs:
     @pulumi.getter(name="masterSyncMemberName")
     def master_sync_member_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @master_sync_member_name.setter
-    def master_sync_member_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def master_sync_member_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -1132,7 +1238,8 @@ class SyncGroupSchemaArgs:
     def tables(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SyncGroupSchemaTableArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class VulnerabilityAssessmentRecurringScansPropertiesArgsDict(TypedDict):
     email_subscription_admins: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1154,7 +1261,8 @@ class VulnerabilityAssessmentRecurringScansPropertiesArgs:
     @email_subscription_admins.setter
     def email_subscription_admins(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def emails(
@@ -1163,9 +1271,11 @@ class VulnerabilityAssessmentRecurringScansPropertiesArgs:
     @emails.setter
     def emails(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isEnabled")
     def is_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_enabled.setter
-    def is_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...

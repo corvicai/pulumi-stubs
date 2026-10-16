@@ -87,7 +87,8 @@ class GetSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSubscriptionResult(GetSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubscriptionResult]:
+        ...
 
 def get_subscription(
     resource_group_name: Optional[_builtins.str] = ...,

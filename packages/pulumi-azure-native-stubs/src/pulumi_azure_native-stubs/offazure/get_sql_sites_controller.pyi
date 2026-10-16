@@ -58,7 +58,8 @@ class GetSqlSitesControllerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlSitesControllerResult(GetSqlSitesControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlSitesControllerResult]:
+        ...
 
 def get_sql_sites_controller(
     resource_group_name: Optional[_builtins.str] = ...,

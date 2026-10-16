@@ -56,7 +56,8 @@ class GetServiceConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceConfigurationResult(GetServiceConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceConfigurationResult]:
+        ...
 
 def get_service_configuration(
     endpoint_name: Optional[_builtins.str] = ...,

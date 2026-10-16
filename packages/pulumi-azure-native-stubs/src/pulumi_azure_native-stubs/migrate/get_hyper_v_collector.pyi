@@ -44,7 +44,8 @@ class GetHyperVCollectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHyperVCollectorResult(GetHyperVCollectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHyperVCollectorResult]:
+        ...
 
 def get_hyper_v_collector(
     hyper_v_collector_name: Optional[_builtins.str] = ...,

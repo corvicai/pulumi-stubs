@@ -64,7 +64,8 @@ class GetLinkedServerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLinkedServerResult(GetLinkedServerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkedServerResult]:
+        ...
 
 def get_linked_server(
     linked_server_name: Optional[_builtins.str] = ...,

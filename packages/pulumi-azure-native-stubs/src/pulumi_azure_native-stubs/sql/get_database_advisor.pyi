@@ -68,7 +68,8 @@ class GetDatabaseAdvisorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseAdvisorResult(GetDatabaseAdvisorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseAdvisorResult]:
+        ...
 
 def get_database_advisor(
     advisor_name: Optional[_builtins.str] = ...,

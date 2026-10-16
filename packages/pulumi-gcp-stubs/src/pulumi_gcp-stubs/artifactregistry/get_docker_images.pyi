@@ -40,7 +40,8 @@ class GetDockerImagesResult:
     def repository_id(self) -> _builtins.str: ...
 
 class AwaitableGetDockerImagesResult(GetDockerImagesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDockerImagesResult]:
+        ...
 
 def get_docker_images(
     location: Optional[_builtins.str] = ...,

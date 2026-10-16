@@ -37,12 +37,14 @@ class CustomerManagedPolicyAttachmentsExclusiveArgs:
     @pulumi.getter(name="instanceArn")
     def instance_arn(self) -> pulumi.Input[_builtins.str]: ...
     @instance_arn.setter
-    def instance_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def instance_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permissionSetArn")
     def permission_set_arn(self) -> pulumi.Input[_builtins.str]: ...
     @permission_set_arn.setter
-    def permission_set_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def permission_set_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedPolicyReferences")
     def customer_managed_policy_references(
@@ -68,12 +70,14 @@ class CustomerManagedPolicyAttachmentsExclusiveArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -87,7 +91,8 @@ class CustomerManagedPolicyAttachmentsExclusiveArgs:
         value: Optional[
             pulumi.Input[CustomerManagedPolicyAttachmentsExclusiveTimeoutsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CustomerManagedPolicyAttachmentsExclusiveState:
@@ -135,22 +140,28 @@ class _CustomerManagedPolicyAttachmentsExclusiveState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceArn")
     def instance_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_arn.setter
-    def instance_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="permissionSetArn")
     def permission_set_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @permission_set_arn.setter
-    def permission_set_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def permission_set_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -164,7 +175,8 @@ class _CustomerManagedPolicyAttachmentsExclusiveState:
         value: Optional[
             pulumi.Input[CustomerManagedPolicyAttachmentsExclusiveTimeoutsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CustomerManagedPolicyAttachmentsExclusive(pulumi.CustomResource):

@@ -31,7 +31,8 @@ class GetExtensionResult:
     def workspace_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetExtensionResult(GetExtensionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExtensionResult]:
+        ...
 
 def get_extension(
     cluster_name: Optional[_builtins.str] = ...,

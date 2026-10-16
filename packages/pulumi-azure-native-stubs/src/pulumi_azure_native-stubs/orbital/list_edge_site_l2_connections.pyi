@@ -26,7 +26,8 @@ class ListEdgeSiteL2ConnectionsResult:
     ) -> Optional[Sequence[outputs.ResourceIdListResultResponseValue]]: ...
 
 class AwaitableListEdgeSiteL2ConnectionsResult(ListEdgeSiteL2ConnectionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListEdgeSiteL2ConnectionsResult]:
+        ...
 
 def list_edge_site_l2_connections(
     edge_site_name: Optional[_builtins.str] = ...,

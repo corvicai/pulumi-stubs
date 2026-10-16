@@ -74,7 +74,10 @@ class ListContainerAppCustomHostNameAnalysisResult:
 class AwaitableListContainerAppCustomHostNameAnalysisResult(
     ListContainerAppCustomHostNameAnalysisResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListContainerAppCustomHostNameAnalysisResult]:
+        ...
 
 def list_container_app_custom_host_name_analysis(
     container_app_name: Optional[_builtins.str] = ...,

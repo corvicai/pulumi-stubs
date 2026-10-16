@@ -58,7 +58,8 @@ class GetUserHierarchyGroupResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetUserHierarchyGroupResult(GetUserHierarchyGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserHierarchyGroupResult]:
+        ...
 
 def get_user_hierarchy_group(
     hierarchy_group_id: Optional[_builtins.str] = ...,

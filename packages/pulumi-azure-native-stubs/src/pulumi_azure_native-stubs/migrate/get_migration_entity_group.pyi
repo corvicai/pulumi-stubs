@@ -48,7 +48,8 @@ class GetMigrationEntityGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMigrationEntityGroupResult(GetMigrationEntityGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMigrationEntityGroupResult]:
+        ...
 
 def get_migration_entity_group(
     migration_entity_group_name: Optional[_builtins.str] = ...,

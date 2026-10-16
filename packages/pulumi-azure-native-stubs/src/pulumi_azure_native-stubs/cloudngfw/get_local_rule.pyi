@@ -120,7 +120,8 @@ class GetLocalRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLocalRuleResult(GetLocalRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalRuleResult]:
+        ...
 
 def get_local_rule(
     local_rulestack_name: Optional[_builtins.str] = ...,

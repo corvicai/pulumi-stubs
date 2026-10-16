@@ -52,7 +52,8 @@ class GetDnssecConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDnssecConfigResult(GetDnssecConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnssecConfigResult]:
+        ...
 
 def get_dnssec_config(
     resource_group_name: Optional[_builtins.str] = ...,

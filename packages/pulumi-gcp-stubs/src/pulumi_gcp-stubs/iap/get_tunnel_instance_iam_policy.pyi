@@ -37,7 +37,8 @@ class GetTunnelInstanceIamPolicyResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetTunnelInstanceIamPolicyResult(GetTunnelInstanceIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTunnelInstanceIamPolicyResult]:
+        ...
 
 def get_tunnel_instance_iam_policy(
     instance: Optional[_builtins.str] = ...,

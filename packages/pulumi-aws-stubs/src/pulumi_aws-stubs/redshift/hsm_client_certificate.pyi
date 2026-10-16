@@ -20,12 +20,16 @@ class HsmClientCertificateArgs:
     @pulumi.getter(name="hsmClientCertificateIdentifier")
     def hsm_client_certificate_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @hsm_client_certificate_identifier.setter
-    def hsm_client_certificate_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def hsm_client_certificate_identifier(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -34,7 +38,8 @@ class HsmClientCertificateArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _HsmClientCertificateState:
@@ -54,7 +59,8 @@ class _HsmClientCertificateState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hsmClientCertificateIdentifier")
     def hsm_client_certificate_identifier(
@@ -63,7 +69,8 @@ class _HsmClientCertificateState:
     @hsm_client_certificate_identifier.setter
     def hsm_client_certificate_identifier(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hsmClientCertificatePublicKey")
     def hsm_client_certificate_public_key(
@@ -72,12 +79,14 @@ class _HsmClientCertificateState:
     @hsm_client_certificate_public_key.setter
     def hsm_client_certificate_public_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -86,7 +95,8 @@ class _HsmClientCertificateState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -95,7 +105,8 @@ class _HsmClientCertificateState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class HsmClientCertificate(pulumi.CustomResource):

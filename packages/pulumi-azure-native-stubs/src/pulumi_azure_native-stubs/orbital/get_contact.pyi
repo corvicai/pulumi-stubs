@@ -106,7 +106,8 @@ class GetContactResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContactResult(GetContactResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContactResult]:
+        ...
 
 def get_contact(
     contact_name: Optional[_builtins.str] = ...,

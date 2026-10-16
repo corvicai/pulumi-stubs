@@ -29,7 +29,8 @@ class GetOutpostInstanceTypesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetOutpostInstanceTypesResult(GetOutpostInstanceTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOutpostInstanceTypesResult]:
+        ...
 
 def get_outpost_instance_types(
     arn: Optional[_builtins.str] = ...,

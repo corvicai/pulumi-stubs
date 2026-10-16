@@ -80,7 +80,8 @@ class GetServiceEndpointPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServiceEndpointPolicyResult(GetServiceEndpointPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceEndpointPolicyResult]:
+        ...
 
 def get_service_endpoint_policy(
     expand: Optional[_builtins.str] = ...,

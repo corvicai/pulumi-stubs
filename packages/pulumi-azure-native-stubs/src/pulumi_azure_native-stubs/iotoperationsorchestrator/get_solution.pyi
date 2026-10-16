@@ -64,7 +64,8 @@ class GetSolutionResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSolutionResult(GetSolutionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSolutionResult]:
+        ...
 
 def get_solution(
     name: Optional[_builtins.str] = ...,

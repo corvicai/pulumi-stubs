@@ -23,7 +23,8 @@ class GetEdgeActionVersionCodeResult:
     def name(self) -> _builtins.str: ...
 
 class AwaitableGetEdgeActionVersionCodeResult(GetEdgeActionVersionCodeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEdgeActionVersionCodeResult]:
+        ...
 
 def get_edge_action_version_code(
     edge_action_name: Optional[_builtins.str] = ...,

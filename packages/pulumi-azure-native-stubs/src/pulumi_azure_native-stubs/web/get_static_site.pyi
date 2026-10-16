@@ -140,7 +140,8 @@ class GetStaticSiteResult:
     ) -> Sequence[outputs.StaticSiteUserProvidedFunctionAppResponse]: ...
 
 class AwaitableGetStaticSiteResult(GetStaticSiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStaticSiteResult]:
+        ...
 
 def get_static_site(
     name: Optional[_builtins.str] = ...,

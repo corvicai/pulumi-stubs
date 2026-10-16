@@ -25,7 +25,10 @@ class ListDiagnosticSettingsCategoryResult:
 class AwaitableListDiagnosticSettingsCategoryResult(
     ListDiagnosticSettingsCategoryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListDiagnosticSettingsCategoryResult]:
+        ...
 
 def list_diagnostic_settings_category(
     resource_uri: Optional[_builtins.str] = ...,

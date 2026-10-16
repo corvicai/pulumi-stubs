@@ -18,7 +18,8 @@ class GetZonesResult:
     def ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetZonesResult(GetZonesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetZonesResult]:
+        ...
 
 def get_zones(
     opts: Optional[pulumi.InvokeOptions] = ...,

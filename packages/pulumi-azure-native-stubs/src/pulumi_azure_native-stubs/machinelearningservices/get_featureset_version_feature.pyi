@@ -31,7 +31,8 @@ class GetFeaturesetVersionFeatureResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetFeaturesetVersionFeatureResult(GetFeaturesetVersionFeatureResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFeaturesetVersionFeatureResult]:
+        ...
 
 def get_featureset_version_feature(
     feature_name: Optional[_builtins.str] = ...,

@@ -62,7 +62,8 @@ class GetActionRequestResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetActionRequestResult(GetActionRequestResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActionRequestResult]:
+        ...
 
 def get_action_request(
     action_request_name: Optional[_builtins.str] = ...,

@@ -54,7 +54,10 @@ class GetNetworkFunctionDefinitionVersionResult:
 class AwaitableGetNetworkFunctionDefinitionVersionResult(
     GetNetworkFunctionDefinitionVersionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkFunctionDefinitionVersionResult]:
+        ...
 
 def get_network_function_definition_version(
     network_function_definition_group_name: Optional[_builtins.str] = ...,

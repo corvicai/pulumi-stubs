@@ -55,7 +55,8 @@ class GetStaticSiteLinkedBackendResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStaticSiteLinkedBackendResult(GetStaticSiteLinkedBackendResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStaticSiteLinkedBackendResult]:
+        ...
 
 def get_static_site_linked_backend(
     linked_backend_name: Optional[_builtins.str] = ...,

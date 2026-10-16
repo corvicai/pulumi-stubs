@@ -44,7 +44,8 @@ class GetStorageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageResult(GetStorageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageResult]:
+        ...
 
 def get_storage(
     resource_group_name: Optional[_builtins.str] = ...,

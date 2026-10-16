@@ -54,7 +54,10 @@ class GetElasticBeanstalkEnvironmentResult:
 class AwaitableGetElasticBeanstalkEnvironmentResult(
     GetElasticBeanstalkEnvironmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetElasticBeanstalkEnvironmentResult]:
+        ...
 
 def get_elastic_beanstalk_environment(
     name: Optional[_builtins.str] = ...,

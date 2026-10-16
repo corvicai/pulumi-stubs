@@ -51,7 +51,10 @@ class GetElasticLoadBalancingv2TargetHealthDescriptionResult:
 class AwaitableGetElasticLoadBalancingv2TargetHealthDescriptionResult(
     GetElasticLoadBalancingv2TargetHealthDescriptionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetElasticLoadBalancingv2TargetHealthDescriptionResult]:
+        ...
 
 def get_elastic_load_balancingv2_target_health_description(
     name: Optional[_builtins.str] = ...,

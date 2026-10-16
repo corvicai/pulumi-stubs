@@ -54,7 +54,10 @@ class GetConfigurationProfilesVersionResult:
 class AwaitableGetConfigurationProfilesVersionResult(
     GetConfigurationProfilesVersionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigurationProfilesVersionResult]:
+        ...
 
 def get_configuration_profiles_version(
     configuration_profile_name: Optional[_builtins.str] = ...,

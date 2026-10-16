@@ -34,17 +34,20 @@ class ReleaseArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseId")
     def release_id(self) -> pulumi.Input[_builtins.str]: ...
     @release_id.setter
-    def release_id(self, value: pulumi.Input[_builtins.str]): ...
+    def release_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unitKind")
     def unit_kind(self) -> pulumi.Input[_builtins.str]: ...
     @unit_kind.setter
-    def unit_kind(self, value: pulumi.Input[_builtins.str]): ...
+    def unit_kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -53,12 +56,16 @@ class ReleaseArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def blueprint(self) -> Optional[pulumi.Input[ReleaseBlueprintArgs]]: ...
     @blueprint.setter
-    def blueprint(self, value: Optional[pulumi.Input[ReleaseBlueprintArgs]]): ...
+    def blueprint(
+        self, value: Optional[pulumi.Input[ReleaseBlueprintArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariableDefaults")
     def input_variable_defaults(
@@ -72,7 +79,8 @@ class ReleaseArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReleaseInputVariableDefaultArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -81,12 +89,14 @@ class ReleaseArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseRequirements")
     def release_requirements(
@@ -95,7 +105,8 @@ class ReleaseArgs:
     @release_requirements.setter
     def release_requirements(
         self, value: Optional[pulumi.Input[ReleaseReleaseRequirementsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ReleaseState:
@@ -146,17 +157,22 @@ class _ReleaseState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def blueprint(self) -> Optional[pulumi.Input[ReleaseBlueprintArgs]]: ...
     @blueprint.setter
-    def blueprint(self, value: Optional[pulumi.Input[ReleaseBlueprintArgs]]): ...
+    def blueprint(
+        self, value: Optional[pulumi.Input[ReleaseBlueprintArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -165,7 +181,8 @@ class _ReleaseState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -174,12 +191,14 @@ class _ReleaseState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariableDefaults")
     def input_variable_defaults(
@@ -193,7 +212,8 @@ class _ReleaseState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReleaseInputVariableDefaultArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariables")
     def input_variables(
@@ -203,7 +223,8 @@ class _ReleaseState:
     def input_variables(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReleaseInputVariableArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -212,17 +233,20 @@ class _ReleaseState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputVariables")
     def output_variables(
@@ -234,12 +258,14 @@ class _ReleaseState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReleaseOutputVariableArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -248,12 +274,14 @@ class _ReleaseState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseId")
     def release_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @release_id.setter
-    def release_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def release_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseRequirements")
     def release_requirements(
@@ -262,22 +290,26 @@ class _ReleaseState:
     @release_requirements.setter
     def release_requirements(
         self, value: Optional[pulumi.Input[ReleaseReleaseRequirementsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unitKind")
     def unit_kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unit_kind.setter
-    def unit_kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unit_kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:saasruntime/release:Release")
 class Release(pulumi.CustomResource):

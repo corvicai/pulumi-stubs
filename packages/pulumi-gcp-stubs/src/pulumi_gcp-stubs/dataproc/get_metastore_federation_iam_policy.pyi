@@ -45,7 +45,10 @@ class GetMetastoreFederationIamPolicyResult:
 class AwaitableGetMetastoreFederationIamPolicyResult(
     GetMetastoreFederationIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMetastoreFederationIamPolicyResult]:
+        ...
 
 def get_metastore_federation_iam_policy(
     federation_id: Optional[_builtins.str] = ...,

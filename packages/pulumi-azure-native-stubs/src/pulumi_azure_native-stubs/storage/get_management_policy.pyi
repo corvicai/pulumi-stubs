@@ -44,7 +44,8 @@ class GetManagementPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagementPolicyResult(GetManagementPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagementPolicyResult]:
+        ...
 
 def get_management_policy(
     account_name: Optional[_builtins.str] = ...,

@@ -88,7 +88,8 @@ class GetDiagnosticServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDiagnosticServiceResult(GetDiagnosticServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiagnosticServiceResult]:
+        ...
 
 def get_diagnostic_service(
     diagnostic_service_name: Optional[_builtins.str] = ...,

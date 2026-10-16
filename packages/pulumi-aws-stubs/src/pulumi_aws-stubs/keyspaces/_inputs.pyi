@@ -54,12 +54,16 @@ class KeyspaceReplicationSpecificationArgs:
     @region_lists.setter
     def region_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationStrategy")
     def replication_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replication_strategy.setter
-    def replication_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replication_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class TableCapacitySpecificationArgsDict(TypedDict):
     read_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
@@ -79,17 +83,24 @@ class TableCapacitySpecificationArgs:
     @pulumi.getter(name="readCapacityUnits")
     def read_capacity_units(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @read_capacity_units.setter
-    def read_capacity_units(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def read_capacity_units(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputMode")
     def throughput_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @throughput_mode.setter
-    def throughput_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def throughput_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="writeCapacityUnits")
     def write_capacity_units(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @write_capacity_units.setter
-    def write_capacity_units(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def write_capacity_units(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class TableClientSideTimestampsArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -101,7 +112,8 @@ class TableClientSideTimestampsArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableCommentArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
@@ -115,7 +127,8 @@ class TableCommentArgs:
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TableEncryptionSpecificationArgsDict(TypedDict):
     kms_key_identifier: NotRequired[pulumi.Input[_builtins.str]]
@@ -133,12 +146,16 @@ class TableEncryptionSpecificationArgs:
     @pulumi.getter(name="kmsKeyIdentifier")
     def kms_key_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_identifier.setter
-    def kms_key_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TablePointInTimeRecoveryArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
@@ -152,7 +169,8 @@ class TablePointInTimeRecoveryArgs:
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TableSchemaDefinitionArgsDict(TypedDict):
     columns: pulumi.Input[Sequence[pulumi.Input[TableSchemaDefinitionColumnArgsDict]]]
@@ -191,7 +209,8 @@ class TableSchemaDefinitionArgs:
     def columns(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[TableSchemaDefinitionColumnArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partitionKeys")
     def partition_keys(
@@ -205,7 +224,8 @@ class TableSchemaDefinitionArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[TableSchemaDefinitionPartitionKeyArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusteringKeys")
     def clustering_keys(
@@ -219,7 +239,8 @@ class TableSchemaDefinitionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TableSchemaDefinitionClusteringKeyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="staticColumns")
     def static_columns(
@@ -233,7 +254,8 @@ class TableSchemaDefinitionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TableSchemaDefinitionStaticColumnArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableSchemaDefinitionClusteringKeyArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -251,12 +273,14 @@ class TableSchemaDefinitionClusteringKeyArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orderBy")
     def order_by(self) -> pulumi.Input[_builtins.str]: ...
     @order_by.setter
-    def order_by(self, value: pulumi.Input[_builtins.str]): ...
+    def order_by(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableSchemaDefinitionColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -274,12 +298,14 @@ class TableSchemaDefinitionColumnArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableSchemaDefinitionPartitionKeyArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -291,7 +317,8 @@ class TableSchemaDefinitionPartitionKeyArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableSchemaDefinitionStaticColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -303,7 +330,8 @@ class TableSchemaDefinitionStaticColumnArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableTtlArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -315,4 +343,5 @@ class TableTtlArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

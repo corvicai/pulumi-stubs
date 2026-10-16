@@ -21,7 +21,8 @@ class ListAccountKeysResult:
     def value(self) -> Sequence[outputs.KeyDescriptionResponse]: ...
 
 class AwaitableListAccountKeysResult(ListAccountKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccountKeysResult]:
+        ...
 
 def list_account_keys(
     account_name: Optional[_builtins.str] = ...,

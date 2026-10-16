@@ -23,12 +23,16 @@ class PreferencesArgs:
     @member_account_discount_visibility.setter
     def member_account_discount_visibility(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="savingsEstimationMode")
     def savings_estimation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @savings_estimation_mode.setter
-    def savings_estimation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def savings_estimation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PreferencesState:
@@ -46,12 +50,16 @@ class _PreferencesState:
     @member_account_discount_visibility.setter
     def member_account_discount_visibility(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="savingsEstimationMode")
     def savings_estimation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @savings_estimation_mode.setter
-    def savings_estimation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def savings_estimation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:costoptimizationhub/preferences:Preferences")
 class Preferences(pulumi.CustomResource):

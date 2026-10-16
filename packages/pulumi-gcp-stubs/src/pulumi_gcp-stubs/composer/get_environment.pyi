@@ -58,7 +58,8 @@ class GetEnvironmentResult:
     ) -> Sequence[outputs.GetEnvironmentStorageConfigResult]: ...
 
 class AwaitableGetEnvironmentResult(GetEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentResult]:
+        ...
 
 def get_environment(
     name: Optional[_builtins.str] = ...,

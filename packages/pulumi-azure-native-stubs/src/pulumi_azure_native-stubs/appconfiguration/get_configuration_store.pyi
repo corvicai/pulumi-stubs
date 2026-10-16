@@ -100,7 +100,8 @@ class GetConfigurationStoreResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationStoreResult(GetConfigurationStoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationStoreResult]:
+        ...
 
 def get_configuration_store(
     config_store_name: Optional[_builtins.str] = ...,

@@ -136,7 +136,10 @@ class GetAccessReviewScheduleDefinitionByIdResult:
 class AwaitableGetAccessReviewScheduleDefinitionByIdResult(
     GetAccessReviewScheduleDefinitionByIdResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAccessReviewScheduleDefinitionByIdResult]:
+        ...
 
 def get_access_review_schedule_definition_by_id(
     schedule_definition_id: Optional[_builtins.str] = ...,

@@ -60,7 +60,8 @@ class GetElasticCapacityPoolResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetElasticCapacityPoolResult(GetElasticCapacityPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetElasticCapacityPoolResult]:
+        ...
 
 def get_elastic_capacity_pool(
     account_name: Optional[_builtins.str] = ...,

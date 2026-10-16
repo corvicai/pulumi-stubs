@@ -102,7 +102,8 @@ class GetRegionalSecretResult:
     def version_destroy_ttl(self) -> _builtins.str: ...
 
 class AwaitableGetRegionalSecretResult(GetRegionalSecretResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionalSecretResult]:
+        ...
 
 def get_regional_secret(
     location: Optional[_builtins.str] = ...,

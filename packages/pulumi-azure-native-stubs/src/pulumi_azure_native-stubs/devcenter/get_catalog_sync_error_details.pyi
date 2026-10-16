@@ -27,7 +27,8 @@ class GetCatalogSyncErrorDetailsResult:
     def operation_error(self) -> outputs.CatalogErrorDetailsResponse: ...
 
 class AwaitableGetCatalogSyncErrorDetailsResult(GetCatalogSyncErrorDetailsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCatalogSyncErrorDetailsResult]:
+        ...
 
 def get_catalog_sync_error_details(
     catalog_name: Optional[_builtins.str] = ...,

@@ -21,12 +21,14 @@ class UserPolicyAttachmentsExclusiveArgs:
     @policy_arns.setter
     def policy_arns(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> pulumi.Input[_builtins.str]: ...
     @user_name.setter
-    def user_name(self, value: pulumi.Input[_builtins.str]): ...
+    def user_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _UserPolicyAttachmentsExclusiveState:
@@ -46,12 +48,14 @@ class _UserPolicyAttachmentsExclusiveState:
     @policy_arns.setter
     def policy_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userName")
     def user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name.setter
-    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class UserPolicyAttachmentsExclusive(pulumi.CustomResource):

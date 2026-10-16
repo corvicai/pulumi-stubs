@@ -30,7 +30,8 @@ class GetParametersResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetParametersResult(GetParametersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetParametersResult]:
+        ...
 
 def get_parameters(
     filter: Optional[_builtins.str] = ...,

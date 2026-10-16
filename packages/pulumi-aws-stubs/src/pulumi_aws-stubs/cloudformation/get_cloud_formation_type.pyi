@@ -94,7 +94,8 @@ class GetCloudFormationTypeResult:
     def visibility(self) -> _builtins.str: ...
 
 class AwaitableGetCloudFormationTypeResult(GetCloudFormationTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudFormationTypeResult]:
+        ...
 
 def get_cloud_formation_type(
     arn: Optional[_builtins.str] = ...,

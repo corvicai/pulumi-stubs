@@ -48,7 +48,8 @@ class GetDynamicSchemaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDynamicSchemaResult(GetDynamicSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDynamicSchemaResult]:
+        ...
 
 def get_dynamic_schema(
     dynamic_schema_name: Optional[_builtins.str] = ...,

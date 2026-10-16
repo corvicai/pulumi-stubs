@@ -46,17 +46,20 @@ class RecordArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, RecordType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, RecordType]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, RecordType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneId")
     def zone_id(self) -> pulumi.Input[_builtins.str]: ...
     @zone_id.setter
-    def zone_id(self, value: pulumi.Input[_builtins.str]): ...
+    def zone_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def aliases(
@@ -65,12 +68,16 @@ class RecordArgs:
     @aliases.setter
     def aliases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RecordAliasArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowOverwrite")
     def allow_overwrite(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_overwrite.setter
-    def allow_overwrite(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_overwrite(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cidrRoutingPolicy")
     def cidr_routing_policy(
@@ -79,7 +86,8 @@ class RecordArgs:
     @cidr_routing_policy.setter
     def cidr_routing_policy(
         self, value: Optional[pulumi.Input[RecordCidrRoutingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverRoutingPolicies")
     def failover_routing_policies(
@@ -93,7 +101,8 @@ class RecordArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordFailoverRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geolocationRoutingPolicies")
     def geolocation_routing_policies(
@@ -107,7 +116,8 @@ class RecordArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordGeolocationRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoproximityRoutingPolicy")
     def geoproximity_routing_policy(
@@ -116,12 +126,14 @@ class RecordArgs:
     @geoproximity_routing_policy.setter
     def geoproximity_routing_policy(
         self, value: Optional[pulumi.Input[RecordGeoproximityRoutingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckId")
     def health_check_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_id.setter
-    def health_check_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="latencyRoutingPolicies")
     def latency_routing_policies(
@@ -135,7 +147,8 @@ class RecordArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordLatencyRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multivalueAnswerRoutingPolicy")
     def multivalue_answer_routing_policy(
@@ -144,7 +157,8 @@ class RecordArgs:
     @multivalue_answer_routing_policy.setter
     def multivalue_answer_routing_policy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def records(
@@ -153,17 +167,20 @@ class RecordArgs:
     @records.setter
     def records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setIdentifier")
     def set_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @set_identifier.setter
-    def set_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def set_identifier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weightedRoutingPolicies")
     def weighted_routing_policies(
@@ -177,7 +194,8 @@ class RecordArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordWeightedRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RecordState:
@@ -220,12 +238,16 @@ class _RecordState:
     @aliases.setter
     def aliases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RecordAliasArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowOverwrite")
     def allow_overwrite(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_overwrite.setter
-    def allow_overwrite(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_overwrite(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cidrRoutingPolicy")
     def cidr_routing_policy(
@@ -234,7 +256,8 @@ class _RecordState:
     @cidr_routing_policy.setter
     def cidr_routing_policy(
         self, value: Optional[pulumi.Input[RecordCidrRoutingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverRoutingPolicies")
     def failover_routing_policies(
@@ -248,12 +271,14 @@ class _RecordState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordFailoverRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fqdn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fqdn.setter
-    def fqdn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fqdn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geolocationRoutingPolicies")
     def geolocation_routing_policies(
@@ -267,7 +292,8 @@ class _RecordState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordGeolocationRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoproximityRoutingPolicy")
     def geoproximity_routing_policy(
@@ -276,12 +302,14 @@ class _RecordState:
     @geoproximity_routing_policy.setter
     def geoproximity_routing_policy(
         self, value: Optional[pulumi.Input[RecordGeoproximityRoutingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckId")
     def health_check_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_id.setter
-    def health_check_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="latencyRoutingPolicies")
     def latency_routing_policies(
@@ -295,7 +323,8 @@ class _RecordState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordLatencyRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multivalueAnswerRoutingPolicy")
     def multivalue_answer_routing_policy(
@@ -304,12 +333,14 @@ class _RecordState:
     @multivalue_answer_routing_policy.setter
     def multivalue_answer_routing_policy(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def records(
@@ -318,22 +349,28 @@ class _RecordState:
     @records.setter
     def records(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setIdentifier")
     def set_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @set_identifier.setter
-    def set_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def set_identifier(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ttl(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[Union[_builtins.str, RecordType]]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, RecordType]]]): ...
+    def type(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, RecordType]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weightedRoutingPolicies")
     def weighted_routing_policies(
@@ -347,12 +384,14 @@ class _RecordState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RecordWeightedRoutingPolicyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneId")
     def zone_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone_id.setter
-    def zone_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:route53/record:Record")
 class Record(pulumi.CustomResource):

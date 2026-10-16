@@ -27,7 +27,8 @@ class AzureServersSettingArgs:
     @pulumi.getter
     def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): ...
+    def kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedProvider")
     def selected_provider(
@@ -44,12 +45,14 @@ class AzureServersSettingArgs:
                 ServerVulnerabilityAssessmentsAzureSettingSelectedProvider,
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="settingKind")
     def setting_kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @setting_kind.setter
-    def setting_kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def setting_kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:security:AzureServersSetting")
 class AzureServersSetting(pulumi.CustomResource):

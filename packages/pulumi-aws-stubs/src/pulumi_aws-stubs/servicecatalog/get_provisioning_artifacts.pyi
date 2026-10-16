@@ -42,7 +42,8 @@ class GetProvisioningArtifactsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetProvisioningArtifactsResult(GetProvisioningArtifactsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProvisioningArtifactsResult]:
+        ...
 
 def get_provisioning_artifacts(
     accept_language: Optional[_builtins.str] = ...,

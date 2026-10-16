@@ -56,7 +56,8 @@ class GetManagedNamespaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedNamespaceResult(GetManagedNamespaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedNamespaceResult]:
+        ...
 
 def get_managed_namespace(
     managed_namespace_name: Optional[_builtins.str] = ...,

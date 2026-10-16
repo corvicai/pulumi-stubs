@@ -43,17 +43,22 @@ class AzureMonitorWorkspacePropertiesArgs:
     @include_change_details.setter
     def include_change_details(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ChangeDetailsMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceId")
     def workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_id.setter
-    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceResourceId")
     def workspace_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_resource_id.setter
-    def workspace_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ConfigurationProfileResourcePropertiesArgsDict(TypedDict):
     notifications: NotRequired[pulumi.Input[NotificationSettingsArgsDict]]
@@ -71,7 +76,8 @@ class ConfigurationProfileResourcePropertiesArgs:
     @notifications.setter
     def notifications(
         self, value: Optional[pulumi.Input[NotificationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NotificationSettingsArgsDict(TypedDict):
     activation_state: NotRequired[
@@ -101,7 +107,8 @@ class NotificationSettingsArgs:
     @activation_state.setter
     def activation_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NotificationsState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureMonitorWorkspaceProperties")
     def azure_monitor_workspace_properties(
@@ -110,7 +117,8 @@ class NotificationSettingsArgs:
     @azure_monitor_workspace_properties.setter
     def azure_monitor_workspace_properties(
         self, value: Optional[pulumi.Input[AzureMonitorWorkspacePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, ManagedIdentityTypes]]]
@@ -130,4 +138,5 @@ class ResourceIdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedIdentityTypes]]]
-    ): ...
+    ):  # -> None:
+        ...

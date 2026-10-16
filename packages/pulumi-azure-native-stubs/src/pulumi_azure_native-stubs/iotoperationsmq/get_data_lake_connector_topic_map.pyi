@@ -64,7 +64,10 @@ class GetDataLakeConnectorTopicMapResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataLakeConnectorTopicMapResult(GetDataLakeConnectorTopicMapResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDataLakeConnectorTopicMapResult]:
+        ...
 
 def get_data_lake_connector_topic_map(
     data_lake_connector_name: Optional[_builtins.str] = ...,

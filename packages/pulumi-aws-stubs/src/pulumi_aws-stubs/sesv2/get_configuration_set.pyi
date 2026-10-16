@@ -74,7 +74,8 @@ class GetConfigurationSetResult:
     def vdm_options(self) -> Sequence[outputs.GetConfigurationSetVdmOptionResult]: ...
 
 class AwaitableGetConfigurationSetResult(GetConfigurationSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationSetResult]:
+        ...
 
 def get_configuration_set(
     configuration_set_name: Optional[_builtins.str] = ...,

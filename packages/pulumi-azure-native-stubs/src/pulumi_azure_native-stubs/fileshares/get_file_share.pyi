@@ -52,7 +52,8 @@ class GetFileShareResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFileShareResult(GetFileShareResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileShareResult]:
+        ...
 
 def get_file_share(
     resource_group_name: Optional[_builtins.str] = ...,

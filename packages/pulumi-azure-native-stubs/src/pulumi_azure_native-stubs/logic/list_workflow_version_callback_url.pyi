@@ -49,7 +49,10 @@ class ListWorkflowVersionCallbackUrlResult:
 class AwaitableListWorkflowVersionCallbackUrlResult(
     ListWorkflowVersionCallbackUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkflowVersionCallbackUrlResult]:
+        ...
 
 def list_workflow_version_callback_url(
     key_type: Optional[KeyType] = ...,

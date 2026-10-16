@@ -56,7 +56,8 @@ class GetConnectionTypeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionTypeResult(GetConnectionTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionTypeResult]:
+        ...
 
 def get_connection_type(
     automation_account_name: Optional[_builtins.str] = ...,

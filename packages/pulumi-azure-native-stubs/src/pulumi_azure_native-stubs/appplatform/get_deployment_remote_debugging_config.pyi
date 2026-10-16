@@ -25,7 +25,10 @@ class GetDeploymentRemoteDebuggingConfigResult:
 class AwaitableGetDeploymentRemoteDebuggingConfigResult(
     GetDeploymentRemoteDebuggingConfigResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDeploymentRemoteDebuggingConfigResult]:
+        ...
 
 def get_deployment_remote_debugging_config(
     app_name: Optional[_builtins.str] = ...,

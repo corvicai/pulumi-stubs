@@ -94,7 +94,8 @@ class GetDirectoryResult:
     def vpc_settings(self) -> Sequence[outputs.GetDirectoryVpcSettingResult]: ...
 
 class AwaitableGetDirectoryResult(GetDirectoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDirectoryResult]:
+        ...
 
 def get_directory(
     directory_id: Optional[_builtins.str] = ...,

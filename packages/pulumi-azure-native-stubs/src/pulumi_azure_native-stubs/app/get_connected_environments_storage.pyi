@@ -46,7 +46,10 @@ class GetConnectedEnvironmentsStorageResult:
 class AwaitableGetConnectedEnvironmentsStorageResult(
     GetConnectedEnvironmentsStorageResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConnectedEnvironmentsStorageResult]:
+        ...
 
 def get_connected_environments_storage(
     connected_environment_name: Optional[_builtins.str] = ...,

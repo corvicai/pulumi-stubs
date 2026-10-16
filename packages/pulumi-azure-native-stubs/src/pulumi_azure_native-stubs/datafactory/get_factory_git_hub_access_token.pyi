@@ -21,7 +21,8 @@ class GetFactoryGitHubAccessTokenResult:
     def git_hub_access_token(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetFactoryGitHubAccessTokenResult(GetFactoryGitHubAccessTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFactoryGitHubAccessTokenResult]:
+        ...
 
 def get_factory_git_hub_access_token(
     factory_name: Optional[_builtins.str] = ...,

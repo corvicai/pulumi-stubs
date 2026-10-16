@@ -58,27 +58,34 @@ class KxClusterArgs:
     @pulumi.getter(name="azMode")
     def az_mode(self) -> pulumi.Input[_builtins.str]: ...
     @az_mode.setter
-    def az_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def az_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentId")
     def environment_id(self) -> pulumi.Input[_builtins.str]: ...
     @environment_id.setter
-    def environment_id(self, value: pulumi.Input[_builtins.str]): ...
+    def environment_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseLabel")
     def release_label(self) -> pulumi.Input[_builtins.str]: ...
     @release_label.setter
-    def release_label(self, value: pulumi.Input[_builtins.str]): ...
+    def release_label(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfiguration")
     def vpc_configuration(self) -> pulumi.Input[KxClusterVpcConfigurationArgs]: ...
     @vpc_configuration.setter
-    def vpc_configuration(self, value: pulumi.Input[KxClusterVpcConfigurationArgs]): ...
+    def vpc_configuration(
+        self, value: pulumi.Input[KxClusterVpcConfigurationArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingConfiguration")
     def auto_scaling_configuration(
@@ -87,12 +94,16 @@ class KxClusterArgs:
     @auto_scaling_configuration.setter
     def auto_scaling_configuration(
         self, value: Optional[pulumi.Input[KxClusterAutoScalingConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneId")
     def availability_zone_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_zone_id.setter
-    def availability_zone_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_zone_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheStorageConfigurations")
     def cache_storage_configurations(
@@ -106,7 +117,8 @@ class KxClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[KxClusterCacheStorageConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityConfiguration")
     def capacity_configuration(
@@ -115,12 +127,14 @@ class KxClusterArgs:
     @capacity_configuration.setter
     def capacity_configuration(
         self, value: Optional[pulumi.Input[KxClusterCapacityConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[KxClusterCodeArgs]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[KxClusterCodeArgs]]): ...
+    def code(self, value: Optional[pulumi.Input[KxClusterCodeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commandLineArguments")
     def command_line_arguments(
@@ -129,7 +143,8 @@ class KxClusterArgs:
     @command_line_arguments.setter
     def command_line_arguments(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def databases(
@@ -139,32 +154,40 @@ class KxClusterArgs:
     def databases(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[KxClusterDatabaseArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initializationScript")
     def initialization_script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @initialization_script.setter
-    def initialization_script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def initialization_script(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="savedownStorageConfiguration")
     def savedown_storage_configuration(
@@ -173,7 +196,8 @@ class KxClusterArgs:
     @savedown_storage_configuration.setter
     def savedown_storage_configuration(
         self, value: Optional[pulumi.Input[KxClusterSavedownStorageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingGroupConfiguration")
     def scaling_group_configuration(
@@ -182,7 +206,8 @@ class KxClusterArgs:
     @scaling_group_configuration.setter
     def scaling_group_configuration(
         self, value: Optional[pulumi.Input[KxClusterScalingGroupConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -191,7 +216,8 @@ class KxClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tickerplantLogConfigurations")
     def tickerplant_log_configurations(
@@ -207,7 +233,8 @@ class KxClusterArgs:
                 Sequence[pulumi.Input[KxClusterTickerplantLogConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _KxClusterState:
@@ -266,7 +293,8 @@ class _KxClusterState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingConfiguration")
     def auto_scaling_configuration(
@@ -275,17 +303,22 @@ class _KxClusterState:
     @auto_scaling_configuration.setter
     def auto_scaling_configuration(
         self, value: Optional[pulumi.Input[KxClusterAutoScalingConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneId")
     def availability_zone_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_zone_id.setter
-    def availability_zone_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_zone_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azMode")
     def az_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @az_mode.setter
-    def az_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def az_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheStorageConfigurations")
     def cache_storage_configurations(
@@ -299,7 +332,8 @@ class _KxClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[KxClusterCacheStorageConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityConfiguration")
     def capacity_configuration(
@@ -308,12 +342,14 @@ class _KxClusterState:
     @capacity_configuration.setter
     def capacity_configuration(
         self, value: Optional[pulumi.Input[KxClusterCapacityConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[KxClusterCodeArgs]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[KxClusterCodeArgs]]): ...
+    def code(self, value: Optional[pulumi.Input[KxClusterCodeArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commandLineArguments")
     def command_line_arguments(
@@ -322,12 +358,16 @@ class _KxClusterState:
     @command_line_arguments.setter
     def command_line_arguments(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdTimestamp")
     def created_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_timestamp.setter
-    def created_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def databases(
@@ -337,47 +377,60 @@ class _KxClusterState:
     def databases(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[KxClusterDatabaseArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentId")
     def environment_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @environment_id.setter
-    def environment_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def environment_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRole")
     def execution_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role.setter
-    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initializationScript")
     def initialization_script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @initialization_script.setter
-    def initialization_script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def initialization_script(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedTimestamp")
     def last_modified_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_timestamp.setter
-    def last_modified_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseLabel")
     def release_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @release_label.setter
-    def release_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def release_label(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="savedownStorageConfiguration")
     def savedown_storage_configuration(
@@ -386,7 +439,8 @@ class _KxClusterState:
     @savedown_storage_configuration.setter
     def savedown_storage_configuration(
         self, value: Optional[pulumi.Input[KxClusterSavedownStorageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingGroupConfiguration")
     def scaling_group_configuration(
@@ -395,17 +449,20 @@ class _KxClusterState:
     @scaling_group_configuration.setter
     def scaling_group_configuration(
         self, value: Optional[pulumi.Input[KxClusterScalingGroupConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statusReason")
     def status_reason(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status_reason.setter
-    def status_reason(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status_reason(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -414,7 +471,8 @@ class _KxClusterState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -423,7 +481,8 @@ class _KxClusterState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tickerplantLogConfigurations")
     def tickerplant_log_configurations(
@@ -439,12 +498,14 @@ class _KxClusterState:
                 Sequence[pulumi.Input[KxClusterTickerplantLogConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfiguration")
     def vpc_configuration(
@@ -453,7 +514,8 @@ class _KxClusterState:
     @vpc_configuration.setter
     def vpc_configuration(
         self, value: Optional[pulumi.Input[KxClusterVpcConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:finspace/kxCluster:KxCluster")
 class KxCluster(pulumi.CustomResource):

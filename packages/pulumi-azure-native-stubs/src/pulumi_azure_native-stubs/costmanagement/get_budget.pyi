@@ -72,7 +72,8 @@ class GetBudgetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBudgetResult(GetBudgetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBudgetResult]:
+        ...
 
 def get_budget(
     budget_name: Optional[_builtins.str] = ...,

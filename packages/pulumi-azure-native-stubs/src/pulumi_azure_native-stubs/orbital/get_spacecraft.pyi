@@ -68,7 +68,8 @@ class GetSpacecraftResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSpacecraftResult(GetSpacecraftResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSpacecraftResult]:
+        ...
 
 def get_spacecraft(
     resource_group_name: Optional[_builtins.str] = ...,

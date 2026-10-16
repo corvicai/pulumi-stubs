@@ -44,7 +44,8 @@ class GetVMwareCollectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVMwareCollectorResult(GetVMwareCollectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVMwareCollectorResult]:
+        ...
 
 def get_v_mware_collector(
     project_name: Optional[_builtins.str] = ...,

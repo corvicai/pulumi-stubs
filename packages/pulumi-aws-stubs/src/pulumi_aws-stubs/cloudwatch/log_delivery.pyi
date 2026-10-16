@@ -30,17 +30,20 @@ class LogDeliveryArgs:
     @pulumi.getter(name="deliveryDestinationArn")
     def delivery_destination_arn(self) -> pulumi.Input[_builtins.str]: ...
     @delivery_destination_arn.setter
-    def delivery_destination_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def delivery_destination_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliverySourceName")
     def delivery_source_name(self) -> pulumi.Input[_builtins.str]: ...
     @delivery_source_name.setter
-    def delivery_source_name(self, value: pulumi.Input[_builtins.str]): ...
+    def delivery_source_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldDelimiter")
     def field_delimiter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field_delimiter.setter
-    def field_delimiter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field_delimiter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordFields")
     def record_fields(
@@ -49,12 +52,14 @@ class LogDeliveryArgs:
     @record_fields.setter
     def record_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3DeliveryConfigurations")
     def s3_delivery_configurations(
@@ -68,7 +73,8 @@ class LogDeliveryArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LogDeliveryS3DeliveryConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -77,7 +83,8 @@ class LogDeliveryArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LogDeliveryState:
@@ -104,24 +111,30 @@ class _LogDeliveryState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryDestinationArn")
     def delivery_destination_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delivery_destination_arn.setter
     def delivery_destination_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliverySourceName")
     def delivery_source_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delivery_source_name.setter
-    def delivery_source_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delivery_source_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldDelimiter")
     def field_delimiter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field_delimiter.setter
-    def field_delimiter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field_delimiter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordFields")
     def record_fields(
@@ -130,12 +143,14 @@ class _LogDeliveryState:
     @record_fields.setter
     def record_fields(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3DeliveryConfigurations")
     def s3_delivery_configurations(
@@ -149,7 +164,8 @@ class _LogDeliveryState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LogDeliveryS3DeliveryConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -158,7 +174,8 @@ class _LogDeliveryState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -167,7 +184,8 @@ class _LogDeliveryState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cloudwatch/logDelivery:LogDelivery")
 class LogDelivery(pulumi.CustomResource):

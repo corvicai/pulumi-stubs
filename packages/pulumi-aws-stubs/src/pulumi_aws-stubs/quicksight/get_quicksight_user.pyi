@@ -67,7 +67,8 @@ class GetQuicksightUserResult:
     def user_role(self) -> _builtins.str: ...
 
 class AwaitableGetQuicksightUserResult(GetQuicksightUserResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQuicksightUserResult]:
+        ...
 
 def get_quicksight_user(
     aws_account_id: Optional[_builtins.str] = ...,

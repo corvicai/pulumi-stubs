@@ -65,7 +65,8 @@ class GetBuildResult:
     def upload_endpoint(self) -> _builtins.str: ...
 
 class AwaitableGetBuildResult(GetBuildResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBuildResult]:
+        ...
 
 def get_build(
     build_name: Optional[_builtins.str] = ...,

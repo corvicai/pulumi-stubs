@@ -48,7 +48,8 @@ class GetResourceTypeRegistrationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetResourceTypeRegistrationResult(GetResourceTypeRegistrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceTypeRegistrationResult]:
+        ...
 
 def get_resource_type_registration(
     provider_namespace: Optional[_builtins.str] = ...,

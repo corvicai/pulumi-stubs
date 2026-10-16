@@ -55,7 +55,8 @@ class GetLoggerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLoggerResult(GetLoggerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLoggerResult]:
+        ...
 
 def get_logger(
     logger_id: Optional[_builtins.str] = ...,

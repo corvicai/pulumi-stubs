@@ -82,7 +82,8 @@ class GetSitesControllerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSitesControllerResult(GetSitesControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSitesControllerResult]:
+        ...
 
 def get_sites_controller(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -75,7 +75,10 @@ class GetDatabaseBlobAuditingPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseBlobAuditingPolicyResult(GetDatabaseBlobAuditingPolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseBlobAuditingPolicyResult]:
+        ...
 
 def get_database_blob_auditing_policy(
     blob_auditing_policy_name: Optional[_builtins.str] = ...,

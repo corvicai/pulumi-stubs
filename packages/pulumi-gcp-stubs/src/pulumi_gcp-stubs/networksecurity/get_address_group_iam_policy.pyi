@@ -37,7 +37,8 @@ class GetAddressGroupIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetAddressGroupIamPolicyResult(GetAddressGroupIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAddressGroupIamPolicyResult]:
+        ...
 
 def get_address_group_iam_policy(
     location: Optional[_builtins.str] = ...,

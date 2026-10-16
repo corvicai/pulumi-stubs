@@ -23,7 +23,8 @@ class ListLocalRulestackAppIdsResult:
     def value(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableListLocalRulestackAppIdsResult(ListLocalRulestackAppIdsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListLocalRulestackAppIdsResult]:
+        ...
 
 def list_local_rulestack_app_ids(
     app_id_version: Optional[_builtins.str] = ...,

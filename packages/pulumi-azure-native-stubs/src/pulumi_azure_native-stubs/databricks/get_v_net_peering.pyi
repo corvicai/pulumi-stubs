@@ -82,7 +82,8 @@ class GetVNetPeeringResult:
     def use_remote_gateways(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetVNetPeeringResult(GetVNetPeeringResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVNetPeeringResult]:
+        ...
 
 def get_v_net_peering(
     peering_name: Optional[_builtins.str] = ...,

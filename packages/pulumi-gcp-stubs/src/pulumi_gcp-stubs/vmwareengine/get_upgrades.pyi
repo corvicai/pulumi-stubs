@@ -30,7 +30,8 @@ class GetUpgradesResult:
     def upgrades(self) -> Sequence[outputs.GetUpgradesUpgradeResult]: ...
 
 class AwaitableGetUpgradesResult(GetUpgradesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUpgradesResult]:
+        ...
 
 def get_upgrades(
     name: Optional[_builtins.str] = ...,

@@ -62,7 +62,8 @@ class GetIstioCanonicalServiceResult:
     def user_labels(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetIstioCanonicalServiceResult(GetIstioCanonicalServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIstioCanonicalServiceResult]:
+        ...
 
 def get_istio_canonical_service(
     canonical_service: Optional[_builtins.str] = ...,

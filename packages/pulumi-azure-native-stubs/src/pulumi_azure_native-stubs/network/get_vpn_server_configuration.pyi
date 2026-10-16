@@ -52,7 +52,8 @@ class GetVpnServerConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVpnServerConfigurationResult(GetVpnServerConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnServerConfigurationResult]:
+        ...
 
 def get_vpn_server_configuration(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -118,7 +118,8 @@ class GetAgentPoolResult:
     def vm_sku_name(self) -> _builtins.str: ...
 
 class AwaitableGetAgentPoolResult(GetAgentPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAgentPoolResult]:
+        ...
 
 def get_agent_pool(
     agent_pool_name: Optional[_builtins.str] = ...,

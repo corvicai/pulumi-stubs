@@ -44,7 +44,8 @@ class GetPortfolioConstraintsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetPortfolioConstraintsResult(GetPortfolioConstraintsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPortfolioConstraintsResult]:
+        ...
 
 def get_portfolio_constraints(
     accept_language: Optional[_builtins.str] = ...,

@@ -100,7 +100,8 @@ class GetPrivateCloudResult:
     def vcenters(self) -> Sequence[outputs.GetPrivateCloudVcenterResult]: ...
 
 class AwaitableGetPrivateCloudResult(GetPrivateCloudResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateCloudResult]:
+        ...
 
 def get_private_cloud(
     location: Optional[_builtins.str] = ...,

@@ -25,7 +25,8 @@ class GetSharedKeysResult:
     def secondary_shared_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSharedKeysResult(GetSharedKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSharedKeysResult]:
+        ...
 
 def get_shared_keys(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -79,7 +79,8 @@ class GetCosmosDbDataConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCosmosDbDataConnectionResult(GetCosmosDbDataConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCosmosDbDataConnectionResult]:
+        ...
 
 def get_cosmos_db_data_connection(
     cluster_name: Optional[_builtins.str] = ...,

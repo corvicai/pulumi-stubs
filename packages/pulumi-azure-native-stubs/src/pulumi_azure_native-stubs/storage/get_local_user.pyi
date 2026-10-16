@@ -92,7 +92,8 @@ class GetLocalUserResult:
     def user_id(self) -> _builtins.int: ...
 
 class AwaitableGetLocalUserResult(GetLocalUserResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalUserResult]:
+        ...
 
 def get_local_user(
     account_name: Optional[_builtins.str] = ...,

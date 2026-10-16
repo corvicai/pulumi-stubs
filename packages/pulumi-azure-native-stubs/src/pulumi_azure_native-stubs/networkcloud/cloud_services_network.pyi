@@ -33,12 +33,14 @@ class CloudServicesNetworkArgs:
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]: ...
     @extended_location.setter
-    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): ...
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalEgressEndpoints")
     def additional_egress_endpoints(
@@ -47,14 +49,16 @@ class CloudServicesNetworkArgs:
     @additional_egress_endpoints.setter
     def additional_egress_endpoints(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[EgressEndpointArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudServicesNetworkName")
     def cloud_services_network_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloud_services_network_name.setter
     def cloud_services_network_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDefaultEgressEndpoints")
     def enable_default_egress_endpoints(
@@ -72,12 +76,14 @@ class CloudServicesNetworkArgs:
                 Union[_builtins.str, CloudServicesNetworkEnableDefaultEgressEndpoints]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -86,7 +92,8 @@ class CloudServicesNetworkArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:networkcloud:CloudServicesNetwork")
 class CloudServicesNetwork(pulumi.CustomResource):

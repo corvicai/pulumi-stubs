@@ -23,7 +23,10 @@ class ListManagedClusterMonitoringUserCredentialsResult:
 class AwaitableListManagedClusterMonitoringUserCredentialsResult(
     ListManagedClusterMonitoringUserCredentialsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListManagedClusterMonitoringUserCredentialsResult]:
+        ...
 
 def list_managed_cluster_monitoring_user_credentials(
     resource_group_name: Optional[_builtins.str] = ...,

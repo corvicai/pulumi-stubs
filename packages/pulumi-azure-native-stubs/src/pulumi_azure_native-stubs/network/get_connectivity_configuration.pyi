@@ -76,7 +76,10 @@ class GetConnectivityConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectivityConfigurationResult(GetConnectivityConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConnectivityConfigurationResult]:
+        ...
 
 def get_connectivity_configuration(
     configuration_name: Optional[_builtins.str] = ...,

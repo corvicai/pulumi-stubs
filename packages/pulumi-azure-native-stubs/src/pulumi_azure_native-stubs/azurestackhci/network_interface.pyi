@@ -34,24 +34,32 @@ class NetworkInterfaceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createFromLocal")
     def create_from_local(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_from_local.setter
-    def create_from_local(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def create_from_local(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
     def dns_settings(self) -> Optional[pulumi.Input[InterfaceDNSSettingsArgs]]: ...
     @dns_settings.setter
-    def dns_settings(self, value: Optional[pulumi.Input[InterfaceDNSSettingsArgs]]): ...
+    def dns_settings(
+        self, value: Optional[pulumi.Input[InterfaceDNSSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipConfigurations")
     def ip_configurations(
@@ -60,22 +68,28 @@ class NetworkInterfaceArgs:
     @ip_configurations.setter
     def ip_configurations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IPConfigurationArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="macAddress")
     def mac_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mac_address.setter
-    def mac_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mac_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceName")
     def network_interface_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_interface_name.setter
-    def network_interface_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network_interface_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityGroup")
     def network_security_group(
@@ -84,7 +98,8 @@ class NetworkInterfaceArgs:
     @network_security_group.setter
     def network_security_group(
         self, value: Optional[pulumi.Input[NetworkSecurityGroupArmReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -93,7 +108,8 @@ class NetworkInterfaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azurestackhci:NetworkInterface")
 class NetworkInterface(pulumi.CustomResource):

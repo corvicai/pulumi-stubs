@@ -35,17 +35,20 @@ class GalleryImageVersionArgs:
     @pulumi.getter(name="galleryImageName")
     def gallery_image_name(self) -> pulumi.Input[_builtins.str]: ...
     @gallery_image_name.setter
-    def gallery_image_name(self, value: pulumi.Input[_builtins.str]): ...
+    def gallery_image_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="galleryName")
     def gallery_name(self) -> pulumi.Input[_builtins.str]: ...
     @gallery_name.setter
-    def gallery_name(self, value: pulumi.Input[_builtins.str]): ...
+    def gallery_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageProfile")
     def storage_profile(
@@ -54,19 +57,22 @@ class GalleryImageVersionArgs:
     @storage_profile.setter
     def storage_profile(
         self, value: pulumi.Input[GalleryImageVersionStorageProfileArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="galleryImageVersionName")
     def gallery_image_version_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gallery_image_version_name.setter
     def gallery_image_version_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishingProfile")
     def publishing_profile(
@@ -75,12 +81,14 @@ class GalleryImageVersionArgs:
     @publishing_profile.setter
     def publishing_profile(
         self, value: Optional[pulumi.Input[GalleryImageVersionPublishingProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def restore(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @restore.setter
-    def restore(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def restore(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="safetyProfile")
     def safety_profile(
@@ -89,7 +97,8 @@ class GalleryImageVersionArgs:
     @safety_profile.setter
     def safety_profile(
         self, value: Optional[pulumi.Input[GalleryImageVersionSafetyProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
     def security_profile(
@@ -98,7 +107,8 @@ class GalleryImageVersionArgs:
     @security_profile.setter
     def security_profile(
         self, value: Optional[pulumi.Input[ImageVersionSecurityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -107,7 +117,8 @@ class GalleryImageVersionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:compute:GalleryImageVersion")
 class GalleryImageVersion(pulumi.CustomResource):

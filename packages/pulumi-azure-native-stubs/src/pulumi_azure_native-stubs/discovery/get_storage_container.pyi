@@ -52,7 +52,8 @@ class GetStorageContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageContainerResult(GetStorageContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageContainerResult]:
+        ...
 
 def get_storage_container(
     resource_group_name: Optional[_builtins.str] = ...,

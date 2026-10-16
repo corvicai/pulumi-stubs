@@ -96,7 +96,8 @@ class GetL2NetworkResult:
     def virtual_machines_associated_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetL2NetworkResult(GetL2NetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetL2NetworkResult]:
+        ...
 
 def get_l2_network(
     l2_network_name: Optional[_builtins.str] = ...,

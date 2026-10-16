@@ -58,7 +58,8 @@ class GetPartnerConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPartnerConfigurationResult(GetPartnerConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPartnerConfigurationResult]:
+        ...
 
 def get_partner_configuration(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -25,7 +25,10 @@ class GetSqlServerInstanceJobsStatusResult:
 class AwaitableGetSqlServerInstanceJobsStatusResult(
     GetSqlServerInstanceJobsStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlServerInstanceJobsStatusResult]:
+        ...
 
 def get_sql_server_instance_jobs_status(
     feature_name: Optional[_builtins.str] = ...,

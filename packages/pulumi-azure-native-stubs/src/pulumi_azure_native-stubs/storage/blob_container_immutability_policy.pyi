@@ -26,17 +26,20 @@ class BlobContainerImmutabilityPolicyArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerName")
     def container_name(self) -> pulumi.Input[_builtins.str]: ...
     @container_name.setter
-    def container_name(self, value: pulumi.Input[_builtins.str]): ...
+    def container_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowProtectedAppendWrites")
     def allow_protected_append_writes(
@@ -45,7 +48,8 @@ class BlobContainerImmutabilityPolicyArgs:
     @allow_protected_append_writes.setter
     def allow_protected_append_writes(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowProtectedAppendWritesAll")
     def allow_protected_append_writes_all(
@@ -54,7 +58,8 @@ class BlobContainerImmutabilityPolicyArgs:
     @allow_protected_append_writes_all.setter
     def allow_protected_append_writes_all(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="immutabilityPeriodSinceCreationInDays")
     def immutability_period_since_creation_in_days(
@@ -63,14 +68,16 @@ class BlobContainerImmutabilityPolicyArgs:
     @immutability_period_since_creation_in_days.setter
     def immutability_period_since_creation_in_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="immutabilityPolicyName")
     def immutability_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @immutability_policy_name.setter
     def immutability_policy_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class BlobContainerImmutabilityPolicy(pulumi.CustomResource):

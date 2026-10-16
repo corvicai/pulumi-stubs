@@ -40,22 +40,26 @@ class PolicySetDefinitionArgs:
     @policy_definitions.setter
     def policy_definitions(
         self, value: pulumi.Input[Sequence[pulumi.Input[PolicyDefinitionReferenceArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(self) -> Optional[Any]: ...
     @metadata.setter
-    def metadata(self, value: Optional[Any]): ...
+    def metadata(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -69,7 +73,8 @@ class PolicySetDefinitionArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[ParameterDefinitionsValueArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyDefinitionGroups")
     def policy_definition_groups(
@@ -81,14 +86,16 @@ class PolicySetDefinitionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PolicyDefinitionGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policySetDefinitionName")
     def policy_set_definition_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_set_definition_name.setter
     def policy_set_definition_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyType")
     def policy_type(
@@ -97,12 +104,14 @@ class PolicySetDefinitionArgs:
     @policy_type.setter
     def policy_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def versions(
@@ -111,7 +120,8 @@ class PolicySetDefinitionArgs:
     @versions.setter
     def versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:authorization:PolicySetDefinition")
 class PolicySetDefinition(pulumi.CustomResource):

@@ -118,7 +118,8 @@ class GetOntapFileSystemResult:
     def weekly_maintenance_start_time(self) -> _builtins.str: ...
 
 class AwaitableGetOntapFileSystemResult(GetOntapFileSystemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOntapFileSystemResult]:
+        ...
 
 def get_ontap_file_system(
     id: Optional[_builtins.str] = ...,

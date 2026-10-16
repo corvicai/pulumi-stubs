@@ -28,7 +28,10 @@ class ListArtifactStorePrivateEndPointsResult:
 class AwaitableListArtifactStorePrivateEndPointsResult(
     ListArtifactStorePrivateEndPointsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListArtifactStorePrivateEndPointsResult]:
+        ...
 
 def list_artifact_store_private_end_points(
     artifact_store_name: Optional[_builtins.str] = ...,

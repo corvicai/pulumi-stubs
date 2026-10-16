@@ -39,7 +39,10 @@ class GetRegionBackendServiceIamPolicyResult:
 class AwaitableGetRegionBackendServiceIamPolicyResult(
     GetRegionBackendServiceIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegionBackendServiceIamPolicyResult]:
+        ...
 
 def get_region_backend_service_iam_policy(
     name: Optional[_builtins.str] = ...,

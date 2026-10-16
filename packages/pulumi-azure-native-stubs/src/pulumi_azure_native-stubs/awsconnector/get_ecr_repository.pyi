@@ -52,7 +52,8 @@ class GetEcrRepositoryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEcrRepositoryResult(GetEcrRepositoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEcrRepositoryResult]:
+        ...
 
 def get_ecr_repository(
     name: Optional[_builtins.str] = ...,

@@ -35,7 +35,8 @@ class GetInferencePoolStatusResult:
     def reserved_capacity(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetInferencePoolStatusResult(GetInferencePoolStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInferencePoolStatusResult]:
+        ...
 
 def get_inference_pool_status(
     inference_pool_name: Optional[_builtins.str] = ...,

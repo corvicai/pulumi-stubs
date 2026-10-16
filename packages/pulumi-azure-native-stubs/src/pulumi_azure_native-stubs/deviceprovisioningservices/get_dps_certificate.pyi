@@ -48,7 +48,8 @@ class GetDpsCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDpsCertificateResult(GetDpsCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDpsCertificateResult]:
+        ...
 
 def get_dps_certificate(
     certificate_name: Optional[_builtins.str] = ...,

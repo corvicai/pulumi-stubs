@@ -58,7 +58,10 @@ class GetTableResourceTableRoleAssignmentResult:
 class AwaitableGetTableResourceTableRoleAssignmentResult(
     GetTableResourceTableRoleAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTableResourceTableRoleAssignmentResult]:
+        ...
 
 def get_table_resource_table_role_assignment(
     account_name: Optional[_builtins.str] = ...,

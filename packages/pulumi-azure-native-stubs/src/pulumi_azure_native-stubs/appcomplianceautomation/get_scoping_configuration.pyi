@@ -48,7 +48,8 @@ class GetScopingConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScopingConfigurationResult(GetScopingConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScopingConfigurationResult]:
+        ...
 
 def get_scoping_configuration(
     report_name: Optional[_builtins.str] = ...,

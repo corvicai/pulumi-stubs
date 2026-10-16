@@ -22,7 +22,10 @@ class GetOrganizationElasticToAzureSubscriptionMappingResult:
 class AwaitableGetOrganizationElasticToAzureSubscriptionMappingResult(
     GetOrganizationElasticToAzureSubscriptionMappingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOrganizationElasticToAzureSubscriptionMappingResult]:
+        ...
 
 def get_organization_elastic_to_azure_subscription_mapping(
     opts: Optional[pulumi.InvokeOptions] = ...,

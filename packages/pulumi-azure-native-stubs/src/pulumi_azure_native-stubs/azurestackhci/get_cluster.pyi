@@ -160,7 +160,8 @@ class GetClusterResult:
     ) -> Optional[Mapping[str, outputs.UserAssignedIdentityResponse]]: ...
 
 class AwaitableGetClusterResult(GetClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterResult]:
+        ...
 
 def get_cluster(
     cluster_name: Optional[_builtins.str] = ...,

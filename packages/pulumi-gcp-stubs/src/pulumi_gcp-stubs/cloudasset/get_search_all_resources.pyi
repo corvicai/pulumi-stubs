@@ -35,7 +35,8 @@ class GetSearchAllResourcesResult:
     def scope(self) -> _builtins.str: ...
 
 class AwaitableGetSearchAllResourcesResult(GetSearchAllResourcesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSearchAllResourcesResult]:
+        ...
 
 def get_search_all_resources(
     asset_types: Optional[Sequence[_builtins.str]] = ...,

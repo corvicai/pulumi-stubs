@@ -54,7 +54,10 @@ class GetSynapseWorkspaceSqlPoolTableDataSetResult:
 class AwaitableGetSynapseWorkspaceSqlPoolTableDataSetResult(
     GetSynapseWorkspaceSqlPoolTableDataSetResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSynapseWorkspaceSqlPoolTableDataSetResult]:
+        ...
 
 def get_synapse_workspace_sql_pool_table_data_set(
     account_name: Optional[_builtins.str] = ...,

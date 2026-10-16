@@ -22,7 +22,10 @@ class GetFlowDestinationEndpointPortsResult:
 class AwaitableGetFlowDestinationEndpointPortsResult(
     GetFlowDestinationEndpointPortsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFlowDestinationEndpointPortsResult]:
+        ...
 
 def get_flow_destination_endpoint_ports(
     connection_name: Optional[_builtins.str] = ...,

@@ -55,7 +55,8 @@ class GetPythonPackageResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetPythonPackageResult(GetPythonPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPythonPackageResult]:
+        ...
 
 def get_python_package(
     location: Optional[_builtins.str] = ...,

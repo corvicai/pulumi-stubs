@@ -63,7 +63,8 @@ class GetContactFlowModuleResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetContactFlowModuleResult(GetContactFlowModuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContactFlowModuleResult]:
+        ...
 
 def get_contact_flow_module(
     contact_flow_module_id: Optional[_builtins.str] = ...,

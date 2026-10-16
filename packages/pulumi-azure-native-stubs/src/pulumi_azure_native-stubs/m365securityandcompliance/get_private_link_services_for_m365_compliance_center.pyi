@@ -61,7 +61,10 @@ class GetPrivateLinkServicesForM365ComplianceCenterResult:
 class AwaitableGetPrivateLinkServicesForM365ComplianceCenterResult(
     GetPrivateLinkServicesForM365ComplianceCenterResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateLinkServicesForM365ComplianceCenterResult]:
+        ...
 
 def get_private_link_services_for_m365_compliance_center(
     resource_group_name: Optional[_builtins.str] = ...,

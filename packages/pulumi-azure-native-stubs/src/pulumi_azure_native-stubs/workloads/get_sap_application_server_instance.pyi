@@ -114,7 +114,10 @@ class GetSapApplicationServerInstanceResult:
 class AwaitableGetSapApplicationServerInstanceResult(
     GetSapApplicationServerInstanceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSapApplicationServerInstanceResult]:
+        ...
 
 def get_sap_application_server_instance(
     application_instance_name: Optional[_builtins.str] = ...,

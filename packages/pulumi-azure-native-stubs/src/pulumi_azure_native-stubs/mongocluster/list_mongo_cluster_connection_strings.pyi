@@ -23,7 +23,10 @@ class ListMongoClusterConnectionStringsResult:
 class AwaitableListMongoClusterConnectionStringsResult(
     ListMongoClusterConnectionStringsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListMongoClusterConnectionStringsResult]:
+        ...
 
 def list_mongo_cluster_connection_strings(
     mongo_cluster_name: Optional[_builtins.str] = ...,

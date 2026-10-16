@@ -43,7 +43,8 @@ class GetPatchBaselinesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetPatchBaselinesResult(GetPatchBaselinesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPatchBaselinesResult]:
+        ...
 
 def get_patch_baselines(
     default_baselines: Optional[_builtins.bool] = ...,

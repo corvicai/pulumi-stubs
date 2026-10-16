@@ -72,7 +72,8 @@ class GetSqlDBTableDataSetMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlDBTableDataSetMappingResult(GetSqlDBTableDataSetMappingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlDBTableDataSetMappingResult]:
+        ...
 
 def get_sql_db_table_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

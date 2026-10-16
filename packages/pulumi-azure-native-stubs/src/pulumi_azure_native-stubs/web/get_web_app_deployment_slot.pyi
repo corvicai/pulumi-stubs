@@ -75,7 +75,8 @@ class GetWebAppDeploymentSlotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppDeploymentSlotResult(GetWebAppDeploymentSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppDeploymentSlotResult]:
+        ...
 
 def get_web_app_deployment_slot(
     id: Optional[_builtins.str] = ...,

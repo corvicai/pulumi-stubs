@@ -62,7 +62,8 @@ class GetProvisionedClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProvisionedClusterResult(GetProvisionedClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProvisionedClusterResult]:
+        ...
 
 def get_provisioned_cluster(
     resource_group_name: Optional[_builtins.str] = ...,

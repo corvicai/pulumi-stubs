@@ -83,17 +83,22 @@ class DatabaseArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> pulumi.Input[_builtins.str]: ...
     @server_name.setter
-    def server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoPauseDelay")
     def auto_pause_delay(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @auto_pause_delay.setter
-    def auto_pause_delay(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def auto_pause_delay(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZone")
     def availability_zone(
@@ -102,7 +107,8 @@ class DatabaseArgs:
     @availability_zone.setter
     def availability_zone(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AvailabilityZoneType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="catalogCollation")
     def catalog_collation(
@@ -111,12 +117,14 @@ class DatabaseArgs:
     @catalog_collation.setter
     def catalog_collation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CatalogCollationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def collation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collation.setter
-    def collation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -125,22 +133,28 @@ class DatabaseArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticPoolId")
     def elastic_pool_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @elastic_pool_id.setter
-    def elastic_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def elastic_pool_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionProtector")
     def encryption_protector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_protector.setter
-    def encryption_protector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_protector(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionProtectorAutoRotation")
     def encryption_protector_auto_rotation(
@@ -149,12 +163,16 @@ class DatabaseArgs:
     @encryption_protector_auto_rotation.setter
     def encryption_protector_auto_rotation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="federatedClientId")
     def federated_client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @federated_client_id.setter
-    def federated_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def federated_client_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="freeLimitExhaustionBehavior")
     def free_limit_exhaustion_behavior(
@@ -166,7 +184,8 @@ class DatabaseArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, FreeLimitExhaustionBehavior]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="highAvailabilityReplicaCount")
     def high_availability_replica_count(
@@ -175,24 +194,28 @@ class DatabaseArgs:
     @high_availability_replica_count.setter
     def high_availability_replica_count(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[DatabaseIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[DatabaseIdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[DatabaseIdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isLedgerOn")
     def is_ledger_on(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_ledger_on.setter
-    def is_ledger_on(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_ledger_on(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def keys(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @keys.setter
     def keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
     def license_type(
@@ -201,12 +224,14 @@ class DatabaseArgs:
     @license_type.setter
     def license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DatabaseLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="longTermRetentionBackupResourceId")
     def long_term_retention_backup_resource_id(
@@ -215,34 +240,44 @@ class DatabaseArgs:
     @long_term_retention_backup_resource_id.setter
     def long_term_retention_backup_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceConfigurationId")
     def maintenance_configuration_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @maintenance_configuration_id.setter
     def maintenance_configuration_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manualCutover")
     def manual_cutover(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @manual_cutover.setter
-    def manual_cutover(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def manual_cutover(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxSizeBytes")
     def max_size_bytes(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @max_size_bytes.setter
-    def max_size_bytes(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def max_size_bytes(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minCapacity")
     def min_capacity(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @min_capacity.setter
-    def min_capacity(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def min_capacity(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="performCutover")
     def perform_cutover(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @perform_cutover.setter
-    def perform_cutover(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def perform_cutover(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredEnclaveType")
     def preferred_enclave_type(
@@ -252,7 +287,8 @@ class DatabaseArgs:
     def preferred_enclave_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AlwaysEncryptedEnclaveType]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readScale")
     def read_scale(
@@ -261,12 +297,16 @@ class DatabaseArgs:
     @read_scale.setter
     def read_scale(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DatabaseReadScale]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoverableDatabaseId")
     def recoverable_database_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @recoverable_database_id.setter
-    def recoverable_database_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def recoverable_database_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recoveryServicesRecoveryPointId")
     def recovery_services_recovery_point_id(
@@ -275,7 +315,8 @@ class DatabaseArgs:
     @recovery_services_recovery_point_id.setter
     def recovery_services_recovery_point_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestedBackupStorageRedundancy")
     def requested_backup_storage_redundancy(
@@ -285,7 +326,8 @@ class DatabaseArgs:
     def requested_backup_storage_redundancy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, BackupStorageRedundancy]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restorableDroppedDatabaseId")
     def restorable_dropped_database_id(
@@ -294,12 +336,16 @@ class DatabaseArgs:
     @restorable_dropped_database_id.setter
     def restorable_dropped_database_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restorePointInTime")
     def restore_point_in_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @restore_point_in_time.setter
-    def restore_point_in_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def restore_point_in_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleName")
     def sample_name(
@@ -308,7 +354,8 @@ class DatabaseArgs:
     @sample_name.setter
     def sample_name(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SampleName]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryType")
     def secondary_type(
@@ -317,12 +364,14 @@ class DatabaseArgs:
     @secondary_type.setter
     def secondary_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecondaryType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[SkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDatabaseDeletionDate")
     def source_database_deletion_date(
@@ -331,17 +380,24 @@ class DatabaseArgs:
     @source_database_deletion_date.setter
     def source_database_deletion_date(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDatabaseId")
     def source_database_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_database_id.setter
-    def source_database_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_database_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -350,17 +406,20 @@ class DatabaseArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useFreeLimit")
     def use_free_limit(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @use_free_limit.setter
-    def use_free_limit(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def use_free_limit(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneRedundant")
     def zone_redundant(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zone_redundant.setter
-    def zone_redundant(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def zone_redundant(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:sql:Database")
 class Database(pulumi.CustomResource):

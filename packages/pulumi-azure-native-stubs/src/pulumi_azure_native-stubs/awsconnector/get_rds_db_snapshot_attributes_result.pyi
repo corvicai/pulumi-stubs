@@ -54,7 +54,10 @@ class GetRdsDbSnapshotAttributesResultResult:
 class AwaitableGetRdsDbSnapshotAttributesResultResult(
     GetRdsDbSnapshotAttributesResultResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRdsDbSnapshotAttributesResultResult]:
+        ...
 
 def get_rds_db_snapshot_attributes_result(
     name: Optional[_builtins.str] = ...,

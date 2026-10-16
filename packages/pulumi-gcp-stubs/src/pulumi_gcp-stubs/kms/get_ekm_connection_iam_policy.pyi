@@ -37,7 +37,8 @@ class GetEkmConnectionIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetEkmConnectionIamPolicyResult(GetEkmConnectionIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEkmConnectionIamPolicyResult]:
+        ...
 
 def get_ekm_connection_iam_policy(
     location: Optional[_builtins.str] = ...,

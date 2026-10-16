@@ -47,7 +47,8 @@ class GetChannelResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetChannelResult(GetChannelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetChannelResult]:
+        ...
 
 def get_channel(
     account_name: Optional[_builtins.str] = ...,

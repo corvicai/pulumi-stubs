@@ -44,7 +44,8 @@ class GetWorkspaceConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceConnectionResult(GetWorkspaceConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceConnectionResult]:
+        ...
 
 def get_workspace_connection(
     connection_name: Optional[_builtins.str] = ...,

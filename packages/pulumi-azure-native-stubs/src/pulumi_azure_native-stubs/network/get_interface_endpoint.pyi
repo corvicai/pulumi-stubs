@@ -72,7 +72,8 @@ class GetInterfaceEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInterfaceEndpointResult(GetInterfaceEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInterfaceEndpointResult]:
+        ...
 
 def get_interface_endpoint(
     expand: Optional[_builtins.str] = ...,

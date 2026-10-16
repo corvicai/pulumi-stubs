@@ -101,7 +101,8 @@ class AzureFileFilterDetailsArgs:
     @file_path_list.setter
     def file_path_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filePrefixList")
     def file_prefix_list(
@@ -110,7 +111,8 @@ class AzureFileFilterDetailsArgs:
     @file_prefix_list.setter
     def file_prefix_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileShareList")
     def file_share_list(
@@ -119,7 +121,8 @@ class AzureFileFilterDetailsArgs:
     @file_share_list.setter
     def file_share_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BlobFilterDetailsArgsDict(TypedDict):
     blob_path_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -149,7 +152,8 @@ class BlobFilterDetailsArgs:
     @blob_path_list.setter
     def blob_path_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blobPrefixList")
     def blob_prefix_list(
@@ -158,7 +162,8 @@ class BlobFilterDetailsArgs:
     @blob_prefix_list.setter
     def blob_prefix_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerList")
     def container_list(
@@ -167,7 +172,8 @@ class BlobFilterDetailsArgs:
     @container_list.setter
     def container_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ContactDetailsArgsDict(TypedDict):
     contact_name: pulumi.Input[_builtins.str]
@@ -197,24 +203,28 @@ class ContactDetailsArgs:
     @pulumi.getter(name="contactName")
     def contact_name(self) -> pulumi.Input[_builtins.str]: ...
     @contact_name.setter
-    def contact_name(self, value: pulumi.Input[_builtins.str]): ...
+    def contact_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailList")
     def email_list(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @email_list.setter
     def email_list(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def phone(self) -> pulumi.Input[_builtins.str]: ...
     @phone.setter
-    def phone(self, value: pulumi.Input[_builtins.str]): ...
+    def phone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mobile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mobile.setter
-    def mobile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mobile(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationPreference")
     def notification_preference(
@@ -226,12 +236,14 @@ class ContactDetailsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NotificationPreferenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phoneExtension")
     def phone_extension(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @phone_extension.setter
-    def phone_extension(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def phone_extension(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ContactInfoArgsDict(TypedDict):
     contact_name: pulumi.Input[_builtins.str]
@@ -253,22 +265,26 @@ class ContactInfoArgs:
     @pulumi.getter(name="contactName")
     def contact_name(self) -> pulumi.Input[_builtins.str]: ...
     @contact_name.setter
-    def contact_name(self, value: pulumi.Input[_builtins.str]): ...
+    def contact_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def phone(self) -> pulumi.Input[_builtins.str]: ...
     @phone.setter
-    def phone(self, value: pulumi.Input[_builtins.str]): ...
+    def phone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mobile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mobile.setter
-    def mobile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mobile(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phoneExtension")
     def phone_extension(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @phone_extension.setter
-    def phone_extension(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def phone_extension(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataBoxCustomerDiskJobDetailsArgsDict(TypedDict):
     contact_details: pulumi.Input[ContactDetailsArgsDict]
@@ -320,12 +336,14 @@ class DataBoxCustomerDiskJobDetailsArgs:
     @pulumi.getter(name="contactDetails")
     def contact_details(self) -> pulumi.Input[ContactDetailsArgs]: ...
     @contact_details.setter
-    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]): ...
+    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobDetailsType")
     def job_details_type(self) -> pulumi.Input[_builtins.str]: ...
     @job_details_type.setter
-    def job_details_type(self, value: pulumi.Input[_builtins.str]): ...
+    def job_details_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnToCustomerPackageDetails")
     def return_to_customer_package_details(
@@ -334,7 +352,8 @@ class DataBoxCustomerDiskJobDetailsArgs:
     @return_to_customer_package_details.setter
     def return_to_customer_package_details(
         self, value: pulumi.Input[PackageCarrierDetailsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataExportDetails")
     def data_export_details(
@@ -344,7 +363,8 @@ class DataBoxCustomerDiskJobDetailsArgs:
     def data_export_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataExportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataImportDetails")
     def data_import_details(
@@ -354,12 +374,16 @@ class DataBoxCustomerDiskJobDetailsArgs:
     def data_import_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataImportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableManifestBackup")
     def enable_manifest_backup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_manifest_backup.setter
-    def enable_manifest_backup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_manifest_backup(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedDataSizeInTeraBytes")
     def expected_data_size_in_tera_bytes(
@@ -368,7 +392,8 @@ class DataBoxCustomerDiskJobDetailsArgs:
     @expected_data_size_in_tera_bytes.setter
     def expected_data_size_in_tera_bytes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importDiskDetailsCollection")
     def import_disk_details_collection(
@@ -380,19 +405,22 @@ class DataBoxCustomerDiskJobDetailsArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[ImportDiskDetailsArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
     def key_encryption_key(self) -> Optional[pulumi.Input[KeyEncryptionKeyArgs]]: ...
     @key_encryption_key.setter
     def key_encryption_key(
         self, value: Optional[pulumi.Input[KeyEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def preferences(self) -> Optional[pulumi.Input[PreferencesArgs]]: ...
     @preferences.setter
-    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]): ...
+    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseShippingDetails")
     def reverse_shipping_details(
@@ -401,12 +429,16 @@ class DataBoxCustomerDiskJobDetailsArgs:
     @reverse_shipping_details.setter
     def reverse_shipping_details(
         self, value: Optional[pulumi.Input[ReverseShippingDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shippingAddress")
     def shipping_address(self) -> Optional[pulumi.Input[ShippingAddressArgs]]: ...
     @shipping_address.setter
-    def shipping_address(self, value: Optional[pulumi.Input[ShippingAddressArgs]]): ...
+    def shipping_address(
+        self, value: Optional[pulumi.Input[ShippingAddressArgs]]
+    ):  # -> None:
+        ...
 
 class DataBoxDiskJobDetailsArgsDict(TypedDict):
     contact_details: pulumi.Input[ContactDetailsArgsDict]
@@ -456,12 +488,14 @@ class DataBoxDiskJobDetailsArgs:
     @pulumi.getter(name="contactDetails")
     def contact_details(self) -> pulumi.Input[ContactDetailsArgs]: ...
     @contact_details.setter
-    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]): ...
+    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobDetailsType")
     def job_details_type(self) -> pulumi.Input[_builtins.str]: ...
     @job_details_type.setter
-    def job_details_type(self, value: pulumi.Input[_builtins.str]): ...
+    def job_details_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataExportDetails")
     def data_export_details(
@@ -471,7 +505,8 @@ class DataBoxDiskJobDetailsArgs:
     def data_export_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataExportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataImportDetails")
     def data_import_details(
@@ -481,7 +516,8 @@ class DataBoxDiskJobDetailsArgs:
     def data_import_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataImportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedDataSizeInTeraBytes")
     def expected_data_size_in_tera_bytes(
@@ -490,24 +526,28 @@ class DataBoxDiskJobDetailsArgs:
     @expected_data_size_in_tera_bytes.setter
     def expected_data_size_in_tera_bytes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
     def key_encryption_key(self) -> Optional[pulumi.Input[KeyEncryptionKeyArgs]]: ...
     @key_encryption_key.setter
     def key_encryption_key(
         self, value: Optional[pulumi.Input[KeyEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def passkey(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @passkey.setter
-    def passkey(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def passkey(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def preferences(self) -> Optional[pulumi.Input[PreferencesArgs]]: ...
     @preferences.setter
-    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]): ...
+    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredDisks")
     def preferred_disks(
@@ -516,7 +556,8 @@ class DataBoxDiskJobDetailsArgs:
     @preferred_disks.setter
     def preferred_disks(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseShippingDetails")
     def reverse_shipping_details(
@@ -525,12 +566,16 @@ class DataBoxDiskJobDetailsArgs:
     @reverse_shipping_details.setter
     def reverse_shipping_details(
         self, value: Optional[pulumi.Input[ReverseShippingDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shippingAddress")
     def shipping_address(self) -> Optional[pulumi.Input[ShippingAddressArgs]]: ...
     @shipping_address.setter
-    def shipping_address(self, value: Optional[pulumi.Input[ShippingAddressArgs]]): ...
+    def shipping_address(
+        self, value: Optional[pulumi.Input[ShippingAddressArgs]]
+    ):  # -> None:
+        ...
 
 class DataBoxHeavyJobDetailsArgsDict(TypedDict):
     contact_details: pulumi.Input[ContactDetailsArgsDict]
@@ -574,12 +619,14 @@ class DataBoxHeavyJobDetailsArgs:
     @pulumi.getter(name="contactDetails")
     def contact_details(self) -> pulumi.Input[ContactDetailsArgs]: ...
     @contact_details.setter
-    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]): ...
+    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobDetailsType")
     def job_details_type(self) -> pulumi.Input[_builtins.str]: ...
     @job_details_type.setter
-    def job_details_type(self, value: pulumi.Input[_builtins.str]): ...
+    def job_details_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataExportDetails")
     def data_export_details(
@@ -589,7 +636,8 @@ class DataBoxHeavyJobDetailsArgs:
     def data_export_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataExportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataImportDetails")
     def data_import_details(
@@ -599,12 +647,14 @@ class DataBoxHeavyJobDetailsArgs:
     def data_import_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataImportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="devicePassword")
     def device_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_password.setter
-    def device_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def device_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedDataSizeInTeraBytes")
     def expected_data_size_in_tera_bytes(
@@ -613,19 +663,22 @@ class DataBoxHeavyJobDetailsArgs:
     @expected_data_size_in_tera_bytes.setter
     def expected_data_size_in_tera_bytes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
     def key_encryption_key(self) -> Optional[pulumi.Input[KeyEncryptionKeyArgs]]: ...
     @key_encryption_key.setter
     def key_encryption_key(
         self, value: Optional[pulumi.Input[KeyEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def preferences(self) -> Optional[pulumi.Input[PreferencesArgs]]: ...
     @preferences.setter
-    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]): ...
+    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseShippingDetails")
     def reverse_shipping_details(
@@ -634,12 +687,16 @@ class DataBoxHeavyJobDetailsArgs:
     @reverse_shipping_details.setter
     def reverse_shipping_details(
         self, value: Optional[pulumi.Input[ReverseShippingDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shippingAddress")
     def shipping_address(self) -> Optional[pulumi.Input[ShippingAddressArgs]]: ...
     @shipping_address.setter
-    def shipping_address(self, value: Optional[pulumi.Input[ShippingAddressArgs]]): ...
+    def shipping_address(
+        self, value: Optional[pulumi.Input[ShippingAddressArgs]]
+    ):  # -> None:
+        ...
 
 class DataBoxJobDetailsArgsDict(TypedDict):
     contact_details: pulumi.Input[ContactDetailsArgsDict]
@@ -683,12 +740,14 @@ class DataBoxJobDetailsArgs:
     @pulumi.getter(name="contactDetails")
     def contact_details(self) -> pulumi.Input[ContactDetailsArgs]: ...
     @contact_details.setter
-    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]): ...
+    def contact_details(self, value: pulumi.Input[ContactDetailsArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobDetailsType")
     def job_details_type(self) -> pulumi.Input[_builtins.str]: ...
     @job_details_type.setter
-    def job_details_type(self, value: pulumi.Input[_builtins.str]): ...
+    def job_details_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataExportDetails")
     def data_export_details(
@@ -698,7 +757,8 @@ class DataBoxJobDetailsArgs:
     def data_export_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataExportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataImportDetails")
     def data_import_details(
@@ -708,12 +768,14 @@ class DataBoxJobDetailsArgs:
     def data_import_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataImportDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="devicePassword")
     def device_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_password.setter
-    def device_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def device_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedDataSizeInTeraBytes")
     def expected_data_size_in_tera_bytes(
@@ -722,19 +784,22 @@ class DataBoxJobDetailsArgs:
     @expected_data_size_in_tera_bytes.setter
     def expected_data_size_in_tera_bytes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
     def key_encryption_key(self) -> Optional[pulumi.Input[KeyEncryptionKeyArgs]]: ...
     @key_encryption_key.setter
     def key_encryption_key(
         self, value: Optional[pulumi.Input[KeyEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def preferences(self) -> Optional[pulumi.Input[PreferencesArgs]]: ...
     @preferences.setter
-    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]): ...
+    def preferences(self, value: Optional[pulumi.Input[PreferencesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseShippingDetails")
     def reverse_shipping_details(
@@ -743,12 +808,16 @@ class DataBoxJobDetailsArgs:
     @reverse_shipping_details.setter
     def reverse_shipping_details(
         self, value: Optional[pulumi.Input[ReverseShippingDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shippingAddress")
     def shipping_address(self) -> Optional[pulumi.Input[ShippingAddressArgs]]: ...
     @shipping_address.setter
-    def shipping_address(self, value: Optional[pulumi.Input[ShippingAddressArgs]]): ...
+    def shipping_address(
+        self, value: Optional[pulumi.Input[ShippingAddressArgs]]
+    ):  # -> None:
+        ...
 
 class DataExportDetailsArgsDict(TypedDict):
     account_details: pulumi.Input[
@@ -781,14 +850,16 @@ class DataExportDetailsArgs:
     def account_details(
         self,
         value: pulumi.Input[Union[ManagedDiskDetailsArgs, StorageAccountDetailsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferConfiguration")
     def transfer_configuration(self) -> pulumi.Input[TransferConfigurationArgs]: ...
     @transfer_configuration.setter
     def transfer_configuration(
         self, value: pulumi.Input[TransferConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logCollectionLevel")
     def log_collection_level(
@@ -797,7 +868,8 @@ class DataExportDetailsArgs:
     @log_collection_level.setter
     def log_collection_level(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LogCollectionLevel]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DataImportDetailsArgsDict(TypedDict):
     account_details: pulumi.Input[
@@ -828,7 +900,8 @@ class DataImportDetailsArgs:
     def account_details(
         self,
         value: pulumi.Input[Union[ManagedDiskDetailsArgs, StorageAccountDetailsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logCollectionLevel")
     def log_collection_level(
@@ -837,7 +910,8 @@ class DataImportDetailsArgs:
     @log_collection_level.setter
     def log_collection_level(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LogCollectionLevel]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionPreferencesArgsDict(TypedDict):
     double_encryption: NotRequired[pulumi.Input[Union[_builtins.str, DoubleEncryption]]]
@@ -865,7 +939,8 @@ class EncryptionPreferencesArgs:
     @double_encryption.setter
     def double_encryption(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DoubleEncryption]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hardwareEncryption")
     def hardware_encryption(
@@ -874,7 +949,8 @@ class EncryptionPreferencesArgs:
     @hardware_encryption.setter
     def hardware_encryption(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HardwareEncryption]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FilterFileDetailsArgsDict(TypedDict):
     filter_file_path: pulumi.Input[_builtins.str]
@@ -892,7 +968,8 @@ class FilterFileDetailsArgs:
     @pulumi.getter(name="filterFilePath")
     def filter_file_path(self) -> pulumi.Input[_builtins.str]: ...
     @filter_file_path.setter
-    def filter_file_path(self, value: pulumi.Input[_builtins.str]): ...
+    def filter_file_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterFileType")
     def filter_file_type(
@@ -901,7 +978,8 @@ class FilterFileDetailsArgs:
     @filter_file_type.setter
     def filter_file_type(
         self, value: pulumi.Input[Union[_builtins.str, FilterFileType]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityPropertiesArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -919,14 +997,16 @@ class IdentityPropertiesArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssigned")
     def user_assigned(self) -> Optional[pulumi.Input[UserAssignedPropertiesArgs]]: ...
     @user_assigned.setter
     def user_assigned(
         self, value: Optional[pulumi.Input[UserAssignedPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ImportDiskDetailsArgsDict(TypedDict):
     bit_locker_key: pulumi.Input[_builtins.str]
@@ -946,17 +1026,20 @@ class ImportDiskDetailsArgs:
     @pulumi.getter(name="bitLockerKey")
     def bit_locker_key(self) -> pulumi.Input[_builtins.str]: ...
     @bit_locker_key.setter
-    def bit_locker_key(self, value: pulumi.Input[_builtins.str]): ...
+    def bit_locker_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manifestFile")
     def manifest_file(self) -> pulumi.Input[_builtins.str]: ...
     @manifest_file.setter
-    def manifest_file(self, value: pulumi.Input[_builtins.str]): ...
+    def manifest_file(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manifestHash")
     def manifest_hash(self) -> pulumi.Input[_builtins.str]: ...
     @manifest_hash.setter
-    def manifest_hash(self, value: pulumi.Input[_builtins.str]): ...
+    def manifest_hash(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class JobDeliveryInfoArgsDict(TypedDict):
     scheduled_date_time: NotRequired[pulumi.Input[_builtins.str]]
@@ -970,7 +1053,10 @@ class JobDeliveryInfoArgs:
     @pulumi.getter(name="scheduledDateTime")
     def scheduled_date_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scheduled_date_time.setter
-    def scheduled_date_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scheduled_date_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class KeyEncryptionKeyArgsDict(TypedDict):
     kek_type: pulumi.Input[Union[_builtins.str, KekType]]
@@ -992,24 +1078,30 @@ class KeyEncryptionKeyArgs:
     @pulumi.getter(name="kekType")
     def kek_type(self) -> pulumi.Input[Union[_builtins.str, KekType]]: ...
     @kek_type.setter
-    def kek_type(self, value: pulumi.Input[Union[_builtins.str, KekType]]): ...
+    def kek_type(self, value: pulumi.Input[Union[_builtins.str, KekType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityProperties")
     def identity_properties(self) -> Optional[pulumi.Input[IdentityPropertiesArgs]]: ...
     @identity_properties.setter
     def identity_properties(
         self, value: Optional[pulumi.Input[IdentityPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kekUrl")
     def kek_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kek_url.setter
-    def kek_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kek_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kekVaultResourceID")
     def kek_vault_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kek_vault_resource_id.setter
-    def kek_vault_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kek_vault_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ManagedDiskDetailsArgsDict(TypedDict):
     data_account_type: pulumi.Input[_builtins.str]
@@ -1031,22 +1123,28 @@ class ManagedDiskDetailsArgs:
     @pulumi.getter(name="dataAccountType")
     def data_account_type(self) -> pulumi.Input[_builtins.str]: ...
     @data_account_type.setter
-    def data_account_type(self, value: pulumi.Input[_builtins.str]): ...
+    def data_account_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupId")
     def resource_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_id.setter
-    def resource_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingStorageAccountId")
     def staging_storage_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @staging_storage_account_id.setter
-    def staging_storage_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def staging_storage_account_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharePassword")
     def share_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @share_password.setter
-    def share_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def share_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class NotificationPreferenceArgsDict(TypedDict):
     send_notification: pulumi.Input[_builtins.bool]
@@ -1064,7 +1162,8 @@ class NotificationPreferenceArgs:
     @pulumi.getter(name="sendNotification")
     def send_notification(self) -> pulumi.Input[_builtins.bool]: ...
     @send_notification.setter
-    def send_notification(self, value: pulumi.Input[_builtins.bool]): ...
+    def send_notification(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stageName")
     def stage_name(
@@ -1073,7 +1172,8 @@ class NotificationPreferenceArgs:
     @stage_name.setter
     def stage_name(
         self, value: pulumi.Input[Union[_builtins.str, NotificationStageName]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PackageCarrierDetailsArgsDict(TypedDict):
     carrier_account_number: NotRequired[pulumi.Input[_builtins.str]]
@@ -1093,17 +1193,22 @@ class PackageCarrierDetailsArgs:
     @pulumi.getter(name="carrierAccountNumber")
     def carrier_account_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @carrier_account_number.setter
-    def carrier_account_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def carrier_account_number(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="carrierName")
     def carrier_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @carrier_name.setter
-    def carrier_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def carrier_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trackingId")
     def tracking_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tracking_id.setter
-    def tracking_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tracking_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreferencesArgsDict(TypedDict):
     encryption_preferences: NotRequired[pulumi.Input[EncryptionPreferencesArgsDict]]
@@ -1147,7 +1252,8 @@ class PreferencesArgs:
     @encryption_preferences.setter
     def encryption_preferences(
         self, value: Optional[pulumi.Input[EncryptionPreferencesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredDataCenterRegion")
     def preferred_data_center_region(
@@ -1156,7 +1262,8 @@ class PreferencesArgs:
     @preferred_data_center_region.setter
     def preferred_data_center_region(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseTransportPreferences")
     def reverse_transport_preferences(
@@ -1165,7 +1272,8 @@ class PreferencesArgs:
     @reverse_transport_preferences.setter
     def reverse_transport_preferences(
         self, value: Optional[pulumi.Input[TransportPreferencesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountAccessTierPreferences")
     def storage_account_access_tier_preferences(
@@ -1183,7 +1291,8 @@ class PreferencesArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, StorageAccountAccessTier]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transportPreferences")
     def transport_preferences(
@@ -1192,7 +1301,8 @@ class PreferencesArgs:
     @transport_preferences.setter
     def transport_preferences(
         self, value: Optional[pulumi.Input[TransportPreferencesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -1214,7 +1324,8 @@ class ResourceIdentityArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -1223,7 +1334,8 @@ class ResourceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReverseShippingDetailsArgsDict(TypedDict):
     contact_details: NotRequired[pulumi.Input[ContactInfoArgsDict]]
@@ -1241,12 +1353,18 @@ class ReverseShippingDetailsArgs:
     @pulumi.getter(name="contactDetails")
     def contact_details(self) -> Optional[pulumi.Input[ContactInfoArgs]]: ...
     @contact_details.setter
-    def contact_details(self, value: Optional[pulumi.Input[ContactInfoArgs]]): ...
+    def contact_details(
+        self, value: Optional[pulumi.Input[ContactInfoArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shippingAddress")
     def shipping_address(self) -> Optional[pulumi.Input[ShippingAddressArgs]]: ...
     @shipping_address.setter
-    def shipping_address(self, value: Optional[pulumi.Input[ShippingAddressArgs]]): ...
+    def shipping_address(
+        self, value: Optional[pulumi.Input[ShippingAddressArgs]]
+    ):  # -> None:
+        ...
 
 class ShippingAddressArgsDict(TypedDict):
     country: pulumi.Input[_builtins.str]
@@ -1284,12 +1402,14 @@ class ShippingAddressArgs:
     @pulumi.getter
     def country(self) -> pulumi.Input[_builtins.str]: ...
     @country.setter
-    def country(self, value: pulumi.Input[_builtins.str]): ...
+    def country(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streetAddress1")
     def street_address1(self) -> pulumi.Input[_builtins.str]: ...
     @street_address1.setter
-    def street_address1(self, value: pulumi.Input[_builtins.str]): ...
+    def street_address1(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressType")
     def address_type(
@@ -1298,56 +1418,70 @@ class ShippingAddressArgs:
     @address_type.setter
     def address_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AddressType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def city(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @city.setter
-    def city(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def city(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="companyName")
     def company_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @company_name.setter
-    def company_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def company_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postalCode")
     def postal_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @postal_code.setter
-    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def postal_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipAddressValidation")
     def skip_address_validation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @skip_address_validation.setter
     def skip_address_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stateOrProvince")
     def state_or_province(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state_or_province.setter
-    def state_or_province(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state_or_province(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streetAddress2")
     def street_address2(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @street_address2.setter
-    def street_address2(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def street_address2(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="streetAddress3")
     def street_address3(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @street_address3.setter
-    def street_address3(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def street_address3(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taxIdentificationNumber")
     def tax_identification_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tax_identification_number.setter
     def tax_identification_number(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zipExtendedCode")
     def zip_extended_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zip_extended_code.setter
-    def zip_extended_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zip_extended_code(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, SkuName]]
@@ -1367,17 +1501,20 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, SkuName]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StorageAccountDetailsArgsDict(TypedDict):
     data_account_type: pulumi.Input[_builtins.str]
@@ -1397,17 +1534,20 @@ class StorageAccountDetailsArgs:
     @pulumi.getter(name="dataAccountType")
     def data_account_type(self) -> pulumi.Input[_builtins.str]: ...
     @data_account_type.setter
-    def data_account_type(self, value: pulumi.Input[_builtins.str]): ...
+    def data_account_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
     def storage_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @storage_account_id.setter
-    def storage_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharePassword")
     def share_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @share_password.setter
-    def share_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def share_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferAllDetailsArgsDict(TypedDict):
     data_account_type: pulumi.Input[Union[_builtins.str, DataAccountType]]
@@ -1433,17 +1573,24 @@ class TransferAllDetailsArgs:
     @data_account_type.setter
     def data_account_type(
         self, value: pulumi.Input[Union[_builtins.str, DataAccountType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferAllBlobs")
     def transfer_all_blobs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @transfer_all_blobs.setter
-    def transfer_all_blobs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def transfer_all_blobs(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferAllFiles")
     def transfer_all_files(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @transfer_all_files.setter
-    def transfer_all_files(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def transfer_all_files(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class TransferConfigurationTransferAllDetailsArgsDict(TypedDict):
     include: NotRequired[pulumi.Input[TransferAllDetailsArgsDict]]
@@ -1457,7 +1604,10 @@ class TransferConfigurationTransferAllDetailsArgs:
     @pulumi.getter
     def include(self) -> Optional[pulumi.Input[TransferAllDetailsArgs]]: ...
     @include.setter
-    def include(self, value: Optional[pulumi.Input[TransferAllDetailsArgs]]): ...
+    def include(
+        self, value: Optional[pulumi.Input[TransferAllDetailsArgs]]
+    ):  # -> None:
+        ...
 
 class TransferConfigurationTransferFilterDetailsArgsDict(TypedDict):
     include: NotRequired[pulumi.Input[TransferFilterDetailsArgsDict]]
@@ -1471,7 +1621,10 @@ class TransferConfigurationTransferFilterDetailsArgs:
     @pulumi.getter
     def include(self) -> Optional[pulumi.Input[TransferFilterDetailsArgs]]: ...
     @include.setter
-    def include(self, value: Optional[pulumi.Input[TransferFilterDetailsArgs]]): ...
+    def include(
+        self, value: Optional[pulumi.Input[TransferFilterDetailsArgs]]
+    ):  # -> None:
+        ...
 
 class TransferConfigurationArgsDict(TypedDict):
     transfer_configuration_type: pulumi.Input[
@@ -1507,7 +1660,8 @@ class TransferConfigurationArgs:
     @transfer_configuration_type.setter
     def transfer_configuration_type(
         self, value: pulumi.Input[Union[_builtins.str, TransferConfigurationType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferAllDetails")
     def transfer_all_details(
@@ -1516,7 +1670,8 @@ class TransferConfigurationArgs:
     @transfer_all_details.setter
     def transfer_all_details(
         self, value: Optional[pulumi.Input[TransferConfigurationTransferAllDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferFilterDetails")
     def transfer_filter_details(
@@ -1526,7 +1681,8 @@ class TransferConfigurationArgs:
     def transfer_filter_details(
         self,
         value: Optional[pulumi.Input[TransferConfigurationTransferFilterDetailsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferFilterDetailsArgsDict(TypedDict):
     data_account_type: pulumi.Input[Union[_builtins.str, DataAccountType]]
@@ -1560,7 +1716,8 @@ class TransferFilterDetailsArgs:
     @data_account_type.setter
     def data_account_type(
         self, value: pulumi.Input[Union[_builtins.str, DataAccountType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureFileFilterDetails")
     def azure_file_filter_details(
@@ -1569,14 +1726,16 @@ class TransferFilterDetailsArgs:
     @azure_file_filter_details.setter
     def azure_file_filter_details(
         self, value: Optional[pulumi.Input[AzureFileFilterDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blobFilterDetails")
     def blob_filter_details(self) -> Optional[pulumi.Input[BlobFilterDetailsArgs]]: ...
     @blob_filter_details.setter
     def blob_filter_details(
         self, value: Optional[pulumi.Input[BlobFilterDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterFileDetails")
     def filter_file_details(
@@ -1586,7 +1745,8 @@ class TransferFilterDetailsArgs:
     def filter_file_details(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[FilterFileDetailsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransportPreferencesArgsDict(TypedDict):
     preferred_shipment_type: pulumi.Input[Union[_builtins.str, TransportShipmentTypes]]
@@ -1608,7 +1768,8 @@ class TransportPreferencesArgs:
     @preferred_shipment_type.setter
     def preferred_shipment_type(
         self, value: pulumi.Input[Union[_builtins.str, TransportShipmentTypes]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class UserAssignedPropertiesArgsDict(TypedDict):
     resource_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1622,4 +1783,5 @@ class UserAssignedPropertiesArgs:
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

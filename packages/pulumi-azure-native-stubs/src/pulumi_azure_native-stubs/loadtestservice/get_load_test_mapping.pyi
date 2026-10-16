@@ -52,7 +52,8 @@ class GetLoadTestMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLoadTestMappingResult(GetLoadTestMappingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLoadTestMappingResult]:
+        ...
 
 def get_load_test_mapping(
     load_test_mapping_name: Optional[_builtins.str] = ...,

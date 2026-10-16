@@ -52,7 +52,8 @@ class GetLedgerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLedgerResult(GetLedgerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLedgerResult]:
+        ...
 
 def get_ledger(
     ledger_name: Optional[_builtins.str] = ...,

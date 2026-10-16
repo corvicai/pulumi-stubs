@@ -14,7 +14,8 @@ class SharedVPCHostProjectArgs:
     @pulumi.getter
     def project(self) -> pulumi.Input[_builtins.str]: ...
     @project.setter
-    def project(self, value: pulumi.Input[_builtins.str]): ...
+    def project(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SharedVPCHostProjectState:
@@ -25,7 +26,8 @@ class _SharedVPCHostProjectState:
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SharedVPCHostProject(pulumi.CustomResource):

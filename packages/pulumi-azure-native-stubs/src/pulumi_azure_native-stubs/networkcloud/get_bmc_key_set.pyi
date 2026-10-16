@@ -92,7 +92,8 @@ class GetBmcKeySetResult:
     def user_list_status(self) -> Sequence[outputs.KeySetUserStatusResponse]: ...
 
 class AwaitableGetBmcKeySetResult(GetBmcKeySetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBmcKeySetResult]:
+        ...
 
 def get_bmc_key_set(
     bmc_key_set_name: Optional[_builtins.str] = ...,

@@ -78,7 +78,8 @@ class GetWorkspaceResult:
     ) -> Sequence[outputs.GetWorkspaceWorkspacePropertyResult]: ...
 
 class AwaitableGetWorkspaceResult(GetWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceResult]:
+        ...
 
 def get_workspace(
     directory_id: Optional[_builtins.str] = ...,

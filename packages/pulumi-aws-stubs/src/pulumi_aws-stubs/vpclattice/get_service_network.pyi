@@ -63,7 +63,8 @@ class GetServiceNetworkResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetServiceNetworkResult(GetServiceNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceNetworkResult]:
+        ...
 
 def get_service_network(
     region: Optional[_builtins.str] = ...,

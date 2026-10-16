@@ -49,24 +49,28 @@ class VMwareClusterArgs:
     @pulumi.getter(name="adminClusterMembership")
     def admin_cluster_membership(self) -> pulumi.Input[_builtins.str]: ...
     @admin_cluster_membership.setter
-    def admin_cluster_membership(self, value: pulumi.Input[_builtins.str]): ...
+    def admin_cluster_membership(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="controlPlaneNode")
     def control_plane_node(self) -> pulumi.Input[VMwareClusterControlPlaneNodeArgs]: ...
     @control_plane_node.setter
     def control_plane_node(
         self, value: pulumi.Input[VMwareClusterControlPlaneNodeArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPremVersion")
     def on_prem_version(self) -> pulumi.Input[_builtins.str]: ...
     @on_prem_version.setter
-    def on_prem_version(self, value: pulumi.Input[_builtins.str]): ...
+    def on_prem_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -75,7 +79,8 @@ class VMwareClusterArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="antiAffinityGroups")
     def anti_affinity_groups(
@@ -84,7 +89,8 @@ class VMwareClusterArgs:
     @anti_affinity_groups.setter
     def anti_affinity_groups(
         self, value: Optional[pulumi.Input[VMwareClusterAntiAffinityGroupsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authorization(
@@ -93,7 +99,8 @@ class VMwareClusterArgs:
     @authorization.setter
     def authorization(
         self, value: Optional[pulumi.Input[VMwareClusterAuthorizationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoRepairConfig")
     def auto_repair_config(
@@ -102,40 +109,46 @@ class VMwareClusterArgs:
     @auto_repair_config.setter
     def auto_repair_config(
         self, value: Optional[pulumi.Input[VMwareClusterAutoRepairConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataplaneV2")
     def dataplane_v2(self) -> Optional[pulumi.Input[VMwareClusterDataplaneV2Args]]: ...
     @dataplane_v2.setter
     def dataplane_v2(
         self, value: Optional[pulumi.Input[VMwareClusterDataplaneV2Args]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableBundledIngress")
     def disable_bundled_ingress(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_bundled_ingress.setter
     def disable_bundled_ingress(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAdvancedCluster")
     def enable_advanced_cluster(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_advanced_cluster.setter
     def enable_advanced_cluster(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableControlPlaneV2")
     def enable_control_plane_v2(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_control_plane_v2.setter
     def enable_control_plane_v2(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancer")
     def load_balancer(
@@ -144,12 +157,14 @@ class VMwareClusterArgs:
     @load_balancer.setter
     def load_balancer(
         self, value: Optional[pulumi.Input[VMwareClusterLoadBalancerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -158,12 +173,14 @@ class VMwareClusterArgs:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[VMwareClusterNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipValidations")
     def skip_validations(
@@ -172,12 +189,16 @@ class VMwareClusterArgs:
     @skip_validations.setter
     def skip_validations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def storage(self) -> Optional[pulumi.Input[VMwareClusterStorageArgs]]: ...
     @storage.setter
-    def storage(self, value: Optional[pulumi.Input[VMwareClusterStorageArgs]]): ...
+    def storage(
+        self, value: Optional[pulumi.Input[VMwareClusterStorageArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradePolicy")
     def upgrade_policy(
@@ -186,17 +207,24 @@ class VMwareClusterArgs:
     @upgrade_policy.setter
     def upgrade_policy(
         self, value: Optional[pulumi.Input[VMwareClusterUpgradePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vcenter(self) -> Optional[pulumi.Input[VMwareClusterVcenterArgs]]: ...
     @vcenter.setter
-    def vcenter(self, value: Optional[pulumi.Input[VMwareClusterVcenterArgs]]): ...
+    def vcenter(
+        self, value: Optional[pulumi.Input[VMwareClusterVcenterArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmTrackingEnabled")
     def vm_tracking_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @vm_tracking_enabled.setter
-    def vm_tracking_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def vm_tracking_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VMwareClusterState:
@@ -263,7 +291,8 @@ class _VMwareClusterState:
     @admin_cluster_membership.setter
     def admin_cluster_membership(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -272,7 +301,8 @@ class _VMwareClusterState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="antiAffinityGroups")
     def anti_affinity_groups(
@@ -281,7 +311,8 @@ class _VMwareClusterState:
     @anti_affinity_groups.setter
     def anti_affinity_groups(
         self, value: Optional[pulumi.Input[VMwareClusterAntiAffinityGroupsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def authorization(
@@ -290,7 +321,8 @@ class _VMwareClusterState:
     @authorization.setter
     def authorization(
         self, value: Optional[pulumi.Input[VMwareClusterAuthorizationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoRepairConfig")
     def auto_repair_config(
@@ -299,7 +331,8 @@ class _VMwareClusterState:
     @auto_repair_config.setter
     def auto_repair_config(
         self, value: Optional[pulumi.Input[VMwareClusterAutoRepairConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="controlPlaneNode")
     def control_plane_node(
@@ -308,36 +341,42 @@ class _VMwareClusterState:
     @control_plane_node.setter
     def control_plane_node(
         self, value: Optional[pulumi.Input[VMwareClusterControlPlaneNodeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataplaneV2")
     def dataplane_v2(self) -> Optional[pulumi.Input[VMwareClusterDataplaneV2Args]]: ...
     @dataplane_v2.setter
     def dataplane_v2(
         self, value: Optional[pulumi.Input[VMwareClusterDataplaneV2Args]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteTime")
     def delete_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete_time.setter
-    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableBundledIngress")
     def disable_bundled_ingress(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_bundled_ingress.setter
     def disable_bundled_ingress(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -346,31 +385,36 @@ class _VMwareClusterState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAdvancedCluster")
     def enable_advanced_cluster(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_advanced_cluster.setter
     def enable_advanced_cluster(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableControlPlaneV2")
     def enable_control_plane_v2(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_control_plane_v2.setter
     def enable_control_plane_v2(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def fleets(
@@ -380,7 +424,8 @@ class _VMwareClusterState:
     def fleets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VMwareClusterFleetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancer")
     def load_balancer(
@@ -389,22 +434,26 @@ class _VMwareClusterState:
     @load_balancer.setter
     def load_balancer(
         self, value: Optional[pulumi.Input[VMwareClusterLoadBalancerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localName")
     def local_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_name.setter
-    def local_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def local_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfig")
     def network_config(
@@ -413,22 +462,26 @@ class _VMwareClusterState:
     @network_config.setter
     def network_config(
         self, value: Optional[pulumi.Input[VMwareClusterNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPremVersion")
     def on_prem_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @on_prem_version.setter
-    def on_prem_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def on_prem_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipValidations")
     def skip_validations(
@@ -437,12 +490,14 @@ class _VMwareClusterState:
     @skip_validations.setter
     def skip_validations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statuses(
@@ -452,22 +507,28 @@ class _VMwareClusterState:
     def statuses(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VMwareClusterStatusArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def storage(self) -> Optional[pulumi.Input[VMwareClusterStorageArgs]]: ...
     @storage.setter
-    def storage(self, value: Optional[pulumi.Input[VMwareClusterStorageArgs]]): ...
+    def storage(
+        self, value: Optional[pulumi.Input[VMwareClusterStorageArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradePolicy")
     def upgrade_policy(
@@ -476,7 +537,8 @@ class _VMwareClusterState:
     @upgrade_policy.setter
     def upgrade_policy(
         self, value: Optional[pulumi.Input[VMwareClusterUpgradePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationChecks")
     def validation_checks(
@@ -490,17 +552,24 @@ class _VMwareClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VMwareClusterValidationCheckArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vcenter(self) -> Optional[pulumi.Input[VMwareClusterVcenterArgs]]: ...
     @vcenter.setter
-    def vcenter(self, value: Optional[pulumi.Input[VMwareClusterVcenterArgs]]): ...
+    def vcenter(
+        self, value: Optional[pulumi.Input[VMwareClusterVcenterArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmTrackingEnabled")
     def vm_tracking_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @vm_tracking_enabled.setter
-    def vm_tracking_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def vm_tracking_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:gkeonprem/vMwareCluster:VMwareCluster")
 class VMwareCluster(pulumi.CustomResource):

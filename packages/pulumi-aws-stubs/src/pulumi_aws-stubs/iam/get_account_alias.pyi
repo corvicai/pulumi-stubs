@@ -23,7 +23,8 @@ class GetAccountAliasResult:
     def id(self) -> _builtins.str: ...
 
 class AwaitableGetAccountAliasResult(GetAccountAliasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountAliasResult]:
+        ...
 
 def get_account_alias(
     opts: Optional[pulumi.InvokeOptions] = ...,

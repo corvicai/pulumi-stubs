@@ -60,7 +60,8 @@ class GetUserAssignedIdentityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetUserAssignedIdentityResult(GetUserAssignedIdentityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserAssignedIdentityResult]:
+        ...
 
 def get_user_assigned_identity(
     resource_group_name: Optional[_builtins.str] = ...,

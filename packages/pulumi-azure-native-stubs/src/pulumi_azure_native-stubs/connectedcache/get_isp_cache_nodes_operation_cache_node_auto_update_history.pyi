@@ -45,7 +45,10 @@ class GetIspCacheNodesOperationCacheNodeAutoUpdateHistoryResult:
 class AwaitableGetIspCacheNodesOperationCacheNodeAutoUpdateHistoryResult(
     GetIspCacheNodesOperationCacheNodeAutoUpdateHistoryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIspCacheNodesOperationCacheNodeAutoUpdateHistoryResult]:
+        ...
 
 def get_isp_cache_nodes_operation_cache_node_auto_update_history(
     cache_node_resource_name: Optional[_builtins.str] = ...,

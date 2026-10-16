@@ -47,7 +47,8 @@ class GetProjectSettingsResult:
     def service_account_id(self) -> _builtins.str: ...
 
 class AwaitableGetProjectSettingsResult(GetProjectSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectSettingsResult]:
+        ...
 
 def get_project_settings(
     location: Optional[_builtins.str] = ...,

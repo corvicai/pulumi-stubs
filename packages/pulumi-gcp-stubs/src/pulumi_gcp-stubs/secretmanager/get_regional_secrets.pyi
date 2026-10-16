@@ -35,7 +35,8 @@ class GetRegionalSecretsResult:
     def secrets(self) -> Sequence[outputs.GetRegionalSecretsSecretResult]: ...
 
 class AwaitableGetRegionalSecretsResult(GetRegionalSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionalSecretsResult]:
+        ...
 
 def get_regional_secrets(
     filter: Optional[_builtins.str] = ...,

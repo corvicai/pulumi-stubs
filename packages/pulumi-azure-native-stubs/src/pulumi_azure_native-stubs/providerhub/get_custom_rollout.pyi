@@ -44,7 +44,8 @@ class GetCustomRolloutResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCustomRolloutResult(GetCustomRolloutResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomRolloutResult]:
+        ...
 
 def get_custom_rollout(
     provider_namespace: Optional[_builtins.str] = ...,

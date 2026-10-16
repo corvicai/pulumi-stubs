@@ -67,7 +67,8 @@ class GetFirewallSupportInfoResult:
     def user_registered(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetFirewallSupportInfoResult(GetFirewallSupportInfoResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirewallSupportInfoResult]:
+        ...
 
 def get_firewall_support_info(
     email: Optional[_builtins.str] = ...,

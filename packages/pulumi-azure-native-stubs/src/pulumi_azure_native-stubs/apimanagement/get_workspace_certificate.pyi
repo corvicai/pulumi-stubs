@@ -52,7 +52,8 @@ class GetWorkspaceCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceCertificateResult(GetWorkspaceCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceCertificateResult]:
+        ...
 
 def get_workspace_certificate(
     certificate_id: Optional[_builtins.str] = ...,

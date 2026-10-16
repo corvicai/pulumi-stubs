@@ -90,7 +90,8 @@ class GetGen2EnvironmentResult:
     ) -> Optional[outputs.WarmStoreConfigurationPropertiesResponse]: ...
 
 class AwaitableGetGen2EnvironmentResult(GetGen2EnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGen2EnvironmentResult]:
+        ...
 
 def get_gen2_environment(
     environment_name: Optional[_builtins.str] = ...,

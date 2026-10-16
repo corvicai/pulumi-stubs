@@ -60,7 +60,8 @@ class GetNetworkGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkGroupResult(GetNetworkGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkGroupResult]:
+        ...
 
 def get_network_group(
     network_group_name: Optional[_builtins.str] = ...,

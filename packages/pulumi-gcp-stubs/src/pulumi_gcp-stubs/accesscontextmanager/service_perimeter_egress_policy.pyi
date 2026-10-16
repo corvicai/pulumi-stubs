@@ -27,7 +27,8 @@ class ServicePerimeterEgressPolicyArgs:
     @pulumi.getter
     def perimeter(self) -> pulumi.Input[_builtins.str]: ...
     @perimeter.setter
-    def perimeter(self, value: pulumi.Input[_builtins.str]): ...
+    def perimeter(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="egressFrom")
     def egress_from(
@@ -36,7 +37,8 @@ class ServicePerimeterEgressPolicyArgs:
     @egress_from.setter
     def egress_from(
         self, value: Optional[pulumi.Input[ServicePerimeterEgressPolicyEgressFromArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="egressTo")
     def egress_to(
@@ -45,12 +47,14 @@ class ServicePerimeterEgressPolicyArgs:
     @egress_to.setter
     def egress_to(
         self, value: Optional[pulumi.Input[ServicePerimeterEgressPolicyEgressToArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @title.setter
-    def title(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def title(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServicePerimeterEgressPolicyState:
@@ -72,7 +76,10 @@ class _ServicePerimeterEgressPolicyState:
     @pulumi.getter(name="accessPolicyId")
     def access_policy_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_policy_id.setter
-    def access_policy_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_policy_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="egressFrom")
     def egress_from(
@@ -81,7 +88,8 @@ class _ServicePerimeterEgressPolicyState:
     @egress_from.setter
     def egress_from(
         self, value: Optional[pulumi.Input[ServicePerimeterEgressPolicyEgressFromArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="egressTo")
     def egress_to(
@@ -90,22 +98,26 @@ class _ServicePerimeterEgressPolicyState:
     @egress_to.setter
     def egress_to(
         self, value: Optional[pulumi.Input[ServicePerimeterEgressPolicyEgressToArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def perimeter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perimeter.setter
-    def perimeter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perimeter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @title.setter
-    def title(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def title(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ServicePerimeterEgressPolicy(pulumi.CustomResource):

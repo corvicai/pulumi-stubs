@@ -43,7 +43,8 @@ class GetRuntimeIamPolicyResult:
     def runtime_name(self) -> _builtins.str: ...
 
 class AwaitableGetRuntimeIamPolicyResult(GetRuntimeIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRuntimeIamPolicyResult]:
+        ...
 
 def get_runtime_iam_policy(
     location: Optional[_builtins.str] = ...,

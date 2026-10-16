@@ -76,7 +76,8 @@ class GetSchemaRegistryResult:
     def uuid(self) -> _builtins.str: ...
 
 class AwaitableGetSchemaRegistryResult(GetSchemaRegistryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSchemaRegistryResult]:
+        ...
 
 def get_schema_registry(
     resource_group_name: Optional[_builtins.str] = ...,

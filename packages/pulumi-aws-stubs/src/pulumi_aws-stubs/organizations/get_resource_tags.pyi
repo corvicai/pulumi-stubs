@@ -26,7 +26,8 @@ class GetResourceTagsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetResourceTagsResult(GetResourceTagsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceTagsResult]:
+        ...
 
 def get_resource_tags(
     resource_id: Optional[_builtins.str] = ...,

@@ -25,7 +25,10 @@ class ListControllerConnectionDetailsResult:
 class AwaitableListControllerConnectionDetailsResult(
     ListControllerConnectionDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListControllerConnectionDetailsResult]:
+        ...
 
 def list_controller_connection_details(
     name: Optional[_builtins.str] = ...,

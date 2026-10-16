@@ -76,7 +76,8 @@ class GetTenantActionGroupResult:
     ) -> Optional[Sequence[outputs.WebhookReceiverResponse]]: ...
 
 class AwaitableGetTenantActionGroupResult(GetTenantActionGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTenantActionGroupResult]:
+        ...
 
 def get_tenant_action_group(
     management_group_id: Optional[_builtins.str] = ...,

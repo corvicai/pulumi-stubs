@@ -62,7 +62,8 @@ class GetSlotTypeResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSlotTypeResult(GetSlotTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSlotTypeResult]:
+        ...
 
 def get_slot_type(
     name: Optional[_builtins.str] = ...,

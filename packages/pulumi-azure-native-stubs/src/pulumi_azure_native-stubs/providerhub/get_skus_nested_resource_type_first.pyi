@@ -46,7 +46,10 @@ class GetSkusNestedResourceTypeFirstResult:
 class AwaitableGetSkusNestedResourceTypeFirstResult(
     GetSkusNestedResourceTypeFirstResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSkusNestedResourceTypeFirstResult]:
+        ...
 
 def get_skus_nested_resource_type_first(
     nested_resource_type_first: Optional[_builtins.str] = ...,

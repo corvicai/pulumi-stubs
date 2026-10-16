@@ -31,17 +31,20 @@ class WireGroupArgs:
     @pulumi.getter(name="crossSiteNetwork")
     def cross_site_network(self) -> pulumi.Input[_builtins.str]: ...
     @cross_site_network.setter
-    def cross_site_network(self, value: pulumi.Input[_builtins.str]): ...
+    def cross_site_network(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="adminEnabled")
     def admin_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @admin_enabled.setter
-    def admin_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def admin_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoints(
@@ -51,17 +54,20 @@ class WireGroupArgs:
     def endpoints(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[WireGroupEndpointArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wireGroupProperties")
     def wire_group_properties(
@@ -70,7 +76,8 @@ class WireGroupArgs:
     @wire_group_properties.setter
     def wire_group_properties(
         self, value: Optional[pulumi.Input[WireGroupWireGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wireProperties")
     def wire_properties(
@@ -79,7 +86,8 @@ class WireGroupArgs:
     @wire_properties.setter
     def wire_properties(
         self, value: Optional[pulumi.Input[WireGroupWirePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WireGroupState:
@@ -108,22 +116,30 @@ class _WireGroupState:
     @pulumi.getter(name="adminEnabled")
     def admin_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @admin_enabled.setter
-    def admin_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def admin_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSiteNetwork")
     def cross_site_network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cross_site_network.setter
-    def cross_site_network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cross_site_network(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoints(
@@ -133,17 +149,20 @@ class _WireGroupState:
     def endpoints(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[WireGroupEndpointArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topologies(
@@ -153,7 +172,8 @@ class _WireGroupState:
     def topologies(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[WireGroupTopologyArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wireGroupProperties")
     def wire_group_properties(
@@ -162,7 +182,8 @@ class _WireGroupState:
     @wire_group_properties.setter
     def wire_group_properties(
         self, value: Optional[pulumi.Input[WireGroupWireGroupPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wireProperties")
     def wire_properties(
@@ -171,7 +192,8 @@ class _WireGroupState:
     @wire_properties.setter
     def wire_properties(
         self, value: Optional[pulumi.Input[WireGroupWirePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def wires(
@@ -180,7 +202,8 @@ class _WireGroupState:
     @wires.setter
     def wires(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WireGroupWireArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/wireGroup:WireGroup")
 class WireGroup(pulumi.CustomResource):

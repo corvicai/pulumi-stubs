@@ -64,7 +64,8 @@ class GetRuntimeEnvironmentResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetRuntimeEnvironmentResult(GetRuntimeEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRuntimeEnvironmentResult]:
+        ...
 
 def get_runtime_environment(
     automation_account_name: Optional[_builtins.str] = ...,

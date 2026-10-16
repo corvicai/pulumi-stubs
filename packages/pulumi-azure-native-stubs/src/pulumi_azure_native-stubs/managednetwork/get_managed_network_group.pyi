@@ -68,7 +68,8 @@ class GetManagedNetworkGroupResult:
     def virtual_networks(self) -> Optional[Sequence[outputs.ResourceIdResponse]]: ...
 
 class AwaitableGetManagedNetworkGroupResult(GetManagedNetworkGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedNetworkGroupResult]:
+        ...
 
 def get_managed_network_group(
     managed_network_group_name: Optional[_builtins.str] = ...,

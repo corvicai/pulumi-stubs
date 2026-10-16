@@ -43,7 +43,8 @@ class GetWorkflowAccessKeyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkflowAccessKeyResult(GetWorkflowAccessKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkflowAccessKeyResult]:
+        ...
 
 def get_workflow_access_key(
     access_key_name: Optional[_builtins.str] = ...,

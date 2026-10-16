@@ -43,7 +43,8 @@ class GetProjectServiceResult:
     def service(self) -> _builtins.str: ...
 
 class AwaitableGetProjectServiceResult(GetProjectServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectServiceResult]:
+        ...
 
 def get_project_service(
     project: Optional[_builtins.str] = ...,

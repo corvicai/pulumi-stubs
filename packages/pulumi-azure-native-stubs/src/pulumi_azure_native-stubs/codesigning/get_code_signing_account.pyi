@@ -60,7 +60,8 @@ class GetCodeSigningAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCodeSigningAccountResult(GetCodeSigningAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCodeSigningAccountResult]:
+        ...
 
 def get_code_signing_account(
     account_name: Optional[_builtins.str] = ...,

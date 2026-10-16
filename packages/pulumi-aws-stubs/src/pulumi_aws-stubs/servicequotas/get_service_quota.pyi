@@ -68,7 +68,8 @@ class GetServiceQuotaResult:
     def value(self) -> _builtins.float: ...
 
 class AwaitableGetServiceQuotaResult(GetServiceQuotaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceQuotaResult]:
+        ...
 
 def get_service_quota(
     quota_code: Optional[_builtins.str] = ...,

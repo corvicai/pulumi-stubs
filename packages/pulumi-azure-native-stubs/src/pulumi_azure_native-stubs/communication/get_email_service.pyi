@@ -56,7 +56,8 @@ class GetEmailServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEmailServiceResult(GetEmailServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEmailServiceResult]:
+        ...
 
 def get_email_service(
     email_service_name: Optional[_builtins.str] = ...,

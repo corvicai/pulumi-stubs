@@ -88,7 +88,8 @@ class GetAzureBareMetalInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAzureBareMetalInstanceResult(GetAzureBareMetalInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureBareMetalInstanceResult]:
+        ...
 
 def get_azure_bare_metal_instance(
     azure_bare_metal_instance_name: Optional[_builtins.str] = ...,

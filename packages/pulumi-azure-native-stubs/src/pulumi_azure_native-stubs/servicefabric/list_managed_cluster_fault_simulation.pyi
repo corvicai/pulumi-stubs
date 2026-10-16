@@ -26,7 +26,10 @@ class ListManagedClusterFaultSimulationResult:
 class AwaitableListManagedClusterFaultSimulationResult(
     ListManagedClusterFaultSimulationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListManagedClusterFaultSimulationResult]:
+        ...
 
 def list_managed_cluster_fault_simulation(
     cluster_name: Optional[_builtins.str] = ...,

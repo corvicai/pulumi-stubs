@@ -25,17 +25,20 @@ class SqlPoolTransparentDataEncryptionArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlPoolName")
     def sql_pool_name(self) -> pulumi.Input[_builtins.str]: ...
     @sql_pool_name.setter
-    def sql_pool_name(self, value: pulumi.Input[_builtins.str]): ...
+    def sql_pool_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
     def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -49,7 +52,8 @@ class SqlPoolTransparentDataEncryptionArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, TransparentDataEncryptionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transparentDataEncryptionName")
     def transparent_data_encryption_name(
@@ -58,7 +62,8 @@ class SqlPoolTransparentDataEncryptionArgs:
     @transparent_data_encryption_name.setter
     def transparent_data_encryption_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SqlPoolTransparentDataEncryption(pulumi.CustomResource):

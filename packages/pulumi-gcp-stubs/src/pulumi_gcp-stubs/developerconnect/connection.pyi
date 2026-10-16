@@ -44,12 +44,14 @@ class ConnectionArgs:
     @pulumi.getter(name="connectionId")
     def connection_id(self) -> pulumi.Input[_builtins.str]: ...
     @connection_id.setter
-    def connection_id(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -58,7 +60,8 @@ class ConnectionArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bitbucketCloudConfig")
     def bitbucket_cloud_config(
@@ -67,7 +70,8 @@ class ConnectionArgs:
     @bitbucket_cloud_config.setter
     def bitbucket_cloud_config(
         self, value: Optional[pulumi.Input[ConnectionBitbucketCloudConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bitbucketDataCenterConfig")
     def bitbucket_data_center_config(
@@ -76,7 +80,8 @@ class ConnectionArgs:
     @bitbucket_data_center_config.setter
     def bitbucket_data_center_config(
         self, value: Optional[pulumi.Input[ConnectionBitbucketDataCenterConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKeyConfig")
     def crypto_key_config(
@@ -85,24 +90,28 @@ class ConnectionArgs:
     @crypto_key_config.setter
     def crypto_key_config(
         self, value: Optional[pulumi.Input[ConnectionCryptoKeyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disabled.setter
-    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="githubConfig")
     def github_config(self) -> Optional[pulumi.Input[ConnectionGithubConfigArgs]]: ...
     @github_config.setter
     def github_config(
         self, value: Optional[pulumi.Input[ConnectionGithubConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="githubEnterpriseConfig")
     def github_enterprise_config(
@@ -111,14 +120,16 @@ class ConnectionArgs:
     @github_enterprise_config.setter
     def github_enterprise_config(
         self, value: Optional[pulumi.Input[ConnectionGithubEnterpriseConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gitlabConfig")
     def gitlab_config(self) -> Optional[pulumi.Input[ConnectionGitlabConfigArgs]]: ...
     @gitlab_config.setter
     def gitlab_config(
         self, value: Optional[pulumi.Input[ConnectionGitlabConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gitlabEnterpriseConfig")
     def gitlab_enterprise_config(
@@ -127,12 +138,16 @@ class ConnectionArgs:
     @gitlab_enterprise_config.setter
     def gitlab_enterprise_config(
         self, value: Optional[pulumi.Input[ConnectionGitlabEnterpriseConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpConfig")
     def http_config(self) -> Optional[pulumi.Input[ConnectionHttpConfigArgs]]: ...
     @http_config.setter
-    def http_config(self, value: Optional[pulumi.Input[ConnectionHttpConfigArgs]]): ...
+    def http_config(
+        self, value: Optional[pulumi.Input[ConnectionHttpConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -141,12 +156,14 @@ class ConnectionArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConnectionState:
@@ -205,7 +222,8 @@ class _ConnectionState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bitbucketCloudConfig")
     def bitbucket_cloud_config(
@@ -214,7 +232,8 @@ class _ConnectionState:
     @bitbucket_cloud_config.setter
     def bitbucket_cloud_config(
         self, value: Optional[pulumi.Input[ConnectionBitbucketCloudConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bitbucketDataCenterConfig")
     def bitbucket_data_center_config(
@@ -223,17 +242,20 @@ class _ConnectionState:
     @bitbucket_data_center_config.setter
     def bitbucket_data_center_config(
         self, value: Optional[pulumi.Input[ConnectionBitbucketDataCenterConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionId")
     def connection_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_id.setter
-    def connection_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKeyConfig")
     def crypto_key_config(
@@ -242,17 +264,20 @@ class _ConnectionState:
     @crypto_key_config.setter
     def crypto_key_config(
         self, value: Optional[pulumi.Input[ConnectionCryptoKeyConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteTime")
     def delete_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete_time.setter
-    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disabled.setter
-    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -261,7 +286,8 @@ class _ConnectionState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -270,19 +296,22 @@ class _ConnectionState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="githubConfig")
     def github_config(self) -> Optional[pulumi.Input[ConnectionGithubConfigArgs]]: ...
     @github_config.setter
     def github_config(
         self, value: Optional[pulumi.Input[ConnectionGithubConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="githubEnterpriseConfig")
     def github_enterprise_config(
@@ -291,14 +320,16 @@ class _ConnectionState:
     @github_enterprise_config.setter
     def github_enterprise_config(
         self, value: Optional[pulumi.Input[ConnectionGithubEnterpriseConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gitlabConfig")
     def gitlab_config(self) -> Optional[pulumi.Input[ConnectionGitlabConfigArgs]]: ...
     @gitlab_config.setter
     def gitlab_config(
         self, value: Optional[pulumi.Input[ConnectionGitlabConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gitlabEnterpriseConfig")
     def gitlab_enterprise_config(
@@ -307,12 +338,16 @@ class _ConnectionState:
     @gitlab_enterprise_config.setter
     def gitlab_enterprise_config(
         self, value: Optional[pulumi.Input[ConnectionGitlabEnterpriseConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpConfig")
     def http_config(self) -> Optional[pulumi.Input[ConnectionHttpConfigArgs]]: ...
     @http_config.setter
-    def http_config(self, value: Optional[pulumi.Input[ConnectionHttpConfigArgs]]): ...
+    def http_config(
+        self, value: Optional[pulumi.Input[ConnectionHttpConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="installationStates")
     def installation_states(
@@ -326,7 +361,8 @@ class _ConnectionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ConnectionInstallationStateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -335,22 +371,26 @@ class _ConnectionState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -359,22 +399,26 @@ class _ConnectionState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reconciling(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reconciling.setter
-    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reconciling(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:developerconnect/connection:Connection")
 class Connection(pulumi.CustomResource):

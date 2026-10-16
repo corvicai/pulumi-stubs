@@ -44,7 +44,8 @@ class FirewallArgs:
     @pulumi.getter(name="firewallPolicyArn")
     def firewall_policy_arn(self) -> pulumi.Input[_builtins.str]: ...
     @firewall_policy_arn.setter
-    def firewall_policy_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def firewall_policy_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneChangeProtection")
     def availability_zone_change_protection(
@@ -53,7 +54,8 @@ class FirewallArgs:
     @availability_zone_change_protection.setter
     def availability_zone_change_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneMappings")
     def availability_zone_mappings(
@@ -67,17 +69,22 @@ class FirewallArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FirewallAvailabilityZoneMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteProtection")
     def delete_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_protection.setter
-    def delete_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def delete_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledAnalysisTypes")
     def enabled_analysis_types(
@@ -86,7 +93,8 @@ class FirewallArgs:
     @enabled_analysis_types.setter
     def enabled_analysis_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -95,7 +103,8 @@ class FirewallArgs:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[FirewallEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallPolicyChangeProtection")
     def firewall_policy_change_protection(
@@ -104,24 +113,28 @@ class FirewallArgs:
     @firewall_policy_change_protection.setter
     def firewall_policy_change_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetChangeProtection")
     def subnet_change_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @subnet_change_protection.setter
     def subnet_change_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetMappings")
     def subnet_mappings(
@@ -133,7 +146,8 @@ class FirewallArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FirewallSubnetMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -142,17 +156,22 @@ class FirewallArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FirewallState:
@@ -198,7 +217,8 @@ class _FirewallState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneChangeProtection")
     def availability_zone_change_protection(
@@ -207,7 +227,8 @@ class _FirewallState:
     @availability_zone_change_protection.setter
     def availability_zone_change_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZoneMappings")
     def availability_zone_mappings(
@@ -221,17 +242,22 @@ class _FirewallState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FirewallAvailabilityZoneMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteProtection")
     def delete_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_protection.setter
-    def delete_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def delete_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledAnalysisTypes")
     def enabled_analysis_types(
@@ -240,7 +266,8 @@ class _FirewallState:
     @enabled_analysis_types.setter
     def enabled_analysis_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -249,12 +276,16 @@ class _FirewallState:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[FirewallEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallPolicyArn")
     def firewall_policy_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @firewall_policy_arn.setter
-    def firewall_policy_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def firewall_policy_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallPolicyChangeProtection")
     def firewall_policy_change_protection(
@@ -263,7 +294,8 @@ class _FirewallState:
     @firewall_policy_change_protection.setter
     def firewall_policy_change_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallStatuses")
     def firewall_statuses(
@@ -275,24 +307,28 @@ class _FirewallState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FirewallFirewallStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetChangeProtection")
     def subnet_change_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @subnet_change_protection.setter
     def subnet_change_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetMappings")
     def subnet_mappings(
@@ -304,7 +340,8 @@ class _FirewallState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FirewallSubnetMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -313,7 +350,8 @@ class _FirewallState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -322,12 +360,16 @@ class _FirewallState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayId")
     def transit_gateway_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_gateway_id.setter
-    def transit_gateway_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_gateway_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitGatewayOwnerAccountId")
     def transit_gateway_owner_account_id(
@@ -336,17 +378,20 @@ class _FirewallState:
     @transit_gateway_owner_account_id.setter
     def transit_gateway_owner_account_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateToken")
     def update_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_token.setter
-    def update_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:networkfirewall/firewall:Firewall")
 class Firewall(pulumi.CustomResource):

@@ -120,7 +120,8 @@ class GetMetadataResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetMetadataResult(GetMetadataResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMetadataResult]:
+        ...
 
 def get_metadata(
     metadata_name: Optional[_builtins.str] = ...,

@@ -84,7 +84,8 @@ class GetIscsiTargetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIscsiTargetResult(GetIscsiTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIscsiTargetResult]:
+        ...
 
 def get_iscsi_target(
     disk_pool_name: Optional[_builtins.str] = ...,

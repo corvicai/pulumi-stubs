@@ -83,7 +83,8 @@ class GetAvailabilityZoneResult:
     def zone_type(self) -> _builtins.str: ...
 
 class AwaitableGetAvailabilityZoneResult(GetAvailabilityZoneResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAvailabilityZoneResult]:
+        ...
 
 def get_availability_zone(
     all_availability_zones: Optional[_builtins.bool] = ...,

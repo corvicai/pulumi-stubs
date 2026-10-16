@@ -47,7 +47,8 @@ class GetServerlessAccessPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerlessAccessPolicyResult(GetServerlessAccessPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerlessAccessPolicyResult]:
+        ...
 
 def get_serverless_access_policy(
     name: Optional[_builtins.str] = ...,

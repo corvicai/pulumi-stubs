@@ -49,54 +49,74 @@ class BrokerArgs:
     @pulumi.getter(name="engineType")
     def engine_type(self) -> pulumi.Input[_builtins.str]: ...
     @engine_type.setter
-    def engine_type(self, value: pulumi.Input[_builtins.str]): ...
+    def engine_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="engineVersion")
     def engine_version(self) -> pulumi.Input[_builtins.str]: ...
     @engine_version.setter
-    def engine_version(self, value: pulumi.Input[_builtins.str]): ...
+    def engine_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostInstanceType")
     def host_instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @host_instance_type.setter
-    def host_instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def host_instance_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def users(self) -> pulumi.Input[Sequence[pulumi.Input[BrokerUserArgs]]]: ...
     @users.setter
-    def users(self, value: pulumi.Input[Sequence[pulumi.Input[BrokerUserArgs]]]): ...
+    def users(
+        self, value: pulumi.Input[Sequence[pulumi.Input[BrokerUserArgs]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applyImmediately")
     def apply_immediately(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @apply_immediately.setter
-    def apply_immediately(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def apply_immediately(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authenticationStrategy")
     def authentication_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authentication_strategy.setter
-    def authentication_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authentication_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoMinorVersionUpgrade")
     def auto_minor_version_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @auto_minor_version_upgrade.setter
     def auto_minor_version_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="brokerName")
     def broker_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @broker_name.setter
-    def broker_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def broker_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(self) -> Optional[pulumi.Input[BrokerConfigurationArgs]]: ...
     @configuration.setter
-    def configuration(self, value: Optional[pulumi.Input[BrokerConfigurationArgs]]): ...
+    def configuration(
+        self, value: Optional[pulumi.Input[BrokerConfigurationArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataReplicationMode")
     def data_replication_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_replication_mode.setter
-    def data_replication_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_replication_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataReplicationPrimaryBrokerArn")
     def data_replication_primary_broker_arn(
@@ -105,12 +125,14 @@ class BrokerArgs:
     @data_replication_primary_broker_arn.setter
     def data_replication_primary_broker_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentMode")
     def deployment_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_mode.setter
-    def deployment_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionOptions")
     def encryption_options(
@@ -119,7 +141,8 @@ class BrokerArgs:
     @encryption_options.setter
     def encryption_options(
         self, value: Optional[pulumi.Input[BrokerEncryptionOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ldapServerMetadata")
     def ldap_server_metadata(
@@ -128,12 +151,14 @@ class BrokerArgs:
     @ldap_server_metadata.setter
     def ldap_server_metadata(
         self, value: Optional[pulumi.Input[BrokerLdapServerMetadataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def logs(self) -> Optional[pulumi.Input[BrokerLogsArgs]]: ...
     @logs.setter
-    def logs(self, value: Optional[pulumi.Input[BrokerLogsArgs]]): ...
+    def logs(self, value: Optional[pulumi.Input[BrokerLogsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceWindowStartTime")
     def maintenance_window_start_time(
@@ -142,17 +167,22 @@ class BrokerArgs:
     @maintenance_window_start_time.setter
     def maintenance_window_start_time(
         self, value: Optional[pulumi.Input[BrokerMaintenanceWindowStartTimeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publiclyAccessible")
     def publicly_accessible(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @publicly_accessible.setter
-    def publicly_accessible(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def publicly_accessible(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -161,12 +191,14 @@ class BrokerArgs:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -175,7 +207,8 @@ class BrokerArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -184,7 +217,8 @@ class BrokerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BrokerState:
@@ -234,39 +268,54 @@ class _BrokerState:
     @pulumi.getter(name="applyImmediately")
     def apply_immediately(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @apply_immediately.setter
-    def apply_immediately(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def apply_immediately(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authenticationStrategy")
     def authentication_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authentication_strategy.setter
-    def authentication_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authentication_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoMinorVersionUpgrade")
     def auto_minor_version_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @auto_minor_version_upgrade.setter
     def auto_minor_version_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="brokerName")
     def broker_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @broker_name.setter
-    def broker_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def broker_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(self) -> Optional[pulumi.Input[BrokerConfigurationArgs]]: ...
     @configuration.setter
-    def configuration(self, value: Optional[pulumi.Input[BrokerConfigurationArgs]]): ...
+    def configuration(
+        self, value: Optional[pulumi.Input[BrokerConfigurationArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataReplicationMode")
     def data_replication_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_replication_mode.setter
-    def data_replication_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_replication_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataReplicationPrimaryBrokerArn")
     def data_replication_primary_broker_arn(
@@ -275,12 +324,14 @@ class _BrokerState:
     @data_replication_primary_broker_arn.setter
     def data_replication_primary_broker_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentMode")
     def deployment_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_mode.setter
-    def deployment_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionOptions")
     def encryption_options(
@@ -289,22 +340,28 @@ class _BrokerState:
     @encryption_options.setter
     def encryption_options(
         self, value: Optional[pulumi.Input[BrokerEncryptionOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="engineType")
     def engine_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @engine_type.setter
-    def engine_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def engine_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="engineVersion")
     def engine_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @engine_version.setter
-    def engine_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def engine_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostInstanceType")
     def host_instance_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_instance_type.setter
-    def host_instance_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_instance_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instances(
@@ -313,7 +370,8 @@ class _BrokerState:
     @instances.setter
     def instances(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BrokerInstanceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ldapServerMetadata")
     def ldap_server_metadata(
@@ -322,12 +380,14 @@ class _BrokerState:
     @ldap_server_metadata.setter
     def ldap_server_metadata(
         self, value: Optional[pulumi.Input[BrokerLdapServerMetadataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def logs(self) -> Optional[pulumi.Input[BrokerLogsArgs]]: ...
     @logs.setter
-    def logs(self, value: Optional[pulumi.Input[BrokerLogsArgs]]): ...
+    def logs(self, value: Optional[pulumi.Input[BrokerLogsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceWindowStartTime")
     def maintenance_window_start_time(
@@ -336,7 +396,8 @@ class _BrokerState:
     @maintenance_window_start_time.setter
     def maintenance_window_start_time(
         self, value: Optional[pulumi.Input[BrokerMaintenanceWindowStartTimeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pendingDataReplicationMode")
     def pending_data_replication_mode(
@@ -345,17 +406,22 @@ class _BrokerState:
     @pending_data_replication_mode.setter
     def pending_data_replication_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publiclyAccessible")
     def publicly_accessible(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @publicly_accessible.setter
-    def publicly_accessible(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def publicly_accessible(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -364,12 +430,14 @@ class _BrokerState:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -378,7 +446,8 @@ class _BrokerState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -387,7 +456,8 @@ class _BrokerState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -396,7 +466,8 @@ class _BrokerState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def users(
@@ -405,7 +476,8 @@ class _BrokerState:
     @users.setter
     def users(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BrokerUserArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:mq/broker:Broker")
 class Broker(pulumi.CustomResource):

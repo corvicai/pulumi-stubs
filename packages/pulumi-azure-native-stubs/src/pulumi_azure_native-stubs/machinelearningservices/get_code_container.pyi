@@ -44,7 +44,8 @@ class GetCodeContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCodeContainerResult(GetCodeContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCodeContainerResult]:
+        ...
 
 def get_code_container(
     name: Optional[_builtins.str] = ...,

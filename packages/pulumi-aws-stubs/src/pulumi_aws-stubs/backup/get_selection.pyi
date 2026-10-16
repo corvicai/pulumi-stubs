@@ -47,7 +47,8 @@ class GetSelectionResult:
     def selection_id(self) -> _builtins.str: ...
 
 class AwaitableGetSelectionResult(GetSelectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSelectionResult]:
+        ...
 
 def get_selection(
     plan_id: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetGraphQLApiResolverResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGraphQLApiResolverResult(GetGraphQLApiResolverResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGraphQLApiResolverResult]:
+        ...
 
 def get_graph_ql_api_resolver(
     api_id: Optional[_builtins.str] = ...,

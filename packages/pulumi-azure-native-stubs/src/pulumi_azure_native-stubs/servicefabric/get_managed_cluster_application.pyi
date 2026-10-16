@@ -74,7 +74,10 @@ class GetManagedClusterApplicationResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetManagedClusterApplicationResult(GetManagedClusterApplicationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedClusterApplicationResult]:
+        ...
 
 def get_managed_cluster_application(
     application_name: Optional[_builtins.str] = ...,

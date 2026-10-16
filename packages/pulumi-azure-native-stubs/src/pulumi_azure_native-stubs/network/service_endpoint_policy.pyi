@@ -31,7 +31,8 @@ class ServiceEndpointPolicyInitArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contextualServiceEndpointPolicies")
     def contextual_service_endpoint_policies(
@@ -40,22 +41,26 @@ class ServiceEndpointPolicyInitArgs:
     @contextual_service_endpoint_policies.setter
     def contextual_service_endpoint_policies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAlias")
     def service_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_alias.setter
-    def service_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_alias(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceEndpointPolicyDefinitions")
     def service_endpoint_policy_definitions(
@@ -69,14 +74,16 @@ class ServiceEndpointPolicyInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ServiceEndpointPolicyDefinitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceEndpointPolicyName")
     def service_endpoint_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_endpoint_policy_name.setter
     def service_endpoint_policy_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -85,7 +92,8 @@ class ServiceEndpointPolicyInitArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:ServiceEndpointPolicy")
 class ServiceEndpointPolicy(pulumi.CustomResource):

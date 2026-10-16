@@ -43,7 +43,8 @@ class GetAssetsResult:
     def status_id_filters(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetAssetsResult(GetAssetsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssetsResult]:
+        ...
 
 def get_assets(
     arn: Optional[_builtins.str] = ...,

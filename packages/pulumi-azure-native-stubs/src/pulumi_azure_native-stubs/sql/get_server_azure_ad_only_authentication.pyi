@@ -41,7 +41,10 @@ class GetServerAzureADOnlyAuthenticationResult:
 class AwaitableGetServerAzureADOnlyAuthenticationResult(
     GetServerAzureADOnlyAuthenticationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServerAzureADOnlyAuthenticationResult]:
+        ...
 
 def get_server_azure_ad_only_authentication(
     authentication_name: Optional[_builtins.str] = ...,

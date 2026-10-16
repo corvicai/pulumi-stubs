@@ -51,7 +51,8 @@ class GetIpSetResult:
     def scope(self) -> _builtins.str: ...
 
 class AwaitableGetIpSetResult(GetIpSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpSetResult]:
+        ...
 
 def get_ip_set(
     name: Optional[_builtins.str] = ...,

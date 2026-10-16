@@ -44,7 +44,8 @@ class GetDiscoveryRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDiscoveryRuleResult(GetDiscoveryRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiscoveryRuleResult]:
+        ...
 
 def get_discovery_rule(
     discovery_rule_name: Optional[_builtins.str] = ...,

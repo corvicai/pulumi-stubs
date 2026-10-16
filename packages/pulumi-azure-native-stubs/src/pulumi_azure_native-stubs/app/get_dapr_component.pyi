@@ -78,7 +78,8 @@ class GetDaprComponentResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDaprComponentResult(GetDaprComponentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDaprComponentResult]:
+        ...
 
 def get_dapr_component(
     component_name: Optional[_builtins.str] = ...,

@@ -60,7 +60,8 @@ class GetLocalRuleCountersResult:
     def timestamp(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetLocalRuleCountersResult(GetLocalRuleCountersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalRuleCountersResult]:
+        ...
 
 def get_local_rule_counters(
     firewall_name: Optional[_builtins.str] = ...,

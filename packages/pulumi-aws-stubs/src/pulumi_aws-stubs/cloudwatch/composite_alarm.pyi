@@ -35,17 +35,22 @@ class CompositeAlarmArgs:
     @pulumi.getter(name="alarmName")
     def alarm_name(self) -> pulumi.Input[_builtins.str]: ...
     @alarm_name.setter
-    def alarm_name(self, value: pulumi.Input[_builtins.str]): ...
+    def alarm_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmRule")
     def alarm_rule(self) -> pulumi.Input[_builtins.str]: ...
     @alarm_rule.setter
-    def alarm_rule(self, value: pulumi.Input[_builtins.str]): ...
+    def alarm_rule(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionsEnabled")
     def actions_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @actions_enabled.setter
-    def actions_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def actions_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionsSuppressor")
     def actions_suppressor(
@@ -54,7 +59,8 @@ class CompositeAlarmArgs:
     @actions_suppressor.setter
     def actions_suppressor(
         self, value: Optional[pulumi.Input[CompositeAlarmActionsSuppressorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmActions")
     def alarm_actions(
@@ -63,12 +69,16 @@ class CompositeAlarmArgs:
     @alarm_actions.setter
     def alarm_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmDescription")
     def alarm_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alarm_description.setter
-    def alarm_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alarm_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="insufficientDataActions")
     def insufficient_data_actions(
@@ -77,7 +87,8 @@ class CompositeAlarmArgs:
     @insufficient_data_actions.setter
     def insufficient_data_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="okActions")
     def ok_actions(
@@ -86,12 +97,14 @@ class CompositeAlarmArgs:
     @ok_actions.setter
     def ok_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -100,7 +113,8 @@ class CompositeAlarmArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CompositeAlarmState:
@@ -132,7 +146,10 @@ class _CompositeAlarmState:
     @pulumi.getter(name="actionsEnabled")
     def actions_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @actions_enabled.setter
-    def actions_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def actions_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionsSuppressor")
     def actions_suppressor(
@@ -141,7 +158,8 @@ class _CompositeAlarmState:
     @actions_suppressor.setter
     def actions_suppressor(
         self, value: Optional[pulumi.Input[CompositeAlarmActionsSuppressorArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmActions")
     def alarm_actions(
@@ -150,27 +168,34 @@ class _CompositeAlarmState:
     @alarm_actions.setter
     def alarm_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmDescription")
     def alarm_description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alarm_description.setter
-    def alarm_description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alarm_description(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmName")
     def alarm_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alarm_name.setter
-    def alarm_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alarm_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmRule")
     def alarm_rule(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alarm_rule.setter
-    def alarm_rule(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alarm_rule(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="insufficientDataActions")
     def insufficient_data_actions(
@@ -179,7 +204,8 @@ class _CompositeAlarmState:
     @insufficient_data_actions.setter
     def insufficient_data_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="okActions")
     def ok_actions(
@@ -188,12 +214,14 @@ class _CompositeAlarmState:
     @ok_actions.setter
     def ok_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -202,7 +230,8 @@ class _CompositeAlarmState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -211,7 +240,8 @@ class _CompositeAlarmState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cloudwatch/compositeAlarm:CompositeAlarm")
 class CompositeAlarm(pulumi.CustomResource):

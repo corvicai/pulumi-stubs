@@ -54,17 +54,20 @@ class ConnectionProfileArgs:
     @pulumi.getter(name="connectionProfileId")
     def connection_profile_id(self) -> pulumi.Input[_builtins.str]: ...
     @connection_profile_id.setter
-    def connection_profile_id(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_profile_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigqueryProfile")
     def bigquery_profile(
@@ -73,14 +76,16 @@ class ConnectionProfileArgs:
     @bigquery_profile.setter
     def bigquery_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileBigqueryProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createWithoutValidation")
     def create_without_validation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_without_validation.setter
     def create_without_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardSshConnectivity")
     def forward_ssh_connectivity(
@@ -89,7 +94,8 @@ class ConnectionProfileArgs:
     @forward_ssh_connectivity.setter
     def forward_ssh_connectivity(
         self, value: Optional[pulumi.Input[ConnectionProfileForwardSshConnectivityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsProfile")
     def gcs_profile(
@@ -98,7 +104,8 @@ class ConnectionProfileArgs:
     @gcs_profile.setter
     def gcs_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileGcsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -107,7 +114,8 @@ class ConnectionProfileArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mongodbProfile")
     def mongodb_profile(
@@ -116,7 +124,8 @@ class ConnectionProfileArgs:
     @mongodb_profile.setter
     def mongodb_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileMongodbProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlProfile")
     def mysql_profile(
@@ -125,7 +134,8 @@ class ConnectionProfileArgs:
     @mysql_profile.setter
     def mysql_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileMysqlProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleProfile")
     def oracle_profile(
@@ -134,7 +144,8 @@ class ConnectionProfileArgs:
     @oracle_profile.setter
     def oracle_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileOracleProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlProfile")
     def postgresql_profile(
@@ -143,7 +154,8 @@ class ConnectionProfileArgs:
     @postgresql_profile.setter
     def postgresql_profile(
         self, value: Optional[pulumi.Input[ConnectionProfilePostgresqlProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateConnectivity")
     def private_connectivity(
@@ -152,12 +164,14 @@ class ConnectionProfileArgs:
     @private_connectivity.setter
     def private_connectivity(
         self, value: Optional[pulumi.Input[ConnectionProfilePrivateConnectivityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="salesforceProfile")
     def salesforce_profile(
@@ -166,7 +180,8 @@ class ConnectionProfileArgs:
     @salesforce_profile.setter
     def salesforce_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileSalesforceProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spannerProfile")
     def spanner_profile(
@@ -175,7 +190,8 @@ class ConnectionProfileArgs:
     @spanner_profile.setter
     def spanner_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileSpannerProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerProfile")
     def sql_server_profile(
@@ -184,7 +200,8 @@ class ConnectionProfileArgs:
     @sql_server_profile.setter
     def sql_server_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileSqlServerProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ConnectionProfileState:
@@ -242,24 +259,30 @@ class _ConnectionProfileState:
     @bigquery_profile.setter
     def bigquery_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileBigqueryProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionProfileId")
     def connection_profile_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_profile_id.setter
-    def connection_profile_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_profile_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createWithoutValidation")
     def create_without_validation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_without_validation.setter
     def create_without_validation(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -268,7 +291,8 @@ class _ConnectionProfileState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardSshConnectivity")
     def forward_ssh_connectivity(
@@ -277,7 +301,8 @@ class _ConnectionProfileState:
     @forward_ssh_connectivity.setter
     def forward_ssh_connectivity(
         self, value: Optional[pulumi.Input[ConnectionProfileForwardSshConnectivityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsProfile")
     def gcs_profile(
@@ -286,7 +311,8 @@ class _ConnectionProfileState:
     @gcs_profile.setter
     def gcs_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileGcsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -295,12 +321,14 @@ class _ConnectionProfileState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mongodbProfile")
     def mongodb_profile(
@@ -309,7 +337,8 @@ class _ConnectionProfileState:
     @mongodb_profile.setter
     def mongodb_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileMongodbProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mysqlProfile")
     def mysql_profile(
@@ -318,12 +347,14 @@ class _ConnectionProfileState:
     @mysql_profile.setter
     def mysql_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileMysqlProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oracleProfile")
     def oracle_profile(
@@ -332,7 +363,8 @@ class _ConnectionProfileState:
     @oracle_profile.setter
     def oracle_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileOracleProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postgresqlProfile")
     def postgresql_profile(
@@ -341,7 +373,8 @@ class _ConnectionProfileState:
     @postgresql_profile.setter
     def postgresql_profile(
         self, value: Optional[pulumi.Input[ConnectionProfilePostgresqlProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateConnectivity")
     def private_connectivity(
@@ -350,12 +383,14 @@ class _ConnectionProfileState:
     @private_connectivity.setter
     def private_connectivity(
         self, value: Optional[pulumi.Input[ConnectionProfilePrivateConnectivityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -364,7 +399,8 @@ class _ConnectionProfileState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="salesforceProfile")
     def salesforce_profile(
@@ -373,7 +409,8 @@ class _ConnectionProfileState:
     @salesforce_profile.setter
     def salesforce_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileSalesforceProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spannerProfile")
     def spanner_profile(
@@ -382,7 +419,8 @@ class _ConnectionProfileState:
     @spanner_profile.setter
     def spanner_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileSpannerProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerProfile")
     def sql_server_profile(
@@ -391,7 +429,8 @@ class _ConnectionProfileState:
     @sql_server_profile.setter
     def sql_server_profile(
         self, value: Optional[pulumi.Input[ConnectionProfileSqlServerProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:datastream/connectionProfile:ConnectionProfile")
 class ConnectionProfile(pulumi.CustomResource):

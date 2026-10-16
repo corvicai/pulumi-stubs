@@ -44,7 +44,8 @@ class GetMoveResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMoveResourceResult(GetMoveResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMoveResourceResult]:
+        ...
 
 def get_move_resource(
     move_collection_name: Optional[_builtins.str] = ...,

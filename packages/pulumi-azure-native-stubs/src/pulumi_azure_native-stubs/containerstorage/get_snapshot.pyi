@@ -52,7 +52,8 @@ class GetSnapshotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSnapshotResult(GetSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSnapshotResult]:
+        ...
 
 def get_snapshot(
     pool_name: Optional[_builtins.str] = ...,

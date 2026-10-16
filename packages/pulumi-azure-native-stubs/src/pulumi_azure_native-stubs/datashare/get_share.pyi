@@ -63,7 +63,8 @@ class GetShareResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetShareResult(GetShareResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetShareResult]:
+        ...
 
 def get_share(
     account_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetPrebuiltEcrImageResult:
     def repository_name(self) -> _builtins.str: ...
 
 class AwaitableGetPrebuiltEcrImageResult(GetPrebuiltEcrImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrebuiltEcrImageResult]:
+        ...
 
 def get_prebuilt_ecr_image(
     dns_suffix: Optional[_builtins.str] = ...,

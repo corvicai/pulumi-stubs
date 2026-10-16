@@ -44,7 +44,8 @@ class GetSiteReferenceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSiteReferenceResult(GetSiteReferenceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSiteReferenceResult]:
+        ...
 
 def get_site_reference(
     context_name: Optional[_builtins.str] = ...,

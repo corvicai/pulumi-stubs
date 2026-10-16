@@ -99,7 +99,8 @@ class GetIndexResult:
     ) -> Sequence[outputs.GetIndexUserTokenConfigurationResult]: ...
 
 class AwaitableGetIndexResult(GetIndexResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIndexResult]:
+        ...
 
 def get_index(
     id: Optional[_builtins.str] = ...,

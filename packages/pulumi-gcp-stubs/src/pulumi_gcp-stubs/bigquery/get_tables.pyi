@@ -30,7 +30,8 @@ class GetTablesResult:
     def tables(self) -> Sequence[outputs.GetTablesTableResult]: ...
 
 class AwaitableGetTablesResult(GetTablesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTablesResult]:
+        ...
 
 def get_tables(
     dataset_id: Optional[_builtins.str] = ...,

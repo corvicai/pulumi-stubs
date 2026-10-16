@@ -33,12 +33,14 @@ class SelectionArgs:
     @pulumi.getter(name="iamRoleArn")
     def iam_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @iam_role_arn.setter
-    def iam_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def iam_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="planId")
     def plan_id(self) -> pulumi.Input[_builtins.str]: ...
     @plan_id.setter
-    def plan_id(self, value: pulumi.Input[_builtins.str]): ...
+    def plan_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -48,12 +50,14 @@ class SelectionArgs:
     def conditions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SelectionConditionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notResources")
     def not_resources(
@@ -62,12 +66,14 @@ class SelectionArgs:
     @not_resources.setter
     def not_resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -76,7 +82,8 @@ class SelectionArgs:
     @resources.setter
     def resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectionTags")
     def selection_tags(
@@ -88,7 +95,8 @@ class SelectionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SelectionSelectionTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SelectionState:
@@ -119,17 +127,20 @@ class _SelectionState:
     def conditions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SelectionConditionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamRoleArn")
     def iam_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_role_arn.setter
-    def iam_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notResources")
     def not_resources(
@@ -138,17 +149,20 @@ class _SelectionState:
     @not_resources.setter
     def not_resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="planId")
     def plan_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @plan_id.setter
-    def plan_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def plan_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -157,7 +171,8 @@ class _SelectionState:
     @resources.setter
     def resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectionTags")
     def selection_tags(
@@ -169,7 +184,8 @@ class _SelectionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SelectionSelectionTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:backup/selection:Selection")
 class Selection(pulumi.CustomResource):

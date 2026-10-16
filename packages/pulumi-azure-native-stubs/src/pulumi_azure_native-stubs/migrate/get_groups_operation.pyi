@@ -76,7 +76,8 @@ class GetGroupsOperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetGroupsOperationResult(GetGroupsOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroupsOperationResult]:
+        ...
 
 def get_groups_operation(
     group_name: Optional[_builtins.str] = ...,

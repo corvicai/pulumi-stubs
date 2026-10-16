@@ -72,7 +72,8 @@ class GetIncidentTaskResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIncidentTaskResult(GetIncidentTaskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIncidentTaskResult]:
+        ...
 
 def get_incident_task(
     incident_id: Optional[_builtins.str] = ...,

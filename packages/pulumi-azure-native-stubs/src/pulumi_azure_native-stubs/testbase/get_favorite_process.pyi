@@ -44,7 +44,8 @@ class GetFavoriteProcessResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFavoriteProcessResult(GetFavoriteProcessResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFavoriteProcessResult]:
+        ...
 
 def get_favorite_process(
     favorite_process_resource_name: Optional[_builtins.str] = ...,

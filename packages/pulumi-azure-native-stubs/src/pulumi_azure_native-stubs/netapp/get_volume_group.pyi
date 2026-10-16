@@ -54,7 +54,8 @@ class GetVolumeGroupResult:
     ) -> Optional[Sequence[outputs.VolumeGroupVolumePropertiesResponse]]: ...
 
 class AwaitableGetVolumeGroupResult(GetVolumeGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVolumeGroupResult]:
+        ...
 
 def get_volume_group(
     account_name: Optional[_builtins.str] = ...,

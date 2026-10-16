@@ -67,7 +67,8 @@ class GetVocabularyResult:
     def vocabulary_id(self) -> _builtins.str: ...
 
 class AwaitableGetVocabularyResult(GetVocabularyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVocabularyResult]:
+        ...
 
 def get_vocabulary(
     instance_id: Optional[_builtins.str] = ...,

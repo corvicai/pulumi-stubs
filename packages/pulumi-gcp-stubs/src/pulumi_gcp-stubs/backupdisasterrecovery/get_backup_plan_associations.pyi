@@ -39,7 +39,8 @@ class GetBackupPlanAssociationsResult:
     def resource_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetBackupPlanAssociationsResult(GetBackupPlanAssociationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackupPlanAssociationsResult]:
+        ...
 
 def get_backup_plan_associations(
     location: Optional[_builtins.str] = ...,

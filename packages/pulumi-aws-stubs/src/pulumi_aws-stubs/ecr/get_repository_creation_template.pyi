@@ -80,7 +80,10 @@ class GetRepositoryCreationTemplateResult:
     def resource_tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetRepositoryCreationTemplateResult(GetRepositoryCreationTemplateResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRepositoryCreationTemplateResult]:
+        ...
 
 def get_repository_creation_template(
     prefix: Optional[_builtins.str] = ...,

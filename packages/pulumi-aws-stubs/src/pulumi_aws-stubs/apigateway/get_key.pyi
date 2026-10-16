@@ -58,7 +58,8 @@ class GetKeyResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableGetKeyResult(GetKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyResult]:
+        ...
 
 def get_key(
     id: Optional[_builtins.str] = ...,

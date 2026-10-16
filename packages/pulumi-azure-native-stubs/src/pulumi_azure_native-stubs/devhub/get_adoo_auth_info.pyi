@@ -23,7 +23,8 @@ class GetADOOAuthInfoResult:
     def token(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetADOOAuthInfoResult(GetADOOAuthInfoResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetADOOAuthInfoResult]:
+        ...
 
 def get_adoo_auth_info(
     location: Optional[_builtins.str] = ...,

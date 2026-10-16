@@ -38,12 +38,16 @@ class DistributionTenantArgs:
     @pulumi.getter(name="distributionId")
     def distribution_id(self) -> pulumi.Input[_builtins.str]: ...
     @distribution_id.setter
-    def distribution_id(self, value: pulumi.Input[_builtins.str]): ...
+    def distribution_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionGroupId")
     def connection_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_group_id.setter
-    def connection_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def customizations(
@@ -52,7 +56,8 @@ class DistributionTenantArgs:
     @customizations.setter
     def customizations(
         self, value: Optional[pulumi.Input[DistributionTenantCustomizationsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def domains(
@@ -66,12 +71,14 @@ class DistributionTenantArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DistributionTenantDomainArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedCertificateRequest")
     def managed_certificate_request(
@@ -81,12 +88,14 @@ class DistributionTenantArgs:
     def managed_certificate_request(
         self,
         value: Optional[pulumi.Input[DistributionTenantManagedCertificateRequestArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -100,7 +109,8 @@ class DistributionTenantArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DistributionTenantParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -109,19 +119,24 @@ class DistributionTenantArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[DistributionTenantTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DistributionTenantTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForDeployment")
     def wait_for_deployment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_deployment.setter
-    def wait_for_deployment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_deployment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DistributionTenantState:
@@ -158,12 +173,16 @@ class _DistributionTenantState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionGroupId")
     def connection_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_group_id.setter
-    def connection_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def customizations(
@@ -172,12 +191,14 @@ class _DistributionTenantState:
     @customizations.setter
     def customizations(
         self, value: Optional[pulumi.Input[DistributionTenantCustomizationsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="distributionId")
     def distribution_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @distribution_id.setter
-    def distribution_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def distribution_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def domains(
@@ -191,17 +212,20 @@ class _DistributionTenantState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DistributionTenantDomainArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedCertificateRequest")
     def managed_certificate_request(
@@ -211,12 +235,14 @@ class _DistributionTenantState:
     def managed_certificate_request(
         self,
         value: Optional[pulumi.Input[DistributionTenantManagedCertificateRequestArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -230,12 +256,14 @@ class _DistributionTenantState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DistributionTenantParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -244,7 +272,8 @@ class _DistributionTenantState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -253,19 +282,24 @@ class _DistributionTenantState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[DistributionTenantTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[DistributionTenantTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForDeployment")
     def wait_for_deployment(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_deployment.setter
-    def wait_for_deployment(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_deployment(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DistributionTenant(pulumi.CustomResource):

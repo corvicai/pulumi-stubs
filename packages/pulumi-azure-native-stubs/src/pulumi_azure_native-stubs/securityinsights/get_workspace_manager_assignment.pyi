@@ -60,7 +60,10 @@ class GetWorkspaceManagerAssignmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceManagerAssignmentResult(GetWorkspaceManagerAssignmentResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkspaceManagerAssignmentResult]:
+        ...
 
 def get_workspace_manager_assignment(
     resource_group_name: Optional[_builtins.str] = ...,

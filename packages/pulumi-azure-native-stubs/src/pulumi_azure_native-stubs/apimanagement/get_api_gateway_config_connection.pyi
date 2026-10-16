@@ -55,7 +55,10 @@ class GetApiGatewayConfigConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiGatewayConfigConnectionResult(GetApiGatewayConfigConnectionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetApiGatewayConfigConnectionResult]:
+        ...
 
 def get_api_gateway_config_connection(
     config_connection_name: Optional[_builtins.str] = ...,

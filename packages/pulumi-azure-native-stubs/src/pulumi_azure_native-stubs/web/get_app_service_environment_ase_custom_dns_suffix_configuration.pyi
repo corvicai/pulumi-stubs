@@ -56,7 +56,10 @@ class GetAppServiceEnvironmentAseCustomDnsSuffixConfigurationResult:
 class AwaitableGetAppServiceEnvironmentAseCustomDnsSuffixConfigurationResult(
     GetAppServiceEnvironmentAseCustomDnsSuffixConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppServiceEnvironmentAseCustomDnsSuffixConfigurationResult]:
+        ...
 
 def get_app_service_environment_ase_custom_dns_suffix_configuration(
     name: Optional[_builtins.str] = ...,

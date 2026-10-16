@@ -193,7 +193,8 @@ class GetTableResult:
     def views(self) -> Sequence[outputs.GetTableViewResult]: ...
 
 class AwaitableGetTableResult(GetTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableResult]:
+        ...
 
 def get_table(
     dataset_id: Optional[_builtins.str] = ...,

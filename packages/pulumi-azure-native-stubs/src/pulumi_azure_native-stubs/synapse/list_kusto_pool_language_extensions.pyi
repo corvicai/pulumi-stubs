@@ -23,7 +23,10 @@ class ListKustoPoolLanguageExtensionsResult:
 class AwaitableListKustoPoolLanguageExtensionsResult(
     ListKustoPoolLanguageExtensionsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListKustoPoolLanguageExtensionsResult]:
+        ...
 
 def list_kusto_pool_language_extensions(
     kusto_pool_name: Optional[_builtins.str] = ...,

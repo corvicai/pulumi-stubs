@@ -17,7 +17,10 @@ class GetApiManagementServiceDomainOwnershipIdentifierResult:
 class AwaitableGetApiManagementServiceDomainOwnershipIdentifierResult(
     GetApiManagementServiceDomainOwnershipIdentifierResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetApiManagementServiceDomainOwnershipIdentifierResult]:
+        ...
 
 def get_api_management_service_domain_ownership_identifier(
     opts: Optional[pulumi.InvokeOptions] = ...,

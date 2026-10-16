@@ -52,7 +52,8 @@ class GetRoute53HostedZoneResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRoute53HostedZoneResult(GetRoute53HostedZoneResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoute53HostedZoneResult]:
+        ...
 
 def get_route53_hosted_zone(
     name: Optional[_builtins.str] = ...,

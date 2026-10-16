@@ -52,7 +52,8 @@ class GetEc2IpamResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2IpamResult(GetEc2IpamResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2IpamResult]:
+        ...
 
 def get_ec2_ipam(
     name: Optional[_builtins.str] = ...,

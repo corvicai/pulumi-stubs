@@ -118,7 +118,8 @@ class GetVpnConnectionResult:
     ) -> Optional[Sequence[outputs.VpnSiteLinkConnectionResponse]]: ...
 
 class AwaitableGetVpnConnectionResult(GetVpnConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpnConnectionResult]:
+        ...
 
 def get_vpn_connection(
     connection_name: Optional[_builtins.str] = ...,

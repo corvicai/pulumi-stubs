@@ -79,7 +79,8 @@ class GetReplicationTaskResult:
     def target_endpoint_arn(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationTaskResult(GetReplicationTaskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationTaskResult]:
+        ...
 
 def get_replication_task(
     region: Optional[_builtins.str] = ...,

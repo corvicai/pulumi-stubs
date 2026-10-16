@@ -39,7 +39,8 @@ class GetNetblockIPRangesResult:
     def range_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNetblockIPRangesResult(GetNetblockIPRangesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetblockIPRangesResult]:
+        ...
 
 def get_netblock_ip_ranges(
     range_type: Optional[_builtins.str] = ...,

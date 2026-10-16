@@ -60,7 +60,8 @@ class GetCaCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCaCertificateResult(GetCaCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCaCertificateResult]:
+        ...
 
 def get_ca_certificate(
     ca_certificate_name: Optional[_builtins.str] = ...,

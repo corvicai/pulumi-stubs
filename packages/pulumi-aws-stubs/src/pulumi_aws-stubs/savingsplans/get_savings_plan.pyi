@@ -107,7 +107,8 @@ class GetSavingsPlanResult:
     def upfront_payment_amount(self) -> _builtins.str: ...
 
 class AwaitableGetSavingsPlanResult(GetSavingsPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSavingsPlanResult]:
+        ...
 
 def get_savings_plan(
     savings_plan_id: Optional[_builtins.str] = ...,

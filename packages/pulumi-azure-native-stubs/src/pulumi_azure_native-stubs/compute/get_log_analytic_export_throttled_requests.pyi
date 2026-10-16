@@ -23,7 +23,10 @@ class GetLogAnalyticExportThrottledRequestsResult:
 class AwaitableGetLogAnalyticExportThrottledRequestsResult(
     GetLogAnalyticExportThrottledRequestsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLogAnalyticExportThrottledRequestsResult]:
+        ...
 
 def get_log_analytic_export_throttled_requests(
     blob_container_sas_uri: Optional[_builtins.str] = ...,

@@ -156,7 +156,8 @@ class GetBucketResult:
     def websites(self) -> Sequence[outputs.GetBucketWebsiteResult]: ...
 
 class AwaitableGetBucketResult(GetBucketResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBucketResult]:
+        ...
 
 def get_bucket(
     name: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class GetServerTrustGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerTrustGroupResult(GetServerTrustGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerTrustGroupResult]:
+        ...
 
 def get_server_trust_group(
     location_name: Optional[_builtins.str] = ...,

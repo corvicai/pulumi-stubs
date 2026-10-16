@@ -60,7 +60,8 @@ class GetActiveDirectoryConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetActiveDirectoryConfigResult(GetActiveDirectoryConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActiveDirectoryConfigResult]:
+        ...
 
 def get_active_directory_config(
     active_directory_config_name: Optional[_builtins.str] = ...,

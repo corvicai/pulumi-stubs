@@ -52,7 +52,8 @@ class GetAuthorityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAuthorityResult(GetAuthorityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthorityResult]:
+        ...
 
 def get_authority(
     authority_name: Optional[_builtins.str] = ...,

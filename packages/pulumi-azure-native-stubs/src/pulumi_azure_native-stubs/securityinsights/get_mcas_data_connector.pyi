@@ -56,7 +56,8 @@ class GetMCASDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMCASDataConnectorResult(GetMCASDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMCASDataConnectorResult]:
+        ...
 
 def get_mcas_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

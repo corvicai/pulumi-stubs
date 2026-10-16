@@ -52,7 +52,8 @@ class GetLambdaFunctionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLambdaFunctionResult(GetLambdaFunctionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLambdaFunctionResult]:
+        ...
 
 def get_lambda_function(
     name: Optional[_builtins.str] = ...,

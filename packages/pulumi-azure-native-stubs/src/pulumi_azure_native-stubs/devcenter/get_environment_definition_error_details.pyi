@@ -23,7 +23,10 @@ class GetEnvironmentDefinitionErrorDetailsResult:
 class AwaitableGetEnvironmentDefinitionErrorDetailsResult(
     GetEnvironmentDefinitionErrorDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetEnvironmentDefinitionErrorDetailsResult]:
+        ...
 
 def get_environment_definition_error_details(
     catalog_name: Optional[_builtins.str] = ...,

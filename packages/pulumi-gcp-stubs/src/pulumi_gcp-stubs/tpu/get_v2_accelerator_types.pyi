@@ -29,7 +29,8 @@ class GetV2AcceleratorTypesResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetV2AcceleratorTypesResult(GetV2AcceleratorTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetV2AcceleratorTypesResult]:
+        ...
 
 def get_v2_accelerator_types(
     project: Optional[_builtins.str] = ...,

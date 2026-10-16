@@ -44,7 +44,8 @@ class GetSqlAssessmentV3OperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlAssessmentV3OperationResult(GetSqlAssessmentV3OperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlAssessmentV3OperationResult]:
+        ...
 
 def get_sql_assessment_v3_operation(
     assessment_name: Optional[_builtins.str] = ...,

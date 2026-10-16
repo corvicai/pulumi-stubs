@@ -54,7 +54,10 @@ class GetAutoScalingAutoScalingGroupResult:
 class AwaitableGetAutoScalingAutoScalingGroupResult(
     GetAutoScalingAutoScalingGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAutoScalingAutoScalingGroupResult]:
+        ...
 
 def get_auto_scaling_auto_scaling_group(
     name: Optional[_builtins.str] = ...,

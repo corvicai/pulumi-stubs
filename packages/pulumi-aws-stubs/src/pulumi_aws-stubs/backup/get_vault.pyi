@@ -42,7 +42,8 @@ class GetVaultResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVaultResult(GetVaultResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVaultResult]:
+        ...
 
 def get_vault(
     name: Optional[_builtins.str] = ...,

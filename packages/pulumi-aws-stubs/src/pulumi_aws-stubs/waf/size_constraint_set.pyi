@@ -23,7 +23,8 @@ class SizeConstraintSetArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeConstraints")
     def size_constraints(
@@ -37,7 +38,8 @@ class SizeConstraintSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SizeConstraintSetSizeConstraintArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SizeConstraintSetState:
@@ -54,12 +56,14 @@ class _SizeConstraintSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeConstraints")
     def size_constraints(
@@ -73,7 +77,8 @@ class _SizeConstraintSetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SizeConstraintSetSizeConstraintArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:waf/sizeConstraintSet:SizeConstraintSet")
 class SizeConstraintSet(pulumi.CustomResource):

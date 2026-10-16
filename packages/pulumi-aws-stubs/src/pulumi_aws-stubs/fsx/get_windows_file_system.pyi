@@ -132,7 +132,8 @@ class GetWindowsFileSystemResult:
     def weekly_maintenance_start_time(self) -> _builtins.str: ...
 
 class AwaitableGetWindowsFileSystemResult(GetWindowsFileSystemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWindowsFileSystemResult]:
+        ...
 
 def get_windows_file_system(
     id: Optional[_builtins.str] = ...,

@@ -48,7 +48,10 @@ class ListWorkflowTriggerCallbackUrlResult:
 class AwaitableListWorkflowTriggerCallbackUrlResult(
     ListWorkflowTriggerCallbackUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkflowTriggerCallbackUrlResult]:
+        ...
 
 def list_workflow_trigger_callback_url(
     resource_group_name: Optional[_builtins.str] = ...,

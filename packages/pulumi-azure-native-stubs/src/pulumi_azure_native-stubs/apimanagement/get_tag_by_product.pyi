@@ -34,7 +34,8 @@ class GetTagByProductResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTagByProductResult(GetTagByProductResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagByProductResult]:
+        ...
 
 def get_tag_by_product(
     product_id: Optional[_builtins.str] = ...,

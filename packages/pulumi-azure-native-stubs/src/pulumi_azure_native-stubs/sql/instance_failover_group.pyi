@@ -34,7 +34,8 @@ class InstanceFailoverGroupArgs:
     @pulumi.getter(name="locationName")
     def location_name(self) -> pulumi.Input[_builtins.str]: ...
     @location_name.setter
-    def location_name(self, value: pulumi.Input[_builtins.str]): ...
+    def location_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedInstancePairs")
     def managed_instance_pairs(
@@ -43,7 +44,8 @@ class InstanceFailoverGroupArgs:
     @managed_instance_pairs.setter
     def managed_instance_pairs(
         self, value: pulumi.Input[Sequence[pulumi.Input[ManagedInstancePairInfoArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerRegions")
     def partner_regions(
@@ -52,7 +54,8 @@ class InstanceFailoverGroupArgs:
     @partner_regions.setter
     def partner_regions(
         self, value: pulumi.Input[Sequence[pulumi.Input[PartnerRegionInfoArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readWriteEndpoint")
     def read_write_endpoint(
@@ -61,17 +64,22 @@ class InstanceFailoverGroupArgs:
     @read_write_endpoint.setter
     def read_write_endpoint(
         self, value: pulumi.Input[InstanceFailoverGroupReadWriteEndpointArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failoverGroupName")
     def failover_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failover_group_name.setter
-    def failover_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failover_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readOnlyEndpoint")
     def read_only_endpoint(
@@ -80,7 +88,8 @@ class InstanceFailoverGroupArgs:
     @read_only_endpoint.setter
     def read_only_endpoint(
         self, value: Optional[pulumi.Input[InstanceFailoverGroupReadOnlyEndpointArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryType")
     def secondary_type(
@@ -89,7 +98,8 @@ class InstanceFailoverGroupArgs:
     @secondary_type.setter
     def secondary_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecondaryInstanceType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:sql:InstanceFailoverGroup")
 class InstanceFailoverGroup(pulumi.CustomResource):

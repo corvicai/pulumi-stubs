@@ -58,7 +58,8 @@ class GetPolicyStoreResult:
     ) -> Sequence[outputs.GetPolicyStoreValidationSettingResult]: ...
 
 class AwaitableGetPolicyStoreResult(GetPolicyStoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyStoreResult]:
+        ...
 
 def get_policy_store(
     id: Optional[_builtins.str] = ...,

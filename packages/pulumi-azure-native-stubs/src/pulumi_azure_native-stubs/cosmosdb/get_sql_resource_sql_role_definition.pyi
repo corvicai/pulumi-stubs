@@ -50,7 +50,10 @@ class GetSqlResourceSqlRoleDefinitionResult:
 class AwaitableGetSqlResourceSqlRoleDefinitionResult(
     GetSqlResourceSqlRoleDefinitionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSqlResourceSqlRoleDefinitionResult]:
+        ...
 
 def get_sql_resource_sql_role_definition(
     account_name: Optional[_builtins.str] = ...,

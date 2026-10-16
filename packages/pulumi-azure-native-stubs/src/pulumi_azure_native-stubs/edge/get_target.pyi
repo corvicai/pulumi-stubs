@@ -62,7 +62,8 @@ class GetTargetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTargetResult(GetTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTargetResult]:
+        ...
 
 def get_target(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -89,7 +89,10 @@ class GetOntapStorageVirtualMachineResult:
     def uuid(self) -> _builtins.str: ...
 
 class AwaitableGetOntapStorageVirtualMachineResult(GetOntapStorageVirtualMachineResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetOntapStorageVirtualMachineResult]:
+        ...
 
 def get_ontap_storage_virtual_machine(
     filters: Optional[

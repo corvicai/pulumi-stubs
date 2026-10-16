@@ -26,7 +26,8 @@ class NetworkInsightsAnalysisArgs:
     @pulumi.getter(name="networkInsightsPathId")
     def network_insights_path_id(self) -> pulumi.Input[_builtins.str]: ...
     @network_insights_path_id.setter
-    def network_insights_path_id(self, value: pulumi.Input[_builtins.str]): ...
+    def network_insights_path_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterInArns")
     def filter_in_arns(
@@ -35,12 +36,14 @@ class NetworkInsightsAnalysisArgs:
     @filter_in_arns.setter
     def filter_in_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -49,12 +52,16 @@ class NetworkInsightsAnalysisArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForCompletion")
     def wait_for_completion(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_completion.setter
-    def wait_for_completion(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_completion(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _NetworkInsightsAnalysisState:
@@ -113,12 +120,14 @@ class _NetworkInsightsAnalysisState:
                 Sequence[pulumi.Input[NetworkInsightsAnalysisAlternatePathHintArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def explanations(
@@ -132,7 +141,8 @@ class _NetworkInsightsAnalysisState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NetworkInsightsAnalysisExplanationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterInArns")
     def filter_in_arns(
@@ -141,7 +151,8 @@ class _NetworkInsightsAnalysisState:
     @filter_in_arns.setter
     def filter_in_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardPathComponents")
     def forward_path_components(
@@ -159,24 +170,28 @@ class _NetworkInsightsAnalysisState:
                 Sequence[pulumi.Input[NetworkInsightsAnalysisForwardPathComponentArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInsightsPathId")
     def network_insights_path_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_insights_path_id.setter
     def network_insights_path_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pathFound")
     def path_found(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @path_found.setter
-    def path_found(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def path_found(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnPathComponents")
     def return_path_components(
@@ -194,22 +209,26 @@ class _NetworkInsightsAnalysisState:
                 Sequence[pulumi.Input[NetworkInsightsAnalysisReturnPathComponentArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startDate")
     def start_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_date.setter
-    def start_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statusMessage")
     def status_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status_message.setter
-    def status_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -218,7 +237,8 @@ class _NetworkInsightsAnalysisState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -227,17 +247,22 @@ class _NetworkInsightsAnalysisState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForCompletion")
     def wait_for_completion(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_completion.setter
-    def wait_for_completion(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def wait_for_completion(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="warningMessage")
     def warning_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @warning_message.setter
-    def warning_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def warning_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class NetworkInsightsAnalysis(pulumi.CustomResource):

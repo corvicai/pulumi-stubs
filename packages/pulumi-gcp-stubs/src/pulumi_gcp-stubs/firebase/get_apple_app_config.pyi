@@ -39,7 +39,8 @@ class GetAppleAppConfigResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAppleAppConfigResult(GetAppleAppConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppleAppConfigResult]:
+        ...
 
 def get_apple_app_config(
     app_id: Optional[_builtins.str] = ...,

@@ -116,7 +116,8 @@ class GetCustomIPPrefixResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCustomIPPrefixResult(GetCustomIPPrefixResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCustomIPPrefixResult]:
+        ...
 
 def get_custom_ip_prefix(
     custom_ip_prefix_name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetSecretVersionsResult:
     def versions(self) -> Sequence[outputs.GetSecretVersionsVersionResult]: ...
 
 class AwaitableGetSecretVersionsResult(GetSecretVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretVersionsResult]:
+        ...
 
 def get_secret_versions(
     include_deprecated: Optional[_builtins.bool] = ...,

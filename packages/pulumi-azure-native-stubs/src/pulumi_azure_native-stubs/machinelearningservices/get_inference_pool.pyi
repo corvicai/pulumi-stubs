@@ -64,7 +64,8 @@ class GetInferencePoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInferencePoolResult(GetInferencePoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInferencePoolResult]:
+        ...
 
 def get_inference_pool(
     inference_pool_name: Optional[_builtins.str] = ...,

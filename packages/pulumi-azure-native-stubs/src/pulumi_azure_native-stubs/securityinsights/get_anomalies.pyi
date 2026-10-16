@@ -52,7 +52,8 @@ class GetAnomaliesResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAnomaliesResult(GetAnomaliesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAnomaliesResult]:
+        ...
 
 def get_anomalies(
     resource_group_name: Optional[_builtins.str] = ...,

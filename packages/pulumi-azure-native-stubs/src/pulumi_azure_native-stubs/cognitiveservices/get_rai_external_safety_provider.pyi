@@ -54,7 +54,10 @@ class GetRaiExternalSafetyProviderResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRaiExternalSafetyProviderResult(GetRaiExternalSafetyProviderResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRaiExternalSafetyProviderResult]:
+        ...
 
 def get_rai_external_safety_provider(
     safety_provider_name: Optional[_builtins.str] = ...,

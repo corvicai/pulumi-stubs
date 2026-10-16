@@ -92,7 +92,8 @@ class GetAiIndexResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetAiIndexResult(GetAiIndexResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAiIndexResult]:
+        ...
 
 def get_ai_index(
     name: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class FrontDoorArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backendPools")
     def backend_pools(
@@ -53,7 +54,8 @@ class FrontDoorArgs:
     @backend_pools.setter
     def backend_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BackendPoolArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backendPoolsSettings")
     def backend_pools_settings(
@@ -62,7 +64,8 @@ class FrontDoorArgs:
     @backend_pools_settings.setter
     def backend_pools_settings(
         self, value: Optional[pulumi.Input[BackendPoolsSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -71,17 +74,20 @@ class FrontDoorArgs:
     @enabled_state.setter
     def enabled_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FrontDoorEnabledState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frontDoorName")
     def front_door_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @front_door_name.setter
-    def front_door_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def front_door_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frontendEndpoints")
     def frontend_endpoints(
@@ -91,7 +97,8 @@ class FrontDoorArgs:
     def frontend_endpoints(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[FrontendEndpointArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthProbeSettings")
     def health_probe_settings(
@@ -105,7 +112,8 @@ class FrontDoorArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[HealthProbeSettingsModelArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancingSettings")
     def load_balancing_settings(
@@ -119,12 +127,14 @@ class FrontDoorArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LoadBalancingSettingsModelArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingRules")
     def routing_rules(
@@ -133,7 +143,8 @@ class FrontDoorArgs:
     @routing_rules.setter
     def routing_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RoutingRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -142,7 +153,8 @@ class FrontDoorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:frontdoor:FrontDoor")
 class FrontDoor(pulumi.CustomResource):

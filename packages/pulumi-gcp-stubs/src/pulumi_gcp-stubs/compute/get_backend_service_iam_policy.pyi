@@ -34,7 +34,8 @@ class GetBackendServiceIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetBackendServiceIamPolicyResult(GetBackendServiceIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackendServiceIamPolicyResult]:
+        ...
 
 def get_backend_service_iam_policy(
     name: Optional[_builtins.str] = ...,

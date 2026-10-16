@@ -24,7 +24,8 @@ class GetEntityHistoryResult:
     def history(self) -> Sequence[outputs.HealthStateTransitionResponse]: ...
 
 class AwaitableGetEntityHistoryResult(GetEntityHistoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntityHistoryResult]:
+        ...
 
 def get_entity_history(
     end_at: Optional[_builtins.str] = ...,

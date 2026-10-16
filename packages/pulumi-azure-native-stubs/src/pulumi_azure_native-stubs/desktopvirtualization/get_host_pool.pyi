@@ -176,7 +176,8 @@ class GetHostPoolResult:
     def vm_template(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetHostPoolResult(GetHostPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHostPoolResult]:
+        ...
 
 def get_host_pool(
     host_pool_name: Optional[_builtins.str] = ...,

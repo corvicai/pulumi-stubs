@@ -80,7 +80,10 @@ class GetDatabaseAccountSqlContainerResult:
 class AwaitableGetDatabaseAccountSqlContainerResult(
     GetDatabaseAccountSqlContainerResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseAccountSqlContainerResult]:
+        ...
 
 def get_database_account_sql_container(
     account_name: Optional[_builtins.str] = ...,

@@ -25,7 +25,8 @@ class NotificationRegistrationArgs:
     @pulumi.getter(name="providerNamespace")
     def provider_namespace(self) -> pulumi.Input[_builtins.str]: ...
     @provider_namespace.setter
-    def provider_namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationRegistrationName")
     def notification_registration_name(
@@ -34,7 +35,8 @@ class NotificationRegistrationArgs:
     @notification_registration_name.setter
     def notification_registration_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -43,7 +45,8 @@ class NotificationRegistrationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[NotificationRegistrationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:providerhub:NotificationRegistration")
 class NotificationRegistration(pulumi.CustomResource):

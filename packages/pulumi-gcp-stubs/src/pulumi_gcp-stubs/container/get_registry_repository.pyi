@@ -31,7 +31,8 @@ class GetRegistryRepositoryResult:
     def repository_url(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryRepositoryResult(GetRegistryRepositoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryRepositoryResult]:
+        ...
 
 def get_registry_repository(
     project: Optional[_builtins.str] = ...,

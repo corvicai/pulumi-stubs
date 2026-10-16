@@ -72,7 +72,8 @@ class GetScheduledTriggerResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetScheduledTriggerResult(GetScheduledTriggerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScheduledTriggerResult]:
+        ...
 
 def get_scheduled_trigger(
     account_name: Optional[_builtins.str] = ...,

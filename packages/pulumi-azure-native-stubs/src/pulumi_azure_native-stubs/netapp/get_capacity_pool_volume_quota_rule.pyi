@@ -66,7 +66,10 @@ class GetCapacityPoolVolumeQuotaRuleResult:
 class AwaitableGetCapacityPoolVolumeQuotaRuleResult(
     GetCapacityPoolVolumeQuotaRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCapacityPoolVolumeQuotaRuleResult]:
+        ...
 
 def get_capacity_pool_volume_quota_rule(
     account_name: Optional[_builtins.str] = ...,

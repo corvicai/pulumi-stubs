@@ -20,7 +20,8 @@ class GetSolutionConfigResult:
     def publisher_sas_uri(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSolutionConfigResult(GetSolutionConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSolutionConfigResult]:
+        ...
 
 def get_solution_config(
     migrate_project_name: Optional[_builtins.str] = ...,

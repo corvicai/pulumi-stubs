@@ -71,7 +71,8 @@ class GetFolderResult:
     def parent(self) -> _builtins.str: ...
 
 class AwaitableGetFolderResult(GetFolderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFolderResult]:
+        ...
 
 def get_folder(
     folder: Optional[_builtins.str] = ...,

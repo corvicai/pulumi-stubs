@@ -31,7 +31,8 @@ class GetHl7V2StoreIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetHl7V2StoreIamPolicyResult(GetHl7V2StoreIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHl7V2StoreIamPolicyResult]:
+        ...
 
 def get_hl7_v2_store_iam_policy(
     hl7_v2_store_id: Optional[_builtins.str] = ...,

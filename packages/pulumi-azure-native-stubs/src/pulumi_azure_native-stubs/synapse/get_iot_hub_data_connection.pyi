@@ -80,7 +80,8 @@ class GetIotHubDataConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIotHubDataConnectionResult(GetIotHubDataConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIotHubDataConnectionResult]:
+        ...
 
 def get_iot_hub_data_connection(
     data_connection_name: Optional[_builtins.str] = ...,

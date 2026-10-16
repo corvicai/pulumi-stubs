@@ -33,12 +33,14 @@ class CustomRPActionRouteDefinitionArgs:
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingType")
     def routing_type(
@@ -47,7 +49,8 @@ class CustomRPActionRouteDefinitionArgs:
     @routing_type.setter
     def routing_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionRouting]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomRPResourceTypeRouteDefinitionArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
@@ -69,12 +72,14 @@ class CustomRPResourceTypeRouteDefinitionArgs:
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingType")
     def routing_type(
@@ -83,7 +88,8 @@ class CustomRPResourceTypeRouteDefinitionArgs:
     @routing_type.setter
     def routing_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ResourceTypeRouting]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomRPValidationsArgsDict(TypedDict):
     specification: pulumi.Input[_builtins.str]
@@ -103,7 +109,8 @@ class CustomRPValidationsArgs:
     @pulumi.getter
     def specification(self) -> pulumi.Input[_builtins.str]: ...
     @specification.setter
-    def specification(self, value: pulumi.Input[_builtins.str]): ...
+    def specification(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationType")
     def validation_type(
@@ -112,4 +119,5 @@ class CustomRPValidationsArgs:
     @validation_type.setter
     def validation_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ValidationType]]]
-    ): ...
+    ):  # -> None:
+        ...

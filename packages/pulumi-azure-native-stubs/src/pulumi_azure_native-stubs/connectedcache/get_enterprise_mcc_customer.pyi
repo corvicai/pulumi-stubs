@@ -52,7 +52,8 @@ class GetEnterpriseMccCustomerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnterpriseMccCustomerResult(GetEnterpriseMccCustomerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnterpriseMccCustomerResult]:
+        ...
 
 def get_enterprise_mcc_customer(
     customer_resource_name: Optional[_builtins.str] = ...,

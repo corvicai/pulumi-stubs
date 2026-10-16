@@ -51,7 +51,8 @@ class GetOutpostsResult:
     def site_id(self) -> _builtins.str: ...
 
 class AwaitableGetOutpostsResult(GetOutpostsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOutpostsResult]:
+        ...
 
 def get_outposts(
     availability_zone: Optional[_builtins.str] = ...,

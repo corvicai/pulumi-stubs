@@ -57,7 +57,8 @@ class NetworkInterfaceArgs:
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> pulumi.Input[_builtins.str]: ...
     @subnet_id.setter
-    def subnet_id(self, value: pulumi.Input[_builtins.str]): ...
+    def subnet_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def attachments(
@@ -71,27 +72,36 @@ class NetworkInterfaceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NetworkInterfaceAttachmentArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePrimaryIpv6")
     def enable_primary_ipv6(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_primary_ipv6.setter
-    def enable_primary_ipv6(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_primary_ipv6(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interfaceType")
     def interface_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interface_type.setter
-    def interface_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interface_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv4PrefixCount")
     def ipv4_prefix_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv4_prefix_count.setter
-    def ipv4_prefix_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv4_prefix_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv4Prefixes")
     def ipv4_prefixes(
@@ -100,19 +110,24 @@ class NetworkInterfaceArgs:
     @ipv4_prefixes.setter
     def ipv4_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressCount")
     def ipv6_address_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv6_address_count.setter
-    def ipv6_address_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv6_address_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressListEnabled")
     def ipv6_address_list_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ipv6_address_list_enabled.setter
     def ipv6_address_list_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressLists")
     def ipv6_address_lists(
@@ -121,7 +136,8 @@ class NetworkInterfaceArgs:
     @ipv6_address_lists.setter
     def ipv6_address_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Addresses")
     def ipv6_addresses(
@@ -130,12 +146,16 @@ class NetworkInterfaceArgs:
     @ipv6_addresses.setter
     def ipv6_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6PrefixCount")
     def ipv6_prefix_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv6_prefix_count.setter
-    def ipv6_prefix_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv6_prefix_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Prefixes")
     def ipv6_prefixes(
@@ -144,19 +164,22 @@ class NetworkInterfaceArgs:
     @ipv6_prefixes.setter
     def ipv6_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIp")
     def private_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip.setter
-    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpListEnabled")
     def private_ip_list_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @private_ip_list_enabled.setter
     def private_ip_list_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpLists")
     def private_ip_lists(
@@ -165,7 +188,8 @@ class NetworkInterfaceArgs:
     @private_ip_lists.setter
     def private_ip_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIps")
     def private_ips(
@@ -174,17 +198,22 @@ class NetworkInterfaceArgs:
     @private_ips.setter
     def private_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpsCount")
     def private_ips_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @private_ips_count.setter
-    def private_ips_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def private_ips_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -193,12 +222,16 @@ class NetworkInterfaceArgs:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDestCheck")
     def source_dest_check(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @source_dest_check.setter
-    def source_dest_check(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def source_dest_check(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -207,7 +240,8 @@ class NetworkInterfaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _NetworkInterfaceState:
@@ -265,7 +299,8 @@ class _NetworkInterfaceState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def attachments(
@@ -279,27 +314,36 @@ class _NetworkInterfaceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NetworkInterfaceAttachmentArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePrimaryIpv6")
     def enable_primary_ipv6(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_primary_ipv6.setter
-    def enable_primary_ipv6(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_primary_ipv6(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="interfaceType")
     def interface_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @interface_type.setter
-    def interface_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def interface_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv4PrefixCount")
     def ipv4_prefix_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv4_prefix_count.setter
-    def ipv4_prefix_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv4_prefix_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv4Prefixes")
     def ipv4_prefixes(
@@ -308,19 +352,24 @@ class _NetworkInterfaceState:
     @ipv4_prefixes.setter
     def ipv4_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressCount")
     def ipv6_address_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv6_address_count.setter
-    def ipv6_address_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv6_address_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressListEnabled")
     def ipv6_address_list_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ipv6_address_list_enabled.setter
     def ipv6_address_list_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressLists")
     def ipv6_address_lists(
@@ -329,7 +378,8 @@ class _NetworkInterfaceState:
     @ipv6_address_lists.setter
     def ipv6_address_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Addresses")
     def ipv6_addresses(
@@ -338,12 +388,16 @@ class _NetworkInterfaceState:
     @ipv6_addresses.setter
     def ipv6_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6PrefixCount")
     def ipv6_prefix_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv6_prefix_count.setter
-    def ipv6_prefix_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv6_prefix_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Prefixes")
     def ipv6_prefixes(
@@ -352,39 +406,48 @@ class _NetworkInterfaceState:
     @ipv6_prefixes.setter
     def ipv6_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="macAddress")
     def mac_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mac_address.setter
-    def mac_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mac_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outpostArn")
     def outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outpost_arn.setter
-    def outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsName")
     def private_dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_dns_name.setter
-    def private_dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_dns_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIp")
     def private_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip.setter
-    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpListEnabled")
     def private_ip_list_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @private_ip_list_enabled.setter
     def private_ip_list_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpLists")
     def private_ip_lists(
@@ -393,7 +456,8 @@ class _NetworkInterfaceState:
     @private_ip_lists.setter
     def private_ip_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIps")
     def private_ips(
@@ -402,17 +466,22 @@ class _NetworkInterfaceState:
     @private_ips.setter
     def private_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIpsCount")
     def private_ips_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @private_ips_count.setter
-    def private_ips_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def private_ips_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -421,17 +490,22 @@ class _NetworkInterfaceState:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDestCheck")
     def source_dest_check(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @source_dest_check.setter
-    def source_dest_check(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def source_dest_check(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -440,7 +514,8 @@ class _NetworkInterfaceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -449,7 +524,8 @@ class _NetworkInterfaceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/networkInterface:NetworkInterface")
 class NetworkInterface(pulumi.CustomResource):

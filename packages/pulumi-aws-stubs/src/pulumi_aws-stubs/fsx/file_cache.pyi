@@ -38,24 +38,28 @@ class FileCacheArgs:
     @pulumi.getter(name="fileCacheType")
     def file_cache_type(self) -> pulumi.Input[_builtins.str]: ...
     @file_cache_type.setter
-    def file_cache_type(self, value: pulumi.Input[_builtins.str]): ...
+    def file_cache_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileCacheTypeVersion")
     def file_cache_type_version(self) -> pulumi.Input[_builtins.str]: ...
     @file_cache_type_version.setter
-    def file_cache_type_version(self, value: pulumi.Input[_builtins.str]): ...
+    def file_cache_type_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> pulumi.Input[_builtins.int]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: pulumi.Input[_builtins.int]): ...
+    def storage_capacity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToDataRepositoryAssociations")
     def copy_tags_to_data_repository_associations(
@@ -64,7 +68,8 @@ class FileCacheArgs:
     @copy_tags_to_data_repository_associations.setter
     def copy_tags_to_data_repository_associations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataRepositoryAssociations")
     def data_repository_associations(
@@ -78,12 +83,14 @@ class FileCacheArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FileCacheDataRepositoryAssociationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lustreConfigurations")
     def lustre_configurations(
@@ -97,12 +104,14 @@ class FileCacheArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FileCacheLustreConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -111,7 +120,8 @@ class FileCacheArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -120,7 +130,8 @@ class FileCacheArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FileCacheState:
@@ -165,7 +176,8 @@ class _FileCacheState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToDataRepositoryAssociations")
     def copy_tags_to_data_repository_associations(
@@ -174,7 +186,8 @@ class _FileCacheState:
     @copy_tags_to_data_repository_associations.setter
     def copy_tags_to_data_repository_associations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataRepositoryAssociationIds")
     def data_repository_association_ids(
@@ -183,7 +196,8 @@ class _FileCacheState:
     @data_repository_association_ids.setter
     def data_repository_association_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataRepositoryAssociations")
     def data_repository_associations(
@@ -197,32 +211,40 @@ class _FileCacheState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FileCacheDataRepositoryAssociationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileCacheId")
     def file_cache_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_cache_id.setter
-    def file_cache_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_cache_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileCacheType")
     def file_cache_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_cache_type.setter
-    def file_cache_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_cache_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileCacheTypeVersion")
     def file_cache_type_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_cache_type_version.setter
-    def file_cache_type_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_cache_type_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lustreConfigurations")
     def lustre_configurations(
@@ -236,7 +258,8 @@ class _FileCacheState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FileCacheLustreConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceIds")
     def network_interface_ids(
@@ -245,17 +268,20 @@ class _FileCacheState:
     @network_interface_ids.setter
     def network_interface_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -264,12 +290,16 @@ class _FileCacheState:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def storage_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -278,7 +308,8 @@ class _FileCacheState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -287,7 +318,8 @@ class _FileCacheState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -296,12 +328,14 @@ class _FileCacheState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:fsx/fileCache:FileCache")
 class FileCache(pulumi.CustomResource):

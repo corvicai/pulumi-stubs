@@ -68,7 +68,8 @@ class GetExpressRouteConnectionResult:
     def routing_weight(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetExpressRouteConnectionResult(GetExpressRouteConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExpressRouteConnectionResult]:
+        ...
 
 def get_express_route_connection(
     connection_name: Optional[_builtins.str] = ...,

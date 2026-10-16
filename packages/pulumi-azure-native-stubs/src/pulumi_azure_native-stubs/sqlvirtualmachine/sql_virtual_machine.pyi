@@ -60,14 +60,16 @@ class SqlVirtualMachineArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentSettings")
     def assessment_settings(self) -> Optional[pulumi.Input[AssessmentSettingsArgs]]: ...
     @assessment_settings.setter
     def assessment_settings(
         self, value: Optional[pulumi.Input[AssessmentSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoBackupSettings")
     def auto_backup_settings(
@@ -76,7 +78,8 @@ class SqlVirtualMachineArgs:
     @auto_backup_settings.setter
     def auto_backup_settings(
         self, value: Optional[pulumi.Input[AutoBackupSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoPatchingSettings")
     def auto_patching_settings(
@@ -85,19 +88,22 @@ class SqlVirtualMachineArgs:
     @auto_patching_settings.setter
     def auto_patching_settings(
         self, value: Optional[pulumi.Input[AutoPatchingSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
     def enable_automatic_upgrade(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_upgrade.setter
     def enable_automatic_upgrade(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ResourceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ResourceIdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[ResourceIdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultCredentialSettings")
     def key_vault_credential_settings(
@@ -106,7 +112,8 @@ class SqlVirtualMachineArgs:
     @key_vault_credential_settings.setter
     def key_vault_credential_settings(
         self, value: Optional[pulumi.Input[KeyVaultCredentialSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="leastPrivilegeMode")
     def least_privilege_mode(
@@ -115,12 +122,14 @@ class SqlVirtualMachineArgs:
     @least_privilege_mode.setter
     def least_privilege_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LeastPrivilegeMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverConfigurationsManagementSettings")
     def server_configurations_management_settings(
@@ -129,12 +138,14 @@ class SqlVirtualMachineArgs:
     @server_configurations_management_settings.setter
     def server_configurations_management_settings(
         self, value: Optional[pulumi.Input[ServerConfigurationsManagementSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlImageOffer")
     def sql_image_offer(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sql_image_offer.setter
-    def sql_image_offer(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sql_image_offer(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlImageSku")
     def sql_image_sku(
@@ -143,7 +154,8 @@ class SqlVirtualMachineArgs:
     @sql_image_sku.setter
     def sql_image_sku(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlImageSku]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlManagement")
     def sql_management(
@@ -152,7 +164,8 @@ class SqlVirtualMachineArgs:
     @sql_management.setter
     def sql_management(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlManagementMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerLicenseType")
     def sql_server_license_type(
@@ -161,7 +174,8 @@ class SqlVirtualMachineArgs:
     @sql_server_license_type.setter
     def sql_server_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SqlServerLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlVirtualMachineGroupResourceId")
     def sql_virtual_machine_group_resource_id(
@@ -170,14 +184,16 @@ class SqlVirtualMachineArgs:
     @sql_virtual_machine_group_resource_id.setter
     def sql_virtual_machine_group_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlVirtualMachineName")
     def sql_virtual_machine_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sql_virtual_machine_name.setter
     def sql_virtual_machine_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfigurationSettings")
     def storage_configuration_settings(
@@ -186,7 +202,8 @@ class SqlVirtualMachineArgs:
     @storage_configuration_settings.setter
     def storage_configuration_settings(
         self, value: Optional[pulumi.Input[StorageConfigurationSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -195,7 +212,8 @@ class SqlVirtualMachineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineIdentitySettings")
     def virtual_machine_identity_settings(
@@ -204,14 +222,16 @@ class SqlVirtualMachineArgs:
     @virtual_machine_identity_settings.setter
     def virtual_machine_identity_settings(
         self, value: Optional[pulumi.Input[VirtualMachineIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineResourceId")
     def virtual_machine_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_resource_id.setter
     def virtual_machine_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wsfcDomainCredentials")
     def wsfc_domain_credentials(
@@ -220,12 +240,14 @@ class SqlVirtualMachineArgs:
     @wsfc_domain_credentials.setter
     def wsfc_domain_credentials(
         self, value: Optional[pulumi.Input[WsfcDomainCredentialsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wsfcStaticIp")
     def wsfc_static_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @wsfc_static_ip.setter
-    def wsfc_static_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def wsfc_static_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:sqlvirtualmachine:SqlVirtualMachine")
 class SqlVirtualMachine(pulumi.CustomResource):

@@ -19,14 +19,16 @@ class GroupPoliciesExclusiveArgs:
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyNames")
     def policy_names(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @policy_names.setter
     def policy_names(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GroupPoliciesExclusiveState:
@@ -42,7 +44,8 @@ class _GroupPoliciesExclusiveState:
     @pulumi.getter(name="groupName")
     def group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_name.setter
-    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyNames")
     def policy_names(
@@ -51,7 +54,8 @@ class _GroupPoliciesExclusiveState:
     @policy_names.setter
     def policy_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class GroupPoliciesExclusive(pulumi.CustomResource):

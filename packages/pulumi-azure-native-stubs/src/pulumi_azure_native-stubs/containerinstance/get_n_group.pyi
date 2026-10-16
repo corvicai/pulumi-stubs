@@ -78,7 +78,8 @@ class GetNGroupResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetNGroupResult(GetNGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNGroupResult]:
+        ...
 
 def get_n_group(
     ngroups_name: Optional[_builtins.str] = ...,

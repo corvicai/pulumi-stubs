@@ -26,7 +26,8 @@ class VpcEndpointAssociationArgs:
     @pulumi.getter(name="firewallArn")
     def firewall_arn(self) -> pulumi.Input[_builtins.str]: ...
     @firewall_arn.setter
-    def firewall_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def firewall_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetMapping")
     def subnet_mapping(
@@ -35,22 +36,26 @@ class VpcEndpointAssociationArgs:
     @subnet_mapping.setter
     def subnet_mapping(
         self, value: pulumi.Input[VpcEndpointAssociationSubnetMappingArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_id.setter
-    def vpc_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -59,7 +64,8 @@ class VpcEndpointAssociationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -68,7 +74,8 @@ class VpcEndpointAssociationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[VpcEndpointAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcEndpointAssociationState:
@@ -101,17 +108,20 @@ class _VpcEndpointAssociationState:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallArn")
     def firewall_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @firewall_arn.setter
-    def firewall_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def firewall_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetMapping")
     def subnet_mapping(
@@ -120,7 +130,8 @@ class _VpcEndpointAssociationState:
     @subnet_mapping.setter
     def subnet_mapping(
         self, value: Optional[pulumi.Input[VpcEndpointAssociationSubnetMappingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -129,7 +140,8 @@ class _VpcEndpointAssociationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -138,7 +150,8 @@ class _VpcEndpointAssociationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -147,21 +160,24 @@ class _VpcEndpointAssociationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[VpcEndpointAssociationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcEndpointAssociationArn")
     def vpc_endpoint_association_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_endpoint_association_arn.setter
     def vpc_endpoint_association_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcEndpointAssociationId")
     def vpc_endpoint_association_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_endpoint_association_id.setter
     def vpc_endpoint_association_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcEndpointAssociationStatuses")
     def vpc_endpoint_association_statuses(
@@ -183,12 +199,14 @@ class _VpcEndpointAssociationState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class VpcEndpointAssociation(pulumi.CustomResource):

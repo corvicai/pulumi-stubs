@@ -34,7 +34,8 @@ class GetCloudVmClustersResult:
     def project(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetCloudVmClustersResult(GetCloudVmClustersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudVmClustersResult]:
+        ...
 
 def get_cloud_vm_clusters(
     location: Optional[_builtins.str] = ...,

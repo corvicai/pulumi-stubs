@@ -55,7 +55,10 @@ class GetManagedEnvironmentPrivateEndpointConnectionResult:
 class AwaitableGetManagedEnvironmentPrivateEndpointConnectionResult(
     GetManagedEnvironmentPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedEnvironmentPrivateEndpointConnectionResult]:
+        ...
 
 def get_managed_environment_private_endpoint_connection(
     environment_name: Optional[_builtins.str] = ...,

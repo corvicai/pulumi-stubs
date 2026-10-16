@@ -61,7 +61,8 @@ class GetListenerRuleResult:
     ) -> Optional[Sequence[outputs.GetListenerRuleTransformResult]]: ...
 
 class AwaitableGetListenerRuleResult(GetListenerRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetListenerRuleResult]:
+        ...
 
 def get_listener_rule(
     actions: Optional[

@@ -45,7 +45,8 @@ class AcceptedAudiencesArgs:
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AzureSkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, AzureSkuName]]
@@ -65,17 +66,20 @@ class AzureSkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, AzureSkuName]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, AzureSkuName]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, AzureSkuName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> pulumi.Input[Union[_builtins.str, AzureSkuTier]]: ...
     @tier.setter
-    def tier(self, value: pulumi.Input[Union[_builtins.str, AzureSkuTier]]): ...
+    def tier(self, value: pulumi.Input[Union[_builtins.str, AzureSkuTier]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CalloutPolicyArgsDict(TypedDict):
     callout_type: NotRequired[pulumi.Input[Union[_builtins.str, CalloutType]]]
@@ -101,12 +105,16 @@ class CalloutPolicyArgs:
     @callout_type.setter
     def callout_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CalloutType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="calloutUriRegex")
     def callout_uri_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @callout_uri_regex.setter
-    def callout_uri_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def callout_uri_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outboundAccess")
     def outbound_access(
@@ -115,7 +123,8 @@ class CalloutPolicyArgs:
     @outbound_access.setter
     def outbound_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OutboundAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, IdentityType]]
@@ -137,7 +146,8 @@ class IdentityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, IdentityType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, IdentityType]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, IdentityType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -146,7 +156,8 @@ class IdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KeyVaultPropertiesArgsDict(TypedDict):
     key_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -168,22 +179,26 @@ class KeyVaultPropertiesArgs:
     @pulumi.getter(name="keyName")
     def key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_name.setter
-    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultUri")
     def key_vault_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_uri.setter
-    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVersion")
     def key_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_version.setter
-    def key_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userIdentity")
     def user_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_identity.setter
-    def user_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_identity(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class LanguageExtensionsListArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[Sequence[pulumi.Input[LanguageExtensionArgsDict]]]]
@@ -206,7 +221,8 @@ class LanguageExtensionsListArgs:
     def value(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[LanguageExtensionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class LanguageExtensionArgsDict(TypedDict):
     language_extension_custom_image_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -240,7 +256,8 @@ class LanguageExtensionArgs:
     @language_extension_custom_image_name.setter
     def language_extension_custom_image_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageExtensionImageName")
     def language_extension_image_name(
@@ -250,7 +267,8 @@ class LanguageExtensionArgs:
     def language_extension_image_name(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, LanguageExtensionImageName]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageExtensionName")
     def language_extension_name(
@@ -259,7 +277,8 @@ class LanguageExtensionArgs:
     @language_extension_name.setter
     def language_extension_name(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LanguageExtensionName]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class OptimizedAutoscaleArgsDict(TypedDict):
     is_enabled: pulumi.Input[_builtins.bool]
@@ -281,22 +300,26 @@ class OptimizedAutoscaleArgs:
     @pulumi.getter(name="isEnabled")
     def is_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @is_enabled.setter
-    def is_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def is_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def maximum(self) -> pulumi.Input[_builtins.int]: ...
     @maximum.setter
-    def maximum(self, value: pulumi.Input[_builtins.int]): ...
+    def maximum(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minimum(self) -> pulumi.Input[_builtins.int]: ...
     @minimum.setter
-    def minimum(self, value: pulumi.Input[_builtins.int]): ...
+    def minimum(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> pulumi.Input[_builtins.int]: ...
     @version.setter
-    def version(self, value: pulumi.Input[_builtins.int]): ...
+    def version(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStatePropertyArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -314,12 +337,14 @@ class PrivateLinkServiceConnectionStatePropertyArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TableLevelSharingPropertiesArgsDict(TypedDict):
     external_tables_to_exclude: NotRequired[
@@ -381,7 +406,8 @@ class TableLevelSharingPropertiesArgs:
     @external_tables_to_exclude.setter
     def external_tables_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalTablesToInclude")
     def external_tables_to_include(
@@ -390,7 +416,8 @@ class TableLevelSharingPropertiesArgs:
     @external_tables_to_include.setter
     def external_tables_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionsToExclude")
     def functions_to_exclude(
@@ -399,7 +426,8 @@ class TableLevelSharingPropertiesArgs:
     @functions_to_exclude.setter
     def functions_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionsToInclude")
     def functions_to_include(
@@ -408,7 +436,8 @@ class TableLevelSharingPropertiesArgs:
     @functions_to_include.setter
     def functions_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="materializedViewsToExclude")
     def materialized_views_to_exclude(
@@ -417,7 +446,8 @@ class TableLevelSharingPropertiesArgs:
     @materialized_views_to_exclude.setter
     def materialized_views_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="materializedViewsToInclude")
     def materialized_views_to_include(
@@ -426,7 +456,8 @@ class TableLevelSharingPropertiesArgs:
     @materialized_views_to_include.setter
     def materialized_views_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tablesToExclude")
     def tables_to_exclude(
@@ -435,7 +466,8 @@ class TableLevelSharingPropertiesArgs:
     @tables_to_exclude.setter
     def tables_to_exclude(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tablesToInclude")
     def tables_to_include(
@@ -444,7 +476,8 @@ class TableLevelSharingPropertiesArgs:
     @tables_to_include.setter
     def tables_to_include(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TrustedExternalTenantArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[_builtins.str]]
@@ -458,7 +491,8 @@ class TrustedExternalTenantArgs:
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VirtualNetworkConfigurationArgsDict(TypedDict):
     data_management_public_ip_id: pulumi.Input[_builtins.str]
@@ -480,19 +514,27 @@ class VirtualNetworkConfigurationArgs:
     @pulumi.getter(name="dataManagementPublicIpId")
     def data_management_public_ip_id(self) -> pulumi.Input[_builtins.str]: ...
     @data_management_public_ip_id.setter
-    def data_management_public_ip_id(self, value: pulumi.Input[_builtins.str]): ...
+    def data_management_public_ip_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enginePublicIpId")
     def engine_public_ip_id(self) -> pulumi.Input[_builtins.str]: ...
     @engine_public_ip_id.setter
-    def engine_public_ip_id(self, value: pulumi.Input[_builtins.str]): ...
+    def engine_public_ip_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> pulumi.Input[_builtins.str]: ...
     @subnet_id.setter
-    def subnet_id(self, value: pulumi.Input[_builtins.str]): ...
+    def subnet_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[Union[_builtins.str, VnetState]]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, VnetState]]]): ...
+    def state(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, VnetState]]]
+    ):  # -> None:
+        ...

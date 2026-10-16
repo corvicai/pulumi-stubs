@@ -78,7 +78,8 @@ class GetRouteResult:
     def vpc_peering_connection_id(self) -> _builtins.str: ...
 
 class AwaitableGetRouteResult(GetRouteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouteResult]:
+        ...
 
 def get_route(
     carrier_gateway_id: Optional[_builtins.str] = ...,

@@ -58,7 +58,8 @@ class GetPeerAsnResult:
     def validation_state(self) -> _builtins.str: ...
 
 class AwaitableGetPeerAsnResult(GetPeerAsnResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPeerAsnResult]:
+        ...
 
 def get_peer_asn(
     peer_asn_name: Optional[_builtins.str] = ...,

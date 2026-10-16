@@ -52,7 +52,8 @@ class GetRaiBlocklistItemResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRaiBlocklistItemResult(GetRaiBlocklistItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRaiBlocklistItemResult]:
+        ...
 
 def get_rai_blocklist_item(
     account_name: Optional[_builtins.str] = ...,

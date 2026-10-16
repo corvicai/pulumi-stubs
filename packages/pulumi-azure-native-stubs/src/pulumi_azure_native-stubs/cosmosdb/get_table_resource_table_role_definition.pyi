@@ -54,7 +54,10 @@ class GetTableResourceTableRoleDefinitionResult:
 class AwaitableGetTableResourceTableRoleDefinitionResult(
     GetTableResourceTableRoleDefinitionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTableResourceTableRoleDefinitionResult]:
+        ...
 
 def get_table_resource_table_role_definition(
     account_name: Optional[_builtins.str] = ...,

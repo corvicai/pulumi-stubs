@@ -26,17 +26,22 @@ class CentralizationRuleForOrganizationArgs:
     @pulumi.getter
     def rule(self) -> pulumi.Input[CentralizationRuleForOrganizationRuleArgs]: ...
     @rule.setter
-    def rule(self, value: pulumi.Input[CentralizationRuleForOrganizationRuleArgs]): ...
+    def rule(
+        self, value: pulumi.Input[CentralizationRuleForOrganizationRuleArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_name.setter
-    def rule_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -45,7 +50,8 @@ class CentralizationRuleForOrganizationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -55,7 +61,8 @@ class CentralizationRuleForOrganizationArgs:
     def timeouts(
         self,
         value: Optional[pulumi.Input[CentralizationRuleForOrganizationTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CentralizationRuleForOrganizationState:
@@ -78,7 +85,8 @@ class _CentralizationRuleForOrganizationState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rule(
@@ -87,17 +95,20 @@ class _CentralizationRuleForOrganizationState:
     @rule.setter
     def rule(
         self, value: Optional[pulumi.Input[CentralizationRuleForOrganizationRuleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleArn")
     def rule_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rule_arn.setter
-    def rule_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rule_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rule_name.setter
-    def rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rule_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -106,7 +117,8 @@ class _CentralizationRuleForOrganizationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -115,7 +127,8 @@ class _CentralizationRuleForOrganizationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -125,7 +138,8 @@ class _CentralizationRuleForOrganizationState:
     def timeouts(
         self,
         value: Optional[pulumi.Input[CentralizationRuleForOrganizationTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CentralizationRuleForOrganization(pulumi.CustomResource):

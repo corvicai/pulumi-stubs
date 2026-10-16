@@ -68,7 +68,8 @@ class GetDnsResolverResult:
     def virtual_network(self) -> outputs.SubResourceResponse: ...
 
 class AwaitableGetDnsResolverResult(GetDnsResolverResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnsResolverResult]:
+        ...
 
 def get_dns_resolver(
     dns_resolver_name: Optional[_builtins.str] = ...,

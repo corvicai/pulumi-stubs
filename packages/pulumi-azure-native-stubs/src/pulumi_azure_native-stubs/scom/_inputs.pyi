@@ -57,7 +57,8 @@ class AzureHybridBenefitPropertiesArgs:
     @scom_license_type.setter
     def scom_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HybridLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlServerLicenseType")
     def sql_server_license_type(
@@ -66,7 +67,8 @@ class AzureHybridBenefitPropertiesArgs:
     @sql_server_license_type.setter
     def sql_server_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HybridLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowsServerLicenseType")
     def windows_server_license_type(
@@ -75,7 +77,8 @@ class AzureHybridBenefitPropertiesArgs:
     @windows_server_license_type.setter
     def windows_server_license_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HybridLicenseType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DatabaseInstancePropertiesArgsDict(TypedDict):
     database_instance_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -89,7 +92,10 @@ class DatabaseInstancePropertiesArgs:
     @pulumi.getter(name="databaseInstanceId")
     def database_instance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_instance_id.setter
-    def database_instance_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_instance_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DomainControllerPropertiesArgsDict(TypedDict):
     dns_server: NotRequired[pulumi.Input[_builtins.str]]
@@ -109,17 +115,20 @@ class DomainControllerPropertiesArgs:
     @pulumi.getter(name="dnsServer")
     def dns_server(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_server.setter
-    def dns_server(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_server(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ouPath")
     def ou_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ou_path.setter
-    def ou_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ou_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DomainUserCredentialsArgsDict(TypedDict):
     key_vault_url: NotRequired[pulumi.Input[_builtins.str]]
@@ -139,17 +148,22 @@ class DomainUserCredentialsArgs:
     @pulumi.getter(name="keyVaultUrl")
     def key_vault_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_url.setter
-    def key_vault_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordSecret")
     def password_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password_secret.setter
-    def password_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userNameSecret")
     def user_name_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_name_secret.setter
-    def user_name_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_name_secret(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class GmsaDetailsArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -171,24 +185,30 @@ class GmsaDetailsArgs:
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gmsaAccount")
     def gmsa_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gmsa_account.setter
-    def gmsa_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gmsa_account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerIP")
     def load_balancer_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @load_balancer_ip.setter
-    def load_balancer_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def load_balancer_ip(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managementServerGroupName")
     def management_server_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @management_server_group_name.setter
     def management_server_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedIdentityArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[Union[_builtins.str, ManagedIdentityType]]]
@@ -214,7 +234,8 @@ class ManagedIdentityArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedIdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -223,7 +244,8 @@ class ManagedIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MonitoringInstancePropertiesArgsDict(TypedDict):
     azure_hybrid_benefit: NotRequired[
@@ -259,7 +281,8 @@ class MonitoringInstancePropertiesArgs:
     @azure_hybrid_benefit.setter
     def azure_hybrid_benefit(
         self, value: Optional[pulumi.Input[AzureHybridBenefitPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseInstance")
     def database_instance(
@@ -268,7 +291,8 @@ class MonitoringInstancePropertiesArgs:
     @database_instance.setter
     def database_instance(
         self, value: Optional[pulumi.Input[DatabaseInstancePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainController")
     def domain_controller(
@@ -277,7 +301,8 @@ class MonitoringInstancePropertiesArgs:
     @domain_controller.setter
     def domain_controller(
         self, value: Optional[pulumi.Input[DomainControllerPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainUserCredentials")
     def domain_user_credentials(
@@ -286,14 +311,17 @@ class MonitoringInstancePropertiesArgs:
     @domain_user_credentials.setter
     def domain_user_credentials(
         self, value: Optional[pulumi.Input[DomainUserCredentialsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gmsaDetails")
     def gmsa_details(self) -> Optional[pulumi.Input[GmsaDetailsArgs]]: ...
     @gmsa_details.setter
-    def gmsa_details(self, value: Optional[pulumi.Input[GmsaDetailsArgs]]): ...
+    def gmsa_details(self, value: Optional[pulumi.Input[GmsaDetailsArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vNetSubnetId")
     def v_net_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @v_net_subnet_id.setter
-    def v_net_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def v_net_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

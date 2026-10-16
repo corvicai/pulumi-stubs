@@ -72,7 +72,10 @@ class GetWorkloadNetworkDnsServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadNetworkDnsServiceResult(GetWorkloadNetworkDnsServiceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkloadNetworkDnsServiceResult]:
+        ...
 
 def get_workload_network_dns_service(
     dns_service_id: Optional[_builtins.str] = ...,

@@ -33,12 +33,14 @@ class FleetspaceArgs:
     @pulumi.getter(name="fleetName")
     def fleet_name(self) -> pulumi.Input[_builtins.str]: ...
     @fleet_name.setter
-    def fleet_name(self, value: pulumi.Input[_builtins.str]): ...
+    def fleet_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataRegions")
     def data_regions(
@@ -47,7 +49,8 @@ class FleetspaceArgs:
     @data_regions.setter
     def data_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fleetspaceApiKind")
     def fleetspace_api_kind(
@@ -56,12 +59,14 @@ class FleetspaceArgs:
     @fleetspace_api_kind.setter
     def fleetspace_api_kind(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FleetspaceApiKind]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fleetspaceName")
     def fleetspace_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fleetspace_name.setter
-    def fleetspace_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fleetspace_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceTier")
     def service_tier(
@@ -70,7 +75,8 @@ class FleetspaceArgs:
     @service_tier.setter
     def service_tier(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ServiceTier]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputPoolConfiguration")
     def throughput_pool_configuration(
@@ -84,7 +90,8 @@ class FleetspaceArgs:
         value: Optional[
             pulumi.Input[FleetspacePropertiesThroughputPoolConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cosmosdb:Fleetspace")
 class Fleetspace(pulumi.CustomResource):

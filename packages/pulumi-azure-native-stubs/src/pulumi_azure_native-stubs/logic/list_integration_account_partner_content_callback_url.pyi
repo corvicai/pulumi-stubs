@@ -44,7 +44,10 @@ class ListIntegrationAccountPartnerContentCallbackUrlResult:
 class AwaitableListIntegrationAccountPartnerContentCallbackUrlResult(
     ListIntegrationAccountPartnerContentCallbackUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIntegrationAccountPartnerContentCallbackUrlResult]:
+        ...
 
 def list_integration_account_partner_content_callback_url(
     integration_account_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,10 @@ class GetAppregistryAttributeGroupResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetAppregistryAttributeGroupResult(GetAppregistryAttributeGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppregistryAttributeGroupResult]:
+        ...
 
 def get_appregistry_attribute_group(
     arn: Optional[_builtins.str] = ...,

@@ -132,7 +132,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def amazon_transcribe_call_analytics_processor_configuration(
@@ -150,7 +151,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProcessorConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="amazonTranscribeProcessorConfiguration")
     def amazon_transcribe_processor_configuration(
@@ -168,7 +170,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementAmazonTranscribeProcessorConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisDataStreamSinkConfiguration")
     def kinesis_data_stream_sink_configuration(
@@ -186,7 +189,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementKinesisDataStreamSinkConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionSinkConfiguration")
     def lambda_function_sink_configuration(
@@ -204,7 +208,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementLambdaFunctionSinkConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3RecordingSinkConfiguration")
     def s3_recording_sink_configuration(
@@ -222,7 +227,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementS3RecordingSinkConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snsTopicSinkConfiguration")
     def sns_topic_sink_configuration(
@@ -240,7 +246,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementSnsTopicSinkConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsQueueSinkConfiguration")
     def sqs_queue_sink_configuration(
@@ -258,7 +265,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementSqsQueueSinkConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="voiceAnalyticsProcessorConfiguration")
     def voice_analytics_processor_configuration(
@@ -276,7 +284,8 @@ class MediaInsightsPipelineConfigurationElementArgs:
                 MediaInsightsPipelineConfigurationElementVoiceAnalyticsProcessorConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProcessorConfigurationArgsDict(
     TypedDict
@@ -332,7 +341,8 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProc
     @pulumi.getter(name="languageCode")
     def language_code(self) -> pulumi.Input[_builtins.str]: ...
     @language_code.setter
-    def language_code(self, value: pulumi.Input[_builtins.str]): ...
+    def language_code(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="callAnalyticsStreamCategories")
     def call_analytics_stream_categories(
@@ -341,19 +351,24 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProc
     @call_analytics_stream_categories.setter
     def call_analytics_stream_categories(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentIdentificationType")
     def content_identification_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_identification_type.setter
     def content_identification_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentRedactionType")
     def content_redaction_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_redaction_type.setter
-    def content_redaction_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content_redaction_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePartialResultsStabilization")
     def enable_partial_results_stabilization(
@@ -362,29 +377,40 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProc
     @enable_partial_results_stabilization.setter
     def enable_partial_results_stabilization(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterPartialResults")
     def filter_partial_results(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @filter_partial_results.setter
-    def filter_partial_results(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def filter_partial_results(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageModelName")
     def language_model_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_model_name.setter
-    def language_model_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_model_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partialResultsStability")
     def partial_results_stability(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partial_results_stability.setter
     def partial_results_stability(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="piiEntityTypes")
     def pii_entity_types(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pii_entity_types.setter
-    def pii_entity_types(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pii_entity_types(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postCallAnalyticsSettings")
     def post_call_analytics_settings(
@@ -402,24 +428,30 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProc
                 MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vocabularyFilterMethod")
     def vocabulary_filter_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vocabulary_filter_method.setter
     def vocabulary_filter_method(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vocabularyFilterName")
     def vocabulary_filter_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vocabulary_filter_name.setter
-    def vocabulary_filter_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vocabulary_filter_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vocabularyName")
     def vocabulary_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vocabulary_name.setter
-    def vocabulary_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vocabulary_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsArgsDict(
     TypedDict
@@ -443,26 +475,30 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProc
     @pulumi.getter(name="dataAccessRoleArn")
     def data_access_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @data_access_role_arn.setter
-    def data_access_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def data_access_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputLocation")
     def output_location(self) -> pulumi.Input[_builtins.str]: ...
     @output_location.setter
-    def output_location(self, value: pulumi.Input[_builtins.str]): ...
+    def output_location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentRedactionOutput")
     def content_redaction_output(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_redaction_output.setter
     def content_redaction_output(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputEncryptionKmsKeyId")
     def output_encryption_kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_encryption_kms_key_id.setter
     def output_encryption_kms_key_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementAmazonTranscribeProcessorConfigurationArgsDict(
     TypedDict
@@ -504,19 +540,24 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeProcessorConfigur
     @pulumi.getter(name="languageCode")
     def language_code(self) -> pulumi.Input[_builtins.str]: ...
     @language_code.setter
-    def language_code(self, value: pulumi.Input[_builtins.str]): ...
+    def language_code(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentIdentificationType")
     def content_identification_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_identification_type.setter
     def content_identification_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentRedactionType")
     def content_redaction_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_redaction_type.setter
-    def content_redaction_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content_redaction_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePartialResultsStabilization")
     def enable_partial_results_stabilization(
@@ -525,51 +566,70 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeProcessorConfigur
     @enable_partial_results_stabilization.setter
     def enable_partial_results_stabilization(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterPartialResults")
     def filter_partial_results(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @filter_partial_results.setter
-    def filter_partial_results(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def filter_partial_results(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageModelName")
     def language_model_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @language_model_name.setter
-    def language_model_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def language_model_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partialResultsStability")
     def partial_results_stability(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @partial_results_stability.setter
     def partial_results_stability(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="piiEntityTypes")
     def pii_entity_types(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pii_entity_types.setter
-    def pii_entity_types(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pii_entity_types(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="showSpeakerLabel")
     def show_speaker_label(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @show_speaker_label.setter
-    def show_speaker_label(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def show_speaker_label(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vocabularyFilterMethod")
     def vocabulary_filter_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vocabulary_filter_method.setter
     def vocabulary_filter_method(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vocabularyFilterName")
     def vocabulary_filter_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vocabulary_filter_name.setter
-    def vocabulary_filter_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vocabulary_filter_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vocabularyName")
     def vocabulary_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vocabulary_name.setter
-    def vocabulary_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vocabulary_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementKinesisDataStreamSinkConfigurationArgsDict(
     TypedDict
@@ -583,7 +643,8 @@ class MediaInsightsPipelineConfigurationElementKinesisDataStreamSinkConfiguratio
     @pulumi.getter(name="insightsTarget")
     def insights_target(self) -> pulumi.Input[_builtins.str]: ...
     @insights_target.setter
-    def insights_target(self, value: pulumi.Input[_builtins.str]): ...
+    def insights_target(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementLambdaFunctionSinkConfigurationArgsDict(
     TypedDict
@@ -597,7 +658,8 @@ class MediaInsightsPipelineConfigurationElementLambdaFunctionSinkConfigurationAr
     @pulumi.getter(name="insightsTarget")
     def insights_target(self) -> pulumi.Input[_builtins.str]: ...
     @insights_target.setter
-    def insights_target(self, value: pulumi.Input[_builtins.str]): ...
+    def insights_target(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementS3RecordingSinkConfigurationArgsDict(
     TypedDict
@@ -613,7 +675,8 @@ class MediaInsightsPipelineConfigurationElementS3RecordingSinkConfigurationArgs:
     @pulumi.getter
     def destination(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination.setter
-    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementSnsTopicSinkConfigurationArgsDict(
     TypedDict
@@ -627,7 +690,8 @@ class MediaInsightsPipelineConfigurationElementSnsTopicSinkConfigurationArgs:
     @pulumi.getter(name="insightsTarget")
     def insights_target(self) -> pulumi.Input[_builtins.str]: ...
     @insights_target.setter
-    def insights_target(self, value: pulumi.Input[_builtins.str]): ...
+    def insights_target(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementSqsQueueSinkConfigurationArgsDict(
     TypedDict
@@ -641,7 +705,8 @@ class MediaInsightsPipelineConfigurationElementSqsQueueSinkConfigurationArgs:
     @pulumi.getter(name="insightsTarget")
     def insights_target(self) -> pulumi.Input[_builtins.str]: ...
     @insights_target.setter
-    def insights_target(self, value: pulumi.Input[_builtins.str]): ...
+    def insights_target(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationElementVoiceAnalyticsProcessorConfigurationArgsDict(
     TypedDict
@@ -661,12 +726,16 @@ class MediaInsightsPipelineConfigurationElementVoiceAnalyticsProcessorConfigurat
     @pulumi.getter(name="speakerSearchStatus")
     def speaker_search_status(self) -> pulumi.Input[_builtins.str]: ...
     @speaker_search_status.setter
-    def speaker_search_status(self, value: pulumi.Input[_builtins.str]): ...
+    def speaker_search_status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="voiceToneAnalysisStatus")
     def voice_tone_analysis_status(self) -> pulumi.Input[_builtins.str]: ...
     @voice_tone_analysis_status.setter
-    def voice_tone_analysis_status(self, value: pulumi.Input[_builtins.str]): ...
+    def voice_tone_analysis_status(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationArgsDict(TypedDict):
     rules: pulumi.Input[
@@ -713,12 +782,14 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disabled.setter
-    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleArgsDict(
     TypedDict
@@ -766,7 +837,8 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="issueDetectionConfiguration")
     def issue_detection_configuration(
@@ -784,7 +856,8 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleArgs:
                 MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleIssueDetectionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keywordMatchConfiguration")
     def keyword_match_configuration(
@@ -802,7 +875,8 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleArgs:
                 MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleKeywordMatchConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sentimentConfiguration")
     def sentiment_configuration(
@@ -820,7 +894,8 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleArgs:
                 MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleSentimentConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleIssueDetectionConfigurationArgsDict(
     TypedDict
@@ -834,7 +909,8 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleIssueDetec
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_name.setter
-    def rule_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleKeywordMatchConfigurationArgsDict(
     TypedDict
@@ -856,17 +932,22 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleKeywordMat
     @pulumi.getter
     def keywords(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @keywords.setter
-    def keywords(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def keywords(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_name.setter
-    def rule_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def negate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate.setter
-    def negate(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleSentimentConfigurationArgsDict(
     TypedDict
@@ -888,14 +969,17 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleSentimentC
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_name.setter
-    def rule_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sentimentType")
     def sentiment_type(self) -> pulumi.Input[_builtins.str]: ...
     @sentiment_type.setter
-    def sentiment_type(self, value: pulumi.Input[_builtins.str]): ...
+    def sentiment_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timePeriod")
     def time_period(self) -> pulumi.Input[_builtins.int]: ...
     @time_period.setter
-    def time_period(self, value: pulumi.Input[_builtins.int]): ...
+    def time_period(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...

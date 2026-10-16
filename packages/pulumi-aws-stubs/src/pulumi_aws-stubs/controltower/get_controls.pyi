@@ -31,7 +31,8 @@ class GetControlsResult:
     def target_identifier(self) -> _builtins.str: ...
 
 class AwaitableGetControlsResult(GetControlsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetControlsResult]:
+        ...
 
 def get_controls(
     region: Optional[_builtins.str] = ...,

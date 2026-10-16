@@ -60,7 +60,8 @@ class GetSiteNetworkServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSiteNetworkServiceResult(GetSiteNetworkServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSiteNetworkServiceResult]:
+        ...
 
 def get_site_network_service(
     resource_group_name: Optional[_builtins.str] = ...,

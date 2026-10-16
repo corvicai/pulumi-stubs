@@ -50,7 +50,8 @@ class GetSdkResult:
     def stage_name(self) -> _builtins.str: ...
 
 class AwaitableGetSdkResult(GetSdkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSdkResult]:
+        ...
 
 def get_sdk(
     parameters: Optional[Mapping[str, _builtins.str]] = ...,

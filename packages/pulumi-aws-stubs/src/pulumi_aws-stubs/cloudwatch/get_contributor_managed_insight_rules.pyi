@@ -36,7 +36,10 @@ class GetContributorManagedInsightRulesResult:
 class AwaitableGetContributorManagedInsightRulesResult(
     GetContributorManagedInsightRulesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetContributorManagedInsightRulesResult]:
+        ...
 
 def get_contributor_managed_insight_rules(
     region: Optional[_builtins.str] = ...,

@@ -43,7 +43,8 @@ class GetTaxonomyIamPolicyResult:
     def taxonomy(self) -> _builtins.str: ...
 
 class AwaitableGetTaxonomyIamPolicyResult(GetTaxonomyIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTaxonomyIamPolicyResult]:
+        ...
 
 def get_taxonomy_iam_policy(
     project: Optional[_builtins.str] = ...,

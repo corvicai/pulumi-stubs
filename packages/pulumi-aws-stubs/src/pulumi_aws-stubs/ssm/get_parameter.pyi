@@ -55,7 +55,8 @@ class GetParameterResult:
     def with_decryption(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetParameterResult(GetParameterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetParameterResult]:
+        ...
 
 def get_parameter(
     name: Optional[_builtins.str] = ...,

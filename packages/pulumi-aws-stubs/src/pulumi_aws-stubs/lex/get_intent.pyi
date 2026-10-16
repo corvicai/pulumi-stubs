@@ -59,7 +59,8 @@ class GetIntentResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetIntentResult(GetIntentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIntentResult]:
+        ...
 
 def get_intent(
     name: Optional[_builtins.str] = ...,

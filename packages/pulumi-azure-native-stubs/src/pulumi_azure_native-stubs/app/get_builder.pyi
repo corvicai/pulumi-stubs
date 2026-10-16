@@ -66,7 +66,8 @@ class GetBuilderResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBuilderResult(GetBuilderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBuilderResult]:
+        ...
 
 def get_builder(
     builder_name: Optional[_builtins.str] = ...,

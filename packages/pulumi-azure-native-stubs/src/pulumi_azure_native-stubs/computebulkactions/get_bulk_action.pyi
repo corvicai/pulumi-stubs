@@ -60,7 +60,8 @@ class GetBulkActionResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetBulkActionResult(GetBulkActionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBulkActionResult]:
+        ...
 
 def get_bulk_action(
     location: Optional[_builtins.str] = ...,

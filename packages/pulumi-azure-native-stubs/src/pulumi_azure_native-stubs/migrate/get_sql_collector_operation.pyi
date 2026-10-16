@@ -62,7 +62,8 @@ class GetSqlCollectorOperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetSqlCollectorOperationResult(GetSqlCollectorOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlCollectorOperationResult]:
+        ...
 
 def get_sql_collector_operation(
     collector_name: Optional[_builtins.str] = ...,

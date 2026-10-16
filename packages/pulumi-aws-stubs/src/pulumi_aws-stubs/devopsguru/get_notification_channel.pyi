@@ -33,7 +33,8 @@ class GetNotificationChannelResult:
     def sns(self) -> Optional[Sequence[outputs.GetNotificationChannelSnResult]]: ...
 
 class AwaitableGetNotificationChannelResult(GetNotificationChannelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNotificationChannelResult]:
+        ...
 
 def get_notification_channel(
     filters: Optional[

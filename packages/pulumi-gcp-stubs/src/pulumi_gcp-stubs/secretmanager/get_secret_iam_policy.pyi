@@ -34,7 +34,8 @@ class GetSecretIamPolicyResult:
     def secret_id(self) -> _builtins.str: ...
 
 class AwaitableGetSecretIamPolicyResult(GetSecretIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretIamPolicyResult]:
+        ...
 
 def get_secret_iam_policy(
     project: Optional[_builtins.str] = ...,

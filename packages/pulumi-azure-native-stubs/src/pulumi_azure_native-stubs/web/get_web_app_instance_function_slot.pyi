@@ -91,7 +91,10 @@ class GetWebAppInstanceFunctionSlotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppInstanceFunctionSlotResult(GetWebAppInstanceFunctionSlotResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebAppInstanceFunctionSlotResult]:
+        ...
 
 def get_web_app_instance_function_slot(
     function_name: Optional[_builtins.str] = ...,

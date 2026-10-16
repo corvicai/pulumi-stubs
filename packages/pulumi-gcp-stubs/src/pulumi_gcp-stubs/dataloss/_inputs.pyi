@@ -860,7 +860,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigArgs:
                 PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoTypeTransformations")
     def info_type_transformations(
@@ -878,7 +879,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigArgs:
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordTransformations")
     def record_transformations(
@@ -896,7 +898,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigArgs:
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsArgsDict(
     TypedDict
@@ -943,7 +946,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformArgsDict(
     TypedDict
@@ -1012,7 +1016,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformA
                 PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformAllInfoTypesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allText")
     def all_text(
@@ -1030,7 +1035,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformA
                 PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformAllTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redactionColor")
     def redaction_color(
@@ -1048,7 +1054,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformA
                 PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformRedactionColorArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectedInfoTypes")
     def selected_info_types(
@@ -1066,7 +1073,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformA
                 PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformAllInfoTypesArgsDict(
     TypedDict
@@ -1104,17 +1112,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformR
     @pulumi.getter
     def blue(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @blue.setter
-    def blue(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def blue(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def green(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @green.setter
-    def green(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def green(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def red(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @red.setter
-    def red(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def red(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesArgsDict(
     TypedDict
@@ -1161,7 +1172,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformS
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesInfoTypeArgsDict(
     TypedDict
@@ -1191,7 +1203,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformS
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -1209,12 +1222,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformS
                 PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -1228,7 +1243,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformS
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsArgsDict(
     TypedDict
@@ -1275,7 +1291,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationArgsDict(
     TypedDict
@@ -1324,7 +1341,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoTypes")
     def info_types(
@@ -1350,7 +1368,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationInfoTypeArgsDict(
     TypedDict
@@ -1380,7 +1399,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -1398,12 +1418,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -1417,7 +1439,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationArgsDict(
     TypedDict
@@ -1558,7 +1581,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="characterMaskConfig")
     def character_mask_config(
@@ -1576,7 +1600,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoDeterministicConfig")
     def crypto_deterministic_config(
@@ -1594,7 +1619,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoHashConfig")
     def crypto_hash_config(
@@ -1612,7 +1638,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoReplaceFfxFpeConfig")
     def crypto_replace_ffx_fpe_config(
@@ -1630,7 +1657,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateShiftConfig")
     def date_shift_config(
@@ -1648,7 +1676,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fixedSizeBucketingConfig")
     def fixed_size_bucketing_config(
@@ -1666,7 +1695,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redactConfig")
     def redact_config(
@@ -1684,7 +1714,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationRedactConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceConfig")
     def replace_config(
@@ -1702,7 +1733,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceDictionaryConfig")
     def replace_dictionary_config(
@@ -1720,7 +1752,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceWithInfoTypeConfig")
     def replace_with_info_type_config(
@@ -1729,7 +1762,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @replace_with_info_type_config.setter
     def replace_with_info_type_config(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timePartConfig")
     def time_part_config(
@@ -1747,7 +1781,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationTimePartConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigArgsDict(
     TypedDict
@@ -1802,7 +1837,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketArgsDict(
     TypedDict
@@ -1853,7 +1889,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def max(
@@ -1871,7 +1908,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(
@@ -1889,7 +1927,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxArgsDict(
     TypedDict
@@ -1948,27 +1987,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -1986,12 +2032,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgsDict(
     TypedDict
@@ -2013,17 +2061,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgsDict(
     TypedDict
@@ -2047,22 +2098,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgsDict(
     TypedDict
@@ -2121,27 +2176,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -2159,12 +2221,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgsDict(
     TypedDict
@@ -2186,17 +2250,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgsDict(
     TypedDict
@@ -2220,22 +2287,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgsDict(
     TypedDict
@@ -2294,27 +2365,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -2332,12 +2410,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgsDict(
     TypedDict
@@ -2359,17 +2439,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgsDict(
     TypedDict
@@ -2393,22 +2476,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigArgsDict(
     TypedDict
@@ -2469,22 +2556,28 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maskingCharacter")
     def masking_character(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @masking_character.setter
-    def masking_character(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def masking_character(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberToMask")
     def number_to_mask(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_to_mask.setter
-    def number_to_mask(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def number_to_mask(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseOrder")
     def reverse_order(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reverse_order.setter
-    def reverse_order(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reverse_order(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreArgsDict(
     TypedDict
@@ -2504,14 +2597,18 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="charactersToSkip")
     def characters_to_skip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @characters_to_skip.setter
-    def characters_to_skip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def characters_to_skip(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commonCharactersToIgnore")
     def common_characters_to_ignore(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @common_characters_to_ignore.setter
     def common_characters_to_ignore(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigArgsDict(
     TypedDict
@@ -2570,7 +2667,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKey")
     def crypto_key(
@@ -2588,7 +2686,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateInfoType")
     def surrogate_info_type(
@@ -2606,7 +2705,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgsDict(
     TypedDict
@@ -2622,7 +2722,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgsDict(
     TypedDict
@@ -2681,7 +2782,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -2699,7 +2801,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -2717,7 +2820,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -2737,12 +2841,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -2756,7 +2862,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -2770,7 +2877,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgsDict(
     TypedDict
@@ -2800,7 +2908,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -2818,12 +2927,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -2837,7 +2948,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigArgsDict(
     TypedDict
@@ -2876,7 +2988,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgsDict(
     TypedDict
@@ -2935,7 +3048,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -2953,7 +3067,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -2971,7 +3086,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -2991,12 +3107,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -3010,7 +3128,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -3024,7 +3143,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgsDict(
     TypedDict
@@ -3076,7 +3196,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="commonAlphabet")
     def common_alphabet(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @common_alphabet.setter
-    def common_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def common_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(
@@ -3094,7 +3215,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKey")
     def crypto_key(
@@ -3112,17 +3234,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customAlphabet")
     def custom_alphabet(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_alphabet.setter
-    def custom_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def radix(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @radix.setter
-    def radix(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def radix(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateInfoType")
     def surrogate_info_type(
@@ -3140,7 +3265,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgsDict(
     TypedDict
@@ -3156,7 +3282,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgsDict(
     TypedDict
@@ -3215,7 +3342,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -3233,7 +3361,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -3251,7 +3380,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -3271,12 +3401,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -3290,7 +3422,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -3304,7 +3437,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgsDict(
     TypedDict
@@ -3334,7 +3468,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -3352,12 +3487,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -3371,7 +3508,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigArgsDict(
     TypedDict
@@ -3411,12 +3549,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="lowerBoundDays")
     def lower_bound_days(self) -> pulumi.Input[_builtins.int]: ...
     @lower_bound_days.setter
-    def lower_bound_days(self, value: pulumi.Input[_builtins.int]): ...
+    def lower_bound_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperBoundDays")
     def upper_bound_days(self) -> pulumi.Input[_builtins.int]: ...
     @upper_bound_days.setter
-    def upper_bound_days(self, value: pulumi.Input[_builtins.int]): ...
+    def upper_bound_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(
@@ -3434,7 +3574,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKey")
     def crypto_key(
@@ -3452,7 +3593,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigContextArgsDict(
     TypedDict
@@ -3466,7 +3608,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgsDict(
     TypedDict
@@ -3525,7 +3668,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -3543,7 +3687,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -3561,7 +3706,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -3581,12 +3727,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -3600,7 +3748,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -3614,7 +3763,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigArgsDict(
     TypedDict
@@ -3644,7 +3794,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="bucketSize")
     def bucket_size(self) -> pulumi.Input[_builtins.float]: ...
     @bucket_size.setter
-    def bucket_size(self, value: pulumi.Input[_builtins.float]): ...
+    def bucket_size(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lowerBound")
     def lower_bound(
@@ -3658,7 +3809,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperBound")
     def upper_bound(
@@ -3672,7 +3824,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgsDict(
     TypedDict
@@ -3692,12 +3845,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgsDict(
     TypedDict
@@ -3717,12 +3872,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationRedactConfigArgsDict(
     TypedDict
@@ -3761,7 +3918,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgsDict(
     TypedDict
@@ -3809,7 +3967,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -3827,27 +3986,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -3865,12 +4031,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
                 PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgsDict(
     TypedDict
@@ -3892,17 +4060,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgsDict(
     TypedDict
@@ -3926,22 +4097,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigArgsDict(
     TypedDict
@@ -3972,7 +4147,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgsDict(
     TypedDict
@@ -3988,7 +4164,10 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationTimePartConfigArgsDict(
     TypedDict
@@ -4004,7 +4183,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     @pulumi.getter(name="partToExtract")
     def part_to_extract(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @part_to_extract.setter
-    def part_to_extract(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def part_to_extract(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsArgsDict(
     TypedDict
@@ -4077,7 +4257,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordSuppressions")
     def record_suppressions(
@@ -4103,7 +4284,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationArgsDict(
     TypedDict
@@ -4180,7 +4362,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def condition(
@@ -4198,7 +4381,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoTypeTransformations")
     def info_type_transformations(
@@ -4216,7 +4400,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primitiveTransformation")
     def primitive_transformation(
@@ -4234,7 +4419,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionArgsDict(
     TypedDict
@@ -4273,7 +4459,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsArgsDict(
     TypedDict
@@ -4314,12 +4501,16 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logicalOperator")
     def logical_operator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @logical_operator.setter
-    def logical_operator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def logical_operator(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsArgsDict(
     TypedDict
@@ -4374,7 +4565,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionArgsDict(
     TypedDict
@@ -4417,12 +4609,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionFieldArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[_builtins.str]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[_builtins.str]): ...
+    def operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(
@@ -4440,7 +4634,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionFieldArgsDict(
     TypedDict
@@ -4456,7 +4651,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueArgsDict(
     TypedDict
@@ -4504,7 +4700,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -4522,27 +4719,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -4560,12 +4764,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueDateValueArgsDict(
     TypedDict
@@ -4587,17 +4793,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueTimeValueArgsDict(
     TypedDict
@@ -4621,22 +4830,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationFieldArgsDict(
     TypedDict
@@ -4652,7 +4865,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsArgsDict(
     TypedDict
@@ -4699,7 +4913,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationArgsDict(
     TypedDict
@@ -4748,7 +4963,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoTypes")
     def info_types(
@@ -4774,7 +4990,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationInfoTypeArgsDict(
     TypedDict
@@ -4804,7 +5021,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -4822,12 +5040,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -4841,7 +5061,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationArgsDict(
     TypedDict
@@ -4990,7 +5211,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="characterMaskConfig")
     def character_mask_config(
@@ -5008,7 +5230,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoDeterministicConfig")
     def crypto_deterministic_config(
@@ -5026,7 +5249,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoHashConfig")
     def crypto_hash_config(
@@ -5044,7 +5268,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoReplaceFfxFpeConfig")
     def crypto_replace_ffx_fpe_config(
@@ -5062,7 +5287,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateShiftConfig")
     def date_shift_config(
@@ -5080,7 +5306,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fixedSizeBucketingConfig")
     def fixed_size_bucketing_config(
@@ -5098,7 +5325,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redactConfig")
     def redact_config(
@@ -5116,7 +5344,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationRedactConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceConfig")
     def replace_config(
@@ -5134,7 +5363,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceDictionaryConfig")
     def replace_dictionary_config(
@@ -5152,7 +5382,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceWithInfoTypeConfig")
     def replace_with_info_type_config(
@@ -5170,7 +5401,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceWithInfoTypeConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timePartConfig")
     def time_part_config(
@@ -5188,7 +5420,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationTimePartConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigArgsDict(
     TypedDict
@@ -5235,7 +5468,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketArgsDict(
     TypedDict
@@ -5286,7 +5520,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def max(
@@ -5304,7 +5539,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(
@@ -5322,7 +5558,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxArgsDict(
     TypedDict
@@ -5381,27 +5618,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -5419,12 +5663,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgsDict(
     TypedDict
@@ -5446,17 +5692,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgsDict(
     TypedDict
@@ -5480,22 +5729,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgsDict(
     TypedDict
@@ -5554,27 +5807,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -5592,12 +5852,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgsDict(
     TypedDict
@@ -5619,17 +5881,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgsDict(
     TypedDict
@@ -5653,22 +5918,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgsDict(
     TypedDict
@@ -5727,27 +5996,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -5765,12 +6041,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgsDict(
     TypedDict
@@ -5792,17 +6070,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgsDict(
     TypedDict
@@ -5826,22 +6107,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigArgsDict(
     TypedDict
@@ -5902,22 +6187,28 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maskingCharacter")
     def masking_character(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @masking_character.setter
-    def masking_character(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def masking_character(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberToMask")
     def number_to_mask(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_to_mask.setter
-    def number_to_mask(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def number_to_mask(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseOrder")
     def reverse_order(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reverse_order.setter
-    def reverse_order(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reverse_order(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreArgsDict(
     TypedDict
@@ -5937,14 +6228,18 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="charactersToSkip")
     def characters_to_skip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @characters_to_skip.setter
-    def characters_to_skip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def characters_to_skip(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commonCharactersToIgnore")
     def common_characters_to_ignore(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @common_characters_to_ignore.setter
     def common_characters_to_ignore(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigArgsDict(
     TypedDict
@@ -5991,7 +6286,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateInfoType")
     def surrogate_info_type(
@@ -6005,7 +6301,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(
@@ -6023,7 +6320,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgsDict(
     TypedDict
@@ -6037,7 +6335,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgsDict(
     TypedDict
@@ -6096,7 +6395,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -6114,7 +6414,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -6132,7 +6433,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -6152,12 +6454,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -6171,7 +6475,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -6185,7 +6490,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgsDict(
     TypedDict
@@ -6215,7 +6521,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -6233,12 +6540,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -6252,7 +6561,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigArgsDict(
     TypedDict
@@ -6283,7 +6593,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgsDict(
     TypedDict
@@ -6342,7 +6653,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -6360,7 +6672,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -6378,7 +6691,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -6398,12 +6712,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -6417,7 +6733,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -6431,7 +6748,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgsDict(
     TypedDict
@@ -6488,12 +6806,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commonAlphabet")
     def common_alphabet(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @common_alphabet.setter
-    def common_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def common_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(
@@ -6511,17 +6831,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customAlphabet")
     def custom_alphabet(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_alphabet.setter
-    def custom_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def radix(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @radix.setter
-    def radix(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def radix(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateInfoType")
     def surrogate_info_type(
@@ -6539,7 +6862,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgsDict(
     TypedDict
@@ -6553,7 +6877,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgsDict(
     TypedDict
@@ -6612,7 +6937,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -6630,7 +6956,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -6648,7 +6975,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -6668,12 +6996,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -6687,7 +7017,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -6701,7 +7032,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgsDict(
     TypedDict
@@ -6731,7 +7063,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -6749,12 +7082,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -6768,7 +7103,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigArgsDict(
     TypedDict
@@ -6808,12 +7144,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="lowerBoundDays")
     def lower_bound_days(self) -> pulumi.Input[_builtins.int]: ...
     @lower_bound_days.setter
-    def lower_bound_days(self, value: pulumi.Input[_builtins.int]): ...
+    def lower_bound_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperBoundDays")
     def upper_bound_days(self) -> pulumi.Input[_builtins.int]: ...
     @upper_bound_days.setter
-    def upper_bound_days(self, value: pulumi.Input[_builtins.int]): ...
+    def upper_bound_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(
@@ -6831,7 +7169,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKey")
     def crypto_key(
@@ -6849,7 +7188,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigContextArgsDict(
     TypedDict
@@ -6863,7 +7203,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgsDict(
     TypedDict
@@ -6922,7 +7263,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -6940,7 +7282,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -6958,7 +7301,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -6978,12 +7322,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -6997,7 +7343,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -7011,7 +7358,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigArgsDict(
     TypedDict
@@ -7041,7 +7389,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="bucketSize")
     def bucket_size(self) -> pulumi.Input[_builtins.float]: ...
     @bucket_size.setter
-    def bucket_size(self, value: pulumi.Input[_builtins.float]): ...
+    def bucket_size(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lowerBound")
     def lower_bound(
@@ -7055,7 +7404,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperBound")
     def upper_bound(
@@ -7069,7 +7419,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgsDict(
     TypedDict
@@ -7089,12 +7440,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgsDict(
     TypedDict
@@ -7114,12 +7467,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationRedactConfigArgsDict(
     TypedDict
@@ -7158,7 +7513,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgsDict(
     TypedDict
@@ -7206,7 +7562,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -7224,27 +7581,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -7262,12 +7626,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgsDict(
     TypedDict
@@ -7289,17 +7655,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgsDict(
     TypedDict
@@ -7323,22 +7692,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigArgsDict(
     TypedDict
@@ -7369,7 +7742,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgsDict(
     TypedDict
@@ -7385,7 +7759,10 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceWithInfoTypeConfigArgsDict(
     TypedDict
@@ -7407,7 +7784,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="partToExtract")
     def part_to_extract(self) -> pulumi.Input[_builtins.str]: ...
     @part_to_extract.setter
-    def part_to_extract(self, value: pulumi.Input[_builtins.str]): ...
+    def part_to_extract(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationArgsDict(
     TypedDict
@@ -7546,7 +7924,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="characterMaskConfig")
     def character_mask_config(
@@ -7564,7 +7943,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCharacterMaskConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoDeterministicConfig")
     def crypto_deterministic_config(
@@ -7582,7 +7962,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoHashConfig")
     def crypto_hash_config(
@@ -7600,7 +7981,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoReplaceFfxFpeConfig")
     def crypto_replace_ffx_fpe_config(
@@ -7618,7 +8000,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateShiftConfig")
     def date_shift_config(
@@ -7636,7 +8019,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fixedSizeBucketingConfig")
     def fixed_size_bucketing_config(
@@ -7654,7 +8038,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redactConfig")
     def redact_config(
@@ -7672,7 +8057,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationRedactConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceConfig")
     def replace_config(
@@ -7690,7 +8076,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceDictionaryConfig")
     def replace_dictionary_config(
@@ -7708,7 +8095,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceDictionaryConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timePartConfig")
     def time_part_config(
@@ -7726,7 +8114,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationTimePartConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigArgsDict(
     TypedDict
@@ -7781,7 +8170,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketArgsDict(
     TypedDict
@@ -7832,7 +8222,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def max(
@@ -7850,7 +8241,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(
@@ -7868,7 +8260,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxArgsDict(
     TypedDict
@@ -7916,7 +8309,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -7934,27 +8328,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -7972,12 +8373,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgsDict(
     TypedDict
@@ -7999,17 +8402,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgsDict(
     TypedDict
@@ -8033,22 +8439,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinArgsDict(
     TypedDict
@@ -8096,7 +8506,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -8114,27 +8525,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -8152,12 +8570,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgsDict(
     TypedDict
@@ -8179,17 +8599,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgsDict(
     TypedDict
@@ -8213,22 +8636,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgsDict(
     TypedDict
@@ -8276,7 +8703,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -8294,27 +8722,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -8332,12 +8767,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgsDict(
     TypedDict
@@ -8359,17 +8796,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgsDict(
     TypedDict
@@ -8393,22 +8833,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCharacterMaskConfigArgsDict(
     TypedDict
@@ -8469,22 +8913,28 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maskingCharacter")
     def masking_character(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @masking_character.setter
-    def masking_character(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def masking_character(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberToMask")
     def number_to_mask(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_to_mask.setter
-    def number_to_mask(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def number_to_mask(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reverseOrder")
     def reverse_order(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @reverse_order.setter
-    def reverse_order(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def reverse_order(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreArgsDict(
     TypedDict
@@ -8504,14 +8954,18 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="charactersToSkip")
     def characters_to_skip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @characters_to_skip.setter
-    def characters_to_skip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def characters_to_skip(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="commonCharactersToIgnore")
     def common_characters_to_ignore(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @common_characters_to_ignore.setter
     def common_characters_to_ignore(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigArgsDict(
     TypedDict
@@ -8570,7 +9024,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKey")
     def crypto_key(
@@ -8588,7 +9043,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateInfoType")
     def surrogate_info_type(
@@ -8606,7 +9062,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgsDict(
     TypedDict
@@ -8622,7 +9079,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgsDict(
     TypedDict
@@ -8681,7 +9139,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -8699,7 +9158,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -8717,7 +9177,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -8737,12 +9198,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -8756,7 +9219,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -8770,7 +9234,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgsDict(
     TypedDict
@@ -8800,7 +9265,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -8818,12 +9284,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -8837,7 +9305,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigArgsDict(
     TypedDict
@@ -8876,7 +9345,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgsDict(
     TypedDict
@@ -8935,7 +9405,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -8953,7 +9424,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -8971,7 +9443,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -8991,12 +9464,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -9010,7 +9485,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -9024,7 +9500,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgsDict(
     TypedDict
@@ -9076,7 +9553,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="commonAlphabet")
     def common_alphabet(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @common_alphabet.setter
-    def common_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def common_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(
@@ -9094,7 +9572,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKey")
     def crypto_key(
@@ -9112,17 +9591,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customAlphabet")
     def custom_alphabet(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_alphabet.setter
-    def custom_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_alphabet(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def radix(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @radix.setter
-    def radix(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def radix(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateInfoType")
     def surrogate_info_type(
@@ -9140,7 +9622,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgsDict(
     TypedDict
@@ -9156,7 +9639,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgsDict(
     TypedDict
@@ -9215,7 +9699,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -9233,7 +9718,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -9251,7 +9737,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -9271,12 +9758,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -9290,7 +9779,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -9304,7 +9794,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgsDict(
     TypedDict
@@ -9334,7 +9825,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -9352,12 +9844,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -9371,7 +9865,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigArgsDict(
     TypedDict
@@ -9411,12 +9906,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="lowerBoundDays")
     def lower_bound_days(self) -> pulumi.Input[_builtins.int]: ...
     @lower_bound_days.setter
-    def lower_bound_days(self, value: pulumi.Input[_builtins.int]): ...
+    def lower_bound_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperBoundDays")
     def upper_bound_days(self) -> pulumi.Input[_builtins.int]: ...
     @upper_bound_days.setter
-    def upper_bound_days(self, value: pulumi.Input[_builtins.int]): ...
+    def upper_bound_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def context(
@@ -9434,7 +9931,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cryptoKey")
     def crypto_key(
@@ -9452,7 +9950,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigContextArgsDict(
     TypedDict
@@ -9468,7 +9967,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgsDict(
     TypedDict
@@ -9527,7 +10027,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transient(
@@ -9545,7 +10046,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def unwrapped(
@@ -9563,7 +10065,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgsDict(
     TypedDict
@@ -9583,12 +10086,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="cryptoKeyName")
     def crypto_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @crypto_key_name.setter
-    def crypto_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def crypto_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wrappedKey")
     def wrapped_key(self) -> pulumi.Input[_builtins.str]: ...
     @wrapped_key.setter
-    def wrapped_key(self, value: pulumi.Input[_builtins.str]): ...
+    def wrapped_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgsDict(
     TypedDict
@@ -9602,7 +10107,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgsDict(
     TypedDict
@@ -9616,7 +10122,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigArgsDict(
     TypedDict
@@ -9646,7 +10153,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="bucketSize")
     def bucket_size(self) -> pulumi.Input[_builtins.float]: ...
     @bucket_size.setter
-    def bucket_size(self, value: pulumi.Input[_builtins.float]): ...
+    def bucket_size(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lowerBound")
     def lower_bound(
@@ -9660,7 +10168,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperBound")
     def upper_bound(
@@ -9674,7 +10183,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgsDict(
     TypedDict
@@ -9722,7 +10232,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -9740,27 +10251,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -9778,12 +10296,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueArgsDict(
     TypedDict
@@ -9805,17 +10325,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueArgsDict(
     TypedDict
@@ -9839,22 +10362,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgsDict(
     TypedDict
@@ -9902,7 +10429,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -9920,27 +10448,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -9958,12 +10493,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueArgsDict(
     TypedDict
@@ -9985,17 +10522,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueArgsDict(
     TypedDict
@@ -10019,22 +10559,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationRedactConfigArgsDict(
     TypedDict
@@ -10073,7 +10617,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueArgsDict(
     TypedDict
@@ -10121,7 +10666,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -10139,27 +10685,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -10177,12 +10730,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgsDict(
     TypedDict
@@ -10204,17 +10759,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgsDict(
     TypedDict
@@ -10238,22 +10796,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceDictionaryConfigArgsDict(
     TypedDict
@@ -10292,7 +10854,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgsDict(
     TypedDict
@@ -10308,7 +10871,10 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationTimePartConfigArgsDict(
     TypedDict
@@ -10324,7 +10890,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     @pulumi.getter(name="partToExtract")
     def part_to_extract(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @part_to_extract.setter
-    def part_to_extract(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def part_to_extract(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionArgsDict(
     TypedDict
@@ -10363,7 +10930,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionArgsDict(
     TypedDict
@@ -10402,7 +10970,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsArgsDict(
     TypedDict
@@ -10443,12 +11012,16 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logicalOperator")
     def logical_operator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @logical_operator.setter
-    def logical_operator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def logical_operator(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsArgsDict(
     TypedDict
@@ -10503,7 +11076,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionArgsDict(
     TypedDict
@@ -10546,12 +11120,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
         value: pulumi.Input[
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionFieldArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[_builtins.str]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[_builtins.str]): ...
+    def operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(
@@ -10569,7 +11145,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionFieldArgsDict(
     TypedDict
@@ -10585,7 +11162,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueArgsDict(
     TypedDict
@@ -10633,7 +11211,8 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
     @pulumi.getter(name="booleanValue")
     def boolean_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @boolean_value.setter
-    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def boolean_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dateValue")
     def date_value(
@@ -10651,27 +11230,34 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueDateValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dayOfWeekValue")
     def day_of_week_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @day_of_week_value.setter
-    def day_of_week_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def day_of_week_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="floatValue")
     def float_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @float_value.setter
-    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def float_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integerValue")
     def integer_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @integer_value.setter
-    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def integer_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeValue")
     def time_value(
@@ -10689,12 +11275,14 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
                 PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueTimeValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampValue")
     def timestamp_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp_value.setter
-    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueDateValueArgsDict(
     TypedDict
@@ -10716,17 +11304,20 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
     @pulumi.getter
     def day(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @day.setter
-    def day(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def day(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @month.setter
-    def month(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def month(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @year.setter
-    def year(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def year(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueTimeValueArgsDict(
     TypedDict
@@ -10750,22 +11341,26 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
     @pulumi.getter
     def hours(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @hours.setter
-    def hours(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def hours(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @seconds.setter
-    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionArgsDict(TypedDict):
     export_data: NotRequired[
@@ -10820,7 +11415,8 @@ class PreventionDiscoveryConfigActionArgs:
     def export_data(
         self,
         value: Optional[pulumi.Input[PreventionDiscoveryConfigActionExportDataArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pubSubNotification")
     def pub_sub_notification(
@@ -10834,7 +11430,8 @@ class PreventionDiscoveryConfigActionArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigActionPubSubNotificationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishToChronicle")
     def publish_to_chronicle(
@@ -10848,7 +11445,8 @@ class PreventionDiscoveryConfigActionArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigActionPublishToChronicleArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishToDataplexCatalog")
     def publish_to_dataplex_catalog(
@@ -10862,7 +11460,8 @@ class PreventionDiscoveryConfigActionArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigActionPublishToDataplexCatalogArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishToScc")
     def publish_to_scc(
@@ -10872,7 +11471,8 @@ class PreventionDiscoveryConfigActionArgs:
     def publish_to_scc(
         self,
         value: Optional[pulumi.Input[PreventionDiscoveryConfigActionPublishToSccArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagResources")
     def tag_resources(
@@ -10882,7 +11482,8 @@ class PreventionDiscoveryConfigActionArgs:
     def tag_resources(
         self,
         value: Optional[pulumi.Input[PreventionDiscoveryConfigActionTagResourcesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionExportDataArgsDict(TypedDict):
     profile_table: NotRequired[
@@ -10921,7 +11522,8 @@ class PreventionDiscoveryConfigActionExportDataArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigActionExportDataProfileTableArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleFindingsTable")
     def sample_findings_table(
@@ -10937,7 +11539,8 @@ class PreventionDiscoveryConfigActionExportDataArgs:
                 PreventionDiscoveryConfigActionExportDataSampleFindingsTableArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionExportDataProfileTableArgsDict(TypedDict):
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -10957,17 +11560,20 @@ class PreventionDiscoveryConfigActionExportDataProfileTableArgs:
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset_id.setter
-    def dataset_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableId")
     def table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_id.setter
-    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionExportDataSampleFindingsTableArgsDict(TypedDict):
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -10987,17 +11593,20 @@ class PreventionDiscoveryConfigActionExportDataSampleFindingsTableArgs:
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset_id.setter
-    def dataset_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableId")
     def table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_id.setter
-    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionPubSubNotificationArgsDict(TypedDict):
     detail_of_message: NotRequired[pulumi.Input[_builtins.str]]
@@ -11027,12 +11636,16 @@ class PreventionDiscoveryConfigActionPubSubNotificationArgs:
     @pulumi.getter(name="detailOfMessage")
     def detail_of_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @detail_of_message.setter
-    def detail_of_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def detail_of_message(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def event(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event.setter
-    def event(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pubsubCondition")
     def pubsub_condition(
@@ -11050,12 +11663,14 @@ class PreventionDiscoveryConfigActionPubSubNotificationArgs:
                 PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @topic.setter
-    def topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def topic(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionArgsDict(
     TypedDict
@@ -11094,7 +11709,8 @@ class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionArgs:
                 PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpressionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpressionsArgsDict(
     TypedDict
@@ -11151,12 +11767,16 @@ class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpression
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logicalOperator")
     def logical_operator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @logical_operator.setter
-    def logical_operator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def logical_operator(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpressionsConditionArgsDict(
     TypedDict
@@ -11176,14 +11796,18 @@ class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpression
     @pulumi.getter(name="minimumRiskScore")
     def minimum_risk_score(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @minimum_risk_score.setter
-    def minimum_risk_score(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def minimum_risk_score(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumSensitivityScore")
     def minimum_sensitivity_score(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @minimum_sensitivity_score.setter
     def minimum_sensitivity_score(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionPublishToChronicleArgsDict(TypedDict): ...
 
@@ -11241,7 +11865,10 @@ class PreventionDiscoveryConfigActionTagResourcesArgs:
     @pulumi.getter(name="lowerDataRiskToLow")
     def lower_data_risk_to_low(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @lower_data_risk_to_low.setter
-    def lower_data_risk_to_low(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def lower_data_risk_to_low(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profileGenerationsToTags")
     def profile_generations_to_tags(
@@ -11250,7 +11877,8 @@ class PreventionDiscoveryConfigActionTagResourcesArgs:
     @profile_generations_to_tags.setter
     def profile_generations_to_tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagConditions")
     def tag_conditions(
@@ -11276,7 +11904,8 @@ class PreventionDiscoveryConfigActionTagResourcesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionTagResourcesTagConditionArgsDict(TypedDict):
     sensitivity_score: NotRequired[
@@ -11319,7 +11948,8 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionArgs:
                 PreventionDiscoveryConfigActionTagResourcesTagConditionSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(
@@ -11333,7 +11963,8 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigActionTagResourcesTagConditionTagArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionTagResourcesTagConditionSensitivityScoreArgsDict(
     TypedDict
@@ -11347,7 +11978,8 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionSensitivityScoreArg
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigActionTagResourcesTagConditionTagArgsDict(TypedDict):
     namespaced_value: NotRequired[pulumi.Input[_builtins.str]]
@@ -11361,7 +11993,10 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionTagArgs:
     @pulumi.getter(name="namespacedValue")
     def namespaced_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespaced_value.setter
-    def namespaced_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespaced_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigErrorArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[PreventionDiscoveryConfigErrorDetailsArgsDict]]
@@ -11385,12 +12020,14 @@ class PreventionDiscoveryConfigErrorArgs:
     @details.setter
     def details(
         self, value: Optional[pulumi.Input[PreventionDiscoveryConfigErrorDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp.setter
-    def timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigErrorDetailsArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
@@ -11416,7 +12053,8 @@ class PreventionDiscoveryConfigErrorDetailsArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def details(
@@ -11432,12 +12070,14 @@ class PreventionDiscoveryConfigErrorDetailsArgs:
                 Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message.setter
-    def message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigOrgConfigArgsDict(TypedDict):
     location: NotRequired[
@@ -11464,12 +12104,14 @@ class PreventionDiscoveryConfigOrgConfigArgs:
     def location(
         self,
         value: Optional[pulumi.Input[PreventionDiscoveryConfigOrgConfigLocationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigOrgConfigLocationArgsDict(TypedDict):
     folder_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11487,12 +12129,14 @@ class PreventionDiscoveryConfigOrgConfigLocationArgs:
     @pulumi.getter(name="folderId")
     def folder_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @folder_id.setter
-    def folder_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def folder_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationId")
     def organization_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization_id.setter
-    def organization_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def organization_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigOtherCloudStartingLocationArgsDict(TypedDict):
     aws_location: NotRequired[
@@ -11527,7 +12171,8 @@ class PreventionDiscoveryConfigOtherCloudStartingLocationArgs:
                 PreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationArgsDict(TypedDict):
     account_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11545,14 +12190,16 @@ class PreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationArgs:
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allAssetInventoryAssets")
     def all_asset_inventory_assets(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @all_asset_inventory_assets.setter
     def all_asset_inventory_assets(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetArgsDict(TypedDict):
     big_query_target: NotRequired[
@@ -11603,7 +12250,8 @@ class PreventionDiscoveryConfigTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudSqlTarget")
     def cloud_sql_target(
@@ -11615,7 +12263,8 @@ class PreventionDiscoveryConfigTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetCloudSqlTargetArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudStorageTarget")
     def cloud_storage_target(
@@ -11629,7 +12278,8 @@ class PreventionDiscoveryConfigTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetCloudStorageTargetArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="otherCloudTarget")
     def other_cloud_target(
@@ -11643,7 +12293,8 @@ class PreventionDiscoveryConfigTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetOtherCloudTargetArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretsTarget")
     def secrets_target(
@@ -11653,7 +12304,8 @@ class PreventionDiscoveryConfigTargetArgs:
     def secrets_target(
         self,
         value: Optional[pulumi.Input[PreventionDiscoveryConfigTargetSecretsTargetArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetArgsDict(TypedDict):
     cadence: NotRequired[
@@ -11700,7 +12352,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetCadenceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -11714,7 +12367,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetConditionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disabled(
@@ -11728,7 +12382,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetDisabledArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -11742,7 +12397,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetFilterArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceArgsDict(TypedDict):
     inspect_template_modified_cadence: NotRequired[
@@ -11799,7 +12455,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetCadenceInspectTemplateModifiedCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaModifiedCadence")
     def schema_modified_cadence(
@@ -11817,7 +12474,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetCadenceSchemaModifiedCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableModifiedCadence")
     def table_modified_cadence(
@@ -11835,7 +12493,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetCadenceTableModifiedCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceInspectTemplateModifiedCadenceArgsDict(
     TypedDict
@@ -11851,7 +12510,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceInspectTemplateModifie
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @frequency.setter
-    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceSchemaModifiedCadenceArgsDict(
     TypedDict
@@ -11871,7 +12531,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceSchemaModifiedCadenceA
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @frequency.setter
-    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -11880,7 +12541,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceSchemaModifiedCadenceA
     @types.setter
     def types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceTableModifiedCadenceArgsDict(
     TypedDict
@@ -11900,7 +12562,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceTableModifiedCadenceAr
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @frequency.setter
-    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -11909,7 +12572,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceTableModifiedCadenceAr
     @types.setter
     def types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetConditionsArgsDict(TypedDict):
     created_after: NotRequired[pulumi.Input[_builtins.str]]
@@ -11947,7 +12611,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsArgs:
     @pulumi.getter(name="createdAfter")
     def created_after(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_after.setter
-    def created_after(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_after(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orConditions")
     def or_conditions(
@@ -11965,12 +12630,14 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetConditionsOrConditionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="typeCollection")
     def type_collection(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type_collection.setter
-    def type_collection(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type_collection(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -11986,7 +12653,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetConditionsTypesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetConditionsOrConditionsArgsDict(
     TypedDict
@@ -12006,12 +12674,14 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsOrConditionsArgs:
     @pulumi.getter(name="minAge")
     def min_age(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_age.setter
-    def min_age(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_age(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minRowCount")
     def min_row_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @min_row_count.setter
-    def min_row_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def min_row_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetConditionsTypesArgsDict(TypedDict):
     types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -12031,7 +12701,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsTypesArgs:
     @types.setter
     def types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetDisabledArgsDict(TypedDict): ...
 
@@ -12088,7 +12759,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetFilterOtherTablesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableReference")
     def table_reference(
@@ -12106,7 +12778,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetFilterTableReferenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -12120,7 +12793,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterOtherTablesArgsDict(
     TypedDict
@@ -12150,17 +12824,20 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTableReferenceArgs:
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_id.setter
-    def dataset_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableId")
     def table_id(self) -> pulumi.Input[_builtins.str]: ...
     @table_id.setter
-    def table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def table_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesArgsDict(TypedDict):
     include_regexes: NotRequired[
@@ -12197,7 +12874,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesArgs:
                 PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesArgsDict(
     TypedDict
@@ -12252,7 +12930,8 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesArg
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesPatternArgsDict(
     TypedDict
@@ -12274,17 +12953,24 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesPat
     @pulumi.getter(name="datasetIdRegex")
     def dataset_id_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset_id_regex.setter
-    def dataset_id_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset_id_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectIdRegex")
     def project_id_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id_regex.setter
-    def project_id_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableIdRegex")
     def table_id_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_id_regex.setter
-    def table_id_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_id_regex(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetArgsDict(TypedDict):
     filter: pulumi.Input[PreventionDiscoveryConfigTargetCloudSqlTargetFilterArgsDict]
@@ -12327,7 +13013,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetArgs:
     def filter(
         self,
         value: pulumi.Input[PreventionDiscoveryConfigTargetCloudSqlTargetFilterArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -12341,7 +13028,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetCloudSqlTargetConditionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disabled(
@@ -12355,7 +13043,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetCloudSqlTargetDisabledArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationCadence")
     def generation_cadence(
@@ -12371,7 +13060,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetArgs:
                 PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetConditionsArgsDict(TypedDict):
     database_engines: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -12395,7 +13085,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetConditionsArgs:
     @database_engines.setter
     def database_engines(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -12404,7 +13095,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetConditionsArgs:
     @types.setter
     def types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetDisabledArgsDict(TypedDict): ...
 
@@ -12461,7 +13153,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterArgs:
                 PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseResourceReference")
     def database_resource_reference(
@@ -12479,7 +13172,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterArgs:
                 PreventionDiscoveryConfigTargetCloudSqlTargetFilterDatabaseResourceReferenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def others(
@@ -12493,7 +13187,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetCloudSqlTargetFilterOthersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionArgsDict(TypedDict):
     include_regexes: NotRequired[
@@ -12530,7 +13225,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionArgs:
                 PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexesArgsDict(
     TypedDict
@@ -12585,7 +13281,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexe
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexesPatternArgsDict(
     TypedDict
@@ -12609,24 +13306,30 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexe
     @pulumi.getter(name="databaseRegex")
     def database_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_regex.setter
-    def database_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_regex(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseResourceNameRegex")
     def database_resource_name_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_resource_name_regex.setter
     def database_resource_name_regex(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceRegex")
     def instance_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_regex.setter
-    def instance_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_regex(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectIdRegex")
     def project_id_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id_regex.setter
-    def project_id_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterDatabaseResourceReferenceArgsDict(
     TypedDict
@@ -12650,22 +13353,26 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterDatabaseResourceReferen
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseResource")
     def database_resource(self) -> pulumi.Input[_builtins.str]: ...
     @database_resource.setter
-    def database_resource(self, value: pulumi.Input[_builtins.str]): ...
+    def database_resource(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instance(self) -> pulumi.Input[_builtins.str]: ...
     @instance.setter
-    def instance(self, value: pulumi.Input[_builtins.str]): ...
+    def instance(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> pulumi.Input[_builtins.str]: ...
     @project_id.setter
-    def project_id(self, value: pulumi.Input[_builtins.str]): ...
+    def project_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterOthersArgsDict(TypedDict): ...
 
@@ -12720,12 +13427,16 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceArgs:
                 PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshFrequency")
     def refresh_frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_frequency.setter
-    def refresh_frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_frequency(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaModifiedCadence")
     def schema_modified_cadence(
@@ -12743,7 +13454,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceArgs:
                 PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceSchemaModifiedCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceArgsDict(
     TypedDict
@@ -12757,7 +13469,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceInspectTempl
     @pulumi.getter
     def frequency(self) -> pulumi.Input[_builtins.str]: ...
     @frequency.setter
-    def frequency(self, value: pulumi.Input[_builtins.str]): ...
+    def frequency(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceSchemaModifiedCadenceArgsDict(
     TypedDict
@@ -12777,7 +13490,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceSchemaModifi
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @frequency.setter
-    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -12786,7 +13500,8 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceSchemaModifi
     @types.setter
     def types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetArgsDict(TypedDict):
     filter: pulumi.Input[
@@ -12839,7 +13554,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetArgs:
         value: pulumi.Input[
             PreventionDiscoveryConfigTargetCloudStorageTargetFilterArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -12855,7 +13571,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetConditionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disabled(
@@ -12869,7 +13586,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetCloudStorageTargetDisabledArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationCadence")
     def generation_cadence(
@@ -12887,7 +13605,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsArgsDict(TypedDict):
     cloud_storage_conditions: NotRequired[
@@ -12928,17 +13647,20 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetConditionsCloudStorageConditionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAfter")
     def created_after(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_after.setter
-    def created_after(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_after(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minAge")
     def min_age(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_age.setter
-    def min_age(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_age(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsCloudStorageConditionsArgsDict(
     TypedDict
@@ -12970,7 +13692,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsCloudStorageCon
     @included_bucket_attributes.setter
     def included_bucket_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedObjectAttributes")
     def included_object_attributes(
@@ -12979,7 +13702,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsCloudStorageCon
     @included_object_attributes.setter
     def included_object_attributes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetDisabledArgsDict(TypedDict): ...
 
@@ -13042,7 +13766,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetFilterCloudStorageResourceReferenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def collection(
@@ -13060,7 +13785,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def others(
@@ -13076,7 +13802,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetFilterOthersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCloudStorageResourceReferenceArgsDict(
     TypedDict
@@ -13096,12 +13823,14 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCloudStorageResourc
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionArgsDict(
     TypedDict
@@ -13150,7 +13879,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeTags")
     def include_tags(
@@ -13168,7 +13898,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTagsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesArgsDict(
     TypedDict
@@ -13223,7 +13954,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRe
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesPatternArgsDict(
     TypedDict
@@ -13262,7 +13994,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRe
                 PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesPatternCloudStorageRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesPatternCloudStorageRegexArgsDict(
     TypedDict
@@ -13282,12 +14015,18 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRe
     @pulumi.getter(name="bucketNameRegex")
     def bucket_name_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name_regex.setter
-    def bucket_name_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectIdRegex")
     def project_id_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id_regex.setter
-    def project_id_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTagsArgsDict(
     TypedDict
@@ -13342,7 +14081,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTa
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTagsTagFilterArgsDict(
     TypedDict
@@ -13362,12 +14102,18 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTa
     @pulumi.getter(name="namespacedTagKey")
     def namespaced_tag_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespaced_tag_key.setter
-    def namespaced_tag_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespaced_tag_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespacedTagValue")
     def namespaced_tag_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespaced_tag_value.setter
-    def namespaced_tag_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespaced_tag_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterOthersArgsDict(
     TypedDict
@@ -13416,12 +14162,16 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceArgs:
                 PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshFrequency")
     def refresh_frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_frequency.setter
-    def refresh_frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_frequency(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadenceArgsDict(
     TypedDict
@@ -13437,7 +14187,8 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceInspectT
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @frequency.setter
-    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetArgsDict(TypedDict):
     filter: pulumi.Input[PreventionDiscoveryConfigTargetOtherCloudTargetFilterArgsDict]
@@ -13490,7 +14241,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetArgs:
     def filter(
         self,
         value: pulumi.Input[PreventionDiscoveryConfigTargetOtherCloudTargetFilterArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -13504,7 +14256,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetOtherCloudTargetConditionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSourceType")
     def data_source_type(
@@ -13520,7 +14273,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetDataSourceTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def disabled(
@@ -13534,7 +14288,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigTargetOtherCloudTargetDisabledArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationCadence")
     def generation_cadence(
@@ -13552,7 +14307,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsArgsDict(TypedDict):
     amazon_s3_bucket_conditions: NotRequired[
@@ -13591,12 +14347,14 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetConditionsAmazonS3BucketConditionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minAge")
     def min_age(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_age.setter
-    def min_age(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_age(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsAmazonS3BucketConditionsArgsDict(
     TypedDict
@@ -13626,7 +14384,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsAmazonS3BucketCon
     @bucket_types.setter
     def bucket_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectStorageClasses")
     def object_storage_classes(
@@ -13635,7 +14394,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsAmazonS3BucketCon
     @object_storage_classes.setter
     def object_storage_classes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetDataSourceTypeArgsDict(TypedDict):
     data_source: NotRequired[pulumi.Input[_builtins.str]]
@@ -13649,7 +14409,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetDataSourceTypeArgs:
     @pulumi.getter(name="dataSource")
     def data_source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_source.setter
-    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetDisabledArgsDict(TypedDict): ...
 
@@ -13712,7 +14473,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def others(
@@ -13728,7 +14490,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterOthersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleResource")
     def single_resource(
@@ -13746,7 +14509,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionArgsDict(
     TypedDict
@@ -13785,7 +14549,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesArgsDict(
     TypedDict
@@ -13840,7 +14605,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternArgsDict(
     TypedDict
@@ -13879,7 +14645,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternAmazonS3BucketRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternAmazonS3BucketRegexArgsDict(
     TypedDict
@@ -13920,12 +14687,16 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternAmazonS3BucketRegexAwsAccountRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketNameRegex")
     def bucket_name_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name_regex.setter
-    def bucket_name_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternAmazonS3BucketRegexAwsAccountRegexArgsDict(
     TypedDict
@@ -13941,7 +14712,10 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
     @pulumi.getter(name="accountIdRegex")
     def account_id_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id_regex.setter
-    def account_id_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterOthersArgsDict(
     TypedDict
@@ -13988,7 +14762,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS3BucketArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS3BucketArgsDict(
     TypedDict
@@ -14029,12 +14804,14 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS
                 PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS3BucketAwsAccountArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS3BucketAwsAccountArgsDict(
     TypedDict
@@ -14050,7 +14827,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceArgsDict(
     TypedDict
@@ -14091,12 +14869,16 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceArgs:
                 PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceInspectTemplateModifiedCadenceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshFrequency")
     def refresh_frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @refresh_frequency.setter
-    def refresh_frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def refresh_frequency(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceInspectTemplateModifiedCadenceArgsDict(
     TypedDict
@@ -14112,7 +14894,8 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceInspectTem
     @pulumi.getter
     def frequency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @frequency.setter
-    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def frequency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionDiscoveryConfigTargetSecretsTargetArgsDict(TypedDict): ...
 
@@ -14198,7 +14981,8 @@ class PreventionInspectTemplateInspectConfigArgs:
     @content_options.setter
     def content_options(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customInfoTypes")
     def custom_info_types(
@@ -14222,17 +15006,22 @@ class PreventionInspectTemplateInspectConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeInfoTypes")
     def exclude_info_types(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_info_types.setter
-    def exclude_info_types(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def exclude_info_types(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeQuote")
     def include_quote(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_quote.setter
-    def include_quote(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_quote(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoTypes")
     def info_types(
@@ -14252,7 +15041,8 @@ class PreventionInspectTemplateInspectConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def limits(
@@ -14262,12 +15052,14 @@ class PreventionInspectTemplateInspectConfigArgs:
     def limits(
         self,
         value: Optional[pulumi.Input[PreventionInspectTemplateInspectConfigLimitsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minLikelihood")
     def min_likelihood(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_likelihood.setter
-    def min_likelihood(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_likelihood(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleSets")
     def rule_sets(
@@ -14287,7 +15079,8 @@ class PreventionInspectTemplateInspectConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeArgsDict(TypedDict):
     info_type: pulumi.Input[
@@ -14366,7 +15159,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeArgs:
         value: pulumi.Input[
             PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dictionary(
@@ -14382,17 +15176,20 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionType")
     def exclusion_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @exclusion_type.setter
-    def exclusion_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def exclusion_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def likelihood(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @likelihood.setter
-    def likelihood(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def likelihood(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regex(
@@ -14406,7 +15203,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeArgs:
         value: Optional[
             pulumi.Input[PreventionInspectTemplateInspectConfigCustomInfoTypeRegexArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -14424,7 +15222,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigCustomInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storedType")
     def stored_type(
@@ -14440,7 +15239,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigCustomInfoTypeStoredTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateType")
     def surrogate_type(
@@ -14458,7 +15258,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigCustomInfoTypeSurrogateTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryArgsDict(TypedDict):
     cloud_storage_path: NotRequired[
@@ -14505,7 +15306,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryArgs:
                 PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryCloudStoragePathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordList")
     def word_list(
@@ -14523,7 +15325,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryArgs:
                 PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryWordListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryCloudStoragePathArgsDict(
     TypedDict
@@ -14537,7 +15340,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryCloudStorage
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryWordListArgsDict(
     TypedDict
@@ -14553,7 +15357,10 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryWordListArgs
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -14581,7 +15388,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -14599,12 +15407,14 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -14618,7 +15428,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeSensitivitySco
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeRegexArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
@@ -14638,7 +15449,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeRegexArgs:
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIndexes")
     def group_indexes(
@@ -14647,7 +15459,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeRegexArgs:
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -14661,7 +15474,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeSensitivityScoreArgs:
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeStoredTypeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -14673,7 +15487,8 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeStoredTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeSurrogateTypeArgsDict(
     TypedDict
@@ -14709,7 +15524,8 @@ class PreventionInspectTemplateInspectConfigInfoTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -14725,12 +15541,14 @@ class PreventionInspectTemplateInspectConfigInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigInfoTypeSensitivityScoreArgsDict(TypedDict):
     score: pulumi.Input[_builtins.str]
@@ -14742,7 +15560,8 @@ class PreventionInspectTemplateInspectConfigInfoTypeSensitivityScoreArgs:
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigLimitsArgsDict(TypedDict):
     max_findings_per_item: pulumi.Input[_builtins.int]
@@ -14778,12 +15597,14 @@ class PreventionInspectTemplateInspectConfigLimitsArgs:
     @pulumi.getter(name="maxFindingsPerItem")
     def max_findings_per_item(self) -> pulumi.Input[_builtins.int]: ...
     @max_findings_per_item.setter
-    def max_findings_per_item(self, value: pulumi.Input[_builtins.int]): ...
+    def max_findings_per_item(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxFindingsPerRequest")
     def max_findings_per_request(self) -> pulumi.Input[_builtins.int]: ...
     @max_findings_per_request.setter
-    def max_findings_per_request(self, value: pulumi.Input[_builtins.int]): ...
+    def max_findings_per_request(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxFindingsPerInfoTypes")
     def max_findings_per_info_types(
@@ -14809,7 +15630,8 @@ class PreventionInspectTemplateInspectConfigLimitsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeArgsDict(
     TypedDict
@@ -14837,7 +15659,8 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeArgs:
     @pulumi.getter(name="maxFindings")
     def max_findings(self) -> pulumi.Input[_builtins.int]: ...
     @max_findings.setter
-    def max_findings(self, value: pulumi.Input[_builtins.int]): ...
+    def max_findings(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoType")
     def info_type(
@@ -14855,7 +15678,8 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeArgsDict(
     TypedDict
@@ -14885,7 +15709,8 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -14903,12 +15728,14 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
                 PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -14922,7 +15749,8 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetArgsDict(TypedDict):
     info_types: pulumi.Input[
@@ -14969,7 +15797,8 @@ class PreventionInspectTemplateInspectConfigRuleSetArgs:
                 pulumi.Input[PreventionInspectTemplateInspectConfigRuleSetInfoTypeArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -14985,7 +15814,8 @@ class PreventionInspectTemplateInspectConfigRuleSetArgs:
                 pulumi.Input[PreventionInspectTemplateInspectConfigRuleSetRuleArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetInfoTypeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -15013,7 +15843,8 @@ class PreventionInspectTemplateInspectConfigRuleSetInfoTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -15031,12 +15862,14 @@ class PreventionInspectTemplateInspectConfigRuleSetInfoTypeArgs:
                 PreventionInspectTemplateInspectConfigRuleSetInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -15050,7 +15883,8 @@ class PreventionInspectTemplateInspectConfigRuleSetInfoTypeSensitivityScoreArgs:
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleArgsDict(TypedDict):
     exclusion_rule: NotRequired[
@@ -15095,7 +15929,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleArgs:
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hotwordRule")
     def hotword_rule(
@@ -15111,7 +15946,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleArgs:
                 PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgsDict(TypedDict):
     matching_type: pulumi.Input[_builtins.str]
@@ -15167,7 +16003,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgs:
     @pulumi.getter(name="matchingType")
     def matching_type(self) -> pulumi.Input[_builtins.str]: ...
     @matching_type.setter
-    def matching_type(self, value: pulumi.Input[_builtins.str]): ...
+    def matching_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dictionary(
@@ -15185,7 +16022,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeByHotword")
     def exclude_by_hotword(
@@ -15203,7 +16041,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeInfoTypes")
     def exclude_info_types(
@@ -15221,7 +16060,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regex(
@@ -15239,7 +16079,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryArgsDict(
     TypedDict
@@ -15288,7 +16129,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryAr
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryCloudStoragePathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordList")
     def word_list(
@@ -15306,7 +16148,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryAr
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryCloudStoragePathArgsDict(
     TypedDict
@@ -15320,7 +16163,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryCl
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgsDict(
     TypedDict
@@ -15336,7 +16180,10 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryWo
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordArgsDict(
     TypedDict
@@ -15373,7 +16220,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
         value: pulumi.Input[
             PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordHotwordRegexArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def proximity(
@@ -15387,7 +16235,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
         value: pulumi.Input[
             PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordHotwordRegexArgsDict(
     TypedDict
@@ -15409,7 +16258,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIndexes")
     def group_indexes(
@@ -15418,7 +16268,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgsDict(
     TypedDict
@@ -15438,12 +16289,14 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
     @pulumi.getter(name="windowAfter")
     def window_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_after.setter
-    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowBefore")
     def window_before(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_before.setter
-    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesArgsDict(
     TypedDict
@@ -15490,7 +16343,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoT
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeArgsDict(
     TypedDict
@@ -15520,7 +16374,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoT
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -15538,12 +16393,14 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoT
                 PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -15557,7 +16414,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoT
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleRegexArgsDict(
     TypedDict
@@ -15579,7 +16437,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleRegexArgs:
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIndexes")
     def group_indexes(
@@ -15588,7 +16447,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleRegexArgs:
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgsDict(TypedDict):
     hotword_regex: pulumi.Input[
@@ -15629,7 +16489,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgs:
         value: pulumi.Input[
             PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleHotwordRegexArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="likelihoodAdjustment")
     def likelihood_adjustment(
@@ -15643,7 +16504,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgs:
         value: pulumi.Input[
             PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleLikelihoodAdjustmentArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def proximity(
@@ -15657,7 +16519,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgs:
         value: pulumi.Input[
             PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleProximityArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleHotwordRegexArgsDict(
     TypedDict
@@ -15679,7 +16542,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleHotwordRegexAr
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIndexes")
     def group_indexes(
@@ -15688,7 +16552,8 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleHotwordRegexAr
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleLikelihoodAdjustmentArgsDict(
     TypedDict
@@ -15708,12 +16573,18 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleLikelihoodAdju
     @pulumi.getter(name="fixedLikelihood")
     def fixed_likelihood(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fixed_likelihood.setter
-    def fixed_likelihood(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fixed_likelihood(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relativeLikelihood")
     def relative_likelihood(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @relative_likelihood.setter
-    def relative_likelihood(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def relative_likelihood(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleProximityArgsDict(
     TypedDict
@@ -15733,12 +16604,14 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleProximityArgs:
     @pulumi.getter(name="windowAfter")
     def window_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_after.setter
-    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowBefore")
     def window_before(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_before.setter
-    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobArgsDict(TypedDict):
     storage_config: pulumi.Input[PreventionJobTriggerInspectJobStorageConfigArgsDict]
@@ -15776,7 +16649,8 @@ class PreventionJobTriggerInspectJobArgs:
     @storage_config.setter
     def storage_config(
         self, value: pulumi.Input[PreventionJobTriggerInspectJobStorageConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def actions(
@@ -15792,7 +16666,8 @@ class PreventionJobTriggerInspectJobArgs:
                 Sequence[pulumi.Input[PreventionJobTriggerInspectJobActionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inspectConfig")
     def inspect_config(
@@ -15802,12 +16677,16 @@ class PreventionJobTriggerInspectJobArgs:
     def inspect_config(
         self,
         value: Optional[pulumi.Input[PreventionJobTriggerInspectJobInspectConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inspectTemplateName")
     def inspect_template_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @inspect_template_name.setter
-    def inspect_template_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def inspect_template_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionArgsDict(TypedDict):
     deidentify: NotRequired[
@@ -15884,7 +16763,8 @@ class PreventionJobTriggerInspectJobActionArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobActionDeidentifyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobNotificationEmails")
     def job_notification_emails(
@@ -15898,7 +16778,8 @@ class PreventionJobTriggerInspectJobActionArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobActionJobNotificationEmailsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pubSub")
     def pub_sub(
@@ -15908,7 +16789,8 @@ class PreventionJobTriggerInspectJobActionArgs:
     def pub_sub(
         self,
         value: Optional[pulumi.Input[PreventionJobTriggerInspectJobActionPubSubArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishFindingsToCloudDataCatalog")
     @_utilities.deprecated(...)
@@ -15927,7 +16809,8 @@ class PreventionJobTriggerInspectJobActionArgs:
                 PreventionJobTriggerInspectJobActionPublishFindingsToCloudDataCatalogArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishFindingsToDataplexCatalog")
     def publish_findings_to_dataplex_catalog(
@@ -15945,7 +16828,8 @@ class PreventionJobTriggerInspectJobActionArgs:
                 PreventionJobTriggerInspectJobActionPublishFindingsToDataplexCatalogArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishSummaryToCscc")
     def publish_summary_to_cscc(
@@ -15959,7 +16843,8 @@ class PreventionJobTriggerInspectJobActionArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobActionPublishSummaryToCsccArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publishToStackdriver")
     def publish_to_stackdriver(
@@ -15973,7 +16858,8 @@ class PreventionJobTriggerInspectJobActionArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobActionPublishToStackdriverArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="saveFindings")
     def save_findings(
@@ -15987,7 +16873,8 @@ class PreventionJobTriggerInspectJobActionArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobActionSaveFindingsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionDeidentifyArgsDict(TypedDict):
     cloud_storage_output: pulumi.Input[_builtins.str]
@@ -16029,7 +16916,8 @@ class PreventionJobTriggerInspectJobActionDeidentifyArgs:
     @pulumi.getter(name="cloudStorageOutput")
     def cloud_storage_output(self) -> pulumi.Input[_builtins.str]: ...
     @cloud_storage_output.setter
-    def cloud_storage_output(self, value: pulumi.Input[_builtins.str]): ...
+    def cloud_storage_output(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileTypesToTransforms")
     def file_types_to_transforms(
@@ -16038,7 +16926,8 @@ class PreventionJobTriggerInspectJobActionDeidentifyArgs:
     @file_types_to_transforms.setter
     def file_types_to_transforms(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transformationConfig")
     def transformation_config(
@@ -16056,7 +16945,8 @@ class PreventionJobTriggerInspectJobActionDeidentifyArgs:
                 PreventionJobTriggerInspectJobActionDeidentifyTransformationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transformationDetailsStorageConfig")
     def transformation_details_storage_config(
@@ -16074,7 +16964,8 @@ class PreventionJobTriggerInspectJobActionDeidentifyArgs:
                 PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionDeidentifyTransformationConfigArgsDict(
     TypedDict
@@ -16096,12 +16987,18 @@ class PreventionJobTriggerInspectJobActionDeidentifyTransformationConfigArgs:
     @pulumi.getter(name="deidentifyTemplate")
     def deidentify_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deidentify_template.setter
-    def deidentify_template(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deidentify_template(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageRedactTemplate")
     def image_redact_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_redact_template.setter
-    def image_redact_template(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def image_redact_template(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="structuredDeidentifyTemplate")
     def structured_deidentify_template(
@@ -16110,7 +17007,8 @@ class PreventionJobTriggerInspectJobActionDeidentifyTransformationConfigArgs:
     @structured_deidentify_template.setter
     def structured_deidentify_template(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigArgsDict(
     TypedDict
@@ -16141,7 +17039,8 @@ class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorage
         value: pulumi.Input[
             PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigTableArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigTableArgsDict(
     TypedDict
@@ -16163,17 +17062,20 @@ class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorage
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_id.setter
-    def dataset_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> pulumi.Input[_builtins.str]: ...
     @project_id.setter
-    def project_id(self, value: pulumi.Input[_builtins.str]): ...
+    def project_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableId")
     def table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_id.setter
-    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionJobNotificationEmailsArgsDict(TypedDict): ...
 
@@ -16191,7 +17093,8 @@ class PreventionJobTriggerInspectJobActionPubSubArgs:
     @pulumi.getter
     def topic(self) -> pulumi.Input[_builtins.str]: ...
     @topic.setter
-    def topic(self, value: pulumi.Input[_builtins.str]): ...
+    def topic(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionPublishFindingsToCloudDataCatalogArgsDict(
     TypedDict
@@ -16248,7 +17151,8 @@ class PreventionJobTriggerInspectJobActionSaveFindingsArgs:
         value: pulumi.Input[
             PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgsDict(TypedDict):
     output_schema: NotRequired[pulumi.Input[_builtins.str]]
@@ -16284,7 +17188,8 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgs:
     @pulumi.getter(name="outputSchema")
     def output_schema(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_schema.setter
-    def output_schema(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_schema(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storagePath")
     def storage_path(
@@ -16302,7 +17207,8 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgs:
                 PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigStoragePathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def table(
@@ -16320,7 +17226,8 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgs:
                 PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigTableArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigStoragePathArgsDict(
     TypedDict
@@ -16334,7 +17241,8 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigStoragePathArg
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigTableArgsDict(
     TypedDict
@@ -16356,17 +17264,20 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigTableArgs:
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_id.setter
-    def dataset_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> pulumi.Input[_builtins.str]: ...
     @project_id.setter
-    def project_id(self, value: pulumi.Input[_builtins.str]): ...
+    def project_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableId")
     def table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_id.setter
-    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigArgsDict(TypedDict):
     custom_info_types: NotRequired[
@@ -16463,17 +17374,22 @@ class PreventionJobTriggerInspectJobInspectConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeInfoTypes")
     def exclude_info_types(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_info_types.setter
-    def exclude_info_types(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def exclude_info_types(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeQuote")
     def include_quote(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @include_quote.setter
-    def include_quote(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def include_quote(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoTypes")
     def info_types(
@@ -16497,7 +17413,8 @@ class PreventionJobTriggerInspectJobInspectConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def limits(
@@ -16511,12 +17428,14 @@ class PreventionJobTriggerInspectJobInspectConfigArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobInspectConfigLimitsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minLikelihood")
     def min_likelihood(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_likelihood.setter
-    def min_likelihood(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_likelihood(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleSets")
     def rule_sets(
@@ -16538,7 +17457,8 @@ class PreventionJobTriggerInspectJobInspectConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgsDict(TypedDict):
     info_type: pulumi.Input[
@@ -16621,7 +17541,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgs:
         value: pulumi.Input[
             PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dictionary(
@@ -16639,17 +17560,20 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionType")
     def exclusion_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @exclusion_type.setter
-    def exclusion_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def exclusion_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def likelihood(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @likelihood.setter
-    def likelihood(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def likelihood(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regex(
@@ -16665,7 +17589,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -16683,7 +17608,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storedType")
     def stored_type(
@@ -16701,7 +17627,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeStoredTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="surrogateType")
     def surrogate_type(
@@ -16719,7 +17646,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSurrogateTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryArgsDict(
     TypedDict
@@ -16768,7 +17696,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryCloudStoragePathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordList")
     def word_list(
@@ -16786,7 +17715,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryWordListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryCloudStoragePathArgsDict(
     TypedDict
@@ -16800,7 +17730,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryCloudSt
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryWordListArgsDict(
     TypedDict
@@ -16816,7 +17747,10 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryWordLis
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeArgsDict(
     TypedDict
@@ -16846,7 +17780,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -16864,12 +17799,14 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -16883,7 +17820,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeSensitivi
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeRegexArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
@@ -16903,7 +17841,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeRegexArgs:
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIndexes")
     def group_indexes(
@@ -16912,7 +17851,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeRegexArgs:
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -16926,7 +17866,8 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSensitivityScoreA
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeStoredTypeArgsDict(
     TypedDict
@@ -16946,12 +17887,14 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeStoredTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSurrogateTypeArgsDict(
     TypedDict
@@ -16987,7 +17930,8 @@ class PreventionJobTriggerInspectJobInspectConfigInfoTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -17005,12 +17949,14 @@ class PreventionJobTriggerInspectJobInspectConfigInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -17024,7 +17970,8 @@ class PreventionJobTriggerInspectJobInspectConfigInfoTypeSensitivityScoreArgs:
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigLimitsArgsDict(TypedDict):
     max_findings_per_info_types: NotRequired[
@@ -17081,19 +18028,24 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxFindingsPerItem")
     def max_findings_per_item(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_findings_per_item.setter
-    def max_findings_per_item(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_findings_per_item(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxFindingsPerRequest")
     def max_findings_per_request(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_findings_per_request.setter
     def max_findings_per_request(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeArgsDict(
     TypedDict
@@ -17134,12 +18086,14 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeArg
                 PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxFindings")
     def max_findings(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_findings.setter
-    def max_findings(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_findings(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeArgsDict(
     TypedDict
@@ -17169,7 +18123,8 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInf
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -17187,12 +18142,14 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInf
                 PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -17206,7 +18163,8 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInf
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetArgsDict(TypedDict):
     rules: pulumi.Input[
@@ -17261,7 +18219,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetArgs:
                 pulumi.Input[PreventionJobTriggerInspectJobInspectConfigRuleSetRuleArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infoTypes")
     def info_types(
@@ -17287,7 +18246,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -17315,7 +18275,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -17333,12 +18294,14 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -17352,7 +18315,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeSensitivityScore
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleArgsDict(TypedDict):
     exclusion_rule: NotRequired[
@@ -17399,7 +18363,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hotwordRule")
     def hotword_rule(
@@ -17417,7 +18382,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgsDict(
     TypedDict
@@ -17475,7 +18441,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgs:
     @pulumi.getter(name="matchingType")
     def matching_type(self) -> pulumi.Input[_builtins.str]: ...
     @matching_type.setter
-    def matching_type(self, value: pulumi.Input[_builtins.str]): ...
+    def matching_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dictionary(
@@ -17493,7 +18460,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeByHotword")
     def exclude_by_hotword(
@@ -17511,7 +18479,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeInfoTypes")
     def exclude_info_types(
@@ -17529,7 +18498,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regex(
@@ -17547,7 +18517,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryArgsDict(
     TypedDict
@@ -17596,7 +18567,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDiction
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryCloudStoragePathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordList")
     def word_list(
@@ -17614,7 +18586,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDiction
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryCloudStoragePathArgsDict(
     TypedDict
@@ -17628,7 +18601,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDiction
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgsDict(
     TypedDict
@@ -17644,7 +18618,10 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDiction
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordArgsDict(
     TypedDict
@@ -17693,7 +18670,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordHotwordRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def proximity(
@@ -17711,7 +18689,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordHotwordRegexArgsDict(
     TypedDict
@@ -17737,12 +18716,14 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pattern.setter
-    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgsDict(
     TypedDict
@@ -17762,12 +18743,14 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
     @pulumi.getter(name="windowAfter")
     def window_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_after.setter
-    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowBefore")
     def window_before(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_before.setter
-    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesArgsDict(
     TypedDict
@@ -17814,7 +18797,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeArgsDict(
     TypedDict
@@ -17844,7 +18828,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityScore")
     def sensitivity_score(
@@ -17862,12 +18847,14 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeSensitivityScoreArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeSensitivityScoreArgsDict(
     TypedDict
@@ -17881,7 +18868,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
     @pulumi.getter
     def score(self) -> pulumi.Input[_builtins.str]: ...
     @score.setter
-    def score(self, value: pulumi.Input[_builtins.str]): ...
+    def score(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleRegexArgsDict(
     TypedDict
@@ -17903,7 +18891,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleRegexAr
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIndexes")
     def group_indexes(
@@ -17912,7 +18901,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleRegexAr
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgsDict(
     TypedDict
@@ -17971,7 +18961,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleHotwordRegexArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="likelihoodAdjustment")
     def likelihood_adjustment(
@@ -17989,7 +18980,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleLikelihoodAdjustmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def proximity(
@@ -18007,7 +18999,8 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgs:
                 PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleProximityArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleHotwordRegexArgsDict(
     TypedDict
@@ -18033,12 +19026,14 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleHotwordRe
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pattern.setter
-    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleLikelihoodAdjustmentArgsDict(
     TypedDict
@@ -18058,12 +19053,18 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleLikelihoo
     @pulumi.getter(name="fixedLikelihood")
     def fixed_likelihood(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fixed_likelihood.setter
-    def fixed_likelihood(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fixed_likelihood(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relativeLikelihood")
     def relative_likelihood(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @relative_likelihood.setter
-    def relative_likelihood(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def relative_likelihood(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleProximityArgsDict(
     TypedDict
@@ -18083,12 +19084,14 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleProximity
     @pulumi.getter(name="windowAfter")
     def window_after(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_after.setter
-    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_after(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="windowBefore")
     def window_before(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @window_before.setter
-    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def window_before(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigArgsDict(TypedDict):
     big_query_options: NotRequired[
@@ -18149,7 +19152,8 @@ class PreventionJobTriggerInspectJobStorageConfigArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudStorageOptions")
     def cloud_storage_options(
@@ -18165,7 +19169,8 @@ class PreventionJobTriggerInspectJobStorageConfigArgs:
                 PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datastoreOptions")
     def datastore_options(
@@ -18181,7 +19186,8 @@ class PreventionJobTriggerInspectJobStorageConfigArgs:
                 PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hybridOptions")
     def hybrid_options(
@@ -18195,7 +19201,8 @@ class PreventionJobTriggerInspectJobStorageConfigArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timespanConfig")
     def timespan_config(
@@ -18209,7 +19216,8 @@ class PreventionJobTriggerInspectJobStorageConfigArgs:
         value: Optional[
             pulumi.Input[PreventionJobTriggerInspectJobStorageConfigTimespanConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgsDict(TypedDict):
     table_reference: pulumi.Input[
@@ -18298,7 +19306,8 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgs:
         value: pulumi.Input[
             PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedFields")
     def excluded_fields(
@@ -18324,7 +19333,8 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identifyingFields")
     def identifying_fields(
@@ -18350,7 +19360,8 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedFields")
     def included_fields(
@@ -18376,22 +19387,28 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rowsLimit")
     def rows_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @rows_limit.setter
-    def rows_limit(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def rows_limit(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rowsLimitPercent")
     def rows_limit_percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @rows_limit_percent.setter
-    def rows_limit_percent(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def rows_limit_percent(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleMethod")
     def sample_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sample_method.setter
-    def sample_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sample_method(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldArgsDict(
     TypedDict
@@ -18405,7 +19422,8 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldArg
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldArgsDict(
     TypedDict
@@ -18419,7 +19437,8 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingField
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldArgsDict(
     TypedDict
@@ -18433,7 +19452,8 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldArg
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceArgsDict(
     TypedDict
@@ -18455,17 +19475,20 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceAr
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_id.setter
-    def dataset_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> pulumi.Input[_builtins.str]: ...
     @project_id.setter
-    def project_id(self, value: pulumi.Input[_builtins.str]): ...
+    def project_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableId")
     def table_id(self) -> pulumi.Input[_builtins.str]: ...
     @table_id.setter
-    def table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def table_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsArgsDict(TypedDict):
     file_set: pulumi.Input[
@@ -18504,19 +19527,24 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsArgs:
         value: pulumi.Input[
             PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bytesLimitPerFile")
     def bytes_limit_per_file(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @bytes_limit_per_file.setter
-    def bytes_limit_per_file(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def bytes_limit_per_file(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bytesLimitPerFilePercent")
     def bytes_limit_per_file_percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @bytes_limit_per_file_percent.setter
     def bytes_limit_per_file_percent(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileTypes")
     def file_types(
@@ -18525,17 +19553,22 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsArgs:
     @file_types.setter
     def file_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filesLimitPercent")
     def files_limit_percent(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @files_limit_percent.setter
-    def files_limit_percent(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def files_limit_percent(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleMethod")
     def sample_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sample_method.setter
-    def sample_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sample_method(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetArgsDict(
     TypedDict
@@ -18576,12 +19609,14 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetArgs:
                 PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @url.setter
-    def url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetArgsDict(
     TypedDict
@@ -18607,7 +19642,8 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegex
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeRegexes")
     def exclude_regexes(
@@ -18616,7 +19652,8 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegex
     @exclude_regexes.setter
     def exclude_regexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeRegexes")
     def include_regexes(
@@ -18625,7 +19662,8 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegex
     @include_regexes.setter
     def include_regexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsArgsDict(TypedDict):
     kind: pulumi.Input[
@@ -18660,7 +19698,8 @@ class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsArgs:
         value: pulumi.Input[
             PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partitionId")
     def partition_id(
@@ -18674,7 +19713,8 @@ class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsArgs:
         value: pulumi.Input[
             PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindArgsDict(
     TypedDict
@@ -18688,7 +19728,8 @@ class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdArgsDict(
     TypedDict
@@ -18708,12 +19749,14 @@ class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdArgs
     @pulumi.getter(name="projectId")
     def project_id(self) -> pulumi.Input[_builtins.str]: ...
     @project_id.setter
-    def project_id(self, value: pulumi.Input[_builtins.str]): ...
+    def project_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceId")
     def namespace_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace_id.setter
-    def namespace_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -18747,7 +19790,8 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -18756,7 +19800,8 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requiredFindingLabelKeys")
     def required_finding_label_keys(
@@ -18765,7 +19810,8 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgs:
     @required_finding_label_keys.setter
     def required_finding_label_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableOptions")
     def table_options(
@@ -18783,7 +19829,8 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgs:
                 PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsArgsDict(
     TypedDict
@@ -18838,7 +19885,8 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldArgsDict(
     TypedDict
@@ -18852,7 +19900,8 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdenti
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigTimespanConfigArgsDict(TypedDict):
     enable_auto_population_of_timespan_config: NotRequired[pulumi.Input[_builtins.bool]]
@@ -18888,17 +19937,20 @@ class PreventionJobTriggerInspectJobStorageConfigTimespanConfigArgs:
     @enable_auto_population_of_timespan_config.setter
     def enable_auto_population_of_timespan_config(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endTime")
     def end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_time.setter
-    def end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timestampField")
     def timestamp_field(
@@ -18916,7 +19968,8 @@ class PreventionJobTriggerInspectJobStorageConfigTimespanConfigArgs:
                 PreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldArgsDict(
     TypedDict
@@ -18930,7 +19983,8 @@ class PreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldArg
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionJobTriggerTriggerArgsDict(TypedDict):
     manual: NotRequired[pulumi.Input[PreventionJobTriggerTriggerManualArgsDict]]
@@ -18952,7 +20006,8 @@ class PreventionJobTriggerTriggerArgs:
     @manual.setter
     def manual(
         self, value: Optional[pulumi.Input[PreventionJobTriggerTriggerManualArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(
@@ -18961,7 +20016,8 @@ class PreventionJobTriggerTriggerArgs:
     @schedule.setter
     def schedule(
         self, value: Optional[pulumi.Input[PreventionJobTriggerTriggerScheduleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionJobTriggerTriggerManualArgsDict(TypedDict): ...
 
@@ -18985,7 +20041,8 @@ class PreventionJobTriggerTriggerScheduleArgs:
     @recurrence_period_duration.setter
     def recurrence_period_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeDictionaryArgsDict(TypedDict):
     cloud_storage_path: NotRequired[
@@ -19020,7 +20077,8 @@ class PreventionStoredInfoTypeDictionaryArgs:
         value: Optional[
             pulumi.Input[PreventionStoredInfoTypeDictionaryCloudStoragePathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordList")
     def word_list(
@@ -19030,7 +20088,8 @@ class PreventionStoredInfoTypeDictionaryArgs:
     def word_list(
         self,
         value: Optional[pulumi.Input[PreventionStoredInfoTypeDictionaryWordListArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeDictionaryCloudStoragePathArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
@@ -19042,7 +20101,8 @@ class PreventionStoredInfoTypeDictionaryCloudStoragePathArgs:
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeDictionaryWordListArgsDict(TypedDict):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -19056,7 +20116,10 @@ class PreventionStoredInfoTypeDictionaryWordListArgs:
     @pulumi.getter
     def words(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @words.setter
-    def words(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def words(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeLargeCustomDictionaryArgsDict(TypedDict):
     output_path: pulumi.Input[
@@ -19099,7 +20162,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryArgs:
         value: pulumi.Input[
             PreventionStoredInfoTypeLargeCustomDictionaryOutputPathArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigQueryField")
     def big_query_field(
@@ -19113,7 +20177,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryArgs:
         value: Optional[
             pulumi.Input[PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudStorageFileSet")
     def cloud_storage_file_set(
@@ -19131,7 +20196,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryArgs:
                 PreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldArgsDict(TypedDict):
     field: pulumi.Input[
@@ -19166,7 +20232,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldArgs:
         value: pulumi.Input[
             PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def table(
@@ -19180,7 +20247,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldArgs:
         value: pulumi.Input[
             PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldArgsDict(
     TypedDict
@@ -19194,7 +20262,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableArgsDict(
     TypedDict
@@ -19216,17 +20285,20 @@ class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableArgs:
     @pulumi.getter(name="datasetId")
     def dataset_id(self) -> pulumi.Input[_builtins.str]: ...
     @dataset_id.setter
-    def dataset_id(self, value: pulumi.Input[_builtins.str]): ...
+    def dataset_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> pulumi.Input[_builtins.str]: ...
     @project_id.setter
-    def project_id(self, value: pulumi.Input[_builtins.str]): ...
+    def project_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableId")
     def table_id(self) -> pulumi.Input[_builtins.str]: ...
     @table_id.setter
-    def table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def table_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetArgsDict(
     TypedDict
@@ -19240,7 +20312,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetArgs:
     @pulumi.getter
     def url(self) -> pulumi.Input[_builtins.str]: ...
     @url.setter
-    def url(self, value: pulumi.Input[_builtins.str]): ...
+    def url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeLargeCustomDictionaryOutputPathArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
@@ -19252,7 +20325,8 @@ class PreventionStoredInfoTypeLargeCustomDictionaryOutputPathArgs:
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PreventionStoredInfoTypeRegexArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
@@ -19272,7 +20346,8 @@ class PreventionStoredInfoTypeRegexArgs:
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIndexes")
     def group_indexes(
@@ -19281,4 +20356,5 @@ class PreventionStoredInfoTypeRegexArgs:
     @group_indexes.setter
     def group_indexes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ): ...
+    ):  # -> None:
+        ...

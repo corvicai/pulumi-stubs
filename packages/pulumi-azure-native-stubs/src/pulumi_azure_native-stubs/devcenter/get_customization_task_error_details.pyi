@@ -23,7 +23,10 @@ class GetCustomizationTaskErrorDetailsResult:
 class AwaitableGetCustomizationTaskErrorDetailsResult(
     GetCustomizationTaskErrorDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCustomizationTaskErrorDetailsResult]:
+        ...
 
 def get_customization_task_error_details(
     catalog_name: Optional[_builtins.str] = ...,

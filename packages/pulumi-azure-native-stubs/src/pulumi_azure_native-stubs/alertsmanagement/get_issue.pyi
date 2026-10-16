@@ -39,7 +39,8 @@ class GetIssueResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIssueResult(GetIssueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIssueResult]:
+        ...
 
 def get_issue(
     issue_name: Optional[_builtins.str] = ...,

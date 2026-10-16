@@ -27,22 +27,32 @@ class ServiceNetworkResourceAssociationArgs:
     @pulumi.getter(name="resourceConfigurationIdentifier")
     def resource_configuration_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @resource_configuration_identifier.setter
-    def resource_configuration_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_configuration_identifier(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNetworkIdentifier")
     def service_network_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @service_network_identifier.setter
-    def service_network_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def service_network_identifier(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsEnabled")
     def private_dns_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @private_dns_enabled.setter
-    def private_dns_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def private_dns_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -51,7 +61,8 @@ class ServiceNetworkResourceAssociationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -61,7 +72,8 @@ class ServiceNetworkResourceAssociationArgs:
     def timeouts(
         self,
         value: Optional[pulumi.Input[ServiceNetworkResourceAssociationTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServiceNetworkResourceAssociationState:
@@ -90,7 +102,8 @@ class _ServiceNetworkResourceAssociationState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsEntries")
     def dns_entries(
@@ -108,17 +121,22 @@ class _ServiceNetworkResourceAssociationState:
                 Sequence[pulumi.Input[ServiceNetworkResourceAssociationDnsEntryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsEnabled")
     def private_dns_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @private_dns_enabled.setter
-    def private_dns_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def private_dns_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceConfigurationIdentifier")
     def resource_configuration_identifier(
@@ -127,14 +145,16 @@ class _ServiceNetworkResourceAssociationState:
     @resource_configuration_identifier.setter
     def resource_configuration_identifier(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceNetworkIdentifier")
     def service_network_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_network_identifier.setter
     def service_network_identifier(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -143,7 +163,8 @@ class _ServiceNetworkResourceAssociationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -152,7 +173,8 @@ class _ServiceNetworkResourceAssociationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -162,7 +184,8 @@ class _ServiceNetworkResourceAssociationState:
     def timeouts(
         self,
         value: Optional[pulumi.Input[ServiceNetworkResourceAssociationTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ServiceNetworkResourceAssociation(pulumi.CustomResource):

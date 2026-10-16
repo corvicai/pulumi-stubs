@@ -35,7 +35,8 @@ class B2CResourceSKUArgs:
     @name.setter
     def name(
         self, value: Optional[pulumi.Input[Union[_builtins.str, B2CResourceSKUName]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(
@@ -44,7 +45,8 @@ class B2CResourceSKUArgs:
     @tier.setter
     def tier(
         self, value: Optional[pulumi.Input[Union[_builtins.str, B2CResourceSKUTier]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CIAMResourceSKUArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, CIAMResourceSKUName]]
@@ -62,12 +64,18 @@ class CIAMResourceSKUArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, CIAMResourceSKUName]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, CIAMResourceSKUName]]): ...
+    def name(
+        self, value: pulumi.Input[Union[_builtins.str, CIAMResourceSKUName]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> pulumi.Input[Union[_builtins.str, CIAMResourceSKUTier]]: ...
     @tier.setter
-    def tier(self, value: pulumi.Input[Union[_builtins.str, CIAMResourceSKUTier]]): ...
+    def tier(
+        self, value: pulumi.Input[Union[_builtins.str, CIAMResourceSKUTier]]
+    ):  # -> None:
+        ...
 
 class CreateCIAMTenantPropertiesArgsDict(TypedDict):
     country_code: pulumi.Input[_builtins.str]
@@ -85,9 +93,11 @@ class CreateCIAMTenantPropertiesArgs:
     @pulumi.getter(name="countryCode")
     def country_code(self) -> pulumi.Input[_builtins.str]: ...
     @country_code.setter
-    def country_code(self, value: pulumi.Input[_builtins.str]): ...
+    def country_code(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

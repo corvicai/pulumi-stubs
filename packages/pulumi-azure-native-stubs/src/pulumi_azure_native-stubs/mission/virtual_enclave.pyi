@@ -43,7 +43,8 @@ class VirtualEnclaveArgs:
     @pulumi.getter(name="communityResourceId")
     def community_resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @community_resource_id.setter
-    def community_resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def community_resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveVirtualNetwork")
     def enclave_virtual_network(
@@ -52,17 +53,22 @@ class VirtualEnclaveArgs:
     @enclave_virtual_network.setter
     def enclave_virtual_network(
         self, value: pulumi.Input[EnclaveVirtualNetworkModelArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bastionEnabled")
     def bastion_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bastion_enabled.setter
-    def bastion_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bastion_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveDefaultSettings")
     def enclave_default_settings(
@@ -71,7 +77,8 @@ class VirtualEnclaveArgs:
     @enclave_default_settings.setter
     def enclave_default_settings(
         self, value: Optional[pulumi.Input[EnclaveDefaultSettingsModelArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveRoleAssignments")
     def enclave_role_assignments(
@@ -81,7 +88,8 @@ class VirtualEnclaveArgs:
     def enclave_role_assignments(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RoleAssignmentItemArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="governedServiceList")
     def governed_service_list(
@@ -91,17 +99,22 @@ class VirtualEnclaveArgs:
     def governed_service_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[GovernedServiceItemArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceModeConfiguration")
     def maintenance_mode_configuration(
@@ -110,7 +123,8 @@ class VirtualEnclaveArgs:
     @maintenance_mode_configuration.setter
     def maintenance_mode_configuration(
         self, value: Optional[pulumi.Input[MaintenanceModeConfigurationModelArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -119,12 +133,16 @@ class VirtualEnclaveArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualEnclaveName")
     def virtual_enclave_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_enclave_name.setter
-    def virtual_enclave_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_enclave_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadRoleAssignments")
     def workload_role_assignments(
@@ -134,7 +152,8 @@ class VirtualEnclaveArgs:
     def workload_role_assignments(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RoleAssignmentItemArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:mission:VirtualEnclave")
 class VirtualEnclave(pulumi.CustomResource):

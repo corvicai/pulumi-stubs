@@ -67,7 +67,8 @@ class GetCertificateResult:
     def types(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCertificateResult(GetCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateResult]:
+        ...
 
 def get_certificate(
     domain: Optional[_builtins.str] = ...,

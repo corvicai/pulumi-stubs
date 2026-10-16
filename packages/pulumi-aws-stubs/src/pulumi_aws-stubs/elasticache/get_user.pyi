@@ -54,7 +54,8 @@ class GetUserResult:
     def user_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetUserResult(GetUserResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserResult]:
+        ...
 
 def get_user(
     access_string: Optional[_builtins.str] = ...,

@@ -96,7 +96,8 @@ class GetJobDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJobDefinitionResult(GetJobDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobDefinitionResult]:
+        ...
 
 def get_job_definition(
     job_definition_name: Optional[_builtins.str] = ...,

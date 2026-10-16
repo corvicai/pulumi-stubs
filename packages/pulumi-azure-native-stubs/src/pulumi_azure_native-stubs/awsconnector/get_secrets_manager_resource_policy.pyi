@@ -54,7 +54,10 @@ class GetSecretsManagerResourcePolicyResult:
 class AwaitableGetSecretsManagerResourcePolicyResult(
     GetSecretsManagerResourcePolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSecretsManagerResourcePolicyResult]:
+        ...
 
 def get_secrets_manager_resource_policy(
     name: Optional[_builtins.str] = ...,

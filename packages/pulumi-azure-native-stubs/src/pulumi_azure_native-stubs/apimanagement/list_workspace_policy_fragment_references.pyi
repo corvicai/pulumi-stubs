@@ -29,7 +29,10 @@ class ListWorkspacePolicyFragmentReferencesResult:
 class AwaitableListWorkspacePolicyFragmentReferencesResult(
     ListWorkspacePolicyFragmentReferencesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkspacePolicyFragmentReferencesResult]:
+        ...
 
 def list_workspace_policy_fragment_references(
     id: Optional[_builtins.str] = ...,

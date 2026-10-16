@@ -29,17 +29,20 @@ class NetworkFunctionDefinitionGroupArgs:
     @pulumi.getter(name="publisherName")
     def publisher_name(self) -> pulumi.Input[_builtins.str]: ...
     @publisher_name.setter
-    def publisher_name(self, value: pulumi.Input[_builtins.str]): ...
+    def publisher_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkFunctionDefinitionGroupName")
     def network_function_definition_group_name(
@@ -48,7 +51,8 @@ class NetworkFunctionDefinitionGroupArgs:
     @network_function_definition_group_name.setter
     def network_function_definition_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -60,7 +64,8 @@ class NetworkFunctionDefinitionGroupArgs:
         value: Optional[
             pulumi.Input[NetworkFunctionDefinitionGroupPropertiesFormatArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -69,7 +74,8 @@ class NetworkFunctionDefinitionGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class NetworkFunctionDefinitionGroup(pulumi.CustomResource):

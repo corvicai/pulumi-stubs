@@ -20,7 +20,8 @@ class GetFlowSourceAddressesResult:
     def source_addresses(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetFlowSourceAddressesResult(GetFlowSourceAddressesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFlowSourceAddressesResult]:
+        ...
 
 def get_flow_source_addresses(
     connection_name: Optional[_builtins.str] = ...,

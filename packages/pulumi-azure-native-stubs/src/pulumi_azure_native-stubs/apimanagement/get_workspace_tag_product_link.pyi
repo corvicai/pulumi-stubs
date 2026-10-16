@@ -34,7 +34,8 @@ class GetWorkspaceTagProductLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceTagProductLinkResult(GetWorkspaceTagProductLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceTagProductLinkResult]:
+        ...
 
 def get_workspace_tag_product_link(
     product_link_id: Optional[_builtins.str] = ...,

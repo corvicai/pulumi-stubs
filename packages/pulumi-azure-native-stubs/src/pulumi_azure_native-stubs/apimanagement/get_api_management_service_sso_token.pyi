@@ -22,7 +22,10 @@ class GetApiManagementServiceSsoTokenResult:
 class AwaitableGetApiManagementServiceSsoTokenResult(
     GetApiManagementServiceSsoTokenResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetApiManagementServiceSsoTokenResult]:
+        ...
 
 def get_api_management_service_sso_token(
     resource_group_name: Optional[_builtins.str] = ...,

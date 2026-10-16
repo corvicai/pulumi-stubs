@@ -28,12 +28,14 @@ class GalleryInVMAccessControlProfileArgs:
     @pulumi.getter(name="galleryName")
     def gallery_name(self) -> pulumi.Input[_builtins.str]: ...
     @gallery_name.setter
-    def gallery_name(self, value: pulumi.Input[_builtins.str]): ...
+    def gallery_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inVMAccessControlProfileName")
     def in_vm_access_control_profile_name(
@@ -42,12 +44,14 @@ class GalleryInVMAccessControlProfileArgs:
     @in_vm_access_control_profile_name.setter
     def in_vm_access_control_profile_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -57,7 +61,8 @@ class GalleryInVMAccessControlProfileArgs:
     def properties(
         self,
         value: Optional[pulumi.Input[GalleryInVMAccessControlProfilePropertiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -66,7 +71,8 @@ class GalleryInVMAccessControlProfileArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class GalleryInVMAccessControlProfile(pulumi.CustomResource):

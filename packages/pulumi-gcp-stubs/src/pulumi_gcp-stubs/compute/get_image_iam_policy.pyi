@@ -34,7 +34,8 @@ class GetImageIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetImageIamPolicyResult(GetImageIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImageIamPolicyResult]:
+        ...
 
 def get_image_iam_policy(
     image: Optional[_builtins.str] = ...,

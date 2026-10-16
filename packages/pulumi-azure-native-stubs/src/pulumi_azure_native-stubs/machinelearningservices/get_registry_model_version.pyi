@@ -44,7 +44,8 @@ class GetRegistryModelVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryModelVersionResult(GetRegistryModelVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryModelVersionResult]:
+        ...
 
 def get_registry_model_version(
     model_name: Optional[_builtins.str] = ...,

@@ -56,7 +56,10 @@ class GetSsmResourceComplianceSummaryItemResult:
 class AwaitableGetSsmResourceComplianceSummaryItemResult(
     GetSsmResourceComplianceSummaryItemResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSsmResourceComplianceSummaryItemResult]:
+        ...
 
 def get_ssm_resource_compliance_summary_item(
     name: Optional[_builtins.str] = ...,

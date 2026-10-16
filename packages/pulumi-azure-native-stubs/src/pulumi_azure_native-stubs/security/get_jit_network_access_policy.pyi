@@ -60,7 +60,8 @@ class GetJitNetworkAccessPolicyResult:
     ) -> Sequence[outputs.JitNetworkAccessPolicyVirtualMachineResponse]: ...
 
 class AwaitableGetJitNetworkAccessPolicyResult(GetJitNetworkAccessPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJitNetworkAccessPolicyResult]:
+        ...
 
 def get_jit_network_access_policy(
     asc_location: Optional[_builtins.str] = ...,

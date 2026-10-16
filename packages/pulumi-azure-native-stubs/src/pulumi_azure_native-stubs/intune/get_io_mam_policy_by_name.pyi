@@ -123,7 +123,8 @@ class GetIoMAMPolicyByNameResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIoMAMPolicyByNameResult(GetIoMAMPolicyByNameResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIoMAMPolicyByNameResult]:
+        ...
 
 def get_io_mam_policy_by_name(
     host_name: Optional[_builtins.str] = ...,

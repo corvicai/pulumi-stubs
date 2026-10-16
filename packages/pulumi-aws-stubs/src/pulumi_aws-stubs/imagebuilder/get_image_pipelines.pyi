@@ -36,7 +36,8 @@ class GetImagePipelinesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetImagePipelinesResult(GetImagePipelinesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImagePipelinesResult]:
+        ...
 
 def get_image_pipelines(
     filters: Optional[

@@ -48,7 +48,8 @@ class GetVirtualHubRouteTableV2Result:
     def routes(self) -> Optional[Sequence[outputs.VirtualHubRouteV2Response]]: ...
 
 class AwaitableGetVirtualHubRouteTableV2Result(GetVirtualHubRouteTableV2Result):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualHubRouteTableV2Result]:
+        ...
 
 def get_virtual_hub_route_table_v2(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -58,7 +58,10 @@ class GetCassandraResourceCassandraTableResult:
 class AwaitableGetCassandraResourceCassandraTableResult(
     GetCassandraResourceCassandraTableResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCassandraResourceCassandraTableResult]:
+        ...
 
 def get_cassandra_resource_cassandra_table(
     account_name: Optional[_builtins.str] = ...,

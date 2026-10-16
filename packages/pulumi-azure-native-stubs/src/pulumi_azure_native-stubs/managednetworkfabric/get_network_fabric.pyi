@@ -124,7 +124,8 @@ class GetNetworkFabricResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkFabricResult(GetNetworkFabricResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkFabricResult]:
+        ...
 
 def get_network_fabric(
     network_fabric_name: Optional[_builtins.str] = ...,

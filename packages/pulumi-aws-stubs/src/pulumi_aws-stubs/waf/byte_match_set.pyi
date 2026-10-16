@@ -32,12 +32,14 @@ class ByteMatchSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ByteMatchSetByteMatchTupleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ByteMatchSetState:
@@ -54,7 +56,8 @@ class _ByteMatchSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="byteMatchTuples")
     def byte_match_tuples(
@@ -68,12 +71,14 @@ class _ByteMatchSetState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ByteMatchSetByteMatchTupleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:waf/byteMatchSet:ByteMatchSet")
 class ByteMatchSet(pulumi.CustomResource):

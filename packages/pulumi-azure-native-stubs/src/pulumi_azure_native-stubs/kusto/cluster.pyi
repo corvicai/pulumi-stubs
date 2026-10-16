@@ -66,12 +66,14 @@ class ClusterArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> pulumi.Input[AzureSkuArgs]: ...
     @sku.setter
-    def sku(self, value: pulumi.Input[AzureSkuArgs]): ...
+    def sku(self, value: pulumi.Input[AzureSkuArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="acceptedAudiences")
     def accepted_audiences(
@@ -81,7 +83,8 @@ class ClusterArgs:
     def accepted_audiences(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AcceptedAudiencesArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedFqdnList")
     def allowed_fqdn_list(
@@ -90,7 +93,8 @@ class ClusterArgs:
     @allowed_fqdn_list.setter
     def allowed_fqdn_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedIpRangeList")
     def allowed_ip_range_list(
@@ -99,7 +103,8 @@ class ClusterArgs:
     @allowed_ip_range_list.setter
     def allowed_ip_range_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="calloutPolicies")
     def callout_policies(
@@ -108,41 +113,52 @@ class ClusterArgs:
     @callout_policies.setter
     def callout_policies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CalloutPolicyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_name.setter
-    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutoStop")
     def enable_auto_stop(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_auto_stop.setter
-    def enable_auto_stop(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_auto_stop(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDiskEncryption")
     def enable_disk_encryption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_disk_encryption.setter
-    def enable_disk_encryption(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_disk_encryption(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDoubleEncryption")
     def enable_double_encryption(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_double_encryption.setter
     def enable_double_encryption(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePurge")
     def enable_purge(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_purge.setter
-    def enable_purge(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_purge(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableStreamingIngest")
     def enable_streaming_ingest(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_streaming_ingest.setter
     def enable_streaming_ingest(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="engineType")
     def engine_type(
@@ -151,12 +167,14 @@ class ClusterArgs:
     @engine_type.setter
     def engine_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EngineType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -165,7 +183,8 @@ class ClusterArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[KeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="languageExtensions")
     def language_extensions(
@@ -174,19 +193,22 @@ class ClusterArgs:
     @language_extensions.setter
     def language_extensions(
         self, value: Optional[pulumi.Input[LanguageExtensionsListArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optimizedAutoscale")
     def optimized_autoscale(self) -> Optional[pulumi.Input[OptimizedAutoscaleArgs]]: ...
     @optimized_autoscale.setter
     def optimized_autoscale(
         self, value: Optional[pulumi.Input[OptimizedAutoscaleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIPType")
     def public_ip_type(
@@ -195,7 +217,8 @@ class ClusterArgs:
     @public_ip_type.setter
     def public_ip_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicIPType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -204,7 +227,8 @@ class ClusterArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restrictOutboundNetworkAccess")
     def restrict_outbound_network_access(
@@ -214,7 +238,8 @@ class ClusterArgs:
     def restrict_outbound_network_access(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ClusterNetworkAccessFlag]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -223,7 +248,8 @@ class ClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedExternalTenants")
     def trusted_external_tenants(
@@ -235,7 +261,8 @@ class ClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TrustedExternalTenantArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualClusterGraduationProperties")
     def virtual_cluster_graduation_properties(
@@ -244,7 +271,8 @@ class ClusterArgs:
     @virtual_cluster_graduation_properties.setter
     def virtual_cluster_graduation_properties(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkConfiguration")
     def virtual_network_configuration(
@@ -253,7 +281,8 @@ class ClusterArgs:
     @virtual_network_configuration.setter
     def virtual_network_configuration(
         self, value: Optional[pulumi.Input[VirtualNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -262,7 +291,8 @@ class ClusterArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:kusto:Cluster")
 class Cluster(pulumi.CustomResource):

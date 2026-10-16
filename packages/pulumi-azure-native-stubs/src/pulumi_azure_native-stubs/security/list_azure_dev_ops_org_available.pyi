@@ -24,7 +24,8 @@ class ListAzureDevOpsOrgAvailableResult:
     def value(self) -> Optional[Sequence[outputs.AzureDevOpsOrgResponse]]: ...
 
 class AwaitableListAzureDevOpsOrgAvailableResult(ListAzureDevOpsOrgAvailableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAzureDevOpsOrgAvailableResult]:
+        ...
 
 def list_azure_dev_ops_org_available(
     resource_group_name: Optional[_builtins.str] = ...,

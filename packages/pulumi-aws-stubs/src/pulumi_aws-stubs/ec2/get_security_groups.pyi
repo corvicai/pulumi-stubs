@@ -49,7 +49,8 @@ class GetSecurityGroupsResult:
     def vpc_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetSecurityGroupsResult(GetSecurityGroupsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityGroupsResult]:
+        ...
 
 def get_security_groups(
     filters: Optional[

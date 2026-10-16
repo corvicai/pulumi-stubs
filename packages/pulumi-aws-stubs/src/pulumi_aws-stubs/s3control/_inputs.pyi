@@ -96,7 +96,8 @@ class AccessGrantAccessGrantsLocationConfigurationArgs:
     @pulumi.getter(name="s3SubPrefix")
     def s3_sub_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_sub_prefix.setter
-    def s3_sub_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_sub_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AccessGrantGranteeArgsDict(TypedDict):
     grantee_identifier: pulumi.Input[_builtins.str]
@@ -114,12 +115,14 @@ class AccessGrantGranteeArgs:
     @pulumi.getter(name="granteeIdentifier")
     def grantee_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @grantee_identifier.setter
-    def grantee_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def grantee_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="granteeType")
     def grantee_type(self) -> pulumi.Input[_builtins.str]: ...
     @grantee_type.setter
-    def grantee_type(self, value: pulumi.Input[_builtins.str]): ...
+    def grantee_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -157,7 +160,8 @@ class BucketLifecycleConfigurationRuleArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="abortIncompleteMultipartUpload")
     def abort_incomplete_multipart_upload(
@@ -173,7 +177,8 @@ class BucketLifecycleConfigurationRuleArgs:
                 BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expiration(
@@ -183,7 +188,8 @@ class BucketLifecycleConfigurationRuleArgs:
     def expiration(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationRuleExpirationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -192,12 +198,14 @@ class BucketLifecycleConfigurationRuleArgs:
     @filter.setter
     def filter(
         self, value: Optional[pulumi.Input[BucketLifecycleConfigurationRuleFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgsDict(TypedDict):
     days_after_initiation: pulumi.Input[_builtins.int]
@@ -211,7 +219,8 @@ class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgs:
     @pulumi.getter(name="daysAfterInitiation")
     def days_after_initiation(self) -> pulumi.Input[_builtins.int]: ...
     @days_after_initiation.setter
-    def days_after_initiation(self, value: pulumi.Input[_builtins.int]): ...
+    def days_after_initiation(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
@@ -231,12 +240,14 @@ class BucketLifecycleConfigurationRuleExpirationArgs:
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expiredObjectDeleteMarker")
     def expired_object_delete_marker(
@@ -245,7 +256,8 @@ class BucketLifecycleConfigurationRuleExpirationArgs:
     @expired_object_delete_marker.setter
     def expired_object_delete_marker(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
@@ -263,7 +275,8 @@ class BucketLifecycleConfigurationRuleFilterArgs:
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -272,7 +285,8 @@ class BucketLifecycleConfigurationRuleFilterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DirectoryBucketAccessPointScopeScopeArgsDict(TypedDict):
     permissions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -296,7 +310,8 @@ class DirectoryBucketAccessPointScopeScopeArgs:
     @permissions.setter
     def permissions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefixes(
@@ -305,7 +320,8 @@ class DirectoryBucketAccessPointScopeScopeArgs:
     @prefixes.setter
     def prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultiRegionAccessPointDetailsArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -333,7 +349,8 @@ class MultiRegionAccessPointDetailsArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -347,7 +364,8 @@ class MultiRegionAccessPointDetailsArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[MultiRegionAccessPointDetailsRegionArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicAccessBlock")
     def public_access_block(
@@ -359,7 +377,8 @@ class MultiRegionAccessPointDetailsArgs:
         value: Optional[
             pulumi.Input[MultiRegionAccessPointDetailsPublicAccessBlockArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultiRegionAccessPointDetailsPublicAccessBlockArgsDict(TypedDict):
     block_public_acls: NotRequired[pulumi.Input[_builtins.bool]]
@@ -381,24 +400,34 @@ class MultiRegionAccessPointDetailsPublicAccessBlockArgs:
     @pulumi.getter(name="blockPublicAcls")
     def block_public_acls(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @block_public_acls.setter
-    def block_public_acls(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def block_public_acls(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockPublicPolicy")
     def block_public_policy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @block_public_policy.setter
-    def block_public_policy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def block_public_policy(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ignorePublicAcls")
     def ignore_public_acls(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ignore_public_acls.setter
-    def ignore_public_acls(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ignore_public_acls(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restrictPublicBuckets")
     def restrict_public_buckets(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @restrict_public_buckets.setter
     def restrict_public_buckets(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MultiRegionAccessPointDetailsRegionArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -418,17 +447,22 @@ class MultiRegionAccessPointDetailsRegionArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketAccountId")
     def bucket_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_account_id.setter
-    def bucket_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MultiRegionAccessPointPolicyDetailsArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -446,12 +480,14 @@ class MultiRegionAccessPointPolicyDetailsArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def policy(self) -> pulumi.Input[_builtins.str]: ...
     @policy.setter
-    def policy(self, value: pulumi.Input[_builtins.str]): ...
+    def policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ObjectLambdaAccessPointConfigurationArgsDict(TypedDict):
     supporting_access_point: pulumi.Input[_builtins.str]
@@ -487,7 +523,8 @@ class ObjectLambdaAccessPointConfigurationArgs:
     @pulumi.getter(name="supportingAccessPoint")
     def supporting_access_point(self) -> pulumi.Input[_builtins.str]: ...
     @supporting_access_point.setter
-    def supporting_access_point(self, value: pulumi.Input[_builtins.str]): ...
+    def supporting_access_point(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transformationConfigurations")
     def transformation_configurations(
@@ -509,7 +546,8 @@ class ObjectLambdaAccessPointConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedFeatures")
     def allowed_features(
@@ -518,14 +556,16 @@ class ObjectLambdaAccessPointConfigurationArgs:
     @allowed_features.setter
     def allowed_features(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudWatchMetricsEnabled")
     def cloud_watch_metrics_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @cloud_watch_metrics_enabled.setter
     def cloud_watch_metrics_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ObjectLambdaAccessPointConfigurationTransformationConfigurationArgsDict(
     TypedDict
@@ -549,7 +589,10 @@ class ObjectLambdaAccessPointConfigurationTransformationConfigurationArgs:
     @pulumi.getter
     def actions(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @actions.setter
-    def actions(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def actions(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentTransformation")
     def content_transformation(
@@ -563,7 +606,8 @@ class ObjectLambdaAccessPointConfigurationTransformationConfigurationArgs:
         value: pulumi.Input[
             ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationArgsDict(
     TypedDict
@@ -594,7 +638,8 @@ class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTran
         value: pulumi.Input[
             ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaArgsDict(
     TypedDict
@@ -614,12 +659,16 @@ class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTran
     @pulumi.getter(name="functionArn")
     def function_arn(self) -> pulumi.Input[_builtins.str]: ...
     @function_arn.setter
-    def function_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def function_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionPayload")
     def function_payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @function_payload.setter
-    def function_payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def function_payload(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationArgsDict(TypedDict):
     account_level: pulumi.Input[
@@ -674,12 +723,14 @@ class StorageLensConfigurationStorageLensConfigurationArgs:
         value: pulumi.Input[
             StorageLensConfigurationStorageLensConfigurationAccountLevelArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsOrg")
     def aws_org(
@@ -693,7 +744,8 @@ class StorageLensConfigurationStorageLensConfigurationArgs:
         value: Optional[
             pulumi.Input[StorageLensConfigurationStorageLensConfigurationAwsOrgArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataExport")
     def data_export(
@@ -707,7 +759,8 @@ class StorageLensConfigurationStorageLensConfigurationArgs:
         value: Optional[
             pulumi.Input[StorageLensConfigurationStorageLensConfigurationDataExportArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def exclude(
@@ -721,7 +774,8 @@ class StorageLensConfigurationStorageLensConfigurationArgs:
         value: Optional[
             pulumi.Input[StorageLensConfigurationStorageLensConfigurationExcludeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def include(
@@ -735,7 +789,8 @@ class StorageLensConfigurationStorageLensConfigurationArgs:
         value: Optional[
             pulumi.Input[StorageLensConfigurationStorageLensConfigurationIncludeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelArgsDict(TypedDict):
     bucket_level: pulumi.Input[
@@ -804,7 +859,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelArgs:
         value: pulumi.Input[
             StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activityMetrics")
     def activity_metrics(
@@ -822,7 +878,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelArgs:
                 StorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedCostOptimizationMetrics")
     def advanced_cost_optimization_metrics(
@@ -840,7 +897,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelArgs:
                 StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedDataProtectionMetrics")
     def advanced_data_protection_metrics(
@@ -858,7 +916,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelArgs:
                 StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="detailedStatusCodeMetrics")
     def detailed_status_code_metrics(
@@ -876,7 +935,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelArgs:
                 StorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetricsArgsDict(
     TypedDict
@@ -892,7 +952,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetric
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsArgsDict(
     TypedDict
@@ -908,7 +969,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOp
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsArgsDict(
     TypedDict
@@ -924,7 +986,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataPr
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArgsDict(
     TypedDict
@@ -1003,7 +1066,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArg
                 StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedCostOptimizationMetrics")
     def advanced_cost_optimization_metrics(
@@ -1021,7 +1085,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArg
                 StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedDataProtectionMetrics")
     def advanced_data_protection_metrics(
@@ -1039,7 +1104,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArg
                 StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="detailedStatusCodeMetrics")
     def detailed_status_code_metrics(
@@ -1057,7 +1123,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArg
                 StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixLevel")
     def prefix_level(
@@ -1075,7 +1142,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArg
                 StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetricsArgsDict(
     TypedDict
@@ -1091,7 +1159,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAct
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetricsArgsDict(
     TypedDict
@@ -1107,7 +1176,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdv
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsArgsDict(
     TypedDict
@@ -1123,7 +1193,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdv
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetricsArgsDict(
     TypedDict
@@ -1139,7 +1210,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDet
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelArgsDict(
     TypedDict
@@ -1170,7 +1242,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
         value: pulumi.Input[
             StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsArgsDict(
     TypedDict
@@ -1198,7 +1271,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectionCriteria")
     def selection_criteria(
@@ -1216,7 +1290,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
                 StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteriaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteriaArgsDict(
     TypedDict
@@ -1238,12 +1313,14 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
     @pulumi.getter
     def delimiter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delimiter.setter
-    def delimiter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delimiter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDepth")
     def max_depth(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_depth.setter
-    def max_depth(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_depth(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minStorageBytesPercentage")
     def min_storage_bytes_percentage(
@@ -1252,7 +1329,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
     @min_storage_bytes_percentage.setter
     def min_storage_bytes_percentage(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsArgsDict(
     TypedDict
@@ -1268,7 +1346,8 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatus
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationAwsOrgArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -1280,7 +1359,8 @@ class StorageLensConfigurationStorageLensConfigurationAwsOrgArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationDataExportArgsDict(TypedDict):
     cloud_watch_metrics: NotRequired[
@@ -1327,7 +1407,8 @@ class StorageLensConfigurationStorageLensConfigurationDataExportArgs:
                 StorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetricsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3BucketDestination")
     def s3_bucket_destination(
@@ -1345,7 +1426,8 @@ class StorageLensConfigurationStorageLensConfigurationDataExportArgs:
                 StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetricsArgsDict(
     TypedDict
@@ -1359,7 +1441,8 @@ class StorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetric
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationArgsDict(
     TypedDict
@@ -1395,22 +1478,26 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
     @pulumi.getter(name="accountId")
     def account_id(self) -> pulumi.Input[_builtins.str]: ...
     @account_id.setter
-    def account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def format(self) -> pulumi.Input[_builtins.str]: ...
     @format.setter
-    def format(self, value: pulumi.Input[_builtins.str]): ...
+    def format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputSchemaVersion")
     def output_schema_version(self) -> pulumi.Input[_builtins.str]: ...
     @output_schema_version.setter
-    def output_schema_version(self, value: pulumi.Input[_builtins.str]): ...
+    def output_schema_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(
@@ -1428,12 +1515,14 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
                 StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionArgsDict(
     TypedDict
@@ -1490,7 +1579,8 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
                 StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKmsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseS3s")
     def sse_s3s(
@@ -1516,7 +1606,8 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKmsArgsDict(
     TypedDict
@@ -1530,7 +1621,8 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
     @pulumi.getter(name="keyId")
     def key_id(self) -> pulumi.Input[_builtins.str]: ...
     @key_id.setter
-    def key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3ArgsDict(
     TypedDict
@@ -1560,7 +1652,8 @@ class StorageLensConfigurationStorageLensConfigurationExcludeArgs:
     @buckets.setter
     def buckets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -1569,7 +1662,8 @@ class StorageLensConfigurationStorageLensConfigurationExcludeArgs:
     @regions.setter
     def regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageLensConfigurationStorageLensConfigurationIncludeArgsDict(TypedDict):
     buckets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1591,7 +1685,8 @@ class StorageLensConfigurationStorageLensConfigurationIncludeArgs:
     @buckets.setter
     def buckets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def regions(
@@ -1600,4 +1695,5 @@ class StorageLensConfigurationStorageLensConfigurationIncludeArgs:
     @regions.setter
     def regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

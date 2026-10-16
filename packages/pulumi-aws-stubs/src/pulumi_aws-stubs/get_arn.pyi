@@ -42,7 +42,8 @@ class GetArnResult:
     def service(self) -> _builtins.str: ...
 
 class AwaitableGetArnResult(GetArnResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetArnResult]:
+        ...
 
 def get_arn(
     arn: Optional[_builtins.str] = ...,

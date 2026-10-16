@@ -170,7 +170,10 @@ class GetVirtualNetworkGatewayConnectionResult:
 class AwaitableGetVirtualNetworkGatewayConnectionResult(
     GetVirtualNetworkGatewayConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayConnectionResult]:
+        ...
 
 def get_virtual_network_gateway_connection(
     resource_group_name: Optional[_builtins.str] = ...,

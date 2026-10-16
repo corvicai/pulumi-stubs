@@ -75,7 +75,8 @@ class GetCloudResult:
     def vmm_server_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetCloudResult(GetCloudResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudResult]:
+        ...
 
 def get_cloud(
     cloud_name: Optional[_builtins.str] = ...,

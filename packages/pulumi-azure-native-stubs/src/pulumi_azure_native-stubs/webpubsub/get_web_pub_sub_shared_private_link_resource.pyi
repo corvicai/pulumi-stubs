@@ -62,7 +62,10 @@ class GetWebPubSubSharedPrivateLinkResourceResult:
 class AwaitableGetWebPubSubSharedPrivateLinkResourceResult(
     GetWebPubSubSharedPrivateLinkResourceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWebPubSubSharedPrivateLinkResourceResult]:
+        ...
 
 def get_web_pub_sub_shared_private_link_resource(
     resource_group_name: Optional[_builtins.str] = ...,

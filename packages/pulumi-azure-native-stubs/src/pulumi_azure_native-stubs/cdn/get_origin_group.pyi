@@ -70,7 +70,8 @@ class GetOriginGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOriginGroupResult(GetOriginGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOriginGroupResult]:
+        ...
 
 def get_origin_group(
     endpoint_name: Optional[_builtins.str] = ...,

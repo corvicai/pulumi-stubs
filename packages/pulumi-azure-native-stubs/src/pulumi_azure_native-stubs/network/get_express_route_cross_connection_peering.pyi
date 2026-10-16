@@ -102,7 +102,10 @@ class GetExpressRouteCrossConnectionPeeringResult:
 class AwaitableGetExpressRouteCrossConnectionPeeringResult(
     GetExpressRouteCrossConnectionPeeringResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExpressRouteCrossConnectionPeeringResult]:
+        ...
 
 def get_express_route_cross_connection_peering(
     cross_connection_name: Optional[_builtins.str] = ...,

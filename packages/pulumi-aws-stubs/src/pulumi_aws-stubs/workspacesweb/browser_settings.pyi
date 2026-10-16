@@ -24,7 +24,8 @@ class BrowserSettingsArgs:
     @pulumi.getter(name="browserPolicy")
     def browser_policy(self) -> pulumi.Input[_builtins.str]: ...
     @browser_policy.setter
-    def browser_policy(self, value: pulumi.Input[_builtins.str]): ...
+    def browser_policy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalEncryptionContext")
     def additional_encryption_context(
@@ -33,17 +34,22 @@ class BrowserSettingsArgs:
     @additional_encryption_context.setter
     def additional_encryption_context(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedKey")
     def customer_managed_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_managed_key.setter
-    def customer_managed_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_managed_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -52,7 +58,8 @@ class BrowserSettingsArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BrowserSettingsState:
@@ -82,7 +89,8 @@ class _BrowserSettingsState:
     @additional_encryption_context.setter
     def additional_encryption_context(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedPortalArns")
     def associated_portal_arns(
@@ -91,27 +99,36 @@ class _BrowserSettingsState:
     @associated_portal_arns.setter
     def associated_portal_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="browserPolicy")
     def browser_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @browser_policy.setter
-    def browser_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def browser_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="browserSettingsArn")
     def browser_settings_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @browser_settings_arn.setter
-    def browser_settings_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def browser_settings_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedKey")
     def customer_managed_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_managed_key.setter
-    def customer_managed_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_managed_key(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -120,7 +137,8 @@ class _BrowserSettingsState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -129,7 +147,8 @@ class _BrowserSettingsState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:workspacesweb/browserSettings:BrowserSettings")
 class BrowserSettings(pulumi.CustomResource):

@@ -67,7 +67,8 @@ class GetDomainResult:
     def status(self) -> _builtins.str: ...
 
 class AwaitableGetDomainResult(GetDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDomainResult]:
+        ...
 
 def get_domain(
     id: Optional[_builtins.str] = ...,

@@ -72,7 +72,8 @@ class GetIotDpsResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIotDpsResourceResult(GetIotDpsResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIotDpsResourceResult]:
+        ...
 
 def get_iot_dps_resource(
     provisioning_service_name: Optional[_builtins.str] = ...,

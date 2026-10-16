@@ -52,7 +52,8 @@ class GetIamInstanceProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIamInstanceProfileResult(GetIamInstanceProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamInstanceProfileResult]:
+        ...
 
 def get_iam_instance_profile(
     name: Optional[_builtins.str] = ...,

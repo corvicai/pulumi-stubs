@@ -68,7 +68,8 @@ class GetDeviceGroupResult:
     def update_policy(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetDeviceGroupResult(GetDeviceGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeviceGroupResult]:
+        ...
 
 def get_device_group(
     catalog_name: Optional[_builtins.str] = ...,

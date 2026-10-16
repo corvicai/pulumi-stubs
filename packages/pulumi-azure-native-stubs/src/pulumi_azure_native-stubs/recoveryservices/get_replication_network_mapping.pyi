@@ -44,7 +44,10 @@ class GetReplicationNetworkMappingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicationNetworkMappingResult(GetReplicationNetworkMappingResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReplicationNetworkMappingResult]:
+        ...
 
 def get_replication_network_mapping(
     fabric_name: Optional[_builtins.str] = ...,

@@ -26,12 +26,16 @@ class WorkflowArgs:
     @pulumi.getter
     def steps(self) -> pulumi.Input[Sequence[pulumi.Input[WorkflowStepArgs]]]: ...
     @steps.setter
-    def steps(self, value: pulumi.Input[Sequence[pulumi.Input[WorkflowStepArgs]]]): ...
+    def steps(
+        self, value: pulumi.Input[Sequence[pulumi.Input[WorkflowStepArgs]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onExceptionSteps")
     def on_exception_steps(
@@ -45,12 +49,14 @@ class WorkflowArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkflowOnExceptionStepArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -59,7 +65,8 @@ class WorkflowArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WorkflowState:
@@ -82,12 +89,14 @@ class _WorkflowState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onExceptionSteps")
     def on_exception_steps(
@@ -101,12 +110,14 @@ class _WorkflowState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkflowOnExceptionStepArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def steps(
@@ -115,7 +126,8 @@ class _WorkflowState:
     @steps.setter
     def steps(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WorkflowStepArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -124,7 +136,8 @@ class _WorkflowState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -133,7 +146,8 @@ class _WorkflowState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:transfer/workflow:Workflow")
 class Workflow(pulumi.CustomResource):

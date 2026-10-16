@@ -49,12 +49,14 @@ class ConfigDiagnosticsValidatorResultIssueArgs:
     @description_params.setter
     def description_params(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConfigDiagnosticsValidatorResultArgsDict(TypedDict):
     issues: NotRequired[
@@ -95,7 +97,8 @@ class ConfigDiagnosticsValidatorResultArgs:
                 Sequence[pulumi.Input[ConfigDiagnosticsValidatorResultIssueArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaSetSubnetDisplayName")
     def replica_set_subnet_display_name(
@@ -104,17 +107,22 @@ class ConfigDiagnosticsValidatorResultArgs:
     @replica_set_subnet_display_name.setter
     def replica_set_subnet_display_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[Union[_builtins.str, Status]]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, Status]]]): ...
+    def status(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Status]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validatorId")
     def validator_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @validator_id.setter
-    def validator_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def validator_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConfigDiagnosticsArgsDict(TypedDict):
     last_executed: NotRequired[pulumi.Input[_builtins.str]]
@@ -136,7 +144,8 @@ class ConfigDiagnosticsArgs:
     @pulumi.getter(name="lastExecuted")
     def last_executed(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_executed.setter
-    def last_executed(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_executed(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validatorResults")
     def validator_results(
@@ -150,7 +159,8 @@ class ConfigDiagnosticsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ConfigDiagnosticsValidatorResultArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class DomainSecuritySettingsArgsDict(TypedDict):
     channel_binding: NotRequired[pulumi.Input[Union[_builtins.str, ChannelBinding]]]
@@ -206,7 +216,8 @@ class DomainSecuritySettingsArgs:
     @channel_binding.setter
     def channel_binding(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ChannelBinding]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kerberosArmoring")
     def kerberos_armoring(
@@ -215,7 +226,8 @@ class DomainSecuritySettingsArgs:
     @kerberos_armoring.setter
     def kerberos_armoring(
         self, value: Optional[pulumi.Input[Union[_builtins.str, KerberosArmoring]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kerberosRc4Encryption")
     def kerberos_rc4_encryption(
@@ -224,7 +236,8 @@ class DomainSecuritySettingsArgs:
     @kerberos_rc4_encryption.setter
     def kerberos_rc4_encryption(
         self, value: Optional[pulumi.Input[Union[_builtins.str, KerberosRc4Encryption]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ldapSigning")
     def ldap_signing(
@@ -233,12 +246,16 @@ class DomainSecuritySettingsArgs:
     @ldap_signing.setter
     def ldap_signing(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LdapSigning]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ntlmV1")
     def ntlm_v1(self) -> Optional[pulumi.Input[Union[_builtins.str, NtlmV1]]]: ...
     @ntlm_v1.setter
-    def ntlm_v1(self, value: Optional[pulumi.Input[Union[_builtins.str, NtlmV1]]]): ...
+    def ntlm_v1(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, NtlmV1]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncKerberosPasswords")
     def sync_kerberos_passwords(
@@ -247,7 +264,8 @@ class DomainSecuritySettingsArgs:
     @sync_kerberos_passwords.setter
     def sync_kerberos_passwords(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SyncKerberosPasswords]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncNtlmPasswords")
     def sync_ntlm_passwords(
@@ -256,7 +274,8 @@ class DomainSecuritySettingsArgs:
     @sync_ntlm_passwords.setter
     def sync_ntlm_passwords(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SyncNtlmPasswords]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncOnPremPasswords")
     def sync_on_prem_passwords(
@@ -265,12 +284,16 @@ class DomainSecuritySettingsArgs:
     @sync_on_prem_passwords.setter
     def sync_on_prem_passwords(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SyncOnPremPasswords]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsV1")
     def tls_v1(self) -> Optional[pulumi.Input[Union[_builtins.str, TlsV1]]]: ...
     @tls_v1.setter
-    def tls_v1(self, value: Optional[pulumi.Input[Union[_builtins.str, TlsV1]]]): ...
+    def tls_v1(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, TlsV1]]]
+    ):  # -> None:
+        ...
 
 class ForestTrustArgsDict(TypedDict):
     friendly_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -294,27 +317,34 @@ class ForestTrustArgs:
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteDnsIps")
     def remote_dns_ips(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @remote_dns_ips.setter
-    def remote_dns_ips(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def remote_dns_ips(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustDirection")
     def trust_direction(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trust_direction.setter
-    def trust_direction(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def trust_direction(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustPassword")
     def trust_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trust_password.setter
-    def trust_password(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def trust_password(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedDomainFqdn")
     def trusted_domain_fqdn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trusted_domain_fqdn.setter
-    def trusted_domain_fqdn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def trusted_domain_fqdn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class LdapsSettingsArgsDict(TypedDict):
     external_access: NotRequired[pulumi.Input[Union[_builtins.str, ExternalAccess]]]
@@ -342,24 +372,30 @@ class LdapsSettingsArgs:
     @external_access.setter
     def external_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ExternalAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ldaps(self) -> Optional[pulumi.Input[Union[_builtins.str, Ldaps]]]: ...
     @ldaps.setter
-    def ldaps(self, value: Optional[pulumi.Input[Union[_builtins.str, Ldaps]]]): ...
+    def ldaps(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Ldaps]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pfxCertificate")
     def pfx_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pfx_certificate.setter
-    def pfx_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pfx_certificate(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pfxCertificatePassword")
     def pfx_certificate_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pfx_certificate_password.setter
     def pfx_certificate_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NotificationSettingsArgsDict(TypedDict):
     additional_recipients: NotRequired[
@@ -393,7 +429,8 @@ class NotificationSettingsArgs:
     @additional_recipients.setter
     def additional_recipients(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notifyDcAdmins")
     def notify_dc_admins(
@@ -402,7 +439,8 @@ class NotificationSettingsArgs:
     @notify_dc_admins.setter
     def notify_dc_admins(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NotifyDcAdmins]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notifyGlobalAdmins")
     def notify_global_admins(
@@ -411,7 +449,8 @@ class NotificationSettingsArgs:
     @notify_global_admins.setter
     def notify_global_admins(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NotifyGlobalAdmins]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ReplicaSetArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
@@ -429,12 +468,14 @@ class ReplicaSetArgs:
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ResourceForestSettingsArgsDict(TypedDict):
     resource_forest: NotRequired[pulumi.Input[_builtins.str]]
@@ -452,7 +493,8 @@ class ResourceForestSettingsArgs:
     @pulumi.getter(name="resourceForest")
     def resource_forest(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_forest.setter
-    def resource_forest(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_forest(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(
@@ -461,4 +503,5 @@ class ResourceForestSettingsArgs:
     @settings.setter
     def settings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ForestTrustArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...

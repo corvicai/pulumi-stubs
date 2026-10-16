@@ -52,7 +52,8 @@ class GetManagedCertificateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedCertificateResult(GetManagedCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedCertificateResult]:
+        ...
 
 def get_managed_certificate(
     environment_name: Optional[_builtins.str] = ...,

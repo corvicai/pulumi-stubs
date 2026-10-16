@@ -100,7 +100,8 @@ class GetTrunkedNetworkResult:
     def vlans(self) -> Sequence[_builtins.float]: ...
 
 class AwaitableGetTrunkedNetworkResult(GetTrunkedNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTrunkedNetworkResult]:
+        ...
 
 def get_trunked_network(
     resource_group_name: Optional[_builtins.str] = ...,

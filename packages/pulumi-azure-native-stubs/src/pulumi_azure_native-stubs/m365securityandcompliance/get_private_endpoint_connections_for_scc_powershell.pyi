@@ -51,7 +51,10 @@ class GetPrivateEndpointConnectionsForSCCPowershellResult:
 class AwaitableGetPrivateEndpointConnectionsForSCCPowershellResult(
     GetPrivateEndpointConnectionsForSCCPowershellResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionsForSCCPowershellResult]:
+        ...
 
 def get_private_endpoint_connections_for_scc_powershell(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

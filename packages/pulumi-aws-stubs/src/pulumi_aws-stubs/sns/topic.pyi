@@ -60,7 +60,8 @@ class TopicArgs:
     @application_failure_feedback_role_arn.setter
     def application_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSuccessFeedbackRoleArn")
     def application_success_feedback_role_arn(
@@ -69,7 +70,8 @@ class TopicArgs:
     @application_success_feedback_role_arn.setter
     def application_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSuccessFeedbackSampleRate")
     def application_success_feedback_sample_rate(
@@ -78,39 +80,48 @@ class TopicArgs:
     @application_success_feedback_sample_rate.setter
     def application_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="archivePolicy")
     def archive_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @archive_policy.setter
-    def archive_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def archive_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentBasedDeduplication")
     def content_based_deduplication(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @content_based_deduplication.setter
     def content_based_deduplication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryPolicy")
     def delivery_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delivery_policy.setter
-    def delivery_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delivery_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fifoThroughputScope")
     def fifo_throughput_scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fifo_throughput_scope.setter
-    def fifo_throughput_scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fifo_throughput_scope(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fifoTopic")
     def fifo_topic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @fifo_topic.setter
-    def fifo_topic(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def fifo_topic(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firehoseFailureFeedbackRoleArn")
     def firehose_failure_feedback_role_arn(
@@ -119,7 +130,8 @@ class TopicArgs:
     @firehose_failure_feedback_role_arn.setter
     def firehose_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firehoseSuccessFeedbackRoleArn")
     def firehose_success_feedback_role_arn(
@@ -128,7 +140,8 @@ class TopicArgs:
     @firehose_success_feedback_role_arn.setter
     def firehose_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firehoseSuccessFeedbackSampleRate")
     def firehose_success_feedback_sample_rate(
@@ -137,7 +150,8 @@ class TopicArgs:
     @firehose_success_feedback_sample_rate.setter
     def firehose_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpFailureFeedbackRoleArn")
     def http_failure_feedback_role_arn(
@@ -146,7 +160,8 @@ class TopicArgs:
     @http_failure_feedback_role_arn.setter
     def http_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpSuccessFeedbackRoleArn")
     def http_success_feedback_role_arn(
@@ -155,7 +170,8 @@ class TopicArgs:
     @http_success_feedback_role_arn.setter
     def http_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpSuccessFeedbackSampleRate")
     def http_success_feedback_sample_rate(
@@ -164,12 +180,16 @@ class TopicArgs:
     @http_success_feedback_sample_rate.setter
     def http_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsMasterKeyId")
     def kms_master_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_master_key_id.setter
-    def kms_master_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_master_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFailureFeedbackRoleArn")
     def lambda_failure_feedback_role_arn(
@@ -178,7 +198,8 @@ class TopicArgs:
     @lambda_failure_feedback_role_arn.setter
     def lambda_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaSuccessFeedbackRoleArn")
     def lambda_success_feedback_role_arn(
@@ -187,7 +208,8 @@ class TopicArgs:
     @lambda_success_feedback_role_arn.setter
     def lambda_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaSuccessFeedbackSampleRate")
     def lambda_success_feedback_sample_rate(
@@ -196,32 +218,40 @@ class TopicArgs:
     @lambda_success_feedback_sample_rate.setter
     def lambda_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy.setter
-    def policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signatureVersion")
     def signature_version(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @signature_version.setter
-    def signature_version(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def signature_version(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsFailureFeedbackRoleArn")
     def sqs_failure_feedback_role_arn(
@@ -230,7 +260,8 @@ class TopicArgs:
     @sqs_failure_feedback_role_arn.setter
     def sqs_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsSuccessFeedbackRoleArn")
     def sqs_success_feedback_role_arn(
@@ -239,7 +270,8 @@ class TopicArgs:
     @sqs_success_feedback_role_arn.setter
     def sqs_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsSuccessFeedbackSampleRate")
     def sqs_success_feedback_sample_rate(
@@ -248,7 +280,8 @@ class TopicArgs:
     @sqs_success_feedback_sample_rate.setter
     def sqs_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -257,12 +290,14 @@ class TopicArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tracingConfig")
     def tracing_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tracing_config.setter
-    def tracing_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tracing_config(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TopicState:
@@ -323,7 +358,8 @@ class _TopicState:
     @application_failure_feedback_role_arn.setter
     def application_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSuccessFeedbackRoleArn")
     def application_success_feedback_role_arn(
@@ -332,7 +368,8 @@ class _TopicState:
     @application_success_feedback_role_arn.setter
     def application_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationSuccessFeedbackSampleRate")
     def application_success_feedback_sample_rate(
@@ -341,49 +378,62 @@ class _TopicState:
     @application_success_feedback_sample_rate.setter
     def application_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="archivePolicy")
     def archive_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @archive_policy.setter
-    def archive_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def archive_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="beginningArchiveTime")
     def beginning_archive_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @beginning_archive_time.setter
-    def beginning_archive_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def beginning_archive_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentBasedDeduplication")
     def content_based_deduplication(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @content_based_deduplication.setter
     def content_based_deduplication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryPolicy")
     def delivery_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delivery_policy.setter
-    def delivery_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delivery_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fifoThroughputScope")
     def fifo_throughput_scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fifo_throughput_scope.setter
-    def fifo_throughput_scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fifo_throughput_scope(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fifoTopic")
     def fifo_topic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @fifo_topic.setter
-    def fifo_topic(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def fifo_topic(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firehoseFailureFeedbackRoleArn")
     def firehose_failure_feedback_role_arn(
@@ -392,7 +442,8 @@ class _TopicState:
     @firehose_failure_feedback_role_arn.setter
     def firehose_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firehoseSuccessFeedbackRoleArn")
     def firehose_success_feedback_role_arn(
@@ -401,7 +452,8 @@ class _TopicState:
     @firehose_success_feedback_role_arn.setter
     def firehose_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firehoseSuccessFeedbackSampleRate")
     def firehose_success_feedback_sample_rate(
@@ -410,7 +462,8 @@ class _TopicState:
     @firehose_success_feedback_sample_rate.setter
     def firehose_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpFailureFeedbackRoleArn")
     def http_failure_feedback_role_arn(
@@ -419,7 +472,8 @@ class _TopicState:
     @http_failure_feedback_role_arn.setter
     def http_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpSuccessFeedbackRoleArn")
     def http_success_feedback_role_arn(
@@ -428,7 +482,8 @@ class _TopicState:
     @http_success_feedback_role_arn.setter
     def http_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpSuccessFeedbackSampleRate")
     def http_success_feedback_sample_rate(
@@ -437,12 +492,16 @@ class _TopicState:
     @http_success_feedback_sample_rate.setter
     def http_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsMasterKeyId")
     def kms_master_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_master_key_id.setter
-    def kms_master_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_master_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFailureFeedbackRoleArn")
     def lambda_failure_feedback_role_arn(
@@ -451,7 +510,8 @@ class _TopicState:
     @lambda_failure_feedback_role_arn.setter
     def lambda_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaSuccessFeedbackRoleArn")
     def lambda_success_feedback_role_arn(
@@ -460,7 +520,8 @@ class _TopicState:
     @lambda_success_feedback_role_arn.setter
     def lambda_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaSuccessFeedbackSampleRate")
     def lambda_success_feedback_sample_rate(
@@ -469,37 +530,46 @@ class _TopicState:
     @lambda_success_feedback_sample_rate.setter
     def lambda_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner.setter
-    def owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy.setter
-    def policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signatureVersion")
     def signature_version(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @signature_version.setter
-    def signature_version(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def signature_version(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsFailureFeedbackRoleArn")
     def sqs_failure_feedback_role_arn(
@@ -508,7 +578,8 @@ class _TopicState:
     @sqs_failure_feedback_role_arn.setter
     def sqs_failure_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsSuccessFeedbackRoleArn")
     def sqs_success_feedback_role_arn(
@@ -517,7 +588,8 @@ class _TopicState:
     @sqs_success_feedback_role_arn.setter
     def sqs_success_feedback_role_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsSuccessFeedbackSampleRate")
     def sqs_success_feedback_sample_rate(
@@ -526,7 +598,8 @@ class _TopicState:
     @sqs_success_feedback_sample_rate.setter
     def sqs_success_feedback_sample_rate(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -535,7 +608,8 @@ class _TopicState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -544,12 +618,14 @@ class _TopicState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tracingConfig")
     def tracing_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tracing_config.setter
-    def tracing_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tracing_config(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sns/topic:Topic")
 class Topic(pulumi.CustomResource):

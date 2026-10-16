@@ -46,7 +46,10 @@ class GetRegistryEnvironmentContainerResult:
 class AwaitableGetRegistryEnvironmentContainerResult(
     GetRegistryEnvironmentContainerResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegistryEnvironmentContainerResult]:
+        ...
 
 def get_registry_environment_container(
     environment_name: Optional[_builtins.str] = ...,

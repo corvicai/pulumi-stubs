@@ -26,7 +26,10 @@ class ListBotConnectionServiceProvidersResult:
 class AwaitableListBotConnectionServiceProvidersResult(
     ListBotConnectionServiceProvidersResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListBotConnectionServiceProvidersResult]:
+        ...
 
 def list_bot_connection_service_providers(
     opts: Optional[pulumi.InvokeOptions] = ...,

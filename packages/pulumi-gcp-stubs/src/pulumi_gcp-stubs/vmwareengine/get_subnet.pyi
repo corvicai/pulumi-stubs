@@ -78,7 +78,8 @@ class GetSubnetResult:
     def vlan_id(self) -> _builtins.int: ...
 
 class AwaitableGetSubnetResult(GetSubnetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetResult]:
+        ...
 
 def get_subnet(
     name: Optional[_builtins.str] = ...,

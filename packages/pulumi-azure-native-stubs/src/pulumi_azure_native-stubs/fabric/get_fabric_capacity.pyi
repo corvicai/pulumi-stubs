@@ -64,7 +64,8 @@ class GetFabricCapacityResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFabricCapacityResult(GetFabricCapacityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFabricCapacityResult]:
+        ...
 
 def get_fabric_capacity(
     capacity_name: Optional[_builtins.str] = ...,

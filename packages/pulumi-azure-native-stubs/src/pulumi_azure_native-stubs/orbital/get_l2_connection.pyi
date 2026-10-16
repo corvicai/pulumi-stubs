@@ -72,7 +72,8 @@ class GetL2ConnectionResult:
     def vlan_id(self) -> _builtins.int: ...
 
 class AwaitableGetL2ConnectionResult(GetL2ConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetL2ConnectionResult]:
+        ...
 
 def get_l2_connection(
     l2_connection_name: Optional[_builtins.str] = ...,

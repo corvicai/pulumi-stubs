@@ -28,7 +28,8 @@ class GetLifecyclePolicyDocumentResult:
     def rules(self) -> Sequence[outputs.GetLifecyclePolicyDocumentRuleResult]: ...
 
 class AwaitableGetLifecyclePolicyDocumentResult(GetLifecyclePolicyDocumentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLifecyclePolicyDocumentResult]:
+        ...
 
 def get_lifecycle_policy_document(
     rules: Optional[

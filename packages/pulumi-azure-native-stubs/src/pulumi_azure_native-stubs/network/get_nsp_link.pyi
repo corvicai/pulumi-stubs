@@ -79,7 +79,8 @@ class GetNspLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNspLinkResult(GetNspLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNspLinkResult]:
+        ...
 
 def get_nsp_link(
     link_name: Optional[_builtins.str] = ...,

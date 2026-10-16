@@ -60,7 +60,8 @@ class GetPostRuleCountersResult:
     def timestamp(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetPostRuleCountersResult(GetPostRuleCountersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPostRuleCountersResult]:
+        ...
 
 def get_post_rule_counters(
     firewall_name: Optional[_builtins.str] = ...,

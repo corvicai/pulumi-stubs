@@ -53,7 +53,10 @@ class SecurityRuleInitArgs:
     @pulumi.getter
     def access(self) -> pulumi.Input[Union[_builtins.str, SecurityRuleAccess]]: ...
     @access.setter
-    def access(self, value: pulumi.Input[Union[_builtins.str, SecurityRuleAccess]]): ...
+    def access(
+        self, value: pulumi.Input[Union[_builtins.str, SecurityRuleAccess]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def direction(
@@ -62,41 +65,50 @@ class SecurityRuleInitArgs:
     @direction.setter
     def direction(
         self, value: pulumi.Input[Union[_builtins.str, SecurityRuleDirection]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityGroupName")
     def network_security_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @network_security_group_name.setter
-    def network_security_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def network_security_group_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> pulumi.Input[Union[_builtins.str, SecurityRuleProtocol]]: ...
     @protocol.setter
     def protocol(
         self, value: pulumi.Input[Union[_builtins.str, SecurityRuleProtocol]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationAddressPrefix")
     def destination_address_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_address_prefix.setter
     def destination_address_prefix(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationAddressPrefixes")
     def destination_address_prefixes(
@@ -105,7 +117,8 @@ class SecurityRuleInitArgs:
     @destination_address_prefixes.setter
     def destination_address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationApplicationSecurityGroups")
     def destination_application_security_groups(
@@ -119,12 +132,16 @@ class SecurityRuleInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationSecurityGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationPortRange")
     def destination_port_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_port_range.setter
-    def destination_port_range(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_port_range(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationPortRanges")
     def destination_port_ranges(
@@ -133,27 +150,36 @@ class SecurityRuleInitArgs:
     @destination_port_ranges.setter
     def destination_port_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityRuleName")
     def security_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_rule_name.setter
-    def security_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_rule_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceAddressPrefix")
     def source_address_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_address_prefix.setter
-    def source_address_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_address_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceAddressPrefixes")
     def source_address_prefixes(
@@ -162,7 +188,8 @@ class SecurityRuleInitArgs:
     @source_address_prefixes.setter
     def source_address_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceApplicationSecurityGroups")
     def source_application_security_groups(
@@ -176,12 +203,16 @@ class SecurityRuleInitArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ApplicationSecurityGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourcePortRange")
     def source_port_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_port_range.setter
-    def source_port_range(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_port_range(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourcePortRanges")
     def source_port_ranges(
@@ -190,12 +221,14 @@ class SecurityRuleInitArgs:
     @source_port_ranges.setter
     def source_port_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:SecurityRule")
 class SecurityRule(pulumi.CustomResource):

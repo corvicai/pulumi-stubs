@@ -60,7 +60,8 @@ class GetDeploymentSafeguardResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeploymentSafeguardResult(GetDeploymentSafeguardResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeploymentSafeguardResult]:
+        ...
 
 def get_deployment_safeguard(
     resource_uri: Optional[_builtins.str] = ...,

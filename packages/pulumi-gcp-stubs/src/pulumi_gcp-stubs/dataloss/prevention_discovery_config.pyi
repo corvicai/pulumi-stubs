@@ -38,12 +38,14 @@ class PreventionDiscoveryConfigArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> pulumi.Input[_builtins.str]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[_builtins.str]): ...
+    def parent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def actions(
@@ -57,12 +59,14 @@ class PreventionDiscoveryConfigArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PreventionDiscoveryConfigActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inspectTemplates")
     def inspect_templates(
@@ -71,7 +75,8 @@ class PreventionDiscoveryConfigArgs:
     @inspect_templates.setter
     def inspect_templates(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orgConfig")
     def org_config(
@@ -80,7 +85,8 @@ class PreventionDiscoveryConfigArgs:
     @org_config.setter
     def org_config(
         self, value: Optional[pulumi.Input[PreventionDiscoveryConfigOrgConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="otherCloudStartingLocation")
     def other_cloud_starting_location(
@@ -94,12 +100,14 @@ class PreventionDiscoveryConfigArgs:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigOtherCloudStartingLocationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(
@@ -113,7 +121,8 @@ class PreventionDiscoveryConfigArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PreventionDiscoveryConfigTargetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PreventionDiscoveryConfigState:
@@ -160,17 +169,20 @@ class _PreventionDiscoveryConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PreventionDiscoveryConfigActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def errors(
@@ -184,7 +196,8 @@ class _PreventionDiscoveryConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PreventionDiscoveryConfigErrorArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inspectTemplates")
     def inspect_templates(
@@ -193,22 +206,26 @@ class _PreventionDiscoveryConfigState:
     @inspect_templates.setter
     def inspect_templates(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastRunTime")
     def last_run_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_run_time.setter
-    def last_run_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_run_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orgConfig")
     def org_config(
@@ -217,7 +234,8 @@ class _PreventionDiscoveryConfigState:
     @org_config.setter
     def org_config(
         self, value: Optional[pulumi.Input[PreventionDiscoveryConfigOrgConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="otherCloudStartingLocation")
     def other_cloud_starting_location(
@@ -231,17 +249,20 @@ class _PreventionDiscoveryConfigState:
         value: Optional[
             pulumi.Input[PreventionDiscoveryConfigOtherCloudStartingLocationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(
@@ -255,12 +276,14 @@ class _PreventionDiscoveryConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PreventionDiscoveryConfigTargetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PreventionDiscoveryConfig(pulumi.CustomResource):

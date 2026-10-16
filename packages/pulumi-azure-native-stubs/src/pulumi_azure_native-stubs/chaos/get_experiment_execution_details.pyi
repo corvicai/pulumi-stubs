@@ -58,7 +58,10 @@ class GetExperimentExecutionDetailsResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetExperimentExecutionDetailsResult(GetExperimentExecutionDetailsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExperimentExecutionDetailsResult]:
+        ...
 
 def get_experiment_execution_details(
     execution_id: Optional[_builtins.str] = ...,

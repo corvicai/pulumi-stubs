@@ -24,7 +24,8 @@ class ListMonitorLinkedResourcesResult:
     def value(self) -> Optional[Sequence[outputs.LinkedResourceResponse]]: ...
 
 class AwaitableListMonitorLinkedResourcesResult(ListMonitorLinkedResourcesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListMonitorLinkedResourcesResult]:
+        ...
 
 def list_monitor_linked_resources(
     monitor_name: Optional[_builtins.str] = ...,

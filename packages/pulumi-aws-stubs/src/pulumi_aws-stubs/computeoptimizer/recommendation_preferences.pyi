@@ -41,12 +41,16 @@ class RecommendationPreferencesArgs:
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> pulumi.Input[_builtins.str]: ...
     @resource_type.setter
-    def resource_type(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[RecommendationPreferencesScopeArgs]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[RecommendationPreferencesScopeArgs]): ...
+    def scope(
+        self, value: pulumi.Input[RecommendationPreferencesScopeArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enhancedInfrastructureMetrics")
     def enhanced_infrastructure_metrics(
@@ -55,7 +59,8 @@ class RecommendationPreferencesArgs:
     @enhanced_infrastructure_metrics.setter
     def enhanced_infrastructure_metrics(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalMetricsPreference")
     def external_metrics_preference(
@@ -69,17 +74,24 @@ class RecommendationPreferencesArgs:
         value: Optional[
             pulumi.Input[RecommendationPreferencesExternalMetricsPreferenceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferredWorkloadTypes")
     def inferred_workload_types(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @inferred_workload_types.setter
-    def inferred_workload_types(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def inferred_workload_types(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lookBackPeriod")
     def look_back_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @look_back_period.setter
-    def look_back_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def look_back_period(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredResources")
     def preferred_resources(
@@ -97,17 +109,22 @@ class RecommendationPreferencesArgs:
                 Sequence[pulumi.Input[RecommendationPreferencesPreferredResourceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="savingsEstimationMode")
     def savings_estimation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @savings_estimation_mode.setter
-    def savings_estimation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def savings_estimation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="utilizationPreferences")
     def utilization_preferences(
@@ -127,7 +144,8 @@ class RecommendationPreferencesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RecommendationPreferencesState:
@@ -165,7 +183,8 @@ class _RecommendationPreferencesState:
     @enhanced_infrastructure_metrics.setter
     def enhanced_infrastructure_metrics(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalMetricsPreference")
     def external_metrics_preference(
@@ -179,17 +198,24 @@ class _RecommendationPreferencesState:
         value: Optional[
             pulumi.Input[RecommendationPreferencesExternalMetricsPreferenceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferredWorkloadTypes")
     def inferred_workload_types(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @inferred_workload_types.setter
-    def inferred_workload_types(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def inferred_workload_types(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lookBackPeriod")
     def look_back_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @look_back_period.setter
-    def look_back_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def look_back_period(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredResources")
     def preferred_resources(
@@ -207,29 +233,36 @@ class _RecommendationPreferencesState:
                 Sequence[pulumi.Input[RecommendationPreferencesPreferredResourceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="savingsEstimationMode")
     def savings_estimation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @savings_estimation_mode.setter
-    def savings_estimation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def savings_estimation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[RecommendationPreferencesScopeArgs]]: ...
     @scope.setter
     def scope(
         self, value: Optional[pulumi.Input[RecommendationPreferencesScopeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="utilizationPreferences")
     def utilization_preferences(
@@ -249,7 +282,8 @@ class _RecommendationPreferencesState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RecommendationPreferences(pulumi.CustomResource):

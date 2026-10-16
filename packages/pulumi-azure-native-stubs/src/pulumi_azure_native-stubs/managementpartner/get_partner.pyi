@@ -67,7 +67,8 @@ class GetPartnerResult:
     def version(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetPartnerResult(GetPartnerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPartnerResult]:
+        ...
 
 def get_partner(
     partner_id: Optional[_builtins.str] = ...,

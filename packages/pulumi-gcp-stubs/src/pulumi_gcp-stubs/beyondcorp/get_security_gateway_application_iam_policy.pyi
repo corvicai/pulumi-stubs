@@ -45,7 +45,10 @@ class GetSecurityGatewayApplicationIamPolicyResult:
 class AwaitableGetSecurityGatewayApplicationIamPolicyResult(
     GetSecurityGatewayApplicationIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSecurityGatewayApplicationIamPolicyResult]:
+        ...
 
 def get_security_gateway_application_iam_policy(
     application_id: Optional[_builtins.str] = ...,

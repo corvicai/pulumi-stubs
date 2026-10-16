@@ -43,7 +43,8 @@ class GetTunnelDestGroupIamPolicyResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetTunnelDestGroupIamPolicyResult(GetTunnelDestGroupIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTunnelDestGroupIamPolicyResult]:
+        ...
 
 def get_tunnel_dest_group_iam_policy(
     dest_group: Optional[_builtins.str] = ...,

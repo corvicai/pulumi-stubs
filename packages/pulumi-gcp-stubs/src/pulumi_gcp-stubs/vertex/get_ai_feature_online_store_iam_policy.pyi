@@ -45,7 +45,10 @@ class GetAiFeatureOnlineStoreIamPolicyResult:
 class AwaitableGetAiFeatureOnlineStoreIamPolicyResult(
     GetAiFeatureOnlineStoreIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAiFeatureOnlineStoreIamPolicyResult]:
+        ...
 
 def get_ai_feature_online_store_iam_policy(
     feature_online_store: Optional[_builtins.str] = ...,

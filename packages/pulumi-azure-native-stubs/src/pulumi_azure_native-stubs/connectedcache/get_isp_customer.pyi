@@ -52,7 +52,8 @@ class GetIspCustomerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIspCustomerResult(GetIspCustomerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIspCustomerResult]:
+        ...
 
 def get_isp_customer(
     customer_resource_name: Optional[_builtins.str] = ...,

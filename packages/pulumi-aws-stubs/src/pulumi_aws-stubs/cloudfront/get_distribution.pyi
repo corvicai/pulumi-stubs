@@ -71,7 +71,8 @@ class GetDistributionResult:
     def web_acl_id(self) -> _builtins.str: ...
 
 class AwaitableGetDistributionResult(GetDistributionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDistributionResult]:
+        ...
 
 def get_distribution(
     id: Optional[_builtins.str] = ...,

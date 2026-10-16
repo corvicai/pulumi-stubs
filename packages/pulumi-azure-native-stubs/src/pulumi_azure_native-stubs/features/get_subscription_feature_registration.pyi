@@ -39,7 +39,10 @@ class GetSubscriptionFeatureRegistrationResult:
 class AwaitableGetSubscriptionFeatureRegistrationResult(
     GetSubscriptionFeatureRegistrationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSubscriptionFeatureRegistrationResult]:
+        ...
 
 def get_subscription_feature_registration(
     feature_name: Optional[_builtins.str] = ...,

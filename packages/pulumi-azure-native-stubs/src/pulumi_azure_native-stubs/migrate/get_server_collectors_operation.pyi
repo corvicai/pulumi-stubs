@@ -62,7 +62,10 @@ class GetServerCollectorsOperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetServerCollectorsOperationResult(GetServerCollectorsOperationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServerCollectorsOperationResult]:
+        ...
 
 def get_server_collectors_operation(
     project_name: Optional[_builtins.str] = ...,

@@ -43,7 +43,8 @@ class GetGatewayResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetGatewayResult(GetGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGatewayResult]:
+        ...
 
 def get_gateway(
     name: Optional[_builtins.str] = ...,

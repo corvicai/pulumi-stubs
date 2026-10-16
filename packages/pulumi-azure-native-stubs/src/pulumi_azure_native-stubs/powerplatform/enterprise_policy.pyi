@@ -30,22 +30,32 @@ class EnterprisePolicyArgs:
     @pulumi.getter
     def kind(self) -> pulumi.Input[Union[_builtins.str, EnterprisePolicyKind]]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[Union[_builtins.str, EnterprisePolicyKind]]): ...
+    def kind(
+        self, value: pulumi.Input[Union[_builtins.str, EnterprisePolicyKind]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[PropertiesEncryptionArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[PropertiesEncryptionArgs]]): ...
+    def encryption(
+        self, value: Optional[pulumi.Input[PropertiesEncryptionArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enterprisePolicyName")
     def enterprise_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enterprise_policy_name.setter
-    def enterprise_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def enterprise_policy_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthStatus")
     def health_status(
@@ -54,22 +64,28 @@ class EnterprisePolicyArgs:
     @health_status.setter
     def health_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HealthStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[EnterprisePolicyIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[EnterprisePolicyIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[EnterprisePolicyIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lockbox(self) -> Optional[pulumi.Input[PropertiesLockboxArgs]]: ...
     @lockbox.setter
-    def lockbox(self, value: Optional[pulumi.Input[PropertiesLockboxArgs]]): ...
+    def lockbox(self, value: Optional[pulumi.Input[PropertiesLockboxArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInjection")
     def network_injection(
@@ -78,7 +94,8 @@ class EnterprisePolicyArgs:
     @network_injection.setter
     def network_injection(
         self, value: Optional[pulumi.Input[PropertiesNetworkInjectionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -87,7 +104,8 @@ class EnterprisePolicyArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:powerplatform:EnterprisePolicy")
 class EnterprisePolicy(pulumi.CustomResource):

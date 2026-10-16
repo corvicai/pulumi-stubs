@@ -68,7 +68,8 @@ class GetAccountResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetAccountResult(GetAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountResult]:
+        ...
 
 def get_account(
     account_name: Optional[_builtins.str] = ...,

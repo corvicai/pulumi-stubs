@@ -64,7 +64,8 @@ class GetImportSitesControllerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetImportSitesControllerResult(GetImportSitesControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetImportSitesControllerResult]:
+        ...
 
 def get_import_sites_controller(
     resource_group_name: Optional[_builtins.str] = ...,

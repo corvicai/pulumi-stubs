@@ -33,12 +33,14 @@ class AccountArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountName")
     def account_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_name.setter
-    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localAuth")
     def local_auth(
@@ -47,12 +49,14 @@ class AccountArgs:
     @local_auth.setter
     def local_auth(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnablementStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionalAffinity")
     def regional_affinity(
@@ -61,7 +65,8 @@ class AccountArgs:
     @regional_affinity.setter
     def regional_affinity(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnablementStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def reporting(
@@ -70,7 +75,8 @@ class AccountArgs:
     @reporting.setter
     def reporting(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnablementStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalableExecution")
     def scalable_execution(
@@ -79,7 +85,8 @@ class AccountArgs:
     @scalable_execution.setter
     def scalable_execution(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnablementStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -88,7 +95,8 @@ class AccountArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azureplaywrightservice:Account")
 class Account(pulumi.CustomResource):

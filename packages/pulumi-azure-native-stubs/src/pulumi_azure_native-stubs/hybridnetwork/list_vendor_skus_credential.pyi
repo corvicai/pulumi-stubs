@@ -39,7 +39,8 @@ class ListVendorSkusCredentialResult:
     def username(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListVendorSkusCredentialResult(ListVendorSkusCredentialResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListVendorSkusCredentialResult]:
+        ...
 
 def list_vendor_skus_credential(
     sku_name: Optional[_builtins.str] = ...,

@@ -63,7 +63,8 @@ class GetRandomPasswordResult:
     def require_each_included_type(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetRandomPasswordResult(GetRandomPasswordResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRandomPasswordResult]:
+        ...
 
 def get_random_password(
     exclude_characters: Optional[_builtins.str] = ...,

@@ -43,17 +43,20 @@ class ExperimentTemplateArgs:
     @actions.setter
     def actions(
         self, value: pulumi.Input[Sequence[pulumi.Input[ExperimentTemplateActionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopConditions")
     def stop_conditions(
@@ -65,7 +68,8 @@ class ExperimentTemplateArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ExperimentTemplateStopConditionArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="experimentOptions")
     def experiment_options(
@@ -74,7 +78,8 @@ class ExperimentTemplateArgs:
     @experiment_options.setter
     def experiment_options(
         self, value: Optional[pulumi.Input[ExperimentTemplateExperimentOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="experimentReportConfiguration")
     def experiment_report_configuration(
@@ -88,7 +93,8 @@ class ExperimentTemplateArgs:
         value: Optional[
             pulumi.Input[ExperimentTemplateExperimentReportConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfiguration")
     def log_configuration(
@@ -97,12 +103,14 @@ class ExperimentTemplateArgs:
     @log_configuration.setter
     def log_configuration(
         self, value: Optional[pulumi.Input[ExperimentTemplateLogConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -111,7 +119,8 @@ class ExperimentTemplateArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(
@@ -125,7 +134,8 @@ class ExperimentTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ExperimentTemplateTargetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ExperimentTemplateState:
@@ -171,12 +181,14 @@ class _ExperimentTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ExperimentTemplateActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="experimentOptions")
     def experiment_options(
@@ -185,7 +197,8 @@ class _ExperimentTemplateState:
     @experiment_options.setter
     def experiment_options(
         self, value: Optional[pulumi.Input[ExperimentTemplateExperimentOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="experimentReportConfiguration")
     def experiment_report_configuration(
@@ -199,7 +212,8 @@ class _ExperimentTemplateState:
         value: Optional[
             pulumi.Input[ExperimentTemplateExperimentReportConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfiguration")
     def log_configuration(
@@ -208,17 +222,20 @@ class _ExperimentTemplateState:
     @log_configuration.setter
     def log_configuration(
         self, value: Optional[pulumi.Input[ExperimentTemplateLogConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopConditions")
     def stop_conditions(
@@ -232,7 +249,8 @@ class _ExperimentTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ExperimentTemplateStopConditionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -241,7 +259,8 @@ class _ExperimentTemplateState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -250,7 +269,8 @@ class _ExperimentTemplateState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(
@@ -264,7 +284,8 @@ class _ExperimentTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ExperimentTemplateTargetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:fis/experimentTemplate:ExperimentTemplate")
 class ExperimentTemplate(pulumi.CustomResource):

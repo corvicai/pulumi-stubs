@@ -26,7 +26,10 @@ class ListListTenantConfigurationViolationResult:
 class AwaitableListListTenantConfigurationViolationResult(
     ListListTenantConfigurationViolationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListListTenantConfigurationViolationResult]:
+        ...
 
 def list_list_tenant_configuration_violation(
     opts: Optional[pulumi.InvokeOptions] = ...,

@@ -39,7 +39,8 @@ class StorageDiscoveryScopeArgs:
     @pulumi.getter(name="displayName")
     def display_name(self) -> pulumi.Input[_builtins.str]: ...
     @display_name.setter
-    def display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(
@@ -53,7 +54,8 @@ class StorageDiscoveryScopeArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[Union[_builtins.str, StorageDiscoveryResourceType]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagKeysOnly")
     def tag_keys_only(
@@ -62,7 +64,8 @@ class StorageDiscoveryScopeArgs:
     @tag_keys_only.setter
     def tag_keys_only(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -71,7 +74,8 @@ class StorageDiscoveryScopeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageDiscoveryWorkspacePropertiesArgsDict(TypedDict):
     scopes: pulumi.Input[Sequence[pulumi.Input[StorageDiscoveryScopeArgsDict]]]
@@ -97,7 +101,8 @@ class StorageDiscoveryWorkspacePropertiesArgs:
     @scopes.setter
     def scopes(
         self, value: pulumi.Input[Sequence[pulumi.Input[StorageDiscoveryScopeArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceRoots")
     def workspace_roots(
@@ -106,12 +111,14 @@ class StorageDiscoveryWorkspacePropertiesArgs:
     @workspace_roots.setter
     def workspace_roots(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(
@@ -120,4 +127,5 @@ class StorageDiscoveryWorkspacePropertiesArgs:
     @sku.setter
     def sku(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageDiscoverySku]]]
-    ): ...
+    ):  # -> None:
+        ...

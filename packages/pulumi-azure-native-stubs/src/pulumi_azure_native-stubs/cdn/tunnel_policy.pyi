@@ -33,17 +33,20 @@ class TunnelPolicyArgs:
     def domains(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[ActivatedResourceReferenceArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profileName")
     def profile_name(self) -> pulumi.Input[_builtins.str]: ...
     @profile_name.setter
-    def profile_name(self, value: pulumi.Input[_builtins.str]): ...
+    def profile_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetGroups")
     def target_groups(
@@ -53,12 +56,16 @@ class TunnelPolicyArgs:
     def target_groups(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceReferenceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnelPolicyName")
     def tunnel_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tunnel_policy_name.setter
-    def tunnel_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tunnel_policy_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tunnelType")
     def tunnel_type(
@@ -67,7 +74,8 @@ class TunnelPolicyArgs:
     @tunnel_type.setter
     def tunnel_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TunnelType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cdn:TunnelPolicy")
 class TunnelPolicy(pulumi.CustomResource):

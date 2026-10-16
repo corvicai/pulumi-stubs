@@ -114,7 +114,8 @@ class GetSubscriptionResult:
     def topic(self) -> _builtins.str: ...
 
 class AwaitableGetSubscriptionResult(GetSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubscriptionResult]:
+        ...
 
 def get_subscription(
     name: Optional[_builtins.str] = ...,

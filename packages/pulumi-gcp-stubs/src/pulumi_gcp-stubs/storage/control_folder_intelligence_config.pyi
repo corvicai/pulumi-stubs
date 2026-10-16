@@ -22,7 +22,8 @@ class ControlFolderIntelligenceConfigArgs:
     @pulumi.getter(name="editionConfig")
     def edition_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @edition_config.setter
-    def edition_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def edition_config(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -31,12 +32,14 @@ class ControlFolderIntelligenceConfigArgs:
     @filter.setter
     def filter(
         self, value: Optional[pulumi.Input[ControlFolderIntelligenceConfigFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ControlFolderIntelligenceConfigState:
@@ -66,7 +69,8 @@ class _ControlFolderIntelligenceConfigState:
     @pulumi.getter(name="editionConfig")
     def edition_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @edition_config.setter
-    def edition_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def edition_config(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveIntelligenceConfigs")
     def effective_intelligence_configs(
@@ -92,7 +96,8 @@ class _ControlFolderIntelligenceConfigState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -101,12 +106,14 @@ class _ControlFolderIntelligenceConfigState:
     @filter.setter
     def filter(
         self, value: Optional[pulumi.Input[ControlFolderIntelligenceConfigFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trialConfigs")
     def trial_configs(
@@ -124,12 +131,14 @@ class _ControlFolderIntelligenceConfigState:
                 Sequence[pulumi.Input[ControlFolderIntelligenceConfigTrialConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ControlFolderIntelligenceConfig(pulumi.CustomResource):

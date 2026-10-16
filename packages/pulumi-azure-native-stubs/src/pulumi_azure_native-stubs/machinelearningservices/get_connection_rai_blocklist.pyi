@@ -44,7 +44,8 @@ class GetConnectionRaiBlocklistResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionRaiBlocklistResult(GetConnectionRaiBlocklistResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionRaiBlocklistResult]:
+        ...
 
 def get_connection_rai_blocklist(
     connection_name: Optional[_builtins.str] = ...,

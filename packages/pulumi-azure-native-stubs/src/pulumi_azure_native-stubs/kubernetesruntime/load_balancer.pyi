@@ -27,19 +27,24 @@ class LoadBalancerArgs:
     @pulumi.getter
     def addresses(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @addresses.setter
-    def addresses(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def addresses(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advertiseMode")
     def advertise_mode(self) -> pulumi.Input[Union[_builtins.str, AdvertiseMode]]: ...
     @advertise_mode.setter
     def advertise_mode(
         self, value: pulumi.Input[Union[_builtins.str, AdvertiseMode]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bgpPeers")
     def bgp_peers(
@@ -48,12 +53,16 @@ class LoadBalancerArgs:
     @bgp_peers.setter
     def bgp_peers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerName")
     def load_balancer_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @load_balancer_name.setter
-    def load_balancer_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def load_balancer_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceSelector")
     def service_selector(
@@ -62,7 +71,8 @@ class LoadBalancerArgs:
     @service_selector.setter
     def service_selector(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:kubernetesruntime:LoadBalancer")
 class LoadBalancer(pulumi.CustomResource):

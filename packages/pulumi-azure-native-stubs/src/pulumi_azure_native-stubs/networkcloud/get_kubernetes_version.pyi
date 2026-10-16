@@ -64,7 +64,8 @@ class GetKubernetesVersionResult:
     def values(self) -> Sequence[outputs.KubernetesVersionValueResponse]: ...
 
 class AwaitableGetKubernetesVersionResult(GetKubernetesVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKubernetesVersionResult]:
+        ...
 
 def get_kubernetes_version(
     kubernetes_version_name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class ListDeploymentInfoResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableListDeploymentInfoResult(ListDeploymentInfoResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDeploymentInfoResult]:
+        ...
 
 def list_deployment_info(
     monitor_name: Optional[_builtins.str] = ...,

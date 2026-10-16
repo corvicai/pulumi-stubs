@@ -48,7 +48,8 @@ class GetQueueAuthorizationRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetQueueAuthorizationRuleResult(GetQueueAuthorizationRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueueAuthorizationRuleResult]:
+        ...
 
 def get_queue_authorization_rule(
     authorization_rule_name: Optional[_builtins.str] = ...,

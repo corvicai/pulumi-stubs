@@ -64,7 +64,8 @@ class GetPolicyAssignmentArtifactResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyAssignmentArtifactResult(GetPolicyAssignmentArtifactResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyAssignmentArtifactResult]:
+        ...
 
 def get_policy_assignment_artifact(
     artifact_name: Optional[_builtins.str] = ...,

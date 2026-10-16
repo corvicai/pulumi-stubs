@@ -92,7 +92,8 @@ class GetWebhookResult:
     def webhook_key_enabled(self) -> _builtins.str: ...
 
 class AwaitableGetWebhookResult(GetWebhookResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebhookResult]:
+        ...
 
 def get_webhook(
     report_name: Optional[_builtins.str] = ...,

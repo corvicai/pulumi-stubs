@@ -33,17 +33,20 @@ class Gen2EnvironmentArgs:
     @pulumi.getter
     def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): ...
+    def kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> pulumi.Input[SkuArgs]: ...
     @sku.setter
-    def sku(self, value: pulumi.Input[SkuArgs]): ...
+    def sku(self, value: pulumi.Input[SkuArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfiguration")
     def storage_configuration(
@@ -52,7 +55,8 @@ class Gen2EnvironmentArgs:
     @storage_configuration.setter
     def storage_configuration(
         self, value: pulumi.Input[Gen2StorageConfigurationInputArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeSeriesIdProperties")
     def time_series_id_properties(
@@ -61,17 +65,22 @@ class Gen2EnvironmentArgs:
     @time_series_id_properties.setter
     def time_series_id_properties(
         self, value: pulumi.Input[Sequence[pulumi.Input[TimeSeriesIdPropertyArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentName")
     def environment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @environment_name.setter
-    def environment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def environment_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -80,7 +89,8 @@ class Gen2EnvironmentArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="warmStoreConfiguration")
     def warm_store_configuration(
@@ -89,7 +99,8 @@ class Gen2EnvironmentArgs:
     @warm_store_configuration.setter
     def warm_store_configuration(
         self, value: Optional[pulumi.Input[WarmStoreConfigurationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:timeseriesinsights:Gen2Environment")
 class Gen2Environment(pulumi.CustomResource):

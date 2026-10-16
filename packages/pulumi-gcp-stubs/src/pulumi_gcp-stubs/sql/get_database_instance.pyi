@@ -170,7 +170,8 @@ class GetDatabaseInstanceResult:
     def settings(self) -> Sequence[outputs.GetDatabaseInstanceSettingResult]: ...
 
 class AwaitableGetDatabaseInstanceResult(GetDatabaseInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseInstanceResult]:
+        ...
 
 def get_database_instance(
     name: Optional[_builtins.str] = ...,

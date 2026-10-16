@@ -208,7 +208,8 @@ class GetAssessmentsOperationResult:
     def vm_uptime(self) -> Optional[outputs.VmUptimeResponse]: ...
 
 class AwaitableGetAssessmentsOperationResult(GetAssessmentsOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssessmentsOperationResult]:
+        ...
 
 def get_assessments_operation(
     assessment_name: Optional[_builtins.str] = ...,

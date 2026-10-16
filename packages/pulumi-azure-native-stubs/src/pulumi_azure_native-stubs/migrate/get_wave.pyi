@@ -43,7 +43,8 @@ class GetWaveResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWaveResult(GetWaveResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWaveResult]:
+        ...
 
 def get_wave(
     project_name: Optional[_builtins.str] = ...,

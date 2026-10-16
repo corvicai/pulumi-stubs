@@ -43,7 +43,8 @@ class GetDatabaseAccountTableResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseAccountTableResult(GetDatabaseAccountTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseAccountTableResult]:
+        ...
 
 def get_database_account_table(
     account_name: Optional[_builtins.str] = ...,

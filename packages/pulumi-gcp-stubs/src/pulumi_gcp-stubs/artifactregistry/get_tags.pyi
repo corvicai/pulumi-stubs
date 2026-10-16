@@ -43,7 +43,8 @@ class GetTagsResult:
     def tags(self) -> Sequence[outputs.GetTagsTagResult]: ...
 
 class AwaitableGetTagsResult(GetTagsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagsResult]:
+        ...
 
 def get_tags(
     filter: Optional[_builtins.str] = ...,

@@ -44,7 +44,8 @@ class GetPlacementPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPlacementPolicyResult(GetPlacementPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPlacementPolicyResult]:
+        ...
 
 def get_placement_policy(
     cluster_name: Optional[_builtins.str] = ...,

@@ -67,7 +67,8 @@ class GetWebAppPremierAddOnSlotResult:
     def vendor(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebAppPremierAddOnSlotResult(GetWebAppPremierAddOnSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppPremierAddOnSlotResult]:
+        ...
 
 def get_web_app_premier_add_on_slot(
     name: Optional[_builtins.str] = ...,

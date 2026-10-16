@@ -21,7 +21,8 @@ class ListKeyByAutomationAccountResult:
     def keys(self) -> Optional[Sequence[outputs.KeyResponse]]: ...
 
 class AwaitableListKeyByAutomationAccountResult(ListKeyByAutomationAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListKeyByAutomationAccountResult]:
+        ...
 
 def list_key_by_automation_account(
     automation_account_name: Optional[_builtins.str] = ...,

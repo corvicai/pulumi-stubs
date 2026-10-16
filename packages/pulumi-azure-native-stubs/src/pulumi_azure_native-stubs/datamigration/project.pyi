@@ -57,12 +57,14 @@ class ProjectArgs:
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
     def service_name(self) -> pulumi.Input[_builtins.str]: ...
     @service_name.setter
-    def service_name(self, value: pulumi.Input[_builtins.str]): ...
+    def service_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourcePlatform")
     def source_platform(
@@ -71,7 +73,8 @@ class ProjectArgs:
     @source_platform.setter
     def source_platform(
         self, value: pulumi.Input[Union[_builtins.str, ProjectSourcePlatform]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPlatform")
     def target_platform(
@@ -80,7 +83,8 @@ class ProjectArgs:
     @target_platform.setter
     def target_platform(
         self, value: pulumi.Input[Union[_builtins.str, ProjectTargetPlatform]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureAuthenticationInfo")
     def azure_authentication_info(
@@ -89,7 +93,8 @@ class ProjectArgs:
     @azure_authentication_info.setter
     def azure_authentication_info(
         self, value: Optional[pulumi.Input[AzureActiveDirectoryAppArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databasesInfo")
     def databases_info(
@@ -98,17 +103,20 @@ class ProjectArgs:
     @databases_info.setter
     def databases_info(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DatabaseInfoArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectName")
     def project_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_name.setter
-    def project_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConnectionInfo")
     def source_connection_info(
@@ -140,7 +148,8 @@ class ProjectArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -149,7 +158,8 @@ class ProjectArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetConnectionInfo")
     def target_connection_info(
@@ -181,7 +191,8 @@ class ProjectArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:datamigration:Project")
 class Project(pulumi.CustomResource):

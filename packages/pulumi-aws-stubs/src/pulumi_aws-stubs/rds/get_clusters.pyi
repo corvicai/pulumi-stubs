@@ -41,7 +41,8 @@ class GetClustersResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetClustersResult(GetClustersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClustersResult]:
+        ...
 
 def get_clusters(
     filters: Optional[

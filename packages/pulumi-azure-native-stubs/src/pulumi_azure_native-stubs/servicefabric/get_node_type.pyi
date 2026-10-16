@@ -258,7 +258,8 @@ class GetNodeTypeResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetNodeTypeResult(GetNodeTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNodeTypeResult]:
+        ...
 
 def get_node_type(
     cluster_name: Optional[_builtins.str] = ...,

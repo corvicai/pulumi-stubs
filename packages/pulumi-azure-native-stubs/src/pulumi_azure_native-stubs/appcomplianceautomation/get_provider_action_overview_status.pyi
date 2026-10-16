@@ -23,7 +23,10 @@ class GetProviderActionOverviewStatusResult:
 class AwaitableGetProviderActionOverviewStatusResult(
     GetProviderActionOverviewStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProviderActionOverviewStatusResult]:
+        ...
 
 def get_provider_action_overview_status(
     type: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

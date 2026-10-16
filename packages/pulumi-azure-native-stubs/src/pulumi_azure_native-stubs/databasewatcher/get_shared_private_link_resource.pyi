@@ -64,7 +64,10 @@ class GetSharedPrivateLinkResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSharedPrivateLinkResourceResult(GetSharedPrivateLinkResourceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSharedPrivateLinkResourceResult]:
+        ...
 
 def get_shared_private_link_resource(
     resource_group_name: Optional[_builtins.str] = ...,

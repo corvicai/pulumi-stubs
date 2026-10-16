@@ -86,7 +86,8 @@ class GetApiGatewayResult:
     def virtual_network_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetApiGatewayResult(GetApiGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiGatewayResult]:
+        ...
 
 def get_api_gateway(
     gateway_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetCloudFormationStackSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudFormationStackSetResult(GetCloudFormationStackSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudFormationStackSetResult]:
+        ...
 
 def get_cloud_formation_stack_set(
     name: Optional[_builtins.str] = ...,

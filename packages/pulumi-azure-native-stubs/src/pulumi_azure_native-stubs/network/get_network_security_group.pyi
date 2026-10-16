@@ -80,7 +80,8 @@ class GetNetworkSecurityGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkSecurityGroupResult(GetNetworkSecurityGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkSecurityGroupResult]:
+        ...
 
 def get_network_security_group(
     expand: Optional[_builtins.str] = ...,

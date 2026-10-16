@@ -56,7 +56,8 @@ class GetOfficeDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOfficeDataConnectorResult(GetOfficeDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOfficeDataConnectorResult]:
+        ...
 
 def get_office_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

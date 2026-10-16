@@ -51,7 +51,8 @@ class GetProtectionIntentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetProtectionIntentResult(GetProtectionIntentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProtectionIntentResult]:
+        ...
 
 def get_protection_intent(
     fabric_name: Optional[_builtins.str] = ...,

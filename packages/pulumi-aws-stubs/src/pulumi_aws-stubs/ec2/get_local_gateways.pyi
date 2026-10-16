@@ -36,7 +36,8 @@ class GetLocalGatewaysResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetLocalGatewaysResult(GetLocalGatewaysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLocalGatewaysResult]:
+        ...
 
 def get_local_gateways(
     filters: Optional[

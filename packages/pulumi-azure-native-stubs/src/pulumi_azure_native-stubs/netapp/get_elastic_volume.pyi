@@ -60,7 +60,8 @@ class GetElasticVolumeResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetElasticVolumeResult(GetElasticVolumeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetElasticVolumeResult]:
+        ...
 
 def get_elastic_volume(
     account_name: Optional[_builtins.str] = ...,

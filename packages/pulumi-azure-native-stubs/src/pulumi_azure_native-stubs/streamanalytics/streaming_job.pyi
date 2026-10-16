@@ -56,12 +56,14 @@ class StreamingJobArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cluster(self) -> Optional[pulumi.Input[ClusterInfoArgs]]: ...
     @cluster.setter
-    def cluster(self, value: Optional[pulumi.Input[ClusterInfoArgs]]): ...
+    def cluster(self, value: Optional[pulumi.Input[ClusterInfoArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="compatibilityLevel")
     def compatibility_level(
@@ -70,7 +72,8 @@ class StreamingJobArgs:
     @compatibility_level.setter
     def compatibility_level(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CompatibilityLevel]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentStoragePolicy")
     def content_storage_policy(
@@ -79,12 +82,14 @@ class StreamingJobArgs:
     @content_storage_policy.setter
     def content_storage_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ContentStoragePolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataLocale")
     def data_locale(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_locale.setter
-    def data_locale(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_locale(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventsLateArrivalMaxDelayInSeconds")
     def events_late_arrival_max_delay_in_seconds(
@@ -93,7 +98,8 @@ class StreamingJobArgs:
     @events_late_arrival_max_delay_in_seconds.setter
     def events_late_arrival_max_delay_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventsOutOfOrderMaxDelayInSeconds")
     def events_out_of_order_max_delay_in_seconds(
@@ -102,7 +108,8 @@ class StreamingJobArgs:
     @events_out_of_order_max_delay_in_seconds.setter
     def events_out_of_order_max_delay_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventsOutOfOrderPolicy")
     def events_out_of_order_policy(
@@ -112,7 +119,8 @@ class StreamingJobArgs:
     def events_out_of_order_policy(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, EventsOutOfOrderPolicy]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def functions(
@@ -121,43 +129,50 @@ class StreamingJobArgs:
     @functions.setter
     def functions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FunctionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inputs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[InputArgs]]]]: ...
     @inputs.setter
     def inputs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[InputArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobName")
     def job_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_name.setter
-    def job_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobStorageAccount")
     def job_storage_account(self) -> Optional[pulumi.Input[JobStorageAccountArgs]]: ...
     @job_storage_account.setter
     def job_storage_account(
         self, value: Optional[pulumi.Input[JobStorageAccountArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobType")
     def job_type(self) -> Optional[pulumi.Input[Union[_builtins.str, JobType]]]: ...
     @job_type.setter
     def job_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, JobType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputErrorPolicy")
     def output_error_policy(
@@ -166,7 +181,8 @@ class StreamingJobArgs:
     @output_error_policy.setter
     def output_error_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OutputErrorPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputStartMode")
     def output_start_mode(
@@ -175,24 +191,30 @@ class StreamingJobArgs:
     @output_start_mode.setter
     def output_start_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OutputStartMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputStartTime")
     def output_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_start_time.setter
-    def output_start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_start_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def outputs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[OutputArgs]]]]: ...
     @outputs.setter
     def outputs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[OutputArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[SkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -201,12 +223,16 @@ class StreamingJobArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transformation(self) -> Optional[pulumi.Input[TransformationArgs]]: ...
     @transformation.setter
-    def transformation(self, value: Optional[pulumi.Input[TransformationArgs]]): ...
+    def transformation(
+        self, value: Optional[pulumi.Input[TransformationArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:streamanalytics:StreamingJob")
 class StreamingJob(pulumi.CustomResource):

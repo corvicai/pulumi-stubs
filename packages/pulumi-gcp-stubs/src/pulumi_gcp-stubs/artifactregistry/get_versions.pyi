@@ -52,7 +52,8 @@ class GetVersionsResult:
     def view(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVersionsResult(GetVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVersionsResult]:
+        ...
 
 def get_versions(
     filter: Optional[_builtins.str] = ...,

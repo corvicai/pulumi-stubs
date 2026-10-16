@@ -52,7 +52,8 @@ class GetCloudFrontDistributionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudFrontDistributionResult(GetCloudFrontDistributionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudFrontDistributionResult]:
+        ...
 
 def get_cloud_front_distribution(
     name: Optional[_builtins.str] = ...,

@@ -65,12 +65,14 @@ class ContainerGroupArgs:
     @containers.setter
     def containers(
         self, value: pulumi.Input[Sequence[pulumi.Input[ContainerArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confidentialComputeProperties")
     def confidential_compute_properties(
@@ -79,12 +81,16 @@ class ContainerGroupArgs:
     @confidential_compute_properties.setter
     def confidential_compute_properties(
         self, value: Optional[pulumi.Input[ConfidentialComputePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerGroupName")
     def container_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_group_name.setter
-    def container_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def container_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerGroupProfile")
     def container_group_profile(
@@ -94,19 +100,24 @@ class ContainerGroupArgs:
     def container_group_profile(
         self,
         value: Optional[pulumi.Input[ContainerGroupProfileReferenceDefinitionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def diagnostics(self) -> Optional[pulumi.Input[ContainerGroupDiagnosticsArgs]]: ...
     @diagnostics.setter
     def diagnostics(
         self, value: Optional[pulumi.Input[ContainerGroupDiagnosticsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsConfig")
     def dns_config(self) -> Optional[pulumi.Input[DnsConfigurationArgs]]: ...
     @dns_config.setter
-    def dns_config(self, value: Optional[pulumi.Input[DnsConfigurationArgs]]): ...
+    def dns_config(
+        self, value: Optional[pulumi.Input[DnsConfigurationArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionProperties")
     def encryption_properties(
@@ -115,7 +126,8 @@ class ContainerGroupArgs:
     @encryption_properties.setter
     def encryption_properties(
         self, value: Optional[pulumi.Input[EncryptionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def extensions(
@@ -129,12 +141,16 @@ class ContainerGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DeploymentExtensionSpecArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ContainerGroupIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ContainerGroupIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ContainerGroupIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageRegistryCredentials")
     def image_registry_credentials(
@@ -148,7 +164,8 @@ class ContainerGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ImageRegistryCredentialArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initContainers")
     def init_containers(
@@ -162,17 +179,20 @@ class ContainerGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InitContainerDefinitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddress")
     def ip_address(self) -> Optional[pulumi.Input[IpAddressArgs]]: ...
     @ip_address.setter
-    def ip_address(self, value: Optional[pulumi.Input[IpAddressArgs]]): ...
+    def ip_address(self, value: Optional[pulumi.Input[IpAddressArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osType")
     def os_type(
@@ -181,7 +201,8 @@ class ContainerGroupArgs:
     @os_type.setter
     def os_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OperatingSystemTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(
@@ -191,7 +212,8 @@ class ContainerGroupArgs:
     def priority(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ContainerGroupPriority]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restartPolicy")
     def restart_policy(
@@ -203,7 +225,8 @@ class ContainerGroupArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ContainerGroupRestartPolicy]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(
@@ -212,7 +235,8 @@ class ContainerGroupArgs:
     @sku.setter
     def sku(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ContainerGroupSku]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="standbyPoolProfile")
     def standby_pool_profile(
@@ -221,7 +245,8 @@ class ContainerGroupArgs:
     @standby_pool_profile.setter
     def standby_pool_profile(
         self, value: Optional[pulumi.Input[StandbyPoolProfileDefinitionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -233,7 +258,8 @@ class ContainerGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ContainerGroupSubnetIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -242,14 +268,16 @@ class ContainerGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def volumes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[VolumeArgs]]]]: ...
     @volumes.setter
     def volumes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VolumeArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -258,7 +286,8 @@ class ContainerGroupArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:containerinstance:ContainerGroup")
 class ContainerGroup(pulumi.CustomResource):

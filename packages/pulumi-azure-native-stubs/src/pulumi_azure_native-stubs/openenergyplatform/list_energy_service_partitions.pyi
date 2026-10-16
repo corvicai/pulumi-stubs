@@ -23,7 +23,8 @@ class ListEnergyServicePartitionsResult:
     ) -> Optional[Sequence[outputs.DataPartitionPropertiesResponse]]: ...
 
 class AwaitableListEnergyServicePartitionsResult(ListEnergyServicePartitionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListEnergyServicePartitionsResult]:
+        ...
 
 def list_energy_service_partitions(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -25,7 +25,8 @@ class GetWorkspaceSharedKeysResult:
     def secondary_shared_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWorkspaceSharedKeysResult(GetWorkspaceSharedKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceSharedKeysResult]:
+        ...
 
 def get_workspace_shared_keys(
     resource_group_name: Optional[_builtins.str] = ...,

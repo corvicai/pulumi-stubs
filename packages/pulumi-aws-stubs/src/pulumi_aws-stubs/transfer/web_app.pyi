@@ -32,24 +32,28 @@ class WebAppArgs:
     @identity_provider_details.setter
     def identity_provider_details(
         self, value: pulumi.Input[WebAppIdentityProviderDetailsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessEndpoint")
     def access_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_endpoint.setter
-    def access_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointDetails")
     def endpoint_details(self) -> Optional[pulumi.Input[WebAppEndpointDetailsArgs]]: ...
     @endpoint_details.setter
     def endpoint_details(
         self, value: Optional[pulumi.Input[WebAppEndpointDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -58,12 +62,16 @@ class WebAppArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAppEndpointPolicy")
     def web_app_endpoint_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_app_endpoint_policy.setter
-    def web_app_endpoint_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_app_endpoint_policy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAppUnits")
     def web_app_units(
@@ -73,7 +81,8 @@ class WebAppArgs:
     def web_app_units(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[WebAppWebAppUnitArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WebAppState:
@@ -101,19 +110,22 @@ class _WebAppState:
     @pulumi.getter(name="accessEndpoint")
     def access_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_endpoint.setter
-    def access_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointDetails")
     def endpoint_details(self) -> Optional[pulumi.Input[WebAppEndpointDetailsArgs]]: ...
     @endpoint_details.setter
     def endpoint_details(
         self, value: Optional[pulumi.Input[WebAppEndpointDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityProviderDetails")
     def identity_provider_details(
@@ -122,12 +134,14 @@ class _WebAppState:
     @identity_provider_details.setter
     def identity_provider_details(
         self, value: Optional[pulumi.Input[WebAppIdentityProviderDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -136,7 +150,8 @@ class _WebAppState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -145,17 +160,22 @@ class _WebAppState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAppEndpointPolicy")
     def web_app_endpoint_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_app_endpoint_policy.setter
-    def web_app_endpoint_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_app_endpoint_policy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAppId")
     def web_app_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @web_app_id.setter
-    def web_app_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def web_app_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webAppUnits")
     def web_app_units(
@@ -165,7 +185,8 @@ class _WebAppState:
     def web_app_units(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[WebAppWebAppUnitArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:transfer/webApp:WebApp")
 class WebApp(pulumi.CustomResource):

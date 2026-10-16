@@ -56,7 +56,8 @@ class GetAccessConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAccessConnectorResult(GetAccessConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccessConnectorResult]:
+        ...
 
 def get_access_connector(
     connector_name: Optional[_builtins.str] = ...,

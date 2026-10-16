@@ -23,7 +23,8 @@ class ListRunLogSasUrlResult:
     def log_link(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListRunLogSasUrlResult(ListRunLogSasUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListRunLogSasUrlResult]:
+        ...
 
 def list_run_log_sas_url(
     registry_name: Optional[_builtins.str] = ...,

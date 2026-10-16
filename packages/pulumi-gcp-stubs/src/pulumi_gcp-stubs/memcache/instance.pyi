@@ -37,27 +37,36 @@ class InstanceArgs:
     @pulumi.getter(name="nodeConfig")
     def node_config(self) -> pulumi.Input[InstanceNodeConfigArgs]: ...
     @node_config.setter
-    def node_config(self, value: pulumi.Input[InstanceNodeConfigArgs]): ...
+    def node_config(self, value: pulumi.Input[InstanceNodeConfigArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeCount")
     def node_count(self) -> pulumi.Input[_builtins.int]: ...
     @node_count.setter
-    def node_count(self, value: pulumi.Input[_builtins.int]): ...
+    def node_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizedNetwork")
     def authorized_network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorized_network.setter
-    def authorized_network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authorized_network(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -66,7 +75,8 @@ class InstanceArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenancePolicy")
     def maintenance_policy(
@@ -75,7 +85,8 @@ class InstanceArgs:
     @maintenance_policy.setter
     def maintenance_policy(
         self, value: Optional[pulumi.Input[InstanceMaintenancePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memcacheParameters")
     def memcache_parameters(
@@ -84,27 +95,34 @@ class InstanceArgs:
     @memcache_parameters.setter
     def memcache_parameters(
         self, value: Optional[pulumi.Input[InstanceMemcacheParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memcacheVersion")
     def memcache_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memcache_version.setter
-    def memcache_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def memcache_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservedIpRangeIds")
     def reserved_ip_range_ids(
@@ -113,7 +131,8 @@ class InstanceArgs:
     @reserved_ip_range_ids.setter
     def reserved_ip_range_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -122,7 +141,8 @@ class InstanceArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InstanceState:
@@ -167,27 +187,38 @@ class _InstanceState:
     @pulumi.getter(name="authorizedNetwork")
     def authorized_network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorized_network.setter
-    def authorized_network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def authorized_network(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryEndpoint")
     def discovery_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @discovery_endpoint.setter
-    def discovery_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def discovery_endpoint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -196,7 +227,8 @@ class _InstanceState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -205,7 +237,8 @@ class _InstanceState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenancePolicy")
     def maintenance_policy(
@@ -214,7 +247,8 @@ class _InstanceState:
     @maintenance_policy.setter
     def maintenance_policy(
         self, value: Optional[pulumi.Input[InstanceMaintenancePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceSchedules")
     def maintenance_schedules(
@@ -228,12 +262,16 @@ class _InstanceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceMaintenanceScheduleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memcacheFullVersion")
     def memcache_full_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memcache_full_version.setter
-    def memcache_full_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def memcache_full_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memcacheNodes")
     def memcache_nodes(
@@ -243,7 +281,8 @@ class _InstanceState:
     def memcache_nodes(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InstanceMemcacheNodeArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memcacheParameters")
     def memcache_parameters(
@@ -252,32 +291,42 @@ class _InstanceState:
     @memcache_parameters.setter
     def memcache_parameters(
         self, value: Optional[pulumi.Input[InstanceMemcacheParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memcacheVersion")
     def memcache_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memcache_version.setter
-    def memcache_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def memcache_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeConfig")
     def node_config(self) -> Optional[pulumi.Input[InstanceNodeConfigArgs]]: ...
     @node_config.setter
-    def node_config(self, value: Optional[pulumi.Input[InstanceNodeConfigArgs]]): ...
+    def node_config(
+        self, value: Optional[pulumi.Input[InstanceNodeConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeCount")
     def node_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @node_count.setter
-    def node_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def node_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -286,12 +335,14 @@ class _InstanceState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservedIpRangeIds")
     def reserved_ip_range_ids(
@@ -300,7 +351,8 @@ class _InstanceState:
     @reserved_ip_range_ids.setter
     def reserved_ip_range_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -309,7 +361,8 @@ class _InstanceState:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:memcache/instance:Instance")
 class Instance(pulumi.CustomResource):

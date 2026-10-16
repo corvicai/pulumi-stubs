@@ -60,7 +60,8 @@ class GetSqlServerRegistrationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlServerRegistrationResult(GetSqlServerRegistrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlServerRegistrationResult]:
+        ...
 
 def get_sql_server_registration(
     resource_group_name: Optional[_builtins.str] = ...,

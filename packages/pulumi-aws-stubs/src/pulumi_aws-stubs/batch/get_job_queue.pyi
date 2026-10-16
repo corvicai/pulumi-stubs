@@ -72,7 +72,8 @@ class GetJobQueueResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetJobQueueResult(GetJobQueueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobQueueResult]:
+        ...
 
 def get_job_queue(
     name: Optional[_builtins.str] = ...,

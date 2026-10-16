@@ -358,12 +358,14 @@ class AutomationRuleActionArgs:
     @finding_fields_update.setter
     def finding_fields_update(
         self, value: Optional[pulumi.Input[AutomationRuleActionFindingFieldsUpdateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleActionFindingFieldsUpdateArgsDict(TypedDict):
     confidence: NotRequired[pulumi.Input[_builtins.int]]
@@ -425,12 +427,14 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
     @pulumi.getter
     def confidence(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @confidence.setter
-    def confidence(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def confidence(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def criticality(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @criticality.setter
-    def criticality(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def criticality(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def note(
@@ -440,7 +444,8 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
     def note(
         self,
         value: Optional[pulumi.Input[AutomationRuleActionFindingFieldsUpdateNoteArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relatedFindings")
     def related_findings(
@@ -464,7 +469,8 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def severity(
@@ -478,7 +484,8 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
         value: Optional[
             pulumi.Input[AutomationRuleActionFindingFieldsUpdateSeverityArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -487,7 +494,8 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
     @types.setter
     def types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userDefinedFields")
     def user_defined_fields(
@@ -496,12 +504,16 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
     @user_defined_fields.setter
     def user_defined_fields(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verificationState")
     def verification_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @verification_state.setter
-    def verification_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def verification_state(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def workflow(
@@ -515,7 +527,8 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
         value: Optional[
             pulumi.Input[AutomationRuleActionFindingFieldsUpdateWorkflowArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomationRuleActionFindingFieldsUpdateNoteArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
@@ -533,12 +546,14 @@ class AutomationRuleActionFindingFieldsUpdateNoteArgs:
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatedBy")
     def updated_by(self) -> pulumi.Input[_builtins.str]: ...
     @updated_by.setter
-    def updated_by(self, value: pulumi.Input[_builtins.str]): ...
+    def updated_by(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleActionFindingFieldsUpdateRelatedFindingArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -556,12 +571,14 @@ class AutomationRuleActionFindingFieldsUpdateRelatedFindingArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productArn")
     def product_arn(self) -> pulumi.Input[_builtins.str]: ...
     @product_arn.setter
-    def product_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def product_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleActionFindingFieldsUpdateSeverityArgsDict(TypedDict):
     label: NotRequired[pulumi.Input[_builtins.str]]
@@ -579,12 +596,14 @@ class AutomationRuleActionFindingFieldsUpdateSeverityArgs:
     @pulumi.getter
     def label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @label.setter
-    def label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def label(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def product(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @product.setter
-    def product(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def product(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AutomationRuleActionFindingFieldsUpdateWorkflowArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
@@ -598,7 +617,8 @@ class AutomationRuleActionFindingFieldsUpdateWorkflowArgs:
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaArgsDict(TypedDict):
     aws_account_ids: NotRequired[
@@ -945,7 +965,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaAwsAccountIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsAccountNames")
     def aws_account_names(
@@ -961,7 +982,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaAwsAccountNameArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="companyNames")
     def company_names(
@@ -975,7 +997,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaCompanyNameArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceAssociatedStandardsIds")
     def compliance_associated_standards_ids(
@@ -999,7 +1022,8 @@ class AutomationRuleCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceSecurityControlIds")
     def compliance_security_control_ids(
@@ -1021,7 +1045,8 @@ class AutomationRuleCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceStatuses")
     def compliance_statuses(
@@ -1037,7 +1062,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaComplianceStatusArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def confidences(
@@ -1051,7 +1077,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaConfidenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAts")
     def created_ats(
@@ -1065,7 +1092,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaCreatedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def criticalities(
@@ -1079,7 +1107,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaCriticalityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def descriptions(
@@ -1093,7 +1122,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaDescriptionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firstObservedAts")
     def first_observed_ats(
@@ -1109,7 +1139,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaFirstObservedAtArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generatorIds")
     def generator_ids(
@@ -1123,7 +1154,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaGeneratorIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ids(
@@ -1137,7 +1169,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastObservedAts")
     def last_observed_ats(
@@ -1153,7 +1186,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaLastObservedAtArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noteTexts")
     def note_texts(
@@ -1167,7 +1201,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaNoteTextArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noteUpdatedAts")
     def note_updated_ats(
@@ -1183,7 +1218,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaNoteUpdatedAtArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noteUpdatedBies")
     def note_updated_bies(
@@ -1199,7 +1235,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaNoteUpdatedByArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productArns")
     def product_arns(
@@ -1213,7 +1250,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaProductArnArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productNames")
     def product_names(
@@ -1227,7 +1265,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaProductNameArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordStates")
     def record_states(
@@ -1241,7 +1280,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaRecordStateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relatedFindingsIds")
     def related_findings_ids(
@@ -1259,7 +1299,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaRelatedFindingsIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relatedFindingsProductArns")
     def related_findings_product_arns(
@@ -1279,7 +1320,8 @@ class AutomationRuleCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceApplicationArns")
     def resource_application_arns(
@@ -1297,7 +1339,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaResourceApplicationArnArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceApplicationNames")
     def resource_application_names(
@@ -1317,7 +1360,8 @@ class AutomationRuleCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceDetailsOthers")
     def resource_details_others(
@@ -1335,7 +1379,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaResourceDetailsOtherArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceIds")
     def resource_ids(
@@ -1349,7 +1394,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaResourceIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePartitions")
     def resource_partitions(
@@ -1367,7 +1413,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaResourcePartitionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceRegions")
     def resource_regions(
@@ -1383,7 +1430,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaResourceRegionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -1397,7 +1445,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(
@@ -1411,7 +1460,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaResourceTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="severityLabels")
     def severity_labels(
@@ -1427,7 +1477,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaSeverityLabelArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceUrls")
     def source_urls(
@@ -1441,7 +1492,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaSourceUrlArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def titles(
@@ -1455,7 +1507,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaTitleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -1469,7 +1522,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatedAts")
     def updated_ats(
@@ -1483,7 +1537,8 @@ class AutomationRuleCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AutomationRuleCriteriaUpdatedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userDefinedFields")
     def user_defined_fields(
@@ -1499,7 +1554,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaUserDefinedFieldArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verificationStates")
     def verification_states(
@@ -1517,7 +1573,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaVerificationStateArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workflowStatuses")
     def workflow_statuses(
@@ -1533,7 +1590,8 @@ class AutomationRuleCriteriaArgs:
                 Sequence[pulumi.Input[AutomationRuleCriteriaWorkflowStatusArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AutomationRuleCriteriaAwsAccountIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1551,12 +1609,14 @@ class AutomationRuleCriteriaAwsAccountIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaAwsAccountNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1574,12 +1634,14 @@ class AutomationRuleCriteriaAwsAccountNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaCompanyNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1597,12 +1659,14 @@ class AutomationRuleCriteriaCompanyNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaComplianceAssociatedStandardsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1620,12 +1684,14 @@ class AutomationRuleCriteriaComplianceAssociatedStandardsIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaComplianceSecurityControlIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1643,12 +1709,14 @@ class AutomationRuleCriteriaComplianceSecurityControlIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaComplianceStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1666,12 +1734,14 @@ class AutomationRuleCriteriaComplianceStatusArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaConfidenceArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.float]]
@@ -1695,27 +1765,32 @@ class AutomationRuleCriteriaConfidenceArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gt(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @gt.setter
-    def gt(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def gt(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lt(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @lt.setter
-    def lt(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def lt(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaCreatedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -1744,17 +1819,20 @@ class AutomationRuleCriteriaCreatedAtArgs:
     def date_range(
         self,
         value: Optional[pulumi.Input[AutomationRuleCriteriaCreatedAtDateRangeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaCreatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -1772,12 +1850,14 @@ class AutomationRuleCriteriaCreatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaCriticalityArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.float]]
@@ -1801,27 +1881,32 @@ class AutomationRuleCriteriaCriticalityArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gt(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @gt.setter
-    def gt(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def gt(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lt(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @lt.setter
-    def lt(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def lt(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaDescriptionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1839,12 +1924,14 @@ class AutomationRuleCriteriaDescriptionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaFirstObservedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -1875,17 +1962,20 @@ class AutomationRuleCriteriaFirstObservedAtArgs:
         value: Optional[
             pulumi.Input[AutomationRuleCriteriaFirstObservedAtDateRangeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaFirstObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -1903,12 +1993,14 @@ class AutomationRuleCriteriaFirstObservedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaGeneratorIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1926,12 +2018,14 @@ class AutomationRuleCriteriaGeneratorIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1949,12 +2043,14 @@ class AutomationRuleCriteriaIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaLastObservedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -1985,17 +2081,20 @@ class AutomationRuleCriteriaLastObservedAtArgs:
         value: Optional[
             pulumi.Input[AutomationRuleCriteriaLastObservedAtDateRangeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaLastObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -2013,12 +2112,14 @@ class AutomationRuleCriteriaLastObservedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaNoteTextArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2036,12 +2137,14 @@ class AutomationRuleCriteriaNoteTextArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaNoteUpdatedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -2070,17 +2173,20 @@ class AutomationRuleCriteriaNoteUpdatedAtArgs:
     def date_range(
         self,
         value: Optional[pulumi.Input[AutomationRuleCriteriaNoteUpdatedAtDateRangeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaNoteUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -2098,12 +2204,14 @@ class AutomationRuleCriteriaNoteUpdatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaNoteUpdatedByArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2121,12 +2229,14 @@ class AutomationRuleCriteriaNoteUpdatedByArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2144,12 +2254,14 @@ class AutomationRuleCriteriaProductArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaProductNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2167,12 +2279,14 @@ class AutomationRuleCriteriaProductNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaRecordStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2190,12 +2304,14 @@ class AutomationRuleCriteriaRecordStateArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaRelatedFindingsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2213,12 +2329,14 @@ class AutomationRuleCriteriaRelatedFindingsIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaRelatedFindingsProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2236,12 +2354,14 @@ class AutomationRuleCriteriaRelatedFindingsProductArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourceApplicationArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2259,12 +2379,14 @@ class AutomationRuleCriteriaResourceApplicationArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourceApplicationNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2282,12 +2404,14 @@ class AutomationRuleCriteriaResourceApplicationNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourceDetailsOtherArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2307,17 +2431,20 @@ class AutomationRuleCriteriaResourceDetailsOtherArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourceIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2335,12 +2462,14 @@ class AutomationRuleCriteriaResourceIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourcePartitionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2358,12 +2487,14 @@ class AutomationRuleCriteriaResourcePartitionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourceRegionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2381,12 +2512,14 @@ class AutomationRuleCriteriaResourceRegionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourceTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2406,17 +2539,20 @@ class AutomationRuleCriteriaResourceTagArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaResourceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2434,12 +2570,14 @@ class AutomationRuleCriteriaResourceTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaSeverityLabelArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2457,12 +2595,14 @@ class AutomationRuleCriteriaSeverityLabelArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaSourceUrlArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2480,12 +2620,14 @@ class AutomationRuleCriteriaSourceUrlArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaTitleArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2503,12 +2645,14 @@ class AutomationRuleCriteriaTitleArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2526,12 +2670,14 @@ class AutomationRuleCriteriaTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaUpdatedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -2560,17 +2706,20 @@ class AutomationRuleCriteriaUpdatedAtArgs:
     def date_range(
         self,
         value: Optional[pulumi.Input[AutomationRuleCriteriaUpdatedAtDateRangeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -2588,12 +2737,14 @@ class AutomationRuleCriteriaUpdatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaUserDefinedFieldArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2613,17 +2764,20 @@ class AutomationRuleCriteriaUserDefinedFieldArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaVerificationStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2641,12 +2795,14 @@ class AutomationRuleCriteriaVerificationStateArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AutomationRuleCriteriaWorkflowStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2664,12 +2820,14 @@ class AutomationRuleCriteriaWorkflowStatusArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicyArgsDict(TypedDict):
     service_enabled: pulumi.Input[_builtins.bool]
@@ -2701,7 +2859,8 @@ class ConfigurationPolicyConfigurationPolicyArgs:
     @pulumi.getter(name="serviceEnabled")
     def service_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @service_enabled.setter
-    def service_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def service_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledStandardArns")
     def enabled_standard_arns(
@@ -2710,7 +2869,8 @@ class ConfigurationPolicyConfigurationPolicyArgs:
     @enabled_standard_arns.setter
     def enabled_standard_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityControlsConfiguration")
     def security_controls_configuration(
@@ -2728,7 +2888,8 @@ class ConfigurationPolicyConfigurationPolicyArgs:
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgsDict(
     TypedDict
@@ -2778,7 +2939,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgs:
     @disabled_control_identifiers.setter
     def disabled_control_identifiers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledControlIdentifiers")
     def enabled_control_identifiers(
@@ -2787,7 +2949,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgs:
     @enabled_control_identifiers.setter
     def enabled_control_identifiers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityControlCustomParameters")
     def security_control_custom_parameters(
@@ -2813,7 +2976,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterArgsDict(
     TypedDict
@@ -2862,12 +3026,14 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityControlId")
     def security_control_id(self) -> pulumi.Input[_builtins.str]: ...
     @security_control_id.setter
-    def security_control_id(self, value: pulumi.Input[_builtins.str]): ...
+    def security_control_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterArgsDict(
     TypedDict
@@ -2967,12 +3133,14 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="valueType")
     def value_type(self) -> pulumi.Input[_builtins.str]: ...
     @value_type.setter
-    def value_type(self, value: pulumi.Input[_builtins.str]): ...
+    def value_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def bool(
@@ -2990,7 +3158,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBoolArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def double(
@@ -3008,7 +3177,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDoubleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enum(
@@ -3026,7 +3196,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enumList")
     def enum_list(
@@ -3044,7 +3215,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def int(
@@ -3062,7 +3234,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intList")
     def int_list(
@@ -3080,7 +3253,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def string(
@@ -3098,7 +3272,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringList")
     def string_list(
@@ -3116,7 +3291,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
                 ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBoolArgsDict(
     TypedDict
@@ -3130,7 +3306,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.bool]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.bool]): ...
+    def value(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDoubleArgsDict(
     TypedDict
@@ -3144,7 +3321,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.float]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.float]): ...
+    def value(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumArgsDict(
     TypedDict
@@ -3158,7 +3336,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListArgsDict(
     TypedDict
@@ -3174,7 +3353,10 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntArgsDict(
     TypedDict
@@ -3188,7 +3370,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListArgsDict(
     TypedDict
@@ -3204,7 +3387,10 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    ):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringArgsDict(
     TypedDict
@@ -3218,7 +3404,8 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListArgsDict(
     TypedDict
@@ -3234,7 +3421,10 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class InsightFiltersArgsDict(TypedDict):
     aws_account_ids: NotRequired[
@@ -3991,7 +4181,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersAwsAccountIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="companyNames")
     def company_names(
@@ -4005,7 +4196,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersCompanyNameArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceStatuses")
     def compliance_statuses(
@@ -4019,7 +4211,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersComplianceStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def confidences(
@@ -4033,7 +4226,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersConfidenceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAts")
     def created_ats(
@@ -4047,7 +4241,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersCreatedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def criticalities(
@@ -4061,7 +4256,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersCriticalityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def descriptions(
@@ -4075,7 +4271,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersDescriptionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingProviderFieldsConfidences")
     def finding_provider_fields_confidences(
@@ -4095,7 +4292,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingProviderFieldsCriticalities")
     def finding_provider_fields_criticalities(
@@ -4115,7 +4313,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingProviderFieldsRelatedFindingsIds")
     def finding_provider_fields_related_findings_ids(
@@ -4139,7 +4338,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingProviderFieldsRelatedFindingsProductArns")
     def finding_provider_fields_related_findings_product_arns(
@@ -4165,7 +4365,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingProviderFieldsSeverityLabels")
     def finding_provider_fields_severity_labels(
@@ -4185,7 +4386,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingProviderFieldsSeverityOriginals")
     def finding_provider_fields_severity_originals(
@@ -4209,7 +4411,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingProviderFieldsTypes")
     def finding_provider_fields_types(
@@ -4227,7 +4430,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersFindingProviderFieldsTypeArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firstObservedAts")
     def first_observed_ats(
@@ -4241,7 +4445,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersFirstObservedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generatorIds")
     def generator_ids(
@@ -4255,7 +4460,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersGeneratorIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ids(
@@ -4265,7 +4471,8 @@ class InsightFiltersArgs:
     def ids(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InsightFiltersIdArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def keywords(
@@ -4277,7 +4484,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersKeywordArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastObservedAts")
     def last_observed_ats(
@@ -4291,7 +4499,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersLastObservedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="malwareNames")
     def malware_names(
@@ -4305,7 +4514,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersMalwareNameArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="malwarePaths")
     def malware_paths(
@@ -4319,7 +4529,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersMalwarePathArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="malwareStates")
     def malware_states(
@@ -4333,7 +4544,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersMalwareStateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="malwareTypes")
     def malware_types(
@@ -4347,7 +4559,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersMalwareTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkDestinationDomains")
     def network_destination_domains(
@@ -4363,7 +4576,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersNetworkDestinationDomainArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkDestinationIpv4s")
     def network_destination_ipv4s(
@@ -4379,7 +4593,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersNetworkDestinationIpv4Args]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkDestinationIpv6s")
     def network_destination_ipv6s(
@@ -4395,7 +4610,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersNetworkDestinationIpv6Args]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkDestinationPorts")
     def network_destination_ports(
@@ -4411,7 +4627,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersNetworkDestinationPortArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkDirections")
     def network_directions(
@@ -4425,7 +4642,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNetworkDirectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkProtocols")
     def network_protocols(
@@ -4439,7 +4657,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNetworkProtocolArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSourceDomains")
     def network_source_domains(
@@ -4453,7 +4672,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNetworkSourceDomainArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSourceIpv4s")
     def network_source_ipv4s(
@@ -4467,7 +4687,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNetworkSourceIpv4Args]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSourceIpv6s")
     def network_source_ipv6s(
@@ -4481,7 +4702,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNetworkSourceIpv6Args]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSourceMacs")
     def network_source_macs(
@@ -4495,7 +4717,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNetworkSourceMacArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSourcePorts")
     def network_source_ports(
@@ -4509,7 +4732,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNetworkSourcePortArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noteTexts")
     def note_texts(
@@ -4521,7 +4745,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNoteTextArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noteUpdatedAts")
     def note_updated_ats(
@@ -4535,7 +4760,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNoteUpdatedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noteUpdatedBies")
     def note_updated_bies(
@@ -4549,7 +4775,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersNoteUpdatedByArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processLaunchedAts")
     def process_launched_ats(
@@ -4563,7 +4790,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProcessLaunchedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processNames")
     def process_names(
@@ -4577,7 +4805,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProcessNameArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processParentPids")
     def process_parent_pids(
@@ -4591,7 +4820,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProcessParentPidArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processPaths")
     def process_paths(
@@ -4605,7 +4835,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProcessPathArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processPids")
     def process_pids(
@@ -4619,7 +4850,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProcessPidArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processTerminatedAts")
     def process_terminated_ats(
@@ -4633,7 +4865,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProcessTerminatedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productArns")
     def product_arns(
@@ -4647,7 +4880,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProductArnArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productFields")
     def product_fields(
@@ -4661,7 +4895,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProductFieldArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="productNames")
     def product_names(
@@ -4675,7 +4910,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersProductNameArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recommendationTexts")
     def recommendation_texts(
@@ -4689,7 +4925,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersRecommendationTextArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordStates")
     def record_states(
@@ -4703,7 +4940,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersRecordStateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relatedFindingsIds")
     def related_findings_ids(
@@ -4717,7 +4955,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersRelatedFindingsIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relatedFindingsProductArns")
     def related_findings_product_arns(
@@ -4735,7 +4974,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersRelatedFindingsProductArnArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceIamInstanceProfileArns")
     def resource_aws_ec2_instance_iam_instance_profile_arns(
@@ -4761,7 +5001,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceImageIds")
     def resource_aws_ec2_instance_image_ids(
@@ -4779,7 +5020,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsEc2InstanceImageIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceIpv4Addresses")
     def resource_aws_ec2_instance_ipv4_addresses(
@@ -4799,7 +5041,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceIpv6Addresses")
     def resource_aws_ec2_instance_ipv6_addresses(
@@ -4819,7 +5062,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceKeyNames")
     def resource_aws_ec2_instance_key_names(
@@ -4837,7 +5081,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsEc2InstanceKeyNameArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceLaunchedAts")
     def resource_aws_ec2_instance_launched_ats(
@@ -4857,7 +5102,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceSubnetIds")
     def resource_aws_ec2_instance_subnet_ids(
@@ -4875,7 +5121,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsEc2InstanceSubnetIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceTypes")
     def resource_aws_ec2_instance_types(
@@ -4893,7 +5140,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsEc2InstanceTypeArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsEc2InstanceVpcIds")
     def resource_aws_ec2_instance_vpc_ids(
@@ -4911,7 +5159,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsEc2InstanceVpcIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsIamAccessKeyCreatedAts")
     def resource_aws_iam_access_key_created_ats(
@@ -4931,7 +5180,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsIamAccessKeyStatuses")
     def resource_aws_iam_access_key_statuses(
@@ -4949,7 +5199,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsIamAccessKeyStatusArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsIamAccessKeyUserNames")
     def resource_aws_iam_access_key_user_names(
@@ -4969,7 +5220,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsS3BucketOwnerIds")
     def resource_aws_s3_bucket_owner_ids(
@@ -4987,7 +5239,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsS3BucketOwnerIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAwsS3BucketOwnerNames")
     def resource_aws_s3_bucket_owner_names(
@@ -5005,7 +5258,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceAwsS3BucketOwnerNameArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceContainerImageIds")
     def resource_container_image_ids(
@@ -5021,7 +5275,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceContainerImageIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceContainerImageNames")
     def resource_container_image_names(
@@ -5039,7 +5294,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceContainerImageNameArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceContainerLaunchedAts")
     def resource_container_launched_ats(
@@ -5057,7 +5313,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceContainerLaunchedAtArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceContainerNames")
     def resource_container_names(
@@ -5073,7 +5330,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersResourceContainerNameArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceDetailsOthers")
     def resource_details_others(
@@ -5087,7 +5345,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersResourceDetailsOtherArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceIds")
     def resource_ids(
@@ -5101,7 +5360,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersResourceIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePartitions")
     def resource_partitions(
@@ -5115,7 +5375,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersResourcePartitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceRegions")
     def resource_regions(
@@ -5129,7 +5390,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersResourceRegionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -5143,7 +5405,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(
@@ -5157,7 +5420,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersResourceTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="severityLabels")
     def severity_labels(
@@ -5171,7 +5435,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersSeverityLabelArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceUrls")
     def source_urls(
@@ -5185,7 +5450,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersSourceUrlArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatIntelIndicatorCategories")
     def threat_intel_indicator_categories(
@@ -5203,7 +5469,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersThreatIntelIndicatorCategoryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatIntelIndicatorLastObservedAts")
     def threat_intel_indicator_last_observed_ats(
@@ -5223,7 +5490,8 @@ class InsightFiltersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatIntelIndicatorSourceUrls")
     def threat_intel_indicator_source_urls(
@@ -5241,7 +5509,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersThreatIntelIndicatorSourceUrlArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatIntelIndicatorSources")
     def threat_intel_indicator_sources(
@@ -5259,7 +5528,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersThreatIntelIndicatorSourceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatIntelIndicatorTypes")
     def threat_intel_indicator_types(
@@ -5275,7 +5545,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersThreatIntelIndicatorTypeArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="threatIntelIndicatorValues")
     def threat_intel_indicator_values(
@@ -5293,7 +5564,8 @@ class InsightFiltersArgs:
                 Sequence[pulumi.Input[InsightFiltersThreatIntelIndicatorValueArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def titles(
@@ -5303,7 +5575,8 @@ class InsightFiltersArgs:
     def titles(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InsightFiltersTitleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def types(
@@ -5313,7 +5586,8 @@ class InsightFiltersArgs:
     def types(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[InsightFiltersTypeArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatedAts")
     def updated_ats(
@@ -5327,7 +5601,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersUpdatedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userDefinedValues")
     def user_defined_values(
@@ -5341,7 +5616,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersUserDefinedValueArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verificationStates")
     def verification_states(
@@ -5355,7 +5631,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersVerificationStateArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workflowStatuses")
     def workflow_statuses(
@@ -5369,7 +5646,8 @@ class InsightFiltersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InsightFiltersWorkflowStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class InsightFiltersAwsAccountIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5387,12 +5665,14 @@ class InsightFiltersAwsAccountIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersCompanyNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5410,12 +5690,14 @@ class InsightFiltersCompanyNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersComplianceStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5433,12 +5715,14 @@ class InsightFiltersComplianceStatusArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersConfidenceArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -5458,17 +5742,20 @@ class InsightFiltersConfidenceArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersCreatedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersCreatedAtDateRangeArgsDict]]
@@ -5492,17 +5779,20 @@ class InsightFiltersCreatedAtArgs:
     @date_range.setter
     def date_range(
         self, value: Optional[pulumi.Input[InsightFiltersCreatedAtDateRangeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersCreatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -5520,12 +5810,14 @@ class InsightFiltersCreatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersCriticalityArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -5545,17 +5837,20 @@ class InsightFiltersCriticalityArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersDescriptionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5573,12 +5868,14 @@ class InsightFiltersDescriptionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersFindingProviderFieldsConfidenceArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -5598,17 +5895,20 @@ class InsightFiltersFindingProviderFieldsConfidenceArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersFindingProviderFieldsCriticalityArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -5628,17 +5928,20 @@ class InsightFiltersFindingProviderFieldsCriticalityArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersFindingProviderFieldsRelatedFindingsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5656,12 +5959,14 @@ class InsightFiltersFindingProviderFieldsRelatedFindingsIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersFindingProviderFieldsRelatedFindingsProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5679,12 +5984,14 @@ class InsightFiltersFindingProviderFieldsRelatedFindingsProductArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersFindingProviderFieldsSeverityLabelArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5702,12 +6009,14 @@ class InsightFiltersFindingProviderFieldsSeverityLabelArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersFindingProviderFieldsSeverityOriginalArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5725,12 +6034,14 @@ class InsightFiltersFindingProviderFieldsSeverityOriginalArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersFindingProviderFieldsTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5748,12 +6059,14 @@ class InsightFiltersFindingProviderFieldsTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersFirstObservedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -5781,17 +6094,20 @@ class InsightFiltersFirstObservedAtArgs:
     @date_range.setter
     def date_range(
         self, value: Optional[pulumi.Input[InsightFiltersFirstObservedAtDateRangeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersFirstObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -5809,12 +6125,14 @@ class InsightFiltersFirstObservedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersGeneratorIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5832,12 +6150,14 @@ class InsightFiltersGeneratorIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5855,12 +6175,14 @@ class InsightFiltersIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersKeywordArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
@@ -5872,7 +6194,8 @@ class InsightFiltersKeywordArgs:
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersLastObservedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersLastObservedAtDateRangeArgsDict]]
@@ -5898,17 +6221,20 @@ class InsightFiltersLastObservedAtArgs:
     @date_range.setter
     def date_range(
         self, value: Optional[pulumi.Input[InsightFiltersLastObservedAtDateRangeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersLastObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -5926,12 +6252,14 @@ class InsightFiltersLastObservedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersMalwareNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5949,12 +6277,14 @@ class InsightFiltersMalwareNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersMalwarePathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5972,12 +6302,14 @@ class InsightFiltersMalwarePathArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersMalwareStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -5995,12 +6327,14 @@ class InsightFiltersMalwareStateArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersMalwareTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6018,12 +6352,14 @@ class InsightFiltersMalwareTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkDestinationDomainArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6041,12 +6377,14 @@ class InsightFiltersNetworkDestinationDomainArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkDestinationIpv4ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
@@ -6058,7 +6396,8 @@ class InsightFiltersNetworkDestinationIpv4Args:
     @pulumi.getter
     def cidr(self) -> pulumi.Input[_builtins.str]: ...
     @cidr.setter
-    def cidr(self, value: pulumi.Input[_builtins.str]): ...
+    def cidr(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkDestinationIpv6ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
@@ -6070,7 +6409,8 @@ class InsightFiltersNetworkDestinationIpv6Args:
     @pulumi.getter
     def cidr(self) -> pulumi.Input[_builtins.str]: ...
     @cidr.setter
-    def cidr(self, value: pulumi.Input[_builtins.str]): ...
+    def cidr(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkDestinationPortArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -6090,17 +6430,20 @@ class InsightFiltersNetworkDestinationPortArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersNetworkDirectionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6118,12 +6461,14 @@ class InsightFiltersNetworkDirectionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkProtocolArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6141,12 +6486,14 @@ class InsightFiltersNetworkProtocolArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkSourceDomainArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6164,12 +6511,14 @@ class InsightFiltersNetworkSourceDomainArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkSourceIpv4ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
@@ -6181,7 +6530,8 @@ class InsightFiltersNetworkSourceIpv4Args:
     @pulumi.getter
     def cidr(self) -> pulumi.Input[_builtins.str]: ...
     @cidr.setter
-    def cidr(self, value: pulumi.Input[_builtins.str]): ...
+    def cidr(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkSourceIpv6ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
@@ -6193,7 +6543,8 @@ class InsightFiltersNetworkSourceIpv6Args:
     @pulumi.getter
     def cidr(self) -> pulumi.Input[_builtins.str]: ...
     @cidr.setter
-    def cidr(self, value: pulumi.Input[_builtins.str]): ...
+    def cidr(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkSourceMacArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6211,12 +6562,14 @@ class InsightFiltersNetworkSourceMacArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNetworkSourcePortArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -6236,17 +6589,20 @@ class InsightFiltersNetworkSourcePortArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersNoteTextArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6264,12 +6620,14 @@ class InsightFiltersNoteTextArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersNoteUpdatedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersNoteUpdatedAtDateRangeArgsDict]]
@@ -6295,17 +6653,20 @@ class InsightFiltersNoteUpdatedAtArgs:
     @date_range.setter
     def date_range(
         self, value: Optional[pulumi.Input[InsightFiltersNoteUpdatedAtDateRangeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersNoteUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -6323,12 +6684,14 @@ class InsightFiltersNoteUpdatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersNoteUpdatedByArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6346,12 +6709,14 @@ class InsightFiltersNoteUpdatedByArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersProcessLaunchedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -6380,17 +6745,20 @@ class InsightFiltersProcessLaunchedAtArgs:
     def date_range(
         self,
         value: Optional[pulumi.Input[InsightFiltersProcessLaunchedAtDateRangeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersProcessLaunchedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -6408,12 +6776,14 @@ class InsightFiltersProcessLaunchedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersProcessNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6431,12 +6801,14 @@ class InsightFiltersProcessNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersProcessParentPidArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -6456,17 +6828,20 @@ class InsightFiltersProcessParentPidArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersProcessPathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6484,12 +6859,14 @@ class InsightFiltersProcessPathArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersProcessPidArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
@@ -6509,17 +6886,20 @@ class InsightFiltersProcessPidArgs:
     @pulumi.getter
     def eq(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @eq.setter
-    def eq(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def eq(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gte.setter
-    def gte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lte(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lte.setter
-    def lte(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lte(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersProcessTerminatedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -6548,17 +6928,20 @@ class InsightFiltersProcessTerminatedAtArgs:
     def date_range(
         self,
         value: Optional[pulumi.Input[InsightFiltersProcessTerminatedAtDateRangeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersProcessTerminatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -6576,12 +6959,14 @@ class InsightFiltersProcessTerminatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6599,12 +6984,14 @@ class InsightFiltersProductArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersProductFieldArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6624,17 +7011,20 @@ class InsightFiltersProductFieldArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersProductNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6652,12 +7042,14 @@ class InsightFiltersProductNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersRecommendationTextArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6675,12 +7067,14 @@ class InsightFiltersRecommendationTextArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersRecordStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6698,12 +7092,14 @@ class InsightFiltersRecordStateArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersRelatedFindingsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6721,12 +7117,14 @@ class InsightFiltersRelatedFindingsIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersRelatedFindingsProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6744,12 +7142,14 @@ class InsightFiltersRelatedFindingsProductArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6767,12 +7167,14 @@ class InsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceImageIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6790,12 +7192,14 @@ class InsightFiltersResourceAwsEc2InstanceImageIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceIpv4AddressArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
@@ -6807,7 +7211,8 @@ class InsightFiltersResourceAwsEc2InstanceIpv4AddressArgs:
     @pulumi.getter
     def cidr(self) -> pulumi.Input[_builtins.str]: ...
     @cidr.setter
-    def cidr(self, value: pulumi.Input[_builtins.str]): ...
+    def cidr(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceIpv6AddressArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
@@ -6819,7 +7224,8 @@ class InsightFiltersResourceAwsEc2InstanceIpv6AddressArgs:
     @pulumi.getter
     def cidr(self) -> pulumi.Input[_builtins.str]: ...
     @cidr.setter
-    def cidr(self, value: pulumi.Input[_builtins.str]): ...
+    def cidr(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceKeyNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6837,12 +7243,14 @@ class InsightFiltersResourceAwsEc2InstanceKeyNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceLaunchedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -6875,17 +7283,20 @@ class InsightFiltersResourceAwsEc2InstanceLaunchedAtArgs:
         value: Optional[
             pulumi.Input[InsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -6903,12 +7314,14 @@ class InsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceSubnetIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6926,12 +7339,14 @@ class InsightFiltersResourceAwsEc2InstanceSubnetIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6949,12 +7364,14 @@ class InsightFiltersResourceAwsEc2InstanceTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsEc2InstanceVpcIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -6972,12 +7389,14 @@ class InsightFiltersResourceAwsEc2InstanceVpcIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsIamAccessKeyCreatedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -7010,17 +7429,20 @@ class InsightFiltersResourceAwsIamAccessKeyCreatedAtArgs:
         value: Optional[
             pulumi.Input[InsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -7038,12 +7460,14 @@ class InsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsIamAccessKeyStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7061,12 +7485,14 @@ class InsightFiltersResourceAwsIamAccessKeyStatusArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsIamAccessKeyUserNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7084,12 +7510,14 @@ class InsightFiltersResourceAwsIamAccessKeyUserNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsS3BucketOwnerIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7107,12 +7535,14 @@ class InsightFiltersResourceAwsS3BucketOwnerIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceAwsS3BucketOwnerNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7130,12 +7560,14 @@ class InsightFiltersResourceAwsS3BucketOwnerNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceContainerImageIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7153,12 +7585,14 @@ class InsightFiltersResourceContainerImageIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceContainerImageNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7176,12 +7610,14 @@ class InsightFiltersResourceContainerImageNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceContainerLaunchedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -7214,17 +7650,20 @@ class InsightFiltersResourceContainerLaunchedAtArgs:
         value: Optional[
             pulumi.Input[InsightFiltersResourceContainerLaunchedAtDateRangeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersResourceContainerLaunchedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -7242,12 +7681,14 @@ class InsightFiltersResourceContainerLaunchedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersResourceContainerNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7265,12 +7706,14 @@ class InsightFiltersResourceContainerNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceDetailsOtherArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7290,17 +7733,20 @@ class InsightFiltersResourceDetailsOtherArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7318,12 +7764,14 @@ class InsightFiltersResourceIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourcePartitionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7341,12 +7789,14 @@ class InsightFiltersResourcePartitionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceRegionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7364,12 +7814,14 @@ class InsightFiltersResourceRegionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7389,17 +7841,20 @@ class InsightFiltersResourceTagArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersResourceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7417,12 +7872,14 @@ class InsightFiltersResourceTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersSeverityLabelArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7440,12 +7897,14 @@ class InsightFiltersSeverityLabelArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersSourceUrlArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7463,12 +7922,14 @@ class InsightFiltersSourceUrlArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersThreatIntelIndicatorCategoryArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7486,12 +7947,14 @@ class InsightFiltersThreatIntelIndicatorCategoryArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersThreatIntelIndicatorLastObservedAtArgsDict(TypedDict):
     date_range: NotRequired[
@@ -7524,17 +7987,20 @@ class InsightFiltersThreatIntelIndicatorLastObservedAtArgs:
         value: Optional[
             pulumi.Input[InsightFiltersThreatIntelIndicatorLastObservedAtDateRangeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersThreatIntelIndicatorLastObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -7552,12 +8018,14 @@ class InsightFiltersThreatIntelIndicatorLastObservedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersThreatIntelIndicatorSourceArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7575,12 +8043,14 @@ class InsightFiltersThreatIntelIndicatorSourceArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersThreatIntelIndicatorSourceUrlArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7598,12 +8068,14 @@ class InsightFiltersThreatIntelIndicatorSourceUrlArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersThreatIntelIndicatorTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7621,12 +8093,14 @@ class InsightFiltersThreatIntelIndicatorTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersThreatIntelIndicatorValueArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7644,12 +8118,14 @@ class InsightFiltersThreatIntelIndicatorValueArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersTitleArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7667,12 +8143,14 @@ class InsightFiltersTitleArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7690,12 +8168,14 @@ class InsightFiltersTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersUpdatedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersUpdatedAtDateRangeArgsDict]]
@@ -7719,17 +8199,20 @@ class InsightFiltersUpdatedAtArgs:
     @date_range.setter
     def date_range(
         self, value: Optional[pulumi.Input[InsightFiltersUpdatedAtDateRangeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def end(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end.setter
-    def end(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def start(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start.setter
-    def start(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightFiltersUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
@@ -7747,12 +8230,14 @@ class InsightFiltersUpdatedAtDateRangeArgs:
     @pulumi.getter
     def unit(self) -> pulumi.Input[_builtins.str]: ...
     @unit.setter
-    def unit(self, value: pulumi.Input[_builtins.str]): ...
+    def unit(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.int]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.int]): ...
+    def value(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightFiltersUserDefinedValueArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7772,17 +8257,20 @@ class InsightFiltersUserDefinedValueArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersVerificationStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7800,12 +8288,14 @@ class InsightFiltersVerificationStateArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InsightFiltersWorkflowStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -7823,12 +8313,14 @@ class InsightFiltersWorkflowStatusArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OrganizationConfigurationOrganizationConfigurationArgsDict(TypedDict):
     configuration_type: pulumi.Input[_builtins.str]
@@ -7842,4 +8334,5 @@ class OrganizationConfigurationOrganizationConfigurationArgs:
     @pulumi.getter(name="configurationType")
     def configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_type.setter
-    def configuration_type(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

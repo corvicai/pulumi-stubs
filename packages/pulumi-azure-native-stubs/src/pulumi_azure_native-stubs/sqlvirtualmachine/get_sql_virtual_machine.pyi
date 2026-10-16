@@ -148,7 +148,8 @@ class GetSqlVirtualMachineResult:
     def wsfc_static_ip(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSqlVirtualMachineResult(GetSqlVirtualMachineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlVirtualMachineResult]:
+        ...
 
 def get_sql_virtual_machine(
     expand: Optional[_builtins.str] = ...,

@@ -20,12 +20,14 @@ class UserAccessLoggingSettingsArgs:
     @pulumi.getter(name="kinesisStreamArn")
     def kinesis_stream_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kinesis_stream_arn.setter
-    def kinesis_stream_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kinesis_stream_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -34,7 +36,8 @@ class UserAccessLoggingSettingsArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _UserAccessLoggingSettingsState:
@@ -60,17 +63,22 @@ class _UserAccessLoggingSettingsState:
     @associated_portal_arns.setter
     def associated_portal_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisStreamArn")
     def kinesis_stream_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kinesis_stream_arn.setter
-    def kinesis_stream_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kinesis_stream_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -79,7 +87,8 @@ class _UserAccessLoggingSettingsState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -88,7 +97,8 @@ class _UserAccessLoggingSettingsState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAccessLoggingSettingsArn")
     def user_access_logging_settings_arn(
@@ -97,7 +107,8 @@ class _UserAccessLoggingSettingsState:
     @user_access_logging_settings_arn.setter
     def user_access_logging_settings_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class UserAccessLoggingSettings(pulumi.CustomResource):

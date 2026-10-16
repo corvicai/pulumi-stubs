@@ -34,7 +34,8 @@ class GetEnvironmentIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetEnvironmentIamPolicyResult(GetEnvironmentIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentIamPolicyResult]:
+        ...
 
 def get_environment_iam_policy(
     env_id: Optional[_builtins.str] = ...,

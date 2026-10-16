@@ -33,27 +33,36 @@ class IdcApplicationArgs:
     @pulumi.getter(name="iamRoleArn")
     def iam_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @iam_role_arn.setter
-    def iam_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def iam_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idcDisplayName")
     def idc_display_name(self) -> pulumi.Input[_builtins.str]: ...
     @idc_display_name.setter
-    def idc_display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def idc_display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idcInstanceArn")
     def idc_instance_arn(self) -> pulumi.Input[_builtins.str]: ...
     @idc_instance_arn.setter
-    def idc_instance_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def idc_instance_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftIdcApplicationName")
     def redshift_idc_application_name(self) -> pulumi.Input[_builtins.str]: ...
     @redshift_idc_application_name.setter
-    def redshift_idc_application_name(self, value: pulumi.Input[_builtins.str]): ...
+    def redshift_idc_application_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationType")
     def application_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @application_type.setter
-    def application_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def application_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizedTokenIssuer")
     def authorized_token_issuer(
@@ -62,17 +71,22 @@ class IdcApplicationArgs:
     @authorized_token_issuer.setter
     def authorized_token_issuer(
         self, value: Optional[pulumi.Input[IdcApplicationAuthorizedTokenIssuerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityNamespace")
     def identity_namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_namespace.setter
-    def identity_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_namespace(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceIntegration")
     def service_integration(
@@ -81,7 +95,8 @@ class IdcApplicationArgs:
     @service_integration.setter
     def service_integration(
         self, value: Optional[pulumi.Input[IdcApplicationServiceIntegrationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -90,7 +105,8 @@ class IdcApplicationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IdcApplicationState:
@@ -121,7 +137,10 @@ class _IdcApplicationState:
     @pulumi.getter(name="applicationType")
     def application_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @application_type.setter
-    def application_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def application_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizedTokenIssuer")
     def authorized_token_issuer(
@@ -130,41 +149,54 @@ class _IdcApplicationState:
     @authorized_token_issuer.setter
     def authorized_token_issuer(
         self, value: Optional[pulumi.Input[IdcApplicationAuthorizedTokenIssuerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamRoleArn")
     def iam_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_role_arn.setter
-    def iam_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idcDisplayName")
     def idc_display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @idc_display_name.setter
-    def idc_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def idc_display_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idcInstanceArn")
     def idc_instance_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @idc_instance_arn.setter
-    def idc_instance_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def idc_instance_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idcManagedApplicationArn")
     def idc_managed_application_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @idc_managed_application_arn.setter
     def idc_managed_application_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityNamespace")
     def identity_namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_namespace.setter
-    def identity_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_namespace(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftIdcApplicationArn")
     def redshift_idc_application_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redshift_idc_application_arn.setter
     def redshift_idc_application_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftIdcApplicationName")
     def redshift_idc_application_name(
@@ -173,12 +205,14 @@ class _IdcApplicationState:
     @redshift_idc_application_name.setter
     def redshift_idc_application_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceIntegration")
     def service_integration(
@@ -187,7 +221,8 @@ class _IdcApplicationState:
     @service_integration.setter
     def service_integration(
         self, value: Optional[pulumi.Input[IdcApplicationServiceIntegrationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -196,7 +231,8 @@ class _IdcApplicationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -205,7 +241,8 @@ class _IdcApplicationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:redshift/idcApplication:IdcApplication")
 class IdcApplication(pulumi.CustomResource):

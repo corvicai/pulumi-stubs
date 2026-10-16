@@ -44,12 +44,16 @@ class AssociationArgs:
     @apply_only_at_cron_interval.setter
     def apply_only_at_cron_interval(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associationName")
     def association_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @association_name.setter
-    def association_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def association_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automationTargetParameterName")
     def automation_target_parameter_name(
@@ -58,7 +62,8 @@ class AssociationArgs:
     @automation_target_parameter_name.setter
     def automation_target_parameter_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="calendarNames")
     def calendar_names(
@@ -67,32 +72,42 @@ class AssociationArgs:
     @calendar_names.setter
     def calendar_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceSeverity")
     def compliance_severity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compliance_severity.setter
-    def compliance_severity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compliance_severity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentVersion")
     def document_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @document_version.setter
-    def document_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def document_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrency")
     def max_concurrency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_concurrency.setter
-    def max_concurrency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_concurrency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxErrors")
     def max_errors(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_errors.setter
-    def max_errors(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_errors(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputLocation")
     def output_location(
@@ -101,7 +116,8 @@ class AssociationArgs:
     @output_location.setter
     def output_location(
         self, value: Optional[pulumi.Input[AssociationOutputLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -110,22 +126,28 @@ class AssociationArgs:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleExpression")
     def schedule_expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_expression.setter
-    def schedule_expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule_expression(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncCompliance")
     def sync_compliance(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_compliance.setter
-    def sync_compliance(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sync_compliance(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -134,7 +156,8 @@ class AssociationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(
@@ -144,7 +167,8 @@ class AssociationArgs:
     def targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AssociationTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForSuccessTimeoutSeconds")
     def wait_for_success_timeout_seconds(
@@ -153,7 +177,8 @@ class AssociationArgs:
     @wait_for_success_timeout_seconds.setter
     def wait_for_success_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AssociationState:
@@ -195,22 +220,28 @@ class _AssociationState:
     @apply_only_at_cron_interval.setter
     def apply_only_at_cron_interval(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associationId")
     def association_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @association_id.setter
-    def association_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def association_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associationName")
     def association_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @association_name.setter
-    def association_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def association_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automationTargetParameterName")
     def automation_target_parameter_name(
@@ -219,7 +250,8 @@ class _AssociationState:
     @automation_target_parameter_name.setter
     def automation_target_parameter_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="calendarNames")
     def calendar_names(
@@ -228,32 +260,42 @@ class _AssociationState:
     @calendar_names.setter
     def calendar_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="complianceSeverity")
     def compliance_severity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compliance_severity.setter
-    def compliance_severity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compliance_severity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="documentVersion")
     def document_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @document_version.setter
-    def document_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def document_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxConcurrency")
     def max_concurrency(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_concurrency.setter
-    def max_concurrency(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_concurrency(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxErrors")
     def max_errors(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_errors.setter
-    def max_errors(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_errors(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputLocation")
     def output_location(
@@ -262,7 +304,8 @@ class _AssociationState:
     @output_location.setter
     def output_location(
         self, value: Optional[pulumi.Input[AssociationOutputLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -271,22 +314,28 @@ class _AssociationState:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleExpression")
     def schedule_expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schedule_expression.setter
-    def schedule_expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schedule_expression(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="syncCompliance")
     def sync_compliance(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_compliance.setter
-    def sync_compliance(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sync_compliance(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -295,7 +344,8 @@ class _AssociationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -304,7 +354,8 @@ class _AssociationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def targets(
@@ -314,7 +365,8 @@ class _AssociationState:
     def targets(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AssociationTargetArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="waitForSuccessTimeoutSeconds")
     def wait_for_success_timeout_seconds(
@@ -323,7 +375,8 @@ class _AssociationState:
     @wait_for_success_timeout_seconds.setter
     def wait_for_success_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ssm/association:Association")
 class Association(pulumi.CustomResource):

@@ -55,7 +55,10 @@ class GetServerlessLifecyclePolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerlessLifecyclePolicyResult(GetServerlessLifecyclePolicyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetServerlessLifecyclePolicyResult]:
+        ...
 
 def get_serverless_lifecycle_policy(
     name: Optional[_builtins.str] = ...,

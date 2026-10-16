@@ -139,7 +139,8 @@ class GetDbNodeResult:
     def vnic_id(self) -> _builtins.str: ...
 
 class AwaitableGetDbNodeResult(GetDbNodeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDbNodeResult]:
+        ...
 
 def get_db_node(
     cloud_vm_cluster_id: Optional[_builtins.str] = ...,

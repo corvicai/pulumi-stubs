@@ -44,7 +44,8 @@ class GetWorkloadNetworkDhcpResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadNetworkDhcpResult(GetWorkloadNetworkDhcpResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadNetworkDhcpResult]:
+        ...
 
 def get_workload_network_dhcp(
     dhcp_id: Optional[_builtins.str] = ...,

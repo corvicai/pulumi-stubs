@@ -60,7 +60,10 @@ class ListWebAppBackupConfigurationSlotResult:
 class AwaitableListWebAppBackupConfigurationSlotResult(
     ListWebAppBackupConfigurationSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppBackupConfigurationSlotResult]:
+        ...
 
 def list_web_app_backup_configuration_slot(
     name: Optional[_builtins.str] = ...,

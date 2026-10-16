@@ -33,7 +33,10 @@ class GetAppregistryAttributeGroupAssociationsResult:
 class AwaitableGetAppregistryAttributeGroupAssociationsResult(
     GetAppregistryAttributeGroupAssociationsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppregistryAttributeGroupAssociationsResult]:
+        ...
 
 def get_appregistry_attribute_group_associations(
     id: Optional[_builtins.str] = ...,

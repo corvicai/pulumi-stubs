@@ -44,7 +44,8 @@ class GetEnvironmentVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnvironmentVersionResult(GetEnvironmentVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentVersionResult]:
+        ...
 
 def get_environment_version(
     name: Optional[_builtins.str] = ...,

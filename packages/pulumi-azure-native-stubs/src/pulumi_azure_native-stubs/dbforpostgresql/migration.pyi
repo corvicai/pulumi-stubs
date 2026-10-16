@@ -69,17 +69,22 @@ class MigrationArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverName")
     def server_name(self) -> pulumi.Input[_builtins.str]: ...
     @server_name.setter
-    def server_name(self, value: pulumi.Input[_builtins.str]): ...
+    def server_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cancel(self) -> Optional[pulumi.Input[Union[_builtins.str, Cancel]]]: ...
     @cancel.setter
-    def cancel(self, value: Optional[pulumi.Input[Union[_builtins.str, Cancel]]]): ...
+    def cancel(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Cancel]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dbsToCancelMigrationOn")
     def dbs_to_cancel_migration_on(
@@ -88,7 +93,8 @@ class MigrationArgs:
     @dbs_to_cancel_migration_on.setter
     def dbs_to_cancel_migration_on(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dbsToMigrate")
     def dbs_to_migrate(
@@ -97,7 +103,8 @@ class MigrationArgs:
     @dbs_to_migrate.setter
     def dbs_to_migrate(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dbsToTriggerCutoverOn")
     def dbs_to_trigger_cutover_on(
@@ -106,12 +113,14 @@ class MigrationArgs:
     @dbs_to_trigger_cutover_on.setter
     def dbs_to_trigger_cutover_on(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrateRoles")
     def migrate_roles(
@@ -121,7 +130,8 @@ class MigrationArgs:
     def migrate_roles(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, MigrateRolesAndPermissions]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationInstanceResourceId")
     def migration_instance_resource_id(
@@ -130,7 +140,8 @@ class MigrationArgs:
     @migration_instance_resource_id.setter
     def migration_instance_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationMode")
     def migration_mode(
@@ -139,12 +150,14 @@ class MigrationArgs:
     @migration_mode.setter
     def migration_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MigrationMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationName")
     def migration_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @migration_name.setter
-    def migration_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def migration_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationOption")
     def migration_option(
@@ -153,7 +166,8 @@ class MigrationArgs:
     @migration_option.setter
     def migration_option(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MigrationOption]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationWindowEndTimeInUtc")
     def migration_window_end_time_in_utc(
@@ -162,7 +176,8 @@ class MigrationArgs:
     @migration_window_end_time_in_utc.setter
     def migration_window_end_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="migrationWindowStartTimeInUtc")
     def migration_window_start_time_in_utc(
@@ -171,7 +186,8 @@ class MigrationArgs:
     @migration_window_start_time_in_utc.setter
     def migration_window_start_time_in_utc(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="overwriteDbsInTarget")
     def overwrite_dbs_in_target(
@@ -185,7 +201,8 @@ class MigrationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, OverwriteDatabasesOnTargetServer]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretParameters")
     def secret_parameters(
@@ -194,7 +211,8 @@ class MigrationArgs:
     @secret_parameters.setter
     def secret_parameters(
         self, value: Optional[pulumi.Input[MigrationSecretParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="setupLogicalReplicationOnSourceDbIfNeeded")
     def setup_logical_replication_on_source_db_if_needed(
@@ -208,7 +226,8 @@ class MigrationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, LogicalReplicationOnSourceServer]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDbServerFullyQualifiedDomainName")
     def source_db_server_fully_qualified_domain_name(
@@ -217,14 +236,16 @@ class MigrationArgs:
     @source_db_server_fully_qualified_domain_name.setter
     def source_db_server_fully_qualified_domain_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDbServerResourceId")
     def source_db_server_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_db_server_resource_id.setter
     def source_db_server_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceType")
     def source_type(
@@ -233,14 +254,16 @@ class MigrationArgs:
     @source_type.setter
     def source_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SourceType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sslMode")
     def ssl_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, SslMode]]]: ...
     @ssl_mode.setter
     def ssl_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SslMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startDataMigration")
     def start_data_migration(
@@ -249,7 +272,8 @@ class MigrationArgs:
     @start_data_migration.setter
     def start_data_migration(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StartDataMigration]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -258,7 +282,8 @@ class MigrationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDbServerFullyQualifiedDomainName")
     def target_db_server_fully_qualified_domain_name(
@@ -267,7 +292,8 @@ class MigrationArgs:
     @target_db_server_fully_qualified_domain_name.setter
     def target_db_server_fully_qualified_domain_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerCutover")
     def trigger_cutover(
@@ -276,7 +302,8 @@ class MigrationArgs:
     @trigger_cutover.setter
     def trigger_cutover(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TriggerCutover]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:dbforpostgresql:Migration")
 class Migration(pulumi.CustomResource):

@@ -26,12 +26,16 @@ class OrganizationConfigurationArgs:
     @pulumi.getter(name="autoEnableOrganizationMembers")
     def auto_enable_organization_members(self) -> pulumi.Input[_builtins.str]: ...
     @auto_enable_organization_members.setter
-    def auto_enable_organization_members(self, value: pulumi.Input[_builtins.str]): ...
+    def auto_enable_organization_members(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="detectorId")
     def detector_id(self) -> pulumi.Input[_builtins.str]: ...
     @detector_id.setter
-    def detector_id(self, value: pulumi.Input[_builtins.str]): ...
+    def detector_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -41,12 +45,14 @@ class OrganizationConfigurationArgs:
     @datasources.setter
     def datasources(
         self, value: Optional[pulumi.Input[OrganizationConfigurationDatasourcesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OrganizationConfigurationState:
@@ -68,7 +74,8 @@ class _OrganizationConfigurationState:
     @auto_enable_organization_members.setter
     def auto_enable_organization_members(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -78,17 +85,20 @@ class _OrganizationConfigurationState:
     @datasources.setter
     def datasources(
         self, value: Optional[pulumi.Input[OrganizationConfigurationDatasourcesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="detectorId")
     def detector_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @detector_id.setter
-    def detector_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def detector_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OrganizationConfiguration(pulumi.CustomResource):

@@ -28,12 +28,14 @@ class IpSetArgs:
     def ip_set_descriptors(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[IpSetIpSetDescriptorArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IpSetState:
@@ -50,7 +52,8 @@ class _IpSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetDescriptors")
     def ip_set_descriptors(
@@ -60,12 +63,14 @@ class _IpSetState:
     def ip_set_descriptors(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[IpSetIpSetDescriptorArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:waf/ipSet:IpSet")
 class IpSet(pulumi.CustomResource):

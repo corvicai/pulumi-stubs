@@ -78,7 +78,8 @@ class GetPolicyDefinitionResult:
     def versions(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetPolicyDefinitionResult(GetPolicyDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyDefinitionResult]:
+        ...
 
 def get_policy_definition(
     policy_definition_name: Optional[_builtins.str] = ...,

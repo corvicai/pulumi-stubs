@@ -148,7 +148,8 @@ class GetContainerGroupResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetContainerGroupResult(GetContainerGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerGroupResult]:
+        ...
 
 def get_container_group(
     container_group_name: Optional[_builtins.str] = ...,

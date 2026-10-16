@@ -47,7 +47,8 @@ class GetContentTypeResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetContentTypeResult(GetContentTypeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContentTypeResult]:
+        ...
 
 def get_content_type(
     content_type_id: Optional[_builtins.str] = ...,

@@ -29,7 +29,8 @@ class GetTrustStoreResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetTrustStoreResult(GetTrustStoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTrustStoreResult]:
+        ...
 
 def get_trust_store(
     arn: Optional[_builtins.str] = ...,

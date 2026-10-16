@@ -60,12 +60,14 @@ class TableBucketEncryptionConfigurationArgs:
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseAlgorithm")
     def sse_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @sse_algorithm.setter
-    def sse_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableBucketMaintenanceConfigurationArgsDict(TypedDict):
     iceberg_unreferenced_file_removal: pulumi.Input[
@@ -94,7 +96,8 @@ class TableBucketMaintenanceConfigurationArgs:
         value: pulumi.Input[
             TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalArgsDict(
     TypedDict
@@ -127,12 +130,14 @@ class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalArgs:
         value: pulumi.Input[
             TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsArgsDict(
     TypedDict
@@ -152,12 +157,14 @@ class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsA
     @pulumi.getter(name="nonCurrentDays")
     def non_current_days(self) -> pulumi.Input[_builtins.int]: ...
     @non_current_days.setter
-    def non_current_days(self, value: pulumi.Input[_builtins.int]): ...
+    def non_current_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unreferencedDays")
     def unreferenced_days(self) -> pulumi.Input[_builtins.int]: ...
     @unreferenced_days.setter
-    def unreferenced_days(self, value: pulumi.Input[_builtins.int]): ...
+    def unreferenced_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class TableBucketReplicationRuleArgsDict(TypedDict):
     destinations: pulumi.Input[
@@ -186,7 +193,8 @@ class TableBucketReplicationRuleArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[TableBucketReplicationRuleDestinationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableBucketReplicationRuleDestinationArgsDict(TypedDict):
     destination_table_bucket_arn: pulumi.Input[_builtins.str]
@@ -200,7 +208,10 @@ class TableBucketReplicationRuleDestinationArgs:
     @pulumi.getter(name="destinationTableBucketArn")
     def destination_table_bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @destination_table_bucket_arn.setter
-    def destination_table_bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def destination_table_bucket_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class TableEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
@@ -218,12 +229,14 @@ class TableEncryptionConfigurationArgs:
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseAlgorithm")
     def sse_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @sse_algorithm.setter
-    def sse_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableMaintenanceConfigurationArgsDict(TypedDict):
     iceberg_compaction: pulumi.Input[
@@ -253,7 +266,8 @@ class TableMaintenanceConfigurationArgs:
     @iceberg_compaction.setter
     def iceberg_compaction(
         self, value: pulumi.Input[TableMaintenanceConfigurationIcebergCompactionArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icebergSnapshotManagement")
     def iceberg_snapshot_management(
@@ -263,7 +277,8 @@ class TableMaintenanceConfigurationArgs:
     def iceberg_snapshot_management(
         self,
         value: pulumi.Input[TableMaintenanceConfigurationIcebergSnapshotManagementArgs],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableMaintenanceConfigurationIcebergCompactionArgsDict(TypedDict):
     settings: pulumi.Input[
@@ -290,12 +305,14 @@ class TableMaintenanceConfigurationIcebergCompactionArgs:
     def settings(
         self,
         value: pulumi.Input[TableMaintenanceConfigurationIcebergCompactionSettingsArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableMaintenanceConfigurationIcebergCompactionSettingsArgsDict(TypedDict):
     target_file_size_mb: pulumi.Input[_builtins.int]
@@ -309,7 +326,8 @@ class TableMaintenanceConfigurationIcebergCompactionSettingsArgs:
     @pulumi.getter(name="targetFileSizeMb")
     def target_file_size_mb(self) -> pulumi.Input[_builtins.int]: ...
     @target_file_size_mb.setter
-    def target_file_size_mb(self, value: pulumi.Input[_builtins.int]): ...
+    def target_file_size_mb(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class TableMaintenanceConfigurationIcebergSnapshotManagementArgsDict(TypedDict):
     settings: pulumi.Input[
@@ -340,12 +358,14 @@ class TableMaintenanceConfigurationIcebergSnapshotManagementArgs:
         value: pulumi.Input[
             TableMaintenanceConfigurationIcebergSnapshotManagementSettingsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TableMaintenanceConfigurationIcebergSnapshotManagementSettingsArgsDict(TypedDict):
     max_snapshot_age_hours: pulumi.Input[_builtins.int]
@@ -363,12 +383,14 @@ class TableMaintenanceConfigurationIcebergSnapshotManagementSettingsArgs:
     @pulumi.getter(name="maxSnapshotAgeHours")
     def max_snapshot_age_hours(self) -> pulumi.Input[_builtins.int]: ...
     @max_snapshot_age_hours.setter
-    def max_snapshot_age_hours(self, value: pulumi.Input[_builtins.int]): ...
+    def max_snapshot_age_hours(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minSnapshotsToKeep")
     def min_snapshots_to_keep(self) -> pulumi.Input[_builtins.int]: ...
     @min_snapshots_to_keep.setter
-    def min_snapshots_to_keep(self, value: pulumi.Input[_builtins.int]): ...
+    def min_snapshots_to_keep(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class TableMetadataArgsDict(TypedDict):
     iceberg: pulumi.Input[TableMetadataIcebergArgsDict]
@@ -382,7 +404,8 @@ class TableMetadataArgs:
     @pulumi.getter
     def iceberg(self) -> pulumi.Input[TableMetadataIcebergArgs]: ...
     @iceberg.setter
-    def iceberg(self, value: pulumi.Input[TableMetadataIcebergArgs]): ...
+    def iceberg(self, value: pulumi.Input[TableMetadataIcebergArgs]):  # -> None:
+        ...
 
 class TableMetadataIcebergArgsDict(TypedDict):
     schema: pulumi.Input[TableMetadataIcebergSchemaArgsDict]
@@ -396,7 +419,8 @@ class TableMetadataIcebergArgs:
     @pulumi.getter
     def schema(self) -> pulumi.Input[TableMetadataIcebergSchemaArgs]: ...
     @schema.setter
-    def schema(self, value: pulumi.Input[TableMetadataIcebergSchemaArgs]): ...
+    def schema(self, value: pulumi.Input[TableMetadataIcebergSchemaArgs]):  # -> None:
+        ...
 
 class TableMetadataIcebergSchemaArgsDict(TypedDict):
     fields: pulumi.Input[
@@ -423,7 +447,8 @@ class TableMetadataIcebergSchemaArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[TableMetadataIcebergSchemaFieldArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableMetadataIcebergSchemaFieldArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -443,17 +468,20 @@ class TableMetadataIcebergSchemaFieldArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class TableReplicationRuleArgsDict(TypedDict):
     destinations: pulumi.Input[
@@ -480,7 +508,8 @@ class TableReplicationRuleArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[TableReplicationRuleDestinationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TableReplicationRuleDestinationArgsDict(TypedDict):
     destination_table_bucket_arn: pulumi.Input[_builtins.str]
@@ -494,4 +523,7 @@ class TableReplicationRuleDestinationArgs:
     @pulumi.getter(name="destinationTableBucketArn")
     def destination_table_bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @destination_table_bucket_arn.setter
-    def destination_table_bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def destination_table_bucket_arn(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...

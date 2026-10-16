@@ -56,7 +56,8 @@ class GetCapacityPoolSubvolumeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCapacityPoolSubvolumeResult(GetCapacityPoolSubvolumeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityPoolSubvolumeResult]:
+        ...
 
 def get_capacity_pool_subvolume(
     account_name: Optional[_builtins.str] = ...,

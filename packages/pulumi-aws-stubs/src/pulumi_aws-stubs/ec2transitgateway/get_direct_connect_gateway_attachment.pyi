@@ -53,7 +53,10 @@ class GetDirectConnectGatewayAttachmentResult:
 class AwaitableGetDirectConnectGatewayAttachmentResult(
     GetDirectConnectGatewayAttachmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDirectConnectGatewayAttachmentResult]:
+        ...
 
 def get_direct_connect_gateway_attachment(
     dx_gateway_id: Optional[_builtins.str] = ...,

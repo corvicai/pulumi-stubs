@@ -2014,7 +2014,8 @@ class RegexPatternSetRegularExpressionArgs:
     @pulumi.getter(name="regexString")
     def regex_string(self) -> pulumi.Input[_builtins.str]: ...
     @regex_string.setter
-    def regex_string(self, value: pulumi.Input[_builtins.str]): ...
+    def regex_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupCustomResponseBodyArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
@@ -2034,17 +2035,20 @@ class RuleGroupCustomResponseBodyArgs:
     @pulumi.getter
     def content(self) -> pulumi.Input[_builtins.str]: ...
     @content.setter
-    def content(self, value: pulumi.Input[_builtins.str]): ...
+    def content(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentType")
     def content_type(self) -> pulumi.Input[_builtins.str]: ...
     @content_type.setter
-    def content_type(self, value: pulumi.Input[_builtins.str]): ...
+    def content_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleArgsDict(TypedDict):
     action: pulumi.Input[RuleGroupRuleActionArgsDict]
@@ -2076,29 +2080,34 @@ class RuleGroupRuleArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[RuleGroupRuleActionArgs]: ...
     @action.setter
-    def action(self, value: pulumi.Input[RuleGroupRuleActionArgs]): ...
+    def action(self, value: pulumi.Input[RuleGroupRuleActionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statement(self) -> pulumi.Input[RuleGroupRuleStatementArgs]: ...
     @statement.setter
-    def statement(self, value: pulumi.Input[RuleGroupRuleStatementArgs]): ...
+    def statement(self, value: pulumi.Input[RuleGroupRuleStatementArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="visibilityConfig")
     def visibility_config(self) -> pulumi.Input[RuleGroupRuleVisibilityConfigArgs]: ...
     @visibility_config.setter
     def visibility_config(
         self, value: pulumi.Input[RuleGroupRuleVisibilityConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="captchaConfig")
     def captcha_config(
@@ -2107,7 +2116,8 @@ class RuleGroupRuleArgs:
     @captcha_config.setter
     def captcha_config(
         self, value: Optional[pulumi.Input[RuleGroupRuleCaptchaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleLabels")
     def rule_labels(
@@ -2119,7 +2129,8 @@ class RuleGroupRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleRuleLabelArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionArgsDict(TypedDict):
     allow: NotRequired[pulumi.Input[RuleGroupRuleActionAllowArgsDict]]
@@ -2143,31 +2154,42 @@ class RuleGroupRuleActionArgs:
     @pulumi.getter
     def allow(self) -> Optional[pulumi.Input[RuleGroupRuleActionAllowArgs]]: ...
     @allow.setter
-    def allow(self, value: Optional[pulumi.Input[RuleGroupRuleActionAllowArgs]]): ...
+    def allow(
+        self, value: Optional[pulumi.Input[RuleGroupRuleActionAllowArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def block(self) -> Optional[pulumi.Input[RuleGroupRuleActionBlockArgs]]: ...
     @block.setter
-    def block(self, value: Optional[pulumi.Input[RuleGroupRuleActionBlockArgs]]): ...
+    def block(
+        self, value: Optional[pulumi.Input[RuleGroupRuleActionBlockArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def captcha(self) -> Optional[pulumi.Input[RuleGroupRuleActionCaptchaArgs]]: ...
     @captcha.setter
     def captcha(
         self, value: Optional[pulumi.Input[RuleGroupRuleActionCaptchaArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def challenge(self) -> Optional[pulumi.Input[RuleGroupRuleActionChallengeArgs]]: ...
     @challenge.setter
     def challenge(
         self, value: Optional[pulumi.Input[RuleGroupRuleActionChallengeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def count(self) -> Optional[pulumi.Input[RuleGroupRuleActionCountArgs]]: ...
     @count.setter
-    def count(self, value: Optional[pulumi.Input[RuleGroupRuleActionCountArgs]]): ...
+    def count(
+        self, value: Optional[pulumi.Input[RuleGroupRuleActionCountArgs]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionAllowArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -2194,7 +2216,8 @@ class RuleGroupRuleActionAllowArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleActionAllowCustomRequestHandlingArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionAllowCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -2237,7 +2260,8 @@ class RuleGroupRuleActionAllowCustomRequestHandlingArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2255,12 +2279,14 @@ class RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleActionBlockArgsDict(TypedDict):
     custom_response: NotRequired[
@@ -2284,7 +2310,8 @@ class RuleGroupRuleActionBlockArgs:
     @custom_response.setter
     def custom_response(
         self, value: Optional[pulumi.Input[RuleGroupRuleActionBlockCustomResponseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionBlockCustomResponseArgsDict(TypedDict):
     response_code: pulumi.Input[_builtins.int]
@@ -2320,14 +2347,16 @@ class RuleGroupRuleActionBlockCustomResponseArgs:
     @pulumi.getter(name="responseCode")
     def response_code(self) -> pulumi.Input[_builtins.int]: ...
     @response_code.setter
-    def response_code(self, value: pulumi.Input[_builtins.int]): ...
+    def response_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customResponseBodyKey")
     def custom_response_body_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_response_body_key.setter
     def custom_response_body_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -2351,7 +2380,8 @@ class RuleGroupRuleActionBlockCustomResponseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionBlockCustomResponseResponseHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2369,12 +2399,14 @@ class RuleGroupRuleActionBlockCustomResponseResponseHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleActionCaptchaArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -2403,7 +2435,8 @@ class RuleGroupRuleActionCaptchaArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleActionCaptchaCustomRequestHandlingArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionCaptchaCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -2448,7 +2481,8 @@ class RuleGroupRuleActionCaptchaCustomRequestHandlingArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2466,12 +2500,14 @@ class RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleActionChallengeArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -2500,7 +2536,8 @@ class RuleGroupRuleActionChallengeArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleActionChallengeCustomRequestHandlingArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionChallengeCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -2545,7 +2582,8 @@ class RuleGroupRuleActionChallengeCustomRequestHandlingArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2563,12 +2601,14 @@ class RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleActionCountArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -2595,7 +2635,8 @@ class RuleGroupRuleActionCountArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleActionCountCustomRequestHandlingArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionCountCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -2638,7 +2679,8 @@ class RuleGroupRuleActionCountCustomRequestHandlingArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2656,12 +2698,14 @@ class RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleCaptchaConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
@@ -2688,7 +2732,8 @@ class RuleGroupRuleCaptchaConfigArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleCaptchaConfigImmunityTimePropertyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleCaptchaConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
@@ -2702,7 +2747,8 @@ class RuleGroupRuleCaptchaConfigImmunityTimePropertyArgs:
     @pulumi.getter(name="immunityTime")
     def immunity_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @immunity_time.setter
-    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class RuleGroupRuleRuleLabelArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2714,7 +2760,8 @@ class RuleGroupRuleRuleLabelArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementArgsDict(TypedDict):
     and_statement: NotRequired[pulumi.Input[RuleGroupRuleStatementAndStatementArgsDict]]
@@ -2810,7 +2857,8 @@ class RuleGroupRuleStatementArgs:
     @and_statement.setter
     def and_statement(
         self, value: Optional[pulumi.Input[RuleGroupRuleStatementAndStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="asnMatchStatement")
     def asn_match_statement(
@@ -2819,7 +2867,8 @@ class RuleGroupRuleStatementArgs:
     @asn_match_statement.setter
     def asn_match_statement(
         self, value: Optional[pulumi.Input[RuleGroupRuleStatementAsnMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="byteMatchStatement")
     def byte_match_statement(
@@ -2829,7 +2878,8 @@ class RuleGroupRuleStatementArgs:
     def byte_match_statement(
         self,
         value: Optional[pulumi.Input[RuleGroupRuleStatementByteMatchStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoMatchStatement")
     def geo_match_statement(
@@ -2838,7 +2888,8 @@ class RuleGroupRuleStatementArgs:
     @geo_match_statement.setter
     def geo_match_statement(
         self, value: Optional[pulumi.Input[RuleGroupRuleStatementGeoMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetReferenceStatement")
     def ip_set_reference_statement(
@@ -2850,7 +2901,8 @@ class RuleGroupRuleStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementIpSetReferenceStatementArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelMatchStatement")
     def label_match_statement(
@@ -2860,7 +2912,8 @@ class RuleGroupRuleStatementArgs:
     def label_match_statement(
         self,
         value: Optional[pulumi.Input[RuleGroupRuleStatementLabelMatchStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notStatement")
     def not_statement(
@@ -2869,7 +2922,8 @@ class RuleGroupRuleStatementArgs:
     @not_statement.setter
     def not_statement(
         self, value: Optional[pulumi.Input[RuleGroupRuleStatementNotStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orStatement")
     def or_statement(
@@ -2878,7 +2932,8 @@ class RuleGroupRuleStatementArgs:
     @or_statement.setter
     def or_statement(
         self, value: Optional[pulumi.Input[RuleGroupRuleStatementOrStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rateBasedStatement")
     def rate_based_statement(
@@ -2888,7 +2943,8 @@ class RuleGroupRuleStatementArgs:
     def rate_based_statement(
         self,
         value: Optional[pulumi.Input[RuleGroupRuleStatementRateBasedStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexMatchStatement")
     def regex_match_statement(
@@ -2898,7 +2954,8 @@ class RuleGroupRuleStatementArgs:
     def regex_match_statement(
         self,
         value: Optional[pulumi.Input[RuleGroupRuleStatementRegexMatchStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexPatternSetReferenceStatement")
     def regex_pattern_set_reference_statement(
@@ -2912,7 +2969,8 @@ class RuleGroupRuleStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRegexPatternSetReferenceStatementArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeConstraintStatement")
     def size_constraint_statement(
@@ -2924,7 +2982,8 @@ class RuleGroupRuleStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementSizeConstraintStatementArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqliMatchStatement")
     def sqli_match_statement(
@@ -2934,7 +2993,8 @@ class RuleGroupRuleStatementArgs:
     def sqli_match_statement(
         self,
         value: Optional[pulumi.Input[RuleGroupRuleStatementSqliMatchStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssMatchStatement")
     def xss_match_statement(
@@ -2943,7 +3003,8 @@ class RuleGroupRuleStatementArgs:
     @xss_match_statement.setter
     def xss_match_statement(
         self, value: Optional[pulumi.Input[RuleGroupRuleStatementXssMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementAndStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
@@ -2963,7 +3024,8 @@ class RuleGroupRuleStatementAndStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementAsnMatchStatementArgsDict(TypedDict):
     asn_lists: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -2985,7 +3047,10 @@ class RuleGroupRuleStatementAsnMatchStatementArgs:
     @pulumi.getter(name="asnLists")
     def asn_lists(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @asn_lists.setter
-    def asn_lists(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): ...
+    def asn_lists(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -2999,7 +3064,8 @@ class RuleGroupRuleStatementAsnMatchStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementAsnMatchStatementForwardedIpConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementAsnMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -3017,12 +3083,14 @@ class RuleGroupRuleStatementAsnMatchStatementForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementArgsDict(TypedDict):
     positional_constraint: pulumi.Input[_builtins.str]
@@ -3060,12 +3128,14 @@ class RuleGroupRuleStatementByteMatchStatementArgs:
     @pulumi.getter(name="positionalConstraint")
     def positional_constraint(self) -> pulumi.Input[_builtins.str]: ...
     @positional_constraint.setter
-    def positional_constraint(self, value: pulumi.Input[_builtins.str]): ...
+    def positional_constraint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="searchString")
     def search_string(self) -> pulumi.Input[_builtins.str]: ...
     @search_string.setter
-    def search_string(self, value: pulumi.Input[_builtins.str]): ...
+    def search_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -3085,7 +3155,8 @@ class RuleGroupRuleStatementByteMatchStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -3099,7 +3170,8 @@ class RuleGroupRuleStatementByteMatchStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -3274,7 +3346,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -3288,7 +3361,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementByteMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -3304,7 +3378,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -3330,7 +3405,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -3356,7 +3432,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -3374,7 +3451,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -3392,7 +3470,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -3408,7 +3487,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -3422,7 +3502,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementByteMatchStatementFieldToMatchMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -3440,7 +3521,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -3458,7 +3540,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -3476,7 +3559,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -3494,7 +3578,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -3510,7 +3595,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -3532,7 +3618,10 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -3581,17 +3670,20 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -3638,7 +3730,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArg
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -3647,7 +3740,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArg
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -3656,7 +3750,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArg
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -3697,17 +3792,20 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -3754,7 +3852,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -3763,7 +3862,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -3772,7 +3872,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -3796,7 +3897,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -3812,7 +3914,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -3828,7 +3931,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -3863,24 +3967,30 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -3923,7 +4033,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAr
                 RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -3932,7 +4043,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAr
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -3968,7 +4080,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -3982,7 +4095,8 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArg
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -3998,7 +4112,10 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -4024,12 +4141,14 @@ class RuleGroupRuleStatementByteMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementGeoMatchStatementArgsDict(TypedDict):
     country_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -4053,7 +4172,8 @@ class RuleGroupRuleStatementGeoMatchStatementArgs:
     @country_codes.setter
     def country_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -4067,7 +4187,8 @@ class RuleGroupRuleStatementGeoMatchStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -4085,12 +4206,14 @@ class RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementIpSetReferenceStatementArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -4116,7 +4239,8 @@ class RuleGroupRuleStatementIpSetReferenceStatementArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetForwardedIpConfig")
     def ip_set_forwarded_ip_config(
@@ -4134,7 +4258,8 @@ class RuleGroupRuleStatementIpSetReferenceStatementArgs:
                 RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict(
     TypedDict
@@ -4156,17 +4281,20 @@ class RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def position(self) -> pulumi.Input[_builtins.str]: ...
     @position.setter
-    def position(self, value: pulumi.Input[_builtins.str]): ...
+    def position(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementLabelMatchStatementArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -4184,12 +4312,14 @@ class RuleGroupRuleStatementLabelMatchStatementArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementNotStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
@@ -4209,7 +4339,8 @@ class RuleGroupRuleStatementNotStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementOrStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
@@ -4229,7 +4360,8 @@ class RuleGroupRuleStatementOrStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementArgsDict(TypedDict):
     limit: pulumi.Input[_builtins.int]
@@ -4275,12 +4407,16 @@ class RuleGroupRuleStatementRateBasedStatementArgs:
     @pulumi.getter
     def limit(self) -> pulumi.Input[_builtins.int]: ...
     @limit.setter
-    def limit(self, value: pulumi.Input[_builtins.int]): ...
+    def limit(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aggregateKeyType")
     def aggregate_key_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aggregate_key_type.setter
-    def aggregate_key_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aggregate_key_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customKeys")
     def custom_keys(
@@ -4302,12 +4438,16 @@ class RuleGroupRuleStatementRateBasedStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evaluationWindowSec")
     def evaluation_window_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @evaluation_window_sec.setter
-    def evaluation_window_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def evaluation_window_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -4321,7 +4461,8 @@ class RuleGroupRuleStatementRateBasedStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRateBasedStatementForwardedIpConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scopeDownStatement")
     def scope_down_statement(
@@ -4335,7 +4476,8 @@ class RuleGroupRuleStatementRateBasedStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyArgsDict(TypedDict):
     asn: NotRequired[
@@ -4458,7 +4600,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRateBasedStatementCustomKeyAsnArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookie(
@@ -4472,7 +4615,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRateBasedStatementCustomKeyCookieArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIp")
     def forwarded_ip(
@@ -4488,7 +4632,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
                 RuleGroupRuleStatementRateBasedStatementCustomKeyForwardedIpArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def header(
@@ -4502,7 +4647,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpMethod")
     def http_method(
@@ -4518,7 +4664,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
                 RuleGroupRuleStatementRateBasedStatementCustomKeyHttpMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ip(
@@ -4532,7 +4679,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRateBasedStatementCustomKeyIpArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -4550,7 +4698,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
                 RuleGroupRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -4568,7 +4717,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
                 RuleGroupRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelNamespace")
     def label_namespace(
@@ -4586,7 +4736,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
                 RuleGroupRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryArgument")
     def query_argument(
@@ -4602,7 +4753,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
                 RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -4618,7 +4770,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
                 RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -4632,7 +4785,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyAsnArgsDict(TypedDict): ...
 
@@ -4668,7 +4822,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -4690,7 +4845,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieTextTransformationArgsDict(
     TypedDict
@@ -4710,12 +4866,14 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieTextTransformationA
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyForwardedIpArgsDict(
     TypedDict
@@ -4753,7 +4911,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -4775,7 +4934,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationArgsDict(
     TypedDict
@@ -4795,12 +4955,14 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationA
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyHttpMethodArgsDict(
     TypedDict
@@ -4830,7 +4992,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgsDict(
     TypedDict
@@ -4846,7 +5009,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgsDict(
     TypedDict
@@ -4860,7 +5024,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgs:
     @pulumi.getter
     def namespace(self) -> pulumi.Input[_builtins.str]: ...
     @namespace.setter
-    def namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4890,7 +5055,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -4912,7 +5078,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransformationArgsDict(
     TypedDict
@@ -4932,12 +5099,14 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransfor
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -4982,7 +5151,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringTextTransformationArgsDict(
     TypedDict
@@ -5002,12 +5172,14 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringTextTransforma
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -5052,7 +5224,8 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathTextTransformationArgsDict(
     TypedDict
@@ -5072,12 +5245,14 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathTextTransformation
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -5095,12 +5270,14 @@ class RuleGroupRuleStatementRateBasedStatementForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgsDict(TypedDict):
     and_statement: NotRequired[
@@ -5257,7 +5434,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="asnMatchStatement")
     def asn_match_statement(
@@ -5275,7 +5453,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="byteMatchStatement")
     def byte_match_statement(
@@ -5293,7 +5472,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoMatchStatement")
     def geo_match_statement(
@@ -5311,7 +5491,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetReferenceStatement")
     def ip_set_reference_statement(
@@ -5329,7 +5510,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelMatchStatement")
     def label_match_statement(
@@ -5347,7 +5529,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notStatement")
     def not_statement(
@@ -5365,7 +5548,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orStatement")
     def or_statement(
@@ -5383,7 +5567,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexMatchStatement")
     def regex_match_statement(
@@ -5401,7 +5586,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexPatternSetReferenceStatement")
     def regex_pattern_set_reference_statement(
@@ -5419,7 +5605,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeConstraintStatement")
     def size_constraint_statement(
@@ -5437,7 +5624,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqliMatchStatement")
     def sqli_match_statement(
@@ -5455,7 +5643,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssMatchStatement")
     def xss_match_statement(
@@ -5473,7 +5662,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementArgsDict(
     TypedDict
@@ -5495,7 +5685,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementArgs
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementArgsDict(
     TypedDict
@@ -5523,7 +5714,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatemen
     @pulumi.getter(name="asnLists")
     def asn_lists(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @asn_lists.setter
-    def asn_lists(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): ...
+    def asn_lists(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -5541,7 +5735,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgsDict(
     TypedDict
@@ -5561,12 +5756,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatemen
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementArgsDict(
     TypedDict
@@ -5610,12 +5807,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter(name="positionalConstraint")
     def positional_constraint(self) -> pulumi.Input[_builtins.str]: ...
     @positional_constraint.setter
-    def positional_constraint(self, value: pulumi.Input[_builtins.str]): ...
+    def positional_constraint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="searchString")
     def search_string(self) -> pulumi.Input[_builtins.str]: ...
     @search_string.setter
-    def search_string(self, value: pulumi.Input[_builtins.str]): ...
+    def search_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -5637,7 +5836,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -5655,7 +5855,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -5840,7 +6041,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -5858,7 +6060,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -5876,7 +6079,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -5902,7 +6106,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -5928,7 +6133,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -5946,7 +6152,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -5964,7 +6171,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -5982,7 +6190,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -6000,7 +6209,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -6018,7 +6228,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -6036,7 +6247,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -6054,7 +6266,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -6072,7 +6285,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -6090,7 +6304,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -6114,7 +6329,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -6165,17 +6383,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -6222,7 +6443,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -6231,7 +6453,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -6240,7 +6463,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -6283,17 +6507,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -6340,7 +6567,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -6349,7 +6577,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -6358,7 +6587,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -6382,7 +6612,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -6398,7 +6629,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -6414,7 +6646,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -6451,24 +6684,30 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -6511,7 +6750,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -6520,7 +6760,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -6558,7 +6799,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -6572,7 +6814,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -6588,7 +6831,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -6616,12 +6862,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementArgsDict(
     TypedDict
@@ -6651,7 +6899,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatemen
     @country_codes.setter
     def country_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -6669,7 +6918,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgsDict(
     TypedDict
@@ -6689,12 +6939,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatemen
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementArgsDict(
     TypedDict
@@ -6722,7 +6974,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceSt
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetForwardedIpConfig")
     def ip_set_forwarded_ip_config(
@@ -6740,7 +6993,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict(
     TypedDict
@@ -6762,17 +7016,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceSt
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def position(self) -> pulumi.Input[_builtins.str]: ...
     @position.setter
-    def position(self, value: pulumi.Input[_builtins.str]): ...
+    def position(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementArgsDict(
     TypedDict
@@ -6792,12 +7049,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatem
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementArgsDict(
     TypedDict
@@ -6819,7 +7078,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementArgs
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementArgsDict(
     TypedDict
@@ -6841,7 +7101,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementArgsDict(
     TypedDict
@@ -6883,7 +7144,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter(name="regexString")
     def regex_string(self) -> pulumi.Input[_builtins.str]: ...
     @regex_string.setter
-    def regex_string(self, value: pulumi.Input[_builtins.str]): ...
+    def regex_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -6905,7 +7167,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -6923,7 +7186,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -7108,7 +7372,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -7126,7 +7391,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -7144,7 +7410,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -7170,7 +7437,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -7196,7 +7464,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -7214,7 +7483,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -7232,7 +7502,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -7250,7 +7521,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -7268,7 +7540,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -7286,7 +7559,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -7304,7 +7578,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -7322,7 +7597,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -7340,7 +7616,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -7358,7 +7635,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -7382,7 +7660,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -7433,17 +7714,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -7490,7 +7774,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -7499,7 +7784,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -7508,7 +7794,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -7551,17 +7838,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -7608,7 +7898,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -7617,7 +7908,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -7626,7 +7918,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -7650,7 +7943,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -7666,7 +7960,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -7682,7 +7977,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -7719,24 +8015,30 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -7779,7 +8081,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -7788,7 +8091,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -7826,7 +8130,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -7840,7 +8145,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -7856,7 +8162,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -7884,12 +8193,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementArgsDict(
     TypedDict
@@ -7931,7 +8242,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -7953,7 +8265,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -7971,7 +8284,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict(
     TypedDict
@@ -8156,7 +8470,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -8174,7 +8489,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -8192,7 +8508,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -8218,7 +8535,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -8244,7 +8562,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -8262,7 +8581,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -8280,7 +8600,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -8298,7 +8619,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -8316,7 +8638,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -8334,7 +8657,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -8352,7 +8676,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -8370,7 +8695,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -8388,7 +8714,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -8406,7 +8733,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -8430,7 +8758,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -8481,17 +8812,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -8538,7 +8872,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -8547,7 +8882,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -8556,7 +8892,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -8599,17 +8936,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -8656,7 +8996,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -8665,7 +9006,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -8674,7 +9016,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -8698,7 +9041,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -8714,7 +9058,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -8730,7 +9075,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -8767,24 +9113,30 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -8827,7 +9179,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -8836,7 +9189,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -8874,7 +9228,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -8888,7 +9243,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -8904,7 +9260,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -8932,12 +9291,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementArgsDict(
     TypedDict
@@ -8981,12 +9342,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter(name="comparisonOperator")
     def comparison_operator(self) -> pulumi.Input[_builtins.str]: ...
     @comparison_operator.setter
-    def comparison_operator(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison_operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> pulumi.Input[_builtins.int]: ...
     @size.setter
-    def size(self, value: pulumi.Input[_builtins.int]): ...
+    def size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -9008,7 +9371,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -9026,7 +9390,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgsDict(
     TypedDict
@@ -9211,7 +9576,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -9229,7 +9595,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -9247,7 +9614,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -9273,7 +9641,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -9299,7 +9668,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -9317,7 +9687,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -9335,7 +9706,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -9353,7 +9725,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -9371,7 +9744,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -9389,7 +9763,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -9407,7 +9782,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -9425,7 +9801,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -9443,7 +9820,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -9461,7 +9839,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -9485,7 +9864,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -9536,17 +9918,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -9593,7 +9978,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -9602,7 +9988,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -9611,7 +9998,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -9654,17 +10042,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -9711,7 +10102,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -9720,7 +10112,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -9729,7 +10122,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -9753,7 +10147,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -9769,7 +10164,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -9785,7 +10181,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -9822,24 +10219,30 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -9882,7 +10285,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -9891,7 +10295,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -9929,7 +10334,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -9943,7 +10349,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -9959,7 +10366,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -9987,12 +10397,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementArgsDict(
     TypedDict
@@ -10051,7 +10463,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -10069,12 +10482,16 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityLevel")
     def sensitivity_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity_level.setter
-    def sensitivity_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -10259,7 +10676,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -10277,7 +10695,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -10295,7 +10714,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -10321,7 +10741,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -10347,7 +10768,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -10365,7 +10787,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -10383,7 +10806,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -10401,7 +10825,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -10419,7 +10844,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -10437,7 +10863,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -10455,7 +10882,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -10473,7 +10901,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -10491,7 +10920,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -10509,7 +10939,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -10533,7 +10964,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -10584,17 +11018,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -10641,7 +11078,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -10650,7 +11088,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -10659,7 +11098,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -10702,17 +11142,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -10759,7 +11202,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -10768,7 +11212,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -10777,7 +11222,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -10801,7 +11247,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -10817,7 +11264,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -10833,7 +11281,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -10870,24 +11319,30 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -10930,7 +11385,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -10939,7 +11395,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -10977,7 +11434,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -10991,7 +11449,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -11007,7 +11466,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -11035,12 +11497,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgsDict(
     TypedDict
@@ -11097,7 +11561,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -11115,7 +11580,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -11300,7 +11766,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -11318,7 +11785,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -11336,7 +11804,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -11362,7 +11831,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -11388,7 +11858,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -11406,7 +11877,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -11424,7 +11896,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -11442,7 +11915,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -11460,7 +11934,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -11478,7 +11953,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -11496,7 +11972,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -11514,7 +11991,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -11532,7 +12010,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -11550,7 +12029,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -11574,7 +12054,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -11625,17 +12108,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -11682,7 +12168,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -11691,7 +12178,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -11700,7 +12188,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -11743,17 +12232,20 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -11800,7 +12292,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -11809,7 +12302,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -11818,7 +12312,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -11842,7 +12337,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -11858,7 +12354,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -11874,7 +12371,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -11911,24 +12409,30 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
         value: pulumi.Input[
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -11971,7 +12475,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
                 RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -11980,7 +12485,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -12018,7 +12524,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -12032,7 +12539,8 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -12048,7 +12556,10 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -12076,12 +12587,14 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementArgsDict(TypedDict):
     regex_string: pulumi.Input[_builtins.str]
@@ -12117,7 +12630,8 @@ class RuleGroupRuleStatementRegexMatchStatementArgs:
     @pulumi.getter(name="regexString")
     def regex_string(self) -> pulumi.Input[_builtins.str]: ...
     @regex_string.setter
-    def regex_string(self, value: pulumi.Input[_builtins.str]): ...
+    def regex_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -12139,7 +12653,8 @@ class RuleGroupRuleStatementRegexMatchStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -12153,7 +12668,8 @@ class RuleGroupRuleStatementRegexMatchStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -12332,7 +12848,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -12346,7 +12863,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -12362,7 +12880,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -12388,7 +12907,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -12414,7 +12934,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -12432,7 +12953,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -12450,7 +12972,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -12466,7 +12989,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -12482,7 +13006,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -12500,7 +13025,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -12518,7 +13044,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -12536,7 +13063,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -12554,7 +13082,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -12570,7 +13099,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -12592,7 +13122,10 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -12641,17 +13174,20 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -12698,7 +13234,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAr
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -12707,7 +13244,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAr
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -12716,7 +13254,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAr
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -12757,17 +13296,20 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -12814,7 +13356,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArg
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -12823,7 +13366,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArg
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -12832,7 +13376,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArg
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -12856,7 +13401,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -12872,7 +13418,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -12888,7 +13435,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -12923,24 +13471,30 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -12983,7 +13537,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternA
                 RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -12992,7 +13547,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternA
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -13030,7 +13586,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -13044,7 +13601,8 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentAr
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -13060,7 +13618,10 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -13086,12 +13647,14 @@ class RuleGroupRuleStatementRegexMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -13131,7 +13694,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -13153,7 +13717,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -13171,7 +13736,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict(
     TypedDict
@@ -13356,7 +13922,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -13374,7 +13941,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -13392,7 +13960,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -13418,7 +13987,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -13444,7 +14014,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -13462,7 +14033,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -13480,7 +14052,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -13498,7 +14071,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -13516,7 +14090,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -13534,7 +14109,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -13552,7 +14128,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -13570,7 +14147,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -13588,7 +14166,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -13606,7 +14185,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -13630,7 +14210,10 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArg
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -13681,17 +14264,20 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -13738,7 +14324,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -13747,7 +14334,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -13756,7 +14344,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -13799,17 +14388,20 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderA
         value: pulumi.Input[
             RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -13856,7 +14448,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderM
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -13865,7 +14458,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderM
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -13874,7 +14468,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderM
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -13898,7 +14493,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderO
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -13914,7 +14510,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fing
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -13930,7 +14527,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fing
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -13967,24 +14565,30 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBod
         value: pulumi.Input[
             RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -14027,7 +14631,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBod
                 RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -14036,7 +14641,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBod
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -14074,7 +14680,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleH
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -14088,7 +14695,8 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQ
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -14104,7 +14712,10 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFrag
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -14132,12 +14743,14 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformationA
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementArgsDict(TypedDict):
     comparison_operator: pulumi.Input[_builtins.str]
@@ -14175,12 +14788,14 @@ class RuleGroupRuleStatementSizeConstraintStatementArgs:
     @pulumi.getter(name="comparisonOperator")
     def comparison_operator(self) -> pulumi.Input[_builtins.str]: ...
     @comparison_operator.setter
-    def comparison_operator(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison_operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> pulumi.Input[_builtins.int]: ...
     @size.setter
-    def size(self, value: pulumi.Input[_builtins.int]): ...
+    def size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -14202,7 +14817,8 @@ class RuleGroupRuleStatementSizeConstraintStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -14216,7 +14832,8 @@ class RuleGroupRuleStatementSizeConstraintStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -14399,7 +15016,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -14415,7 +15033,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -14433,7 +15052,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -14459,7 +15079,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -14485,7 +15106,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -14503,7 +15125,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -14521,7 +15144,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -14539,7 +15163,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -14557,7 +15182,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -14575,7 +15201,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -14593,7 +15220,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -14611,7 +15239,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -14629,7 +15258,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -14647,7 +15277,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -14669,7 +15300,10 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -14720,17 +15354,20 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -14777,7 +15414,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatte
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -14786,7 +15424,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatte
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -14795,7 +15434,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatte
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -14838,17 +15478,20 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -14895,7 +15538,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatter
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -14904,7 +15548,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatter
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -14913,7 +15558,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatter
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -14937,7 +15583,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -14953,7 +15600,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArg
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -14969,7 +15617,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArg
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -15006,24 +15655,30 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -15066,7 +15721,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatt
                 RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -15075,7 +15731,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatt
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -15113,7 +15770,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -15127,7 +15785,8 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgume
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -15143,7 +15802,10 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -15171,12 +15833,14 @@ class RuleGroupRuleStatementSizeConstraintStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -15227,7 +15891,8 @@ class RuleGroupRuleStatementSqliMatchStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -15241,12 +15906,16 @@ class RuleGroupRuleStatementSqliMatchStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityLevel")
     def sensitivity_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity_level.setter
-    def sensitivity_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -15421,7 +16090,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -15435,7 +16105,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementSqliMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -15451,7 +16122,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -15477,7 +16149,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -15503,7 +16176,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -15521,7 +16195,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -15539,7 +16214,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -15555,7 +16231,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -15569,7 +16246,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementSqliMatchStatementFieldToMatchMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -15587,7 +16265,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -15605,7 +16284,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -15623,7 +16303,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -15641,7 +16322,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -15657,7 +16339,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -15679,7 +16362,10 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -15728,17 +16414,20 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -15785,7 +16474,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArg
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -15794,7 +16484,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArg
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -15803,7 +16494,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArg
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -15844,17 +16536,20 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -15901,7 +16596,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -15910,7 +16606,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -15919,7 +16616,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -15943,7 +16641,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -15959,7 +16658,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -15975,7 +16675,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -16010,24 +16711,30 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -16070,7 +16777,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAr
                 RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -16079,7 +16787,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAr
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -16115,7 +16824,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -16129,7 +16839,8 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArg
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -16145,7 +16856,10 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -16171,12 +16885,14 @@ class RuleGroupRuleStatementSqliMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -16225,7 +16941,8 @@ class RuleGroupRuleStatementXssMatchStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -16239,7 +16956,8 @@ class RuleGroupRuleStatementXssMatchStatementArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -16406,7 +17124,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -16420,7 +17139,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementXssMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -16434,7 +17154,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -16460,7 +17181,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -16486,7 +17208,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -16504,7 +17227,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -16522,7 +17246,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -16538,7 +17263,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -16552,7 +17278,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementXssMatchStatementFieldToMatchMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -16568,7 +17295,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -16586,7 +17314,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -16604,7 +17333,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -16620,7 +17350,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -16634,7 +17365,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[RuleGroupRuleStatementXssMatchStatementFieldToMatchUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -16656,7 +17388,10 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -16705,17 +17440,20 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -16762,7 +17500,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -16771,7 +17510,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -16780,7 +17520,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -16821,17 +17562,20 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -16878,7 +17622,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -16887,7 +17632,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -16896,7 +17642,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -16918,7 +17665,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -16934,7 +17682,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -16950,7 +17699,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -16985,24 +17735,30 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -17045,7 +17801,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArg
                 RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -17054,7 +17811,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArg
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -17090,7 +17848,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -17104,7 +17863,8 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
@@ -17118,7 +17878,10 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchUriPathArgsDict(TypedDict): ...
 
@@ -17142,12 +17905,14 @@ class RuleGroupRuleStatementXssMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RuleGroupRuleVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
@@ -17167,17 +17932,22 @@ class RuleGroupRuleVisibilityConfigArgs:
     @pulumi.getter(name="cloudwatchMetricsEnabled")
     def cloudwatch_metrics_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @cloudwatch_metrics_enabled.setter
-    def cloudwatch_metrics_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def cloudwatch_metrics_enabled(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampledRequestsEnabled")
     def sampled_requests_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @sampled_requests_enabled.setter
-    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class RuleGroupVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
@@ -17197,17 +17967,22 @@ class RuleGroupVisibilityConfigArgs:
     @pulumi.getter(name="cloudwatchMetricsEnabled")
     def cloudwatch_metrics_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @cloudwatch_metrics_enabled.setter
-    def cloudwatch_metrics_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def cloudwatch_metrics_enabled(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampledRequestsEnabled")
     def sampled_requests_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @sampled_requests_enabled.setter
-    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class WebAclAssociationConfigArgsDict(TypedDict):
     request_bodies: NotRequired[
@@ -17236,7 +18011,8 @@ class WebAclAssociationConfigArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WebAclAssociationConfigRequestBodyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclAssociationConfigRequestBodyArgsDict(TypedDict):
     api_gateway: NotRequired[
@@ -17285,7 +18061,8 @@ class WebAclAssociationConfigRequestBodyArgs:
     def api_gateway(
         self,
         value: Optional[pulumi.Input[WebAclAssociationConfigRequestBodyApiGatewayArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appRunnerService")
     def app_runner_service(
@@ -17299,7 +18076,8 @@ class WebAclAssociationConfigRequestBodyArgs:
         value: Optional[
             pulumi.Input[WebAclAssociationConfigRequestBodyAppRunnerServiceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cloudfront(
@@ -17309,7 +18087,8 @@ class WebAclAssociationConfigRequestBodyArgs:
     def cloudfront(
         self,
         value: Optional[pulumi.Input[WebAclAssociationConfigRequestBodyCloudfrontArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cognitoUserPool")
     def cognito_user_pool(
@@ -17323,7 +18102,8 @@ class WebAclAssociationConfigRequestBodyArgs:
         value: Optional[
             pulumi.Input[WebAclAssociationConfigRequestBodyCognitoUserPoolArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verifiedAccessInstance")
     def verified_access_instance(
@@ -17337,7 +18117,8 @@ class WebAclAssociationConfigRequestBodyArgs:
         value: Optional[
             pulumi.Input[WebAclAssociationConfigRequestBodyVerifiedAccessInstanceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclAssociationConfigRequestBodyApiGatewayArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
@@ -17351,7 +18132,10 @@ class WebAclAssociationConfigRequestBodyApiGatewayArgs:
     @pulumi.getter(name="defaultSizeInspectionLimit")
     def default_size_inspection_limit(self) -> pulumi.Input[_builtins.str]: ...
     @default_size_inspection_limit.setter
-    def default_size_inspection_limit(self, value: pulumi.Input[_builtins.str]): ...
+    def default_size_inspection_limit(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class WebAclAssociationConfigRequestBodyAppRunnerServiceArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
@@ -17365,7 +18149,10 @@ class WebAclAssociationConfigRequestBodyAppRunnerServiceArgs:
     @pulumi.getter(name="defaultSizeInspectionLimit")
     def default_size_inspection_limit(self) -> pulumi.Input[_builtins.str]: ...
     @default_size_inspection_limit.setter
-    def default_size_inspection_limit(self, value: pulumi.Input[_builtins.str]): ...
+    def default_size_inspection_limit(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class WebAclAssociationConfigRequestBodyCloudfrontArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
@@ -17379,7 +18166,10 @@ class WebAclAssociationConfigRequestBodyCloudfrontArgs:
     @pulumi.getter(name="defaultSizeInspectionLimit")
     def default_size_inspection_limit(self) -> pulumi.Input[_builtins.str]: ...
     @default_size_inspection_limit.setter
-    def default_size_inspection_limit(self, value: pulumi.Input[_builtins.str]): ...
+    def default_size_inspection_limit(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class WebAclAssociationConfigRequestBodyCognitoUserPoolArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
@@ -17393,7 +18183,10 @@ class WebAclAssociationConfigRequestBodyCognitoUserPoolArgs:
     @pulumi.getter(name="defaultSizeInspectionLimit")
     def default_size_inspection_limit(self) -> pulumi.Input[_builtins.str]: ...
     @default_size_inspection_limit.setter
-    def default_size_inspection_limit(self, value: pulumi.Input[_builtins.str]): ...
+    def default_size_inspection_limit(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class WebAclAssociationConfigRequestBodyVerifiedAccessInstanceArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
@@ -17407,7 +18200,10 @@ class WebAclAssociationConfigRequestBodyVerifiedAccessInstanceArgs:
     @pulumi.getter(name="defaultSizeInspectionLimit")
     def default_size_inspection_limit(self) -> pulumi.Input[_builtins.str]: ...
     @default_size_inspection_limit.setter
-    def default_size_inspection_limit(self, value: pulumi.Input[_builtins.str]): ...
+    def default_size_inspection_limit(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class WebAclCaptchaConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
@@ -17431,7 +18227,8 @@ class WebAclCaptchaConfigArgs:
     @immunity_time_property.setter
     def immunity_time_property(
         self, value: Optional[pulumi.Input[WebAclCaptchaConfigImmunityTimePropertyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclCaptchaConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
@@ -17445,7 +18242,8 @@ class WebAclCaptchaConfigImmunityTimePropertyArgs:
     @pulumi.getter(name="immunityTime")
     def immunity_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @immunity_time.setter
-    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class WebAclChallengeConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
@@ -17470,7 +18268,8 @@ class WebAclChallengeConfigArgs:
     def immunity_time_property(
         self,
         value: Optional[pulumi.Input[WebAclChallengeConfigImmunityTimePropertyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclChallengeConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
@@ -17484,7 +18283,8 @@ class WebAclChallengeConfigImmunityTimePropertyArgs:
     @pulumi.getter(name="immunityTime")
     def immunity_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @immunity_time.setter
-    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class WebAclCustomResponseBodyArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
@@ -17504,17 +18304,20 @@ class WebAclCustomResponseBodyArgs:
     @pulumi.getter
     def content(self) -> pulumi.Input[_builtins.str]: ...
     @content.setter
-    def content(self, value: pulumi.Input[_builtins.str]): ...
+    def content(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentType")
     def content_type(self) -> pulumi.Input[_builtins.str]: ...
     @content_type.setter
-    def content_type(self, value: pulumi.Input[_builtins.str]): ...
+    def content_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclDataProtectionConfigArgsDict(TypedDict):
     data_protections: NotRequired[
@@ -17551,7 +18354,8 @@ class WebAclDataProtectionConfigArgs:
                 Sequence[pulumi.Input[WebAclDataProtectionConfigDataProtectionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclDataProtectionConfigDataProtectionArgsDict(TypedDict):
     action: pulumi.Input[_builtins.str]
@@ -17573,7 +18377,8 @@ class WebAclDataProtectionConfigDataProtectionArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[_builtins.str]: ...
     @action.setter
-    def action(self, value: pulumi.Input[_builtins.str]): ...
+    def action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def field(
@@ -17582,21 +18387,24 @@ class WebAclDataProtectionConfigDataProtectionArgs:
     @field.setter
     def field(
         self, value: pulumi.Input[WebAclDataProtectionConfigDataProtectionFieldArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeRateBasedDetails")
     def exclude_rate_based_details(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_rate_based_details.setter
     def exclude_rate_based_details(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeRuleMatchDetails")
     def exclude_rule_match_details(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_rule_match_details.setter
     def exclude_rule_match_details(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclDataProtectionConfigDataProtectionFieldArgsDict(TypedDict):
     field_type: pulumi.Input[_builtins.str]
@@ -17614,7 +18422,8 @@ class WebAclDataProtectionConfigDataProtectionFieldArgs:
     @pulumi.getter(name="fieldType")
     def field_type(self) -> pulumi.Input[_builtins.str]: ...
     @field_type.setter
-    def field_type(self, value: pulumi.Input[_builtins.str]): ...
+    def field_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldKeys")
     def field_keys(
@@ -17623,7 +18432,8 @@ class WebAclDataProtectionConfigDataProtectionFieldArgs:
     @field_keys.setter
     def field_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclDefaultActionArgsDict(TypedDict):
     allow: NotRequired[pulumi.Input[WebAclDefaultActionAllowArgsDict]]
@@ -17641,12 +18451,18 @@ class WebAclDefaultActionArgs:
     @pulumi.getter
     def allow(self) -> Optional[pulumi.Input[WebAclDefaultActionAllowArgs]]: ...
     @allow.setter
-    def allow(self, value: Optional[pulumi.Input[WebAclDefaultActionAllowArgs]]): ...
+    def allow(
+        self, value: Optional[pulumi.Input[WebAclDefaultActionAllowArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def block(self) -> Optional[pulumi.Input[WebAclDefaultActionBlockArgs]]: ...
     @block.setter
-    def block(self, value: Optional[pulumi.Input[WebAclDefaultActionBlockArgs]]): ...
+    def block(
+        self, value: Optional[pulumi.Input[WebAclDefaultActionBlockArgs]]
+    ):  # -> None:
+        ...
 
 class WebAclDefaultActionAllowArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -17673,7 +18489,8 @@ class WebAclDefaultActionAllowArgs:
         value: Optional[
             pulumi.Input[WebAclDefaultActionAllowCustomRequestHandlingArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclDefaultActionAllowCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -17716,7 +18533,8 @@ class WebAclDefaultActionAllowCustomRequestHandlingArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -17734,12 +18552,14 @@ class WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclDefaultActionBlockArgsDict(TypedDict):
     custom_response: NotRequired[
@@ -17763,7 +18583,8 @@ class WebAclDefaultActionBlockArgs:
     @custom_response.setter
     def custom_response(
         self, value: Optional[pulumi.Input[WebAclDefaultActionBlockCustomResponseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclDefaultActionBlockCustomResponseArgsDict(TypedDict):
     response_code: pulumi.Input[_builtins.int]
@@ -17799,14 +18620,16 @@ class WebAclDefaultActionBlockCustomResponseArgs:
     @pulumi.getter(name="responseCode")
     def response_code(self) -> pulumi.Input[_builtins.int]: ...
     @response_code.setter
-    def response_code(self, value: pulumi.Input[_builtins.int]): ...
+    def response_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customResponseBodyKey")
     def custom_response_body_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_response_body_key.setter
     def custom_response_body_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -17830,7 +18653,8 @@ class WebAclDefaultActionBlockCustomResponseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclDefaultActionBlockCustomResponseResponseHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -17848,12 +18672,14 @@ class WebAclDefaultActionBlockCustomResponseResponseHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationLoggingFilterArgsDict(TypedDict):
     default_behavior: pulumi.Input[_builtins.str]
@@ -17875,7 +18701,8 @@ class WebAclLoggingConfigurationLoggingFilterArgs:
     @pulumi.getter(name="defaultBehavior")
     def default_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @default_behavior.setter
-    def default_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def default_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filters(
@@ -17889,7 +18716,8 @@ class WebAclLoggingConfigurationLoggingFilterArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[WebAclLoggingConfigurationLoggingFilterFilterArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationLoggingFilterFilterArgsDict(TypedDict):
     behavior: pulumi.Input[_builtins.str]
@@ -17917,7 +18745,8 @@ class WebAclLoggingConfigurationLoggingFilterFilterArgs:
     @pulumi.getter
     def behavior(self) -> pulumi.Input[_builtins.str]: ...
     @behavior.setter
-    def behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -17935,12 +18764,14 @@ class WebAclLoggingConfigurationLoggingFilterFilterArgs:
                 pulumi.Input[WebAclLoggingConfigurationLoggingFilterFilterConditionArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def requirement(self) -> pulumi.Input[_builtins.str]: ...
     @requirement.setter
-    def requirement(self, value: pulumi.Input[_builtins.str]): ...
+    def requirement(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationLoggingFilterFilterConditionArgsDict(TypedDict):
     action_condition: NotRequired[
@@ -17987,7 +18818,8 @@ class WebAclLoggingConfigurationLoggingFilterFilterConditionArgs:
                 WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelNameCondition")
     def label_name_condition(
@@ -18005,7 +18837,8 @@ class WebAclLoggingConfigurationLoggingFilterFilterConditionArgs:
                 WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionArgsDict(
     TypedDict
@@ -18019,7 +18852,8 @@ class WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[_builtins.str]: ...
     @action.setter
-    def action(self, value: pulumi.Input[_builtins.str]): ...
+    def action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionArgsDict(
     TypedDict
@@ -18033,7 +18867,8 @@ class WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionAr
     @pulumi.getter(name="labelName")
     def label_name(self) -> pulumi.Input[_builtins.str]: ...
     @label_name.setter
-    def label_name(self, value: pulumi.Input[_builtins.str]): ...
+    def label_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationRedactedFieldArgsDict(TypedDict):
     method: NotRequired[
@@ -18078,7 +18913,8 @@ class WebAclLoggingConfigurationRedactedFieldArgs:
         value: Optional[
             pulumi.Input[WebAclLoggingConfigurationRedactedFieldMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -18092,7 +18928,8 @@ class WebAclLoggingConfigurationRedactedFieldArgs:
         value: Optional[
             pulumi.Input[WebAclLoggingConfigurationRedactedFieldQueryStringArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -18106,7 +18943,8 @@ class WebAclLoggingConfigurationRedactedFieldArgs:
         value: Optional[
             pulumi.Input[WebAclLoggingConfigurationRedactedFieldSingleHeaderArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -18118,7 +18956,8 @@ class WebAclLoggingConfigurationRedactedFieldArgs:
         value: Optional[
             pulumi.Input[WebAclLoggingConfigurationRedactedFieldUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationRedactedFieldMethodArgsDict(TypedDict): ...
 
@@ -18142,7 +18981,8 @@ class WebAclLoggingConfigurationRedactedFieldSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclLoggingConfigurationRedactedFieldUriPathArgsDict(TypedDict): ...
 
@@ -18184,36 +19024,42 @@ class WebAclRuleArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def statement(self) -> pulumi.Input[WebAclRuleStatementArgs]: ...
     @statement.setter
-    def statement(self, value: pulumi.Input[WebAclRuleStatementArgs]): ...
+    def statement(self, value: pulumi.Input[WebAclRuleStatementArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="visibilityConfig")
     def visibility_config(self) -> pulumi.Input[WebAclRuleVisibilityConfigArgs]: ...
     @visibility_config.setter
     def visibility_config(
         self, value: pulumi.Input[WebAclRuleVisibilityConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[WebAclRuleActionArgs]]: ...
     @action.setter
-    def action(self, value: Optional[pulumi.Input[WebAclRuleActionArgs]]): ...
+    def action(self, value: Optional[pulumi.Input[WebAclRuleActionArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="captchaConfig")
     def captcha_config(self) -> Optional[pulumi.Input[WebAclRuleCaptchaConfigArgs]]: ...
     @captcha_config.setter
     def captcha_config(
         self, value: Optional[pulumi.Input[WebAclRuleCaptchaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="challengeConfig")
     def challenge_config(
@@ -18222,7 +19068,8 @@ class WebAclRuleArgs:
     @challenge_config.setter
     def challenge_config(
         self, value: Optional[pulumi.Input[WebAclRuleChallengeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="overrideAction")
     def override_action(
@@ -18231,7 +19078,8 @@ class WebAclRuleArgs:
     @override_action.setter
     def override_action(
         self, value: Optional[pulumi.Input[WebAclRuleOverrideActionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleLabels")
     def rule_labels(
@@ -18241,7 +19089,8 @@ class WebAclRuleArgs:
     def rule_labels(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[WebAclRuleRuleLabelArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionArgsDict(TypedDict):
     allow: NotRequired[pulumi.Input[WebAclRuleActionAllowArgsDict]]
@@ -18265,29 +19114,42 @@ class WebAclRuleActionArgs:
     @pulumi.getter
     def allow(self) -> Optional[pulumi.Input[WebAclRuleActionAllowArgs]]: ...
     @allow.setter
-    def allow(self, value: Optional[pulumi.Input[WebAclRuleActionAllowArgs]]): ...
+    def allow(
+        self, value: Optional[pulumi.Input[WebAclRuleActionAllowArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def block(self) -> Optional[pulumi.Input[WebAclRuleActionBlockArgs]]: ...
     @block.setter
-    def block(self, value: Optional[pulumi.Input[WebAclRuleActionBlockArgs]]): ...
+    def block(
+        self, value: Optional[pulumi.Input[WebAclRuleActionBlockArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def captcha(self) -> Optional[pulumi.Input[WebAclRuleActionCaptchaArgs]]: ...
     @captcha.setter
-    def captcha(self, value: Optional[pulumi.Input[WebAclRuleActionCaptchaArgs]]): ...
+    def captcha(
+        self, value: Optional[pulumi.Input[WebAclRuleActionCaptchaArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def challenge(self) -> Optional[pulumi.Input[WebAclRuleActionChallengeArgs]]: ...
     @challenge.setter
     def challenge(
         self, value: Optional[pulumi.Input[WebAclRuleActionChallengeArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def count(self) -> Optional[pulumi.Input[WebAclRuleActionCountArgs]]: ...
     @count.setter
-    def count(self, value: Optional[pulumi.Input[WebAclRuleActionCountArgs]]): ...
+    def count(
+        self, value: Optional[pulumi.Input[WebAclRuleActionCountArgs]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionAllowArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -18312,7 +19174,8 @@ class WebAclRuleActionAllowArgs:
     def custom_request_handling(
         self,
         value: Optional[pulumi.Input[WebAclRuleActionAllowCustomRequestHandlingArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionAllowCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -18349,7 +19212,8 @@ class WebAclRuleActionAllowCustomRequestHandlingArgs:
                 pulumi.Input[WebAclRuleActionAllowCustomRequestHandlingInsertHeaderArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionAllowCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -18367,12 +19231,14 @@ class WebAclRuleActionAllowCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleActionBlockArgsDict(TypedDict):
     custom_response: NotRequired[
@@ -18396,7 +19262,8 @@ class WebAclRuleActionBlockArgs:
     @custom_response.setter
     def custom_response(
         self, value: Optional[pulumi.Input[WebAclRuleActionBlockCustomResponseArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionBlockCustomResponseArgsDict(TypedDict):
     response_code: pulumi.Input[_builtins.int]
@@ -18428,14 +19295,16 @@ class WebAclRuleActionBlockCustomResponseArgs:
     @pulumi.getter(name="responseCode")
     def response_code(self) -> pulumi.Input[_builtins.int]: ...
     @response_code.setter
-    def response_code(self, value: pulumi.Input[_builtins.int]): ...
+    def response_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customResponseBodyKey")
     def custom_response_body_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_response_body_key.setter
     def custom_response_body_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -18457,7 +19326,8 @@ class WebAclRuleActionBlockCustomResponseArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionBlockCustomResponseResponseHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -18475,12 +19345,14 @@ class WebAclRuleActionBlockCustomResponseResponseHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleActionCaptchaArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -18505,7 +19377,8 @@ class WebAclRuleActionCaptchaArgs:
     def custom_request_handling(
         self,
         value: Optional[pulumi.Input[WebAclRuleActionCaptchaCustomRequestHandlingArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionCaptchaCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -18548,7 +19421,8 @@ class WebAclRuleActionCaptchaCustomRequestHandlingArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -18566,12 +19440,14 @@ class WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleActionChallengeArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -18598,7 +19474,8 @@ class WebAclRuleActionChallengeArgs:
         value: Optional[
             pulumi.Input[WebAclRuleActionChallengeCustomRequestHandlingArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionChallengeCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -18641,7 +19518,8 @@ class WebAclRuleActionChallengeCustomRequestHandlingArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -18659,12 +19537,14 @@ class WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleActionCountArgsDict(TypedDict):
     custom_request_handling: NotRequired[
@@ -18689,7 +19569,8 @@ class WebAclRuleActionCountArgs:
     def custom_request_handling(
         self,
         value: Optional[pulumi.Input[WebAclRuleActionCountCustomRequestHandlingArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionCountCustomRequestHandlingArgsDict(TypedDict):
     insert_headers: pulumi.Input[
@@ -18726,7 +19607,8 @@ class WebAclRuleActionCountCustomRequestHandlingArgs:
                 pulumi.Input[WebAclRuleActionCountCustomRequestHandlingInsertHeaderArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleActionCountCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -18744,12 +19626,14 @@ class WebAclRuleActionCountCustomRequestHandlingInsertHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleCaptchaConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
@@ -18774,7 +19658,8 @@ class WebAclRuleCaptchaConfigArgs:
     def immunity_time_property(
         self,
         value: Optional[pulumi.Input[WebAclRuleCaptchaConfigImmunityTimePropertyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleCaptchaConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
@@ -18788,7 +19673,8 @@ class WebAclRuleCaptchaConfigImmunityTimePropertyArgs:
     @pulumi.getter(name="immunityTime")
     def immunity_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @immunity_time.setter
-    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class WebAclRuleChallengeConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
@@ -18815,7 +19701,8 @@ class WebAclRuleChallengeConfigArgs:
         value: Optional[
             pulumi.Input[WebAclRuleChallengeConfigImmunityTimePropertyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleChallengeConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
@@ -18829,7 +19716,8 @@ class WebAclRuleChallengeConfigImmunityTimePropertyArgs:
     @pulumi.getter(name="immunityTime")
     def immunity_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @immunity_time.setter
-    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def immunity_time(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -18877,12 +19765,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vendorName")
     def vendor_name(self) -> pulumi.Input[_builtins.str]: ...
     @vendor_name.setter
-    def vendor_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vendor_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedRuleGroupConfigs")
     def managed_rule_group_configs(
@@ -18900,7 +19790,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupArgs:
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleActionOverrides")
     def rule_action_overrides(
@@ -18926,12 +19817,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgsDict(
     TypedDict
@@ -19000,7 +19893,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgs:
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsManagedRulesAntiDdosRuleSet")
     def aws_managed_rules_anti_ddos_rule_set(
@@ -19018,7 +19912,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgs:
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsManagedRulesAtpRuleSet")
     def aws_managed_rules_atp_rule_set(
@@ -19036,7 +19931,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgs:
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsManagedRulesBotControlRuleSet")
     def aws_managed_rules_bot_control_rule_set(
@@ -19054,7 +19950,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgs:
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetArgsDict(
     TypedDict
@@ -19096,17 +19993,22 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter(name="creationPath")
     def creation_path(self) -> pulumi.Input[_builtins.str]: ...
     @creation_path.setter
-    def creation_path(self, value: pulumi.Input[_builtins.str]): ...
+    def creation_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationPagePath")
     def registration_page_path(self) -> pulumi.Input[_builtins.str]: ...
     @registration_page_path.setter
-    def registration_page_path(self, value: pulumi.Input[_builtins.str]): ...
+    def registration_page_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableRegexInPath")
     def enable_regex_in_path(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_regex_in_path.setter
-    def enable_regex_in_path(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_regex_in_path(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestInspection")
     def request_inspection(
@@ -19124,7 +20026,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseInspection")
     def response_inspection(
@@ -19142,7 +20045,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionArgsDict(
     TypedDict
@@ -19210,7 +20114,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter(name="payloadType")
     def payload_type(self) -> pulumi.Input[_builtins.str]: ...
     @payload_type.setter
-    def payload_type(self, value: pulumi.Input[_builtins.str]): ...
+    def payload_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressFields")
     def address_fields(
@@ -19228,7 +20133,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailField")
     def email_field(
@@ -19246,7 +20152,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordField")
     def password_field(
@@ -19264,7 +20171,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phoneNumberFields")
     def phone_number_fields(
@@ -19282,7 +20190,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameField")
     def username_field(
@@ -19300,7 +20209,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsArgsDict(
     TypedDict
@@ -19318,7 +20228,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @identifiers.setter
     def identifiers(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldArgsDict(
     TypedDict
@@ -19332,7 +20243,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldArgsDict(
     TypedDict
@@ -19346,7 +20258,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsArgsDict(
     TypedDict
@@ -19364,7 +20277,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @identifiers.setter
     def identifiers(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgsDict(
     TypedDict
@@ -19378,7 +20292,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionArgsDict(
     TypedDict
@@ -19447,7 +20362,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def header(
@@ -19465,7 +20381,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def json(
@@ -19483,7 +20400,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statusCode")
     def status_code(
@@ -19501,7 +20419,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsArgsDict(
     TypedDict
@@ -19525,7 +20444,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_strings.setter
     def failure_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successStrings")
     def success_strings(
@@ -19534,7 +20454,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @success_strings.setter
     def success_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderArgsDict(
     TypedDict
@@ -19558,19 +20479,22 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonArgsDict(
     TypedDict
@@ -19594,19 +20518,22 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgsDict(
     TypedDict
@@ -19628,14 +20555,16 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_codes.setter
     def failure_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successCodes")
     def success_codes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @success_codes.setter
     def success_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetArgsDict(
     TypedDict
@@ -19676,12 +20605,16 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityToBlock")
     def sensitivity_to_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity_to_block.setter
-    def sensitivity_to_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity_to_block(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigArgsDict(
     TypedDict
@@ -19720,7 +20653,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgsDict(
     TypedDict
@@ -19758,7 +20692,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter(name="usageOfAction")
     def usage_of_action(self) -> pulumi.Input[_builtins.str]: ...
     @usage_of_action.setter
-    def usage_of_action(self, value: pulumi.Input[_builtins.str]): ...
+    def usage_of_action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exemptUriRegularExpressions")
     def exempt_uri_regular_expressions(
@@ -19784,12 +20719,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sensitivity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity.setter
-    def sensitivity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionArgsDict(
     TypedDict
@@ -19805,7 +20742,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter(name="regexString")
     def regex_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @regex_string.setter
-    def regex_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def regex_string(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetArgsDict(
     TypedDict
@@ -19845,12 +20783,16 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter(name="loginPath")
     def login_path(self) -> pulumi.Input[_builtins.str]: ...
     @login_path.setter
-    def login_path(self, value: pulumi.Input[_builtins.str]): ...
+    def login_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableRegexInPath")
     def enable_regex_in_path(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_regex_in_path.setter
-    def enable_regex_in_path(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_regex_in_path(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestInspection")
     def request_inspection(
@@ -19868,7 +20810,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseInspection")
     def response_inspection(
@@ -19886,7 +20829,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionArgsDict(
     TypedDict
@@ -19924,7 +20868,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter(name="payloadType")
     def payload_type(self) -> pulumi.Input[_builtins.str]: ...
     @payload_type.setter
-    def payload_type(self, value: pulumi.Input[_builtins.str]): ...
+    def payload_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordField")
     def password_field(
@@ -19942,7 +20887,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameField")
     def username_field(
@@ -19960,7 +20906,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldArgsDict(
     TypedDict
@@ -19974,7 +20921,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgsDict(
     TypedDict
@@ -19988,7 +20936,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionArgsDict(
     TypedDict
@@ -20057,7 +21006,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def header(
@@ -20075,7 +21025,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def json(
@@ -20093,7 +21044,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statusCode")
     def status_code(
@@ -20111,7 +21063,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
                 WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsArgsDict(
     TypedDict
@@ -20135,7 +21088,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_strings.setter
     def failure_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successStrings")
     def success_strings(
@@ -20144,7 +21098,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @success_strings.setter
     def success_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderArgsDict(
     TypedDict
@@ -20168,19 +21123,22 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonArgsDict(
     TypedDict
@@ -20204,19 +21162,22 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgsDict(
     TypedDict
@@ -20238,14 +21199,16 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @failure_codes.setter
     def failure_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successCodes")
     def success_codes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @success_codes.setter
     def success_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetArgsDict(
     TypedDict
@@ -20265,14 +21228,16 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     @pulumi.getter(name="inspectionLevel")
     def inspection_level(self) -> pulumi.Input[_builtins.str]: ...
     @inspection_level.setter
-    def inspection_level(self, value: pulumi.Input[_builtins.str]): ...
+    def inspection_level(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMachineLearning")
     def enable_machine_learning(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_machine_learning.setter
     def enable_machine_learning(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -20298,7 +21263,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionToUse")
     def action_to_use(
@@ -20316,7 +21282,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideArgs:
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArgsDict(
     TypedDict
@@ -20395,7 +21362,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArg
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def block(
@@ -20413,7 +21381,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArg
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def captcha(
@@ -20431,7 +21400,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArg
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def challenge(
@@ -20449,7 +21419,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArg
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def count(
@@ -20467,7 +21438,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArg
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowArgsDict(
     TypedDict
@@ -20506,7 +21478,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAll
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict(
     TypedDict
@@ -20561,7 +21534,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAll
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -20581,12 +21555,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAll
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockArgsDict(
     TypedDict
@@ -20625,7 +21601,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlo
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseArgsDict(
     TypedDict
@@ -20663,14 +21640,16 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlo
     @pulumi.getter(name="responseCode")
     def response_code(self) -> pulumi.Input[_builtins.int]: ...
     @response_code.setter
-    def response_code(self, value: pulumi.Input[_builtins.int]): ...
+    def response_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customResponseBodyKey")
     def custom_response_body_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_response_body_key.setter
     def custom_response_body_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -20696,7 +21675,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgsDict(
     TypedDict
@@ -20716,12 +21696,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlo
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaArgsDict(
     TypedDict
@@ -20760,7 +21742,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCap
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict(
     TypedDict
@@ -20815,7 +21798,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCap
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -20835,12 +21819,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCap
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeArgsDict(
     TypedDict
@@ -20879,7 +21865,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCha
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict(
     TypedDict
@@ -20934,7 +21921,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCha
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -20954,12 +21942,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCha
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountArgsDict(
     TypedDict
@@ -20998,7 +21988,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCou
                 WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict(
     TypedDict
@@ -21053,7 +22044,8 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCou
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -21073,12 +22065,14 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCou
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -21112,7 +22106,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleActionOverrides")
     def rule_action_overrides(
@@ -21138,7 +22133,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -21164,7 +22160,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionToUse")
     def action_to_use(
@@ -21182,7 +22179,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideArgs:
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseArgsDict(
     TypedDict
@@ -21261,7 +22259,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def block(
@@ -21279,7 +22278,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def captcha(
@@ -21297,7 +22297,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def challenge(
@@ -21315,7 +22316,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def count(
@@ -21333,7 +22335,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowArgsDict(
     TypedDict
@@ -21372,7 +22375,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict(
     TypedDict
@@ -21427,7 +22431,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -21447,12 +22452,14 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockArgsDict(
     TypedDict
@@ -21491,7 +22498,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseB
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseArgsDict(
     TypedDict
@@ -21529,14 +22537,16 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseB
     @pulumi.getter(name="responseCode")
     def response_code(self) -> pulumi.Input[_builtins.int]: ...
     @response_code.setter
-    def response_code(self, value: pulumi.Input[_builtins.int]): ...
+    def response_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customResponseBodyKey")
     def custom_response_body_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_response_body_key.setter
     def custom_response_body_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -21562,7 +22572,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseB
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgsDict(
     TypedDict
@@ -21582,12 +22593,14 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseB
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaArgsDict(
     TypedDict
@@ -21626,7 +22639,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict(
     TypedDict
@@ -21681,7 +22695,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -21701,12 +22716,14 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeArgsDict(
     TypedDict
@@ -21745,7 +22762,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict(
     TypedDict
@@ -21800,7 +22818,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -21820,12 +22839,14 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountArgsDict(
     TypedDict
@@ -21864,7 +22885,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
                 WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict(
     TypedDict
@@ -21919,7 +22941,8 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -21939,12 +22962,14 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -21964,17 +22989,20 @@ class WebAclRuleGroupAssociationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebAclRuleGroupAssociationVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
@@ -21994,17 +23022,22 @@ class WebAclRuleGroupAssociationVisibilityConfigArgs:
     @pulumi.getter(name="cloudwatchMetricsEnabled")
     def cloudwatch_metrics_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @cloudwatch_metrics_enabled.setter
-    def cloudwatch_metrics_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def cloudwatch_metrics_enabled(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampledRequestsEnabled")
     def sampled_requests_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @sampled_requests_enabled.setter
-    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class WebAclRuleOverrideActionArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[WebAclRuleOverrideActionCountArgsDict]]
@@ -22024,12 +23057,16 @@ class WebAclRuleOverrideActionArgs:
     @count.setter
     def count(
         self, value: Optional[pulumi.Input[WebAclRuleOverrideActionCountArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def none(self) -> Optional[pulumi.Input[WebAclRuleOverrideActionNoneArgs]]: ...
     @none.setter
-    def none(self, value: Optional[pulumi.Input[WebAclRuleOverrideActionNoneArgs]]): ...
+    def none(
+        self, value: Optional[pulumi.Input[WebAclRuleOverrideActionNoneArgs]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleOverrideActionCountArgsDict(TypedDict): ...
 
@@ -22053,7 +23090,8 @@ class WebAclRuleRuleLabelArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementArgsDict(TypedDict):
     and_statement: NotRequired[pulumi.Input[WebAclRuleStatementAndStatementArgsDict]]
@@ -22159,7 +23197,8 @@ class WebAclRuleStatementArgs:
     @and_statement.setter
     def and_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementAndStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="asnMatchStatement")
     def asn_match_statement(
@@ -22168,7 +23207,8 @@ class WebAclRuleStatementArgs:
     @asn_match_statement.setter
     def asn_match_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementAsnMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="byteMatchStatement")
     def byte_match_statement(
@@ -22177,7 +23217,8 @@ class WebAclRuleStatementArgs:
     @byte_match_statement.setter
     def byte_match_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementByteMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoMatchStatement")
     def geo_match_statement(
@@ -22186,7 +23227,8 @@ class WebAclRuleStatementArgs:
     @geo_match_statement.setter
     def geo_match_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementGeoMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetReferenceStatement")
     def ip_set_reference_statement(
@@ -22196,7 +23238,8 @@ class WebAclRuleStatementArgs:
     def ip_set_reference_statement(
         self,
         value: Optional[pulumi.Input[WebAclRuleStatementIpSetReferenceStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelMatchStatement")
     def label_match_statement(
@@ -22205,7 +23248,8 @@ class WebAclRuleStatementArgs:
     @label_match_statement.setter
     def label_match_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementLabelMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedRuleGroupStatement")
     def managed_rule_group_statement(
@@ -22215,7 +23259,8 @@ class WebAclRuleStatementArgs:
     def managed_rule_group_statement(
         self,
         value: Optional[pulumi.Input[WebAclRuleStatementManagedRuleGroupStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notStatement")
     def not_statement(
@@ -22224,7 +23269,8 @@ class WebAclRuleStatementArgs:
     @not_statement.setter
     def not_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementNotStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orStatement")
     def or_statement(
@@ -22233,7 +23279,8 @@ class WebAclRuleStatementArgs:
     @or_statement.setter
     def or_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementOrStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rateBasedStatement")
     def rate_based_statement(
@@ -22242,7 +23289,8 @@ class WebAclRuleStatementArgs:
     @rate_based_statement.setter
     def rate_based_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementRateBasedStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexMatchStatement")
     def regex_match_statement(
@@ -22251,7 +23299,8 @@ class WebAclRuleStatementArgs:
     @regex_match_statement.setter
     def regex_match_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementRegexMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexPatternSetReferenceStatement")
     def regex_pattern_set_reference_statement(
@@ -22265,7 +23314,8 @@ class WebAclRuleStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRegexPatternSetReferenceStatementArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleGroupReferenceStatement")
     def rule_group_reference_statement(
@@ -22277,7 +23327,8 @@ class WebAclRuleStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRuleGroupReferenceStatementArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeConstraintStatement")
     def size_constraint_statement(
@@ -22287,7 +23338,8 @@ class WebAclRuleStatementArgs:
     def size_constraint_statement(
         self,
         value: Optional[pulumi.Input[WebAclRuleStatementSizeConstraintStatementArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqliMatchStatement")
     def sqli_match_statement(
@@ -22296,7 +23348,8 @@ class WebAclRuleStatementArgs:
     @sqli_match_statement.setter
     def sqli_match_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementSqliMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssMatchStatement")
     def xss_match_statement(
@@ -22305,7 +23358,8 @@ class WebAclRuleStatementArgs:
     @xss_match_statement.setter
     def xss_match_statement(
         self, value: Optional[pulumi.Input[WebAclRuleStatementXssMatchStatementArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementAndStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
@@ -22325,7 +23379,8 @@ class WebAclRuleStatementAndStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementAsnMatchStatementArgsDict(TypedDict):
     asn_lists: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
@@ -22347,7 +23402,10 @@ class WebAclRuleStatementAsnMatchStatementArgs:
     @pulumi.getter(name="asnLists")
     def asn_lists(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @asn_lists.setter
-    def asn_lists(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): ...
+    def asn_lists(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -22361,7 +23419,8 @@ class WebAclRuleStatementAsnMatchStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementAsnMatchStatementForwardedIpConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementAsnMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -22379,12 +23438,14 @@ class WebAclRuleStatementAsnMatchStatementForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementArgsDict(TypedDict):
     positional_constraint: pulumi.Input[_builtins.str]
@@ -22422,12 +23483,14 @@ class WebAclRuleStatementByteMatchStatementArgs:
     @pulumi.getter(name="positionalConstraint")
     def positional_constraint(self) -> pulumi.Input[_builtins.str]: ...
     @positional_constraint.setter
-    def positional_constraint(self, value: pulumi.Input[_builtins.str]): ...
+    def positional_constraint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="searchString")
     def search_string(self) -> pulumi.Input[_builtins.str]: ...
     @search_string.setter
-    def search_string(self, value: pulumi.Input[_builtins.str]): ...
+    def search_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -22447,7 +23510,8 @@ class WebAclRuleStatementByteMatchStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -22461,7 +23525,8 @@ class WebAclRuleStatementByteMatchStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -22624,7 +23689,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -22638,7 +23704,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -22652,7 +23719,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchCookiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -22678,7 +23746,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -22704,7 +23773,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -22722,7 +23792,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -22740,7 +23811,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -22754,7 +23826,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -22768,7 +23841,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -22784,7 +23858,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -22800,7 +23875,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -22818,7 +23894,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -22834,7 +23911,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -22848,7 +23926,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -22870,7 +23949,10 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -22919,17 +24001,20 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -22976,7 +24061,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -22985,7 +24071,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -22994,7 +24081,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -23035,17 +24123,20 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -23092,7 +24183,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -23101,7 +24193,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -23110,7 +24203,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -23132,7 +24226,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -23148,7 +24243,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -23164,7 +24260,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -23199,24 +24296,30 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -23259,7 +24362,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
                 WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -23268,7 +24372,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -23302,7 +24407,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -23316,7 +24422,8 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
@@ -23330,7 +24437,10 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchUriPathArgsDict(TypedDict): ...
 
@@ -23354,12 +24464,14 @@ class WebAclRuleStatementByteMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementGeoMatchStatementArgsDict(TypedDict):
     country_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -23383,7 +24495,8 @@ class WebAclRuleStatementGeoMatchStatementArgs:
     @country_codes.setter
     def country_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -23397,7 +24510,8 @@ class WebAclRuleStatementGeoMatchStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementGeoMatchStatementForwardedIpConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementGeoMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -23415,12 +24529,14 @@ class WebAclRuleStatementGeoMatchStatementForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementIpSetReferenceStatementArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -23446,7 +24562,8 @@ class WebAclRuleStatementIpSetReferenceStatementArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetForwardedIpConfig")
     def ip_set_forwarded_ip_config(
@@ -23464,7 +24581,8 @@ class WebAclRuleStatementIpSetReferenceStatementArgs:
                 WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict(
     TypedDict
@@ -23486,17 +24604,20 @@ class WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def position(self) -> pulumi.Input[_builtins.str]: ...
     @position.setter
-    def position(self, value: pulumi.Input[_builtins.str]): ...
+    def position(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementLabelMatchStatementArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -23514,12 +24635,14 @@ class WebAclRuleStatementLabelMatchStatementArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -23585,12 +24708,14 @@ class WebAclRuleStatementManagedRuleGroupStatementArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vendorName")
     def vendor_name(self) -> pulumi.Input[_builtins.str]: ...
     @vendor_name.setter
-    def vendor_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vendor_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedRuleGroupConfigs")
     def managed_rule_group_configs(
@@ -23616,7 +24741,8 @@ class WebAclRuleStatementManagedRuleGroupStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleActionOverrides")
     def rule_action_overrides(
@@ -23642,7 +24768,8 @@ class WebAclRuleStatementManagedRuleGroupStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scopeDownStatement")
     def scope_down_statement(
@@ -23658,12 +24785,14 @@ class WebAclRuleStatementManagedRuleGroupStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgsDict(
     TypedDict
@@ -23756,7 +24885,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgs:
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsManagedRulesAntiDdosRuleSet")
     def aws_managed_rules_anti_ddos_rule_set(
@@ -23774,7 +24904,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgs:
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsManagedRulesAtpRuleSet")
     def aws_managed_rules_atp_rule_set(
@@ -23792,7 +24923,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgs:
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsManagedRulesBotControlRuleSet")
     def aws_managed_rules_bot_control_rule_set(
@@ -23810,12 +24942,14 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgs:
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesBotControlRuleSetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loginPath")
     def login_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @login_path.setter
-    def login_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def login_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordField")
     def password_field(
@@ -23833,12 +24967,14 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgs:
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigPasswordFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="payloadType")
     def payload_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload_type.setter
-    def payload_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameField")
     def username_field(
@@ -23856,7 +24992,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgs:
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigUsernameFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetArgsDict(
     TypedDict
@@ -23894,12 +25031,14 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter(name="creationPath")
     def creation_path(self) -> pulumi.Input[_builtins.str]: ...
     @creation_path.setter
-    def creation_path(self, value: pulumi.Input[_builtins.str]): ...
+    def creation_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationPagePath")
     def registration_page_path(self) -> pulumi.Input[_builtins.str]: ...
     @registration_page_path.setter
-    def registration_page_path(self, value: pulumi.Input[_builtins.str]): ...
+    def registration_page_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestInspection")
     def request_inspection(
@@ -23913,12 +25052,16 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableRegexInPath")
     def enable_regex_in_path(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_regex_in_path.setter
-    def enable_regex_in_path(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_regex_in_path(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseInspection")
     def response_inspection(
@@ -23936,7 +25079,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionArgsDict(
     TypedDict
@@ -24004,7 +25148,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter(name="payloadType")
     def payload_type(self) -> pulumi.Input[_builtins.str]: ...
     @payload_type.setter
-    def payload_type(self, value: pulumi.Input[_builtins.str]): ...
+    def payload_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressFields")
     def address_fields(
@@ -24022,7 +25167,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailField")
     def email_field(
@@ -24040,7 +25186,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordField")
     def password_field(
@@ -24058,7 +25205,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phoneNumberFields")
     def phone_number_fields(
@@ -24076,7 +25224,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameField")
     def username_field(
@@ -24094,7 +25243,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsArgsDict(
     TypedDict
@@ -24112,7 +25262,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @identifiers.setter
     def identifiers(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldArgsDict(
     TypedDict
@@ -24126,7 +25277,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldArgsDict(
     TypedDict
@@ -24140,7 +25292,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsArgsDict(
     TypedDict
@@ -24158,7 +25311,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @identifiers.setter
     def identifiers(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgsDict(
     TypedDict
@@ -24172,7 +25326,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionArgsDict(
     TypedDict
@@ -24241,7 +25396,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def header(
@@ -24259,7 +25415,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def json(
@@ -24277,7 +25434,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionJsonArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statusCode")
     def status_code(
@@ -24295,7 +25453,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsArgsDict(
     TypedDict
@@ -24319,7 +25478,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_strings.setter
     def failure_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successStrings")
     def success_strings(
@@ -24328,7 +25488,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @success_strings.setter
     def success_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionHeaderArgsDict(
     TypedDict
@@ -24352,19 +25513,22 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionJsonArgsDict(
     TypedDict
@@ -24388,19 +25552,22 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgsDict(
     TypedDict
@@ -24422,14 +25589,16 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_codes.setter
     def failure_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successCodes")
     def success_codes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @success_codes.setter
     def success_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetArgsDict(
     TypedDict
@@ -24462,12 +25631,16 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityToBlock")
     def sensitivity_to_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity_to_block.setter
-    def sensitivity_to_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity_to_block(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigArgsDict(
     TypedDict
@@ -24498,7 +25671,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgsDict(
     TypedDict
@@ -24536,7 +25710,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter(name="usageOfAction")
     def usage_of_action(self) -> pulumi.Input[_builtins.str]: ...
     @usage_of_action.setter
-    def usage_of_action(self, value: pulumi.Input[_builtins.str]): ...
+    def usage_of_action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exemptUriRegularExpressions")
     def exempt_uri_regular_expressions(
@@ -24562,12 +25737,14 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sensitivity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity.setter
-    def sensitivity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionArgsDict(
     TypedDict
@@ -24583,7 +25760,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter(name="regexString")
     def regex_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @regex_string.setter
-    def regex_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def regex_string(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetArgsDict(
     TypedDict
@@ -24623,12 +25801,16 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter(name="loginPath")
     def login_path(self) -> pulumi.Input[_builtins.str]: ...
     @login_path.setter
-    def login_path(self, value: pulumi.Input[_builtins.str]): ...
+    def login_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableRegexInPath")
     def enable_regex_in_path(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_regex_in_path.setter
-    def enable_regex_in_path(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_regex_in_path(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestInspection")
     def request_inspection(
@@ -24646,7 +25828,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseInspection")
     def response_inspection(
@@ -24664,7 +25847,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionArgsDict(
     TypedDict
@@ -24703,12 +25887,14 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="payloadType")
     def payload_type(self) -> pulumi.Input[_builtins.str]: ...
     @payload_type.setter
-    def payload_type(self, value: pulumi.Input[_builtins.str]): ...
+    def payload_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernameField")
     def username_field(
@@ -24722,7 +25908,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldArgsDict(
     TypedDict
@@ -24736,7 +25923,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgsDict(
     TypedDict
@@ -24750,7 +25938,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionArgsDict(
     TypedDict
@@ -24819,7 +26008,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def header(
@@ -24837,7 +26027,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def json(
@@ -24855,7 +26046,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionJsonArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statusCode")
     def status_code(
@@ -24873,7 +26065,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
                 WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsArgsDict(
     TypedDict
@@ -24897,7 +26090,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_strings.setter
     def failure_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successStrings")
     def success_strings(
@@ -24906,7 +26100,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @success_strings.setter
     def success_strings(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionHeaderArgsDict(
     TypedDict
@@ -24930,19 +26125,22 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionJsonArgsDict(
     TypedDict
@@ -24966,19 +26164,22 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_values.setter
     def failure_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successValues")
     def success_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @success_values.setter
     def success_values(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgsDict(
     TypedDict
@@ -25000,14 +26201,16 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @failure_codes.setter
     def failure_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successCodes")
     def success_codes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @success_codes.setter
     def success_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesBotControlRuleSetArgsDict(
     TypedDict
@@ -25027,14 +26230,16 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     @pulumi.getter(name="inspectionLevel")
     def inspection_level(self) -> pulumi.Input[_builtins.str]: ...
     @inspection_level.setter
-    def inspection_level(self, value: pulumi.Input[_builtins.str]): ...
+    def inspection_level(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMachineLearning")
     def enable_machine_learning(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_machine_learning.setter
     def enable_machine_learning(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigPasswordFieldArgsDict(
     TypedDict
@@ -25048,7 +26253,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigPassword
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigUsernameFieldArgsDict(
     TypedDict
@@ -25062,7 +26268,8 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigUsername
     @pulumi.getter
     def identifier(self) -> pulumi.Input[_builtins.str]: ...
     @identifier.setter
-    def identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideArgsDict(TypedDict):
     action_to_use: pulumi.Input[
@@ -25093,12 +26300,14 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideArgs:
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseArgsDict(
     TypedDict
@@ -25177,7 +26386,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def block(
@@ -25195,7 +26405,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def captcha(
@@ -25213,7 +26424,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def challenge(
@@ -25231,7 +26443,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def count(
@@ -25249,7 +26462,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowArgsDict(
     TypedDict
@@ -25288,7 +26502,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict(
     TypedDict
@@ -25335,7 +26550,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -25355,12 +26571,14 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockArgsDict(
     TypedDict
@@ -25399,7 +26617,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseB
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseArgsDict(
     TypedDict
@@ -25437,14 +26656,16 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseB
     @pulumi.getter(name="responseCode")
     def response_code(self) -> pulumi.Input[_builtins.int]: ...
     @response_code.setter
-    def response_code(self, value: pulumi.Input[_builtins.int]): ...
+    def response_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customResponseBodyKey")
     def custom_response_body_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_response_body_key.setter
     def custom_response_body_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -25470,7 +26691,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseB
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgsDict(
     TypedDict
@@ -25490,12 +26712,14 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseB
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaArgsDict(
     TypedDict
@@ -25534,7 +26758,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict(
     TypedDict
@@ -25581,7 +26806,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -25601,12 +26827,14 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeArgsDict(
     TypedDict
@@ -25645,7 +26873,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict(
     TypedDict
@@ -25692,7 +26921,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -25712,12 +26942,14 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountArgsDict(
     TypedDict
@@ -25756,7 +26988,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
                 WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict(
     TypedDict
@@ -25803,7 +27036,8 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -25823,12 +27057,14 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgsDict(TypedDict):
     and_statement: NotRequired[
@@ -25985,7 +27221,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAndStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="asnMatchStatement")
     def asn_match_statement(
@@ -26003,7 +27240,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="byteMatchStatement")
     def byte_match_statement(
@@ -26021,7 +27259,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoMatchStatement")
     def geo_match_statement(
@@ -26039,7 +27278,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetReferenceStatement")
     def ip_set_reference_statement(
@@ -26057,7 +27297,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelMatchStatement")
     def label_match_statement(
@@ -26075,7 +27316,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notStatement")
     def not_statement(
@@ -26093,7 +27335,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orStatement")
     def or_statement(
@@ -26111,7 +27354,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOrStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexMatchStatement")
     def regex_match_statement(
@@ -26129,7 +27373,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexPatternSetReferenceStatement")
     def regex_pattern_set_reference_statement(
@@ -26147,7 +27392,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeConstraintStatement")
     def size_constraint_statement(
@@ -26165,7 +27411,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqliMatchStatement")
     def sqli_match_statement(
@@ -26183,7 +27430,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssMatchStatement")
     def xss_match_statement(
@@ -26201,7 +27449,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAndStatementArgsDict(
     TypedDict
@@ -26223,7 +27472,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAndStatement
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementArgsDict(
     TypedDict
@@ -26251,7 +27501,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStat
     @pulumi.getter(name="asnLists")
     def asn_lists(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @asn_lists.setter
-    def asn_lists(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): ...
+    def asn_lists(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -26269,7 +27522,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgsDict(
     TypedDict
@@ -26289,12 +27543,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStat
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementArgsDict(
     TypedDict
@@ -26338,12 +27594,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter(name="positionalConstraint")
     def positional_constraint(self) -> pulumi.Input[_builtins.str]: ...
     @positional_constraint.setter
-    def positional_constraint(self, value: pulumi.Input[_builtins.str]): ...
+    def positional_constraint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="searchString")
     def search_string(self) -> pulumi.Input[_builtins.str]: ...
     @search_string.setter
-    def search_string(self, value: pulumi.Input[_builtins.str]): ...
+    def search_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -26365,7 +27623,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -26383,7 +27642,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -26568,7 +27828,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -26586,7 +27847,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -26604,7 +27866,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -26630,7 +27893,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -26656,7 +27920,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -26674,7 +27939,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -26692,7 +27958,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -26710,7 +27977,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -26728,7 +27996,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -26746,7 +28015,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -26764,7 +28034,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -26782,7 +28053,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -26800,7 +28072,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -26818,7 +28091,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -26842,7 +28116,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -26893,17 +28170,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -26950,7 +28230,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -26959,7 +28240,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -26968,7 +28250,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -27011,17 +28294,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -27068,7 +28354,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -27077,7 +28364,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -27086,7 +28374,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -27110,7 +28399,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -27126,7 +28416,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -27142,7 +28433,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -27179,24 +28471,30 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -27239,7 +28537,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -27248,7 +28547,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -27286,7 +28586,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -27300,7 +28601,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -27316,7 +28618,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -27344,12 +28649,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementArgsDict(
     TypedDict
@@ -27379,7 +28686,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStat
     @country_codes.setter
     def country_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -27397,7 +28705,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgsDict(
     TypedDict
@@ -27417,12 +28726,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStat
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementArgsDict(
     TypedDict
@@ -27450,7 +28761,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferen
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetForwardedIpConfig")
     def ip_set_forwarded_ip_config(
@@ -27468,7 +28780,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferen
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict(
     TypedDict
@@ -27490,17 +28803,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferen
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def position(self) -> pulumi.Input[_builtins.str]: ...
     @position.setter
-    def position(self, value: pulumi.Input[_builtins.str]): ...
+    def position(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementArgsDict(
     TypedDict
@@ -27520,12 +28836,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchSt
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementArgsDict(
     TypedDict
@@ -27547,7 +28865,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatement
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOrStatementArgsDict(
     TypedDict
@@ -27569,7 +28888,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOrStatementA
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementArgsDict(
     TypedDict
@@ -27611,7 +28931,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter(name="regexString")
     def regex_string(self) -> pulumi.Input[_builtins.str]: ...
     @regex_string.setter
-    def regex_string(self, value: pulumi.Input[_builtins.str]): ...
+    def regex_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -27633,7 +28954,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -27651,7 +28973,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -27836,7 +29159,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -27854,7 +29178,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -27872,7 +29197,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -27898,7 +29224,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -27924,7 +29251,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -27942,7 +29270,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -27960,7 +29289,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -27978,7 +29308,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -27996,7 +29327,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -28014,7 +29346,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -28032,7 +29365,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -28050,7 +29384,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -28068,7 +29403,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -28086,7 +29422,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -28110,7 +29447,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -28161,17 +29501,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -28218,7 +29561,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -28227,7 +29571,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -28236,7 +29581,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -28279,17 +29625,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -28336,7 +29685,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -28345,7 +29695,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -28354,7 +29705,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -28378,7 +29730,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -28394,7 +29747,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -28410,7 +29764,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -28447,24 +29802,30 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -28507,7 +29868,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -28516,7 +29878,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -28554,7 +29917,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -28568,7 +29932,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -28584,7 +29949,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -28612,12 +29980,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementArgsDict(
     TypedDict
@@ -28659,7 +30029,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -28681,7 +30052,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -28699,7 +30071,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict(
     TypedDict
@@ -28884,7 +30257,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -28902,7 +30276,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -28920,7 +30295,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -28946,7 +30322,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -28972,7 +30349,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -28990,7 +30368,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -29008,7 +30387,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -29026,7 +30406,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -29044,7 +30425,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -29062,7 +30444,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -29080,7 +30463,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -29098,7 +30482,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -29116,7 +30501,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -29134,7 +30520,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -29158,7 +30545,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -29209,17 +30599,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -29266,7 +30659,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -29275,7 +30669,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -29284,7 +30679,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -29327,17 +30723,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -29384,7 +30783,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -29393,7 +30793,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -29402,7 +30803,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -29426,7 +30828,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -29442,7 +30845,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -29458,7 +30862,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -29495,24 +30900,30 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -29555,7 +30966,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -29564,7 +30976,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -29602,7 +31015,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -29616,7 +31030,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -29632,7 +31047,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -29660,12 +31078,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementArgsDict(
     TypedDict
@@ -29709,12 +31129,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter(name="comparisonOperator")
     def comparison_operator(self) -> pulumi.Input[_builtins.str]: ...
     @comparison_operator.setter
-    def comparison_operator(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison_operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> pulumi.Input[_builtins.int]: ...
     @size.setter
-    def size(self, value: pulumi.Input[_builtins.int]): ...
+    def size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -29736,7 +31158,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -29754,7 +31177,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgsDict(
     TypedDict
@@ -29939,7 +31363,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -29957,7 +31382,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -29975,7 +31401,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -30001,7 +31428,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -30027,7 +31455,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -30045,7 +31474,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -30063,7 +31493,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -30081,7 +31512,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -30099,7 +31531,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -30117,7 +31550,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -30135,7 +31569,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -30153,7 +31588,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -30171,7 +31607,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -30189,7 +31626,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -30213,7 +31651,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -30264,17 +31705,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -30321,7 +31765,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -30330,7 +31775,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -30339,7 +31785,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -30382,17 +31829,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -30439,7 +31889,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -30448,7 +31899,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -30457,7 +31909,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -30481,7 +31934,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -30497,7 +31951,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -30513,7 +31968,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -30550,24 +32006,30 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -30610,7 +32072,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -30619,7 +32082,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -30657,7 +32121,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -30671,7 +32136,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -30687,7 +32153,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -30715,12 +32184,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementArgsDict(
     TypedDict
@@ -30779,7 +32250,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -30797,12 +32269,16 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityLevel")
     def sensitivity_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity_level.setter
-    def sensitivity_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -30987,7 +32463,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -31005,7 +32482,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -31023,7 +32501,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -31049,7 +32528,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -31075,7 +32555,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -31093,7 +32574,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -31111,7 +32593,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -31129,7 +32612,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -31147,7 +32631,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -31165,7 +32650,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -31183,7 +32669,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -31201,7 +32688,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -31219,7 +32707,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -31237,7 +32726,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -31261,7 +32751,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -31312,17 +32805,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -31369,7 +32865,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -31378,7 +32875,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -31387,7 +32885,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -31430,17 +32929,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -31487,7 +32989,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -31496,7 +32999,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -31505,7 +33009,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -31529,7 +33034,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -31545,7 +33051,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -31561,7 +33068,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -31598,24 +33106,30 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -31658,7 +33172,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -31667,7 +33182,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -31705,7 +33221,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -31719,7 +33236,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -31735,7 +33253,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -31763,12 +33284,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementArgsDict(
     TypedDict
@@ -31825,7 +33348,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -31843,7 +33367,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -32028,7 +33553,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -32046,7 +33572,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -32064,7 +33591,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -32090,7 +33618,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -32116,7 +33645,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -32134,7 +33664,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -32152,7 +33683,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -32170,7 +33702,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -32188,7 +33721,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -32206,7 +33740,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -32224,7 +33759,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -32242,7 +33778,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -32260,7 +33797,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -32278,7 +33816,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -32302,7 +33841,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -32353,17 +33895,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -32410,7 +33955,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -32419,7 +33965,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -32428,7 +33975,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -32471,17 +34019,20 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -32528,7 +34079,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -32537,7 +34089,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -32546,7 +34099,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -32570,7 +34124,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -32586,7 +34141,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -32602,7 +34158,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -32639,24 +34196,30 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
         value: pulumi.Input[
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -32699,7 +34262,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
                 WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -32708,7 +34272,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -32746,7 +34311,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -32760,7 +34326,8 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -32776,7 +34343,10 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -32804,12 +34374,14 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementNotStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
@@ -32829,7 +34401,8 @@ class WebAclRuleStatementNotStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementOrStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
@@ -32849,7 +34422,8 @@ class WebAclRuleStatementOrStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementArgsDict(TypedDict):
     limit: pulumi.Input[_builtins.int]
@@ -32895,12 +34469,16 @@ class WebAclRuleStatementRateBasedStatementArgs:
     @pulumi.getter
     def limit(self) -> pulumi.Input[_builtins.int]: ...
     @limit.setter
-    def limit(self, value: pulumi.Input[_builtins.int]): ...
+    def limit(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aggregateKeyType")
     def aggregate_key_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aggregate_key_type.setter
-    def aggregate_key_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def aggregate_key_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customKeys")
     def custom_keys(
@@ -32920,12 +34498,16 @@ class WebAclRuleStatementRateBasedStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evaluationWindowSec")
     def evaluation_window_sec(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @evaluation_window_sec.setter
-    def evaluation_window_sec(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def evaluation_window_sec(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -32939,7 +34521,8 @@ class WebAclRuleStatementRateBasedStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementForwardedIpConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scopeDownStatement")
     def scope_down_statement(
@@ -32953,7 +34536,8 @@ class WebAclRuleStatementRateBasedStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementScopeDownStatementArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyArgsDict(TypedDict):
     asn: NotRequired[
@@ -33064,7 +34648,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyAsnArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookie(
@@ -33078,7 +34663,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyCookieArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIp")
     def forwarded_ip(
@@ -33092,7 +34678,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyForwardedIpArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def header(
@@ -33106,7 +34693,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyHeaderArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpMethod")
     def http_method(
@@ -33120,7 +34708,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyHttpMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ip(
@@ -33134,7 +34723,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyIpArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -33150,7 +34740,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
                 WebAclRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -33166,7 +34757,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
                 WebAclRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelNamespace")
     def label_namespace(
@@ -33182,7 +34774,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
                 WebAclRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryArgument")
     def query_argument(
@@ -33198,7 +34791,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
                 WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -33212,7 +34806,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyQueryStringArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -33226,7 +34821,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyAsnArgsDict(TypedDict): ...
 
@@ -33262,7 +34858,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyCookieArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -33284,7 +34881,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyCookieArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyCookieTextTransformationArgsDict(
     TypedDict
@@ -33304,12 +34902,14 @@ class WebAclRuleStatementRateBasedStatementCustomKeyCookieTextTransformationArgs
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyForwardedIpArgsDict(TypedDict): ...
 
@@ -33345,7 +34945,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -33367,7 +34968,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyHeaderArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationArgsDict(
     TypedDict
@@ -33387,12 +34989,14 @@ class WebAclRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationArgs
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyHttpMethodArgsDict(TypedDict): ...
 
@@ -33418,7 +35022,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -33432,7 +35037,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
@@ -33444,7 +35050,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgs:
     @pulumi.getter
     def namespace(self) -> pulumi.Input[_builtins.str]: ...
     @namespace.setter
-    def namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -33474,7 +35081,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -33496,7 +35104,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransformationArgsDict(
     TypedDict
@@ -33516,12 +35125,14 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransformat
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -33566,7 +35177,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringTextTransformationArgsDict(
     TypedDict
@@ -33586,12 +35198,14 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringTextTransformatio
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyUriPathArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -33636,7 +35250,8 @@ class WebAclRuleStatementRateBasedStatementCustomKeyUriPathArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementCustomKeyUriPathTextTransformationArgsDict(
     TypedDict
@@ -33656,12 +35271,14 @@ class WebAclRuleStatementRateBasedStatementCustomKeyUriPathTextTransformationArg
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -33679,12 +35296,14 @@ class WebAclRuleStatementRateBasedStatementForwardedIpConfigArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementArgsDict(TypedDict):
     and_statement: NotRequired[
@@ -33841,7 +35460,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="asnMatchStatement")
     def asn_match_statement(
@@ -33859,7 +35479,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="byteMatchStatement")
     def byte_match_statement(
@@ -33877,7 +35498,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoMatchStatement")
     def geo_match_statement(
@@ -33895,7 +35517,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetReferenceStatement")
     def ip_set_reference_statement(
@@ -33913,7 +35536,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelMatchStatement")
     def label_match_statement(
@@ -33931,7 +35555,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notStatement")
     def not_statement(
@@ -33949,7 +35574,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="orStatement")
     def or_statement(
@@ -33967,7 +35593,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexMatchStatement")
     def regex_match_statement(
@@ -33985,7 +35612,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexPatternSetReferenceStatement")
     def regex_pattern_set_reference_statement(
@@ -34003,7 +35631,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizeConstraintStatement")
     def size_constraint_statement(
@@ -34021,7 +35650,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqliMatchStatement")
     def sqli_match_statement(
@@ -34039,7 +35669,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xssMatchStatement")
     def xss_match_statement(
@@ -34057,7 +35688,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementArgsDict(
     TypedDict
@@ -34079,7 +35711,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementArgsDict(
     TypedDict
@@ -34107,7 +35740,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementAr
     @pulumi.getter(name="asnLists")
     def asn_lists(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]: ...
     @asn_lists.setter
-    def asn_lists(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): ...
+    def asn_lists(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -34125,7 +35761,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementAr
                 WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgsDict(
     TypedDict
@@ -34145,12 +35782,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementFo
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementArgsDict(
     TypedDict
@@ -34194,12 +35833,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementA
     @pulumi.getter(name="positionalConstraint")
     def positional_constraint(self) -> pulumi.Input[_builtins.str]: ...
     @positional_constraint.setter
-    def positional_constraint(self, value: pulumi.Input[_builtins.str]): ...
+    def positional_constraint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="searchString")
     def search_string(self) -> pulumi.Input[_builtins.str]: ...
     @search_string.setter
-    def search_string(self, value: pulumi.Input[_builtins.str]): ...
+    def search_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -34221,7 +35862,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -34239,7 +35881,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementA
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -34424,7 +36067,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -34442,7 +36086,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -34460,7 +36105,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -34486,7 +36132,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -34512,7 +36159,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -34530,7 +36178,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -34548,7 +36197,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -34566,7 +36216,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -34584,7 +36235,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -34602,7 +36254,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -34620,7 +36273,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -34638,7 +36292,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -34656,7 +36311,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -34674,7 +36330,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -34698,7 +36355,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -34749,17 +36409,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -34806,7 +36469,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -34815,7 +36479,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -34824,7 +36489,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -34867,17 +36533,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -34924,7 +36593,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -34933,7 +36603,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -34942,7 +36613,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -34966,7 +36638,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -34982,7 +36655,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -34998,7 +36672,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -35035,24 +36710,30 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -35095,7 +36776,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -35104,7 +36786,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -35142,7 +36825,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -35156,7 +36840,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -35172,7 +36857,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -35200,12 +36888,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementT
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementArgsDict(
     TypedDict
@@ -35235,7 +36925,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementAr
     @country_codes.setter
     def country_codes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardedIpConfig")
     def forwarded_ip_config(
@@ -35253,7 +36944,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementAr
                 WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgsDict(
     TypedDict
@@ -35273,12 +36965,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementFo
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementArgsDict(
     TypedDict
@@ -35306,7 +37000,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceState
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipSetForwardedIpConfig")
     def ip_set_forwarded_ip_config(
@@ -35324,7 +37019,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict(
     TypedDict
@@ -35346,17 +37042,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceState
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def position(self) -> pulumi.Input[_builtins.str]: ...
     @position.setter
-    def position(self, value: pulumi.Input[_builtins.str]): ...
+    def position(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementArgsDict(
     TypedDict
@@ -35376,12 +37075,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatement
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> pulumi.Input[_builtins.str]: ...
     @scope.setter
-    def scope(self, value: pulumi.Input[_builtins.str]): ...
+    def scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementArgsDict(
     TypedDict
@@ -35403,7 +37104,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementArgsDict(
     TypedDict
@@ -35425,7 +37127,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementArgs:
     @statements.setter
     def statements(
         self, value: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementArgsDict(
     TypedDict
@@ -35467,7 +37170,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter(name="regexString")
     def regex_string(self) -> pulumi.Input[_builtins.str]: ...
     @regex_string.setter
-    def regex_string(self, value: pulumi.Input[_builtins.str]): ...
+    def regex_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -35489,7 +37193,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -35507,7 +37212,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -35692,7 +37398,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -35710,7 +37417,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -35728,7 +37436,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -35754,7 +37463,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -35780,7 +37490,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -35798,7 +37509,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -35816,7 +37528,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -35834,7 +37547,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -35852,7 +37566,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -35870,7 +37585,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -35888,7 +37604,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -35906,7 +37623,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -35924,7 +37642,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -35942,7 +37661,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -35966,7 +37686,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -36017,17 +37740,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -36074,7 +37800,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -36083,7 +37810,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -36092,7 +37820,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -36135,17 +37864,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -36192,7 +37924,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -36201,7 +37934,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -36210,7 +37944,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -36234,7 +37969,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -36250,7 +37986,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -36266,7 +38003,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -36303,24 +38041,30 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -36363,7 +38107,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -36372,7 +38117,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -36410,7 +38156,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -36424,7 +38171,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -36440,7 +38188,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -36468,12 +38219,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementArgsDict(
     TypedDict
@@ -36515,7 +38268,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -36537,7 +38291,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -36555,7 +38310,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict(
     TypedDict
@@ -36740,7 +38496,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -36758,7 +38515,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -36776,7 +38534,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -36802,7 +38561,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -36828,7 +38588,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -36846,7 +38607,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -36864,7 +38626,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -36882,7 +38645,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -36900,7 +38664,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -36918,7 +38683,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -36936,7 +38702,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -36954,7 +38721,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -36972,7 +38740,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -36990,7 +38759,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -37014,7 +38784,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -37065,17 +38838,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -37122,7 +38898,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -37131,7 +38908,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -37140,7 +38918,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -37183,17 +38962,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -37240,7 +39022,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -37249,7 +39032,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -37258,7 +39042,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -37282,7 +39067,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -37298,7 +39084,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -37314,7 +39101,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -37351,24 +39139,30 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -37411,7 +39205,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
                 WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -37420,7 +39215,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -37458,7 +39254,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -37472,7 +39269,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -37488,7 +39286,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -37516,12 +39317,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementArgsDict(
     TypedDict
@@ -37565,12 +39368,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter(name="comparisonOperator")
     def comparison_operator(self) -> pulumi.Input[_builtins.str]: ...
     @comparison_operator.setter
-    def comparison_operator(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison_operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> pulumi.Input[_builtins.int]: ...
     @size.setter
-    def size(self, value: pulumi.Input[_builtins.int]): ...
+    def size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -37592,7 +39397,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -37610,7 +39416,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgsDict(
     TypedDict
@@ -37795,7 +39602,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -37813,7 +39621,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -37831,7 +39640,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -37857,7 +39667,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -37883,7 +39694,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -37901,7 +39713,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -37919,7 +39732,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -37937,7 +39751,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -37955,7 +39770,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -37973,7 +39789,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -37991,7 +39808,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -38009,7 +39827,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -38027,7 +39846,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -38045,7 +39865,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -38069,7 +39890,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -38120,17 +39944,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -38177,7 +40004,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -38186,7 +40014,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -38195,7 +40024,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -38238,17 +40068,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -38295,7 +40128,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -38304,7 +40138,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -38313,7 +40148,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -38337,7 +40173,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -38353,7 +40190,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -38369,7 +40207,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -38406,24 +40245,30 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -38466,7 +40311,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -38475,7 +40321,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -38513,7 +40360,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -38527,7 +40375,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -38543,7 +40392,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -38571,12 +40423,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementArgsDict(
     TypedDict
@@ -38635,7 +40489,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -38653,12 +40508,16 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementA
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityLevel")
     def sensitivity_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity_level.setter
-    def sensitivity_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -38843,7 +40702,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -38861,7 +40721,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -38879,7 +40740,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -38905,7 +40767,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -38931,7 +40794,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -38949,7 +40813,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -38967,7 +40832,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -38985,7 +40851,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -39003,7 +40870,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -39021,7 +40889,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -39039,7 +40908,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -39057,7 +40927,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -39075,7 +40946,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -39093,7 +40965,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -39117,7 +40990,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -39168,17 +41044,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -39225,7 +41104,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -39234,7 +41114,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -39243,7 +41124,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -39286,17 +41168,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -39343,7 +41228,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -39352,7 +41238,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -39361,7 +41248,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -39385,7 +41273,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -39401,7 +41290,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -39417,7 +41307,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -39454,24 +41345,30 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -39514,7 +41411,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
                 WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -39523,7 +41421,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -39561,7 +41460,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -39575,7 +41475,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -39591,7 +41492,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -39619,12 +41523,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementT
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgsDict(
     TypedDict
@@ -39681,7 +41587,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementAr
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -39699,7 +41606,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementAr
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgsDict(
     TypedDict
@@ -39884,7 +41792,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -39902,7 +41811,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -39920,7 +41830,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -39946,7 +41857,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -39972,7 +41884,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -39990,7 +41903,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -40008,7 +41922,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -40026,7 +41941,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -40044,7 +41960,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -40062,7 +41979,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -40080,7 +41998,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -40098,7 +42017,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -40116,7 +42036,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -40134,7 +42055,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -40158,7 +42080,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -40209,17 +42134,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -40266,7 +42194,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -40275,7 +42204,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -40284,7 +42214,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -40327,17 +42258,20 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -40384,7 +42318,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -40393,7 +42328,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -40402,7 +42338,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -40426,7 +42363,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -40442,7 +42380,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -40458,7 +42397,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -40495,24 +42435,30 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
         value: pulumi.Input[
             WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -40555,7 +42501,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
                 WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -40564,7 +42511,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -40602,7 +42550,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -40616,7 +42565,8 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -40632,7 +42582,10 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -40660,12 +42613,14 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTe
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementArgsDict(TypedDict):
     regex_string: pulumi.Input[_builtins.str]
@@ -40701,7 +42656,8 @@ class WebAclRuleStatementRegexMatchStatementArgs:
     @pulumi.getter(name="regexString")
     def regex_string(self) -> pulumi.Input[_builtins.str]: ...
     @regex_string.setter
-    def regex_string(self, value: pulumi.Input[_builtins.str]): ...
+    def regex_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -40721,7 +42677,8 @@ class WebAclRuleStatementRegexMatchStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -40735,7 +42692,8 @@ class WebAclRuleStatementRegexMatchStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -40898,7 +42856,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -40912,7 +42871,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -40926,7 +42886,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -40952,7 +42913,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -40978,7 +42940,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -40996,7 +42959,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -41014,7 +42978,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -41028,7 +42993,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -41042,7 +43008,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -41058,7 +43025,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -41074,7 +43042,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -41092,7 +43061,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -41108,7 +43078,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -41122,7 +43093,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -41144,7 +43116,10 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -41193,17 +43168,20 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -41250,7 +43228,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -41259,7 +43238,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -41268,7 +43248,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -41309,17 +43290,20 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -41366,7 +43350,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
                 WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -41375,7 +43360,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -41384,7 +43370,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -41406,7 +43393,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -41422,7 +43410,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -41438,7 +43427,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -41473,24 +43463,30 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -41533,7 +43529,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
                 WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -41542,7 +43539,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -41576,7 +43574,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -41590,7 +43589,8 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
@@ -41604,7 +43604,10 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchUriPathArgsDict(TypedDict): ...
 
@@ -41628,12 +43631,14 @@ class WebAclRuleStatementRegexMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -41673,7 +43678,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -41695,7 +43701,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -41713,7 +43720,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict(
     TypedDict
@@ -41898,7 +43906,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -41916,7 +43925,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -41934,7 +43944,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -41960,7 +43971,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -41986,7 +43998,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -42004,7 +44017,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -42022,7 +44036,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -42040,7 +44055,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -42058,7 +44074,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -42076,7 +44093,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -42094,7 +44112,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -42112,7 +44131,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -42130,7 +44150,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -42148,7 +44169,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -42172,7 +44194,10 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgsDict(
     TypedDict
@@ -42223,17 +44248,20 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArg
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -42280,7 +44308,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMat
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -42289,7 +44318,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMat
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -42298,7 +44328,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMat
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -42341,17 +44372,20 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderArgs
         value: pulumi.Input[
             WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -42398,7 +44432,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatc
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -42407,7 +44442,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatc
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -42416,7 +44452,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatc
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -42440,7 +44477,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrde
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -42456,7 +44494,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerp
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -42472,7 +44511,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerp
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgsDict(
     TypedDict
@@ -42509,24 +44549,30 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyAr
         value: pulumi.Input[
             WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -42569,7 +44615,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMa
                 WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -42578,7 +44625,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMa
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -42616,7 +44664,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHead
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -42630,7 +44679,8 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQuer
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -42646,7 +44696,10 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmen
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -42674,12 +44727,14 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementTextTransformationArgs
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -42713,7 +44768,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleActionOverrides")
     def rule_action_overrides(
@@ -42739,7 +44795,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideArgsDict(
     TypedDict
@@ -42772,12 +44829,14 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideArgs:
         value: pulumi.Input[
             WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseArgsDict(
     TypedDict
@@ -42856,7 +44915,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def block(
@@ -42874,7 +44934,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def captcha(
@@ -42892,7 +44953,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def challenge(
@@ -42910,7 +44972,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def count(
@@ -42928,7 +44991,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowArgsDict(
     TypedDict
@@ -42967,7 +45031,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict(
     TypedDict
@@ -43014,7 +45079,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -43034,12 +45100,14 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockArgsDict(
     TypedDict
@@ -43078,7 +45146,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseArgsDict(
     TypedDict
@@ -43116,14 +45185,16 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
     @pulumi.getter(name="responseCode")
     def response_code(self) -> pulumi.Input[_builtins.int]: ...
     @response_code.setter
-    def response_code(self, value: pulumi.Input[_builtins.int]): ...
+    def response_code(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customResponseBodyKey")
     def custom_response_body_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_response_body_key.setter
     def custom_response_body_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -43149,7 +45220,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgsDict(
     TypedDict
@@ -43169,12 +45241,14 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaArgsDict(
     TypedDict
@@ -43213,7 +45287,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict(
     TypedDict
@@ -43260,7 +45335,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -43280,12 +45356,14 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeArgsDict(
     TypedDict
@@ -43324,7 +45402,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict(
     TypedDict
@@ -43371,7 +45450,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -43391,12 +45471,14 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountArgsDict(
     TypedDict
@@ -43435,7 +45517,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict(
     TypedDict
@@ -43482,7 +45565,8 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgsDict(
     TypedDict
@@ -43502,12 +45586,14 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementArgsDict(TypedDict):
     comparison_operator: pulumi.Input[_builtins.str]
@@ -43545,12 +45631,14 @@ class WebAclRuleStatementSizeConstraintStatementArgs:
     @pulumi.getter(name="comparisonOperator")
     def comparison_operator(self) -> pulumi.Input[_builtins.str]: ...
     @comparison_operator.setter
-    def comparison_operator(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison_operator(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def size(self) -> pulumi.Input[_builtins.int]: ...
     @size.setter
-    def size(self, value: pulumi.Input[_builtins.int]): ...
+    def size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textTransformations")
     def text_transformations(
@@ -43572,7 +45660,8 @@ class WebAclRuleStatementSizeConstraintStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -43586,7 +45675,8 @@ class WebAclRuleStatementSizeConstraintStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -43765,7 +45855,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -43779,7 +45870,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSizeConstraintStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -43795,7 +45887,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -43821,7 +45914,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -43847,7 +45941,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -43865,7 +45960,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -43883,7 +45979,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -43899,7 +45996,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -43915,7 +46013,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchMethodArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -43933,7 +46032,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -43951,7 +46051,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -43969,7 +46070,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -43987,7 +46089,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -44003,7 +46106,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchUriPathArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -44025,7 +46129,10 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -44074,17 +46181,20 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -44131,7 +46241,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternA
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -44140,7 +46251,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternA
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -44149,7 +46261,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternA
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -44190,17 +46303,20 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -44247,7 +46363,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAr
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -44256,7 +46373,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAr
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -44265,7 +46383,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAr
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -44289,7 +46408,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -44305,7 +46425,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -44321,7 +46442,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -44356,24 +46478,30 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -44416,7 +46544,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern
                 WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -44425,7 +46554,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -44463,7 +46593,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -44477,7 +46608,8 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentA
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
@@ -44493,7 +46625,10 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchUriPathArgsDict(
     TypedDict
@@ -44519,12 +46654,14 @@ class WebAclRuleStatementSizeConstraintStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -44575,7 +46712,8 @@ class WebAclRuleStatementSqliMatchStatementArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -44589,12 +46727,16 @@ class WebAclRuleStatementSqliMatchStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sensitivityLevel")
     def sensitivity_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sensitivity_level.setter
-    def sensitivity_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sensitivity_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -44757,7 +46899,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -44771,7 +46914,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -44785,7 +46929,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -44811,7 +46956,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -44837,7 +46983,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -44855,7 +47002,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -44873,7 +47021,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -44887,7 +47036,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -44901,7 +47051,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -44917,7 +47068,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -44933,7 +47085,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -44951,7 +47104,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -44967,7 +47121,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -44981,7 +47136,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -45003,7 +47159,10 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -45052,17 +47211,20 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -45109,7 +47271,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -45118,7 +47281,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -45127,7 +47291,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -45168,17 +47333,20 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -45225,7 +47393,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -45234,7 +47403,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -45243,7 +47413,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -45265,7 +47436,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
@@ -45281,7 +47453,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
@@ -45297,7 +47470,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -45332,24 +47506,30 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -45392,7 +47572,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
                 WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -45401,7 +47582,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -45435,7 +47617,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -45449,7 +47632,8 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
@@ -45463,7 +47647,10 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchUriPathArgsDict(TypedDict): ...
 
@@ -45487,12 +47674,14 @@ class WebAclRuleStatementSqliMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementArgsDict(TypedDict):
     text_transformations: pulumi.Input[
@@ -45535,7 +47724,8 @@ class WebAclRuleStatementXssMatchStatementArgs:
                 pulumi.Input[WebAclRuleStatementXssMatchStatementTextTransformationArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldToMatch")
     def field_to_match(
@@ -45549,7 +47739,8 @@ class WebAclRuleStatementXssMatchStatementArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchArgsDict(TypedDict):
     all_query_arguments: NotRequired[
@@ -45712,7 +47903,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def body(
@@ -45726,7 +47918,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cookies(
@@ -45740,7 +47933,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchCookiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerOrders")
     def header_orders(
@@ -45766,7 +47960,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def headers(
@@ -45790,7 +47985,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja3Fingerprint")
     def ja3_fingerprint(
@@ -45806,7 +48002,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ja4Fingerprint")
     def ja4_fingerprint(
@@ -45822,7 +48019,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jsonBody")
     def json_body(
@@ -45836,7 +48034,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def method(
@@ -45850,7 +48049,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchMethodArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryString")
     def query_string(
@@ -45866,7 +48066,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchQueryStringArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleHeader")
     def single_header(
@@ -45882,7 +48083,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="singleQueryArgument")
     def single_query_argument(
@@ -45900,7 +48102,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriFragment")
     def uri_fragment(
@@ -45916,7 +48119,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchUriFragmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uriPath")
     def uri_path(
@@ -45930,7 +48134,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
         value: Optional[
             pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchUriPathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgsDict(
     TypedDict
@@ -45952,7 +48157,10 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchBodyArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesArgsDict(TypedDict):
     match_patterns: pulumi.Input[
@@ -46001,17 +48209,20 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgsDict(
     TypedDict
@@ -46058,7 +48269,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCookies")
     def excluded_cookies(
@@ -46067,7 +48279,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @excluded_cookies.setter
     def excluded_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCookies")
     def included_cookies(
@@ -46076,7 +48289,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
     @included_cookies.setter
     def included_cookies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllArgsDict(
     TypedDict
@@ -46117,17 +48331,20 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderArgs:
         value: pulumi.Input[
             WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgsDict(
     TypedDict
@@ -46174,7 +48391,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedHeaders")
     def excluded_headers(
@@ -46183,7 +48401,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @excluded_headers.setter
     def excluded_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedHeaders")
     def included_headers(
@@ -46192,7 +48411,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
     @included_headers.setter
     def included_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgsDict(
     TypedDict
@@ -46214,7 +48434,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> pulumi.Input[_builtins.str]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: pulumi.Input[_builtins.str]): ...
+    def oversize_handling(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -46228,7 +48449,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
@@ -46242,7 +48464,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> pulumi.Input[_builtins.str]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: pulumi.Input[_builtins.str]): ...
+    def fallback_behavior(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict):
     match_pattern: pulumi.Input[
@@ -46277,24 +48500,30 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyArgs:
         value: pulumi.Input[
             WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchScope")
     def match_scope(self) -> pulumi.Input[_builtins.str]: ...
     @match_scope.setter
-    def match_scope(self, value: pulumi.Input[_builtins.str]): ...
+    def match_scope(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidFallbackBehavior")
     def invalid_fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @invalid_fallback_behavior.setter
     def invalid_fallback_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oversizeHandling")
     def oversize_handling(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @oversize_handling.setter
-    def oversize_handling(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def oversize_handling(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgsDict(
     TypedDict
@@ -46337,7 +48566,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
                 WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedPaths")
     def included_paths(
@@ -46346,7 +48576,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
     @included_paths.setter
     def included_paths(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllArgsDict(
     TypedDict
@@ -46380,7 +48611,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgsDict(
     TypedDict
@@ -46394,7 +48626,8 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
@@ -46408,7 +48641,10 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchUriFragmentArgs:
     @pulumi.getter(name="fallbackBehavior")
     def fallback_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fallback_behavior.setter
-    def fallback_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fallback_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchUriPathArgsDict(TypedDict): ...
 
@@ -46432,12 +48668,14 @@ class WebAclRuleStatementXssMatchStatementTextTransformationArgs:
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class WebAclRuleVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
@@ -46457,17 +48695,22 @@ class WebAclRuleVisibilityConfigArgs:
     @pulumi.getter(name="cloudwatchMetricsEnabled")
     def cloudwatch_metrics_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @cloudwatch_metrics_enabled.setter
-    def cloudwatch_metrics_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def cloudwatch_metrics_enabled(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampledRequestsEnabled")
     def sampled_requests_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @sampled_requests_enabled.setter
-    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class WebAclVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
@@ -46487,14 +48730,19 @@ class WebAclVisibilityConfigArgs:
     @pulumi.getter(name="cloudwatchMetricsEnabled")
     def cloudwatch_metrics_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @cloudwatch_metrics_enabled.setter
-    def cloudwatch_metrics_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def cloudwatch_metrics_enabled(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metricName")
     def metric_name(self) -> pulumi.Input[_builtins.str]: ...
     @metric_name.setter
-    def metric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def metric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampledRequestsEnabled")
     def sampled_requests_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @sampled_requests_enabled.setter
-    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def sampled_requests_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...

@@ -51,7 +51,8 @@ class GetAssetIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetAssetIamPolicyResult(GetAssetIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAssetIamPolicyResult]:
+        ...
 
 def get_asset_iam_policy(
     asset: Optional[_builtins.str] = ...,

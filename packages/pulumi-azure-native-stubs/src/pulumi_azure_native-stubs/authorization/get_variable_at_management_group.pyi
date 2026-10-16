@@ -44,7 +44,10 @@ class GetVariableAtManagementGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVariableAtManagementGroupResult(GetVariableAtManagementGroupResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVariableAtManagementGroupResult]:
+        ...
 
 def get_variable_at_management_group(
     management_group_id: Optional[_builtins.str] = ...,

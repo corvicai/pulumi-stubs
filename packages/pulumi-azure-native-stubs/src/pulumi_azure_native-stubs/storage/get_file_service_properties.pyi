@@ -54,7 +54,8 @@ class GetFileServicePropertiesResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFileServicePropertiesResult(GetFileServicePropertiesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileServicePropertiesResult]:
+        ...
 
 def get_file_service_properties(
     account_name: Optional[_builtins.str] = ...,

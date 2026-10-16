@@ -73,7 +73,10 @@ class AzureResourceManagerManagedIdentityPropertiesArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, ManagedIdentityType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedIdentityType]]): ...
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, ManagedIdentityType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -91,7 +94,8 @@ class AzureResourceManagerManagedIdentityPropertiesArgs:
                 Mapping[str, pulumi.Input[AzureResourceManagerUserAssignedIdentityArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureResourceManagerUserAssignedIdentityArgsDict(TypedDict):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -109,12 +113,14 @@ class AzureResourceManagerUserAssignedIdentityArgs:
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="principalId")
     def principal_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal_id.setter
-    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def principal_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CategoryArgsDict(TypedDict):
     feeds: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -132,14 +138,18 @@ class CategoryArgs:
     @pulumi.getter
     def feeds(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @feeds.setter
-    def feeds(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def feeds(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="urlCustom")
     def url_custom(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @url_custom.setter
     def url_custom(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DNSSettingsArgsDict(TypedDict):
     dns_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[IPAddressArgsDict]]]]
@@ -167,7 +177,8 @@ class DNSSettingsArgs:
     @dns_servers.setter
     def dns_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IPAddressArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDnsProxy")
     def enable_dns_proxy(
@@ -176,7 +187,8 @@ class DNSSettingsArgs:
     @enable_dns_proxy.setter
     def enable_dns_proxy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DNSProxy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledDnsType")
     def enabled_dns_type(
@@ -185,7 +197,8 @@ class DNSSettingsArgs:
     @enabled_dns_type.setter
     def enabled_dns_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EnabledDNSType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class DestinationAddrArgsDict(TypedDict):
     cidrs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -215,7 +228,8 @@ class DestinationAddrArgs:
     @cidrs.setter
     def cidrs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def countries(
@@ -224,7 +238,8 @@ class DestinationAddrArgs:
     @countries.setter
     def countries(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def feeds(
@@ -233,7 +248,8 @@ class DestinationAddrArgs:
     @feeds.setter
     def feeds(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fqdnLists")
     def fqdn_lists(
@@ -242,7 +258,8 @@ class DestinationAddrArgs:
     @fqdn_lists.setter
     def fqdn_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixLists")
     def prefix_lists(
@@ -251,7 +268,8 @@ class DestinationAddrArgs:
     @prefix_lists.setter
     def prefix_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EndpointConfigurationArgsDict(TypedDict):
     address: pulumi.Input[IPAddressArgsDict]
@@ -269,12 +287,14 @@ class EndpointConfigurationArgs:
     @pulumi.getter
     def address(self) -> pulumi.Input[IPAddressArgs]: ...
     @address.setter
-    def address(self, value: pulumi.Input[IPAddressArgs]): ...
+    def address(self, value: pulumi.Input[IPAddressArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> pulumi.Input[_builtins.str]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.str]): ...
+    def port(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FrontendSettingArgsDict(TypedDict):
     backend_configuration: pulumi.Input[EndpointConfigurationArgsDict]
@@ -296,24 +316,32 @@ class FrontendSettingArgs:
     @pulumi.getter(name="backendConfiguration")
     def backend_configuration(self) -> pulumi.Input[EndpointConfigurationArgs]: ...
     @backend_configuration.setter
-    def backend_configuration(self, value: pulumi.Input[EndpointConfigurationArgs]): ...
+    def backend_configuration(
+        self, value: pulumi.Input[EndpointConfigurationArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frontendConfiguration")
     def frontend_configuration(self) -> pulumi.Input[EndpointConfigurationArgs]: ...
     @frontend_configuration.setter
     def frontend_configuration(
         self, value: pulumi.Input[EndpointConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> pulumi.Input[Union[_builtins.str, ProtocolType]]: ...
     @protocol.setter
-    def protocol(self, value: pulumi.Input[Union[_builtins.str, ProtocolType]]): ...
+    def protocol(
+        self, value: pulumi.Input[Union[_builtins.str, ProtocolType]]
+    ):  # -> None:
+        ...
 
 class IPAddressSpaceArgsDict(TypedDict):
     address_space: NotRequired[pulumi.Input[_builtins.str]]
@@ -331,12 +359,14 @@ class IPAddressSpaceArgs:
     @pulumi.getter(name="addressSpace")
     def address_space(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @address_space.setter
-    def address_space(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def address_space(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class IPAddressArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
@@ -354,12 +384,14 @@ class IPAddressArgs:
     @pulumi.getter
     def address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @address.setter
-    def address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class MarketplaceDetailsArgsDict(TypedDict):
     offer_id: pulumi.Input[_builtins.str]
@@ -383,12 +415,14 @@ class MarketplaceDetailsArgs:
     @pulumi.getter(name="offerId")
     def offer_id(self) -> pulumi.Input[_builtins.str]: ...
     @offer_id.setter
-    def offer_id(self, value: pulumi.Input[_builtins.str]): ...
+    def offer_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publisherId")
     def publisher_id(self) -> pulumi.Input[_builtins.str]: ...
     @publisher_id.setter
-    def publisher_id(self, value: pulumi.Input[_builtins.str]): ...
+    def publisher_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="marketplaceSubscriptionStatus")
     def marketplace_subscription_status(
@@ -402,7 +436,8 @@ class MarketplaceDetailsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, MarketplaceSubscriptionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class NetworkProfileArgsDict(TypedDict):
     enable_egress_nat: pulumi.Input[Union[_builtins.str, EgressNat]]
@@ -442,19 +477,24 @@ class NetworkProfileArgs:
     @enable_egress_nat.setter
     def enable_egress_nat(
         self, value: pulumi.Input[Union[_builtins.str, EgressNat]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkType")
     def network_type(self) -> pulumi.Input[Union[_builtins.str, NetworkType]]: ...
     @network_type.setter
-    def network_type(self, value: pulumi.Input[Union[_builtins.str, NetworkType]]): ...
+    def network_type(
+        self, value: pulumi.Input[Union[_builtins.str, NetworkType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIps")
     def public_ips(self) -> pulumi.Input[Sequence[pulumi.Input[IPAddressArgs]]]: ...
     @public_ips.setter
     def public_ips(
         self, value: pulumi.Input[Sequence[pulumi.Input[IPAddressArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="egressNatIp")
     def egress_nat_ip(
@@ -463,7 +503,8 @@ class NetworkProfileArgs:
     @egress_nat_ip.setter
     def egress_nat_ip(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IPAddressArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateSourceNatRulesDestination")
     def private_source_nat_rules_destination(
@@ -472,7 +513,8 @@ class NetworkProfileArgs:
     @private_source_nat_rules_destination.setter
     def private_source_nat_rules_destination(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustedRanges")
     def trusted_ranges(
@@ -481,21 +523,24 @@ class NetworkProfileArgs:
     @trusted_ranges.setter
     def trusted_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vnetConfiguration")
     def vnet_configuration(self) -> Optional[pulumi.Input[VnetConfigurationArgs]]: ...
     @vnet_configuration.setter
     def vnet_configuration(
         self, value: Optional[pulumi.Input[VnetConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vwanConfiguration")
     def vwan_configuration(self) -> Optional[pulumi.Input[VwanConfigurationArgs]]: ...
     @vwan_configuration.setter
     def vwan_configuration(
         self, value: Optional[pulumi.Input[VwanConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PanoramaConfigArgsDict(TypedDict):
     config_string: pulumi.Input[_builtins.str]
@@ -507,7 +552,8 @@ class PanoramaConfigArgs:
     @pulumi.getter(name="configString")
     def config_string(self) -> pulumi.Input[_builtins.str]: ...
     @config_string.setter
-    def config_string(self, value: pulumi.Input[_builtins.str]): ...
+    def config_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PlanDataArgsDict(TypedDict):
     billing_cycle: pulumi.Input[Union[_builtins.str, BillingCycle]]
@@ -529,19 +575,22 @@ class PlanDataArgs:
     @billing_cycle.setter
     def billing_cycle(
         self, value: pulumi.Input[Union[_builtins.str, BillingCycle]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="planId")
     def plan_id(self) -> pulumi.Input[_builtins.str]: ...
     @plan_id.setter
-    def plan_id(self, value: pulumi.Input[_builtins.str]): ...
+    def plan_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usageType")
     def usage_type(self) -> Optional[pulumi.Input[Union[_builtins.str, UsageType]]]: ...
     @usage_type.setter
     def usage_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, UsageType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RulestackDetailsArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
@@ -561,17 +610,20 @@ class RulestackDetailsArgs:
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_id.setter
-    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rulestackId")
     def rulestack_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rulestack_id.setter
-    def rulestack_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rulestack_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecurityServicesArgsDict(TypedDict):
     anti_spyware_profile: NotRequired[pulumi.Input[_builtins.str]]
@@ -601,29 +653,42 @@ class SecurityServicesArgs:
     @pulumi.getter(name="antiSpywareProfile")
     def anti_spyware_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @anti_spyware_profile.setter
-    def anti_spyware_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def anti_spyware_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="antiVirusProfile")
     def anti_virus_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @anti_virus_profile.setter
-    def anti_virus_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def anti_virus_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsSubscription")
     def dns_subscription(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_subscription.setter
-    def dns_subscription(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_subscription(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileBlockingProfile")
     def file_blocking_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @file_blocking_profile.setter
-    def file_blocking_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def file_blocking_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outboundTrustCertificate")
     def outbound_trust_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outbound_trust_certificate.setter
     def outbound_trust_certificate(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outboundUnTrustCertificate")
     def outbound_un_trust_certificate(
@@ -632,17 +697,24 @@ class SecurityServicesArgs:
     @outbound_un_trust_certificate.setter
     def outbound_un_trust_certificate(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="urlFilteringProfile")
     def url_filtering_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @url_filtering_profile.setter
-    def url_filtering_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def url_filtering_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vulnerabilityProfile")
     def vulnerability_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vulnerability_profile.setter
-    def vulnerability_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vulnerability_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class SourceAddrArgsDict(TypedDict):
     cidrs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -670,7 +742,8 @@ class SourceAddrArgs:
     @cidrs.setter
     def cidrs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def countries(
@@ -679,7 +752,8 @@ class SourceAddrArgs:
     @countries.setter
     def countries(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def feeds(
@@ -688,7 +762,8 @@ class SourceAddrArgs:
     @feeds.setter
     def feeds(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixLists")
     def prefix_lists(
@@ -697,7 +772,8 @@ class SourceAddrArgs:
     @prefix_lists.setter
     def prefix_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class StrataCloudManagerConfigArgsDict(TypedDict):
     cloud_manager_name: pulumi.Input[_builtins.str]
@@ -711,7 +787,8 @@ class StrataCloudManagerConfigArgs:
     @pulumi.getter(name="cloudManagerName")
     def cloud_manager_name(self) -> pulumi.Input[_builtins.str]: ...
     @cloud_manager_name.setter
-    def cloud_manager_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cloud_manager_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TagInfoArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -729,12 +806,14 @@ class TagInfoArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class VnetConfigurationArgsDict(TypedDict):
     trust_subnet: pulumi.Input[IPAddressSpaceArgsDict]
@@ -756,24 +835,28 @@ class VnetConfigurationArgs:
     @pulumi.getter(name="trustSubnet")
     def trust_subnet(self) -> pulumi.Input[IPAddressSpaceArgs]: ...
     @trust_subnet.setter
-    def trust_subnet(self, value: pulumi.Input[IPAddressSpaceArgs]): ...
+    def trust_subnet(self, value: pulumi.Input[IPAddressSpaceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unTrustSubnet")
     def un_trust_subnet(self) -> pulumi.Input[IPAddressSpaceArgs]: ...
     @un_trust_subnet.setter
-    def un_trust_subnet(self, value: pulumi.Input[IPAddressSpaceArgs]): ...
+    def un_trust_subnet(self, value: pulumi.Input[IPAddressSpaceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vnet(self) -> pulumi.Input[IPAddressSpaceArgs]: ...
     @vnet.setter
-    def vnet(self, value: pulumi.Input[IPAddressSpaceArgs]): ...
+    def vnet(self, value: pulumi.Input[IPAddressSpaceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipOfTrustSubnetForUdr")
     def ip_of_trust_subnet_for_udr(self) -> Optional[pulumi.Input[IPAddressArgs]]: ...
     @ip_of_trust_subnet_for_udr.setter
     def ip_of_trust_subnet_for_udr(
         self, value: Optional[pulumi.Input[IPAddressArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VwanConfigurationArgsDict(TypedDict):
     v_hub: pulumi.Input[IPAddressSpaceArgsDict]
@@ -797,28 +880,37 @@ class VwanConfigurationArgs:
     @pulumi.getter(name="vHub")
     def v_hub(self) -> pulumi.Input[IPAddressSpaceArgs]: ...
     @v_hub.setter
-    def v_hub(self, value: pulumi.Input[IPAddressSpaceArgs]): ...
+    def v_hub(self, value: pulumi.Input[IPAddressSpaceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipOfTrustSubnetForUdr")
     def ip_of_trust_subnet_for_udr(self) -> Optional[pulumi.Input[IPAddressArgs]]: ...
     @ip_of_trust_subnet_for_udr.setter
     def ip_of_trust_subnet_for_udr(
         self, value: Optional[pulumi.Input[IPAddressArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkVirtualApplianceId")
     def network_virtual_appliance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_virtual_appliance_id.setter
     def network_virtual_appliance_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trustSubnet")
     def trust_subnet(self) -> Optional[pulumi.Input[IPAddressSpaceArgs]]: ...
     @trust_subnet.setter
-    def trust_subnet(self, value: Optional[pulumi.Input[IPAddressSpaceArgs]]): ...
+    def trust_subnet(
+        self, value: Optional[pulumi.Input[IPAddressSpaceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unTrustSubnet")
     def un_trust_subnet(self) -> Optional[pulumi.Input[IPAddressSpaceArgs]]: ...
     @un_trust_subnet.setter
-    def un_trust_subnet(self, value: Optional[pulumi.Input[IPAddressSpaceArgs]]): ...
+    def un_trust_subnet(
+        self, value: Optional[pulumi.Input[IPAddressSpaceArgs]]
+    ):  # -> None:
+        ...

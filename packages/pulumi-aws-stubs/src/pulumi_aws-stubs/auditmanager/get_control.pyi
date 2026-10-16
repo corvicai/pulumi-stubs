@@ -66,7 +66,8 @@ class GetControlResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetControlResult(GetControlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetControlResult]:
+        ...
 
 def get_control(
     name: Optional[_builtins.str] = ...,

@@ -54,7 +54,10 @@ class GetManagedEnvironmentAuthTokenResult:
 class AwaitableGetManagedEnvironmentAuthTokenResult(
     GetManagedEnvironmentAuthTokenResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedEnvironmentAuthTokenResult]:
+        ...
 
 def get_managed_environment_auth_token(
     environment_name: Optional[_builtins.str] = ...,

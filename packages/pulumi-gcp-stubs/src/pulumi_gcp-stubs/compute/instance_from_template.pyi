@@ -83,7 +83,8 @@ class InstanceFromTemplateArgs:
     @pulumi.getter(name="sourceInstanceTemplate")
     def source_instance_template(self) -> pulumi.Input[_builtins.str]: ...
     @source_instance_template.setter
-    def source_instance_template(self, value: pulumi.Input[_builtins.str]): ...
+    def source_instance_template(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedMachineFeatures")
     def advanced_machine_features(
@@ -93,14 +94,16 @@ class InstanceFromTemplateArgs:
     def advanced_machine_features(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateAdvancedMachineFeaturesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowStoppingForUpdate")
     def allow_stopping_for_update(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_stopping_for_update.setter
     def allow_stopping_for_update(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="attachedDisks")
     def attached_disks(
@@ -114,19 +117,22 @@ class InstanceFromTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceFromTemplateAttachedDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootDisk")
     def boot_disk(self) -> Optional[pulumi.Input[InstanceFromTemplateBootDiskArgs]]: ...
     @boot_disk.setter
     def boot_disk(
         self, value: Optional[pulumi.Input[InstanceFromTemplateBootDiskArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="canIpForward")
     def can_ip_forward(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @can_ip_forward.setter
-    def can_ip_forward(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def can_ip_forward(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confidentialInstanceConfig")
     def confidential_instance_config(
@@ -138,27 +144,34 @@ class InstanceFromTemplateArgs:
         value: Optional[
             pulumi.Input[InstanceFromTemplateConfidentialInstanceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredStatus")
     def desired_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_status.setter
-    def desired_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desired_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDisplay")
     def enable_display(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_display.setter
-    def enable_display(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_display(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guestAccelerators")
     def guest_accelerators(
@@ -174,12 +187,14 @@ class InstanceFromTemplateArgs:
                 Sequence[pulumi.Input[InstanceFromTemplateGuestAcceleratorArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hostname(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hostname.setter
-    def hostname(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hostname(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceEncryptionKey")
     def instance_encryption_key(
@@ -189,14 +204,16 @@ class InstanceFromTemplateArgs:
     def instance_encryption_key(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateInstanceEncryptionKeyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyRevocationActionType")
     def key_revocation_action_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_revocation_action_type.setter
     def key_revocation_action_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -205,12 +222,14 @@ class InstanceFromTemplateArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineType")
     def machine_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @machine_type.setter
-    def machine_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def machine_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -219,22 +238,30 @@ class InstanceFromTemplateArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataStartupScript")
     def metadata_startup_script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata_startup_script.setter
-    def metadata_startup_script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata_startup_script(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minCpuPlatform")
     def min_cpu_platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_cpu_platform.setter
-    def min_cpu_platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_cpu_platform(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
     def network_interfaces(
@@ -250,7 +277,8 @@ class InstanceFromTemplateArgs:
                 Sequence[pulumi.Input[InstanceFromTemplateNetworkInterfaceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkPerformanceConfig")
     def network_performance_config(
@@ -260,12 +288,16 @@ class InstanceFromTemplateArgs:
     def network_performance_config(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateNetworkPerformanceConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def params(self) -> Optional[pulumi.Input[InstanceFromTemplateParamsArgs]]: ...
     @params.setter
-    def params(self, value: Optional[pulumi.Input[InstanceFromTemplateParamsArgs]]): ...
+    def params(
+        self, value: Optional[pulumi.Input[InstanceFromTemplateParamsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerMetadata")
     def partner_metadata(
@@ -274,12 +306,14 @@ class InstanceFromTemplateArgs:
     @partner_metadata.setter
     def partner_metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationAffinity")
     def reservation_affinity(
@@ -288,12 +322,16 @@ class InstanceFromTemplateArgs:
     @reservation_affinity.setter
     def reservation_affinity(
         self, value: Optional[pulumi.Input[InstanceFromTemplateReservationAffinityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePolicies")
     def resource_policies(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_policies.setter
-    def resource_policies(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_policies(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scheduling(
@@ -302,7 +340,8 @@ class InstanceFromTemplateArgs:
     @scheduling.setter
     def scheduling(
         self, value: Optional[pulumi.Input[InstanceFromTemplateSchedulingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scratchDisks")
     def scratch_disks(
@@ -316,7 +355,8 @@ class InstanceFromTemplateArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceFromTemplateScratchDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccount")
     def service_account(
@@ -325,7 +365,8 @@ class InstanceFromTemplateArgs:
     @service_account.setter
     def service_account(
         self, value: Optional[pulumi.Input[InstanceFromTemplateServiceAccountArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shieldedInstanceConfig")
     def shielded_instance_config(
@@ -335,19 +376,22 @@ class InstanceFromTemplateArgs:
     def shielded_instance_config(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateShieldedInstanceConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InstanceFromTemplateState:
@@ -442,14 +486,16 @@ class _InstanceFromTemplateState:
     def advanced_machine_features(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateAdvancedMachineFeaturesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowStoppingForUpdate")
     def allow_stopping_for_update(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_stopping_for_update.setter
     def allow_stopping_for_update(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="attachedDisks")
     def attached_disks(
@@ -463,19 +509,22 @@ class _InstanceFromTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceFromTemplateAttachedDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootDisk")
     def boot_disk(self) -> Optional[pulumi.Input[InstanceFromTemplateBootDiskArgs]]: ...
     @boot_disk.setter
     def boot_disk(
         self, value: Optional[pulumi.Input[InstanceFromTemplateBootDiskArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="canIpForward")
     def can_ip_forward(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @can_ip_forward.setter
-    def can_ip_forward(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def can_ip_forward(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confidentialInstanceConfig")
     def confidential_instance_config(
@@ -487,37 +536,48 @@ class _InstanceFromTemplateState:
         value: Optional[
             pulumi.Input[InstanceFromTemplateConfidentialInstanceConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuPlatform")
     def cpu_platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu_platform.setter
-    def cpu_platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cpu_platform(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="currentStatus")
     def current_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @current_status.setter
-    def current_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def current_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desiredStatus")
     def desired_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_status.setter
-    def desired_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desired_status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -526,12 +586,14 @@ class _InstanceFromTemplateState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDisplay")
     def enable_display(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_display.setter
-    def enable_display(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_display(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guestAccelerators")
     def guest_accelerators(
@@ -547,12 +609,14 @@ class _InstanceFromTemplateState:
                 Sequence[pulumi.Input[InstanceFromTemplateGuestAcceleratorArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hostname(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hostname.setter
-    def hostname(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def hostname(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceEncryptionKey")
     def instance_encryption_key(
@@ -562,24 +626,30 @@ class _InstanceFromTemplateState:
     def instance_encryption_key(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateInstanceEncryptionKeyArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceId")
     def instance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_id.setter
-    def instance_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyRevocationActionType")
     def key_revocation_action_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_revocation_action_type.setter
     def key_revocation_action_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelFingerprint")
     def label_fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @label_fingerprint.setter
-    def label_fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def label_fingerprint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -588,12 +658,14 @@ class _InstanceFromTemplateState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineType")
     def machine_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @machine_type.setter
-    def machine_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def machine_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -602,27 +674,38 @@ class _InstanceFromTemplateState:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataFingerprint")
     def metadata_fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata_fingerprint.setter
-    def metadata_fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata_fingerprint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataStartupScript")
     def metadata_startup_script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata_startup_script.setter
-    def metadata_startup_script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata_startup_script(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minCpuPlatform")
     def min_cpu_platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @min_cpu_platform.setter
-    def min_cpu_platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def min_cpu_platform(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
     def network_interfaces(
@@ -638,7 +721,8 @@ class _InstanceFromTemplateState:
                 Sequence[pulumi.Input[InstanceFromTemplateNetworkInterfaceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkPerformanceConfig")
     def network_performance_config(
@@ -648,12 +732,16 @@ class _InstanceFromTemplateState:
     def network_performance_config(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateNetworkPerformanceConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def params(self) -> Optional[pulumi.Input[InstanceFromTemplateParamsArgs]]: ...
     @params.setter
-    def params(self, value: Optional[pulumi.Input[InstanceFromTemplateParamsArgs]]): ...
+    def params(
+        self, value: Optional[pulumi.Input[InstanceFromTemplateParamsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnerMetadata")
     def partner_metadata(
@@ -662,12 +750,14 @@ class _InstanceFromTemplateState:
     @partner_metadata.setter
     def partner_metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -676,7 +766,8 @@ class _InstanceFromTemplateState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservationAffinity")
     def reservation_affinity(
@@ -685,12 +776,16 @@ class _InstanceFromTemplateState:
     @reservation_affinity.setter
     def reservation_affinity(
         self, value: Optional[pulumi.Input[InstanceFromTemplateReservationAffinityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePolicies")
     def resource_policies(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_policies.setter
-    def resource_policies(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_policies(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scheduling(
@@ -699,7 +794,8 @@ class _InstanceFromTemplateState:
     @scheduling.setter
     def scheduling(
         self, value: Optional[pulumi.Input[InstanceFromTemplateSchedulingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scratchDisks")
     def scratch_disks(
@@ -713,12 +809,14 @@ class _InstanceFromTemplateState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceFromTemplateScratchDiskArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccount")
     def service_account(
@@ -727,7 +825,8 @@ class _InstanceFromTemplateState:
     @service_account.setter
     def service_account(
         self, value: Optional[pulumi.Input[InstanceFromTemplateServiceAccountArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shieldedInstanceConfig")
     def shielded_instance_config(
@@ -737,31 +836,38 @@ class _InstanceFromTemplateState:
     def shielded_instance_config(
         self,
         value: Optional[pulumi.Input[InstanceFromTemplateShieldedInstanceConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceInstanceTemplate")
     def source_instance_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_instance_template.setter
     def source_instance_template(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsFingerprint")
     def tags_fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tags_fingerprint.setter
-    def tags_fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tags_fingerprint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone.setter
-    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InstanceFromTemplate(pulumi.CustomResource):

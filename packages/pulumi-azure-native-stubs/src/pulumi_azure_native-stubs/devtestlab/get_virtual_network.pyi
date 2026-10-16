@@ -82,7 +82,8 @@ class GetVirtualNetworkResult:
     def unique_identifier(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualNetworkResult(GetVirtualNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkResult]:
+        ...
 
 def get_virtual_network(
     expand: Optional[_builtins.str] = ...,

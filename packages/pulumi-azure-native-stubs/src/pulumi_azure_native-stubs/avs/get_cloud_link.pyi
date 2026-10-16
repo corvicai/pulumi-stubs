@@ -52,7 +52,8 @@ class GetCloudLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudLinkResult(GetCloudLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudLinkResult]:
+        ...
 
 def get_cloud_link(
     cloud_link_name: Optional[_builtins.str] = ...,

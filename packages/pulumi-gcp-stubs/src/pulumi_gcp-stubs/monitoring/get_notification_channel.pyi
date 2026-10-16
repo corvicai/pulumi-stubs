@@ -70,7 +70,8 @@ class GetNotificationChannelResult:
     def verification_status(self) -> _builtins.str: ...
 
 class AwaitableGetNotificationChannelResult(GetNotificationChannelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNotificationChannelResult]:
+        ...
 
 def get_notification_channel(
     display_name: Optional[_builtins.str] = ...,

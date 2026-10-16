@@ -17,7 +17,10 @@ class GetP2sVpnGatewayP2sVpnConnectionHealthDetailedResult:
 class AwaitableGetP2sVpnGatewayP2sVpnConnectionHealthDetailedResult(
     GetP2sVpnGatewayP2sVpnConnectionHealthDetailedResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetP2sVpnGatewayP2sVpnConnectionHealthDetailedResult]:
+        ...
 
 def get_p2s_vpn_gateway_p2s_vpn_connection_health_detailed(
     gateway_name: Optional[_builtins.str] = ...,

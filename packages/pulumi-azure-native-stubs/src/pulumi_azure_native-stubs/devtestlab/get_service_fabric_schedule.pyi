@@ -94,7 +94,8 @@ class GetServiceFabricScheduleResult:
     def weekly_recurrence(self) -> Optional[outputs.WeekDetailsResponse]: ...
 
 class AwaitableGetServiceFabricScheduleResult(GetServiceFabricScheduleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServiceFabricScheduleResult]:
+        ...
 
 def get_service_fabric_schedule(
     expand: Optional[_builtins.str] = ...,

@@ -25,7 +25,8 @@ class CapacityReservationGroupArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationGroupName")
     def capacity_reservation_group_name(
@@ -34,19 +35,22 @@ class CapacityReservationGroupArgs:
     @capacity_reservation_group_name.setter
     def capacity_reservation_group_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharingProfile")
     def sharing_profile(self) -> Optional[pulumi.Input[ResourceSharingProfileArgs]]: ...
     @sharing_profile.setter
     def sharing_profile(
         self, value: Optional[pulumi.Input[ResourceSharingProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -55,7 +59,8 @@ class CapacityReservationGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -64,7 +69,8 @@ class CapacityReservationGroupArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:compute:CapacityReservationGroup")
 class CapacityReservationGroup(pulumi.CustomResource):

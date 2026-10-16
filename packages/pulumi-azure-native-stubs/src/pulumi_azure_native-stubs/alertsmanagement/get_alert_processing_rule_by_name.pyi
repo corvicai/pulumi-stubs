@@ -52,7 +52,10 @@ class GetAlertProcessingRuleByNameResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAlertProcessingRuleByNameResult(GetAlertProcessingRuleByNameResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAlertProcessingRuleByNameResult]:
+        ...
 
 def get_alert_processing_rule_by_name(
     alert_processing_rule_name: Optional[_builtins.str] = ...,

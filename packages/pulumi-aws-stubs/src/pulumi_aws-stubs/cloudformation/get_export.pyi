@@ -34,7 +34,8 @@ class GetExportResult:
     def value(self) -> _builtins.str: ...
 
 class AwaitableGetExportResult(GetExportResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExportResult]:
+        ...
 
 def get_export(
     name: Optional[_builtins.str] = ...,

@@ -23,7 +23,8 @@ class AccessLevelsArgs:
     @pulumi.getter
     def parent(self) -> pulumi.Input[_builtins.str]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[_builtins.str]): ...
+    def parent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessLevels")
     def access_levels(
@@ -37,7 +38,8 @@ class AccessLevelsArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccessLevelsAccessLevelArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccessLevelsState:
@@ -62,12 +64,14 @@ class _AccessLevelsState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AccessLevelsAccessLevelArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:accesscontextmanager/accessLevels:AccessLevels")
 class AccessLevels(pulumi.CustomResource):

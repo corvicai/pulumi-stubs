@@ -48,7 +48,8 @@ class GetAzureServersSettingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAzureServersSettingResult(GetAzureServersSettingResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureServersSettingResult]:
+        ...
 
 def get_azure_servers_setting(
     setting_kind: Optional[_builtins.str] = ...,

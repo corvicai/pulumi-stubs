@@ -39,14 +39,16 @@ class VirtualMachineArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hardwareProfile")
     def hardware_profile(
@@ -55,17 +57,20 @@ class VirtualMachineArgs:
     @hardware_profile.setter
     def hardware_profile(
         self, value: Optional[pulumi.Input[VirtualMachinePropertiesHardwareProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkProfile")
     def network_profile(
@@ -74,7 +79,8 @@ class VirtualMachineArgs:
     @network_profile.setter
     def network_profile(
         self, value: Optional[pulumi.Input[VirtualMachinePropertiesNetworkProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osProfile")
     def os_profile(
@@ -83,7 +89,8 @@ class VirtualMachineArgs:
     @os_profile.setter
     def os_profile(
         self, value: Optional[pulumi.Input[VirtualMachinePropertiesOsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
     def security_profile(
@@ -92,7 +99,8 @@ class VirtualMachineArgs:
     @security_profile.setter
     def security_profile(
         self, value: Optional[pulumi.Input[VirtualMachinePropertiesSecurityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageProfile")
     def storage_profile(
@@ -101,7 +109,8 @@ class VirtualMachineArgs:
     @storage_profile.setter
     def storage_profile(
         self, value: Optional[pulumi.Input[VirtualMachinePropertiesStorageProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -110,12 +119,16 @@ class VirtualMachineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineName")
     def virtual_machine_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_name.setter
-    def virtual_machine_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azurestackhci:VirtualMachine")
 class VirtualMachine(pulumi.CustomResource):

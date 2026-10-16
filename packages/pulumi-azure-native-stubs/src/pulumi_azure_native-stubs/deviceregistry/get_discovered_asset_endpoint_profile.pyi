@@ -82,7 +82,10 @@ class GetDiscoveredAssetEndpointProfileResult:
 class AwaitableGetDiscoveredAssetEndpointProfileResult(
     GetDiscoveredAssetEndpointProfileResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDiscoveredAssetEndpointProfileResult]:
+        ...
 
 def get_discovered_asset_endpoint_profile(
     discovered_asset_endpoint_profile_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetMacie2JobSummaryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMacie2JobSummaryResult(GetMacie2JobSummaryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMacie2JobSummaryResult]:
+        ...
 
 def get_macie2_job_summary(
     name: Optional[_builtins.str] = ...,

@@ -56,7 +56,10 @@ class GetReportByResourceGroupNameResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReportByResourceGroupNameResult(GetReportByResourceGroupNameResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReportByResourceGroupNameResult]:
+        ...
 
 def get_report_by_resource_group_name(
     report_name: Optional[_builtins.str] = ...,

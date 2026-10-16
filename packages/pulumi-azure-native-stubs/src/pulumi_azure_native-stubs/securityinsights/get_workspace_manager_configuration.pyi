@@ -50,7 +50,10 @@ class GetWorkspaceManagerConfigurationResult:
 class AwaitableGetWorkspaceManagerConfigurationResult(
     GetWorkspaceManagerConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWorkspaceManagerConfigurationResult]:
+        ...
 
 def get_workspace_manager_configuration(
     resource_group_name: Optional[_builtins.str] = ...,

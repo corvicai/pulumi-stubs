@@ -43,7 +43,8 @@ class GetJobPrivateEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJobPrivateEndpointResult(GetJobPrivateEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJobPrivateEndpointResult]:
+        ...
 
 def get_job_private_endpoint(
     job_agent_name: Optional[_builtins.str] = ...,

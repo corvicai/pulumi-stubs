@@ -66,7 +66,8 @@ class GetDnsForwardingRulesetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDnsForwardingRulesetResult(GetDnsForwardingRulesetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnsForwardingRulesetResult]:
+        ...
 
 def get_dns_forwarding_ruleset(
     dns_forwarding_ruleset_name: Optional[_builtins.str] = ...,

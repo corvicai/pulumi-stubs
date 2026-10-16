@@ -44,7 +44,8 @@ class GetTagsResult:
     def time_period(self) -> outputs.GetTagsTimePeriodResult: ...
 
 class AwaitableGetTagsResult(GetTagsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagsResult]:
+        ...
 
 def get_tags(
     filter: Optional[Union[GetTagsFilterArgs, GetTagsFilterArgsDict]] = ...,

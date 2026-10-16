@@ -28,12 +28,14 @@ class TimeSeriesDatabaseConnectionArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_name.setter
-    def resource_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -42,7 +44,8 @@ class TimeSeriesDatabaseConnectionArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[AzureDataExplorerConnectionPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeSeriesDatabaseConnectionName")
     def time_series_database_connection_name(
@@ -51,7 +54,8 @@ class TimeSeriesDatabaseConnectionArgs:
     @time_series_database_connection_name.setter
     def time_series_database_connection_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class TimeSeriesDatabaseConnection(pulumi.CustomResource):

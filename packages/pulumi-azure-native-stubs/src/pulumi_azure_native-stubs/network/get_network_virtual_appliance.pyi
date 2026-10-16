@@ -144,7 +144,8 @@ class GetNetworkVirtualApplianceResult:
     def virtual_hub(self) -> Optional[outputs.SubResourceResponse]: ...
 
 class AwaitableGetNetworkVirtualApplianceResult(GetNetworkVirtualApplianceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkVirtualApplianceResult]:
+        ...
 
 def get_network_virtual_appliance(
     expand: Optional[_builtins.str] = ...,

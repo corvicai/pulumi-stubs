@@ -84,7 +84,8 @@ class GetPartnerTopicResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPartnerTopicResult(GetPartnerTopicResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPartnerTopicResult]:
+        ...
 
 def get_partner_topic(
     partner_topic_name: Optional[_builtins.str] = ...,

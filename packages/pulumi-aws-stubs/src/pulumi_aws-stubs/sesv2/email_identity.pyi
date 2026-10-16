@@ -26,12 +26,16 @@ class EmailIdentityArgs:
     @pulumi.getter(name="emailIdentity")
     def email_identity(self) -> pulumi.Input[_builtins.str]: ...
     @email_identity.setter
-    def email_identity(self, value: pulumi.Input[_builtins.str]): ...
+    def email_identity(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationSetName")
     def configuration_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_set_name.setter
-    def configuration_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration_set_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dkimSigningAttributes")
     def dkim_signing_attributes(
@@ -40,12 +44,14 @@ class EmailIdentityArgs:
     @dkim_signing_attributes.setter
     def dkim_signing_attributes(
         self, value: Optional[pulumi.Input[EmailIdentityDkimSigningAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -54,7 +60,8 @@ class EmailIdentityArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EmailIdentityState:
@@ -80,12 +87,16 @@ class _EmailIdentityState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationSetName")
     def configuration_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configuration_set_name.setter
-    def configuration_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configuration_set_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dkimSigningAttributes")
     def dkim_signing_attributes(
@@ -94,22 +105,26 @@ class _EmailIdentityState:
     @dkim_signing_attributes.setter
     def dkim_signing_attributes(
         self, value: Optional[pulumi.Input[EmailIdentityDkimSigningAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailIdentity")
     def email_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_identity.setter
-    def email_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def email_identity(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityType")
     def identity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_type.setter
-    def identity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -118,7 +133,8 @@ class _EmailIdentityState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -127,19 +143,24 @@ class _EmailIdentityState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verificationStatus")
     def verification_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @verification_status.setter
-    def verification_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def verification_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="verifiedForSendingStatus")
     def verified_for_sending_status(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @verified_for_sending_status.setter
     def verified_for_sending_status(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sesv2/emailIdentity:EmailIdentity")
 class EmailIdentity(pulumi.CustomResource):

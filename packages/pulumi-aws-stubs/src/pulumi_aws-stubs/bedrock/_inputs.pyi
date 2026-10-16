@@ -654,12 +654,14 @@ class AgentAgentActionGroupActionGroupExecutorArgs:
     @pulumi.getter(name="customControl")
     def custom_control(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_control.setter
-    def custom_control(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_control(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambda")
     def lambda_(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lambda_.setter
-    def lambda_(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lambda_(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentAgentActionGroupApiSchemaArgsDict(TypedDict):
     payload: NotRequired[pulumi.Input[_builtins.str]]
@@ -677,14 +679,16 @@ class AgentAgentActionGroupApiSchemaArgs:
     @pulumi.getter
     def payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @payload.setter
-    def payload(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def payload(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(self) -> Optional[pulumi.Input[AgentAgentActionGroupApiSchemaS3Args]]: ...
     @s3.setter
     def s3(
         self, value: Optional[pulumi.Input[AgentAgentActionGroupApiSchemaS3Args]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentAgentActionGroupApiSchemaS3ArgsDict(TypedDict):
     s3_bucket_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -702,12 +706,14 @@ class AgentAgentActionGroupApiSchemaS3Args:
     @pulumi.getter(name="s3BucketName")
     def s3_bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_bucket_name.setter
-    def s3_bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3ObjectKey")
     def s3_object_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_object_key.setter
-    def s3_object_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_object_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentAgentActionGroupFunctionSchemaArgsDict(TypedDict):
     member_functions: NotRequired[
@@ -736,7 +742,8 @@ class AgentAgentActionGroupFunctionSchemaArgs:
         value: Optional[
             pulumi.Input[AgentAgentActionGroupFunctionSchemaMemberFunctionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentAgentActionGroupFunctionSchemaMemberFunctionsArgsDict(TypedDict):
     functions: NotRequired[
@@ -789,7 +796,8 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -825,12 +833,14 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -856,7 +866,8 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionParameterArgsDict(
     TypedDict
@@ -880,22 +891,26 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionParameterArgs:
     @pulumi.getter(name="mapBlockKey")
     def map_block_key(self) -> pulumi.Input[_builtins.str]: ...
     @map_block_key.setter
-    def map_block_key(self, value: pulumi.Input[_builtins.str]): ...
+    def map_block_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentAgentActionGroupTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -913,12 +928,14 @@ class AgentAgentActionGroupTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentAgentAliasRoutingConfigurationArgsDict(TypedDict):
     agent_version: pulumi.Input[_builtins.str]
@@ -936,12 +953,14 @@ class AgentAgentAliasRoutingConfigurationArgs:
     @pulumi.getter(name="agentVersion")
     def agent_version(self) -> pulumi.Input[_builtins.str]: ...
     @agent_version.setter
-    def agent_version(self, value: pulumi.Input[_builtins.str]): ...
+    def agent_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedThroughput")
     def provisioned_throughput(self) -> pulumi.Input[_builtins.str]: ...
     @provisioned_throughput.setter
-    def provisioned_throughput(self, value: pulumi.Input[_builtins.str]): ...
+    def provisioned_throughput(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentAgentAliasTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -961,17 +980,20 @@ class AgentAgentAliasTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentAgentCollaboratorAgentDescriptorArgsDict(TypedDict):
     alias_arn: pulumi.Input[_builtins.str]
@@ -983,7 +1005,8 @@ class AgentAgentCollaboratorAgentDescriptorArgs:
     @pulumi.getter(name="aliasArn")
     def alias_arn(self) -> pulumi.Input[_builtins.str]: ...
     @alias_arn.setter
-    def alias_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def alias_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentAgentCollaboratorTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -1003,17 +1026,20 @@ class AgentAgentCollaboratorTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentAgentGuardrailConfigurationArgsDict(TypedDict):
     guardrail_identifier: pulumi.Input[_builtins.str]
@@ -1031,12 +1057,14 @@ class AgentAgentGuardrailConfigurationArgs:
     @pulumi.getter(name="guardrailIdentifier")
     def guardrail_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @guardrail_identifier.setter
-    def guardrail_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def guardrail_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailVersion")
     def guardrail_version(self) -> pulumi.Input[_builtins.str]: ...
     @guardrail_version.setter
-    def guardrail_version(self, value: pulumi.Input[_builtins.str]): ...
+    def guardrail_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentAgentKnowledgeBaseAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -1054,12 +1082,14 @@ class AgentAgentKnowledgeBaseAssociationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentAgentMemoryConfigurationArgsDict(TypedDict):
     enabled_memory_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1095,7 +1125,8 @@ class AgentAgentMemoryConfigurationArgs:
     @enabled_memory_types.setter
     def enabled_memory_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionSummaryConfigurations")
     def session_summary_configurations(
@@ -1115,12 +1146,14 @@ class AgentAgentMemoryConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageDays")
     def storage_days(self) -> pulumi.Input[_builtins.int]: ...
     @storage_days.setter
-    def storage_days(self, value: pulumi.Input[_builtins.int]): ...
+    def storage_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AgentAgentMemoryConfigurationSessionSummaryConfigurationArgsDict(TypedDict):
     max_recent_sessions: pulumi.Input[_builtins.int]
@@ -1134,7 +1167,8 @@ class AgentAgentMemoryConfigurationSessionSummaryConfigurationArgs:
     @pulumi.getter(name="maxRecentSessions")
     def max_recent_sessions(self) -> pulumi.Input[_builtins.int]: ...
     @max_recent_sessions.setter
-    def max_recent_sessions(self, value: pulumi.Input[_builtins.int]): ...
+    def max_recent_sessions(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AgentAgentPromptOverrideConfigurationArgsDict(TypedDict):
     override_lambda: pulumi.Input[_builtins.str]
@@ -1164,7 +1198,8 @@ class AgentAgentPromptOverrideConfigurationArgs:
     @pulumi.getter(name="overrideLambda")
     def override_lambda(self) -> pulumi.Input[_builtins.str]: ...
     @override_lambda.setter
-    def override_lambda(self, value: pulumi.Input[_builtins.str]): ...
+    def override_lambda(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptConfigurations")
     def prompt_configurations(
@@ -1184,7 +1219,8 @@ class AgentAgentPromptOverrideConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentAgentPromptOverrideConfigurationPromptConfigurationArgsDict(TypedDict):
     base_prompt_template: pulumi.Input[_builtins.str]
@@ -1222,7 +1258,8 @@ class AgentAgentPromptOverrideConfigurationPromptConfigurationArgs:
     @pulumi.getter(name="basePromptTemplate")
     def base_prompt_template(self) -> pulumi.Input[_builtins.str]: ...
     @base_prompt_template.setter
-    def base_prompt_template(self, value: pulumi.Input[_builtins.str]): ...
+    def base_prompt_template(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferenceConfigurations")
     def inference_configurations(
@@ -1244,27 +1281,32 @@ class AgentAgentPromptOverrideConfigurationPromptConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parserMode")
     def parser_mode(self) -> pulumi.Input[_builtins.str]: ...
     @parser_mode.setter
-    def parser_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def parser_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptCreationMode")
     def prompt_creation_mode(self) -> pulumi.Input[_builtins.str]: ...
     @prompt_creation_mode.setter
-    def prompt_creation_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def prompt_creation_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptState")
     def prompt_state(self) -> pulumi.Input[_builtins.str]: ...
     @prompt_state.setter
-    def prompt_state(self, value: pulumi.Input[_builtins.str]): ...
+    def prompt_state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="promptType")
     def prompt_type(self) -> pulumi.Input[_builtins.str]: ...
     @prompt_type.setter
-    def prompt_type(self, value: pulumi.Input[_builtins.str]): ...
+    def prompt_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentAgentPromptOverrideConfigurationPromptConfigurationInferenceConfigurationArgsDict(
     TypedDict
@@ -1290,29 +1332,34 @@ class AgentAgentPromptOverrideConfigurationPromptConfigurationInferenceConfigura
     @pulumi.getter(name="maxLength")
     def max_length(self) -> pulumi.Input[_builtins.int]: ...
     @max_length.setter
-    def max_length(self, value: pulumi.Input[_builtins.int]): ...
+    def max_length(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopSequences")
     def stop_sequences(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @stop_sequences.setter
     def stop_sequences(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def temperature(self) -> pulumi.Input[_builtins.float]: ...
     @temperature.setter
-    def temperature(self, value: pulumi.Input[_builtins.float]): ...
+    def temperature(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topK")
     def top_k(self) -> pulumi.Input[_builtins.int]: ...
     @top_k.setter
-    def top_k(self, value: pulumi.Input[_builtins.int]): ...
+    def top_k(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topP")
     def top_p(self) -> pulumi.Input[_builtins.float]: ...
     @top_p.setter
-    def top_p(self, value: pulumi.Input[_builtins.float]): ...
+    def top_p(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class AgentAgentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -1332,17 +1379,20 @@ class AgentAgentTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -1400,7 +1450,8 @@ class AgentDataSourceDataSourceConfigurationArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="confluenceConfiguration")
     def confluence_configuration(
@@ -1416,7 +1467,8 @@ class AgentDataSourceDataSourceConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationConfluenceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Configuration")
     def s3_configuration(
@@ -1430,7 +1482,8 @@ class AgentDataSourceDataSourceConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentDataSourceDataSourceConfigurationS3ConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="salesforceConfiguration")
     def salesforce_configuration(
@@ -1446,7 +1499,8 @@ class AgentDataSourceDataSourceConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationSalesforceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sharePointConfiguration")
     def share_point_configuration(
@@ -1462,7 +1516,8 @@ class AgentDataSourceDataSourceConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationSharePointConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webConfiguration")
     def web_configuration(
@@ -1476,7 +1531,8 @@ class AgentDataSourceDataSourceConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentDataSourceDataSourceConfigurationWebConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationArgsDict(TypedDict):
     crawler_configuration: NotRequired[
@@ -1523,7 +1579,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConfiguration")
     def source_configuration(
@@ -1541,7 +1598,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationArgsDict(
     TypedDict
@@ -1580,7 +1638,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
                 AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationArgsDict(
     TypedDict
@@ -1616,7 +1675,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patternObjectFilters")
     def pattern_object_filters(
@@ -1642,7 +1702,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterArgsDict(
     TypedDict
@@ -1697,7 +1758,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilterArgsDict(
     TypedDict
@@ -1723,7 +1785,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionFilters")
     def exclusion_filters(
@@ -1732,7 +1795,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
     @exclusion_filters.setter
     def exclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionFilters")
     def inclusion_filters(
@@ -1741,7 +1805,8 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
     @inclusion_filters.setter
     def inclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationArgsDict(
     TypedDict
@@ -1765,22 +1830,26 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigu
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsSecretArn")
     def credentials_secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @credentials_secret_arn.setter
-    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostType")
     def host_type(self) -> pulumi.Input[_builtins.str]: ...
     @host_type.setter
-    def host_type(self, value: pulumi.Input[_builtins.str]): ...
+    def host_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostUrl")
     def host_url(self) -> pulumi.Input[_builtins.str]: ...
     @host_url.setter
-    def host_url(self, value: pulumi.Input[_builtins.str]): ...
+    def host_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_arn: pulumi.Input[_builtins.str]
@@ -1802,12 +1871,16 @@ class AgentDataSourceDataSourceConfigurationS3ConfigurationArgs:
     @pulumi.getter(name="bucketArn")
     def bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_arn.setter
-    def bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketOwnerAccountId")
     def bucket_owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_owner_account_id.setter
-    def bucket_owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_owner_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionPrefixes")
     def inclusion_prefixes(
@@ -1816,7 +1889,8 @@ class AgentDataSourceDataSourceConfigurationS3ConfigurationArgs:
     @inclusion_prefixes.setter
     def inclusion_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationArgsDict(TypedDict):
     crawler_configuration: NotRequired[
@@ -1863,7 +1937,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConfiguration")
     def source_configuration(
@@ -1881,7 +1956,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationArgsDict(
     TypedDict
@@ -1920,7 +1996,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
                 AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationArgsDict(
     TypedDict
@@ -1956,7 +2033,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patternObjectFilters")
     def pattern_object_filters(
@@ -1982,7 +2060,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterArgsDict(
     TypedDict
@@ -2037,7 +2116,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilterArgsDict(
     TypedDict
@@ -2063,7 +2143,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionFilters")
     def exclusion_filters(
@@ -2072,7 +2153,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
     @exclusion_filters.setter
     def exclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionFilters")
     def inclusion_filters(
@@ -2081,7 +2163,8 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
     @inclusion_filters.setter
     def inclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationArgsDict(
     TypedDict
@@ -2103,17 +2186,20 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigu
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsSecretArn")
     def credentials_secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @credentials_secret_arn.setter
-    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostUrl")
     def host_url(self) -> pulumi.Input[_builtins.str]: ...
     @host_url.setter
-    def host_url(self, value: pulumi.Input[_builtins.str]): ...
+    def host_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationArgsDict(TypedDict):
     crawler_configuration: NotRequired[
@@ -2160,7 +2246,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConfiguration")
     def source_configuration(
@@ -2178,7 +2265,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationArgsDict(
     TypedDict
@@ -2217,7 +2305,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
                 AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationArgsDict(
     TypedDict
@@ -2253,7 +2342,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patternObjectFilters")
     def pattern_object_filters(
@@ -2279,7 +2369,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterArgsDict(
     TypedDict
@@ -2334,7 +2425,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilterArgsDict(
     TypedDict
@@ -2360,7 +2452,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionFilters")
     def exclusion_filters(
@@ -2369,7 +2462,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
     @exclusion_filters.setter
     def exclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionFilters")
     def inclusion_filters(
@@ -2378,7 +2472,8 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
     @inclusion_filters.setter
     def inclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationArgsDict(
     TypedDict
@@ -2406,32 +2501,40 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigu
     @pulumi.getter(name="authType")
     def auth_type(self) -> pulumi.Input[_builtins.str]: ...
     @auth_type.setter
-    def auth_type(self, value: pulumi.Input[_builtins.str]): ...
+    def auth_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsSecretArn")
     def credentials_secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @credentials_secret_arn.setter
-    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def domain(self) -> pulumi.Input[_builtins.str]: ...
     @domain.setter
-    def domain(self, value: pulumi.Input[_builtins.str]): ...
+    def domain(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostType")
     def host_type(self) -> pulumi.Input[_builtins.str]: ...
     @host_type.setter
-    def host_type(self, value: pulumi.Input[_builtins.str]): ...
+    def host_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="siteUrls")
     def site_urls(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @site_urls.setter
-    def site_urls(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def site_urls(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenant_id.setter
-    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationWebConfigurationArgsDict(TypedDict):
     crawler_configuration: NotRequired[
@@ -2478,7 +2581,8 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConfiguration")
     def source_configuration(
@@ -2496,7 +2600,8 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationArgs:
                 AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationArgsDict(
     TypedDict
@@ -2547,7 +2652,8 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration
                 AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exclusionFilters")
     def exclusion_filters(
@@ -2556,7 +2662,8 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration
     @exclusion_filters.setter
     def exclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inclusionFilters")
     def inclusion_filters(
@@ -2565,17 +2672,20 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration
     @inclusion_filters.setter
     def inclusion_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAgent")
     def user_agent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_agent.setter
-    def user_agent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_agent(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsArgsDict(
     TypedDict
@@ -2595,12 +2705,14 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration
     @pulumi.getter(name="maxPages")
     def max_pages(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_pages.setter
-    def max_pages(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_pages(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rateLimit")
     def rate_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @rate_limit.setter
-    def rate_limit(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def rate_limit(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationArgsDict(
     TypedDict
@@ -2631,7 +2743,8 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationA
         value: pulumi.Input[
             AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationArgsDict(
     TypedDict
@@ -2686,7 +2799,8 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationU
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlArgsDict(
     TypedDict
@@ -2702,7 +2816,8 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationU
     @pulumi.getter
     def url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @url.setter
-    def url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentDataSourceServerSideEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -2716,7 +2831,8 @@ class AgentDataSourceServerSideEncryptionConfigurationArgs:
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentDataSourceTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -2734,12 +2850,14 @@ class AgentDataSourceTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationArgsDict(TypedDict):
     chunking_configuration: NotRequired[
@@ -2796,7 +2914,8 @@ class AgentDataSourceVectorIngestionConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customTransformationConfiguration")
     def custom_transformation_configuration(
@@ -2814,7 +2933,8 @@ class AgentDataSourceVectorIngestionConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parsingConfiguration")
     def parsing_configuration(
@@ -2832,7 +2952,8 @@ class AgentDataSourceVectorIngestionConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgsDict(
     TypedDict
@@ -2880,7 +3001,8 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgs:
     @pulumi.getter(name="chunkingStrategy")
     def chunking_strategy(self) -> pulumi.Input[_builtins.str]: ...
     @chunking_strategy.setter
-    def chunking_strategy(self, value: pulumi.Input[_builtins.str]): ...
+    def chunking_strategy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fixedSizeChunkingConfiguration")
     def fixed_size_chunking_configuration(
@@ -2898,7 +3020,8 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hierarchicalChunkingConfiguration")
     def hierarchical_chunking_configuration(
@@ -2916,7 +3039,8 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="semanticChunkingConfiguration")
     def semantic_chunking_configuration(
@@ -2934,7 +3058,8 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationArgsDict(
     TypedDict
@@ -2954,12 +3079,14 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeC
     @pulumi.getter(name="maxTokens")
     def max_tokens(self) -> pulumi.Input[_builtins.int]: ...
     @max_tokens.setter
-    def max_tokens(self, value: pulumi.Input[_builtins.int]): ...
+    def max_tokens(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="overlapPercentage")
     def overlap_percentage(self) -> pulumi.Input[_builtins.int]: ...
     @overlap_percentage.setter
-    def overlap_percentage(self, value: pulumi.Input[_builtins.int]): ...
+    def overlap_percentage(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationArgsDict(
     TypedDict
@@ -2995,7 +3122,8 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchic
     @pulumi.getter(name="overlapTokens")
     def overlap_tokens(self) -> pulumi.Input[_builtins.int]: ...
     @overlap_tokens.setter
-    def overlap_tokens(self, value: pulumi.Input[_builtins.int]): ...
+    def overlap_tokens(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="levelConfigurations")
     def level_configurations(
@@ -3021,7 +3149,8 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchic
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationArgsDict(
     TypedDict
@@ -3035,7 +3164,8 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchic
     @pulumi.getter(name="maxTokens")
     def max_tokens(self) -> pulumi.Input[_builtins.int]: ...
     @max_tokens.setter
-    def max_tokens(self, value: pulumi.Input[_builtins.int]): ...
+    def max_tokens(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationArgsDict(
     TypedDict
@@ -3057,17 +3187,22 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticCh
     @pulumi.getter(name="breakpointPercentileThreshold")
     def breakpoint_percentile_threshold(self) -> pulumi.Input[_builtins.int]: ...
     @breakpoint_percentile_threshold.setter
-    def breakpoint_percentile_threshold(self, value: pulumi.Input[_builtins.int]): ...
+    def breakpoint_percentile_threshold(
+        self, value: pulumi.Input[_builtins.int]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bufferSize")
     def buffer_size(self) -> pulumi.Input[_builtins.int]: ...
     @buffer_size.setter
-    def buffer_size(self, value: pulumi.Input[_builtins.int]): ...
+    def buffer_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxToken")
     def max_token(self) -> pulumi.Input[_builtins.int]: ...
     @max_token.setter
-    def max_token(self, value: pulumi.Input[_builtins.int]): ...
+    def max_token(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationArgsDict(
     TypedDict
@@ -3116,7 +3251,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
                 AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transformation(
@@ -3134,7 +3270,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
                 AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageArgsDict(
     TypedDict
@@ -3173,7 +3310,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
                 AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationArgsDict(
     TypedDict
@@ -3187,7 +3325,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationArgsDict(
     TypedDict
@@ -3215,7 +3354,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
     @pulumi.getter(name="stepToApply")
     def step_to_apply(self) -> pulumi.Input[_builtins.str]: ...
     @step_to_apply.setter
-    def step_to_apply(self, value: pulumi.Input[_builtins.str]): ...
+    def step_to_apply(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transformationFunction")
     def transformation_function(
@@ -3233,7 +3373,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
                 AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionArgsDict(
     TypedDict
@@ -3272,7 +3413,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
                 AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationArgsDict(
     TypedDict
@@ -3286,7 +3428,8 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
     @pulumi.getter(name="lambdaArn")
     def lambda_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_arn.setter
-    def lambda_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgsDict(
     TypedDict
@@ -3324,7 +3467,8 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgs:
     @pulumi.getter(name="parsingStrategy")
     def parsing_strategy(self) -> pulumi.Input[_builtins.str]: ...
     @parsing_strategy.setter
-    def parsing_strategy(self, value: pulumi.Input[_builtins.str]): ...
+    def parsing_strategy(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bedrockDataAutomationConfiguration")
     def bedrock_data_automation_configuration(
@@ -3342,7 +3486,8 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bedrockFoundationModelConfiguration")
     def bedrock_foundation_model_configuration(
@@ -3360,7 +3505,8 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgs:
                 AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationArgsDict(
     TypedDict
@@ -3376,7 +3522,10 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockData
     @pulumi.getter(name="parsingModality")
     def parsing_modality(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parsing_modality.setter
-    def parsing_modality(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parsing_modality(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationArgsDict(
     TypedDict
@@ -3406,12 +3555,16 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoun
     @pulumi.getter(name="modelArn")
     def model_arn(self) -> pulumi.Input[_builtins.str]: ...
     @model_arn.setter
-    def model_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def model_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parsingModality")
     def parsing_modality(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parsing_modality.setter
-    def parsing_modality(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def parsing_modality(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parsingPrompt")
     def parsing_prompt(
@@ -3429,7 +3582,8 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoun
                 AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptArgsDict(
     TypedDict
@@ -3445,7 +3599,8 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoun
     @pulumi.getter(name="parsingPromptString")
     def parsing_prompt_string(self) -> pulumi.Input[_builtins.str]: ...
     @parsing_prompt_string.setter
-    def parsing_prompt_string(self, value: pulumi.Input[_builtins.str]): ...
+    def parsing_prompt_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionArgsDict(TypedDict):
     connections: NotRequired[
@@ -3480,7 +3635,8 @@ class AgentFlowDefinitionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentFlowDefinitionConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nodes(
@@ -3494,7 +3650,8 @@ class AgentFlowDefinitionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentFlowDefinitionNodeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionConnectionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3522,22 +3679,26 @@ class AgentFlowDefinitionConnectionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> pulumi.Input[_builtins.str]: ...
     @source.setter
-    def source(self, value: pulumi.Input[_builtins.str]): ...
+    def source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> pulumi.Input[_builtins.str]: ...
     @target.setter
-    def target(self, value: pulumi.Input[_builtins.str]): ...
+    def target(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -3547,7 +3708,8 @@ class AgentFlowDefinitionConnectionArgs:
     def configuration(
         self,
         value: Optional[pulumi.Input[AgentFlowDefinitionConnectionConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionConnectionConfigurationArgsDict(TypedDict):
     conditional: NotRequired[
@@ -3582,7 +3744,8 @@ class AgentFlowDefinitionConnectionConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionConnectionConfigurationConditionalArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def data(
@@ -3594,7 +3757,8 @@ class AgentFlowDefinitionConnectionConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionConnectionConfigurationDataArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionConnectionConfigurationConditionalArgsDict(TypedDict):
     condition: pulumi.Input[_builtins.str]
@@ -3606,7 +3770,8 @@ class AgentFlowDefinitionConnectionConfigurationConditionalArgs:
     @pulumi.getter
     def condition(self) -> pulumi.Input[_builtins.str]: ...
     @condition.setter
-    def condition(self, value: pulumi.Input[_builtins.str]): ...
+    def condition(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionConnectionConfigurationDataArgsDict(TypedDict):
     source_output: pulumi.Input[_builtins.str]
@@ -3624,12 +3789,14 @@ class AgentFlowDefinitionConnectionConfigurationDataArgs:
     @pulumi.getter(name="sourceOutput")
     def source_output(self) -> pulumi.Input[_builtins.str]: ...
     @source_output.setter
-    def source_output(self, value: pulumi.Input[_builtins.str]): ...
+    def source_output(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetInput")
     def target_input(self) -> pulumi.Input[_builtins.str]: ...
     @target_input.setter
-    def target_input(self, value: pulumi.Input[_builtins.str]): ...
+    def target_input(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -3665,12 +3832,14 @@ class AgentFlowDefinitionNodeArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configuration(
@@ -3679,7 +3848,8 @@ class AgentFlowDefinitionNodeArgs:
     @configuration.setter
     def configuration(
         self, value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inputs(
@@ -3693,7 +3863,8 @@ class AgentFlowDefinitionNodeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentFlowDefinitionNodeInputArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def outputs(
@@ -3707,7 +3878,8 @@ class AgentFlowDefinitionNodeArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentFlowDefinitionNodeOutputArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationArgsDict(TypedDict):
     agent: NotRequired[pulumi.Input[AgentFlowDefinitionNodeConfigurationAgentArgsDict]]
@@ -3796,7 +3968,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
     def agent(
         self,
         value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationAgentArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def collector(
@@ -3808,7 +3981,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionNodeConfigurationCollectorArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def condition(
@@ -3820,7 +3994,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionNodeConfigurationConditionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inlineCode")
     def inline_code(
@@ -3832,7 +4007,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionNodeConfigurationInlineCodeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(
@@ -3842,7 +4018,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
     def input(
         self,
         value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationInputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def iterator(
@@ -3852,7 +4029,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
     def iterator(
         self,
         value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationIteratorArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="knowledgeBase")
     def knowledge_base(
@@ -3866,7 +4044,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionNodeConfigurationKnowledgeBaseArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunction")
     def lambda_function(
@@ -3880,7 +4059,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionNodeConfigurationLambdaFunctionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lex(
@@ -3889,7 +4069,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
     @lex.setter
     def lex(
         self, value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationLexArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def output(
@@ -3899,7 +4080,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
     def output(
         self,
         value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationOutputArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prompt(
@@ -3909,7 +4091,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
     def prompt(
         self,
         value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationPromptArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def retrieval(
@@ -3921,7 +4104,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentFlowDefinitionNodeConfigurationRetrievalArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def storage(
@@ -3931,7 +4115,8 @@ class AgentFlowDefinitionNodeConfigurationArgs:
     def storage(
         self,
         value: Optional[pulumi.Input[AgentFlowDefinitionNodeConfigurationStorageArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationAgentArgsDict(TypedDict):
     agent_alias_arn: pulumi.Input[_builtins.str]
@@ -3943,7 +4128,8 @@ class AgentFlowDefinitionNodeConfigurationAgentArgs:
     @pulumi.getter(name="agentAliasArn")
     def agent_alias_arn(self) -> pulumi.Input[_builtins.str]: ...
     @agent_alias_arn.setter
-    def agent_alias_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def agent_alias_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationCollectorArgsDict(TypedDict): ...
 
@@ -4000,7 +4186,8 @@ class AgentFlowDefinitionNodeConfigurationConditionArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationConditionConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -4018,12 +4205,14 @@ class AgentFlowDefinitionNodeConfigurationConditionConditionArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expression.setter
-    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expression(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationInlineCodeArgsDict(TypedDict):
     code: pulumi.Input[_builtins.str]
@@ -4041,12 +4230,14 @@ class AgentFlowDefinitionNodeConfigurationInlineCodeArgs:
     @pulumi.getter
     def code(self) -> pulumi.Input[_builtins.str]: ...
     @code.setter
-    def code(self, value: pulumi.Input[_builtins.str]): ...
+    def code(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def language(self) -> pulumi.Input[_builtins.str]: ...
     @language.setter
-    def language(self, value: pulumi.Input[_builtins.str]): ...
+    def language(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationInputArgsDict(TypedDict): ...
 
@@ -4098,12 +4289,14 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseArgs:
     @pulumi.getter(name="knowledgeBaseId")
     def knowledge_base_id(self) -> pulumi.Input[_builtins.str]: ...
     @knowledge_base_id.setter
-    def knowledge_base_id(self, value: pulumi.Input[_builtins.str]): ...
+    def knowledge_base_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelId")
     def model_id(self) -> pulumi.Input[_builtins.str]: ...
     @model_id.setter
-    def model_id(self, value: pulumi.Input[_builtins.str]): ...
+    def model_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailConfiguration")
     def guardrail_configuration(
@@ -4121,7 +4314,8 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseArgs:
                 AgentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferenceConfiguration")
     def inference_configuration(
@@ -4139,12 +4333,16 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseArgs:
                 AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberOfResults")
     def number_of_results(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_of_results.setter
-    def number_of_results(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def number_of_results(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationArgsDict(
     TypedDict
@@ -4164,12 +4362,14 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationArg
     @pulumi.getter(name="guardrailIdentifier")
     def guardrail_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @guardrail_identifier.setter
-    def guardrail_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def guardrail_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailVersion")
     def guardrail_version(self) -> pulumi.Input[_builtins.str]: ...
     @guardrail_version.setter
-    def guardrail_version(self, value: pulumi.Input[_builtins.str]): ...
+    def guardrail_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationArgsDict(
     TypedDict
@@ -4208,7 +4408,8 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationArg
                 AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextArgsDict(
     TypedDict
@@ -4234,7 +4435,8 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTex
     @pulumi.getter(name="maxTokens")
     def max_tokens(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_tokens.setter
-    def max_tokens(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_tokens(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopSequences")
     def stop_sequences(
@@ -4243,17 +4445,20 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTex
     @stop_sequences.setter
     def stop_sequences(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def temperature(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @temperature.setter
-    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topP")
     def top_p(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @top_p.setter
-    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationLambdaFunctionArgsDict(TypedDict):
     lambda_arn: pulumi.Input[_builtins.str]
@@ -4265,7 +4470,8 @@ class AgentFlowDefinitionNodeConfigurationLambdaFunctionArgs:
     @pulumi.getter(name="lambdaArn")
     def lambda_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_arn.setter
-    def lambda_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationLexArgsDict(TypedDict):
     bot_alias_arn: pulumi.Input[_builtins.str]
@@ -4283,12 +4489,14 @@ class AgentFlowDefinitionNodeConfigurationLexArgs:
     @pulumi.getter(name="botAliasArn")
     def bot_alias_arn(self) -> pulumi.Input[_builtins.str]: ...
     @bot_alias_arn.setter
-    def bot_alias_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def bot_alias_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localeId")
     def locale_id(self) -> pulumi.Input[_builtins.str]: ...
     @locale_id.setter
-    def locale_id(self, value: pulumi.Input[_builtins.str]): ...
+    def locale_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationOutputArgsDict(TypedDict): ...
 
@@ -4341,7 +4549,8 @@ class AgentFlowDefinitionNodeConfigurationPromptArgs:
                 AgentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConfiguration")
     def source_configuration(
@@ -4357,7 +4566,8 @@ class AgentFlowDefinitionNodeConfigurationPromptArgs:
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationArgsDict(
     TypedDict
@@ -4377,12 +4587,14 @@ class AgentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationArgs:
     @pulumi.getter(name="guardrailIdentifier")
     def guardrail_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @guardrail_identifier.setter
-    def guardrail_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def guardrail_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailVersion")
     def guardrail_version(self) -> pulumi.Input[_builtins.str]: ...
     @guardrail_version.setter
-    def guardrail_version(self, value: pulumi.Input[_builtins.str]): ...
+    def guardrail_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationArgsDict(TypedDict):
     inline: NotRequired[
@@ -4429,7 +4641,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationArgs:
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resource(
@@ -4447,7 +4660,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationArgs:
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgsDict(
     TypedDict
@@ -4489,12 +4703,14 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgs:
     @pulumi.getter(name="modelId")
     def model_id(self) -> pulumi.Input[_builtins.str]: ...
     @model_id.setter
-    def model_id(self, value: pulumi.Input[_builtins.str]): ...
+    def model_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateType")
     def template_type(self) -> pulumi.Input[_builtins.str]: ...
     @template_type.setter
-    def template_type(self, value: pulumi.Input[_builtins.str]): ...
+    def template_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalModelRequestFields")
     def additional_model_request_fields(
@@ -4503,7 +4719,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgs:
     @additional_model_request_fields.setter
     def additional_model_request_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferenceConfiguration")
     def inference_configuration(
@@ -4521,7 +4738,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgs:
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateConfiguration")
     def template_configuration(
@@ -4539,7 +4757,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgs:
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationArgsDict(
     TypedDict
@@ -4578,7 +4797,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferen
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextArgsDict(
     TypedDict
@@ -4604,7 +4824,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferen
     @pulumi.getter(name="maxTokens")
     def max_tokens(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_tokens.setter
-    def max_tokens(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_tokens(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopSequences")
     def stop_sequences(
@@ -4613,17 +4834,20 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferen
     @stop_sequences.setter
     def stop_sequences(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def temperature(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @temperature.setter
-    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topP")
     def top_p(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @top_p.setter
-    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationArgsDict(
     TypedDict
@@ -4672,7 +4896,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -4690,7 +4915,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatArgsDict(
     TypedDict
@@ -4783,7 +5009,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariables")
     def input_variables(
@@ -4809,7 +5036,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def systems(
@@ -4835,7 +5063,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolConfiguration")
     def tool_configuration(
@@ -4853,7 +5082,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableArgsDict(
     TypedDict
@@ -4867,7 +5097,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageArgsDict(
     TypedDict
@@ -4895,7 +5126,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): ...
+    def role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def content(
@@ -4913,7 +5145,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentArgsDict(
     TypedDict
@@ -4954,12 +5187,14 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointArgsDict(
     TypedDict
@@ -4973,7 +5208,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemArgsDict(
     TypedDict
@@ -5014,12 +5250,14 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointArgsDict(
     TypedDict
@@ -5033,7 +5271,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationArgsDict(
     TypedDict
@@ -5090,7 +5329,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tools(
@@ -5116,7 +5356,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolArgsDict(
     TypedDict
@@ -5165,7 +5406,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolSpec")
     def tool_spec(
@@ -5183,7 +5425,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointArgsDict(
     TypedDict
@@ -5197,7 +5440,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceArgsDict(
     TypedDict
@@ -5256,7 +5500,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def auto(
@@ -5274,7 +5519,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tool(
@@ -5292,7 +5538,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyArgsDict(
     TypedDict
@@ -5322,7 +5569,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecArgsDict(
     TypedDict
@@ -5352,12 +5600,14 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSchema")
     def input_schema(
@@ -5375,7 +5625,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgsDict(
     TypedDict
@@ -5391,7 +5642,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @json.setter
-    def json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextArgsDict(
     TypedDict
@@ -5437,7 +5689,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachePoint")
     def cache_point(
@@ -5455,7 +5708,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariables")
     def input_variables(
@@ -5481,7 +5735,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointArgsDict(
     TypedDict
@@ -5495,7 +5750,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableArgsDict(
     TypedDict
@@ -5509,7 +5765,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceArgsDict(
     TypedDict
@@ -5523,7 +5780,8 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceArgs:
     @pulumi.getter(name="promptArn")
     def prompt_arn(self) -> pulumi.Input[_builtins.str]: ...
     @prompt_arn.setter
-    def prompt_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def prompt_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationRetrievalArgsDict(TypedDict):
     service_configuration: NotRequired[
@@ -5560,7 +5818,8 @@ class AgentFlowDefinitionNodeConfigurationRetrievalArgs:
                 AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationArgsDict(
     TypedDict
@@ -5599,7 +5858,8 @@ class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationArgs:
                 AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3Args
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3ArgsDict(
     TypedDict
@@ -5613,7 +5873,8 @@ class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3Args:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationStorageArgsDict(TypedDict):
     service_configuration: NotRequired[
@@ -5650,7 +5911,8 @@ class AgentFlowDefinitionNodeConfigurationStorageArgs:
                 AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationArgsDict(
     TypedDict
@@ -5689,7 +5951,8 @@ class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationArgs:
                 AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3Args
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3ArgsDict(
     TypedDict
@@ -5703,7 +5966,8 @@ class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3Args:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeInputArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -5725,22 +5989,26 @@ class AgentFlowDefinitionNodeInputArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def category(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @category.setter
-    def category(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def category(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentFlowDefinitionNodeOutputArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -5758,12 +6026,14 @@ class AgentFlowDefinitionNodeOutputArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentFlowTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -5783,17 +6053,20 @@ class AgentFlowTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -5839,7 +6112,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kendraKnowledgeBaseConfiguration")
     def kendra_knowledge_base_configuration(
@@ -5857,7 +6131,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationArgs:
                 AgentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlKnowledgeBaseConfiguration")
     def sql_knowledge_base_configuration(
@@ -5875,7 +6150,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationArgs:
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorKnowledgeBaseConfiguration")
     def vector_knowledge_base_configuration(
@@ -5893,7 +6169,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationArgs:
                 AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationArgsDict(
     TypedDict
@@ -5909,7 +6186,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurati
     @pulumi.getter(name="kendraIndexArn")
     def kendra_index_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kendra_index_arn.setter
-    def kendra_index_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kendra_index_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationArgsDict(
     TypedDict
@@ -5937,7 +6215,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationA
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftConfiguration")
     def redshift_configuration(
@@ -5955,7 +6234,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationA
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationArgsDict(
     TypedDict
@@ -6002,7 +6282,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
         value: pulumi.Input[
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfiguration")
     def storage_configuration(
@@ -6016,7 +6297,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
         value: pulumi.Input[
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryGenerationConfiguration")
     def query_generation_configuration(
@@ -6034,7 +6316,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationArgsDict(
     TypedDict
@@ -6072,7 +6355,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisionedConfiguration")
     def provisioned_configuration(
@@ -6090,7 +6374,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverlessConfiguration")
     def serverless_configuration(
@@ -6108,7 +6393,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationArgsDict(
     TypedDict
@@ -6141,12 +6427,14 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
         value: pulumi.Input[
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterIdentifier")
     def cluster_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_identifier.setter
-    def cluster_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationArgsDict(
     TypedDict
@@ -6168,19 +6456,22 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseUser")
     def database_user(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_user.setter
-    def database_user(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_user(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernamePasswordSecretArn")
     def username_password_secret_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @username_password_secret_arn.setter
     def username_password_secret_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationArgsDict(
     TypedDict
@@ -6213,12 +6504,14 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
         value: pulumi.Input[
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workgroupArn")
     def workgroup_arn(self) -> pulumi.Input[_builtins.str]: ...
     @workgroup_arn.setter
-    def workgroup_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def workgroup_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationArgsDict(
     TypedDict
@@ -6238,14 +6531,16 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="usernamePasswordSecretArn")
     def username_password_secret_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @username_password_secret_arn.setter
     def username_password_secret_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationArgsDict(
     TypedDict
@@ -6275,7 +6570,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @execution_timeout_seconds.setter
     def execution_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="generationContext")
     def generation_context(
@@ -6293,7 +6589,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextArgsDict(
     TypedDict
@@ -6366,7 +6663,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tables(
@@ -6392,7 +6690,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryArgsDict(
     TypedDict
@@ -6412,12 +6711,14 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter(name="naturalLanguage")
     def natural_language(self) -> pulumi.Input[_builtins.str]: ...
     @natural_language.setter
-    def natural_language(self, value: pulumi.Input[_builtins.str]): ...
+    def natural_language(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sql(self) -> pulumi.Input[_builtins.str]: ...
     @sql.setter
-    def sql(self, value: pulumi.Input[_builtins.str]): ...
+    def sql(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableArgsDict(
     TypedDict
@@ -6457,7 +6758,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def columns(
@@ -6483,17 +6785,20 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @inclusion.setter
-    def inclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def inclusion(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnArgsDict(
     TypedDict
@@ -6515,17 +6820,20 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def inclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @inclusion.setter
-    def inclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def inclusion(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationArgsDict(
     TypedDict
@@ -6563,7 +6871,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsDataCatalogConfiguration")
     def aws_data_catalog_configuration(
@@ -6581,7 +6890,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftConfiguration")
     def redshift_configuration(
@@ -6599,7 +6909,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
                 AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationArgsDict(
     TypedDict
@@ -6617,7 +6928,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @table_names.setter
     def table_names(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationArgsDict(
     TypedDict
@@ -6631,7 +6943,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationArgsDict(
     TypedDict
@@ -6669,7 +6982,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
     @pulumi.getter(name="embeddingModelArn")
     def embedding_model_arn(self) -> pulumi.Input[_builtins.str]: ...
     @embedding_model_arn.setter
-    def embedding_model_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def embedding_model_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="embeddingModelConfiguration")
     def embedding_model_configuration(
@@ -6687,7 +7001,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
                 AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supplementalDataStorageConfiguration")
     def supplemental_data_storage_configuration(
@@ -6705,7 +7020,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
                 AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationArgsDict(
     TypedDict
@@ -6744,7 +7060,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
                 AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationArgsDict(
     TypedDict
@@ -6764,12 +7081,16 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
     @pulumi.getter
     def dimensions(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @dimensions.setter
-    def dimensions(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def dimensions(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="embeddingDataType")
     def embedding_data_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @embedding_data_type.setter
-    def embedding_data_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def embedding_data_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationArgsDict(
     TypedDict
@@ -6816,7 +7137,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationArgsDict(
     TypedDict
@@ -6844,7 +7166,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Location")
     def s3_location(
@@ -6862,7 +7185,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
                 AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationArgsDict(
     TypedDict
@@ -6876,7 +7200,8 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -6968,7 +7293,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mongoDbAtlasConfiguration")
     def mongo_db_atlas_configuration(
@@ -6986,7 +7312,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
                 AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="neptuneAnalyticsConfiguration")
     def neptune_analytics_configuration(
@@ -7004,7 +7331,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
                 AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchManagedClusterConfiguration")
     def opensearch_managed_cluster_configuration(
@@ -7022,7 +7350,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
                 AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchServerlessConfiguration")
     def opensearch_serverless_configuration(
@@ -7040,7 +7369,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
                 AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pineconeConfiguration")
     def pinecone_configuration(
@@ -7056,7 +7386,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
                 AgentKnowledgeBaseStorageConfigurationPineconeConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rdsConfiguration")
     def rds_configuration(
@@ -7070,7 +7401,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentKnowledgeBaseStorageConfigurationRdsConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redisEnterpriseCloudConfiguration")
     def redis_enterprise_cloud_configuration(
@@ -7088,7 +7420,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
                 AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3VectorsConfiguration")
     def s3_vectors_configuration(
@@ -7104,7 +7437,8 @@ class AgentKnowledgeBaseStorageConfigurationArgs:
                 AgentKnowledgeBaseStorageConfigurationS3VectorsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationArgsDict(
     TypedDict
@@ -7140,22 +7474,26 @@ class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationArgs:
     @pulumi.getter(name="collectionName")
     def collection_name(self) -> pulumi.Input[_builtins.str]: ...
     @collection_name.setter
-    def collection_name(self, value: pulumi.Input[_builtins.str]): ...
+    def collection_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsSecretArn")
     def credentials_secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @credentials_secret_arn.setter
-    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldMapping")
     def field_mapping(
@@ -7169,22 +7507,28 @@ class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationArgs:
         value: pulumi.Input[
             AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorIndexName")
     def vector_index_name(self) -> pulumi.Input[_builtins.str]: ...
     @vector_index_name.setter
-    def vector_index_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_index_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointServiceName")
     def endpoint_service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_service_name.setter
-    def endpoint_service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_service_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textIndexName")
     def text_index_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text_index_name.setter
-    def text_index_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text_index_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingArgsDict(
     TypedDict
@@ -7206,17 +7550,20 @@ class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappin
     @pulumi.getter(name="metadataField")
     def metadata_field(self) -> pulumi.Input[_builtins.str]: ...
     @metadata_field.setter
-    def metadata_field(self, value: pulumi.Input[_builtins.str]): ...
+    def metadata_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textField")
     def text_field(self) -> pulumi.Input[_builtins.str]: ...
     @text_field.setter
-    def text_field(self, value: pulumi.Input[_builtins.str]): ...
+    def text_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorField")
     def vector_field(self) -> pulumi.Input[_builtins.str]: ...
     @vector_field.setter
-    def vector_field(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationArgsDict(
     TypedDict
@@ -7249,12 +7596,14 @@ class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationArgs:
         value: pulumi.Input[
             AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="graphArn")
     def graph_arn(self) -> pulumi.Input[_builtins.str]: ...
     @graph_arn.setter
-    def graph_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def graph_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingArgsDict(
     TypedDict
@@ -7274,12 +7623,14 @@ class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMa
     @pulumi.getter(name="metadataField")
     def metadata_field(self) -> pulumi.Input[_builtins.str]: ...
     @metadata_field.setter
-    def metadata_field(self, value: pulumi.Input[_builtins.str]): ...
+    def metadata_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textField")
     def text_field(self) -> pulumi.Input[_builtins.str]: ...
     @text_field.setter
-    def text_field(self, value: pulumi.Input[_builtins.str]): ...
+    def text_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationArgsDict(
     TypedDict
@@ -7307,12 +7658,14 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguratio
     @pulumi.getter(name="domainArn")
     def domain_arn(self) -> pulumi.Input[_builtins.str]: ...
     @domain_arn.setter
-    def domain_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainEndpoint")
     def domain_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @domain_endpoint.setter
-    def domain_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldMapping")
     def field_mapping(
@@ -7326,12 +7679,14 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguratio
         value: pulumi.Input[
             AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorIndexName")
     def vector_index_name(self) -> pulumi.Input[_builtins.str]: ...
     @vector_index_name.setter
-    def vector_index_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_index_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingArgsDict(
     TypedDict
@@ -7353,17 +7708,20 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguratio
     @pulumi.getter(name="metadataField")
     def metadata_field(self) -> pulumi.Input[_builtins.str]: ...
     @metadata_field.setter
-    def metadata_field(self, value: pulumi.Input[_builtins.str]): ...
+    def metadata_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textField")
     def text_field(self) -> pulumi.Input[_builtins.str]: ...
     @text_field.setter
-    def text_field(self, value: pulumi.Input[_builtins.str]): ...
+    def text_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorField")
     def vector_field(self) -> pulumi.Input[_builtins.str]: ...
     @vector_field.setter
-    def vector_field(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationArgsDict(
     TypedDict
@@ -7389,7 +7747,8 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationArg
     @pulumi.getter(name="collectionArn")
     def collection_arn(self) -> pulumi.Input[_builtins.str]: ...
     @collection_arn.setter
-    def collection_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def collection_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldMapping")
     def field_mapping(
@@ -7403,12 +7762,14 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationArg
         value: pulumi.Input[
             AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorIndexName")
     def vector_index_name(self) -> pulumi.Input[_builtins.str]: ...
     @vector_index_name.setter
-    def vector_index_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_index_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingArgsDict(
     TypedDict
@@ -7430,17 +7791,20 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFie
     @pulumi.getter(name="metadataField")
     def metadata_field(self) -> pulumi.Input[_builtins.str]: ...
     @metadata_field.setter
-    def metadata_field(self, value: pulumi.Input[_builtins.str]): ...
+    def metadata_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textField")
     def text_field(self) -> pulumi.Input[_builtins.str]: ...
     @text_field.setter
-    def text_field(self, value: pulumi.Input[_builtins.str]): ...
+    def text_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorField")
     def vector_field(self) -> pulumi.Input[_builtins.str]: ...
     @vector_field.setter
-    def vector_field(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationArgsDict(TypedDict):
     connection_string: pulumi.Input[_builtins.str]
@@ -7466,12 +7830,14 @@ class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationArgs:
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> pulumi.Input[_builtins.str]: ...
     @connection_string.setter
-    def connection_string(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_string(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsSecretArn")
     def credentials_secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @credentials_secret_arn.setter
-    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldMapping")
     def field_mapping(
@@ -7485,12 +7851,14 @@ class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationArgs:
         value: pulumi.Input[
             AgentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace.setter
-    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingArgsDict(
     TypedDict
@@ -7510,12 +7878,14 @@ class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingArg
     @pulumi.getter(name="metadataField")
     def metadata_field(self) -> pulumi.Input[_builtins.str]: ...
     @metadata_field.setter
-    def metadata_field(self, value: pulumi.Input[_builtins.str]): ...
+    def metadata_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textField")
     def text_field(self) -> pulumi.Input[_builtins.str]: ...
     @text_field.setter
-    def text_field(self, value: pulumi.Input[_builtins.str]): ...
+    def text_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationRdsConfigurationArgsDict(TypedDict):
     credentials_secret_arn: pulumi.Input[_builtins.str]
@@ -7543,12 +7913,14 @@ class AgentKnowledgeBaseStorageConfigurationRdsConfigurationArgs:
     @pulumi.getter(name="credentialsSecretArn")
     def credentials_secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @credentials_secret_arn.setter
-    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldMapping")
     def field_mapping(
@@ -7562,17 +7934,20 @@ class AgentKnowledgeBaseStorageConfigurationRdsConfigurationArgs:
         value: pulumi.Input[
             AgentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> pulumi.Input[_builtins.str]: ...
     @table_name.setter
-    def table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingArgsDict(
     TypedDict
@@ -7598,27 +7973,34 @@ class AgentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingArgs:
     @pulumi.getter(name="metadataField")
     def metadata_field(self) -> pulumi.Input[_builtins.str]: ...
     @metadata_field.setter
-    def metadata_field(self, value: pulumi.Input[_builtins.str]): ...
+    def metadata_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryKeyField")
     def primary_key_field(self) -> pulumi.Input[_builtins.str]: ...
     @primary_key_field.setter
-    def primary_key_field(self, value: pulumi.Input[_builtins.str]): ...
+    def primary_key_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textField")
     def text_field(self) -> pulumi.Input[_builtins.str]: ...
     @text_field.setter
-    def text_field(self, value: pulumi.Input[_builtins.str]): ...
+    def text_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorField")
     def vector_field(self) -> pulumi.Input[_builtins.str]: ...
     @vector_field.setter
-    def vector_field(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_field(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customMetadataField")
     def custom_metadata_field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_metadata_field.setter
-    def custom_metadata_field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_metadata_field(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationArgsDict(
     TypedDict
@@ -7646,12 +8028,14 @@ class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationArg
     @pulumi.getter(name="credentialsSecretArn")
     def credentials_secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @credentials_secret_arn.setter
-    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def credentials_secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fieldMapping")
     def field_mapping(
@@ -7665,12 +8049,14 @@ class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationArg
         value: pulumi.Input[
             AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorIndexName")
     def vector_index_name(self) -> pulumi.Input[_builtins.str]: ...
     @vector_index_name.setter
-    def vector_index_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vector_index_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingArgsDict(
     TypedDict
@@ -7692,17 +8078,20 @@ class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFie
     @pulumi.getter(name="metadataField")
     def metadata_field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metadata_field.setter
-    def metadata_field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def metadata_field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="textField")
     def text_field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text_field.setter
-    def text_field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text_field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorField")
     def vector_field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vector_field.setter
-    def vector_field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vector_field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentKnowledgeBaseStorageConfigurationS3VectorsConfigurationArgsDict(TypedDict):
     index_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -7722,17 +8111,22 @@ class AgentKnowledgeBaseStorageConfigurationS3VectorsConfigurationArgs:
     @pulumi.getter(name="indexArn")
     def index_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @index_arn.setter
-    def index_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def index_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="indexName")
     def index_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @index_name.setter
-    def index_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def index_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vectorBucketArn")
     def vector_bucket_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vector_bucket_arn.setter
-    def vector_bucket_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vector_bucket_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AgentKnowledgeBaseTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -7752,17 +8146,20 @@ class AgentKnowledgeBaseTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentPromptVariantArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -7806,12 +8203,14 @@ class AgentPromptVariantArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateType")
     def template_type(self) -> pulumi.Input[_builtins.str]: ...
     @template_type.setter
-    def template_type(self, value: pulumi.Input[_builtins.str]): ...
+    def template_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalModelRequestFields")
     def additional_model_request_fields(
@@ -7820,7 +8219,8 @@ class AgentPromptVariantArgs:
     @additional_model_request_fields.setter
     def additional_model_request_fields(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="genAiResource")
     def gen_ai_resource(
@@ -7829,7 +8229,8 @@ class AgentPromptVariantArgs:
     @gen_ai_resource.setter
     def gen_ai_resource(
         self, value: Optional[pulumi.Input[AgentPromptVariantGenAiResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferenceConfiguration")
     def inference_configuration(
@@ -7839,7 +8240,8 @@ class AgentPromptVariantArgs:
     def inference_configuration(
         self,
         value: Optional[pulumi.Input[AgentPromptVariantInferenceConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadatas(
@@ -7853,12 +8255,14 @@ class AgentPromptVariantArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AgentPromptVariantMetadataArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelId")
     def model_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @model_id.setter
-    def model_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def model_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateConfiguration")
     def template_configuration(
@@ -7867,7 +8271,8 @@ class AgentPromptVariantArgs:
     @template_configuration.setter
     def template_configuration(
         self, value: Optional[pulumi.Input[AgentPromptVariantTemplateConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantGenAiResourceArgsDict(TypedDict):
     agent: NotRequired[pulumi.Input[AgentPromptVariantGenAiResourceAgentArgsDict]]
@@ -7887,7 +8292,8 @@ class AgentPromptVariantGenAiResourceArgs:
     @agent.setter
     def agent(
         self, value: Optional[pulumi.Input[AgentPromptVariantGenAiResourceAgentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantGenAiResourceAgentArgsDict(TypedDict):
     agent_identifier: pulumi.Input[_builtins.str]
@@ -7901,7 +8307,8 @@ class AgentPromptVariantGenAiResourceAgentArgs:
     @pulumi.getter(name="agentIdentifier")
     def agent_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @agent_identifier.setter
-    def agent_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def agent_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantInferenceConfigurationArgsDict(TypedDict):
     text: NotRequired[
@@ -7926,7 +8333,8 @@ class AgentPromptVariantInferenceConfigurationArgs:
     def text(
         self,
         value: Optional[pulumi.Input[AgentPromptVariantInferenceConfigurationTextArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantInferenceConfigurationTextArgsDict(TypedDict):
     max_tokens: NotRequired[pulumi.Input[_builtins.int]]
@@ -7950,7 +8358,8 @@ class AgentPromptVariantInferenceConfigurationTextArgs:
     @pulumi.getter(name="maxTokens")
     def max_tokens(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_tokens.setter
-    def max_tokens(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_tokens(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopSequences")
     def stop_sequences(
@@ -7959,17 +8368,20 @@ class AgentPromptVariantInferenceConfigurationTextArgs:
     @stop_sequences.setter
     def stop_sequences(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def temperature(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @temperature.setter
-    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def temperature(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topP")
     def top_p(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @top_p.setter
-    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def top_p(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class AgentPromptVariantMetadataArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -7987,12 +8399,14 @@ class AgentPromptVariantMetadataArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationArgsDict(TypedDict):
     chat: NotRequired[pulumi.Input[AgentPromptVariantTemplateConfigurationChatArgsDict]]
@@ -8019,7 +8433,8 @@ class AgentPromptVariantTemplateConfigurationArgs:
     def chat(
         self,
         value: Optional[pulumi.Input[AgentPromptVariantTemplateConfigurationChatArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(
@@ -8029,7 +8444,8 @@ class AgentPromptVariantTemplateConfigurationArgs:
     def text(
         self,
         value: Optional[pulumi.Input[AgentPromptVariantTemplateConfigurationTextArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatArgsDict(TypedDict):
     messages: pulumi.Input[
@@ -8106,7 +8522,8 @@ class AgentPromptVariantTemplateConfigurationChatArgs:
                 pulumi.Input[AgentPromptVariantTemplateConfigurationChatMessageArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariables")
     def input_variables(
@@ -8132,7 +8549,8 @@ class AgentPromptVariantTemplateConfigurationChatArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def systems(
@@ -8154,7 +8572,8 @@ class AgentPromptVariantTemplateConfigurationChatArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolConfiguration")
     def tool_configuration(
@@ -8170,7 +8589,8 @@ class AgentPromptVariantTemplateConfigurationChatArgs:
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatInputVariableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -8182,7 +8602,8 @@ class AgentPromptVariantTemplateConfigurationChatInputVariableArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatMessageArgsDict(TypedDict):
     role: pulumi.Input[_builtins.str]
@@ -8204,7 +8625,8 @@ class AgentPromptVariantTemplateConfigurationChatMessageArgs:
     @pulumi.getter
     def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): ...
+    def role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def content(
@@ -8218,7 +8640,8 @@ class AgentPromptVariantTemplateConfigurationChatMessageArgs:
         value: Optional[
             pulumi.Input[AgentPromptVariantTemplateConfigurationChatMessageContentArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatMessageContentArgsDict(TypedDict):
     cache_point: NotRequired[
@@ -8257,12 +8680,14 @@ class AgentPromptVariantTemplateConfigurationChatMessageContentArgs:
                 AgentPromptVariantTemplateConfigurationChatMessageContentCachePointArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatMessageContentCachePointArgsDict(
     TypedDict
@@ -8276,7 +8701,8 @@ class AgentPromptVariantTemplateConfigurationChatMessageContentCachePointArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatSystemArgsDict(TypedDict):
     cache_point: NotRequired[
@@ -8313,12 +8739,14 @@ class AgentPromptVariantTemplateConfigurationChatSystemArgs:
                 AgentPromptVariantTemplateConfigurationChatSystemCachePointArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def text(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @text.setter
-    def text(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def text(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatSystemCachePointArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -8330,7 +8758,8 @@ class AgentPromptVariantTemplateConfigurationChatSystemCachePointArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationArgsDict(TypedDict):
     tool_choice: NotRequired[
@@ -8385,7 +8814,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationArgs:
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tools(
@@ -8411,7 +8841,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolArgsDict(
     TypedDict
@@ -8460,7 +8891,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolArgs:
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolSpec")
     def tool_spec(
@@ -8478,7 +8910,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolArgs:
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointArgsDict(
     TypedDict
@@ -8492,7 +8925,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceArgsDict(
     TypedDict
@@ -8551,7 +8985,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceArgs
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def auto(
@@ -8569,7 +9004,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceArgs
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tool(
@@ -8587,7 +9023,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceArgs
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyArgsDict(
     TypedDict
@@ -8617,7 +9054,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecArgsDict(
     TypedDict
@@ -8647,12 +9085,14 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecAr
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSchema")
     def input_schema(
@@ -8670,7 +9110,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecAr
                 AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgsDict(
     TypedDict
@@ -8686,7 +9127,8 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecIn
     @pulumi.getter
     def json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @json.setter
-    def json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationTextArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
@@ -8726,7 +9168,8 @@ class AgentPromptVariantTemplateConfigurationTextArgs:
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cachePoint")
     def cache_point(
@@ -8740,7 +9183,8 @@ class AgentPromptVariantTemplateConfigurationTextArgs:
         value: Optional[
             pulumi.Input[AgentPromptVariantTemplateConfigurationTextCachePointArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariables")
     def input_variables(
@@ -8766,7 +9210,8 @@ class AgentPromptVariantTemplateConfigurationTextArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationTextCachePointArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -8778,7 +9223,8 @@ class AgentPromptVariantTemplateConfigurationTextCachePointArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentPromptVariantTemplateConfigurationTextInputVariableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -8790,7 +9236,8 @@ class AgentPromptVariantTemplateConfigurationTextInputVariableArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeAgentRuntimeArtifactArgsDict(TypedDict):
     code_configuration: NotRequired[
@@ -8829,7 +9276,8 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactArgs:
         value: Optional[
             pulumi.Input[AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerConfiguration")
     def container_configuration(
@@ -8847,7 +9295,8 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactArgs:
                 AgentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationArgsDict(TypedDict):
     entry_points: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -8877,12 +9326,14 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationArgs:
     @entry_points.setter
     def entry_points(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def runtime(self) -> pulumi.Input[_builtins.str]: ...
     @runtime.setter
-    def runtime(self, value: pulumi.Input[_builtins.str]): ...
+    def runtime(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def code(
@@ -8898,7 +9349,8 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationArgs:
                 AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeArgsDict(TypedDict):
     s3: NotRequired[
@@ -8935,7 +9387,8 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeArgs:
                 AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3Args
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3ArgsDict(
     TypedDict
@@ -8957,17 +9410,20 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3Args:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> pulumi.Input[_builtins.str]: ...
     @prefix.setter
-    def prefix(self, value: pulumi.Input[_builtins.str]): ...
+    def prefix(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionId")
     def version_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_id.setter
-    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationArgsDict(
     TypedDict
@@ -8981,7 +9437,8 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationArgs:
     @pulumi.getter(name="containerUri")
     def container_uri(self) -> pulumi.Input[_builtins.str]: ...
     @container_uri.setter
-    def container_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def container_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeAuthorizerConfigurationArgsDict(TypedDict):
     custom_jwt_authorizer: NotRequired[
@@ -9018,7 +9475,8 @@ class AgentcoreAgentRuntimeAuthorizerConfigurationArgs:
                 AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgsDict(
     TypedDict
@@ -9048,7 +9506,8 @@ class AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgs:
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_url.setter
-    def discovery_url(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedAudiences")
     def allowed_audiences(
@@ -9057,7 +9516,8 @@ class AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgs:
     @allowed_audiences.setter
     def allowed_audiences(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedClients")
     def allowed_clients(
@@ -9066,7 +9526,8 @@ class AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgs:
     @allowed_clients.setter
     def allowed_clients(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedScopes")
     def allowed_scopes(
@@ -9075,7 +9536,8 @@ class AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgs:
     @allowed_scopes.setter
     def allowed_scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeEndpointTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -9095,17 +9557,20 @@ class AgentcoreAgentRuntimeEndpointTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeLifecycleConfigurationArgsDict(TypedDict):
     idle_runtime_session_timeout: pulumi.Input[_builtins.int]
@@ -9123,12 +9588,16 @@ class AgentcoreAgentRuntimeLifecycleConfigurationArgs:
     @pulumi.getter(name="idleRuntimeSessionTimeout")
     def idle_runtime_session_timeout(self) -> pulumi.Input[_builtins.int]: ...
     @idle_runtime_session_timeout.setter
-    def idle_runtime_session_timeout(self, value: pulumi.Input[_builtins.int]): ...
+    def idle_runtime_session_timeout(
+        self, value: pulumi.Input[_builtins.int]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxLifetime")
     def max_lifetime(self) -> pulumi.Input[_builtins.int]: ...
     @max_lifetime.setter
-    def max_lifetime(self, value: pulumi.Input[_builtins.int]): ...
+    def max_lifetime(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeNetworkConfigurationArgsDict(TypedDict):
     network_mode: pulumi.Input[_builtins.str]
@@ -9150,7 +9619,8 @@ class AgentcoreAgentRuntimeNetworkConfigurationArgs:
     @pulumi.getter(name="networkMode")
     def network_mode(self) -> pulumi.Input[_builtins.str]: ...
     @network_mode.setter
-    def network_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def network_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkModeConfig")
     def network_mode_config(
@@ -9164,7 +9634,8 @@ class AgentcoreAgentRuntimeNetworkConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -9186,12 +9657,16 @@ class AgentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigArgs:
     @security_groups.setter
     def security_groups(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnets.setter
-    def subnets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def subnets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeProtocolConfigurationArgsDict(TypedDict):
     server_protocol: NotRequired[pulumi.Input[_builtins.str]]
@@ -9205,7 +9680,8 @@ class AgentcoreAgentRuntimeProtocolConfigurationArgs:
     @pulumi.getter(name="serverProtocol")
     def server_protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_protocol.setter
-    def server_protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeRequestHeaderConfigurationArgsDict(TypedDict):
     request_header_allowlists: NotRequired[
@@ -9229,7 +9705,8 @@ class AgentcoreAgentRuntimeRequestHeaderConfigurationArgs:
     @request_header_allowlists.setter
     def request_header_allowlists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -9249,17 +9726,20 @@ class AgentcoreAgentRuntimeTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreAgentRuntimeWorkloadIdentityDetailArgsDict(TypedDict):
     workload_identity_arn: pulumi.Input[_builtins.str]
@@ -9273,7 +9753,8 @@ class AgentcoreAgentRuntimeWorkloadIdentityDetailArgs:
     @pulumi.getter(name="workloadIdentityArn")
     def workload_identity_arn(self) -> pulumi.Input[_builtins.str]: ...
     @workload_identity_arn.setter
-    def workload_identity_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def workload_identity_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreApiKeyCredentialProviderApiKeySecretArnArgsDict(TypedDict):
     secret_arn: pulumi.Input[_builtins.str]
@@ -9285,7 +9766,8 @@ class AgentcoreApiKeyCredentialProviderApiKeySecretArnArgs:
     @pulumi.getter(name="secretArn")
     def secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @secret_arn.setter
-    def secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreBrowserNetworkConfigurationArgsDict(TypedDict):
     network_mode: pulumi.Input[_builtins.str]
@@ -9307,7 +9789,8 @@ class AgentcoreBrowserNetworkConfigurationArgs:
     @pulumi.getter(name="networkMode")
     def network_mode(self) -> pulumi.Input[_builtins.str]: ...
     @network_mode.setter
-    def network_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def network_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(
@@ -9319,7 +9802,8 @@ class AgentcoreBrowserNetworkConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreBrowserNetworkConfigurationVpcConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreBrowserNetworkConfigurationVpcConfigArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -9341,12 +9825,16 @@ class AgentcoreBrowserNetworkConfigurationVpcConfigArgs:
     @security_groups.setter
     def security_groups(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnets.setter
-    def subnets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def subnets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class AgentcoreBrowserRecordingArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -9366,7 +9854,8 @@ class AgentcoreBrowserRecordingArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Location")
     def s3_location(
@@ -9375,7 +9864,8 @@ class AgentcoreBrowserRecordingArgs:
     @s3_location.setter
     def s3_location(
         self, value: Optional[pulumi.Input[AgentcoreBrowserRecordingS3LocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreBrowserRecordingS3LocationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -9393,12 +9883,14 @@ class AgentcoreBrowserRecordingS3LocationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> pulumi.Input[_builtins.str]: ...
     @prefix.setter
-    def prefix(self, value: pulumi.Input[_builtins.str]): ...
+    def prefix(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreBrowserTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -9416,12 +9908,14 @@ class AgentcoreBrowserTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreCodeInterpreterNetworkConfigurationArgsDict(TypedDict):
     network_mode: pulumi.Input[_builtins.str]
@@ -9443,7 +9937,8 @@ class AgentcoreCodeInterpreterNetworkConfigurationArgs:
     @pulumi.getter(name="networkMode")
     def network_mode(self) -> pulumi.Input[_builtins.str]: ...
     @network_mode.setter
-    def network_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def network_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(
@@ -9457,7 +9952,8 @@ class AgentcoreCodeInterpreterNetworkConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreCodeInterpreterNetworkConfigurationVpcConfigArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreCodeInterpreterNetworkConfigurationVpcConfigArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -9479,12 +9975,16 @@ class AgentcoreCodeInterpreterNetworkConfigurationVpcConfigArgs:
     @security_groups.setter
     def security_groups(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnets.setter
-    def subnets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def subnets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class AgentcoreCodeInterpreterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -9502,12 +10002,14 @@ class AgentcoreCodeInterpreterTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayAuthorizerConfigurationArgsDict(TypedDict):
     custom_jwt_authorizer: NotRequired[
@@ -9536,7 +10038,8 @@ class AgentcoreGatewayAuthorizerConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgsDict(TypedDict):
     allowed_scopes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -9564,12 +10067,14 @@ class AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgs:
     @allowed_scopes.setter
     def allowed_scopes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_url.setter
-    def discovery_url(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedAudiences")
     def allowed_audiences(
@@ -9578,7 +10083,8 @@ class AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgs:
     @allowed_audiences.setter
     def allowed_audiences(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedClients")
     def allowed_clients(
@@ -9587,7 +10093,8 @@ class AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgs:
     @allowed_clients.setter
     def allowed_clients(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayInterceptorConfigurationArgsDict(TypedDict):
     interception_points: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -9619,7 +10126,8 @@ class AgentcoreGatewayInterceptorConfigurationArgs:
     @interception_points.setter
     def interception_points(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputConfiguration")
     def input_configuration(
@@ -9633,7 +10141,8 @@ class AgentcoreGatewayInterceptorConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayInterceptorConfigurationInputConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def interceptor(
@@ -9647,7 +10156,8 @@ class AgentcoreGatewayInterceptorConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayInterceptorConfigurationInterceptorArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayInterceptorConfigurationInputConfigurationArgsDict(TypedDict):
     pass_request_headers: pulumi.Input[_builtins.bool]
@@ -9661,7 +10171,8 @@ class AgentcoreGatewayInterceptorConfigurationInputConfigurationArgs:
     @pulumi.getter(name="passRequestHeaders")
     def pass_request_headers(self) -> pulumi.Input[_builtins.bool]: ...
     @pass_request_headers.setter
-    def pass_request_headers(self, value: pulumi.Input[_builtins.bool]): ...
+    def pass_request_headers(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class AgentcoreGatewayInterceptorConfigurationInterceptorArgsDict(TypedDict):
     lambda_: NotRequired[
@@ -9690,7 +10201,8 @@ class AgentcoreGatewayInterceptorConfigurationInterceptorArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayInterceptorConfigurationInterceptorLambdaArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayInterceptorConfigurationInterceptorLambdaArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -9702,7 +10214,8 @@ class AgentcoreGatewayInterceptorConfigurationInterceptorLambdaArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreGatewayProtocolConfigurationArgsDict(TypedDict):
     mcp: NotRequired[pulumi.Input[AgentcoreGatewayProtocolConfigurationMcpArgsDict]]
@@ -9723,7 +10236,8 @@ class AgentcoreGatewayProtocolConfigurationArgs:
     def mcp(
         self,
         value: Optional[pulumi.Input[AgentcoreGatewayProtocolConfigurationMcpArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayProtocolConfigurationMcpArgsDict(TypedDict):
     instructions: NotRequired[pulumi.Input[_builtins.str]]
@@ -9745,12 +10259,14 @@ class AgentcoreGatewayProtocolConfigurationMcpArgs:
     @pulumi.getter
     def instructions(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instructions.setter
-    def instructions(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instructions(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="searchType")
     def search_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @search_type.setter
-    def search_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def search_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedVersions")
     def supported_versions(
@@ -9759,7 +10275,8 @@ class AgentcoreGatewayProtocolConfigurationMcpArgs:
     @supported_versions.setter
     def supported_versions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetCredentialProviderConfigurationArgsDict(TypedDict):
     api_key: NotRequired[
@@ -9810,7 +10327,8 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationArgs:
                 AgentcoreGatewayTargetCredentialProviderConfigurationApiKeyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayIamRole")
     def gateway_iam_role(
@@ -9828,7 +10346,8 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationArgs:
                 AgentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def oauth(
@@ -9842,7 +10361,8 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetCredentialProviderConfigurationOauthArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetCredentialProviderConfigurationApiKeyArgsDict(TypedDict):
     provider_arn: pulumi.Input[_builtins.str]
@@ -9864,24 +10384,32 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationApiKeyArgs:
     @pulumi.getter(name="providerArn")
     def provider_arn(self) -> pulumi.Input[_builtins.str]: ...
     @provider_arn.setter
-    def provider_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialLocation")
     def credential_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credential_location.setter
-    def credential_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credential_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialParameterName")
     def credential_parameter_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credential_parameter_name.setter
     def credential_parameter_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialPrefix")
     def credential_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credential_prefix.setter
-    def credential_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credential_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleArgsDict(
     TypedDict
@@ -9917,12 +10445,16 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationOauthArgs:
     @pulumi.getter(name="providerArn")
     def provider_arn(self) -> pulumi.Input[_builtins.str]: ...
     @provider_arn.setter
-    def provider_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @scopes.setter
-    def scopes(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def scopes(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customParameters")
     def custom_parameters(
@@ -9931,17 +10463,22 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationOauthArgs:
     @custom_parameters.setter
     def custom_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultReturnUrl")
     def default_return_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_return_url.setter
-    def default_return_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_return_url(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="grantType")
     def grant_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @grant_type.setter
-    def grant_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def grant_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetMetadataConfigurationArgsDict(TypedDict):
     allowed_query_parameters: NotRequired[
@@ -9977,7 +10514,8 @@ class AgentcoreGatewayTargetMetadataConfigurationArgs:
     @allowed_query_parameters.setter
     def allowed_query_parameters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedRequestHeaders")
     def allowed_request_headers(
@@ -9986,7 +10524,8 @@ class AgentcoreGatewayTargetMetadataConfigurationArgs:
     @allowed_request_headers.setter
     def allowed_request_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedResponseHeaders")
     def allowed_response_headers(
@@ -9995,7 +10534,8 @@ class AgentcoreGatewayTargetMetadataConfigurationArgs:
     @allowed_response_headers.setter
     def allowed_response_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationArgsDict(TypedDict):
     mcp: NotRequired[pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpArgsDict]]
@@ -10018,7 +10558,8 @@ class AgentcoreGatewayTargetTargetConfigurationArgs:
     def mcp(
         self,
         value: Optional[pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpArgsDict(TypedDict):
     lambda_: NotRequired[
@@ -10065,7 +10606,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpLambdaArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mcpServer")
     def mcp_server(
@@ -10079,7 +10621,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpMcpServerArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openApiSchema")
     def open_api_schema(
@@ -10093,7 +10636,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="smithyModel")
     def smithy_model(
@@ -10107,7 +10651,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaArgsDict(TypedDict):
     lambda_arn: pulumi.Input[_builtins.str]
@@ -10129,7 +10674,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaArgs:
     @pulumi.getter(name="lambdaArn")
     def lambda_arn(self) -> pulumi.Input[_builtins.str]: ...
     @lambda_arn.setter
-    def lambda_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def lambda_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="toolSchema")
     def tool_schema(
@@ -10143,7 +10689,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaArgs:
         value: pulumi.Input[
             AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaArgsDict(TypedDict):
     inline_payloads: NotRequired[
@@ -10206,7 +10753,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(
@@ -10222,7 +10770,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaArgs:
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3Args
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadArgsDict(
     TypedDict
@@ -10258,7 +10807,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadA
     @pulumi.getter
     def description(self) -> pulumi.Input[_builtins.str]: ...
     @description.setter
-    def description(self, value: pulumi.Input[_builtins.str]): ...
+    def description(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputSchema")
     def input_schema(
@@ -10272,12 +10822,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadA
         value: pulumi.Input[
             AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputSchema")
     def output_schema(
@@ -10295,7 +10847,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadA
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaArgsDict(
     TypedDict
@@ -10343,12 +10896,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -10366,7 +10921,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -10392,7 +10948,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsArgsDict(
     TypedDict
@@ -10440,12 +10997,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -10463,7 +11022,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -10489,7 +11049,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsArgsDict(
     TypedDict
@@ -10513,22 +11074,26 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyArgsDict(
     TypedDict
@@ -10556,32 +11121,38 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyArgsDict(
     TypedDict
@@ -10633,17 +11204,20 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -10661,7 +11235,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -10687,12 +11262,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsArgsDict(
     TypedDict
@@ -10740,12 +11317,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -10763,7 +11342,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -10789,7 +11369,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsArgsDict(
     TypedDict
@@ -10813,22 +11394,26 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyArgsDict(
     TypedDict
@@ -10856,32 +11441,38 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyArgsDict(
     TypedDict
@@ -10909,32 +11500,38 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaArgsDict(
     TypedDict
@@ -10982,12 +11579,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -11005,7 +11604,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -11031,7 +11631,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsArgsDict(
     TypedDict
@@ -11079,12 +11680,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -11102,7 +11705,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -11128,7 +11732,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsArgsDict(
     TypedDict
@@ -11152,22 +11757,26 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyArgsDict(
     TypedDict
@@ -11195,32 +11804,38 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyArgsDict(
     TypedDict
@@ -11272,17 +11887,20 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -11300,7 +11918,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -11326,12 +11945,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsArgsDict(
     TypedDict
@@ -11379,12 +12000,14 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def items(
@@ -11402,7 +12025,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -11428,7 +12052,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsArgsDict(
     TypedDict
@@ -11452,22 +12077,26 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyArgsDict(
     TypedDict
@@ -11495,32 +12124,38 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyArgsDict(
     TypedDict
@@ -11548,32 +12183,38 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="itemsJson")
     def items_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @items_json.setter
-    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def items_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propertiesJson")
     def properties_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @properties_json.setter
-    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def properties_json(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @required.setter
-    def required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def required(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ArgsDict(TypedDict):
     bucket_owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11591,12 +12232,16 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3Args:
     @pulumi.getter(name="bucketOwnerAccountId")
     def bucket_owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_owner_account_id.setter
-    def bucket_owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_owner_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpMcpServerArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
@@ -11608,7 +12253,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpMcpServerArgs:
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaArgsDict(TypedDict):
     inline_payload: NotRequired[
@@ -11655,7 +12301,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaArgs:
                 AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(
@@ -11671,7 +12318,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaArgs:
                 AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3Args
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadArgsDict(
     TypedDict
@@ -11685,7 +12333,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadArgs
     @pulumi.getter
     def payload(self) -> pulumi.Input[_builtins.str]: ...
     @payload.setter
-    def payload(self, value: pulumi.Input[_builtins.str]): ...
+    def payload(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ArgsDict(TypedDict):
     bucket_owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11703,12 +12352,16 @@ class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3Args:
     @pulumi.getter(name="bucketOwnerAccountId")
     def bucket_owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_owner_account_id.setter
-    def bucket_owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_owner_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelArgsDict(TypedDict):
     inline_payload: NotRequired[
@@ -11751,7 +12404,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelArgs:
                 AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def s3(
@@ -11765,7 +12419,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelArgs:
         value: Optional[
             pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3Args]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadArgsDict(
     TypedDict
@@ -11779,7 +12434,8 @@ class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadArgs:
     @pulumi.getter
     def payload(self) -> pulumi.Input[_builtins.str]: ...
     @payload.setter
-    def payload(self, value: pulumi.Input[_builtins.str]): ...
+    def payload(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ArgsDict(TypedDict):
     bucket_owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -11797,12 +12453,16 @@ class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3Args:
     @pulumi.getter(name="bucketOwnerAccountId")
     def bucket_owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_owner_account_id.setter
-    def bucket_owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_owner_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTargetTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -11822,17 +12482,20 @@ class AgentcoreGatewayTargetTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -11852,17 +12515,20 @@ class AgentcoreGatewayTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreGatewayWorkloadIdentityDetailArgsDict(TypedDict):
     workload_identity_arn: pulumi.Input[_builtins.str]
@@ -11876,7 +12542,8 @@ class AgentcoreGatewayWorkloadIdentityDetailArgs:
     @pulumi.getter(name="workloadIdentityArn")
     def workload_identity_arn(self) -> pulumi.Input[_builtins.str]: ...
     @workload_identity_arn.setter
-    def workload_identity_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def workload_identity_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreMemoryStrategyConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -11904,7 +12571,8 @@ class AgentcoreMemoryStrategyConfigurationArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def consolidation(
@@ -11918,7 +12586,8 @@ class AgentcoreMemoryStrategyConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreMemoryStrategyConfigurationConsolidationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def extraction(
@@ -11930,7 +12599,8 @@ class AgentcoreMemoryStrategyConfigurationArgs:
         value: Optional[
             pulumi.Input[AgentcoreMemoryStrategyConfigurationExtractionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreMemoryStrategyConfigurationConsolidationArgsDict(TypedDict):
     append_to_prompt: pulumi.Input[_builtins.str]
@@ -11948,12 +12618,14 @@ class AgentcoreMemoryStrategyConfigurationConsolidationArgs:
     @pulumi.getter(name="appendToPrompt")
     def append_to_prompt(self) -> pulumi.Input[_builtins.str]: ...
     @append_to_prompt.setter
-    def append_to_prompt(self, value: pulumi.Input[_builtins.str]): ...
+    def append_to_prompt(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelId")
     def model_id(self) -> pulumi.Input[_builtins.str]: ...
     @model_id.setter
-    def model_id(self, value: pulumi.Input[_builtins.str]): ...
+    def model_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreMemoryStrategyConfigurationExtractionArgsDict(TypedDict):
     append_to_prompt: pulumi.Input[_builtins.str]
@@ -11971,12 +12643,14 @@ class AgentcoreMemoryStrategyConfigurationExtractionArgs:
     @pulumi.getter(name="appendToPrompt")
     def append_to_prompt(self) -> pulumi.Input[_builtins.str]: ...
     @append_to_prompt.setter
-    def append_to_prompt(self, value: pulumi.Input[_builtins.str]): ...
+    def append_to_prompt(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="modelId")
     def model_id(self) -> pulumi.Input[_builtins.str]: ...
     @model_id.setter
-    def model_id(self, value: pulumi.Input[_builtins.str]): ...
+    def model_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreMemoryStrategyTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -11996,17 +12670,20 @@ class AgentcoreMemoryStrategyTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreMemoryTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -12024,12 +12701,14 @@ class AgentcoreMemoryTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderClientSecretArnArgsDict(TypedDict):
     secret_arn: pulumi.Input[_builtins.str]
@@ -12041,7 +12720,8 @@ class AgentcoreOauth2CredentialProviderClientSecretArnArgs:
     @pulumi.getter(name="secretArn")
     def secret_arn(self) -> pulumi.Input[_builtins.str]: ...
     @secret_arn.setter
-    def secret_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgsDict(TypedDict):
     custom_oauth2_provider_config: NotRequired[
@@ -12128,7 +12808,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs:
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="githubOauth2ProviderConfig")
     def github_oauth2_provider_config(
@@ -12146,7 +12827,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs:
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="googleOauth2ProviderConfig")
     def google_oauth2_provider_config(
@@ -12164,7 +12846,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs:
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="microsoftOauth2ProviderConfig")
     def microsoft_oauth2_provider_config(
@@ -12182,7 +12865,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs:
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="salesforceOauth2ProviderConfig")
     def salesforce_oauth2_provider_config(
@@ -12200,7 +12884,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs:
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="slackOauth2ProviderConfig")
     def slack_oauth2_provider_config(
@@ -12218,7 +12903,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs:
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigArgsDict(
     TypedDict
@@ -12258,27 +12944,34 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
     @client_credentials_wo_version.setter
     def client_credentials_wo_version(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIdWo")
     def client_id_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id_wo.setter
-    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecretWo")
     def client_secret_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret_wo.setter
-    def client_secret_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret_wo(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthDiscovery")
     def oauth_discovery(
@@ -12296,7 +12989,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryArgsDict(
     TypedDict
@@ -12337,12 +13031,14 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
                 AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @discovery_url.setter
-    def discovery_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def discovery_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgsDict(
     TypedDict
@@ -12368,17 +13064,20 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
     @pulumi.getter(name="authorizationEndpoint")
     def authorization_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @authorization_endpoint.setter
-    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseTypes")
     def response_types(
@@ -12387,7 +13086,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
     @response_types.setter
     def response_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigArgsDict(
     TypedDict
@@ -12435,27 +13135,34 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderC
     @client_credentials_wo_version.setter
     def client_credentials_wo_version(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIdWo")
     def client_id_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id_wo.setter
-    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecretWo")
     def client_secret_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret_wo.setter
-    def client_secret_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret_wo(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthDiscoveries")
     def oauth_discoveries(
@@ -12481,7 +13188,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryArgsDict(
     TypedDict
@@ -12530,12 +13238,14 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_url.setter
-    def discovery_url(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgsDict(
     TypedDict
@@ -12559,24 +13269,28 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderC
     @pulumi.getter(name="authorizationEndpoint")
     def authorization_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @authorization_endpoint.setter
-    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseTypes")
     def response_types(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @response_types.setter
     def response_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigArgsDict(
     TypedDict
@@ -12624,27 +13338,34 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderC
     @client_credentials_wo_version.setter
     def client_credentials_wo_version(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIdWo")
     def client_id_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id_wo.setter
-    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecretWo")
     def client_secret_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret_wo.setter
-    def client_secret_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret_wo(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthDiscoveries")
     def oauth_discoveries(
@@ -12670,7 +13391,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryArgsDict(
     TypedDict
@@ -12719,12 +13441,14 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderC
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_url.setter
-    def discovery_url(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgsDict(
     TypedDict
@@ -12748,24 +13472,28 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderC
     @pulumi.getter(name="authorizationEndpoint")
     def authorization_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @authorization_endpoint.setter
-    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseTypes")
     def response_types(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @response_types.setter
     def response_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigArgsDict(
     TypedDict
@@ -12813,27 +13541,34 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2Provid
     @client_credentials_wo_version.setter
     def client_credentials_wo_version(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIdWo")
     def client_id_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id_wo.setter
-    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecretWo")
     def client_secret_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret_wo.setter
-    def client_secret_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret_wo(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthDiscoveries")
     def oauth_discoveries(
@@ -12859,7 +13594,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2Provid
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryArgsDict(
     TypedDict
@@ -12908,12 +13644,14 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2Provid
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_url.setter
-    def discovery_url(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgsDict(
     TypedDict
@@ -12937,24 +13675,28 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2Provid
     @pulumi.getter(name="authorizationEndpoint")
     def authorization_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @authorization_endpoint.setter
-    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseTypes")
     def response_types(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @response_types.setter
     def response_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigArgsDict(
     TypedDict
@@ -13002,27 +13744,34 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2Provi
     @client_credentials_wo_version.setter
     def client_credentials_wo_version(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIdWo")
     def client_id_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id_wo.setter
-    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecretWo")
     def client_secret_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret_wo.setter
-    def client_secret_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret_wo(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthDiscoveries")
     def oauth_discoveries(
@@ -13048,7 +13797,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2Provi
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryArgsDict(
     TypedDict
@@ -13097,12 +13847,14 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2Provi
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_url.setter
-    def discovery_url(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgsDict(
     TypedDict
@@ -13126,24 +13878,28 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2Provi
     @pulumi.getter(name="authorizationEndpoint")
     def authorization_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @authorization_endpoint.setter
-    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseTypes")
     def response_types(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @response_types.setter
     def response_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigArgsDict(
     TypedDict
@@ -13191,27 +13947,34 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
     @client_credentials_wo_version.setter
     def client_credentials_wo_version(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientId")
     def client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id.setter
-    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientIdWo")
     def client_id_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id_wo.setter
-    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_id_wo(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecret")
     def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret.setter
-    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSecretWo")
     def client_secret_wo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_secret_wo.setter
-    def client_secret_wo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def client_secret_wo(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oauthDiscoveries")
     def oauth_discoveries(
@@ -13237,7 +14000,8 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryArgsDict(
     TypedDict
@@ -13286,12 +14050,14 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discoveryUrl")
     def discovery_url(self) -> pulumi.Input[_builtins.str]: ...
     @discovery_url.setter
-    def discovery_url(self, value: pulumi.Input[_builtins.str]): ...
+    def discovery_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgsDict(
     TypedDict
@@ -13315,24 +14081,28 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
     @pulumi.getter(name="authorizationEndpoint")
     def authorization_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @authorization_endpoint.setter
-    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): ...
+    def issuer(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseTypes")
     def response_types(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @response_types.setter
     def response_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tokenEndpoint")
     def token_endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @token_endpoint.setter
-    def token_endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def token_endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AgentcoreTokenVaultCmkKmsConfigurationArgsDict(TypedDict):
     key_type: pulumi.Input[_builtins.str]
@@ -13350,12 +14120,14 @@ class AgentcoreTokenVaultCmkKmsConfigurationArgs:
     @pulumi.getter(name="keyType")
     def key_type(self) -> pulumi.Input[_builtins.str]: ...
     @key_type.setter
-    def key_type(self, value: pulumi.Input[_builtins.str]): ...
+    def key_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomModelOutputDataConfigArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
@@ -13367,7 +14139,8 @@ class CustomModelOutputDataConfigArgs:
     @pulumi.getter(name="s3Uri")
     def s3_uri(self) -> pulumi.Input[_builtins.str]: ...
     @s3_uri.setter
-    def s3_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CustomModelTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -13385,12 +14158,14 @@ class CustomModelTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CustomModelTrainingDataConfigArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
@@ -13402,7 +14177,8 @@ class CustomModelTrainingDataConfigArgs:
     @pulumi.getter(name="s3Uri")
     def s3_uri(self) -> pulumi.Input[_builtins.str]: ...
     @s3_uri.setter
-    def s3_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CustomModelTrainingMetricArgsDict(TypedDict):
     training_loss: pulumi.Input[_builtins.float]
@@ -13414,7 +14190,8 @@ class CustomModelTrainingMetricArgs:
     @pulumi.getter(name="trainingLoss")
     def training_loss(self) -> pulumi.Input[_builtins.float]: ...
     @training_loss.setter
-    def training_loss(self, value: pulumi.Input[_builtins.float]): ...
+    def training_loss(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class CustomModelValidationDataConfigArgsDict(TypedDict):
     validators: pulumi.Input[
@@ -13443,7 +14220,8 @@ class CustomModelValidationDataConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[CustomModelValidationDataConfigValidatorArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomModelValidationDataConfigValidatorArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
@@ -13455,7 +14233,8 @@ class CustomModelValidationDataConfigValidatorArgs:
     @pulumi.getter(name="s3Uri")
     def s3_uri(self) -> pulumi.Input[_builtins.str]: ...
     @s3_uri.setter
-    def s3_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def s3_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CustomModelValidationMetricArgsDict(TypedDict):
     validation_loss: pulumi.Input[_builtins.float]
@@ -13469,7 +14248,8 @@ class CustomModelValidationMetricArgs:
     @pulumi.getter(name="validationLoss")
     def validation_loss(self) -> pulumi.Input[_builtins.float]: ...
     @validation_loss.setter
-    def validation_loss(self, value: pulumi.Input[_builtins.float]): ...
+    def validation_loss(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class CustomModelVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -13491,14 +14271,16 @@ class CustomModelVpcConfigArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailContentPolicyConfigArgsDict(TypedDict):
     filters_configs: NotRequired[
@@ -13545,7 +14327,8 @@ class GuardrailContentPolicyConfigArgs:
                 Sequence[pulumi.Input[GuardrailContentPolicyConfigFiltersConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tierConfigs")
     def tier_configs(
@@ -13561,7 +14344,8 @@ class GuardrailContentPolicyConfigArgs:
                 Sequence[pulumi.Input[GuardrailContentPolicyConfigTierConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailContentPolicyConfigFiltersConfigArgsDict(TypedDict):
     input_strength: pulumi.Input[_builtins.str]
@@ -13597,27 +14381,32 @@ class GuardrailContentPolicyConfigFiltersConfigArgs:
     @pulumi.getter(name="inputStrength")
     def input_strength(self) -> pulumi.Input[_builtins.str]: ...
     @input_strength.setter
-    def input_strength(self, value: pulumi.Input[_builtins.str]): ...
+    def input_strength(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputStrength")
     def output_strength(self) -> pulumi.Input[_builtins.str]: ...
     @output_strength.setter
-    def output_strength(self, value: pulumi.Input[_builtins.str]): ...
+    def output_strength(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputAction")
     def input_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_action.setter
-    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputEnabled")
     def input_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @input_enabled.setter
-    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputModalities")
     def input_modalities(
@@ -13626,17 +14415,20 @@ class GuardrailContentPolicyConfigFiltersConfigArgs:
     @input_modalities.setter
     def input_modalities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAction")
     def output_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_action.setter
-    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputEnabled")
     def output_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @output_enabled.setter
-    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputModalities")
     def output_modalities(
@@ -13645,7 +14437,8 @@ class GuardrailContentPolicyConfigFiltersConfigArgs:
     @output_modalities.setter
     def output_modalities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailContentPolicyConfigTierConfigArgsDict(TypedDict):
     tier_name: pulumi.Input[_builtins.str]
@@ -13657,7 +14450,8 @@ class GuardrailContentPolicyConfigTierConfigArgs:
     @pulumi.getter(name="tierName")
     def tier_name(self) -> pulumi.Input[_builtins.str]: ...
     @tier_name.setter
-    def tier_name(self, value: pulumi.Input[_builtins.str]): ...
+    def tier_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuardrailContextualGroundingPolicyConfigArgsDict(TypedDict):
     filters_configs: NotRequired[
@@ -13708,7 +14502,8 @@ class GuardrailContextualGroundingPolicyConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailContextualGroundingPolicyConfigFiltersConfigArgsDict(TypedDict):
     threshold: pulumi.Input[_builtins.float]
@@ -13726,12 +14521,14 @@ class GuardrailContextualGroundingPolicyConfigFiltersConfigArgs:
     @pulumi.getter
     def threshold(self) -> pulumi.Input[_builtins.float]: ...
     @threshold.setter
-    def threshold(self, value: pulumi.Input[_builtins.float]): ...
+    def threshold(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuardrailCrossRegionConfigArgsDict(TypedDict):
     guardrail_profile_identifier: pulumi.Input[_builtins.str]
@@ -13745,7 +14542,10 @@ class GuardrailCrossRegionConfigArgs:
     @pulumi.getter(name="guardrailProfileIdentifier")
     def guardrail_profile_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @guardrail_profile_identifier.setter
-    def guardrail_profile_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def guardrail_profile_identifier(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class GuardrailSensitiveInformationPolicyConfigArgsDict(TypedDict):
     pii_entities_configs: NotRequired[
@@ -13816,7 +14616,8 @@ class GuardrailSensitiveInformationPolicyConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexesConfigs")
     def regexes_configs(
@@ -13840,7 +14641,8 @@ class GuardrailSensitiveInformationPolicyConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigArgsDict(TypedDict):
     action: pulumi.Input[_builtins.str]
@@ -13866,32 +14668,38 @@ class GuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[_builtins.str]: ...
     @action.setter
-    def action(self, value: pulumi.Input[_builtins.str]): ...
+    def action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputAction")
     def input_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_action.setter
-    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputEnabled")
     def input_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @input_enabled.setter
-    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAction")
     def output_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_action.setter
-    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputEnabled")
     def output_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @output_enabled.setter
-    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class GuardrailSensitiveInformationPolicyConfigRegexesConfigArgsDict(TypedDict):
     action: pulumi.Input[_builtins.str]
@@ -13921,42 +14729,50 @@ class GuardrailSensitiveInformationPolicyConfigRegexesConfigArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[_builtins.str]: ...
     @action.setter
-    def action(self, value: pulumi.Input[_builtins.str]): ...
+    def action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputAction")
     def input_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_action.setter
-    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputEnabled")
     def input_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @input_enabled.setter
-    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAction")
     def output_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_action.setter
-    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputEnabled")
     def output_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @output_enabled.setter
-    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class GuardrailTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -13976,17 +14792,20 @@ class GuardrailTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuardrailTopicPolicyConfigArgsDict(TypedDict):
     tier_configs: NotRequired[
@@ -14031,7 +14850,8 @@ class GuardrailTopicPolicyConfigArgs:
                 Sequence[pulumi.Input[GuardrailTopicPolicyConfigTierConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicsConfigs")
     def topics_configs(
@@ -14047,7 +14867,8 @@ class GuardrailTopicPolicyConfigArgs:
                 Sequence[pulumi.Input[GuardrailTopicPolicyConfigTopicsConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailTopicPolicyConfigTierConfigArgsDict(TypedDict):
     tier_name: pulumi.Input[_builtins.str]
@@ -14059,7 +14880,8 @@ class GuardrailTopicPolicyConfigTierConfigArgs:
     @pulumi.getter(name="tierName")
     def tier_name(self) -> pulumi.Input[_builtins.str]: ...
     @tier_name.setter
-    def tier_name(self, value: pulumi.Input[_builtins.str]): ...
+    def tier_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class GuardrailTopicPolicyConfigTopicsConfigArgsDict(TypedDict):
     definition: pulumi.Input[_builtins.str]
@@ -14081,17 +14903,20 @@ class GuardrailTopicPolicyConfigTopicsConfigArgs:
     @pulumi.getter
     def definition(self) -> pulumi.Input[_builtins.str]: ...
     @definition.setter
-    def definition(self, value: pulumi.Input[_builtins.str]): ...
+    def definition(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def examples(
@@ -14100,7 +14925,8 @@ class GuardrailTopicPolicyConfigTopicsConfigArgs:
     @examples.setter
     def examples(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailVersionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -14118,12 +14944,14 @@ class GuardrailVersionTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GuardrailWordPolicyConfigArgsDict(TypedDict):
     managed_word_lists_configs: NotRequired[
@@ -14176,7 +15004,8 @@ class GuardrailWordPolicyConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wordsConfigs")
     def words_configs(
@@ -14192,7 +15021,8 @@ class GuardrailWordPolicyConfigArgs:
                 Sequence[pulumi.Input[GuardrailWordPolicyConfigWordsConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GuardrailWordPolicyConfigManagedWordListsConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -14216,27 +15046,32 @@ class GuardrailWordPolicyConfigManagedWordListsConfigArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputAction")
     def input_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_action.setter
-    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputEnabled")
     def input_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @input_enabled.setter
-    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAction")
     def output_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_action.setter
-    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputEnabled")
     def output_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @output_enabled.setter
-    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class GuardrailWordPolicyConfigWordsConfigArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
@@ -14260,27 +15095,32 @@ class GuardrailWordPolicyConfigWordsConfigArgs:
     @pulumi.getter
     def text(self) -> pulumi.Input[_builtins.str]: ...
     @text.setter
-    def text(self, value: pulumi.Input[_builtins.str]): ...
+    def text(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputAction")
     def input_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_action.setter
-    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputEnabled")
     def input_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @input_enabled.setter
-    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def input_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputAction")
     def output_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_action.setter
-    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_action(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputEnabled")
     def output_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @output_enabled.setter
-    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def output_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class InferenceProfileModelArgsDict(TypedDict):
     model_arn: pulumi.Input[_builtins.str]
@@ -14292,7 +15132,8 @@ class InferenceProfileModelArgs:
     @pulumi.getter(name="modelArn")
     def model_arn(self) -> pulumi.Input[_builtins.str]: ...
     @model_arn.setter
-    def model_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def model_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InferenceProfileModelSourceArgsDict(TypedDict):
     copy_from: pulumi.Input[_builtins.str]
@@ -14304,7 +15145,8 @@ class InferenceProfileModelSourceArgs:
     @pulumi.getter(name="copyFrom")
     def copy_from(self) -> pulumi.Input[_builtins.str]: ...
     @copy_from.setter
-    def copy_from(self, value: pulumi.Input[_builtins.str]): ...
+    def copy_from(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InferenceProfileTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -14324,17 +15166,20 @@ class InferenceProfileTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ProvisionedModelThroughputTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -14348,7 +15193,8 @@ class ProvisionedModelThroughputTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class GetAgentAgentVersionsAgentVersionSummaryArgsDict(TypedDict):
     agent_name: _builtins.str
@@ -14380,32 +15226,38 @@ class GetAgentAgentVersionsAgentVersionSummaryArgs:
     @pulumi.getter(name="agentName")
     def agent_name(self) -> _builtins.str: ...
     @agent_name.setter
-    def agent_name(self, value: _builtins.str): ...
+    def agent_name(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentStatus")
     def agent_status(self) -> _builtins.str: ...
     @agent_status.setter
-    def agent_status(self, value: _builtins.str): ...
+    def agent_status(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentVersion")
     def agent_version(self) -> _builtins.str: ...
     @agent_version.setter
-    def agent_version(self, value: _builtins.str): ...
+    def agent_version(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
     def created_at(self) -> _builtins.str: ...
     @created_at.setter
-    def created_at(self, value: _builtins.str): ...
+    def created_at(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> _builtins.str: ...
     @description.setter
-    def description(self, value: _builtins.str): ...
+    def description(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatedAt")
     def updated_at(self) -> _builtins.str: ...
     @updated_at.setter
-    def updated_at(self, value: _builtins.str): ...
+    def updated_at(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailConfigurations")
     def guardrail_configurations(
@@ -14419,7 +15271,8 @@ class GetAgentAgentVersionsAgentVersionSummaryArgs:
         value: Optional[
             Sequence[GetAgentAgentVersionsAgentVersionSummaryGuardrailConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GetAgentAgentVersionsAgentVersionSummaryGuardrailConfigurationArgsDict(TypedDict):
     guardrail_identifier: _builtins.str
@@ -14437,9 +15290,11 @@ class GetAgentAgentVersionsAgentVersionSummaryGuardrailConfigurationArgs:
     @pulumi.getter(name="guardrailIdentifier")
     def guardrail_identifier(self) -> _builtins.str: ...
     @guardrail_identifier.setter
-    def guardrail_identifier(self, value: _builtins.str): ...
+    def guardrail_identifier(self, value: _builtins.str):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guardrailVersion")
     def guardrail_version(self) -> _builtins.str: ...
     @guardrail_version.setter
-    def guardrail_version(self, value: _builtins.str): ...
+    def guardrail_version(self, value: _builtins.str):  # -> None:
+        ...

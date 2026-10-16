@@ -86,7 +86,8 @@ class GetDevBoxDefinitionResult:
     def validation_status(self) -> _builtins.str: ...
 
 class AwaitableGetDevBoxDefinitionResult(GetDevBoxDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDevBoxDefinitionResult]:
+        ...
 
 def get_dev_box_definition(
     dev_box_definition_name: Optional[_builtins.str] = ...,

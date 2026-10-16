@@ -67,7 +67,8 @@ class GetKeyValueResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetKeyValueResult(GetKeyValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyValueResult]:
+        ...
 
 def get_key_value(
     config_store_name: Optional[_builtins.str] = ...,

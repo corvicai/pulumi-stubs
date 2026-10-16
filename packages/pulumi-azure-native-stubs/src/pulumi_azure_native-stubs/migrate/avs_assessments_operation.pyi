@@ -69,22 +69,26 @@ class AvsAssessmentsOperationArgs:
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectName")
     def project_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_name.setter
-    def project_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentName")
     def assessment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assessment_name.setter
-    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="avsAssessmentScenario")
     def avs_assessment_scenario(
@@ -93,7 +97,8 @@ class AvsAssessmentsOperationArgs:
     @avs_assessment_scenario.setter
     def avs_assessment_scenario(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AvsAssessmentScenario]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureLocation")
     def azure_location(
@@ -102,7 +107,8 @@ class AvsAssessmentsOperationArgs:
     @azure_location.setter
     def azure_location(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureLocation]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureOfferCode")
     def azure_offer_code(
@@ -111,12 +117,14 @@ class AvsAssessmentsOperationArgs:
     @azure_offer_code.setter
     def azure_offer_code(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureOfferCode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuHeadroom")
     def cpu_headroom(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @cpu_headroom.setter
-    def cpu_headroom(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def cpu_headroom(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def currency(
@@ -125,17 +133,24 @@ class AvsAssessmentsOperationArgs:
     @currency.setter
     def currency(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureCurrency]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dedupeCompression")
     def dedupe_compression(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @dedupe_compression.setter
-    def dedupe_compression(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def dedupe_compression(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="discountPercentage")
     def discount_percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @discount_percentage.setter
-    def discount_percentage(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def discount_percentage(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalStorageTypes")
     def external_storage_types(
@@ -151,7 +166,8 @@ class AvsAssessmentsOperationArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, ExternalStorageType]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failuresToTolerateAndRaidLevel")
     def failures_to_tolerate_and_raid_level(
@@ -160,7 +176,8 @@ class AvsAssessmentsOperationArgs:
     @failures_to_tolerate_and_raid_level.setter
     def failures_to_tolerate_and_raid_level(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FttAndRaidLevel]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="failuresToTolerateAndRaidLevelList")
     def failures_to_tolerate_and_raid_level_list(
@@ -174,24 +191,32 @@ class AvsAssessmentsOperationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, FttAndRaidLevel]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isStretchClusterEnabled")
     def is_stretch_cluster_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_stretch_cluster_enabled.setter
     def is_stretch_cluster_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isVcfByolEnabled")
     def is_vcf_byol_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_vcf_byol_enabled.setter
-    def is_vcf_byol_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_vcf_byol_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memOvercommit")
     def mem_overcommit(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @mem_overcommit.setter
-    def mem_overcommit(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def mem_overcommit(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
     def node_type(
@@ -200,7 +225,8 @@ class AvsAssessmentsOperationArgs:
     @node_type.setter
     def node_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureAvsNodeType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeTypes")
     def node_types(
@@ -214,7 +240,8 @@ class AvsAssessmentsOperationArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AzureAvsNodeType]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def percentile(
@@ -223,17 +250,24 @@ class AvsAssessmentsOperationArgs:
     @percentile.setter
     def percentile(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Percentile]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataEndTime")
     def perf_data_end_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_end_time.setter
-    def perf_data_end_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_end_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perfDataStartTime")
     def perf_data_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @perf_data_start_time.setter
-    def perf_data_start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def perf_data_start_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -242,7 +276,8 @@ class AvsAssessmentsOperationArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="reservedInstance")
     def reserved_instance(
@@ -251,12 +286,16 @@ class AvsAssessmentsOperationArgs:
     @reserved_instance.setter
     def reserved_instance(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AzureReservedInstance]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingFactor")
     def scaling_factor(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @scaling_factor.setter
-    def scaling_factor(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def scaling_factor(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizingCriterion")
     def sizing_criterion(
@@ -266,19 +305,24 @@ class AvsAssessmentsOperationArgs:
     def sizing_criterion(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AssessmentSizingCriterion]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeRange")
     def time_range(self) -> Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]: ...
     @time_range.setter
     def time_range(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TimeRange]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vcpuOversubscription")
     def vcpu_oversubscription(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @vcpu_oversubscription.setter
-    def vcpu_oversubscription(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def vcpu_oversubscription(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:migrate:AvsAssessmentsOperation")
 class AvsAssessmentsOperation(pulumi.CustomResource):

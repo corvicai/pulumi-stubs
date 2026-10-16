@@ -180,17 +180,20 @@ class CloudControlParameterSpecArgs:
     @pulumi.getter(name="isRequired")
     def is_required(self) -> pulumi.Input[_builtins.bool]: ...
     @is_required.setter
-    def is_required(self, value: pulumi.Input[_builtins.bool]): ...
+    def is_required(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="valueType")
     def value_type(self) -> pulumi.Input[_builtins.str]: ...
     @value_type.setter
-    def value_type(self, value: pulumi.Input[_builtins.str]): ...
+    def value_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
     def default_value(
@@ -199,17 +202,20 @@ class CloudControlParameterSpecArgs:
     @default_value.setter
     def default_value(
         self, value: Optional[pulumi.Input[CloudControlParameterSpecDefaultValueArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subParameters")
     def sub_parameters(
@@ -225,7 +231,8 @@ class CloudControlParameterSpecArgs:
                 Sequence[pulumi.Input[CloudControlParameterSpecSubParameterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="substitutionRules")
     def substitution_rules(
@@ -243,7 +250,8 @@ class CloudControlParameterSpecArgs:
                 Sequence[pulumi.Input[CloudControlParameterSpecSubstitutionRuleArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def validation(
@@ -252,7 +260,8 @@ class CloudControlParameterSpecArgs:
     @validation.setter
     def validation(
         self, value: Optional[pulumi.Input[CloudControlParameterSpecValidationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecDefaultValueArgsDict(TypedDict):
     bool_value: NotRequired[pulumi.Input[_builtins.bool]]
@@ -284,12 +293,14 @@ class CloudControlParameterSpecDefaultValueArgs:
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oneofValue")
     def oneof_value(
@@ -303,7 +314,8 @@ class CloudControlParameterSpecDefaultValueArgs:
         value: Optional[
             pulumi.Input[CloudControlParameterSpecDefaultValueOneofValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -317,12 +329,14 @@ class CloudControlParameterSpecDefaultValueArgs:
         value: Optional[
             pulumi.Input[CloudControlParameterSpecDefaultValueStringListValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecDefaultValueOneofValueArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -348,7 +362,8 @@ class CloudControlParameterSpecDefaultValueOneofValueArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -364,7 +379,8 @@ class CloudControlParameterSpecDefaultValueOneofValueArgs:
                 CloudControlParameterSpecDefaultValueOneofValueParameterValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecDefaultValueOneofValueParameterValueArgsDict(TypedDict):
     bool_value: NotRequired[pulumi.Input[_builtins.bool]]
@@ -394,12 +410,14 @@ class CloudControlParameterSpecDefaultValueOneofValueParameterValueArgs:
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -417,12 +435,14 @@ class CloudControlParameterSpecDefaultValueOneofValueParameterValueArgs:
                 CloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueArgsDict(
     TypedDict
@@ -438,7 +458,10 @@ class CloudControlParameterSpecDefaultValueOneofValueParameterValueStringListVal
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecDefaultValueStringListValueArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -452,7 +475,10 @@ class CloudControlParameterSpecDefaultValueStringListValueArgs:
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterArgsDict(TypedDict):
     is_required: pulumi.Input[_builtins.bool]
@@ -506,17 +532,20 @@ class CloudControlParameterSpecSubParameterArgs:
     @pulumi.getter(name="isRequired")
     def is_required(self) -> pulumi.Input[_builtins.bool]: ...
     @is_required.setter
-    def is_required(self, value: pulumi.Input[_builtins.bool]): ...
+    def is_required(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="valueType")
     def value_type(self) -> pulumi.Input[_builtins.str]: ...
     @value_type.setter
-    def value_type(self, value: pulumi.Input[_builtins.str]): ...
+    def value_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
     def default_value(
@@ -530,17 +559,20 @@ class CloudControlParameterSpecSubParameterArgs:
         value: Optional[
             pulumi.Input[CloudControlParameterSpecSubParameterDefaultValueArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="substitutionRules")
     def substitution_rules(
@@ -564,7 +596,8 @@ class CloudControlParameterSpecSubParameterArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def validation(
@@ -578,7 +611,8 @@ class CloudControlParameterSpecSubParameterArgs:
         value: Optional[
             pulumi.Input[CloudControlParameterSpecSubParameterValidationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterDefaultValueArgsDict(TypedDict):
     bool_value: NotRequired[pulumi.Input[_builtins.bool]]
@@ -618,12 +652,14 @@ class CloudControlParameterSpecSubParameterDefaultValueArgs:
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oneofValue")
     def oneof_value(
@@ -639,7 +675,8 @@ class CloudControlParameterSpecSubParameterDefaultValueArgs:
                 CloudControlParameterSpecSubParameterDefaultValueOneofValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -657,12 +694,14 @@ class CloudControlParameterSpecSubParameterDefaultValueArgs:
                 CloudControlParameterSpecSubParameterDefaultValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterDefaultValueOneofValueArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -688,7 +727,8 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -706,7 +746,8 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueArgs:
                 CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueArgsDict(
     TypedDict
@@ -738,12 +779,14 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueA
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -761,12 +804,14 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueA
                 CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueStringListValueArgsDict(
     TypedDict
@@ -782,7 +827,10 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueS
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterDefaultValueStringListValueArgsDict(
     TypedDict
@@ -798,7 +846,10 @@ class CloudControlParameterSpecSubParameterDefaultValueStringListValueArgs:
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterSubstitutionRuleArgsDict(TypedDict):
     attribute_substitution_rule: NotRequired[
@@ -845,7 +896,8 @@ class CloudControlParameterSpecSubParameterSubstitutionRuleArgs:
                 CloudControlParameterSpecSubParameterSubstitutionRuleAttributeSubstitutionRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placeholderSubstitutionRule")
     def placeholder_substitution_rule(
@@ -863,7 +915,8 @@ class CloudControlParameterSpecSubParameterSubstitutionRuleArgs:
                 CloudControlParameterSpecSubParameterSubstitutionRulePlaceholderSubstitutionRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterSubstitutionRuleAttributeSubstitutionRuleArgsDict(
     TypedDict
@@ -879,7 +932,8 @@ class CloudControlParameterSpecSubParameterSubstitutionRuleAttributeSubstitution
     @pulumi.getter
     def attribute(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @attribute.setter
-    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterSubstitutionRulePlaceholderSubstitutionRuleArgsDict(
     TypedDict
@@ -895,7 +949,8 @@ class CloudControlParameterSpecSubParameterSubstitutionRulePlaceholderSubstituti
     @pulumi.getter
     def attribute(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @attribute.setter
-    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationArgsDict(TypedDict):
     allowed_values: NotRequired[
@@ -946,7 +1001,8 @@ class CloudControlParameterSpecSubParameterValidationArgs:
                 CloudControlParameterSpecSubParameterValidationAllowedValuesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intRange")
     def int_range(
@@ -960,7 +1016,8 @@ class CloudControlParameterSpecSubParameterValidationArgs:
         value: Optional[
             pulumi.Input[CloudControlParameterSpecSubParameterValidationIntRangeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexpPattern")
     def regexp_pattern(
@@ -976,7 +1033,8 @@ class CloudControlParameterSpecSubParameterValidationArgs:
                 CloudControlParameterSpecSubParameterValidationRegexpPatternArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationAllowedValuesArgsDict(TypedDict):
     values: pulumi.Input[
@@ -1021,7 +1079,8 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueArgsDict(
     TypedDict
@@ -1063,12 +1122,14 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueArgs:
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oneofValue")
     def oneof_value(
@@ -1086,7 +1147,8 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueArgs:
                 CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -1104,12 +1166,14 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueArgs:
                 CloudControlParameterSpecSubParameterValidationAllowedValuesValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueArgsDict(
     TypedDict
@@ -1137,7 +1201,8 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -1155,7 +1220,8 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
                 CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueParameterValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueParameterValueArgsDict(
     TypedDict
@@ -1187,12 +1253,14 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -1210,12 +1278,14 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
                 CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueParameterValueStringListValueArgsDict(
     TypedDict
@@ -1231,7 +1301,10 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueStringListValueArgsDict(
     TypedDict
@@ -1247,7 +1320,10 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueStringLis
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationIntRangeArgsDict(TypedDict):
     max: pulumi.Input[_builtins.str]
@@ -1262,12 +1338,14 @@ class CloudControlParameterSpecSubParameterValidationIntRangeArgs:
     @pulumi.getter
     def max(self) -> pulumi.Input[_builtins.str]: ...
     @max.setter
-    def max(self, value: pulumi.Input[_builtins.str]): ...
+    def max(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(self) -> pulumi.Input[_builtins.str]: ...
     @min.setter
-    def min(self, value: pulumi.Input[_builtins.str]): ...
+    def min(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubParameterValidationRegexpPatternArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
@@ -1279,7 +1357,8 @@ class CloudControlParameterSpecSubParameterValidationRegexpPatternArgs:
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubstitutionRuleArgsDict(TypedDict):
     attribute_substitution_rule: NotRequired[
@@ -1326,7 +1405,8 @@ class CloudControlParameterSpecSubstitutionRuleArgs:
                 CloudControlParameterSpecSubstitutionRuleAttributeSubstitutionRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placeholderSubstitutionRule")
     def placeholder_substitution_rule(
@@ -1344,7 +1424,8 @@ class CloudControlParameterSpecSubstitutionRuleArgs:
                 CloudControlParameterSpecSubstitutionRulePlaceholderSubstitutionRuleArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubstitutionRuleAttributeSubstitutionRuleArgsDict(
     TypedDict
@@ -1360,7 +1441,8 @@ class CloudControlParameterSpecSubstitutionRuleAttributeSubstitutionRuleArgs:
     @pulumi.getter
     def attribute(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @attribute.setter
-    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecSubstitutionRulePlaceholderSubstitutionRuleArgsDict(
     TypedDict
@@ -1376,7 +1458,8 @@ class CloudControlParameterSpecSubstitutionRulePlaceholderSubstitutionRuleArgs:
     @pulumi.getter
     def attribute(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @attribute.setter
-    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationArgsDict(TypedDict):
     allowed_values: NotRequired[
@@ -1417,7 +1500,8 @@ class CloudControlParameterSpecValidationArgs:
         value: Optional[
             pulumi.Input[CloudControlParameterSpecValidationAllowedValuesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intRange")
     def int_range(
@@ -1427,7 +1511,8 @@ class CloudControlParameterSpecValidationArgs:
     def int_range(
         self,
         value: Optional[pulumi.Input[CloudControlParameterSpecValidationIntRangeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexpPattern")
     def regexp_pattern(
@@ -1441,7 +1526,8 @@ class CloudControlParameterSpecValidationArgs:
         value: Optional[
             pulumi.Input[CloudControlParameterSpecValidationRegexpPatternArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationAllowedValuesArgsDict(TypedDict):
     values: pulumi.Input[
@@ -1478,7 +1564,8 @@ class CloudControlParameterSpecValidationAllowedValuesArgs:
                 pulumi.Input[CloudControlParameterSpecValidationAllowedValuesValueArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationAllowedValuesValueArgsDict(TypedDict):
     bool_value: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1518,12 +1605,14 @@ class CloudControlParameterSpecValidationAllowedValuesValueArgs:
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oneofValue")
     def oneof_value(
@@ -1541,7 +1630,8 @@ class CloudControlParameterSpecValidationAllowedValuesValueArgs:
                 CloudControlParameterSpecValidationAllowedValuesValueOneofValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -1559,12 +1649,14 @@ class CloudControlParameterSpecValidationAllowedValuesValueArgs:
                 CloudControlParameterSpecValidationAllowedValuesValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationAllowedValuesValueOneofValueArgsDict(
     TypedDict
@@ -1592,7 +1684,8 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -1610,7 +1703,8 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueArgs:
                 CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterValueArgsDict(
     TypedDict
@@ -1642,12 +1736,14 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterVa
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -1665,12 +1761,14 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterVa
                 CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterValueStringListValueArgsDict(
     TypedDict
@@ -1686,7 +1784,10 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterVa
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationAllowedValuesValueStringListValueArgsDict(
     TypedDict
@@ -1702,7 +1803,10 @@ class CloudControlParameterSpecValidationAllowedValuesValueStringListValueArgs:
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationIntRangeArgsDict(TypedDict):
     max: pulumi.Input[_builtins.str]
@@ -1717,12 +1821,14 @@ class CloudControlParameterSpecValidationIntRangeArgs:
     @pulumi.getter
     def max(self) -> pulumi.Input[_builtins.str]: ...
     @max.setter
-    def max(self, value: pulumi.Input[_builtins.str]): ...
+    def max(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def min(self) -> pulumi.Input[_builtins.str]: ...
     @min.setter
-    def min(self, value: pulumi.Input[_builtins.str]): ...
+    def min(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CloudControlParameterSpecValidationRegexpPatternArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
@@ -1734,7 +1840,8 @@ class CloudControlParameterSpecValidationRegexpPatternArgs:
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CloudControlRuleArgsDict(TypedDict):
     rule_action_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1758,7 +1865,8 @@ class CloudControlRuleArgs:
     @rule_action_types.setter
     def rule_action_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="celExpression")
     def cel_expression(
@@ -1767,12 +1875,14 @@ class CloudControlRuleArgs:
     @cel_expression.setter
     def cel_expression(
         self, value: Optional[pulumi.Input[CloudControlRuleCelExpressionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CloudControlRuleCelExpressionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -1794,7 +1904,8 @@ class CloudControlRuleCelExpressionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypesValues")
     def resource_types_values(
@@ -1808,7 +1919,8 @@ class CloudControlRuleCelExpressionArgs:
         value: Optional[
             pulumi.Input[CloudControlRuleCelExpressionResourceTypesValuesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CloudControlRuleCelExpressionResourceTypesValuesArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1822,7 +1934,10 @@ class CloudControlRuleCelExpressionResourceTypesValuesArgs:
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class FrameworkCloudControlDetailArgsDict(TypedDict):
     major_revision_id: pulumi.Input[_builtins.str]
@@ -1850,12 +1965,14 @@ class FrameworkCloudControlDetailArgs:
     @pulumi.getter(name="majorRevisionId")
     def major_revision_id(self) -> pulumi.Input[_builtins.str]: ...
     @major_revision_id.setter
-    def major_revision_id(self, value: pulumi.Input[_builtins.str]): ...
+    def major_revision_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -1871,7 +1988,8 @@ class FrameworkCloudControlDetailArgs:
                 Sequence[pulumi.Input[FrameworkCloudControlDetailParameterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkCloudControlDetailParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -1893,7 +2011,8 @@ class FrameworkCloudControlDetailParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -1903,7 +2022,8 @@ class FrameworkCloudControlDetailParameterArgs:
     def parameter_value(
         self,
         value: pulumi.Input[FrameworkCloudControlDetailParameterParameterValueArgs],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkCloudControlDetailParameterParameterValueArgsDict(TypedDict):
     bool_value: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1943,12 +2063,14 @@ class FrameworkCloudControlDetailParameterParameterValueArgs:
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oneofValue")
     def oneof_value(
@@ -1964,7 +2086,8 @@ class FrameworkCloudControlDetailParameterParameterValueArgs:
                 FrameworkCloudControlDetailParameterParameterValueOneofValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -1982,12 +2105,14 @@ class FrameworkCloudControlDetailParameterParameterValueArgs:
                 FrameworkCloudControlDetailParameterParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FrameworkCloudControlDetailParameterParameterValueOneofValueArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -2013,7 +2138,8 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -2031,7 +2157,8 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueArgs:
                 FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValueArgsDict(
     TypedDict
@@ -2063,12 +2190,14 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValue
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -2086,12 +2215,14 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValue
                 FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValueStringListValueArgsDict(
     TypedDict
@@ -2107,7 +2238,10 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValue
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class FrameworkCloudControlDetailParameterParameterValueStringListValueArgsDict(
     TypedDict
@@ -2123,7 +2257,10 @@ class FrameworkCloudControlDetailParameterParameterValueStringListValueArgs:
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlDeploymentReferenceArgsDict(TypedDict):
     cloud_control_deployment: NotRequired[pulumi.Input[_builtins.str]]
@@ -2141,7 +2278,8 @@ class FrameworkDeploymentCloudControlDeploymentReferenceArgs:
     @cloud_control_deployment.setter
     def cloud_control_deployment(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataArgsDict(TypedDict):
     cloud_control_details: pulumi.Input[
@@ -2172,12 +2310,14 @@ class FrameworkDeploymentCloudControlMetadataArgs:
         value: pulumi.Input[
             FrameworkDeploymentCloudControlMetadataCloudControlDetailsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enforcementMode")
     def enforcement_mode(self) -> pulumi.Input[_builtins.str]: ...
     @enforcement_mode.setter
-    def enforcement_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def enforcement_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsArgsDict(TypedDict):
     major_revision_id: pulumi.Input[_builtins.str]
@@ -2213,12 +2353,14 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsArgs:
     @pulumi.getter(name="majorRevisionId")
     def major_revision_id(self) -> pulumi.Input[_builtins.str]: ...
     @major_revision_id.setter
-    def major_revision_id(self, value: pulumi.Input[_builtins.str]): ...
+    def major_revision_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -2244,7 +2386,8 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterArgsDict(
     TypedDict
@@ -2268,7 +2411,8 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -2282,7 +2426,8 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterArgs:
         value: pulumi.Input[
             FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueArgsDict(
     TypedDict
@@ -2324,12 +2469,14 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="oneofValue")
     def oneof_value(
@@ -2347,7 +2494,8 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
                 FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -2365,12 +2513,14 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
                 FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueArgsDict(
     TypedDict
@@ -2398,7 +2548,8 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parameterValue")
     def parameter_value(
@@ -2416,7 +2567,8 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
                 FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueParameterValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueParameterValueArgsDict(
     TypedDict
@@ -2448,12 +2600,14 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
     @pulumi.getter(name="boolValue")
     def bool_value(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bool_value.setter
-    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bool_value(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberValue")
     def number_value(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @number_value.setter
-    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def number_value(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringListValue")
     def string_list_value(
@@ -2471,12 +2625,14 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
                 FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueParameterValueStringListValueArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stringValue")
     def string_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @string_value.setter
-    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def string_value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueParameterValueStringListValueArgsDict(
     TypedDict
@@ -2492,7 +2648,10 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueStringListValueArgsDict(
     TypedDict
@@ -2508,7 +2667,10 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentFrameworkArgsDict(TypedDict):
     framework: pulumi.Input[_builtins.str]
@@ -2526,12 +2688,14 @@ class FrameworkDeploymentFrameworkArgs:
     @pulumi.getter
     def framework(self) -> pulumi.Input[_builtins.str]: ...
     @framework.setter
-    def framework(self, value: pulumi.Input[_builtins.str]): ...
+    def framework(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="majorRevisionId")
     def major_revision_id(self) -> pulumi.Input[_builtins.str]: ...
     @major_revision_id.setter
-    def major_revision_id(self, value: pulumi.Input[_builtins.str]): ...
+    def major_revision_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FrameworkDeploymentTargetResourceConfigArgsDict(TypedDict):
     existing_target_resource: NotRequired[pulumi.Input[_builtins.str]]
@@ -2559,7 +2723,8 @@ class FrameworkDeploymentTargetResourceConfigArgs:
     @existing_target_resource.setter
     def existing_target_resource(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetResourceCreationConfig")
     def target_resource_creation_config(
@@ -2577,7 +2742,8 @@ class FrameworkDeploymentTargetResourceConfigArgs:
                 FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigArgsDict(
     TypedDict
@@ -2626,7 +2792,8 @@ class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigArgs:
                 FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectCreationConfig")
     def project_creation_config(
@@ -2644,7 +2811,8 @@ class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigArgs:
                 FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfigArgsDict(
     TypedDict
@@ -2664,12 +2832,14 @@ class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderC
     @pulumi.getter(name="folderDisplayName")
     def folder_display_name(self) -> pulumi.Input[_builtins.str]: ...
     @folder_display_name.setter
-    def folder_display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def folder_display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> pulumi.Input[_builtins.str]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[_builtins.str]): ...
+    def parent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfigArgsDict(
     TypedDict
@@ -2691,14 +2861,17 @@ class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProject
     @pulumi.getter(name="billingAccountId")
     def billing_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @billing_account_id.setter
-    def billing_account_id(self, value: pulumi.Input[_builtins.str]): ...
+    def billing_account_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parent(self) -> pulumi.Input[_builtins.str]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[_builtins.str]): ...
+    def parent(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectDisplayName")
     def project_display_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_display_name.setter
-    def project_display_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_display_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

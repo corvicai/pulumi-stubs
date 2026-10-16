@@ -55,7 +55,8 @@ class GetVpcConnectionResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetVpcConnectionResult(GetVpcConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcConnectionResult]:
+        ...
 
 def get_vpc_connection(
     arn: Optional[_builtins.str] = ...,

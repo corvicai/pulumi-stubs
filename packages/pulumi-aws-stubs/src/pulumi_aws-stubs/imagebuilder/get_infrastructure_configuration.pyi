@@ -106,7 +106,10 @@ class GetInfrastructureConfigurationResult:
 class AwaitableGetInfrastructureConfigurationResult(
     GetInfrastructureConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetInfrastructureConfigurationResult]:
+        ...
 
 def get_infrastructure_configuration(
     arn: Optional[_builtins.str] = ...,

@@ -21,7 +21,8 @@ class GetOnlineDeploymentLogsResult:
     def content(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetOnlineDeploymentLogsResult(GetOnlineDeploymentLogsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOnlineDeploymentLogsResult]:
+        ...
 
 def get_online_deployment_logs(
     container_type: Optional[Union[_builtins.str, ContainerType]] = ...,

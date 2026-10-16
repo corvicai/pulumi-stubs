@@ -51,17 +51,22 @@ class DiagnosticStoragePropertiesArgs:
     @authentication_type.setter
     def authentication_type(
         self, value: pulumi.Input[Union[_builtins.str, AuthenticationType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionString")
     def connection_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_string.setter
-    def connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def connection_string(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class EncryptionArgsDict(TypedDict):
     key_vault_key_uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -79,12 +84,18 @@ class EncryptionArgs:
     @pulumi.getter(name="keyVaultKeyUri")
     def key_vault_key_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_key_uri.setter
-    def key_vault_key_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_key_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentity")
     def user_assigned_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_assigned_identity.setter
-    def user_assigned_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_assigned_identity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class GroupConnectivityInformationArgsDict(TypedDict):
     customer_visible_fqdns: NotRequired[
@@ -112,7 +123,8 @@ class GroupConnectivityInformationArgs:
     @customer_visible_fqdns.setter
     def customer_visible_fqdns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceArmRegion")
     def private_link_service_arm_region(
@@ -121,12 +133,14 @@ class GroupConnectivityInformationArgs:
     @private_link_service_arm_region.setter
     def private_link_service_arm_region(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectMapId")
     def redirect_map_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_map_id.setter
-    def redirect_map_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_map_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class IotHubSettingsArgsDict(TypedDict):
     resource_id: pulumi.Input[_builtins.str]
@@ -138,7 +152,8 @@ class IotHubSettingsArgs:
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -164,7 +179,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -173,7 +189,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionArgsDict(TypedDict):
     private_link_service_connection_state: pulumi.Input[
@@ -199,7 +216,8 @@ class PrivateEndpointConnectionArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupIds")
     def group_ids(
@@ -208,7 +226,8 @@ class PrivateEndpointConnectionArgs:
     @group_ids.setter
     def group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
     actions_required: NotRequired[pulumi.Input[_builtins.str]]
@@ -232,12 +251,16 @@ class PrivateLinkServiceConnectionStateArgs:
     @pulumi.getter(name="actionsRequired")
     def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @actions_required.setter
-    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def actions_required(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -251,7 +274,8 @@ class PrivateLinkServiceConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateLinkServiceConnectionArgsDict(TypedDict):
     group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -275,17 +299,20 @@ class PrivateLinkServiceConnectionArgs:
     @group_ids.setter
     def group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestMessage")
     def request_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_message.setter
-    def request_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PrivateLinkServiceProxyArgsDict(TypedDict):
     group_connectivity_information: NotRequired[
@@ -322,12 +349,14 @@ class PrivateLinkServiceProxyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[GroupConnectivityInformationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remotePrivateLinkServiceConnectionState")
     def remote_private_link_service_connection_state(
@@ -336,7 +365,8 @@ class PrivateLinkServiceProxyArgs:
     @remote_private_link_service_connection_state.setter
     def remote_private_link_service_connection_state(
         self, value: Optional[pulumi.Input[PrivateLinkServiceConnectionStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RemotePrivateEndpointArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -378,24 +408,30 @@ class RemotePrivateEndpointArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="immutableResourceId")
     def immutable_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @immutable_resource_id.setter
-    def immutable_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def immutable_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="immutableSubscriptionId")
     def immutable_subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @immutable_subscription_id.setter
     def immutable_subscription_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="manualPrivateLinkServiceConnections")
     def manual_private_link_service_connections(
@@ -409,7 +445,8 @@ class RemotePrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateLinkServiceConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnections")
     def private_link_service_connections(
@@ -423,7 +460,8 @@ class RemotePrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateLinkServiceConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceProxies")
     def private_link_service_proxies(
@@ -437,9 +475,13 @@ class RemotePrivateEndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateLinkServiceProxyArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vnetTrafficTag")
     def vnet_traffic_tag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vnet_traffic_tag.setter
-    def vnet_traffic_tag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vnet_traffic_tag(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...

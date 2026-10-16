@@ -47,7 +47,8 @@ class GetPeeredDnsDomainResult:
     def service(self) -> _builtins.str: ...
 
 class AwaitableGetPeeredDnsDomainResult(GetPeeredDnsDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPeeredDnsDomainResult]:
+        ...
 
 def get_peered_dns_domain(
     name: Optional[_builtins.str] = ...,

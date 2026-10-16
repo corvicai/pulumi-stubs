@@ -34,7 +34,8 @@ class GetTagOperationLinkResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTagOperationLinkResult(GetTagOperationLinkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagOperationLinkResult]:
+        ...
 
 def get_tag_operation_link(
     operation_link_id: Optional[_builtins.str] = ...,

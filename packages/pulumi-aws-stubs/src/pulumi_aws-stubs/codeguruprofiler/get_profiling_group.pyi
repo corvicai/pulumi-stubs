@@ -64,7 +64,8 @@ class GetProfilingGroupResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetProfilingGroupResult(GetProfilingGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProfilingGroupResult]:
+        ...
 
 def get_profiling_group(
     name: Optional[_builtins.str] = ...,

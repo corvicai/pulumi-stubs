@@ -33,22 +33,26 @@ class S3AccessPointAttachmentArgs:
     @openzfs_configuration.setter
     def openzfs_configuration(
         self, value: pulumi.Input[S3AccessPointAttachmentOpenzfsConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3AccessPoint")
     def s3_access_point(
@@ -57,7 +61,8 @@ class S3AccessPointAttachmentArgs:
     @s3_access_point.setter
     def s3_access_point(
         self, value: Optional[pulumi.Input[S3AccessPointAttachmentS3AccessPointArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -66,7 +71,8 @@ class S3AccessPointAttachmentArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[S3AccessPointAttachmentTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _S3AccessPointAttachmentState:
@@ -90,7 +96,8 @@ class _S3AccessPointAttachmentState:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openzfsConfiguration")
     def openzfs_configuration(
@@ -100,12 +107,14 @@ class _S3AccessPointAttachmentState:
     def openzfs_configuration(
         self,
         value: Optional[pulumi.Input[S3AccessPointAttachmentOpenzfsConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3AccessPoint")
     def s3_access_point(
@@ -114,17 +123,24 @@ class _S3AccessPointAttachmentState:
     @s3_access_point.setter
     def s3_access_point(
         self, value: Optional[pulumi.Input[S3AccessPointAttachmentS3AccessPointArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3AccessPointAlias")
     def s3_access_point_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_access_point_alias.setter
-    def s3_access_point_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_access_point_alias(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3AccessPointArn")
     def s3_access_point_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @s3_access_point_arn.setter
-    def s3_access_point_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def s3_access_point_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -133,12 +149,14 @@ class _S3AccessPointAttachmentState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[S3AccessPointAttachmentTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class S3AccessPointAttachment(pulumi.CustomResource):

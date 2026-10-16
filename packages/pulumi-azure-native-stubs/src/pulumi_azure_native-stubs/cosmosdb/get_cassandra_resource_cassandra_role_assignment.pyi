@@ -58,7 +58,10 @@ class GetCassandraResourceCassandraRoleAssignmentResult:
 class AwaitableGetCassandraResourceCassandraRoleAssignmentResult(
     GetCassandraResourceCassandraRoleAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCassandraResourceCassandraRoleAssignmentResult]:
+        ...
 
 def get_cassandra_resource_cassandra_role_assignment(
     account_name: Optional[_builtins.str] = ...,

@@ -29,7 +29,10 @@ class PlanArgs:
     @pulumi.getter
     def rules(self) -> pulumi.Input[Sequence[pulumi.Input[PlanRuleArgs]]]: ...
     @rules.setter
-    def rules(self, value: pulumi.Input[Sequence[pulumi.Input[PlanRuleArgs]]]): ...
+    def rules(
+        self, value: pulumi.Input[Sequence[pulumi.Input[PlanRuleArgs]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="advancedBackupSettings")
     def advanced_backup_settings(
@@ -43,17 +46,20 @@ class PlanArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PlanAdvancedBackupSettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scanSettings")
     def scan_settings(
@@ -62,7 +68,8 @@ class PlanArgs:
     @scan_settings.setter
     def scan_settings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanScanSettingArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -71,7 +78,8 @@ class PlanArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PlanState:
@@ -107,29 +115,34 @@ class _PlanState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PlanAdvancedBackupSettingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[PlanRuleArgs]]]]: ...
     @rules.setter
     def rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scanSettings")
     def scan_settings(
@@ -138,7 +151,8 @@ class _PlanState:
     @scan_settings.setter
     def scan_settings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlanScanSettingArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -147,7 +161,8 @@ class _PlanState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -156,12 +171,14 @@ class _PlanState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:backup/plan:Plan")
 class Plan(pulumi.CustomResource):

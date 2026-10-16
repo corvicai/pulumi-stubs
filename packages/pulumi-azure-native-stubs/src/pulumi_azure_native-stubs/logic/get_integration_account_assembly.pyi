@@ -48,7 +48,10 @@ class GetIntegrationAccountAssemblyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIntegrationAccountAssemblyResult(GetIntegrationAccountAssemblyResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationAccountAssemblyResult]:
+        ...
 
 def get_integration_account_assembly(
     assembly_artifact_name: Optional[_builtins.str] = ...,

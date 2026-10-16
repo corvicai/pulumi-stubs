@@ -172,7 +172,8 @@ class GetLoadBalancerResult:
     def zone_id(self) -> _builtins.str: ...
 
 class AwaitableGetLoadBalancerResult(GetLoadBalancerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLoadBalancerResult]:
+        ...
 
 def get_load_balancer(
     arn: Optional[_builtins.str] = ...,

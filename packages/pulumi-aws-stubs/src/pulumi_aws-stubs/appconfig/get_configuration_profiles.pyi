@@ -31,7 +31,8 @@ class GetConfigurationProfilesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationProfilesResult(GetConfigurationProfilesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationProfilesResult]:
+        ...
 
 def get_configuration_profiles(
     application_id: Optional[_builtins.str] = ...,

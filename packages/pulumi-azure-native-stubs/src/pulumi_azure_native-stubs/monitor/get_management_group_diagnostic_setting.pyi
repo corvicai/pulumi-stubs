@@ -72,7 +72,10 @@ class GetManagementGroupDiagnosticSettingResult:
 class AwaitableGetManagementGroupDiagnosticSettingResult(
     GetManagementGroupDiagnosticSettingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagementGroupDiagnosticSettingResult]:
+        ...
 
 def get_management_group_diagnostic_setting(
     management_group_id: Optional[_builtins.str] = ...,

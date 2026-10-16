@@ -70,17 +70,20 @@ class ExperimentTemplateActionArgs:
     @pulumi.getter(name="actionId")
     def action_id(self) -> pulumi.Input[_builtins.str]: ...
     @action_id.setter
-    def action_id(self, value: pulumi.Input[_builtins.str]): ...
+    def action_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -94,7 +97,8 @@ class ExperimentTemplateActionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ExperimentTemplateActionParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startAfters")
     def start_afters(
@@ -103,14 +107,16 @@ class ExperimentTemplateActionArgs:
     @start_afters.setter
     def start_afters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def target(self) -> Optional[pulumi.Input[ExperimentTemplateActionTargetArgs]]: ...
     @target.setter
     def target(
         self, value: Optional[pulumi.Input[ExperimentTemplateActionTargetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateActionParameterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -128,12 +134,14 @@ class ExperimentTemplateActionParameterArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ExperimentTemplateActionTargetArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -151,12 +159,14 @@ class ExperimentTemplateActionTargetArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ExperimentTemplateExperimentOptionsArgsDict(TypedDict):
     account_targeting: NotRequired[pulumi.Input[_builtins.str]]
@@ -174,14 +184,18 @@ class ExperimentTemplateExperimentOptionsArgs:
     @pulumi.getter(name="accountTargeting")
     def account_targeting(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_targeting.setter
-    def account_targeting(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_targeting(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emptyTargetResolutionMode")
     def empty_target_resolution_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @empty_target_resolution_mode.setter
     def empty_target_resolution_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateExperimentReportConfigurationArgsDict(TypedDict):
     data_sources: NotRequired[
@@ -220,7 +234,8 @@ class ExperimentTemplateExperimentReportConfigurationArgs:
         value: Optional[
             pulumi.Input[ExperimentTemplateExperimentReportConfigurationDataSourcesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def outputs(
@@ -234,19 +249,24 @@ class ExperimentTemplateExperimentReportConfigurationArgs:
         value: Optional[
             pulumi.Input[ExperimentTemplateExperimentReportConfigurationOutputsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="postExperimentDuration")
     def post_experiment_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @post_experiment_duration.setter
     def post_experiment_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preExperimentDuration")
     def pre_experiment_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pre_experiment_duration.setter
-    def pre_experiment_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pre_experiment_duration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateExperimentReportConfigurationDataSourcesArgsDict(TypedDict):
     cloudwatch_dashboards: NotRequired[
@@ -299,7 +319,8 @@ class ExperimentTemplateExperimentReportConfigurationDataSourcesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardArgsDict(
     TypedDict
@@ -315,7 +336,8 @@ class ExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashbo
     @pulumi.getter(name="dashboardArn")
     def dashboard_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dashboard_arn.setter
-    def dashboard_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dashboard_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ExperimentTemplateExperimentReportConfigurationOutputsArgsDict(TypedDict):
     s3_configuration: NotRequired[
@@ -352,7 +374,8 @@ class ExperimentTemplateExperimentReportConfigurationOutputsArgs:
                 ExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationArgsDict(
     TypedDict
@@ -372,12 +395,14 @@ class ExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ExperimentTemplateLogConfigurationArgsDict(TypedDict):
     log_schema_version: pulumi.Input[_builtins.int]
@@ -409,7 +434,8 @@ class ExperimentTemplateLogConfigurationArgs:
     @pulumi.getter(name="logSchemaVersion")
     def log_schema_version(self) -> pulumi.Input[_builtins.int]: ...
     @log_schema_version.setter
-    def log_schema_version(self, value: pulumi.Input[_builtins.int]): ...
+    def log_schema_version(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchLogsConfiguration")
     def cloudwatch_logs_configuration(
@@ -425,7 +451,8 @@ class ExperimentTemplateLogConfigurationArgs:
                 ExperimentTemplateLogConfigurationCloudwatchLogsConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Configuration")
     def s3_configuration(
@@ -439,7 +466,8 @@ class ExperimentTemplateLogConfigurationArgs:
         value: Optional[
             pulumi.Input[ExperimentTemplateLogConfigurationS3ConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateLogConfigurationCloudwatchLogsConfigurationArgsDict(TypedDict):
     log_group_arn: pulumi.Input[_builtins.str]
@@ -451,7 +479,8 @@ class ExperimentTemplateLogConfigurationCloudwatchLogsConfigurationArgs:
     @pulumi.getter(name="logGroupArn")
     def log_group_arn(self) -> pulumi.Input[_builtins.str]: ...
     @log_group_arn.setter
-    def log_group_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ExperimentTemplateLogConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -469,12 +498,14 @@ class ExperimentTemplateLogConfigurationS3ConfigurationArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ExperimentTemplateStopConditionArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
@@ -492,12 +523,14 @@ class ExperimentTemplateStopConditionArgs:
     @pulumi.getter
     def source(self) -> pulumi.Input[_builtins.str]: ...
     @source.setter
-    def source(self, value: pulumi.Input[_builtins.str]): ...
+    def source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ExperimentTemplateTargetArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -541,17 +574,20 @@ class ExperimentTemplateTargetArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> pulumi.Input[_builtins.str]: ...
     @resource_type.setter
-    def resource_type(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectionMode")
     def selection_mode(self) -> pulumi.Input[_builtins.str]: ...
     @selection_mode.setter
-    def selection_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def selection_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filters(
@@ -565,7 +601,8 @@ class ExperimentTemplateTargetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ExperimentTemplateTargetFilterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -574,7 +611,8 @@ class ExperimentTemplateTargetArgs:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArns")
     def resource_arns(
@@ -583,7 +621,8 @@ class ExperimentTemplateTargetArgs:
     @resource_arns.setter
     def resource_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -599,7 +638,8 @@ class ExperimentTemplateTargetArgs:
                 Sequence[pulumi.Input[ExperimentTemplateTargetResourceTagArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateTargetFilterArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
@@ -617,12 +657,16 @@ class ExperimentTemplateTargetFilterArgs:
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @values.setter
-    def values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def values(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ExperimentTemplateTargetResourceTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -640,9 +684,11 @@ class ExperimentTemplateTargetResourceTagArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

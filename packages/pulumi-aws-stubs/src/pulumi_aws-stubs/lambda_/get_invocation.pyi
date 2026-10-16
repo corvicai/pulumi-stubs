@@ -47,7 +47,8 @@ class GetInvocationResult:
     def tenant_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetInvocationResult(GetInvocationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInvocationResult]:
+        ...
 
 def get_invocation(
     function_name: Optional[_builtins.str] = ...,

@@ -14,7 +14,8 @@ class OrganizationsAccessArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OrganizationsAccessState:
@@ -25,7 +26,8 @@ class _OrganizationsAccessState:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OrganizationsAccess(pulumi.CustomResource):

@@ -30,27 +30,36 @@ class FluidRelayServerArgs:
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group.setter
-    def resource_group(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[EncryptionPropertiesArgs]]: ...
     @encryption.setter
-    def encryption(self, value: Optional[pulumi.Input[EncryptionPropertiesArgs]]): ...
+    def encryption(
+        self, value: Optional[pulumi.Input[EncryptionPropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fluidRelayServerName")
     def fluid_relay_server_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fluid_relay_server_name.setter
-    def fluid_relay_server_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fluid_relay_server_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -59,7 +68,8 @@ class FluidRelayServerArgs:
     @provisioning_state.setter
     def provisioning_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def storagesku(
@@ -68,7 +78,8 @@ class FluidRelayServerArgs:
     @storagesku.setter
     def storagesku(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageSKU]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -77,7 +88,8 @@ class FluidRelayServerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:fluidrelay:FluidRelayServer")
 class FluidRelayServer(pulumi.CustomResource):

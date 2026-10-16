@@ -22,7 +22,8 @@ class ListListSchemaResult:
     def value(self) -> Optional[Sequence[outputs.SchemaResponse]]: ...
 
 class AwaitableListListSchemaResult(ListListSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListListSchemaResult]:
+        ...
 
 def list_list_schema(
     connection_id: Optional[_builtins.str] = ...,

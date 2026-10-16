@@ -96,7 +96,8 @@ class GetKubeEnvironmentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetKubeEnvironmentResult(GetKubeEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKubeEnvironmentResult]:
+        ...
 
 def get_kube_environment(
     name: Optional[_builtins.str] = ...,

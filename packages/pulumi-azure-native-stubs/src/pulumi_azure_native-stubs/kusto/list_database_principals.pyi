@@ -21,7 +21,8 @@ class ListDatabasePrincipalsResult:
     def value(self) -> Optional[Sequence[outputs.DatabasePrincipalResponse]]: ...
 
 class AwaitableListDatabasePrincipalsResult(ListDatabasePrincipalsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDatabasePrincipalsResult]:
+        ...
 
 def list_database_principals(
     cluster_name: Optional[_builtins.str] = ...,

@@ -44,12 +44,14 @@ class CustomRoutingEndpointGroupArgs:
                 pulumi.Input[CustomRoutingEndpointGroupDestinationConfigurationArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listenerArn")
     def listener_arn(self) -> pulumi.Input[_builtins.str]: ...
     @listener_arn.setter
-    def listener_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def listener_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointConfigurations")
     def endpoint_configurations(
@@ -69,12 +71,16 @@ class CustomRoutingEndpointGroupArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointGroupRegion")
     def endpoint_group_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_group_region.setter
-    def endpoint_group_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_group_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CustomRoutingEndpointGroupState:
@@ -103,7 +109,8 @@ class _CustomRoutingEndpointGroupState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationConfigurations")
     def destination_configurations(
@@ -125,7 +132,8 @@ class _CustomRoutingEndpointGroupState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointConfigurations")
     def endpoint_configurations(
@@ -145,17 +153,22 @@ class _CustomRoutingEndpointGroupState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointGroupRegion")
     def endpoint_group_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_group_region.setter
-    def endpoint_group_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_group_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listenerArn")
     def listener_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @listener_arn.setter
-    def listener_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def listener_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CustomRoutingEndpointGroup(pulumi.CustomResource):

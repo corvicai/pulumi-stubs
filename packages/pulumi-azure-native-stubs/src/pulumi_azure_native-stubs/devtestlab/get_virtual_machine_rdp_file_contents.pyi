@@ -22,7 +22,10 @@ class GetVirtualMachineRdpFileContentsResult:
 class AwaitableGetVirtualMachineRdpFileContentsResult(
     GetVirtualMachineRdpFileContentsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualMachineRdpFileContentsResult]:
+        ...
 
 def get_virtual_machine_rdp_file_contents(
     lab_name: Optional[_builtins.str] = ...,

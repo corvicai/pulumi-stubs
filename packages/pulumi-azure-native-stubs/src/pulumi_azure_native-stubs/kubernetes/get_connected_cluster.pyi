@@ -132,7 +132,8 @@ class GetConnectedClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectedClusterResult(GetConnectedClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectedClusterResult]:
+        ...
 
 def get_connected_cluster(
     cluster_name: Optional[_builtins.str] = ...,

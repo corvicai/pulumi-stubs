@@ -62,7 +62,8 @@ class GetEncryptionScopeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEncryptionScopeResult(GetEncryptionScopeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEncryptionScopeResult]:
+        ...
 
 def get_encryption_scope(
     account_name: Optional[_builtins.str] = ...,

@@ -56,7 +56,10 @@ class GetNetworkFunctionDefinitionGroupResult:
 class AwaitableGetNetworkFunctionDefinitionGroupResult(
     GetNetworkFunctionDefinitionGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkFunctionDefinitionGroupResult]:
+        ...
 
 def get_network_function_definition_group(
     network_function_definition_group_name: Optional[_builtins.str] = ...,

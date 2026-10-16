@@ -52,14 +52,16 @@ class ScheduleFlexibleTimeWindowArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumWindowInMinutes")
     def maximum_window_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_window_in_minutes.setter
     def maximum_window_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduleTargetArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -109,12 +111,14 @@ class ScheduleTargetArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deadLetterConfig")
     def dead_letter_config(
@@ -123,7 +127,8 @@ class ScheduleTargetArgs:
     @dead_letter_config.setter
     def dead_letter_config(
         self, value: Optional[pulumi.Input[ScheduleTargetDeadLetterConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecsParameters")
     def ecs_parameters(
@@ -132,7 +137,8 @@ class ScheduleTargetArgs:
     @ecs_parameters.setter
     def ecs_parameters(
         self, value: Optional[pulumi.Input[ScheduleTargetEcsParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventbridgeParameters")
     def eventbridge_parameters(
@@ -141,12 +147,14 @@ class ScheduleTargetArgs:
     @eventbridge_parameters.setter
     def eventbridge_parameters(
         self, value: Optional[pulumi.Input[ScheduleTargetEventbridgeParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def input(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input.setter
-    def input(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisParameters")
     def kinesis_parameters(
@@ -155,14 +163,16 @@ class ScheduleTargetArgs:
     @kinesis_parameters.setter
     def kinesis_parameters(
         self, value: Optional[pulumi.Input[ScheduleTargetKinesisParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryPolicy")
     def retry_policy(self) -> Optional[pulumi.Input[ScheduleTargetRetryPolicyArgs]]: ...
     @retry_policy.setter
     def retry_policy(
         self, value: Optional[pulumi.Input[ScheduleTargetRetryPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sagemakerPipelineParameters")
     def sagemaker_pipeline_parameters(
@@ -172,7 +182,8 @@ class ScheduleTargetArgs:
     def sagemaker_pipeline_parameters(
         self,
         value: Optional[pulumi.Input[ScheduleTargetSagemakerPipelineParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsParameters")
     def sqs_parameters(
@@ -181,7 +192,8 @@ class ScheduleTargetArgs:
     @sqs_parameters.setter
     def sqs_parameters(
         self, value: Optional[pulumi.Input[ScheduleTargetSqsParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduleTargetDeadLetterConfigArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -193,7 +205,8 @@ class ScheduleTargetDeadLetterConfigArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ScheduleTargetEcsParametersArgsDict(TypedDict):
     task_definition_arn: pulumi.Input[_builtins.str]
@@ -275,7 +288,8 @@ class ScheduleTargetEcsParametersArgs:
     @pulumi.getter(name="taskDefinitionArn")
     def task_definition_arn(self) -> pulumi.Input[_builtins.str]: ...
     @task_definition_arn.setter
-    def task_definition_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def task_definition_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityProviderStrategies")
     def capacity_provider_strategies(
@@ -299,29 +313,36 @@ class ScheduleTargetEcsParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEcsManagedTags")
     def enable_ecs_managed_tags(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_ecs_managed_tags.setter
     def enable_ecs_managed_tags(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableExecuteCommand")
     def enable_execute_command(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_execute_command.setter
-    def enable_execute_command(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_execute_command(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group.setter
-    def group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchType")
     def launch_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @launch_type.setter
-    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -335,7 +356,8 @@ class ScheduleTargetEcsParametersArgs:
         value: Optional[
             pulumi.Input[ScheduleTargetEcsParametersNetworkConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementConstraints")
     def placement_constraints(
@@ -355,7 +377,8 @@ class ScheduleTargetEcsParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementStrategies")
     def placement_strategies(
@@ -373,22 +396,28 @@ class ScheduleTargetEcsParametersArgs:
                 Sequence[pulumi.Input[ScheduleTargetEcsParametersPlacementStrategyArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformVersion")
     def platform_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_version.setter
-    def platform_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagateTags")
     def propagate_tags(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @propagate_tags.setter
-    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="referenceId")
     def reference_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reference_id.setter
-    def reference_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reference_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -397,12 +426,14 @@ class ScheduleTargetEcsParametersArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskCount")
     def task_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @task_count.setter
-    def task_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def task_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ScheduleTargetEcsParametersCapacityProviderStrategyArgsDict(TypedDict):
     capacity_provider: pulumi.Input[_builtins.str]
@@ -422,17 +453,20 @@ class ScheduleTargetEcsParametersCapacityProviderStrategyArgs:
     @pulumi.getter(name="capacityProvider")
     def capacity_provider(self) -> pulumi.Input[_builtins.str]: ...
     @capacity_provider.setter
-    def capacity_provider(self, value: pulumi.Input[_builtins.str]): ...
+    def capacity_provider(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def base(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @base.setter
-    def base(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def base(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def weight(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @weight.setter
-    def weight(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def weight(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class ScheduleTargetEcsParametersNetworkConfigurationArgsDict(TypedDict):
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -454,12 +488,18 @@ class ScheduleTargetEcsParametersNetworkConfigurationArgs:
     @pulumi.getter
     def subnets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnets.setter
-    def subnets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def subnets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assignPublicIp")
     def assign_public_ip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @assign_public_ip.setter
-    def assign_public_ip(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def assign_public_ip(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -468,7 +508,8 @@ class ScheduleTargetEcsParametersNetworkConfigurationArgs:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduleTargetEcsParametersPlacementConstraintArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -486,12 +527,14 @@ class ScheduleTargetEcsParametersPlacementConstraintArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expression.setter
-    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expression(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ScheduleTargetEcsParametersPlacementStrategyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -509,12 +552,14 @@ class ScheduleTargetEcsParametersPlacementStrategyArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field.setter
-    def field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ScheduleTargetEventbridgeParametersArgsDict(TypedDict):
     detail_type: pulumi.Input[_builtins.str]
@@ -532,12 +577,14 @@ class ScheduleTargetEventbridgeParametersArgs:
     @pulumi.getter(name="detailType")
     def detail_type(self) -> pulumi.Input[_builtins.str]: ...
     @detail_type.setter
-    def detail_type(self, value: pulumi.Input[_builtins.str]): ...
+    def detail_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> pulumi.Input[_builtins.str]: ...
     @source.setter
-    def source(self, value: pulumi.Input[_builtins.str]): ...
+    def source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ScheduleTargetKinesisParametersArgsDict(TypedDict):
     partition_key: pulumi.Input[_builtins.str]
@@ -549,7 +596,8 @@ class ScheduleTargetKinesisParametersArgs:
     @pulumi.getter(name="partitionKey")
     def partition_key(self) -> pulumi.Input[_builtins.str]: ...
     @partition_key.setter
-    def partition_key(self, value: pulumi.Input[_builtins.str]): ...
+    def partition_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ScheduleTargetRetryPolicyArgsDict(TypedDict):
     maximum_event_age_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -569,12 +617,16 @@ class ScheduleTargetRetryPolicyArgs:
     @maximum_event_age_in_seconds.setter
     def maximum_event_age_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRetryAttempts")
     def maximum_retry_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_retry_attempts.setter
-    def maximum_retry_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def maximum_retry_attempts(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ScheduleTargetSagemakerPipelineParametersArgsDict(TypedDict):
     pipeline_parameters: NotRequired[
@@ -627,7 +679,8 @@ class ScheduleTargetSagemakerPipelineParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduleTargetSagemakerPipelineParametersPipelineParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -645,12 +698,14 @@ class ScheduleTargetSagemakerPipelineParametersPipelineParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ScheduleTargetSqsParametersArgsDict(TypedDict):
     message_group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -664,4 +719,7 @@ class ScheduleTargetSqsParametersArgs:
     @pulumi.getter(name="messageGroupId")
     def message_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_group_id.setter
-    def message_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...

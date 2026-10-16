@@ -75,7 +75,8 @@ class GetManagedDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedDatabaseResult(GetManagedDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedDatabaseResult]:
+        ...
 
 def get_managed_database(
     database_name: Optional[_builtins.str] = ...,

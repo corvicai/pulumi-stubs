@@ -76,7 +76,10 @@ class GetAttachedDatabaseConfigurationResult:
 class AwaitableGetAttachedDatabaseConfigurationResult(
     GetAttachedDatabaseConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAttachedDatabaseConfigurationResult]:
+        ...
 
 def get_attached_database_configuration(
     attached_database_configuration_name: Optional[_builtins.str] = ...,

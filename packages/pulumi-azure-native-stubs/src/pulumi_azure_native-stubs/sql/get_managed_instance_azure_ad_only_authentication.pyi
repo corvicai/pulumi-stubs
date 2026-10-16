@@ -41,7 +41,10 @@ class GetManagedInstanceAzureADOnlyAuthenticationResult:
 class AwaitableGetManagedInstanceAzureADOnlyAuthenticationResult(
     GetManagedInstanceAzureADOnlyAuthenticationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedInstanceAzureADOnlyAuthenticationResult]:
+        ...
 
 def get_managed_instance_azure_ad_only_authentication(
     authentication_name: Optional[_builtins.str] = ...,

@@ -100,7 +100,8 @@ class GetViewByScopeResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetViewByScopeResult(GetViewByScopeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetViewByScopeResult]:
+        ...
 
 def get_view_by_scope(
     scope: Optional[_builtins.str] = ...,

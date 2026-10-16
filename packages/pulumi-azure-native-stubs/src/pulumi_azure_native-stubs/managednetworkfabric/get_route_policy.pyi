@@ -82,7 +82,8 @@ class GetRoutePolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRoutePolicyResult(GetRoutePolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoutePolicyResult]:
+        ...
 
 def get_route_policy(
     resource_group_name: Optional[_builtins.str] = ...,

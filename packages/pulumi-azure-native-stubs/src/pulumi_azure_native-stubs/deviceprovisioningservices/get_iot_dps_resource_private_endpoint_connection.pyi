@@ -46,7 +46,10 @@ class GetIotDpsResourcePrivateEndpointConnectionResult:
 class AwaitableGetIotDpsResourcePrivateEndpointConnectionResult(
     GetIotDpsResourcePrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIotDpsResourcePrivateEndpointConnectionResult]:
+        ...
 
 def get_iot_dps_resource_private_endpoint_connection(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

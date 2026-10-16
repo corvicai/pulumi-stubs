@@ -31,7 +31,8 @@ class GetProjectServiceAccountResult:
     def project_id(self) -> _builtins.str: ...
 
 class AwaitableGetProjectServiceAccountResult(GetProjectServiceAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProjectServiceAccountResult]:
+        ...
 
 def get_project_service_account(
     project_id: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetBrokerAuthorizationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBrokerAuthorizationResult(GetBrokerAuthorizationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBrokerAuthorizationResult]:
+        ...
 
 def get_broker_authorization(
     authorization_name: Optional[_builtins.str] = ...,

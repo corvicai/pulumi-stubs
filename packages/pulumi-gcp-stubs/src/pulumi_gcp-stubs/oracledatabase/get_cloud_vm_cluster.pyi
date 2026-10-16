@@ -100,7 +100,8 @@ class GetCloudVmClusterResult:
     def pulumi_labels(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetCloudVmClusterResult(GetCloudVmClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudVmClusterResult]:
+        ...
 
 def get_cloud_vm_cluster(
     cloud_vm_cluster_id: Optional[_builtins.str] = ...,

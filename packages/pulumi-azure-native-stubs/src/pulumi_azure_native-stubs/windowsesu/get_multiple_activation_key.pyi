@@ -75,7 +75,8 @@ class GetMultipleActivationKeyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMultipleActivationKeyResult(GetMultipleActivationKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMultipleActivationKeyResult]:
+        ...
 
 def get_multiple_activation_key(
     multiple_activation_key_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetActionRuleByNameResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetActionRuleByNameResult(GetActionRuleByNameResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActionRuleByNameResult]:
+        ...
 
 def get_action_rule_by_name(
     action_rule_name: Optional[_builtins.str] = ...,

@@ -72,7 +72,8 @@ class GetChangeDataCaptureResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetChangeDataCaptureResult(GetChangeDataCaptureResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetChangeDataCaptureResult]:
+        ...
 
 def get_change_data_capture(
     change_data_capture_name: Optional[_builtins.str] = ...,

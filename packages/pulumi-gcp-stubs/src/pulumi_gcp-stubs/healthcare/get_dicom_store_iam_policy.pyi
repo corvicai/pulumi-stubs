@@ -31,7 +31,8 @@ class GetDicomStoreIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetDicomStoreIamPolicyResult(GetDicomStoreIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDicomStoreIamPolicyResult]:
+        ...
 
 def get_dicom_store_iam_policy(
     dicom_store_id: Optional[_builtins.str] = ...,

@@ -84,7 +84,10 @@ class GetAttestationAtSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAttestationAtSubscriptionResult(GetAttestationAtSubscriptionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAttestationAtSubscriptionResult]:
+        ...
 
 def get_attestation_at_subscription(
     attestation_name: Optional[_builtins.str] = ...,

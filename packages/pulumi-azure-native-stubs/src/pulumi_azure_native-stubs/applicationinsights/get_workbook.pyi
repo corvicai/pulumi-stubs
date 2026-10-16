@@ -100,7 +100,8 @@ class GetWorkbookResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWorkbookResult(GetWorkbookResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkbookResult]:
+        ...
 
 def get_workbook(
     can_fetch_content: Optional[_builtins.bool] = ...,

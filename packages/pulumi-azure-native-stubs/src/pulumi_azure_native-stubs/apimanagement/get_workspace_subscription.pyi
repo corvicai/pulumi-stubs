@@ -87,7 +87,8 @@ class GetWorkspaceSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceSubscriptionResult(GetWorkspaceSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceSubscriptionResult]:
+        ...
 
 def get_workspace_subscription(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -141,7 +141,8 @@ class GetMaccResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMaccResult(GetMaccResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMaccResult]:
+        ...
 
 def get_macc(
     macc_name: Optional[_builtins.str] = ...,

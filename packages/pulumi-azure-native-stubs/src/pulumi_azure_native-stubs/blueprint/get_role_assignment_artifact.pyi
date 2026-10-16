@@ -63,7 +63,8 @@ class GetRoleAssignmentArtifactResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRoleAssignmentArtifactResult(GetRoleAssignmentArtifactResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoleAssignmentArtifactResult]:
+        ...
 
 def get_role_assignment_artifact(
     artifact_name: Optional[_builtins.str] = ...,

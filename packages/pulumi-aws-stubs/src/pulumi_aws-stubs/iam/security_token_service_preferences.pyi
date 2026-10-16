@@ -16,7 +16,10 @@ class SecurityTokenServicePreferencesArgs:
     @pulumi.getter(name="globalEndpointTokenVersion")
     def global_endpoint_token_version(self) -> pulumi.Input[_builtins.str]: ...
     @global_endpoint_token_version.setter
-    def global_endpoint_token_version(self, value: pulumi.Input[_builtins.str]): ...
+    def global_endpoint_token_version(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SecurityTokenServicePreferencesState:
@@ -33,7 +36,8 @@ class _SecurityTokenServicePreferencesState:
     @global_endpoint_token_version.setter
     def global_endpoint_token_version(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SecurityTokenServicePreferences(pulumi.CustomResource):

@@ -48,7 +48,8 @@ class GetCredentialResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCredentialResult(GetCredentialResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCredentialResult]:
+        ...
 
 def get_credential(
     credential_name: Optional[_builtins.str] = ...,

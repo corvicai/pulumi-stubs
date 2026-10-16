@@ -39,12 +39,14 @@ class ProjectEnvironmentTypeArgs:
     @pulumi.getter(name="projectName")
     def project_name(self) -> pulumi.Input[_builtins.str]: ...
     @project_name.setter
-    def project_name(self, value: pulumi.Input[_builtins.str]): ...
+    def project_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creatorRoleAssignment")
     def creator_role_assignment(
@@ -60,32 +62,44 @@ class ProjectEnvironmentTypeArgs:
                 ProjectEnvironmentTypeUpdatePropertiesCreatorRoleAssignmentArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentTargetId")
     def deployment_target_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_target_id.setter
-    def deployment_target_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_target_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentTypeName")
     def environment_type_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @environment_type_name.setter
-    def environment_type_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def environment_type_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -97,7 +111,8 @@ class ProjectEnvironmentTypeArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, EnvironmentTypeEnableStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -106,7 +121,8 @@ class ProjectEnvironmentTypeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userRoleAssignments")
     def user_role_assignments(
@@ -118,7 +134,8 @@ class ProjectEnvironmentTypeArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[UserRoleAssignmentArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:devcenter:ProjectEnvironmentType")
 class ProjectEnvironmentType(pulumi.CustomResource):

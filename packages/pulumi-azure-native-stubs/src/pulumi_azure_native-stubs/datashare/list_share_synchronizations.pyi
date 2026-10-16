@@ -24,7 +24,8 @@ class ListShareSynchronizationsResult:
     def value(self) -> Sequence[outputs.ShareSynchronizationResponse]: ...
 
 class AwaitableListShareSynchronizationsResult(ListShareSynchronizationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListShareSynchronizationsResult]:
+        ...
 
 def list_share_synchronizations(
     account_name: Optional[_builtins.str] = ...,

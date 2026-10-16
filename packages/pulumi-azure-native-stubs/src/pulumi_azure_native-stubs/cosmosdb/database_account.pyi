@@ -88,22 +88,28 @@ class DatabaseAccountArgs:
     @database_account_offer_type.setter
     def database_account_offer_type(
         self, value: pulumi.Input[DatabaseAccountOfferType]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[LocationArgs]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[LocationArgs]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[LocationArgs]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountName")
     def account_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_name.setter
-    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="analyticalStorageConfiguration")
     def analytical_storage_configuration(
@@ -112,12 +118,16 @@ class DatabaseAccountArgs:
     @analytical_storage_configuration.setter
     def analytical_storage_configuration(
         self, value: Optional[pulumi.Input[AnalyticalStorageConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiProperties")
     def api_properties(self) -> Optional[pulumi.Input[ApiPropertiesArgs]]: ...
     @api_properties.setter
-    def api_properties(self, value: Optional[pulumi.Input[ApiPropertiesArgs]]): ...
+    def api_properties(
+        self, value: Optional[pulumi.Input[ApiPropertiesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupPolicy")
     def backup_policy(
@@ -135,7 +145,8 @@ class DatabaseAccountArgs:
                 Union[ContinuousModeBackupPolicyArgs, PeriodicModeBackupPolicyArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capabilities(
@@ -144,12 +155,14 @@ class DatabaseAccountArgs:
     @capabilities.setter
     def capabilities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CapabilityArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def capacity(self) -> Optional[pulumi.Input[CapacityArgs]]: ...
     @capacity.setter
-    def capacity(self, value: Optional[pulumi.Input[CapacityArgs]]): ...
+    def capacity(self, value: Optional[pulumi.Input[CapacityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectorOffer")
     def connector_offer(
@@ -158,14 +171,16 @@ class DatabaseAccountArgs:
     @connector_offer.setter
     def connector_offer(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectorOffer]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consistencyPolicy")
     def consistency_policy(self) -> Optional[pulumi.Input[ConsistencyPolicyArgs]]: ...
     @consistency_policy.setter
     def consistency_policy(
         self, value: Optional[pulumi.Input[ConsistencyPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cors(
@@ -174,7 +189,8 @@ class DatabaseAccountArgs:
     @cors.setter
     def cors(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CorsPolicyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -183,19 +199,24 @@ class DatabaseAccountArgs:
     @create_mode.setter
     def create_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerManagedKeyStatus")
     def customer_managed_key_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_managed_key_status.setter
     def customer_managed_key_status(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultIdentity")
     def default_identity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_identity.setter
-    def default_identity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_identity(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultPriorityLevel")
     def default_priority_level(
@@ -204,7 +225,8 @@ class DatabaseAccountArgs:
     @default_priority_level.setter
     def default_priority_level(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DefaultPriorityLevel]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableKeyBasedMetadataWriteAccess")
     def disable_key_based_metadata_write_access(
@@ -213,43 +235,56 @@ class DatabaseAccountArgs:
     @disable_key_based_metadata_write_access.setter
     def disable_key_based_metadata_write_access(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableLocalAuth")
     def disable_local_auth(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_local_auth.setter
-    def disable_local_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_local_auth(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAnalyticalStorage")
     def enable_analytical_storage(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_analytical_storage.setter
     def enable_analytical_storage(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticFailover")
     def enable_automatic_failover(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_automatic_failover.setter
     def enable_automatic_failover(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableBurstCapacity")
     def enable_burst_capacity(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_burst_capacity.setter
-    def enable_burst_capacity(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_burst_capacity(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableCassandraConnector")
     def enable_cassandra_connector(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_cassandra_connector.setter
     def enable_cassandra_connector(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableFreeTier")
     def enable_free_tier(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_free_tier.setter
-    def enable_free_tier(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_free_tier(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMultipleWriteLocations")
     def enable_multiple_write_locations(
@@ -258,12 +293,16 @@ class DatabaseAccountArgs:
     @enable_multiple_write_locations.setter
     def enable_multiple_write_locations(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePartitionMerge")
     def enable_partition_merge(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_partition_merge.setter
-    def enable_partition_merge(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_partition_merge(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePerRegionPerPartitionAutoscale")
     def enable_per_region_per_partition_autoscale(
@@ -272,7 +311,8 @@ class DatabaseAccountArgs:
     @enable_per_region_per_partition_autoscale.setter
     def enable_per_region_per_partition_autoscale(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePriorityBasedExecution")
     def enable_priority_based_execution(
@@ -281,12 +321,16 @@ class DatabaseAccountArgs:
     @enable_priority_based_execution.setter
     def enable_priority_based_execution(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipRules")
     def ip_rules(
@@ -296,7 +340,8 @@ class DatabaseAccountArgs:
     def ip_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[IpAddressOrRangeArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isVirtualNetworkFilterEnabled")
     def is_virtual_network_filter_enabled(
@@ -305,12 +350,16 @@ class DatabaseAccountArgs:
     @is_virtual_network_filter_enabled.setter
     def is_virtual_network_filter_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultKeyUri")
     def key_vault_key_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_vault_key_uri.setter
-    def key_vault_key_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_vault_key_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(
@@ -319,12 +368,14 @@ class DatabaseAccountArgs:
     @kind.setter
     def kind(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DatabaseAccountKind]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimalTlsVersion")
     def minimal_tls_version(
@@ -333,12 +384,16 @@ class DatabaseAccountArgs:
     @minimal_tls_version.setter
     def minimal_tls_version(
         self, value: Optional[pulumi.Input[Union[_builtins.str, MinimalTlsVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkAclBypass")
     def network_acl_bypass(self) -> Optional[pulumi.Input[NetworkAclBypass]]: ...
     @network_acl_bypass.setter
-    def network_acl_bypass(self, value: Optional[pulumi.Input[NetworkAclBypass]]): ...
+    def network_acl_bypass(
+        self, value: Optional[pulumi.Input[NetworkAclBypass]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkAclBypassResourceIds")
     def network_acl_bypass_resource_ids(
@@ -347,7 +402,8 @@ class DatabaseAccountArgs:
     @network_acl_bypass_resource_ids.setter
     def network_acl_bypass_resource_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -356,14 +412,16 @@ class DatabaseAccountArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restoreParameters")
     def restore_parameters(self) -> Optional[pulumi.Input[RestoreParametersArgs]]: ...
     @restore_parameters.setter
     def restore_parameters(
         self, value: Optional[pulumi.Input[RestoreParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -372,7 +430,8 @@ class DatabaseAccountArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkRules")
     def virtual_network_rules(
@@ -382,7 +441,8 @@ class DatabaseAccountArgs:
     def virtual_network_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNetworkRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cosmosdb:DatabaseAccount")
 class DatabaseAccount(pulumi.CustomResource):

@@ -23,7 +23,8 @@ class GetOpenAIStatusResult:
     ) -> outputs.OpenAIIntegrationStatusResponsePropertiesResponse: ...
 
 class AwaitableGetOpenAIStatusResult(GetOpenAIStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOpenAIStatusResult]:
+        ...
 
 def get_open_ai_status(
     integration_name: Optional[_builtins.str] = ...,

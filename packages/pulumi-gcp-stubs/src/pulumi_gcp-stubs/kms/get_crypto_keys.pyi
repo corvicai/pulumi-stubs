@@ -30,7 +30,8 @@ class GetCryptoKeysResult:
     def keys(self) -> Sequence[outputs.GetCryptoKeysKeyResult]: ...
 
 class AwaitableGetCryptoKeysResult(GetCryptoKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCryptoKeysResult]:
+        ...
 
 def get_crypto_keys(
     filter: Optional[_builtins.str] = ...,

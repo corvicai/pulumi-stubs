@@ -52,7 +52,10 @@ class GetConfigurationProfileAssignmentResult:
 class AwaitableGetConfigurationProfileAssignmentResult(
     GetConfigurationProfileAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigurationProfileAssignmentResult]:
+        ...
 
 def get_configuration_profile_assignment(
     configuration_profile_assignment_name: Optional[_builtins.str] = ...,

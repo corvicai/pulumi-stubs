@@ -52,7 +52,8 @@ class GetDynamoDbTableResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDynamoDbTableResult(GetDynamoDbTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDynamoDbTableResult]:
+        ...
 
 def get_dynamo_db_table(
     name: Optional[_builtins.str] = ...,

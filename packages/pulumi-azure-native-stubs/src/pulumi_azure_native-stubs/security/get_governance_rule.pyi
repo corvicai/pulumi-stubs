@@ -94,7 +94,8 @@ class GetGovernanceRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGovernanceRuleResult(GetGovernanceRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGovernanceRuleResult]:
+        ...
 
 def get_governance_rule(
     rule_id: Optional[_builtins.str] = ...,

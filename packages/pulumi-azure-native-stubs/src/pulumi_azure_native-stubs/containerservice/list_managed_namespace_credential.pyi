@@ -23,7 +23,10 @@ class ListManagedNamespaceCredentialResult:
 class AwaitableListManagedNamespaceCredentialResult(
     ListManagedNamespaceCredentialResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListManagedNamespaceCredentialResult]:
+        ...
 
 def list_managed_namespace_credential(
     managed_namespace_name: Optional[_builtins.str] = ...,

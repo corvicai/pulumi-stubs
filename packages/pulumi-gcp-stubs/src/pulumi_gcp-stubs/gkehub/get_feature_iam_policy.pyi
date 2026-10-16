@@ -37,7 +37,8 @@ class GetFeatureIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetFeatureIamPolicyResult(GetFeatureIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFeatureIamPolicyResult]:
+        ...
 
 def get_feature_iam_policy(
     location: Optional[_builtins.str] = ...,

@@ -21,7 +21,8 @@ class RegexPatternSetArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexPatternStrings")
     def regex_pattern_strings(
@@ -30,7 +31,8 @@ class RegexPatternSetArgs:
     @regex_pattern_strings.setter
     def regex_pattern_strings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegexPatternSetState:
@@ -47,12 +49,14 @@ class _RegexPatternSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regexPatternStrings")
     def regex_pattern_strings(
@@ -61,7 +65,8 @@ class _RegexPatternSetState:
     @regex_pattern_strings.setter
     def regex_pattern_strings(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:waf/regexPatternSet:RegexPatternSet")
 class RegexPatternSet(pulumi.CustomResource):

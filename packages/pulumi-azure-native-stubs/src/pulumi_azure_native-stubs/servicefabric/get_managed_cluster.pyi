@@ -224,7 +224,8 @@ class GetManagedClusterResult:
     def zonal_update_mode(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetManagedClusterResult(GetManagedClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedClusterResult]:
+        ...
 
 def get_managed_cluster(
     cluster_name: Optional[_builtins.str] = ...,

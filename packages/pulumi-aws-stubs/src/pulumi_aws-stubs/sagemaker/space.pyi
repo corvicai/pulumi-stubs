@@ -29,12 +29,14 @@ class SpaceArgs:
     @pulumi.getter(name="domainId")
     def domain_id(self) -> pulumi.Input[_builtins.str]: ...
     @domain_id.setter
-    def domain_id(self, value: pulumi.Input[_builtins.str]): ...
+    def domain_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceName")
     def space_name(self) -> pulumi.Input[_builtins.str]: ...
     @space_name.setter
-    def space_name(self, value: pulumi.Input[_builtins.str]): ...
+    def space_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownershipSettings")
     def ownership_settings(
@@ -43,22 +45,30 @@ class SpaceArgs:
     @ownership_settings.setter
     def ownership_settings(
         self, value: Optional[pulumi.Input[SpaceOwnershipSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceDisplayName")
     def space_display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @space_display_name.setter
-    def space_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def space_display_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceSettings")
     def space_settings(self) -> Optional[pulumi.Input[SpaceSpaceSettingsArgs]]: ...
     @space_settings.setter
-    def space_settings(self, value: Optional[pulumi.Input[SpaceSpaceSettingsArgs]]): ...
+    def space_settings(
+        self, value: Optional[pulumi.Input[SpaceSpaceSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceSharingSettings")
     def space_sharing_settings(
@@ -67,7 +77,8 @@ class SpaceArgs:
     @space_sharing_settings.setter
     def space_sharing_settings(
         self, value: Optional[pulumi.Input[SpaceSpaceSharingSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -76,7 +87,8 @@ class SpaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SpaceState:
@@ -104,19 +116,22 @@ class _SpaceState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainId")
     def domain_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_id.setter
-    def domain_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="homeEfsFileSystemUid")
     def home_efs_file_system_uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @home_efs_file_system_uid.setter
     def home_efs_file_system_uid(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownershipSettings")
     def ownership_settings(
@@ -125,27 +140,36 @@ class _SpaceState:
     @ownership_settings.setter
     def ownership_settings(
         self, value: Optional[pulumi.Input[SpaceOwnershipSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceDisplayName")
     def space_display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @space_display_name.setter
-    def space_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def space_display_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceName")
     def space_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @space_name.setter
-    def space_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def space_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceSettings")
     def space_settings(self) -> Optional[pulumi.Input[SpaceSpaceSettingsArgs]]: ...
     @space_settings.setter
-    def space_settings(self, value: Optional[pulumi.Input[SpaceSpaceSettingsArgs]]): ...
+    def space_settings(
+        self, value: Optional[pulumi.Input[SpaceSpaceSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spaceSharingSettings")
     def space_sharing_settings(
@@ -154,7 +178,8 @@ class _SpaceState:
     @space_sharing_settings.setter
     def space_sharing_settings(
         self, value: Optional[pulumi.Input[SpaceSpaceSharingSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -163,7 +188,8 @@ class _SpaceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -172,12 +198,14 @@ class _SpaceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @url.setter
-    def url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/space:Space")
 class Space(pulumi.CustomResource):

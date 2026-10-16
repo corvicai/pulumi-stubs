@@ -58,7 +58,8 @@ class GetInstanceGuestAttributesResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceGuestAttributesResult(GetInstanceGuestAttributesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceGuestAttributesResult]:
+        ...
 
 def get_instance_guest_attributes(
     name: Optional[_builtins.str] = ...,

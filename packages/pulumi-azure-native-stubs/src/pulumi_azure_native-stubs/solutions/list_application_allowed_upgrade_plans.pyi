@@ -23,7 +23,10 @@ class ListApplicationAllowedUpgradePlansResult:
 class AwaitableListApplicationAllowedUpgradePlansResult(
     ListApplicationAllowedUpgradePlansResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListApplicationAllowedUpgradePlansResult]:
+        ...
 
 def list_application_allowed_upgrade_plans(
     application_name: Optional[_builtins.str] = ...,

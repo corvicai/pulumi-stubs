@@ -26,7 +26,8 @@ class ManagedScalingPolicyArgs:
     @pulumi.getter(name="clusterId")
     def cluster_id(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_id.setter
-    def cluster_id(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeLimits")
     def compute_limits(
@@ -38,17 +39,22 @@ class ManagedScalingPolicyArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ManagedScalingPolicyComputeLimitArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingStrategy")
     def scaling_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scaling_strategy.setter
-    def scaling_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scaling_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="utilizationPerformanceIndex")
     def utilization_performance_index(
@@ -57,7 +63,8 @@ class ManagedScalingPolicyArgs:
     @utilization_performance_index.setter
     def utilization_performance_index(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ManagedScalingPolicyState:
@@ -76,7 +83,8 @@ class _ManagedScalingPolicyState:
     @pulumi.getter(name="clusterId")
     def cluster_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_id.setter
-    def cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeLimits")
     def compute_limits(
@@ -90,17 +98,22 @@ class _ManagedScalingPolicyState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ManagedScalingPolicyComputeLimitArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingStrategy")
     def scaling_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scaling_strategy.setter
-    def scaling_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scaling_strategy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="utilizationPerformanceIndex")
     def utilization_performance_index(
@@ -109,7 +122,8 @@ class _ManagedScalingPolicyState:
     @utilization_performance_index.setter
     def utilization_performance_index(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:emr/managedScalingPolicy:ManagedScalingPolicy")
 class ManagedScalingPolicy(pulumi.CustomResource):

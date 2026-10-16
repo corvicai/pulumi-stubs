@@ -23,7 +23,8 @@ class LoadTestProfileMappingArgs:
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> pulumi.Input[_builtins.str]: ...
     @resource_uri.setter
-    def resource_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureLoadTestingResourceId")
     def azure_load_testing_resource_id(
@@ -32,7 +33,8 @@ class LoadTestProfileMappingArgs:
     @azure_load_testing_resource_id.setter
     def azure_load_testing_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadTestProfileMappingName")
     def load_test_profile_mapping_name(
@@ -41,17 +43,22 @@ class LoadTestProfileMappingArgs:
     @load_test_profile_mapping_name.setter
     def load_test_profile_mapping_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
     def source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_resource_id.setter
-    def source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testProfileId")
     def test_profile_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @test_profile_id.setter
-    def test_profile_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def test_profile_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class LoadTestProfileMapping(pulumi.CustomResource):

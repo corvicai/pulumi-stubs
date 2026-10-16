@@ -56,7 +56,8 @@ class GetMSTIDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMSTIDataConnectorResult(GetMSTIDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMSTIDataConnectorResult]:
+        ...
 
 def get_msti_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

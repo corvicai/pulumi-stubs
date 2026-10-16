@@ -31,7 +31,8 @@ class GetIamPolicyResult:
     def service_account_id(self) -> _builtins.str: ...
 
 class AwaitableGetIamPolicyResult(GetIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIamPolicyResult]:
+        ...
 
 def get_iam_policy(
     service_account_id: Optional[_builtins.str] = ...,

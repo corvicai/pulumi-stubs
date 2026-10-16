@@ -37,7 +37,8 @@ class GetConnectionIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionIamPolicyResult(GetConnectionIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionIamPolicyResult]:
+        ...
 
 def get_connection_iam_policy(
     location: Optional[_builtins.str] = ...,

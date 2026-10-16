@@ -21,12 +21,16 @@ class LocalGatewayRouteArgs:
     @pulumi.getter(name="destinationCidrBlock")
     def destination_cidr_block(self) -> pulumi.Input[_builtins.str]: ...
     @destination_cidr_block.setter
-    def destination_cidr_block(self, value: pulumi.Input[_builtins.str]): ...
+    def destination_cidr_block(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localGatewayRouteTableId")
     def local_gateway_route_table_id(self) -> pulumi.Input[_builtins.str]: ...
     @local_gateway_route_table_id.setter
-    def local_gateway_route_table_id(self, value: pulumi.Input[_builtins.str]): ...
+    def local_gateway_route_table_id(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localGatewayVirtualInterfaceGroupId")
     def local_gateway_virtual_interface_group_id(
@@ -35,12 +39,14 @@ class LocalGatewayRouteArgs:
     @local_gateway_virtual_interface_group_id.setter
     def local_gateway_virtual_interface_group_id(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LocalGatewayRouteState:
@@ -58,14 +64,18 @@ class _LocalGatewayRouteState:
     @pulumi.getter(name="destinationCidrBlock")
     def destination_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_cidr_block.setter
-    def destination_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_cidr_block(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localGatewayRouteTableId")
     def local_gateway_route_table_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @local_gateway_route_table_id.setter
     def local_gateway_route_table_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localGatewayVirtualInterfaceGroupId")
     def local_gateway_virtual_interface_group_id(
@@ -74,12 +84,14 @@ class _LocalGatewayRouteState:
     @local_gateway_virtual_interface_group_id.setter
     def local_gateway_virtual_interface_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/localGatewayRoute:LocalGatewayRoute")
 class LocalGatewayRoute(pulumi.CustomResource):

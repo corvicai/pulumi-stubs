@@ -84,7 +84,8 @@ class GetDefaultUserRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDefaultUserRuleResult(GetDefaultUserRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDefaultUserRuleResult]:
+        ...
 
 def get_default_user_rule(
     configuration_name: Optional[_builtins.str] = ...,

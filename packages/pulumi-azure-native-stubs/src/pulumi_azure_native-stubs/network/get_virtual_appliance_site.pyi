@@ -52,7 +52,8 @@ class GetVirtualApplianceSiteResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualApplianceSiteResult(GetVirtualApplianceSiteResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualApplianceSiteResult]:
+        ...
 
 def get_virtual_appliance_site(
     network_virtual_appliance_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetCacheNodesOperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCacheNodesOperationResult(GetCacheNodesOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCacheNodesOperationResult]:
+        ...
 
 def get_cache_nodes_operation(
     customer_resource_name: Optional[_builtins.str] = ...,

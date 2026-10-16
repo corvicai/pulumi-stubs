@@ -140,7 +140,8 @@ class GetCGProfileResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCGProfileResult(GetCGProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCGProfileResult]:
+        ...
 
 def get_cg_profile(
     container_group_profile_name: Optional[_builtins.str] = ...,

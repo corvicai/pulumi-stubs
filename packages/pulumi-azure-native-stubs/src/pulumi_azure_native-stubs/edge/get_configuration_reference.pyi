@@ -44,7 +44,8 @@ class GetConfigurationReferenceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationReferenceResult(GetConfigurationReferenceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationReferenceResult]:
+        ...
 
 def get_configuration_reference(
     configuration_reference_name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetBillingProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBillingProfileResult(GetBillingProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBillingProfileResult]:
+        ...
 
 def get_billing_profile(
     billing_account_name: Optional[_builtins.str] = ...,

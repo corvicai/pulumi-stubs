@@ -34,7 +34,8 @@ class GetApiIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetApiIamPolicyResult(GetApiIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiIamPolicyResult]:
+        ...
 
 def get_api_iam_policy(
     api: Optional[_builtins.str] = ...,

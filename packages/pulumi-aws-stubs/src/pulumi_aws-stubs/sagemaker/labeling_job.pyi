@@ -36,39 +36,48 @@ class LabelingJobArgs:
     @human_task_config.setter
     def human_task_config(
         self, value: pulumi.Input[LabelingJobHumanTaskConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputConfig")
     def input_config(self) -> pulumi.Input[LabelingJobInputConfigArgs]: ...
     @input_config.setter
-    def input_config(self, value: pulumi.Input[LabelingJobInputConfigArgs]): ...
+    def input_config(self, value: pulumi.Input[LabelingJobInputConfigArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelAttributeName")
     def label_attribute_name(self) -> pulumi.Input[_builtins.str]: ...
     @label_attribute_name.setter
-    def label_attribute_name(self, value: pulumi.Input[_builtins.str]): ...
+    def label_attribute_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelingJobName")
     def labeling_job_name(self) -> pulumi.Input[_builtins.str]: ...
     @labeling_job_name.setter
-    def labeling_job_name(self, value: pulumi.Input[_builtins.str]): ...
+    def labeling_job_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputConfig")
     def output_config(self) -> pulumi.Input[LabelingJobOutputConfigArgs]: ...
     @output_config.setter
-    def output_config(self, value: pulumi.Input[LabelingJobOutputConfigArgs]): ...
+    def output_config(
+        self, value: pulumi.Input[LabelingJobOutputConfigArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelCategoryConfigS3Uri")
     def label_category_config_s3_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @label_category_config_s3_uri.setter
     def label_category_config_s3_uri(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelingJobAlgorithmsConfig")
     def labeling_job_algorithms_config(
@@ -77,12 +86,14 @@ class LabelingJobArgs:
     @labeling_job_algorithms_config.setter
     def labeling_job_algorithms_config(
         self, value: Optional[pulumi.Input[LabelingJobLabelingJobAlgorithmsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stoppingConditions")
     def stopping_conditions(
@@ -96,7 +107,8 @@ class LabelingJobArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LabelingJobStoppingConditionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -105,7 +117,8 @@ class LabelingJobArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LabelingJobState:
@@ -142,7 +155,8 @@ class _LabelingJobState:
     @pulumi.getter(name="failureReason")
     def failure_reason(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @failure_reason.setter
-    def failure_reason(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def failure_reason(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="humanTaskConfig")
     def human_task_config(
@@ -151,31 +165,40 @@ class _LabelingJobState:
     @human_task_config.setter
     def human_task_config(
         self, value: Optional[pulumi.Input[LabelingJobHumanTaskConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputConfig")
     def input_config(self) -> Optional[pulumi.Input[LabelingJobInputConfigArgs]]: ...
     @input_config.setter
     def input_config(
         self, value: Optional[pulumi.Input[LabelingJobInputConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobReferenceCode")
     def job_reference_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_reference_code.setter
-    def job_reference_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_reference_code(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelAttributeName")
     def label_attribute_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @label_attribute_name.setter
-    def label_attribute_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def label_attribute_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelCategoryConfigS3Uri")
     def label_category_config_s3_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @label_category_config_s3_uri.setter
     def label_category_config_s3_uri(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelCounters")
     def label_counters(
@@ -189,7 +212,8 @@ class _LabelingJobState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LabelingJobLabelCounterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelingJobAlgorithmsConfig")
     def labeling_job_algorithms_config(
@@ -198,39 +222,52 @@ class _LabelingJobState:
     @labeling_job_algorithms_config.setter
     def labeling_job_algorithms_config(
         self, value: Optional[pulumi.Input[LabelingJobLabelingJobAlgorithmsConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelingJobArn")
     def labeling_job_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @labeling_job_arn.setter
-    def labeling_job_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def labeling_job_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelingJobName")
     def labeling_job_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @labeling_job_name.setter
-    def labeling_job_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def labeling_job_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelingJobStatus")
     def labeling_job_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @labeling_job_status.setter
-    def labeling_job_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def labeling_job_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputConfig")
     def output_config(self) -> Optional[pulumi.Input[LabelingJobOutputConfigArgs]]: ...
     @output_config.setter
     def output_config(
         self, value: Optional[pulumi.Input[LabelingJobOutputConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stoppingConditions")
     def stopping_conditions(
@@ -244,7 +281,8 @@ class _LabelingJobState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LabelingJobStoppingConditionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -253,7 +291,8 @@ class _LabelingJobState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -262,7 +301,8 @@ class _LabelingJobState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:sagemaker/labelingJob:LabelingJob")
 class LabelingJob(pulumi.CustomResource):

@@ -62,7 +62,8 @@ class GetCredentialSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCredentialSetResult(GetCredentialSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCredentialSetResult]:
+        ...
 
 def get_credential_set(
     credential_set_name: Optional[_builtins.str] = ...,

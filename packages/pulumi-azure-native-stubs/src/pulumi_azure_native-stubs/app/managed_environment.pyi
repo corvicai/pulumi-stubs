@@ -60,7 +60,8 @@ class ManagedEnvironmentArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appInsightsConfiguration")
     def app_insights_configuration(
@@ -69,7 +70,8 @@ class ManagedEnvironmentArgs:
     @app_insights_configuration.setter
     def app_insights_configuration(
         self, value: Optional[pulumi.Input[AppInsightsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appLogsConfiguration")
     def app_logs_configuration(
@@ -78,7 +80,8 @@ class ManagedEnvironmentArgs:
     @app_logs_configuration.setter
     def app_logs_configuration(
         self, value: Optional[pulumi.Input[AppLogsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZones")
     def availability_zones(
@@ -87,7 +90,8 @@ class ManagedEnvironmentArgs:
     @availability_zones.setter
     def availability_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customDomainConfiguration")
     def custom_domain_configuration(
@@ -96,21 +100,24 @@ class ManagedEnvironmentArgs:
     @custom_domain_configuration.setter
     def custom_domain_configuration(
         self, value: Optional[pulumi.Input[CustomDomainConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daprAIConnectionString")
     def dapr_ai_connection_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dapr_ai_connection_string.setter
     def dapr_ai_connection_string(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daprAIInstrumentationKey")
     def dapr_ai_instrumentation_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dapr_ai_instrumentation_key.setter
     def dapr_ai_instrumentation_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionConfiguration")
     def disk_encryption_configuration(
@@ -119,17 +126,24 @@ class ManagedEnvironmentArgs:
     @disk_encryption_configuration.setter
     def disk_encryption_configuration(
         self, value: Optional[pulumi.Input[DiskEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentName")
     def environment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @environment_name.setter
-    def environment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def environment_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="infrastructureResourceGroup")
     def infrastructure_resource_group(
@@ -138,7 +152,8 @@ class ManagedEnvironmentArgs:
     @infrastructure_resource_group.setter
     def infrastructure_resource_group(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingressConfiguration")
     def ingress_configuration(
@@ -147,17 +162,20 @@ class ManagedEnvironmentArgs:
     @ingress_configuration.setter
     def ingress_configuration(
         self, value: Optional[pulumi.Input[IngressConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="openTelemetryConfiguration")
     def open_telemetry_configuration(
@@ -166,7 +184,8 @@ class ManagedEnvironmentArgs:
     @open_telemetry_configuration.setter
     def open_telemetry_configuration(
         self, value: Optional[pulumi.Input[OpenTelemetryConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peerAuthentication")
     def peer_authentication(
@@ -175,7 +194,8 @@ class ManagedEnvironmentArgs:
     @peer_authentication.setter
     def peer_authentication(
         self, value: Optional[pulumi.Input[ManagedEnvironmentPeerAuthenticationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peerTrafficConfiguration")
     def peer_traffic_configuration(
@@ -185,7 +205,8 @@ class ManagedEnvironmentArgs:
     def peer_traffic_configuration(
         self,
         value: Optional[pulumi.Input[ManagedEnvironmentPeerTrafficConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -194,7 +215,8 @@ class ManagedEnvironmentArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -203,14 +225,16 @@ class ManagedEnvironmentArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vnetConfiguration")
     def vnet_configuration(self) -> Optional[pulumi.Input[VnetConfigurationArgs]]: ...
     @vnet_configuration.setter
     def vnet_configuration(
         self, value: Optional[pulumi.Input[VnetConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadProfiles")
     def workload_profiles(
@@ -219,12 +243,14 @@ class ManagedEnvironmentArgs:
     @workload_profiles.setter
     def workload_profiles(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[WorkloadProfileArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneRedundant")
     def zone_redundant(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @zone_redundant.setter
-    def zone_redundant(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def zone_redundant(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:app:ManagedEnvironment")
 class ManagedEnvironment(pulumi.CustomResource):

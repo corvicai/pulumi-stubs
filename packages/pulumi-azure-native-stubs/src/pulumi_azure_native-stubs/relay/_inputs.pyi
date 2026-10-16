@@ -35,7 +35,8 @@ class ConnectionStateArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(
@@ -47,7 +48,8 @@ class ConnectionStateArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, PrivateLinkConnectionStatus]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointConnectionArgsDict(TypedDict):
     private_endpoint: NotRequired[pulumi.Input[PrivateEndpointArgsDict]]
@@ -75,7 +77,10 @@ class PrivateEndpointConnectionArgs:
     @pulumi.getter(name="privateEndpoint")
     def private_endpoint(self) -> Optional[pulumi.Input[PrivateEndpointArgs]]: ...
     @private_endpoint.setter
-    def private_endpoint(self, value: Optional[pulumi.Input[PrivateEndpointArgs]]): ...
+    def private_endpoint(
+        self, value: Optional[pulumi.Input[PrivateEndpointArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
     def private_link_service_connection_state(
@@ -84,7 +89,8 @@ class PrivateEndpointConnectionArgs:
     @private_link_service_connection_state.setter
     def private_link_service_connection_state(
         self, value: Optional[pulumi.Input[ConnectionStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
     def provisioning_state(
@@ -94,7 +100,8 @@ class PrivateEndpointConnectionArgs:
     def provisioning_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, EndPointProvisioningState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PrivateEndpointArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -108,7 +115,8 @@ class PrivateEndpointArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: pulumi.Input[Union[_builtins.str, SkuName]]
@@ -126,9 +134,13 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[Union[_builtins.str, SkuName]]: ...
     @name.setter
-    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]): ...
+    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]: ...
     @tier.setter
-    def tier(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]): ...
+    def tier(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]
+    ):  # -> None:
+        ...

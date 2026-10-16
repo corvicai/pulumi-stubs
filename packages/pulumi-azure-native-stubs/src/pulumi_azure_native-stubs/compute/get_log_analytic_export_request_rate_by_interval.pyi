@@ -24,7 +24,10 @@ class GetLogAnalyticExportRequestRateByIntervalResult:
 class AwaitableGetLogAnalyticExportRequestRateByIntervalResult(
     GetLogAnalyticExportRequestRateByIntervalResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLogAnalyticExportRequestRateByIntervalResult]:
+        ...
 
 def get_log_analytic_export_request_rate_by_interval(
     blob_container_sas_uri: Optional[_builtins.str] = ...,

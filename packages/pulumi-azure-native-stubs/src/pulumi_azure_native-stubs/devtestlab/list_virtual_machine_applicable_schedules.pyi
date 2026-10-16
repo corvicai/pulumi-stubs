@@ -54,7 +54,10 @@ class ListVirtualMachineApplicableSchedulesResult:
 class AwaitableListVirtualMachineApplicableSchedulesResult(
     ListVirtualMachineApplicableSchedulesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListVirtualMachineApplicableSchedulesResult]:
+        ...
 
 def list_virtual_machine_applicable_schedules(
     lab_name: Optional[_builtins.str] = ...,

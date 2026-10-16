@@ -48,7 +48,10 @@ class GetVirtualNetworkGatewayVpnclientIpsecParametersResult:
 class AwaitableGetVirtualNetworkGatewayVpnclientIpsecParametersResult(
     GetVirtualNetworkGatewayVpnclientIpsecParametersResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayVpnclientIpsecParametersResult]:
+        ...
 
 def get_virtual_network_gateway_vpnclient_ipsec_parameters(
     resource_group_name: Optional[_builtins.str] = ...,

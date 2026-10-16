@@ -71,7 +71,8 @@ class GetCertificateResult:
     def self_link(self) -> _builtins.str: ...
 
 class AwaitableGetCertificateResult(GetCertificateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateResult]:
+        ...
 
 def get_certificate(
     name: Optional[_builtins.str] = ...,

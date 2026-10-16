@@ -37,17 +37,20 @@ class UnitKindArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def saas(self) -> pulumi.Input[_builtins.str]: ...
     @saas.setter
-    def saas(self, value: pulumi.Input[_builtins.str]): ...
+    def saas(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unitKindId")
     def unit_kind_id(self) -> pulumi.Input[_builtins.str]: ...
     @unit_kind_id.setter
-    def unit_kind_id(self, value: pulumi.Input[_builtins.str]): ...
+    def unit_kind_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -56,12 +59,14 @@ class UnitKindArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRelease")
     def default_release(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_release.setter
-    def default_release(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_release(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dependencies(
@@ -71,7 +76,8 @@ class UnitKindArgs:
     def dependencies(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[UnitKindDependencyArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariableMappings")
     def input_variable_mappings(
@@ -85,7 +91,8 @@ class UnitKindArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UnitKindInputVariableMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -94,7 +101,8 @@ class UnitKindArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputVariableMappings")
     def output_variable_mappings(
@@ -108,12 +116,14 @@ class UnitKindArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UnitKindOutputVariableMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _UnitKindState:
@@ -161,17 +171,20 @@ class _UnitKindState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultRelease")
     def default_release(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_release.setter
-    def default_release(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_release(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def dependencies(
@@ -181,7 +194,8 @@ class _UnitKindState:
     def dependencies(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[UnitKindDependencyArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -190,7 +204,8 @@ class _UnitKindState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -199,12 +214,14 @@ class _UnitKindState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputVariableMappings")
     def input_variable_mappings(
@@ -218,7 +235,8 @@ class _UnitKindState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UnitKindInputVariableMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -227,17 +245,20 @@ class _UnitKindState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputVariableMappings")
     def output_variable_mappings(
@@ -251,12 +272,14 @@ class _UnitKindState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[UnitKindOutputVariableMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -265,27 +288,32 @@ class _UnitKindState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def saas(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @saas.setter
-    def saas(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def saas(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unitKindId")
     def unit_kind_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unit_kind_id.setter
-    def unit_kind_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unit_kind_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:saasruntime/unitKind:UnitKind")
 class UnitKind(pulumi.CustomResource):

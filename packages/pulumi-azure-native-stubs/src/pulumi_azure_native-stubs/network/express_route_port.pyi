@@ -37,12 +37,16 @@ class ExpressRoutePortArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bandwidthInGbps")
     def bandwidth_in_gbps(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @bandwidth_in_gbps.setter
-    def bandwidth_in_gbps(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def bandwidth_in_gbps(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="billingType")
     def billing_type(
@@ -54,7 +58,8 @@ class ExpressRoutePortArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ExpressRoutePortsBillingType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encapsulation(
@@ -68,22 +73,30 @@ class ExpressRoutePortArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, ExpressRoutePortsEncapsulation]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expressRoutePortName")
     def express_route_port_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @express_route_port_name.setter
-    def express_route_port_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def express_route_port_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def links(
@@ -93,17 +106,22 @@ class ExpressRoutePortArgs:
     def links(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ExpressRouteLinkArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="peeringLocation")
     def peering_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @peering_location.setter
-    def peering_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def peering_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -112,7 +130,8 @@ class ExpressRoutePortArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:ExpressRoutePort")
 class ExpressRoutePort(pulumi.CustomResource):

@@ -68,7 +68,8 @@ class GetBotConnectionResult:
     def zones(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetBotConnectionResult(GetBotConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBotConnectionResult]:
+        ...
 
 def get_bot_connection(
     connection_name: Optional[_builtins.str] = ...,

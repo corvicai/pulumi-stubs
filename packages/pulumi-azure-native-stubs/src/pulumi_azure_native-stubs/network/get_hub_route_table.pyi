@@ -60,7 +60,8 @@ class GetHubRouteTableResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHubRouteTableResult(GetHubRouteTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHubRouteTableResult]:
+        ...
 
 def get_hub_route_table(
     resource_group_name: Optional[_builtins.str] = ...,

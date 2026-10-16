@@ -38,19 +38,22 @@ class FactoryArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(self) -> Optional[pulumi.Input[EncryptionConfigurationArgs]]: ...
     @encryption.setter
     def encryption(
         self, value: Optional[pulumi.Input[EncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="factoryName")
     def factory_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @factory_name.setter
-    def factory_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def factory_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="globalParameters")
     def global_parameters(
@@ -64,17 +67,20 @@ class FactoryArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[GlobalParameterSpecificationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[FactoryIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[FactoryIdentityArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[FactoryIdentityArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -83,7 +89,8 @@ class FactoryArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="purviewConfiguration")
     def purview_configuration(
@@ -92,7 +99,8 @@ class FactoryArgs:
     @purview_configuration.setter
     def purview_configuration(
         self, value: Optional[pulumi.Input[PurviewConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repoConfiguration")
     def repo_configuration(
@@ -110,7 +118,8 @@ class FactoryArgs:
                 Union[FactoryGitHubConfigurationArgs, FactoryVSTSConfigurationArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -119,7 +128,8 @@ class FactoryArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:datafactory:Factory")
 class Factory(pulumi.CustomResource):

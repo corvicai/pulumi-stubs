@@ -71,22 +71,28 @@ class ApiManagementServiceArgs:
     @pulumi.getter(name="publisherEmail")
     def publisher_email(self) -> pulumi.Input[_builtins.str]: ...
     @publisher_email.setter
-    def publisher_email(self, value: pulumi.Input[_builtins.str]): ...
+    def publisher_email(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publisherName")
     def publisher_name(self) -> pulumi.Input[_builtins.str]: ...
     @publisher_name.setter
-    def publisher_name(self, value: pulumi.Input[_builtins.str]): ...
+    def publisher_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> pulumi.Input[ApiManagementServiceSkuPropertiesArgs]: ...
     @sku.setter
-    def sku(self, value: pulumi.Input[ApiManagementServiceSkuPropertiesArgs]): ...
+    def sku(
+        self, value: pulumi.Input[ApiManagementServiceSkuPropertiesArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalLocations")
     def additional_locations(
@@ -96,7 +102,8 @@ class ApiManagementServiceArgs:
     def additional_locations(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AdditionalLocationArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiVersionConstraint")
     def api_version_constraint(
@@ -105,7 +112,8 @@ class ApiManagementServiceArgs:
     @api_version_constraint.setter
     def api_version_constraint(
         self, value: Optional[pulumi.Input[ApiVersionConstraintArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def certificates(
@@ -119,14 +127,16 @@ class ApiManagementServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CertificateConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationApi")
     def configuration_api(self) -> Optional[pulumi.Input[ConfigurationApiArgs]]: ...
     @configuration_api.setter
     def configuration_api(
         self, value: Optional[pulumi.Input[ConfigurationApiArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customProperties")
     def custom_properties(
@@ -135,7 +145,8 @@ class ApiManagementServiceArgs:
     @custom_properties.setter
     def custom_properties(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="developerPortalStatus")
     def developer_portal_status(
@@ -144,19 +155,24 @@ class ApiManagementServiceArgs:
     @developer_portal_status.setter
     def developer_portal_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeveloperPortalStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableGateway")
     def disable_gateway(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_gateway.setter
-    def disable_gateway(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_gateway(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableClientCertificate")
     def enable_client_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_client_certificate.setter
     def enable_client_certificate(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostnameConfigurations")
     def hostname_configurations(
@@ -168,14 +184,16 @@ class ApiManagementServiceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[HostnameConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ApiManagementServiceIdentityArgs]]: ...
     @identity.setter
     def identity(
         self, value: Optional[pulumi.Input[ApiManagementServiceIdentityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="legacyPortalStatus")
     def legacy_portal_status(
@@ -184,12 +202,14 @@ class ApiManagementServiceArgs:
     @legacy_portal_status.setter
     def legacy_portal_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, LegacyPortalStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natGatewayState")
     def nat_gateway_state(
@@ -198,14 +218,16 @@ class ApiManagementServiceArgs:
     @nat_gateway_state.setter
     def nat_gateway_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NatGatewayState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationSenderEmail")
     def notification_sender_email(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @notification_sender_email.setter
     def notification_sender_email(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnections")
     def private_endpoint_connections(
@@ -221,12 +243,16 @@ class ApiManagementServiceArgs:
                 Sequence[pulumi.Input[RemotePrivateEndpointConnectionWrapperArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIpAddressId")
     def public_ip_address_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_ip_address_id.setter
-    def public_ip_address_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_ip_address_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -235,17 +261,20 @@ class ApiManagementServiceArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def restore(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @restore.setter
-    def restore(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def restore(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
     def service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_name.setter
-    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -254,7 +283,8 @@ class ApiManagementServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkConfiguration")
     def virtual_network_configuration(
@@ -263,7 +293,8 @@ class ApiManagementServiceArgs:
     @virtual_network_configuration.setter
     def virtual_network_configuration(
         self, value: Optional[pulumi.Input[VirtualNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualNetworkType")
     def virtual_network_type(
@@ -272,7 +303,8 @@ class ApiManagementServiceArgs:
     @virtual_network_type.setter
     def virtual_network_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -281,7 +313,8 @@ class ApiManagementServiceArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:apimanagement:ApiManagementService")
 class ApiManagementService(pulumi.CustomResource):

@@ -47,12 +47,14 @@ class NetworkToNetworkInterconnectArgs:
     @pulumi.getter(name="networkFabricName")
     def network_fabric_name(self) -> pulumi.Input[_builtins.str]: ...
     @network_fabric_name.setter
-    def network_fabric_name(self, value: pulumi.Input[_builtins.str]): ...
+    def network_fabric_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useOptionB")
     def use_option_b(
@@ -61,12 +63,14 @@ class NetworkToNetworkInterconnectArgs:
     @use_option_b.setter
     def use_option_b(
         self, value: pulumi.Input[Union[_builtins.str, BooleanEnumProperty]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="egressAclId")
     def egress_acl_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @egress_acl_id.setter
-    def egress_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def egress_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exportRoutePolicy")
     def export_route_policy(
@@ -75,7 +79,8 @@ class NetworkToNetworkInterconnectArgs:
     @export_route_policy.setter
     def export_route_policy(
         self, value: Optional[pulumi.Input[ExportRoutePolicyInformationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importRoutePolicy")
     def import_route_policy(
@@ -84,12 +89,14 @@ class NetworkToNetworkInterconnectArgs:
     @import_route_policy.setter
     def import_route_policy(
         self, value: Optional[pulumi.Input[ImportRoutePolicyInformationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingressAclId")
     def ingress_acl_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ingress_acl_id.setter
-    def ingress_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ingress_acl_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isManagementType")
     def is_management_type(
@@ -98,7 +105,8 @@ class NetworkToNetworkInterconnectArgs:
     @is_management_type.setter
     def is_management_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IsManagementType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="layer2Configuration")
     def layer2_configuration(
@@ -107,7 +115,8 @@ class NetworkToNetworkInterconnectArgs:
     @layer2_configuration.setter
     def layer2_configuration(
         self, value: Optional[pulumi.Input[Layer2ConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkToNetworkInterconnectName")
     def network_to_network_interconnect_name(
@@ -116,14 +125,16 @@ class NetworkToNetworkInterconnectArgs:
     @network_to_network_interconnect_name.setter
     def network_to_network_interconnect_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nniType")
     def nni_type(self) -> Optional[pulumi.Input[Union[_builtins.str, NniType]]]: ...
     @nni_type.setter
     def nni_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, NniType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="npbStaticRouteConfiguration")
     def npb_static_route_configuration(
@@ -132,7 +143,8 @@ class NetworkToNetworkInterconnectArgs:
     @npb_static_route_configuration.setter
     def npb_static_route_configuration(
         self, value: Optional[pulumi.Input[NpbStaticRouteConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optionBLayer3Configuration")
     def option_b_layer3_configuration(
@@ -150,7 +162,8 @@ class NetworkToNetworkInterconnectArgs:
                 NetworkToNetworkInterconnectPropertiesOptionBLayer3ConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class NetworkToNetworkInterconnect(pulumi.CustomResource):

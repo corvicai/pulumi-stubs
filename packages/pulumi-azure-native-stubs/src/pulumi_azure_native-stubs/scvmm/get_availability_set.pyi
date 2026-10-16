@@ -64,7 +64,8 @@ class GetAvailabilitySetResult:
     def vmm_server_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAvailabilitySetResult(GetAvailabilitySetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAvailabilitySetResult]:
+        ...
 
 def get_availability_set(
     availability_set_name: Optional[_builtins.str] = ...,

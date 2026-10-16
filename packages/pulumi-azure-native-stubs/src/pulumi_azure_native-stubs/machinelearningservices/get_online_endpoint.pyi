@@ -64,7 +64,8 @@ class GetOnlineEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetOnlineEndpointResult(GetOnlineEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOnlineEndpointResult]:
+        ...
 
 def get_online_endpoint(
     endpoint_name: Optional[_builtins.str] = ...,

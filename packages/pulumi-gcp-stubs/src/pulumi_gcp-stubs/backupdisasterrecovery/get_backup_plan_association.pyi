@@ -70,7 +70,8 @@ class GetBackupPlanAssociationResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetBackupPlanAssociationResult(GetBackupPlanAssociationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackupPlanAssociationResult]:
+        ...
 
 def get_backup_plan_association(
     backup_plan_association_id: Optional[_builtins.str] = ...,

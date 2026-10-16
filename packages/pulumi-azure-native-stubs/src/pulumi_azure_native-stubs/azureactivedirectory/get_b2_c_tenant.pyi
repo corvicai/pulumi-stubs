@@ -66,7 +66,8 @@ class GetB2CTenantResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetB2CTenantResult(GetB2CTenantResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetB2CTenantResult]:
+        ...
 
 def get_b2_c_tenant(
     resource_group_name: Optional[_builtins.str] = ...,

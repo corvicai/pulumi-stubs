@@ -31,7 +31,8 @@ class VpcDhcpOptionsArgs:
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNameServers")
     def domain_name_servers(
@@ -40,7 +41,8 @@ class VpcDhcpOptionsArgs:
     @domain_name_servers.setter
     def domain_name_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressPreferredLeaseTime")
     def ipv6_address_preferred_lease_time(
@@ -49,7 +51,8 @@ class VpcDhcpOptionsArgs:
     @ipv6_address_preferred_lease_time.setter
     def ipv6_address_preferred_lease_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="netbiosNameServers")
     def netbios_name_servers(
@@ -58,12 +61,16 @@ class VpcDhcpOptionsArgs:
     @netbios_name_servers.setter
     def netbios_name_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="netbiosNodeType")
     def netbios_node_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @netbios_node_type.setter
-    def netbios_node_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def netbios_node_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ntpServers")
     def ntp_servers(
@@ -72,12 +79,14 @@ class VpcDhcpOptionsArgs:
     @ntp_servers.setter
     def ntp_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -86,7 +95,8 @@ class VpcDhcpOptionsArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcDhcpOptionsState:
@@ -117,12 +127,14 @@ class _VpcDhcpOptionsState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainName")
     def domain_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @domain_name.setter
-    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def domain_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="domainNameServers")
     def domain_name_servers(
@@ -131,7 +143,8 @@ class _VpcDhcpOptionsState:
     @domain_name_servers.setter
     def domain_name_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressPreferredLeaseTime")
     def ipv6_address_preferred_lease_time(
@@ -140,7 +153,8 @@ class _VpcDhcpOptionsState:
     @ipv6_address_preferred_lease_time.setter
     def ipv6_address_preferred_lease_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="netbiosNameServers")
     def netbios_name_servers(
@@ -149,12 +163,16 @@ class _VpcDhcpOptionsState:
     @netbios_name_servers.setter
     def netbios_name_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="netbiosNodeType")
     def netbios_node_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @netbios_node_type.setter
-    def netbios_node_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def netbios_node_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ntpServers")
     def ntp_servers(
@@ -163,17 +181,20 @@ class _VpcDhcpOptionsState:
     @ntp_servers.setter
     def ntp_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -182,7 +203,8 @@ class _VpcDhcpOptionsState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -191,7 +213,8 @@ class _VpcDhcpOptionsState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/vpcDhcpOptions:VpcDhcpOptions")
 class VpcDhcpOptions(pulumi.CustomResource):

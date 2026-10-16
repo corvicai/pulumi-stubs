@@ -34,7 +34,8 @@ class GetConnectivityTestsResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetConnectivityTestsResult(GetConnectivityTestsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectivityTestsResult]:
+        ...
 
 def get_connectivity_tests(
     filter: Optional[_builtins.str] = ...,

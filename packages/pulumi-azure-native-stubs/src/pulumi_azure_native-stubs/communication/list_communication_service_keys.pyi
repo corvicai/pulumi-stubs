@@ -35,7 +35,10 @@ class ListCommunicationServiceKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListCommunicationServiceKeysResult(ListCommunicationServiceKeysResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListCommunicationServiceKeysResult]:
+        ...
 
 def list_communication_service_keys(
     communication_service_name: Optional[_builtins.str] = ...,

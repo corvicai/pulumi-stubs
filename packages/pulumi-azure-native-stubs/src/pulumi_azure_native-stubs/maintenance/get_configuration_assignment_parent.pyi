@@ -60,7 +60,10 @@ class GetConfigurationAssignmentParentResult:
 class AwaitableGetConfigurationAssignmentParentResult(
     GetConfigurationAssignmentParentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigurationAssignmentParentResult]:
+        ...
 
 def get_configuration_assignment_parent(
     configuration_assignment_name: Optional[_builtins.str] = ...,

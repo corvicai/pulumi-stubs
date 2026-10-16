@@ -96,7 +96,8 @@ class GetBookmarkResult:
     def updated_by(self) -> Optional[outputs.UserInfoResponse]: ...
 
 class AwaitableGetBookmarkResult(GetBookmarkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBookmarkResult]:
+        ...
 
 def get_bookmark(
     bookmark_id: Optional[_builtins.str] = ...,

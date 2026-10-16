@@ -43,7 +43,8 @@ class GetInstanceIamPolicyResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceIamPolicyResult(GetInstanceIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceIamPolicyResult]:
+        ...
 
 def get_instance_iam_policy(
     instance_name: Optional[_builtins.str] = ...,

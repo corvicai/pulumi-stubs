@@ -51,7 +51,8 @@ class GetResourceResult:
     def with_privileged_access(self) -> _builtins.bool: ...
 
 class AwaitableGetResourceResult(GetResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceResult]:
+        ...
 
 def get_resource(
     arn: Optional[_builtins.str] = ...,

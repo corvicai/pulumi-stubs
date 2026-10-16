@@ -52,7 +52,8 @@ class GetSsmParameterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSsmParameterResult(GetSsmParameterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSsmParameterResult]:
+        ...
 
 def get_ssm_parameter(
     name: Optional[_builtins.str] = ...,

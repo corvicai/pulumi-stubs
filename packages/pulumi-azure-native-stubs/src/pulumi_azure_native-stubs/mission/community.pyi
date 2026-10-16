@@ -43,24 +43,28 @@ class CommunityArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addressSpace")
     def address_space(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @address_space.setter
-    def address_space(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def address_space(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvalSettings")
     def approval_settings(self) -> Optional[pulumi.Input[ApprovalSettingsArgs]]: ...
     @approval_settings.setter
     def approval_settings(
         self, value: Optional[pulumi.Input[ApprovalSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="communityName")
     def community_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @community_name.setter
-    def community_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def community_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="communityRoleAssignments")
     def community_role_assignments(
@@ -70,7 +74,8 @@ class CommunityArgs:
     def community_role_assignments(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[RoleAssignmentItemArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsServers")
     def dns_servers(
@@ -79,7 +84,8 @@ class CommunityArgs:
     @dns_servers.setter
     def dns_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firewallSku")
     def firewall_sku(
@@ -88,7 +94,8 @@ class CommunityArgs:
     @firewall_sku.setter
     def firewall_sku(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FirewallSKU]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="governedServiceList")
     def governed_service_list(
@@ -98,17 +105,22 @@ class CommunityArgs:
     def governed_service_list(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[GovernedServiceItemArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceModeConfiguration")
     def maintenance_mode_configuration(
@@ -117,7 +129,8 @@ class CommunityArgs:
     @maintenance_mode_configuration.setter
     def maintenance_mode_configuration(
         self, value: Optional[pulumi.Input[MaintenanceModeConfigurationModelArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyOverride")
     def policy_override(
@@ -126,7 +139,8 @@ class CommunityArgs:
     @policy_override.setter
     def policy_override(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyOverride]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -135,7 +149,8 @@ class CommunityArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:mission:Community")
 class Community(pulumi.CustomResource):

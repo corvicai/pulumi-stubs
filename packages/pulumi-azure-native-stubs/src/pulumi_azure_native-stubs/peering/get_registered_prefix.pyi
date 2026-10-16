@@ -55,7 +55,8 @@ class GetRegisteredPrefixResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegisteredPrefixResult(GetRegisteredPrefixResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegisteredPrefixResult]:
+        ...
 
 def get_registered_prefix(
     peering_name: Optional[_builtins.str] = ...,

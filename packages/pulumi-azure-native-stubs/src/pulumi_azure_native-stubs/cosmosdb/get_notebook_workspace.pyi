@@ -43,7 +43,8 @@ class GetNotebookWorkspaceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNotebookWorkspaceResult(GetNotebookWorkspaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNotebookWorkspaceResult]:
+        ...
 
 def get_notebook_workspace(
     account_name: Optional[_builtins.str] = ...,

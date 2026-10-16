@@ -46,7 +46,8 @@ class GetPrivateDnsZoneGroupResult:
     def provisioning_state(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateDnsZoneGroupResult(GetPrivateDnsZoneGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateDnsZoneGroupResult]:
+        ...
 
 def get_private_dns_zone_group(
     private_dns_zone_group_name: Optional[_builtins.str] = ...,

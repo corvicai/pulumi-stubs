@@ -68,7 +68,8 @@ class GetInstancePoolResult:
     def v_cores(self) -> _builtins.int: ...
 
 class AwaitableGetInstancePoolResult(GetInstancePoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstancePoolResult]:
+        ...
 
 def get_instance_pool(
     instance_pool_name: Optional[_builtins.str] = ...,

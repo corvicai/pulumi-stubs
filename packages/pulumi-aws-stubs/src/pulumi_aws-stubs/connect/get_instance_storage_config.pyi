@@ -46,7 +46,8 @@ class GetInstanceStorageConfigResult:
     ) -> Sequence[outputs.GetInstanceStorageConfigStorageConfigResult]: ...
 
 class AwaitableGetInstanceStorageConfigResult(GetInstanceStorageConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceStorageConfigResult]:
+        ...
 
 def get_instance_storage_config(
     association_id: Optional[_builtins.str] = ...,

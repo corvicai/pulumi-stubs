@@ -46,7 +46,8 @@ class GetInstanceTypeOfferingsResult:
     def storage_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetInstanceTypeOfferingsResult(GetInstanceTypeOfferingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstanceTypeOfferingsResult]:
+        ...
 
 def get_instance_type_offerings(
     engine_type: Optional[_builtins.str] = ...,

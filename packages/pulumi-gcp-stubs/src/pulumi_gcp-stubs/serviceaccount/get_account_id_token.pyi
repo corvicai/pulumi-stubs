@@ -43,7 +43,8 @@ class GetAccountIdTokenResult:
     def target_service_account(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAccountIdTokenResult(GetAccountIdTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAccountIdTokenResult]:
+        ...
 
 def get_account_id_token(
     delegates: Optional[Sequence[_builtins.str]] = ...,

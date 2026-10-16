@@ -57,7 +57,10 @@ class GetExpressRouteCircuitAuthorizationResult:
 class AwaitableGetExpressRouteCircuitAuthorizationResult(
     GetExpressRouteCircuitAuthorizationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetExpressRouteCircuitAuthorizationResult]:
+        ...
 
 def get_express_route_circuit_authorization(
     authorization_name: Optional[_builtins.str] = ...,

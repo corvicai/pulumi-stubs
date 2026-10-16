@@ -40,7 +40,8 @@ class GetEipsResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetEipsResult(GetEipsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEipsResult]:
+        ...
 
 def get_eips(
     filters: Optional[Sequence[Union[GetEipsFilterArgs, GetEipsFilterArgsDict]]] = ...,

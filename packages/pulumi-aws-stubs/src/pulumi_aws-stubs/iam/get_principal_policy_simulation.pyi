@@ -77,7 +77,10 @@ class GetPrincipalPolicySimulationResult:
     def results(self) -> Sequence[outputs.GetPrincipalPolicySimulationResultResult]: ...
 
 class AwaitableGetPrincipalPolicySimulationResult(GetPrincipalPolicySimulationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrincipalPolicySimulationResult]:
+        ...
 
 def get_principal_policy_simulation(
     action_names: Optional[Sequence[_builtins.str]] = ...,

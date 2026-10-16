@@ -66,7 +66,8 @@ class GetClusterIstioServiceResult:
     def user_labels(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetClusterIstioServiceResult(GetClusterIstioServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterIstioServiceResult]:
+        ...
 
 def get_cluster_istio_service(
     cluster_name: Optional[_builtins.str] = ...,

@@ -23,19 +23,24 @@ class BillingProfileArgs:
     @pulumi.getter(name="billingAccountName")
     def billing_account_name(self) -> pulumi.Input[_builtins.str]: ...
     @billing_account_name.setter
-    def billing_account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def billing_account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="billingProfileName")
     def billing_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @billing_profile_name.setter
-    def billing_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def billing_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(self) -> Optional[pulumi.Input[BillingProfilePropertiesArgs]]: ...
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[BillingProfilePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -44,7 +49,8 @@ class BillingProfileArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:billing:BillingProfile")
 class BillingProfile(pulumi.CustomResource):

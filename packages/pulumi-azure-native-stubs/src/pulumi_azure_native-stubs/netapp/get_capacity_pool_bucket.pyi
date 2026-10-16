@@ -60,7 +60,8 @@ class GetCapacityPoolBucketResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCapacityPoolBucketResult(GetCapacityPoolBucketResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityPoolBucketResult]:
+        ...
 
 def get_capacity_pool_bucket(
     account_name: Optional[_builtins.str] = ...,

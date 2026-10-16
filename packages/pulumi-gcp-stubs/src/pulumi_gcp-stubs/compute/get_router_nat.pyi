@@ -130,7 +130,8 @@ class GetRouterNatResult:
     def udp_idle_timeout_sec(self) -> _builtins.int: ...
 
 class AwaitableGetRouterNatResult(GetRouterNatResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouterNatResult]:
+        ...
 
 def get_router_nat(
     name: Optional[_builtins.str] = ...,

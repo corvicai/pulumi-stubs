@@ -32,18 +32,23 @@ class BucketLifecycleConfigurationV2Args:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
     def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expected_bucket_owner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -57,7 +62,8 @@ class BucketLifecycleConfigurationV2Args:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketLifecycleConfigurationV2RuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -66,7 +72,8 @@ class BucketLifecycleConfigurationV2Args:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[BucketLifecycleConfigurationV2TimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionDefaultMinimumObjectSize")
     def transition_default_minimum_object_size(
@@ -75,7 +82,8 @@ class BucketLifecycleConfigurationV2Args:
     @transition_default_minimum_object_size.setter
     def transition_default_minimum_object_size(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _BucketLifecycleConfigurationV2State:
@@ -99,18 +107,23 @@ class _BucketLifecycleConfigurationV2State:
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
     def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expected_bucket_owner(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -124,7 +137,8 @@ class _BucketLifecycleConfigurationV2State:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketLifecycleConfigurationV2RuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -133,7 +147,8 @@ class _BucketLifecycleConfigurationV2State:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[BucketLifecycleConfigurationV2TimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitionDefaultMinimumObjectSize")
     def transition_default_minimum_object_size(
@@ -142,7 +157,8 @@ class _BucketLifecycleConfigurationV2State:
     @transition_default_minimum_object_size.setter
     def transition_default_minimum_object_size(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class BucketLifecycleConfigurationV2(pulumi.CustomResource):

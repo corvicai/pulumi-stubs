@@ -25,4 +25,5 @@ class DFPInstanceAdministratorsArgs:
     @members.setter
     def members(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...

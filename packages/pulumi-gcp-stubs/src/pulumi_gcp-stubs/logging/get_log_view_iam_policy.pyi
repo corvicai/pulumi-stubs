@@ -47,7 +47,8 @@ class GetLogViewIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetLogViewIamPolicyResult(GetLogViewIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogViewIamPolicyResult]:
+        ...
 
 def get_log_view_iam_policy(
     bucket: Optional[_builtins.str] = ...,

@@ -66,7 +66,10 @@ class GetKustoDatabaseDataSetMappingResult:
 class AwaitableGetKustoDatabaseDataSetMappingResult(
     GetKustoDatabaseDataSetMappingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetKustoDatabaseDataSetMappingResult]:
+        ...
 
 def get_kusto_database_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

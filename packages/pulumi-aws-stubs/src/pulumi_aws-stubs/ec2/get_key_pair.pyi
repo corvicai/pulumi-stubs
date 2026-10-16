@@ -69,7 +69,8 @@ class GetKeyPairResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetKeyPairResult(GetKeyPairResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKeyPairResult]:
+        ...
 
 def get_key_pair(
     filters: Optional[

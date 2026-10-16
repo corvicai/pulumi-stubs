@@ -52,7 +52,8 @@ class GetFleetUpdateStrategyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFleetUpdateStrategyResult(GetFleetUpdateStrategyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetUpdateStrategyResult]:
+        ...
 
 def get_fleet_update_strategy(
     fleet_name: Optional[_builtins.str] = ...,

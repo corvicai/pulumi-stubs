@@ -35,12 +35,14 @@ class DeploymentStacksWhatIfResultsAtSubscriptionArgs:
     @deployment_stacks_what_if_result_name.setter
     def deployment_stacks_what_if_result_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -49,7 +51,8 @@ class DeploymentStacksWhatIfResultsAtSubscriptionArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[DeploymentStacksWhatIfResultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -58,7 +61,8 @@ class DeploymentStacksWhatIfResultsAtSubscriptionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DeploymentStacksWhatIfResultsAtSubscription(pulumi.CustomResource):

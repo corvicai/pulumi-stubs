@@ -24,7 +24,8 @@ class DataPartitionNamesArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EnergyServicePropertiesArgsDict(TypedDict):
     auth_app_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -46,7 +47,8 @@ class EnergyServicePropertiesArgs:
     @pulumi.getter(name="authAppId")
     def auth_app_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_app_id.setter
-    def auth_app_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_app_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPartitionNames")
     def data_partition_names(
@@ -56,4 +58,5 @@ class EnergyServicePropertiesArgs:
     def data_partition_names(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[DataPartitionNamesArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...

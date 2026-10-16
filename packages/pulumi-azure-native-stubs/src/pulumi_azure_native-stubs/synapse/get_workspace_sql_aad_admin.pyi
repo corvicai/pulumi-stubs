@@ -51,7 +51,8 @@ class GetWorkspaceSqlAadAdminResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceSqlAadAdminResult(GetWorkspaceSqlAadAdminResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceSqlAadAdminResult]:
+        ...
 
 def get_workspace_sql_aad_admin(
     resource_group_name: Optional[_builtins.str] = ...,

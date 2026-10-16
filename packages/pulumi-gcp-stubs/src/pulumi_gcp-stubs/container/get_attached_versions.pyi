@@ -31,7 +31,8 @@ class GetAttachedVersionsResult:
     def valid_versions(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetAttachedVersionsResult(GetAttachedVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAttachedVersionsResult]:
+        ...
 
 def get_attached_versions(
     location: Optional[_builtins.str] = ...,

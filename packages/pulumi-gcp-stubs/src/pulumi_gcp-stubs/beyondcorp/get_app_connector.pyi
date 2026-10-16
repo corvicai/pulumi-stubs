@@ -62,7 +62,8 @@ class GetAppConnectorResult:
     def state(self) -> _builtins.str: ...
 
 class AwaitableGetAppConnectorResult(GetAppConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppConnectorResult]:
+        ...
 
 def get_app_connector(
     name: Optional[_builtins.str] = ...,

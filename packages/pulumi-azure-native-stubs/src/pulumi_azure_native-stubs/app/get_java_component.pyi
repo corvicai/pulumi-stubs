@@ -44,7 +44,8 @@ class GetJavaComponentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetJavaComponentResult(GetJavaComponentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJavaComponentResult]:
+        ...
 
 def get_java_component(
     environment_name: Optional[_builtins.str] = ...,

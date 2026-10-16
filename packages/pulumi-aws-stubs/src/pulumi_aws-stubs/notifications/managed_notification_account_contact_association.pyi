@@ -22,14 +22,16 @@ class ManagedNotificationAccountContactAssociationArgs:
     @pulumi.getter(name="contactIdentifier")
     def contact_identifier(self) -> pulumi.Input[_builtins.str]: ...
     @contact_identifier.setter
-    def contact_identifier(self, value: pulumi.Input[_builtins.str]): ...
+    def contact_identifier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedNotificationConfigurationArn")
     def managed_notification_configuration_arn(self) -> pulumi.Input[_builtins.str]: ...
     @managed_notification_configuration_arn.setter
     def managed_notification_configuration_arn(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ManagedNotificationAccountContactAssociationState:
@@ -45,7 +47,10 @@ class _ManagedNotificationAccountContactAssociationState:
     @pulumi.getter(name="contactIdentifier")
     def contact_identifier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @contact_identifier.setter
-    def contact_identifier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def contact_identifier(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedNotificationConfigurationArn")
     def managed_notification_configuration_arn(
@@ -54,7 +59,8 @@ class _ManagedNotificationAccountContactAssociationState:
     @managed_notification_configuration_arn.setter
     def managed_notification_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ManagedNotificationAccountContactAssociation(pulumi.CustomResource):

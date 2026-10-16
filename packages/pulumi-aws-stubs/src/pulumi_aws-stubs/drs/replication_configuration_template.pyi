@@ -44,37 +44,50 @@ class ReplicationConfigurationTemplateArgs:
     @pulumi.getter(name="associateDefaultSecurityGroup")
     def associate_default_security_group(self) -> pulumi.Input[_builtins.bool]: ...
     @associate_default_security_group.setter
-    def associate_default_security_group(self, value: pulumi.Input[_builtins.bool]): ...
+    def associate_default_security_group(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bandwidthThrottling")
     def bandwidth_throttling(self) -> pulumi.Input[_builtins.int]: ...
     @bandwidth_throttling.setter
-    def bandwidth_throttling(self, value: pulumi.Input[_builtins.int]): ...
+    def bandwidth_throttling(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createPublicIp")
     def create_public_ip(self) -> pulumi.Input[_builtins.bool]: ...
     @create_public_ip.setter
-    def create_public_ip(self, value: pulumi.Input[_builtins.bool]): ...
+    def create_public_ip(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPlaneRouting")
     def data_plane_routing(self) -> pulumi.Input[_builtins.str]: ...
     @data_plane_routing.setter
-    def data_plane_routing(self, value: pulumi.Input[_builtins.str]): ...
+    def data_plane_routing(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultLargeStagingDiskType")
     def default_large_staging_disk_type(self) -> pulumi.Input[_builtins.str]: ...
     @default_large_staging_disk_type.setter
-    def default_large_staging_disk_type(self, value: pulumi.Input[_builtins.str]): ...
+    def default_large_staging_disk_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsEncryption")
     def ebs_encryption(self) -> pulumi.Input[_builtins.str]: ...
     @ebs_encryption.setter
-    def ebs_encryption(self, value: pulumi.Input[_builtins.str]): ...
+    def ebs_encryption(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationServerInstanceType")
     def replication_server_instance_type(self) -> pulumi.Input[_builtins.str]: ...
     @replication_server_instance_type.setter
-    def replication_server_instance_type(self, value: pulumi.Input[_builtins.str]): ...
+    def replication_server_instance_type(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationServersSecurityGroupsIds")
     def replication_servers_security_groups_ids(
@@ -83,12 +96,14 @@ class ReplicationConfigurationTemplateArgs:
     @replication_servers_security_groups_ids.setter
     def replication_servers_security_groups_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingAreaSubnetId")
     def staging_area_subnet_id(self) -> pulumi.Input[_builtins.str]: ...
     @staging_area_subnet_id.setter
-    def staging_area_subnet_id(self, value: pulumi.Input[_builtins.str]): ...
+    def staging_area_subnet_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingAreaTags")
     def staging_area_tags(
@@ -97,24 +112,32 @@ class ReplicationConfigurationTemplateArgs:
     @staging_area_tags.setter
     def staging_area_tags(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useDedicatedReplicationServer")
     def use_dedicated_replication_server(self) -> pulumi.Input[_builtins.bool]: ...
     @use_dedicated_replication_server.setter
-    def use_dedicated_replication_server(self, value: pulumi.Input[_builtins.bool]): ...
+    def use_dedicated_replication_server(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoReplicateNewDisks")
     def auto_replicate_new_disks(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @auto_replicate_new_disks.setter
     def auto_replicate_new_disks(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsEncryptionKeyArn")
     def ebs_encryption_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ebs_encryption_key_arn.setter
-    def ebs_encryption_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ebs_encryption_key_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pitPolicies")
     def pit_policies(
@@ -132,12 +155,14 @@ class ReplicationConfigurationTemplateArgs:
                 Sequence[pulumi.Input[ReplicationConfigurationTemplatePitPolicyArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -146,7 +171,8 @@ class ReplicationConfigurationTemplateArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -156,7 +182,8 @@ class ReplicationConfigurationTemplateArgs:
     def timeouts(
         self,
         value: Optional[pulumi.Input[ReplicationConfigurationTemplateTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ReplicationConfigurationTemplateState:
@@ -199,7 +226,8 @@ class _ReplicationConfigurationTemplateState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associateDefaultSecurityGroup")
     def associate_default_security_group(
@@ -208,29 +236,40 @@ class _ReplicationConfigurationTemplateState:
     @associate_default_security_group.setter
     def associate_default_security_group(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoReplicateNewDisks")
     def auto_replicate_new_disks(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @auto_replicate_new_disks.setter
     def auto_replicate_new_disks(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bandwidthThrottling")
     def bandwidth_throttling(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @bandwidth_throttling.setter
-    def bandwidth_throttling(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def bandwidth_throttling(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createPublicIp")
     def create_public_ip(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @create_public_ip.setter
-    def create_public_ip(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def create_public_ip(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataPlaneRouting")
     def data_plane_routing(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_plane_routing.setter
-    def data_plane_routing(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_plane_routing(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultLargeStagingDiskType")
     def default_large_staging_disk_type(
@@ -239,17 +278,22 @@ class _ReplicationConfigurationTemplateState:
     @default_large_staging_disk_type.setter
     def default_large_staging_disk_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsEncryption")
     def ebs_encryption(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ebs_encryption.setter
-    def ebs_encryption(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ebs_encryption(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsEncryptionKeyArn")
     def ebs_encryption_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ebs_encryption_key_arn.setter
-    def ebs_encryption_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ebs_encryption_key_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pitPolicies")
     def pit_policies(
@@ -267,12 +311,14 @@ class _ReplicationConfigurationTemplateState:
                 Sequence[pulumi.Input[ReplicationConfigurationTemplatePitPolicyArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationServerInstanceType")
     def replication_server_instance_type(
@@ -281,7 +327,8 @@ class _ReplicationConfigurationTemplateState:
     @replication_server_instance_type.setter
     def replication_server_instance_type(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationServersSecurityGroupsIds")
     def replication_servers_security_groups_ids(
@@ -290,12 +337,16 @@ class _ReplicationConfigurationTemplateState:
     @replication_servers_security_groups_ids.setter
     def replication_servers_security_groups_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingAreaSubnetId")
     def staging_area_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @staging_area_subnet_id.setter
-    def staging_area_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def staging_area_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stagingAreaTags")
     def staging_area_tags(
@@ -304,7 +355,8 @@ class _ReplicationConfigurationTemplateState:
     @staging_area_tags.setter
     def staging_area_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -313,7 +365,8 @@ class _ReplicationConfigurationTemplateState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -322,7 +375,8 @@ class _ReplicationConfigurationTemplateState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -332,7 +386,8 @@ class _ReplicationConfigurationTemplateState:
     def timeouts(
         self,
         value: Optional[pulumi.Input[ReplicationConfigurationTemplateTimeoutsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="useDedicatedReplicationServer")
     def use_dedicated_replication_server(
@@ -341,7 +396,8 @@ class _ReplicationConfigurationTemplateState:
     @use_dedicated_replication_server.setter
     def use_dedicated_replication_server(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ReplicationConfigurationTemplate(pulumi.CustomResource):

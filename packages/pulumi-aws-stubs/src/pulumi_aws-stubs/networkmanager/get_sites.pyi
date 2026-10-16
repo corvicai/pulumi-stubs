@@ -26,7 +26,8 @@ class GetSitesResult:
     def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 class AwaitableGetSitesResult(GetSitesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSitesResult]:
+        ...
 
 def get_sites(
     global_network_id: Optional[_builtins.str] = ...,

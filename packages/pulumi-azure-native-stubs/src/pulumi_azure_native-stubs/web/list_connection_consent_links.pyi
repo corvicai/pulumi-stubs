@@ -22,7 +22,8 @@ class ListConnectionConsentLinksResult:
     def value(self) -> Optional[Sequence[outputs.ConsentLinkDefinitionResponse]]: ...
 
 class AwaitableListConnectionConsentLinksResult(ListConnectionConsentLinksResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListConnectionConsentLinksResult]:
+        ...
 
 def list_connection_consent_links(
     connection_name: Optional[_builtins.str] = ...,

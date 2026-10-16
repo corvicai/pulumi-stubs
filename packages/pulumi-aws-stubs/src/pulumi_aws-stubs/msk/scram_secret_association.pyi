@@ -20,7 +20,8 @@ class ScramSecretAssociationArgs:
     @pulumi.getter(name="clusterArn")
     def cluster_arn(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_arn.setter
-    def cluster_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretArnLists")
     def secret_arn_lists(
@@ -29,12 +30,14 @@ class ScramSecretAssociationArgs:
     @secret_arn_lists.setter
     def secret_arn_lists(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ScramSecretAssociationState:
@@ -51,12 +54,14 @@ class _ScramSecretAssociationState:
     @pulumi.getter(name="clusterArn")
     def cluster_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_arn.setter
-    def cluster_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretArnLists")
     def secret_arn_lists(
@@ -65,7 +70,8 @@ class _ScramSecretAssociationState:
     @secret_arn_lists.setter
     def secret_arn_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ScramSecretAssociation(pulumi.CustomResource):

@@ -58,7 +58,8 @@ class GetReplicationSetResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetReplicationSetResult(GetReplicationSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicationSetResult]:
+        ...
 
 def get_replication_set(
     tags: Optional[Mapping[str, _builtins.str]] = ...,

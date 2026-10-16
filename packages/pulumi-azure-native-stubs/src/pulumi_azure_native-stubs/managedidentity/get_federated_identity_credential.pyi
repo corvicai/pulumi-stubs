@@ -54,7 +54,10 @@ class GetFederatedIdentityCredentialResult:
 class AwaitableGetFederatedIdentityCredentialResult(
     GetFederatedIdentityCredentialResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFederatedIdentityCredentialResult]:
+        ...
 
 def get_federated_identity_credential(
     federated_identity_credential_resource_name: Optional[_builtins.str] = ...,

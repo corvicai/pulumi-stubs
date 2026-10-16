@@ -37,7 +37,8 @@ class GetClusterParameterGroupResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetClusterParameterGroupResult(GetClusterParameterGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterParameterGroupResult]:
+        ...
 
 def get_cluster_parameter_group(
     name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class GetSchemaVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSchemaVersionResult(GetSchemaVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSchemaVersionResult]:
+        ...
 
 def get_schema_version(
     resource_group_name: Optional[_builtins.str] = ...,

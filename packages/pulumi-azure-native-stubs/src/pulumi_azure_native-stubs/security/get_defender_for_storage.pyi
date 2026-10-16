@@ -35,7 +35,8 @@ class GetDefenderForStorageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDefenderForStorageResult(GetDefenderForStorageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDefenderForStorageResult]:
+        ...
 
 def get_defender_for_storage(
     resource_id: Optional[_builtins.str] = ...,

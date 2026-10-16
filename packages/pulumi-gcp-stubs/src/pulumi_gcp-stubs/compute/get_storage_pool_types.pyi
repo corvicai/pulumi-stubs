@@ -92,7 +92,8 @@ class GetStoragePoolTypesResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetStoragePoolTypesResult(GetStoragePoolTypesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStoragePoolTypesResult]:
+        ...
 
 def get_storage_pool_types(
     project: Optional[_builtins.str] = ...,

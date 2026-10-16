@@ -54,7 +54,8 @@ class GetContactChannelResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContactChannelResult(GetContactChannelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContactChannelResult]:
+        ...
 
 def get_contact_channel(
     arn: Optional[_builtins.str] = ...,

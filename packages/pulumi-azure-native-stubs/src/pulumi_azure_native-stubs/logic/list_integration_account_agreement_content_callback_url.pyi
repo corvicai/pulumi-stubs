@@ -44,7 +44,10 @@ class ListIntegrationAccountAgreementContentCallbackUrlResult:
 class AwaitableListIntegrationAccountAgreementContentCallbackUrlResult(
     ListIntegrationAccountAgreementContentCallbackUrlResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIntegrationAccountAgreementContentCallbackUrlResult]:
+        ...
 
 def list_integration_account_agreement_content_callback_url(
     agreement_name: Optional[_builtins.str] = ...,

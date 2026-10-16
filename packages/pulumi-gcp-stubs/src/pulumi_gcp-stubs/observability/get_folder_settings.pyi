@@ -47,7 +47,8 @@ class GetFolderSettingsResult:
     def service_account_id(self) -> _builtins.str: ...
 
 class AwaitableGetFolderSettingsResult(GetFolderSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFolderSettingsResult]:
+        ...
 
 def get_folder_settings(
     folder: Optional[_builtins.str] = ...,

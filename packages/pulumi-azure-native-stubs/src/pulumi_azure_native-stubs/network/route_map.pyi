@@ -31,12 +31,14 @@ class RouteMapArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualHubName")
     def virtual_hub_name(self) -> pulumi.Input[_builtins.str]: ...
     @virtual_hub_name.setter
-    def virtual_hub_name(self, value: pulumi.Input[_builtins.str]): ...
+    def virtual_hub_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedInboundConnections")
     def associated_inbound_connections(
@@ -45,7 +47,8 @@ class RouteMapArgs:
     @associated_inbound_connections.setter
     def associated_inbound_connections(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatedOutboundConnections")
     def associated_outbound_connections(
@@ -54,17 +57,20 @@ class RouteMapArgs:
     @associated_outbound_connections.setter
     def associated_outbound_connections(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeMapName")
     def route_map_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @route_map_name.setter
-    def route_map_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def route_map_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -73,7 +79,8 @@ class RouteMapArgs:
     @rules.setter
     def rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RouteMapRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:RouteMap")
 class RouteMap(pulumi.CustomResource):

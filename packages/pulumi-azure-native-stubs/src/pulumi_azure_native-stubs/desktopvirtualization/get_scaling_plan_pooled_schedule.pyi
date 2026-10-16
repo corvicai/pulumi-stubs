@@ -108,7 +108,10 @@ class GetScalingPlanPooledScheduleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetScalingPlanPooledScheduleResult(GetScalingPlanPooledScheduleResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetScalingPlanPooledScheduleResult]:
+        ...
 
 def get_scaling_plan_pooled_schedule(
     resource_group_name: Optional[_builtins.str] = ...,

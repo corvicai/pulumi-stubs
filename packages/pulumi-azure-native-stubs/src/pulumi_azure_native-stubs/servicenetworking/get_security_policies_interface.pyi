@@ -60,7 +60,10 @@ class GetSecurityPoliciesInterfaceResult:
     def waf_policy(self) -> Optional[outputs.WafPolicyResponse]: ...
 
 class AwaitableGetSecurityPoliciesInterfaceResult(GetSecurityPoliciesInterfaceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSecurityPoliciesInterfaceResult]:
+        ...
 
 def get_security_policies_interface(
     resource_group_name: Optional[_builtins.str] = ...,

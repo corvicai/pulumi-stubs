@@ -40,7 +40,8 @@ class EnterpriseKeyAndroidSettingsArgs:
     @allow_all_package_names.setter
     def allow_all_package_names(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedPackageNames")
     def allowed_package_names(
@@ -49,7 +50,8 @@ class EnterpriseKeyAndroidSettingsArgs:
     @allowed_package_names.setter
     def allowed_package_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EnterpriseKeyIosSettingsArgsDict(TypedDict):
     allow_all_bundle_ids: NotRequired[pulumi.Input[_builtins.bool]]
@@ -69,7 +71,10 @@ class EnterpriseKeyIosSettingsArgs:
     @pulumi.getter(name="allowAllBundleIds")
     def allow_all_bundle_ids(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_all_bundle_ids.setter
-    def allow_all_bundle_ids(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_all_bundle_ids(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedBundleIds")
     def allowed_bundle_ids(
@@ -78,7 +83,8 @@ class EnterpriseKeyIosSettingsArgs:
     @allowed_bundle_ids.setter
     def allowed_bundle_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EnterpriseKeyTestingOptionsArgsDict(TypedDict):
     testing_challenge: NotRequired[pulumi.Input[_builtins.str]]
@@ -96,12 +102,16 @@ class EnterpriseKeyTestingOptionsArgs:
     @pulumi.getter(name="testingChallenge")
     def testing_challenge(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @testing_challenge.setter
-    def testing_challenge(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def testing_challenge(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testingScore")
     def testing_score(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @testing_score.setter
-    def testing_score(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def testing_score(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class EnterpriseKeyWafSettingsArgsDict(TypedDict):
     waf_feature: pulumi.Input[_builtins.str]
@@ -119,12 +129,14 @@ class EnterpriseKeyWafSettingsArgs:
     @pulumi.getter(name="wafFeature")
     def waf_feature(self) -> pulumi.Input[_builtins.str]: ...
     @waf_feature.setter
-    def waf_feature(self, value: pulumi.Input[_builtins.str]): ...
+    def waf_feature(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="wafService")
     def waf_service(self) -> pulumi.Input[_builtins.str]: ...
     @waf_service.setter
-    def waf_service(self, value: pulumi.Input[_builtins.str]): ...
+    def waf_service(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class EnterpriseKeyWebSettingsArgsDict(TypedDict):
     integration_type: pulumi.Input[_builtins.str]
@@ -150,17 +162,24 @@ class EnterpriseKeyWebSettingsArgs:
     @pulumi.getter(name="integrationType")
     def integration_type(self) -> pulumi.Input[_builtins.str]: ...
     @integration_type.setter
-    def integration_type(self, value: pulumi.Input[_builtins.str]): ...
+    def integration_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowAllDomains")
     def allow_all_domains(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_all_domains.setter
-    def allow_all_domains(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_all_domains(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowAmpTraffic")
     def allow_amp_traffic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_amp_traffic.setter
-    def allow_amp_traffic(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_amp_traffic(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedDomains")
     def allowed_domains(
@@ -169,7 +188,8 @@ class EnterpriseKeyWebSettingsArgs:
     @allowed_domains.setter
     def allowed_domains(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="challengeSecurityPreference")
     def challenge_security_preference(
@@ -178,4 +198,5 @@ class EnterpriseKeyWebSettingsArgs:
     @challenge_security_preference.setter
     def challenge_security_preference(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...

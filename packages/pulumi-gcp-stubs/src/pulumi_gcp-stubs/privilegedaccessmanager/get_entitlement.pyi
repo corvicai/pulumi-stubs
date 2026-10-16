@@ -88,7 +88,8 @@ class GetEntitlementResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetEntitlementResult(GetEntitlementResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntitlementResult]:
+        ...
 
 def get_entitlement(
     entitlement_id: Optional[_builtins.str] = ...,

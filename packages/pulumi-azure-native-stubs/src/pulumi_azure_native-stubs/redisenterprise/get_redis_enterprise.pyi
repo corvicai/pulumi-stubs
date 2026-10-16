@@ -98,7 +98,8 @@ class GetRedisEnterpriseResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetRedisEnterpriseResult(GetRedisEnterpriseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRedisEnterpriseResult]:
+        ...
 
 def get_redis_enterprise(
     cluster_name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetCreatorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCreatorResult(GetCreatorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCreatorResult]:
+        ...
 
 def get_creator(
     account_name: Optional[_builtins.str] = ...,

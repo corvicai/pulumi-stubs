@@ -96,7 +96,10 @@ class GetAssessmentProjectsOperationResult:
 class AwaitableGetAssessmentProjectsOperationResult(
     GetAssessmentProjectsOperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAssessmentProjectsOperationResult]:
+        ...
 
 def get_assessment_projects_operation(
     project_name: Optional[_builtins.str] = ...,

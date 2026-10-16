@@ -34,12 +34,14 @@ class WebAclLoggingConfigurationArgs:
     @log_destination_configs.setter
     def log_destination_configs(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_arn.setter
-    def resource_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingFilter")
     def logging_filter(
@@ -48,7 +50,8 @@ class WebAclLoggingConfigurationArgs:
     @logging_filter.setter
     def logging_filter(
         self, value: Optional[pulumi.Input[WebAclLoggingConfigurationLoggingFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redactedFields")
     def redacted_fields(
@@ -66,12 +69,14 @@ class WebAclLoggingConfigurationArgs:
                 Sequence[pulumi.Input[WebAclLoggingConfigurationRedactedFieldArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WebAclLoggingConfigurationState:
@@ -100,7 +105,8 @@ class _WebAclLoggingConfigurationState:
     @log_destination_configs.setter
     def log_destination_configs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loggingFilter")
     def logging_filter(
@@ -109,7 +115,8 @@ class _WebAclLoggingConfigurationState:
     @logging_filter.setter
     def logging_filter(
         self, value: Optional[pulumi.Input[WebAclLoggingConfigurationLoggingFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redactedFields")
     def redacted_fields(
@@ -127,17 +134,20 @@ class _WebAclLoggingConfigurationState:
                 Sequence[pulumi.Input[WebAclLoggingConfigurationRedactedFieldArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceArn")
     def resource_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_arn.setter
-    def resource_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class WebAclLoggingConfiguration(pulumi.CustomResource):

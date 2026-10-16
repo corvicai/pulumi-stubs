@@ -130,7 +130,8 @@ class GetWorkspaceApiResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceApiResult(GetWorkspaceApiResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceApiResult]:
+        ...
 
 def get_workspace_api(
     api_id: Optional[_builtins.str] = ...,

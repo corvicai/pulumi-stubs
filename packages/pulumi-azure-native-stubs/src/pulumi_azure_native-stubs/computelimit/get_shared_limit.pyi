@@ -56,7 +56,8 @@ class GetSharedLimitResult:
     def unit(self) -> _builtins.str: ...
 
 class AwaitableGetSharedLimitResult(GetSharedLimitResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSharedLimitResult]:
+        ...
 
 def get_shared_limit(
     location: Optional[_builtins.str] = ...,

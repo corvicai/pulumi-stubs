@@ -119,7 +119,8 @@ class AliasRoutingConfigArgs:
     @additional_version_weights.setter
     def additional_version_weights(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.float]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CapacityProviderCapacityProviderScalingConfigArgsDict(TypedDict):
     max_vcpu_count: pulumi.Input[_builtins.int]
@@ -151,12 +152,14 @@ class CapacityProviderCapacityProviderScalingConfigArgs:
     @pulumi.getter(name="maxVcpuCount")
     def max_vcpu_count(self) -> pulumi.Input[_builtins.int]: ...
     @max_vcpu_count.setter
-    def max_vcpu_count(self, value: pulumi.Input[_builtins.int]): ...
+    def max_vcpu_count(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingMode")
     def scaling_mode(self) -> pulumi.Input[_builtins.str]: ...
     @scaling_mode.setter
-    def scaling_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def scaling_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scalingPolicies")
     def scaling_policies(
@@ -176,7 +179,8 @@ class CapacityProviderCapacityProviderScalingConfigArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CapacityProviderCapacityProviderScalingConfigScalingPolicyArgsDict(TypedDict):
     predefined_metric_type: pulumi.Input[_builtins.str]
@@ -194,12 +198,14 @@ class CapacityProviderCapacityProviderScalingConfigScalingPolicyArgs:
     @pulumi.getter(name="predefinedMetricType")
     def predefined_metric_type(self) -> pulumi.Input[_builtins.str]: ...
     @predefined_metric_type.setter
-    def predefined_metric_type(self, value: pulumi.Input[_builtins.str]): ...
+    def predefined_metric_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetValue")
     def target_value(self) -> pulumi.Input[_builtins.float]: ...
     @target_value.setter
-    def target_value(self, value: pulumi.Input[_builtins.float]): ...
+    def target_value(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class CapacityProviderInstanceRequirementArgsDict(TypedDict):
     allowed_instance_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -223,14 +229,16 @@ class CapacityProviderInstanceRequirementArgs:
     @allowed_instance_types.setter
     def allowed_instance_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def architectures(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @architectures.setter
     def architectures(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedInstanceTypes")
     def excluded_instance_types(
@@ -239,7 +247,8 @@ class CapacityProviderInstanceRequirementArgs:
     @excluded_instance_types.setter
     def excluded_instance_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CapacityProviderPermissionsConfigArgsDict(TypedDict):
     capacity_provider_operator_role_arn: pulumi.Input[_builtins.str]
@@ -255,7 +264,8 @@ class CapacityProviderPermissionsConfigArgs:
     @capacity_provider_operator_role_arn.setter
     def capacity_provider_operator_role_arn(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CapacityProviderTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -275,17 +285,20 @@ class CapacityProviderTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CapacityProviderVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -307,14 +320,16 @@ class CapacityProviderVpcConfigArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CodeSigningConfigAllowedPublishersArgsDict(TypedDict):
     signing_profile_version_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -336,7 +351,8 @@ class CodeSigningConfigAllowedPublishersArgs:
     @signing_profile_version_arns.setter
     def signing_profile_version_arns(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CodeSigningConfigPoliciesArgsDict(TypedDict):
     untrusted_artifact_on_deployment: pulumi.Input[_builtins.str]
@@ -350,7 +366,10 @@ class CodeSigningConfigPoliciesArgs:
     @pulumi.getter(name="untrustedArtifactOnDeployment")
     def untrusted_artifact_on_deployment(self) -> pulumi.Input[_builtins.str]: ...
     @untrusted_artifact_on_deployment.setter
-    def untrusted_artifact_on_deployment(self, value: pulumi.Input[_builtins.str]): ...
+    def untrusted_artifact_on_deployment(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
 
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigArgsDict(TypedDict):
     consumer_group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -376,7 +395,10 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigArgs:
     @pulumi.getter(name="consumerGroupId")
     def consumer_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @consumer_group_id.setter
-    def consumer_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def consumer_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaRegistryConfig")
     def schema_registry_config(
@@ -394,7 +416,8 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigArgs:
                 EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigArgsDict(
     TypedDict
@@ -471,17 +494,24 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventRecordFormat")
     def event_record_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_record_format.setter
-    def event_record_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_record_format(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaRegistryUri")
     def schema_registry_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_registry_uri.setter
-    def schema_registry_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_registry_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaValidationConfigs")
     def schema_validation_configs(
@@ -507,7 +537,8 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigA
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigArgsDict(
     TypedDict
@@ -527,12 +558,14 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigA
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigArgsDict(
     TypedDict
@@ -548,7 +581,8 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigS
     @pulumi.getter
     def attribute(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @attribute.setter
-    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventSourceMappingDestinationConfigArgsDict(TypedDict):
     on_failure: NotRequired[
@@ -573,7 +607,8 @@ class EventSourceMappingDestinationConfigArgs:
     def on_failure(
         self,
         value: Optional[pulumi.Input[EventSourceMappingDestinationConfigOnFailureArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourceMappingDestinationConfigOnFailureArgsDict(TypedDict):
     destination_arn: pulumi.Input[_builtins.str]
@@ -585,7 +620,8 @@ class EventSourceMappingDestinationConfigOnFailureArgs:
     @pulumi.getter(name="destinationArn")
     def destination_arn(self) -> pulumi.Input[_builtins.str]: ...
     @destination_arn.setter
-    def destination_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def destination_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class EventSourceMappingDocumentDbEventSourceConfigArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
@@ -605,17 +641,20 @@ class EventSourceMappingDocumentDbEventSourceConfigArgs:
     @pulumi.getter(name="databaseName")
     def database_name(self) -> pulumi.Input[_builtins.str]: ...
     @database_name.setter
-    def database_name(self, value: pulumi.Input[_builtins.str]): ...
+    def database_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectionName")
     def collection_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collection_name.setter
-    def collection_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collection_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fullDocument")
     def full_document(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @full_document.setter
-    def full_document(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def full_document(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventSourceMappingFilterCriteriaArgsDict(TypedDict):
     filters: NotRequired[
@@ -650,7 +689,8 @@ class EventSourceMappingFilterCriteriaArgs:
                 Sequence[pulumi.Input[EventSourceMappingFilterCriteriaFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourceMappingFilterCriteriaFilterArgsDict(TypedDict):
     pattern: NotRequired[pulumi.Input[_builtins.str]]
@@ -664,7 +704,8 @@ class EventSourceMappingFilterCriteriaFilterArgs:
     @pulumi.getter
     def pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pattern.setter
-    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventSourceMappingMetricsConfigArgsDict(TypedDict):
     metrics: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -678,7 +719,10 @@ class EventSourceMappingMetricsConfigArgs:
     @pulumi.getter
     def metrics(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @metrics.setter
-    def metrics(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def metrics(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class EventSourceMappingProvisionedPollerConfigArgsDict(TypedDict):
     maximum_pollers: NotRequired[pulumi.Input[_builtins.int]]
@@ -698,17 +742,22 @@ class EventSourceMappingProvisionedPollerConfigArgs:
     @pulumi.getter(name="maximumPollers")
     def maximum_pollers(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_pollers.setter
-    def maximum_pollers(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def maximum_pollers(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumPollers")
     def minimum_pollers(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minimum_pollers.setter
-    def minimum_pollers(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minimum_pollers(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pollerGroupName")
     def poller_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @poller_group_name.setter
-    def poller_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def poller_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class EventSourceMappingScalingConfigArgsDict(TypedDict):
     maximum_concurrency: NotRequired[pulumi.Input[_builtins.int]]
@@ -722,7 +771,10 @@ class EventSourceMappingScalingConfigArgs:
     @pulumi.getter(name="maximumConcurrency")
     def maximum_concurrency(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_concurrency.setter
-    def maximum_concurrency(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def maximum_concurrency(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class EventSourceMappingSelfManagedEventSourceArgsDict(TypedDict):
     endpoints: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
@@ -738,7 +790,8 @@ class EventSourceMappingSelfManagedEventSourceArgs:
     @endpoints.setter
     def endpoints(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourceMappingSelfManagedKafkaEventSourceConfigArgsDict(TypedDict):
     consumer_group_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -764,7 +817,10 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigArgs:
     @pulumi.getter(name="consumerGroupId")
     def consumer_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @consumer_group_id.setter
-    def consumer_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def consumer_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaRegistryConfig")
     def schema_registry_config(
@@ -782,7 +838,8 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigArgs:
                 EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigArgsDict(
     TypedDict
@@ -859,17 +916,24 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigArg
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventRecordFormat")
     def event_record_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_record_format.setter
-    def event_record_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_record_format(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaRegistryUri")
     def schema_registry_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_registry_uri.setter
-    def schema_registry_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_registry_uri(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaValidationConfigs")
     def schema_validation_configs(
@@ -895,7 +959,8 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigArg
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigArgsDict(
     TypedDict
@@ -915,12 +980,14 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAcc
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigArgsDict(
     TypedDict
@@ -936,7 +1003,8 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSch
     @pulumi.getter
     def attribute(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @attribute.setter
-    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def attribute(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventSourceMappingSourceAccessConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -951,12 +1019,14 @@ class EventSourceMappingSourceAccessConfigurationArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> pulumi.Input[_builtins.str]: ...
     @uri.setter
-    def uri(self, value: pulumi.Input[_builtins.str]): ...
+    def uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionCapacityProviderConfigArgsDict(TypedDict):
     lambda_managed_instances_capacity_provider_config: pulumi.Input[
@@ -985,7 +1055,8 @@ class FunctionCapacityProviderConfigArgs:
         value: pulumi.Input[
             FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigArgsDict(
     TypedDict
@@ -1013,7 +1084,8 @@ class FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig
     @pulumi.getter(name="capacityProviderArn")
     def capacity_provider_arn(self) -> pulumi.Input[_builtins.str]: ...
     @capacity_provider_arn.setter
-    def capacity_provider_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def capacity_provider_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionEnvironmentMemoryGibPerVcpu")
     def execution_environment_memory_gib_per_vcpu(
@@ -1022,7 +1094,8 @@ class FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig
     @execution_environment_memory_gib_per_vcpu.setter
     def execution_environment_memory_gib_per_vcpu(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="perExecutionEnvironmentMaxConcurrency")
     def per_execution_environment_max_concurrency(
@@ -1031,7 +1104,8 @@ class FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig
     @per_execution_environment_max_concurrency.setter
     def per_execution_environment_max_concurrency(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FunctionDeadLetterConfigArgsDict(TypedDict):
     target_arn: pulumi.Input[_builtins.str]
@@ -1043,7 +1117,8 @@ class FunctionDeadLetterConfigArgs:
     @pulumi.getter(name="targetArn")
     def target_arn(self) -> pulumi.Input[_builtins.str]: ...
     @target_arn.setter
-    def target_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def target_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionDurableConfigArgsDict(TypedDict):
     execution_timeout: pulumi.Input[_builtins.int]
@@ -1061,12 +1136,16 @@ class FunctionDurableConfigArgs:
     @pulumi.getter(name="executionTimeout")
     def execution_timeout(self) -> pulumi.Input[_builtins.int]: ...
     @execution_timeout.setter
-    def execution_timeout(self, value: pulumi.Input[_builtins.int]): ...
+    def execution_timeout(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionPeriod")
     def retention_period(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retention_period.setter
-    def retention_period(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def retention_period(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class FunctionEnvironmentArgsDict(TypedDict):
     variables: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -1088,7 +1167,8 @@ class FunctionEnvironmentArgs:
     @variables.setter
     def variables(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FunctionEphemeralStorageArgsDict(TypedDict):
     size: NotRequired[pulumi.Input[_builtins.int]]
@@ -1102,7 +1182,8 @@ class FunctionEphemeralStorageArgs:
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @size.setter
-    def size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class FunctionEventInvokeConfigDestinationConfigArgsDict(TypedDict):
     on_failure: NotRequired[
@@ -1137,7 +1218,8 @@ class FunctionEventInvokeConfigDestinationConfigArgs:
         value: Optional[
             pulumi.Input[FunctionEventInvokeConfigDestinationConfigOnFailureArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onSuccess")
     def on_success(
@@ -1151,7 +1233,8 @@ class FunctionEventInvokeConfigDestinationConfigArgs:
         value: Optional[
             pulumi.Input[FunctionEventInvokeConfigDestinationConfigOnSuccessArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FunctionEventInvokeConfigDestinationConfigOnFailureArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
@@ -1163,7 +1246,8 @@ class FunctionEventInvokeConfigDestinationConfigOnFailureArgs:
     @pulumi.getter
     def destination(self) -> pulumi.Input[_builtins.str]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[_builtins.str]): ...
+    def destination(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionEventInvokeConfigDestinationConfigOnSuccessArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
@@ -1175,7 +1259,8 @@ class FunctionEventInvokeConfigDestinationConfigOnSuccessArgs:
     @pulumi.getter
     def destination(self) -> pulumi.Input[_builtins.str]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[_builtins.str]): ...
+    def destination(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionFileSystemConfigArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
@@ -1193,12 +1278,14 @@ class FunctionFileSystemConfigArgs:
     @pulumi.getter
     def arn(self) -> pulumi.Input[_builtins.str]: ...
     @arn.setter
-    def arn(self, value: pulumi.Input[_builtins.str]): ...
+    def arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localMountPath")
     def local_mount_path(self) -> pulumi.Input[_builtins.str]: ...
     @local_mount_path.setter
-    def local_mount_path(self, value: pulumi.Input[_builtins.str]): ...
+    def local_mount_path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionImageConfigArgsDict(TypedDict):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1224,7 +1311,8 @@ class FunctionImageConfigArgs:
     @commands.setter
     def commands(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="entryPoints")
     def entry_points(
@@ -1233,12 +1321,16 @@ class FunctionImageConfigArgs:
     @entry_points.setter
     def entry_points(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workingDirectory")
     def working_directory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @working_directory.setter
-    def working_directory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def working_directory(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FunctionLoggingConfigArgsDict(TypedDict):
     log_format: pulumi.Input[_builtins.str]
@@ -1260,22 +1352,30 @@ class FunctionLoggingConfigArgs:
     @pulumi.getter(name="logFormat")
     def log_format(self) -> pulumi.Input[_builtins.str]: ...
     @log_format.setter
-    def log_format(self, value: pulumi.Input[_builtins.str]): ...
+    def log_format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationLogLevel")
     def application_log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @application_log_level.setter
-    def application_log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def application_log_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logGroup")
     def log_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_group.setter
-    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="systemLogLevel")
     def system_log_level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @system_log_level.setter
-    def system_log_level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def system_log_level(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FunctionSnapStartArgsDict(TypedDict):
     apply_on: pulumi.Input[_builtins.str]
@@ -1293,12 +1393,16 @@ class FunctionSnapStartArgs:
     @pulumi.getter(name="applyOn")
     def apply_on(self) -> pulumi.Input[_builtins.str]: ...
     @apply_on.setter
-    def apply_on(self, value: pulumi.Input[_builtins.str]): ...
+    def apply_on(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optimizationStatus")
     def optimization_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @optimization_status.setter
-    def optimization_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def optimization_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class FunctionTenancyConfigArgsDict(TypedDict):
     tenant_isolation_mode: pulumi.Input[_builtins.str]
@@ -1312,7 +1416,8 @@ class FunctionTenancyConfigArgs:
     @pulumi.getter(name="tenantIsolationMode")
     def tenant_isolation_mode(self) -> pulumi.Input[_builtins.str]: ...
     @tenant_isolation_mode.setter
-    def tenant_isolation_mode(self, value: pulumi.Input[_builtins.str]): ...
+    def tenant_isolation_mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionTracingConfigArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
@@ -1324,7 +1429,8 @@ class FunctionTracingConfigArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FunctionUrlCorsArgsDict(TypedDict):
     allow_credentials: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1358,7 +1464,10 @@ class FunctionUrlCorsArgs:
     @pulumi.getter(name="allowCredentials")
     def allow_credentials(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_credentials.setter
-    def allow_credentials(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_credentials(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowHeaders")
     def allow_headers(
@@ -1367,7 +1476,8 @@ class FunctionUrlCorsArgs:
     @allow_headers.setter
     def allow_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowMethods")
     def allow_methods(
@@ -1376,7 +1486,8 @@ class FunctionUrlCorsArgs:
     @allow_methods.setter
     def allow_methods(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowOrigins")
     def allow_origins(
@@ -1385,7 +1496,8 @@ class FunctionUrlCorsArgs:
     @allow_origins.setter
     def allow_origins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exposeHeaders")
     def expose_headers(
@@ -1394,12 +1506,14 @@ class FunctionUrlCorsArgs:
     @expose_headers.setter
     def expose_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxAge")
     def max_age(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_age.setter
-    def max_age(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_age(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class FunctionVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1425,23 +1539,27 @@ class FunctionVpcConfigArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AllowedForDualStack")
     def ipv6_allowed_for_dual_stack(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ipv6_allowed_for_dual_stack.setter
     def ipv6_allowed_for_dual_stack(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

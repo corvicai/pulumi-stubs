@@ -72,7 +72,10 @@ class GetKustoPoolAttachedDatabaseConfigurationResult:
 class AwaitableGetKustoPoolAttachedDatabaseConfigurationResult(
     GetKustoPoolAttachedDatabaseConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetKustoPoolAttachedDatabaseConfigurationResult]:
+        ...
 
 def get_kusto_pool_attached_database_configuration(
     attached_database_configuration_name: Optional[_builtins.str] = ...,

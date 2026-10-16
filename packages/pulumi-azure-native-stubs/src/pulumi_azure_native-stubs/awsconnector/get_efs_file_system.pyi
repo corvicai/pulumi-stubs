@@ -52,7 +52,8 @@ class GetEfsFileSystemResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEfsFileSystemResult(GetEfsFileSystemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEfsFileSystemResult]:
+        ...
 
 def get_efs_file_system(
     name: Optional[_builtins.str] = ...,

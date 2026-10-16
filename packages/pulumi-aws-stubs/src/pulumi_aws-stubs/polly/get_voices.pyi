@@ -45,7 +45,8 @@ class GetVoicesResult:
     def voices(self) -> Optional[Sequence[outputs.GetVoicesVoiceResult]]: ...
 
 class AwaitableGetVoicesResult(GetVoicesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVoicesResult]:
+        ...
 
 def get_voices(
     engine: Optional[_builtins.str] = ...,

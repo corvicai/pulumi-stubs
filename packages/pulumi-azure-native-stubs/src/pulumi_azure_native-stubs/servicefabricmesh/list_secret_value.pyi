@@ -20,7 +20,8 @@ class ListSecretValueResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListSecretValueResult(ListSecretValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListSecretValueResult]:
+        ...
 
 def list_secret_value(
     resource_group_name: Optional[_builtins.str] = ...,

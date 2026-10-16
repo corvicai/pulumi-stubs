@@ -29,7 +29,8 @@ class GetOrganizationalUnitResult:
     def parent_id(self) -> _builtins.str: ...
 
 class AwaitableGetOrganizationalUnitResult(GetOrganizationalUnitResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationalUnitResult]:
+        ...
 
 def get_organizational_unit(
     name: Optional[_builtins.str] = ...,

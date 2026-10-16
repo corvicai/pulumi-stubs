@@ -52,7 +52,8 @@ class GetInfrastructureResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInfrastructureResourceResult(GetInfrastructureResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInfrastructureResourceResult]:
+        ...
 
 def get_infrastructure_resource(
     infrastructure_resource_name: Optional[_builtins.str] = ...,

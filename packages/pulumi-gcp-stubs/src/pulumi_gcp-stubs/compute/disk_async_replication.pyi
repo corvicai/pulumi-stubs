@@ -21,14 +21,16 @@ class DiskAsyncReplicationArgs:
     @pulumi.getter(name="primaryDisk")
     def primary_disk(self) -> pulumi.Input[_builtins.str]: ...
     @primary_disk.setter
-    def primary_disk(self, value: pulumi.Input[_builtins.str]): ...
+    def primary_disk(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryDisk")
     def secondary_disk(self) -> pulumi.Input[DiskAsyncReplicationSecondaryDiskArgs]: ...
     @secondary_disk.setter
     def secondary_disk(
         self, value: pulumi.Input[DiskAsyncReplicationSecondaryDiskArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DiskAsyncReplicationState:
@@ -44,7 +46,8 @@ class _DiskAsyncReplicationState:
     @pulumi.getter(name="primaryDisk")
     def primary_disk(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_disk.setter
-    def primary_disk(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def primary_disk(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryDisk")
     def secondary_disk(
@@ -53,7 +56,8 @@ class _DiskAsyncReplicationState:
     @secondary_disk.setter
     def secondary_disk(
         self, value: Optional[pulumi.Input[DiskAsyncReplicationSecondaryDiskArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DiskAsyncReplication(pulumi.CustomResource):

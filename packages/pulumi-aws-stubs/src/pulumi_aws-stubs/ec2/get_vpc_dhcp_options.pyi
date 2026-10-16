@@ -73,7 +73,8 @@ class GetVpcDhcpOptionsResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVpcDhcpOptionsResult(GetVpcDhcpOptionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcDhcpOptionsResult]:
+        ...
 
 def get_vpc_dhcp_options(
     dhcp_options_id: Optional[_builtins.str] = ...,

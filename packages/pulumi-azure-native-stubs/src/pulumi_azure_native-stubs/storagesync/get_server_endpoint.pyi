@@ -128,7 +128,8 @@ class GetServerEndpointResult:
     def volume_free_space_percent(self) -> Optional[_builtins.int]: ...
 
 class AwaitableGetServerEndpointResult(GetServerEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerEndpointResult]:
+        ...
 
 def get_server_endpoint(
     resource_group_name: Optional[_builtins.str] = ...,

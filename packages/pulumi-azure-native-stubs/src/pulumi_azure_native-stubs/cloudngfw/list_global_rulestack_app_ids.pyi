@@ -23,7 +23,8 @@ class ListGlobalRulestackAppIdsResult:
     def value(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableListGlobalRulestackAppIdsResult(ListGlobalRulestackAppIdsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListGlobalRulestackAppIdsResult]:
+        ...
 
 def list_global_rulestack_app_ids(
     app_id_version: Optional[_builtins.str] = ...,

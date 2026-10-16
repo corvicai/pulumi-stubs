@@ -36,7 +36,8 @@ class GetAmiIdsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetAmiIdsResult(GetAmiIdsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAmiIdsResult]:
+        ...
 
 def get_ami_ids(
     filters: Optional[

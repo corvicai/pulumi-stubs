@@ -46,7 +46,8 @@ class GetGlobalParameterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGlobalParameterResult(GetGlobalParameterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlobalParameterResult]:
+        ...
 
 def get_global_parameter(
     factory_name: Optional[_builtins.str] = ...,

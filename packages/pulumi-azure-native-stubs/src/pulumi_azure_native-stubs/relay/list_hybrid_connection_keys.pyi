@@ -39,7 +39,8 @@ class ListHybridConnectionKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListHybridConnectionKeysResult(ListHybridConnectionKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListHybridConnectionKeysResult]:
+        ...
 
 def list_hybrid_connection_keys(
     authorization_rule_name: Optional[_builtins.str] = ...,

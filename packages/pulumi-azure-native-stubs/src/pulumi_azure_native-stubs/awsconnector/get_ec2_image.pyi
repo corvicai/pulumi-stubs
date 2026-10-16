@@ -52,7 +52,8 @@ class GetEc2ImageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2ImageResult(GetEc2ImageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2ImageResult]:
+        ...
 
 def get_ec2_image(
     name: Optional[_builtins.str] = ...,

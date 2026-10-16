@@ -96,7 +96,8 @@ class GetModuleResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetModuleResult(GetModuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetModuleResult]:
+        ...
 
 def get_module(
     automation_account_name: Optional[_builtins.str] = ...,

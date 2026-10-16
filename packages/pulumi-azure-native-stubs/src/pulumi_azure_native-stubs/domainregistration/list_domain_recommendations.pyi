@@ -24,7 +24,8 @@ class ListDomainRecommendationsResult:
     def value(self) -> Sequence[outputs.NameIdentifierResponse]: ...
 
 class AwaitableListDomainRecommendationsResult(ListDomainRecommendationsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDomainRecommendationsResult]:
+        ...
 
 def list_domain_recommendations(
     keywords: Optional[_builtins.str] = ...,

@@ -36,7 +36,8 @@ class GetRoute53HealthChecksResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetRoute53HealthChecksResult(GetRoute53HealthChecksResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoute53HealthChecksResult]:
+        ...
 
 def get_route53_health_checks(
     plan_arn: Optional[_builtins.str] = ...,

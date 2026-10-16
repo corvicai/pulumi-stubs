@@ -43,7 +43,8 @@ class GetDataExchangeIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetDataExchangeIamPolicyResult(GetDataExchangeIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataExchangeIamPolicyResult]:
+        ...
 
 def get_data_exchange_iam_policy(
     data_exchange_id: Optional[_builtins.str] = ...,

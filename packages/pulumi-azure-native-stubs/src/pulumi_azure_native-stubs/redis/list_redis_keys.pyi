@@ -23,7 +23,8 @@ class ListRedisKeysResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListRedisKeysResult(ListRedisKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListRedisKeysResult]:
+        ...
 
 def list_redis_keys(
     name: Optional[_builtins.str] = ...,

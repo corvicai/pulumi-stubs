@@ -44,7 +44,10 @@ class GetManagedEnvironmentsStorageResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedEnvironmentsStorageResult(GetManagedEnvironmentsStorageResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedEnvironmentsStorageResult]:
+        ...
 
 def get_managed_environments_storage(
     environment_name: Optional[_builtins.str] = ...,

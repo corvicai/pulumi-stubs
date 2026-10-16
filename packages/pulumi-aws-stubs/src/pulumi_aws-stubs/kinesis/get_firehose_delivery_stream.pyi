@@ -29,7 +29,8 @@ class GetFirehoseDeliveryStreamResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetFirehoseDeliveryStreamResult(GetFirehoseDeliveryStreamResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirehoseDeliveryStreamResult]:
+        ...
 
 def get_firehose_delivery_stream(
     name: Optional[_builtins.str] = ...,

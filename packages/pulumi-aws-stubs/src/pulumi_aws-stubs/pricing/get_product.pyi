@@ -33,7 +33,8 @@ class GetProductResult:
     def service_code(self) -> _builtins.str: ...
 
 class AwaitableGetProductResult(GetProductResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetProductResult]:
+        ...
 
 def get_product(
     filters: Optional[

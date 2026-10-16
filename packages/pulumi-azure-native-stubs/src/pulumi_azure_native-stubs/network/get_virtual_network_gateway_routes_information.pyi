@@ -44,7 +44,10 @@ class GetVirtualNetworkGatewayRoutesInformationResult:
 class AwaitableGetVirtualNetworkGatewayRoutesInformationResult(
     GetVirtualNetworkGatewayRoutesInformationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetVirtualNetworkGatewayRoutesInformationResult]:
+        ...
 
 def get_virtual_network_gateway_routes_information(
     attempt_refresh: Optional[_builtins.bool] = ...,

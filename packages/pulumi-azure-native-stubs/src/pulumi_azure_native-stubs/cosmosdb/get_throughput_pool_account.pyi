@@ -56,7 +56,8 @@ class GetThroughputPoolAccountResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetThroughputPoolAccountResult(GetThroughputPoolAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetThroughputPoolAccountResult]:
+        ...
 
 def get_throughput_pool_account(
     resource_group_name: Optional[_builtins.str] = ...,

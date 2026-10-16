@@ -33,7 +33,8 @@ class EndpointGroupArgs:
     @pulumi.getter(name="listenerArn")
     def listener_arn(self) -> pulumi.Input[_builtins.str]: ...
     @listener_arn.setter
-    def listener_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def listener_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointConfigurations")
     def endpoint_configurations(
@@ -47,12 +48,16 @@ class EndpointGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EndpointGroupEndpointConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointGroupRegion")
     def endpoint_group_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_group_region.setter
-    def endpoint_group_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_group_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckIntervalSeconds")
     def health_check_interval_seconds(
@@ -61,22 +66,32 @@ class EndpointGroupArgs:
     @health_check_interval_seconds.setter
     def health_check_interval_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckPath")
     def health_check_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_path.setter
-    def health_check_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckPort")
     def health_check_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @health_check_port.setter
-    def health_check_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def health_check_port(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckProtocol")
     def health_check_protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_protocol.setter
-    def health_check_protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_protocol(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portOverrides")
     def port_overrides(
@@ -90,19 +105,22 @@ class EndpointGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EndpointGroupPortOverrideArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdCount")
     def threshold_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @threshold_count.setter
-    def threshold_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def threshold_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficDialPercentage")
     def traffic_dial_percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @traffic_dial_percentage.setter
     def traffic_dial_percentage(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EndpointGroupState:
@@ -129,7 +147,8 @@ class _EndpointGroupState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointConfigurations")
     def endpoint_configurations(
@@ -143,12 +162,16 @@ class _EndpointGroupState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EndpointGroupEndpointConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointGroupRegion")
     def endpoint_group_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_group_region.setter
-    def endpoint_group_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_group_region(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckIntervalSeconds")
     def health_check_interval_seconds(
@@ -157,27 +180,38 @@ class _EndpointGroupState:
     @health_check_interval_seconds.setter
     def health_check_interval_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckPath")
     def health_check_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_path.setter
-    def health_check_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckPort")
     def health_check_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @health_check_port.setter
-    def health_check_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def health_check_port(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckProtocol")
     def health_check_protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @health_check_protocol.setter
-    def health_check_protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def health_check_protocol(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listenerArn")
     def listener_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @listener_arn.setter
-    def listener_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def listener_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portOverrides")
     def port_overrides(
@@ -191,19 +225,22 @@ class _EndpointGroupState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EndpointGroupPortOverrideArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thresholdCount")
     def threshold_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @threshold_count.setter
-    def threshold_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def threshold_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="trafficDialPercentage")
     def traffic_dial_percentage(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @traffic_dial_percentage.setter
     def traffic_dial_percentage(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:globalaccelerator/endpointGroup:EndpointGroup")
 class EndpointGroup(pulumi.CustomResource):

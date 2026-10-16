@@ -80,7 +80,8 @@ class GetScheduledActionByScopeResult:
     def view_id(self) -> _builtins.str: ...
 
 class AwaitableGetScheduledActionByScopeResult(GetScheduledActionByScopeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScheduledActionByScopeResult]:
+        ...
 
 def get_scheduled_action_by_scope(
     name: Optional[_builtins.str] = ...,

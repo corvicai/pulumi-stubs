@@ -28,12 +28,14 @@ class RegionSettingsArgs:
     @resource_type_opt_in_preference.setter
     def resource_type_opt_in_preference(
         self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.bool]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypeManagementPreference")
     def resource_type_management_preference(
@@ -42,7 +44,8 @@ class RegionSettingsArgs:
     @resource_type_management_preference.setter
     def resource_type_management_preference(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.bool]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RegionSettingsState:
@@ -61,7 +64,8 @@ class _RegionSettingsState:
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypeManagementPreference")
     def resource_type_management_preference(
@@ -70,7 +74,8 @@ class _RegionSettingsState:
     @resource_type_management_preference.setter
     def resource_type_management_preference(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.bool]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypeOptInPreference")
     def resource_type_opt_in_preference(
@@ -79,7 +84,8 @@ class _RegionSettingsState:
     @resource_type_opt_in_preference.setter
     def resource_type_opt_in_preference(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.bool]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:backup/regionSettings:RegionSettings")
 class RegionSettings(pulumi.CustomResource):

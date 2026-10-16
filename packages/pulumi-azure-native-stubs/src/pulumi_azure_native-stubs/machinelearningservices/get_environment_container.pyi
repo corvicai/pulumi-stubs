@@ -44,7 +44,8 @@ class GetEnvironmentContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnvironmentContainerResult(GetEnvironmentContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnvironmentContainerResult]:
+        ...
 
 def get_environment_container(
     name: Optional[_builtins.str] = ...,

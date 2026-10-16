@@ -44,7 +44,8 @@ class GetAgentDeploymentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAgentDeploymentResult(GetAgentDeploymentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAgentDeploymentResult]:
+        ...
 
 def get_agent_deployment(
     account_name: Optional[_builtins.str] = ...,

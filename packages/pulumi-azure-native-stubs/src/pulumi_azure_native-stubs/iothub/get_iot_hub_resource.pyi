@@ -64,7 +64,8 @@ class GetIotHubResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIotHubResourceResult(GetIotHubResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIotHubResourceResult]:
+        ...
 
 def get_iot_hub_resource(
     resource_group_name: Optional[_builtins.str] = ...,

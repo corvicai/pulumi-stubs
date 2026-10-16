@@ -48,7 +48,8 @@ class GetDataflowProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataflowProfileResult(GetDataflowProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataflowProfileResult]:
+        ...
 
 def get_dataflow_profile(
     dataflow_profile_name: Optional[_builtins.str] = ...,

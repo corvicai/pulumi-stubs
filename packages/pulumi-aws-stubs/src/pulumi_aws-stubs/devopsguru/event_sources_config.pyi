@@ -28,12 +28,14 @@ class EventSourcesConfigArgs:
     def event_sources(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[EventSourcesConfigEventSourceArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _EventSourcesConfigState:
@@ -58,12 +60,14 @@ class _EventSourcesConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EventSourcesConfigEventSourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class EventSourcesConfig(pulumi.CustomResource):

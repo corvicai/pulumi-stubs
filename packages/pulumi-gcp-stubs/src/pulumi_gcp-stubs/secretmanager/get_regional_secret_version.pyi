@@ -70,7 +70,8 @@ class GetRegionalSecretVersionResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetRegionalSecretVersionResult(GetRegionalSecretVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegionalSecretVersionResult]:
+        ...
 
 def get_regional_secret_version(
     is_secret_data_base64: Optional[_builtins.bool] = ...,

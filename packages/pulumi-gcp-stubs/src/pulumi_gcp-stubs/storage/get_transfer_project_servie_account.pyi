@@ -36,7 +36,10 @@ class GetTransferProjectServieAccountResult:
 class AwaitableGetTransferProjectServieAccountResult(
     GetTransferProjectServieAccountResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTransferProjectServieAccountResult]:
+        ...
 
 def get_transfer_project_servie_account(
     project: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

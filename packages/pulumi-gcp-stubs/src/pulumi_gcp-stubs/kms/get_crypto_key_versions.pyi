@@ -35,7 +35,8 @@ class GetCryptoKeyVersionsResult:
     def versions(self) -> Sequence[outputs.GetCryptoKeyVersionsVersionResult]: ...
 
 class AwaitableGetCryptoKeyVersionsResult(GetCryptoKeyVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCryptoKeyVersionsResult]:
+        ...
 
 def get_crypto_key_versions(
     crypto_key: Optional[_builtins.str] = ...,

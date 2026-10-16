@@ -44,7 +44,8 @@ class GetVariableValueResult:
     def values(self) -> Sequence[outputs.PolicyVariableValueColumnValueResponse]: ...
 
 class AwaitableGetVariableValueResult(GetVariableValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVariableValueResult]:
+        ...
 
 def get_variable_value(
     variable_name: Optional[_builtins.str] = ...,

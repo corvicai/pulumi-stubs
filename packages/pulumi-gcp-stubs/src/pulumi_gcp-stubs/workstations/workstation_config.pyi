@@ -57,17 +57,20 @@ class WorkstationConfigArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workstationClusterId")
     def workstation_cluster_id(self) -> pulumi.Input[_builtins.str]: ...
     @workstation_cluster_id.setter
-    def workstation_cluster_id(self, value: pulumi.Input[_builtins.str]): ...
+    def workstation_cluster_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workstationConfigId")
     def workstation_config_id(self) -> pulumi.Input[_builtins.str]: ...
     @workstation_config_id.setter
-    def workstation_config_id(self, value: pulumi.Input[_builtins.str]): ...
+    def workstation_config_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedPorts")
     def allowed_ports(
@@ -81,7 +84,8 @@ class WorkstationConfigArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkstationConfigAllowedPortArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -90,31 +94,38 @@ class WorkstationConfigArgs:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def container(self) -> Optional[pulumi.Input[WorkstationConfigContainerArgs]]: ...
     @container.setter
     def container(
         self, value: Optional[pulumi.Input[WorkstationConfigContainerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableTcpConnections")
     def disable_tcp_connections(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_tcp_connections.setter
     def disable_tcp_connections(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAuditAgent")
     def enable_audit_agent(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_audit_agent.setter
-    def enable_audit_agent(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_audit_agent(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKey")
     def encryption_key(
@@ -123,7 +134,8 @@ class WorkstationConfigArgs:
     @encryption_key.setter
     def encryption_key(
         self, value: Optional[pulumi.Input[WorkstationConfigEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ephemeralDirectories")
     def ephemeral_directories(
@@ -139,17 +151,22 @@ class WorkstationConfigArgs:
                 Sequence[pulumi.Input[WorkstationConfigEphemeralDirectoryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def host(self) -> Optional[pulumi.Input[WorkstationConfigHostArgs]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[WorkstationConfigHostArgs]]): ...
+    def host(
+        self, value: Optional[pulumi.Input[WorkstationConfigHostArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeout")
     def idle_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @idle_timeout.setter
-    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -158,12 +175,16 @@ class WorkstationConfigArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxUsableWorkstations")
     def max_usable_workstations(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_usable_workstations.setter
-    def max_usable_workstations(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_usable_workstations(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="persistentDirectories")
     def persistent_directories(
@@ -179,12 +200,14 @@ class WorkstationConfigArgs:
                 Sequence[pulumi.Input[WorkstationConfigPersistentDirectoryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readinessChecks")
     def readiness_checks(
@@ -198,7 +221,8 @@ class WorkstationConfigArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkstationConfigReadinessCheckArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaZones")
     def replica_zones(
@@ -207,12 +231,14 @@ class WorkstationConfigArgs:
     @replica_zones.setter
     def replica_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runningTimeout")
     def running_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @running_timeout.setter
-    def running_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def running_timeout(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WorkstationConfigState:
@@ -288,7 +314,8 @@ class _WorkstationConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkstationConfigAllowedPortArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def annotations(
@@ -297,7 +324,8 @@ class _WorkstationConfigState:
     @annotations.setter
     def annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def conditions(
@@ -311,36 +339,42 @@ class _WorkstationConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkstationConfigConditionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def container(self) -> Optional[pulumi.Input[WorkstationConfigContainerArgs]]: ...
     @container.setter
     def container(
         self, value: Optional[pulumi.Input[WorkstationConfigContainerArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def degraded(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @degraded.setter
-    def degraded(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def degraded(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableTcpConnections")
     def disable_tcp_connections(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_tcp_connections.setter
     def disable_tcp_connections(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveAnnotations")
     def effective_annotations(
@@ -349,7 +383,8 @@ class _WorkstationConfigState:
     @effective_annotations.setter
     def effective_annotations(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -358,12 +393,16 @@ class _WorkstationConfigState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableAuditAgent")
     def enable_audit_agent(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_audit_agent.setter
-    def enable_audit_agent(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_audit_agent(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionKey")
     def encryption_key(
@@ -372,7 +411,8 @@ class _WorkstationConfigState:
     @encryption_key.setter
     def encryption_key(
         self, value: Optional[pulumi.Input[WorkstationConfigEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ephemeralDirectories")
     def ephemeral_directories(
@@ -388,22 +428,28 @@ class _WorkstationConfigState:
                 Sequence[pulumi.Input[WorkstationConfigEphemeralDirectoryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def host(self) -> Optional[pulumi.Input[WorkstationConfigHostArgs]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[WorkstationConfigHostArgs]]): ...
+    def host(
+        self, value: Optional[pulumi.Input[WorkstationConfigHostArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeout")
     def idle_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @idle_timeout.setter
-    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -412,22 +458,28 @@ class _WorkstationConfigState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxUsableWorkstations")
     def max_usable_workstations(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_usable_workstations.setter
-    def max_usable_workstations(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_usable_workstations(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="persistentDirectories")
     def persistent_directories(
@@ -443,12 +495,14 @@ class _WorkstationConfigState:
                 Sequence[pulumi.Input[WorkstationConfigPersistentDirectoryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -457,7 +511,8 @@ class _WorkstationConfigState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readinessChecks")
     def readiness_checks(
@@ -471,7 +526,8 @@ class _WorkstationConfigState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[WorkstationConfigReadinessCheckArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaZones")
     def replica_zones(
@@ -480,27 +536,36 @@ class _WorkstationConfigState:
     @replica_zones.setter
     def replica_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="runningTimeout")
     def running_timeout(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @running_timeout.setter
-    def running_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def running_timeout(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workstationClusterId")
     def workstation_cluster_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workstation_cluster_id.setter
-    def workstation_cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workstation_cluster_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workstationConfigId")
     def workstation_config_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workstation_config_id.setter
-    def workstation_config_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workstation_config_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class WorkstationConfig(pulumi.CustomResource):

@@ -35,7 +35,8 @@ class GetQueueServicePropertiesResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetQueueServicePropertiesResult(GetQueueServicePropertiesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueueServicePropertiesResult]:
+        ...
 
 def get_queue_service_properties(
     account_name: Optional[_builtins.str] = ...,

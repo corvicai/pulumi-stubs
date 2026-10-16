@@ -43,7 +43,8 @@ class GetPolicyRestrictionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyRestrictionResult(GetPolicyRestrictionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyRestrictionResult]:
+        ...
 
 def get_policy_restriction(
     policy_restriction_id: Optional[_builtins.str] = ...,

@@ -76,7 +76,8 @@ class GetL2IsolationDomainResult:
     def vlan_id(self) -> _builtins.int: ...
 
 class AwaitableGetL2IsolationDomainResult(GetL2IsolationDomainResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetL2IsolationDomainResult]:
+        ...
 
 def get_l2_isolation_domain(
     l2_isolation_domain_name: Optional[_builtins.str] = ...,

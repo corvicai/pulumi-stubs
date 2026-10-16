@@ -80,7 +80,8 @@ class GetPipelineResult:
     ) -> Optional[Mapping[str, outputs.VariableSpecificationResponse]]: ...
 
 class AwaitableGetPipelineResult(GetPipelineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPipelineResult]:
+        ...
 
 def get_pipeline(
     factory_name: Optional[_builtins.str] = ...,

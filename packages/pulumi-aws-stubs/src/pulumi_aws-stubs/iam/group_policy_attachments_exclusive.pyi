@@ -19,14 +19,16 @@ class GroupPolicyAttachmentsExclusiveArgs:
     @pulumi.getter(name="groupName")
     def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyArns")
     def policy_arns(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @policy_arns.setter
     def policy_arns(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _GroupPolicyAttachmentsExclusiveState:
@@ -42,7 +44,8 @@ class _GroupPolicyAttachmentsExclusiveState:
     @pulumi.getter(name="groupName")
     def group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_name.setter
-    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyArns")
     def policy_arns(
@@ -51,7 +54,8 @@ class _GroupPolicyAttachmentsExclusiveState:
     @policy_arns.setter
     def policy_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class GroupPolicyAttachmentsExclusive(pulumi.CustomResource):

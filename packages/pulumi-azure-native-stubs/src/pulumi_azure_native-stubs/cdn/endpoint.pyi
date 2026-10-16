@@ -63,17 +63,20 @@ class EndpointArgs:
     @origins.setter
     def origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[DeepCreatedOriginArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="profileName")
     def profile_name(self) -> pulumi.Input[_builtins.str]: ...
     @profile_name.setter
-    def profile_name(self, value: pulumi.Input[_builtins.str]): ...
+    def profile_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentTypesToCompress")
     def content_types_to_compress(
@@ -82,14 +85,16 @@ class EndpointArgs:
     @content_types_to_compress.setter
     def content_types_to_compress(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultOriginGroup")
     def default_origin_group(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]: ...
     @default_origin_group.setter
     def default_origin_group(
         self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deliveryPolicy")
     def delivery_policy(
@@ -103,12 +108,14 @@ class EndpointArgs:
         value: Optional[
             pulumi.Input[EndpointPropertiesUpdateParametersDeliveryPolicyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointName")
     def endpoint_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_name.setter
-    def endpoint_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoFilters")
     def geo_filters(
@@ -117,27 +124,38 @@ class EndpointArgs:
     @geo_filters.setter
     def geo_filters(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[GeoFilterArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isCompressionEnabled")
     def is_compression_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_compression_enabled.setter
-    def is_compression_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_compression_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isHttpAllowed")
     def is_http_allowed(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_http_allowed.setter
-    def is_http_allowed(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_http_allowed(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isHttpsAllowed")
     def is_https_allowed(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_https_allowed.setter
-    def is_https_allowed(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_https_allowed(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="optimizationType")
     def optimization_type(
@@ -146,7 +164,8 @@ class EndpointArgs:
     @optimization_type.setter
     def optimization_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, OptimizationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originGroups")
     def origin_groups(
@@ -158,22 +177,28 @@ class EndpointArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DeepCreatedOriginGroupArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originHostHeader")
     def origin_host_header(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_host_header.setter
-    def origin_host_header(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_host_header(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="originPath")
     def origin_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @origin_path.setter
-    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def origin_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="probePath")
     def probe_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @probe_path.setter
-    def probe_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def probe_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringCachingBehavior")
     def query_string_caching_behavior(
@@ -182,7 +207,8 @@ class EndpointArgs:
     @query_string_caching_behavior.setter
     def query_string_caching_behavior(
         self, value: Optional[pulumi.Input[QueryStringCachingBehavior]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -191,7 +217,8 @@ class EndpointArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="urlSigningKeys")
     def url_signing_keys(
@@ -200,7 +227,8 @@ class EndpointArgs:
     @url_signing_keys.setter
     def url_signing_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UrlSigningKeyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webApplicationFirewallPolicyLink")
     def web_application_firewall_policy_link(
@@ -218,7 +246,8 @@ class EndpointArgs:
                 EndpointPropertiesUpdateParametersWebApplicationFirewallPolicyLinkArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cdn:Endpoint")
 class Endpoint(pulumi.CustomResource):

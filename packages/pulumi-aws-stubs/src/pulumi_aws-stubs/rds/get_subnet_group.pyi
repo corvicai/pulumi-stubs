@@ -55,7 +55,8 @@ class GetSubnetGroupResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetSubnetGroupResult(GetSubnetGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetGroupResult]:
+        ...
 
 def get_subnet_group(
     name: Optional[_builtins.str] = ...,

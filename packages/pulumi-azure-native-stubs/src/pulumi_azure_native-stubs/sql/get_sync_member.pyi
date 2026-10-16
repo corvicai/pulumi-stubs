@@ -79,7 +79,8 @@ class GetSyncMemberResult:
     def user_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetSyncMemberResult(GetSyncMemberResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSyncMemberResult]:
+        ...
 
 def get_sync_member(
     database_name: Optional[_builtins.str] = ...,

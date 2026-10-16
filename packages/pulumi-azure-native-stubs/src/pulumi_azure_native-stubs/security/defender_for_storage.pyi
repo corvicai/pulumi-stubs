@@ -24,7 +24,8 @@ class DefenderForStorageArgs:
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -33,12 +34,14 @@ class DefenderForStorageArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[DefenderForStorageSettingPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="settingName")
     def setting_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @setting_name.setter
-    def setting_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def setting_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:security:DefenderForStorage")
 class DefenderForStorage(pulumi.CustomResource):

@@ -28,7 +28,8 @@ class GetClusterGatewaySettingsResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetClusterGatewaySettingsResult(GetClusterGatewaySettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterGatewaySettingsResult]:
+        ...
 
 def get_cluster_gateway_settings(
     cluster_name: Optional[_builtins.str] = ...,

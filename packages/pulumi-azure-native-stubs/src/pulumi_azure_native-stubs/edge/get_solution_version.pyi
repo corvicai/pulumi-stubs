@@ -54,7 +54,8 @@ class GetSolutionVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSolutionVersionResult(GetSolutionVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSolutionVersionResult]:
+        ...
 
 def get_solution_version(
     resource_group_name: Optional[_builtins.str] = ...,

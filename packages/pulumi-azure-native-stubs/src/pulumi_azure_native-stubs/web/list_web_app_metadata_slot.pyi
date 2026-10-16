@@ -34,7 +34,8 @@ class ListWebAppMetadataSlotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableListWebAppMetadataSlotResult(ListWebAppMetadataSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebAppMetadataSlotResult]:
+        ...
 
 def list_web_app_metadata_slot(
     name: Optional[_builtins.str] = ...,

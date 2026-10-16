@@ -52,7 +52,8 @@ class GetIpamPoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIpamPoolResult(GetIpamPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpamPoolResult]:
+        ...
 
 def get_ipam_pool(
     network_manager_name: Optional[_builtins.str] = ...,

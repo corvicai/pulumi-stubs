@@ -42,7 +42,8 @@ class GetGroupMembershipsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetGroupMembershipsResult(GetGroupMembershipsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGroupMembershipsResult]:
+        ...
 
 def get_group_memberships(
     group_id: Optional[_builtins.str] = ...,

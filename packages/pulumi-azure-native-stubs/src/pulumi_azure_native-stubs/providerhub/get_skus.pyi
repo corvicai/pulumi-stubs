@@ -39,7 +39,8 @@ class GetSkusResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSkusResult(GetSkusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSkusResult]:
+        ...
 
 def get_skus(
     provider_namespace: Optional[_builtins.str] = ...,

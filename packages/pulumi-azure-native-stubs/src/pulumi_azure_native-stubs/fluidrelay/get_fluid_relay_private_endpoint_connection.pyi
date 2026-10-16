@@ -60,7 +60,10 @@ class GetFluidRelayPrivateEndpointConnectionResult:
 class AwaitableGetFluidRelayPrivateEndpointConnectionResult(
     GetFluidRelayPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFluidRelayPrivateEndpointConnectionResult]:
+        ...
 
 def get_fluid_relay_private_endpoint_connection(
     fluid_relay_server_name: Optional[_builtins.str] = ...,

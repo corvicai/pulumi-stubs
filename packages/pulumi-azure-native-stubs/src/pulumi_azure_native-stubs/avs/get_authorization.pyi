@@ -56,7 +56,8 @@ class GetAuthorizationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAuthorizationResult(GetAuthorizationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthorizationResult]:
+        ...
 
 def get_authorization(
     authorization_name: Optional[_builtins.str] = ...,

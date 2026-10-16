@@ -48,7 +48,8 @@ class GetArchiveVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetArchiveVersionResult(GetArchiveVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetArchiveVersionResult]:
+        ...
 
 def get_archive_version(
     archive_name: Optional[_builtins.str] = ...,

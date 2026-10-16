@@ -56,7 +56,8 @@ class GetAADDataConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAADDataConnectorResult(GetAADDataConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAADDataConnectorResult]:
+        ...
 
 def get_aad_data_connector(
     data_connector_id: Optional[_builtins.str] = ...,

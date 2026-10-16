@@ -56,7 +56,8 @@ class GetApplicationResourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApplicationResourceResult(GetApplicationResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApplicationResourceResult]:
+        ...
 
 def get_application_resource(
     application_name: Optional[_builtins.str] = ...,

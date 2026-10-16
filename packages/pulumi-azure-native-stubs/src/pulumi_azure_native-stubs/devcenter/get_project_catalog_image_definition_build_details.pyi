@@ -64,7 +64,10 @@ class GetProjectCatalogImageDefinitionBuildDetailsResult:
 class AwaitableGetProjectCatalogImageDefinitionBuildDetailsResult(
     GetProjectCatalogImageDefinitionBuildDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetProjectCatalogImageDefinitionBuildDetailsResult]:
+        ...
 
 def get_project_catalog_image_definition_build_details(
     build_name: Optional[_builtins.str] = ...,

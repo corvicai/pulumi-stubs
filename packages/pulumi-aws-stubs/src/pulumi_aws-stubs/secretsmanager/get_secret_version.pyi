@@ -59,7 +59,8 @@ class GetSecretVersionResult:
     def version_stages(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetSecretVersionResult(GetSecretVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretVersionResult]:
+        ...
 
 def get_secret_version(
     region: Optional[_builtins.str] = ...,

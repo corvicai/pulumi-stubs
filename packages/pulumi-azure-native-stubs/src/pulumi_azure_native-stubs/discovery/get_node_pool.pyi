@@ -52,7 +52,8 @@ class GetNodePoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNodePoolResult(GetNodePoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNodePoolResult]:
+        ...
 
 def get_node_pool(
     node_pool_name: Optional[_builtins.str] = ...,

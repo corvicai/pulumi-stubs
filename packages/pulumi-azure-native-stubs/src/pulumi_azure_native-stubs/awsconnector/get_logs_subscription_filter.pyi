@@ -52,7 +52,8 @@ class GetLogsSubscriptionFilterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLogsSubscriptionFilterResult(GetLogsSubscriptionFilterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogsSubscriptionFilterResult]:
+        ...
 
 def get_logs_subscription_filter(
     name: Optional[_builtins.str] = ...,

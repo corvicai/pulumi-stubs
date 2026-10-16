@@ -92,7 +92,8 @@ class GetAdminRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAdminRuleResult(GetAdminRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAdminRuleResult]:
+        ...
 
 def get_admin_rule(
     configuration_name: Optional[_builtins.str] = ...,

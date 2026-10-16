@@ -18,7 +18,10 @@ class ListWorkflowRunActionRepetitionExpressionTracesResult:
 class AwaitableListWorkflowRunActionRepetitionExpressionTracesResult(
     ListWorkflowRunActionRepetitionExpressionTracesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkflowRunActionRepetitionExpressionTracesResult]:
+        ...
 
 def list_workflow_run_action_repetition_expression_traces(
     action_name: Optional[_builtins.str] = ...,

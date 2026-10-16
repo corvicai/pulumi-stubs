@@ -84,7 +84,8 @@ class GetSecurityRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityRuleResult(GetSecurityRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityRuleResult]:
+        ...
 
 def get_security_rule(
     network_security_group_name: Optional[_builtins.str] = ...,

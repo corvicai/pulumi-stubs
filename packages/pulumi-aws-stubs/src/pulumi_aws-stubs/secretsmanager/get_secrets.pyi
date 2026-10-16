@@ -36,7 +36,8 @@ class GetSecretsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetSecretsResult(GetSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretsResult]:
+        ...
 
 def get_secrets(
     filters: Optional[

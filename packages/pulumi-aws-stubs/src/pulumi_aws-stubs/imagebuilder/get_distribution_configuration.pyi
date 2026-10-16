@@ -58,7 +58,10 @@ class GetDistributionConfigurationResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetDistributionConfigurationResult(GetDistributionConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDistributionConfigurationResult]:
+        ...
 
 def get_distribution_configuration(
     arn: Optional[_builtins.str] = ...,

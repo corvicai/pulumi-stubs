@@ -47,7 +47,8 @@ class GetAuthorizationTokenResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetAuthorizationTokenResult(GetAuthorizationTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthorizationTokenResult]:
+        ...
 
 def get_authorization_token(
     domain: Optional[_builtins.str] = ...,

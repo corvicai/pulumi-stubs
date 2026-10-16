@@ -31,7 +31,8 @@ class GetCryptoKeyIamPolicyResult:
     def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetCryptoKeyIamPolicyResult(GetCryptoKeyIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCryptoKeyIamPolicyResult]:
+        ...
 
 def get_crypto_key_iam_policy(
     crypto_key_id: Optional[_builtins.str] = ...,

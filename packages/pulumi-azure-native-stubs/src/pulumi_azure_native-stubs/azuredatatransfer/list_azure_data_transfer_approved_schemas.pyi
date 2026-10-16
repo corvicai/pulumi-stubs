@@ -24,7 +24,10 @@ class ListAzureDataTransferApprovedSchemasResult:
 class AwaitableListAzureDataTransferApprovedSchemasResult(
     ListAzureDataTransferApprovedSchemasResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListAzureDataTransferApprovedSchemasResult]:
+        ...
 
 def list_azure_data_transfer_approved_schemas(
     direction: Optional[Union[_builtins.str, ListApprovedSchemasDirection]] = ...,

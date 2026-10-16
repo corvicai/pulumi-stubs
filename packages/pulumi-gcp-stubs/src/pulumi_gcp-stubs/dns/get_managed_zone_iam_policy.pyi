@@ -34,7 +34,8 @@ class GetManagedZoneIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetManagedZoneIamPolicyResult(GetManagedZoneIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedZoneIamPolicyResult]:
+        ...
 
 def get_managed_zone_iam_policy(
     managed_zone: Optional[_builtins.str] = ...,

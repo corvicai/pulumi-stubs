@@ -100,7 +100,8 @@ class GetMonitorResult:
     def zone_redundancy_preference(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetMonitorResult(GetMonitorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMonitorResult]:
+        ...
 
 def get_monitor(
     monitor_name: Optional[_builtins.str] = ...,

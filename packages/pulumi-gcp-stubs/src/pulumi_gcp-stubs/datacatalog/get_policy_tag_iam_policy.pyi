@@ -31,7 +31,8 @@ class GetPolicyTagIamPolicyResult:
     def policy_tag(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyTagIamPolicyResult(GetPolicyTagIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyTagIamPolicyResult]:
+        ...
 
 def get_policy_tag_iam_policy(
     policy_tag: Optional[_builtins.str] = ...,

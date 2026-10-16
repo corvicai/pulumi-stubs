@@ -74,7 +74,8 @@ class GetNetworkPolicyResult:
     def vmware_engine_network_canonical(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkPolicyResult(GetNetworkPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkPolicyResult]:
+        ...
 
 def get_network_policy(
     location: Optional[_builtins.str] = ...,

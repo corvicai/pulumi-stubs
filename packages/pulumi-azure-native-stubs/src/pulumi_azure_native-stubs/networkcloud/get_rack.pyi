@@ -83,7 +83,8 @@ class GetRackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRackResult(GetRackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRackResult]:
+        ...
 
 def get_rack(
     rack_name: Optional[_builtins.str] = ...,

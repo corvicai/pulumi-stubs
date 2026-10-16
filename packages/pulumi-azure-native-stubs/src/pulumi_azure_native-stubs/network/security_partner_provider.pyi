@@ -29,17 +29,20 @@ class SecurityPartnerProviderArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityPartnerProviderName")
     def security_partner_provider_name(
@@ -48,7 +51,8 @@ class SecurityPartnerProviderArgs:
     @security_partner_provider_name.setter
     def security_partner_provider_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityProviderName")
     def security_provider_name(
@@ -57,7 +61,8 @@ class SecurityPartnerProviderArgs:
     @security_provider_name.setter
     def security_provider_name(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SecurityProviderName]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -66,12 +71,14 @@ class SecurityPartnerProviderArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualHub")
     def virtual_hub(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @virtual_hub.setter
-    def virtual_hub(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def virtual_hub(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:SecurityPartnerProvider")
 class SecurityPartnerProvider(pulumi.CustomResource):

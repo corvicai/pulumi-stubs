@@ -25,12 +25,14 @@ class InvocationLoggingConfigurationArgs:
     @logging_config.setter
     def logging_config(
         self, value: pulumi.Input[InvocationLoggingConfigurationLoggingConfigArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InvocationLoggingConfigurationState:
@@ -51,12 +53,14 @@ class _InvocationLoggingConfigurationState:
     def logging_config(
         self,
         value: Optional[pulumi.Input[InvocationLoggingConfigurationLoggingConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InvocationLoggingConfiguration(pulumi.CustomResource):

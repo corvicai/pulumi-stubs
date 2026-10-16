@@ -43,7 +43,8 @@ class GetEntryGroupIamPolicyResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetEntryGroupIamPolicyResult(GetEntryGroupIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntryGroupIamPolicyResult]:
+        ...
 
 def get_entry_group_iam_policy(
     entry_group: Optional[_builtins.str] = ...,

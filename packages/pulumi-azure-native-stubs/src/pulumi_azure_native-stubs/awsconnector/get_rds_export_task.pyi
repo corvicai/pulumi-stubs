@@ -52,7 +52,8 @@ class GetRdsExportTaskResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRdsExportTaskResult(GetRdsExportTaskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRdsExportTaskResult]:
+        ...
 
 def get_rds_export_task(
     name: Optional[_builtins.str] = ...,

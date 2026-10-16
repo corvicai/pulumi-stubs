@@ -44,7 +44,8 @@ class GetSignalDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSignalDefinitionResult(GetSignalDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSignalDefinitionResult]:
+        ...
 
 def get_signal_definition(
     azure_monitor_workspace_name: Optional[_builtins.str] = ...,

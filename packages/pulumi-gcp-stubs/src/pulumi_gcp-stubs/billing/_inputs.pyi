@@ -46,17 +46,20 @@ class AccountIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class AccountIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -76,17 +79,20 @@ class AccountIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BudgetAllUpdatesRuleArgsDict(TypedDict):
     disable_default_iam_recipients: NotRequired[pulumi.Input[_builtins.bool]]
@@ -118,7 +124,8 @@ class BudgetAllUpdatesRuleArgs:
     @disable_default_iam_recipients.setter
     def disable_default_iam_recipients(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableProjectLevelRecipients")
     def enable_project_level_recipients(
@@ -127,7 +134,8 @@ class BudgetAllUpdatesRuleArgs:
     @enable_project_level_recipients.setter
     def enable_project_level_recipients(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringNotificationChannels")
     def monitoring_notification_channels(
@@ -136,17 +144,20 @@ class BudgetAllUpdatesRuleArgs:
     @monitoring_notification_channels.setter
     def monitoring_notification_channels(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pubsubTopic")
     def pubsub_topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pubsub_topic.setter
-    def pubsub_topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def pubsub_topic(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaVersion")
     def schema_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_version.setter
-    def schema_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def schema_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BudgetAmountArgsDict(TypedDict):
     last_period_amount: NotRequired[pulumi.Input[_builtins.bool]]
@@ -164,7 +175,10 @@ class BudgetAmountArgs:
     @pulumi.getter(name="lastPeriodAmount")
     def last_period_amount(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @last_period_amount.setter
-    def last_period_amount(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def last_period_amount(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="specifiedAmount")
     def specified_amount(
@@ -173,7 +187,8 @@ class BudgetAmountArgs:
     @specified_amount.setter
     def specified_amount(
         self, value: Optional[pulumi.Input[BudgetAmountSpecifiedAmountArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BudgetAmountSpecifiedAmountArgsDict(TypedDict):
     currency_code: NotRequired[pulumi.Input[_builtins.str]]
@@ -193,17 +208,20 @@ class BudgetAmountSpecifiedAmountArgs:
     @pulumi.getter(name="currencyCode")
     def currency_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @currency_code.setter
-    def currency_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def currency_code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @nanos.setter
-    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def nanos(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def units(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @units.setter
-    def units(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def units(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BudgetBudgetFilterArgsDict(TypedDict):
     calendar_period: NotRequired[pulumi.Input[_builtins.str]]
@@ -241,7 +259,8 @@ class BudgetBudgetFilterArgs:
     @pulumi.getter(name="calendarPeriod")
     def calendar_period(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @calendar_period.setter
-    def calendar_period(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def calendar_period(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creditTypes")
     def credit_types(
@@ -250,12 +269,16 @@ class BudgetBudgetFilterArgs:
     @credit_types.setter
     def credit_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creditTypesTreatment")
     def credit_types_treatment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credit_types_treatment.setter
-    def credit_types_treatment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credit_types_treatment(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customPeriod")
     def custom_period(
@@ -264,7 +287,8 @@ class BudgetBudgetFilterArgs:
     @custom_period.setter
     def custom_period(
         self, value: Optional[pulumi.Input[BudgetBudgetFilterCustomPeriodArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -273,7 +297,8 @@ class BudgetBudgetFilterArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def projects(
@@ -282,7 +307,8 @@ class BudgetBudgetFilterArgs:
     @projects.setter
     def projects(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceAncestors")
     def resource_ancestors(
@@ -291,7 +317,8 @@ class BudgetBudgetFilterArgs:
     @resource_ancestors.setter
     def resource_ancestors(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def services(
@@ -300,7 +327,8 @@ class BudgetBudgetFilterArgs:
     @services.setter
     def services(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subaccounts(
@@ -309,7 +337,8 @@ class BudgetBudgetFilterArgs:
     @subaccounts.setter
     def subaccounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BudgetBudgetFilterCustomPeriodArgsDict(TypedDict):
     start_date: pulumi.Input[BudgetBudgetFilterCustomPeriodStartDateArgsDict]
@@ -333,7 +362,8 @@ class BudgetBudgetFilterCustomPeriodArgs:
     @start_date.setter
     def start_date(
         self, value: pulumi.Input[BudgetBudgetFilterCustomPeriodStartDateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endDate")
     def end_date(
@@ -342,7 +372,8 @@ class BudgetBudgetFilterCustomPeriodArgs:
     @end_date.setter
     def end_date(
         self, value: Optional[pulumi.Input[BudgetBudgetFilterCustomPeriodEndDateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BudgetBudgetFilterCustomPeriodEndDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
@@ -362,17 +393,20 @@ class BudgetBudgetFilterCustomPeriodEndDateArgs:
     @pulumi.getter
     def day(self) -> pulumi.Input[_builtins.int]: ...
     @day.setter
-    def day(self, value: pulumi.Input[_builtins.int]): ...
+    def day(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> pulumi.Input[_builtins.int]: ...
     @month.setter
-    def month(self, value: pulumi.Input[_builtins.int]): ...
+    def month(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> pulumi.Input[_builtins.int]: ...
     @year.setter
-    def year(self, value: pulumi.Input[_builtins.int]): ...
+    def year(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class BudgetBudgetFilterCustomPeriodStartDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
@@ -392,17 +426,20 @@ class BudgetBudgetFilterCustomPeriodStartDateArgs:
     @pulumi.getter
     def day(self) -> pulumi.Input[_builtins.int]: ...
     @day.setter
-    def day(self, value: pulumi.Input[_builtins.int]): ...
+    def day(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> pulumi.Input[_builtins.int]: ...
     @month.setter
-    def month(self, value: pulumi.Input[_builtins.int]): ...
+    def month(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> pulumi.Input[_builtins.int]: ...
     @year.setter
-    def year(self, value: pulumi.Input[_builtins.int]): ...
+    def year(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class BudgetThresholdRuleArgsDict(TypedDict):
     threshold_percent: pulumi.Input[_builtins.float]
@@ -420,9 +457,11 @@ class BudgetThresholdRuleArgs:
     @pulumi.getter(name="thresholdPercent")
     def threshold_percent(self) -> pulumi.Input[_builtins.float]: ...
     @threshold_percent.setter
-    def threshold_percent(self, value: pulumi.Input[_builtins.float]): ...
+    def threshold_percent(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spendBasis")
     def spend_basis(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spend_basis.setter
-    def spend_basis(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def spend_basis(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

@@ -48,7 +48,8 @@ class GetTopicAuthorizationRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTopicAuthorizationRuleResult(GetTopicAuthorizationRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTopicAuthorizationRuleResult]:
+        ...
 
 def get_topic_authorization_rule(
     authorization_rule_name: Optional[_builtins.str] = ...,

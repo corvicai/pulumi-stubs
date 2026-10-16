@@ -63,7 +63,8 @@ class GetBotResult:
     def zones(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetBotResult(GetBotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBotResult]:
+        ...
 
 def get_bot(
     resource_group_name: Optional[_builtins.str] = ...,

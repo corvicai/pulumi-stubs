@@ -52,7 +52,8 @@ class GetEc2VpcResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2VpcResult(GetEc2VpcResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2VpcResult]:
+        ...
 
 def get_ec2_vpc(
     name: Optional[_builtins.str] = ...,

@@ -80,7 +80,8 @@ class GetBackupPlanResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetBackupPlanResult(GetBackupPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBackupPlanResult]:
+        ...
 
 def get_backup_plan(
     backup_plan_id: Optional[_builtins.str] = ...,

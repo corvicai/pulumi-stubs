@@ -23,12 +23,14 @@ class HostedPublicVirtualInterfaceAccepterArgs:
     @pulumi.getter(name="virtualInterfaceId")
     def virtual_interface_id(self) -> pulumi.Input[_builtins.str]: ...
     @virtual_interface_id.setter
-    def virtual_interface_id(self, value: pulumi.Input[_builtins.str]): ...
+    def virtual_interface_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -37,7 +39,8 @@ class HostedPublicVirtualInterfaceAccepterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _HostedPublicVirtualInterfaceAccepterState:
@@ -56,12 +59,14 @@ class _HostedPublicVirtualInterfaceAccepterState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -70,7 +75,8 @@ class _HostedPublicVirtualInterfaceAccepterState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -79,12 +85,16 @@ class _HostedPublicVirtualInterfaceAccepterState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualInterfaceId")
     def virtual_interface_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_interface_id.setter
-    def virtual_interface_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_interface_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class HostedPublicVirtualInterfaceAccepter(pulumi.CustomResource):

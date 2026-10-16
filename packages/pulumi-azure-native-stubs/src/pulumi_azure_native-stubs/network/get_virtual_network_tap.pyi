@@ -78,7 +78,8 @@ class GetVirtualNetworkTapResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualNetworkTapResult(GetVirtualNetworkTapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualNetworkTapResult]:
+        ...
 
 def get_virtual_network_tap(
     resource_group_name: Optional[_builtins.str] = ...,

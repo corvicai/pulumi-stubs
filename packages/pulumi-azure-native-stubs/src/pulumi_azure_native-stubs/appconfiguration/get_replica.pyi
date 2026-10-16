@@ -52,7 +52,8 @@ class GetReplicaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetReplicaResult(GetReplicaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetReplicaResult]:
+        ...
 
 def get_replica(
     config_store_name: Optional[_builtins.str] = ...,

@@ -80,7 +80,10 @@ class GetPolicyDefinitionAtManagementGroupResult:
 class AwaitableGetPolicyDefinitionAtManagementGroupResult(
     GetPolicyDefinitionAtManagementGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPolicyDefinitionAtManagementGroupResult]:
+        ...
 
 def get_policy_definition_at_management_group(
     management_group_id: Optional[_builtins.str] = ...,

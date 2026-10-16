@@ -33,7 +33,8 @@ class InsightsReportConfigArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="csvOptions")
     def csv_options(
@@ -42,17 +43,20 @@ class InsightsReportConfigArgs:
     @csv_options.setter
     def csv_options(
         self, value: Optional[pulumi.Input[InsightsReportConfigCsvOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frequencyOptions")
     def frequency_options(
@@ -61,7 +65,8 @@ class InsightsReportConfigArgs:
     @frequency_options.setter
     def frequency_options(
         self, value: Optional[pulumi.Input[InsightsReportConfigFrequencyOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectMetadataReportOptions")
     def object_metadata_report_options(
@@ -75,7 +80,8 @@ class InsightsReportConfigArgs:
         value: Optional[
             pulumi.Input[InsightsReportConfigObjectMetadataReportOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parquetOptions")
     def parquet_options(
@@ -84,12 +90,14 @@ class InsightsReportConfigArgs:
     @parquet_options.setter
     def parquet_options(
         self, value: Optional[pulumi.Input[InsightsReportConfigParquetOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InsightsReportConfigState:
@@ -120,17 +128,20 @@ class _InsightsReportConfigState:
     @csv_options.setter
     def csv_options(
         self, value: Optional[pulumi.Input[InsightsReportConfigCsvOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frequencyOptions")
     def frequency_options(
@@ -139,17 +150,20 @@ class _InsightsReportConfigState:
     @frequency_options.setter
     def frequency_options(
         self, value: Optional[pulumi.Input[InsightsReportConfigFrequencyOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectMetadataReportOptions")
     def object_metadata_report_options(
@@ -163,7 +177,8 @@ class _InsightsReportConfigState:
         value: Optional[
             pulumi.Input[InsightsReportConfigObjectMetadataReportOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parquetOptions")
     def parquet_options(
@@ -172,12 +187,14 @@ class _InsightsReportConfigState:
     @parquet_options.setter
     def parquet_options(
         self, value: Optional[pulumi.Input[InsightsReportConfigParquetOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class InsightsReportConfig(pulumi.CustomResource):

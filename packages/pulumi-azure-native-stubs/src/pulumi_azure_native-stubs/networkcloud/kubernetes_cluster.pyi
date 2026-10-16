@@ -44,12 +44,14 @@ class KubernetesClusterArgs:
     @control_plane_node_configuration.setter
     def control_plane_node_configuration(
         self, value: pulumi.Input[ControlPlaneNodeConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]: ...
     @extended_location.setter
-    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): ...
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="initialAgentPoolConfigurations")
     def initial_agent_pool_configurations(
@@ -59,29 +61,36 @@ class KubernetesClusterArgs:
     def initial_agent_pool_configurations(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[InitialAgentPoolConfigurationArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kubernetesVersion")
     def kubernetes_version(self) -> pulumi.Input[_builtins.str]: ...
     @kubernetes_version.setter
-    def kubernetes_version(self, value: pulumi.Input[_builtins.str]): ...
+    def kubernetes_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(self) -> pulumi.Input[NetworkConfigurationArgs]: ...
     @network_configuration.setter
-    def network_configuration(self, value: pulumi.Input[NetworkConfigurationArgs]): ...
+    def network_configuration(
+        self, value: pulumi.Input[NetworkConfigurationArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="aadConfiguration")
     def aad_configuration(self) -> Optional[pulumi.Input[AadConfigurationArgs]]: ...
     @aad_configuration.setter
     def aad_configuration(
         self, value: Optional[pulumi.Input[AadConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="administratorConfiguration")
     def administrator_configuration(
@@ -90,17 +99,22 @@ class KubernetesClusterArgs:
     @administrator_configuration.setter
     def administrator_configuration(
         self, value: Optional[pulumi.Input[AdministratorConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kubernetesClusterName")
     def kubernetes_cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kubernetes_cluster_name.setter
-    def kubernetes_cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kubernetes_cluster_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedResourceGroupConfiguration")
     def managed_resource_group_configuration(
@@ -109,7 +123,8 @@ class KubernetesClusterArgs:
     @managed_resource_group_configuration.setter
     def managed_resource_group_configuration(
         self, value: Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -118,7 +133,8 @@ class KubernetesClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:networkcloud:KubernetesCluster")
 class KubernetesCluster(pulumi.CustomResource):

@@ -68,7 +68,10 @@ class GetCustomizableConnectorDefinitionResult:
 class AwaitableGetCustomizableConnectorDefinitionResult(
     GetCustomizableConnectorDefinitionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCustomizableConnectorDefinitionResult]:
+        ...
 
 def get_customizable_connector_definition(
     data_connector_definition_name: Optional[_builtins.str] = ...,

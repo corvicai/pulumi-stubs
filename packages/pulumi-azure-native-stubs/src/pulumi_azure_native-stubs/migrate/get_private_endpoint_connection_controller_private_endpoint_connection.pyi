@@ -45,7 +45,10 @@ class GetPrivateEndpointConnectionControllerPrivateEndpointConnectionResult:
 class AwaitableGetPrivateEndpointConnectionControllerPrivateEndpointConnectionResult(
     GetPrivateEndpointConnectionControllerPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionControllerPrivateEndpointConnectionResult]:
+        ...
 
 def get_private_endpoint_connection_controller_private_endpoint_connection(
     migrate_project_name: Optional[_builtins.str] = ...,

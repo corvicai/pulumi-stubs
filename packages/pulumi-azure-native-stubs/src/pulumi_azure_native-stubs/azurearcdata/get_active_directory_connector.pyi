@@ -44,7 +44,8 @@ class GetActiveDirectoryConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetActiveDirectoryConnectorResult(GetActiveDirectoryConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetActiveDirectoryConnectorResult]:
+        ...
 
 def get_active_directory_connector(
     active_directory_connector_name: Optional[_builtins.str] = ...,

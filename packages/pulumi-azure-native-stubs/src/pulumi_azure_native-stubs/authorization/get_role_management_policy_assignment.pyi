@@ -60,7 +60,10 @@ class GetRoleManagementPolicyAssignmentResult:
 class AwaitableGetRoleManagementPolicyAssignmentResult(
     GetRoleManagementPolicyAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRoleManagementPolicyAssignmentResult]:
+        ...
 
 def get_role_management_policy_assignment(
     role_management_policy_assignment_name: Optional[_builtins.str] = ...,

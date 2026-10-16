@@ -47,7 +47,8 @@ class ListEventHubKeysResult:
     def secondary_key(self) -> _builtins.str: ...
 
 class AwaitableListEventHubKeysResult(ListEventHubKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListEventHubKeysResult]:
+        ...
 
 def list_event_hub_keys(
     authorization_rule_name: Optional[_builtins.str] = ...,

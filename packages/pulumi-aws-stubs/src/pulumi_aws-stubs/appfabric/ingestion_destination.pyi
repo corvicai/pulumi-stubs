@@ -30,7 +30,8 @@ class IngestionDestinationArgs:
     @pulumi.getter(name="appBundleArn")
     def app_bundle_arn(self) -> pulumi.Input[_builtins.str]: ...
     @app_bundle_arn.setter
-    def app_bundle_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def app_bundle_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationConfiguration")
     def destination_configuration(
@@ -39,12 +40,14 @@ class IngestionDestinationArgs:
     @destination_configuration.setter
     def destination_configuration(
         self, value: pulumi.Input[IngestionDestinationDestinationConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingestionArn")
     def ingestion_arn(self) -> pulumi.Input[_builtins.str]: ...
     @ingestion_arn.setter
-    def ingestion_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def ingestion_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processingConfiguration")
     def processing_configuration(
@@ -53,12 +56,14 @@ class IngestionDestinationArgs:
     @processing_configuration.setter
     def processing_configuration(
         self, value: pulumi.Input[IngestionDestinationProcessingConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -67,14 +72,16 @@ class IngestionDestinationArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[IngestionDestinationTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[IngestionDestinationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _IngestionDestinationState:
@@ -101,12 +108,14 @@ class _IngestionDestinationState:
     @pulumi.getter(name="appBundleArn")
     def app_bundle_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_bundle_arn.setter
-    def app_bundle_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_bundle_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationConfiguration")
     def destination_configuration(
@@ -116,12 +125,14 @@ class _IngestionDestinationState:
     def destination_configuration(
         self,
         value: Optional[pulumi.Input[IngestionDestinationDestinationConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingestionArn")
     def ingestion_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ingestion_arn.setter
-    def ingestion_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ingestion_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="processingConfiguration")
     def processing_configuration(
@@ -131,12 +142,14 @@ class _IngestionDestinationState:
     def processing_configuration(
         self,
         value: Optional[pulumi.Input[IngestionDestinationProcessingConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -145,7 +158,8 @@ class _IngestionDestinationState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -154,14 +168,16 @@ class _IngestionDestinationState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[IngestionDestinationTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[IngestionDestinationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class IngestionDestination(pulumi.CustomResource):

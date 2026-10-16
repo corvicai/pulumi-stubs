@@ -40,7 +40,8 @@ class GetNodeTypeFaultSimulationResult:
     def status(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNodeTypeFaultSimulationResult(GetNodeTypeFaultSimulationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNodeTypeFaultSimulationResult]:
+        ...
 
 def get_node_type_fault_simulation(
     cluster_name: Optional[_builtins.str] = ...,

@@ -64,7 +64,8 @@ class GetAutoScaleVCoreResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAutoScaleVCoreResult(GetAutoScaleVCoreResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAutoScaleVCoreResult]:
+        ...
 
 def get_auto_scale_v_core(
     resource_group_name: Optional[_builtins.str] = ...,

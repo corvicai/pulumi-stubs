@@ -54,7 +54,10 @@ class GetGremlinResourceGremlinRoleDefinitionResult:
 class AwaitableGetGremlinResourceGremlinRoleDefinitionResult(
     GetGremlinResourceGremlinRoleDefinitionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGremlinResourceGremlinRoleDefinitionResult]:
+        ...
 
 def get_gremlin_resource_gremlin_role_definition(
     account_name: Optional[_builtins.str] = ...,

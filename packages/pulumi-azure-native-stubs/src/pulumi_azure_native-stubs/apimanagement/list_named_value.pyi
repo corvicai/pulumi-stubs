@@ -20,7 +20,8 @@ class ListNamedValueResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListNamedValueResult(ListNamedValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListNamedValueResult]:
+        ...
 
 def list_named_value(
     named_value_id: Optional[_builtins.str] = ...,

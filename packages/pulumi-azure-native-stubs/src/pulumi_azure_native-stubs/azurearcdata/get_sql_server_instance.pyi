@@ -52,7 +52,8 @@ class GetSqlServerInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlServerInstanceResult(GetSqlServerInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlServerInstanceResult]:
+        ...
 
 def get_sql_server_instance(
     resource_group_name: Optional[_builtins.str] = ...,

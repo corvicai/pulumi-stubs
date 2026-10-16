@@ -113,7 +113,8 @@ class GetCacheResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCacheResult(GetCacheResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCacheResult]:
+        ...
 
 def get_cache(
     cache_name: Optional[_builtins.str] = ...,

@@ -30,7 +30,8 @@ class DirectoryConfigArgs:
     @pulumi.getter(name="directoryName")
     def directory_name(self) -> pulumi.Input[_builtins.str]: ...
     @directory_name.setter
-    def directory_name(self, value: pulumi.Input[_builtins.str]): ...
+    def directory_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationalUnitDistinguishedNames")
     def organizational_unit_distinguished_names(
@@ -39,7 +40,8 @@ class DirectoryConfigArgs:
     @organizational_unit_distinguished_names.setter
     def organizational_unit_distinguished_names(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountCredentials")
     def service_account_credentials(
@@ -48,7 +50,8 @@ class DirectoryConfigArgs:
     @service_account_credentials.setter
     def service_account_credentials(
         self, value: pulumi.Input[DirectoryConfigServiceAccountCredentialsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateBasedAuthProperties")
     def certificate_based_auth_properties(
@@ -60,12 +63,14 @@ class DirectoryConfigArgs:
         value: Optional[
             pulumi.Input[DirectoryConfigCertificateBasedAuthPropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DirectoryConfigState:
@@ -96,17 +101,20 @@ class _DirectoryConfigState:
         value: Optional[
             pulumi.Input[DirectoryConfigCertificateBasedAuthPropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdTime")
     def created_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_time.setter
-    def created_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directoryName")
     def directory_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @directory_name.setter
-    def directory_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def directory_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="organizationalUnitDistinguishedNames")
     def organizational_unit_distinguished_names(
@@ -115,12 +123,14 @@ class _DirectoryConfigState:
     @organizational_unit_distinguished_names.setter
     def organizational_unit_distinguished_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountCredentials")
     def service_account_credentials(
@@ -130,7 +140,8 @@ class _DirectoryConfigState:
     def service_account_credentials(
         self,
         value: Optional[pulumi.Input[DirectoryConfigServiceAccountCredentialsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:appstream/directoryConfig:DirectoryConfig")
 class DirectoryConfig(pulumi.CustomResource):

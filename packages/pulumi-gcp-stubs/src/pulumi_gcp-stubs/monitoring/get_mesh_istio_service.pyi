@@ -60,7 +60,8 @@ class GetMeshIstioServiceResult:
     def user_labels(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetMeshIstioServiceResult(GetMeshIstioServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMeshIstioServiceResult]:
+        ...
 
 def get_mesh_istio_service(
     mesh_uid: Optional[_builtins.str] = ...,

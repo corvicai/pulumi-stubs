@@ -52,7 +52,8 @@ class GetLogsLogGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLogsLogGroupResult(GetLogsLogGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogsLogGroupResult]:
+        ...
 
 def get_logs_log_group(
     name: Optional[_builtins.str] = ...,

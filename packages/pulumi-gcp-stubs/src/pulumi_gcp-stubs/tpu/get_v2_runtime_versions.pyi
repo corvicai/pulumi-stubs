@@ -29,7 +29,8 @@ class GetV2RuntimeVersionsResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetV2RuntimeVersionsResult(GetV2RuntimeVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetV2RuntimeVersionsResult]:
+        ...
 
 def get_v2_runtime_versions(
     project: Optional[_builtins.str] = ...,

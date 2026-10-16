@@ -24,7 +24,8 @@ class ListMonitorHostsResult:
     def value(self) -> Optional[Sequence[outputs.DatadogHostResponse]]: ...
 
 class AwaitableListMonitorHostsResult(ListMonitorHostsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListMonitorHostsResult]:
+        ...
 
 def list_monitor_hosts(
     monitor_name: Optional[_builtins.str] = ...,

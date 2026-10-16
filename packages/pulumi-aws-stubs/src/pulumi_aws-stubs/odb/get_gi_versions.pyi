@@ -30,7 +30,8 @@ class GetGiVersionsResult:
     def shape(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetGiVersionsResult(GetGiVersionsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGiVersionsResult]:
+        ...
 
 def get_gi_versions(
     region: Optional[_builtins.str] = ...,

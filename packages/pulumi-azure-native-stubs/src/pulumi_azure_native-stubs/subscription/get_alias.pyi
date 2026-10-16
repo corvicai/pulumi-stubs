@@ -39,7 +39,8 @@ class GetAliasResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAliasResult(GetAliasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAliasResult]:
+        ...
 
 def get_alias(
     alias_name: Optional[_builtins.str] = ...,

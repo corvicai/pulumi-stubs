@@ -68,7 +68,8 @@ class GetSummaryLogResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSummaryLogResult(GetSummaryLogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSummaryLogResult]:
+        ...
 
 def get_summary_log(
     resource_group_name: Optional[_builtins.str] = ...,

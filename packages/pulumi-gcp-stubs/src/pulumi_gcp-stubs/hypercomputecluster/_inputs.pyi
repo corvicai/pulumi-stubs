@@ -96,12 +96,14 @@ class ClusterComputeResourceArgs:
     @pulumi.getter
     def config(self) -> pulumi.Input[ClusterComputeResourceConfigArgs]: ...
     @config.setter
-    def config(self, value: pulumi.Input[ClusterComputeResourceConfigArgs]): ...
+    def config(self, value: pulumi.Input[ClusterComputeResourceConfigArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterComputeResourceConfigArgsDict(TypedDict):
     new_flex_start_instances: NotRequired[
@@ -148,7 +150,8 @@ class ClusterComputeResourceConfigArgs:
         value: Optional[
             pulumi.Input[ClusterComputeResourceConfigNewFlexStartInstancesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newOnDemandInstances")
     def new_on_demand_instances(
@@ -162,7 +165,8 @@ class ClusterComputeResourceConfigArgs:
         value: Optional[
             pulumi.Input[ClusterComputeResourceConfigNewOnDemandInstancesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newReservedInstances")
     def new_reserved_instances(
@@ -176,7 +180,8 @@ class ClusterComputeResourceConfigArgs:
         value: Optional[
             pulumi.Input[ClusterComputeResourceConfigNewReservedInstancesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newSpotInstances")
     def new_spot_instances(
@@ -186,7 +191,8 @@ class ClusterComputeResourceConfigArgs:
     def new_spot_instances(
         self,
         value: Optional[pulumi.Input[ClusterComputeResourceConfigNewSpotInstancesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterComputeResourceConfigNewFlexStartInstancesArgsDict(TypedDict):
     machine_type: pulumi.Input[_builtins.str]
@@ -206,17 +212,20 @@ class ClusterComputeResourceConfigNewFlexStartInstancesArgs:
     @pulumi.getter(name="machineType")
     def machine_type(self) -> pulumi.Input[_builtins.str]: ...
     @machine_type.setter
-    def machine_type(self, value: pulumi.Input[_builtins.str]): ...
+    def machine_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDuration")
     def max_duration(self) -> pulumi.Input[_builtins.str]: ...
     @max_duration.setter
-    def max_duration(self, value: pulumi.Input[_builtins.str]): ...
+    def max_duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> pulumi.Input[_builtins.str]: ...
     @zone.setter
-    def zone(self, value: pulumi.Input[_builtins.str]): ...
+    def zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterComputeResourceConfigNewOnDemandInstancesArgsDict(TypedDict):
     machine_type: pulumi.Input[_builtins.str]
@@ -234,12 +243,14 @@ class ClusterComputeResourceConfigNewOnDemandInstancesArgs:
     @pulumi.getter(name="machineType")
     def machine_type(self) -> pulumi.Input[_builtins.str]: ...
     @machine_type.setter
-    def machine_type(self, value: pulumi.Input[_builtins.str]): ...
+    def machine_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> pulumi.Input[_builtins.str]: ...
     @zone.setter
-    def zone(self, value: pulumi.Input[_builtins.str]): ...
+    def zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterComputeResourceConfigNewReservedInstancesArgsDict(TypedDict):
     reservation: NotRequired[pulumi.Input[_builtins.str]]
@@ -253,7 +264,8 @@ class ClusterComputeResourceConfigNewReservedInstancesArgs:
     @pulumi.getter
     def reservation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reservation.setter
-    def reservation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reservation(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterComputeResourceConfigNewSpotInstancesArgsDict(TypedDict):
     machine_type: pulumi.Input[_builtins.str]
@@ -273,17 +285,22 @@ class ClusterComputeResourceConfigNewSpotInstancesArgs:
     @pulumi.getter(name="machineType")
     def machine_type(self) -> pulumi.Input[_builtins.str]: ...
     @machine_type.setter
-    def machine_type(self, value: pulumi.Input[_builtins.str]): ...
+    def machine_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> pulumi.Input[_builtins.str]: ...
     @zone.setter
-    def zone(self, value: pulumi.Input[_builtins.str]): ...
+    def zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationAction")
     def termination_action(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @termination_action.setter
-    def termination_action(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def termination_action(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ClusterNetworkResourceArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -307,14 +324,16 @@ class ClusterNetworkResourceArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def config(self) -> Optional[pulumi.Input[ClusterNetworkResourceConfigArgs]]: ...
     @config.setter
     def config(
         self, value: Optional[pulumi.Input[ClusterNetworkResourceConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def networks(
@@ -328,7 +347,8 @@ class ClusterNetworkResourceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterNetworkResourceNetworkArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterNetworkResourceConfigArgsDict(TypedDict):
     existing_network: NotRequired[
@@ -359,7 +379,8 @@ class ClusterNetworkResourceConfigArgs:
     def existing_network(
         self,
         value: Optional[pulumi.Input[ClusterNetworkResourceConfigExistingNetworkArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newNetwork")
     def new_network(
@@ -368,7 +389,8 @@ class ClusterNetworkResourceConfigArgs:
     @new_network.setter
     def new_network(
         self, value: Optional[pulumi.Input[ClusterNetworkResourceConfigNewNetworkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterNetworkResourceConfigExistingNetworkArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
@@ -386,12 +408,14 @@ class ClusterNetworkResourceConfigExistingNetworkArgs:
     @pulumi.getter
     def network(self) -> pulumi.Input[_builtins.str]: ...
     @network.setter
-    def network(self, value: pulumi.Input[_builtins.str]): ...
+    def network(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnetwork(self) -> pulumi.Input[_builtins.str]: ...
     @subnetwork.setter
-    def subnetwork(self, value: pulumi.Input[_builtins.str]): ...
+    def subnetwork(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterNetworkResourceConfigNewNetworkArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
@@ -409,12 +433,14 @@ class ClusterNetworkResourceConfigNewNetworkArgs:
     @pulumi.getter
     def network(self) -> pulumi.Input[_builtins.str]: ...
     @network.setter
-    def network(self, value: pulumi.Input[_builtins.str]): ...
+    def network(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterNetworkResourceNetworkArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
@@ -432,12 +458,14 @@ class ClusterNetworkResourceNetworkArgs:
     @pulumi.getter
     def network(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network.setter
-    def network(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnetwork(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnetwork.setter
-    def subnetwork(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnetwork(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterOrchestratorArgsDict(TypedDict):
     slurm: NotRequired[pulumi.Input[ClusterOrchestratorSlurmArgsDict]]
@@ -451,7 +479,10 @@ class ClusterOrchestratorArgs:
     @pulumi.getter
     def slurm(self) -> Optional[pulumi.Input[ClusterOrchestratorSlurmArgs]]: ...
     @slurm.setter
-    def slurm(self, value: Optional[pulumi.Input[ClusterOrchestratorSlurmArgs]]): ...
+    def slurm(
+        self, value: Optional[pulumi.Input[ClusterOrchestratorSlurmArgs]]
+    ):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmArgsDict(TypedDict):
     login_nodes: pulumi.Input[ClusterOrchestratorSlurmLoginNodesArgsDict]
@@ -495,7 +526,8 @@ class ClusterOrchestratorSlurmArgs:
     @login_nodes.setter
     def login_nodes(
         self, value: pulumi.Input[ClusterOrchestratorSlurmLoginNodesArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeSets")
     def node_sets(
@@ -507,7 +539,8 @@ class ClusterOrchestratorSlurmArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ClusterOrchestratorSlurmNodeSetArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def partitions(
@@ -521,12 +554,16 @@ class ClusterOrchestratorSlurmArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ClusterOrchestratorSlurmPartitionArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultPartition")
     def default_partition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_partition.setter
-    def default_partition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_partition(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="epilogBashScripts")
     def epilog_bash_scripts(
@@ -535,7 +572,8 @@ class ClusterOrchestratorSlurmArgs:
     @epilog_bash_scripts.setter
     def epilog_bash_scripts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prologBashScripts")
     def prolog_bash_scripts(
@@ -544,7 +582,8 @@ class ClusterOrchestratorSlurmArgs:
     @prolog_bash_scripts.setter
     def prolog_bash_scripts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmLoginNodesArgsDict(TypedDict):
     count: pulumi.Input[_builtins.str]
@@ -602,17 +641,20 @@ class ClusterOrchestratorSlurmLoginNodesArgs:
     @pulumi.getter
     def count(self) -> pulumi.Input[_builtins.str]: ...
     @count.setter
-    def count(self, value: pulumi.Input[_builtins.str]): ...
+    def count(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machineType")
     def machine_type(self) -> pulumi.Input[_builtins.str]: ...
     @machine_type.setter
-    def machine_type(self, value: pulumi.Input[_builtins.str]): ...
+    def machine_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zone(self) -> pulumi.Input[_builtins.str]: ...
     @zone.setter
-    def zone(self, value: pulumi.Input[_builtins.str]): ...
+    def zone(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootDisk")
     def boot_disk(
@@ -622,17 +664,24 @@ class ClusterOrchestratorSlurmLoginNodesArgs:
     def boot_disk(
         self,
         value: Optional[pulumi.Input[ClusterOrchestratorSlurmLoginNodesBootDiskArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableOsLogin")
     def enable_os_login(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_os_login.setter
-    def enable_os_login(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_os_login(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePublicIps")
     def enable_public_ips(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_public_ips.setter
-    def enable_public_ips(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_public_ips(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def instances(
@@ -650,7 +699,8 @@ class ClusterOrchestratorSlurmLoginNodesArgs:
                 Sequence[pulumi.Input[ClusterOrchestratorSlurmLoginNodesInstanceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -659,12 +709,14 @@ class ClusterOrchestratorSlurmLoginNodesArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startupScript")
     def startup_script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @startup_script.setter
-    def startup_script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def startup_script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfigs")
     def storage_configs(
@@ -684,7 +736,8 @@ class ClusterOrchestratorSlurmLoginNodesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmLoginNodesBootDiskArgsDict(TypedDict):
     size_gb: pulumi.Input[_builtins.str]
@@ -702,12 +755,14 @@ class ClusterOrchestratorSlurmLoginNodesBootDiskArgs:
     @pulumi.getter(name="sizeGb")
     def size_gb(self) -> pulumi.Input[_builtins.str]: ...
     @size_gb.setter
-    def size_gb(self, value: pulumi.Input[_builtins.str]): ...
+    def size_gb(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmLoginNodesInstanceArgsDict(TypedDict):
     instance: NotRequired[pulumi.Input[_builtins.str]]
@@ -721,7 +776,8 @@ class ClusterOrchestratorSlurmLoginNodesInstanceArgs:
     @pulumi.getter
     def instance(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance.setter
-    def instance(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmLoginNodesStorageConfigArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -739,12 +795,14 @@ class ClusterOrchestratorSlurmLoginNodesStorageConfigArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localMount")
     def local_mount(self) -> pulumi.Input[_builtins.str]: ...
     @local_mount.setter
-    def local_mount(self, value: pulumi.Input[_builtins.str]): ...
+    def local_mount(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmNodeSetArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -782,12 +840,14 @@ class ClusterOrchestratorSlurmNodeSetArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeId")
     def compute_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compute_id.setter
-    def compute_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compute_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeInstance")
     def compute_instance(
@@ -799,17 +859,24 @@ class ClusterOrchestratorSlurmNodeSetArgs:
         value: Optional[
             pulumi.Input[ClusterOrchestratorSlurmNodeSetComputeInstanceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxDynamicNodeCount")
     def max_dynamic_node_count(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @max_dynamic_node_count.setter
-    def max_dynamic_node_count(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def max_dynamic_node_count(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="staticNodeCount")
     def static_node_count(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @static_node_count.setter
-    def static_node_count(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def static_node_count(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfigs")
     def storage_configs(
@@ -827,7 +894,8 @@ class ClusterOrchestratorSlurmNodeSetArgs:
                 Sequence[pulumi.Input[ClusterOrchestratorSlurmNodeSetStorageConfigArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmNodeSetComputeInstanceArgsDict(TypedDict):
     boot_disk: NotRequired[
@@ -860,7 +928,8 @@ class ClusterOrchestratorSlurmNodeSetComputeInstanceArgs:
         value: Optional[
             pulumi.Input[ClusterOrchestratorSlurmNodeSetComputeInstanceBootDiskArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -869,12 +938,14 @@ class ClusterOrchestratorSlurmNodeSetComputeInstanceArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startupScript")
     def startup_script(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @startup_script.setter
-    def startup_script(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def startup_script(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmNodeSetComputeInstanceBootDiskArgsDict(TypedDict):
     size_gb: pulumi.Input[_builtins.str]
@@ -892,12 +963,14 @@ class ClusterOrchestratorSlurmNodeSetComputeInstanceBootDiskArgs:
     @pulumi.getter(name="sizeGb")
     def size_gb(self) -> pulumi.Input[_builtins.str]: ...
     @size_gb.setter
-    def size_gb(self, value: pulumi.Input[_builtins.str]): ...
+    def size_gb(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmNodeSetStorageConfigArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -915,12 +988,14 @@ class ClusterOrchestratorSlurmNodeSetStorageConfigArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="localMount")
     def local_mount(self) -> pulumi.Input[_builtins.str]: ...
     @local_mount.setter
-    def local_mount(self, value: pulumi.Input[_builtins.str]): ...
+    def local_mount(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterOrchestratorSlurmPartitionArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -938,14 +1013,16 @@ class ClusterOrchestratorSlurmPartitionArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeSetIds")
     def node_set_ids(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @node_set_ids.setter
     def node_set_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterStorageResourceArgsDict(TypedDict):
     config: pulumi.Input[ClusterStorageResourceConfigArgsDict]
@@ -981,12 +1058,14 @@ class ClusterStorageResourceArgs:
     @pulumi.getter
     def config(self) -> pulumi.Input[ClusterStorageResourceConfigArgs]: ...
     @config.setter
-    def config(self, value: pulumi.Input[ClusterStorageResourceConfigArgs]): ...
+    def config(self, value: pulumi.Input[ClusterStorageResourceConfigArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def buckets(
@@ -1000,7 +1079,8 @@ class ClusterStorageResourceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterStorageResourceBucketArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filestores(
@@ -1014,7 +1094,8 @@ class ClusterStorageResourceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterStorageResourceFilestoreArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lustres(
@@ -1028,7 +1109,8 @@ class ClusterStorageResourceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterStorageResourceLustreArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterStorageResourceBucketArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
@@ -1042,7 +1124,8 @@ class ClusterStorageResourceBucketArgs:
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigArgsDict(TypedDict):
     existing_bucket: NotRequired[
@@ -1093,7 +1176,8 @@ class ClusterStorageResourceConfigArgs:
     def existing_bucket(
         self,
         value: Optional[pulumi.Input[ClusterStorageResourceConfigExistingBucketArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="existingFilestore")
     def existing_filestore(
@@ -1105,7 +1189,8 @@ class ClusterStorageResourceConfigArgs:
         value: Optional[
             pulumi.Input[ClusterStorageResourceConfigExistingFilestoreArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="existingLustre")
     def existing_lustre(
@@ -1115,7 +1200,8 @@ class ClusterStorageResourceConfigArgs:
     def existing_lustre(
         self,
         value: Optional[pulumi.Input[ClusterStorageResourceConfigExistingLustreArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newBucket")
     def new_bucket(
@@ -1124,7 +1210,8 @@ class ClusterStorageResourceConfigArgs:
     @new_bucket.setter
     def new_bucket(
         self, value: Optional[pulumi.Input[ClusterStorageResourceConfigNewBucketArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newFilestore")
     def new_filestore(
@@ -1134,7 +1221,8 @@ class ClusterStorageResourceConfigArgs:
     def new_filestore(
         self,
         value: Optional[pulumi.Input[ClusterStorageResourceConfigNewFilestoreArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newLustre")
     def new_lustre(
@@ -1143,7 +1231,8 @@ class ClusterStorageResourceConfigArgs:
     @new_lustre.setter
     def new_lustre(
         self, value: Optional[pulumi.Input[ClusterStorageResourceConfigNewLustreArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigExistingBucketArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -1155,7 +1244,8 @@ class ClusterStorageResourceConfigExistingBucketArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigExistingFilestoreArgsDict(TypedDict):
     filestore: pulumi.Input[_builtins.str]
@@ -1167,7 +1257,8 @@ class ClusterStorageResourceConfigExistingFilestoreArgs:
     @pulumi.getter
     def filestore(self) -> pulumi.Input[_builtins.str]: ...
     @filestore.setter
-    def filestore(self, value: pulumi.Input[_builtins.str]): ...
+    def filestore(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigExistingLustreArgsDict(TypedDict):
     lustre: pulumi.Input[_builtins.str]
@@ -1179,7 +1270,8 @@ class ClusterStorageResourceConfigExistingLustreArgs:
     @pulumi.getter
     def lustre(self) -> pulumi.Input[_builtins.str]: ...
     @lustre.setter
-    def lustre(self, value: pulumi.Input[_builtins.str]): ...
+    def lustre(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigNewBucketArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -1209,7 +1301,8 @@ class ClusterStorageResourceConfigNewBucketArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def autoclass(
@@ -1221,7 +1314,8 @@ class ClusterStorageResourceConfigNewBucketArgs:
         value: Optional[
             pulumi.Input[ClusterStorageResourceConfigNewBucketAutoclassArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hierarchicalNamespace")
     def hierarchical_namespace(
@@ -1235,12 +1329,14 @@ class ClusterStorageResourceConfigNewBucketArgs:
         value: Optional[
             pulumi.Input[ClusterStorageResourceConfigNewBucketHierarchicalNamespaceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigNewBucketAutoclassArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -1252,7 +1348,8 @@ class ClusterStorageResourceConfigNewBucketAutoclassArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigNewBucketHierarchicalNamespaceArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1266,7 +1363,8 @@ class ClusterStorageResourceConfigNewBucketHierarchicalNamespaceArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigNewFilestoreArgsDict(TypedDict):
     file_shares: pulumi.Input[
@@ -1309,27 +1407,32 @@ class ClusterStorageResourceConfigNewFilestoreArgs:
                 pulumi.Input[ClusterStorageResourceConfigNewFilestoreFileShareArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filestore(self) -> pulumi.Input[_builtins.str]: ...
     @filestore.setter
-    def filestore(self, value: pulumi.Input[_builtins.str]): ...
+    def filestore(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tier(self) -> pulumi.Input[_builtins.str]: ...
     @tier.setter
-    def tier(self, value: pulumi.Input[_builtins.str]): ...
+    def tier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigNewFilestoreFileShareArgsDict(TypedDict):
     capacity_gb: pulumi.Input[_builtins.str]
@@ -1347,12 +1450,14 @@ class ClusterStorageResourceConfigNewFilestoreFileShareArgs:
     @pulumi.getter(name="capacityGb")
     def capacity_gb(self) -> pulumi.Input[_builtins.str]: ...
     @capacity_gb.setter
-    def capacity_gb(self, value: pulumi.Input[_builtins.str]): ...
+    def capacity_gb(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fileShare")
     def file_share(self) -> pulumi.Input[_builtins.str]: ...
     @file_share.setter
-    def file_share(self, value: pulumi.Input[_builtins.str]): ...
+    def file_share(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ClusterStorageResourceConfigNewLustreArgsDict(TypedDict):
     capacity_gb: pulumi.Input[_builtins.str]
@@ -1374,22 +1479,26 @@ class ClusterStorageResourceConfigNewLustreArgs:
     @pulumi.getter(name="capacityGb")
     def capacity_gb(self) -> pulumi.Input[_builtins.str]: ...
     @capacity_gb.setter
-    def capacity_gb(self, value: pulumi.Input[_builtins.str]): ...
+    def capacity_gb(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filesystem(self) -> pulumi.Input[_builtins.str]: ...
     @filesystem.setter
-    def filesystem(self, value: pulumi.Input[_builtins.str]): ...
+    def filesystem(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def lustre(self) -> pulumi.Input[_builtins.str]: ...
     @lustre.setter
-    def lustre(self, value: pulumi.Input[_builtins.str]): ...
+    def lustre(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterStorageResourceFilestoreArgsDict(TypedDict):
     filestore: NotRequired[pulumi.Input[_builtins.str]]
@@ -1403,7 +1512,8 @@ class ClusterStorageResourceFilestoreArgs:
     @pulumi.getter
     def filestore(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filestore.setter
-    def filestore(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filestore(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ClusterStorageResourceLustreArgsDict(TypedDict):
     lustre: NotRequired[pulumi.Input[_builtins.str]]
@@ -1417,4 +1527,5 @@ class ClusterStorageResourceLustreArgs:
     @pulumi.getter
     def lustre(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lustre.setter
-    def lustre(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lustre(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

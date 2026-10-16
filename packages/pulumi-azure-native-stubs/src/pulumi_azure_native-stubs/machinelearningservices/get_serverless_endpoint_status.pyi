@@ -20,7 +20,8 @@ class GetServerlessEndpointStatusResult:
     def metrics(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetServerlessEndpointStatusResult(GetServerlessEndpointStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerlessEndpointStatusResult]:
+        ...
 
 def get_serverless_endpoint_status(
     name: Optional[_builtins.str] = ...,

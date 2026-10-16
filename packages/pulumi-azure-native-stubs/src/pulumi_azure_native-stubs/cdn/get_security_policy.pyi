@@ -58,7 +58,8 @@ class GetSecurityPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityPolicyResult(GetSecurityPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityPolicyResult]:
+        ...
 
 def get_security_policy(
     profile_name: Optional[_builtins.str] = ...,

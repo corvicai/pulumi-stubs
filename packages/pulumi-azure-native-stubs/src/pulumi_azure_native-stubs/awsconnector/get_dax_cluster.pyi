@@ -52,7 +52,8 @@ class GetDaxClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDaxClusterResult(GetDaxClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDaxClusterResult]:
+        ...
 
 def get_dax_cluster(
     name: Optional[_builtins.str] = ...,

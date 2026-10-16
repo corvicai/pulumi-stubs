@@ -76,7 +76,8 @@ class GetDataLakeSettingsResult:
     def trusted_resource_owners(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetDataLakeSettingsResult(GetDataLakeSettingsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataLakeSettingsResult]:
+        ...
 
 def get_data_lake_settings(
     catalog_id: Optional[_builtins.str] = ...,

@@ -64,7 +64,8 @@ class GetVirtualRouterResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetVirtualRouterResult(GetVirtualRouterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualRouterResult]:
+        ...
 
 def get_virtual_router(
     mesh_name: Optional[_builtins.str] = ...,

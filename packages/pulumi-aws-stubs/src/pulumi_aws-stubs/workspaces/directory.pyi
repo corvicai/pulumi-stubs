@@ -51,7 +51,8 @@ class DirectoryArgs:
     @active_directory_config.setter
     def active_directory_config(
         self, value: Optional[pulumi.Input[DirectoryActiveDirectoryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateBasedAuthProperties")
     def certificate_based_auth_properties(
@@ -60,12 +61,14 @@ class DirectoryArgs:
     @certificate_based_auth_properties.setter
     def certificate_based_auth_properties(
         self, value: Optional[pulumi.Input[DirectoryCertificateBasedAuthPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directoryId")
     def directory_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @directory_id.setter
-    def directory_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def directory_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipGroupIds")
     def ip_group_ids(
@@ -74,12 +77,14 @@ class DirectoryArgs:
     @ip_group_ids.setter
     def ip_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samlProperties")
     def saml_properties(
@@ -88,7 +93,8 @@ class DirectoryArgs:
     @saml_properties.setter
     def saml_properties(
         self, value: Optional[pulumi.Input[DirectorySamlPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfServicePermissions")
     def self_service_permissions(
@@ -97,7 +103,8 @@ class DirectoryArgs:
     @self_service_permissions.setter
     def self_service_permissions(
         self, value: Optional[pulumi.Input[DirectorySelfServicePermissionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -106,7 +113,8 @@ class DirectoryArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -115,17 +123,22 @@ class DirectoryArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tenancy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenancy.setter
-    def tenancy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenancy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userIdentityType")
     def user_identity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_identity_type.setter
-    def user_identity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_identity_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceAccessProperties")
     def workspace_access_properties(
@@ -134,7 +147,8 @@ class DirectoryArgs:
     @workspace_access_properties.setter
     def workspace_access_properties(
         self, value: Optional[pulumi.Input[DirectoryWorkspaceAccessPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceCreationProperties")
     def workspace_creation_properties(
@@ -143,7 +157,8 @@ class DirectoryArgs:
     @workspace_creation_properties.setter
     def workspace_creation_properties(
         self, value: Optional[pulumi.Input[DirectoryWorkspaceCreationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceDirectoryDescription")
     def workspace_directory_description(
@@ -152,19 +167,22 @@ class DirectoryArgs:
     @workspace_directory_description.setter
     def workspace_directory_description(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceDirectoryName")
     def workspace_directory_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_directory_name.setter
     def workspace_directory_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceType")
     def workspace_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_type.setter
-    def workspace_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DirectoryState:
@@ -221,12 +239,14 @@ class _DirectoryState:
     @active_directory_config.setter
     def active_directory_config(
         self, value: Optional[pulumi.Input[DirectoryActiveDirectoryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @alias.setter
-    def alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def alias(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateBasedAuthProperties")
     def certificate_based_auth_properties(
@@ -235,27 +255,34 @@ class _DirectoryState:
     @certificate_based_auth_properties.setter
     def certificate_based_auth_properties(
         self, value: Optional[pulumi.Input[DirectoryCertificateBasedAuthPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerUserName")
     def customer_user_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_user_name.setter
-    def customer_user_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def customer_user_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directoryId")
     def directory_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @directory_id.setter
-    def directory_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def directory_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directoryName")
     def directory_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @directory_name.setter
-    def directory_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def directory_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="directoryType")
     def directory_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @directory_type.setter
-    def directory_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def directory_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsIpAddresses")
     def dns_ip_addresses(
@@ -264,12 +291,14 @@ class _DirectoryState:
     @dns_ip_addresses.setter
     def dns_ip_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamRoleId")
     def iam_role_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_role_id.setter
-    def iam_role_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_role_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipGroupIds")
     def ip_group_ids(
@@ -278,17 +307,22 @@ class _DirectoryState:
     @ip_group_ids.setter
     def ip_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="registrationCode")
     def registration_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registration_code.setter
-    def registration_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def registration_code(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="samlProperties")
     def saml_properties(
@@ -297,7 +331,8 @@ class _DirectoryState:
     @saml_properties.setter
     def saml_properties(
         self, value: Optional[pulumi.Input[DirectorySamlPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfServicePermissions")
     def self_service_permissions(
@@ -306,7 +341,8 @@ class _DirectoryState:
     @self_service_permissions.setter
     def self_service_permissions(
         self, value: Optional[pulumi.Input[DirectorySelfServicePermissionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -315,7 +351,8 @@ class _DirectoryState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -324,7 +361,8 @@ class _DirectoryState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -333,17 +371,22 @@ class _DirectoryState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tenancy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tenancy.setter
-    def tenancy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tenancy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userIdentityType")
     def user_identity_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_identity_type.setter
-    def user_identity_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_identity_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceAccessProperties")
     def workspace_access_properties(
@@ -352,7 +395,8 @@ class _DirectoryState:
     @workspace_access_properties.setter
     def workspace_access_properties(
         self, value: Optional[pulumi.Input[DirectoryWorkspaceAccessPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceCreationProperties")
     def workspace_creation_properties(
@@ -361,7 +405,8 @@ class _DirectoryState:
     @workspace_creation_properties.setter
     def workspace_creation_properties(
         self, value: Optional[pulumi.Input[DirectoryWorkspaceCreationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceDirectoryDescription")
     def workspace_directory_description(
@@ -370,26 +415,30 @@ class _DirectoryState:
     @workspace_directory_description.setter
     def workspace_directory_description(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceDirectoryName")
     def workspace_directory_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_directory_name.setter
     def workspace_directory_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceSecurityGroupId")
     def workspace_security_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_security_group_id.setter
     def workspace_security_group_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceType")
     def workspace_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_type.setter
-    def workspace_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:workspaces/directory:Directory")
 class Directory(pulumi.CustomResource):

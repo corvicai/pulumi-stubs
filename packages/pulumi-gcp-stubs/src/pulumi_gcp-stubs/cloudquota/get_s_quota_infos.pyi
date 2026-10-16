@@ -32,7 +32,8 @@ class GetSQuotaInfosResult:
     def service(self) -> _builtins.str: ...
 
 class AwaitableGetSQuotaInfosResult(GetSQuotaInfosResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSQuotaInfosResult]:
+        ...
 
 def get_s_quota_infos(
     parent: Optional[_builtins.str] = ...,

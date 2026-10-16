@@ -56,7 +56,8 @@ class GetCloudEdgeManagementRoleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudEdgeManagementRoleResult(GetCloudEdgeManagementRoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudEdgeManagementRoleResult]:
+        ...
 
 def get_cloud_edge_management_role(
     device_name: Optional[_builtins.str] = ...,

@@ -42,12 +42,14 @@ class DatabaseArgs:
     @pulumi.getter(name="clusterName")
     def cluster_name(self) -> pulumi.Input[_builtins.str]: ...
     @cluster_name.setter
-    def cluster_name(self, value: pulumi.Input[_builtins.str]): ...
+    def cluster_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessKeysAuthentication")
     def access_keys_authentication(
@@ -57,7 +59,8 @@ class DatabaseArgs:
     def access_keys_authentication(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, AccessKeysAuthentication]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientProtocol")
     def client_protocol(
@@ -66,7 +69,8 @@ class DatabaseArgs:
     @client_protocol.setter
     def client_protocol(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Protocol]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusteringPolicy")
     def clustering_policy(
@@ -75,12 +79,14 @@ class DatabaseArgs:
     @clustering_policy.setter
     def clustering_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ClusteringPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="databaseName")
     def database_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_name.setter
-    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deferUpgrade")
     def defer_upgrade(
@@ -89,7 +95,8 @@ class DatabaseArgs:
     @defer_upgrade.setter
     def defer_upgrade(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DeferUpgradeSetting]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="evictionPolicy")
     def eviction_policy(
@@ -98,7 +105,8 @@ class DatabaseArgs:
     @eviction_policy.setter
     def eviction_policy(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EvictionPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="geoReplication")
     def geo_replication(
@@ -107,24 +115,28 @@ class DatabaseArgs:
     @geo_replication.setter
     def geo_replication(
         self, value: Optional[pulumi.Input[DatabasePropertiesGeoReplicationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def modules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ModuleArgs]]]]: ...
     @modules.setter
     def modules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ModuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def persistence(self) -> Optional[pulumi.Input[PersistenceArgs]]: ...
     @persistence.setter
-    def persistence(self, value: Optional[pulumi.Input[PersistenceArgs]]): ...
+    def persistence(self, value: Optional[pulumi.Input[PersistenceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @port.setter
-    def port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:redisenterprise:Database")
 class Database(pulumi.CustomResource):

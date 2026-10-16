@@ -100,7 +100,8 @@ class GetShareSubscriptionResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetShareSubscriptionResult(GetShareSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetShareSubscriptionResult]:
+        ...
 
 def get_share_subscription(
     account_name: Optional[_builtins.str] = ...,

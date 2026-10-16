@@ -36,7 +36,8 @@ class GetDbServersResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetDbServersResult(GetDbServersResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDbServersResult]:
+        ...
 
 def get_db_servers(
     cloud_exadata_infrastructure_id: Optional[_builtins.str] = ...,

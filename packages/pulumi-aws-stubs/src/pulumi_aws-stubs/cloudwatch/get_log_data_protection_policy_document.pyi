@@ -55,7 +55,10 @@ class GetLogDataProtectionPolicyDocumentResult:
 class AwaitableGetLogDataProtectionPolicyDocumentResult(
     GetLogDataProtectionPolicyDocumentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLogDataProtectionPolicyDocumentResult]:
+        ...
 
 def get_log_data_protection_policy_document(
     configuration: Optional[

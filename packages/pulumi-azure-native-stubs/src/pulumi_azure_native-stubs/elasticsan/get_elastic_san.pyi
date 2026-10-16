@@ -98,7 +98,8 @@ class GetElasticSanResult:
     def volume_group_count(self) -> _builtins.float: ...
 
 class AwaitableGetElasticSanResult(GetElasticSanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetElasticSanResult]:
+        ...
 
 def get_elastic_san(
     elastic_san_name: Optional[_builtins.str] = ...,

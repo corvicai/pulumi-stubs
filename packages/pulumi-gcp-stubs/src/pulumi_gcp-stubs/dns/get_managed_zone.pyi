@@ -51,7 +51,8 @@ class GetManagedZoneResult:
     def visibility(self) -> _builtins.str: ...
 
 class AwaitableGetManagedZoneResult(GetManagedZoneResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedZoneResult]:
+        ...
 
 def get_managed_zone(
     name: Optional[_builtins.str] = ...,

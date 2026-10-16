@@ -32,7 +32,8 @@ class GetCertificatesResult:
     def region(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetCertificatesResult(GetCertificatesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificatesResult]:
+        ...
 
 def get_certificates(
     filter: Optional[_builtins.str] = ...,

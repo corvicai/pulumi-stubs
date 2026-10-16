@@ -32,12 +32,14 @@ class ProactiveEngagementArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[ProactiveEngagementEmergencyContactArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ProactiveEngagementState:
@@ -66,12 +68,14 @@ class _ProactiveEngagementState:
                 Sequence[pulumi.Input[ProactiveEngagementEmergencyContactArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:shield/proactiveEngagement:ProactiveEngagement")
 class ProactiveEngagement(pulumi.CustomResource):

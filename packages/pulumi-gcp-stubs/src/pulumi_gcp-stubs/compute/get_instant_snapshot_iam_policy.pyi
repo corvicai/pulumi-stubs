@@ -37,7 +37,8 @@ class GetInstantSnapshotIamPolicyResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetInstantSnapshotIamPolicyResult(GetInstantSnapshotIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstantSnapshotIamPolicyResult]:
+        ...
 
 def get_instant_snapshot_iam_policy(
     name: Optional[_builtins.str] = ...,

@@ -52,7 +52,8 @@ class GetEc2SnapshotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2SnapshotResult(GetEc2SnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2SnapshotResult]:
+        ...
 
 def get_ec2_snapshot(
     name: Optional[_builtins.str] = ...,

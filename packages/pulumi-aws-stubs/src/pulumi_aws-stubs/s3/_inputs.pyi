@@ -358,24 +358,34 @@ class AccessPointPublicAccessBlockConfigurationArgs:
     @pulumi.getter(name="blockPublicAcls")
     def block_public_acls(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @block_public_acls.setter
-    def block_public_acls(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def block_public_acls(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockPublicPolicy")
     def block_public_policy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @block_public_policy.setter
-    def block_public_policy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def block_public_policy(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ignorePublicAcls")
     def ignore_public_acls(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ignore_public_acls.setter
-    def ignore_public_acls(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ignore_public_acls(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restrictPublicBuckets")
     def restrict_public_buckets(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @restrict_public_buckets.setter
     def restrict_public_buckets(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AccessPointVpcConfigurationArgsDict(TypedDict):
     vpc_id: pulumi.Input[_builtins.str]
@@ -387,7 +397,8 @@ class AccessPointVpcConfigurationArgs:
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_id.setter
-    def vpc_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AnalyticsConfigurationFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
@@ -405,7 +416,8 @@ class AnalyticsConfigurationFilterArgs:
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -414,7 +426,8 @@ class AnalyticsConfigurationFilterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyticsConfigurationStorageClassAnalysisArgsDict(TypedDict):
     data_export: pulumi.Input[
@@ -439,7 +452,8 @@ class AnalyticsConfigurationStorageClassAnalysisArgs:
     def data_export(
         self,
         value: pulumi.Input[AnalyticsConfigurationStorageClassAnalysisDataExportArgs],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyticsConfigurationStorageClassAnalysisDataExportArgsDict(TypedDict):
     destination: pulumi.Input[
@@ -470,12 +484,16 @@ class AnalyticsConfigurationStorageClassAnalysisDataExportArgs:
         value: pulumi.Input[
             AnalyticsConfigurationStorageClassAnalysisDataExportDestinationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputSchemaVersion")
     def output_schema_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_schema_version.setter
-    def output_schema_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_schema_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationArgsDict(
     TypedDict
@@ -506,7 +524,8 @@ class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationArgs:
         value: pulumi.Input[
             AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationArgsDict(
     TypedDict
@@ -530,22 +549,28 @@ class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDes
     @pulumi.getter(name="bucketArn")
     def bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_arn.setter
-    def bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketAccountId")
     def bucket_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_account_id.setter
-    def bucket_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @format.setter
-    def format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketAbacAbacStatusArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -557,7 +582,8 @@ class BucketAbacAbacStatusArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketAclAccessControlPolicyArgsDict(TypedDict):
     owner: pulumi.Input[BucketAclAccessControlPolicyOwnerArgsDict]
@@ -579,7 +605,10 @@ class BucketAclAccessControlPolicyArgs:
     @pulumi.getter
     def owner(self) -> pulumi.Input[BucketAclAccessControlPolicyOwnerArgs]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[BucketAclAccessControlPolicyOwnerArgs]): ...
+    def owner(
+        self, value: pulumi.Input[BucketAclAccessControlPolicyOwnerArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def grants(
@@ -593,7 +622,8 @@ class BucketAclAccessControlPolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketAclAccessControlPolicyGrantArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketAclAccessControlPolicyGrantArgsDict(TypedDict):
     permission: pulumi.Input[_builtins.str]
@@ -613,7 +643,8 @@ class BucketAclAccessControlPolicyGrantArgs:
     @pulumi.getter
     def permission(self) -> pulumi.Input[_builtins.str]: ...
     @permission.setter
-    def permission(self, value: pulumi.Input[_builtins.str]): ...
+    def permission(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def grantee(
@@ -623,7 +654,8 @@ class BucketAclAccessControlPolicyGrantArgs:
     def grantee(
         self,
         value: Optional[pulumi.Input[BucketAclAccessControlPolicyGrantGranteeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketAclAccessControlPolicyGrantGranteeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -647,28 +679,33 @@ class BucketAclAccessControlPolicyGrantGranteeArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     @_utilities.deprecated(...)
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddress")
     def email_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_address.setter
-    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketAclAccessControlPolicyOwnerArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -686,13 +723,15 @@ class BucketAclAccessControlPolicyOwnerArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     @_utilities.deprecated(...)
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketAclV2AccessControlPolicyArgsDict(TypedDict):
     owner: pulumi.Input[BucketAclV2AccessControlPolicyOwnerArgsDict]
@@ -718,7 +757,10 @@ class BucketAclV2AccessControlPolicyArgs:
     @pulumi.getter
     def owner(self) -> pulumi.Input[BucketAclV2AccessControlPolicyOwnerArgs]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[BucketAclV2AccessControlPolicyOwnerArgs]): ...
+    def owner(
+        self, value: pulumi.Input[BucketAclV2AccessControlPolicyOwnerArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def grants(
@@ -734,7 +776,8 @@ class BucketAclV2AccessControlPolicyArgs:
                 Sequence[pulumi.Input[BucketAclV2AccessControlPolicyGrantArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketAclV2AccessControlPolicyGrantArgsDict(TypedDict):
     permission: pulumi.Input[_builtins.str]
@@ -756,7 +799,8 @@ class BucketAclV2AccessControlPolicyGrantArgs:
     @pulumi.getter
     def permission(self) -> pulumi.Input[_builtins.str]: ...
     @permission.setter
-    def permission(self, value: pulumi.Input[_builtins.str]): ...
+    def permission(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def grantee(
@@ -766,7 +810,8 @@ class BucketAclV2AccessControlPolicyGrantArgs:
     def grantee(
         self,
         value: Optional[pulumi.Input[BucketAclV2AccessControlPolicyGrantGranteeArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketAclV2AccessControlPolicyGrantGranteeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -790,28 +835,33 @@ class BucketAclV2AccessControlPolicyGrantGranteeArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     @_utilities.deprecated(...)
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddress")
     def email_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_address.setter
-    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketAclV2AccessControlPolicyOwnerArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -829,13 +879,15 @@ class BucketAclV2AccessControlPolicyOwnerArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     @_utilities.deprecated(...)
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketCorsConfigurationCorsRuleArgsDict(TypedDict):
     allowed_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -869,7 +921,8 @@ class BucketCorsConfigurationCorsRuleArgs:
     @allowed_methods.setter
     def allowed_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOrigins")
     def allowed_origins(
@@ -878,7 +931,8 @@ class BucketCorsConfigurationCorsRuleArgs:
     @allowed_origins.setter
     def allowed_origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedHeaders")
     def allowed_headers(
@@ -887,7 +941,8 @@ class BucketCorsConfigurationCorsRuleArgs:
     @allowed_headers.setter
     def allowed_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exposeHeaders")
     def expose_headers(
@@ -896,17 +951,20 @@ class BucketCorsConfigurationCorsRuleArgs:
     @expose_headers.setter
     def expose_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxAgeSeconds")
     def max_age_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_age_seconds.setter
-    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketCorsConfigurationV2CorsRuleArgsDict(TypedDict):
     allowed_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -940,7 +998,8 @@ class BucketCorsConfigurationV2CorsRuleArgs:
     @allowed_methods.setter
     def allowed_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOrigins")
     def allowed_origins(
@@ -949,7 +1008,8 @@ class BucketCorsConfigurationV2CorsRuleArgs:
     @allowed_origins.setter
     def allowed_origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedHeaders")
     def allowed_headers(
@@ -958,7 +1018,8 @@ class BucketCorsConfigurationV2CorsRuleArgs:
     @allowed_headers.setter
     def allowed_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exposeHeaders")
     def expose_headers(
@@ -967,17 +1028,20 @@ class BucketCorsConfigurationV2CorsRuleArgs:
     @expose_headers.setter
     def expose_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxAgeSeconds")
     def max_age_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_age_seconds.setter
-    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketCorsRuleArgsDict(TypedDict):
     allowed_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1009,7 +1073,8 @@ class BucketCorsRuleArgs:
     @allowed_methods.setter
     def allowed_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOrigins")
     def allowed_origins(
@@ -1018,7 +1083,8 @@ class BucketCorsRuleArgs:
     @allowed_origins.setter
     def allowed_origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedHeaders")
     def allowed_headers(
@@ -1027,7 +1093,8 @@ class BucketCorsRuleArgs:
     @allowed_headers.setter
     def allowed_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exposeHeaders")
     def expose_headers(
@@ -1036,12 +1103,14 @@ class BucketCorsRuleArgs:
     @expose_headers.setter
     def expose_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxAgeSeconds")
     def max_age_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_age_seconds.setter
-    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketGrantArgsDict(TypedDict):
     permissions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1065,22 +1134,26 @@ class BucketGrantArgs:
     @permissions.setter
     def permissions(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketIntelligentTieringConfigurationFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
@@ -1098,7 +1171,8 @@ class BucketIntelligentTieringConfigurationFilterArgs:
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -1107,7 +1181,8 @@ class BucketIntelligentTieringConfigurationFilterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketIntelligentTieringConfigurationTieringArgsDict(TypedDict):
     access_tier: pulumi.Input[_builtins.str]
@@ -1125,12 +1200,14 @@ class BucketIntelligentTieringConfigurationTieringArgs:
     @pulumi.getter(name="accessTier")
     def access_tier(self) -> pulumi.Input[_builtins.str]: ...
     @access_tier.setter
-    def access_tier(self, value: pulumi.Input[_builtins.str]): ...
+    def access_tier(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> pulumi.Input[_builtins.int]: ...
     @days.setter
-    def days(self, value: pulumi.Input[_builtins.int]): ...
+    def days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -1208,12 +1285,14 @@ class BucketLifecycleConfigurationRuleArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="abortIncompleteMultipartUpload")
     def abort_incomplete_multipart_upload(
@@ -1229,7 +1308,8 @@ class BucketLifecycleConfigurationRuleArgs:
                 BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expiration(
@@ -1239,7 +1319,8 @@ class BucketLifecycleConfigurationRuleArgs:
     def expiration(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationRuleExpirationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -1248,7 +1329,8 @@ class BucketLifecycleConfigurationRuleArgs:
     @filter.setter
     def filter(
         self, value: Optional[pulumi.Input[BucketLifecycleConfigurationRuleFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionExpiration")
     def noncurrent_version_expiration(
@@ -1264,7 +1346,8 @@ class BucketLifecycleConfigurationRuleArgs:
                 BucketLifecycleConfigurationRuleNoncurrentVersionExpirationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionTransitions")
     def noncurrent_version_transitions(
@@ -1290,13 +1373,15 @@ class BucketLifecycleConfigurationRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated("""Specify a prefix using 'filter' instead""")
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transitions(
@@ -1314,7 +1399,8 @@ class BucketLifecycleConfigurationRuleArgs:
                 Sequence[pulumi.Input[BucketLifecycleConfigurationRuleTransitionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgsDict(TypedDict):
     days_after_initiation: NotRequired[pulumi.Input[_builtins.int]]
@@ -1328,7 +1414,10 @@ class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgs:
     @pulumi.getter(name="daysAfterInitiation")
     def days_after_initiation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days_after_initiation.setter
-    def days_after_initiation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days_after_initiation(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
@@ -1348,12 +1437,14 @@ class BucketLifecycleConfigurationRuleExpirationArgs:
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expiredObjectDeleteMarker")
     def expired_object_delete_marker(
@@ -1362,7 +1453,8 @@ class BucketLifecycleConfigurationRuleExpirationArgs:
     @expired_object_delete_marker.setter
     def expired_object_delete_marker(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleFilterArgsDict(TypedDict):
     and_: NotRequired[pulumi.Input[BucketLifecycleConfigurationRuleFilterAndArgsDict]]
@@ -1395,24 +1487,30 @@ class BucketLifecycleConfigurationRuleFilterArgs:
     def and_(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationRuleFilterAndArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectSizeGreaterThan")
     def object_size_greater_than(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @object_size_greater_than.setter
     def object_size_greater_than(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectSizeLessThan")
     def object_size_less_than(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @object_size_less_than.setter
-    def object_size_less_than(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def object_size_less_than(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(
@@ -1422,7 +1520,8 @@ class BucketLifecycleConfigurationRuleFilterArgs:
     def tag(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationRuleFilterTagArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleFilterAndArgsDict(TypedDict):
     object_size_greater_than: NotRequired[pulumi.Input[_builtins.int]]
@@ -1446,17 +1545,22 @@ class BucketLifecycleConfigurationRuleFilterAndArgs:
     @object_size_greater_than.setter
     def object_size_greater_than(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectSizeLessThan")
     def object_size_less_than(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @object_size_less_than.setter
-    def object_size_less_than(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def object_size_less_than(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -1465,7 +1569,8 @@ class BucketLifecycleConfigurationRuleFilterAndArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleFilterTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -1483,12 +1588,14 @@ class BucketLifecycleConfigurationRuleFilterTagArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleNoncurrentVersionExpirationArgsDict(TypedDict):
     noncurrent_days: pulumi.Input[_builtins.int]
@@ -1506,14 +1613,16 @@ class BucketLifecycleConfigurationRuleNoncurrentVersionExpirationArgs:
     @pulumi.getter(name="noncurrentDays")
     def noncurrent_days(self) -> pulumi.Input[_builtins.int]: ...
     @noncurrent_days.setter
-    def noncurrent_days(self, value: pulumi.Input[_builtins.int]): ...
+    def noncurrent_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newerNoncurrentVersions")
     def newer_noncurrent_versions(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @newer_noncurrent_versions.setter
     def newer_noncurrent_versions(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleNoncurrentVersionTransitionArgsDict(TypedDict):
     noncurrent_days: pulumi.Input[_builtins.int]
@@ -1533,19 +1642,22 @@ class BucketLifecycleConfigurationRuleNoncurrentVersionTransitionArgs:
     @pulumi.getter(name="noncurrentDays")
     def noncurrent_days(self) -> pulumi.Input[_builtins.int]: ...
     @noncurrent_days.setter
-    def noncurrent_days(self, value: pulumi.Input[_builtins.int]): ...
+    def noncurrent_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newerNoncurrentVersions")
     def newer_noncurrent_versions(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @newer_noncurrent_versions.setter
     def newer_noncurrent_versions(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationRuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
@@ -1565,17 +1677,20 @@ class BucketLifecycleConfigurationRuleTransitionArgs:
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -1593,12 +1708,14 @@ class BucketLifecycleConfigurationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -1676,12 +1793,14 @@ class BucketLifecycleConfigurationV2RuleArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="abortIncompleteMultipartUpload")
     def abort_incomplete_multipart_upload(
@@ -1699,7 +1818,8 @@ class BucketLifecycleConfigurationV2RuleArgs:
                 BucketLifecycleConfigurationV2RuleAbortIncompleteMultipartUploadArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expiration(
@@ -1709,7 +1829,8 @@ class BucketLifecycleConfigurationV2RuleArgs:
     def expiration(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationV2RuleExpirationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -1719,7 +1840,8 @@ class BucketLifecycleConfigurationV2RuleArgs:
     def filter(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationV2RuleFilterArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionExpiration")
     def noncurrent_version_expiration(
@@ -1735,7 +1857,8 @@ class BucketLifecycleConfigurationV2RuleArgs:
                 BucketLifecycleConfigurationV2RuleNoncurrentVersionExpirationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionTransitions")
     def noncurrent_version_transitions(
@@ -1761,13 +1884,15 @@ class BucketLifecycleConfigurationV2RuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated("""Specify a prefix using 'filter' instead""")
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transitions(
@@ -1785,7 +1910,8 @@ class BucketLifecycleConfigurationV2RuleArgs:
                 Sequence[pulumi.Input[BucketLifecycleConfigurationV2RuleTransitionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleAbortIncompleteMultipartUploadArgsDict(
     TypedDict
@@ -1801,7 +1927,10 @@ class BucketLifecycleConfigurationV2RuleAbortIncompleteMultipartUploadArgs:
     @pulumi.getter(name="daysAfterInitiation")
     def days_after_initiation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days_after_initiation.setter
-    def days_after_initiation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days_after_initiation(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
@@ -1821,12 +1950,14 @@ class BucketLifecycleConfigurationV2RuleExpirationArgs:
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expiredObjectDeleteMarker")
     def expired_object_delete_marker(
@@ -1835,7 +1966,8 @@ class BucketLifecycleConfigurationV2RuleExpirationArgs:
     @expired_object_delete_marker.setter
     def expired_object_delete_marker(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleFilterArgsDict(TypedDict):
     and_: NotRequired[pulumi.Input[BucketLifecycleConfigurationV2RuleFilterAndArgsDict]]
@@ -1868,24 +2000,30 @@ class BucketLifecycleConfigurationV2RuleFilterArgs:
     def and_(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationV2RuleFilterAndArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectSizeGreaterThan")
     def object_size_greater_than(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @object_size_greater_than.setter
     def object_size_greater_than(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectSizeLessThan")
     def object_size_less_than(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @object_size_less_than.setter
-    def object_size_less_than(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def object_size_less_than(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(
@@ -1895,7 +2033,8 @@ class BucketLifecycleConfigurationV2RuleFilterArgs:
     def tag(
         self,
         value: Optional[pulumi.Input[BucketLifecycleConfigurationV2RuleFilterTagArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleFilterAndArgsDict(TypedDict):
     object_size_greater_than: NotRequired[pulumi.Input[_builtins.int]]
@@ -1919,17 +2058,22 @@ class BucketLifecycleConfigurationV2RuleFilterAndArgs:
     @object_size_greater_than.setter
     def object_size_greater_than(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectSizeLessThan")
     def object_size_less_than(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @object_size_less_than.setter
-    def object_size_less_than(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def object_size_less_than(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -1938,7 +2082,8 @@ class BucketLifecycleConfigurationV2RuleFilterAndArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleFilterTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -1956,12 +2101,14 @@ class BucketLifecycleConfigurationV2RuleFilterTagArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleNoncurrentVersionExpirationArgsDict(TypedDict):
     noncurrent_days: pulumi.Input[_builtins.int]
@@ -1979,14 +2126,16 @@ class BucketLifecycleConfigurationV2RuleNoncurrentVersionExpirationArgs:
     @pulumi.getter(name="noncurrentDays")
     def noncurrent_days(self) -> pulumi.Input[_builtins.int]: ...
     @noncurrent_days.setter
-    def noncurrent_days(self, value: pulumi.Input[_builtins.int]): ...
+    def noncurrent_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newerNoncurrentVersions")
     def newer_noncurrent_versions(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @newer_noncurrent_versions.setter
     def newer_noncurrent_versions(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleNoncurrentVersionTransitionArgsDict(TypedDict):
     noncurrent_days: pulumi.Input[_builtins.int]
@@ -2006,19 +2155,22 @@ class BucketLifecycleConfigurationV2RuleNoncurrentVersionTransitionArgs:
     @pulumi.getter(name="noncurrentDays")
     def noncurrent_days(self) -> pulumi.Input[_builtins.int]: ...
     @noncurrent_days.setter
-    def noncurrent_days(self, value: pulumi.Input[_builtins.int]): ...
+    def noncurrent_days(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="newerNoncurrentVersions")
     def newer_noncurrent_versions(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @newer_noncurrent_versions.setter
     def newer_noncurrent_versions(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2RuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
@@ -2038,17 +2190,20 @@ class BucketLifecycleConfigurationV2RuleTransitionArgs:
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketLifecycleConfigurationV2TimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -2066,12 +2221,14 @@ class BucketLifecycleConfigurationV2TimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLifecycleRuleArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -2125,7 +2282,8 @@ class BucketLifecycleRuleArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="abortIncompleteMultipartUploadDays")
     def abort_incomplete_multipart_upload_days(
@@ -2134,7 +2292,8 @@ class BucketLifecycleRuleArgs:
     @abort_incomplete_multipart_upload_days.setter
     def abort_incomplete_multipart_upload_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expiration(
@@ -2143,12 +2302,14 @@ class BucketLifecycleRuleArgs:
     @expiration.setter
     def expiration(
         self, value: Optional[pulumi.Input[BucketLifecycleRuleExpirationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionExpiration")
     def noncurrent_version_expiration(
@@ -2160,7 +2321,8 @@ class BucketLifecycleRuleArgs:
         value: Optional[
             pulumi.Input[BucketLifecycleRuleNoncurrentVersionExpirationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionTransitions")
     def noncurrent_version_transitions(
@@ -2180,12 +2342,14 @@ class BucketLifecycleRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -2194,7 +2358,8 @@ class BucketLifecycleRuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transitions(
@@ -2208,7 +2373,8 @@ class BucketLifecycleRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketLifecycleRuleTransitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
@@ -2228,12 +2394,14 @@ class BucketLifecycleRuleExpirationArgs:
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expiredObjectDeleteMarker")
     def expired_object_delete_marker(
@@ -2242,7 +2410,8 @@ class BucketLifecycleRuleExpirationArgs:
     @expired_object_delete_marker.setter
     def expired_object_delete_marker(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLifecycleRuleNoncurrentVersionExpirationArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
@@ -2256,7 +2425,8 @@ class BucketLifecycleRuleNoncurrentVersionExpirationArgs:
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketLifecycleRuleNoncurrentVersionTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
@@ -2274,12 +2444,14 @@ class BucketLifecycleRuleNoncurrentVersionTransitionArgs:
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketLifecycleRuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
@@ -2299,17 +2471,20 @@ class BucketLifecycleRuleTransitionArgs:
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketLoggingArgsDict(TypedDict):
     target_bucket: pulumi.Input[_builtins.str]
@@ -2327,12 +2502,14 @@ class BucketLoggingArgs:
     @pulumi.getter(name="targetBucket")
     def target_bucket(self) -> pulumi.Input[_builtins.str]: ...
     @target_bucket.setter
-    def target_bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def target_bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPrefix")
     def target_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_prefix.setter
-    def target_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLoggingTargetGrantArgsDict(TypedDict):
     grantee: pulumi.Input[BucketLoggingTargetGrantGranteeArgsDict]
@@ -2350,12 +2527,16 @@ class BucketLoggingTargetGrantArgs:
     @pulumi.getter
     def grantee(self) -> pulumi.Input[BucketLoggingTargetGrantGranteeArgs]: ...
     @grantee.setter
-    def grantee(self, value: pulumi.Input[BucketLoggingTargetGrantGranteeArgs]): ...
+    def grantee(
+        self, value: pulumi.Input[BucketLoggingTargetGrantGranteeArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permission(self) -> pulumi.Input[_builtins.str]: ...
     @permission.setter
-    def permission(self, value: pulumi.Input[_builtins.str]): ...
+    def permission(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLoggingTargetGrantGranteeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -2379,28 +2560,33 @@ class BucketLoggingTargetGrantGranteeArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     @_utilities.deprecated(...)
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddress")
     def email_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_address.setter
-    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLoggingTargetObjectKeyFormatArgsDict(TypedDict):
     partitioned_prefix: NotRequired[
@@ -2435,7 +2621,8 @@ class BucketLoggingTargetObjectKeyFormatArgs:
         value: Optional[
             pulumi.Input[BucketLoggingTargetObjectKeyFormatPartitionedPrefixArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="simplePrefix")
     def simple_prefix(
@@ -2447,7 +2634,8 @@ class BucketLoggingTargetObjectKeyFormatArgs:
         value: Optional[
             pulumi.Input[BucketLoggingTargetObjectKeyFormatSimplePrefixArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLoggingTargetObjectKeyFormatPartitionedPrefixArgsDict(TypedDict):
     partition_date_source: pulumi.Input[_builtins.str]
@@ -2461,7 +2649,8 @@ class BucketLoggingTargetObjectKeyFormatPartitionedPrefixArgs:
     @pulumi.getter(name="partitionDateSource")
     def partition_date_source(self) -> pulumi.Input[_builtins.str]: ...
     @partition_date_source.setter
-    def partition_date_source(self, value: pulumi.Input[_builtins.str]): ...
+    def partition_date_source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLoggingTargetObjectKeyFormatSimplePrefixArgsDict(TypedDict): ...
 
@@ -2485,12 +2674,16 @@ class BucketLoggingV2TargetGrantArgs:
     @pulumi.getter
     def grantee(self) -> pulumi.Input[BucketLoggingV2TargetGrantGranteeArgs]: ...
     @grantee.setter
-    def grantee(self, value: pulumi.Input[BucketLoggingV2TargetGrantGranteeArgs]): ...
+    def grantee(
+        self, value: pulumi.Input[BucketLoggingV2TargetGrantGranteeArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permission(self) -> pulumi.Input[_builtins.str]: ...
     @permission.setter
-    def permission(self, value: pulumi.Input[_builtins.str]): ...
+    def permission(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLoggingV2TargetGrantGranteeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -2514,28 +2707,33 @@ class BucketLoggingV2TargetGrantGranteeArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="displayName")
     @_utilities.deprecated(...)
     def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emailAddress")
     def email_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email_address.setter
-    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def email_address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLoggingV2TargetObjectKeyFormatArgsDict(TypedDict):
     partitioned_prefix: NotRequired[
@@ -2570,7 +2768,8 @@ class BucketLoggingV2TargetObjectKeyFormatArgs:
         value: Optional[
             pulumi.Input[BucketLoggingV2TargetObjectKeyFormatPartitionedPrefixArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="simplePrefix")
     def simple_prefix(
@@ -2584,7 +2783,8 @@ class BucketLoggingV2TargetObjectKeyFormatArgs:
         value: Optional[
             pulumi.Input[BucketLoggingV2TargetObjectKeyFormatSimplePrefixArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketLoggingV2TargetObjectKeyFormatPartitionedPrefixArgsDict(TypedDict):
     partition_date_source: pulumi.Input[_builtins.str]
@@ -2598,7 +2798,8 @@ class BucketLoggingV2TargetObjectKeyFormatPartitionedPrefixArgs:
     @pulumi.getter(name="partitionDateSource")
     def partition_date_source(self) -> pulumi.Input[_builtins.str]: ...
     @partition_date_source.setter
-    def partition_date_source(self, value: pulumi.Input[_builtins.str]): ...
+    def partition_date_source(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLoggingV2TargetObjectKeyFormatSimplePrefixArgsDict(TypedDict): ...
 
@@ -2657,7 +2858,8 @@ class BucketMetadataConfigurationMetadataConfigurationArgs:
         value: pulumi.Input[
             BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="journalTableConfiguration")
     def journal_table_configuration(
@@ -2671,7 +2873,8 @@ class BucketMetadataConfigurationMetadataConfigurationArgs:
         value: pulumi.Input[
             BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destinations(
@@ -2697,7 +2900,8 @@ class BucketMetadataConfigurationMetadataConfigurationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketMetadataConfigurationMetadataConfigurationDestinationArgsDict(TypedDict):
     table_bucket_arn: pulumi.Input[_builtins.str]
@@ -2717,17 +2921,20 @@ class BucketMetadataConfigurationMetadataConfigurationDestinationArgs:
     @pulumi.getter(name="tableBucketArn")
     def table_bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @table_bucket_arn.setter
-    def table_bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def table_bucket_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableBucketType")
     def table_bucket_type(self) -> pulumi.Input[_builtins.str]: ...
     @table_bucket_type.setter
-    def table_bucket_type(self, value: pulumi.Input[_builtins.str]): ...
+    def table_bucket_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableNamespace")
     def table_namespace(self) -> pulumi.Input[_builtins.str]: ...
     @table_namespace.setter
-    def table_namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def table_namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationArgsDict(
     TypedDict
@@ -2759,7 +2966,8 @@ class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguratio
     @pulumi.getter(name="configurationState")
     def configuration_state(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_state.setter
-    def configuration_state(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_state(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -2777,17 +2985,20 @@ class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguratio
                 BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableArn")
     def table_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_arn.setter
-    def table_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_name.setter
-    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationArgsDict(
     TypedDict
@@ -2807,12 +3018,14 @@ class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguratio
     @pulumi.getter(name="sseAlgorithm")
     def sse_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @sse_algorithm.setter
-    def sse_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationArgsDict(
     TypedDict
@@ -2857,7 +3070,8 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationA
         value: pulumi.Input[
             BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -2875,17 +3089,20 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationA
                 BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableArn")
     def table_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_arn.setter
-    def table_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_name.setter
-    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationArgsDict(
     TypedDict
@@ -2905,12 +3122,14 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationE
     @pulumi.getter(name="sseAlgorithm")
     def sse_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @sse_algorithm.setter
-    def sse_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationArgsDict(
     TypedDict
@@ -2930,12 +3149,14 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationR
     @pulumi.getter
     def expiration(self) -> pulumi.Input[_builtins.str]: ...
     @expiration.setter
-    def expiration(self, value: pulumi.Input[_builtins.str]): ...
+    def expiration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketMetadataConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -2949,7 +3170,8 @@ class BucketMetadataConfigurationTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketMetricFilterArgsDict(TypedDict):
     access_point: NotRequired[pulumi.Input[_builtins.str]]
@@ -2969,12 +3191,14 @@ class BucketMetricFilterArgs:
     @pulumi.getter(name="accessPoint")
     def access_point(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_point.setter
-    def access_point(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_point(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -2983,7 +3207,8 @@ class BucketMetricFilterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketNotificationLambdaFunctionArgsDict(TypedDict):
     events: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -3007,27 +3232,36 @@ class BucketNotificationLambdaFunctionArgs:
     @pulumi.getter
     def events(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @events.setter
-    def events(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def events(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterPrefix")
     def filter_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_prefix.setter
-    def filter_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterSuffix")
     def filter_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_suffix.setter
-    def filter_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_suffix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionArn")
     def lambda_function_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lambda_function_arn.setter
-    def lambda_function_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lambda_function_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketNotificationQueueArgsDict(TypedDict):
     events: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -3051,27 +3285,34 @@ class BucketNotificationQueueArgs:
     @pulumi.getter
     def events(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @events.setter
-    def events(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def events(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queueArn")
     def queue_arn(self) -> pulumi.Input[_builtins.str]: ...
     @queue_arn.setter
-    def queue_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def queue_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterPrefix")
     def filter_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_prefix.setter
-    def filter_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterSuffix")
     def filter_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_suffix.setter
-    def filter_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_suffix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketNotificationTopicArgsDict(TypedDict):
     events: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -3095,27 +3336,34 @@ class BucketNotificationTopicArgs:
     @pulumi.getter
     def events(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @events.setter
-    def events(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def events(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicArn")
     def topic_arn(self) -> pulumi.Input[_builtins.str]: ...
     @topic_arn.setter
-    def topic_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def topic_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterPrefix")
     def filter_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_prefix.setter
-    def filter_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterSuffix")
     def filter_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_suffix.setter
-    def filter_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter_suffix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketObjectLockConfigurationArgsDict(TypedDict):
     object_lock_enabled: NotRequired[pulumi.Input[_builtins.str]]
@@ -3134,7 +3382,10 @@ class BucketObjectLockConfigurationArgs:
     @_utilities.deprecated(...)
     def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_lock_enabled.setter
-    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_lock_enabled(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -3142,7 +3393,8 @@ class BucketObjectLockConfigurationArgs:
     @rule.setter
     def rule(
         self, value: Optional[pulumi.Input[BucketObjectLockConfigurationRuleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketObjectLockConfigurationRuleArgsDict(TypedDict):
     default_retention: pulumi.Input[
@@ -3166,7 +3418,8 @@ class BucketObjectLockConfigurationRuleArgs:
     @default_retention.setter
     def default_retention(
         self, value: pulumi.Input[BucketObjectLockConfigurationRuleDefaultRetentionArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketObjectLockConfigurationRuleDefaultRetentionArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
@@ -3186,17 +3439,20 @@ class BucketObjectLockConfigurationRuleDefaultRetentionArgs:
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def years(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @years.setter
-    def years(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def years(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketObjectLockConfigurationV2RuleArgsDict(TypedDict):
     default_retention: pulumi.Input[
@@ -3221,7 +3477,8 @@ class BucketObjectLockConfigurationV2RuleArgs:
     def default_retention(
         self,
         value: pulumi.Input[BucketObjectLockConfigurationV2RuleDefaultRetentionArgs],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketObjectLockConfigurationV2RuleDefaultRetentionArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
@@ -3241,17 +3498,20 @@ class BucketObjectLockConfigurationV2RuleDefaultRetentionArgs:
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def years(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @years.setter
-    def years(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def years(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketObjectv2OverrideProviderArgsDict(TypedDict):
     default_tags: NotRequired[
@@ -3276,7 +3536,8 @@ class BucketObjectv2OverrideProviderArgs:
     def default_tags(
         self,
         value: Optional[pulumi.Input[BucketObjectv2OverrideProviderDefaultTagsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketObjectv2OverrideProviderDefaultTagsArgsDict(TypedDict):
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -3296,7 +3557,8 @@ class BucketObjectv2OverrideProviderDefaultTagsArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketOwnershipControlsRuleArgsDict(TypedDict):
     object_ownership: pulumi.Input[_builtins.str]
@@ -3310,7 +3572,8 @@ class BucketOwnershipControlsRuleArgs:
     @pulumi.getter(name="objectOwnership")
     def object_ownership(self) -> pulumi.Input[_builtins.str]: ...
     @object_ownership.setter
-    def object_ownership(self, value: pulumi.Input[_builtins.str]): ...
+    def object_ownership(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleArgsDict(TypedDict):
     destination: pulumi.Input[BucketReplicationConfigRuleDestinationArgsDict]
@@ -3358,12 +3621,14 @@ class BucketReplicationConfigRuleArgs:
     @destination.setter
     def destination(
         self, value: pulumi.Input[BucketReplicationConfigRuleDestinationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteMarkerReplication")
     def delete_marker_replication(
@@ -3377,7 +3642,8 @@ class BucketReplicationConfigRuleArgs:
         value: Optional[
             pulumi.Input[BucketReplicationConfigRuleDeleteMarkerReplicationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="existingObjectReplication")
     def existing_object_replication(
@@ -3391,7 +3657,8 @@ class BucketReplicationConfigRuleArgs:
         value: Optional[
             pulumi.Input[BucketReplicationConfigRuleExistingObjectReplicationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -3400,23 +3667,27 @@ class BucketReplicationConfigRuleArgs:
     @filter.setter
     def filter(
         self, value: Optional[pulumi.Input[BucketReplicationConfigRuleFilterArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated("""prefix is deprecated. Use filter instead.""")
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSelectionCriteria")
     def source_selection_criteria(
@@ -3430,7 +3701,8 @@ class BucketReplicationConfigRuleArgs:
         value: Optional[
             pulumi.Input[BucketReplicationConfigRuleSourceSelectionCriteriaArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDeleteMarkerReplicationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -3442,7 +3714,8 @@ class BucketReplicationConfigRuleDeleteMarkerReplicationArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDestinationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -3494,7 +3767,8 @@ class BucketReplicationConfigRuleDestinationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlTranslation")
     def access_control_translation(
@@ -3510,12 +3784,14 @@ class BucketReplicationConfigRuleDestinationArgs:
                 BucketReplicationConfigRuleDestinationAccessControlTranslationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account.setter
-    def account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -3531,7 +3807,8 @@ class BucketReplicationConfigRuleDestinationArgs:
                 BucketReplicationConfigRuleDestinationEncryptionConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metrics(
@@ -3543,7 +3820,8 @@ class BucketReplicationConfigRuleDestinationArgs:
         value: Optional[
             pulumi.Input[BucketReplicationConfigRuleDestinationMetricsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationTime")
     def replication_time(
@@ -3557,12 +3835,14 @@ class BucketReplicationConfigRuleDestinationArgs:
         value: Optional[
             pulumi.Input[BucketReplicationConfigRuleDestinationReplicationTimeArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDestinationAccessControlTranslationArgsDict(TypedDict):
     owner: pulumi.Input[_builtins.str]
@@ -3574,7 +3854,8 @@ class BucketReplicationConfigRuleDestinationAccessControlTranslationArgs:
     @pulumi.getter
     def owner(self) -> pulumi.Input[_builtins.str]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[_builtins.str]): ...
+    def owner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDestinationEncryptionConfigurationArgsDict(TypedDict):
     replica_kms_key_id: pulumi.Input[_builtins.str]
@@ -3588,7 +3869,8 @@ class BucketReplicationConfigRuleDestinationEncryptionConfigurationArgs:
     @pulumi.getter(name="replicaKmsKeyId")
     def replica_kms_key_id(self) -> pulumi.Input[_builtins.str]: ...
     @replica_kms_key_id.setter
-    def replica_kms_key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def replica_kms_key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDestinationMetricsArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -3614,7 +3896,8 @@ class BucketReplicationConfigRuleDestinationMetricsArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventThreshold")
     def event_threshold(
@@ -3630,7 +3913,8 @@ class BucketReplicationConfigRuleDestinationMetricsArgs:
                 BucketReplicationConfigRuleDestinationMetricsEventThresholdArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDestinationMetricsEventThresholdArgsDict(TypedDict):
     minutes: pulumi.Input[_builtins.int]
@@ -3642,7 +3926,8 @@ class BucketReplicationConfigRuleDestinationMetricsEventThresholdArgs:
     @pulumi.getter
     def minutes(self) -> pulumi.Input[_builtins.int]: ...
     @minutes.setter
-    def minutes(self, value: pulumi.Input[_builtins.int]): ...
+    def minutes(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDestinationReplicationTimeArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -3664,7 +3949,8 @@ class BucketReplicationConfigRuleDestinationReplicationTimeArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def time(
@@ -3678,7 +3964,8 @@ class BucketReplicationConfigRuleDestinationReplicationTimeArgs:
         value: pulumi.Input[
             BucketReplicationConfigRuleDestinationReplicationTimeTimeArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleDestinationReplicationTimeTimeArgsDict(TypedDict):
     minutes: pulumi.Input[_builtins.int]
@@ -3690,7 +3977,8 @@ class BucketReplicationConfigRuleDestinationReplicationTimeTimeArgs:
     @pulumi.getter
     def minutes(self) -> pulumi.Input[_builtins.int]: ...
     @minutes.setter
-    def minutes(self, value: pulumi.Input[_builtins.int]): ...
+    def minutes(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleExistingObjectReplicationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -3702,7 +3990,8 @@ class BucketReplicationConfigRuleExistingObjectReplicationArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleFilterArgsDict(TypedDict):
     and_: NotRequired[pulumi.Input[BucketReplicationConfigRuleFilterAndArgsDict]]
@@ -3726,12 +4015,14 @@ class BucketReplicationConfigRuleFilterArgs:
     @and_.setter
     def and_(
         self, value: Optional[pulumi.Input[BucketReplicationConfigRuleFilterAndArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tag(
@@ -3740,7 +4031,8 @@ class BucketReplicationConfigRuleFilterArgs:
     @tag.setter
     def tag(
         self, value: Optional[pulumi.Input[BucketReplicationConfigRuleFilterTagArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleFilterAndArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
@@ -3758,7 +4050,8 @@ class BucketReplicationConfigRuleFilterAndArgs:
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -3767,7 +4060,8 @@ class BucketReplicationConfigRuleFilterAndArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleFilterTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -3785,12 +4079,14 @@ class BucketReplicationConfigRuleFilterTagArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleSourceSelectionCriteriaArgsDict(TypedDict):
     replica_modifications: NotRequired[
@@ -3837,7 +4133,8 @@ class BucketReplicationConfigRuleSourceSelectionCriteriaArgs:
                 BucketReplicationConfigRuleSourceSelectionCriteriaReplicaModificationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseKmsEncryptedObjects")
     def sse_kms_encrypted_objects(
@@ -3855,7 +4152,8 @@ class BucketReplicationConfigRuleSourceSelectionCriteriaArgs:
                 BucketReplicationConfigRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleSourceSelectionCriteriaReplicaModificationsArgsDict(
     TypedDict
@@ -3869,7 +4167,8 @@ class BucketReplicationConfigRuleSourceSelectionCriteriaReplicaModificationsArgs
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgsDict(
     TypedDict
@@ -3883,7 +4182,8 @@ class BucketReplicationConfigRuleSourceSelectionCriteriaSseKmsEncryptedObjectsAr
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigurationArgsDict(TypedDict):
     role: pulumi.Input[_builtins.str]
@@ -3905,7 +4205,8 @@ class BucketReplicationConfigurationArgs:
     @pulumi.getter
     def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): ...
+    def role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -3919,7 +4220,8 @@ class BucketReplicationConfigurationArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[BucketReplicationConfigurationRuleArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleArgsDict(TypedDict):
     destination: pulumi.Input[BucketReplicationConfigurationRuleDestinationArgsDict]
@@ -3959,12 +4261,14 @@ class BucketReplicationConfigurationRuleArgs:
     @destination.setter
     def destination(
         self, value: pulumi.Input[BucketReplicationConfigurationRuleDestinationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteMarkerReplicationStatus")
     def delete_marker_replication_status(
@@ -3973,7 +4277,8 @@ class BucketReplicationConfigurationRuleArgs:
     @delete_marker_replication_status.setter
     def delete_marker_replication_status(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(
@@ -3983,22 +4288,26 @@ class BucketReplicationConfigurationRuleArgs:
     def filter(
         self,
         value: Optional[pulumi.Input[BucketReplicationConfigurationRuleFilterArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSelectionCriteria")
     def source_selection_criteria(
@@ -4012,7 +4321,8 @@ class BucketReplicationConfigurationRuleArgs:
         value: Optional[
             pulumi.Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleDestinationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -4060,7 +4370,8 @@ class BucketReplicationConfigurationRuleDestinationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlTranslation")
     def access_control_translation(
@@ -4078,12 +4389,14 @@ class BucketReplicationConfigurationRuleDestinationArgs:
                 BucketReplicationConfigurationRuleDestinationAccessControlTranslationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metrics(
@@ -4097,12 +4410,16 @@ class BucketReplicationConfigurationRuleDestinationArgs:
         value: Optional[
             pulumi.Input[BucketReplicationConfigurationRuleDestinationMetricsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaKmsKeyId")
     def replica_kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replica_kms_key_id.setter
-    def replica_kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replica_kms_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationTime")
     def replication_time(
@@ -4118,12 +4435,14 @@ class BucketReplicationConfigurationRuleDestinationArgs:
                 BucketReplicationConfigurationRuleDestinationReplicationTimeArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleDestinationAccessControlTranslationArgsDict(
     TypedDict
@@ -4137,7 +4456,8 @@ class BucketReplicationConfigurationRuleDestinationAccessControlTranslationArgs:
     @pulumi.getter
     def owner(self) -> pulumi.Input[_builtins.str]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[_builtins.str]): ...
+    def owner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleDestinationMetricsArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
@@ -4155,12 +4475,14 @@ class BucketReplicationConfigurationRuleDestinationMetricsArgs:
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleDestinationReplicationTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
@@ -4178,12 +4500,14 @@ class BucketReplicationConfigurationRuleDestinationReplicationTimeArgs:
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
@@ -4201,7 +4525,8 @@ class BucketReplicationConfigurationRuleFilterArgs:
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -4210,7 +4535,8 @@ class BucketReplicationConfigurationRuleFilterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleSourceSelectionCriteriaArgsDict(TypedDict):
     sse_kms_encrypted_objects: NotRequired[
@@ -4247,7 +4573,8 @@ class BucketReplicationConfigurationRuleSourceSelectionCriteriaArgs:
                 BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgsDict(
     TypedDict
@@ -4261,7 +4588,8 @@ class BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedOb
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class BucketServerSideEncryptionConfigurationArgsDict(TypedDict):
     rule: pulumi.Input[BucketServerSideEncryptionConfigurationRuleArgsDict]
@@ -4277,7 +4605,8 @@ class BucketServerSideEncryptionConfigurationArgs:
     @rule.setter
     def rule(
         self, value: pulumi.Input[BucketServerSideEncryptionConfigurationRuleArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketServerSideEncryptionConfigurationRuleArgsDict(TypedDict):
     apply_server_side_encryption_by_default: NotRequired[
@@ -4322,7 +4651,8 @@ class BucketServerSideEncryptionConfigurationRuleArgs:
                 BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockedEncryptionTypes")
     def blocked_encryption_types(
@@ -4331,12 +4661,16 @@ class BucketServerSideEncryptionConfigurationRuleArgs:
     @blocked_encryption_types.setter
     def blocked_encryption_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketKeyEnabled")
     def bucket_key_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bucket_key_enabled.setter
-    def bucket_key_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bucket_key_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultArgsDict(
     TypedDict
@@ -4356,12 +4690,16 @@ class BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefa
     @pulumi.getter(name="sseAlgorithm")
     def sse_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @sse_algorithm.setter
-    def sse_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsMasterKeyId")
     def kms_master_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_master_key_id.setter
-    def kms_master_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_master_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketServerSideEncryptionConfigurationV2RuleArgsDict(TypedDict):
     apply_server_side_encryption_by_default: NotRequired[
@@ -4406,7 +4744,8 @@ class BucketServerSideEncryptionConfigurationV2RuleArgs:
                 BucketServerSideEncryptionConfigurationV2RuleApplyServerSideEncryptionByDefaultArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blockedEncryptionTypes")
     def blocked_encryption_types(
@@ -4415,12 +4754,16 @@ class BucketServerSideEncryptionConfigurationV2RuleArgs:
     @blocked_encryption_types.setter
     def blocked_encryption_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketKeyEnabled")
     def bucket_key_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bucket_key_enabled.setter
-    def bucket_key_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bucket_key_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class BucketServerSideEncryptionConfigurationV2RuleApplyServerSideEncryptionByDefaultArgsDict(
     TypedDict
@@ -4440,12 +4783,16 @@ class BucketServerSideEncryptionConfigurationV2RuleApplyServerSideEncryptionByDe
     @pulumi.getter(name="sseAlgorithm")
     def sse_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @sse_algorithm.setter
-    def sse_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsMasterKeyId")
     def kms_master_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_master_key_id.setter
-    def kms_master_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_master_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketV2CorsRuleArgsDict(TypedDict):
     allowed_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -4477,7 +4824,8 @@ class BucketV2CorsRuleArgs:
     @allowed_methods.setter
     def allowed_methods(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedOrigins")
     def allowed_origins(
@@ -4486,7 +4834,8 @@ class BucketV2CorsRuleArgs:
     @allowed_origins.setter
     def allowed_origins(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedHeaders")
     def allowed_headers(
@@ -4495,7 +4844,8 @@ class BucketV2CorsRuleArgs:
     @allowed_headers.setter
     def allowed_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exposeHeaders")
     def expose_headers(
@@ -4504,12 +4854,14 @@ class BucketV2CorsRuleArgs:
     @expose_headers.setter
     def expose_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxAgeSeconds")
     def max_age_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_age_seconds.setter
-    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketV2GrantArgsDict(TypedDict):
     permissions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -4533,22 +4885,26 @@ class BucketV2GrantArgs:
     @permissions.setter
     def permissions(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketV2LifecycleRuleArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -4614,7 +4970,8 @@ class BucketV2LifecycleRuleArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="abortIncompleteMultipartUploadDays")
     def abort_incomplete_multipart_upload_days(
@@ -4623,7 +4980,8 @@ class BucketV2LifecycleRuleArgs:
     @abort_incomplete_multipart_upload_days.setter
     def abort_incomplete_multipart_upload_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def expirations(
@@ -4637,12 +4995,14 @@ class BucketV2LifecycleRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketV2LifecycleRuleExpirationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionExpirations")
     def noncurrent_version_expirations(
@@ -4662,7 +5022,8 @@ class BucketV2LifecycleRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentVersionTransitions")
     def noncurrent_version_transitions(
@@ -4682,12 +5043,14 @@ class BucketV2LifecycleRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -4696,7 +5059,8 @@ class BucketV2LifecycleRuleArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transitions(
@@ -4710,7 +5074,8 @@ class BucketV2LifecycleRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketV2LifecycleRuleTransitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2LifecycleRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
@@ -4730,12 +5095,14 @@ class BucketV2LifecycleRuleExpirationArgs:
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expiredObjectDeleteMarker")
     def expired_object_delete_marker(
@@ -4744,7 +5111,8 @@ class BucketV2LifecycleRuleExpirationArgs:
     @expired_object_delete_marker.setter
     def expired_object_delete_marker(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2LifecycleRuleNoncurrentVersionExpirationArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
@@ -4758,7 +5126,8 @@ class BucketV2LifecycleRuleNoncurrentVersionExpirationArgs:
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketV2LifecycleRuleNoncurrentVersionTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
@@ -4776,12 +5145,14 @@ class BucketV2LifecycleRuleNoncurrentVersionTransitionArgs:
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketV2LifecycleRuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
@@ -4801,17 +5172,20 @@ class BucketV2LifecycleRuleTransitionArgs:
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> pulumi.Input[_builtins.str]: ...
     @storage_class.setter
-    def storage_class(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_class(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketV2LoggingArgsDict(TypedDict):
     target_bucket: pulumi.Input[_builtins.str]
@@ -4829,12 +5203,14 @@ class BucketV2LoggingArgs:
     @pulumi.getter(name="targetBucket")
     def target_bucket(self) -> pulumi.Input[_builtins.str]: ...
     @target_bucket.setter
-    def target_bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def target_bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetPrefix")
     def target_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_prefix.setter
-    def target_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketV2ObjectLockConfigurationArgsDict(TypedDict):
     object_lock_enabled: NotRequired[pulumi.Input[_builtins.str]]
@@ -4861,7 +5237,10 @@ class BucketV2ObjectLockConfigurationArgs:
     @_utilities.deprecated(...)
     def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_lock_enabled.setter
-    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_lock_enabled(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
@@ -4878,7 +5257,8 @@ class BucketV2ObjectLockConfigurationArgs:
                 Sequence[pulumi.Input[BucketV2ObjectLockConfigurationRuleArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2ObjectLockConfigurationRuleArgsDict(TypedDict):
     default_retentions: pulumi.Input[
@@ -4913,7 +5293,8 @@ class BucketV2ObjectLockConfigurationRuleArgs:
                 pulumi.Input[BucketV2ObjectLockConfigurationRuleDefaultRetentionArgs]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2ObjectLockConfigurationRuleDefaultRetentionArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
@@ -4933,17 +5314,20 @@ class BucketV2ObjectLockConfigurationRuleDefaultRetentionArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def years(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @years.setter
-    def years(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def years(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationArgsDict(TypedDict):
     role: pulumi.Input[_builtins.str]
@@ -4965,7 +5349,8 @@ class BucketV2ReplicationConfigurationArgs:
     @pulumi.getter
     def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): ...
+    def role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -4979,7 +5364,8 @@ class BucketV2ReplicationConfigurationArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[BucketV2ReplicationConfigurationRuleArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleArgsDict(TypedDict):
     destinations: pulumi.Input[
@@ -5046,12 +5432,14 @@ class BucketV2ReplicationConfigurationRuleArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[BucketV2ReplicationConfigurationRuleDestinationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteMarkerReplicationStatus")
     def delete_marker_replication_status(
@@ -5060,7 +5448,8 @@ class BucketV2ReplicationConfigurationRuleArgs:
     @delete_marker_replication_status.setter
     def delete_marker_replication_status(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filters(
@@ -5078,22 +5467,26 @@ class BucketV2ReplicationConfigurationRuleArgs:
                 Sequence[pulumi.Input[BucketV2ReplicationConfigurationRuleFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSelectionCriterias")
     def source_selection_criterias(
@@ -5119,7 +5512,8 @@ class BucketV2ReplicationConfigurationRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleDestinationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -5195,7 +5589,8 @@ class BucketV2ReplicationConfigurationRuleDestinationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControlTranslations")
     def access_control_translations(
@@ -5221,12 +5616,14 @@ class BucketV2ReplicationConfigurationRuleDestinationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metrics(
@@ -5250,12 +5647,16 @@ class BucketV2ReplicationConfigurationRuleDestinationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicaKmsKeyId")
     def replica_kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replica_kms_key_id.setter
-    def replica_kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replica_kms_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicationTimes")
     def replication_times(
@@ -5281,12 +5682,14 @@ class BucketV2ReplicationConfigurationRuleDestinationArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleDestinationAccessControlTranslationArgsDict(
     TypedDict
@@ -5300,7 +5703,8 @@ class BucketV2ReplicationConfigurationRuleDestinationAccessControlTranslationArg
     @pulumi.getter
     def owner(self) -> pulumi.Input[_builtins.str]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[_builtins.str]): ...
+    def owner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleDestinationMetricArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
@@ -5318,12 +5722,14 @@ class BucketV2ReplicationConfigurationRuleDestinationMetricArgs:
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleDestinationReplicationTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
@@ -5341,12 +5747,14 @@ class BucketV2ReplicationConfigurationRuleDestinationReplicationTimeArgs:
     @pulumi.getter
     def minutes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @minutes.setter
-    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def minutes(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
@@ -5364,7 +5772,8 @@ class BucketV2ReplicationConfigurationRuleFilterArgs:
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -5373,7 +5782,8 @@ class BucketV2ReplicationConfigurationRuleFilterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaArgsDict(TypedDict):
     sse_kms_encrypted_objects: NotRequired[
@@ -5426,7 +5836,8 @@ class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectArgsDict(
     TypedDict
@@ -5440,7 +5851,8 @@ class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncrypted
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class BucketV2ServerSideEncryptionConfigurationArgsDict(TypedDict):
     rules: pulumi.Input[
@@ -5469,7 +5881,8 @@ class BucketV2ServerSideEncryptionConfigurationArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[BucketV2ServerSideEncryptionConfigurationRuleArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketV2ServerSideEncryptionConfigurationRuleArgsDict(TypedDict):
     apply_server_side_encryption_by_defaults: pulumi.Input[
@@ -5516,12 +5929,16 @@ class BucketV2ServerSideEncryptionConfigurationRuleArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketKeyEnabled")
     def bucket_key_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @bucket_key_enabled.setter
-    def bucket_key_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def bucket_key_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class BucketV2ServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultArgsDict(
     TypedDict
@@ -5541,12 +5958,16 @@ class BucketV2ServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDe
     @pulumi.getter(name="sseAlgorithm")
     def sse_algorithm(self) -> pulumi.Input[_builtins.str]: ...
     @sse_algorithm.setter
-    def sse_algorithm(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_algorithm(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsMasterKeyId")
     def kms_master_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_master_key_id.setter
-    def kms_master_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_master_key_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketV2VersioningArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5564,12 +5985,14 @@ class BucketV2VersioningArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mfaDelete")
     def mfa_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mfa_delete.setter
-    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class BucketV2WebsiteArgsDict(TypedDict):
     error_document: NotRequired[pulumi.Input[_builtins.str]]
@@ -5591,24 +6014,28 @@ class BucketV2WebsiteArgs:
     @pulumi.getter(name="errorDocument")
     def error_document(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_document.setter
-    def error_document(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_document(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="indexDocument")
     def index_document(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @index_document.setter
-    def index_document(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def index_document(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectAllRequestsTo")
     def redirect_all_requests_to(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_all_requests_to.setter
     def redirect_all_requests_to(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingRules")
     def routing_rules(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @routing_rules.setter
-    def routing_rules(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def routing_rules(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketVersioningArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -5626,12 +6053,14 @@ class BucketVersioningArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mfaDelete")
     def mfa_delete(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mfa_delete.setter
-    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class BucketVersioningV2VersioningConfigurationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -5649,12 +6078,14 @@ class BucketVersioningV2VersioningConfigurationArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mfaDelete")
     def mfa_delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mfa_delete.setter
-    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketVersioningVersioningConfigurationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
@@ -5672,12 +6103,14 @@ class BucketVersioningVersioningConfigurationArgs:
     @pulumi.getter
     def status(self) -> pulumi.Input[_builtins.str]: ...
     @status.setter
-    def status(self, value: pulumi.Input[_builtins.str]): ...
+    def status(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mfaDelete")
     def mfa_delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mfa_delete.setter
-    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mfa_delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketWebsiteArgsDict(TypedDict):
     error_document: NotRequired[pulumi.Input[_builtins.str]]
@@ -5699,24 +6132,28 @@ class BucketWebsiteArgs:
     @pulumi.getter(name="errorDocument")
     def error_document(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @error_document.setter
-    def error_document(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def error_document(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="indexDocument")
     def index_document(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @index_document.setter
-    def index_document(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def index_document(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectAllRequestsTo")
     def redirect_all_requests_to(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_all_requests_to.setter
     def redirect_all_requests_to(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingRules")
     def routing_rules(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @routing_rules.setter
-    def routing_rules(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def routing_rules(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationErrorDocumentArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -5728,7 +6165,8 @@ class BucketWebsiteConfigurationErrorDocumentArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationIndexDocumentArgsDict(TypedDict):
     suffix: pulumi.Input[_builtins.str]
@@ -5740,7 +6178,8 @@ class BucketWebsiteConfigurationIndexDocumentArgs:
     @pulumi.getter
     def suffix(self) -> pulumi.Input[_builtins.str]: ...
     @suffix.setter
-    def suffix(self, value: pulumi.Input[_builtins.str]): ...
+    def suffix(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationRedirectAllRequestsToArgsDict(TypedDict):
     host_name: pulumi.Input[_builtins.str]
@@ -5758,12 +6197,14 @@ class BucketWebsiteConfigurationRedirectAllRequestsToArgs:
     @pulumi.getter(name="hostName")
     def host_name(self) -> pulumi.Input[_builtins.str]: ...
     @host_name.setter
-    def host_name(self, value: pulumi.Input[_builtins.str]): ...
+    def host_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationRoutingRuleArgsDict(TypedDict):
     redirect: pulumi.Input[BucketWebsiteConfigurationRoutingRuleRedirectArgsDict]
@@ -5789,7 +6230,8 @@ class BucketWebsiteConfigurationRoutingRuleArgs:
     @redirect.setter
     def redirect(
         self, value: pulumi.Input[BucketWebsiteConfigurationRoutingRuleRedirectArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def condition(
@@ -5801,7 +6243,8 @@ class BucketWebsiteConfigurationRoutingRuleArgs:
         value: Optional[
             pulumi.Input[BucketWebsiteConfigurationRoutingRuleConditionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationRoutingRuleConditionArgsDict(TypedDict):
     http_error_code_returned_equals: NotRequired[pulumi.Input[_builtins.str]]
@@ -5823,12 +6266,16 @@ class BucketWebsiteConfigurationRoutingRuleConditionArgs:
     @http_error_code_returned_equals.setter
     def http_error_code_returned_equals(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPrefixEquals")
     def key_prefix_equals(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_prefix_equals.setter
-    def key_prefix_equals(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_prefix_equals(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationRoutingRuleRedirectArgsDict(TypedDict):
     host_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -5852,27 +6299,38 @@ class BucketWebsiteConfigurationRoutingRuleRedirectArgs:
     @pulumi.getter(name="hostName")
     def host_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_name.setter
-    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpRedirectCode")
     def http_redirect_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @http_redirect_code.setter
-    def http_redirect_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def http_redirect_code(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceKeyPrefixWith")
     def replace_key_prefix_with(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replace_key_prefix_with.setter
-    def replace_key_prefix_with(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replace_key_prefix_with(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceKeyWith")
     def replace_key_with(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replace_key_with.setter
-    def replace_key_with(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replace_key_with(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationV2ErrorDocumentArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -5884,7 +6342,8 @@ class BucketWebsiteConfigurationV2ErrorDocumentArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationV2IndexDocumentArgsDict(TypedDict):
     suffix: pulumi.Input[_builtins.str]
@@ -5896,7 +6355,8 @@ class BucketWebsiteConfigurationV2IndexDocumentArgs:
     @pulumi.getter
     def suffix(self) -> pulumi.Input[_builtins.str]: ...
     @suffix.setter
-    def suffix(self, value: pulumi.Input[_builtins.str]): ...
+    def suffix(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationV2RedirectAllRequestsToArgsDict(TypedDict):
     host_name: pulumi.Input[_builtins.str]
@@ -5914,12 +6374,14 @@ class BucketWebsiteConfigurationV2RedirectAllRequestsToArgs:
     @pulumi.getter(name="hostName")
     def host_name(self) -> pulumi.Input[_builtins.str]: ...
     @host_name.setter
-    def host_name(self, value: pulumi.Input[_builtins.str]): ...
+    def host_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationV2RoutingRuleArgsDict(TypedDict):
     redirect: pulumi.Input[BucketWebsiteConfigurationV2RoutingRuleRedirectArgsDict]
@@ -5945,7 +6407,8 @@ class BucketWebsiteConfigurationV2RoutingRuleArgs:
     @redirect.setter
     def redirect(
         self, value: pulumi.Input[BucketWebsiteConfigurationV2RoutingRuleRedirectArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def condition(
@@ -5959,7 +6422,8 @@ class BucketWebsiteConfigurationV2RoutingRuleArgs:
         value: Optional[
             pulumi.Input[BucketWebsiteConfigurationV2RoutingRuleConditionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationV2RoutingRuleConditionArgsDict(TypedDict):
     http_error_code_returned_equals: NotRequired[pulumi.Input[_builtins.str]]
@@ -5981,12 +6445,16 @@ class BucketWebsiteConfigurationV2RoutingRuleConditionArgs:
     @http_error_code_returned_equals.setter
     def http_error_code_returned_equals(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPrefixEquals")
     def key_prefix_equals(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_prefix_equals.setter
-    def key_prefix_equals(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_prefix_equals(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketWebsiteConfigurationV2RoutingRuleRedirectArgsDict(TypedDict):
     host_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -6010,27 +6478,38 @@ class BucketWebsiteConfigurationV2RoutingRuleRedirectArgs:
     @pulumi.getter(name="hostName")
     def host_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_name.setter
-    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpRedirectCode")
     def http_redirect_code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @http_redirect_code.setter
-    def http_redirect_code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def http_redirect_code(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceKeyPrefixWith")
     def replace_key_prefix_with(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replace_key_prefix_with.setter
-    def replace_key_prefix_with(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replace_key_prefix_with(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replaceKeyWith")
     def replace_key_with(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @replace_key_with.setter
-    def replace_key_with(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def replace_key_with(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class DirectoryBucketLocationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -6048,12 +6527,14 @@ class DirectoryBucketLocationArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InventoryDestinationArgsDict(TypedDict):
     bucket: pulumi.Input[InventoryDestinationBucketArgsDict]
@@ -6067,7 +6548,8 @@ class InventoryDestinationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[InventoryDestinationBucketArgs]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[InventoryDestinationBucketArgs]): ...
+    def bucket(self, value: pulumi.Input[InventoryDestinationBucketArgs]):  # -> None:
+        ...
 
 class InventoryDestinationBucketArgsDict(TypedDict):
     bucket_arn: pulumi.Input[_builtins.str]
@@ -6093,17 +6575,20 @@ class InventoryDestinationBucketArgs:
     @pulumi.getter(name="bucketArn")
     def bucket_arn(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_arn.setter
-    def bucket_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def format(self) -> pulumi.Input[_builtins.str]: ...
     @format.setter
-    def format(self, value: pulumi.Input[_builtins.str]): ...
+    def format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accountId")
     def account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @account_id.setter
-    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def account_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(
@@ -6112,12 +6597,14 @@ class InventoryDestinationBucketArgs:
     @encryption.setter
     def encryption(
         self, value: Optional[pulumi.Input[InventoryDestinationBucketEncryptionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InventoryDestinationBucketEncryptionArgsDict(TypedDict):
     sse_kms: NotRequired[
@@ -6146,7 +6633,8 @@ class InventoryDestinationBucketEncryptionArgs:
     def sse_kms(
         self,
         value: Optional[pulumi.Input[InventoryDestinationBucketEncryptionSseKmsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseS3")
     def sse_s3(
@@ -6156,7 +6644,8 @@ class InventoryDestinationBucketEncryptionArgs:
     def sse_s3(
         self,
         value: Optional[pulumi.Input[InventoryDestinationBucketEncryptionSseS3Args]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class InventoryDestinationBucketEncryptionSseKmsArgsDict(TypedDict):
     key_id: pulumi.Input[_builtins.str]
@@ -6168,7 +6657,8 @@ class InventoryDestinationBucketEncryptionSseKmsArgs:
     @pulumi.getter(name="keyId")
     def key_id(self) -> pulumi.Input[_builtins.str]: ...
     @key_id.setter
-    def key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class InventoryDestinationBucketEncryptionSseS3ArgsDict(TypedDict): ...
 
@@ -6188,7 +6678,8 @@ class InventoryFilterArgs:
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InventoryScheduleArgsDict(TypedDict):
     frequency: pulumi.Input[_builtins.str]
@@ -6200,7 +6691,8 @@ class InventoryScheduleArgs:
     @pulumi.getter
     def frequency(self) -> pulumi.Input[_builtins.str]: ...
     @frequency.setter
-    def frequency(self, value: pulumi.Input[_builtins.str]): ...
+    def frequency(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ObjectCopyGrantArgsDict(TypedDict):
     permissions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -6226,27 +6718,32 @@ class ObjectCopyGrantArgs:
     @permissions.setter
     def permissions(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def email(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @email.setter
-    def email(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def email(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ObjectCopyOverrideProviderArgsDict(TypedDict):
     default_tags: NotRequired[
@@ -6270,7 +6767,8 @@ class ObjectCopyOverrideProviderArgs:
     @default_tags.setter
     def default_tags(
         self, value: Optional[pulumi.Input[ObjectCopyOverrideProviderDefaultTagsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ObjectCopyOverrideProviderDefaultTagsArgsDict(TypedDict):
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
@@ -6290,7 +6788,8 @@ class ObjectCopyOverrideProviderDefaultTagsArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicyDocumentArgsDict(TypedDict):
     statement: pulumi.Input[Sequence[pulumi.Input[_iam.PolicyStatementArgsDict]]]
@@ -6314,17 +6813,20 @@ class PolicyDocumentArgs:
     @statement.setter
     def statement(
         self, value: pulumi.Input[Sequence[pulumi.Input[_iam.PolicyStatementArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="Version")
     def version(self) -> pulumi.Input[iam.PolicyDocumentVersion]: ...
     @version.setter
-    def version(self, value: pulumi.Input[iam.PolicyDocumentVersion]): ...
+    def version(self, value: pulumi.Input[iam.PolicyDocumentVersion]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="Id")
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class VectorsIndexEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
@@ -6342,12 +6844,14 @@ class VectorsIndexEncryptionConfigurationArgs:
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseType")
     def sse_type(self) -> pulumi.Input[_builtins.str]: ...
     @sse_type.setter
-    def sse_type(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class VectorsIndexMetadataConfigurationArgsDict(TypedDict):
     non_filterable_metadata_keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -6369,7 +6873,8 @@ class VectorsIndexMetadataConfigurationArgs:
     @non_filterable_metadata_keys.setter
     def non_filterable_metadata_keys(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class VectorsVectorBucketEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
@@ -6387,9 +6892,11 @@ class VectorsVectorBucketEncryptionConfigurationArgs:
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sseType")
     def sse_type(self) -> pulumi.Input[_builtins.str]: ...
     @sse_type.setter
-    def sse_type(self, value: pulumi.Input[_builtins.str]): ...
+    def sse_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

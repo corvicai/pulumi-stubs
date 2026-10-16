@@ -20,7 +20,8 @@ class GetChannelFullUrlResult:
     def endpoint_url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetChannelFullUrlResult(GetChannelFullUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetChannelFullUrlResult]:
+        ...
 
 def get_channel_full_url(
     channel_name: Optional[_builtins.str] = ...,

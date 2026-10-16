@@ -38,7 +38,10 @@ class GetCloudExadataInfrastructuresResult:
 class AwaitableGetCloudExadataInfrastructuresResult(
     GetCloudExadataInfrastructuresResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCloudExadataInfrastructuresResult]:
+        ...
 
 def get_cloud_exadata_infrastructures(
     location: Optional[_builtins.str] = ...,

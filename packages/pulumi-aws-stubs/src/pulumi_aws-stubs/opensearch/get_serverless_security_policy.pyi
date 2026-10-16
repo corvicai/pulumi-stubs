@@ -55,7 +55,8 @@ class GetServerlessSecurityPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerlessSecurityPolicyResult(GetServerlessSecurityPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerlessSecurityPolicyResult]:
+        ...
 
 def get_serverless_security_policy(
     name: Optional[_builtins.str] = ...,

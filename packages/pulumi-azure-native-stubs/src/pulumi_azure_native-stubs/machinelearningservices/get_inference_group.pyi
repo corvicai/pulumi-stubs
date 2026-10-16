@@ -64,7 +64,8 @@ class GetInferenceGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetInferenceGroupResult(GetInferenceGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInferenceGroupResult]:
+        ...
 
 def get_inference_group(
     group_name: Optional[_builtins.str] = ...,

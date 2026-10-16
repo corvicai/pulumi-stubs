@@ -43,7 +43,8 @@ class GetResourceResult:
     def rest_api_id(self) -> _builtins.str: ...
 
 class AwaitableGetResourceResult(GetResourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourceResult]:
+        ...
 
 def get_resource(
     path: Optional[_builtins.str] = ...,

@@ -41,7 +41,10 @@ class GetNetworkSecurityPerimeterLoggingConfigurationResult:
 class AwaitableGetNetworkSecurityPerimeterLoggingConfigurationResult(
     GetNetworkSecurityPerimeterLoggingConfigurationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkSecurityPerimeterLoggingConfigurationResult]:
+        ...
 
 def get_network_security_perimeter_logging_configuration(
     logging_configuration_name: Optional[_builtins.str] = ...,

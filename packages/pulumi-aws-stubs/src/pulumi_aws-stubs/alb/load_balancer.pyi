@@ -70,12 +70,16 @@ class LoadBalancerArgs:
     @access_logs.setter
     def access_logs(
         self, value: Optional[pulumi.Input[LoadBalancerAccessLogsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientKeepAlive")
     def client_keep_alive(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @client_keep_alive.setter
-    def client_keep_alive(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def client_keep_alive(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionLogs")
     def connection_logs(
@@ -84,19 +88,24 @@ class LoadBalancerArgs:
     @connection_logs.setter
     def connection_logs(
         self, value: Optional[pulumi.Input[LoadBalancerConnectionLogsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerOwnedIpv4Pool")
     def customer_owned_ipv4_pool(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_owned_ipv4_pool.setter
     def customer_owned_ipv4_pool(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desyncMitigationMode")
     def desync_mitigation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desync_mitigation_mode.setter
-    def desync_mitigation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desync_mitigation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsRecordClientRoutingPolicy")
     def dns_record_client_routing_policy(
@@ -105,14 +114,16 @@ class LoadBalancerArgs:
     @dns_record_client_routing_policy.setter
     def dns_record_client_routing_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dropInvalidHeaderFields")
     def drop_invalid_header_fields(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_invalid_header_fields.setter
     def drop_invalid_header_fields(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableCrossZoneLoadBalancing")
     def enable_cross_zone_load_balancing(
@@ -121,19 +132,22 @@ class LoadBalancerArgs:
     @enable_cross_zone_load_balancing.setter
     def enable_cross_zone_load_balancing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDeletionProtection")
     def enable_deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_deletion_protection.setter
     def enable_deletion_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHttp2")
     def enable_http2(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_http2.setter
-    def enable_http2(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_http2(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableTlsVersionAndCipherSuiteHeaders")
     def enable_tls_version_and_cipher_suite_headers(
@@ -142,22 +156,32 @@ class LoadBalancerArgs:
     @enable_tls_version_and_cipher_suite_headers.setter
     def enable_tls_version_and_cipher_suite_headers(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableWafFailOpen")
     def enable_waf_fail_open(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_waf_fail_open.setter
-    def enable_waf_fail_open(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_waf_fail_open(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableXffClientPort")
     def enable_xff_client_port(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_xff_client_port.setter
-    def enable_xff_client_port(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_xff_client_port(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableZonalShift")
     def enable_zonal_shift(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_zonal_shift.setter
-    def enable_zonal_shift(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_zonal_shift(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def enforce_security_group_inbound_rules_on_private_link_traffic(
@@ -166,7 +190,8 @@ class LoadBalancerArgs:
     @enforce_security_group_inbound_rules_on_private_link_traffic.setter
     def enforce_security_group_inbound_rules_on_private_link_traffic(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckLogs")
     def health_check_logs(
@@ -175,17 +200,20 @@ class LoadBalancerArgs:
     @health_check_logs.setter
     def health_check_logs(
         self, value: Optional[pulumi.Input[LoadBalancerHealthCheckLogsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeout")
     def idle_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @idle_timeout.setter
-    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def internal(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @internal.setter
-    def internal(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def internal(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddressType")
     def ip_address_type(
@@ -194,17 +222,24 @@ class LoadBalancerArgs:
     @ip_address_type.setter
     def ip_address_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IpAddressType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipamPools")
     def ipam_pools(self) -> Optional[pulumi.Input[LoadBalancerIpamPoolsArgs]]: ...
     @ipam_pools.setter
-    def ipam_pools(self, value: Optional[pulumi.Input[LoadBalancerIpamPoolsArgs]]): ...
+    def ipam_pools(
+        self, value: Optional[pulumi.Input[LoadBalancerIpamPoolsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerType")
     def load_balancer_type(self) -> Optional[pulumi.Input[LoadBalancerType]]: ...
     @load_balancer_type.setter
-    def load_balancer_type(self, value: Optional[pulumi.Input[LoadBalancerType]]): ...
+    def load_balancer_type(
+        self, value: Optional[pulumi.Input[LoadBalancerType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumLoadBalancerCapacity")
     def minimum_load_balancer_capacity(
@@ -213,27 +248,34 @@ class LoadBalancerArgs:
     @minimum_load_balancer_capacity.setter
     def minimum_load_balancer_capacity(
         self, value: Optional[pulumi.Input[LoadBalancerMinimumLoadBalancerCapacityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preserveHostHeader")
     def preserve_host_header(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @preserve_host_header.setter
-    def preserve_host_header(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def preserve_host_header(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryIpsAutoAssignedPerSubnet")
     def secondary_ips_auto_assigned_per_subnet(
@@ -242,7 +284,8 @@ class LoadBalancerArgs:
     @secondary_ips_auto_assigned_per_subnet.setter
     def secondary_ips_auto_assigned_per_subnet(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -251,7 +294,8 @@ class LoadBalancerArgs:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetMappings")
     def subnet_mappings(
@@ -265,7 +309,8 @@ class LoadBalancerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LoadBalancerSubnetMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -274,7 +319,8 @@ class LoadBalancerArgs:
     @subnets.setter
     def subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -283,14 +329,16 @@ class LoadBalancerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xffHeaderProcessingMode")
     def xff_header_processing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @xff_header_processing_mode.setter
     def xff_header_processing_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _LoadBalancerState:
@@ -360,22 +408,28 @@ class _LoadBalancerState:
     @access_logs.setter
     def access_logs(
         self, value: Optional[pulumi.Input[LoadBalancerAccessLogsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="arnSuffix")
     def arn_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn_suffix.setter
-    def arn_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn_suffix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientKeepAlive")
     def client_keep_alive(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @client_keep_alive.setter
-    def client_keep_alive(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def client_keep_alive(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionLogs")
     def connection_logs(
@@ -384,24 +438,30 @@ class _LoadBalancerState:
     @connection_logs.setter
     def connection_logs(
         self, value: Optional[pulumi.Input[LoadBalancerConnectionLogsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customerOwnedIpv4Pool")
     def customer_owned_ipv4_pool(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_owned_ipv4_pool.setter
     def customer_owned_ipv4_pool(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="desyncMitigationMode")
     def desync_mitigation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desync_mitigation_mode.setter
-    def desync_mitigation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def desync_mitigation_mode(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsRecordClientRoutingPolicy")
     def dns_record_client_routing_policy(
@@ -410,14 +470,16 @@ class _LoadBalancerState:
     @dns_record_client_routing_policy.setter
     def dns_record_client_routing_policy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dropInvalidHeaderFields")
     def drop_invalid_header_fields(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @drop_invalid_header_fields.setter
     def drop_invalid_header_fields(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableCrossZoneLoadBalancing")
     def enable_cross_zone_load_balancing(
@@ -426,19 +488,22 @@ class _LoadBalancerState:
     @enable_cross_zone_load_balancing.setter
     def enable_cross_zone_load_balancing(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableDeletionProtection")
     def enable_deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_deletion_protection.setter
     def enable_deletion_protection(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableHttp2")
     def enable_http2(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_http2.setter
-    def enable_http2(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_http2(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableTlsVersionAndCipherSuiteHeaders")
     def enable_tls_version_and_cipher_suite_headers(
@@ -447,22 +512,32 @@ class _LoadBalancerState:
     @enable_tls_version_and_cipher_suite_headers.setter
     def enable_tls_version_and_cipher_suite_headers(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableWafFailOpen")
     def enable_waf_fail_open(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_waf_fail_open.setter
-    def enable_waf_fail_open(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_waf_fail_open(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableXffClientPort")
     def enable_xff_client_port(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_xff_client_port.setter
-    def enable_xff_client_port(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_xff_client_port(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableZonalShift")
     def enable_zonal_shift(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_zonal_shift.setter
-    def enable_zonal_shift(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_zonal_shift(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name=...)
     def enforce_security_group_inbound_rules_on_private_link_traffic(
@@ -471,7 +546,8 @@ class _LoadBalancerState:
     @enforce_security_group_inbound_rules_on_private_link_traffic.setter
     def enforce_security_group_inbound_rules_on_private_link_traffic(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckLogs")
     def health_check_logs(
@@ -480,17 +556,20 @@ class _LoadBalancerState:
     @health_check_logs.setter
     def health_check_logs(
         self, value: Optional[pulumi.Input[LoadBalancerHealthCheckLogsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idleTimeout")
     def idle_timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @idle_timeout.setter
-    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def idle_timeout(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def internal(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @internal.setter
-    def internal(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def internal(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipAddressType")
     def ip_address_type(
@@ -499,17 +578,24 @@ class _LoadBalancerState:
     @ip_address_type.setter
     def ip_address_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IpAddressType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipamPools")
     def ipam_pools(self) -> Optional[pulumi.Input[LoadBalancerIpamPoolsArgs]]: ...
     @ipam_pools.setter
-    def ipam_pools(self, value: Optional[pulumi.Input[LoadBalancerIpamPoolsArgs]]): ...
+    def ipam_pools(
+        self, value: Optional[pulumi.Input[LoadBalancerIpamPoolsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerType")
     def load_balancer_type(self) -> Optional[pulumi.Input[LoadBalancerType]]: ...
     @load_balancer_type.setter
-    def load_balancer_type(self, value: Optional[pulumi.Input[LoadBalancerType]]): ...
+    def load_balancer_type(
+        self, value: Optional[pulumi.Input[LoadBalancerType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumLoadBalancerCapacity")
     def minimum_load_balancer_capacity(
@@ -518,27 +604,34 @@ class _LoadBalancerState:
     @minimum_load_balancer_capacity.setter
     def minimum_load_balancer_capacity(
         self, value: Optional[pulumi.Input[LoadBalancerMinimumLoadBalancerCapacityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namePrefix")
     def name_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name_prefix.setter
-    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name_prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preserveHostHeader")
     def preserve_host_header(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @preserve_host_header.setter
-    def preserve_host_header(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def preserve_host_header(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryIpsAutoAssignedPerSubnet")
     def secondary_ips_auto_assigned_per_subnet(
@@ -547,7 +640,8 @@ class _LoadBalancerState:
     @secondary_ips_auto_assigned_per_subnet.setter
     def secondary_ips_auto_assigned_per_subnet(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -556,7 +650,8 @@ class _LoadBalancerState:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetMappings")
     def subnet_mappings(
@@ -570,7 +665,8 @@ class _LoadBalancerState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[LoadBalancerSubnetMappingArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -579,7 +675,8 @@ class _LoadBalancerState:
     @subnets.setter
     def subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -588,7 +685,8 @@ class _LoadBalancerState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -597,24 +695,28 @@ class _LoadBalancerState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="xffHeaderProcessingMode")
     def xff_header_processing_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @xff_header_processing_mode.setter
     def xff_header_processing_mode(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneId")
     def zone_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone_id.setter
-    def zone_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def zone_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:alb/loadBalancer:LoadBalancer")
 class LoadBalancer(pulumi.CustomResource):

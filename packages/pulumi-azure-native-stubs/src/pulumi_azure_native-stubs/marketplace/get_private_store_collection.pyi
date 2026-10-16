@@ -80,7 +80,8 @@ class GetPrivateStoreCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrivateStoreCollectionResult(GetPrivateStoreCollectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPrivateStoreCollectionResult]:
+        ...
 
 def get_private_store_collection(
     collection_id: Optional[_builtins.str] = ...,

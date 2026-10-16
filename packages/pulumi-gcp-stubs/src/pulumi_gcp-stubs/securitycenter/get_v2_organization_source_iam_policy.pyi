@@ -36,7 +36,10 @@ class GetV2OrganizationSourceIamPolicyResult:
 class AwaitableGetV2OrganizationSourceIamPolicyResult(
     GetV2OrganizationSourceIamPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetV2OrganizationSourceIamPolicyResult]:
+        ...
 
 def get_v2_organization_source_iam_policy(
     organization: Optional[_builtins.str] = ...,

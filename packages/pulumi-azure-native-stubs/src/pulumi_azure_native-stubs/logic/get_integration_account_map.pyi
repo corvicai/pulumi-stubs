@@ -78,7 +78,8 @@ class GetIntegrationAccountMapResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetIntegrationAccountMapResult(GetIntegrationAccountMapResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIntegrationAccountMapResult]:
+        ...
 
 def get_integration_account_map(
     integration_account_name: Optional[_builtins.str] = ...,

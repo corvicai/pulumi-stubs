@@ -36,7 +36,10 @@ class GetTrafficManagerUserMetricsKeyResult:
 class AwaitableGetTrafficManagerUserMetricsKeyResult(
     GetTrafficManagerUserMetricsKeyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTrafficManagerUserMetricsKeyResult]:
+        ...
 
 def get_traffic_manager_user_metrics_key(
     opts: Optional[pulumi.InvokeOptions] = ...,

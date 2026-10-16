@@ -60,7 +60,8 @@ class GetDnsResolverPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDnsResolverPolicyResult(GetDnsResolverPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnsResolverPolicyResult]:
+        ...
 
 def get_dns_resolver_policy(
     dns_resolver_policy_name: Optional[_builtins.str] = ...,

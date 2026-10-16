@@ -84,7 +84,8 @@ class GetEventHubDataConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEventHubDataConnectionResult(GetEventHubDataConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventHubDataConnectionResult]:
+        ...
 
 def get_event_hub_data_connection(
     data_connection_name: Optional[_builtins.str] = ...,

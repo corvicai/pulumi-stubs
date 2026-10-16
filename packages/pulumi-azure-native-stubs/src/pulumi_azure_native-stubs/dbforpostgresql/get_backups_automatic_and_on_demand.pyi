@@ -54,7 +54,10 @@ class GetBackupsAutomaticAndOnDemandResult:
 class AwaitableGetBackupsAutomaticAndOnDemandResult(
     GetBackupsAutomaticAndOnDemandResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBackupsAutomaticAndOnDemandResult]:
+        ...
 
 def get_backups_automatic_and_on_demand(
     backup_name: Optional[_builtins.str] = ...,

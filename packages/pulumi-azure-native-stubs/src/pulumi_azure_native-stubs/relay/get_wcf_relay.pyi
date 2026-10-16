@@ -76,7 +76,8 @@ class GetWCFRelayResult:
     def user_metadata(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWCFRelayResult(GetWCFRelayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWCFRelayResult]:
+        ...
 
 def get_wcf_relay(
     namespace_name: Optional[_builtins.str] = ...,

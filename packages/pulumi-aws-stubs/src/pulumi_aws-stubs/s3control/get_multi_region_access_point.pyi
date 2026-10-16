@@ -66,7 +66,8 @@ class GetMultiRegionAccessPointResult:
     def status(self) -> _builtins.str: ...
 
 class AwaitableGetMultiRegionAccessPointResult(GetMultiRegionAccessPointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMultiRegionAccessPointResult]:
+        ...
 
 def get_multi_region_access_point(
     account_id: Optional[_builtins.str] = ...,

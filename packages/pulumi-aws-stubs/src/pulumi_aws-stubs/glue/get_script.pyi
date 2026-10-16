@@ -49,7 +49,8 @@ class GetScriptResult:
     def scala_code(self) -> _builtins.str: ...
 
 class AwaitableGetScriptResult(GetScriptResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScriptResult]:
+        ...
 
 def get_script(
     dag_edges: Optional[

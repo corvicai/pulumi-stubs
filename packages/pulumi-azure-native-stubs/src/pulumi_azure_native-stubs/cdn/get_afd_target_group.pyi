@@ -52,7 +52,8 @@ class GetAFDTargetGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAFDTargetGroupResult(GetAFDTargetGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAFDTargetGroupResult]:
+        ...
 
 def get_afd_target_group(
     profile_name: Optional[_builtins.str] = ...,

@@ -34,7 +34,8 @@ class GetDomainIdentityResult:
     def verification_token(self) -> _builtins.str: ...
 
 class AwaitableGetDomainIdentityResult(GetDomainIdentityResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDomainIdentityResult]:
+        ...
 
 def get_domain_identity(
     domain: Optional[_builtins.str] = ...,

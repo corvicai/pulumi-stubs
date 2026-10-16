@@ -29,29 +29,38 @@ class MulticastGroupConsumerActivationArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastConsumerAssociation")
     def multicast_consumer_association(self) -> pulumi.Input[_builtins.str]: ...
     @multicast_consumer_association.setter
-    def multicast_consumer_association(self, value: pulumi.Input[_builtins.str]): ...
+    def multicast_consumer_association(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastGroupConsumerActivationId")
     def multicast_group_consumer_activation_id(self) -> pulumi.Input[_builtins.str]: ...
     @multicast_group_consumer_activation_id.setter
     def multicast_group_consumer_activation_id(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastGroupRangeActivation")
     def multicast_group_range_activation(self) -> pulumi.Input[_builtins.str]: ...
     @multicast_group_range_activation.setter
-    def multicast_group_range_activation(self, value: pulumi.Input[_builtins.str]): ...
+    def multicast_group_range_activation(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -60,7 +69,8 @@ class MulticastGroupConsumerActivationArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(
@@ -70,12 +80,14 @@ class MulticastGroupConsumerActivationArgs:
     def log_config(
         self,
         value: Optional[pulumi.Input[MulticastGroupConsumerActivationLogConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _MulticastGroupConsumerActivationState:
@@ -114,12 +126,14 @@ class _MulticastGroupConsumerActivationState:
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -128,7 +142,8 @@ class _MulticastGroupConsumerActivationState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -137,12 +152,14 @@ class _MulticastGroupConsumerActivationState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logConfig")
     def log_config(
@@ -152,7 +169,8 @@ class _MulticastGroupConsumerActivationState:
     def log_config(
         self,
         value: Optional[pulumi.Input[MulticastGroupConsumerActivationLogConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastConsumerAssociation")
     def multicast_consumer_association(
@@ -161,7 +179,8 @@ class _MulticastGroupConsumerActivationState:
     @multicast_consumer_association.setter
     def multicast_consumer_association(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastGroupConsumerActivationId")
     def multicast_group_consumer_activation_id(
@@ -170,7 +189,8 @@ class _MulticastGroupConsumerActivationState:
     @multicast_group_consumer_activation_id.setter
     def multicast_group_consumer_activation_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="multicastGroupRangeActivation")
     def multicast_group_range_activation(
@@ -179,17 +199,20 @@ class _MulticastGroupConsumerActivationState:
     @multicast_group_range_activation.setter
     def multicast_group_range_activation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -198,7 +221,8 @@ class _MulticastGroupConsumerActivationState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def states(
@@ -214,17 +238,20 @@ class _MulticastGroupConsumerActivationState:
                 Sequence[pulumi.Input[MulticastGroupConsumerActivationStateArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="uniqueId")
     def unique_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @unique_id.setter
-    def unique_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def unique_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class MulticastGroupConsumerActivation(pulumi.CustomResource):

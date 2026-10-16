@@ -47,7 +47,8 @@ class GetOrderableClusterResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetOrderableClusterResult(GetOrderableClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrderableClusterResult]:
+        ...
 
 def get_orderable_cluster(
     cluster_type: Optional[_builtins.str] = ...,

@@ -46,7 +46,8 @@ class GetGatewayResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGatewayResult(GetGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGatewayResult]:
+        ...
 
 def get_gateway(
     gateway_id: Optional[_builtins.str] = ...,

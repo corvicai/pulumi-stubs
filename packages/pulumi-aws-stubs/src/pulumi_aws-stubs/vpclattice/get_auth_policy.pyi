@@ -34,7 +34,8 @@ class GetAuthPolicyResult:
     def state(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetAuthPolicyResult(GetAuthPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAuthPolicyResult]:
+        ...
 
 def get_auth_policy(
     policy: Optional[_builtins.str] = ...,

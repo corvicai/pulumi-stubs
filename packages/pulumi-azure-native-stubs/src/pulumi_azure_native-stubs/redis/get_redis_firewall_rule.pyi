@@ -43,7 +43,8 @@ class GetRedisFirewallRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRedisFirewallRuleResult(GetRedisFirewallRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRedisFirewallRuleResult]:
+        ...
 
 def get_redis_firewall_rule(
     cache_name: Optional[_builtins.str] = ...,

@@ -50,7 +50,10 @@ class GetGuestConfigurationAssignmentsVMSSResult:
 class AwaitableGetGuestConfigurationAssignmentsVMSSResult(
     GetGuestConfigurationAssignmentsVMSSResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGuestConfigurationAssignmentsVMSSResult]:
+        ...
 
 def get_guest_configuration_assignments_vmss(
     name: Optional[_builtins.str] = ...,

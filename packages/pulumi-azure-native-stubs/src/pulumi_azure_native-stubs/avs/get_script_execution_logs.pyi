@@ -96,7 +96,8 @@ class GetScriptExecutionLogsResult:
     def warnings(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetScriptExecutionLogsResult(GetScriptExecutionLogsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScriptExecutionLogsResult]:
+        ...
 
 def get_script_execution_logs(
     private_cloud_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetUserSshKeyResult:
     def username(self) -> _builtins.str: ...
 
 class AwaitableGetUserSshKeyResult(GetUserSshKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserSshKeyResult]:
+        ...
 
 def get_user_ssh_key(
     encoding: Optional[_builtins.str] = ...,

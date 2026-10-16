@@ -47,7 +47,8 @@ class GetUebaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetUebaResult(GetUebaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUebaResult]:
+        ...
 
 def get_ueba(
     resource_group_name: Optional[_builtins.str] = ...,

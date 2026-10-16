@@ -64,7 +64,8 @@ class GetSecurityPartnerProviderResult:
     def virtual_hub(self) -> Optional[outputs.SubResourceResponse]: ...
 
 class AwaitableGetSecurityPartnerProviderResult(GetSecurityPartnerProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecurityPartnerProviderResult]:
+        ...
 
 def get_security_partner_provider(
     resource_group_name: Optional[_builtins.str] = ...,

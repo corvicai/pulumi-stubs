@@ -51,7 +51,8 @@ class GetWorkspaceApiReleaseResult:
     def updated_date_time(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceApiReleaseResult(GetWorkspaceApiReleaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceApiReleaseResult]:
+        ...
 
 def get_workspace_api_release(
     api_id: Optional[_builtins.str] = ...,

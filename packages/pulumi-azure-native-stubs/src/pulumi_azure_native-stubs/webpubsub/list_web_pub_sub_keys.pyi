@@ -35,7 +35,8 @@ class ListWebPubSubKeysResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListWebPubSubKeysResult(ListWebPubSubKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListWebPubSubKeysResult]:
+        ...
 
 def list_web_pub_sub_keys(
     resource_group_name: Optional[_builtins.str] = ...,

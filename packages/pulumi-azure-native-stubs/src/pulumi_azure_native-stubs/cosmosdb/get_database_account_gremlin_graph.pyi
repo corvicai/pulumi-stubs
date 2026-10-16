@@ -80,7 +80,10 @@ class GetDatabaseAccountGremlinGraphResult:
 class AwaitableGetDatabaseAccountGremlinGraphResult(
     GetDatabaseAccountGremlinGraphResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseAccountGremlinGraphResult]:
+        ...
 
 def get_database_account_gremlin_graph(
     account_name: Optional[_builtins.str] = ...,

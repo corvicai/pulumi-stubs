@@ -52,7 +52,8 @@ class GetEc2NetworkAclResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2NetworkAclResult(GetEc2NetworkAclResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2NetworkAclResult]:
+        ...
 
 def get_ec2_network_acl(
     name: Optional[_builtins.str] = ...,

@@ -54,7 +54,8 @@ class GetSqlResourceSqlDatabaseResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlResourceSqlDatabaseResult(GetSqlResourceSqlDatabaseResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlResourceSqlDatabaseResult]:
+        ...
 
 def get_sql_resource_sql_database(
     account_name: Optional[_builtins.str] = ...,

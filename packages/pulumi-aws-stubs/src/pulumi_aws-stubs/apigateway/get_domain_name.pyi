@@ -98,7 +98,8 @@ class GetDomainNameResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetDomainNameResult(GetDomainNameResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDomainNameResult]:
+        ...
 
 def get_domain_name(
     domain_name: Optional[_builtins.str] = ...,

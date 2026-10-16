@@ -188,7 +188,8 @@ class GetBareMetalMachineResult:
     def virtual_machines_associated_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetBareMetalMachineResult(GetBareMetalMachineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBareMetalMachineResult]:
+        ...
 
 def get_bare_metal_machine(
     bare_metal_machine_name: Optional[_builtins.str] = ...,

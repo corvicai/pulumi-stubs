@@ -52,7 +52,8 @@ class GetPipelineResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPipelineResult(GetPipelineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPipelineResult]:
+        ...
 
 def get_pipeline(
     pipeline_name: Optional[_builtins.str] = ...,

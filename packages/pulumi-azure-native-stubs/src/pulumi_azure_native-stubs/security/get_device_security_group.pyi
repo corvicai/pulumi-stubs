@@ -60,7 +60,8 @@ class GetDeviceSecurityGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDeviceSecurityGroupResult(GetDeviceSecurityGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDeviceSecurityGroupResult]:
+        ...
 
 def get_device_security_group(
     device_security_group_name: Optional[_builtins.str] = ...,

@@ -33,7 +33,8 @@ class GetPeeringAttachmentsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetPeeringAttachmentsResult(GetPeeringAttachmentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPeeringAttachmentsResult]:
+        ...
 
 def get_peering_attachments(
     filters: Optional[

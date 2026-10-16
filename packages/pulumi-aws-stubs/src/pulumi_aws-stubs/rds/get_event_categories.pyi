@@ -31,7 +31,8 @@ class GetEventCategoriesResult:
     def source_type(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetEventCategoriesResult(GetEventCategoriesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventCategoriesResult]:
+        ...
 
 def get_event_categories(
     region: Optional[_builtins.str] = ...,

@@ -21,7 +21,8 @@ class GetIpsetResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetIpsetResult(GetIpsetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIpsetResult]:
+        ...
 
 def get_ipset(
     name: Optional[_builtins.str] = ...,

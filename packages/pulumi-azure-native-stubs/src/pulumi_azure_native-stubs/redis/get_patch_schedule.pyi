@@ -48,7 +48,8 @@ class GetPatchScheduleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPatchScheduleResult(GetPatchScheduleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPatchScheduleResult]:
+        ...
 
 def get_patch_schedule(
     default: Optional[_builtins.str] = ...,

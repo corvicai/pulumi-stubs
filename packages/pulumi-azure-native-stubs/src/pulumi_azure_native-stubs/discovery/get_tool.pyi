@@ -47,7 +47,8 @@ class GetToolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetToolResult(GetToolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetToolResult]:
+        ...
 
 def get_tool(
     resource_group_name: Optional[_builtins.str] = ...,

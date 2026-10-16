@@ -45,7 +45,8 @@ class GetInstancesResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetInstancesResult(GetInstancesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInstancesResult]:
+        ...
 
 def get_instances(
     filters: Optional[

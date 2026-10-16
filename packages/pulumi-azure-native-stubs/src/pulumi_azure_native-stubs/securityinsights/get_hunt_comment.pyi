@@ -48,7 +48,8 @@ class GetHuntCommentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetHuntCommentResult(GetHuntCommentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHuntCommentResult]:
+        ...
 
 def get_hunt_comment(
     hunt_comment_id: Optional[_builtins.str] = ...,

@@ -43,7 +43,8 @@ class GetDatabaseIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetDatabaseIamPolicyResult(GetDatabaseIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDatabaseIamPolicyResult]:
+        ...
 
 def get_database_iam_policy(
     database: Optional[_builtins.str] = ...,

@@ -43,12 +43,14 @@ class NamespaceArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[IdentityInfoArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[IdentityInfoArgs]]): ...
+    def identity(self, value: Optional[pulumi.Input[IdentityInfoArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inboundIpRules")
     def inbound_ip_rules(
@@ -57,17 +59,22 @@ class NamespaceArgs:
     @inbound_ip_rules.setter
     def inbound_ip_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[InboundIpRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isZoneRedundant")
     def is_zone_redundant(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_zone_redundant.setter
-    def is_zone_redundant(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_zone_redundant(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumTlsVersionAllowed")
     def minimum_tls_version_allowed(
@@ -76,12 +83,14 @@ class NamespaceArgs:
     @minimum_tls_version_allowed.setter
     def minimum_tls_version_allowed(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TlsVersion]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="namespaceName")
     def namespace_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace_name.setter
-    def namespace_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnections")
     def private_endpoint_connections(
@@ -95,7 +104,8 @@ class NamespaceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkAccess")
     def public_network_access(
@@ -104,12 +114,14 @@ class NamespaceArgs:
     @public_network_access.setter
     def public_network_access(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[NamespaceSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[NamespaceSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[NamespaceSkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -118,7 +130,8 @@ class NamespaceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicSpacesConfiguration")
     def topic_spaces_configuration(
@@ -127,7 +140,8 @@ class NamespaceArgs:
     @topic_spaces_configuration.setter
     def topic_spaces_configuration(
         self, value: Optional[pulumi.Input[TopicSpacesConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="topicsConfiguration")
     def topics_configuration(
@@ -136,7 +150,8 @@ class NamespaceArgs:
     @topics_configuration.setter
     def topics_configuration(
         self, value: Optional[pulumi.Input[TopicsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:eventgrid:Namespace")
 class Namespace(pulumi.CustomResource):

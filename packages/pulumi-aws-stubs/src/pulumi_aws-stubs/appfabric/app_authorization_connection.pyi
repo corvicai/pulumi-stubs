@@ -26,12 +26,14 @@ class AppAuthorizationConnectionArgs:
     @pulumi.getter(name="appAuthorizationArn")
     def app_authorization_arn(self) -> pulumi.Input[_builtins.str]: ...
     @app_authorization_arn.setter
-    def app_authorization_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def app_authorization_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appBundleArn")
     def app_bundle_arn(self) -> pulumi.Input[_builtins.str]: ...
     @app_bundle_arn.setter
-    def app_bundle_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def app_bundle_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authRequest")
     def auth_request(
@@ -40,12 +42,14 @@ class AppAuthorizationConnectionArgs:
     @auth_request.setter
     def auth_request(
         self, value: Optional[pulumi.Input[AppAuthorizationConnectionAuthRequestArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -54,7 +58,8 @@ class AppAuthorizationConnectionArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[AppAuthorizationConnectionTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AppAuthorizationConnectionState:
@@ -77,17 +82,22 @@ class _AppAuthorizationConnectionState:
     @pulumi.getter
     def app(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app.setter
-    def app(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appAuthorizationArn")
     def app_authorization_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_authorization_arn.setter
-    def app_authorization_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_authorization_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appBundleArn")
     def app_bundle_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_bundle_arn.setter
-    def app_bundle_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_bundle_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authRequest")
     def auth_request(
@@ -96,12 +106,14 @@ class _AppAuthorizationConnectionState:
     @auth_request.setter
     def auth_request(
         self, value: Optional[pulumi.Input[AppAuthorizationConnectionAuthRequestArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tenants(
@@ -115,7 +127,8 @@ class _AppAuthorizationConnectionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AppAuthorizationConnectionTenantArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -124,7 +137,8 @@ class _AppAuthorizationConnectionState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[AppAuthorizationConnectionTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AppAuthorizationConnection(pulumi.CustomResource):

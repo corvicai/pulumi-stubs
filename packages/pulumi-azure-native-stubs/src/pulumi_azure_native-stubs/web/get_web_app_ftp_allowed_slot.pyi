@@ -37,7 +37,8 @@ class GetWebAppFtpAllowedSlotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppFtpAllowedSlotResult(GetWebAppFtpAllowedSlotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppFtpAllowedSlotResult]:
+        ...
 
 def get_web_app_ftp_allowed_slot(
     name: Optional[_builtins.str] = ...,

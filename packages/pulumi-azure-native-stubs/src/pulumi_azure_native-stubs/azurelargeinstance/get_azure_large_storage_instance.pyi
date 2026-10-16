@@ -62,7 +62,10 @@ class GetAzureLargeStorageInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAzureLargeStorageInstanceResult(GetAzureLargeStorageInstanceResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAzureLargeStorageInstanceResult]:
+        ...
 
 def get_azure_large_storage_instance(
     azure_large_storage_instance_name: Optional[_builtins.str] = ...,

@@ -55,7 +55,8 @@ class GetDdosCustomPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDdosCustomPolicyResult(GetDdosCustomPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDdosCustomPolicyResult]:
+        ...
 
 def get_ddos_custom_policy(
     ddos_custom_policy_name: Optional[_builtins.str] = ...,

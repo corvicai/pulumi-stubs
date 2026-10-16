@@ -25,7 +25,10 @@ class ListAgriServiceAvailableSolutionsResult:
 class AwaitableListAgriServiceAvailableSolutionsResult(
     ListAgriServiceAvailableSolutionsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListAgriServiceAvailableSolutionsResult]:
+        ...
 
 def list_agri_service_available_solutions(
     agri_service_resource_name: Optional[_builtins.str] = ...,

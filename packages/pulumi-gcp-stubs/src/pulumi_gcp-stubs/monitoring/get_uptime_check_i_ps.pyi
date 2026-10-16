@@ -26,7 +26,8 @@ class GetUptimeCheckIPsResult:
     ) -> Sequence[outputs.GetUptimeCheckIPsUptimeCheckIpResult]: ...
 
 class AwaitableGetUptimeCheckIPsResult(GetUptimeCheckIPsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUptimeCheckIPsResult]:
+        ...
 
 def get_uptime_check_i_ps(
     opts: Optional[pulumi.InvokeOptions] = ...,

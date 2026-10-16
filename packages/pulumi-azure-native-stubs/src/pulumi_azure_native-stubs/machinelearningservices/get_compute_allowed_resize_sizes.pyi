@@ -21,7 +21,10 @@ class GetComputeAllowedResizeSizesResult:
     def value(self) -> Optional[Sequence[outputs.VirtualMachineSizeResponse]]: ...
 
 class AwaitableGetComputeAllowedResizeSizesResult(GetComputeAllowedResizeSizesResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetComputeAllowedResizeSizesResult]:
+        ...
 
 def get_compute_allowed_resize_sizes(
     compute_name: Optional[_builtins.str] = ...,

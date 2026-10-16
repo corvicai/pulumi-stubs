@@ -70,7 +70,8 @@ class GetApiOperationResult:
     def url_template(self) -> _builtins.str: ...
 
 class AwaitableGetApiOperationResult(GetApiOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiOperationResult]:
+        ...
 
 def get_api_operation(
     api_id: Optional[_builtins.str] = ...,

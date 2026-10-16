@@ -23,7 +23,8 @@ class ListListFlowsByPipelineResult:
     ) -> Optional[Sequence[outputs.ListFlowsByPipelineConnectionResponse]]: ...
 
 class AwaitableListListFlowsByPipelineResult(ListListFlowsByPipelineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListListFlowsByPipelineResult]:
+        ...
 
 def list_list_flows_by_pipeline(
     pipeline_name: Optional[_builtins.str] = ...,

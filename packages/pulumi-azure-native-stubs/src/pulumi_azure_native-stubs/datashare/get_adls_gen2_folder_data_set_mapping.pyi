@@ -78,7 +78,10 @@ class GetADLSGen2FolderDataSetMappingResult:
 class AwaitableGetADLSGen2FolderDataSetMappingResult(
     GetADLSGen2FolderDataSetMappingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetADLSGen2FolderDataSetMappingResult]:
+        ...
 
 def get_adls_gen2_folder_data_set_mapping(
     account_name: Optional[_builtins.str] = ...,

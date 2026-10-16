@@ -62,17 +62,20 @@ class FirehoseDeliveryStreamArgs:
     @pulumi.getter
     def destination(self) -> pulumi.Input[_builtins.str]: ...
     @destination.setter
-    def destination(self, value: pulumi.Input[_builtins.str]): ...
+    def destination(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationId")
     def destination_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_id.setter
-    def destination_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticsearchConfiguration")
     def elasticsearch_configuration(
@@ -86,7 +89,8 @@ class FirehoseDeliveryStreamArgs:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamElasticsearchConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedS3Configuration")
     def extended_s3_configuration(
@@ -98,7 +102,8 @@ class FirehoseDeliveryStreamArgs:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamExtendedS3ConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpEndpointConfiguration")
     def http_endpoint_configuration(
@@ -112,7 +117,8 @@ class FirehoseDeliveryStreamArgs:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamHttpEndpointConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icebergConfiguration")
     def iceberg_configuration(
@@ -122,7 +128,8 @@ class FirehoseDeliveryStreamArgs:
     def iceberg_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamIcebergConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisSourceConfiguration")
     def kinesis_source_configuration(
@@ -136,7 +143,8 @@ class FirehoseDeliveryStreamArgs:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamKinesisSourceConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mskSourceConfiguration")
     def msk_source_configuration(
@@ -146,12 +154,14 @@ class FirehoseDeliveryStreamArgs:
     def msk_source_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamMskSourceConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchConfiguration")
     def opensearch_configuration(
@@ -163,7 +173,8 @@ class FirehoseDeliveryStreamArgs:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamOpensearchConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchserverlessConfiguration")
     def opensearchserverless_configuration(
@@ -177,7 +188,8 @@ class FirehoseDeliveryStreamArgs:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamOpensearchserverlessConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftConfiguration")
     def redshift_configuration(
@@ -187,12 +199,14 @@ class FirehoseDeliveryStreamArgs:
     def redshift_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamRedshiftConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverSideEncryption")
     def server_side_encryption(
@@ -202,7 +216,8 @@ class FirehoseDeliveryStreamArgs:
     def server_side_encryption(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamServerSideEncryptionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snowflakeConfiguration")
     def snowflake_configuration(
@@ -212,7 +227,8 @@ class FirehoseDeliveryStreamArgs:
     def snowflake_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamSnowflakeConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="splunkConfiguration")
     def splunk_configuration(
@@ -222,7 +238,8 @@ class FirehoseDeliveryStreamArgs:
     def splunk_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamSplunkConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -231,12 +248,14 @@ class FirehoseDeliveryStreamArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionId")
     def version_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_id.setter
-    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _FirehoseDeliveryStreamState:
@@ -294,17 +313,20 @@ class _FirehoseDeliveryStreamState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destination(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination.setter
-    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationId")
     def destination_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_id.setter
-    def destination_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticsearchConfiguration")
     def elasticsearch_configuration(
@@ -318,7 +340,8 @@ class _FirehoseDeliveryStreamState:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamElasticsearchConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedS3Configuration")
     def extended_s3_configuration(
@@ -330,7 +353,8 @@ class _FirehoseDeliveryStreamState:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamExtendedS3ConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpEndpointConfiguration")
     def http_endpoint_configuration(
@@ -344,7 +368,8 @@ class _FirehoseDeliveryStreamState:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamHttpEndpointConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icebergConfiguration")
     def iceberg_configuration(
@@ -354,7 +379,8 @@ class _FirehoseDeliveryStreamState:
     def iceberg_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamIcebergConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisSourceConfiguration")
     def kinesis_source_configuration(
@@ -368,7 +394,8 @@ class _FirehoseDeliveryStreamState:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamKinesisSourceConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mskSourceConfiguration")
     def msk_source_configuration(
@@ -378,12 +405,14 @@ class _FirehoseDeliveryStreamState:
     def msk_source_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamMskSourceConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchConfiguration")
     def opensearch_configuration(
@@ -395,7 +424,8 @@ class _FirehoseDeliveryStreamState:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamOpensearchConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="opensearchserverlessConfiguration")
     def opensearchserverless_configuration(
@@ -409,7 +439,8 @@ class _FirehoseDeliveryStreamState:
         value: Optional[
             pulumi.Input[FirehoseDeliveryStreamOpensearchserverlessConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftConfiguration")
     def redshift_configuration(
@@ -419,12 +450,14 @@ class _FirehoseDeliveryStreamState:
     def redshift_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamRedshiftConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverSideEncryption")
     def server_side_encryption(
@@ -434,7 +467,8 @@ class _FirehoseDeliveryStreamState:
     def server_side_encryption(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamServerSideEncryptionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snowflakeConfiguration")
     def snowflake_configuration(
@@ -444,7 +478,8 @@ class _FirehoseDeliveryStreamState:
     def snowflake_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamSnowflakeConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="splunkConfiguration")
     def splunk_configuration(
@@ -454,7 +489,8 @@ class _FirehoseDeliveryStreamState:
     def splunk_configuration(
         self,
         value: Optional[pulumi.Input[FirehoseDeliveryStreamSplunkConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -463,7 +499,8 @@ class _FirehoseDeliveryStreamState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -472,12 +509,14 @@ class _FirehoseDeliveryStreamState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="versionId")
     def version_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version_id.setter
-    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class FirehoseDeliveryStream(pulumi.CustomResource):

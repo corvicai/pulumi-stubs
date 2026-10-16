@@ -48,7 +48,10 @@ class GetLandingZoneRegistrationOperationResult:
 class AwaitableGetLandingZoneRegistrationOperationResult(
     GetLandingZoneRegistrationOperationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLandingZoneRegistrationOperationResult]:
+        ...
 
 def get_landing_zone_registration_operation(
     landing_zone_account_name: Optional[_builtins.str] = ...,

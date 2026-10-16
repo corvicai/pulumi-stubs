@@ -56,7 +56,8 @@ class GetDevicePoolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDevicePoolResult(GetDevicePoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDevicePoolResult]:
+        ...
 
 def get_device_pool(
     device_pool_name: Optional[_builtins.str] = ...,

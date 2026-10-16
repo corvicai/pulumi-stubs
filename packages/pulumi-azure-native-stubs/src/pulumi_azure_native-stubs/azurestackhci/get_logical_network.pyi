@@ -74,7 +74,8 @@ class GetLogicalNetworkResult:
     def vm_switch_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetLogicalNetworkResult(GetLogicalNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogicalNetworkResult]:
+        ...
 
 def get_logical_network(
     logical_network_name: Optional[_builtins.str] = ...,

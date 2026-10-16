@@ -26,17 +26,22 @@ class CurationProfileArgs:
     @pulumi.getter(name="devCenterName")
     def dev_center_name(self) -> pulumi.Input[_builtins.str]: ...
     @dev_center_name.setter
-    def dev_center_name(self, value: pulumi.Input[_builtins.str]): ...
+    def dev_center_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="curationProfileName")
     def curation_profile_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @curation_profile_name.setter
-    def curation_profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def curation_profile_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourcePolicies")
     def resource_policies(
@@ -45,7 +50,8 @@ class CurationProfileArgs:
     @resource_policies.setter
     def resource_policies(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourcePolicyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def scopes(
@@ -54,7 +60,8 @@ class CurationProfileArgs:
     @scopes.setter
     def scopes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:devcenter:CurationProfile")
 class CurationProfile(pulumi.CustomResource):

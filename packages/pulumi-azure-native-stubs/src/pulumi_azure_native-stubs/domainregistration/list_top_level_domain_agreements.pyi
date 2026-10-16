@@ -24,7 +24,10 @@ class ListTopLevelDomainAgreementsResult:
     def value(self) -> Sequence[outputs.TldLegalAgreementResponse]: ...
 
 class AwaitableListTopLevelDomainAgreementsResult(ListTopLevelDomainAgreementsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListTopLevelDomainAgreementsResult]:
+        ...
 
 def list_top_level_domain_agreements(
     for_transfer: Optional[_builtins.bool] = ...,

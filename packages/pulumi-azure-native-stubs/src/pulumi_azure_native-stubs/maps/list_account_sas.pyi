@@ -21,7 +21,8 @@ class ListAccountSasResult:
     def account_sas_token(self) -> _builtins.str: ...
 
 class AwaitableListAccountSasResult(ListAccountSasResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccountSasResult]:
+        ...
 
 def list_account_sas(
     account_name: Optional[_builtins.str] = ...,

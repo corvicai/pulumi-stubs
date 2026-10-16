@@ -60,7 +60,10 @@ class GetPrefixListGlobalRulestackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPrefixListGlobalRulestackResult(GetPrefixListGlobalRulestackResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrefixListGlobalRulestackResult]:
+        ...
 
 def get_prefix_list_global_rulestack(
     global_rulestack_name: Optional[_builtins.str] = ...,

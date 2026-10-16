@@ -103,19 +103,24 @@ class InstanceArgs:
     @pulumi.getter
     def ami(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ami.setter
-    def ami(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ami(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatePublicIpAddress")
     def associate_public_ip_address(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @associate_public_ip_address.setter
     def associate_public_ip_address(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZone")
     def availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_zone.setter
-    def availability_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_zone(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationSpecification")
     def capacity_reservation_specification(
@@ -125,12 +130,16 @@ class InstanceArgs:
     def capacity_reservation_specification(
         self,
         value: Optional[pulumi.Input[InstanceCapacityReservationSpecificationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuOptions")
     def cpu_options(self) -> Optional[pulumi.Input[InstanceCpuOptionsArgs]]: ...
     @cpu_options.setter
-    def cpu_options(self, value: Optional[pulumi.Input[InstanceCpuOptionsArgs]]): ...
+    def cpu_options(
+        self, value: Optional[pulumi.Input[InstanceCpuOptionsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creditSpecification")
     def credit_specification(
@@ -139,19 +148,24 @@ class InstanceArgs:
     @credit_specification.setter
     def credit_specification(
         self, value: Optional[pulumi.Input[InstanceCreditSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiStop")
     def disable_api_stop(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_stop.setter
-    def disable_api_stop(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_api_stop(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiTermination")
     def disable_api_termination(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_termination.setter
     def disable_api_termination(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsBlockDevices")
     def ebs_block_devices(
@@ -163,24 +177,30 @@ class InstanceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceEbsBlockDeviceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsOptimized")
     def ebs_optimized(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ebs_optimized.setter
-    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePrimaryIpv6")
     def enable_primary_ipv6(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_primary_ipv6.setter
-    def enable_primary_ipv6(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_primary_ipv6(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveOptions")
     def enclave_options(self) -> Optional[pulumi.Input[InstanceEnclaveOptionsArgs]]: ...
     @enclave_options.setter
     def enclave_options(
         self, value: Optional[pulumi.Input[InstanceEnclaveOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ephemeralBlockDevices")
     def ephemeral_block_devices(
@@ -194,37 +214,50 @@ class InstanceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceEphemeralBlockDeviceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="getPasswordData")
     def get_password_data(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @get_password_data.setter
-    def get_password_data(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def get_password_data(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hibernation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @hibernation.setter
-    def hibernation(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def hibernation(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostId")
     def host_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_id.setter
-    def host_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostResourceGroupArn")
     def host_resource_group_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_resource_group_arn.setter
-    def host_resource_group_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_resource_group_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamInstanceProfile")
     def iam_instance_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_instance_profile.setter
-    def iam_instance_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_instance_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceInitiatedShutdownBehavior")
     def instance_initiated_shutdown_behavior(
@@ -233,7 +266,8 @@ class InstanceArgs:
     @instance_initiated_shutdown_behavior.setter
     def instance_initiated_shutdown_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMarketOptions")
     def instance_market_options(
@@ -242,7 +276,8 @@ class InstanceArgs:
     @instance_market_options.setter
     def instance_market_options(
         self, value: Optional[pulumi.Input[InstanceInstanceMarketOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(
@@ -251,12 +286,16 @@ class InstanceArgs:
     @instance_type.setter
     def instance_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, InstanceType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressCount")
     def ipv6_address_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv6_address_count.setter
-    def ipv6_address_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv6_address_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Addresses")
     def ipv6_addresses(
@@ -265,19 +304,22 @@ class InstanceArgs:
     @ipv6_addresses.setter
     def ipv6_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyName")
     def key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_name.setter
-    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplate")
     def launch_template(self) -> Optional[pulumi.Input[InstanceLaunchTemplateArgs]]: ...
     @launch_template.setter
     def launch_template(
         self, value: Optional[pulumi.Input[InstanceLaunchTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceOptions")
     def maintenance_options(
@@ -286,7 +328,8 @@ class InstanceArgs:
     @maintenance_options.setter
     def maintenance_options(
         self, value: Optional[pulumi.Input[InstanceMaintenanceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataOptions")
     def metadata_options(
@@ -295,12 +338,14 @@ class InstanceArgs:
     @metadata_options.setter
     def metadata_options(
         self, value: Optional[pulumi.Input[InstanceMetadataOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def monitoring(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @monitoring.setter
-    def monitoring(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def monitoring(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
     @_utilities.deprecated(...)
@@ -315,24 +360,30 @@ class InstanceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceNetworkInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroup")
     def placement_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @placement_group.setter
-    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroupId")
     def placement_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @placement_group_id.setter
-    def placement_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def placement_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementPartitionNumber")
     def placement_partition_number(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @placement_partition_number.setter
     def placement_partition_number(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryNetworkInterface")
     def primary_network_interface(
@@ -341,7 +392,8 @@ class InstanceArgs:
     @primary_network_interface.setter
     def primary_network_interface(
         self, value: Optional[pulumi.Input[InstancePrimaryNetworkInterfaceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsNameOptions")
     def private_dns_name_options(
@@ -350,17 +402,20 @@ class InstanceArgs:
     @private_dns_name_options.setter
     def private_dns_name_options(
         self, value: Optional[pulumi.Input[InstancePrivateDnsNameOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIp")
     def private_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip.setter
-    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootBlockDevice")
     def root_block_device(
@@ -369,7 +424,8 @@ class InstanceArgs:
     @root_block_device.setter
     def root_block_device(
         self, value: Optional[pulumi.Input[InstanceRootBlockDeviceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryNetworkInterfaces")
     def secondary_network_interfaces(
@@ -383,7 +439,8 @@ class InstanceArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceSecondaryNetworkInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryPrivateIps")
     def secondary_private_ips(
@@ -392,7 +449,8 @@ class InstanceArgs:
     @secondary_private_ips.setter
     def secondary_private_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     @_utilities.deprecated(...)
@@ -402,17 +460,22 @@ class InstanceArgs:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDestCheck")
     def source_dest_check(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @source_dest_check.setter
-    def source_dest_check(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def source_dest_check(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -421,29 +484,38 @@ class InstanceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tenancy(self) -> Optional[pulumi.Input[Union[_builtins.str, Tenancy]]]: ...
     @tenancy.setter
-    def tenancy(self, value: Optional[pulumi.Input[Union[_builtins.str, Tenancy]]]): ...
+    def tenancy(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Tenancy]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userData")
     def user_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data.setter
-    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userDataBase64")
     def user_data_base64(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data_base64.setter
-    def user_data_base64(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data_base64(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userDataReplaceOnChange")
     def user_data_replace_on_change(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @user_data_replace_on_change.setter
     def user_data_replace_on_change(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeTags")
     def volume_tags(
@@ -452,7 +524,8 @@ class InstanceArgs:
     @volume_tags.setter
     def volume_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcSecurityGroupIds")
     def vpc_security_group_ids(
@@ -461,7 +534,8 @@ class InstanceArgs:
     @vpc_security_group_ids.setter
     def vpc_security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _InstanceState:
@@ -568,24 +642,30 @@ class _InstanceState:
     @pulumi.getter
     def ami(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ami.setter
-    def ami(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ami(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="associatePublicIpAddress")
     def associate_public_ip_address(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @associate_public_ip_address.setter
     def associate_public_ip_address(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZone")
     def availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @availability_zone.setter
-    def availability_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def availability_zone(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationSpecification")
     def capacity_reservation_specification(
@@ -595,12 +675,16 @@ class _InstanceState:
     def capacity_reservation_specification(
         self,
         value: Optional[pulumi.Input[InstanceCapacityReservationSpecificationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuOptions")
     def cpu_options(self) -> Optional[pulumi.Input[InstanceCpuOptionsArgs]]: ...
     @cpu_options.setter
-    def cpu_options(self, value: Optional[pulumi.Input[InstanceCpuOptionsArgs]]): ...
+    def cpu_options(
+        self, value: Optional[pulumi.Input[InstanceCpuOptionsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creditSpecification")
     def credit_specification(
@@ -609,19 +693,24 @@ class _InstanceState:
     @credit_specification.setter
     def credit_specification(
         self, value: Optional[pulumi.Input[InstanceCreditSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiStop")
     def disable_api_stop(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_stop.setter
-    def disable_api_stop(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disable_api_stop(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disableApiTermination")
     def disable_api_termination(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_api_termination.setter
     def disable_api_termination(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsBlockDevices")
     def ebs_block_devices(
@@ -633,24 +722,30 @@ class _InstanceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceEbsBlockDeviceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsOptimized")
     def ebs_optimized(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ebs_optimized.setter
-    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def ebs_optimized(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enablePrimaryIpv6")
     def enable_primary_ipv6(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_primary_ipv6.setter
-    def enable_primary_ipv6(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_primary_ipv6(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveOptions")
     def enclave_options(self) -> Optional[pulumi.Input[InstanceEnclaveOptionsArgs]]: ...
     @enclave_options.setter
     def enclave_options(
         self, value: Optional[pulumi.Input[InstanceEnclaveOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ephemeralBlockDevices")
     def ephemeral_block_devices(
@@ -664,37 +759,50 @@ class _InstanceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceEphemeralBlockDeviceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
     def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="getPasswordData")
     def get_password_data(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @get_password_data.setter
-    def get_password_data(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def get_password_data(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def hibernation(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @hibernation.setter
-    def hibernation(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def hibernation(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostId")
     def host_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_id.setter
-    def host_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostResourceGroupArn")
     def host_resource_group_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_resource_group_arn.setter
-    def host_resource_group_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_resource_group_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="iamInstanceProfile")
     def iam_instance_profile(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @iam_instance_profile.setter
-    def iam_instance_profile(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def iam_instance_profile(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceInitiatedShutdownBehavior")
     def instance_initiated_shutdown_behavior(
@@ -703,12 +811,16 @@ class _InstanceState:
     @instance_initiated_shutdown_behavior.setter
     def instance_initiated_shutdown_behavior(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceLifecycle")
     def instance_lifecycle(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_lifecycle.setter
-    def instance_lifecycle(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_lifecycle(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceMarketOptions")
     def instance_market_options(
@@ -717,12 +829,14 @@ class _InstanceState:
     @instance_market_options.setter
     def instance_market_options(
         self, value: Optional[pulumi.Input[InstanceInstanceMarketOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceState")
     def instance_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_state.setter
-    def instance_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(
@@ -731,12 +845,16 @@ class _InstanceState:
     @instance_type.setter
     def instance_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, InstanceType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6AddressCount")
     def ipv6_address_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ipv6_address_count.setter
-    def ipv6_address_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ipv6_address_count(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6Addresses")
     def ipv6_addresses(
@@ -745,19 +863,22 @@ class _InstanceState:
     @ipv6_addresses.setter
     def ipv6_addresses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyName")
     def key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_name.setter
-    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchTemplate")
     def launch_template(self) -> Optional[pulumi.Input[InstanceLaunchTemplateArgs]]: ...
     @launch_template.setter
     def launch_template(
         self, value: Optional[pulumi.Input[InstanceLaunchTemplateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceOptions")
     def maintenance_options(
@@ -766,7 +887,8 @@ class _InstanceState:
     @maintenance_options.setter
     def maintenance_options(
         self, value: Optional[pulumi.Input[InstanceMaintenanceOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataOptions")
     def metadata_options(
@@ -775,12 +897,14 @@ class _InstanceState:
     @metadata_options.setter
     def metadata_options(
         self, value: Optional[pulumi.Input[InstanceMetadataOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def monitoring(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @monitoring.setter
-    def monitoring(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def monitoring(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
     @_utilities.deprecated(...)
@@ -795,34 +919,42 @@ class _InstanceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceNetworkInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outpostArn")
     def outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outpost_arn.setter
-    def outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordData")
     def password_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @password_data.setter
-    def password_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def password_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroup")
     def placement_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @placement_group.setter
-    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def placement_group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroupId")
     def placement_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @placement_group_id.setter
-    def placement_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def placement_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementPartitionNumber")
     def placement_partition_number(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @placement_partition_number.setter
     def placement_partition_number(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryNetworkInterface")
     def primary_network_interface(
@@ -831,19 +963,22 @@ class _InstanceState:
     @primary_network_interface.setter
     def primary_network_interface(
         self, value: Optional[pulumi.Input[InstancePrimaryNetworkInterfaceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="primaryNetworkInterfaceId")
     def primary_network_interface_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @primary_network_interface_id.setter
     def primary_network_interface_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDns")
     def private_dns(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_dns.setter
-    def private_dns(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_dns(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsNameOptions")
     def private_dns_name_options(
@@ -852,27 +987,32 @@ class _InstanceState:
     @private_dns_name_options.setter
     def private_dns_name_options(
         self, value: Optional[pulumi.Input[InstancePrivateDnsNameOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateIp")
     def private_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_ip.setter
-    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicDns")
     def public_dns(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_dns.setter
-    def public_dns(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_dns(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicIp")
     def public_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @public_ip.setter
-    def public_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def public_ip(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rootBlockDevice")
     def root_block_device(
@@ -881,7 +1021,8 @@ class _InstanceState:
     @root_block_device.setter
     def root_block_device(
         self, value: Optional[pulumi.Input[InstanceRootBlockDeviceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryNetworkInterfaces")
     def secondary_network_interfaces(
@@ -895,7 +1036,8 @@ class _InstanceState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[InstanceSecondaryNetworkInterfaceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secondaryPrivateIps")
     def secondary_private_ips(
@@ -904,7 +1046,8 @@ class _InstanceState:
     @secondary_private_ips.setter
     def secondary_private_ips(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     @_utilities.deprecated(...)
@@ -914,24 +1057,30 @@ class _InstanceState:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDestCheck")
     def source_dest_check(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @source_dest_check.setter
-    def source_dest_check(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def source_dest_check(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotInstanceRequestId")
     def spot_instance_request_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @spot_instance_request_id.setter
     def spot_instance_request_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetId")
     def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_id.setter
-    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -940,7 +1089,8 @@ class _InstanceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -949,29 +1099,38 @@ class _InstanceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tenancy(self) -> Optional[pulumi.Input[Union[_builtins.str, Tenancy]]]: ...
     @tenancy.setter
-    def tenancy(self, value: Optional[pulumi.Input[Union[_builtins.str, Tenancy]]]): ...
+    def tenancy(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Tenancy]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userData")
     def user_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data.setter
-    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userDataBase64")
     def user_data_base64(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data_base64.setter
-    def user_data_base64(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data_base64(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userDataReplaceOnChange")
     def user_data_replace_on_change(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @user_data_replace_on_change.setter
     def user_data_replace_on_change(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="volumeTags")
     def volume_tags(
@@ -980,7 +1139,8 @@ class _InstanceState:
     @volume_tags.setter
     def volume_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcSecurityGroupIds")
     def vpc_security_group_ids(
@@ -989,7 +1149,8 @@ class _InstanceState:
     @vpc_security_group_ids.setter
     def vpc_security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/instance:Instance")
 class Instance(pulumi.CustomResource):

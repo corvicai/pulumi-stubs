@@ -34,7 +34,8 @@ class GetIcebergCatalogIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetIcebergCatalogIamPolicyResult(GetIcebergCatalogIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetIcebergCatalogIamPolicyResult]:
+        ...
 
 def get_iceberg_catalog_iam_policy(
     name: Optional[_builtins.str] = ...,

@@ -52,7 +52,10 @@ class GetWafv2LoggingConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWafv2LoggingConfigurationResult(GetWafv2LoggingConfigurationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWafv2LoggingConfigurationResult]:
+        ...
 
 def get_wafv2_logging_configuration(
     name: Optional[_builtins.str] = ...,

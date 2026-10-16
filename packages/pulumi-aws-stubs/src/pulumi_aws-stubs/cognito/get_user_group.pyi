@@ -47,7 +47,8 @@ class GetUserGroupResult:
     def user_pool_id(self) -> _builtins.str: ...
 
 class AwaitableGetUserGroupResult(GetUserGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUserGroupResult]:
+        ...
 
 def get_user_group(
     name: Optional[_builtins.str] = ...,

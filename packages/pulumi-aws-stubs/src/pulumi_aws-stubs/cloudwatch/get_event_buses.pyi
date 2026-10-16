@@ -32,7 +32,8 @@ class GetEventBusesResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetEventBusesResult(GetEventBusesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventBusesResult]:
+        ...
 
 def get_event_buses(
     name_prefix: Optional[_builtins.str] = ...,

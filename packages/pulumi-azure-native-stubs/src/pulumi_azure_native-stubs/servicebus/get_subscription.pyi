@@ -124,7 +124,8 @@ class GetSubscriptionResult:
     def updated_at(self) -> _builtins.str: ...
 
 class AwaitableGetSubscriptionResult(GetSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubscriptionResult]:
+        ...
 
 def get_subscription(
     namespace_name: Optional[_builtins.str] = ...,

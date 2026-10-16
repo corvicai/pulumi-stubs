@@ -68,7 +68,8 @@ class GetFunctionUrlResult:
     def url_id(self) -> _builtins.str: ...
 
 class AwaitableGetFunctionUrlResult(GetFunctionUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFunctionUrlResult]:
+        ...
 
 def get_function_url(
     function_name: Optional[_builtins.str] = ...,

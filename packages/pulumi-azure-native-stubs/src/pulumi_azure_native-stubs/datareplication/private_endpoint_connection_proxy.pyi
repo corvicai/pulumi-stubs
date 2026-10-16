@@ -28,12 +28,14 @@ class PrivateEndpointConnectionProxyArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultName")
     def vault_name(self) -> pulumi.Input[_builtins.str]: ...
     @vault_name.setter
-    def vault_name(self, value: pulumi.Input[_builtins.str]): ...
+    def vault_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateEndpointConnectionProxyName")
     def private_endpoint_connection_proxy_name(
@@ -42,7 +44,8 @@ class PrivateEndpointConnectionProxyArgs:
     @private_endpoint_connection_proxy_name.setter
     def private_endpoint_connection_proxy_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -52,7 +55,8 @@ class PrivateEndpointConnectionProxyArgs:
     def properties(
         self,
         value: Optional[pulumi.Input[PrivateEndpointConnectionProxyPropertiesArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class PrivateEndpointConnectionProxy(pulumi.CustomResource):

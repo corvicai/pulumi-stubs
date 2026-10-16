@@ -76,7 +76,10 @@ class GetAvailabilityGroupListenerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAvailabilityGroupListenerResult(GetAvailabilityGroupListenerResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAvailabilityGroupListenerResult]:
+        ...
 
 def get_availability_group_listener(
     availability_group_listener_name: Optional[_builtins.str] = ...,

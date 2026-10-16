@@ -80,7 +80,8 @@ class GetMetricsConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMetricsConfigurationResult(GetMetricsConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMetricsConfigurationResult]:
+        ...
 
 def get_metrics_configuration(
     cluster_name: Optional[_builtins.str] = ...,

@@ -54,7 +54,8 @@ class GetDiscoverySourceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDiscoverySourceResult(GetDiscoverySourceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiscoverySourceResult]:
+        ...
 
 def get_discovery_source(
     map_name: Optional[_builtins.str] = ...,

@@ -98,14 +98,16 @@ class BackendPoolsSettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, EnforceCertificateNameCheckEnabledState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sendRecvTimeoutSeconds")
     def send_recv_timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @send_recv_timeout_seconds.setter
     def send_recv_timeout_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackendPoolArgsDict(TypedDict):
     backends: NotRequired[pulumi.Input[Sequence[pulumi.Input[BackendArgsDict]]]]
@@ -133,29 +135,36 @@ class BackendPoolArgs:
     @backends.setter
     def backends(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BackendArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthProbeSettings")
     def health_probe_settings(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @health_probe_settings.setter
-    def health_probe_settings(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def health_probe_settings(
+        self, value: Optional[pulumi.Input[SubResourceArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancingSettings")
     def load_balancing_settings(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @load_balancing_settings.setter
     def load_balancing_settings(
         self, value: Optional[pulumi.Input[SubResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BackendArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
@@ -193,12 +202,16 @@ class BackendArgs:
     @pulumi.getter
     def address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @address.setter
-    def address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def address(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backendHostHeader")
     def backend_host_header(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backend_host_header.setter
-    def backend_host_header(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backend_host_header(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -207,27 +220,34 @@ class BackendArgs:
     @enabled_state.setter
     def enabled_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, BackendEnabledState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpPort")
     def http_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @http_port.setter
-    def http_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def http_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpsPort")
     def https_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @https_port.setter
-    def https_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def https_port(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @priority.setter
-    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkAlias")
     def private_link_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_alias.setter
-    def private_link_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_link_alias(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkApprovalMessage")
     def private_link_approval_message(
@@ -236,24 +256,30 @@ class BackendArgs:
     @private_link_approval_message.setter
     def private_link_approval_message(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkLocation")
     def private_link_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_location.setter
-    def private_link_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_link_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateLinkResourceId")
     def private_link_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_link_resource_id.setter
     def private_link_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def weight(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @weight.setter
-    def weight(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def weight(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class CacheConfigurationArgsDict(TypedDict):
     cache_duration: NotRequired[pulumi.Input[_builtins.str]]
@@ -283,7 +309,8 @@ class CacheConfigurationArgs:
     @pulumi.getter(name="cacheDuration")
     def cache_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_duration.setter
-    def cache_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_duration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamicCompression")
     def dynamic_compression(
@@ -293,7 +320,8 @@ class CacheConfigurationArgs:
     def dynamic_compression(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, DynamicCompressionEnabled]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryParameterStripDirective")
     def query_parameter_strip_directive(
@@ -302,12 +330,16 @@ class CacheConfigurationArgs:
     @query_parameter_strip_directive.setter
     def query_parameter_strip_directive(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FrontDoorQuery]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryParameters")
     def query_parameters(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @query_parameters.setter
-    def query_parameters(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def query_parameters(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class CustomRuleListArgsDict(TypedDict):
     rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[CustomRuleArgsDict]]]]
@@ -327,7 +359,8 @@ class CustomRuleListArgs:
     @rules.setter
     def rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CustomRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomRuleArgsDict(TypedDict):
     action: pulumi.Input[Union[_builtins.str, ActionType]]
@@ -365,7 +398,8 @@ class CustomRuleArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[Union[_builtins.str, ActionType]]: ...
     @action.setter
-    def action(self, value: pulumi.Input[Union[_builtins.str, ActionType]]): ...
+    def action(self, value: pulumi.Input[Union[_builtins.str, ActionType]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchConditions")
     def match_conditions(
@@ -374,17 +408,22 @@ class CustomRuleArgs:
     @match_conditions.setter
     def match_conditions(
         self, value: pulumi.Input[Sequence[pulumi.Input[MatchConditionArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleType")
     def rule_type(self) -> pulumi.Input[Union[_builtins.str, RuleType]]: ...
     @rule_type.setter
-    def rule_type(self, value: pulumi.Input[Union[_builtins.str, RuleType]]): ...
+    def rule_type(
+        self, value: pulumi.Input[Union[_builtins.str, RuleType]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -394,7 +433,8 @@ class CustomRuleArgs:
     def enabled_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, CustomRuleEnabledState]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="groupBy")
     def group_by(
@@ -403,12 +443,14 @@ class CustomRuleArgs:
     @group_by.setter
     def group_by(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[GroupByVariableArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rateLimitDurationInMinutes")
     def rate_limit_duration_in_minutes(
@@ -417,12 +459,16 @@ class CustomRuleArgs:
     @rate_limit_duration_in_minutes.setter
     def rate_limit_duration_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rateLimitThreshold")
     def rate_limit_threshold(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @rate_limit_threshold.setter
-    def rate_limit_threshold(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def rate_limit_threshold(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class EndpointArgsDict(TypedDict):
     endpoint: NotRequired[pulumi.Input[_builtins.str]]
@@ -440,12 +486,14 @@ class EndpointArgs:
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ForwardingConfigurationArgsDict(TypedDict):
     odata_type: pulumi.Input[_builtins.str]
@@ -473,24 +521,30 @@ class ForwardingConfigurationArgs:
     @pulumi.getter(name="odataType")
     def odata_type(self) -> pulumi.Input[_builtins.str]: ...
     @odata_type.setter
-    def odata_type(self, value: pulumi.Input[_builtins.str]): ...
+    def odata_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backendPool")
     def backend_pool(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @backend_pool.setter
-    def backend_pool(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def backend_pool(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cacheConfiguration")
     def cache_configuration(self) -> Optional[pulumi.Input[CacheConfigurationArgs]]: ...
     @cache_configuration.setter
     def cache_configuration(
         self, value: Optional[pulumi.Input[CacheConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customForwardingPath")
     def custom_forwarding_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_forwarding_path.setter
-    def custom_forwarding_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_forwarding_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardingProtocol")
     def forwarding_protocol(
@@ -502,7 +556,8 @@ class ForwardingConfigurationArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, FrontDoorForwardingProtocol]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FrontendEndpointUpdateParametersWebApplicationFirewallPolicyLinkArgsDict(
     TypedDict
@@ -518,7 +573,8 @@ class FrontendEndpointUpdateParametersWebApplicationFirewallPolicyLinkArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FrontendEndpointArgsDict(TypedDict):
     host_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -556,17 +612,20 @@ class FrontendEndpointArgs:
     @pulumi.getter(name="hostName")
     def host_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_name.setter
-    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionAffinityEnabledState")
     def session_affinity_enabled_state(
@@ -578,14 +637,16 @@ class FrontendEndpointArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, SessionAffinityEnabledState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sessionAffinityTtlSeconds")
     def session_affinity_ttl_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @session_affinity_ttl_seconds.setter
     def session_affinity_ttl_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webApplicationFirewallPolicyLink")
     def web_application_firewall_policy_link(
@@ -603,7 +664,8 @@ class FrontendEndpointArgs:
                 FrontendEndpointUpdateParametersWebApplicationFirewallPolicyLinkArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GroupByVariableArgsDict(TypedDict):
     variable_name: pulumi.Input[Union[_builtins.str, VariableName]]
@@ -619,7 +681,8 @@ class GroupByVariableArgs:
     @variable_name.setter
     def variable_name(
         self, value: pulumi.Input[Union[_builtins.str, VariableName]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class HeaderActionArgsDict(TypedDict):
     header_action_type: pulumi.Input[Union[_builtins.str, HeaderActionType]]
@@ -643,17 +706,20 @@ class HeaderActionArgs:
     @header_action_type.setter
     def header_action_type(
         self, value: pulumi.Input[Union[_builtins.str, HeaderActionType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerName")
     def header_name(self) -> pulumi.Input[_builtins.str]: ...
     @header_name.setter
-    def header_name(self, value: pulumi.Input[_builtins.str]): ...
+    def header_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class HealthProbeSettingsModelArgsDict(TypedDict):
     enabled_state: NotRequired[pulumi.Input[Union[_builtins.str, HealthProbeEnabled]]]
@@ -691,7 +757,8 @@ class HealthProbeSettingsModelArgs:
     @enabled_state.setter
     def enabled_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, HealthProbeEnabled]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthProbeMethod")
     def health_probe_method(
@@ -701,27 +768,34 @@ class HealthProbeSettingsModelArgs:
     def health_probe_method(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, FrontDoorHealthProbeMethod]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intervalInSeconds")
     def interval_in_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval_in_seconds.setter
-    def interval_in_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def interval_in_seconds(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(
@@ -730,7 +804,8 @@ class HealthProbeSettingsModelArgs:
     @protocol.setter
     def protocol(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FrontDoorProtocol]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class LoadBalancingSettingsModelArgsDict(TypedDict):
     additional_latency_milliseconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -758,29 +833,34 @@ class LoadBalancingSettingsModelArgs:
     @additional_latency_milliseconds.setter
     def additional_latency_milliseconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sampleSize")
     def sample_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @sample_size.setter
-    def sample_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def sample_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="successfulSamplesRequired")
     def successful_samples_required(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @successful_samples_required.setter
     def successful_samples_required(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleExclusionArgsDict(TypedDict):
     match_variable: pulumi.Input[
@@ -813,12 +893,14 @@ class ManagedRuleExclusionArgs:
     def match_variable(
         self,
         value: pulumi.Input[Union[_builtins.str, ManagedRuleExclusionMatchVariable]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> pulumi.Input[_builtins.str]: ...
     @selector.setter
-    def selector(self, value: pulumi.Input[_builtins.str]): ...
+    def selector(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectorMatchOperator")
     def selector_match_operator(
@@ -832,7 +914,8 @@ class ManagedRuleExclusionArgs:
         value: pulumi.Input[
             Union[_builtins.str, ManagedRuleExclusionSelectorMatchOperator]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleGroupOverrideArgsDict(TypedDict):
     rule_group_name: pulumi.Input[_builtins.str]
@@ -860,7 +943,8 @@ class ManagedRuleGroupOverrideArgs:
     @pulumi.getter(name="ruleGroupName")
     def rule_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_group_name.setter
-    def rule_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def exclusions(
@@ -870,7 +954,8 @@ class ManagedRuleGroupOverrideArgs:
     def exclusions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ManagedRuleExclusionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rules(
@@ -880,7 +965,8 @@ class ManagedRuleGroupOverrideArgs:
     def rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ManagedRuleOverrideArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleOverrideArgsDict(TypedDict):
     rule_id: pulumi.Input[_builtins.str]
@@ -910,14 +996,16 @@ class ManagedRuleOverrideArgs:
     @pulumi.getter(name="ruleId")
     def rule_id(self) -> pulumi.Input[_builtins.str]: ...
     @rule_id.setter
-    def rule_id(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def action(self) -> Optional[pulumi.Input[Union[_builtins.str, ActionType]]]: ...
     @action.setter
     def action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -927,7 +1015,8 @@ class ManagedRuleOverrideArgs:
     def enabled_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ManagedRuleEnabledState]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def exclusions(
@@ -937,7 +1026,8 @@ class ManagedRuleOverrideArgs:
     def exclusions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ManagedRuleExclusionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleSetListArgsDict(TypedDict):
     managed_rule_sets: NotRequired[
@@ -961,7 +1051,8 @@ class ManagedRuleSetListArgs:
     @managed_rule_sets.setter
     def managed_rule_sets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ManagedRuleSetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedRuleSetArgsDict(TypedDict):
     rule_set_type: pulumi.Input[_builtins.str]
@@ -997,12 +1088,14 @@ class ManagedRuleSetArgs:
     @pulumi.getter(name="ruleSetType")
     def rule_set_type(self) -> pulumi.Input[_builtins.str]: ...
     @rule_set_type.setter
-    def rule_set_type(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_set_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleSetVersion")
     def rule_set_version(self) -> pulumi.Input[_builtins.str]: ...
     @rule_set_version.setter
-    def rule_set_version(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_set_version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def exclusions(
@@ -1012,7 +1105,8 @@ class ManagedRuleSetArgs:
     def exclusions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ManagedRuleExclusionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleGroupOverrides")
     def rule_group_overrides(
@@ -1026,7 +1120,8 @@ class ManagedRuleSetArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ManagedRuleGroupOverrideArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleSetAction")
     def rule_set_action(
@@ -1036,7 +1131,8 @@ class ManagedRuleSetArgs:
     def rule_set_action(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ManagedRuleSetActionType]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class MatchConditionArgsDict(TypedDict):
     match_value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1068,29 +1164,36 @@ class MatchConditionArgs:
     @match_value.setter
     def match_value(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchVariable")
     def match_variable(self) -> pulumi.Input[Union[_builtins.str, MatchVariable]]: ...
     @match_variable.setter
     def match_variable(
         self, value: pulumi.Input[Union[_builtins.str, MatchVariable]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def operator(self) -> pulumi.Input[Union[_builtins.str, Operator]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, Operator]]): ...
+    def operator(self, value: pulumi.Input[Union[_builtins.str, Operator]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -1104,7 +1207,8 @@ class MatchConditionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TransformType]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySettingsArgsDict(TypedDict):
     custom_block_response_body: NotRequired[pulumi.Input[_builtins.str]]
@@ -1158,7 +1262,8 @@ class PolicySettingsArgs:
     @custom_block_response_body.setter
     def custom_block_response_body(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customBlockResponseStatusCode")
     def custom_block_response_status_code(
@@ -1167,7 +1272,8 @@ class PolicySettingsArgs:
     @custom_block_response_status_code.setter
     def custom_block_response_status_code(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -1176,7 +1282,8 @@ class PolicySettingsArgs:
     @enabled_state.setter
     def enabled_state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyEnabledState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="javascriptChallengeExpirationInMinutes")
     def javascript_challenge_expiration_in_minutes(
@@ -1185,17 +1292,22 @@ class PolicySettingsArgs:
     @javascript_challenge_expiration_in_minutes.setter
     def javascript_challenge_expiration_in_minutes(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, PolicyMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyMode]]]): ...
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyMode]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectUrl")
     def redirect_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @redirect_url.setter
-    def redirect_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def redirect_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestBodyCheck")
     def request_body_check(
@@ -1205,7 +1317,8 @@ class PolicySettingsArgs:
     def request_body_check(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, PolicyRequestBodyCheck]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scrubbingRules")
     def scrubbing_rules(
@@ -1221,7 +1334,8 @@ class PolicySettingsArgs:
                 Sequence[pulumi.Input[WebApplicationFirewallScrubbingRulesArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -1235,7 +1349,8 @@ class PolicySettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, WebApplicationFirewallScrubbingState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RedirectConfigurationArgsDict(TypedDict):
     odata_type: pulumi.Input[_builtins.str]
@@ -1271,27 +1386,34 @@ class RedirectConfigurationArgs:
     @pulumi.getter(name="odataType")
     def odata_type(self) -> pulumi.Input[_builtins.str]: ...
     @odata_type.setter
-    def odata_type(self, value: pulumi.Input[_builtins.str]): ...
+    def odata_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customFragment")
     def custom_fragment(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_fragment.setter
-    def custom_fragment(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_fragment(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customHost")
     def custom_host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_host.setter
-    def custom_host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_host(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customPath")
     def custom_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_path.setter
-    def custom_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customQueryString")
     def custom_query_string(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_query_string.setter
-    def custom_query_string(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_query_string(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectProtocol")
     def redirect_protocol(
@@ -1301,7 +1423,8 @@ class RedirectConfigurationArgs:
     def redirect_protocol(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, FrontDoorRedirectProtocol]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redirectType")
     def redirect_type(
@@ -1310,7 +1433,8 @@ class RedirectConfigurationArgs:
     @redirect_type.setter
     def redirect_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, FrontDoorRedirectType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RoutingRuleUpdateParametersWebApplicationFirewallPolicyLinkArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1324,7 +1448,8 @@ class RoutingRuleUpdateParametersWebApplicationFirewallPolicyLinkArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RoutingRuleArgsDict(TypedDict):
     accepted_protocols: NotRequired[
@@ -1397,7 +1522,8 @@ class RoutingRuleArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, FrontDoorProtocol]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledState")
     def enabled_state(
@@ -1407,7 +1533,8 @@ class RoutingRuleArgs:
     def enabled_state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, RoutingRuleEnabledState]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frontendEndpoints")
     def frontend_endpoints(
@@ -1416,17 +1543,20 @@ class RoutingRuleArgs:
     @frontend_endpoints.setter
     def frontend_endpoints(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubResourceArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="patternsToMatch")
     def patterns_to_match(
@@ -1435,7 +1565,8 @@ class RoutingRuleArgs:
     @patterns_to_match.setter
     def patterns_to_match(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeConfiguration")
     def route_configuration(
@@ -1449,12 +1580,14 @@ class RoutingRuleArgs:
         value: Optional[
             pulumi.Input[Union[ForwardingConfigurationArgs, RedirectConfigurationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rulesEngine")
     def rules_engine(self) -> Optional[pulumi.Input[SubResourceArgs]]: ...
     @rules_engine.setter
-    def rules_engine(self, value: Optional[pulumi.Input[SubResourceArgs]]): ...
+    def rules_engine(self, value: Optional[pulumi.Input[SubResourceArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="webApplicationFirewallPolicyLink")
     def web_application_firewall_policy_link(
@@ -1470,7 +1603,8 @@ class RoutingRuleArgs:
                 RoutingRuleUpdateParametersWebApplicationFirewallPolicyLinkArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RulesEngineActionArgsDict(TypedDict):
     request_header_actions: NotRequired[
@@ -1508,7 +1642,8 @@ class RulesEngineActionArgs:
     @request_header_actions.setter
     def request_header_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[HeaderActionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaderActions")
     def response_header_actions(
@@ -1517,7 +1652,8 @@ class RulesEngineActionArgs:
     @response_header_actions.setter
     def response_header_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[HeaderActionArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routeConfigurationOverride")
     def route_configuration_override(
@@ -1531,7 +1667,8 @@ class RulesEngineActionArgs:
         value: Optional[
             pulumi.Input[Union[ForwardingConfigurationArgs, RedirectConfigurationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RulesEngineMatchConditionArgsDict(TypedDict):
     rules_engine_match_value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1569,7 +1706,8 @@ class RulesEngineMatchConditionArgs:
     @rules_engine_match_value.setter
     def rules_engine_match_value(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rulesEngineMatchVariable")
     def rules_engine_match_variable(
@@ -1578,7 +1716,8 @@ class RulesEngineMatchConditionArgs:
     @rules_engine_match_variable.setter
     def rules_engine_match_variable(
         self, value: pulumi.Input[Union[_builtins.str, RulesEngineMatchVariable]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rulesEngineOperator")
     def rules_engine_operator(
@@ -1587,17 +1726,22 @@ class RulesEngineMatchConditionArgs:
     @rules_engine_operator.setter
     def rules_engine_operator(
         self, value: pulumi.Input[Union[_builtins.str, RulesEngineOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="negateCondition")
     def negate_condition(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @negate_condition.setter
-    def negate_condition(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def negate_condition(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def transforms(
@@ -1611,7 +1755,8 @@ class RulesEngineMatchConditionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Transform]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RulesEngineRuleArgsDict(TypedDict):
     action: pulumi.Input[RulesEngineActionArgsDict]
@@ -1643,17 +1788,20 @@ class RulesEngineRuleArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[RulesEngineActionArgs]: ...
     @action.setter
-    def action(self, value: pulumi.Input[RulesEngineActionArgs]): ...
+    def action(self, value: pulumi.Input[RulesEngineActionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def priority(self) -> pulumi.Input[_builtins.int]: ...
     @priority.setter
-    def priority(self, value: pulumi.Input[_builtins.int]): ...
+    def priority(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchConditions")
     def match_conditions(
@@ -1667,7 +1815,8 @@ class RulesEngineRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RulesEngineMatchConditionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchProcessingBehavior")
     def match_processing_behavior(
@@ -1677,7 +1826,8 @@ class RulesEngineRuleArgs:
     def match_processing_behavior(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, MatchProcessingBehavior]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class SkuArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[Union[_builtins.str, SkuName]]]
@@ -1691,7 +1841,10 @@ class SkuArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuName]]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuName]]]): ...
+    def name(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, SkuName]]]
+    ):  # -> None:
+        ...
 
 class SubResourceArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1705,7 +1858,8 @@ class SubResourceArgs:
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class WebApplicationFirewallScrubbingRulesArgsDict(TypedDict):
     match_variable: pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryMatchVariable]]
@@ -1739,7 +1893,8 @@ class WebApplicationFirewallScrubbingRulesArgs:
     @match_variable.setter
     def match_variable(
         self, value: pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryMatchVariable]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selectorMatchOperator")
     def selector_match_operator(
@@ -1748,12 +1903,14 @@ class WebApplicationFirewallScrubbingRulesArgs:
     @selector_match_operator.setter
     def selector_match_operator(
         self, value: pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryMatchOperator]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def selector(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def selector(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -1763,4 +1920,5 @@ class WebApplicationFirewallScrubbingRulesArgs:
     def state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, ScrubbingRuleEntryState]]],
-    ): ...
+    ):  # -> None:
+        ...

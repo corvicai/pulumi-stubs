@@ -52,7 +52,8 @@ class GetLogsMetricFilterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLogsMetricFilterResult(GetLogsMetricFilterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLogsMetricFilterResult]:
+        ...
 
 def get_logs_metric_filter(
     name: Optional[_builtins.str] = ...,

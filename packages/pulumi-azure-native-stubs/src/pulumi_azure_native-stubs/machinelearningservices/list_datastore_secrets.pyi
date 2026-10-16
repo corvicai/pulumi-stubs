@@ -20,7 +20,8 @@ class ListDatastoreSecretsResult:
     def secrets_type(self) -> _builtins.str: ...
 
 class AwaitableListDatastoreSecretsResult(ListDatastoreSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListDatastoreSecretsResult]:
+        ...
 
 def list_datastore_secrets(
     expirable_secret: Optional[_builtins.bool] = ...,

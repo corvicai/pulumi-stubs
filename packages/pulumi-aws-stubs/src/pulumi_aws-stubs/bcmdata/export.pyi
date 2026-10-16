@@ -22,7 +22,8 @@ class ExportArgs:
     @pulumi.getter
     def export(self) -> Optional[pulumi.Input[ExportExportArgs]]: ...
     @export.setter
-    def export(self, value: Optional[pulumi.Input[ExportExportArgs]]): ...
+    def export(self, value: Optional[pulumi.Input[ExportExportArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -31,12 +32,14 @@ class ExportArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ExportTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ExportTimeoutsArgs]]): ...
+    def timeouts(self, value: Optional[pulumi.Input[ExportTimeoutsArgs]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ExportState:
@@ -55,12 +58,14 @@ class _ExportState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def export(self) -> Optional[pulumi.Input[ExportExportArgs]]: ...
     @export.setter
-    def export(self, value: Optional[pulumi.Input[ExportExportArgs]]): ...
+    def export(self, value: Optional[pulumi.Input[ExportExportArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -69,7 +74,8 @@ class _ExportState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -78,12 +84,14 @@ class _ExportState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[ExportTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[ExportTimeoutsArgs]]): ...
+    def timeouts(self, value: Optional[pulumi.Input[ExportTimeoutsArgs]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:bcmdata/export:Export")
 class Export(pulumi.CustomResource):

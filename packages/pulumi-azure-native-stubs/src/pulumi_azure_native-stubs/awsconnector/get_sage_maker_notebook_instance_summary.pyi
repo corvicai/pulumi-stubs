@@ -56,7 +56,10 @@ class GetSageMakerNotebookInstanceSummaryResult:
 class AwaitableGetSageMakerNotebookInstanceSummaryResult(
     GetSageMakerNotebookInstanceSummaryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSageMakerNotebookInstanceSummaryResult]:
+        ...
 
 def get_sage_maker_notebook_instance_summary(
     name: Optional[_builtins.str] = ...,

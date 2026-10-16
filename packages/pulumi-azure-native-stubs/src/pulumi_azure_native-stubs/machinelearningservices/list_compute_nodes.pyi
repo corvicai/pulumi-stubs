@@ -24,7 +24,8 @@ class ListComputeNodesResult:
     def nodes(self) -> Sequence[outputs.AmlComputeNodeInformationResponse]: ...
 
 class AwaitableListComputeNodesResult(ListComputeNodesResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListComputeNodesResult]:
+        ...
 
 def list_compute_nodes(
     compute_name: Optional[_builtins.str] = ...,

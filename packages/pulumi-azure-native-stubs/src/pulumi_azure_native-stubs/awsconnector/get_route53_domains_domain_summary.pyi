@@ -54,7 +54,10 @@ class GetRoute53DomainsDomainSummaryResult:
 class AwaitableGetRoute53DomainsDomainSummaryResult(
     GetRoute53DomainsDomainSummaryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRoute53DomainsDomainSummaryResult]:
+        ...
 
 def get_route53_domains_domain_summary(
     name: Optional[_builtins.str] = ...,

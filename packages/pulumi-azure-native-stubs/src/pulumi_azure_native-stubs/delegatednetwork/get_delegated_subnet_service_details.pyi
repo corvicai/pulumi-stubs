@@ -66,7 +66,10 @@ class GetDelegatedSubnetServiceDetailsResult:
 class AwaitableGetDelegatedSubnetServiceDetailsResult(
     GetDelegatedSubnetServiceDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDelegatedSubnetServiceDetailsResult]:
+        ...
 
 def get_delegated_subnet_service_details(
     resource_group_name: Optional[_builtins.str] = ...,

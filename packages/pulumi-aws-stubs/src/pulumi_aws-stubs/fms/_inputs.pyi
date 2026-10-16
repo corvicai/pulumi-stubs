@@ -60,7 +60,8 @@ class PolicyExcludeMapArgs:
     @accounts.setter
     def accounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def orgunits(
@@ -69,7 +70,8 @@ class PolicyExcludeMapArgs:
     @orgunits.setter
     def orgunits(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicyIncludeMapArgsDict(TypedDict):
     accounts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -91,7 +93,8 @@ class PolicyIncludeMapArgs:
     @accounts.setter
     def accounts(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def orgunits(
@@ -100,7 +103,8 @@ class PolicyIncludeMapArgs:
     @orgunits.setter
     def orgunits(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -124,12 +128,16 @@ class PolicySecurityServicePolicyDataArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedServiceData")
     def managed_service_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @managed_service_data.setter
-    def managed_service_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def managed_service_data(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyOption")
     def policy_option(
@@ -139,7 +147,8 @@ class PolicySecurityServicePolicyDataArgs:
     def policy_option(
         self,
         value: Optional[pulumi.Input[PolicySecurityServicePolicyDataPolicyOptionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionArgsDict(TypedDict):
     network_acl_common_policy: NotRequired[
@@ -196,7 +205,8 @@ class PolicySecurityServicePolicyDataPolicyOptionArgs:
                 PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkFirewallPolicy")
     def network_firewall_policy(
@@ -214,7 +224,8 @@ class PolicySecurityServicePolicyDataPolicyOptionArgs:
                 PolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="thirdPartyFirewallPolicy")
     def third_party_firewall_policy(
@@ -232,7 +243,8 @@ class PolicySecurityServicePolicyDataPolicyOptionArgs:
                 PolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyArgsDict(
     TypedDict
@@ -271,7 +283,8 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyArgs:
                 PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetArgsDict(
     TypedDict
@@ -329,12 +342,16 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
     @force_remediate_for_first_entries.setter
     def force_remediate_for_first_entries(
         self, value: pulumi.Input[_builtins.bool]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceRemediateForLastEntries")
     def force_remediate_for_last_entries(self) -> pulumi.Input[_builtins.bool]: ...
     @force_remediate_for_last_entries.setter
-    def force_remediate_for_last_entries(self, value: pulumi.Input[_builtins.bool]): ...
+    def force_remediate_for_last_entries(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firstEntries")
     def first_entries(
@@ -360,7 +377,8 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastEntries")
     def last_entries(
@@ -386,7 +404,8 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryArgsDict(
     TypedDict
@@ -448,22 +467,26 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
     @pulumi.getter
     def egress(self) -> pulumi.Input[_builtins.bool]: ...
     @egress.setter
-    def egress(self, value: pulumi.Input[_builtins.bool]): ...
+    def egress(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> pulumi.Input[_builtins.str]: ...
     @protocol.setter
-    def protocol(self, value: pulumi.Input[_builtins.str]): ...
+    def protocol(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleAction")
     def rule_action(self) -> pulumi.Input[_builtins.str]: ...
     @rule_action.setter
-    def rule_action(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cidrBlock")
     def cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cidr_block.setter
-    def cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icmpTypeCodes")
     def icmp_type_codes(
@@ -489,12 +512,14 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6CidrBlock")
     def ipv6_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ipv6_cidr_block.setter
-    def ipv6_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ipv6_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portRanges")
     def port_ranges(
@@ -520,7 +545,8 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeArgsDict(
     TypedDict
@@ -540,12 +566,14 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeArgsDict(
     TypedDict
@@ -565,12 +593,14 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
     @pulumi.getter(name="from")
     def from_(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @from_.setter
-    def from_(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def from_(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @to.setter
-    def to(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def to(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryArgsDict(
     TypedDict
@@ -632,22 +662,26 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
     @pulumi.getter
     def egress(self) -> pulumi.Input[_builtins.bool]: ...
     @egress.setter
-    def egress(self, value: pulumi.Input[_builtins.bool]): ...
+    def egress(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> pulumi.Input[_builtins.str]: ...
     @protocol.setter
-    def protocol(self, value: pulumi.Input[_builtins.str]): ...
+    def protocol(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleAction")
     def rule_action(self) -> pulumi.Input[_builtins.str]: ...
     @rule_action.setter
-    def rule_action(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cidrBlock")
     def cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cidr_block.setter
-    def cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="icmpTypeCodes")
     def icmp_type_codes(
@@ -673,12 +707,14 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ipv6CidrBlock")
     def ipv6_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ipv6_cidr_block.setter
-    def ipv6_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ipv6_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portRanges")
     def port_ranges(
@@ -704,7 +740,8 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeArgsDict(
     TypedDict
@@ -724,12 +761,14 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeArgsDict(
     TypedDict
@@ -749,12 +788,14 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
     @pulumi.getter(name="from")
     def from_(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @from_.setter
-    def from_(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def from_(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def to(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @to.setter
-    def to(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def to(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyArgsDict(
     TypedDict
@@ -774,7 +815,8 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyArgs:
     @firewall_deployment_model.setter
     def firewall_deployment_model(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyArgsDict(
     TypedDict
@@ -794,7 +836,8 @@ class PolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyArgs:
     @firewall_deployment_model.setter
     def firewall_deployment_model(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceSetResourceSetArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -826,27 +869,36 @@ class ResourceSetResourceSetArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdateTime")
     def last_update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_update_time.setter
-    def last_update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_update_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetStatus")
     def resource_set_status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_set_status.setter
-    def resource_set_status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_set_status(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypeLists")
     def resource_type_lists(
@@ -855,12 +907,14 @@ class ResourceSetResourceSetArgs:
     @resource_type_lists.setter
     def resource_type_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateToken")
     def update_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_token.setter
-    def update_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_token(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ResourceSetTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -880,14 +934,17 @@ class ResourceSetTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

@@ -37,7 +37,8 @@ class GetDiskIamPolicyResult:
     def zone(self) -> _builtins.str: ...
 
 class AwaitableGetDiskIamPolicyResult(GetDiskIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiskIamPolicyResult]:
+        ...
 
 def get_disk_iam_policy(
     name: Optional[_builtins.str] = ...,

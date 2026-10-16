@@ -60,7 +60,10 @@ class GetPrivateEndpointConnectionByHostPoolResult:
 class AwaitableGetPrivateEndpointConnectionByHostPoolResult(
     GetPrivateEndpointConnectionByHostPoolResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionByHostPoolResult]:
+        ...
 
 def get_private_endpoint_connection_by_host_pool(
     host_pool_name: Optional[_builtins.str] = ...,

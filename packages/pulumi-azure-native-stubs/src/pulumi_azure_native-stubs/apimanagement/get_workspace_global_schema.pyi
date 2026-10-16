@@ -51,7 +51,8 @@ class GetWorkspaceGlobalSchemaResult:
     def value(self) -> Optional[Any]: ...
 
 class AwaitableGetWorkspaceGlobalSchemaResult(GetWorkspaceGlobalSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceGlobalSchemaResult]:
+        ...
 
 def get_workspace_global_schema(
     resource_group_name: Optional[_builtins.str] = ...,

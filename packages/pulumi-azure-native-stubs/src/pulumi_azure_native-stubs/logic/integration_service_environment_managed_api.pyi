@@ -37,17 +37,20 @@ class IntegrationServiceEnvironmentManagedApiArgs:
     @integration_service_environment_name.setter
     def integration_service_environment_name(
         self, value: pulumi.Input[_builtins.str]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group.setter
-    def resource_group(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="apiName")
     def api_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_name.setter
-    def api_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentParameters")
     def deployment_parameters(
@@ -63,7 +66,8 @@ class IntegrationServiceEnvironmentManagedApiArgs:
                 IntegrationServiceEnvironmentManagedApiDeploymentParametersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integrationServiceEnvironment")
     def integration_service_environment(
@@ -72,12 +76,14 @@ class IntegrationServiceEnvironmentManagedApiArgs:
     @integration_service_environment.setter
     def integration_service_environment(
         self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -86,7 +92,8 @@ class IntegrationServiceEnvironmentManagedApiArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class IntegrationServiceEnvironmentManagedApi(pulumi.CustomResource):

@@ -34,7 +34,8 @@ class GetSupportedDatabaseFlagsResult:
     ) -> Sequence[outputs.GetSupportedDatabaseFlagsSupportedDatabaseFlagResult]: ...
 
 class AwaitableGetSupportedDatabaseFlagsResult(GetSupportedDatabaseFlagsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSupportedDatabaseFlagsResult]:
+        ...
 
 def get_supported_database_flags(
     location: Optional[_builtins.str] = ...,

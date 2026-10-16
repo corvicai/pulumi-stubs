@@ -31,17 +31,24 @@ class CollectorPolicyArgs:
     @pulumi.getter(name="azureTrafficCollectorName")
     def azure_traffic_collector_name(self) -> pulumi.Input[_builtins.str]: ...
     @azure_traffic_collector_name.setter
-    def azure_traffic_collector_name(self, value: pulumi.Input[_builtins.str]): ...
+    def azure_traffic_collector_name(
+        self, value: pulumi.Input[_builtins.str]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="collectorPolicyName")
     def collector_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @collector_policy_name.setter
-    def collector_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def collector_policy_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="emissionPolicies")
     def emission_policies(
@@ -55,7 +62,8 @@ class CollectorPolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[EmissionPoliciesPropertiesFormatArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingestionPolicy")
     def ingestion_policy(
@@ -64,12 +72,14 @@ class CollectorPolicyArgs:
     @ingestion_policy.setter
     def ingestion_policy(
         self, value: Optional[pulumi.Input[IngestionPolicyPropertiesFormatArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -78,7 +88,8 @@ class CollectorPolicyArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:networkfunction:CollectorPolicy")
 class CollectorPolicy(pulumi.CustomResource):

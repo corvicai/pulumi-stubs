@@ -53,17 +53,22 @@ class WindowsFileSystemArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacity")
     def throughput_capacity(self) -> pulumi.Input[_builtins.int]: ...
     @throughput_capacity.setter
-    def throughput_capacity(self, value: pulumi.Input[_builtins.int]): ...
+    def throughput_capacity(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activeDirectoryId")
     def active_directory_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @active_directory_id.setter
-    def active_directory_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def active_directory_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def aliases(
@@ -72,7 +77,8 @@ class WindowsFileSystemArgs:
     @aliases.setter
     def aliases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="auditLogConfiguration")
     def audit_log_configuration(
@@ -81,7 +87,8 @@ class WindowsFileSystemArgs:
     @audit_log_configuration.setter
     def audit_log_configuration(
         self, value: Optional[pulumi.Input[WindowsFileSystemAuditLogConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticBackupRetentionDays")
     def automatic_backup_retention_days(
@@ -90,17 +97,22 @@ class WindowsFileSystemArgs:
     @automatic_backup_retention_days.setter
     def automatic_backup_retention_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupId")
     def backup_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_id.setter
-    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToBackups")
     def copy_tags_to_backups(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @copy_tags_to_backups.setter
-    def copy_tags_to_backups(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def copy_tags_to_backups(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailyAutomaticBackupStartTime")
     def daily_automatic_backup_start_time(
@@ -109,12 +121,14 @@ class WindowsFileSystemArgs:
     @daily_automatic_backup_start_time.setter
     def daily_automatic_backup_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_type.setter
-    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskIopsConfiguration")
     def disk_iops_configuration(
@@ -123,7 +137,8 @@ class WindowsFileSystemArgs:
     @disk_iops_configuration.setter
     def disk_iops_configuration(
         self, value: Optional[pulumi.Input[WindowsFileSystemDiskIopsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finalBackupTags")
     def final_backup_tags(
@@ -132,22 +147,28 @@ class WindowsFileSystemArgs:
     @final_backup_tags.setter
     def final_backup_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredSubnetId")
     def preferred_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preferred_subnet_id.setter
-    def preferred_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preferred_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -156,7 +177,8 @@ class WindowsFileSystemArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfManagedActiveDirectory")
     def self_managed_active_directory(
@@ -166,22 +188,30 @@ class WindowsFileSystemArgs:
     def self_managed_active_directory(
         self,
         value: Optional[pulumi.Input[WindowsFileSystemSelfManagedActiveDirectoryArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipFinalBackup")
     def skip_final_backup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @skip_final_backup.setter
-    def skip_final_backup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def skip_final_backup(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def storage_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -190,7 +220,8 @@ class WindowsFileSystemArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklyMaintenanceStartTime")
     def weekly_maintenance_start_time(
@@ -199,7 +230,8 @@ class WindowsFileSystemArgs:
     @weekly_maintenance_start_time.setter
     def weekly_maintenance_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _WindowsFileSystemState:
@@ -255,7 +287,10 @@ class _WindowsFileSystemState:
     @pulumi.getter(name="activeDirectoryId")
     def active_directory_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @active_directory_id.setter
-    def active_directory_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def active_directory_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def aliases(
@@ -264,12 +299,14 @@ class _WindowsFileSystemState:
     @aliases.setter
     def aliases(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="auditLogConfiguration")
     def audit_log_configuration(
@@ -278,7 +315,8 @@ class _WindowsFileSystemState:
     @audit_log_configuration.setter
     def audit_log_configuration(
         self, value: Optional[pulumi.Input[WindowsFileSystemAuditLogConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticBackupRetentionDays")
     def automatic_backup_retention_days(
@@ -287,17 +325,22 @@ class _WindowsFileSystemState:
     @automatic_backup_retention_days.setter
     def automatic_backup_retention_days(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupId")
     def backup_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_id.setter
-    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="copyTagsToBackups")
     def copy_tags_to_backups(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @copy_tags_to_backups.setter
-    def copy_tags_to_backups(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def copy_tags_to_backups(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dailyAutomaticBackupStartTime")
     def daily_automatic_backup_start_time(
@@ -306,12 +349,14 @@ class _WindowsFileSystemState:
     @daily_automatic_backup_start_time.setter
     def daily_automatic_backup_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentType")
     def deployment_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_type.setter
-    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskIopsConfiguration")
     def disk_iops_configuration(
@@ -320,12 +365,14 @@ class _WindowsFileSystemState:
     @disk_iops_configuration.setter
     def disk_iops_configuration(
         self, value: Optional[pulumi.Input[WindowsFileSystemDiskIopsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dnsName")
     def dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dns_name.setter
-    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dns_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="finalBackupTags")
     def final_backup_tags(
@@ -334,12 +381,14 @@ class _WindowsFileSystemState:
     @final_backup_tags.setter
     def final_backup_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceIds")
     def network_interface_ids(
@@ -348,29 +397,36 @@ class _WindowsFileSystemState:
     @network_interface_ids.setter
     def network_interface_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
     def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredFileServerIp")
     def preferred_file_server_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preferred_file_server_ip.setter
     def preferred_file_server_ip(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="preferredSubnetId")
     def preferred_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @preferred_subnet_id.setter
-    def preferred_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def preferred_subnet_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteAdministrationEndpoint")
     def remote_administration_endpoint(
@@ -379,7 +435,8 @@ class _WindowsFileSystemState:
     @remote_administration_endpoint.setter
     def remote_administration_endpoint(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -388,7 +445,8 @@ class _WindowsFileSystemState:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfManagedActiveDirectory")
     def self_managed_active_directory(
@@ -398,22 +456,30 @@ class _WindowsFileSystemState:
     def self_managed_active_directory(
         self,
         value: Optional[pulumi.Input[WindowsFileSystemSelfManagedActiveDirectoryArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="skipFinalBackup")
     def skip_final_backup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @skip_final_backup.setter
-    def skip_final_backup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def skip_final_backup(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageCapacity")
     def storage_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @storage_capacity.setter
-    def storage_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def storage_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageType")
     def storage_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_type.setter
-    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetIds")
     def subnet_ids(
@@ -422,7 +488,8 @@ class _WindowsFileSystemState:
     @subnet_ids.setter
     def subnet_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -431,7 +498,8 @@ class _WindowsFileSystemState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -440,17 +508,22 @@ class _WindowsFileSystemState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="throughputCapacity")
     def throughput_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @throughput_capacity.setter
-    def throughput_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def throughput_capacity(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeklyMaintenanceStartTime")
     def weekly_maintenance_start_time(
@@ -459,7 +532,8 @@ class _WindowsFileSystemState:
     @weekly_maintenance_start_time.setter
     def weekly_maintenance_start_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:fsx/windowsFileSystem:WindowsFileSystem")
 class WindowsFileSystem(pulumi.CustomResource):

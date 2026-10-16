@@ -21,7 +21,10 @@ class GetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult:
 class AwaitableGetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult(
     GetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult]:
+        ...
 
 def get_sap_virtual_instance_invoke_availability_zone_details(
     app_location: Optional[_builtins.str] = ...,

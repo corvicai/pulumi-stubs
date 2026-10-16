@@ -34,7 +34,8 @@ class GetKafkaVersionResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetKafkaVersionResult(GetKafkaVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKafkaVersionResult]:
+        ...
 
 def get_kafka_version(
     preferred_versions: Optional[Sequence[_builtins.str]] = ...,

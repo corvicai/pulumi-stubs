@@ -27,7 +27,10 @@ class ListIntegrationAccountKeyVaultKeysResult:
 class AwaitableListIntegrationAccountKeyVaultKeysResult(
     ListIntegrationAccountKeyVaultKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIntegrationAccountKeyVaultKeysResult]:
+        ...
 
 def list_integration_account_key_vault_keys(
     integration_account_name: Optional[_builtins.str] = ...,

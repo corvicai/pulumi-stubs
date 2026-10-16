@@ -52,12 +52,14 @@ class AgentcoreAgentRuntimeArgs:
     @agent_runtime_artifact.setter
     def agent_runtime_artifact(
         self, value: pulumi.Input[AgentcoreAgentRuntimeAgentRuntimeArtifactArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentRuntimeName")
     def agent_runtime_name(self) -> pulumi.Input[_builtins.str]: ...
     @agent_runtime_name.setter
-    def agent_runtime_name(self, value: pulumi.Input[_builtins.str]): ...
+    def agent_runtime_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -66,12 +68,14 @@ class AgentcoreAgentRuntimeArgs:
     @network_configuration.setter
     def network_configuration(
         self, value: pulumi.Input[AgentcoreAgentRuntimeNetworkConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizerConfiguration")
     def authorizer_configuration(
@@ -81,12 +85,14 @@ class AgentcoreAgentRuntimeArgs:
     def authorizer_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreAgentRuntimeAuthorizerConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentVariables")
     def environment_variables(
@@ -95,7 +101,8 @@ class AgentcoreAgentRuntimeArgs:
     @environment_variables.setter
     def environment_variables(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lifecycleConfigurations")
     def lifecycle_configurations(
@@ -113,7 +120,8 @@ class AgentcoreAgentRuntimeArgs:
                 Sequence[pulumi.Input[AgentcoreAgentRuntimeLifecycleConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protocolConfiguration")
     def protocol_configuration(
@@ -123,12 +131,14 @@ class AgentcoreAgentRuntimeArgs:
     def protocol_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreAgentRuntimeProtocolConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestHeaderConfiguration")
     def request_header_configuration(
@@ -142,7 +152,8 @@ class AgentcoreAgentRuntimeArgs:
         value: Optional[
             pulumi.Input[AgentcoreAgentRuntimeRequestHeaderConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -151,14 +162,16 @@ class AgentcoreAgentRuntimeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[AgentcoreAgentRuntimeTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[AgentcoreAgentRuntimeTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AgentcoreAgentRuntimeState:
@@ -210,7 +223,10 @@ class _AgentcoreAgentRuntimeState:
     @pulumi.getter(name="agentRuntimeArn")
     def agent_runtime_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_runtime_arn.setter
-    def agent_runtime_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_runtime_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentRuntimeArtifact")
     def agent_runtime_artifact(
@@ -220,22 +236,32 @@ class _AgentcoreAgentRuntimeState:
     def agent_runtime_artifact(
         self,
         value: Optional[pulumi.Input[AgentcoreAgentRuntimeAgentRuntimeArtifactArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentRuntimeId")
     def agent_runtime_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_runtime_id.setter
-    def agent_runtime_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_runtime_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentRuntimeName")
     def agent_runtime_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_runtime_name.setter
-    def agent_runtime_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_runtime_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="agentRuntimeVersion")
     def agent_runtime_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @agent_runtime_version.setter
-    def agent_runtime_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def agent_runtime_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="authorizerConfiguration")
     def authorizer_configuration(
@@ -245,12 +271,14 @@ class _AgentcoreAgentRuntimeState:
     def authorizer_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreAgentRuntimeAuthorizerConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentVariables")
     def environment_variables(
@@ -259,7 +287,8 @@ class _AgentcoreAgentRuntimeState:
     @environment_variables.setter
     def environment_variables(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lifecycleConfigurations")
     def lifecycle_configurations(
@@ -277,7 +306,8 @@ class _AgentcoreAgentRuntimeState:
                 Sequence[pulumi.Input[AgentcoreAgentRuntimeLifecycleConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -287,7 +317,8 @@ class _AgentcoreAgentRuntimeState:
     def network_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreAgentRuntimeNetworkConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="protocolConfiguration")
     def protocol_configuration(
@@ -297,12 +328,14 @@ class _AgentcoreAgentRuntimeState:
     def protocol_configuration(
         self,
         value: Optional[pulumi.Input[AgentcoreAgentRuntimeProtocolConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestHeaderConfiguration")
     def request_header_configuration(
@@ -316,12 +349,14 @@ class _AgentcoreAgentRuntimeState:
         value: Optional[
             pulumi.Input[AgentcoreAgentRuntimeRequestHeaderConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -330,7 +365,8 @@ class _AgentcoreAgentRuntimeState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -339,14 +375,16 @@ class _AgentcoreAgentRuntimeState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[AgentcoreAgentRuntimeTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[AgentcoreAgentRuntimeTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workloadIdentityDetails")
     def workload_identity_details(
@@ -364,7 +402,8 @@ class _AgentcoreAgentRuntimeState:
                 Sequence[pulumi.Input[AgentcoreAgentRuntimeWorkloadIdentityDetailArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AgentcoreAgentRuntime(pulumi.CustomResource):

@@ -92,7 +92,8 @@ class GetOpenShiftClusterResult:
     def worker_profiles_status(self) -> Sequence[outputs.WorkerProfileResponse]: ...
 
 class AwaitableGetOpenShiftClusterResult(GetOpenShiftClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOpenShiftClusterResult]:
+        ...
 
 def get_open_shift_cluster(
     resource_group_name: Optional[_builtins.str] = ...,

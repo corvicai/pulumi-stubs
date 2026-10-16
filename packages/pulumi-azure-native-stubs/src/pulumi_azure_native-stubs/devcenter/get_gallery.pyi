@@ -48,7 +48,8 @@ class GetGalleryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGalleryResult(GetGalleryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGalleryResult]:
+        ...
 
 def get_gallery(
     dev_center_name: Optional[_builtins.str] = ...,

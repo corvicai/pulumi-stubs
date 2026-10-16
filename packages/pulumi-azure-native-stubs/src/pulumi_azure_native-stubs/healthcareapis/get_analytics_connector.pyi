@@ -78,7 +78,8 @@ class GetAnalyticsConnectorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAnalyticsConnectorResult(GetAnalyticsConnectorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAnalyticsConnectorResult]:
+        ...
 
 def get_analytics_connector(
     analytics_connector_name: Optional[_builtins.str] = ...,

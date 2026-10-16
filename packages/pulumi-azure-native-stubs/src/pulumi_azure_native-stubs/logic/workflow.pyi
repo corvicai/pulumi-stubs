@@ -40,7 +40,8 @@ class WorkflowArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessControl")
     def access_control(
@@ -49,12 +50,14 @@ class WorkflowArgs:
     @access_control.setter
     def access_control(
         self, value: Optional[pulumi.Input[FlowAccessControlConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def definition(self) -> Optional[Any]: ...
     @definition.setter
-    def definition(self, value: Optional[Any]): ...
+    def definition(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointsConfiguration")
     def endpoints_configuration(
@@ -63,19 +66,24 @@ class WorkflowArgs:
     @endpoints_configuration.setter
     def endpoints_configuration(
         self, value: Optional[pulumi.Input[FlowEndpointsConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integrationAccount")
     def integration_account(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]: ...
     @integration_account.setter
     def integration_account(
         self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integrationServiceEnvironment")
     def integration_service_environment(
@@ -84,12 +92,14 @@ class WorkflowArgs:
     @integration_service_environment.setter
     def integration_service_environment(
         self, value: Optional[pulumi.Input[ResourceReferenceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -101,14 +111,16 @@ class WorkflowArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[WorkflowParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[Union[_builtins.str, WorkflowState]]]: ...
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, WorkflowState]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -117,12 +129,14 @@ class WorkflowArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workflowName")
     def workflow_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workflow_name.setter
-    def workflow_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workflow_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:logic:Workflow")
 class Workflow(pulumi.CustomResource):

@@ -94,7 +94,8 @@ class GetScheduleResult:
     def weekly_recurrence(self) -> Optional[outputs.WeekDetailsResponse]: ...
 
 class AwaitableGetScheduleResult(GetScheduleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScheduleResult]:
+        ...
 
 def get_schedule(
     expand: Optional[_builtins.str] = ...,

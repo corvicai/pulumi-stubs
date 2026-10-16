@@ -44,7 +44,10 @@ class GetInferenceGroupDeltaModelsStatusAsyncResult:
 class AwaitableGetInferenceGroupDeltaModelsStatusAsyncResult(
     GetInferenceGroupDeltaModelsStatusAsyncResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetInferenceGroupDeltaModelsStatusAsyncResult]:
+        ...
 
 def get_inference_group_delta_models_status_async(
     delta_models: Optional[Sequence[_builtins.str]] = ...,

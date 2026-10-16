@@ -197,7 +197,8 @@ class GetDiskResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetDiskResult(GetDiskResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDiskResult]:
+        ...
 
 def get_disk(
     disk_name: Optional[_builtins.str] = ...,

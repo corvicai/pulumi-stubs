@@ -98,7 +98,8 @@ class GetServerlessCacheResult:
     def user_group_id(self) -> _builtins.str: ...
 
 class AwaitableGetServerlessCacheResult(GetServerlessCacheResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerlessCacheResult]:
+        ...
 
 def get_serverless_cache(
     name: Optional[_builtins.str] = ...,

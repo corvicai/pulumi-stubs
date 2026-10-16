@@ -66,7 +66,8 @@ class GetStackResult:
     def timeout_in_minutes(self) -> _builtins.int: ...
 
 class AwaitableGetStackResult(GetStackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStackResult]:
+        ...
 
 def get_stack(
     name: Optional[_builtins.str] = ...,

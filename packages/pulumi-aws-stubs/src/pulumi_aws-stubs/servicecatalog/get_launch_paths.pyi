@@ -35,7 +35,8 @@ class GetLaunchPathsResult:
     def summaries(self) -> Sequence[outputs.GetLaunchPathsSummaryResult]: ...
 
 class AwaitableGetLaunchPathsResult(GetLaunchPathsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLaunchPathsResult]:
+        ...
 
 def get_launch_paths(
     accept_language: Optional[_builtins.str] = ...,

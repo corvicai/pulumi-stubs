@@ -39,7 +39,8 @@ class GetKMSSecretAsymmetricResult:
     def plaintext(self) -> _builtins.str: ...
 
 class AwaitableGetKMSSecretAsymmetricResult(GetKMSSecretAsymmetricResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKMSSecretAsymmetricResult]:
+        ...
 
 def get_kms_secret_asymmetric(
     ciphertext: Optional[_builtins.str] = ...,

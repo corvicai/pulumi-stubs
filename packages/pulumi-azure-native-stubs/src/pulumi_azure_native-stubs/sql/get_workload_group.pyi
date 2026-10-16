@@ -59,7 +59,8 @@ class GetWorkloadGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkloadGroupResult(GetWorkloadGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkloadGroupResult]:
+        ...
 
 def get_workload_group(
     database_name: Optional[_builtins.str] = ...,

@@ -51,7 +51,8 @@ class GetVirtualRouterPeeringResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualRouterPeeringResult(GetVirtualRouterPeeringResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualRouterPeeringResult]:
+        ...
 
 def get_virtual_router_peering(
     peering_name: Optional[_builtins.str] = ...,

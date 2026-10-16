@@ -102,7 +102,8 @@ class GetElasticPoolResult:
     def zone_redundant(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetElasticPoolResult(GetElasticPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetElasticPoolResult]:
+        ...
 
 def get_elastic_pool(
     elastic_pool_name: Optional[_builtins.str] = ...,

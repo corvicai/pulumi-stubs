@@ -188,7 +188,8 @@ class GetFunctionResult:
     def vpc_config(self) -> outputs.GetFunctionVpcConfigResult: ...
 
 class AwaitableGetFunctionResult(GetFunctionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFunctionResult]:
+        ...
 
 def get_function(
     function_name: Optional[_builtins.str] = ...,

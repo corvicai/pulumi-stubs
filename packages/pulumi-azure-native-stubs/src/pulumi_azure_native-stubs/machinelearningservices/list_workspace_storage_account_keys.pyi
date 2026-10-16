@@ -22,7 +22,10 @@ class ListWorkspaceStorageAccountKeysResult:
 class AwaitableListWorkspaceStorageAccountKeysResult(
     ListWorkspaceStorageAccountKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWorkspaceStorageAccountKeysResult]:
+        ...
 
 def list_workspace_storage_account_keys(
     resource_group_name: Optional[_builtins.str] = ...,

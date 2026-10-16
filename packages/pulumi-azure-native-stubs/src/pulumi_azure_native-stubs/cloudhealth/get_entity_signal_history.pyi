@@ -27,7 +27,8 @@ class GetEntitySignalHistoryResult:
     def signal_name(self) -> _builtins.str: ...
 
 class AwaitableGetEntitySignalHistoryResult(GetEntitySignalHistoryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEntitySignalHistoryResult]:
+        ...
 
 def get_entity_signal_history(
     end_at: Optional[_builtins.str] = ...,

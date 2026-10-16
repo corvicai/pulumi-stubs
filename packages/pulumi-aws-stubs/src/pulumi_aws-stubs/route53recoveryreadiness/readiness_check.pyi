@@ -20,12 +20,14 @@ class ReadinessCheckArgs:
     @pulumi.getter(name="readinessCheckName")
     def readiness_check_name(self) -> pulumi.Input[_builtins.str]: ...
     @readiness_check_name.setter
-    def readiness_check_name(self, value: pulumi.Input[_builtins.str]): ...
+    def readiness_check_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetName")
     def resource_set_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_set_name.setter
-    def resource_set_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_set_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -34,7 +36,8 @@ class ReadinessCheckArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ReadinessCheckState:
@@ -53,17 +56,24 @@ class _ReadinessCheckState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="readinessCheckName")
     def readiness_check_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @readiness_check_name.setter
-    def readiness_check_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def readiness_check_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetName")
     def resource_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_set_name.setter
-    def resource_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_set_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -72,7 +82,8 @@ class _ReadinessCheckState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -81,7 +92,8 @@ class _ReadinessCheckState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ReadinessCheck(pulumi.CustomResource):

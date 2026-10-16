@@ -58,7 +58,8 @@ class GetManagementGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagementGroupResult(GetManagementGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagementGroupResult]:
+        ...
 
 def get_management_group(
     expand: Optional[_builtins.str] = ...,

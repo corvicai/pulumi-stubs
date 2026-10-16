@@ -37,12 +37,14 @@ class DeploymentStackAtSubscriptionArgs:
     @pulumi.getter(name="actionOnUnmanage")
     def action_on_unmanage(self) -> pulumi.Input[ActionOnUnmanageArgs]: ...
     @action_on_unmanage.setter
-    def action_on_unmanage(self, value: pulumi.Input[ActionOnUnmanageArgs]): ...
+    def action_on_unmanage(self, value: pulumi.Input[ActionOnUnmanageArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="denySettings")
     def deny_settings(self) -> pulumi.Input[DenySettingsArgs]: ...
     @deny_settings.setter
-    def deny_settings(self, value: pulumi.Input[DenySettingsArgs]): ...
+    def deny_settings(self, value: pulumi.Input[DenySettingsArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bypassStackOutOfSyncError")
     def bypass_stack_out_of_sync_error(
@@ -51,7 +53,8 @@ class DeploymentStackAtSubscriptionArgs:
     @bypass_stack_out_of_sync_error.setter
     def bypass_stack_out_of_sync_error(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="debugSetting")
     def debug_setting(
@@ -60,27 +63,36 @@ class DeploymentStackAtSubscriptionArgs:
     @debug_setting.setter
     def debug_setting(
         self, value: Optional[pulumi.Input[DeploymentStacksDebugSettingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentScope")
     def deployment_scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_scope.setter
-    def deployment_scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_scope(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentStackName")
     def deployment_stack_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_stack_name.setter
-    def deployment_stack_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_stack_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -94,7 +106,8 @@ class DeploymentStackAtSubscriptionArgs:
         value: Optional[
             pulumi.Input[Mapping[str, pulumi.Input[DeploymentParameterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parametersLink")
     def parameters_link(
@@ -103,7 +116,8 @@ class DeploymentStackAtSubscriptionArgs:
     @parameters_link.setter
     def parameters_link(
         self, value: Optional[pulumi.Input[DeploymentStacksParametersLinkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -112,12 +126,14 @@ class DeploymentStackAtSubscriptionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def template(self) -> Optional[Any]: ...
     @template.setter
-    def template(self, value: Optional[Any]): ...
+    def template(self, value: Optional[Any]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="templateLink")
     def template_link(
@@ -126,7 +142,8 @@ class DeploymentStackAtSubscriptionArgs:
     @template_link.setter
     def template_link(
         self, value: Optional[pulumi.Input[DeploymentStacksTemplateLinkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class DeploymentStackAtSubscription(pulumi.CustomResource):

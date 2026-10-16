@@ -54,7 +54,8 @@ class GetSqlResourceSqlContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSqlResourceSqlContainerResult(GetSqlResourceSqlContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSqlResourceSqlContainerResult]:
+        ...
 
 def get_sql_resource_sql_container(
     account_name: Optional[_builtins.str] = ...,

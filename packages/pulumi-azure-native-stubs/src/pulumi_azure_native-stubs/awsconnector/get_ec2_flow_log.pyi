@@ -52,7 +52,8 @@ class GetEc2FlowLogResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEc2FlowLogResult(GetEc2FlowLogResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEc2FlowLogResult]:
+        ...
 
 def get_ec2_flow_log(
     name: Optional[_builtins.str] = ...,

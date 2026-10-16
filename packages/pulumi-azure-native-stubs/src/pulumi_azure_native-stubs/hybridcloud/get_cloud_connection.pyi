@@ -72,7 +72,8 @@ class GetCloudConnectionResult:
     def virtual_hub(self) -> Optional[outputs.ResourceReferenceResponse]: ...
 
 class AwaitableGetCloudConnectionResult(GetCloudConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudConnectionResult]:
+        ...
 
 def get_cloud_connection(
     cloud_connection_name: Optional[_builtins.str] = ...,

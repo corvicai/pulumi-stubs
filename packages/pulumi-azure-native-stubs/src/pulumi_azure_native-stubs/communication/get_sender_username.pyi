@@ -56,7 +56,8 @@ class GetSenderUsernameResult:
     def username(self) -> _builtins.str: ...
 
 class AwaitableGetSenderUsernameResult(GetSenderUsernameResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSenderUsernameResult]:
+        ...
 
 def get_sender_username(
     domain_name: Optional[_builtins.str] = ...,

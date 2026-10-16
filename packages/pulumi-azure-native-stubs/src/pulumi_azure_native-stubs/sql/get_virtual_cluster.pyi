@@ -55,7 +55,8 @@ class GetVirtualClusterResult:
     def version(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetVirtualClusterResult(GetVirtualClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualClusterResult]:
+        ...
 
 def get_virtual_cluster(
     resource_group_name: Optional[_builtins.str] = ...,

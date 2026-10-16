@@ -55,7 +55,8 @@ class GetWorkspaceApiSchemaResult:
     def value(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWorkspaceApiSchemaResult(GetWorkspaceApiSchemaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceApiSchemaResult]:
+        ...
 
 def get_workspace_api_schema(
     api_id: Optional[_builtins.str] = ...,

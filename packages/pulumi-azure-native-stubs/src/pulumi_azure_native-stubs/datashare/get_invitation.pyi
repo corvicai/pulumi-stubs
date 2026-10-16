@@ -80,7 +80,8 @@ class GetInvitationResult:
     def user_name(self) -> _builtins.str: ...
 
 class AwaitableGetInvitationResult(GetInvitationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetInvitationResult]:
+        ...
 
 def get_invitation(
     account_name: Optional[_builtins.str] = ...,

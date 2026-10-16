@@ -49,7 +49,8 @@ class GetRecoveryPointAccessTokenResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRecoveryPointAccessTokenResult(GetRecoveryPointAccessTokenResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRecoveryPointAccessTokenResult]:
+        ...
 
 def get_recovery_point_access_token(
     container_name: Optional[_builtins.str] = ...,

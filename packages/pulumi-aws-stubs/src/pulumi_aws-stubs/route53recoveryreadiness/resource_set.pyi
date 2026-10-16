@@ -23,12 +23,14 @@ class ResourceSetArgs:
     @pulumi.getter(name="resourceSetName")
     def resource_set_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_set_name.setter
-    def resource_set_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_set_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetType")
     def resource_set_type(self) -> pulumi.Input[_builtins.str]: ...
     @resource_set_type.setter
-    def resource_set_type(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_set_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -37,7 +39,8 @@ class ResourceSetArgs:
     @resources.setter
     def resources(
         self, value: pulumi.Input[Sequence[pulumi.Input[ResourceSetResourceArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -46,7 +49,8 @@ class ResourceSetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ResourceSetState:
@@ -68,17 +72,24 @@ class _ResourceSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetName")
     def resource_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_set_name.setter
-    def resource_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_set_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetType")
     def resource_set_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_set_type.setter
-    def resource_set_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_set_type(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -88,7 +99,8 @@ class _ResourceSetState:
     def resources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceSetResourceArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -97,7 +109,8 @@ class _ResourceSetState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -106,7 +119,8 @@ class _ResourceSetState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class ResourceSet(pulumi.CustomResource):

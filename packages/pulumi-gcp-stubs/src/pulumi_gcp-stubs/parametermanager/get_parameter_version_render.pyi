@@ -51,7 +51,8 @@ class GetParameterVersionRenderResult:
     def rendered_parameter_data(self) -> _builtins.str: ...
 
 class AwaitableGetParameterVersionRenderResult(GetParameterVersionRenderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetParameterVersionRenderResult]:
+        ...
 
 def get_parameter_version_render(
     parameter: Optional[_builtins.str] = ...,

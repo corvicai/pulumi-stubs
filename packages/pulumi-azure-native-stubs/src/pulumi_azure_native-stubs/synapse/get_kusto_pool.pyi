@@ -96,7 +96,8 @@ class GetKustoPoolResult:
     def workspace_uid(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetKustoPoolResult(GetKustoPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetKustoPoolResult]:
+        ...
 
 def get_kusto_pool(
     kusto_pool_name: Optional[_builtins.str] = ...,

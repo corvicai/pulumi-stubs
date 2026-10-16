@@ -27,7 +27,8 @@ class ListAccessEnvironmentsResult:
     def metadata(self) -> Optional[outputs.ConfluentListMetadataResponse]: ...
 
 class AwaitableListAccessEnvironmentsResult(ListAccessEnvironmentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAccessEnvironmentsResult]:
+        ...
 
 def list_access_environments(
     organization_name: Optional[_builtins.str] = ...,

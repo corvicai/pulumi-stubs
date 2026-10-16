@@ -106,7 +106,8 @@ class GetWorkflowResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWorkflowResult(GetWorkflowResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkflowResult]:
+        ...
 
 def get_workflow(
     resource_group_name: Optional[_builtins.str] = ...,

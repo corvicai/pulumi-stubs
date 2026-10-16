@@ -25,7 +25,10 @@ class GetTriggerEventSubscriptionStatusResult:
 class AwaitableGetTriggerEventSubscriptionStatusResult(
     GetTriggerEventSubscriptionStatusResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetTriggerEventSubscriptionStatusResult]:
+        ...
 
 def get_trigger_event_subscription_status(
     factory_name: Optional[_builtins.str] = ...,

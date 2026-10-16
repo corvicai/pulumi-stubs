@@ -78,7 +78,10 @@ class GetCloudExadataInfrastructureResult:
     def pulumi_labels(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetCloudExadataInfrastructureResult(GetCloudExadataInfrastructureResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetCloudExadataInfrastructureResult]:
+        ...
 
 def get_cloud_exadata_infrastructure(
     cloud_exadata_infrastructure_id: Optional[_builtins.str] = ...,

@@ -33,21 +33,24 @@ class DiskEncryptionSetArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activeKey")
     def active_key(self) -> Optional[pulumi.Input[KeyForDiskEncryptionSetArgs]]: ...
     @active_key.setter
     def active_key(
         self, value: Optional[pulumi.Input[KeyForDiskEncryptionSetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetName")
     def disk_encryption_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @disk_encryption_set_name.setter
     def disk_encryption_set_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionType")
     def encryption_type(
@@ -56,22 +59,30 @@ class DiskEncryptionSetArgs:
     @encryption_type.setter
     def encryption_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiskEncryptionSetType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="federatedClientId")
     def federated_client_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @federated_client_id.setter
-    def federated_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def federated_client_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[EncryptionSetIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[EncryptionSetIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[EncryptionSetIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rotationToLatestKeyVersionEnabled")
     def rotation_to_latest_key_version_enabled(
@@ -80,7 +91,8 @@ class DiskEncryptionSetArgs:
     @rotation_to_latest_key_version_enabled.setter
     def rotation_to_latest_key_version_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -89,7 +101,8 @@ class DiskEncryptionSetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:compute:DiskEncryptionSet")
 class DiskEncryptionSet(pulumi.CustomResource):

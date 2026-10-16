@@ -88,7 +88,8 @@ class GetStorageClassResult:
     def volume_binding_mode(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetStorageClassResult(GetStorageClassResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageClassResult]:
+        ...
 
 def get_storage_class(
     resource_uri: Optional[_builtins.str] = ...,

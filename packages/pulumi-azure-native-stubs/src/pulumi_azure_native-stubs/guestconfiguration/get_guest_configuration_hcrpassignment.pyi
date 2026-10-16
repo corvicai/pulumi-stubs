@@ -50,7 +50,10 @@ class GetGuestConfigurationHCRPAssignmentResult:
 class AwaitableGetGuestConfigurationHCRPAssignmentResult(
     GetGuestConfigurationHCRPAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetGuestConfigurationHCRPAssignmentResult]:
+        ...
 
 def get_guest_configuration_hcrpassignment(
     guest_configuration_assignment_name: Optional[_builtins.str] = ...,

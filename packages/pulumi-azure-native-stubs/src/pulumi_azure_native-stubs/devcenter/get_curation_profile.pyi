@@ -54,7 +54,8 @@ class GetCurationProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCurationProfileResult(GetCurationProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCurationProfileResult]:
+        ...
 
 def get_curation_profile(
     curation_profile_name: Optional[_builtins.str] = ...,

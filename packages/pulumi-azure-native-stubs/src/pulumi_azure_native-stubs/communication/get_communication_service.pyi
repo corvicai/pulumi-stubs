@@ -80,7 +80,8 @@ class GetCommunicationServiceResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetCommunicationServiceResult(GetCommunicationServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCommunicationServiceResult]:
+        ...
 
 def get_communication_service(
     communication_service_name: Optional[_builtins.str] = ...,

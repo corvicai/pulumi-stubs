@@ -34,7 +34,8 @@ class GetRecordsResult:
     def zone_id(self) -> _builtins.str: ...
 
 class AwaitableGetRecordsResult(GetRecordsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRecordsResult]:
+        ...
 
 def get_records(
     name_regex: Optional[_builtins.str] = ...,

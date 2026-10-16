@@ -69,7 +69,10 @@ class GetLocalGatewayVirtualInterfaceResult:
 class AwaitableGetLocalGatewayVirtualInterfaceResult(
     GetLocalGatewayVirtualInterfaceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetLocalGatewayVirtualInterfaceResult]:
+        ...
 
 def get_local_gateway_virtual_interface(
     filters: Optional[

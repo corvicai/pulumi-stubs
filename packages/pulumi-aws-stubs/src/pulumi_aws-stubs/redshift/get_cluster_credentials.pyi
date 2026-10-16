@@ -59,7 +59,8 @@ class GetClusterCredentialsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetClusterCredentialsResult(GetClusterCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterCredentialsResult]:
+        ...
 
 def get_cluster_credentials(
     auto_create: Optional[_builtins.bool] = ...,

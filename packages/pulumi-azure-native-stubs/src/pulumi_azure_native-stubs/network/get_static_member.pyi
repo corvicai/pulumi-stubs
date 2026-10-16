@@ -56,7 +56,8 @@ class GetStaticMemberResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStaticMemberResult(GetStaticMemberResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStaticMemberResult]:
+        ...
 
 def get_static_member(
     network_group_name: Optional[_builtins.str] = ...,

@@ -72,7 +72,8 @@ class GetOrganizationResult:
     def user_detail(self) -> outputs.UserDetailResponse: ...
 
 class AwaitableGetOrganizationResult(GetOrganizationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationResult]:
+        ...
 
 def get_organization(
     organization_name: Optional[_builtins.str] = ...,

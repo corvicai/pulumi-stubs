@@ -51,7 +51,8 @@ class GetLinkedServiceResult:
     def write_access_resource_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetLinkedServiceResult(GetLinkedServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLinkedServiceResult]:
+        ...
 
 def get_linked_service(
     linked_service_name: Optional[_builtins.str] = ...,

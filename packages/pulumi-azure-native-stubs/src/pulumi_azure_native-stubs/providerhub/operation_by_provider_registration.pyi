@@ -17,7 +17,8 @@ class OperationByProviderRegistrationArgs:
     @pulumi.getter(name="providerNamespace")
     def provider_namespace(self) -> pulumi.Input[_builtins.str]: ...
     @provider_namespace.setter
-    def provider_namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class OperationByProviderRegistration(pulumi.CustomResource):

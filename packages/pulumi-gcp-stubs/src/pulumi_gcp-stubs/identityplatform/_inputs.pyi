@@ -101,7 +101,8 @@ class ConfigBlockingFunctionsArgs:
     def triggers(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[ConfigBlockingFunctionsTriggerArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forwardInboundCredentials")
     def forward_inbound_credentials(
@@ -115,7 +116,8 @@ class ConfigBlockingFunctionsArgs:
         value: Optional[
             pulumi.Input[ConfigBlockingFunctionsForwardInboundCredentialsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigBlockingFunctionsForwardInboundCredentialsArgsDict(TypedDict):
     access_token: NotRequired[pulumi.Input[_builtins.bool]]
@@ -135,17 +137,20 @@ class ConfigBlockingFunctionsForwardInboundCredentialsArgs:
     @pulumi.getter(name="accessToken")
     def access_token(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @access_token.setter
-    def access_token(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def access_token(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idToken")
     def id_token(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @id_token.setter
-    def id_token(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def id_token(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="refreshToken")
     def refresh_token(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @refresh_token.setter
-    def refresh_token(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def refresh_token(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ConfigBlockingFunctionsTriggerArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
@@ -165,17 +170,20 @@ class ConfigBlockingFunctionsTriggerArgs:
     @pulumi.getter(name="eventType")
     def event_type(self) -> pulumi.Input[_builtins.str]: ...
     @event_type.setter
-    def event_type(self, value: pulumi.Input[_builtins.str]): ...
+    def event_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="functionUri")
     def function_uri(self) -> pulumi.Input[_builtins.str]: ...
     @function_uri.setter
-    def function_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def function_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConfigClientArgsDict(TypedDict):
     api_key: NotRequired[pulumi.Input[_builtins.str]]
@@ -195,19 +203,24 @@ class ConfigClientArgs:
     @pulumi.getter(name="apiKey")
     def api_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_key.setter
-    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firebaseSubdomain")
     def firebase_subdomain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @firebase_subdomain.setter
-    def firebase_subdomain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def firebase_subdomain(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def permissions(self) -> Optional[pulumi.Input[ConfigClientPermissionsArgs]]: ...
     @permissions.setter
     def permissions(
         self, value: Optional[pulumi.Input[ConfigClientPermissionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigClientPermissionsArgsDict(TypedDict):
     disabled_user_deletion: NotRequired[pulumi.Input[_builtins.bool]]
@@ -225,12 +238,18 @@ class ConfigClientPermissionsArgs:
     @pulumi.getter(name="disabledUserDeletion")
     def disabled_user_deletion(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disabled_user_deletion.setter
-    def disabled_user_deletion(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disabled_user_deletion(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disabledUserSignup")
     def disabled_user_signup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disabled_user_signup.setter
-    def disabled_user_signup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disabled_user_signup(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ConfigMfaArgsDict(TypedDict):
     enabled_providers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -260,7 +279,8 @@ class ConfigMfaArgs:
     @enabled_providers.setter
     def enabled_providers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerConfigs")
     def provider_configs(
@@ -274,12 +294,14 @@ class ConfigMfaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ConfigMfaProviderConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConfigMfaProviderConfigArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
@@ -301,7 +323,8 @@ class ConfigMfaProviderConfigArgs:
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="totpProviderConfig")
     def totp_provider_config(
@@ -311,7 +334,8 @@ class ConfigMfaProviderConfigArgs:
     def totp_provider_config(
         self,
         value: Optional[pulumi.Input[ConfigMfaProviderConfigTotpProviderConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigMfaProviderConfigTotpProviderConfigArgsDict(TypedDict):
     adjacent_intervals: NotRequired[pulumi.Input[_builtins.int]]
@@ -325,7 +349,10 @@ class ConfigMfaProviderConfigTotpProviderConfigArgs:
     @pulumi.getter(name="adjacentIntervals")
     def adjacent_intervals(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @adjacent_intervals.setter
-    def adjacent_intervals(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def adjacent_intervals(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class ConfigMonitoringArgsDict(TypedDict):
     request_logging: NotRequired[pulumi.Input[ConfigMonitoringRequestLoggingArgsDict]]
@@ -347,7 +374,8 @@ class ConfigMonitoringArgs:
     @request_logging.setter
     def request_logging(
         self, value: Optional[pulumi.Input[ConfigMonitoringRequestLoggingArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigMonitoringRequestLoggingArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
@@ -361,7 +389,8 @@ class ConfigMonitoringRequestLoggingArgs:
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class ConfigMultiTenantArgsDict(TypedDict):
     allow_tenants: NotRequired[pulumi.Input[_builtins.bool]]
@@ -379,12 +408,16 @@ class ConfigMultiTenantArgs:
     @pulumi.getter(name="allowTenants")
     def allow_tenants(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_tenants.setter
-    def allow_tenants(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_tenants(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultTenantLocation")
     def default_tenant_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_tenant_location.setter
-    def default_tenant_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_tenant_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ConfigQuotaArgsDict(TypedDict):
     sign_up_quota_config: NotRequired[
@@ -408,7 +441,8 @@ class ConfigQuotaArgs:
     @sign_up_quota_config.setter
     def sign_up_quota_config(
         self, value: Optional[pulumi.Input[ConfigQuotaSignUpQuotaConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigQuotaSignUpQuotaConfigArgsDict(TypedDict):
     quota: NotRequired[pulumi.Input[_builtins.int]]
@@ -428,17 +462,20 @@ class ConfigQuotaSignUpQuotaConfigArgs:
     @pulumi.getter
     def quota(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @quota.setter
-    def quota(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def quota(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="quotaDuration")
     def quota_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @quota_duration.setter
-    def quota_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def quota_duration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTime")
     def start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_time.setter
-    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConfigSignInArgsDict(TypedDict):
     allow_duplicate_emails: NotRequired[pulumi.Input[_builtins.bool]]
@@ -466,17 +503,24 @@ class ConfigSignInArgs:
     @pulumi.getter(name="allowDuplicateEmails")
     def allow_duplicate_emails(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_duplicate_emails.setter
-    def allow_duplicate_emails(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_duplicate_emails(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def anonymous(self) -> Optional[pulumi.Input[ConfigSignInAnonymousArgs]]: ...
     @anonymous.setter
-    def anonymous(self, value: Optional[pulumi.Input[ConfigSignInAnonymousArgs]]): ...
+    def anonymous(
+        self, value: Optional[pulumi.Input[ConfigSignInAnonymousArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def email(self) -> Optional[pulumi.Input[ConfigSignInEmailArgs]]: ...
     @email.setter
-    def email(self, value: Optional[pulumi.Input[ConfigSignInEmailArgs]]): ...
+    def email(self, value: Optional[pulumi.Input[ConfigSignInEmailArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hashConfigs")
     def hash_configs(
@@ -488,14 +532,16 @@ class ConfigSignInArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ConfigSignInHashConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="phoneNumber")
     def phone_number(self) -> Optional[pulumi.Input[ConfigSignInPhoneNumberArgs]]: ...
     @phone_number.setter
     def phone_number(
         self, value: Optional[pulumi.Input[ConfigSignInPhoneNumberArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigSignInAnonymousArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -507,7 +553,8 @@ class ConfigSignInAnonymousArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class ConfigSignInEmailArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -525,12 +572,16 @@ class ConfigSignInEmailArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="passwordRequired")
     def password_required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @password_required.setter
-    def password_required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def password_required(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class ConfigSignInHashConfigArgsDict(TypedDict):
     algorithm: NotRequired[pulumi.Input[_builtins.str]]
@@ -554,27 +605,32 @@ class ConfigSignInHashConfigArgs:
     @pulumi.getter
     def algorithm(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @algorithm.setter
-    def algorithm(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def algorithm(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memoryCost")
     def memory_cost(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @memory_cost.setter
-    def memory_cost(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def memory_cost(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def rounds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @rounds.setter
-    def rounds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def rounds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="saltSeparator")
     def salt_separator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @salt_separator.setter
-    def salt_separator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def salt_separator(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signerKey")
     def signer_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @signer_key.setter
-    def signer_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def signer_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ConfigSignInPhoneNumberArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -596,7 +652,8 @@ class ConfigSignInPhoneNumberArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="testPhoneNumbers")
     def test_phone_numbers(
@@ -605,7 +662,8 @@ class ConfigSignInPhoneNumberArgs:
     @test_phone_numbers.setter
     def test_phone_numbers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigSmsRegionConfigArgsDict(TypedDict):
     allow_by_default: NotRequired[
@@ -635,7 +693,8 @@ class ConfigSmsRegionConfigArgs:
     @allow_by_default.setter
     def allow_by_default(
         self, value: Optional[pulumi.Input[ConfigSmsRegionConfigAllowByDefaultArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowlistOnly")
     def allowlist_only(
@@ -644,7 +703,8 @@ class ConfigSmsRegionConfigArgs:
     @allowlist_only.setter
     def allowlist_only(
         self, value: Optional[pulumi.Input[ConfigSmsRegionConfigAllowlistOnlyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigSmsRegionConfigAllowByDefaultArgsDict(TypedDict):
     disallowed_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -666,7 +726,8 @@ class ConfigSmsRegionConfigAllowByDefaultArgs:
     @disallowed_regions.setter
     def disallowed_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ConfigSmsRegionConfigAllowlistOnlyArgsDict(TypedDict):
     allowed_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -688,7 +749,8 @@ class ConfigSmsRegionConfigAllowlistOnlyArgs:
     @allowed_regions.setter
     def allowed_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InboundSamlConfigIdpConfigArgsDict(TypedDict):
     idp_certificates: pulumi.Input[
@@ -723,22 +785,26 @@ class InboundSamlConfigIdpConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[InboundSamlConfigIdpConfigIdpCertificateArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idpEntityId")
     def idp_entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @idp_entity_id.setter
-    def idp_entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def idp_entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ssoUrl")
     def sso_url(self) -> pulumi.Input[_builtins.str]: ...
     @sso_url.setter
-    def sso_url(self, value: pulumi.Input[_builtins.str]): ...
+    def sso_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signRequest")
     def sign_request(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @sign_request.setter
-    def sign_request(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def sign_request(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class InboundSamlConfigIdpConfigIdpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
@@ -752,7 +818,10 @@ class InboundSamlConfigIdpConfigIdpCertificateArgs:
     @pulumi.getter(name="x509Certificate")
     def x509_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @x509_certificate.setter
-    def x509_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def x509_certificate(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InboundSamlConfigSpConfigArgsDict(TypedDict):
     callback_uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -780,7 +849,8 @@ class InboundSamlConfigSpConfigArgs:
     @pulumi.getter(name="callbackUri")
     def callback_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @callback_uri.setter
-    def callback_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def callback_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spCertificates")
     def sp_certificates(
@@ -796,12 +866,14 @@ class InboundSamlConfigSpConfigArgs:
                 Sequence[pulumi.Input[InboundSamlConfigSpConfigSpCertificateArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spEntityId")
     def sp_entity_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sp_entity_id.setter
-    def sp_entity_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sp_entity_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InboundSamlConfigSpConfigSpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
@@ -815,7 +887,10 @@ class InboundSamlConfigSpConfigSpCertificateArgs:
     @pulumi.getter(name="x509Certificate")
     def x509_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @x509_certificate.setter
-    def x509_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def x509_certificate(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class OauthIdpConfigResponseTypeArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.bool]]
@@ -833,12 +908,14 @@ class OauthIdpConfigResponseTypeArgs:
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idToken")
     def id_token(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @id_token.setter
-    def id_token(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def id_token(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class TenantClientArgsDict(TypedDict):
     permissions: NotRequired[pulumi.Input[TenantClientPermissionsArgsDict]]
@@ -856,7 +933,8 @@ class TenantClientArgs:
     @permissions.setter
     def permissions(
         self, value: Optional[pulumi.Input[TenantClientPermissionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TenantClientPermissionsArgsDict(TypedDict):
     disabled_user_deletion: NotRequired[pulumi.Input[_builtins.bool]]
@@ -874,12 +952,18 @@ class TenantClientPermissionsArgs:
     @pulumi.getter(name="disabledUserDeletion")
     def disabled_user_deletion(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disabled_user_deletion.setter
-    def disabled_user_deletion(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disabled_user_deletion(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="disabledUserSignup")
     def disabled_user_signup(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disabled_user_signup.setter
-    def disabled_user_signup(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def disabled_user_signup(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class TenantInboundSamlConfigIdpConfigArgsDict(TypedDict):
     idp_certificates: pulumi.Input[
@@ -914,22 +998,26 @@ class TenantInboundSamlConfigIdpConfigArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[TenantInboundSamlConfigIdpConfigIdpCertificateArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="idpEntityId")
     def idp_entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @idp_entity_id.setter
-    def idp_entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def idp_entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ssoUrl")
     def sso_url(self) -> pulumi.Input[_builtins.str]: ...
     @sso_url.setter
-    def sso_url(self, value: pulumi.Input[_builtins.str]): ...
+    def sso_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="signRequest")
     def sign_request(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @sign_request.setter
-    def sign_request(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def sign_request(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class TenantInboundSamlConfigIdpConfigIdpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
@@ -943,7 +1031,10 @@ class TenantInboundSamlConfigIdpConfigIdpCertificateArgs:
     @pulumi.getter(name="x509Certificate")
     def x509_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @x509_certificate.setter
-    def x509_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def x509_certificate(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class TenantInboundSamlConfigSpConfigArgsDict(TypedDict):
     callback_uri: pulumi.Input[_builtins.str]
@@ -971,12 +1062,14 @@ class TenantInboundSamlConfigSpConfigArgs:
     @pulumi.getter(name="callbackUri")
     def callback_uri(self) -> pulumi.Input[_builtins.str]: ...
     @callback_uri.setter
-    def callback_uri(self, value: pulumi.Input[_builtins.str]): ...
+    def callback_uri(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spEntityId")
     def sp_entity_id(self) -> pulumi.Input[_builtins.str]: ...
     @sp_entity_id.setter
-    def sp_entity_id(self, value: pulumi.Input[_builtins.str]): ...
+    def sp_entity_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spCertificates")
     def sp_certificates(
@@ -994,7 +1087,8 @@ class TenantInboundSamlConfigSpConfigArgs:
                 Sequence[pulumi.Input[TenantInboundSamlConfigSpConfigSpCertificateArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TenantInboundSamlConfigSpConfigSpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
@@ -1008,4 +1102,7 @@ class TenantInboundSamlConfigSpConfigSpCertificateArgs:
     @pulumi.getter(name="x509Certificate")
     def x509_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @x509_certificate.setter
-    def x509_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def x509_certificate(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...

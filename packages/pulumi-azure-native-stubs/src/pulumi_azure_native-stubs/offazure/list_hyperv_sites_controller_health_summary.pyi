@@ -26,7 +26,10 @@ class ListHypervSitesControllerHealthSummaryResult:
 class AwaitableListHypervSitesControllerHealthSummaryResult(
     ListHypervSitesControllerHealthSummaryResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListHypervSitesControllerHealthSummaryResult]:
+        ...
 
 def list_hyperv_sites_controller_health_summary(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -64,7 +64,8 @@ class GetDisasterRecoveryConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDisasterRecoveryConfigResult(GetDisasterRecoveryConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDisasterRecoveryConfigResult]:
+        ...
 
 def get_disaster_recovery_config(
     alias: Optional[_builtins.str] = ...,

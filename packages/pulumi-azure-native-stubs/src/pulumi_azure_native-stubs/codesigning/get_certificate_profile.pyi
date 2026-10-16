@@ -80,7 +80,8 @@ class GetCertificateProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCertificateProfileResult(GetCertificateProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCertificateProfileResult]:
+        ...
 
 def get_certificate_profile(
     account_name: Optional[_builtins.str] = ...,

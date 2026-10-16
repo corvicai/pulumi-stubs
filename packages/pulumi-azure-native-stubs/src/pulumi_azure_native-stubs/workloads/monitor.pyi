@@ -38,12 +38,14 @@ class MonitorArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appLocation")
     def app_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_location.setter
-    def app_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appServicePlanConfiguration")
     def app_service_plan_configuration(
@@ -52,17 +54,22 @@ class MonitorArgs:
     @app_service_plan_configuration.setter
     def app_service_plan_configuration(
         self, value: Optional[pulumi.Input[AppServicePlanConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logAnalyticsWorkspaceArmId")
     def log_analytics_workspace_arm_id(
@@ -71,7 +78,8 @@ class MonitorArgs:
     @log_analytics_workspace_arm_id.setter
     def log_analytics_workspace_arm_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedResourceGroupConfiguration")
     def managed_resource_group_configuration(
@@ -80,17 +88,20 @@ class MonitorArgs:
     @managed_resource_group_configuration.setter
     def managed_resource_group_configuration(
         self, value: Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitorName")
     def monitor_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @monitor_name.setter
-    def monitor_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def monitor_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitorSubnet")
     def monitor_subnet(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @monitor_subnet.setter
-    def monitor_subnet(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def monitor_subnet(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="routingPreference")
     def routing_preference(
@@ -99,7 +110,8 @@ class MonitorArgs:
     @routing_preference.setter
     def routing_preference(
         self, value: Optional[pulumi.Input[Union[_builtins.str, RoutingPreference]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -108,14 +120,16 @@ class MonitorArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zoneRedundancyPreference")
     def zone_redundancy_preference(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @zone_redundancy_preference.setter
     def zone_redundancy_preference(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:workloads:Monitor")
 class Monitor(pulumi.CustomResource):

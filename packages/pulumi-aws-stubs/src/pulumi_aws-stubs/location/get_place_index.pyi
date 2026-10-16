@@ -62,7 +62,8 @@ class GetPlaceIndexResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetPlaceIndexResult(GetPlaceIndexResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPlaceIndexResult]:
+        ...
 
 def get_place_index(
     index_name: Optional[_builtins.str] = ...,

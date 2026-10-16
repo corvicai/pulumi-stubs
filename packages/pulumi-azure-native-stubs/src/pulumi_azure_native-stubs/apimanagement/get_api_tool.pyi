@@ -52,7 +52,8 @@ class GetApiToolResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiToolResult(GetApiToolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetApiToolResult]:
+        ...
 
 def get_api_tool(
     api_id: Optional[_builtins.str] = ...,

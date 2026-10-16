@@ -38,12 +38,14 @@ class BlobServicePropertiesArgs:
     @pulumi.getter(name="accountName")
     def account_name(self) -> pulumi.Input[_builtins.str]: ...
     @account_name.setter
-    def account_name(self, value: pulumi.Input[_builtins.str]): ...
+    def account_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="automaticSnapshotPolicyEnabled")
     def automatic_snapshot_policy_enabled(
@@ -52,17 +54,22 @@ class BlobServicePropertiesArgs:
     @automatic_snapshot_policy_enabled.setter
     def automatic_snapshot_policy_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blobServicesName")
     def blob_services_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @blob_services_name.setter
-    def blob_services_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def blob_services_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="changeFeed")
     def change_feed(self) -> Optional[pulumi.Input[ChangeFeedArgs]]: ...
     @change_feed.setter
-    def change_feed(self, value: Optional[pulumi.Input[ChangeFeedArgs]]): ...
+    def change_feed(self, value: Optional[pulumi.Input[ChangeFeedArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerDeleteRetentionPolicy")
     def container_delete_retention_policy(
@@ -71,17 +78,22 @@ class BlobServicePropertiesArgs:
     @container_delete_retention_policy.setter
     def container_delete_retention_policy(
         self, value: Optional[pulumi.Input[DeleteRetentionPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cors(self) -> Optional[pulumi.Input[CorsRulesArgs]]: ...
     @cors.setter
-    def cors(self, value: Optional[pulumi.Input[CorsRulesArgs]]): ...
+    def cors(self, value: Optional[pulumi.Input[CorsRulesArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultServiceVersion")
     def default_service_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_service_version.setter
-    def default_service_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def default_service_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteRetentionPolicy")
     def delete_retention_policy(
@@ -90,12 +102,16 @@ class BlobServicePropertiesArgs:
     @delete_retention_policy.setter
     def delete_retention_policy(
         self, value: Optional[pulumi.Input[DeleteRetentionPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isVersioningEnabled")
     def is_versioning_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_versioning_enabled.setter
-    def is_versioning_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_versioning_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastAccessTimeTrackingPolicy")
     def last_access_time_tracking_policy(
@@ -104,14 +120,16 @@ class BlobServicePropertiesArgs:
     @last_access_time_tracking_policy.setter
     def last_access_time_tracking_policy(
         self, value: Optional[pulumi.Input[LastAccessTimeTrackingPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restorePolicy")
     def restore_policy(self) -> Optional[pulumi.Input[RestorePolicyPropertiesArgs]]: ...
     @restore_policy.setter
     def restore_policy(
         self, value: Optional[pulumi.Input[RestorePolicyPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:storage:BlobServiceProperties")
 class BlobServiceProperties(pulumi.CustomResource):

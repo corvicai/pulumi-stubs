@@ -30,12 +30,14 @@ class JitNetworkAccessPolicyArgs:
     @pulumi.getter(name="ascLocation")
     def asc_location(self) -> pulumi.Input[_builtins.str]: ...
     @asc_location.setter
-    def asc_location(self, value: pulumi.Input[_builtins.str]): ...
+    def asc_location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachines")
     def virtual_machines(
@@ -49,7 +51,8 @@ class JitNetworkAccessPolicyArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[JitNetworkAccessPolicyVirtualMachineArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jitNetworkAccessPolicyName")
     def jit_network_access_policy_name(
@@ -58,12 +61,14 @@ class JitNetworkAccessPolicyArgs:
     @jit_network_access_policy_name.setter
     def jit_network_access_policy_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kind.setter
-    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def requests(
@@ -77,7 +82,8 @@ class JitNetworkAccessPolicyArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:security:JitNetworkAccessPolicy")
 class JitNetworkAccessPolicy(pulumi.CustomResource):

@@ -138,7 +138,8 @@ class GetScheduledQueryRuleResult:
     def window_size(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetScheduledQueryRuleResult(GetScheduledQueryRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetScheduledQueryRuleResult]:
+        ...
 
 def get_scheduled_query_rule(
     resource_group_name: Optional[_builtins.str] = ...,

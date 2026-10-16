@@ -39,17 +39,22 @@ class TableArgs:
     @pulumi.getter(name="keyspaceName")
     def keyspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @keyspace_name.setter
-    def keyspace_name(self, value: pulumi.Input[_builtins.str]): ...
+    def keyspace_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaDefinition")
     def schema_definition(self) -> pulumi.Input[TableSchemaDefinitionArgs]: ...
     @schema_definition.setter
-    def schema_definition(self, value: pulumi.Input[TableSchemaDefinitionArgs]): ...
+    def schema_definition(
+        self, value: pulumi.Input[TableSchemaDefinitionArgs]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> pulumi.Input[_builtins.str]: ...
     @table_name.setter
-    def table_name(self, value: pulumi.Input[_builtins.str]): ...
+    def table_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacitySpecification")
     def capacity_specification(
@@ -58,7 +63,8 @@ class TableArgs:
     @capacity_specification.setter
     def capacity_specification(
         self, value: Optional[pulumi.Input[TableCapacitySpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSideTimestamps")
     def client_side_timestamps(
@@ -67,17 +73,22 @@ class TableArgs:
     @client_side_timestamps.setter
     def client_side_timestamps(
         self, value: Optional[pulumi.Input[TableClientSideTimestampsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[TableCommentArgs]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[TableCommentArgs]]): ...
+    def comment(self, value: Optional[pulumi.Input[TableCommentArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultTimeToLive")
     def default_time_to_live(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_time_to_live.setter
-    def default_time_to_live(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_time_to_live(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSpecification")
     def encryption_specification(
@@ -86,7 +97,8 @@ class TableArgs:
     @encryption_specification.setter
     def encryption_specification(
         self, value: Optional[pulumi.Input[TableEncryptionSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pointInTimeRecovery")
     def point_in_time_recovery(
@@ -95,12 +107,14 @@ class TableArgs:
     @point_in_time_recovery.setter
     def point_in_time_recovery(
         self, value: Optional[pulumi.Input[TablePointInTimeRecoveryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -109,12 +123,14 @@ class TableArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[TableTtlArgs]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[TableTtlArgs]]): ...
+    def ttl(self, value: Optional[pulumi.Input[TableTtlArgs]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TableState:
@@ -150,7 +166,8 @@ class _TableState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacitySpecification")
     def capacity_specification(
@@ -159,7 +176,8 @@ class _TableState:
     @capacity_specification.setter
     def capacity_specification(
         self, value: Optional[pulumi.Input[TableCapacitySpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientSideTimestamps")
     def client_side_timestamps(
@@ -168,17 +186,22 @@ class _TableState:
     @client_side_timestamps.setter
     def client_side_timestamps(
         self, value: Optional[pulumi.Input[TableClientSideTimestampsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def comment(self) -> Optional[pulumi.Input[TableCommentArgs]]: ...
     @comment.setter
-    def comment(self, value: Optional[pulumi.Input[TableCommentArgs]]): ...
+    def comment(self, value: Optional[pulumi.Input[TableCommentArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultTimeToLive")
     def default_time_to_live(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @default_time_to_live.setter
-    def default_time_to_live(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def default_time_to_live(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionSpecification")
     def encryption_specification(
@@ -187,12 +210,14 @@ class _TableState:
     @encryption_specification.setter
     def encryption_specification(
         self, value: Optional[pulumi.Input[TableEncryptionSpecificationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyspaceName")
     def keyspace_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @keyspace_name.setter
-    def keyspace_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def keyspace_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pointInTimeRecovery")
     def point_in_time_recovery(
@@ -201,12 +226,14 @@ class _TableState:
     @point_in_time_recovery.setter
     def point_in_time_recovery(
         self, value: Optional[pulumi.Input[TablePointInTimeRecoveryArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaDefinition")
     def schema_definition(
@@ -215,12 +242,14 @@ class _TableState:
     @schema_definition.setter
     def schema_definition(
         self, value: Optional[pulumi.Input[TableSchemaDefinitionArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tableName")
     def table_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @table_name.setter
-    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -229,7 +258,8 @@ class _TableState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -238,12 +268,14 @@ class _TableState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ttl(self) -> Optional[pulumi.Input[TableTtlArgs]]: ...
     @ttl.setter
-    def ttl(self, value: Optional[pulumi.Input[TableTtlArgs]]): ...
+    def ttl(self, value: Optional[pulumi.Input[TableTtlArgs]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:keyspaces/table:Table")
 class Table(pulumi.CustomResource):

@@ -84,7 +84,10 @@ class GetNetworkSecurityPerimeterAccessRuleResult:
 class AwaitableGetNetworkSecurityPerimeterAccessRuleResult(
     GetNetworkSecurityPerimeterAccessRuleResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetNetworkSecurityPerimeterAccessRuleResult]:
+        ...
 
 def get_network_security_perimeter_access_rule(
     access_rule_name: Optional[_builtins.str] = ...,

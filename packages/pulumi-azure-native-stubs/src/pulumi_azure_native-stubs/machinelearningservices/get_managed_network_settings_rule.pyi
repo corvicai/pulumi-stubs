@@ -44,7 +44,10 @@ class GetManagedNetworkSettingsRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedNetworkSettingsRuleResult(GetManagedNetworkSettingsRuleResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedNetworkSettingsRuleResult]:
+        ...
 
 def get_managed_network_settings_rule(
     resource_group_name: Optional[_builtins.str] = ...,

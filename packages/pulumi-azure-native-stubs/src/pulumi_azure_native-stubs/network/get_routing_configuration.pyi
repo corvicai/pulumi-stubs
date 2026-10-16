@@ -56,7 +56,8 @@ class GetRoutingConfigurationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRoutingConfigurationResult(GetRoutingConfigurationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRoutingConfigurationResult]:
+        ...
 
 def get_routing_configuration(
     configuration_name: Optional[_builtins.str] = ...,

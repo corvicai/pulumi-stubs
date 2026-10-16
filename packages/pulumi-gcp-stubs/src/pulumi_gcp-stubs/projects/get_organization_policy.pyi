@@ -62,7 +62,8 @@ class GetOrganizationPolicyResult:
     def version(self) -> _builtins.int: ...
 
 class AwaitableGetOrganizationPolicyResult(GetOrganizationPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationPolicyResult]:
+        ...
 
 def get_organization_policy(
     constraint: Optional[_builtins.str] = ...,

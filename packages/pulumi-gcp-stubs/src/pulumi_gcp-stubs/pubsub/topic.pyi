@@ -39,12 +39,14 @@ class TopicArgs:
     @ingestion_data_source_settings.setter
     def ingestion_data_source_settings(
         self, value: Optional[pulumi.Input[TopicIngestionDataSourceSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -53,14 +55,16 @@ class TopicArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageRetentionDuration")
     def message_retention_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_retention_duration.setter
     def message_retention_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageStoragePolicy")
     def message_storage_policy(
@@ -69,7 +73,8 @@ class TopicArgs:
     @message_storage_policy.setter
     def message_storage_policy(
         self, value: Optional[pulumi.Input[TopicMessageStoragePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageTransforms")
     def message_transforms(
@@ -81,24 +86,28 @@ class TopicArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicMessageTransformArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaSettings")
     def schema_settings(self) -> Optional[pulumi.Input[TopicSchemaSettingsArgs]]: ...
     @schema_settings.setter
     def schema_settings(
         self, value: Optional[pulumi.Input[TopicSchemaSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -107,7 +116,8 @@ class TopicArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TopicState:
@@ -145,7 +155,8 @@ class _TopicState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingestionDataSourceSettings")
     def ingestion_data_source_settings(
@@ -154,12 +165,14 @@ class _TopicState:
     @ingestion_data_source_settings.setter
     def ingestion_data_source_settings(
         self, value: Optional[pulumi.Input[TopicIngestionDataSourceSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyName")
     def kms_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_name.setter
-    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -168,14 +181,16 @@ class _TopicState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageRetentionDuration")
     def message_retention_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_retention_duration.setter
     def message_retention_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageStoragePolicy")
     def message_storage_policy(
@@ -184,7 +199,8 @@ class _TopicState:
     @message_storage_policy.setter
     def message_storage_policy(
         self, value: Optional[pulumi.Input[TopicMessageStoragePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageTransforms")
     def message_transforms(
@@ -196,17 +212,20 @@ class _TopicState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[TopicMessageTransformArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -215,14 +234,16 @@ class _TopicState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="schemaSettings")
     def schema_settings(self) -> Optional[pulumi.Input[TopicSchemaSettingsArgs]]: ...
     @schema_settings.setter
     def schema_settings(
         self, value: Optional[pulumi.Input[TopicSchemaSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -231,7 +252,8 @@ class _TopicState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:pubsub/topic:Topic")
 class Topic(pulumi.CustomResource):

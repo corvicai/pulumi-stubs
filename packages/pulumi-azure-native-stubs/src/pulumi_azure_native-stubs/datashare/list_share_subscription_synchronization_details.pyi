@@ -26,7 +26,10 @@ class ListShareSubscriptionSynchronizationDetailsResult:
 class AwaitableListShareSubscriptionSynchronizationDetailsResult(
     ListShareSubscriptionSynchronizationDetailsResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListShareSubscriptionSynchronizationDetailsResult]:
+        ...
 
 def list_share_subscription_synchronization_details(
     account_name: Optional[_builtins.str] = ...,

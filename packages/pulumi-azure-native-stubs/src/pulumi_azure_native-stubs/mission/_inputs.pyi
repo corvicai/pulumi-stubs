@@ -125,7 +125,8 @@ class ApprovalSettingsArgs:
     @connection_creation.setter
     def connection_creation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionDeletion")
     def connection_deletion(
@@ -134,7 +135,8 @@ class ApprovalSettingsArgs:
     @connection_deletion.setter
     def connection_deletion(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="connectionUpdate")
     def connection_update(
@@ -143,7 +145,8 @@ class ApprovalSettingsArgs:
     @connection_update.setter
     def connection_update(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveCreation")
     def enclave_creation(
@@ -152,7 +155,8 @@ class ApprovalSettingsArgs:
     @enclave_creation.setter
     def enclave_creation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enclaveDeletion")
     def enclave_deletion(
@@ -161,7 +165,8 @@ class ApprovalSettingsArgs:
     @enclave_deletion.setter
     def enclave_deletion(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointCreation")
     def endpoint_creation(
@@ -170,7 +175,8 @@ class ApprovalSettingsArgs:
     @endpoint_creation.setter
     def endpoint_creation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointDeletion")
     def endpoint_deletion(
@@ -179,7 +185,8 @@ class ApprovalSettingsArgs:
     @endpoint_deletion.setter
     def endpoint_deletion(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointUpdate")
     def endpoint_update(
@@ -188,7 +195,8 @@ class ApprovalSettingsArgs:
     @endpoint_update.setter
     def endpoint_update(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maintenanceMode")
     def maintenance_mode(
@@ -197,7 +205,8 @@ class ApprovalSettingsArgs:
     @maintenance_mode.setter
     def maintenance_mode(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mandatoryApprovers")
     def mandatory_approvers(
@@ -207,14 +216,16 @@ class ApprovalSettingsArgs:
     def mandatory_approvers(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[MandatoryApproverArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minimumApproversRequired")
     def minimum_approvers_required(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @minimum_approvers_required.setter
     def minimum_approvers_required(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationOnApprovalAction")
     def notification_on_approval_action(
@@ -223,7 +234,8 @@ class ApprovalSettingsArgs:
     @notification_on_approval_action.setter
     def notification_on_approval_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationOnApprovalCreation")
     def notification_on_approval_creation(
@@ -232,7 +244,8 @@ class ApprovalSettingsArgs:
     @notification_on_approval_creation.setter
     def notification_on_approval_creation(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationOnApprovalDeletion")
     def notification_on_approval_deletion(
@@ -241,7 +254,8 @@ class ApprovalSettingsArgs:
     @notification_on_approval_deletion.setter
     def notification_on_approval_deletion(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceCatalogDeployment")
     def service_catalog_deployment(
@@ -250,7 +264,8 @@ class ApprovalSettingsArgs:
     @service_catalog_deployment.setter
     def service_catalog_deployment(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalPolicy]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ApproverArgsDict(TypedDict):
     approver_entra_id: pulumi.Input[_builtins.str]
@@ -272,12 +287,14 @@ class ApproverArgs:
     @pulumi.getter(name="approverEntraId")
     def approver_entra_id(self) -> pulumi.Input[_builtins.str]: ...
     @approver_entra_id.setter
-    def approver_entra_id(self, value: pulumi.Input[_builtins.str]): ...
+    def approver_entra_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedAt")
     def last_updated_at(self) -> pulumi.Input[_builtins.str]: ...
     @last_updated_at.setter
-    def last_updated_at(self, value: pulumi.Input[_builtins.str]): ...
+    def last_updated_at(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="actionPerformed")
     def action_performed(
@@ -286,7 +303,8 @@ class ApproverArgs:
     @action_performed.setter
     def action_performed(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ActionPerformed]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CommunityEndpointDestinationRuleArgsDict(TypedDict):
     destination: NotRequired[pulumi.Input[_builtins.str]]
@@ -322,7 +340,8 @@ class CommunityEndpointDestinationRuleArgs:
     @pulumi.getter
     def destination(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination.setter
-    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationType")
     def destination_type(
@@ -331,17 +350,22 @@ class CommunityEndpointDestinationRuleArgs:
     @destination_type.setter
     def destination_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DestinationType]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointRuleName")
     def endpoint_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_rule_name.setter
-    def endpoint_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_rule_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ports(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ports.setter
-    def ports(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ports(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocols(
@@ -359,12 +383,16 @@ class CommunityEndpointDestinationRuleArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, CommunityEndpointProtocol]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transitHubResourceId")
     def transit_hub_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @transit_hub_resource_id.setter
-    def transit_hub_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def transit_hub_resource_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class EnclaveDefaultSettingsModelArgsDict(TypedDict):
     diagnostic_destination: NotRequired[
@@ -388,7 +416,8 @@ class EnclaveDefaultSettingsModelArgs:
     @diagnostic_destination.setter
     def diagnostic_destination(
         self, value: Optional[pulumi.Input[Union[_builtins.str, DiagnosticDestination]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EnclaveEndpointDestinationRuleArgsDict(TypedDict):
     destination: NotRequired[pulumi.Input[_builtins.str]]
@@ -418,17 +447,22 @@ class EnclaveEndpointDestinationRuleArgs:
     @pulumi.getter
     def destination(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination.setter
-    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointRuleName")
     def endpoint_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_rule_name.setter
-    def endpoint_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_rule_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ports(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ports.setter
-    def ports(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def ports(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocols(
@@ -446,7 +480,8 @@ class EnclaveEndpointDestinationRuleArgs:
                 Sequence[pulumi.Input[Union[_builtins.str, EnclaveEndpointProtocol]]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EnclaveVirtualNetworkModelArgsDict(TypedDict):
     allow_subnet_communication: NotRequired[pulumi.Input[_builtins.bool]]
@@ -476,22 +511,28 @@ class EnclaveVirtualNetworkModelArgs:
     @allow_subnet_communication.setter
     def allow_subnet_communication(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customCidrRange")
     def custom_cidr_range(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_cidr_range.setter
-    def custom_cidr_range(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_cidr_range(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkName")
     def network_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_name.setter
-    def network_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkSize")
     def network_size(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_size.setter
-    def network_size(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network_size(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetConfigurations")
     def subnet_configurations(
@@ -501,7 +542,8 @@ class EnclaveVirtualNetworkModelArgs:
     def subnet_configurations(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[SubnetConfigurationArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class GovernedServiceItemArgsDict(TypedDict):
     service_id: pulumi.Input[Union[_builtins.str, ServiceIdentifier]]
@@ -525,7 +567,8 @@ class GovernedServiceItemArgs:
     @service_id.setter
     def service_id(
         self, value: pulumi.Input[Union[_builtins.str, ServiceIdentifier]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enforcement(
@@ -534,12 +577,16 @@ class GovernedServiceItemArgs:
     @enforcement.setter
     def enforcement(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Enforcement]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def option(self) -> Optional[pulumi.Input[Union[_builtins.str, Option]]]: ...
     @option.setter
-    def option(self, value: Optional[pulumi.Input[Union[_builtins.str, Option]]]): ...
+    def option(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, Option]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyAction")
     def policy_action(
@@ -548,7 +595,8 @@ class GovernedServiceItemArgs:
     @policy_action.setter
     def policy_action(
         self, value: Optional[pulumi.Input[Union[_builtins.str, PolicyAction]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MaintenanceModeConfigurationModelArgsDict(TypedDict):
     mode: pulumi.Input[Union[_builtins.str, Mode]]
@@ -570,7 +618,8 @@ class MaintenanceModeConfigurationModelArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[Union[_builtins.str, Mode]]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[Union[_builtins.str, Mode]]): ...
+    def mode(self, value: pulumi.Input[Union[_builtins.str, Mode]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def justification(
@@ -579,7 +628,8 @@ class MaintenanceModeConfigurationModelArgs:
     @justification.setter
     def justification(
         self, value: Optional[pulumi.Input[Union[_builtins.str, Justification]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principals(
@@ -588,7 +638,8 @@ class MaintenanceModeConfigurationModelArgs:
     @principals.setter
     def principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PrincipalArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
@@ -614,7 +665,8 @@ class ManagedServiceIdentityArgs:
     @type.setter
     def type(
         self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -623,7 +675,8 @@ class ManagedServiceIdentityArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MandatoryApproverArgsDict(TypedDict):
     approver_entra_id: pulumi.Input[_builtins.str]
@@ -637,7 +690,8 @@ class MandatoryApproverArgs:
     @pulumi.getter(name="approverEntraId")
     def approver_entra_id(self) -> pulumi.Input[_builtins.str]: ...
     @approver_entra_id.setter
-    def approver_entra_id(self, value: pulumi.Input[_builtins.str]): ...
+    def approver_entra_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PrincipalArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
@@ -655,12 +709,14 @@ class PrincipalArgs:
     @pulumi.getter
     def id(self) -> pulumi.Input[_builtins.str]: ...
     @id.setter
-    def id(self, value: pulumi.Input[_builtins.str]): ...
+    def id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> pulumi.Input[Union[_builtins.str, Type]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, Type]]): ...
+    def type(self, value: pulumi.Input[Union[_builtins.str, Type]]):  # -> None:
+        ...
 
 class RequestMetadataArgsDict(TypedDict):
     resource_action: pulumi.Input[_builtins.str]
@@ -684,19 +740,24 @@ class RequestMetadataArgs:
     @pulumi.getter(name="resourceAction")
     def resource_action(self) -> pulumi.Input[_builtins.str]: ...
     @resource_action.setter
-    def resource_action(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_action(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvalCallbackPayload")
     def approval_callback_payload(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @approval_callback_payload.setter
     def approval_callback_payload(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvalCallbackRoute")
     def approval_callback_route(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @approval_callback_route.setter
-    def approval_callback_route(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def approval_callback_route(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="approvalStatus")
     def approval_status(
@@ -705,7 +766,8 @@ class RequestMetadataArgs:
     @approval_status.setter
     def approval_status(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ApprovalStatus]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RoleAssignmentItemArgsDict(TypedDict):
     role_definition_id: pulumi.Input[_builtins.str]
@@ -723,7 +785,8 @@ class RoleAssignmentItemArgs:
     @pulumi.getter(name="roleDefinitionId")
     def role_definition_id(self) -> pulumi.Input[_builtins.str]: ...
     @role_definition_id.setter
-    def role_definition_id(self, value: pulumi.Input[_builtins.str]): ...
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def principals(
@@ -732,7 +795,8 @@ class RoleAssignmentItemArgs:
     @principals.setter
     def principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PrincipalArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SubnetConfigurationArgsDict(TypedDict):
     network_prefix_size: pulumi.Input[_builtins.int]
@@ -752,17 +816,22 @@ class SubnetConfigurationArgs:
     @pulumi.getter(name="networkPrefixSize")
     def network_prefix_size(self) -> pulumi.Input[_builtins.int]: ...
     @network_prefix_size.setter
-    def network_prefix_size(self, value: pulumi.Input[_builtins.int]): ...
+    def network_prefix_size(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetName")
     def subnet_name(self) -> pulumi.Input[_builtins.str]: ...
     @subnet_name.setter
-    def subnet_name(self, value: pulumi.Input[_builtins.str]): ...
+    def subnet_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetDelegation")
     def subnet_delegation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @subnet_delegation.setter
-    def subnet_delegation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def subnet_delegation(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class TransitOptionParamsArgsDict(TypedDict):
     remote_virtual_network_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -782,12 +851,14 @@ class TransitOptionParamsArgs:
     @remote_virtual_network_id.setter
     def remote_virtual_network_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleUnits")
     def scale_units(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @scale_units.setter
-    def scale_units(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def scale_units(self, value: Optional[pulumi.Input[_builtins.float]]):  # -> None:
+        ...
 
 class TransitOptionArgsDict(TypedDict):
     params: NotRequired[pulumi.Input[TransitOptionParamsArgsDict]]
@@ -805,7 +876,10 @@ class TransitOptionArgs:
     @pulumi.getter
     def params(self) -> Optional[pulumi.Input[TransitOptionParamsArgs]]: ...
     @params.setter
-    def params(self, value: Optional[pulumi.Input[TransitOptionParamsArgs]]): ...
+    def params(
+        self, value: Optional[pulumi.Input[TransitOptionParamsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -814,4 +888,5 @@ class TransitOptionArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, TransitOptionType]]]
-    ): ...
+    ):  # -> None:
+        ...

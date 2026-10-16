@@ -24,7 +24,8 @@ class ListClusterStreamingJobsResult:
     def value(self) -> Sequence[outputs.ClusterJobResponse]: ...
 
 class AwaitableListClusterStreamingJobsResult(ListClusterStreamingJobsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListClusterStreamingJobsResult]:
+        ...
 
 def list_cluster_streaming_jobs(
     cluster_name: Optional[_builtins.str] = ...,

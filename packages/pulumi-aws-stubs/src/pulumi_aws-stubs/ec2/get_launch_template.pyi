@@ -213,7 +213,8 @@ class GetLaunchTemplateResult:
     def vpc_security_group_ids(self) -> Sequence[_builtins.str]: ...
 
 class AwaitableGetLaunchTemplateResult(GetLaunchTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLaunchTemplateResult]:
+        ...
 
 def get_launch_template(
     filters: Optional[

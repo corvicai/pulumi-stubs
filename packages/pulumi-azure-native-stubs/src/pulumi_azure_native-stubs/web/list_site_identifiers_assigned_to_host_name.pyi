@@ -26,7 +26,10 @@ class ListSiteIdentifiersAssignedToHostNameResult:
 class AwaitableListSiteIdentifiersAssignedToHostNameResult(
     ListSiteIdentifiersAssignedToHostNameResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListSiteIdentifiersAssignedToHostNameResult]:
+        ...
 
 def list_site_identifiers_assigned_to_host_name(
     name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

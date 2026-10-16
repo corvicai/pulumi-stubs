@@ -23,7 +23,8 @@ class ListSubscriptionSecretsResult:
     def secondary_key(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListSubscriptionSecretsResult(ListSubscriptionSecretsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListSubscriptionSecretsResult]:
+        ...
 
 def list_subscription_secrets(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -26,7 +26,10 @@ class ListHostPoolRegistrationTokensResult:
 class AwaitableListHostPoolRegistrationTokensResult(
     ListHostPoolRegistrationTokensResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListHostPoolRegistrationTokensResult]:
+        ...
 
 def list_host_pool_registration_tokens(
     host_pool_name: Optional[_builtins.str] = ...,

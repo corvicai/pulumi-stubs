@@ -17,7 +17,8 @@ class CopilotSettingArgs:
     @pulumi.getter(name="accessControlEnabled")
     def access_control_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @access_control_enabled.setter
-    def access_control_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def access_control_enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:portalservices:CopilotSetting")
 class CopilotSetting(pulumi.CustomResource):

@@ -37,7 +37,10 @@ class ListWebAppConnectionStringsSlotResult:
 class AwaitableListWebAppConnectionStringsSlotResult(
     ListWebAppConnectionStringsSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppConnectionStringsSlotResult]:
+        ...
 
 def list_web_app_connection_strings_slot(
     name: Optional[_builtins.str] = ...,

@@ -48,7 +48,8 @@ class ReceiptRuleArgs:
     @pulumi.getter(name="ruleSetName")
     def rule_set_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_set_name.setter
-    def rule_set_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_set_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="addHeaderActions")
     def add_header_actions(
@@ -62,12 +63,14 @@ class ReceiptRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleAddHeaderActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def after(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @after.setter
-    def after(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def after(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bounceActions")
     def bounce_actions(
@@ -81,12 +84,14 @@ class ReceiptRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleBounceActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaActions")
     def lambda_actions(
@@ -100,12 +105,14 @@ class ReceiptRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleLambdaActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def recipients(
@@ -114,12 +121,14 @@ class ReceiptRuleArgs:
     @recipients.setter
     def recipients(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Actions")
     def s3_actions(
@@ -129,12 +138,14 @@ class ReceiptRuleArgs:
     def s3_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReceiptRuleS3ActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scanEnabled")
     def scan_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @scan_enabled.setter
-    def scan_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def scan_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snsActions")
     def sns_actions(
@@ -144,7 +155,8 @@ class ReceiptRuleArgs:
     def sns_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReceiptRuleSnsActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopActions")
     def stop_actions(
@@ -156,12 +168,14 @@ class ReceiptRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleStopActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsPolicy")
     def tls_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tls_policy.setter
-    def tls_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tls_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workmailActions")
     def workmail_actions(
@@ -175,7 +189,8 @@ class ReceiptRuleArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleWorkmailActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ReceiptRuleState:
@@ -226,17 +241,20 @@ class _ReceiptRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleAddHeaderActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def after(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @after.setter
-    def after(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def after(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bounceActions")
     def bounce_actions(
@@ -250,12 +268,14 @@ class _ReceiptRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleBounceActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaActions")
     def lambda_actions(
@@ -269,12 +289,14 @@ class _ReceiptRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleLambdaActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def recipients(
@@ -283,17 +305,20 @@ class _ReceiptRuleState:
     @recipients.setter
     def recipients(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleSetName")
     def rule_set_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rule_set_name.setter
-    def rule_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rule_set_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Actions")
     def s3_actions(
@@ -303,12 +328,14 @@ class _ReceiptRuleState:
     def s3_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReceiptRuleS3ActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scanEnabled")
     def scan_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @scan_enabled.setter
-    def scan_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def scan_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snsActions")
     def sns_actions(
@@ -318,7 +345,8 @@ class _ReceiptRuleState:
     def sns_actions(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ReceiptRuleSnsActionArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stopActions")
     def stop_actions(
@@ -330,12 +358,14 @@ class _ReceiptRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleStopActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tlsPolicy")
     def tls_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tls_policy.setter
-    def tls_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def tls_policy(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workmailActions")
     def workmail_actions(
@@ -349,7 +379,8 @@ class _ReceiptRuleState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ReceiptRuleWorkmailActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ses/receiptRule:ReceiptRule")
 class ReceiptRule(pulumi.CustomResource):

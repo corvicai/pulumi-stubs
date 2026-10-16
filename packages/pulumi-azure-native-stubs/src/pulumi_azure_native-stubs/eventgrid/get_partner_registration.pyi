@@ -56,7 +56,8 @@ class GetPartnerRegistrationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPartnerRegistrationResult(GetPartnerRegistrationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPartnerRegistrationResult]:
+        ...
 
 def get_partner_registration(
     partner_registration_name: Optional[_builtins.str] = ...,

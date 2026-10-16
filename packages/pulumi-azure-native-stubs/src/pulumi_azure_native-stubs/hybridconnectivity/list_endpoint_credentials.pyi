@@ -44,7 +44,8 @@ class ListEndpointCredentialsResult:
     def service_configuration_token(self) -> Optional[_builtins.str]: ...
 
 class AwaitableListEndpointCredentialsResult(ListEndpointCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListEndpointCredentialsResult]:
+        ...
 
 def list_endpoint_credentials(
     endpoint_name: Optional[_builtins.str] = ...,

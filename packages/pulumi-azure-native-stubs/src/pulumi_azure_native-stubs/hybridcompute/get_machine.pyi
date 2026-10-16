@@ -188,7 +188,8 @@ class GetMachineResult:
     def vm_uuid(self) -> _builtins.str: ...
 
 class AwaitableGetMachineResult(GetMachineResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMachineResult]:
+        ...
 
 def get_machine(
     expand: Optional[_builtins.str] = ...,

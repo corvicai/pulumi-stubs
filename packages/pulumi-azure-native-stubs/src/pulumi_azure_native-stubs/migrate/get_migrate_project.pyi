@@ -52,7 +52,8 @@ class GetMigrateProjectResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMigrateProjectResult(GetMigrateProjectResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMigrateProjectResult]:
+        ...
 
 def get_migrate_project(
     migrate_project_name: Optional[_builtins.str] = ...,

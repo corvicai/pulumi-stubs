@@ -55,7 +55,8 @@ class GetWorkspaceApiVersionSetResult:
     def versioning_scheme(self) -> _builtins.str: ...
 
 class AwaitableGetWorkspaceApiVersionSetResult(GetWorkspaceApiVersionSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkspaceApiVersionSetResult]:
+        ...
 
 def get_workspace_api_version_set(
     resource_group_name: Optional[_builtins.str] = ...,

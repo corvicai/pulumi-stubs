@@ -114,7 +114,8 @@ class GetContainerGroupProfileResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetContainerGroupProfileResult(GetContainerGroupProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerGroupProfileResult]:
+        ...
 
 def get_container_group_profile(
     container_group_profile_name: Optional[_builtins.str] = ...,

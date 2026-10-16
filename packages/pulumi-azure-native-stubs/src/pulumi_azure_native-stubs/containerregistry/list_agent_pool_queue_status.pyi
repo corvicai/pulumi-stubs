@@ -20,7 +20,8 @@ class ListAgentPoolQueueStatusResult:
     def count(self) -> Optional[_builtins.int]: ...
 
 class AwaitableListAgentPoolQueueStatusResult(ListAgentPoolQueueStatusResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListAgentPoolQueueStatusResult]:
+        ...
 
 def list_agent_pool_queue_status(
     agent_pool_name: Optional[_builtins.str] = ...,

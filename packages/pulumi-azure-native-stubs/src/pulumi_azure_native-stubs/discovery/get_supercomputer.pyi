@@ -52,7 +52,8 @@ class GetSupercomputerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSupercomputerResult(GetSupercomputerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSupercomputerResult]:
+        ...
 
 def get_supercomputer(
     resource_group_name: Optional[_builtins.str] = ...,

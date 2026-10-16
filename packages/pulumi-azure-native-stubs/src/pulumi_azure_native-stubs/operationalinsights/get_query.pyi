@@ -73,7 +73,8 @@ class GetQueryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetQueryResult(GetQueryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueryResult]:
+        ...
 
 def get_query(
     id: Optional[_builtins.str] = ...,

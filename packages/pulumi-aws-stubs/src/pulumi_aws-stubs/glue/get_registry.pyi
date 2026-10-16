@@ -34,7 +34,8 @@ class GetRegistryResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryResult(GetRegistryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryResult]:
+        ...
 
 def get_registry(
     name: Optional[_builtins.str] = ...,

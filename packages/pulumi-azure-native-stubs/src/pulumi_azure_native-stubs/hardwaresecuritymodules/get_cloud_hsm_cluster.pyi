@@ -86,7 +86,8 @@ class GetCloudHsmClusterResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudHsmClusterResult(GetCloudHsmClusterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudHsmClusterResult]:
+        ...
 
 def get_cloud_hsm_cluster(
     cloud_hsm_cluster_name: Optional[_builtins.str] = ...,

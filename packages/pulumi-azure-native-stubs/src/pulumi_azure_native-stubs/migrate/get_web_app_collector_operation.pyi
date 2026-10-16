@@ -62,7 +62,8 @@ class GetWebAppCollectorOperationResult:
     def updated_timestamp(self) -> _builtins.str: ...
 
 class AwaitableGetWebAppCollectorOperationResult(GetWebAppCollectorOperationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppCollectorOperationResult]:
+        ...
 
 def get_web_app_collector_operation(
     collector_name: Optional[_builtins.str] = ...,

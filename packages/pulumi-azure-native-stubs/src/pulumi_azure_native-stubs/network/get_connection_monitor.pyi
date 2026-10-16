@@ -108,7 +108,8 @@ class GetConnectionMonitorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionMonitorResult(GetConnectionMonitorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionMonitorResult]:
+        ...
 
 def get_connection_monitor(
     connection_monitor_name: Optional[_builtins.str] = ...,

@@ -68,7 +68,8 @@ class GetHypervHostControllerResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetHypervHostControllerResult(GetHypervHostControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHypervHostControllerResult]:
+        ...
 
 def get_hyperv_host_controller(
     host_name: Optional[_builtins.str] = ...,

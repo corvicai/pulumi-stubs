@@ -64,7 +64,8 @@ class GetEmailTemplateResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEmailTemplateResult(GetEmailTemplateResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEmailTemplateResult]:
+        ...
 
 def get_email_template(
     resource_group_name: Optional[_builtins.str] = ...,

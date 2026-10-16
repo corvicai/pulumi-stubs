@@ -80,7 +80,8 @@ class GetAFDOriginGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAFDOriginGroupResult(GetAFDOriginGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAFDOriginGroupResult]:
+        ...
 
 def get_afd_origin_group(
     origin_group_name: Optional[_builtins.str] = ...,

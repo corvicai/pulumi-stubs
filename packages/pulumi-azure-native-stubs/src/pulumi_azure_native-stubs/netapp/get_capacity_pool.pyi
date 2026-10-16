@@ -88,7 +88,8 @@ class GetCapacityPoolResult:
     def utilized_throughput_mibps(self) -> _builtins.float: ...
 
 class AwaitableGetCapacityPoolResult(GetCapacityPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityPoolResult]:
+        ...
 
 def get_capacity_pool(
     account_name: Optional[_builtins.str] = ...,

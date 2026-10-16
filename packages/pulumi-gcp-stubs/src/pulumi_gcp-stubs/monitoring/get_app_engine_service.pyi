@@ -52,7 +52,8 @@ class GetAppEngineServiceResult:
     def user_labels(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetAppEngineServiceResult(GetAppEngineServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppEngineServiceResult]:
+        ...
 
 def get_app_engine_service(
     module_id: Optional[_builtins.str] = ...,

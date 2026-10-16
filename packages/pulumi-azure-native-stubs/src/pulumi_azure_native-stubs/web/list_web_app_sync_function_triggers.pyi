@@ -25,7 +25,10 @@ class ListWebAppSyncFunctionTriggersResult:
 class AwaitableListWebAppSyncFunctionTriggersResult(
     ListWebAppSyncFunctionTriggersResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppSyncFunctionTriggersResult]:
+        ...
 
 def list_web_app_sync_function_triggers(
     name: Optional[_builtins.str] = ...,

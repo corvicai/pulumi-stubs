@@ -34,17 +34,20 @@ class QueryLoggingConfigurationArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[QueryLoggingConfigurationDestinationArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceId")
     def workspace_id(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_id.setter
-    def workspace_id(self, value: pulumi.Input[_builtins.str]): ...
+    def workspace_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -53,7 +56,8 @@ class QueryLoggingConfigurationArgs:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[QueryLoggingConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _QueryLoggingConfigurationState:
@@ -84,12 +88,14 @@ class _QueryLoggingConfigurationState:
                 Sequence[pulumi.Input[QueryLoggingConfigurationDestinationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(
@@ -98,12 +104,14 @@ class _QueryLoggingConfigurationState:
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[QueryLoggingConfigurationTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="workspaceId")
     def workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @workspace_id.setter
-    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class QueryLoggingConfiguration(pulumi.CustomResource):

@@ -91,7 +91,8 @@ class GetLabResult:
     def virtual_machine_profile(self) -> outputs.VirtualMachineProfileResponse: ...
 
 class AwaitableGetLabResult(GetLabResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLabResult]:
+        ...
 
 def get_lab(
     lab_name: Optional[_builtins.str] = ...,

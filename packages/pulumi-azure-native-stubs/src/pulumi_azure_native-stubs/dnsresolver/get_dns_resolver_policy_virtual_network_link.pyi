@@ -62,7 +62,10 @@ class GetDnsResolverPolicyVirtualNetworkLinkResult:
 class AwaitableGetDnsResolverPolicyVirtualNetworkLinkResult(
     GetDnsResolverPolicyVirtualNetworkLinkResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDnsResolverPolicyVirtualNetworkLinkResult]:
+        ...
 
 def get_dns_resolver_policy_virtual_network_link(
     dns_resolver_policy_name: Optional[_builtins.str] = ...,

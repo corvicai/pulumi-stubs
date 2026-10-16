@@ -78,7 +78,8 @@ class GetMasterSitesControllerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMasterSitesControllerResult(GetMasterSitesControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMasterSitesControllerResult]:
+        ...
 
 def get_master_sites_controller(
     resource_group_name: Optional[_builtins.str] = ...,

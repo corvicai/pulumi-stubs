@@ -56,7 +56,8 @@ class GetCloudServiceResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCloudServiceResult(GetCloudServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudServiceResult]:
+        ...
 
 def get_cloud_service(
     cloud_service_name: Optional[_builtins.str] = ...,

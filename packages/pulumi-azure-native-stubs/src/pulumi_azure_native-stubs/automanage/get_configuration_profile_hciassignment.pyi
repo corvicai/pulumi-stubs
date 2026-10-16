@@ -52,7 +52,10 @@ class GetConfigurationProfileHCIAssignmentResult:
 class AwaitableGetConfigurationProfileHCIAssignmentResult(
     GetConfigurationProfileHCIAssignmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigurationProfileHCIAssignmentResult]:
+        ...
 
 def get_configuration_profile_hciassignment(
     cluster_name: Optional[_builtins.str] = ...,

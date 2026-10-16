@@ -166,7 +166,8 @@ class GetWorkerPoolResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetWorkerPoolResult(GetWorkerPoolResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWorkerPoolResult]:
+        ...
 
 def get_worker_pool(
     location: Optional[_builtins.str] = ...,

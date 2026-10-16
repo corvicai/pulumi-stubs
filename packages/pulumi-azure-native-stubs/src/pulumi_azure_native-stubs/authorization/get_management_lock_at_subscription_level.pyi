@@ -54,7 +54,10 @@ class GetManagementLockAtSubscriptionLevelResult:
 class AwaitableGetManagementLockAtSubscriptionLevelResult(
     GetManagementLockAtSubscriptionLevelResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagementLockAtSubscriptionLevelResult]:
+        ...
 
 def get_management_lock_at_subscription_level(
     lock_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...

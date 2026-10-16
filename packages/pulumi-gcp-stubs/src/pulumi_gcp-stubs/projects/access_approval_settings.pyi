@@ -38,17 +38,22 @@ class AccessApprovalSettingsArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[AccessApprovalSettingsEnrolledServiceArgs]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> pulumi.Input[_builtins.str]: ...
     @project_id.setter
-    def project_id(self, value: pulumi.Input[_builtins.str]): ...
+    def project_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="activeKeyVersion")
     def active_key_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @active_key_version.setter
-    def active_key_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def active_key_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationEmails")
     def notification_emails(
@@ -57,13 +62,15 @@ class AccessApprovalSettingsArgs:
     @notification_emails.setter
     def notification_emails(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _AccessApprovalSettingsState:
@@ -90,7 +97,10 @@ class _AccessApprovalSettingsState:
     @pulumi.getter(name="activeKeyVersion")
     def active_key_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @active_key_version.setter
-    def active_key_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def active_key_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ancestorHasActiveKeyVersion")
     def ancestor_has_active_key_version(
@@ -99,12 +109,16 @@ class _AccessApprovalSettingsState:
     @ancestor_has_active_key_version.setter
     def ancestor_has_active_key_version(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enrolledAncestor")
     def enrolled_ancestor(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enrolled_ancestor.setter
-    def enrolled_ancestor(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enrolled_ancestor(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enrolledServices")
     def enrolled_services(
@@ -120,17 +134,22 @@ class _AccessApprovalSettingsState:
                 Sequence[pulumi.Input[AccessApprovalSettingsEnrolledServiceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="invalidKeyVersion")
     def invalid_key_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @invalid_key_version.setter
-    def invalid_key_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def invalid_key_version(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notificationEmails")
     def notification_emails(
@@ -139,18 +158,21 @@ class _AccessApprovalSettingsState:
     @notification_emails.setter
     def notification_emails(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="projectId")
     def project_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_id.setter
-    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class AccessApprovalSettings(pulumi.CustomResource):

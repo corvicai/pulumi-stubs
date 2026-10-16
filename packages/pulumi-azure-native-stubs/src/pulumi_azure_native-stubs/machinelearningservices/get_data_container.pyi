@@ -44,7 +44,8 @@ class GetDataContainerResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataContainerResult(GetDataContainerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataContainerResult]:
+        ...
 
 def get_data_container(
     name: Optional[_builtins.str] = ...,

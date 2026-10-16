@@ -32,7 +32,10 @@ class PipelineBufferOptionsArgs:
     @pulumi.getter(name="persistentBufferEnabled")
     def persistent_buffer_enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @persistent_buffer_enabled.setter
-    def persistent_buffer_enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def persistent_buffer_enabled(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
 
 class PipelineEncryptionAtRestOptionsArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
@@ -44,7 +47,8 @@ class PipelineEncryptionAtRestOptionsArgs:
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipelineLogPublishingOptionsArgsDict(TypedDict):
     cloudwatch_log_destination: NotRequired[
@@ -75,12 +79,16 @@ class PipelineLogPublishingOptionsArgs:
         value: Optional[
             pulumi.Input[PipelineLogPublishingOptionsCloudwatchLogDestinationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isLoggingEnabled")
     def is_logging_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_logging_enabled.setter
-    def is_logging_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_logging_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 class PipelineLogPublishingOptionsCloudwatchLogDestinationArgsDict(TypedDict):
     log_group: pulumi.Input[_builtins.str]
@@ -92,7 +100,8 @@ class PipelineLogPublishingOptionsCloudwatchLogDestinationArgs:
     @pulumi.getter(name="logGroup")
     def log_group(self) -> pulumi.Input[_builtins.str]: ...
     @log_group.setter
-    def log_group(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipelineTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -112,17 +121,20 @@ class PipelineTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipelineVpcOptionsArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -146,7 +158,8 @@ class PipelineVpcOptionsArgs:
     @subnet_ids.setter
     def subnet_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupIds")
     def security_group_ids(
@@ -155,9 +168,13 @@ class PipelineVpcOptionsArgs:
     @security_group_ids.setter
     def security_group_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcEndpointManagement")
     def vpc_endpoint_management(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_endpoint_management.setter
-    def vpc_endpoint_management(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_endpoint_management(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...

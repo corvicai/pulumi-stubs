@@ -52,7 +52,8 @@ class GetCloudWatchAlarmResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudWatchAlarmResult(GetCloudWatchAlarmResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudWatchAlarmResult]:
+        ...
 
 def get_cloud_watch_alarm(
     name: Optional[_builtins.str] = ...,

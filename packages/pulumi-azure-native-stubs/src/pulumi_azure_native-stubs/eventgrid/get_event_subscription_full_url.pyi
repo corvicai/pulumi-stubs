@@ -20,7 +20,8 @@ class GetEventSubscriptionFullUrlResult:
     def endpoint_url(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetEventSubscriptionFullUrlResult(GetEventSubscriptionFullUrlResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEventSubscriptionFullUrlResult]:
+        ...
 
 def get_event_subscription_full_url(
     event_subscription_name: Optional[_builtins.str] = ...,

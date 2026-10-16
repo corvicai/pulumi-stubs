@@ -120,7 +120,8 @@ class GetRecordSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRecordSetResult(GetRecordSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRecordSetResult]:
+        ...
 
 def get_record_set(
     record_type: Optional[_builtins.str] = ...,

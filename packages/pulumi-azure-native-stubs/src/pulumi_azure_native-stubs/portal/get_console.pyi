@@ -24,7 +24,8 @@ class GetConsoleResult:
     def properties(self) -> outputs.ConsolePropertiesResponse: ...
 
 class AwaitableGetConsoleResult(GetConsoleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConsoleResult]:
+        ...
 
 def get_console(
     console_name: Optional[_builtins.str] = ...,

@@ -59,7 +59,8 @@ class GetNpmPackageResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetNpmPackageResult(GetNpmPackageResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNpmPackageResult]:
+        ...
 
 def get_npm_package(
     location: Optional[_builtins.str] = ...,

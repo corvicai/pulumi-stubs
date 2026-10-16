@@ -83,7 +83,8 @@ class GetTableResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTableResult(GetTableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTableResult]:
+        ...
 
 def get_table(
     resource_group_name: Optional[_builtins.str] = ...,

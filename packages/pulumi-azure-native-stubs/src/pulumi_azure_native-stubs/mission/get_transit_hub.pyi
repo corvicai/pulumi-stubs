@@ -64,7 +64,8 @@ class GetTransitHubResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTransitHubResult(GetTransitHubResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTransitHubResult]:
+        ...
 
 def get_transit_hub(
     community_name: Optional[_builtins.str] = ...,

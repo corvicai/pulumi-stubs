@@ -34,12 +34,14 @@ class VpcEncryptionControlArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> pulumi.Input[_builtins.str]: ...
     @vpc_id.setter
-    def vpc_id(self, value: pulumi.Input[_builtins.str]): ...
+    def vpc_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="egressOnlyInternetGatewayExclusion")
     def egress_only_internet_gateway_exclusion(
@@ -48,7 +50,8 @@ class VpcEncryptionControlArgs:
     @egress_only_internet_gateway_exclusion.setter
     def egress_only_internet_gateway_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticFileSystemExclusion")
     def elastic_file_system_exclusion(
@@ -57,29 +60,38 @@ class VpcEncryptionControlArgs:
     @elastic_file_system_exclusion.setter
     def elastic_file_system_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internetGatewayExclusion")
     def internet_gateway_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @internet_gateway_exclusion.setter
     def internet_gateway_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaExclusion")
     def lambda_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lambda_exclusion.setter
-    def lambda_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lambda_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natGatewayExclusion")
     def nat_gateway_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @nat_gateway_exclusion.setter
-    def nat_gateway_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def nat_gateway_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -88,14 +100,16 @@ class VpcEncryptionControlArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[VpcEncryptionControlTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[VpcEncryptionControlTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualPrivateGatewayExclusion")
     def virtual_private_gateway_exclusion(
@@ -104,17 +118,24 @@ class VpcEncryptionControlArgs:
     @virtual_private_gateway_exclusion.setter
     def virtual_private_gateway_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcLatticeExclusion")
     def vpc_lattice_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_lattice_exclusion.setter
-    def vpc_lattice_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_lattice_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcPeeringExclusion")
     def vpc_peering_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_peering_exclusion.setter
-    def vpc_peering_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_peering_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcEncryptionControlState:
@@ -153,7 +174,8 @@ class _VpcEncryptionControlState:
     @egress_only_internet_gateway_exclusion.setter
     def egress_only_internet_gateway_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="elasticFileSystemExclusion")
     def elastic_file_system_exclusion(
@@ -162,34 +184,44 @@ class _VpcEncryptionControlState:
     @elastic_file_system_exclusion.setter
     def elastic_file_system_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="internetGatewayExclusion")
     def internet_gateway_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @internet_gateway_exclusion.setter
     def internet_gateway_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaExclusion")
     def lambda_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @lambda_exclusion.setter
-    def lambda_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def lambda_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="natGatewayExclusion")
     def nat_gateway_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @nat_gateway_exclusion.setter
-    def nat_gateway_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def nat_gateway_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceExclusions")
     def resource_exclusions(
@@ -198,17 +230,20 @@ class _VpcEncryptionControlState:
     @resource_exclusions.setter
     def resource_exclusions(
         self, value: Optional[pulumi.Input[VpcEncryptionControlResourceExclusionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stateMessage")
     def state_message(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state_message.setter
-    def state_message(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state_message(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -217,7 +252,8 @@ class _VpcEncryptionControlState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -226,14 +262,16 @@ class _VpcEncryptionControlState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[VpcEncryptionControlTimeoutsArgs]]: ...
     @timeouts.setter
     def timeouts(
         self, value: Optional[pulumi.Input[VpcEncryptionControlTimeoutsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualPrivateGatewayExclusion")
     def virtual_private_gateway_exclusion(
@@ -242,22 +280,30 @@ class _VpcEncryptionControlState:
     @virtual_private_gateway_exclusion.setter
     def virtual_private_gateway_exclusion(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcId")
     def vpc_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_id.setter
-    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcLatticeExclusion")
     def vpc_lattice_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_lattice_exclusion.setter
-    def vpc_lattice_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_lattice_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcPeeringExclusion")
     def vpc_peering_exclusion(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vpc_peering_exclusion.setter
-    def vpc_peering_exclusion(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def vpc_peering_exclusion(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/vpcEncryptionControl:VpcEncryptionControl")
 class VpcEncryptionControl(pulumi.CustomResource):

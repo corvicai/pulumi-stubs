@@ -47,7 +47,8 @@ class GetHttpNamespaceResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetHttpNamespaceResult(GetHttpNamespaceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHttpNamespaceResult]:
+        ...
 
 def get_http_namespace(
     name: Optional[_builtins.str] = ...,

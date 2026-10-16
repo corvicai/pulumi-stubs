@@ -43,7 +43,8 @@ class PolicyArgs:
     @pulumi.getter(name="excludeResourceTags")
     def exclude_resource_tags(self) -> pulumi.Input[_builtins.bool]: ...
     @exclude_resource_tags.setter
-    def exclude_resource_tags(self, value: pulumi.Input[_builtins.bool]): ...
+    def exclude_resource_tags(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityServicePolicyData")
     def security_service_policy_data(
@@ -52,14 +53,16 @@ class PolicyArgs:
     @security_service_policy_data.setter
     def security_service_policy_data(
         self, value: pulumi.Input[PolicySecurityServicePolicyDataArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteAllPolicyResources")
     def delete_all_policy_resources(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_all_policy_resources.setter
     def delete_all_policy_resources(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteUnusedFmManagedResources")
     def delete_unused_fm_managed_resources(
@@ -68,37 +71,50 @@ class PolicyArgs:
     @delete_unused_fm_managed_resources.setter
     def delete_unused_fm_managed_resources(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeMap")
     def exclude_map(self) -> Optional[pulumi.Input[PolicyExcludeMapArgs]]: ...
     @exclude_map.setter
-    def exclude_map(self, value: Optional[pulumi.Input[PolicyExcludeMapArgs]]): ...
+    def exclude_map(
+        self, value: Optional[pulumi.Input[PolicyExcludeMapArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeMap")
     def include_map(self) -> Optional[pulumi.Input[PolicyIncludeMapArgs]]: ...
     @include_map.setter
-    def include_map(self, value: Optional[pulumi.Input[PolicyIncludeMapArgs]]): ...
+    def include_map(
+        self, value: Optional[pulumi.Input[PolicyIncludeMapArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remediationEnabled")
     def remediation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @remediation_enabled.setter
-    def remediation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def remediation_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetIds")
     def resource_set_ids(
@@ -107,7 +123,8 @@ class PolicyArgs:
     @resource_set_ids.setter
     def resource_set_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTagLogicalOperator")
     def resource_tag_logical_operator(
@@ -116,7 +133,8 @@ class PolicyArgs:
     @resource_tag_logical_operator.setter
     def resource_tag_logical_operator(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -125,12 +143,14 @@ class PolicyArgs:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypeLists")
     def resource_type_lists(
@@ -139,7 +159,8 @@ class PolicyArgs:
     @resource_type_lists.setter
     def resource_type_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -148,7 +169,8 @@ class PolicyArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _PolicyState:
@@ -191,14 +213,16 @@ class _PolicyState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteAllPolicyResources")
     def delete_all_policy_resources(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_all_policy_resources.setter
     def delete_all_policy_resources(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteUnusedFmManagedResources")
     def delete_unused_fm_managed_resources(
@@ -207,47 +231,66 @@ class _PolicyState:
     @delete_unused_fm_managed_resources.setter
     def delete_unused_fm_managed_resources(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeMap")
     def exclude_map(self) -> Optional[pulumi.Input[PolicyExcludeMapArgs]]: ...
     @exclude_map.setter
-    def exclude_map(self, value: Optional[pulumi.Input[PolicyExcludeMapArgs]]): ...
+    def exclude_map(
+        self, value: Optional[pulumi.Input[PolicyExcludeMapArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludeResourceTags")
     def exclude_resource_tags(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @exclude_resource_tags.setter
-    def exclude_resource_tags(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def exclude_resource_tags(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeMap")
     def include_map(self) -> Optional[pulumi.Input[PolicyIncludeMapArgs]]: ...
     @include_map.setter
-    def include_map(self, value: Optional[pulumi.Input[PolicyIncludeMapArgs]]): ...
+    def include_map(
+        self, value: Optional[pulumi.Input[PolicyIncludeMapArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyUpdateToken")
     def policy_update_token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_update_token.setter
-    def policy_update_token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def policy_update_token(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remediationEnabled")
     def remediation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @remediation_enabled.setter
-    def remediation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def remediation_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceSetIds")
     def resource_set_ids(
@@ -256,7 +299,8 @@ class _PolicyState:
     @resource_set_ids.setter
     def resource_set_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTagLogicalOperator")
     def resource_tag_logical_operator(
@@ -265,7 +309,8 @@ class _PolicyState:
     @resource_tag_logical_operator.setter
     def resource_tag_logical_operator(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -274,12 +319,14 @@ class _PolicyState:
     @resource_tags.setter
     def resource_tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypeLists")
     def resource_type_lists(
@@ -288,7 +335,8 @@ class _PolicyState:
     @resource_type_lists.setter
     def resource_type_lists(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityServicePolicyData")
     def security_service_policy_data(
@@ -297,7 +345,8 @@ class _PolicyState:
     @security_service_policy_data.setter
     def security_service_policy_data(
         self, value: Optional[pulumi.Input[PolicySecurityServicePolicyDataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -306,7 +355,8 @@ class _PolicyState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -315,7 +365,8 @@ class _PolicyState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:fms/policy:Policy")
 class Policy(pulumi.CustomResource):

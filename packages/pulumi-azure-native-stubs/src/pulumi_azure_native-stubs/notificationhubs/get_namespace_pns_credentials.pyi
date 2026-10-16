@@ -80,7 +80,8 @@ class GetNamespacePnsCredentialsResult:
     def xiaomi_credential(self) -> Optional[outputs.XiaomiCredentialResponse]: ...
 
 class AwaitableGetNamespacePnsCredentialsResult(GetNamespacePnsCredentialsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNamespacePnsCredentialsResult]:
+        ...
 
 def get_namespace_pns_credentials(
     namespace_name: Optional[_builtins.str] = ...,

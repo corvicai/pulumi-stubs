@@ -61,7 +61,10 @@ class GetPremiumMicrosoftDefenderForThreatIntelligenceResult:
 class AwaitableGetPremiumMicrosoftDefenderForThreatIntelligenceResult(
     GetPremiumMicrosoftDefenderForThreatIntelligenceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPremiumMicrosoftDefenderForThreatIntelligenceResult]:
+        ...
 
 def get_premium_microsoft_defender_for_threat_intelligence(
     data_connector_id: Optional[_builtins.str] = ...,

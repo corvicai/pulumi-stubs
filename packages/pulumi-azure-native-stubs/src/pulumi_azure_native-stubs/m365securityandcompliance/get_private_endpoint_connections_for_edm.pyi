@@ -56,7 +56,10 @@ class GetPrivateEndpointConnectionsForEDMResult:
 class AwaitableGetPrivateEndpointConnectionsForEDMResult(
     GetPrivateEndpointConnectionsForEDMResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetPrivateEndpointConnectionsForEDMResult]:
+        ...
 
 def get_private_endpoint_connections_for_edm(
     private_endpoint_connection_name: Optional[_builtins.str] = ...,

@@ -114,7 +114,8 @@ class GetLicenseProfileResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetLicenseProfileResult(GetLicenseProfileResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetLicenseProfileResult]:
+        ...
 
 def get_license_profile(
     license_profile_name: Optional[_builtins.str] = ...,

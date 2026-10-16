@@ -106,7 +106,8 @@ class GetFirewallResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetFirewallResult(GetFirewallResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFirewallResult]:
+        ...
 
 def get_firewall(
     arn: Optional[_builtins.str] = ...,

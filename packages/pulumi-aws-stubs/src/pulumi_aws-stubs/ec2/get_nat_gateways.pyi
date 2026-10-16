@@ -39,7 +39,8 @@ class GetNatGatewaysResult:
     def vpc_id(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetNatGatewaysResult(GetNatGatewaysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNatGatewaysResult]:
+        ...
 
 def get_nat_gateways(
     filters: Optional[

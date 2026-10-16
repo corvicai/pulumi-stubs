@@ -44,7 +44,8 @@ class GetRetentionPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRetentionPolicyResult(GetRetentionPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRetentionPolicyResult]:
+        ...
 
 def get_retention_policy(
     resource_group_name: Optional[_builtins.str] = ...,

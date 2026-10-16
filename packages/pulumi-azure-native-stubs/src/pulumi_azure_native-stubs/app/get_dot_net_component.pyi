@@ -60,7 +60,8 @@ class GetDotNetComponentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDotNetComponentResult(GetDotNetComponentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDotNetComponentResult]:
+        ...
 
 def get_dot_net_component(
     environment_name: Optional[_builtins.str] = ...,

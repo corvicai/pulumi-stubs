@@ -44,7 +44,8 @@ class GetFleetTierResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFleetTierResult(GetFleetTierResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetTierResult]:
+        ...
 
 def get_fleet_tier(
     fleet_name: Optional[_builtins.str] = ...,

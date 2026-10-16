@@ -57,7 +57,10 @@ class GetDatabaseAccountGremlinDatabaseResult:
 class AwaitableGetDatabaseAccountGremlinDatabaseResult(
     GetDatabaseAccountGremlinDatabaseResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDatabaseAccountGremlinDatabaseResult]:
+        ...
 
 def get_database_account_gremlin_database(
     account_name: Optional[_builtins.str] = ...,

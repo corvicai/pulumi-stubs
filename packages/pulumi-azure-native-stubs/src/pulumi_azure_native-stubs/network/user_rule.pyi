@@ -43,7 +43,8 @@ class UserRuleArgs:
     @pulumi.getter(name="configurationName")
     def configuration_name(self) -> pulumi.Input[_builtins.str]: ...
     @configuration_name.setter
-    def configuration_name(self, value: pulumi.Input[_builtins.str]): ...
+    def configuration_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def direction(
@@ -53,17 +54,20 @@ class UserRuleArgs:
     def direction(
         self,
         value: pulumi.Input[Union[_builtins.str, SecurityConfigurationRuleDirection]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): ...
+    def kind(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkManagerName")
     def network_manager_name(self) -> pulumi.Input[_builtins.str]: ...
     @network_manager_name.setter
-    def network_manager_name(self, value: pulumi.Input[_builtins.str]): ...
+    def network_manager_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(
@@ -73,22 +77,26 @@ class UserRuleArgs:
     def protocol(
         self,
         value: pulumi.Input[Union[_builtins.str, SecurityConfigurationRuleProtocol]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleCollectionName")
     def rule_collection_name(self) -> pulumi.Input[_builtins.str]: ...
     @rule_collection_name.setter
-    def rule_collection_name(self, value: pulumi.Input[_builtins.str]): ...
+    def rule_collection_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationPortRanges")
     def destination_port_ranges(
@@ -97,7 +105,8 @@ class UserRuleArgs:
     @destination_port_ranges.setter
     def destination_port_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def destinations(
@@ -107,12 +116,14 @@ class UserRuleArgs:
     def destinations(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AddressPrefixItemArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ruleName")
     def rule_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @rule_name.setter
-    def rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def rule_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourcePortRanges")
     def source_port_ranges(
@@ -121,7 +132,8 @@ class UserRuleArgs:
     @source_port_ranges.setter
     def source_port_ranges(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sources(
@@ -131,7 +143,8 @@ class UserRuleArgs:
     def sources(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[AddressPrefixItemArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:UserRule")
 class UserRule(pulumi.CustomResource):

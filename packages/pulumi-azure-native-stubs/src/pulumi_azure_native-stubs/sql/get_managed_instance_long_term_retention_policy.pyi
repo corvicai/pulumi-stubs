@@ -57,7 +57,10 @@ class GetManagedInstanceLongTermRetentionPolicyResult:
 class AwaitableGetManagedInstanceLongTermRetentionPolicyResult(
     GetManagedInstanceLongTermRetentionPolicyResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetManagedInstanceLongTermRetentionPolicyResult]:
+        ...
 
 def get_managed_instance_long_term_retention_policy(
     database_name: Optional[_builtins.str] = ...,

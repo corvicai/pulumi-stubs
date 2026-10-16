@@ -26,7 +26,10 @@ class ListProductsAndConfigurationsResult:
     def value(self) -> Sequence[outputs.ConfigurationResponse]: ...
 
 class AwaitableListProductsAndConfigurationsResult(ListProductsAndConfigurationsResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListProductsAndConfigurationsResult]:
+        ...
 
 def list_products_and_configurations(
     configuration_filter: Optional[

@@ -52,7 +52,8 @@ class GetConfigurationGroupValueResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationGroupValueResult(GetConfigurationGroupValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationGroupValueResult]:
+        ...
 
 def get_configuration_group_value(
     configuration_group_value_name: Optional[_builtins.str] = ...,

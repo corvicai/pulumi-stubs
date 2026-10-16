@@ -44,7 +44,8 @@ class GetGatewayRouteConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGatewayRouteConfigResult(GetGatewayRouteConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGatewayRouteConfigResult]:
+        ...
 
 def get_gateway_route_config(
     gateway_name: Optional[_builtins.str] = ...,

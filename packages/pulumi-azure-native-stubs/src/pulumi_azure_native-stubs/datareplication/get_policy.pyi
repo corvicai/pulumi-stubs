@@ -44,7 +44,8 @@ class GetPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetPolicyResult(GetPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPolicyResult]:
+        ...
 
 def get_policy(
     policy_name: Optional[_builtins.str] = ...,

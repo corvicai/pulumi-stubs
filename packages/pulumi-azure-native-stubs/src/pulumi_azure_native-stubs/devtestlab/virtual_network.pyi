@@ -33,12 +33,14 @@ class VirtualNetworkArgs:
     @pulumi.getter(name="labName")
     def lab_name(self) -> pulumi.Input[_builtins.str]: ...
     @lab_name.setter
-    def lab_name(self, value: pulumi.Input[_builtins.str]): ...
+    def lab_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedSubnets")
     def allowed_subnets(
@@ -47,12 +49,14 @@ class VirtualNetworkArgs:
     @allowed_subnets.setter
     def allowed_subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubnetArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="externalProviderResourceId")
     def external_provider_resource_id(
@@ -61,17 +65,20 @@ class VirtualNetworkArgs:
     @external_provider_resource_id.setter
     def external_provider_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="subnetOverrides")
     def subnet_overrides(
@@ -80,7 +87,8 @@ class VirtualNetworkArgs:
     @subnet_overrides.setter
     def subnet_overrides(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubnetOverrideArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -89,7 +97,8 @@ class VirtualNetworkArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:devtestlab:VirtualNetwork")
 class VirtualNetwork(pulumi.CustomResource):

@@ -82,7 +82,8 @@ class GetCloudEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCloudEndpointResult(GetCloudEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCloudEndpointResult]:
+        ...
 
 def get_cloud_endpoint(
     cloud_endpoint_name: Optional[_builtins.str] = ...,

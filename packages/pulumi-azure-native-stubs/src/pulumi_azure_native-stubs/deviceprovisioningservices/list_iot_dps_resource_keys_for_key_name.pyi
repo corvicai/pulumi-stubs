@@ -33,7 +33,10 @@ class ListIotDpsResourceKeysForKeyNameResult:
 class AwaitableListIotDpsResourceKeysForKeyNameResult(
     ListIotDpsResourceKeysForKeyNameResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListIotDpsResourceKeysForKeyNameResult]:
+        ...
 
 def list_iot_dps_resource_keys_for_key_name(
     key_name: Optional[_builtins.str] = ...,

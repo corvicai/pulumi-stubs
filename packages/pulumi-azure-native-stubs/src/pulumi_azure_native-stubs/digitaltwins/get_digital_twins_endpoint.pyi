@@ -44,7 +44,8 @@ class GetDigitalTwinsEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDigitalTwinsEndpointResult(GetDigitalTwinsEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDigitalTwinsEndpointResult]:
+        ...
 
 def get_digital_twins_endpoint(
     endpoint_name: Optional[_builtins.str] = ...,

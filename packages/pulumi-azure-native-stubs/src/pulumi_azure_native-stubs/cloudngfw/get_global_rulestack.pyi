@@ -86,7 +86,8 @@ class GetGlobalRulestackResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGlobalRulestackResult(GetGlobalRulestackResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlobalRulestackResult]:
+        ...
 
 def get_global_rulestack(
     global_rulestack_name: Optional[_builtins.str] = ...,

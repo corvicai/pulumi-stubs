@@ -62,17 +62,20 @@ class DeploymentGroupArgs:
     @pulumi.getter(name="appName")
     def app_name(self) -> pulumi.Input[_builtins.str]: ...
     @app_name.setter
-    def app_name(self, value: pulumi.Input[_builtins.str]): ...
+    def app_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentGroupName")
     def deployment_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @deployment_group_name.setter
-    def deployment_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def deployment_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRoleArn")
     def service_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @service_role_arn.setter
-    def service_role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def service_role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="alarmConfiguration")
     def alarm_configuration(
@@ -81,7 +84,8 @@ class DeploymentGroupArgs:
     @alarm_configuration.setter
     def alarm_configuration(
         self, value: Optional[pulumi.Input[DeploymentGroupAlarmConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoRollbackConfiguration")
     def auto_rollback_configuration(
@@ -91,7 +95,8 @@ class DeploymentGroupArgs:
     def auto_rollback_configuration(
         self,
         value: Optional[pulumi.Input[DeploymentGroupAutoRollbackConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoscalingGroups")
     def autoscaling_groups(
@@ -100,7 +105,8 @@ class DeploymentGroupArgs:
     @autoscaling_groups.setter
     def autoscaling_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blueGreenDeploymentConfig")
     def blue_green_deployment_config(
@@ -110,12 +116,16 @@ class DeploymentGroupArgs:
     def blue_green_deployment_config(
         self,
         value: Optional[pulumi.Input[DeploymentGroupBlueGreenDeploymentConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfigName")
     def deployment_config_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_config_name.setter
-    def deployment_config_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_config_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentStyle")
     def deployment_style(
@@ -124,7 +134,8 @@ class DeploymentGroupArgs:
     @deployment_style.setter
     def deployment_style(
         self, value: Optional[pulumi.Input[DeploymentGroupDeploymentStyleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2TagFilters")
     def ec2_tag_filters(
@@ -138,7 +149,8 @@ class DeploymentGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DeploymentGroupEc2TagFilterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2TagSets")
     def ec2_tag_sets(
@@ -152,14 +164,16 @@ class DeploymentGroupArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DeploymentGroupEc2TagSetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecsService")
     def ecs_service(self) -> Optional[pulumi.Input[DeploymentGroupEcsServiceArgs]]: ...
     @ecs_service.setter
     def ecs_service(
         self, value: Optional[pulumi.Input[DeploymentGroupEcsServiceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerInfo")
     def load_balancer_info(
@@ -168,7 +182,8 @@ class DeploymentGroupArgs:
     @load_balancer_info.setter
     def load_balancer_info(
         self, value: Optional[pulumi.Input[DeploymentGroupLoadBalancerInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPremisesInstanceTagFilters")
     def on_premises_instance_tag_filters(
@@ -186,19 +201,22 @@ class DeploymentGroupArgs:
                 Sequence[pulumi.Input[DeploymentGroupOnPremisesInstanceTagFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outdatedInstancesStrategy")
     def outdated_instances_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outdated_instances_strategy.setter
     def outdated_instances_strategy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -207,14 +225,16 @@ class DeploymentGroupArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationHookEnabled")
     def termination_hook_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @termination_hook_enabled.setter
     def termination_hook_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerConfigurations")
     def trigger_configurations(
@@ -230,7 +250,8 @@ class DeploymentGroupArgs:
                 Sequence[pulumi.Input[DeploymentGroupTriggerConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DeploymentGroupState:
@@ -295,17 +316,20 @@ class _DeploymentGroupState:
     @alarm_configuration.setter
     def alarm_configuration(
         self, value: Optional[pulumi.Input[DeploymentGroupAlarmConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="appName")
     def app_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @app_name.setter
-    def app_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def app_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoRollbackConfiguration")
     def auto_rollback_configuration(
@@ -315,7 +339,8 @@ class _DeploymentGroupState:
     def auto_rollback_configuration(
         self,
         value: Optional[pulumi.Input[DeploymentGroupAutoRollbackConfigurationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoscalingGroups")
     def autoscaling_groups(
@@ -324,7 +349,8 @@ class _DeploymentGroupState:
     @autoscaling_groups.setter
     def autoscaling_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="blueGreenDeploymentConfig")
     def blue_green_deployment_config(
@@ -334,27 +360,40 @@ class _DeploymentGroupState:
     def blue_green_deployment_config(
         self,
         value: Optional[pulumi.Input[DeploymentGroupBlueGreenDeploymentConfigArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computePlatform")
     def compute_platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @compute_platform.setter
-    def compute_platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def compute_platform(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfigName")
     def deployment_config_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_config_name.setter
-    def deployment_config_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_config_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentGroupId")
     def deployment_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_group_id.setter
-    def deployment_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentGroupName")
     def deployment_group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_group_name.setter
-    def deployment_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def deployment_group_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deploymentStyle")
     def deployment_style(
@@ -363,7 +402,8 @@ class _DeploymentGroupState:
     @deployment_style.setter
     def deployment_style(
         self, value: Optional[pulumi.Input[DeploymentGroupDeploymentStyleArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2TagFilters")
     def ec2_tag_filters(
@@ -377,7 +417,8 @@ class _DeploymentGroupState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DeploymentGroupEc2TagFilterArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2TagSets")
     def ec2_tag_sets(
@@ -391,14 +432,16 @@ class _DeploymentGroupState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[DeploymentGroupEc2TagSetArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecsService")
     def ecs_service(self) -> Optional[pulumi.Input[DeploymentGroupEcsServiceArgs]]: ...
     @ecs_service.setter
     def ecs_service(
         self, value: Optional[pulumi.Input[DeploymentGroupEcsServiceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerInfo")
     def load_balancer_info(
@@ -407,7 +450,8 @@ class _DeploymentGroupState:
     @load_balancer_info.setter
     def load_balancer_info(
         self, value: Optional[pulumi.Input[DeploymentGroupLoadBalancerInfoArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPremisesInstanceTagFilters")
     def on_premises_instance_tag_filters(
@@ -425,24 +469,30 @@ class _DeploymentGroupState:
                 Sequence[pulumi.Input[DeploymentGroupOnPremisesInstanceTagFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outdatedInstancesStrategy")
     def outdated_instances_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outdated_instances_strategy.setter
     def outdated_instances_strategy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRoleArn")
     def service_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_role_arn.setter
-    def service_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -451,7 +501,8 @@ class _DeploymentGroupState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -460,14 +511,16 @@ class _DeploymentGroupState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationHookEnabled")
     def termination_hook_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @termination_hook_enabled.setter
     def termination_hook_enabled(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="triggerConfigurations")
     def trigger_configurations(
@@ -483,7 +536,8 @@ class _DeploymentGroupState:
                 Sequence[pulumi.Input[DeploymentGroupTriggerConfigurationArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:codedeploy/deploymentGroup:DeploymentGroup")
 class DeploymentGroup(pulumi.CustomResource):

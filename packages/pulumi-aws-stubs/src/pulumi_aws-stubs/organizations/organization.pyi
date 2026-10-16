@@ -31,7 +31,8 @@ class OrganizationArgs:
     @aws_service_access_principals.setter
     def aws_service_access_principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledPolicyTypes")
     def enabled_policy_types(
@@ -40,19 +41,22 @@ class OrganizationArgs:
     @enabled_policy_types.setter
     def enabled_policy_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureSet")
     def feature_set(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @feature_set.setter
-    def feature_set(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def feature_set(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnOrganizationOnly")
     def return_organization_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_organization_only.setter
     def return_organization_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _OrganizationState:
@@ -91,12 +95,14 @@ class _OrganizationState:
     def accounts(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[OrganizationAccountArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsServiceAccessPrincipals")
     def aws_service_access_principals(
@@ -105,7 +111,8 @@ class _OrganizationState:
     @aws_service_access_principals.setter
     def aws_service_access_principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledPolicyTypes")
     def enabled_policy_types(
@@ -114,32 +121,46 @@ class _OrganizationState:
     @enabled_policy_types.setter
     def enabled_policy_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureSet")
     def feature_set(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @feature_set.setter
-    def feature_set(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def feature_set(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterAccountArn")
     def master_account_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @master_account_arn.setter
-    def master_account_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def master_account_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterAccountEmail")
     def master_account_email(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @master_account_email.setter
-    def master_account_email(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def master_account_email(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterAccountId")
     def master_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @master_account_id.setter
-    def master_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def master_account_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterAccountName")
     def master_account_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @master_account_name.setter
-    def master_account_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def master_account_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nonMasterAccounts")
     def non_master_accounts(
@@ -153,14 +174,16 @@ class _OrganizationState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[OrganizationNonMasterAccountArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="returnOrganizationOnly")
     def return_organization_only(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @return_organization_only.setter
     def return_organization_only(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def roots(
@@ -170,7 +193,8 @@ class _OrganizationState:
     def roots(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[OrganizationRootArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:organizations/organization:Organization")
 class Organization(pulumi.CustomResource):

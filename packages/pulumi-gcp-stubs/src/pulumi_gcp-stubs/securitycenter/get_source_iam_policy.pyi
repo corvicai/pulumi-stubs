@@ -34,7 +34,8 @@ class GetSourceIamPolicyResult:
     def source(self) -> _builtins.str: ...
 
 class AwaitableGetSourceIamPolicyResult(GetSourceIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSourceIamPolicyResult]:
+        ...
 
 def get_source_iam_policy(
     organization: Optional[_builtins.str] = ...,

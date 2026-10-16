@@ -38,7 +38,8 @@ class VpcEndpointServiceArgs:
     @pulumi.getter(name="acceptanceRequired")
     def acceptance_required(self) -> pulumi.Input[_builtins.bool]: ...
     @acceptance_required.setter
-    def acceptance_required(self, value: pulumi.Input[_builtins.bool]): ...
+    def acceptance_required(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedPrincipals")
     def allowed_principals(
@@ -47,7 +48,8 @@ class VpcEndpointServiceArgs:
     @allowed_principals.setter
     def allowed_principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayLoadBalancerArns")
     def gateway_load_balancer_arns(
@@ -56,7 +58,8 @@ class VpcEndpointServiceArgs:
     @gateway_load_balancer_arns.setter
     def gateway_load_balancer_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkLoadBalancerArns")
     def network_load_balancer_arns(
@@ -65,17 +68,22 @@ class VpcEndpointServiceArgs:
     @network_load_balancer_arns.setter
     def network_load_balancer_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsName")
     def private_dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_dns_name.setter
-    def private_dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_dns_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedIpAddressTypes")
     def supported_ip_address_types(
@@ -84,7 +92,8 @@ class VpcEndpointServiceArgs:
     @supported_ip_address_types.setter
     def supported_ip_address_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedRegions")
     def supported_regions(
@@ -93,7 +102,8 @@ class VpcEndpointServiceArgs:
     @supported_regions.setter
     def supported_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -102,7 +112,8 @@ class VpcEndpointServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcEndpointServiceState:
@@ -154,7 +165,10 @@ class _VpcEndpointServiceState:
     @pulumi.getter(name="acceptanceRequired")
     def acceptance_required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @acceptance_required.setter
-    def acceptance_required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def acceptance_required(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowedPrincipals")
     def allowed_principals(
@@ -163,12 +177,14 @@ class _VpcEndpointServiceState:
     @allowed_principals.setter
     def allowed_principals(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="availabilityZones")
     def availability_zones(
@@ -177,7 +193,8 @@ class _VpcEndpointServiceState:
     @availability_zones.setter
     def availability_zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="baseEndpointDnsNames")
     def base_endpoint_dns_names(
@@ -186,7 +203,8 @@ class _VpcEndpointServiceState:
     @base_endpoint_dns_names.setter
     def base_endpoint_dns_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gatewayLoadBalancerArns")
     def gateway_load_balancer_arns(
@@ -195,12 +213,16 @@ class _VpcEndpointServiceState:
     @gateway_load_balancer_arns.setter
     def gateway_load_balancer_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managesVpcEndpoints")
     def manages_vpc_endpoints(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @manages_vpc_endpoints.setter
-    def manages_vpc_endpoints(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def manages_vpc_endpoints(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkLoadBalancerArns")
     def network_load_balancer_arns(
@@ -209,12 +231,16 @@ class _VpcEndpointServiceState:
     @network_load_balancer_arns.setter
     def network_load_balancer_arns(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsName")
     def private_dns_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @private_dns_name.setter
-    def private_dns_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def private_dns_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="privateDnsNameConfigurations")
     def private_dns_name_configurations(
@@ -234,27 +260,32 @@ class _VpcEndpointServiceState:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
     def service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_name.setter
-    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceType")
     def service_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_type.setter
-    def service_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedIpAddressTypes")
     def supported_ip_address_types(
@@ -263,7 +294,8 @@ class _VpcEndpointServiceState:
     @supported_ip_address_types.setter
     def supported_ip_address_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="supportedRegions")
     def supported_regions(
@@ -272,7 +304,8 @@ class _VpcEndpointServiceState:
     @supported_regions.setter
     def supported_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -281,7 +314,8 @@ class _VpcEndpointServiceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -290,7 +324,8 @@ class _VpcEndpointServiceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:ec2/vpcEndpointService:VpcEndpointService")
 class VpcEndpointService(pulumi.CustomResource):

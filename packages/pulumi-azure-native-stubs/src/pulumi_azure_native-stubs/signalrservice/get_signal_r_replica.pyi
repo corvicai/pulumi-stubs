@@ -64,7 +64,8 @@ class GetSignalRReplicaResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSignalRReplicaResult(GetSignalRReplicaResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSignalRReplicaResult]:
+        ...
 
 def get_signal_r_replica(
     replica_name: Optional[_builtins.str] = ...,

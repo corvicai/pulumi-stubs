@@ -100,7 +100,8 @@ class GetContainerRecipeResult:
     def working_directory(self) -> _builtins.str: ...
 
 class AwaitableGetContainerRecipeResult(GetContainerRecipeResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerRecipeResult]:
+        ...
 
 def get_container_recipe(
     arn: Optional[_builtins.str] = ...,

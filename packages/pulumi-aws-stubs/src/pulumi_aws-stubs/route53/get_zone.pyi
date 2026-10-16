@@ -74,7 +74,8 @@ class GetZoneResult:
     def zone_id(self) -> _builtins.str: ...
 
 class AwaitableGetZoneResult(GetZoneResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetZoneResult]:
+        ...
 
 def get_zone(
     enable_accelerated_recovery: Optional[_builtins.bool] = ...,

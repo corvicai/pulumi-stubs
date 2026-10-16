@@ -51,7 +51,8 @@ class GetMqResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMqResult(GetMqResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMqResult]:
+        ...
 
 def get_mq(
     mq_name: Optional[_builtins.str] = ...,

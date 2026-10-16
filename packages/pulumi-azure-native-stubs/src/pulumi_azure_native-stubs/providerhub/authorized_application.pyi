@@ -23,12 +23,14 @@ class AuthorizedApplicationArgs:
     @pulumi.getter(name="providerNamespace")
     def provider_namespace(self) -> pulumi.Input[_builtins.str]: ...
     @provider_namespace.setter
-    def provider_namespace(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_namespace(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="applicationId")
     def application_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @application_id.setter
-    def application_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def application_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -37,7 +39,8 @@ class AuthorizedApplicationArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[AuthorizedApplicationPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:providerhub:AuthorizedApplication")
 class AuthorizedApplication(pulumi.CustomResource):

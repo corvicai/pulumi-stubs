@@ -43,7 +43,8 @@ class GetMembershipIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetMembershipIamPolicyResult(GetMembershipIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMembershipIamPolicyResult]:
+        ...
 
 def get_membership_iam_policy(
     location: Optional[_builtins.str] = ...,

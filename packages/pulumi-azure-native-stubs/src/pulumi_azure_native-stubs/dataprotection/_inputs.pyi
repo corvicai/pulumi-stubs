@@ -123,12 +123,14 @@ class AbsoluteDeleteOptionArgs:
     @pulumi.getter
     def duration(self) -> pulumi.Input[_builtins.str]: ...
     @duration.setter
-    def duration(self, value: pulumi.Input[_builtins.str]): ...
+    def duration(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AdhocBasedTaggingCriteriaArgsDict(TypedDict):
     tag_info: NotRequired[pulumi.Input[RetentionTagArgsDict]]
@@ -142,7 +144,8 @@ class AdhocBasedTaggingCriteriaArgs:
     @pulumi.getter(name="tagInfo")
     def tag_info(self) -> Optional[pulumi.Input[RetentionTagArgs]]: ...
     @tag_info.setter
-    def tag_info(self, value: Optional[pulumi.Input[RetentionTagArgs]]): ...
+    def tag_info(self, value: Optional[pulumi.Input[RetentionTagArgs]]):  # -> None:
+        ...
 
 class AdhocBasedTriggerContextArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -160,12 +163,16 @@ class AdhocBasedTriggerContextArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taggingCriteria")
     def tagging_criteria(self) -> pulumi.Input[AdhocBasedTaggingCriteriaArgs]: ...
     @tagging_criteria.setter
-    def tagging_criteria(self, value: pulumi.Input[AdhocBasedTaggingCriteriaArgs]): ...
+    def tagging_criteria(
+        self, value: pulumi.Input[AdhocBasedTaggingCriteriaArgs]
+    ):  # -> None:
+        ...
 
 class AzureBackupParamsArgsDict(TypedDict):
     backup_type: pulumi.Input[_builtins.str]
@@ -183,12 +190,14 @@ class AzureBackupParamsArgs:
     @pulumi.getter(name="backupType")
     def backup_type(self) -> pulumi.Input[_builtins.str]: ...
     @backup_type.setter
-    def backup_type(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class AzureBackupRuleArgsDict(TypedDict):
     data_store: pulumi.Input[DataStoreInfoBaseArgsDict]
@@ -216,17 +225,20 @@ class AzureBackupRuleArgs:
     @pulumi.getter(name="dataStore")
     def data_store(self) -> pulumi.Input[DataStoreInfoBaseArgs]: ...
     @data_store.setter
-    def data_store(self, value: pulumi.Input[DataStoreInfoBaseArgs]): ...
+    def data_store(self, value: pulumi.Input[DataStoreInfoBaseArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def trigger(
@@ -240,14 +252,16 @@ class AzureBackupRuleArgs:
         value: pulumi.Input[
             Union[AdhocBasedTriggerContextArgs, ScheduleBasedTriggerContextArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupParameters")
     def backup_parameters(self) -> Optional[pulumi.Input[AzureBackupParamsArgs]]: ...
     @backup_parameters.setter
     def backup_parameters(
         self, value: Optional[pulumi.Input[AzureBackupParamsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureMonitorAlertSettingsArgsDict(TypedDict):
     alerts_for_all_job_failures: NotRequired[
@@ -271,7 +285,8 @@ class AzureMonitorAlertSettingsArgs:
     @alerts_for_all_job_failures.setter
     def alerts_for_all_job_failures(
         self, value: Optional[pulumi.Input[Union[_builtins.str, AlertsState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class AzureOperationalStoreParametersArgsDict(TypedDict):
     data_store_type: pulumi.Input[Union[_builtins.str, DataStoreTypes]]
@@ -293,17 +308,22 @@ class AzureOperationalStoreParametersArgs:
     @data_store_type.setter
     def data_store_type(
         self, value: pulumi.Input[Union[_builtins.str, DataStoreTypes]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupId")
     def resource_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_group_id.setter
-    def resource_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class AzureRetentionRuleArgsDict(TypedDict):
     lifecycles: pulumi.Input[Sequence[pulumi.Input[SourceLifeCycleArgsDict]]]
@@ -329,22 +349,26 @@ class AzureRetentionRuleArgs:
     @lifecycles.setter
     def lifecycles(
         self, value: pulumi.Input[Sequence[pulumi.Input[SourceLifeCycleArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isDefault")
     def is_default(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_default.setter
-    def is_default(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_default(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class BackupInstanceArgsDict(TypedDict):
     data_source_info: pulumi.Input[DatasourceArgsDict]
@@ -386,24 +410,28 @@ class BackupInstanceArgs:
     @pulumi.getter(name="dataSourceInfo")
     def data_source_info(self) -> pulumi.Input[DatasourceArgs]: ...
     @data_source_info.setter
-    def data_source_info(self, value: pulumi.Input[DatasourceArgs]): ...
+    def data_source_info(self, value: pulumi.Input[DatasourceArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyInfo")
     def policy_info(self) -> pulumi.Input[PolicyInfoArgs]: ...
     @policy_info.setter
-    def policy_info(self, value: pulumi.Input[PolicyInfoArgs]): ...
+    def policy_info(self, value: pulumi.Input[PolicyInfoArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSourceSetInfo")
     def data_source_set_info(self) -> Optional[pulumi.Input[DatasourceSetArgs]]: ...
     @data_source_set_info.setter
     def data_source_set_info(
         self, value: Optional[pulumi.Input[DatasourceSetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datasourceAuthCredentials")
     def datasource_auth_credentials(
@@ -412,17 +440,22 @@ class BackupInstanceArgs:
     @datasource_auth_credentials.setter
     def datasource_auth_credentials(
         self, value: Optional[pulumi.Input[SecretStoreBasedAuthCredentialsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
     def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @friendly_name.setter
-    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityDetails")
     def identity_details(self) -> Optional[pulumi.Input[IdentityDetailsArgs]]: ...
     @identity_details.setter
-    def identity_details(self, value: Optional[pulumi.Input[IdentityDetailsArgs]]): ...
+    def identity_details(
+        self, value: Optional[pulumi.Input[IdentityDetailsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -431,7 +464,8 @@ class BackupInstanceArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="validationType")
     def validation_type(
@@ -440,7 +474,8 @@ class BackupInstanceArgs:
     @validation_type.setter
     def validation_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ValidationType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupPolicyArgsDict(TypedDict):
     datasource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -470,12 +505,14 @@ class BackupPolicyArgs:
     @datasource_types.setter
     def datasource_types(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyRules")
     def policy_rules(
@@ -489,7 +526,8 @@ class BackupPolicyArgs:
         value: pulumi.Input[
             Sequence[pulumi.Input[Union[AzureBackupRuleArgs, AzureRetentionRuleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BackupScheduleArgsDict(TypedDict):
     repeating_time_intervals: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -511,12 +549,14 @@ class BackupScheduleArgs:
     @repeating_time_intervals.setter
     def repeating_time_intervals(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
     def time_zone(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_zone.setter
-    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_zone(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BackupVaultArgsDict(TypedDict):
     storage_settings: pulumi.Input[Sequence[pulumi.Input[StorageSettingArgsDict]]]
@@ -552,19 +592,24 @@ class BackupVaultArgs:
     @storage_settings.setter
     def storage_settings(
         self, value: pulumi.Input[Sequence[pulumi.Input[StorageSettingArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="featureSettings")
     def feature_settings(self) -> Optional[pulumi.Input[FeatureSettingsArgs]]: ...
     @feature_settings.setter
-    def feature_settings(self, value: Optional[pulumi.Input[FeatureSettingsArgs]]): ...
+    def feature_settings(
+        self, value: Optional[pulumi.Input[FeatureSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monitoringSettings")
     def monitoring_settings(self) -> Optional[pulumi.Input[MonitoringSettingsArgs]]: ...
     @monitoring_settings.setter
     def monitoring_settings(
         self, value: Optional[pulumi.Input[MonitoringSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="replicatedRegions")
     def replicated_regions(
@@ -573,7 +618,8 @@ class BackupVaultArgs:
     @replicated_regions.setter
     def replicated_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationRequests")
     def resource_guard_operation_requests(
@@ -582,14 +628,16 @@ class BackupVaultArgs:
     @resource_guard_operation_requests.setter
     def resource_guard_operation_requests(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securitySettings")
     def security_settings(self) -> Optional[pulumi.Input[SecuritySettingsArgs]]: ...
     @security_settings.setter
     def security_settings(
         self, value: Optional[pulumi.Input[SecuritySettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BlobBackupDatasourceParametersArgsDict(TypedDict):
     containers_list: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -611,12 +659,14 @@ class BlobBackupDatasourceParametersArgs:
     @containers_list.setter
     def containers_list(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CmkKekIdentityArgsDict(TypedDict):
     identity_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -634,7 +684,8 @@ class CmkKekIdentityArgs:
     @pulumi.getter(name="identityId")
     def identity_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @identity_id.setter
-    def identity_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def identity_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="identityType")
     def identity_type(
@@ -643,7 +694,8 @@ class CmkKekIdentityArgs:
     @identity_type.setter
     def identity_type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, IdentityType]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class CmkKeyVaultPropertiesArgsDict(TypedDict):
     key_uri: NotRequired[pulumi.Input[_builtins.str]]
@@ -657,7 +709,8 @@ class CmkKeyVaultPropertiesArgs:
     @pulumi.getter(name="keyUri")
     def key_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_uri.setter
-    def key_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class CopyOnExpiryOptionArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -669,7 +722,8 @@ class CopyOnExpiryOptionArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class CrossRegionRestoreSettingsArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[Union[_builtins.str, CrossRegionRestoreState]]]
@@ -692,7 +746,8 @@ class CrossRegionRestoreSettingsArgs:
     def state(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, CrossRegionRestoreState]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CrossSubscriptionRestoreSettingsArgsDict(TypedDict):
     state: NotRequired[
@@ -721,7 +776,8 @@ class CrossSubscriptionRestoreSettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, CrossSubscriptionRestoreState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class CustomCopyOptionArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -739,12 +795,14 @@ class CustomCopyOptionArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @duration.setter
-    def duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def duration(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DataStoreInfoBaseArgsDict(TypedDict):
     data_store_type: pulumi.Input[Union[_builtins.str, DataStoreTypes]]
@@ -764,12 +822,14 @@ class DataStoreInfoBaseArgs:
     @data_store_type.setter
     def data_store_type(
         self, value: pulumi.Input[Union[_builtins.str, DataStoreTypes]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DatasourceSetArgsDict(TypedDict):
     resource_id: pulumi.Input[_builtins.str]
@@ -801,27 +861,34 @@ class DatasourceSetArgs:
     @pulumi.getter(name="resourceID")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datasourceType")
     def datasource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @datasource_type.setter
-    def datasource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def datasource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_type.setter
-    def object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceLocation")
     def resource_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_location.setter
-    def resource_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceProperties")
     def resource_properties(
@@ -830,17 +897,20 @@ class DatasourceSetArgs:
     @resource_properties.setter
     def resource_properties(
         self, value: Optional[pulumi.Input[DefaultResourcePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_uri.setter
-    def resource_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DatasourceArgsDict(TypedDict):
     resource_id: pulumi.Input[_builtins.str]
@@ -872,27 +942,34 @@ class DatasourceArgs:
     @pulumi.getter(name="resourceID")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="datasourceType")
     def datasource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @datasource_type.setter
-    def datasource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def datasource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_type.setter
-    def object_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def object_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceLocation")
     def resource_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_location.setter
-    def resource_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceName")
     def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_name.setter
-    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceProperties")
     def resource_properties(
@@ -901,17 +978,20 @@ class DatasourceArgs:
     @resource_properties.setter
     def resource_properties(
         self, value: Optional[pulumi.Input[DefaultResourcePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceType")
     def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_type.setter
-    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceUri")
     def resource_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_uri.setter
-    def resource_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DayArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.int]]
@@ -929,12 +1009,14 @@ class DayArgs:
     @pulumi.getter
     def date(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @date.setter
-    def date(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def date(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isLast")
     def is_last(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_last.setter
-    def is_last(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_last(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class DefaultResourcePropertiesArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -946,7 +1028,8 @@ class DefaultResourcePropertiesArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class DppIdentityDetailsArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
@@ -968,7 +1051,8 @@ class DppIdentityDetailsArgs:
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
     def user_assigned_identities(
@@ -977,7 +1061,8 @@ class DppIdentityDetailsArgs:
     @user_assigned_identities.setter
     def user_assigned_identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EncryptionSettingsArgsDict(TypedDict):
     infrastructure_encryption: NotRequired[
@@ -1012,12 +1097,16 @@ class EncryptionSettingsArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, InfrastructureEncryptionState]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kekIdentity")
     def kek_identity(self) -> Optional[pulumi.Input[CmkKekIdentityArgs]]: ...
     @kek_identity.setter
-    def kek_identity(self, value: Optional[pulumi.Input[CmkKekIdentityArgs]]): ...
+    def kek_identity(
+        self, value: Optional[pulumi.Input[CmkKekIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyVaultProperties")
     def key_vault_properties(
@@ -1026,7 +1115,8 @@ class EncryptionSettingsArgs:
     @key_vault_properties.setter
     def key_vault_properties(
         self, value: Optional[pulumi.Input[CmkKeyVaultPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -1035,7 +1125,8 @@ class EncryptionSettingsArgs:
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class FeatureSettingsArgsDict(TypedDict):
     cross_region_restore_settings: NotRequired[
@@ -1065,7 +1156,8 @@ class FeatureSettingsArgs:
     @cross_region_restore_settings.setter
     def cross_region_restore_settings(
         self, value: Optional[pulumi.Input[CrossRegionRestoreSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="crossSubscriptionRestoreSettings")
     def cross_subscription_restore_settings(
@@ -1074,7 +1166,8 @@ class FeatureSettingsArgs:
     @cross_subscription_restore_settings.setter
     def cross_subscription_restore_settings(
         self, value: Optional[pulumi.Input[CrossSubscriptionRestoreSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class IdentityDetailsArgsDict(TypedDict):
     use_system_assigned_identity: NotRequired[pulumi.Input[_builtins.bool]]
@@ -1096,7 +1189,8 @@ class IdentityDetailsArgs:
     @use_system_assigned_identity.setter
     def use_system_assigned_identity(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityArmUrl")
     def user_assigned_identity_arm_url(
@@ -1105,7 +1199,8 @@ class IdentityDetailsArgs:
     @user_assigned_identity_arm_url.setter
     def user_assigned_identity_arm_url(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ImmediateCopyOptionArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -1117,7 +1212,8 @@ class ImmediateCopyOptionArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ImmutabilitySettingsArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[Union[_builtins.str, ImmutabilityState]]]
@@ -1137,7 +1233,8 @@ class ImmutabilitySettingsArgs:
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, ImmutabilityState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class KubernetesClusterBackupDatasourceParametersArgsDict(TypedDict):
     include_cluster_scope_resources: pulumi.Input[_builtins.bool]
@@ -1197,17 +1294,22 @@ class KubernetesClusterBackupDatasourceParametersArgs:
     @pulumi.getter(name="includeClusterScopeResources")
     def include_cluster_scope_resources(self) -> pulumi.Input[_builtins.bool]: ...
     @include_cluster_scope_resources.setter
-    def include_cluster_scope_resources(self, value: pulumi.Input[_builtins.bool]): ...
+    def include_cluster_scope_resources(
+        self, value: pulumi.Input[_builtins.bool]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="snapshotVolumes")
     def snapshot_volumes(self) -> pulumi.Input[_builtins.bool]: ...
     @snapshot_volumes.setter
-    def snapshot_volumes(self, value: pulumi.Input[_builtins.bool]): ...
+    def snapshot_volumes(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupHookReferences")
     def backup_hook_references(
@@ -1219,7 +1321,8 @@ class KubernetesClusterBackupDatasourceParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[NamespacedNameResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedNamespaces")
     def excluded_namespaces(
@@ -1228,7 +1331,8 @@ class KubernetesClusterBackupDatasourceParametersArgs:
     @excluded_namespaces.setter
     def excluded_namespaces(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedResourceTypes")
     def excluded_resource_types(
@@ -1237,7 +1341,8 @@ class KubernetesClusterBackupDatasourceParametersArgs:
     @excluded_resource_types.setter
     def excluded_resource_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedNamespaces")
     def included_namespaces(
@@ -1246,7 +1351,8 @@ class KubernetesClusterBackupDatasourceParametersArgs:
     @included_namespaces.setter
     def included_namespaces(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedResourceTypes")
     def included_resource_types(
@@ -1255,7 +1361,8 @@ class KubernetesClusterBackupDatasourceParametersArgs:
     @included_resource_types.setter
     def included_resource_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedVolumeTypes")
     def included_volume_types(
@@ -1269,7 +1376,8 @@ class KubernetesClusterBackupDatasourceParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AKSVolumeTypes]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelSelectors")
     def label_selectors(
@@ -1278,7 +1386,8 @@ class KubernetesClusterBackupDatasourceParametersArgs:
     @label_selectors.setter
     def label_selectors(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class MonitoringSettingsArgsDict(TypedDict):
     azure_monitor_alert_settings: NotRequired[
@@ -1302,7 +1411,8 @@ class MonitoringSettingsArgs:
     @azure_monitor_alert_settings.setter
     def azure_monitor_alert_settings(
         self, value: Optional[pulumi.Input[AzureMonitorAlertSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class NamespacedNameResourceArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1320,12 +1430,14 @@ class NamespacedNameResourceArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace.setter
-    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PolicyInfoArgsDict(TypedDict):
     policy_id: pulumi.Input[_builtins.str]
@@ -1343,14 +1455,16 @@ class PolicyInfoArgs:
     @pulumi.getter(name="policyId")
     def policy_id(self) -> pulumi.Input[_builtins.str]: ...
     @policy_id.setter
-    def policy_id(self, value: pulumi.Input[_builtins.str]): ...
+    def policy_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyParameters")
     def policy_parameters(self) -> Optional[pulumi.Input[PolicyParametersArgs]]: ...
     @policy_parameters.setter
     def policy_parameters(
         self, value: Optional[pulumi.Input[PolicyParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PolicyParametersArgsDict(TypedDict):
     backup_datasource_parameters_list: NotRequired[
@@ -1421,7 +1535,8 @@ class PolicyParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataStoreParametersList")
     def data_store_parameters_list(
@@ -1435,7 +1550,8 @@ class PolicyParametersArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[AzureOperationalStoreParametersArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceGuardOperationDetailArgsDict(TypedDict):
     default_resource_request: NotRequired[pulumi.Input[_builtins.str]]
@@ -1455,14 +1571,16 @@ class ResourceGuardOperationDetailArgs:
     @default_resource_request.setter
     def default_resource_request(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vaultCriticalOperation")
     def vault_critical_operation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vault_critical_operation.setter
     def vault_critical_operation(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceGuardProxyBaseArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
@@ -1488,12 +1606,16 @@ class ResourceGuardProxyBaseArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedTime")
     def last_updated_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_time.setter
-    def last_updated_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_updated_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardOperationDetails")
     def resource_guard_operation_details(
@@ -1507,14 +1629,16 @@ class ResourceGuardProxyBaseArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ResourceGuardOperationDetailArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGuardResourceId")
     def resource_guard_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_guard_resource_id.setter
     def resource_guard_resource_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ResourceGuardArgsDict(TypedDict):
     vault_critical_operation_exclusion_list: NotRequired[
@@ -1538,7 +1662,8 @@ class ResourceGuardArgs:
     @vault_critical_operation_exclusion_list.setter
     def vault_critical_operation_exclusion_list(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RetentionTagArgsDict(TypedDict):
     tag_name: pulumi.Input[_builtins.str]
@@ -1550,7 +1675,8 @@ class RetentionTagArgs:
     @pulumi.getter(name="tagName")
     def tag_name(self) -> pulumi.Input[_builtins.str]: ...
     @tag_name.setter
-    def tag_name(self, value: pulumi.Input[_builtins.str]): ...
+    def tag_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class ScheduleBasedBackupCriteriaArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -1596,7 +1722,8 @@ class ScheduleBasedBackupCriteriaArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="absoluteCriteria")
     def absolute_criteria(
@@ -1610,7 +1737,8 @@ class ScheduleBasedBackupCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AbsoluteMarker]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysOfMonth")
     def days_of_month(
@@ -1619,7 +1747,8 @@ class ScheduleBasedBackupCriteriaArgs:
     @days_of_month.setter
     def days_of_month(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DayArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysOfTheWeek")
     def days_of_the_week(
@@ -1633,7 +1762,8 @@ class ScheduleBasedBackupCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, DayOfWeek]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="monthsOfYear")
     def months_of_year(
@@ -1647,7 +1777,8 @@ class ScheduleBasedBackupCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Month]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleTimes")
     def schedule_times(
@@ -1656,7 +1787,8 @@ class ScheduleBasedBackupCriteriaArgs:
     @schedule_times.setter
     def schedule_times(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="weeksOfTheMonth")
     def weeks_of_the_month(
@@ -1670,7 +1802,8 @@ class ScheduleBasedBackupCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, WeekNumber]]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ScheduleBasedTriggerContextArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -1690,12 +1823,14 @@ class ScheduleBasedTriggerContextArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def schedule(self) -> pulumi.Input[BackupScheduleArgs]: ...
     @schedule.setter
-    def schedule(self, value: pulumi.Input[BackupScheduleArgs]): ...
+    def schedule(self, value: pulumi.Input[BackupScheduleArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taggingCriteria")
     def tagging_criteria(
@@ -1704,7 +1839,8 @@ class ScheduleBasedTriggerContextArgs:
     @tagging_criteria.setter
     def tagging_criteria(
         self, value: pulumi.Input[Sequence[pulumi.Input[TaggingCriteriaArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecretStoreBasedAuthCredentialsArgsDict(TypedDict):
     object_type: pulumi.Input[_builtins.str]
@@ -1722,7 +1858,8 @@ class SecretStoreBasedAuthCredentialsArgs:
     @pulumi.getter(name="objectType")
     def object_type(self) -> pulumi.Input[_builtins.str]: ...
     @object_type.setter
-    def object_type(self, value: pulumi.Input[_builtins.str]): ...
+    def object_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretStoreResource")
     def secret_store_resource(
@@ -1731,7 +1868,8 @@ class SecretStoreBasedAuthCredentialsArgs:
     @secret_store_resource.setter
     def secret_store_resource(
         self, value: Optional[pulumi.Input[SecretStoreResourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SecretStoreResourceArgsDict(TypedDict):
     secret_store_type: pulumi.Input[Union[_builtins.str, SecretStoreType]]
@@ -1755,17 +1893,20 @@ class SecretStoreResourceArgs:
     @secret_store_type.setter
     def secret_store_type(
         self, value: pulumi.Input[Union[_builtins.str, SecretStoreType]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uri.setter
-    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class SecuritySettingsArgsDict(TypedDict):
     encryption_settings: NotRequired[pulumi.Input[EncryptionSettingsArgsDict]]
@@ -1787,7 +1928,8 @@ class SecuritySettingsArgs:
     @encryption_settings.setter
     def encryption_settings(
         self, value: Optional[pulumi.Input[EncryptionSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="immutabilitySettings")
     def immutability_settings(
@@ -1796,7 +1938,8 @@ class SecuritySettingsArgs:
     @immutability_settings.setter
     def immutability_settings(
         self, value: Optional[pulumi.Input[ImmutabilitySettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="softDeleteSettings")
     def soft_delete_settings(
@@ -1805,7 +1948,8 @@ class SecuritySettingsArgs:
     @soft_delete_settings.setter
     def soft_delete_settings(
         self, value: Optional[pulumi.Input[SoftDeleteSettingsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SoftDeleteSettingsArgsDict(TypedDict):
     retention_duration_in_days: NotRequired[pulumi.Input[_builtins.float]]
@@ -1825,7 +1969,8 @@ class SoftDeleteSettingsArgs:
     @retention_duration_in_days.setter
     def retention_duration_in_days(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def state(
@@ -1834,7 +1979,8 @@ class SoftDeleteSettingsArgs:
     @state.setter
     def state(
         self, value: Optional[pulumi.Input[Union[_builtins.str, SoftDeleteState]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class SourceLifeCycleArgsDict(TypedDict):
     delete_after: pulumi.Input[AbsoluteDeleteOptionArgsDict]
@@ -1858,12 +2004,14 @@ class SourceLifeCycleArgs:
     @pulumi.getter(name="deleteAfter")
     def delete_after(self) -> pulumi.Input[AbsoluteDeleteOptionArgs]: ...
     @delete_after.setter
-    def delete_after(self, value: pulumi.Input[AbsoluteDeleteOptionArgs]): ...
+    def delete_after(self, value: pulumi.Input[AbsoluteDeleteOptionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDataStore")
     def source_data_store(self) -> pulumi.Input[DataStoreInfoBaseArgs]: ...
     @source_data_store.setter
-    def source_data_store(self, value: pulumi.Input[DataStoreInfoBaseArgs]): ...
+    def source_data_store(self, value: pulumi.Input[DataStoreInfoBaseArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetDataStoreCopySettings")
     def target_data_store_copy_settings(
@@ -1873,7 +2021,8 @@ class SourceLifeCycleArgs:
     def target_data_store_copy_settings(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[TargetCopySettingArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class StorageSettingArgsDict(TypedDict):
     datastore_type: NotRequired[
@@ -1900,7 +2049,8 @@ class StorageSettingArgs:
     def datastore_type(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, StorageSettingStoreTypes]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(
@@ -1909,7 +2059,8 @@ class StorageSettingArgs:
     @type.setter
     def type(
         self, value: Optional[pulumi.Input[Union[_builtins.str, StorageSettingTypes]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TaggingCriteriaArgsDict(TypedDict):
     is_default: pulumi.Input[_builtins.bool]
@@ -1935,17 +2086,20 @@ class TaggingCriteriaArgs:
     @pulumi.getter(name="isDefault")
     def is_default(self) -> pulumi.Input[_builtins.bool]: ...
     @is_default.setter
-    def is_default(self, value: pulumi.Input[_builtins.bool]): ...
+    def is_default(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagInfo")
     def tag_info(self) -> pulumi.Input[RetentionTagArgs]: ...
     @tag_info.setter
-    def tag_info(self, value: pulumi.Input[RetentionTagArgs]): ...
+    def tag_info(self, value: pulumi.Input[RetentionTagArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taggingPriority")
     def tagging_priority(self) -> pulumi.Input[_builtins.float]: ...
     @tagging_priority.setter
-    def tagging_priority(self, value: pulumi.Input[_builtins.float]): ...
+    def tagging_priority(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def criteria(
@@ -1959,7 +2113,8 @@ class TaggingCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ScheduleBasedBackupCriteriaArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TargetCopySettingArgsDict(TypedDict):
     copy_after: pulumi.Input[
@@ -1994,9 +2149,11 @@ class TargetCopySettingArgs:
         value: pulumi.Input[
             Union[CopyOnExpiryOptionArgs, CustomCopyOptionArgs, ImmediateCopyOptionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataStore")
     def data_store(self) -> pulumi.Input[DataStoreInfoBaseArgs]: ...
     @data_store.setter
-    def data_store(self, value: pulumi.Input[DataStoreInfoBaseArgs]): ...
+    def data_store(self, value: pulumi.Input[DataStoreInfoBaseArgs]):  # -> None:
+        ...

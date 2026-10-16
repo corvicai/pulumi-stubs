@@ -44,7 +44,8 @@ class GetManagedPrivateEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedPrivateEndpointResult(GetManagedPrivateEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedPrivateEndpointResult]:
+        ...
 
 def get_managed_private_endpoint(
     factory_name: Optional[_builtins.str] = ...,

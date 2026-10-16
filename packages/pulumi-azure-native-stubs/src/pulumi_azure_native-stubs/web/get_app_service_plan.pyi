@@ -156,7 +156,8 @@ class GetAppServicePlanResult:
     def zone_redundant(self) -> Optional[_builtins.bool]: ...
 
 class AwaitableGetAppServicePlanResult(GetAppServicePlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAppServicePlanResult]:
+        ...
 
 def get_app_service_plan(
     name: Optional[_builtins.str] = ...,

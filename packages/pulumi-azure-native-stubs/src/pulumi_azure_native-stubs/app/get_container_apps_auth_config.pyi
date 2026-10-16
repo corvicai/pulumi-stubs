@@ -64,7 +64,8 @@ class GetContainerAppsAuthConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContainerAppsAuthConfigResult(GetContainerAppsAuthConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContainerAppsAuthConfigResult]:
+        ...
 
 def get_container_apps_auth_config(
     auth_config_name: Optional[_builtins.str] = ...,

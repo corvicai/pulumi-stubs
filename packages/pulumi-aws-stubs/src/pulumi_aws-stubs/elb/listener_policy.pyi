@@ -26,12 +26,14 @@ class ListenerPolicyArgs:
     @pulumi.getter(name="loadBalancerName")
     def load_balancer_name(self) -> pulumi.Input[_builtins.str]: ...
     @load_balancer_name.setter
-    def load_balancer_name(self, value: pulumi.Input[_builtins.str]): ...
+    def load_balancer_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerPort")
     def load_balancer_port(self) -> pulumi.Input[_builtins.int]: ...
     @load_balancer_port.setter
-    def load_balancer_port(self, value: pulumi.Input[_builtins.int]): ...
+    def load_balancer_port(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyNames")
     def policy_names(
@@ -40,12 +42,14 @@ class ListenerPolicyArgs:
     @policy_names.setter
     def policy_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -54,7 +58,8 @@ class ListenerPolicyArgs:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ListenerPolicyState:
@@ -75,12 +80,18 @@ class _ListenerPolicyState:
     @pulumi.getter(name="loadBalancerName")
     def load_balancer_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @load_balancer_name.setter
-    def load_balancer_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def load_balancer_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerPort")
     def load_balancer_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @load_balancer_port.setter
-    def load_balancer_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def load_balancer_port(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="policyNames")
     def policy_names(
@@ -89,12 +100,14 @@ class _ListenerPolicyState:
     @policy_names.setter
     def policy_names(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def triggers(
@@ -103,7 +116,8 @@ class _ListenerPolicyState:
     @triggers.setter
     def triggers(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:elb/listenerPolicy:ListenerPolicy")
 class ListenerPolicy(pulumi.CustomResource):

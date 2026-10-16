@@ -43,7 +43,8 @@ class GetClusterIamPolicyResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetClusterIamPolicyResult(GetClusterIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClusterIamPolicyResult]:
+        ...
 
 def get_cluster_iam_policy(
     cluster: Optional[_builtins.str] = ...,

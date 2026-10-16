@@ -49,17 +49,20 @@ class ImageArgs:
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGb")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guestOsFeatures")
     def guest_os_features(
@@ -69,7 +72,8 @@ class ImageArgs:
     def guest_os_features(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ImageGuestOsFeatureArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageEncryptionKey")
     def image_encryption_key(
@@ -78,7 +82,8 @@ class ImageArgs:
     @image_encryption_key.setter
     def image_encryption_key(
         self, value: Optional[pulumi.Input[ImageImageEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -87,7 +92,8 @@ class ImageArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def licenses(
@@ -96,22 +102,26 @@ class ImageArgs:
     @licenses.setter
     def licenses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rawDisk")
     def raw_disk(self) -> Optional[pulumi.Input[ImageRawDiskArgs]]: ...
     @raw_disk.setter
-    def raw_disk(self, value: Optional[pulumi.Input[ImageRawDiskArgs]]): ...
+    def raw_disk(self, value: Optional[pulumi.Input[ImageRawDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shieldedInstanceInitialState")
     def shielded_instance_initial_state(
@@ -120,12 +130,14 @@ class ImageArgs:
     @shielded_instance_initial_state.setter
     def shielded_instance_initial_state(
         self, value: Optional[pulumi.Input[ImageShieldedInstanceInitialStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDisk")
     def source_disk(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_disk.setter
-    def source_disk(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_disk(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDiskEncryptionKey")
     def source_disk_encryption_key(
@@ -134,12 +146,14 @@ class ImageArgs:
     @source_disk_encryption_key.setter
     def source_disk_encryption_key(
         self, value: Optional[pulumi.Input[ImageSourceDiskEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceImage")
     def source_image(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_image.setter
-    def source_image(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_image(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceImageEncryptionKey")
     def source_image_encryption_key(
@@ -148,12 +162,14 @@ class ImageArgs:
     @source_image_encryption_key.setter
     def source_image_encryption_key(
         self, value: Optional[pulumi.Input[ImageSourceImageEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSnapshot")
     def source_snapshot(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_snapshot.setter
-    def source_snapshot(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_snapshot(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSnapshotEncryptionKey")
     def source_snapshot_encryption_key(
@@ -162,7 +178,8 @@ class ImageArgs:
     @source_snapshot_encryption_key.setter
     def source_snapshot_encryption_key(
         self, value: Optional[pulumi.Input[ImageSourceSnapshotEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageLocations")
     def storage_locations(
@@ -171,7 +188,8 @@ class ImageArgs:
     @storage_locations.setter
     def storage_locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ImageState:
@@ -223,22 +241,30 @@ class _ImageState:
     @pulumi.getter(name="archiveSizeBytes")
     def archive_size_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @archive_size_bytes.setter
-    def archive_size_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def archive_size_bytes(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
     def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def creation_timestamp(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGb")
     def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @disk_size_gb.setter
-    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -247,12 +273,14 @@ class _ImageState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @family.setter
-    def family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="guestOsFeatures")
     def guest_os_features(
@@ -262,7 +290,8 @@ class _ImageState:
     def guest_os_features(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[ImageGuestOsFeatureArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="imageEncryptionKey")
     def image_encryption_key(
@@ -271,12 +300,16 @@ class _ImageState:
     @image_encryption_key.setter
     def image_encryption_key(
         self, value: Optional[pulumi.Input[ImageImageEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="labelFingerprint")
     def label_fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @label_fingerprint.setter
-    def label_fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def label_fingerprint(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -285,7 +318,8 @@ class _ImageState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def licenses(
@@ -294,17 +328,20 @@ class _ImageState:
     @licenses.setter
     def licenses(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -313,17 +350,20 @@ class _ImageState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rawDisk")
     def raw_disk(self) -> Optional[pulumi.Input[ImageRawDiskArgs]]: ...
     @raw_disk.setter
-    def raw_disk(self, value: Optional[pulumi.Input[ImageRawDiskArgs]]): ...
+    def raw_disk(self, value: Optional[pulumi.Input[ImageRawDiskArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
     def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="shieldedInstanceInitialState")
     def shielded_instance_initial_state(
@@ -332,12 +372,14 @@ class _ImageState:
     @shielded_instance_initial_state.setter
     def shielded_instance_initial_state(
         self, value: Optional[pulumi.Input[ImageShieldedInstanceInitialStateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDisk")
     def source_disk(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_disk.setter
-    def source_disk(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_disk(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceDiskEncryptionKey")
     def source_disk_encryption_key(
@@ -346,12 +388,14 @@ class _ImageState:
     @source_disk_encryption_key.setter
     def source_disk_encryption_key(
         self, value: Optional[pulumi.Input[ImageSourceDiskEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceImage")
     def source_image(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_image.setter
-    def source_image(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_image(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceImageEncryptionKey")
     def source_image_encryption_key(
@@ -360,12 +404,14 @@ class _ImageState:
     @source_image_encryption_key.setter
     def source_image_encryption_key(
         self, value: Optional[pulumi.Input[ImageSourceImageEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSnapshot")
     def source_snapshot(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_snapshot.setter
-    def source_snapshot(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_snapshot(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceSnapshotEncryptionKey")
     def source_snapshot_encryption_key(
@@ -374,7 +420,8 @@ class _ImageState:
     @source_snapshot_encryption_key.setter
     def source_snapshot_encryption_key(
         self, value: Optional[pulumi.Input[ImageSourceSnapshotEncryptionKeyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageLocations")
     def storage_locations(
@@ -383,7 +430,8 @@ class _ImageState:
     @storage_locations.setter
     def storage_locations(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:compute/image:Image")
 class Image(pulumi.CustomResource):

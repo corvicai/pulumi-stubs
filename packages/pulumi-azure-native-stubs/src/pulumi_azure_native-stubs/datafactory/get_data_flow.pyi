@@ -43,7 +43,8 @@ class GetDataFlowResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDataFlowResult(GetDataFlowResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDataFlowResult]:
+        ...
 
 def get_data_flow(
     data_flow_name: Optional[_builtins.str] = ...,

@@ -35,7 +35,8 @@ class GetSubnetworksResult:
     def subnetworks(self) -> Sequence[outputs.GetSubnetworksSubnetworkResult]: ...
 
 class AwaitableGetSubnetworksResult(GetSubnetworksResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSubnetworksResult]:
+        ...
 
 def get_subnetworks(
     filter: Optional[_builtins.str] = ...,

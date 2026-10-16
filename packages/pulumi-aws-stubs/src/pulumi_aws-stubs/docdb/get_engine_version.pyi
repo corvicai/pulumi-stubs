@@ -63,7 +63,8 @@ class GetEngineVersionResult:
     def version_description(self) -> _builtins.str: ...
 
 class AwaitableGetEngineVersionResult(GetEngineVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEngineVersionResult]:
+        ...
 
 def get_engine_version(
     engine: Optional[_builtins.str] = ...,

@@ -60,7 +60,10 @@ class GetConfigurationAssignmentsForResourceGroupResult:
 class AwaitableGetConfigurationAssignmentsForResourceGroupResult(
     GetConfigurationAssignmentsForResourceGroupResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetConfigurationAssignmentsForResourceGroupResult]:
+        ...
 
 def get_configuration_assignments_for_resource_group(
     configuration_assignment_name: Optional[_builtins.str] = ...,

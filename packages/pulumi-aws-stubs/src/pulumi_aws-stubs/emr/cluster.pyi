@@ -68,17 +68,20 @@ class ClusterArgs:
     @pulumi.getter(name="releaseLabel")
     def release_label(self) -> pulumi.Input[_builtins.str]: ...
     @release_label.setter
-    def release_label(self, value: pulumi.Input[_builtins.str]): ...
+    def release_label(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRole")
     def service_role(self) -> pulumi.Input[_builtins.str]: ...
     @service_role.setter
-    def service_role(self, value: pulumi.Input[_builtins.str]): ...
+    def service_role(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalInfo")
     def additional_info(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @additional_info.setter
-    def additional_info(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def additional_info(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def applications(
@@ -87,7 +90,8 @@ class ClusterArgs:
     @applications.setter
     def applications(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoTerminationPolicy")
     def auto_termination_policy(
@@ -96,12 +100,16 @@ class ClusterArgs:
     @auto_termination_policy.setter
     def auto_termination_policy(
         self, value: Optional[pulumi.Input[ClusterAutoTerminationPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoscalingRole")
     def autoscaling_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @autoscaling_role.setter
-    def autoscaling_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def autoscaling_role(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootstrapActions")
     def bootstrap_actions(
@@ -113,17 +121,22 @@ class ClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterBootstrapActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configurations(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configurations.setter
-    def configurations(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configurations(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationsJson")
     def configurations_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configurations_json.setter
-    def configurations_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configurations_json(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coreInstanceFleet")
     def core_instance_fleet(
@@ -132,7 +145,8 @@ class ClusterArgs:
     @core_instance_fleet.setter
     def core_instance_fleet(
         self, value: Optional[pulumi.Input[ClusterCoreInstanceFleetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coreInstanceGroup")
     def core_instance_group(
@@ -141,24 +155,30 @@ class ClusterArgs:
     @core_instance_group.setter
     def core_instance_group(
         self, value: Optional[pulumi.Input[ClusterCoreInstanceGroupArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customAmiId")
     def custom_ami_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_ami_id.setter
-    def custom_ami_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_ami_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsRootVolumeSize")
     def ebs_root_volume_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ebs_root_volume_size.setter
-    def ebs_root_volume_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ebs_root_volume_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2Attributes")
     def ec2_attributes(self) -> Optional[pulumi.Input[ClusterEc2AttributesArgs]]: ...
     @ec2_attributes.setter
     def ec2_attributes(
         self, value: Optional[pulumi.Input[ClusterEc2AttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keepJobFlowAliveWhenNoSteps")
     def keep_job_flow_alive_when_no_steps(
@@ -167,7 +187,8 @@ class ClusterArgs:
     @keep_job_flow_alive_when_no_steps.setter
     def keep_job_flow_alive_when_no_steps(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kerberosAttributes")
     def kerberos_attributes(
@@ -176,7 +197,8 @@ class ClusterArgs:
     @kerberos_attributes.setter
     def kerberos_attributes(
         self, value: Optional[pulumi.Input[ClusterKerberosAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listStepsStates")
     def list_steps_states(
@@ -185,19 +207,22 @@ class ClusterArgs:
     @list_steps_states.setter
     def list_steps_states(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logEncryptionKmsKeyId")
     def log_encryption_kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_encryption_kms_key_id.setter
     def log_encryption_kms_key_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logUri")
     def log_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_uri.setter
-    def log_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterInstanceFleet")
     def master_instance_fleet(
@@ -206,7 +231,8 @@ class ClusterArgs:
     @master_instance_fleet.setter
     def master_instance_fleet(
         self, value: Optional[pulumi.Input[ClusterMasterInstanceFleetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterInstanceGroup")
     def master_instance_group(
@@ -215,17 +241,22 @@ class ClusterArgs:
     @master_instance_group.setter
     def master_instance_group(
         self, value: Optional[pulumi.Input[ClusterMasterInstanceGroupArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osReleaseLabel")
     def os_release_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_release_label.setter
-    def os_release_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_release_label(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroupConfigs")
     def placement_group_configs(
@@ -239,27 +270,38 @@ class ClusterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterPlacementGroupConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleDownBehavior")
     def scale_down_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scale_down_behavior.setter
-    def scale_down_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scale_down_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConfiguration")
     def security_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_configuration.setter
-    def security_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stepConcurrencyLevel")
     def step_concurrency_level(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @step_concurrency_level.setter
-    def step_concurrency_level(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def step_concurrency_level(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def steps(
@@ -268,7 +310,8 @@ class ClusterArgs:
     @steps.setter
     def steps(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ClusterStepArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -277,24 +320,32 @@ class ClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationProtection")
     def termination_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @termination_protection.setter
-    def termination_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def termination_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unhealthyNodeReplacement")
     def unhealthy_node_replacement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @unhealthy_node_replacement.setter
     def unhealthy_node_replacement(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="visibleToAllUsers")
     def visible_to_all_users(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @visible_to_all_users.setter
-    def visible_to_all_users(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def visible_to_all_users(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClusterState:
@@ -361,7 +412,8 @@ class _ClusterState:
     @pulumi.getter(name="additionalInfo")
     def additional_info(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @additional_info.setter
-    def additional_info(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def additional_info(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def applications(
@@ -370,12 +422,14 @@ class _ClusterState:
     @applications.setter
     def applications(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoTerminationPolicy")
     def auto_termination_policy(
@@ -384,12 +438,16 @@ class _ClusterState:
     @auto_termination_policy.setter
     def auto_termination_policy(
         self, value: Optional[pulumi.Input[ClusterAutoTerminationPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoscalingRole")
     def autoscaling_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @autoscaling_role.setter
-    def autoscaling_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def autoscaling_role(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootstrapActions")
     def bootstrap_actions(
@@ -401,22 +459,28 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterBootstrapActionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterState")
     def cluster_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_state.setter
-    def cluster_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def configurations(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configurations.setter
-    def configurations(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configurations(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationsJson")
     def configurations_json(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @configurations_json.setter
-    def configurations_json(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def configurations_json(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coreInstanceFleet")
     def core_instance_fleet(
@@ -425,7 +489,8 @@ class _ClusterState:
     @core_instance_fleet.setter
     def core_instance_fleet(
         self, value: Optional[pulumi.Input[ClusterCoreInstanceFleetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="coreInstanceGroup")
     def core_instance_group(
@@ -434,24 +499,30 @@ class _ClusterState:
     @core_instance_group.setter
     def core_instance_group(
         self, value: Optional[pulumi.Input[ClusterCoreInstanceGroupArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customAmiId")
     def custom_ami_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_ami_id.setter
-    def custom_ami_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_ami_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ebsRootVolumeSize")
     def ebs_root_volume_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ebs_root_volume_size.setter
-    def ebs_root_volume_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ebs_root_volume_size(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2Attributes")
     def ec2_attributes(self) -> Optional[pulumi.Input[ClusterEc2AttributesArgs]]: ...
     @ec2_attributes.setter
     def ec2_attributes(
         self, value: Optional[pulumi.Input[ClusterEc2AttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keepJobFlowAliveWhenNoSteps")
     def keep_job_flow_alive_when_no_steps(
@@ -460,7 +531,8 @@ class _ClusterState:
     @keep_job_flow_alive_when_no_steps.setter
     def keep_job_flow_alive_when_no_steps(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kerberosAttributes")
     def kerberos_attributes(
@@ -469,7 +541,8 @@ class _ClusterState:
     @kerberos_attributes.setter
     def kerberos_attributes(
         self, value: Optional[pulumi.Input[ClusterKerberosAttributesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listStepsStates")
     def list_steps_states(
@@ -478,19 +551,22 @@ class _ClusterState:
     @list_steps_states.setter
     def list_steps_states(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logEncryptionKmsKeyId")
     def log_encryption_kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_encryption_kms_key_id.setter
     def log_encryption_kms_key_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logUri")
     def log_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_uri.setter
-    def log_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_uri(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterInstanceFleet")
     def master_instance_fleet(
@@ -499,7 +575,8 @@ class _ClusterState:
     @master_instance_fleet.setter
     def master_instance_fleet(
         self, value: Optional[pulumi.Input[ClusterMasterInstanceFleetArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterInstanceGroup")
     def master_instance_group(
@@ -508,22 +585,30 @@ class _ClusterState:
     @master_instance_group.setter
     def master_instance_group(
         self, value: Optional[pulumi.Input[ClusterMasterInstanceGroupArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="masterPublicDns")
     def master_public_dns(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @master_public_dns.setter
-    def master_public_dns(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def master_public_dns(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="osReleaseLabel")
     def os_release_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @os_release_label.setter
-    def os_release_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def os_release_label(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementGroupConfigs")
     def placement_group_configs(
@@ -537,37 +622,50 @@ class _ClusterState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[ClusterPlacementGroupConfigArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="releaseLabel")
     def release_label(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @release_label.setter
-    def release_label(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def release_label(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scaleDownBehavior")
     def scale_down_behavior(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scale_down_behavior.setter
-    def scale_down_behavior(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def scale_down_behavior(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityConfiguration")
     def security_configuration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_configuration.setter
-    def security_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_configuration(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceRole")
     def service_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_role.setter
-    def service_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_role(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stepConcurrencyLevel")
     def step_concurrency_level(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @step_concurrency_level.setter
-    def step_concurrency_level(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def step_concurrency_level(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def steps(
@@ -576,7 +674,8 @@ class _ClusterState:
     @steps.setter
     def steps(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ClusterStepArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -585,7 +684,8 @@ class _ClusterState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -594,24 +694,32 @@ class _ClusterState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminationProtection")
     def termination_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @termination_protection.setter
-    def termination_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def termination_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="unhealthyNodeReplacement")
     def unhealthy_node_replacement(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @unhealthy_node_replacement.setter
     def unhealthy_node_replacement(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="visibleToAllUsers")
     def visible_to_all_users(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @visible_to_all_users.setter
-    def visible_to_all_users(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def visible_to_all_users(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:emr/cluster:Cluster")
 class Cluster(pulumi.CustomResource):

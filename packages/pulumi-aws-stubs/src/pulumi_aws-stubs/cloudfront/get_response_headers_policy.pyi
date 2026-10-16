@@ -70,7 +70,8 @@ class GetResponseHeadersPolicyResult:
     ) -> Sequence[outputs.GetResponseHeadersPolicyServerTimingHeadersConfigResult]: ...
 
 class AwaitableGetResponseHeadersPolicyResult(GetResponseHeadersPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResponseHeadersPolicyResult]:
+        ...
 
 def get_response_headers_policy(
     id: Optional[_builtins.str] = ...,

@@ -46,7 +46,8 @@ class GetSecretRotationResult:
     def secret_id(self) -> _builtins.str: ...
 
 class AwaitableGetSecretRotationResult(GetSecretRotationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSecretRotationResult]:
+        ...
 
 def get_secret_rotation(
     region: Optional[_builtins.str] = ...,

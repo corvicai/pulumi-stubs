@@ -51,7 +51,8 @@ class GetTagValueResult:
     def update_time(self) -> _builtins.str: ...
 
 class AwaitableGetTagValueResult(GetTagValueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTagValueResult]:
+        ...
 
 def get_tag_value(
     parent: Optional[_builtins.str] = ...,

@@ -60,7 +60,8 @@ class GetCapacityPoolCacheResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetCapacityPoolCacheResult(GetCapacityPoolCacheResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCapacityPoolCacheResult]:
+        ...
 
 def get_capacity_pool_cache(
     account_name: Optional[_builtins.str] = ...,

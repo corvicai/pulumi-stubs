@@ -87,7 +87,8 @@ class GetFleetResult:
     def vpc_configs(self) -> Sequence[outputs.GetFleetVpcConfigResult]: ...
 
 class AwaitableGetFleetResult(GetFleetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFleetResult]:
+        ...
 
 def get_fleet(
     name: Optional[_builtins.str] = ...,

@@ -59,7 +59,8 @@ class GetConnectionResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetConnectionResult(GetConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionResult]:
+        ...
 
 def get_connection(
     connection_id: Optional[_builtins.str] = ...,

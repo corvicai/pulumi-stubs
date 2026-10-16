@@ -39,14 +39,16 @@ class ServiceArgs:
     @pulumi.getter(name="serviceName")
     def service_name(self) -> pulumi.Input[_builtins.str]: ...
     @service_name.setter
-    def service_name(self, value: pulumi.Input[_builtins.str]): ...
+    def service_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConfiguration")
     def source_configuration(self) -> pulumi.Input[ServiceSourceConfigurationArgs]: ...
     @source_configuration.setter
     def source_configuration(
         self, value: pulumi.Input[ServiceSourceConfigurationArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingConfigurationArn")
     def auto_scaling_configuration_arn(
@@ -55,7 +57,8 @@ class ServiceArgs:
     @auto_scaling_configuration_arn.setter
     def auto_scaling_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -64,7 +67,8 @@ class ServiceArgs:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[ServiceEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckConfiguration")
     def health_check_configuration(
@@ -73,7 +77,8 @@ class ServiceArgs:
     @health_check_configuration.setter
     def health_check_configuration(
         self, value: Optional[pulumi.Input[ServiceHealthCheckConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceConfiguration")
     def instance_configuration(
@@ -82,7 +87,8 @@ class ServiceArgs:
     @instance_configuration.setter
     def instance_configuration(
         self, value: Optional[pulumi.Input[ServiceInstanceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -91,7 +97,8 @@ class ServiceArgs:
     @network_configuration.setter
     def network_configuration(
         self, value: Optional[pulumi.Input[ServiceNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="observabilityConfiguration")
     def observability_configuration(
@@ -100,12 +107,14 @@ class ServiceArgs:
     @observability_configuration.setter
     def observability_configuration(
         self, value: Optional[pulumi.Input[ServiceObservabilityConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -114,7 +123,8 @@ class ServiceArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ServiceState:
@@ -155,7 +165,8 @@ class _ServiceState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="autoScalingConfigurationArn")
     def auto_scaling_configuration_arn(
@@ -164,7 +175,8 @@ class _ServiceState:
     @auto_scaling_configuration_arn.setter
     def auto_scaling_configuration_arn(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfiguration")
     def encryption_configuration(
@@ -173,7 +185,8 @@ class _ServiceState:
     @encryption_configuration.setter
     def encryption_configuration(
         self, value: Optional[pulumi.Input[ServiceEncryptionConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="healthCheckConfiguration")
     def health_check_configuration(
@@ -182,7 +195,8 @@ class _ServiceState:
     @health_check_configuration.setter
     def health_check_configuration(
         self, value: Optional[pulumi.Input[ServiceHealthCheckConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceConfiguration")
     def instance_configuration(
@@ -191,7 +205,8 @@ class _ServiceState:
     @instance_configuration.setter
     def instance_configuration(
         self, value: Optional[pulumi.Input[ServiceInstanceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -200,7 +215,8 @@ class _ServiceState:
     @network_configuration.setter
     def network_configuration(
         self, value: Optional[pulumi.Input[ServiceNetworkConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="observabilityConfiguration")
     def observability_configuration(
@@ -209,27 +225,32 @@ class _ServiceState:
     @observability_configuration.setter
     def observability_configuration(
         self, value: Optional[pulumi.Input[ServiceObservabilityConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceId")
     def service_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_id.setter
-    def service_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
     def service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_name.setter
-    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serviceUrl")
     def service_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_url.setter
-    def service_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def service_url(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceConfiguration")
     def source_configuration(
@@ -238,12 +259,14 @@ class _ServiceState:
     @source_configuration.setter
     def source_configuration(
         self, value: Optional[pulumi.Input[ServiceSourceConfigurationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -252,7 +275,8 @@ class _ServiceState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -261,7 +285,8 @@ class _ServiceState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:apprunner/service:Service")
 class Service(pulumi.CustomResource):

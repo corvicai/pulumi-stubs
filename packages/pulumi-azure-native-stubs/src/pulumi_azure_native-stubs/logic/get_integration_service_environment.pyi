@@ -58,7 +58,10 @@ class GetIntegrationServiceEnvironmentResult:
 class AwaitableGetIntegrationServiceEnvironmentResult(
     GetIntegrationServiceEnvironmentResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetIntegrationServiceEnvironmentResult]:
+        ...
 
 def get_integration_service_environment(
     integration_service_environment_name: Optional[_builtins.str] = ...,

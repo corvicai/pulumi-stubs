@@ -52,7 +52,8 @@ class GetClientGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetClientGroupResult(GetClientGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetClientGroupResult]:
+        ...
 
 def get_client_group(
     client_group_name: Optional[_builtins.str] = ...,

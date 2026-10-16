@@ -66,7 +66,8 @@ class GetConfigurationPolicyGroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationPolicyGroupResult(GetConfigurationPolicyGroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationPolicyGroupResult]:
+        ...
 
 def get_configuration_policy_group(
     configuration_policy_group_name: Optional[_builtins.str] = ...,

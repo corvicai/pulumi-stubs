@@ -56,7 +56,10 @@ class GetElasticBeanstalkConfigurationTemplateResult:
 class AwaitableGetElasticBeanstalkConfigurationTemplateResult(
     GetElasticBeanstalkConfigurationTemplateResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetElasticBeanstalkConfigurationTemplateResult]:
+        ...
 
 def get_elastic_beanstalk_configuration_template(
     name: Optional[_builtins.str] = ...,

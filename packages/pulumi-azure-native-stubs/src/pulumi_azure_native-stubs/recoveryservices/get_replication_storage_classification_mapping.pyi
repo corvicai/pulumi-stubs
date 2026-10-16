@@ -46,7 +46,10 @@ class GetReplicationStorageClassificationMappingResult:
 class AwaitableGetReplicationStorageClassificationMappingResult(
     GetReplicationStorageClassificationMappingResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetReplicationStorageClassificationMappingResult]:
+        ...
 
 def get_replication_storage_classification_mapping(
     fabric_name: Optional[_builtins.str] = ...,

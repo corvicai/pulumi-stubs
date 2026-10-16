@@ -87,7 +87,8 @@ class GetMountTargetResult:
     def subnet_id(self) -> _builtins.str: ...
 
 class AwaitableGetMountTargetResult(GetMountTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMountTargetResult]:
+        ...
 
 def get_mount_target(
     access_point_id: Optional[_builtins.str] = ...,

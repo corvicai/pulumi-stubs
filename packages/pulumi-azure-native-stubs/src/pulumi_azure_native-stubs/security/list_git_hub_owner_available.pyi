@@ -24,7 +24,8 @@ class ListGitHubOwnerAvailableResult:
     def value(self) -> Optional[Sequence[outputs.GitHubOwnerResponse]]: ...
 
 class AwaitableListGitHubOwnerAvailableResult(ListGitHubOwnerAvailableResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListGitHubOwnerAvailableResult]:
+        ...
 
 def list_git_hub_owner_available(
     resource_group_name: Optional[_builtins.str] = ...,

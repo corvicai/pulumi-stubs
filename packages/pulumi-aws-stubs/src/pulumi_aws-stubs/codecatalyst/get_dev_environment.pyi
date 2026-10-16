@@ -89,7 +89,8 @@ class GetDevEnvironmentResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetDevEnvironmentResult(GetDevEnvironmentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDevEnvironmentResult]:
+        ...
 
 def get_dev_environment(
     alias: Optional[_builtins.str] = ...,

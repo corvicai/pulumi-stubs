@@ -25,7 +25,8 @@ class VpcSecurityGroupRulesExclusiveArgs:
     @egress_rule_ids.setter
     def egress_rule_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingressRuleIds")
     def ingress_rule_ids(
@@ -34,17 +35,20 @@ class VpcSecurityGroupRulesExclusiveArgs:
     @ingress_rule_ids.setter
     def ingress_rule_ids(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupId")
     def security_group_id(self) -> pulumi.Input[_builtins.str]: ...
     @security_group_id.setter
-    def security_group_id(self, value: pulumi.Input[_builtins.str]): ...
+    def security_group_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _VpcSecurityGroupRulesExclusiveState:
@@ -68,7 +72,8 @@ class _VpcSecurityGroupRulesExclusiveState:
     @egress_rule_ids.setter
     def egress_rule_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ingressRuleIds")
     def ingress_rule_ids(
@@ -77,17 +82,22 @@ class _VpcSecurityGroupRulesExclusiveState:
     @ingress_rule_ids.setter
     def ingress_rule_ids(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroupId")
     def security_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @security_group_id.setter
-    def security_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def security_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class VpcSecurityGroupRulesExclusive(pulumi.CustomResource):

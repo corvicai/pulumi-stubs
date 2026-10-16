@@ -549,7 +549,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaAwsAccountIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeRepositoryProjectNames")
     def code_repository_project_names(
@@ -569,7 +570,8 @@ class FilterFilterCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeRepositoryProviderTypes")
     def code_repository_provider_types(
@@ -589,7 +591,8 @@ class FilterFilterCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeVulnerabilityDetectorNames")
     def code_vulnerability_detector_names(
@@ -611,7 +614,8 @@ class FilterFilterCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeVulnerabilityDetectorTags")
     def code_vulnerability_detector_tags(
@@ -631,7 +635,8 @@ class FilterFilterCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeVulnerabilityFilePaths")
     def code_vulnerability_file_paths(
@@ -651,7 +656,8 @@ class FilterFilterCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="componentIds")
     def component_ids(
@@ -665,7 +671,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaComponentIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="componentTypes")
     def component_types(
@@ -679,7 +686,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaComponentTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2InstanceImageIds")
     def ec2_instance_image_ids(
@@ -695,7 +703,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEc2InstanceImageIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2InstanceSubnetIds")
     def ec2_instance_subnet_ids(
@@ -713,7 +722,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEc2InstanceSubnetIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ec2InstanceVpcIds")
     def ec2_instance_vpc_ids(
@@ -729,7 +739,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEc2InstanceVpcIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImageArchitectures")
     def ecr_image_architectures(
@@ -747,7 +758,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEcrImageArchitectureArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImageHashes")
     def ecr_image_hashes(
@@ -761,7 +773,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaEcrImageHashArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImageInUseCounts")
     def ecr_image_in_use_counts(
@@ -777,7 +790,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEcrImageInUseCountArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImageLastInUseAts")
     def ecr_image_last_in_use_ats(
@@ -795,7 +809,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEcrImageLastInUseAtArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImagePushedAts")
     def ecr_image_pushed_ats(
@@ -811,7 +826,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEcrImagePushedAtArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImageRegistries")
     def ecr_image_registries(
@@ -827,7 +843,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEcrImageRegistryArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImageRepositoryNames")
     def ecr_image_repository_names(
@@ -845,7 +862,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaEcrImageRepositoryNameArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecrImageTags")
     def ecr_image_tags(
@@ -859,7 +877,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaEcrImageTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="epssScores")
     def epss_scores(
@@ -873,7 +892,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaEpssScoreArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="exploitAvailables")
     def exploit_availables(
@@ -889,7 +909,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaExploitAvailableArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingArns")
     def finding_arns(
@@ -903,7 +924,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaFindingArnArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingStatuses")
     def finding_statuses(
@@ -917,7 +939,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaFindingStatusArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="findingTypes")
     def finding_types(
@@ -931,7 +954,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaFindingTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firstObservedAts")
     def first_observed_ats(
@@ -947,7 +971,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaFirstObservedAtArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fixAvailables")
     def fix_availables(
@@ -961,7 +986,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaFixAvailableArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inspectorScores")
     def inspector_scores(
@@ -975,7 +1001,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaInspectorScoreArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionExecutionRoleArns")
     def lambda_function_execution_role_arns(
@@ -997,7 +1024,8 @@ class FilterFilterCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionLastModifiedAts")
     def lambda_function_last_modified_ats(
@@ -1017,7 +1045,8 @@ class FilterFilterCriteriaArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionLayers")
     def lambda_function_layers(
@@ -1035,7 +1064,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaLambdaFunctionLayerArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionNames")
     def lambda_function_names(
@@ -1051,7 +1081,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaLambdaFunctionNameArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionRuntimes")
     def lambda_function_runtimes(
@@ -1069,7 +1100,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaLambdaFunctionRuntimeArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastObservedAts")
     def last_observed_ats(
@@ -1083,7 +1115,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaLastObservedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkProtocols")
     def network_protocols(
@@ -1099,7 +1132,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaNetworkProtocolArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="portRanges")
     def port_ranges(
@@ -1113,7 +1147,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaPortRangeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="relatedVulnerabilities")
     def related_vulnerabilities(
@@ -1131,7 +1166,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaRelatedVulnerabilityArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceIds")
     def resource_ids(
@@ -1145,7 +1181,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaResourceIdArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
     def resource_tags(
@@ -1159,7 +1196,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaResourceTagArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(
@@ -1173,7 +1211,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaResourceTypeArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def severities(
@@ -1187,7 +1226,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaSeverityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def titles(
@@ -1201,7 +1241,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaTitleArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatedAts")
     def updated_ats(
@@ -1215,7 +1256,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaUpdatedAtArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vendorSeverities")
     def vendor_severities(
@@ -1229,7 +1271,8 @@ class FilterFilterCriteriaArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FilterFilterCriteriaVendorSeverityArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vulnerabilityIds")
     def vulnerability_ids(
@@ -1245,7 +1288,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaVulnerabilityIdArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vulnerabilitySources")
     def vulnerability_sources(
@@ -1263,7 +1307,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaVulnerabilitySourceArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vulnerablePackages")
     def vulnerable_packages(
@@ -1279,7 +1324,8 @@ class FilterFilterCriteriaArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaVulnerablePackageArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FilterFilterCriteriaAwsAccountIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1297,12 +1343,14 @@ class FilterFilterCriteriaAwsAccountIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaCodeRepositoryProjectNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1320,12 +1368,14 @@ class FilterFilterCriteriaCodeRepositoryProjectNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaCodeRepositoryProviderTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1343,12 +1393,14 @@ class FilterFilterCriteriaCodeRepositoryProviderTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaCodeVulnerabilityDetectorNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1366,12 +1418,14 @@ class FilterFilterCriteriaCodeVulnerabilityDetectorNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaCodeVulnerabilityDetectorTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1389,12 +1443,14 @@ class FilterFilterCriteriaCodeVulnerabilityDetectorTagArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaCodeVulnerabilityFilePathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1412,12 +1468,14 @@ class FilterFilterCriteriaCodeVulnerabilityFilePathArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaComponentIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1435,12 +1493,14 @@ class FilterFilterCriteriaComponentIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaComponentTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1458,12 +1518,14 @@ class FilterFilterCriteriaComponentTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEc2InstanceImageIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1481,12 +1543,14 @@ class FilterFilterCriteriaEc2InstanceImageIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEc2InstanceSubnetIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1504,12 +1568,14 @@ class FilterFilterCriteriaEc2InstanceSubnetIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEc2InstanceVpcIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1527,12 +1593,14 @@ class FilterFilterCriteriaEc2InstanceVpcIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImageArchitectureArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1550,12 +1618,14 @@ class FilterFilterCriteriaEcrImageArchitectureArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImageHashArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1573,12 +1643,14 @@ class FilterFilterCriteriaEcrImageHashArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImageInUseCountArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
@@ -1596,12 +1668,14 @@ class FilterFilterCriteriaEcrImageInUseCountArgs:
     @pulumi.getter(name="lowerInclusive")
     def lower_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @lower_inclusive.setter
-    def lower_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def lower_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperInclusive")
     def upper_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @upper_inclusive.setter
-    def upper_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def upper_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImageLastInUseAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
@@ -1619,12 +1693,14 @@ class FilterFilterCriteriaEcrImageLastInUseAtArgs:
     @pulumi.getter(name="endInclusive")
     def end_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_inclusive.setter
-    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startInclusive")
     def start_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_inclusive.setter
-    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImagePushedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
@@ -1642,12 +1718,14 @@ class FilterFilterCriteriaEcrImagePushedAtArgs:
     @pulumi.getter(name="endInclusive")
     def end_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_inclusive.setter
-    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startInclusive")
     def start_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_inclusive.setter
-    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImageRegistryArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1665,12 +1743,14 @@ class FilterFilterCriteriaEcrImageRegistryArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImageRepositoryNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1688,12 +1768,14 @@ class FilterFilterCriteriaEcrImageRepositoryNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEcrImageTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1711,12 +1793,14 @@ class FilterFilterCriteriaEcrImageTagArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaEpssScoreArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
@@ -1734,12 +1818,14 @@ class FilterFilterCriteriaEpssScoreArgs:
     @pulumi.getter(name="lowerInclusive")
     def lower_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @lower_inclusive.setter
-    def lower_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def lower_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperInclusive")
     def upper_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @upper_inclusive.setter
-    def upper_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def upper_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class FilterFilterCriteriaExploitAvailableArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1757,12 +1843,14 @@ class FilterFilterCriteriaExploitAvailableArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaFindingArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1780,12 +1868,14 @@ class FilterFilterCriteriaFindingArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaFindingStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1803,12 +1893,14 @@ class FilterFilterCriteriaFindingStatusArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaFindingTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1826,12 +1918,14 @@ class FilterFilterCriteriaFindingTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaFirstObservedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
@@ -1849,12 +1943,14 @@ class FilterFilterCriteriaFirstObservedAtArgs:
     @pulumi.getter(name="endInclusive")
     def end_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_inclusive.setter
-    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startInclusive")
     def start_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_inclusive.setter
-    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FilterFilterCriteriaFixAvailableArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1872,12 +1968,14 @@ class FilterFilterCriteriaFixAvailableArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaInspectorScoreArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
@@ -1895,12 +1993,14 @@ class FilterFilterCriteriaInspectorScoreArgs:
     @pulumi.getter(name="lowerInclusive")
     def lower_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @lower_inclusive.setter
-    def lower_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def lower_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperInclusive")
     def upper_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @upper_inclusive.setter
-    def upper_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def upper_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class FilterFilterCriteriaLambdaFunctionExecutionRoleArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1918,12 +2018,14 @@ class FilterFilterCriteriaLambdaFunctionExecutionRoleArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaLambdaFunctionLastModifiedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
@@ -1941,12 +2043,14 @@ class FilterFilterCriteriaLambdaFunctionLastModifiedAtArgs:
     @pulumi.getter(name="endInclusive")
     def end_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_inclusive.setter
-    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startInclusive")
     def start_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_inclusive.setter
-    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FilterFilterCriteriaLambdaFunctionLayerArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1964,12 +2068,14 @@ class FilterFilterCriteriaLambdaFunctionLayerArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaLambdaFunctionNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -1987,12 +2093,14 @@ class FilterFilterCriteriaLambdaFunctionNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaLambdaFunctionRuntimeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2010,12 +2118,14 @@ class FilterFilterCriteriaLambdaFunctionRuntimeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaLastObservedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
@@ -2033,12 +2143,14 @@ class FilterFilterCriteriaLastObservedAtArgs:
     @pulumi.getter(name="endInclusive")
     def end_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_inclusive.setter
-    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startInclusive")
     def start_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_inclusive.setter
-    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FilterFilterCriteriaNetworkProtocolArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2056,12 +2168,14 @@ class FilterFilterCriteriaNetworkProtocolArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaPortRangeArgsDict(TypedDict):
     begin_inclusive: pulumi.Input[_builtins.int]
@@ -2079,12 +2193,14 @@ class FilterFilterCriteriaPortRangeArgs:
     @pulumi.getter(name="beginInclusive")
     def begin_inclusive(self) -> pulumi.Input[_builtins.int]: ...
     @begin_inclusive.setter
-    def begin_inclusive(self, value: pulumi.Input[_builtins.int]): ...
+    def begin_inclusive(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endInclusive")
     def end_inclusive(self) -> pulumi.Input[_builtins.int]: ...
     @end_inclusive.setter
-    def end_inclusive(self, value: pulumi.Input[_builtins.int]): ...
+    def end_inclusive(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class FilterFilterCriteriaRelatedVulnerabilityArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2102,12 +2218,14 @@ class FilterFilterCriteriaRelatedVulnerabilityArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaResourceIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2125,12 +2243,14 @@ class FilterFilterCriteriaResourceIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaResourceTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2150,17 +2270,20 @@ class FilterFilterCriteriaResourceTagArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaResourceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2178,12 +2301,14 @@ class FilterFilterCriteriaResourceTypeArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaSeverityArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2201,12 +2326,14 @@ class FilterFilterCriteriaSeverityArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaTitleArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2224,12 +2351,14 @@ class FilterFilterCriteriaTitleArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaUpdatedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
@@ -2247,12 +2376,14 @@ class FilterFilterCriteriaUpdatedAtArgs:
     @pulumi.getter(name="endInclusive")
     def end_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @end_inclusive.setter
-    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def end_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startInclusive")
     def start_inclusive(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @start_inclusive.setter
-    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def start_inclusive(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVendorSeverityArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2270,12 +2401,14 @@ class FilterFilterCriteriaVendorSeverityArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerabilityIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2293,12 +2426,14 @@ class FilterFilterCriteriaVulnerabilityIdArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerabilitySourceArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2316,12 +2451,14 @@ class FilterFilterCriteriaVulnerabilitySourceArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageArgsDict(TypedDict):
     architecture: NotRequired[
@@ -2394,7 +2531,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
         value: Optional[
             pulumi.Input[FilterFilterCriteriaVulnerablePackageArchitectureArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def epoches(
@@ -2412,7 +2550,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
                 Sequence[pulumi.Input[FilterFilterCriteriaVulnerablePackageEpochArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filePath")
     def file_path(
@@ -2424,7 +2563,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
         value: Optional[
             pulumi.Input[FilterFilterCriteriaVulnerablePackageFilePathArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(
@@ -2434,7 +2574,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
     def name(
         self,
         value: Optional[pulumi.Input[FilterFilterCriteriaVulnerablePackageNameArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def release(
@@ -2444,7 +2585,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
     def release(
         self,
         value: Optional[pulumi.Input[FilterFilterCriteriaVulnerablePackageReleaseArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceLambdaLayerArn")
     def source_lambda_layer_arn(
@@ -2458,7 +2600,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
         value: Optional[
             pulumi.Input[FilterFilterCriteriaVulnerablePackageSourceLambdaLayerArnArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceLayerHash")
     def source_layer_hash(
@@ -2472,7 +2615,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
         value: Optional[
             pulumi.Input[FilterFilterCriteriaVulnerablePackageSourceLayerHashArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(
@@ -2482,7 +2626,8 @@ class FilterFilterCriteriaVulnerablePackageArgs:
     def version(
         self,
         value: Optional[pulumi.Input[FilterFilterCriteriaVulnerablePackageVersionArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageArchitectureArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2500,12 +2645,14 @@ class FilterFilterCriteriaVulnerablePackageArchitectureArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageEpochArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
@@ -2523,12 +2670,14 @@ class FilterFilterCriteriaVulnerablePackageEpochArgs:
     @pulumi.getter(name="lowerInclusive")
     def lower_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @lower_inclusive.setter
-    def lower_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def lower_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upperInclusive")
     def upper_inclusive(self) -> pulumi.Input[_builtins.float]: ...
     @upper_inclusive.setter
-    def upper_inclusive(self, value: pulumi.Input[_builtins.float]): ...
+    def upper_inclusive(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageFilePathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2546,12 +2695,14 @@ class FilterFilterCriteriaVulnerablePackageFilePathArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2569,12 +2720,14 @@ class FilterFilterCriteriaVulnerablePackageNameArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageReleaseArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2592,12 +2745,14 @@ class FilterFilterCriteriaVulnerablePackageReleaseArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageSourceLambdaLayerArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2615,12 +2770,14 @@ class FilterFilterCriteriaVulnerablePackageSourceLambdaLayerArnArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageSourceLayerHashArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2638,12 +2795,14 @@ class FilterFilterCriteriaVulnerablePackageSourceLayerHashArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class FilterFilterCriteriaVulnerablePackageVersionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
@@ -2661,12 +2820,14 @@ class FilterFilterCriteriaVulnerablePackageVersionArgs:
     @pulumi.getter
     def comparison(self) -> pulumi.Input[_builtins.str]: ...
     @comparison.setter
-    def comparison(self, value: pulumi.Input[_builtins.str]): ...
+    def comparison(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class OrganizationConfigurationAutoEnableArgsDict(TypedDict):
     ec2: pulumi.Input[_builtins.bool]
@@ -2690,24 +2851,31 @@ class OrganizationConfigurationAutoEnableArgs:
     @pulumi.getter
     def ec2(self) -> pulumi.Input[_builtins.bool]: ...
     @ec2.setter
-    def ec2(self, value: pulumi.Input[_builtins.bool]): ...
+    def ec2(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def ecr(self) -> pulumi.Input[_builtins.bool]: ...
     @ecr.setter
-    def ecr(self, value: pulumi.Input[_builtins.bool]): ...
+    def ecr(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeRepository")
     def code_repository(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @code_repository.setter
-    def code_repository(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def code_repository(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambda")
     def lambda_(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @lambda_.setter
-    def lambda_(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def lambda_(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaCode")
     def lambda_code(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @lambda_code.setter
-    def lambda_code(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def lambda_code(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...

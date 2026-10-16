@@ -52,7 +52,8 @@ class GetEksNodegroupResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEksNodegroupResult(GetEksNodegroupResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEksNodegroupResult]:
+        ...
 
 def get_eks_nodegroup(
     name: Optional[_builtins.str] = ...,

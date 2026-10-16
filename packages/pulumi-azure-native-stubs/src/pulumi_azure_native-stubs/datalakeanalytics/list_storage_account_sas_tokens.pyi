@@ -24,7 +24,8 @@ class ListStorageAccountSasTokensResult:
     def value(self) -> Sequence[outputs.SasTokenInformationResponse]: ...
 
 class AwaitableListStorageAccountSasTokensResult(ListStorageAccountSasTokensResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListStorageAccountSasTokensResult]:
+        ...
 
 def list_storage_account_sas_tokens(
     account_name: Optional[_builtins.str] = ...,

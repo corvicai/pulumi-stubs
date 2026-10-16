@@ -29,12 +29,14 @@ class TrustStoreArgs:
     @ca_certificates_bundle_source.setter
     def ca_certificates_bundle_source(
         self, value: pulumi.Input[TrustStoreCaCertificatesBundleSourceArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -43,12 +45,16 @@ class TrustStoreArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[TrustStoreTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[TrustStoreTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[TrustStoreTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _TrustStoreState:
@@ -72,7 +78,8 @@ class _TrustStoreState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="caCertificatesBundleSource")
     def ca_certificates_bundle_source(
@@ -81,24 +88,28 @@ class _TrustStoreState:
     @ca_certificates_bundle_source.setter
     def ca_certificates_bundle_source(
         self, value: Optional[pulumi.Input[TrustStoreCaCertificatesBundleSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numberOfCaCertificates")
     def number_of_ca_certificates(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @number_of_ca_certificates.setter
     def number_of_ca_certificates(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -107,7 +118,8 @@ class _TrustStoreState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -116,12 +128,16 @@ class _TrustStoreState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timeouts(self) -> Optional[pulumi.Input[TrustStoreTimeoutsArgs]]: ...
     @timeouts.setter
-    def timeouts(self, value: Optional[pulumi.Input[TrustStoreTimeoutsArgs]]): ...
+    def timeouts(
+        self, value: Optional[pulumi.Input[TrustStoreTimeoutsArgs]]
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:cloudfront/trustStore:TrustStore")
 class TrustStore(pulumi.CustomResource):

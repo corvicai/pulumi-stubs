@@ -38,7 +38,8 @@ class GetQueueResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetQueueResult(GetQueueResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetQueueResult]:
+        ...
 
 def get_queue(
     account_name: Optional[_builtins.str] = ...,

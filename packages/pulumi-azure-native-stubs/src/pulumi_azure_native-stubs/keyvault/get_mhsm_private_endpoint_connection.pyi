@@ -76,7 +76,10 @@ class GetMHSMPrivateEndpointConnectionResult:
 class AwaitableGetMHSMPrivateEndpointConnectionResult(
     GetMHSMPrivateEndpointConnectionResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetMHSMPrivateEndpointConnectionResult]:
+        ...
 
 def get_mhsm_private_endpoint_connection(
     name: Optional[_builtins.str] = ...,

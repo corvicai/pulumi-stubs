@@ -20,7 +20,8 @@ class GetFlowDestinationEndpointsResult:
     def endpoints(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetFlowDestinationEndpointsResult(GetFlowDestinationEndpointsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFlowDestinationEndpointsResult]:
+        ...
 
 def get_flow_destination_endpoints(
     connection_name: Optional[_builtins.str] = ...,

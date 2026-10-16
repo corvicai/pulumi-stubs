@@ -45,7 +45,10 @@ class ListWebAppHybridConnectionKeysSlotResult:
 class AwaitableListWebAppHybridConnectionKeysSlotResult(
     ListWebAppHybridConnectionKeysSlotResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListWebAppHybridConnectionKeysSlotResult]:
+        ...
 
 def list_web_app_hybrid_connection_keys_slot(
     name: Optional[_builtins.str] = ...,

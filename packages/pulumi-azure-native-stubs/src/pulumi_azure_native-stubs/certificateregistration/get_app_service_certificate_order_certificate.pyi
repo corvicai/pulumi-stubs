@@ -61,7 +61,10 @@ class GetAppServiceCertificateOrderCertificateResult:
 class AwaitableGetAppServiceCertificateOrderCertificateResult(
     GetAppServiceCertificateOrderCertificateResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAppServiceCertificateOrderCertificateResult]:
+        ...
 
 def get_app_service_certificate_order_certificate(
     certificate_order_name: Optional[_builtins.str] = ...,

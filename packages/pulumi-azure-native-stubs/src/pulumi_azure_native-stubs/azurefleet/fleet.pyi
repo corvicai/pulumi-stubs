@@ -37,12 +37,14 @@ class FleetArgs:
     @pulumi.getter(name="computeProfile")
     def compute_profile(self) -> pulumi.Input[ComputeProfileArgs]: ...
     @compute_profile.setter
-    def compute_profile(self, value: pulumi.Input[ComputeProfileArgs]): ...
+    def compute_profile(self, value: pulumi.Input[ComputeProfileArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmSizesProfile")
     def vm_sizes_profile(
@@ -51,7 +53,8 @@ class FleetArgs:
     @vm_sizes_profile.setter
     def vm_sizes_profile(
         self, value: pulumi.Input[Sequence[pulumi.Input[VmSizeProfileArgs]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalLocationsProfile")
     def additional_locations_profile(
@@ -60,27 +63,34 @@ class FleetArgs:
     @additional_locations_profile.setter
     def additional_locations_profile(
         self, value: Optional[pulumi.Input[AdditionalLocationsProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="fleetName")
     def fleet_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fleet_name.setter
-    def fleet_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def fleet_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def plan(self) -> Optional[pulumi.Input[PlanArgs]]: ...
     @plan.setter
-    def plan(self, value: Optional[pulumi.Input[PlanArgs]]): ...
+    def plan(self, value: Optional[pulumi.Input[PlanArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regularPriorityProfile")
     def regular_priority_profile(
@@ -89,7 +99,8 @@ class FleetArgs:
     @regular_priority_profile.setter
     def regular_priority_profile(
         self, value: Optional[pulumi.Input[RegularPriorityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="spotPriorityProfile")
     def spot_priority_profile(
@@ -98,7 +109,8 @@ class FleetArgs:
     @spot_priority_profile.setter
     def spot_priority_profile(
         self, value: Optional[pulumi.Input[SpotPriorityProfileArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -107,12 +119,16 @@ class FleetArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmAttributes")
     def vm_attributes(self) -> Optional[pulumi.Input[VMAttributesArgs]]: ...
     @vm_attributes.setter
-    def vm_attributes(self, value: Optional[pulumi.Input[VMAttributesArgs]]): ...
+    def vm_attributes(
+        self, value: Optional[pulumi.Input[VMAttributesArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def zones(
@@ -121,7 +137,8 @@ class FleetArgs:
     @zones.setter
     def zones(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:azurefleet:Fleet")
 class Fleet(pulumi.CustomResource):

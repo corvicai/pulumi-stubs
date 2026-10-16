@@ -31,12 +31,16 @@ class IntegrationServiceEnvironmentArgs:
     @pulumi.getter(name="resourceGroup")
     def resource_group(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group.setter
-    def resource_group(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]: ...
     @identity.setter
-    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): ...
+    def identity(
+        self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="integrationServiceEnvironmentName")
     def integration_service_environment_name(
@@ -45,12 +49,14 @@ class IntegrationServiceEnvironmentArgs:
     @integration_service_environment_name.setter
     def integration_service_environment_name(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def properties(
@@ -59,14 +65,16 @@ class IntegrationServiceEnvironmentArgs:
     @properties.setter
     def properties(
         self, value: Optional[pulumi.Input[IntegrationServiceEnvironmentPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[IntegrationServiceEnvironmentSkuArgs]]: ...
     @sku.setter
     def sku(
         self, value: Optional[pulumi.Input[IntegrationServiceEnvironmentSkuArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -75,7 +83,8 @@ class IntegrationServiceEnvironmentArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:logic:IntegrationServiceEnvironment")
 class IntegrationServiceEnvironment(pulumi.CustomResource):

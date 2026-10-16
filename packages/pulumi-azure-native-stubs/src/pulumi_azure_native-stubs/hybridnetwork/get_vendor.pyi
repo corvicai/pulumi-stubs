@@ -48,7 +48,8 @@ class GetVendorResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVendorResult(GetVendorResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVendorResult]:
+        ...
 
 def get_vendor(
     vendor_name: Optional[_builtins.str] = ...,

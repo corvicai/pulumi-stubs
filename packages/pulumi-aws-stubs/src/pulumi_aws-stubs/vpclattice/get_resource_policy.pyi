@@ -31,7 +31,8 @@ class GetResourcePolicyResult:
     def resource_arn(self) -> _builtins.str: ...
 
 class AwaitableGetResourcePolicyResult(GetResourcePolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResourcePolicyResult]:
+        ...
 
 def get_resource_policy(
     region: Optional[_builtins.str] = ...,

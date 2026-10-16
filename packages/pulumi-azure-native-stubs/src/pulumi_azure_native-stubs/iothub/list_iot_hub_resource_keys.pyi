@@ -26,7 +26,8 @@ class ListIotHubResourceKeysResult:
     ) -> Optional[Sequence[outputs.SharedAccessSignatureAuthorizationRuleResponse]]: ...
 
 class AwaitableListIotHubResourceKeysResult(ListIotHubResourceKeysResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListIotHubResourceKeysResult]:
+        ...
 
 def list_iot_hub_resource_keys(
     resource_group_name: Optional[_builtins.str] = ...,

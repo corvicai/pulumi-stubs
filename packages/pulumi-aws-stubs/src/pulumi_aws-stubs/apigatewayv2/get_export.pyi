@@ -55,7 +55,8 @@ class GetExportResult:
     def stage_name(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetExportResult(GetExportResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetExportResult]:
+        ...
 
 def get_export(
     api_id: Optional[_builtins.str] = ...,

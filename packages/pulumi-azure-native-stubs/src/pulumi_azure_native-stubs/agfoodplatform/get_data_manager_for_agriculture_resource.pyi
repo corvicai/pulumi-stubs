@@ -76,7 +76,10 @@ class GetDataManagerForAgricultureResourceResult:
 class AwaitableGetDataManagerForAgricultureResourceResult(
     GetDataManagerForAgricultureResourceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDataManagerForAgricultureResourceResult]:
+        ...
 
 def get_data_manager_for_agriculture_resource(
     data_manager_for_agriculture_resource_name: Optional[_builtins.str] = ...,

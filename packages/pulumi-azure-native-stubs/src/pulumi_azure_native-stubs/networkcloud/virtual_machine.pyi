@@ -58,7 +58,8 @@ class VirtualMachineArgs:
     @pulumi.getter(name="adminUsername")
     def admin_username(self) -> pulumi.Input[_builtins.str]: ...
     @admin_username.setter
-    def admin_username(self, value: pulumi.Input[_builtins.str]): ...
+    def admin_username(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudServicesNetworkAttachment")
     def cloud_services_network_attachment(
@@ -67,37 +68,44 @@ class VirtualMachineArgs:
     @cloud_services_network_attachment.setter
     def cloud_services_network_attachment(
         self, value: pulumi.Input[NetworkAttachmentArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuCores")
     def cpu_cores(self) -> pulumi.Input[_builtins.float]: ...
     @cpu_cores.setter
-    def cpu_cores(self, value: pulumi.Input[_builtins.float]): ...
+    def cpu_cores(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]: ...
     @extended_location.setter
-    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): ...
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memorySizeGB")
     def memory_size_gb(self) -> pulumi.Input[_builtins.float]: ...
     @memory_size_gb.setter
-    def memory_size_gb(self, value: pulumi.Input[_builtins.float]): ...
+    def memory_size_gb(self, value: pulumi.Input[_builtins.float]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageProfile")
     def storage_profile(self) -> pulumi.Input[StorageProfileArgs]: ...
     @storage_profile.setter
-    def storage_profile(self, value: pulumi.Input[StorageProfileArgs]): ...
+    def storage_profile(self, value: pulumi.Input[StorageProfileArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImage")
     def vm_image(self) -> pulumi.Input[_builtins.str]: ...
     @vm_image.setter
-    def vm_image(self, value: pulumi.Input[_builtins.str]): ...
+    def vm_image(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootMethod")
     def boot_method(
@@ -107,7 +115,8 @@ class VirtualMachineArgs:
     def boot_method(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, VirtualMachineBootMethod]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consoleExtendedLocation")
     def console_extended_location(
@@ -116,7 +125,8 @@ class VirtualMachineArgs:
     @console_extended_location.setter
     def console_extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isolateEmulatorThread")
     def isolate_emulator_thread(
@@ -130,12 +140,14 @@ class VirtualMachineArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, VirtualMachineIsolateEmulatorThread]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkAttachments")
     def network_attachments(
@@ -145,12 +157,14 @@ class VirtualMachineArgs:
     def network_attachments(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[NetworkAttachmentArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkData")
     def network_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_data.setter
-    def network_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def network_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementHints")
     def placement_hints(
@@ -164,7 +178,8 @@ class VirtualMachineArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[VirtualMachinePlacementHintArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sshPublicKeys")
     def ssh_public_keys(
@@ -173,7 +188,8 @@ class VirtualMachineArgs:
     @ssh_public_keys.setter
     def ssh_public_keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SshPublicKeyArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -182,12 +198,14 @@ class VirtualMachineArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="userData")
     def user_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @user_data.setter
-    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def user_data(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtioInterface")
     def virtio_interface(
@@ -201,12 +219,16 @@ class VirtualMachineArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, VirtualMachineVirtioInterfaceType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineName")
     def virtual_machine_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_machine_name.setter
-    def virtual_machine_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_machine_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmDeviceModel")
     def vm_device_model(
@@ -220,7 +242,8 @@ class VirtualMachineArgs:
         value: Optional[
             pulumi.Input[Union[_builtins.str, VirtualMachineDeviceModelType]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmImageRepositoryCredentials")
     def vm_image_repository_credentials(
@@ -229,7 +252,8 @@ class VirtualMachineArgs:
     @vm_image_repository_credentials.setter
     def vm_image_repository_credentials(
         self, value: Optional[pulumi.Input[ImageRepositoryCredentialsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:networkcloud:VirtualMachine")
 class VirtualMachine(pulumi.CustomResource):

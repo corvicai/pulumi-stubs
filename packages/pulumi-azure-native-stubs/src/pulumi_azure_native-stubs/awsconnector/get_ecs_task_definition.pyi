@@ -52,7 +52,8 @@ class GetEcsTaskDefinitionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEcsTaskDefinitionResult(GetEcsTaskDefinitionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEcsTaskDefinitionResult]:
+        ...
 
 def get_ecs_task_definition(
     name: Optional[_builtins.str] = ...,

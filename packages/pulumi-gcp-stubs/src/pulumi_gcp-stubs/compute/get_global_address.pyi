@@ -71,7 +71,8 @@ class GetGlobalAddressResult:
     def users(self) -> _builtins.str: ...
 
 class AwaitableGetGlobalAddressResult(GetGlobalAddressResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGlobalAddressResult]:
+        ...
 
 def get_global_address(
     name: Optional[_builtins.str] = ...,

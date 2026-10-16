@@ -29,7 +29,8 @@ class GetPoliciesForTargetResult:
     def target_id(self) -> _builtins.str: ...
 
 class AwaitableGetPoliciesForTargetResult(GetPoliciesForTargetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPoliciesForTargetResult]:
+        ...
 
 def get_policies_for_target(
     filter: Optional[_builtins.str] = ...,

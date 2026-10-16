@@ -20,7 +20,8 @@ class ListFeatureAccountResult:
     def features(self) -> Mapping[str, _builtins.bool]: ...
 
 class AwaitableListFeatureAccountResult(ListFeatureAccountResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListFeatureAccountResult]:
+        ...
 
 def list_feature_account(
     account_name: Optional[_builtins.str] = ...,

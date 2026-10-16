@@ -120,7 +120,8 @@ class GetAzureFirewallResult:
     def zones(self) -> Optional[Sequence[_builtins.str]]: ...
 
 class AwaitableGetAzureFirewallResult(GetAzureFirewallResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAzureFirewallResult]:
+        ...
 
 def get_azure_firewall(
     azure_firewall_name: Optional[_builtins.str] = ...,

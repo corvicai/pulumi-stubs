@@ -43,29 +43,34 @@ class RestoreWorkloadArgs:
     @pulumi.getter(name="backupId")
     def backup_id(self) -> pulumi.Input[_builtins.str]: ...
     @backup_id.setter
-    def backup_id(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupVaultId")
     def backup_vault_id(self) -> pulumi.Input[_builtins.str]: ...
     @backup_vault_id.setter
-    def backup_vault_id(self, value: pulumi.Input[_builtins.str]): ...
+    def backup_vault_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSourceId")
     def data_source_id(self) -> pulumi.Input[_builtins.str]: ...
     @data_source_id.setter
-    def data_source_id(self, value: pulumi.Input[_builtins.str]): ...
+    def data_source_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clearOverridesFieldMask")
     def clear_overrides_field_mask(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @clear_overrides_field_mask.setter
     def clear_overrides_field_mask(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeInstanceRestoreProperties")
     def compute_instance_restore_properties(
@@ -79,7 +84,8 @@ class RestoreWorkloadArgs:
         value: Optional[
             pulumi.Input[RestoreWorkloadComputeInstanceRestorePropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeInstanceTargetEnvironment")
     def compute_instance_target_environment(
@@ -93,14 +99,16 @@ class RestoreWorkloadArgs:
         value: Optional[
             pulumi.Input[RestoreWorkloadComputeInstanceTargetEnvironmentArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteRestoredInstance")
     def delete_restored_instance(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_restored_instance.setter
     def delete_restored_instance(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskRestoreProperties")
     def disk_restore_properties(
@@ -109,7 +117,8 @@ class RestoreWorkloadArgs:
     @disk_restore_properties.setter
     def disk_restore_properties(
         self, value: Optional[pulumi.Input[RestoreWorkloadDiskRestorePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskTargetEnvironment")
     def disk_target_environment(
@@ -118,13 +127,15 @@ class RestoreWorkloadArgs:
     @disk_target_environment.setter
     def disk_target_environment(
         self, value: Optional[pulumi.Input[RestoreWorkloadDiskTargetEnvironmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionDiskTargetEnvironment")
     def region_disk_target_environment(
@@ -134,12 +145,14 @@ class RestoreWorkloadArgs:
     def region_disk_target_environment(
         self,
         value: Optional[pulumi.Input[RestoreWorkloadRegionDiskTargetEnvironmentArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestId")
     def request_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_id.setter
-    def request_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _RestoreWorkloadState:
@@ -177,19 +190,22 @@ class _RestoreWorkloadState:
     @pulumi.getter(name="backupId")
     def backup_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_id.setter
-    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backupVaultId")
     def backup_vault_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @backup_vault_id.setter
-    def backup_vault_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def backup_vault_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clearOverridesFieldMask")
     def clear_overrides_field_mask(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @clear_overrides_field_mask.setter
     def clear_overrides_field_mask(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeInstanceRestoreProperties")
     def compute_instance_restore_properties(
@@ -203,7 +219,8 @@ class _RestoreWorkloadState:
         value: Optional[
             pulumi.Input[RestoreWorkloadComputeInstanceRestorePropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeInstanceTargetEnvironment")
     def compute_instance_target_environment(
@@ -217,19 +234,22 @@ class _RestoreWorkloadState:
         value: Optional[
             pulumi.Input[RestoreWorkloadComputeInstanceTargetEnvironmentArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dataSourceId")
     def data_source_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_source_id.setter
-    def data_source_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def data_source_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteRestoredInstance")
     def delete_restored_instance(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @delete_restored_instance.setter
     def delete_restored_instance(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskRestoreProperties")
     def disk_restore_properties(
@@ -238,7 +258,8 @@ class _RestoreWorkloadState:
     @disk_restore_properties.setter
     def disk_restore_properties(
         self, value: Optional[pulumi.Input[RestoreWorkloadDiskRestorePropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="diskTargetEnvironment")
     def disk_target_environment(
@@ -247,18 +268,21 @@ class _RestoreWorkloadState:
     @disk_target_environment.setter
     def disk_target_environment(
         self, value: Optional[pulumi.Input[RestoreWorkloadDiskTargetEnvironmentArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionDiskTargetEnvironment")
     def region_disk_target_environment(
@@ -268,12 +292,14 @@ class _RestoreWorkloadState:
     def region_disk_target_environment(
         self,
         value: Optional[pulumi.Input[RestoreWorkloadRegionDiskTargetEnvironmentArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestId")
     def request_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_id.setter
-    def request_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetResources")
     def target_resources(
@@ -287,7 +313,8 @@ class _RestoreWorkloadState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[RestoreWorkloadTargetResourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class RestoreWorkload(pulumi.CustomResource):

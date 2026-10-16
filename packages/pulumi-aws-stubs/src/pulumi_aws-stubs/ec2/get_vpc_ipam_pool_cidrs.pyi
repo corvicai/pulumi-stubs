@@ -40,7 +40,8 @@ class GetVpcIpamPoolCidrsResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetVpcIpamPoolCidrsResult(GetVpcIpamPoolCidrsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVpcIpamPoolCidrsResult]:
+        ...
 
 def get_vpc_ipam_pool_cidrs(
     filters: Optional[

@@ -48,7 +48,8 @@ class GetMigrateAgentResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetMigrateAgentResult(GetMigrateAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetMigrateAgentResult]:
+        ...
 
 def get_migrate_agent(
     agent_name: Optional[_builtins.str] = ...,

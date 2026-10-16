@@ -34,7 +34,8 @@ class CustomActionTypeArgs:
     @pulumi.getter
     def category(self) -> pulumi.Input[_builtins.str]: ...
     @category.setter
-    def category(self, value: pulumi.Input[_builtins.str]): ...
+    def category(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputArtifactDetails")
     def input_artifact_details(
@@ -43,7 +44,8 @@ class CustomActionTypeArgs:
     @input_artifact_details.setter
     def input_artifact_details(
         self, value: pulumi.Input[CustomActionTypeInputArtifactDetailsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputArtifactDetails")
     def output_artifact_details(
@@ -52,17 +54,20 @@ class CustomActionTypeArgs:
     @output_artifact_details.setter
     def output_artifact_details(
         self, value: pulumi.Input[CustomActionTypeOutputArtifactDetailsArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerName")
     def provider_name(self) -> pulumi.Input[_builtins.str]: ...
     @provider_name.setter
-    def provider_name(self, value: pulumi.Input[_builtins.str]): ...
+    def provider_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> pulumi.Input[_builtins.str]: ...
     @version.setter
-    def version(self, value: pulumi.Input[_builtins.str]): ...
+    def version(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationProperties")
     def configuration_properties(
@@ -78,17 +83,22 @@ class CustomActionTypeArgs:
                 Sequence[pulumi.Input[CustomActionTypeConfigurationPropertyArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[pulumi.Input[CustomActionTypeSettingsArgs]]: ...
     @settings.setter
-    def settings(self, value: Optional[pulumi.Input[CustomActionTypeSettingsArgs]]): ...
+    def settings(
+        self, value: Optional[pulumi.Input[CustomActionTypeSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -97,7 +107,8 @@ class CustomActionTypeArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _CustomActionTypeState:
@@ -131,12 +142,14 @@ class _CustomActionTypeState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def category(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @category.setter
-    def category(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def category(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="configurationProperties")
     def configuration_properties(
@@ -152,7 +165,8 @@ class _CustomActionTypeState:
                 Sequence[pulumi.Input[CustomActionTypeConfigurationPropertyArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputArtifactDetails")
     def input_artifact_details(
@@ -161,7 +175,8 @@ class _CustomActionTypeState:
     @input_artifact_details.setter
     def input_artifact_details(
         self, value: Optional[pulumi.Input[CustomActionTypeInputArtifactDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputArtifactDetails")
     def output_artifact_details(
@@ -170,27 +185,34 @@ class _CustomActionTypeState:
     @output_artifact_details.setter
     def output_artifact_details(
         self, value: Optional[pulumi.Input[CustomActionTypeOutputArtifactDetailsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner.setter
-    def owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def owner(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="providerName")
     def provider_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @provider_name.setter
-    def provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def provider_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def settings(self) -> Optional[pulumi.Input[CustomActionTypeSettingsArgs]]: ...
     @settings.setter
-    def settings(self, value: Optional[pulumi.Input[CustomActionTypeSettingsArgs]]): ...
+    def settings(
+        self, value: Optional[pulumi.Input[CustomActionTypeSettingsArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -199,7 +221,8 @@ class _CustomActionTypeState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -208,12 +231,14 @@ class _CustomActionTypeState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:codepipeline/customActionType:CustomActionType")
 class CustomActionType(pulumi.CustomResource):

@@ -82,7 +82,8 @@ class GetNspAccessRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetNspAccessRuleResult(GetNspAccessRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNspAccessRuleResult]:
+        ...
 
 def get_nsp_access_rule(
     access_rule_name: Optional[_builtins.str] = ...,

@@ -44,7 +44,10 @@ class GetAvsAssessmentsV2OperationResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAvsAssessmentsV2OperationResult(GetAvsAssessmentsV2OperationResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetAvsAssessmentsV2OperationResult]:
+        ...
 
 def get_avs_assessments_v2_operation(
     assessment_name: Optional[_builtins.str] = ...,

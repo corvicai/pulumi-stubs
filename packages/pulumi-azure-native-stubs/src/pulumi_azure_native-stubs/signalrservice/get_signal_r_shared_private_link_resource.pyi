@@ -62,7 +62,10 @@ class GetSignalRSharedPrivateLinkResourceResult:
 class AwaitableGetSignalRSharedPrivateLinkResourceResult(
     GetSignalRSharedPrivateLinkResourceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSignalRSharedPrivateLinkResourceResult]:
+        ...
 
 def get_signal_r_shared_private_link_resource(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -30,7 +30,8 @@ class GetAnnouncementsResult:
     def parent(self) -> _builtins.str: ...
 
 class AwaitableGetAnnouncementsResult(GetAnnouncementsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAnnouncementsResult]:
+        ...
 
 def get_announcements(
     name: Optional[_builtins.str] = ...,

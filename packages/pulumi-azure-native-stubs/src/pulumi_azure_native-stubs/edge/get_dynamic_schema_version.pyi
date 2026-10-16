@@ -48,7 +48,8 @@ class GetDynamicSchemaVersionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDynamicSchemaVersionResult(GetDynamicSchemaVersionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDynamicSchemaVersionResult]:
+        ...
 
 def get_dynamic_schema_version(
     dynamic_schema_name: Optional[_builtins.str] = ...,

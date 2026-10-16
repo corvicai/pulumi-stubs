@@ -79,7 +79,8 @@ class GetResolverEndpointResult:
     def vpc_id(self) -> _builtins.str: ...
 
 class AwaitableGetResolverEndpointResult(GetResolverEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetResolverEndpointResult]:
+        ...
 
 def get_resolver_endpoint(
     filters: Optional[

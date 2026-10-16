@@ -44,7 +44,8 @@ class GetConfigurationServiceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConfigurationServiceResult(GetConfigurationServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConfigurationServiceResult]:
+        ...
 
 def get_configuration_service(
     configuration_service_name: Optional[_builtins.str] = ...,

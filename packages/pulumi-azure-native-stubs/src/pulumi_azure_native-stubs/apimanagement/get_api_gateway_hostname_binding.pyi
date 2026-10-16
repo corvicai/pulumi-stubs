@@ -60,7 +60,10 @@ class GetApiGatewayHostnameBindingResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetApiGatewayHostnameBindingResult(GetApiGatewayHostnameBindingResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetApiGatewayHostnameBindingResult]:
+        ...
 
 def get_api_gateway_hostname_binding(
     gateway_name: Optional[_builtins.str] = ...,

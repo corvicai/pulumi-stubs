@@ -74,7 +74,8 @@ class GetOrganizationResult:
     def roots(self) -> Sequence[outputs.GetOrganizationRootResult]: ...
 
 class AwaitableGetOrganizationResult(GetOrganizationResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetOrganizationResult]:
+        ...
 
 def get_organization(
     return_organization_only: Optional[_builtins.bool] = ...,

@@ -48,7 +48,10 @@ class GetWCFRelayAuthorizationRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetWCFRelayAuthorizationRuleResult(GetWCFRelayAuthorizationRuleResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetWCFRelayAuthorizationRuleResult]:
+        ...
 
 def get_wcf_relay_authorization_rule(
     authorization_rule_name: Optional[_builtins.str] = ...,

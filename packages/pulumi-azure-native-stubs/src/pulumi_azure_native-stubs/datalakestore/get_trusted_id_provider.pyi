@@ -34,7 +34,8 @@ class GetTrustedIdProviderResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetTrustedIdProviderResult(GetTrustedIdProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetTrustedIdProviderResult]:
+        ...
 
 def get_trusted_id_provider(
     account_name: Optional[_builtins.str] = ...,

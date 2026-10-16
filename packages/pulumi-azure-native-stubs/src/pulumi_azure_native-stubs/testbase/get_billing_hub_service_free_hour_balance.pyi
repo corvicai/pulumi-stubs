@@ -30,7 +30,10 @@ class GetBillingHubServiceFreeHourBalanceResult:
 class AwaitableGetBillingHubServiceFreeHourBalanceResult(
     GetBillingHubServiceFreeHourBalanceResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetBillingHubServiceFreeHourBalanceResult]:
+        ...
 
 def get_billing_hub_service_free_hour_balance(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -47,7 +47,8 @@ class GetZoneIamPolicyResult:
     def project(self) -> _builtins.str: ...
 
 class AwaitableGetZoneIamPolicyResult(GetZoneIamPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetZoneIamPolicyResult]:
+        ...
 
 def get_zone_iam_policy(
     dataplex_zone: Optional[_builtins.str] = ...,

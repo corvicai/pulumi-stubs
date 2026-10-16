@@ -60,7 +60,10 @@ class GetSecurityUserRuleCollectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSecurityUserRuleCollectionResult(GetSecurityUserRuleCollectionResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetSecurityUserRuleCollectionResult]:
+        ...
 
 def get_security_user_rule_collection(
     configuration_name: Optional[_builtins.str] = ...,

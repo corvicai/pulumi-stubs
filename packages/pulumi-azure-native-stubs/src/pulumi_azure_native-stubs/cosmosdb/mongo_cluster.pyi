@@ -36,19 +36,24 @@ class MongoClusterArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="administratorLogin")
     def administrator_login(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @administrator_login.setter
-    def administrator_login(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def administrator_login(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="administratorLoginPassword")
     def administrator_login_password(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @administrator_login_password.setter
     def administrator_login_password(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createMode")
     def create_mode(
@@ -58,17 +63,22 @@ class MongoClusterArgs:
     def create_mode(
         self,
         value: Optional[pulumi.Input[Union[_builtins.str, MongoClusterCreateMode]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="mongoClusterName")
     def mongo_cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mongo_cluster_name.setter
-    def mongo_cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mongo_cluster_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeGroupSpecs")
     def node_group_specs(
@@ -77,7 +87,8 @@ class MongoClusterArgs:
     @node_group_specs.setter
     def node_group_specs(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NodeGroupSpecArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="restoreParameters")
     def restore_parameters(
@@ -86,12 +97,14 @@ class MongoClusterArgs:
     @restore_parameters.setter
     def restore_parameters(
         self, value: Optional[pulumi.Input[MongoClusterRestoreParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverVersion")
     def server_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_version.setter
-    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -100,7 +113,8 @@ class MongoClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:cosmosdb:MongoCluster")
 class MongoCluster(pulumi.CustomResource):

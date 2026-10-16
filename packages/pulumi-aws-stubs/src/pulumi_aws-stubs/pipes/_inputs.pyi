@@ -140,12 +140,14 @@ class PipeEnrichmentParametersArgs:
     @http_parameters.setter
     def http_parameters(
         self, value: Optional[pulumi.Input[PipeEnrichmentParametersHttpParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputTemplate")
     def input_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_template.setter
-    def input_template(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_template(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeEnrichmentParametersHttpParametersArgsDict(TypedDict):
     header_parameters: NotRequired[
@@ -177,12 +179,16 @@ class PipeEnrichmentParametersHttpParametersArgs:
     @header_parameters.setter
     def header_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pathParameterValues")
     def path_parameter_values(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path_parameter_values.setter
-    def path_parameter_values(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path_parameter_values(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringParameters")
     def query_string_parameters(
@@ -191,7 +197,8 @@ class PipeEnrichmentParametersHttpParametersArgs:
     @query_string_parameters.setter
     def query_string_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeLogConfigurationArgsDict(TypedDict):
     level: pulumi.Input[_builtins.str]
@@ -231,7 +238,8 @@ class PipeLogConfigurationArgs:
     @pulumi.getter
     def level(self) -> pulumi.Input[_builtins.str]: ...
     @level.setter
-    def level(self, value: pulumi.Input[_builtins.str]): ...
+    def level(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchLogsLogDestination")
     def cloudwatch_logs_log_destination(
@@ -245,7 +253,8 @@ class PipeLogConfigurationArgs:
         value: Optional[
             pulumi.Input[PipeLogConfigurationCloudwatchLogsLogDestinationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="firehoseLogDestination")
     def firehose_log_destination(
@@ -255,7 +264,8 @@ class PipeLogConfigurationArgs:
     def firehose_log_destination(
         self,
         value: Optional[pulumi.Input[PipeLogConfigurationFirehoseLogDestinationArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includeExecutionDatas")
     def include_execution_datas(
@@ -264,7 +274,8 @@ class PipeLogConfigurationArgs:
     @include_execution_datas.setter
     def include_execution_datas(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3LogDestination")
     def s3_log_destination(
@@ -273,7 +284,8 @@ class PipeLogConfigurationArgs:
     @s3_log_destination.setter
     def s3_log_destination(
         self, value: Optional[pulumi.Input[PipeLogConfigurationS3LogDestinationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeLogConfigurationCloudwatchLogsLogDestinationArgsDict(TypedDict):
     log_group_arn: pulumi.Input[_builtins.str]
@@ -285,7 +297,8 @@ class PipeLogConfigurationCloudwatchLogsLogDestinationArgs:
     @pulumi.getter(name="logGroupArn")
     def log_group_arn(self) -> pulumi.Input[_builtins.str]: ...
     @log_group_arn.setter
-    def log_group_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def log_group_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeLogConfigurationFirehoseLogDestinationArgsDict(TypedDict):
     delivery_stream_arn: pulumi.Input[_builtins.str]
@@ -299,7 +312,8 @@ class PipeLogConfigurationFirehoseLogDestinationArgs:
     @pulumi.getter(name="deliveryStreamArn")
     def delivery_stream_arn(self) -> pulumi.Input[_builtins.str]: ...
     @delivery_stream_arn.setter
-    def delivery_stream_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def delivery_stream_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeLogConfigurationS3LogDestinationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -321,22 +335,26 @@ class PipeLogConfigurationS3LogDestinationArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketOwner")
     def bucket_owner(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_owner.setter
-    def bucket_owner(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_owner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outputFormat")
     def output_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @output_format.setter
-    def output_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def output_format(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @prefix.setter
-    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def prefix(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeSourceParametersArgsDict(TypedDict):
     activemq_broker_parameters: NotRequired[
@@ -403,7 +421,8 @@ class PipeSourceParametersArgs:
     def activemq_broker_parameters(
         self,
         value: Optional[pulumi.Input[PipeSourceParametersActivemqBrokerParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dynamodbStreamParameters")
     def dynamodb_stream_parameters(
@@ -413,7 +432,8 @@ class PipeSourceParametersArgs:
     def dynamodb_stream_parameters(
         self,
         value: Optional[pulumi.Input[PipeSourceParametersDynamodbStreamParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="filterCriteria")
     def filter_criteria(
@@ -422,7 +442,8 @@ class PipeSourceParametersArgs:
     @filter_criteria.setter
     def filter_criteria(
         self, value: Optional[pulumi.Input[PipeSourceParametersFilterCriteriaArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisStreamParameters")
     def kinesis_stream_parameters(
@@ -432,7 +453,8 @@ class PipeSourceParametersArgs:
     def kinesis_stream_parameters(
         self,
         value: Optional[pulumi.Input[PipeSourceParametersKinesisStreamParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedStreamingKafkaParameters")
     def managed_streaming_kafka_parameters(
@@ -446,7 +468,8 @@ class PipeSourceParametersArgs:
         value: Optional[
             pulumi.Input[PipeSourceParametersManagedStreamingKafkaParametersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="rabbitmqBrokerParameters")
     def rabbitmq_broker_parameters(
@@ -456,7 +479,8 @@ class PipeSourceParametersArgs:
     def rabbitmq_broker_parameters(
         self,
         value: Optional[pulumi.Input[PipeSourceParametersRabbitmqBrokerParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="selfManagedKafkaParameters")
     def self_managed_kafka_parameters(
@@ -468,7 +492,8 @@ class PipeSourceParametersArgs:
         value: Optional[
             pulumi.Input[PipeSourceParametersSelfManagedKafkaParametersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsQueueParameters")
     def sqs_queue_parameters(
@@ -477,7 +502,8 @@ class PipeSourceParametersArgs:
     @sqs_queue_parameters.setter
     def sqs_queue_parameters(
         self, value: Optional[pulumi.Input[PipeSourceParametersSqsQueueParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersActivemqBrokerParametersArgsDict(TypedDict):
     credentials: pulumi.Input[
@@ -510,17 +536,20 @@ class PipeSourceParametersActivemqBrokerParametersArgs:
         value: pulumi.Input[
             PipeSourceParametersActivemqBrokerParametersCredentialsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queueName")
     def queue_name(self) -> pulumi.Input[_builtins.str]: ...
     @queue_name.setter
-    def queue_name(self, value: pulumi.Input[_builtins.str]): ...
+    def queue_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -529,7 +558,8 @@ class PipeSourceParametersActivemqBrokerParametersArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersActivemqBrokerParametersCredentialsArgsDict(TypedDict):
     basic_auth: pulumi.Input[_builtins.str]
@@ -541,7 +571,8 @@ class PipeSourceParametersActivemqBrokerParametersCredentialsArgs:
     @pulumi.getter(name="basicAuth")
     def basic_auth(self) -> pulumi.Input[_builtins.str]: ...
     @basic_auth.setter
-    def basic_auth(self, value: pulumi.Input[_builtins.str]): ...
+    def basic_auth(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeSourceParametersDynamodbStreamParametersArgsDict(TypedDict):
     starting_position: pulumi.Input[_builtins.str]
@@ -579,12 +610,14 @@ class PipeSourceParametersDynamodbStreamParametersArgs:
     @pulumi.getter(name="startingPosition")
     def starting_position(self) -> pulumi.Input[_builtins.str]: ...
     @starting_position.setter
-    def starting_position(self, value: pulumi.Input[_builtins.str]): ...
+    def starting_position(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deadLetterConfig")
     def dead_letter_config(
@@ -600,7 +633,8 @@ class PipeSourceParametersDynamodbStreamParametersArgs:
                 PipeSourceParametersDynamodbStreamParametersDeadLetterConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -609,7 +643,8 @@ class PipeSourceParametersDynamodbStreamParametersArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRecordAgeInSeconds")
     def maximum_record_age_in_seconds(
@@ -618,12 +653,16 @@ class PipeSourceParametersDynamodbStreamParametersArgs:
     @maximum_record_age_in_seconds.setter
     def maximum_record_age_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRetryAttempts")
     def maximum_retry_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_retry_attempts.setter
-    def maximum_retry_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def maximum_retry_attempts(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPartialBatchItemFailure")
     def on_partial_batch_item_failure(
@@ -632,12 +671,16 @@ class PipeSourceParametersDynamodbStreamParametersArgs:
     @on_partial_batch_item_failure.setter
     def on_partial_batch_item_failure(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelizationFactor")
     def parallelization_factor(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @parallelization_factor.setter
-    def parallelization_factor(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def parallelization_factor(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersDynamodbStreamParametersDeadLetterConfigArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -651,7 +694,8 @@ class PipeSourceParametersDynamodbStreamParametersDeadLetterConfigArgs:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeSourceParametersFilterCriteriaArgsDict(TypedDict):
     filters: NotRequired[
@@ -688,7 +732,8 @@ class PipeSourceParametersFilterCriteriaArgs:
                 Sequence[pulumi.Input[PipeSourceParametersFilterCriteriaFilterArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersFilterCriteriaFilterArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
@@ -700,7 +745,8 @@ class PipeSourceParametersFilterCriteriaFilterArgs:
     @pulumi.getter
     def pattern(self) -> pulumi.Input[_builtins.str]: ...
     @pattern.setter
-    def pattern(self, value: pulumi.Input[_builtins.str]): ...
+    def pattern(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeSourceParametersKinesisStreamParametersArgsDict(TypedDict):
     starting_position: pulumi.Input[_builtins.str]
@@ -740,12 +786,14 @@ class PipeSourceParametersKinesisStreamParametersArgs:
     @pulumi.getter(name="startingPosition")
     def starting_position(self) -> pulumi.Input[_builtins.str]: ...
     @starting_position.setter
-    def starting_position(self, value: pulumi.Input[_builtins.str]): ...
+    def starting_position(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deadLetterConfig")
     def dead_letter_config(
@@ -761,7 +809,8 @@ class PipeSourceParametersKinesisStreamParametersArgs:
                 PipeSourceParametersKinesisStreamParametersDeadLetterConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -770,7 +819,8 @@ class PipeSourceParametersKinesisStreamParametersArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRecordAgeInSeconds")
     def maximum_record_age_in_seconds(
@@ -779,12 +829,16 @@ class PipeSourceParametersKinesisStreamParametersArgs:
     @maximum_record_age_in_seconds.setter
     def maximum_record_age_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumRetryAttempts")
     def maximum_retry_attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @maximum_retry_attempts.setter
-    def maximum_retry_attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def maximum_retry_attempts(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="onPartialBatchItemFailure")
     def on_partial_batch_item_failure(
@@ -793,19 +847,24 @@ class PipeSourceParametersKinesisStreamParametersArgs:
     @on_partial_batch_item_failure.setter
     def on_partial_batch_item_failure(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="parallelizationFactor")
     def parallelization_factor(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @parallelization_factor.setter
-    def parallelization_factor(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def parallelization_factor(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPositionTimestamp")
     def starting_position_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starting_position_timestamp.setter
     def starting_position_timestamp(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersKinesisStreamParametersDeadLetterConfigArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -819,7 +878,8 @@ class PipeSourceParametersKinesisStreamParametersDeadLetterConfigArgs:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeSourceParametersManagedStreamingKafkaParametersArgsDict(TypedDict):
     topic_name: pulumi.Input[_builtins.str]
@@ -853,17 +913,22 @@ class PipeSourceParametersManagedStreamingKafkaParametersArgs:
     @pulumi.getter(name="topicName")
     def topic_name(self) -> pulumi.Input[_builtins.str]: ...
     @topic_name.setter
-    def topic_name(self, value: pulumi.Input[_builtins.str]): ...
+    def topic_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consumerGroupId")
     def consumer_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @consumer_group_id.setter
-    def consumer_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def consumer_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def credentials(
@@ -879,7 +944,8 @@ class PipeSourceParametersManagedStreamingKafkaParametersArgs:
                 PipeSourceParametersManagedStreamingKafkaParametersCredentialsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -888,12 +954,16 @@ class PipeSourceParametersManagedStreamingKafkaParametersArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPosition")
     def starting_position(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starting_position.setter
-    def starting_position(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def starting_position(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersManagedStreamingKafkaParametersCredentialsArgsDict(TypedDict):
     client_certificate_tls_auth: NotRequired[pulumi.Input[_builtins.str]]
@@ -913,12 +983,16 @@ class PipeSourceParametersManagedStreamingKafkaParametersCredentialsArgs:
     @client_certificate_tls_auth.setter
     def client_certificate_tls_auth(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="saslScram512Auth")
     def sasl_scram512_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sasl_scram512_auth.setter
-    def sasl_scram512_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sasl_scram512_auth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersRabbitmqBrokerParametersArgsDict(TypedDict):
     credentials: pulumi.Input[
@@ -953,17 +1027,20 @@ class PipeSourceParametersRabbitmqBrokerParametersArgs:
         value: pulumi.Input[
             PipeSourceParametersRabbitmqBrokerParametersCredentialsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queueName")
     def queue_name(self) -> pulumi.Input[_builtins.str]: ...
     @queue_name.setter
-    def queue_name(self, value: pulumi.Input[_builtins.str]): ...
+    def queue_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -972,12 +1049,14 @@ class PipeSourceParametersRabbitmqBrokerParametersArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="virtualHost")
     def virtual_host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtual_host.setter
-    def virtual_host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def virtual_host(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeSourceParametersRabbitmqBrokerParametersCredentialsArgsDict(TypedDict):
     basic_auth: pulumi.Input[_builtins.str]
@@ -989,7 +1068,8 @@ class PipeSourceParametersRabbitmqBrokerParametersCredentialsArgs:
     @pulumi.getter(name="basicAuth")
     def basic_auth(self) -> pulumi.Input[_builtins.str]: ...
     @basic_auth.setter
-    def basic_auth(self, value: pulumi.Input[_builtins.str]): ...
+    def basic_auth(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeSourceParametersSelfManagedKafkaParametersArgsDict(TypedDict):
     topic_name: pulumi.Input[_builtins.str]
@@ -1033,7 +1113,8 @@ class PipeSourceParametersSelfManagedKafkaParametersArgs:
     @pulumi.getter(name="topicName")
     def topic_name(self) -> pulumi.Input[_builtins.str]: ...
     @topic_name.setter
-    def topic_name(self, value: pulumi.Input[_builtins.str]): ...
+    def topic_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalBootstrapServers")
     def additional_bootstrap_servers(
@@ -1042,17 +1123,22 @@ class PipeSourceParametersSelfManagedKafkaParametersArgs:
     @additional_bootstrap_servers.setter
     def additional_bootstrap_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="consumerGroupId")
     def consumer_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @consumer_group_id.setter
-    def consumer_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def consumer_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def credentials(
@@ -1066,7 +1152,8 @@ class PipeSourceParametersSelfManagedKafkaParametersArgs:
         value: Optional[
             pulumi.Input[PipeSourceParametersSelfManagedKafkaParametersCredentialsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -1075,19 +1162,24 @@ class PipeSourceParametersSelfManagedKafkaParametersArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="serverRootCaCertificate")
     def server_root_ca_certificate(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @server_root_ca_certificate.setter
     def server_root_ca_certificate(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startingPosition")
     def starting_position(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @starting_position.setter
-    def starting_position(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def starting_position(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def vpc(
@@ -1101,7 +1193,8 @@ class PipeSourceParametersSelfManagedKafkaParametersArgs:
         value: Optional[
             pulumi.Input[PipeSourceParametersSelfManagedKafkaParametersVpcArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersSelfManagedKafkaParametersCredentialsArgsDict(TypedDict):
     basic_auth: NotRequired[pulumi.Input[_builtins.str]]
@@ -1123,24 +1216,32 @@ class PipeSourceParametersSelfManagedKafkaParametersCredentialsArgs:
     @pulumi.getter(name="basicAuth")
     def basic_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @basic_auth.setter
-    def basic_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def basic_auth(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clientCertificateTlsAuth")
     def client_certificate_tls_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_certificate_tls_auth.setter
     def client_certificate_tls_auth(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="saslScram256Auth")
     def sasl_scram256_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sasl_scram256_auth.setter
-    def sasl_scram256_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sasl_scram256_auth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="saslScram512Auth")
     def sasl_scram512_auth(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sasl_scram512_auth.setter
-    def sasl_scram512_auth(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sasl_scram512_auth(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersSelfManagedKafkaParametersVpcArgsDict(TypedDict):
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1164,7 +1265,8 @@ class PipeSourceParametersSelfManagedKafkaParametersVpcArgs:
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -1173,7 +1275,8 @@ class PipeSourceParametersSelfManagedKafkaParametersVpcArgs:
     @subnets.setter
     def subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeSourceParametersSqsQueueParametersArgsDict(TypedDict):
     batch_size: NotRequired[pulumi.Input[_builtins.int]]
@@ -1191,7 +1294,8 @@ class PipeSourceParametersSqsQueueParametersArgs:
     @pulumi.getter(name="batchSize")
     def batch_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @batch_size.setter
-    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def batch_size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maximumBatchingWindowInSeconds")
     def maximum_batching_window_in_seconds(
@@ -1200,7 +1304,8 @@ class PipeSourceParametersSqsQueueParametersArgs:
     @maximum_batching_window_in_seconds.setter
     def maximum_batching_window_in_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersArgsDict(TypedDict):
     batch_job_parameters: NotRequired[
@@ -1286,7 +1391,8 @@ class PipeTargetParametersArgs:
     @batch_job_parameters.setter
     def batch_job_parameters(
         self, value: Optional[pulumi.Input[PipeTargetParametersBatchJobParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudwatchLogsParameters")
     def cloudwatch_logs_parameters(
@@ -1296,7 +1402,8 @@ class PipeTargetParametersArgs:
     def cloudwatch_logs_parameters(
         self,
         value: Optional[pulumi.Input[PipeTargetParametersCloudwatchLogsParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ecsTaskParameters")
     def ecs_task_parameters(
@@ -1305,7 +1412,8 @@ class PipeTargetParametersArgs:
     @ecs_task_parameters.setter
     def ecs_task_parameters(
         self, value: Optional[pulumi.Input[PipeTargetParametersEcsTaskParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventbridgeEventBusParameters")
     def eventbridge_event_bus_parameters(
@@ -1319,7 +1427,8 @@ class PipeTargetParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersEventbridgeEventBusParametersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpParameters")
     def http_parameters(
@@ -1328,12 +1437,14 @@ class PipeTargetParametersArgs:
     @http_parameters.setter
     def http_parameters(
         self, value: Optional[pulumi.Input[PipeTargetParametersHttpParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inputTemplate")
     def input_template(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @input_template.setter
-    def input_template(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def input_template(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kinesisStreamParameters")
     def kinesis_stream_parameters(
@@ -1343,7 +1454,8 @@ class PipeTargetParametersArgs:
     def kinesis_stream_parameters(
         self,
         value: Optional[pulumi.Input[PipeTargetParametersKinesisStreamParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lambdaFunctionParameters")
     def lambda_function_parameters(
@@ -1353,7 +1465,8 @@ class PipeTargetParametersArgs:
     def lambda_function_parameters(
         self,
         value: Optional[pulumi.Input[PipeTargetParametersLambdaFunctionParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="redshiftDataParameters")
     def redshift_data_parameters(
@@ -1363,7 +1476,8 @@ class PipeTargetParametersArgs:
     def redshift_data_parameters(
         self,
         value: Optional[pulumi.Input[PipeTargetParametersRedshiftDataParametersArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sagemakerPipelineParameters")
     def sagemaker_pipeline_parameters(
@@ -1377,7 +1491,8 @@ class PipeTargetParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersSagemakerPipelineParametersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqsQueueParameters")
     def sqs_queue_parameters(
@@ -1386,7 +1501,8 @@ class PipeTargetParametersArgs:
     @sqs_queue_parameters.setter
     def sqs_queue_parameters(
         self, value: Optional[pulumi.Input[PipeTargetParametersSqsQueueParametersArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="stepFunctionStateMachineParameters")
     def step_function_state_machine_parameters(
@@ -1400,7 +1516,8 @@ class PipeTargetParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersStepFunctionStateMachineParametersArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersBatchJobParametersArgsDict(TypedDict):
     job_definition: pulumi.Input[_builtins.str]
@@ -1454,12 +1571,14 @@ class PipeTargetParametersBatchJobParametersArgs:
     @pulumi.getter(name="jobDefinition")
     def job_definition(self) -> pulumi.Input[_builtins.str]: ...
     @job_definition.setter
-    def job_definition(self, value: pulumi.Input[_builtins.str]): ...
+    def job_definition(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="jobName")
     def job_name(self) -> pulumi.Input[_builtins.str]: ...
     @job_name.setter
-    def job_name(self, value: pulumi.Input[_builtins.str]): ...
+    def job_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="arrayProperties")
     def array_properties(
@@ -1473,7 +1592,8 @@ class PipeTargetParametersBatchJobParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersBatchJobParametersArrayPropertiesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="containerOverrides")
     def container_overrides(
@@ -1487,7 +1607,8 @@ class PipeTargetParametersBatchJobParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersBatchJobParametersContainerOverridesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dependsOns")
     def depends_ons(
@@ -1507,7 +1628,8 @@ class PipeTargetParametersBatchJobParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def parameters(
@@ -1516,7 +1638,8 @@ class PipeTargetParametersBatchJobParametersArgs:
     @parameters.setter
     def parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryStrategy")
     def retry_strategy(
@@ -1530,7 +1653,8 @@ class PipeTargetParametersBatchJobParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersBatchJobParametersRetryStrategyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersBatchJobParametersArrayPropertiesArgsDict(TypedDict):
     size: NotRequired[pulumi.Input[_builtins.int]]
@@ -1544,7 +1668,8 @@ class PipeTargetParametersBatchJobParametersArrayPropertiesArgs:
     @pulumi.getter
     def size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @size.setter
-    def size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def size(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PipeTargetParametersBatchJobParametersContainerOverridesArgsDict(TypedDict):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -1602,7 +1727,8 @@ class PipeTargetParametersBatchJobParametersContainerOverridesArgs:
     @commands.setter
     def commands(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def environments(
@@ -1628,12 +1754,14 @@ class PipeTargetParametersBatchJobParametersContainerOverridesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="instanceType")
     def instance_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_type.setter
-    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def instance_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceRequirements")
     def resource_requirements(
@@ -1659,7 +1787,8 @@ class PipeTargetParametersBatchJobParametersContainerOverridesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersBatchJobParametersContainerOverridesEnvironmentArgsDict(
     TypedDict
@@ -1679,12 +1808,14 @@ class PipeTargetParametersBatchJobParametersContainerOverridesEnvironmentArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementArgsDict(
     TypedDict
@@ -1704,12 +1835,14 @@ class PipeTargetParametersBatchJobParametersContainerOverridesResourceRequiremen
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeTargetParametersBatchJobParametersDependsOnArgsDict(TypedDict):
     job_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -1727,12 +1860,14 @@ class PipeTargetParametersBatchJobParametersDependsOnArgs:
     @pulumi.getter(name="jobId")
     def job_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @job_id.setter
-    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def job_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersBatchJobParametersRetryStrategyArgsDict(TypedDict):
     attempts: NotRequired[pulumi.Input[_builtins.int]]
@@ -1746,7 +1881,8 @@ class PipeTargetParametersBatchJobParametersRetryStrategyArgs:
     @pulumi.getter
     def attempts(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @attempts.setter
-    def attempts(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def attempts(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PipeTargetParametersCloudwatchLogsParametersArgsDict(TypedDict):
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -1764,12 +1900,14 @@ class PipeTargetParametersCloudwatchLogsParametersArgs:
     @pulumi.getter(name="logStreamName")
     def log_stream_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_stream_name.setter
-    def log_stream_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_stream_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @timestamp.setter
-    def timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def timestamp(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersArgsDict(TypedDict):
     task_definition_arn: pulumi.Input[_builtins.str]
@@ -1869,7 +2007,8 @@ class PipeTargetParametersEcsTaskParametersArgs:
     @pulumi.getter(name="taskDefinitionArn")
     def task_definition_arn(self) -> pulumi.Input[_builtins.str]: ...
     @task_definition_arn.setter
-    def task_definition_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def task_definition_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="capacityProviderStrategies")
     def capacity_provider_strategies(
@@ -1895,29 +2034,36 @@ class PipeTargetParametersEcsTaskParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableEcsManagedTags")
     def enable_ecs_managed_tags(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_ecs_managed_tags.setter
     def enable_ecs_managed_tags(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableExecuteCommand")
     def enable_execute_command(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_execute_command.setter
-    def enable_execute_command(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def enable_execute_command(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group.setter
-    def group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def group(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="launchType")
     def launch_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @launch_type.setter
-    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def launch_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="networkConfiguration")
     def network_configuration(
@@ -1931,7 +2077,8 @@ class PipeTargetParametersEcsTaskParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersEcsTaskParametersNetworkConfigurationArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def overrides(
@@ -1943,7 +2090,8 @@ class PipeTargetParametersEcsTaskParametersArgs:
         value: Optional[
             pulumi.Input[PipeTargetParametersEcsTaskParametersOverridesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementConstraints")
     def placement_constraints(
@@ -1969,7 +2117,8 @@ class PipeTargetParametersEcsTaskParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="placementStrategies")
     def placement_strategies(
@@ -1993,22 +2142,28 @@ class PipeTargetParametersEcsTaskParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformVersion")
     def platform_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_version.setter
-    def platform_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="propagateTags")
     def propagate_tags(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @propagate_tags.setter
-    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def propagate_tags(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="referenceId")
     def reference_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reference_id.setter
-    def reference_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reference_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -2017,12 +2172,14 @@ class PipeTargetParametersEcsTaskParametersArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskCount")
     def task_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @task_count.setter
-    def task_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def task_count(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersCapacityProviderStrategyArgsDict(TypedDict):
     capacity_provider: pulumi.Input[_builtins.str]
@@ -2042,17 +2199,20 @@ class PipeTargetParametersEcsTaskParametersCapacityProviderStrategyArgs:
     @pulumi.getter(name="capacityProvider")
     def capacity_provider(self) -> pulumi.Input[_builtins.str]: ...
     @capacity_provider.setter
-    def capacity_provider(self, value: pulumi.Input[_builtins.str]): ...
+    def capacity_provider(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def base(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @base.setter
-    def base(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def base(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def weight(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @weight.setter
-    def weight(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def weight(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersNetworkConfigurationArgsDict(TypedDict):
     aws_vpc_configuration: NotRequired[
@@ -2089,7 +2249,8 @@ class PipeTargetParametersEcsTaskParametersNetworkConfigurationArgs:
                 PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationArgsDict(
     TypedDict
@@ -2113,7 +2274,10 @@ class PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurati
     @pulumi.getter(name="assignPublicIp")
     def assign_public_ip(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assign_public_ip.setter
-    def assign_public_ip(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assign_public_ip(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="securityGroups")
     def security_groups(
@@ -2122,7 +2286,8 @@ class PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurati
     @security_groups.setter
     def security_groups(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def subnets(
@@ -2131,7 +2296,8 @@ class PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurati
     @subnets.setter
     def subnets(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersOverridesArgsDict(TypedDict):
     container_overrides: NotRequired[
@@ -2220,12 +2386,14 @@ class PipeTargetParametersEcsTaskParametersOverridesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cpu(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu.setter
-    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ephemeralStorage")
     def ephemeral_storage(
@@ -2241,12 +2409,16 @@ class PipeTargetParametersEcsTaskParametersOverridesArgs:
                 PipeTargetParametersEcsTaskParametersOverridesEphemeralStorageArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="executionRoleArn")
     def execution_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @execution_role_arn.setter
-    def execution_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def execution_role_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inferenceAcceleratorOverrides")
     def inference_accelerator_overrides(
@@ -2272,17 +2444,20 @@ class PipeTargetParametersEcsTaskParametersOverridesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def memory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memory.setter
-    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def memory(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="taskRoleArn")
     def task_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @task_role_arn.setter
-    def task_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def task_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideArgsDict(
     TypedDict
@@ -2366,12 +2541,14 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideArgs:
     @commands.setter
     def commands(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def cpu(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @cpu.setter
-    def cpu(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def cpu(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="environmentFiles")
     def environment_files(
@@ -2397,7 +2574,8 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def environments(
@@ -2423,22 +2601,28 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def memory(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @memory.setter
-    def memory(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def memory(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memoryReservation")
     def memory_reservation(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @memory_reservation.setter
-    def memory_reservation(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def memory_reservation(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceRequirements")
     def resource_requirements(
@@ -2464,7 +2648,8 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentArgsDict(
     TypedDict
@@ -2484,12 +2669,14 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileArgsDict(
     TypedDict
@@ -2509,12 +2696,14 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementArgsDict(
     TypedDict
@@ -2534,12 +2723,14 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceReq
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersOverridesEphemeralStorageArgsDict(TypedDict):
     size_in_gib: pulumi.Input[_builtins.int]
@@ -2551,7 +2742,8 @@ class PipeTargetParametersEcsTaskParametersOverridesEphemeralStorageArgs:
     @pulumi.getter(name="sizeInGib")
     def size_in_gib(self) -> pulumi.Input[_builtins.int]: ...
     @size_in_gib.setter
-    def size_in_gib(self, value: pulumi.Input[_builtins.int]): ...
+    def size_in_gib(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideArgsDict(
     TypedDict
@@ -2571,12 +2763,14 @@ class PipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride
     @pulumi.getter(name="deviceName")
     def device_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_name.setter
-    def device_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def device_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deviceType")
     def device_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @device_type.setter
-    def device_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def device_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersPlacementConstraintArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
@@ -2594,12 +2788,14 @@ class PipeTargetParametersEcsTaskParametersPlacementConstraintArgs:
     @pulumi.getter
     def expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expression.setter
-    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expression(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersEcsTaskParametersPlacementStrategyArgsDict(TypedDict):
     field: NotRequired[pulumi.Input[_builtins.str]]
@@ -2617,12 +2813,14 @@ class PipeTargetParametersEcsTaskParametersPlacementStrategyArgs:
     @pulumi.getter
     def field(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @field.setter
-    def field(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def field(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersEventbridgeEventBusParametersArgsDict(TypedDict):
     detail_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -2646,12 +2844,14 @@ class PipeTargetParametersEventbridgeEventBusParametersArgs:
     @pulumi.getter(name="detailType")
     def detail_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @detail_type.setter
-    def detail_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def detail_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="endpointId")
     def endpoint_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint_id.setter
-    def endpoint_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def resources(
@@ -2660,17 +2860,20 @@ class PipeTargetParametersEventbridgeEventBusParametersArgs:
     @resources.setter
     def resources(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source.setter
-    def source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time.setter
-    def time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PipeTargetParametersHttpParametersArgsDict(TypedDict):
     header_parameters: NotRequired[
@@ -2702,12 +2905,16 @@ class PipeTargetParametersHttpParametersArgs:
     @header_parameters.setter
     def header_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pathParameterValues")
     def path_parameter_values(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path_parameter_values.setter
-    def path_parameter_values(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path_parameter_values(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="queryStringParameters")
     def query_string_parameters(
@@ -2716,7 +2923,8 @@ class PipeTargetParametersHttpParametersArgs:
     @query_string_parameters.setter
     def query_string_parameters(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersKinesisStreamParametersArgsDict(TypedDict):
     partition_key: pulumi.Input[_builtins.str]
@@ -2728,7 +2936,8 @@ class PipeTargetParametersKinesisStreamParametersArgs:
     @pulumi.getter(name="partitionKey")
     def partition_key(self) -> pulumi.Input[_builtins.str]: ...
     @partition_key.setter
-    def partition_key(self, value: pulumi.Input[_builtins.str]): ...
+    def partition_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeTargetParametersLambdaFunctionParametersArgsDict(TypedDict):
     invocation_type: pulumi.Input[_builtins.str]
@@ -2740,7 +2949,8 @@ class PipeTargetParametersLambdaFunctionParametersArgs:
     @pulumi.getter(name="invocationType")
     def invocation_type(self) -> pulumi.Input[_builtins.str]: ...
     @invocation_type.setter
-    def invocation_type(self, value: pulumi.Input[_builtins.str]): ...
+    def invocation_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeTargetParametersRedshiftDataParametersArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
@@ -2766,32 +2976,42 @@ class PipeTargetParametersRedshiftDataParametersArgs:
     @pulumi.getter
     def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): ...
+    def database(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sqls(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @sqls.setter
-    def sqls(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def sqls(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="dbUser")
     def db_user(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @db_user.setter
-    def db_user(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def db_user(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretManagerArn")
     def secret_manager_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_manager_arn.setter
-    def secret_manager_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def secret_manager_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="statementName")
     def statement_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @statement_name.setter
-    def statement_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def statement_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="withEvent")
     def with_event(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @with_event.setter
-    def with_event(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def with_event(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class PipeTargetParametersSagemakerPipelineParametersArgsDict(TypedDict):
     pipeline_parameters: NotRequired[
@@ -2844,7 +3064,8 @@ class PipeTargetParametersSagemakerPipelineParametersArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersSagemakerPipelineParametersPipelineParameterArgsDict(
     TypedDict
@@ -2864,12 +3085,14 @@ class PipeTargetParametersSagemakerPipelineParametersPipelineParameterArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class PipeTargetParametersSqsQueueParametersArgsDict(TypedDict):
     message_deduplication_id: NotRequired[pulumi.Input[_builtins.str]]
@@ -2889,12 +3112,16 @@ class PipeTargetParametersSqsQueueParametersArgs:
     @message_deduplication_id.setter
     def message_deduplication_id(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageGroupId")
     def message_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_group_id.setter
-    def message_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def message_group_id(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class PipeTargetParametersStepFunctionStateMachineParametersArgsDict(TypedDict):
     invocation_type: pulumi.Input[_builtins.str]
@@ -2906,4 +3133,5 @@ class PipeTargetParametersStepFunctionStateMachineParametersArgs:
     @pulumi.getter(name="invocationType")
     def invocation_type(self) -> pulumi.Input[_builtins.str]: ...
     @invocation_type.setter
-    def invocation_type(self, value: pulumi.Input[_builtins.str]): ...
+    def invocation_type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...

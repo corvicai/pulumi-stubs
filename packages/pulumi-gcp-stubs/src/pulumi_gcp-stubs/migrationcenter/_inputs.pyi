@@ -78,7 +78,8 @@ class PreferenceSetVirtualMachinePreferencesArgs:
     @pulumi.getter(name="commitmentPlan")
     def commitment_plan(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @commitment_plan.setter
-    def commitment_plan(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def commitment_plan(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeEnginePreferences")
     def compute_engine_preferences(
@@ -94,7 +95,8 @@ class PreferenceSetVirtualMachinePreferencesArgs:
                 PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="regionPreferences")
     def region_preferences(
@@ -108,14 +110,16 @@ class PreferenceSetVirtualMachinePreferencesArgs:
         value: Optional[
             pulumi.Input[PreferenceSetVirtualMachinePreferencesRegionPreferencesArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sizingOptimizationStrategy")
     def sizing_optimization_strategy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sizing_optimization_strategy.setter
     def sizing_optimization_strategy(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="soleTenancyPreferences")
     def sole_tenancy_preferences(
@@ -131,12 +135,14 @@ class PreferenceSetVirtualMachinePreferencesArgs:
                 PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="targetProduct")
     def target_product(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @target_product.setter
-    def target_product(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def target_product(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vmwareEnginePreferences")
     def vmware_engine_preferences(
@@ -152,7 +158,8 @@ class PreferenceSetVirtualMachinePreferencesArgs:
                 PreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesArgsDict(TypedDict):
     license_type: NotRequired[pulumi.Input[_builtins.str]]
@@ -178,7 +185,8 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesArgs:
     @pulumi.getter(name="licenseType")
     def license_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @license_type.setter
-    def license_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def license_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="machinePreferences")
     def machine_preferences(
@@ -196,7 +204,8 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesArgs:
                 PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesArgsDict(
     TypedDict
@@ -251,7 +260,8 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePrefe
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesArgsDict(
     TypedDict
@@ -267,7 +277,8 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePrefe
     @pulumi.getter
     def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreferenceSetVirtualMachinePreferencesRegionPreferencesArgsDict(TypedDict):
     preferred_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -289,7 +300,8 @@ class PreferenceSetVirtualMachinePreferencesRegionPreferencesArgs:
     @preferred_regions.setter
     def preferred_regions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesArgsDict(TypedDict):
     commitment_plan: NotRequired[pulumi.Input[_builtins.str]]
@@ -327,17 +339,24 @@ class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesArgs:
     @pulumi.getter(name="commitmentPlan")
     def commitment_plan(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @commitment_plan.setter
-    def commitment_plan(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def commitment_plan(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuOvercommitRatio")
     def cpu_overcommit_ratio(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @cpu_overcommit_ratio.setter
-    def cpu_overcommit_ratio(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def cpu_overcommit_ratio(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hostMaintenancePolicy")
     def host_maintenance_policy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host_maintenance_policy.setter
-    def host_maintenance_policy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def host_maintenance_policy(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nodeTypes")
     def node_types(
@@ -363,7 +382,8 @@ class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypeArgsDict(
     TypedDict
@@ -379,7 +399,8 @@ class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypeArgs:
     @pulumi.getter(name="nodeName")
     def node_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @node_name.setter
-    def node_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def node_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class PreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesArgsDict(TypedDict):
     commitment_plan: NotRequired[pulumi.Input[_builtins.str]]
@@ -403,19 +424,24 @@ class PreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesArgs:
     @pulumi.getter(name="commitmentPlan")
     def commitment_plan(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @commitment_plan.setter
-    def commitment_plan(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def commitment_plan(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cpuOvercommitRatio")
     def cpu_overcommit_ratio(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @cpu_overcommit_ratio.setter
-    def cpu_overcommit_ratio(self, value: Optional[pulumi.Input[_builtins.float]]): ...
+    def cpu_overcommit_ratio(
+        self, value: Optional[pulumi.Input[_builtins.float]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="memoryOvercommitRatio")
     def memory_overcommit_ratio(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @memory_overcommit_ratio.setter
     def memory_overcommit_ratio(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageDeduplicationCompressionRatio")
     def storage_deduplication_compression_ratio(
@@ -424,4 +450,5 @@ class PreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesArgs:
     @storage_deduplication_compression_ratio.setter
     def storage_deduplication_compression_ratio(
         self, value: Optional[pulumi.Input[_builtins.float]]
-    ): ...
+    ):  # -> None:
+        ...

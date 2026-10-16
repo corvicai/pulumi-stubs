@@ -52,7 +52,8 @@ class GetEnterpriseKnowledgeGraphResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEnterpriseKnowledgeGraphResult(GetEnterpriseKnowledgeGraphResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetEnterpriseKnowledgeGraphResult]:
+        ...
 
 def get_enterprise_knowledge_graph(
     resource_group_name: Optional[_builtins.str] = ...,

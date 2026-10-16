@@ -76,7 +76,8 @@ class GetGuestAgentResult:
     def uuid(self) -> _builtins.str: ...
 
 class AwaitableGetGuestAgentResult(GetGuestAgentResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGuestAgentResult]:
+        ...
 
 def get_guest_agent(
     name: Optional[_builtins.str] = ...,

@@ -26,7 +26,10 @@ class GetDnsResourceReferenceByTarResourcesResult:
 class AwaitableGetDnsResourceReferenceByTarResourcesResult(
     GetDnsResourceReferenceByTarResourcesResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetDnsResourceReferenceByTarResourcesResult]:
+        ...
 
 def get_dns_resource_reference_by_tar_resources(
     target_resources: Optional[Sequence[Union[SubResource, SubResourceDict]]] = ...,

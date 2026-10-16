@@ -84,7 +84,8 @@ class GetVcenterControllerResult:
     def version(self) -> _builtins.str: ...
 
 class AwaitableGetVcenterControllerResult(GetVcenterControllerResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVcenterControllerResult]:
+        ...
 
 def get_vcenter_controller(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -56,7 +56,8 @@ class GetElasticSnapshotPolicyResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetElasticSnapshotPolicyResult(GetElasticSnapshotPolicyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetElasticSnapshotPolicyResult]:
+        ...
 
 def get_elastic_snapshot_policy(
     account_name: Optional[_builtins.str] = ...,

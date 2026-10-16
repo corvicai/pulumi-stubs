@@ -44,7 +44,8 @@ class GetSyncIdentityProviderResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSyncIdentityProviderResult(GetSyncIdentityProviderResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSyncIdentityProviderResult]:
+        ...
 
 def get_sync_identity_provider(
     child_resource_name: Optional[_builtins.str] = ...,

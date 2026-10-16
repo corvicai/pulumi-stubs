@@ -16,7 +16,8 @@ class DelegationSetArgs:
     @pulumi.getter(name="referenceName")
     def reference_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reference_name.setter
-    def reference_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reference_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.input_type
 class _DelegationSetState:
@@ -33,7 +34,8 @@ class _DelegationSetState:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="nameServers")
     def name_servers(
@@ -42,12 +44,14 @@ class _DelegationSetState:
     @name_servers.setter
     def name_servers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="referenceName")
     def reference_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @reference_name.setter
-    def reference_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def reference_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("aws:route53/delegationSet:DelegationSet")
 class DelegationSet(pulumi.CustomResource):

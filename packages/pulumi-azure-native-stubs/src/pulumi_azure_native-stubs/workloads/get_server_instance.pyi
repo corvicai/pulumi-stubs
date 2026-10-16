@@ -80,7 +80,8 @@ class GetServerInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetServerInstanceResult(GetServerInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetServerInstanceResult]:
+        ...
 
 def get_server_instance(
     resource_group_name: Optional[_builtins.str] = ...,

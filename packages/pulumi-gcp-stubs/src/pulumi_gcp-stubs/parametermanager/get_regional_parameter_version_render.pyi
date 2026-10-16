@@ -57,7 +57,10 @@ class GetRegionalParameterVersionRenderResult:
 class AwaitableGetRegionalParameterVersionRenderResult(
     GetRegionalParameterVersionRenderResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetRegionalParameterVersionRenderResult]:
+        ...
 
 def get_regional_parameter_version_render(
     location: Optional[_builtins.str] = ...,

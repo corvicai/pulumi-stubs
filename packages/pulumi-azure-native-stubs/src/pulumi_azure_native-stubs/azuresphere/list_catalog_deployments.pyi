@@ -24,7 +24,8 @@ class ListCatalogDeploymentsResult:
     def value(self) -> Sequence[outputs.DeploymentResponse]: ...
 
 class AwaitableListCatalogDeploymentsResult(ListCatalogDeploymentsResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListCatalogDeploymentsResult]:
+        ...
 
 def list_catalog_deployments(
     catalog_name: Optional[_builtins.str] = ...,

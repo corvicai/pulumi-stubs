@@ -25,7 +25,8 @@ class GetPlanResult:
     def stages(self) -> Sequence[outputs.GetPlanStageResult]: ...
 
 class AwaitableGetPlanResult(GetPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetPlanResult]:
+        ...
 
 def get_plan(
     contact_id: Optional[_builtins.str] = ...,

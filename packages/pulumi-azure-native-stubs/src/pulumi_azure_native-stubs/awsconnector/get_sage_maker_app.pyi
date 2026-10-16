@@ -52,7 +52,8 @@ class GetSageMakerAppResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSageMakerAppResult(GetSageMakerAppResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSageMakerAppResult]:
+        ...
 
 def get_sage_maker_app(
     name: Optional[_builtins.str] = ...,

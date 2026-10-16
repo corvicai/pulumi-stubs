@@ -74,7 +74,8 @@ class GetRouterResult:
     def self_link(self) -> _builtins.str: ...
 
 class AwaitableGetRouterResult(GetRouterResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRouterResult]:
+        ...
 
 def get_router(
     name: Optional[_builtins.str] = ...,

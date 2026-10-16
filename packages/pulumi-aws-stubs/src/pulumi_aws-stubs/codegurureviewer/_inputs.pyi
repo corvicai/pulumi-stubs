@@ -40,12 +40,16 @@ class RepositoryAssociationKmsKeyDetailsArgs:
     @pulumi.getter(name="encryptionOption")
     def encryption_option(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_option.setter
-    def encryption_option(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_option(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
     def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RepositoryAssociationRepositoryArgsDict(TypedDict):
     bitbucket: NotRequired[
@@ -88,7 +92,8 @@ class RepositoryAssociationRepositoryArgs:
     def bitbucket(
         self,
         value: Optional[pulumi.Input[RepositoryAssociationRepositoryBitbucketArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def codecommit(
@@ -98,7 +103,8 @@ class RepositoryAssociationRepositoryArgs:
     def codecommit(
         self,
         value: Optional[pulumi.Input[RepositoryAssociationRepositoryCodecommitArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="githubEnterpriseServer")
     def github_enterprise_server(
@@ -112,7 +118,8 @@ class RepositoryAssociationRepositoryArgs:
         value: Optional[
             pulumi.Input[RepositoryAssociationRepositoryGithubEnterpriseServerArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Bucket")
     def s3_bucket(
@@ -121,7 +128,8 @@ class RepositoryAssociationRepositoryArgs:
     @s3_bucket.setter
     def s3_bucket(
         self, value: Optional[pulumi.Input[RepositoryAssociationRepositoryS3BucketArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryAssociationRepositoryBitbucketArgsDict(TypedDict):
     connection_arn: pulumi.Input[_builtins.str]
@@ -141,17 +149,20 @@ class RepositoryAssociationRepositoryBitbucketArgs:
     @pulumi.getter(name="connectionArn")
     def connection_arn(self) -> pulumi.Input[_builtins.str]: ...
     @connection_arn.setter
-    def connection_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> pulumi.Input[_builtins.str]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[_builtins.str]): ...
+    def owner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RepositoryAssociationRepositoryCodecommitArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -163,7 +174,8 @@ class RepositoryAssociationRepositoryCodecommitArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RepositoryAssociationRepositoryGithubEnterpriseServerArgsDict(TypedDict):
     connection_arn: pulumi.Input[_builtins.str]
@@ -183,17 +195,20 @@ class RepositoryAssociationRepositoryGithubEnterpriseServerArgs:
     @pulumi.getter(name="connectionArn")
     def connection_arn(self) -> pulumi.Input[_builtins.str]: ...
     @connection_arn.setter
-    def connection_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def connection_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def owner(self) -> pulumi.Input[_builtins.str]: ...
     @owner.setter
-    def owner(self, value: pulumi.Input[_builtins.str]): ...
+    def owner(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RepositoryAssociationRepositoryS3BucketArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -211,12 +226,14 @@ class RepositoryAssociationRepositoryS3BucketArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RepositoryAssociationS3RepositoryDetailArgsDict(TypedDict):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
@@ -250,7 +267,8 @@ class RepositoryAssociationS3RepositoryDetailArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="codeArtifacts")
     def code_artifacts(
@@ -274,7 +292,8 @@ class RepositoryAssociationS3RepositoryDetailArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RepositoryAssociationS3RepositoryDetailCodeArtifactArgsDict(TypedDict):
     build_artifacts_object_key: NotRequired[pulumi.Input[_builtins.str]]
@@ -294,7 +313,8 @@ class RepositoryAssociationS3RepositoryDetailCodeArtifactArgs:
     @build_artifacts_object_key.setter
     def build_artifacts_object_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceCodeArtifactsObjectKey")
     def source_code_artifacts_object_key(
@@ -303,4 +323,5 @@ class RepositoryAssociationS3RepositoryDetailCodeArtifactArgs:
     @source_code_artifacts_object_key.setter
     def source_code_artifacts_object_key(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...

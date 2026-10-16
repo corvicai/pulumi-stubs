@@ -114,7 +114,8 @@ class GetNetworkResult:
     def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetNetworkResult(GetNetworkResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkResult]:
+        ...
 
 def get_network(
     id: Optional[_builtins.str] = ...,

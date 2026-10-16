@@ -26,12 +26,14 @@ class SqlInjectionMatchSetArgs:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlInjectionMatchTuples")
     def sql_injection_match_tuples(
@@ -49,7 +51,8 @@ class SqlInjectionMatchSetArgs:
                 Sequence[pulumi.Input[SqlInjectionMatchSetSqlInjectionMatchTupleArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SqlInjectionMatchSetState:
@@ -68,12 +71,14 @@ class _SqlInjectionMatchSetState:
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sqlInjectionMatchTuples")
     def sql_injection_match_tuples(
@@ -91,7 +96,8 @@ class _SqlInjectionMatchSetState:
                 Sequence[pulumi.Input[SqlInjectionMatchSetSqlInjectionMatchTupleArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class SqlInjectionMatchSet(pulumi.CustomResource):

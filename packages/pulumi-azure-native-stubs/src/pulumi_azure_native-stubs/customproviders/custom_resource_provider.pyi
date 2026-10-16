@@ -35,7 +35,8 @@ class CustomResourceProviderArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def actions(
@@ -49,17 +50,22 @@ class CustomResourceProviderArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[CustomRPActionRouteDefinitionArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceProviderName")
     def resource_provider_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_provider_name.setter
-    def resource_provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def resource_provider_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceTypes")
     def resource_types(
@@ -75,7 +81,8 @@ class CustomResourceProviderArgs:
                 Sequence[pulumi.Input[CustomRPResourceTypeRouteDefinitionArgs]]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -84,7 +91,8 @@ class CustomResourceProviderArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def validations(
@@ -94,7 +102,8 @@ class CustomResourceProviderArgs:
     def validations(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[CustomRPValidationsArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token(...)
 class CustomResourceProvider(pulumi.CustomResource):

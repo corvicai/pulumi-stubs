@@ -49,7 +49,10 @@ class ListDisasterRecoveryConfigKeysResult:
 class AwaitableListDisasterRecoveryConfigKeysResult(
     ListDisasterRecoveryConfigKeysResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, ListDisasterRecoveryConfigKeysResult]:
+        ...
 
 def list_disaster_recovery_config_keys(
     alias: Optional[_builtins.str] = ...,

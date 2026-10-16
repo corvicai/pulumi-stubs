@@ -94,7 +94,8 @@ class GetSapVirtualInstanceResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSapVirtualInstanceResult(GetSapVirtualInstanceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSapVirtualInstanceResult]:
+        ...
 
 def get_sap_virtual_instance(
     resource_group_name: Optional[_builtins.str] = ...,

@@ -26,7 +26,10 @@ class GetFileShareProvisioningRecommendationResult:
 class AwaitableGetFileShareProvisioningRecommendationResult(
     GetFileShareProvisioningRecommendationResult
 ):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFileShareProvisioningRecommendationResult]:
+        ...
 
 def get_file_share_provisioning_recommendation(
     location: Optional[_builtins.str] = ...,

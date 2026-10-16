@@ -64,7 +64,8 @@ class GetDnsResolverDomainListResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetDnsResolverDomainListResult(GetDnsResolverDomainListResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetDnsResolverDomainListResult]:
+        ...
 
 def get_dns_resolver_domain_list(
     dns_resolver_domain_list_name: Optional[_builtins.str] = ...,

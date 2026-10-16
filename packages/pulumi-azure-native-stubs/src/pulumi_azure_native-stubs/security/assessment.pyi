@@ -54,17 +54,20 @@ class AssessmentArgs:
                 OnPremiseSqlResourceDetailsArgs,
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
     def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> pulumi.Input[AssessmentStatusArgs]: ...
     @status.setter
-    def status(self, value: pulumi.Input[AssessmentStatusArgs]): ...
+    def status(self, value: pulumi.Input[AssessmentStatusArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="additionalData")
     def additional_data(
@@ -73,12 +76,14 @@ class AssessmentArgs:
     @additional_data.setter
     def additional_data(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assessmentName")
     def assessment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @assessment_name.setter
-    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def assessment_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def metadata(
@@ -87,7 +92,8 @@ class AssessmentArgs:
     @metadata.setter
     def metadata(
         self, value: Optional[pulumi.Input[SecurityAssessmentMetadataPropertiesArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="partnersData")
     def partners_data(
@@ -96,7 +102,8 @@ class AssessmentArgs:
     @partners_data.setter
     def partners_data(
         self, value: Optional[pulumi.Input[SecurityAssessmentPartnerDataArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:security:Assessment")
 class Assessment(pulumi.CustomResource):

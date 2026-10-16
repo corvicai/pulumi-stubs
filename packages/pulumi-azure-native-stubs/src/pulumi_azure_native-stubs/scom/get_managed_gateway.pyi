@@ -44,7 +44,8 @@ class GetManagedGatewayResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetManagedGatewayResult(GetManagedGatewayResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetManagedGatewayResult]:
+        ...
 
 def get_managed_gateway(
     instance_name: Optional[_builtins.str] = ...,

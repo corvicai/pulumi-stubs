@@ -67,7 +67,8 @@ class GetWebAppPremierAddOnResult:
     def vendor(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetWebAppPremierAddOnResult(GetWebAppPremierAddOnResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetWebAppPremierAddOnResult]:
+        ...
 
 def get_web_app_premier_add_on(
     name: Optional[_builtins.str] = ...,

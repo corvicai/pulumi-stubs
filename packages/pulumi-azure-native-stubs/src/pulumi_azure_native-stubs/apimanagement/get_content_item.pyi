@@ -34,7 +34,8 @@ class GetContentItemResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetContentItemResult(GetContentItemResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetContentItemResult]:
+        ...
 
 def get_content_item(
     content_item_id: Optional[_builtins.str] = ...,

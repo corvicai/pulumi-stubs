@@ -230,7 +230,10 @@ class BatchOperationsJobBucketListArgs:
     @pulumi.getter
     def buckets(self) -> pulumi.Input[BatchOperationsJobBucketListBucketsArgs]: ...
     @buckets.setter
-    def buckets(self, value: pulumi.Input[BatchOperationsJobBucketListBucketsArgs]): ...
+    def buckets(
+        self, value: pulumi.Input[BatchOperationsJobBucketListBucketsArgs]
+    ):  # -> None:
+        ...
 
 class BatchOperationsJobBucketListBucketsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -258,7 +261,8 @@ class BatchOperationsJobBucketListBucketsArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def manifest(
@@ -268,7 +272,8 @@ class BatchOperationsJobBucketListBucketsArgs:
     def manifest(
         self,
         value: Optional[pulumi.Input[BatchOperationsJobBucketListBucketsManifestArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="prefixList")
     def prefix_list(
@@ -280,7 +285,8 @@ class BatchOperationsJobBucketListBucketsArgs:
         value: Optional[
             pulumi.Input[BatchOperationsJobBucketListBucketsPrefixListArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BatchOperationsJobBucketListBucketsManifestArgsDict(TypedDict):
     manifest_location: NotRequired[pulumi.Input[_builtins.str]]
@@ -294,7 +300,10 @@ class BatchOperationsJobBucketListBucketsManifestArgs:
     @pulumi.getter(name="manifestLocation")
     def manifest_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @manifest_location.setter
-    def manifest_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def manifest_location(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BatchOperationsJobBucketListBucketsPrefixListArgsDict(TypedDict):
     included_object_prefixes: NotRequired[
@@ -318,7 +327,8 @@ class BatchOperationsJobBucketListBucketsPrefixListArgs:
     @included_object_prefixes.setter
     def included_object_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BatchOperationsJobDeleteObjectArgsDict(TypedDict):
     permanent_object_deletion_enabled: pulumi.Input[_builtins.bool]
@@ -334,7 +344,8 @@ class BatchOperationsJobDeleteObjectArgs:
     @permanent_object_deletion_enabled.setter
     def permanent_object_deletion_enabled(
         self, value: pulumi.Input[_builtins.bool]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BatchOperationsJobPutMetadataArgsDict(TypedDict):
     cache_control: NotRequired[pulumi.Input[_builtins.str]]
@@ -366,27 +377,38 @@ class BatchOperationsJobPutMetadataArgs:
     @pulumi.getter(name="cacheControl")
     def cache_control(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cache_control.setter
-    def cache_control(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cache_control(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentDisposition")
     def content_disposition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_disposition.setter
-    def content_disposition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content_disposition(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentEncoding")
     def content_encoding(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_encoding.setter
-    def content_encoding(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content_encoding(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentLanguage")
     def content_language(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_language.setter
-    def content_language(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content_language(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="contentType")
     def content_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @content_type.setter
-    def content_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def content_type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customMetadata")
     def custom_metadata(
@@ -395,12 +417,14 @@ class BatchOperationsJobPutMetadataArgs:
     @custom_metadata.setter
     def custom_metadata(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customTime")
     def custom_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_time.setter
-    def custom_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BatchOperationsJobPutObjectHoldArgsDict(TypedDict):
     event_based_hold: NotRequired[pulumi.Input[_builtins.str]]
@@ -418,12 +442,16 @@ class BatchOperationsJobPutObjectHoldArgs:
     @pulumi.getter(name="eventBasedHold")
     def event_based_hold(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_based_hold.setter
-    def event_based_hold(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_based_hold(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="temporaryHold")
     def temporary_hold(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @temporary_hold.setter
-    def temporary_hold(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def temporary_hold(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BatchOperationsJobRewriteObjectArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
@@ -435,7 +463,8 @@ class BatchOperationsJobRewriteObjectArgs:
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key.setter
-    def kms_key(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketAutoclassArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -453,12 +482,16 @@ class BucketAutoclassArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="terminalStorageClass")
     def terminal_storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @terminal_storage_class.setter
-    def terminal_storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def terminal_storage_class(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketCorArgsDict(TypedDict):
     max_age_seconds: NotRequired[pulumi.Input[_builtins.int]]
@@ -482,7 +515,8 @@ class BucketCorArgs:
     @pulumi.getter(name="maxAgeSeconds")
     def max_age_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_age_seconds.setter
-    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def max_age_seconds(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def methods(
@@ -491,7 +525,8 @@ class BucketCorArgs:
     @methods.setter
     def methods(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def origins(
@@ -500,7 +535,8 @@ class BucketCorArgs:
     @origins.setter
     def origins(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="responseHeaders")
     def response_headers(
@@ -509,7 +545,8 @@ class BucketCorArgs:
     @response_headers.setter
     def response_headers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketCustomPlacementConfigArgsDict(TypedDict):
     data_locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -525,7 +562,8 @@ class BucketCustomPlacementConfigArgs:
     @data_locations.setter
     def data_locations(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketEncryptionArgsDict(TypedDict):
     default_kms_key_name: pulumi.Input[_builtins.str]
@@ -539,7 +577,8 @@ class BucketEncryptionArgs:
     @pulumi.getter(name="defaultKmsKeyName")
     def default_kms_key_name(self) -> pulumi.Input[_builtins.str]: ...
     @default_kms_key_name.setter
-    def default_kms_key_name(self, value: pulumi.Input[_builtins.str]): ...
+    def default_kms_key_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketHierarchicalNamespaceArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -551,7 +590,8 @@ class BucketHierarchicalNamespaceArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class BucketIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -571,17 +611,20 @@ class BucketIAMBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -601,17 +644,20 @@ class BucketIAMMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketIpFilterArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
@@ -643,7 +689,8 @@ class BucketIpFilterArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowAllServiceAgentAccess")
     def allow_all_service_agent_access(
@@ -652,12 +699,16 @@ class BucketIpFilterArgs:
     @allow_all_service_agent_access.setter
     def allow_all_service_agent_access(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="allowCrossOrgVpcs")
     def allow_cross_org_vpcs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @allow_cross_org_vpcs.setter
-    def allow_cross_org_vpcs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def allow_cross_org_vpcs(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="publicNetworkSource")
     def public_network_source(
@@ -666,7 +717,8 @@ class BucketIpFilterArgs:
     @public_network_source.setter
     def public_network_source(
         self, value: Optional[pulumi.Input[BucketIpFilterPublicNetworkSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcNetworkSources")
     def vpc_network_sources(
@@ -680,7 +732,8 @@ class BucketIpFilterArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[BucketIpFilterVpcNetworkSourceArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketIpFilterPublicNetworkSourceArgsDict(TypedDict):
     allowed_ip_cidr_ranges: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -700,7 +753,8 @@ class BucketIpFilterPublicNetworkSourceArgs:
     @allowed_ip_cidr_ranges.setter
     def allowed_ip_cidr_ranges(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketIpFilterVpcNetworkSourceArgsDict(TypedDict):
     allowed_ip_cidr_ranges: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -722,12 +776,14 @@ class BucketIpFilterVpcNetworkSourceArgs:
     @allowed_ip_cidr_ranges.setter
     def allowed_ip_cidr_ranges(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def network(self) -> pulumi.Input[_builtins.str]: ...
     @network.setter
-    def network(self, value: pulumi.Input[_builtins.str]): ...
+    def network(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketLifecycleRuleArgsDict(TypedDict):
     action: pulumi.Input[BucketLifecycleRuleActionArgsDict]
@@ -745,12 +801,16 @@ class BucketLifecycleRuleArgs:
     @pulumi.getter
     def action(self) -> pulumi.Input[BucketLifecycleRuleActionArgs]: ...
     @action.setter
-    def action(self, value: pulumi.Input[BucketLifecycleRuleActionArgs]): ...
+    def action(self, value: pulumi.Input[BucketLifecycleRuleActionArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def condition(self) -> pulumi.Input[BucketLifecycleRuleConditionArgs]: ...
     @condition.setter
-    def condition(self, value: pulumi.Input[BucketLifecycleRuleConditionArgs]): ...
+    def condition(
+        self, value: pulumi.Input[BucketLifecycleRuleConditionArgs]
+    ):  # -> None:
+        ...
 
 class BucketLifecycleRuleActionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -768,12 +828,14 @@ class BucketLifecycleRuleActionArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLifecycleRuleConditionArgsDict(TypedDict):
     age: NotRequired[pulumi.Input[_builtins.int]]
@@ -829,29 +891,38 @@ class BucketLifecycleRuleConditionArgs:
     @pulumi.getter
     def age(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @age.setter
-    def age(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def age(self, value: Optional[pulumi.Input[_builtins.int]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdBefore")
     def created_before(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_before.setter
-    def created_before(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_before(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="customTimeBefore")
     def custom_time_before(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_time_before.setter
-    def custom_time_before(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def custom_time_before(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysSinceCustomTime")
     def days_since_custom_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days_since_custom_time.setter
-    def days_since_custom_time(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def days_since_custom_time(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="daysSinceNoncurrentTime")
     def days_since_noncurrent_time(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days_since_noncurrent_time.setter
     def days_since_noncurrent_time(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchesPrefixes")
     def matches_prefixes(
@@ -860,7 +931,8 @@ class BucketLifecycleRuleConditionArgs:
     @matches_prefixes.setter
     def matches_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchesStorageClasses")
     def matches_storage_classes(
@@ -869,7 +941,8 @@ class BucketLifecycleRuleConditionArgs:
     @matches_storage_classes.setter
     def matches_storage_classes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="matchesSuffixes")
     def matches_suffixes(
@@ -878,22 +951,32 @@ class BucketLifecycleRuleConditionArgs:
     @matches_suffixes.setter
     def matches_suffixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="noncurrentTimeBefore")
     def noncurrent_time_before(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @noncurrent_time_before.setter
-    def noncurrent_time_before(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def noncurrent_time_before(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="numNewerVersions")
     def num_newer_versions(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @num_newer_versions.setter
-    def num_newer_versions(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def num_newer_versions(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sendAgeIfZero")
     def send_age_if_zero(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @send_age_if_zero.setter
-    def send_age_if_zero(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def send_age_if_zero(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sendDaysSinceCustomTimeIfZero")
     def send_days_since_custom_time_if_zero(
@@ -902,7 +985,8 @@ class BucketLifecycleRuleConditionArgs:
     @send_days_since_custom_time_if_zero.setter
     def send_days_since_custom_time_if_zero(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sendDaysSinceNoncurrentTimeIfZero")
     def send_days_since_noncurrent_time_if_zero(
@@ -911,7 +995,8 @@ class BucketLifecycleRuleConditionArgs:
     @send_days_since_noncurrent_time_if_zero.setter
     def send_days_since_noncurrent_time_if_zero(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sendNumNewerVersionsIfZero")
     def send_num_newer_versions_if_zero(
@@ -920,12 +1005,14 @@ class BucketLifecycleRuleConditionArgs:
     @send_num_newer_versions_if_zero.setter
     def send_num_newer_versions_if_zero(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="withState")
     def with_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @with_state.setter
-    def with_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def with_state(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketLoggingArgsDict(TypedDict):
     log_bucket: pulumi.Input[_builtins.str]
@@ -943,12 +1030,16 @@ class BucketLoggingArgs:
     @pulumi.getter(name="logBucket")
     def log_bucket(self) -> pulumi.Input[_builtins.str]: ...
     @log_bucket.setter
-    def log_bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def log_bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logObjectPrefix")
     def log_object_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @log_object_prefix.setter
-    def log_object_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def log_object_prefix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketObjectContextsArgsDict(TypedDict):
     customs: pulumi.Input[Sequence[pulumi.Input[BucketObjectContextsCustomArgsDict]]]
@@ -969,7 +1060,8 @@ class BucketObjectContextsArgs:
     def customs(
         self,
         value: pulumi.Input[Sequence[pulumi.Input[BucketObjectContextsCustomArgs]]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketObjectContextsCustomArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
@@ -991,22 +1083,26 @@ class BucketObjectContextsCustomArgs:
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): ...
+    def value(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createTime")
     def create_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create_time.setter
-    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
     def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class BucketObjectCustomerEncryptionArgsDict(TypedDict):
     encryption_key: pulumi.Input[_builtins.str]
@@ -1024,12 +1120,16 @@ class BucketObjectCustomerEncryptionArgs:
     @pulumi.getter(name="encryptionKey")
     def encryption_key(self) -> pulumi.Input[_builtins.str]: ...
     @encryption_key.setter
-    def encryption_key(self, value: pulumi.Input[_builtins.str]): ...
+    def encryption_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionAlgorithm")
     def encryption_algorithm(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @encryption_algorithm.setter
-    def encryption_algorithm(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def encryption_algorithm(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class BucketObjectRetentionArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
@@ -1047,12 +1147,14 @@ class BucketObjectRetentionArgs:
     @pulumi.getter
     def mode(self) -> pulumi.Input[_builtins.str]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[_builtins.str]): ...
+    def mode(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retainUntilTime")
     def retain_until_time(self) -> pulumi.Input[_builtins.str]: ...
     @retain_until_time.setter
-    def retain_until_time(self, value: pulumi.Input[_builtins.str]): ...
+    def retain_until_time(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class BucketRetentionPolicyArgsDict(TypedDict):
     retention_period: pulumi.Input[_builtins.str]
@@ -1070,12 +1172,14 @@ class BucketRetentionPolicyArgs:
     @pulumi.getter(name="retentionPeriod")
     def retention_period(self) -> pulumi.Input[_builtins.str]: ...
     @retention_period.setter
-    def retention_period(self, value: pulumi.Input[_builtins.str]): ...
+    def retention_period(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="isLocked")
     def is_locked(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @is_locked.setter
-    def is_locked(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def is_locked(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class BucketSoftDeletePolicyArgsDict(TypedDict):
     effective_time: NotRequired[pulumi.Input[_builtins.str]]
@@ -1093,14 +1197,16 @@ class BucketSoftDeletePolicyArgs:
     @pulumi.getter(name="effectiveTime")
     def effective_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @effective_time.setter
-    def effective_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def effective_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retentionDurationSeconds")
     def retention_duration_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @retention_duration_seconds.setter
     def retention_duration_seconds(
         self, value: Optional[pulumi.Input[_builtins.int]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class BucketVersioningArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
@@ -1112,7 +1218,8 @@ class BucketVersioningArgs:
     @pulumi.getter
     def enabled(self) -> pulumi.Input[_builtins.bool]: ...
     @enabled.setter
-    def enabled(self, value: pulumi.Input[_builtins.bool]): ...
+    def enabled(self, value: pulumi.Input[_builtins.bool]):  # -> None:
+        ...
 
 class BucketWebsiteArgsDict(TypedDict):
     main_page_suffix: NotRequired[pulumi.Input[_builtins.str]]
@@ -1130,12 +1237,16 @@ class BucketWebsiteArgs:
     @pulumi.getter(name="mainPageSuffix")
     def main_page_suffix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @main_page_suffix.setter
-    def main_page_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def main_page_suffix(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="notFoundPage")
     def not_found_page(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @not_found_page.setter
-    def not_found_page(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def not_found_page(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ControlFolderIntelligenceConfigEffectiveIntelligenceConfigArgsDict(TypedDict):
     effective_edition: NotRequired[pulumi.Input[_builtins.str]]
@@ -1153,12 +1264,18 @@ class ControlFolderIntelligenceConfigEffectiveIntelligenceConfigArgs:
     @pulumi.getter(name="effectiveEdition")
     def effective_edition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @effective_edition.setter
-    def effective_edition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def effective_edition(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intelligenceConfig")
     def intelligence_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @intelligence_config.setter
-    def intelligence_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def intelligence_config(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ControlFolderIntelligenceConfigFilterArgsDict(TypedDict):
     excluded_cloud_storage_buckets: NotRequired[
@@ -1225,7 +1342,8 @@ class ControlFolderIntelligenceConfigFilterArgs:
                 ControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCloudStorageLocations")
     def excluded_cloud_storage_locations(
@@ -1243,7 +1361,8 @@ class ControlFolderIntelligenceConfigFilterArgs:
                 ControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCloudStorageBuckets")
     def included_cloud_storage_buckets(
@@ -1261,7 +1380,8 @@ class ControlFolderIntelligenceConfigFilterArgs:
                 ControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCloudStorageLocations")
     def included_cloud_storage_locations(
@@ -1279,7 +1399,8 @@ class ControlFolderIntelligenceConfigFilterArgs:
                 ControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsArgsDict(
     TypedDict
@@ -1301,7 +1422,8 @@ class ControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsArgs:
     @bucket_id_regexes.setter
     def bucket_id_regexes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsArgsDict(
     TypedDict
@@ -1317,7 +1439,10 @@ class ControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsArgs:
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsArgsDict(
     TypedDict
@@ -1339,7 +1464,8 @@ class ControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsArgs:
     @bucket_id_regexes.setter
     def bucket_id_regexes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDict(
     TypedDict
@@ -1355,7 +1481,10 @@ class ControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsArgs:
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ControlFolderIntelligenceConfigTrialConfigArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
@@ -1369,7 +1498,8 @@ class ControlFolderIntelligenceConfigTrialConfigArgs:
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgsDict(
     TypedDict
@@ -1389,12 +1519,18 @@ class ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgs:
     @pulumi.getter(name="effectiveEdition")
     def effective_edition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @effective_edition.setter
-    def effective_edition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def effective_edition(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intelligenceConfig")
     def intelligence_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @intelligence_config.setter
-    def intelligence_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def intelligence_config(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ControlOrganizationIntelligenceConfigFilterArgsDict(TypedDict):
     excluded_cloud_storage_buckets: NotRequired[
@@ -1461,7 +1597,8 @@ class ControlOrganizationIntelligenceConfigFilterArgs:
                 ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCloudStorageLocations")
     def excluded_cloud_storage_locations(
@@ -1479,7 +1616,8 @@ class ControlOrganizationIntelligenceConfigFilterArgs:
                 ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCloudStorageBuckets")
     def included_cloud_storage_buckets(
@@ -1497,7 +1635,8 @@ class ControlOrganizationIntelligenceConfigFilterArgs:
                 ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCloudStorageLocations")
     def included_cloud_storage_locations(
@@ -1515,7 +1654,8 @@ class ControlOrganizationIntelligenceConfigFilterArgs:
                 ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsArgsDict(
     TypedDict
@@ -1537,7 +1677,8 @@ class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsArgs
     @bucket_id_regexes.setter
     def bucket_id_regexes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsArgsDict(
     TypedDict
@@ -1553,7 +1694,10 @@ class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsAr
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsArgsDict(
     TypedDict
@@ -1575,7 +1719,8 @@ class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsArgs
     @bucket_id_regexes.setter
     def bucket_id_regexes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDict(
     TypedDict
@@ -1591,7 +1736,10 @@ class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsAr
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ControlOrganizationIntelligenceConfigTrialConfigArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
@@ -1605,7 +1753,8 @@ class ControlOrganizationIntelligenceConfigTrialConfigArgs:
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ControlProjectIntelligenceConfigEffectiveIntelligenceConfigArgsDict(TypedDict):
     effective_edition: NotRequired[pulumi.Input[_builtins.str]]
@@ -1623,12 +1772,18 @@ class ControlProjectIntelligenceConfigEffectiveIntelligenceConfigArgs:
     @pulumi.getter(name="effectiveEdition")
     def effective_edition(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @effective_edition.setter
-    def effective_edition(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def effective_edition(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="intelligenceConfig")
     def intelligence_config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @intelligence_config.setter
-    def intelligence_config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def intelligence_config(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class ControlProjectIntelligenceConfigFilterArgsDict(TypedDict):
     excluded_cloud_storage_buckets: NotRequired[
@@ -1695,7 +1850,8 @@ class ControlProjectIntelligenceConfigFilterArgs:
                 ControlProjectIntelligenceConfigFilterExcludedCloudStorageBucketsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="excludedCloudStorageLocations")
     def excluded_cloud_storage_locations(
@@ -1713,7 +1869,8 @@ class ControlProjectIntelligenceConfigFilterArgs:
                 ControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCloudStorageBuckets")
     def included_cloud_storage_buckets(
@@ -1731,7 +1888,8 @@ class ControlProjectIntelligenceConfigFilterArgs:
                 ControlProjectIntelligenceConfigFilterIncludedCloudStorageBucketsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includedCloudStorageLocations")
     def included_cloud_storage_locations(
@@ -1749,7 +1907,8 @@ class ControlProjectIntelligenceConfigFilterArgs:
                 ControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlProjectIntelligenceConfigFilterExcludedCloudStorageBucketsArgsDict(
     TypedDict
@@ -1771,7 +1930,8 @@ class ControlProjectIntelligenceConfigFilterExcludedCloudStorageBucketsArgs:
     @bucket_id_regexes.setter
     def bucket_id_regexes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsArgsDict(
     TypedDict
@@ -1787,7 +1947,10 @@ class ControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsArgs:
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ControlProjectIntelligenceConfigFilterIncludedCloudStorageBucketsArgsDict(
     TypedDict
@@ -1809,7 +1972,8 @@ class ControlProjectIntelligenceConfigFilterIncludedCloudStorageBucketsArgs:
     @bucket_id_regexes.setter
     def bucket_id_regexes(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class ControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDict(
     TypedDict
@@ -1825,7 +1989,10 @@ class ControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsArgs:
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class ControlProjectIntelligenceConfigTrialConfigArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
@@ -1839,7 +2006,8 @@ class ControlProjectIntelligenceConfigTrialConfigArgs:
     @pulumi.getter(name="expireTime")
     def expire_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expire_time.setter
-    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def expire_time(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class DefaultObjectAccessControlProjectTeamArgsDict(TypedDict):
     project_number: NotRequired[pulumi.Input[_builtins.str]]
@@ -1857,12 +2025,14 @@ class DefaultObjectAccessControlProjectTeamArgs:
     @pulumi.getter(name="projectNumber")
     def project_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_number.setter
-    def project_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_number(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def team(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @team.setter
-    def team(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def team(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightsDatasetConfigExcludeCloudStorageBucketsArgsDict(TypedDict):
     cloud_storage_buckets: pulumi.Input[
@@ -1907,7 +2077,8 @@ class InsightsDatasetConfigExcludeCloudStorageBucketsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class InsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketArgsDict(
     TypedDict
@@ -1927,12 +2098,16 @@ class InsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefixRegex")
     def bucket_prefix_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix_regex.setter
-    def bucket_prefix_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InsightsDatasetConfigExcludeCloudStorageLocationsArgsDict(TypedDict):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -1946,7 +2121,10 @@ class InsightsDatasetConfigExcludeCloudStorageLocationsArgs:
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class InsightsDatasetConfigIdentityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
@@ -1964,12 +2142,14 @@ class InsightsDatasetConfigIdentityArgs:
     @pulumi.getter
     def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): ...
+    def type(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightsDatasetConfigIncludeCloudStorageBucketsArgsDict(TypedDict):
     cloud_storage_buckets: pulumi.Input[
@@ -2014,7 +2194,8 @@ class InsightsDatasetConfigIncludeCloudStorageBucketsArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class InsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketArgsDict(
     TypedDict
@@ -2034,12 +2215,16 @@ class InsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_name.setter
-    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bucketPrefixRegex")
     def bucket_prefix_regex(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket_prefix_regex.setter
-    def bucket_prefix_regex(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket_prefix_regex(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InsightsDatasetConfigIncludeCloudStorageLocationsArgsDict(TypedDict):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -2053,7 +2238,10 @@ class InsightsDatasetConfigIncludeCloudStorageLocationsArgs:
     @pulumi.getter
     def locations(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @locations.setter
-    def locations(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
+    def locations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ):  # -> None:
+        ...
 
 class InsightsDatasetConfigLinkArgsDict(TypedDict):
     dataset: NotRequired[pulumi.Input[_builtins.str]]
@@ -2071,12 +2259,14 @@ class InsightsDatasetConfigLinkArgs:
     @pulumi.getter
     def dataset(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @dataset.setter
-    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def dataset(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def linked(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @linked.setter
-    def linked(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def linked(self, value: Optional[pulumi.Input[_builtins.bool]]):  # -> None:
+        ...
 
 class InsightsDatasetConfigSourceFoldersArgsDict(TypedDict):
     folder_numbers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2098,7 +2288,8 @@ class InsightsDatasetConfigSourceFoldersArgs:
     @folder_numbers.setter
     def folder_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InsightsDatasetConfigSourceProjectsArgsDict(TypedDict):
     project_numbers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2120,7 +2311,8 @@ class InsightsDatasetConfigSourceProjectsArgs:
     @project_numbers.setter
     def project_numbers(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InsightsReportConfigCsvOptionsArgsDict(TypedDict):
     delimiter: NotRequired[pulumi.Input[_builtins.str]]
@@ -2140,17 +2332,24 @@ class InsightsReportConfigCsvOptionsArgs:
     @pulumi.getter
     def delimiter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delimiter.setter
-    def delimiter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def delimiter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="headerRequired")
     def header_required(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @header_required.setter
-    def header_required(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def header_required(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="recordSeparator")
     def record_separator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @record_separator.setter
-    def record_separator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def record_separator(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InsightsReportConfigFrequencyOptionsArgsDict(TypedDict):
     end_date: pulumi.Input[InsightsReportConfigFrequencyOptionsEndDateArgsDict]
@@ -2174,12 +2373,14 @@ class InsightsReportConfigFrequencyOptionsArgs:
     @end_date.setter
     def end_date(
         self, value: pulumi.Input[InsightsReportConfigFrequencyOptionsEndDateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def frequency(self) -> pulumi.Input[_builtins.str]: ...
     @frequency.setter
-    def frequency(self, value: pulumi.Input[_builtins.str]): ...
+    def frequency(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startDate")
     def start_date(
@@ -2188,7 +2389,8 @@ class InsightsReportConfigFrequencyOptionsArgs:
     @start_date.setter
     def start_date(
         self, value: pulumi.Input[InsightsReportConfigFrequencyOptionsStartDateArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class InsightsReportConfigFrequencyOptionsEndDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
@@ -2208,17 +2410,20 @@ class InsightsReportConfigFrequencyOptionsEndDateArgs:
     @pulumi.getter
     def day(self) -> pulumi.Input[_builtins.int]: ...
     @day.setter
-    def day(self, value: pulumi.Input[_builtins.int]): ...
+    def day(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> pulumi.Input[_builtins.int]: ...
     @month.setter
-    def month(self, value: pulumi.Input[_builtins.int]): ...
+    def month(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> pulumi.Input[_builtins.int]: ...
     @year.setter
-    def year(self, value: pulumi.Input[_builtins.int]): ...
+    def year(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightsReportConfigFrequencyOptionsStartDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
@@ -2238,17 +2443,20 @@ class InsightsReportConfigFrequencyOptionsStartDateArgs:
     @pulumi.getter
     def day(self) -> pulumi.Input[_builtins.int]: ...
     @day.setter
-    def day(self, value: pulumi.Input[_builtins.int]): ...
+    def day(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> pulumi.Input[_builtins.int]: ...
     @month.setter
-    def month(self, value: pulumi.Input[_builtins.int]): ...
+    def month(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> pulumi.Input[_builtins.int]: ...
     @year.setter
-    def year(self, value: pulumi.Input[_builtins.int]): ...
+    def year(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class InsightsReportConfigObjectMetadataReportOptionsArgsDict(TypedDict):
     metadata_fields: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
@@ -2284,7 +2492,8 @@ class InsightsReportConfigObjectMetadataReportOptionsArgs:
     @metadata_fields.setter
     def metadata_fields(
         self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageDestinationOptions")
     def storage_destination_options(
@@ -2298,7 +2507,8 @@ class InsightsReportConfigObjectMetadataReportOptionsArgs:
         value: pulumi.Input[
             InsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsArgs
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageFilters")
     def storage_filters(
@@ -2314,7 +2524,8 @@ class InsightsReportConfigObjectMetadataReportOptionsArgs:
                 InsightsReportConfigObjectMetadataReportOptionsStorageFiltersArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class InsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsArgsDict(
     TypedDict
@@ -2334,12 +2545,16 @@ class InsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsAr
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="destinationPath")
     def destination_path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_path.setter
-    def destination_path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def destination_path(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class InsightsReportConfigObjectMetadataReportOptionsStorageFiltersArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
@@ -2353,7 +2568,8 @@ class InsightsReportConfigObjectMetadataReportOptionsStorageFiltersArgs:
     @pulumi.getter
     def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class InsightsReportConfigParquetOptionsArgsDict(TypedDict): ...
 
@@ -2379,17 +2595,20 @@ class ManagedFolderIamBindingConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ManagedFolderIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
@@ -2409,17 +2628,20 @@ class ManagedFolderIamMemberConditionArgs:
     @pulumi.getter
     def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): ...
+    def expression(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): ...
+    def title(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class ObjectAccessControlProjectTeamArgsDict(TypedDict):
     project_number: NotRequired[pulumi.Input[_builtins.str]]
@@ -2437,12 +2659,14 @@ class ObjectAccessControlProjectTeamArgs:
     @pulumi.getter(name="projectNumber")
     def project_number(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project_number.setter
-    def project_number(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project_number(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def team(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @team.setter
-    def team(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def team(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferAgentPoolBandwidthLimitArgsDict(TypedDict):
     limit_mbps: pulumi.Input[_builtins.str]
@@ -2454,7 +2678,8 @@ class TransferAgentPoolBandwidthLimitArgs:
     @pulumi.getter(name="limitMbps")
     def limit_mbps(self) -> pulumi.Input[_builtins.str]: ...
     @limit_mbps.setter
-    def limit_mbps(self, value: pulumi.Input[_builtins.str]): ...
+    def limit_mbps(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobEventStreamArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
@@ -2474,19 +2699,24 @@ class TransferJobEventStreamArgs:
     @pulumi.getter
     def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): ...
+    def name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventStreamExpirationTime")
     def event_stream_expiration_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_stream_expiration_time.setter
     def event_stream_expiration_time(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventStreamStartTime")
     def event_stream_start_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @event_stream_start_time.setter
-    def event_stream_start_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def event_stream_start_time(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
 
 class TransferJobLoggingConfigArgsDict(TypedDict):
     enable_on_prem_gcs_transfer_logs: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2514,7 +2744,8 @@ class TransferJobLoggingConfigArgs:
     @enable_on_prem_gcs_transfer_logs.setter
     def enable_on_prem_gcs_transfer_logs(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logActionStates")
     def log_action_states(
@@ -2523,7 +2754,8 @@ class TransferJobLoggingConfigArgs:
     @log_action_states.setter
     def log_action_states(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="logActions")
     def log_actions(
@@ -2532,7 +2764,8 @@ class TransferJobLoggingConfigArgs:
     @log_actions.setter
     def log_actions(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobNotificationConfigArgsDict(TypedDict):
     payload_format: pulumi.Input[_builtins.str]
@@ -2554,12 +2787,14 @@ class TransferJobNotificationConfigArgs:
     @pulumi.getter(name="payloadFormat")
     def payload_format(self) -> pulumi.Input[_builtins.str]: ...
     @payload_format.setter
-    def payload_format(self, value: pulumi.Input[_builtins.str]): ...
+    def payload_format(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pubsubTopic")
     def pubsub_topic(self) -> pulumi.Input[_builtins.str]: ...
     @pubsub_topic.setter
-    def pubsub_topic(self, value: pulumi.Input[_builtins.str]): ...
+    def pubsub_topic(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="eventTypes")
     def event_types(
@@ -2568,7 +2803,8 @@ class TransferJobNotificationConfigArgs:
     @event_types.setter
     def event_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobReplicationSpecArgsDict(TypedDict):
     gcs_data_sink: NotRequired[
@@ -2610,7 +2846,8 @@ class TransferJobReplicationSpecArgs:
     @gcs_data_sink.setter
     def gcs_data_sink(
         self, value: Optional[pulumi.Input[TransferJobReplicationSpecGcsDataSinkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsDataSource")
     def gcs_data_source(
@@ -2619,7 +2856,8 @@ class TransferJobReplicationSpecArgs:
     @gcs_data_source.setter
     def gcs_data_source(
         self, value: Optional[pulumi.Input[TransferJobReplicationSpecGcsDataSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectConditions")
     def object_conditions(
@@ -2629,7 +2867,8 @@ class TransferJobReplicationSpecArgs:
     def object_conditions(
         self,
         value: Optional[pulumi.Input[TransferJobReplicationSpecObjectConditionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferOptions")
     def transfer_options(
@@ -2639,7 +2878,8 @@ class TransferJobReplicationSpecArgs:
     def transfer_options(
         self,
         value: Optional[pulumi.Input[TransferJobReplicationSpecTransferOptionsArgs]],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobReplicationSpecGcsDataSinkArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -2657,12 +2897,14 @@ class TransferJobReplicationSpecGcsDataSinkArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobReplicationSpecGcsDataSourceArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -2680,12 +2922,14 @@ class TransferJobReplicationSpecGcsDataSourceArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobReplicationSpecObjectConditionsArgsDict(TypedDict):
     exclude_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -2723,7 +2967,8 @@ class TransferJobReplicationSpecObjectConditionsArgs:
     @exclude_prefixes.setter
     def exclude_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includePrefixes")
     def include_prefixes(
@@ -2732,17 +2977,24 @@ class TransferJobReplicationSpecObjectConditionsArgs:
     @include_prefixes.setter
     def include_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedBefore")
     def last_modified_before(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_before.setter
-    def last_modified_before(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_before(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedSince")
     def last_modified_since(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_since.setter
-    def last_modified_since(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_since(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxTimeElapsedSinceLastModification")
     def max_time_elapsed_since_last_modification(
@@ -2751,7 +3003,8 @@ class TransferJobReplicationSpecObjectConditionsArgs:
     @max_time_elapsed_since_last_modification.setter
     def max_time_elapsed_since_last_modification(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minTimeElapsedSinceLastModification")
     def min_time_elapsed_since_last_modification(
@@ -2760,7 +3013,8 @@ class TransferJobReplicationSpecObjectConditionsArgs:
     @min_time_elapsed_since_last_modification.setter
     def min_time_elapsed_since_last_modification(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobReplicationSpecTransferOptionsArgsDict(TypedDict):
     delete_objects_from_source_after_transfer: NotRequired[pulumi.Input[_builtins.bool]]
@@ -2798,7 +3052,8 @@ class TransferJobReplicationSpecTransferOptionsArgs:
     @delete_objects_from_source_after_transfer.setter
     def delete_objects_from_source_after_transfer(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteObjectsUniqueInSink")
     def delete_objects_unique_in_sink(
@@ -2807,7 +3062,8 @@ class TransferJobReplicationSpecTransferOptionsArgs:
     @delete_objects_unique_in_sink.setter
     def delete_objects_unique_in_sink(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataOptions")
     def metadata_options(
@@ -2821,7 +3077,8 @@ class TransferJobReplicationSpecTransferOptionsArgs:
         value: Optional[
             pulumi.Input[TransferJobReplicationSpecTransferOptionsMetadataOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="overwriteObjectsAlreadyExistingInSink")
     def overwrite_objects_already_existing_in_sink(
@@ -2830,12 +3087,14 @@ class TransferJobReplicationSpecTransferOptionsArgs:
     @overwrite_objects_already_existing_in_sink.setter
     def overwrite_objects_already_existing_in_sink(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="overwriteWhen")
     def overwrite_when(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @overwrite_when.setter
-    def overwrite_when(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def overwrite_when(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobReplicationSpecTransferOptionsMetadataOptionsArgsDict(TypedDict):
     acl: NotRequired[pulumi.Input[_builtins.str]]
@@ -2867,47 +3126,56 @@ class TransferJobReplicationSpecTransferOptionsMetadataOptionsArgs:
     @pulumi.getter
     def acl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acl.setter
-    def acl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gid.setter
-    def gid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def symlink(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @symlink.setter
-    def symlink(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def symlink(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="temporaryHold")
     def temporary_hold(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @temporary_hold.setter
-    def temporary_hold(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def temporary_hold(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeCreated")
     def time_created(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_created.setter
-    def time_created(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_created(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobScheduleArgsDict(TypedDict):
     schedule_start_date: pulumi.Input[TransferJobScheduleScheduleStartDateArgsDict]
@@ -2941,12 +3209,14 @@ class TransferJobScheduleArgs:
     @schedule_start_date.setter
     def schedule_start_date(
         self, value: pulumi.Input[TransferJobScheduleScheduleStartDateArgs]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="repeatInterval")
     def repeat_interval(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @repeat_interval.setter
-    def repeat_interval(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def repeat_interval(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="scheduleEndDate")
     def schedule_end_date(
@@ -2955,7 +3225,8 @@ class TransferJobScheduleArgs:
     @schedule_end_date.setter
     def schedule_end_date(
         self, value: Optional[pulumi.Input[TransferJobScheduleScheduleEndDateArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="startTimeOfDay")
     def start_time_of_day(
@@ -2964,7 +3235,8 @@ class TransferJobScheduleArgs:
     @start_time_of_day.setter
     def start_time_of_day(
         self, value: Optional[pulumi.Input[TransferJobScheduleStartTimeOfDayArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobScheduleScheduleEndDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
@@ -2984,17 +3256,20 @@ class TransferJobScheduleScheduleEndDateArgs:
     @pulumi.getter
     def day(self) -> pulumi.Input[_builtins.int]: ...
     @day.setter
-    def day(self, value: pulumi.Input[_builtins.int]): ...
+    def day(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> pulumi.Input[_builtins.int]: ...
     @month.setter
-    def month(self, value: pulumi.Input[_builtins.int]): ...
+    def month(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> pulumi.Input[_builtins.int]: ...
     @year.setter
-    def year(self, value: pulumi.Input[_builtins.int]): ...
+    def year(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class TransferJobScheduleScheduleStartDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
@@ -3014,17 +3289,20 @@ class TransferJobScheduleScheduleStartDateArgs:
     @pulumi.getter
     def day(self) -> pulumi.Input[_builtins.int]: ...
     @day.setter
-    def day(self, value: pulumi.Input[_builtins.int]): ...
+    def day(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def month(self) -> pulumi.Input[_builtins.int]: ...
     @month.setter
-    def month(self, value: pulumi.Input[_builtins.int]): ...
+    def month(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def year(self) -> pulumi.Input[_builtins.int]: ...
     @year.setter
-    def year(self, value: pulumi.Input[_builtins.int]): ...
+    def year(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class TransferJobScheduleStartTimeOfDayArgsDict(TypedDict):
     hours: pulumi.Input[_builtins.int]
@@ -3046,22 +3324,26 @@ class TransferJobScheduleStartTimeOfDayArgs:
     @pulumi.getter
     def hours(self) -> pulumi.Input[_builtins.int]: ...
     @hours.setter
-    def hours(self, value: pulumi.Input[_builtins.int]): ...
+    def hours(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def minutes(self) -> pulumi.Input[_builtins.int]: ...
     @minutes.setter
-    def minutes(self, value: pulumi.Input[_builtins.int]): ...
+    def minutes(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def nanos(self) -> pulumi.Input[_builtins.int]: ...
     @nanos.setter
-    def nanos(self, value: pulumi.Input[_builtins.int]): ...
+    def nanos(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def seconds(self) -> pulumi.Input[_builtins.int]: ...
     @seconds.setter
-    def seconds(self, value: pulumi.Input[_builtins.int]): ...
+    def seconds(self, value: pulumi.Input[_builtins.int]):  # -> None:
+        ...
 
 class TransferJobTransferSpecArgsDict(TypedDict):
     aws_s3_compatible_data_source: NotRequired[
@@ -3158,7 +3440,8 @@ class TransferJobTransferSpecArgs:
         value: Optional[
             pulumi.Input[TransferJobTransferSpecAwsS3CompatibleDataSourceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsS3DataSource")
     def aws_s3_data_source(
@@ -3167,7 +3450,8 @@ class TransferJobTransferSpecArgs:
     @aws_s3_data_source.setter
     def aws_s3_data_source(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecAwsS3DataSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureBlobStorageDataSource")
     def azure_blob_storage_data_source(
@@ -3181,7 +3465,8 @@ class TransferJobTransferSpecArgs:
         value: Optional[
             pulumi.Input[TransferJobTransferSpecAzureBlobStorageDataSourceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsDataSink")
     def gcs_data_sink(
@@ -3190,7 +3475,8 @@ class TransferJobTransferSpecArgs:
     @gcs_data_sink.setter
     def gcs_data_sink(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecGcsDataSinkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="gcsDataSource")
     def gcs_data_source(
@@ -3199,7 +3485,8 @@ class TransferJobTransferSpecArgs:
     @gcs_data_source.setter
     def gcs_data_source(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecGcsDataSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="hdfsDataSource")
     def hdfs_data_source(
@@ -3208,7 +3495,8 @@ class TransferJobTransferSpecArgs:
     @hdfs_data_source.setter
     def hdfs_data_source(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecHdfsDataSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="httpDataSource")
     def http_data_source(
@@ -3217,7 +3505,8 @@ class TransferJobTransferSpecArgs:
     @http_data_source.setter
     def http_data_source(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecHttpDataSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="objectConditions")
     def object_conditions(
@@ -3226,7 +3515,8 @@ class TransferJobTransferSpecArgs:
     @object_conditions.setter
     def object_conditions(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecObjectConditionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="posixDataSink")
     def posix_data_sink(
@@ -3235,7 +3525,8 @@ class TransferJobTransferSpecArgs:
     @posix_data_sink.setter
     def posix_data_sink(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecPosixDataSinkArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="posixDataSource")
     def posix_data_source(
@@ -3244,17 +3535,24 @@ class TransferJobTransferSpecArgs:
     @posix_data_source.setter
     def posix_data_source(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecPosixDataSourceArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sinkAgentPoolName")
     def sink_agent_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sink_agent_pool_name.setter
-    def sink_agent_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def sink_agent_pool_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="sourceAgentPoolName")
     def source_agent_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_agent_pool_name.setter
-    def source_agent_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def source_agent_pool_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferManifest")
     def transfer_manifest(
@@ -3263,7 +3561,8 @@ class TransferJobTransferSpecArgs:
     @transfer_manifest.setter
     def transfer_manifest(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecTransferManifestArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="transferOptions")
     def transfer_options(
@@ -3272,7 +3571,8 @@ class TransferJobTransferSpecArgs:
     @transfer_options.setter
     def transfer_options(
         self, value: Optional[pulumi.Input[TransferJobTransferSpecTransferOptionsArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobTransferSpecAwsS3CompatibleDataSourceArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -3300,22 +3600,26 @@ class TransferJobTransferSpecAwsS3CompatibleDataSourceArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
+    def endpoint(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="s3Metadata")
     def s3_metadata(
@@ -3329,7 +3633,8 @@ class TransferJobTransferSpecAwsS3CompatibleDataSourceArgs:
         value: Optional[
             pulumi.Input[TransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataArgsDict(TypedDict):
     auth_method: NotRequired[pulumi.Input[_builtins.str]]
@@ -3351,22 +3656,26 @@ class TransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataArgs:
     @pulumi.getter(name="authMethod")
     def auth_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @auth_method.setter
-    def auth_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def auth_method(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="listApi")
     def list_api(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @list_api.setter
-    def list_api(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def list_api(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def protocol(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="requestModel")
     def request_model(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @request_model.setter
-    def request_model(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def request_model(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobTransferSpecAwsS3DataSourceArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -3398,7 +3707,8 @@ class TransferJobTransferSpecAwsS3DataSourceArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="awsAccessKey")
     def aws_access_key(
@@ -3412,34 +3722,44 @@ class TransferJobTransferSpecAwsS3DataSourceArgs:
         value: Optional[
             pulumi.Input[TransferJobTransferSpecAwsS3DataSourceAwsAccessKeyArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudfrontDomain")
     def cloudfront_domain(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cloudfront_domain.setter
-    def cloudfront_domain(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cloudfront_domain(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsSecret")
     def credentials_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credentials_secret.setter
-    def credentials_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credentials_secret(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="managedPrivateNetwork")
     def managed_private_network(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @managed_private_network.setter
     def managed_private_network(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobTransferSpecAwsS3DataSourceAwsAccessKeyArgsDict(TypedDict):
     access_key_id: pulumi.Input[_builtins.str]
@@ -3457,12 +3777,14 @@ class TransferJobTransferSpecAwsS3DataSourceAwsAccessKeyArgs:
     @pulumi.getter(name="accessKeyId")
     def access_key_id(self) -> pulumi.Input[_builtins.str]: ...
     @access_key_id.setter
-    def access_key_id(self, value: pulumi.Input[_builtins.str]): ...
+    def access_key_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="secretAccessKey")
     def secret_access_key(self) -> pulumi.Input[_builtins.str]: ...
     @secret_access_key.setter
-    def secret_access_key(self, value: pulumi.Input[_builtins.str]): ...
+    def secret_access_key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecAzureBlobStorageDataSourceArgsDict(TypedDict):
     container: pulumi.Input[_builtins.str]
@@ -3504,12 +3826,14 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceArgs:
     @pulumi.getter
     def container(self) -> pulumi.Input[_builtins.str]: ...
     @container.setter
-    def container(self, value: pulumi.Input[_builtins.str]): ...
+    def container(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageAccount")
     def storage_account(self) -> pulumi.Input[_builtins.str]: ...
     @storage_account.setter
-    def storage_account(self, value: pulumi.Input[_builtins.str]): ...
+    def storage_account(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="azureCredentials")
     def azure_credentials(
@@ -3527,12 +3851,16 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceArgs:
                 TransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="credentialsSecret")
     def credentials_secret(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @credentials_secret.setter
-    def credentials_secret(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def credentials_secret(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="federatedIdentityConfig")
     def federated_identity_config(
@@ -3550,12 +3878,14 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceArgs:
                 TransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsArgsDict(
     TypedDict
@@ -3569,7 +3899,8 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsArgs:
     @pulumi.getter(name="sasToken")
     def sas_token(self) -> pulumi.Input[_builtins.str]: ...
     @sas_token.setter
-    def sas_token(self, value: pulumi.Input[_builtins.str]): ...
+    def sas_token(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigArgsDict(
     TypedDict
@@ -3589,12 +3920,14 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigAr
     @pulumi.getter(name="clientId")
     def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): ...
+    def client_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
     def tenant_id(self) -> pulumi.Input[_builtins.str]: ...
     @tenant_id.setter
-    def tenant_id(self, value: pulumi.Input[_builtins.str]): ...
+    def tenant_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecGcsDataSinkArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -3612,12 +3945,14 @@ class TransferJobTransferSpecGcsDataSinkArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobTransferSpecGcsDataSourceArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
@@ -3635,12 +3970,14 @@ class TransferJobTransferSpecGcsDataSourceArgs:
     @pulumi.getter(name="bucketName")
     def bucket_name(self) -> pulumi.Input[_builtins.str]: ...
     @bucket_name.setter
-    def bucket_name(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def path(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @path.setter
-    def path(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobTransferSpecHdfsDataSourceArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
@@ -3652,7 +3989,8 @@ class TransferJobTransferSpecHdfsDataSourceArgs:
     @pulumi.getter
     def path(self) -> pulumi.Input[_builtins.str]: ...
     @path.setter
-    def path(self, value: pulumi.Input[_builtins.str]): ...
+    def path(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecHttpDataSourceArgsDict(TypedDict):
     list_url: pulumi.Input[_builtins.str]
@@ -3664,7 +4002,8 @@ class TransferJobTransferSpecHttpDataSourceArgs:
     @pulumi.getter(name="listUrl")
     def list_url(self) -> pulumi.Input[_builtins.str]: ...
     @list_url.setter
-    def list_url(self, value: pulumi.Input[_builtins.str]): ...
+    def list_url(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecObjectConditionsArgsDict(TypedDict):
     exclude_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
@@ -3702,7 +4041,8 @@ class TransferJobTransferSpecObjectConditionsArgs:
     @exclude_prefixes.setter
     def exclude_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="includePrefixes")
     def include_prefixes(
@@ -3711,17 +4051,24 @@ class TransferJobTransferSpecObjectConditionsArgs:
     @include_prefixes.setter
     def include_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedBefore")
     def last_modified_before(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_before.setter
-    def last_modified_before(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_before(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedSince")
     def last_modified_since(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_modified_since.setter
-    def last_modified_since(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def last_modified_since(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="maxTimeElapsedSinceLastModification")
     def max_time_elapsed_since_last_modification(
@@ -3730,7 +4077,8 @@ class TransferJobTransferSpecObjectConditionsArgs:
     @max_time_elapsed_since_last_modification.setter
     def max_time_elapsed_since_last_modification(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="minTimeElapsedSinceLastModification")
     def min_time_elapsed_since_last_modification(
@@ -3739,7 +4087,8 @@ class TransferJobTransferSpecObjectConditionsArgs:
     @min_time_elapsed_since_last_modification.setter
     def min_time_elapsed_since_last_modification(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
 
 class TransferJobTransferSpecPosixDataSinkArgsDict(TypedDict):
     root_directory: pulumi.Input[_builtins.str]
@@ -3751,7 +4100,8 @@ class TransferJobTransferSpecPosixDataSinkArgs:
     @pulumi.getter(name="rootDirectory")
     def root_directory(self) -> pulumi.Input[_builtins.str]: ...
     @root_directory.setter
-    def root_directory(self, value: pulumi.Input[_builtins.str]): ...
+    def root_directory(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecPosixDataSourceArgsDict(TypedDict):
     root_directory: pulumi.Input[_builtins.str]
@@ -3763,7 +4113,8 @@ class TransferJobTransferSpecPosixDataSourceArgs:
     @pulumi.getter(name="rootDirectory")
     def root_directory(self) -> pulumi.Input[_builtins.str]: ...
     @root_directory.setter
-    def root_directory(self, value: pulumi.Input[_builtins.str]): ...
+    def root_directory(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecTransferManifestArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
@@ -3775,7 +4126,8 @@ class TransferJobTransferSpecTransferManifestArgs:
     @pulumi.getter
     def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): ...
+    def location(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class TransferJobTransferSpecTransferOptionsArgsDict(TypedDict):
     delete_objects_from_source_after_transfer: NotRequired[pulumi.Input[_builtins.bool]]
@@ -3813,7 +4165,8 @@ class TransferJobTransferSpecTransferOptionsArgs:
     @delete_objects_from_source_after_transfer.setter
     def delete_objects_from_source_after_transfer(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deleteObjectsUniqueInSink")
     def delete_objects_unique_in_sink(
@@ -3822,7 +4175,8 @@ class TransferJobTransferSpecTransferOptionsArgs:
     @delete_objects_unique_in_sink.setter
     def delete_objects_unique_in_sink(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="metadataOptions")
     def metadata_options(
@@ -3836,7 +4190,8 @@ class TransferJobTransferSpecTransferOptionsArgs:
         value: Optional[
             pulumi.Input[TransferJobTransferSpecTransferOptionsMetadataOptionsArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="overwriteObjectsAlreadyExistingInSink")
     def overwrite_objects_already_existing_in_sink(
@@ -3845,12 +4200,14 @@ class TransferJobTransferSpecTransferOptionsArgs:
     @overwrite_objects_already_existing_in_sink.setter
     def overwrite_objects_already_existing_in_sink(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="overwriteWhen")
     def overwrite_when(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @overwrite_when.setter
-    def overwrite_when(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def overwrite_when(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class TransferJobTransferSpecTransferOptionsMetadataOptionsArgsDict(TypedDict):
     acl: NotRequired[pulumi.Input[_builtins.str]]
@@ -3882,44 +4239,53 @@ class TransferJobTransferSpecTransferOptionsMetadataOptionsArgs:
     @pulumi.getter
     def acl(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @acl.setter
-    def acl(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def acl(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def gid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gid.setter
-    def gid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def gid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKey")
     def kms_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key.setter
-    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
     def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def symlink(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @symlink.setter
-    def symlink(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def symlink(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="temporaryHold")
     def temporary_hold(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @temporary_hold.setter
-    def temporary_hold(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def temporary_hold(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="timeCreated")
     def time_created(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @time_created.setter
-    def time_created(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def time_created(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def uid(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uid.setter
-    def uid(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def uid(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

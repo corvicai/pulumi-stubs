@@ -43,7 +43,8 @@ class GetSingleServerFirewallRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetSingleServerFirewallRuleResult(GetSingleServerFirewallRuleResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSingleServerFirewallRuleResult]:
+        ...
 
 def get_single_server_firewall_rule(
     firewall_rule_name: Optional[_builtins.str] = ...,

@@ -46,7 +46,8 @@ class LoadBalancerArgs:
     @pulumi.getter(name="resourceGroupName")
     def resource_group_name(self) -> pulumi.Input[_builtins.str]: ...
     @resource_group_name.setter
-    def resource_group_name(self, value: pulumi.Input[_builtins.str]): ...
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="backendAddressPools")
     def backend_address_pools(
@@ -56,14 +57,16 @@ class LoadBalancerArgs:
     def backend_address_pools(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[BackendAddressPoolArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
     def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]: ...
     @extended_location.setter
     def extended_location(
         self, value: Optional[pulumi.Input[ExtendedLocationArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="frontendIPConfigurations")
     def frontend_ip_configurations(
@@ -77,12 +80,14 @@ class LoadBalancerArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[FrontendIPConfigurationArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inboundNatPools")
     def inbound_nat_pools(
@@ -91,7 +96,8 @@ class LoadBalancerArgs:
     @inbound_nat_pools.setter
     def inbound_nat_pools(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[InboundNatPoolArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="inboundNatRules")
     def inbound_nat_rules(
@@ -100,12 +106,16 @@ class LoadBalancerArgs:
     @inbound_nat_rules.setter
     def inbound_nat_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[InboundNatRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerName")
     def load_balancer_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @load_balancer_name.setter
-    def load_balancer_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def load_balancer_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="loadBalancingRules")
     def load_balancing_rules(
@@ -115,12 +125,14 @@ class LoadBalancerArgs:
     def load_balancing_rules(
         self,
         value: Optional[pulumi.Input[Sequence[pulumi.Input[LoadBalancingRuleArgs]]]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outboundRules")
     def outbound_rules(
@@ -129,19 +141,22 @@ class LoadBalancerArgs:
     @outbound_rules.setter
     def outbound_rules(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[OutboundRuleArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def probes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ProbeArgs]]]]: ...
     @probes.setter
     def probes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ProbeArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def sku(self) -> Optional[pulumi.Input[LoadBalancerSkuArgs]]: ...
     @sku.setter
-    def sku(self, value: Optional[pulumi.Input[LoadBalancerSkuArgs]]): ...
+    def sku(self, value: Optional[pulumi.Input[LoadBalancerSkuArgs]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -150,7 +165,8 @@ class LoadBalancerArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("azure-native:network:LoadBalancer")
 class LoadBalancer(pulumi.CustomResource):

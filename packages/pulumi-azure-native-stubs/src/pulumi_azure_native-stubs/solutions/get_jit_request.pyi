@@ -82,7 +82,8 @@ class GetJitRequestResult:
     def updated_by(self) -> outputs.ApplicationClientDetailsResponse: ...
 
 class AwaitableGetJitRequestResult(GetJitRequestResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetJitRequestResult]:
+        ...
 
 def get_jit_request(
     jit_request_name: Optional[_builtins.str] = ...,

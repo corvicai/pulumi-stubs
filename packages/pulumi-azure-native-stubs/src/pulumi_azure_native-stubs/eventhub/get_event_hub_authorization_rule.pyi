@@ -48,7 +48,10 @@ class GetEventHubAuthorizationRuleResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetEventHubAuthorizationRuleResult(GetEventHubAuthorizationRuleResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetEventHubAuthorizationRuleResult]:
+        ...
 
 def get_event_hub_authorization_rule(
     authorization_rule_name: Optional[_builtins.str] = ...,

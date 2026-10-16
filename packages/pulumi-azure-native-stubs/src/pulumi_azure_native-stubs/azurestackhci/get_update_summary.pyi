@@ -84,7 +84,8 @@ class GetUpdateSummaryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetUpdateSummaryResult(GetUpdateSummaryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetUpdateSummaryResult]:
+        ...
 
 def get_update_summary(
     cluster_name: Optional[_builtins.str] = ...,

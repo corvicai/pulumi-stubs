@@ -44,7 +44,8 @@ class GetConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetConnectionResult(GetConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetConnectionResult]:
+        ...
 
 def get_connection(
     connection_name: Optional[_builtins.str] = ...,

@@ -54,7 +54,8 @@ class GetSupportedServiceResult:
     def title(self) -> _builtins.str: ...
 
 class AwaitableGetSupportedServiceResult(GetSupportedServiceResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetSupportedServiceResult]:
+        ...
 
 def get_supported_service(
     service_name: Optional[_builtins.str] = ...,

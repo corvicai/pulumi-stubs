@@ -48,7 +48,8 @@ class GetRegistryEndpointResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetRegistryEndpointResult(GetRegistryEndpointResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetRegistryEndpointResult]:
+        ...
 
 def get_registry_endpoint(
     instance_name: Optional[_builtins.str] = ...,

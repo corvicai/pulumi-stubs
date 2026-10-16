@@ -152,7 +152,8 @@ class GetAutoImportJobResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetAutoImportJobResult(GetAutoImportJobResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetAutoImportJobResult]:
+        ...
 
 def get_auto_import_job(
     aml_filesystem_name: Optional[_builtins.str] = ...,

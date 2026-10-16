@@ -87,7 +87,8 @@ class GetNetworkPeeringResult:
     def vmware_engine_network_canonical(self) -> _builtins.str: ...
 
 class AwaitableGetNetworkPeeringResult(GetNetworkPeeringResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetNetworkPeeringResult]:
+        ...
 
 def get_network_peering(
     name: Optional[_builtins.str] = ...,

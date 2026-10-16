@@ -21,7 +21,8 @@ class ListBitLockerKeyResult:
     def value(self) -> Optional[Sequence[outputs.DriveBitLockerKeyResponse]]: ...
 
 class AwaitableListBitLockerKeyResult(ListBitLockerKeyResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, ListBitLockerKeyResult]:
+        ...
 
 def list_bit_locker_key(
     job_name: Optional[_builtins.str] = ...,

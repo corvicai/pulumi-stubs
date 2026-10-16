@@ -51,17 +51,22 @@ class ClusterArgs:
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def role_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(self) -> pulumi.Input[ClusterVpcConfigArgs]: ...
     @vpc_config.setter
-    def vpc_config(self, value: pulumi.Input[ClusterVpcConfigArgs]): ...
+    def vpc_config(self, value: pulumi.Input[ClusterVpcConfigArgs]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessConfig")
     def access_config(self) -> Optional[pulumi.Input[ClusterAccessConfigArgs]]: ...
     @access_config.setter
-    def access_config(self, value: Optional[pulumi.Input[ClusterAccessConfigArgs]]): ...
+    def access_config(
+        self, value: Optional[pulumi.Input[ClusterAccessConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootstrapSelfManagedAddons")
     def bootstrap_self_managed_addons(
@@ -70,14 +75,16 @@ class ClusterArgs:
     @bootstrap_self_managed_addons.setter
     def bootstrap_self_managed_addons(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeConfig")
     def compute_config(self) -> Optional[pulumi.Input[ClusterComputeConfigArgs]]: ...
     @compute_config.setter
     def compute_config(
         self, value: Optional[pulumi.Input[ClusterComputeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="controlPlaneScalingConfig")
     def control_plane_scaling_config(
@@ -86,7 +93,8 @@ class ClusterArgs:
     @control_plane_scaling_config.setter
     def control_plane_scaling_config(
         self, value: Optional[pulumi.Input[ClusterControlPlaneScalingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultAddonsToRemoves")
     @_utilities.deprecated(...)
@@ -96,12 +104,16 @@ class ClusterArgs:
     @default_addons_to_removes.setter
     def default_addons_to_removes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledClusterLogTypes")
     def enabled_cluster_log_types(
@@ -110,7 +122,8 @@ class ClusterArgs:
     @enabled_cluster_log_types.setter
     def enabled_cluster_log_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfig")
     def encryption_config(
@@ -119,12 +132,16 @@ class ClusterArgs:
     @encryption_config.setter
     def encryption_config(
         self, value: Optional[pulumi.Input[ClusterEncryptionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateVersion")
     def force_update_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_update_version.setter
-    def force_update_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_update_version(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kubernetesNetworkConfig")
     def kubernetes_network_config(
@@ -133,24 +150,28 @@ class ClusterArgs:
     @kubernetes_network_config.setter
     def kubernetes_network_config(
         self, value: Optional[pulumi.Input[ClusterKubernetesNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outpostConfig")
     def outpost_config(self) -> Optional[pulumi.Input[ClusterOutpostConfigArgs]]: ...
     @outpost_config.setter
     def outpost_config(
         self, value: Optional[pulumi.Input[ClusterOutpostConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteNetworkConfig")
     def remote_network_config(
@@ -159,14 +180,16 @@ class ClusterArgs:
     @remote_network_config.setter
     def remote_network_config(
         self, value: Optional[pulumi.Input[ClusterRemoteNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfig")
     def storage_config(self) -> Optional[pulumi.Input[ClusterStorageConfigArgs]]: ...
     @storage_config.setter
     def storage_config(
         self, value: Optional[pulumi.Input[ClusterStorageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -175,19 +198,22 @@ class ClusterArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradePolicy")
     def upgrade_policy(self) -> Optional[pulumi.Input[ClusterUpgradePolicyArgs]]: ...
     @upgrade_policy.setter
     def upgrade_policy(
         self, value: Optional[pulumi.Input[ClusterUpgradePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zonalShiftConfig")
     def zonal_shift_config(
@@ -196,7 +222,8 @@ class ClusterArgs:
     @zonal_shift_config.setter
     def zonal_shift_config(
         self, value: Optional[pulumi.Input[ClusterZonalShiftConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _ClusterState:
@@ -254,12 +281,16 @@ class _ClusterState:
     @pulumi.getter(name="accessConfig")
     def access_config(self) -> Optional[pulumi.Input[ClusterAccessConfigArgs]]: ...
     @access_config.setter
-    def access_config(self, value: Optional[pulumi.Input[ClusterAccessConfigArgs]]): ...
+    def access_config(
+        self, value: Optional[pulumi.Input[ClusterAccessConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bootstrapSelfManagedAddons")
     def bootstrap_self_managed_addons(
@@ -268,7 +299,8 @@ class _ClusterState:
     @bootstrap_self_managed_addons.setter
     def bootstrap_self_managed_addons(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="certificateAuthority")
     def certificate_authority(
@@ -277,19 +309,22 @@ class _ClusterState:
     @certificate_authority.setter
     def certificate_authority(
         self, value: Optional[pulumi.Input[ClusterCertificateAuthorityArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="clusterId")
     def cluster_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cluster_id.setter
-    def cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="computeConfig")
     def compute_config(self) -> Optional[pulumi.Input[ClusterComputeConfigArgs]]: ...
     @compute_config.setter
     def compute_config(
         self, value: Optional[pulumi.Input[ClusterComputeConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="controlPlaneScalingConfig")
     def control_plane_scaling_config(
@@ -298,12 +333,14 @@ class _ClusterState:
     @control_plane_scaling_config.setter
     def control_plane_scaling_config(
         self, value: Optional[pulumi.Input[ClusterControlPlaneScalingConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
     def created_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_at.setter
-    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="defaultAddonsToRemoves")
     @_utilities.deprecated(...)
@@ -313,12 +350,16 @@ class _ClusterState:
     @default_addons_to_removes.setter
     def default_addons_to_removes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
     def deletion_protection(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @deletion_protection.setter
-    def deletion_protection(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def deletion_protection(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enabledClusterLogTypes")
     def enabled_cluster_log_types(
@@ -327,7 +368,8 @@ class _ClusterState:
     @enabled_cluster_log_types.setter
     def enabled_cluster_log_types(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfig")
     def encryption_config(
@@ -336,17 +378,22 @@ class _ClusterState:
     @encryption_config.setter
     def encryption_config(
         self, value: Optional[pulumi.Input[ClusterEncryptionConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def endpoint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @endpoint.setter
-    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def endpoint(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateVersion")
     def force_update_version(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_update_version.setter
-    def force_update_version(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def force_update_version(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def identities(
@@ -355,7 +402,8 @@ class _ClusterState:
     @identities.setter
     def identities(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ClusterIdentityArgs]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kubernetesNetworkConfig")
     def kubernetes_network_config(
@@ -364,29 +412,36 @@ class _ClusterState:
     @kubernetes_network_config.setter
     def kubernetes_network_config(
         self, value: Optional[pulumi.Input[ClusterKubernetesNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="outpostConfig")
     def outpost_config(self) -> Optional[pulumi.Input[ClusterOutpostConfigArgs]]: ...
     @outpost_config.setter
     def outpost_config(
         self, value: Optional[pulumi.Input[ClusterOutpostConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="platformVersion")
     def platform_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_version.setter
-    def platform_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def platform_version(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="remoteNetworkConfig")
     def remote_network_config(
@@ -395,24 +450,28 @@ class _ClusterState:
     @remote_network_config.setter
     def remote_network_config(
         self, value: Optional[pulumi.Input[ClusterRemoteNetworkConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
     def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def status(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @status.setter
-    def status(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="storageConfig")
     def storage_config(self) -> Optional[pulumi.Input[ClusterStorageConfigArgs]]: ...
     @storage_config.setter
     def storage_config(
         self, value: Optional[pulumi.Input[ClusterStorageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -421,7 +480,8 @@ class _ClusterState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
     def tags_all(
@@ -430,24 +490,30 @@ class _ClusterState:
     @tags_all.setter
     def tags_all(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="upgradePolicy")
     def upgrade_policy(self) -> Optional[pulumi.Input[ClusterUpgradePolicyArgs]]: ...
     @upgrade_policy.setter
     def upgrade_policy(
         self, value: Optional[pulumi.Input[ClusterUpgradePolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="vpcConfig")
     def vpc_config(self) -> Optional[pulumi.Input[ClusterVpcConfigArgs]]: ...
     @vpc_config.setter
-    def vpc_config(self, value: Optional[pulumi.Input[ClusterVpcConfigArgs]]): ...
+    def vpc_config(
+        self, value: Optional[pulumi.Input[ClusterVpcConfigArgs]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="zonalShiftConfig")
     def zonal_shift_config(
@@ -456,7 +522,8 @@ class _ClusterState:
     @zonal_shift_config.setter
     def zonal_shift_config(
         self, value: Optional[pulumi.Input[ClusterZonalShiftConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.type_token("aws:eks/cluster:Cluster")
 class Cluster(pulumi.CustomResource):

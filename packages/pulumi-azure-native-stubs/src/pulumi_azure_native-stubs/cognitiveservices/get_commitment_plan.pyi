@@ -64,7 +64,8 @@ class GetCommitmentPlanResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetCommitmentPlanResult(GetCommitmentPlanResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetCommitmentPlanResult]:
+        ...
 
 def get_commitment_plan(
     account_name: Optional[_builtins.str] = ...,

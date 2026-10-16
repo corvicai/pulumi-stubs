@@ -64,7 +64,8 @@ class GetBlobContainerDataSetResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetBlobContainerDataSetResult(GetBlobContainerDataSetResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetBlobContainerDataSetResult]:
+        ...
 
 def get_blob_container_data_set(
     account_name: Optional[_builtins.str] = ...,

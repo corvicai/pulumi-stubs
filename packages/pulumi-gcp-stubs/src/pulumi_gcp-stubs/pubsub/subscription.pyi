@@ -45,12 +45,16 @@ class SubscriptionArgs:
     @pulumi.getter
     def topic(self) -> pulumi.Input[_builtins.str]: ...
     @topic.setter
-    def topic(self, value: pulumi.Input[_builtins.str]): ...
+    def topic(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="ackDeadlineSeconds")
     def ack_deadline_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ack_deadline_seconds.setter
-    def ack_deadline_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ack_deadline_seconds(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigqueryConfig")
     def bigquery_config(
@@ -59,7 +63,8 @@ class SubscriptionArgs:
     @bigquery_config.setter
     def bigquery_config(
         self, value: Optional[pulumi.Input[SubscriptionBigqueryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudStorageConfig")
     def cloud_storage_config(
@@ -68,7 +73,8 @@ class SubscriptionArgs:
     @cloud_storage_config.setter
     def cloud_storage_config(
         self, value: Optional[pulumi.Input[SubscriptionCloudStorageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deadLetterPolicy")
     def dead_letter_policy(
@@ -77,7 +83,8 @@ class SubscriptionArgs:
     @dead_letter_policy.setter
     def dead_letter_policy(
         self, value: Optional[pulumi.Input[SubscriptionDeadLetterPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableExactlyOnceDelivery")
     def enable_exactly_once_delivery(
@@ -86,14 +93,16 @@ class SubscriptionArgs:
     @enable_exactly_once_delivery.setter
     def enable_exactly_once_delivery(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMessageOrdering")
     def enable_message_ordering(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_message_ordering.setter
     def enable_message_ordering(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirationPolicy")
     def expiration_policy(
@@ -102,12 +111,14 @@ class SubscriptionArgs:
     @expiration_policy.setter
     def expiration_policy(
         self, value: Optional[pulumi.Input[SubscriptionExpirationPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -116,14 +127,16 @@ class SubscriptionArgs:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageRetentionDuration")
     def message_retention_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_retention_duration.setter
     def message_retention_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageTransforms")
     def message_transforms(
@@ -137,36 +150,44 @@ class SubscriptionArgs:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SubscriptionMessageTransformArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pushConfig")
     def push_config(self) -> Optional[pulumi.Input[SubscriptionPushConfigArgs]]: ...
     @push_config.setter
     def push_config(
         self, value: Optional[pulumi.Input[SubscriptionPushConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retainAckedMessages")
     def retain_acked_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @retain_acked_messages.setter
-    def retain_acked_messages(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def retain_acked_messages(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryPolicy")
     def retry_policy(self) -> Optional[pulumi.Input[SubscriptionRetryPolicyArgs]]: ...
     @retry_policy.setter
     def retry_policy(
         self, value: Optional[pulumi.Input[SubscriptionRetryPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -175,7 +196,8 @@ class SubscriptionArgs:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
 
 @pulumi.input_type
 class _SubscriptionState:
@@ -219,7 +241,10 @@ class _SubscriptionState:
     @pulumi.getter(name="ackDeadlineSeconds")
     def ack_deadline_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @ack_deadline_seconds.setter
-    def ack_deadline_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
+    def ack_deadline_seconds(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="bigqueryConfig")
     def bigquery_config(
@@ -228,7 +253,8 @@ class _SubscriptionState:
     @bigquery_config.setter
     def bigquery_config(
         self, value: Optional[pulumi.Input[SubscriptionBigqueryConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="cloudStorageConfig")
     def cloud_storage_config(
@@ -237,7 +263,8 @@ class _SubscriptionState:
     @cloud_storage_config.setter
     def cloud_storage_config(
         self, value: Optional[pulumi.Input[SubscriptionCloudStorageConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="deadLetterPolicy")
     def dead_letter_policy(
@@ -246,7 +273,8 @@ class _SubscriptionState:
     @dead_letter_policy.setter
     def dead_letter_policy(
         self, value: Optional[pulumi.Input[SubscriptionDeadLetterPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
     def effective_labels(
@@ -255,7 +283,8 @@ class _SubscriptionState:
     @effective_labels.setter
     def effective_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableExactlyOnceDelivery")
     def enable_exactly_once_delivery(
@@ -264,14 +293,16 @@ class _SubscriptionState:
     @enable_exactly_once_delivery.setter
     def enable_exactly_once_delivery(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="enableMessageOrdering")
     def enable_message_ordering(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_message_ordering.setter
     def enable_message_ordering(
         self, value: Optional[pulumi.Input[_builtins.bool]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="expirationPolicy")
     def expiration_policy(
@@ -280,12 +311,14 @@ class _SubscriptionState:
     @expiration_policy.setter
     def expiration_policy(
         self, value: Optional[pulumi.Input[SubscriptionExpirationPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def filter(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def filter(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def labels(
@@ -294,14 +327,16 @@ class _SubscriptionState:
     @labels.setter
     def labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageRetentionDuration")
     def message_retention_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @message_retention_duration.setter
     def message_retention_duration(
         self, value: Optional[pulumi.Input[_builtins.str]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="messageTransforms")
     def message_transforms(
@@ -315,17 +350,20 @@ class _SubscriptionState:
         value: Optional[
             pulumi.Input[Sequence[pulumi.Input[SubscriptionMessageTransformArgs]]]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
     def pulumi_labels(
@@ -334,26 +372,32 @@ class _SubscriptionState:
     @pulumi_labels.setter
     def pulumi_labels(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="pushConfig")
     def push_config(self) -> Optional[pulumi.Input[SubscriptionPushConfigArgs]]: ...
     @push_config.setter
     def push_config(
         self, value: Optional[pulumi.Input[SubscriptionPushConfigArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retainAckedMessages")
     def retain_acked_messages(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @retain_acked_messages.setter
-    def retain_acked_messages(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
+    def retain_acked_messages(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="retryPolicy")
     def retry_policy(self) -> Optional[pulumi.Input[SubscriptionRetryPolicyArgs]]: ...
     @retry_policy.setter
     def retry_policy(
         self, value: Optional[pulumi.Input[SubscriptionRetryPolicyArgs]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def tags(
@@ -362,12 +406,14 @@ class _SubscriptionState:
     @tags.setter
     def tags(
         self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @topic.setter
-    def topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def topic(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 @pulumi.type_token("gcp:pubsub/subscription:Subscription")
 class Subscription(pulumi.CustomResource):

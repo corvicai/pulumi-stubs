@@ -68,7 +68,8 @@ class GetGraphQueryResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGraphQueryResult(GetGraphQueryResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGraphQueryResult]:
+        ...
 
 def get_graph_query(
     resource_group_name: Optional[_builtins.str] = ...,

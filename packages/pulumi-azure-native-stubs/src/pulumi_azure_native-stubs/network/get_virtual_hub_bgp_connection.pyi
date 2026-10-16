@@ -62,7 +62,8 @@ class GetVirtualHubBgpConnectionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetVirtualHubBgpConnectionResult(GetVirtualHubBgpConnectionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetVirtualHubBgpConnectionResult]:
+        ...
 
 def get_virtual_hub_bgp_connection(
     connection_name: Optional[_builtins.str] = ...,

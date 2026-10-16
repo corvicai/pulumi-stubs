@@ -44,7 +44,8 @@ class GetGuestSubscriptionResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetGuestSubscriptionResult(GetGuestSubscriptionResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetGuestSubscriptionResult]:
+        ...
 
 def get_guest_subscription(
     guest_subscription_id: Optional[_builtins.str] = ...,

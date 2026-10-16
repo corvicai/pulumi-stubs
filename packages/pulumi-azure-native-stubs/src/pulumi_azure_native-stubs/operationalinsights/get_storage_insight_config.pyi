@@ -60,7 +60,8 @@ class GetStorageInsightConfigResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetStorageInsightConfigResult(GetStorageInsightConfigResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetStorageInsightConfigResult]:
+        ...
 
 def get_storage_insight_config(
     resource_group_name: Optional[_builtins.str] = ...,

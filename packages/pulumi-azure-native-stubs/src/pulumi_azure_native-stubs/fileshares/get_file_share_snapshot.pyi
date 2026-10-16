@@ -44,7 +44,8 @@ class GetFileShareSnapshotResult:
     def type(self) -> _builtins.str: ...
 
 class AwaitableGetFileShareSnapshotResult(GetFileShareSnapshotResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetFileShareSnapshotResult]:
+        ...
 
 def get_file_share_snapshot(
     name: Optional[_builtins.str] = ...,

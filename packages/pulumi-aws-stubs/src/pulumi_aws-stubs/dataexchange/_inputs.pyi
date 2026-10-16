@@ -54,7 +54,8 @@ class EventActionActionArgs:
     @export_revision_to_s3.setter
     def export_revision_to_s3(
         self, value: pulumi.Input[EventActionActionExportRevisionToS3Args]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventActionActionExportRevisionToS3ArgsDict(TypedDict):
     revision_destination: pulumi.Input[
@@ -85,7 +86,8 @@ class EventActionActionExportRevisionToS3Args:
     def revision_destination(
         self,
         value: pulumi.Input[EventActionActionExportRevisionToS3RevisionDestinationArgs],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def encryption(
@@ -97,7 +99,8 @@ class EventActionActionExportRevisionToS3Args:
         value: Optional[
             pulumi.Input[EventActionActionExportRevisionToS3EncryptionArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventActionActionExportRevisionToS3EncryptionArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -115,12 +118,14 @@ class EventActionActionExportRevisionToS3EncryptionArgs:
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def kms_key_arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventActionActionExportRevisionToS3RevisionDestinationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -138,12 +143,14 @@ class EventActionActionExportRevisionToS3RevisionDestinationArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPattern")
     def key_pattern(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_pattern.setter
-    def key_pattern(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def key_pattern(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class EventActionEventArgsDict(TypedDict):
     revision_published: pulumi.Input[EventActionEventRevisionPublishedArgsDict]
@@ -163,7 +170,8 @@ class EventActionEventArgs:
     @revision_published.setter
     def revision_published(
         self, value: pulumi.Input[EventActionEventRevisionPublishedArgs]
-    ): ...
+    ):  # -> None:
+        ...
 
 class EventActionEventRevisionPublishedArgsDict(TypedDict):
     data_set_id: pulumi.Input[_builtins.str]
@@ -175,7 +183,8 @@ class EventActionEventRevisionPublishedArgs:
     @pulumi.getter(name="dataSetId")
     def data_set_id(self) -> pulumi.Input[_builtins.str]: ...
     @data_set_id.setter
-    def data_set_id(self, value: pulumi.Input[_builtins.str]): ...
+    def data_set_id(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RevisionAssetsAssetArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
@@ -217,7 +226,8 @@ class RevisionAssetsAssetArgs:
     @pulumi.getter
     def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createS3DataAccessFromS3Bucket")
     def create_s3_data_access_from_s3_bucket(
@@ -231,17 +241,20 @@ class RevisionAssetsAssetArgs:
         value: Optional[
             pulumi.Input[RevisionAssetsAssetCreateS3DataAccessFromS3BucketArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
     def created_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_at.setter
-    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @id.setter
-    def id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importAssetsFromS3")
     def import_assets_from_s3(
@@ -250,7 +263,8 @@ class RevisionAssetsAssetArgs:
     @import_assets_from_s3.setter
     def import_assets_from_s3(
         self, value: Optional[pulumi.Input[RevisionAssetsAssetImportAssetsFromS3Args]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="importAssetsFromSignedUrl")
     def import_assets_from_signed_url(
@@ -260,17 +274,20 @@ class RevisionAssetsAssetArgs:
     def import_assets_from_signed_url(
         self,
         value: Optional[pulumi.Input[RevisionAssetsAssetImportAssetsFromSignedUrlArgs]],
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="updatedAt")
     def updated_at(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @updated_at.setter
-    def updated_at(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def updated_at(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...
 
 class RevisionAssetsAssetCreateS3DataAccessFromS3BucketArgsDict(TypedDict):
     access_point_alias: NotRequired[pulumi.Input[_builtins.str]]
@@ -298,12 +315,18 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketArgs:
     @pulumi.getter(name="accessPointAlias")
     def access_point_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_point_alias.setter
-    def access_point_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_point_alias(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="accessPointArn")
     def access_point_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @access_point_arn.setter
-    def access_point_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def access_point_arn(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="assetSource")
     def asset_source(
@@ -319,7 +342,8 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketArgs:
                 RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgs
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -359,7 +383,8 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="keyPrefixes")
     def key_prefixes(
@@ -368,14 +393,16 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgs:
     @key_prefixes.setter
     def key_prefixes(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def keys(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @keys.setter
     def keys(
         self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ): ...
+    ):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter(name="kmsKeysToGrants")
     def kms_keys_to_grants(
@@ -401,7 +428,8 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgs:
                 ]
             ]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantArgsDict(
     TypedDict
@@ -415,7 +443,8 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant
     @pulumi.getter(name="kmsKeyArn")
     def kms_key_arn(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_arn.setter
-    def kms_key_arn(self, value: pulumi.Input[_builtins.str]): ...
+    def kms_key_arn(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RevisionAssetsAssetImportAssetsFromS3ArgsDict(TypedDict):
     asset_source: NotRequired[
@@ -444,7 +473,8 @@ class RevisionAssetsAssetImportAssetsFromS3Args:
         value: Optional[
             pulumi.Input[RevisionAssetsAssetImportAssetsFromS3AssetSourceArgs]
         ],
-    ): ...
+    ):  # -> None:
+        ...
 
 class RevisionAssetsAssetImportAssetsFromS3AssetSourceArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
@@ -462,12 +492,14 @@ class RevisionAssetsAssetImportAssetsFromS3AssetSourceArgs:
     @pulumi.getter
     def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): ...
+    def bucket(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
     @_builtins.property
     @pulumi.getter
     def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): ...
+    def key(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RevisionAssetsAssetImportAssetsFromSignedUrlArgsDict(TypedDict):
     filename: pulumi.Input[_builtins.str]
@@ -479,7 +511,8 @@ class RevisionAssetsAssetImportAssetsFromSignedUrlArgs:
     @pulumi.getter
     def filename(self) -> pulumi.Input[_builtins.str]: ...
     @filename.setter
-    def filename(self, value: pulumi.Input[_builtins.str]): ...
+    def filename(self, value: pulumi.Input[_builtins.str]):  # -> None:
+        ...
 
 class RevisionAssetsTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
@@ -493,4 +526,5 @@ class RevisionAssetsTimeoutsArgs:
     @pulumi.getter
     def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]):  # -> None:
+        ...

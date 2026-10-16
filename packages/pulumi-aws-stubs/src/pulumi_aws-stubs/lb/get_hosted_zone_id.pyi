@@ -26,7 +26,8 @@ class GetHostedZoneIdResult:
     def region(self) -> _builtins.str: ...
 
 class AwaitableGetHostedZoneIdResult(GetHostedZoneIdResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHostedZoneIdResult]:
+        ...
 
 def get_hosted_zone_id(
     load_balancer_type: Optional[_builtins.str] = ...,

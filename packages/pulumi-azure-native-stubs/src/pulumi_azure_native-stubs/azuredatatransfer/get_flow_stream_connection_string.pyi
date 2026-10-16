@@ -20,7 +20,10 @@ class GetFlowStreamConnectionStringResult:
     def connection_string(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetFlowStreamConnectionStringResult(GetFlowStreamConnectionStringResult):
-    def __await__(self): ...
+    def __await__(
+        self,
+    ):  # -> Generator[Never, Any, GetFlowStreamConnectionStringResult]:
+        ...
 
 def get_flow_stream_connection_string(
     connection_name: Optional[_builtins.str] = ...,

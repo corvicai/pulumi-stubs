@@ -59,7 +59,8 @@ class GetHostingChannelResult:
     def ttl(self) -> _builtins.str: ...
 
 class AwaitableGetHostingChannelResult(GetHostingChannelResult):
-    def __await__(self): ...
+    def __await__(self):  # -> Generator[Never, Any, GetHostingChannelResult]:
+        ...
 
 def get_hosting_channel(
     channel_id: Optional[_builtins.str] = ...,
